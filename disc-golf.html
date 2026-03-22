@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disc Golf in Cloudcroft | Discover Cloudcroft beta — Mountain Disc Golf at 9,000 Feet</title>
+    <meta name="description" content="Play disc golf at 9,000 feet in Cloudcroft, New Mexico. The Cloudcroft Community DGC is a top-rated 18-hole course through pine forests with stunning views of the Tularosa Basin.">
+    <meta name="keywords" content="Cloudcroft disc golf, disc golf New Mexico, Cloudcroft Community DGC, mountain disc golf, Sacramento Mountains disc golf, Byron Ligon Memorial, Zenith Park disc golf">
+    <link rel="canonical" href="https://discovercloudcroft.com/disc-golf.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Disc Golf in Cloudcroft | Discover Cloudcroft beta">
+    <meta property="og:description" content="Play disc golf at 9,000 feet in Cloudcroft, New Mexico. Top-rated 18-hole course through pine forests with stunning basin views.">
+    <meta property="og:url" content="https://discovercloudcroft.com/disc-golf.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Disc Golf in Cloudcroft | Discover Cloudcroft beta">
+    <meta name="twitter:description" content="Play disc golf at 9,000 feet in Cloudcroft, New Mexico. Top-rated 18-hole course through pine forests with stunning basin views.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@700&family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ::selection { background: var(--golden-hour); color: var(--midnight); }
+
+        *:focus-visible { outline: 2px solid var(--golden-hour); outline-offset: 2px; }
+
+        @keyframes pageIn { from { opacity: 0; } to { opacity: 1; } }
+
+        :root {
+            --midnight: #0B1D3A;
+            --summit: #1A3A5C;
+            --alpine: #2E6B8A;
+            --golden-hour: #E8A838;
+            --ember: #D4553A;
+            --pine-shadow: #1E3A2F;
+            --cloud-drift: #F0F4F8;
+            --snow-cap: #FFFFFF;
+            --granite: #6B7B8D;
+            --twilight: #4A2D6B;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            color: var(--midnight);
+            background: var(--snow-cap);
+            line-height: 1.6;
+            overflow-x: hidden;
+            animation: pageIn 0.5s ease;
+        }
+
+        /* Skip to content */
+        .skip-to-content {
+            position: absolute;
+            top: -100%;
+            left: 1rem;
+            background: var(--golden-hour);
+            color: var(--midnight);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0 0 8px 8px;
+            z-index: 10000;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            transition: top 0.3s;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
+        /* Header */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.4s ease, box-shadow 0.4s ease, padding 0.3s ease;
+            background: transparent;
+        }
+
+        .site-header.scrolled {
+            background: rgba(11, 29, 58, 0.97);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+            padding: 0.6rem 2rem;
+        }
+
+        .header-logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--snow-cap);
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .header-logo span {
+            color: var(--golden-hour);
+        }
+
+        .logo-beta {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            background: rgba(255,255,255,0.18);
+            padding: 2px 7px;
+            border-radius: 4px;
+            vertical-align: middle;
+            margin-left: 6px;
+            opacity: 0.75;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .header-nav a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--cloud-drift);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .header-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--golden-hour);
+            transition: width 0.3s ease;
+        }
+
+        .header-nav a:hover {
+            color: var(--golden-hour);
+        }
+
+        .header-nav a:hover::after {
+            width: 100%;
+        }
+
+        .header-phone {
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--golden-hour);
+            text-decoration: none;
+            border: 1px solid var(--golden-hour);
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .header-phone:hover {
+            background: var(--golden-hour);
+            color: var(--midnight);
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: var(--snow-cap);
+            transition: transform 0.3s, opacity 0.3s;
+            display: block;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(11, 29, 58, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 999;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .mobile-menu.open {
+            display: flex;
+            opacity: 1;
+        }
+
+        .mobile-menu a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--cloud-drift);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+
+        .mobile-menu a:hover {
+            color: var(--golden-hour);
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            height: 65vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--pine-shadow) 0%, var(--summit) 50%, var(--alpine) 100%);
+            background-size: cover;
+            background-position: center;
+            animation: kenBurns 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes kenBurns {
+            0% { transform: scale(1) translate(0, 0); }
+            100% { transform: scale(1.1) translate(-1%, -1%); }
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(30, 58, 47, 0.75), rgba(11, 29, 58, 0.65));
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 0 2rem;
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(232, 168, 56, 0.2);
+            border: 1px solid rgba(232, 168, 56, 0.4);
+            padding: 0.5rem 1.25rem;
+            border-radius: 30px;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.2s forwards;
+        }
+
+        .hero-badge span {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            font-size: 0.8rem;
+            color: var(--golden-hour);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--snow-cap);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title .word {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: wordReveal 0.6s ease forwards;
+        }
+
+        .hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+        .hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+        .hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+        .hero-title .word:nth-child(4) { animation-delay: 0.8s; }
+
+        @keyframes wordReveal {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: clamp(1rem, 2.5vw, 1.35rem);
+            color: rgba(240, 244, 248, 0.9);
+            letter-spacing: 0.05em;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 1s forwards;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1.25rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 1.4s forwards;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn-primary {
+            display: inline-block;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            background: var(--golden-hour);
+            color: var(--midnight);
+            box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 44px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            background: transparent;
+            color: var(--golden-hour);
+            border: 2px solid var(--golden-hour);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s, color 0.3s;
+            min-height: 44px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--golden-hour);
+            color: var(--midnight);
+            transform: translateY(-2px);
+        }
+
+        /* Quick Info Bar */
+        .info-bar {
+            background: var(--midnight);
+            padding: 1.5rem 2rem;
+        }
+
+        .info-bar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .info-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--cloud-drift);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .info-bar-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(232, 168, 56, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        /* Sections */
+        .section {
+            padding: 6rem 2rem;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--alpine);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            color: var(--midnight);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .section-title-centered {
+            text-align: center;
+            padding-bottom: 1.25rem;
+        }
+
+        .section-title-centered::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--golden-hour);
+            margin: 0.75rem auto 0;
+            border-radius: 2px;
+        }
+
+        .section-description {
+            font-size: 1.05rem;
+            color: var(--granite);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text p {
+            font-size: 1.05rem;
+            color: var(--granite);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            background: var(--cloud-drift);
+            color: var(--summit);
+            border-radius: 25px;
+            border: 1px solid rgba(46, 107, 138, 0.2);
+        }
+
+        .about-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(11, 29, 58, 0.15);
+            background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(46, 107, 138, 0.1) 100%);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-image-placeholder {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .about-image-placeholder .icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-image-placeholder p {
+            color: var(--summit);
+            font-weight: 500;
+        }
+
+        /* Courses Section */
+        .courses-section {
+            background: var(--cloud-drift);
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+
+        .course-card {
+            background: var(--snow-cap);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .course-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+        }
+
+        .course-card:nth-child(2).visible { transition-delay: 0.15s; }
+
+        .course-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .course-card-header {
+            background: linear-gradient(135deg, var(--midnight), var(--summit));
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .course-card-header h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--snow-cap);
+        }
+
+        .course-badge {
+            background: rgba(232, 168, 56, 0.2);
+            border: 1px solid rgba(232, 168, 56, 0.4);
+            color: var(--golden-hour);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .course-card-body {
+            padding: 2rem;
+        }
+
+        .course-card-body > p {
+            color: var(--granite);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .course-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .course-stat {
+            text-align: center;
+            padding: 1rem;
+            background: var(--cloud-drift);
+            border-radius: 12px;
+            border: 1px solid rgba(46, 107, 138, 0.1);
+        }
+
+        .course-stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--midnight);
+            display: block;
+        }
+
+        .course-stat-label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.75rem;
+            color: var(--granite);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .course-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .course-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: var(--cloud-drift);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--summit);
+            border: 1px solid rgba(46, 107, 138, 0.15);
+        }
+
+        .course-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--alpine);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+
+        .course-link:hover {
+            color: var(--golden-hour);
+        }
+
+        /* Tips Section (Highlights style) */
+        .tips-section {
+            background: var(--midnight);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tips-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.06;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px),
+                repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px);
+            pointer-events: none;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .tip-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .tip-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+        }
+
+        .tip-card:nth-child(2).visible { transition-delay: 0.1s; }
+        .tip-card:nth-child(3).visible { transition-delay: 0.2s; }
+        .tip-card:nth-child(4).visible { transition-delay: 0.3s; }
+        .tip-card:nth-child(5).visible { transition-delay: 0.4s; }
+        .tip-card:nth-child(6).visible { transition-delay: 0.5s; }
+
+        .tip-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .tip-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .tip-card h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--golden-hour);
+            margin-bottom: 0.75rem;
+        }
+
+        .tip-card p {
+            color: rgba(240, 244, 248, 0.8);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Nearby Section (Visiting cards style) */
+        .nearby-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .nearby-card {
+            background: var(--snow-cap);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid var(--golden-hour);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .nearby-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+        }
+
+        .nearby-card:nth-child(2).visible { transition-delay: 0.1s; }
+        .nearby-card:nth-child(3).visible { transition-delay: 0.2s; }
+        .nearby-card:nth-child(4).visible { transition-delay: 0.3s; }
+
+        .nearby-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .nearby-card h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--midnight);
+            margin-bottom: 0.5rem;
+        }
+
+        .nearby-card .distance {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.8rem;
+            color: var(--alpine);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .nearby-card p {
+            color: var(--granite);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .cta-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-container h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            color: var(--snow-cap);
+            margin-bottom: 1rem;
+        }
+
+        .cta-container p {
+            color: rgba(240, 244, 248, 0.85);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--midnight);
+            padding: 4rem 2rem 2rem;
+            position: relative;
+        }
+
+        .site-footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+            background-size: 300% 100%;
+            animation: gradientBorder 6s linear infinite;
+        }
+
+        @keyframes gradientBorder {
+            0% { background-position: 0% 0; }
+            100% { background-position: 300% 0; }
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--snow-cap);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-col p,
+        .footer-col a {
+            font-size: 0.9rem;
+            color: var(--granite);
+            line-height: 2;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: var(--golden-hour);
+        }
+
+        .footer-brand {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--snow-cap);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .footer-brand span {
+            color: var(--golden-hour);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-social a {
+            display: inline-flex;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid var(--granite);
+            align-items: center;
+            justify-content: center;
+            color: var(--granite);
+            font-size: 0.8rem;
+            transition: border-color 0.3s, color 0.3s;
+        }
+
+        .footer-social a:hover {
+            border-color: var(--golden-hour);
+            color: var(--golden-hour);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(107, 123, 141, 0.2);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--granite);
+        }
+
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--golden-hour);
+            color: var(--midnight);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 500;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(232, 168, 56, 0.4);
+        }
+
+        /* Fade in utility */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            html { scroll-behavior: auto; }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .header-nav { display: none; }
+            .header-phone { display: none; }
+            .hamburger { display: flex; }
+            .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .tips-grid { grid-template-columns: repeat(2, 1fr); }
+            .nearby-grid { grid-template-columns: repeat(2, 1fr); }
+            .course-stats { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .section { padding: 3.5rem 1.5rem; }
+            .tips-grid { grid-template-columns: 1fr; }
+            .nearby-grid { grid-template-columns: 1fr; }
+            .info-bar-inner { gap: 1.5rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid { grid-template-columns: 1fr; }
+            .course-stats { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 375px) {
+            .hero-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header" role="banner" aria-label="Site header">
+        <a href="index.html" class="header-logo">DISCOVER <span>CLOUDCROFT</span> <span class="logo-beta">beta</span></a>
+        <nav class="header-nav" role="menubar" aria-label="Main navigation">
+            <a href="lodging.html" role="menuitem">Stay</a>
+            <a href="dining.html" role="menuitem">Eat</a>
+            <a href="activities.html" role="menuitem">Explore</a>
+            <a href="hiking-trails.html" role="menuitem">Trails</a>
+            <a href="events.html" role="menuitem">Events</a>
+            <a href="seasonal.html" role="menuitem">Seasons</a>
+            <a href="plan.html" role="menuitem">Plan</a>
+            <a href="contact.html" role="menuitem">Contact</a>
+        </nav>
+        <a href="tel:+15555555555" class="header-phone" aria-label="Call us at 555-555-5555">(555) 555-5555</a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+        <a href="lodging.html">Stay</a>
+        <a href="dining.html">Eat</a>
+        <a href="activities.html">Explore</a>
+        <a href="hiking-trails.html">Trails</a>
+        <a href="events.html">Events</a>
+        <a href="seasonal.html">Seasons</a>
+        <a href="plan.html">Plan</a>
+        <a href="contact.html">Contact</a>
+        <a href="tel:+15555555555">(555) 555-5555</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Disc golf in Cloudcroft scenic view"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Outdoor Activities</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Disc </span>
+                <span class="word">Golf </span>
+                <span class="word">in </span>
+                <span class="word">Cloudcroft</span>
+            </h1>
+            <p class="hero-subtitle">Play at 9,000 feet through pine forests with panoramic views of the Tularosa Basin and White Sands</p>
+            <div class="hero-ctas">
+                <a href="#courses" class="btn-primary">Explore the Courses</a>
+                <a href="#tips" class="btn-secondary">Tips Before You Play</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F94F;</div>
+                <span>18 Holes + 9-Hole Putter Course</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x26F0;&#xFE0F;</div>
+                <span>9,000 ft Elevation</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x2B50;</div>
+                <span>4.6/5 UDisc Rating</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F193;</div>
+                <span>Free to Play Year-Round</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- About Section -->
+        <section class="section" id="about" aria-label="About disc golf in Cloudcroft">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">Mountain Disc Golf at Its Best</h2>
+                        <p>
+                            Cloudcroft has quietly become one of New Mexico's top disc golf destinations. The village's flagship Cloudcroft Community DGC is an 18-hole course rated 4.6 out of 5 stars on UDisc, ranking among the top 10 courses in the state. Designed by Ray Haller and David Wood in 2019, the course weaves through dense ponderosa pine forest at roughly 9,000 feet elevation.
+                        </p>
+                        <p>
+                            With dramatic elevation changes on nearly every hole, rocky terrain, and wind that adds an extra layer of challenge, this is a course that rewards shot-shaping and control. Best of all, it's completely free to play, year-round. A beginner-friendly 9-hole putter course at Zenith Park rounds out the local offerings.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F94F; 18 Holes</span>
+                            <span class="about-feature">&#x26F0;&#xFE0F; 9,000 ft Elevation</span>
+                            <span class="about-feature">&#x1F332; Pine Forest</span>
+                            <span class="about-feature">&#x2B50; 4.6/5 UDisc Rating</span>
+                            <span class="about-feature">&#x1F193; Free to Play</span>
+                            <span class="about-feature">&#x1F4C5; Year-Round</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <div class="about-image-placeholder">
+                            <div class="icon">&#x1F94F;</div>
+                            <p>Disc Golf in Cloudcroft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="section courses-section" id="courses" aria-label="Disc golf courses">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Where to Play</span>
+                    <h2 class="section-title section-title-centered">Disc Golf Courses</h2>
+                    <p class="section-description">
+                        From a championship-level mountain course to a beginner-friendly putter layout, Cloudcroft has something for every skill level.
+                    </p>
+                </div>
+
+                <div class="courses-grid">
+                    <!-- Cloudcroft Community DGC -->
+                    <div class="course-card">
+                        <div class="course-card-header">
+                            <h3>Cloudcroft Community DGC</h3>
+                            <span class="course-badge">18 Holes</span>
+                        </div>
+                        <div class="course-card-body">
+                            <p>The crown jewel of Cloudcroft disc golf. This heavily wooded mountain course features dramatic elevation changes of 40 to 80+ feet on nearly every hole, winding through dense pine forest. Rubber mat tee pads, DISCatcher baskets, and excellent tee signage make navigation easy despite the rugged terrain. The course includes handrails, rock steps, and even ropes to help you tackle the steepest sections.</p>
+                            <div class="course-stats">
+                                <div class="course-stat">
+                                    <span class="course-stat-value">56</span>
+                                    <span class="course-stat-label">Par</span>
+                                </div>
+                                <div class="course-stat">
+                                    <span class="course-stat-value">5,105</span>
+                                    <span class="course-stat-label">Total Feet</span>
+                                </div>
+                                <div class="course-stat">
+                                    <span class="course-stat-value">~2 hrs</span>
+                                    <span class="course-stat-label">Round Time</span>
+                                </div>
+                                <div class="course-stat">
+                                    <span class="course-stat-value">Hard</span>
+                                    <span class="course-stat-label">Difficulty</span>
+                                </div>
+                            </div>
+                            <div class="course-tags">
+                                <span class="course-tag">&#x1F332; Wooded</span>
+                                <span class="course-tag">&#x26F0;&#xFE0F; Hilly Terrain</span>
+                                <span class="course-tag">&#x1F193; Free</span>
+                                <span class="course-tag">&#x1F415; Dog Friendly</span>
+                                <span class="course-tag">&#x1F4CD; 230 Mescalero Ave</span>
+                            </div>
+                            <a href="https://udisc.com/courses/cloudcroft-community-dgc-xPud" target="_blank" rel="noopener noreferrer" class="course-link">View on UDisc &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Byron Ligon Memorial Tiki DGC -->
+                    <div class="course-card">
+                        <div class="course-card-header" style="background: linear-gradient(135deg, var(--pine-shadow), var(--alpine));">
+                            <h3>Byron Ligon Memorial Tiki DGC</h3>
+                            <span class="course-badge">9 Holes</span>
+                        </div>
+                        <div class="course-card-body">
+                            <p>A beginner-friendly 9-hole putter course at Zenith Park, redesigned in May 2025. This accessible layout follows walking paths through the park, making it perfect for families, casual players, and anyone looking to practice their short game. The course has restrooms, drinking water, and is stroller and wheelchair accessible.</p>
+                            <div class="course-stats">
+                                <div class="course-stat">
+                                    <span class="course-stat-value">9</span>
+                                    <span class="course-stat-label">Holes</span>
+                                </div>
+                                <div class="course-stat">
+                                    <span class="course-stat-value">Putter</span>
+                                    <span class="course-stat-label">Style</span>
+                                </div>
+                                <div class="course-stat">
+                                    <span class="course-stat-value">Easy</span>
+                                    <span class="course-stat-label">Difficulty</span>
+                                </div>
+                                <div class="course-stat">
+                                    <span class="course-stat-value">4.0/5</span>
+                                    <span class="course-stat-label">UDisc</span>
+                                </div>
+                            </div>
+                            <div class="course-tags">
+                                <span class="course-tag">&#x1F46A; Family Friendly</span>
+                                <span class="course-tag">&#x267F; Accessible</span>
+                                <span class="course-tag">&#x1F193; Free</span>
+                                <span class="course-tag">&#x1F6BB; Restrooms</span>
+                                <span class="course-tag">&#x1F4CD; Zenith Park</span>
+                            </div>
+                            <a href="https://udisc.com/courses/byron-ligon-memorial-tiki-dgc-kl29" target="_blank" rel="noopener noreferrer" class="course-link">View on UDisc &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="section tips-section" id="tips" aria-label="Tips for disc golf in Cloudcroft">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: var(--golden-hour); letter-spacing: 3px;">Before You Play</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--snow-cap);">Tips for Disc Golf in Cloudcroft</h2>
+                    <p class="section-description" style="color: rgba(240,244,248,0.7);">Six things to know before you hit the course at 9,000 feet.</p>
+                </div>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F32C;&#xFE0F;</div>
+                        <h3>Wind &amp; Weather</h3>
+                        <p>At 9,000 feet, wind is a constant factor. Bring understable and overstable discs. Afternoon thunderstorms are common in summer, so start your round early. Temperatures can be 20&deg;F cooler than Alamogordo.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F97E;</div>
+                        <h3>Wear Trail Shoes</h3>
+                        <p>The Community DGC has steep, rocky terrain with significant elevation changes. Hiking-style shoes with good traction are essential. The course is not cart-friendly due to the rugged terrain.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F4A7;</div>
+                        <h3>Hydrate &amp; Prepare</h3>
+                        <p>At this altitude, dehydration comes quickly. Bring plenty of water and snacks for the 2-hour round. There are no facilities on the main course, so plan ahead.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F94F;</div>
+                        <h3>Bring Extra Discs</h3>
+                        <p>Dense forest and rocky terrain mean lost discs are common. Bright-colored discs are easier to find. Write your name and number on every disc you throw.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F4F8;</div>
+                        <h3>Enjoy the Views</h3>
+                        <p>Several holes offer panoramic views down the canyon to the Tularosa Basin and White Sands. Don't rush your round. The scenery is part of the experience.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F4CD;</div>
+                        <h3>Use UDisc</h3>
+                        <p>Download the UDisc app for course maps, hole-by-hole layouts, and scoring. Both Cloudcroft courses are listed and well-mapped by the community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nearby Courses Section -->
+        <section class="section" id="nearby" aria-label="Nearby disc golf courses">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Worth the Drive</span>
+                    <h2 class="section-title section-title-centered">Nearby Disc Golf Courses</h2>
+                    <p class="section-description">
+                        The Sacramento Mountains region has become one of New Mexico's premier disc golf destinations. Ruidoso alone has more courses per capita than almost anywhere in the state.
+                    </p>
+                </div>
+                <div class="nearby-grid">
+                    <div class="nearby-card">
+                        <h4>Grindstone Lake DGC</h4>
+                        <div class="distance">Ruidoso &bull; ~45 min from Cloudcroft</div>
+                        <p>27 holes, par 81, rated 4.6/5 on UDisc with over 1,000 reviews. One of the top courses in the state, featuring wooded mountain terrain around the lake.</p>
+                    </div>
+                    <div class="nearby-card">
+                        <h4>Moon Mountain DGC</h4>
+                        <div class="distance">Ruidoso &bull; ~45 min from Cloudcroft</div>
+                        <p>18 holes designed by world champion Eric McCabe. Features the longest disc golf hole in New Mexico (Hole 17) and elevation ranging from 8,072 to 8,970 feet.</p>
+                    </div>
+                    <div class="nearby-card">
+                        <h4>Oso Canyon DGC</h4>
+                        <div class="distance">Ruidoso &bull; ~45 min from Cloudcroft</div>
+                        <p>A championship-level mountain course with dramatic uphill and downhill shots, blind holes, and mature trees. One of Ruidoso's most challenging layouts.</p>
+                    </div>
+                    <div class="nearby-card">
+                        <h4>Alameda Park DGC</h4>
+                        <div class="distance">Alamogordo &bull; ~20 min from Cloudcroft</div>
+                        <p>9-hole course at 1523 White Sands Blvd. A more moderate, accessible option if you want a quick round before or after visiting Cloudcroft.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Ready to Throw?</h2>
+                <p>Both Cloudcroft courses are free and open year-round. Grab your discs and head for the mountains.</p>
+                <div class="cta-buttons">
+                    <a href="https://udisc.com/courses/cloudcroft-community-dgc-xPud" target="_blank" rel="noopener noreferrer" class="btn-primary">View on UDisc</a>
+                    <a href="activities.html" class="btn-secondary">More Activities</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="lodging.html">Lodging</a>
+                <a href="dining.html">Dining</a>
+                <a href="hiking-trails.html">Hiking Trails</a>
+                <a href="activities.html">Activities</a>
+                <a href="events.html">Events</a>
+                <a href="seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="about.html">About Cloudcroft</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script>
+        (function() {
+            // Header scroll
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 60) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }, { passive: true });
+
+            // Hamburger toggle
+            var hamburger = document.querySelector('.hamburger');
+            var mobileMenu = document.querySelector('.mobile-menu');
+            hamburger.addEventListener('click', function() {
+                var isOpen = mobileMenu.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+
+            // Close mobile menu on link click
+            mobileMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Intersection Observer for fade-in elements
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .course-card, .tip-card, .nearby-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+
+            // Back to top button
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }, { passive: true });
+
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+</body>
+</html>

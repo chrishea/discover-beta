@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Western Bar & Cafe | Discover Cloudcroft beta — Classic American Comfort</title>
+    <meta name="description" content="Dine at the Western Bar & Cafe in Cloudcroft, NM. A beloved local gathering spot serving classic American fare and cold drinks in the Sacramento Mountains since 1950.">
+    <meta name="keywords" content="Western Bar Cafe, Cloudcroft NM, Cloudcroft dining, breakfast, burgers, New Mexican food, Sacramento Mountains restaurant">
+    <link rel="canonical" href="https://discovercloudcroft.com/western-bar.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Western Bar & Cafe | Discover Cloudcroft beta">
+    <meta property="og:description" content="Dine at the Western Bar & Cafe in Cloudcroft, NM. A beloved local gathering spot serving classic American fare and cold drinks in the Sacramento Mountains.">
+    <meta property="og:url" content="https://discovercloudcroft.com/western-bar.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Western Bar & Cafe | Discover Cloudcroft beta">
+    <meta name="twitter:description" content="Dine at the Western Bar & Cafe in Cloudcroft, NM. A beloved local gathering spot serving classic American fare and cold drinks.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@700&family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ::selection { background: var(--golden-hour); color: var(--midnight); }
+
+        *:focus-visible { outline: 2px solid var(--golden-hour); outline-offset: 2px; }
+
+        @keyframes pageIn { from { opacity: 0; } to { opacity: 1; } }
+
+        :root {
+            --midnight: #0B1D3A;
+            --summit: #1A3A5C;
+            --alpine: #2E6B8A;
+            --golden-hour: #E8A838;
+            --ember: #D4553A;
+            --pine-shadow: #1E3A2F;
+            --cloud-drift: #F0F4F8;
+            --snow-cap: #FFFFFF;
+            --granite: #6B7B8D;
+            --twilight: #4A2D6B;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            color: var(--midnight);
+            background: var(--snow-cap);
+            line-height: 1.6;
+            overflow-x: hidden;
+            animation: pageIn 0.5s ease;
+        }
+
+        /* Skip to content */
+        .skip-to-content {
+            position: absolute;
+            top: -100%;
+            left: 1rem;
+            background: var(--golden-hour);
+            color: var(--midnight);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0 0 8px 8px;
+            z-index: 10000;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            transition: top 0.3s;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
+        /* Header */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.4s ease, box-shadow 0.4s ease, padding 0.3s ease;
+            background: transparent;
+        }
+
+        .site-header.scrolled {
+            background: rgba(11, 29, 58, 0.97);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+            padding: 0.6rem 2rem;
+        }
+
+        .header-logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--snow-cap);
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .header-logo span {
+            color: var(--golden-hour);
+        }
+
+        .logo-beta {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            background: rgba(255,255,255,0.18);
+            padding: 2px 7px;
+            border-radius: 4px;
+            vertical-align: middle;
+            margin-left: 6px;
+            opacity: 0.75;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .header-nav a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--cloud-drift);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .header-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--golden-hour);
+            transition: width 0.3s ease;
+        }
+
+        .header-nav a:hover {
+            color: var(--golden-hour);
+        }
+
+        .header-nav a:hover::after {
+            width: 100%;
+        }
+
+        .header-phone {
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--golden-hour);
+            text-decoration: none;
+            border: 1px solid var(--golden-hour);
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .header-phone:hover {
+            background: var(--golden-hour);
+            color: var(--midnight);
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: var(--snow-cap);
+            transition: transform 0.3s, opacity 0.3s;
+            display: block;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(11, 29, 58, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 999;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .mobile-menu.open {
+            display: flex;
+            opacity: 1;
+        }
+
+        .mobile-menu a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--cloud-drift);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+
+        .mobile-menu a:hover {
+            color: var(--golden-hour);
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            height: 65vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--twilight) 100%);
+            background-size: cover;
+            background-position: center;
+            animation: kenBurns 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes kenBurns {
+            0% { transform: scale(1) translate(0, 0); }
+            100% { transform: scale(1.1) translate(-1%, -1%); }
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(74, 45, 107, 0.65));
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 0 2rem;
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(232, 168, 56, 0.2);
+            border: 1px solid rgba(232, 168, 56, 0.4);
+            padding: 0.5rem 1.25rem;
+            border-radius: 30px;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.2s forwards;
+        }
+
+        .hero-badge span {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            font-size: 0.8rem;
+            color: var(--golden-hour);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--snow-cap);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title .word {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: wordReveal 0.6s ease forwards;
+        }
+
+        .hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+        .hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+        .hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+        .hero-title .word:nth-child(4) { animation-delay: 0.8s; }
+
+        @keyframes wordReveal {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: clamp(1rem, 2.5vw, 1.35rem);
+            color: rgba(240, 244, 248, 0.9);
+            letter-spacing: 0.05em;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 1s forwards;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1.25rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 1.4s forwards;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn-primary {
+            display: inline-block;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            background: var(--golden-hour);
+            color: var(--midnight);
+            box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 44px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            background: transparent;
+            color: var(--golden-hour);
+            border: 2px solid var(--golden-hour);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s, color 0.3s;
+            min-height: 44px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--golden-hour);
+            color: var(--midnight);
+            transform: translateY(-2px);
+        }
+
+        /* Quick Info Bar */
+        .info-bar {
+            background: var(--midnight);
+            padding: 1.5rem 2rem;
+        }
+
+        .info-bar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .info-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--cloud-drift);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .info-bar-item a {
+            color: var(--cloud-drift);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .info-bar-item a:hover {
+            color: var(--golden-hour);
+        }
+
+        .info-bar-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(232, 168, 56, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        /* Sections */
+        .section {
+            padding: 6rem 2rem;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--alpine);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            color: var(--midnight);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .section-title-centered {
+            text-align: center;
+            padding-bottom: 1.25rem;
+        }
+
+        .section-title-centered::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--golden-hour);
+            margin: 0.75rem auto 0;
+            border-radius: 2px;
+        }
+
+        .section-description {
+            font-size: 1.05rem;
+            color: var(--granite);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text p {
+            font-size: 1.05rem;
+            color: var(--granite);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            background: var(--cloud-drift);
+            color: var(--summit);
+            border-radius: 25px;
+            border: 1px solid rgba(46, 107, 138, 0.2);
+        }
+
+        .about-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(11, 29, 58, 0.15);
+            background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(46, 107, 138, 0.1) 100%);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-image-placeholder {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .about-image-placeholder .icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-image-placeholder p {
+            color: var(--summit);
+            font-weight: 500;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            background: var(--cloud-drift);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-card {
+            background: var(--snow-cap);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--golden-hour);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .menu-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+        }
+
+        .menu-card:nth-child(2).visible { transition-delay: 0.1s; }
+        .menu-card:nth-child(3).visible { transition-delay: 0.15s; }
+        .menu-card:nth-child(4).visible { transition-delay: 0.2s; }
+        .menu-card:nth-child(5).visible { transition-delay: 0.25s; }
+        .menu-card:nth-child(6).visible { transition-delay: 0.3s; }
+
+        .menu-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .menu-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .menu-card h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--midnight);
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-card > p {
+            color: var(--granite);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .menu-items {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .menu-items li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed rgba(107, 123, 141, 0.2);
+            color: var(--midnight);
+            font-size: 0.95rem;
+        }
+
+        .menu-items li:last-child {
+            border-bottom: none;
+        }
+
+        /* Highlights Section */
+        .highlights-section {
+            background: var(--midnight);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlights-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.06;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px),
+                repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px);
+            pointer-events: none;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .highlight-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .highlight-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+        }
+
+        .highlight-card:nth-child(2).visible { transition-delay: 0.1s; }
+        .highlight-card:nth-child(3).visible { transition-delay: 0.2s; }
+
+        .highlight-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .highlight-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-card h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--golden-hour);
+            margin-bottom: 0.75rem;
+        }
+
+        .highlight-card p {
+            color: rgba(240, 244, 248, 0.8);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Visiting Info Section */
+        .visiting-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .visiting-card {
+            background: var(--snow-cap);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid var(--golden-hour);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .visiting-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+        }
+
+        .visiting-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .visiting-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .visiting-card h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--midnight);
+            margin-bottom: 0.5rem;
+        }
+
+        .visiting-card p {
+            color: var(--granite);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .visiting-card a {
+            color: var(--alpine);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .visiting-card a:hover {
+            color: var(--golden-hour);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .cta-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-container h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            color: var(--snow-cap);
+            margin-bottom: 1rem;
+        }
+
+        .cta-container p {
+            color: rgba(240, 244, 248, 0.85);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--midnight);
+            padding: 4rem 2rem 2rem;
+            position: relative;
+        }
+
+        .site-footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+            background-size: 300% 100%;
+            animation: gradientBorder 6s linear infinite;
+        }
+
+        @keyframes gradientBorder {
+            0% { background-position: 0% 0; }
+            100% { background-position: 300% 0; }
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--snow-cap);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-col p,
+        .footer-col a {
+            font-size: 0.9rem;
+            color: var(--granite);
+            line-height: 2;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: var(--golden-hour);
+        }
+
+        .footer-brand {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--snow-cap);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .footer-brand span {
+            color: var(--golden-hour);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-social a {
+            display: inline-flex;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid var(--granite);
+            align-items: center;
+            justify-content: center;
+            color: var(--granite);
+            font-size: 0.8rem;
+            transition: border-color 0.3s, color 0.3s;
+        }
+
+        .footer-social a:hover {
+            border-color: var(--golden-hour);
+            color: var(--golden-hour);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(107, 123, 141, 0.2);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--granite);
+        }
+
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--golden-hour);
+            color: var(--midnight);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 500;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(232, 168, 56, 0.4);
+        }
+
+        /* Fade in utility */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            html { scroll-behavior: auto; }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .header-nav { display: none; }
+            .header-phone { display: none; }
+            .hamburger { display: flex; }
+            .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+            .menu-grid { grid-template-columns: repeat(2, 1fr); }
+            .visiting-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .section { padding: 3.5rem 1.5rem; }
+            .highlights-grid { grid-template-columns: 1fr; }
+            .menu-grid { grid-template-columns: 1fr; }
+            .visiting-grid { grid-template-columns: 1fr; }
+            .info-bar-inner { gap: 1.5rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 375px) {
+            .hero-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header" role="banner" aria-label="Site header">
+        <a href="index.html" class="header-logo">DISCOVER <span>CLOUDCROFT</span> <span class="logo-beta">beta</span></a>
+        <nav class="header-nav" role="menubar" aria-label="Main navigation">
+            <a href="lodging.html" role="menuitem">Stay</a>
+            <a href="dining.html" role="menuitem">Eat</a>
+            <a href="activities.html" role="menuitem">Explore</a>
+            <a href="hiking-trails.html" role="menuitem">Trails</a>
+            <a href="events.html" role="menuitem">Events</a>
+            <a href="seasonal.html" role="menuitem">Seasons</a>
+            <a href="plan.html" role="menuitem">Plan</a>
+            <a href="contact.html" role="menuitem">Contact</a>
+        </nav>
+        <a href="tel:+15555555555" class="header-phone" aria-label="Call us at 555-555-5555">(555) 555-5555</a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+        <a href="lodging.html">Stay</a>
+        <a href="dining.html">Eat</a>
+        <a href="activities.html">Explore</a>
+        <a href="hiking-trails.html">Trails</a>
+        <a href="events.html">Events</a>
+        <a href="seasonal.html">Seasons</a>
+        <a href="plan.html">Plan</a>
+        <a href="contact.html">Contact</a>
+        <a href="tel:+15555555555">(555) 555-5555</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Western Bar & Cafe ambiance"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Dining</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Western </span>
+                <span class="word">Bar </span>
+                <span class="word">& </span>
+                <span class="word">Cafe</span>
+            </h1>
+            <p class="hero-subtitle">Classic American Comfort Since 1950</p>
+            <div class="hero-ctas">
+                <a href="#menu" class="btn-primary">View Menu</a>
+                <a href="#visit" class="btn-secondary">Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>304 Burro Ave, Cloudcroft, NM</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F550;</div>
+                <span>Thu&ndash;Mon: 11AM &ndash; Close &bull; Wed: Closed</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4DE;</div>
+                <a href="tel:5756822445">(575) 682-2445</a>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F373;</div>
+                <span>Breakfast All Day</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- About Section -->
+        <section class="section" id="about" aria-label="About Western Bar & Cafe">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">A Cloudcroft Tradition</h2>
+                        <p>
+                            Since 1950, Western Bar & Cafe has been the heart of Cloudcroft dining. This family-owned establishment has served generations of locals and visitors with the same commitment to quality and hospitality. From our famous all-day breakfast to hand-pattied burgers and fresh-cut fries, every dish is made with care.
+                        </p>
+                        <p>
+                            Whether you're fueling up for a mountain adventure or winding down after a day on the trails, our cozy cafe feels like home. Stop in for a hearty meal, a cup of fresh coffee, and the kind of warm, small-town atmosphere that keeps people coming back year after year.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F373; Breakfast All Day</span>
+                            <span class="about-feature">&#x1F354; Hand-Pattied Burgers</span>
+                            <span class="about-feature">&#x1F967; Homemade Pies</span>
+                            <span class="about-feature">&#x2615; Fresh Coffee</span>
+                            <span class="about-feature">&#x1F46A; Family Friendly</span>
+                            <span class="about-feature">&#x1F3D4;&#xFE0F; Mountain Views</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <div class="about-image-placeholder">
+                            <div class="icon">&#x1F354;</div>
+                            <p>Western Bar & Cafe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="section menu-section" id="menu" aria-label="Menu highlights">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Our Menu</span>
+                    <h2 class="section-title section-title-centered">Home-Style Favorites</h2>
+                    <p class="section-description">Made fresh daily with quality ingredients and served with a smile.</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F373;</div>
+                        <h3>Breakfast</h3>
+                        <p>Served all day because breakfast is always a good idea.</p>
+                        <ul class="menu-items">
+                            <li>Classic Eggs & Bacon</li>
+                            <li>Huevos Rancheros</li>
+                            <li>Biscuits & Gravy</li>
+                            <li>Pancake Stack</li>
+                            <li>Western Omelette</li>
+                            <li>Breakfast Burrito</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F354;</div>
+                        <h3>Burgers & Sandwiches</h3>
+                        <p>Hand-pattied burgers and hearty sandwiches made to order.</p>
+                        <ul class="menu-items">
+                            <li>Western Burger</li>
+                            <li>Green Chile Cheeseburger</li>
+                            <li>Mushroom Swiss Burger</li>
+                            <li>BLT</li>
+                            <li>Patty Melt</li>
+                            <li>Grilled Cheese</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F356;</div>
+                        <h3>Dinner Plates</h3>
+                        <p>Hearty entrees served with your choice of sides.</p>
+                        <ul class="menu-items">
+                            <li>Chicken Fried Steak</li>
+                            <li>Grilled Pork Chops</li>
+                            <li>Fried Catfish</li>
+                            <li>Meatloaf</li>
+                            <li>Liver & Onions</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F32E;</div>
+                        <h3>New Mexican</h3>
+                        <p>Local flavors with authentic New Mexico green chile.</p>
+                        <ul class="menu-items">
+                            <li>Enchiladas</li>
+                            <li>Chile Rellenos</li>
+                            <li>Tacos</li>
+                            <li>Tamales</li>
+                            <li>Sopapillas</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F957;</div>
+                        <h3>Sides & Salads</h3>
+                        <p>Fresh sides and garden salads to complete your meal.</p>
+                        <ul class="menu-items">
+                            <li>Fresh Cut Fries</li>
+                            <li>Onion Rings</li>
+                            <li>Mashed Potatoes</li>
+                            <li>Coleslaw</li>
+                            <li>House Salad</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F967;</div>
+                        <h3>Desserts & Drinks</h3>
+                        <p>Sweet endings and refreshing beverages.</p>
+                        <ul class="menu-items">
+                            <li>Homemade Pie</li>
+                            <li>Ice Cream</li>
+                            <li>Fresh Coffee</li>
+                            <li>Milkshakes</li>
+                            <li>Fresh Lemonade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="section highlights-section" aria-label="Why visit Western Bar">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: var(--golden-hour); letter-spacing: 3px;">Why We're Special</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--snow-cap);">A Cloudcroft Institution</h2>
+                    <p class="section-description" style="color: rgba(240,244,248,0.7);">What makes Western Bar & Cafe a must-visit when you're in the mountains.</p>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x2B50;</div>
+                        <h3>Since 1950</h3>
+                        <p>Over 70 years of serving the Cloudcroft community with quality food and genuine hospitality. A tradition that spans generations.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F3E0;</div>
+                        <h3>Family Owned</h3>
+                        <p>Three generations of family ownership ensuring the same quality and care in every meal. That personal touch makes all the difference.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x2764;&#xFE0F;</div>
+                        <h3>Local Favorite</h3>
+                        <p>Where locals meet for coffee, families gather for Sunday breakfast, and visitors become regulars. The heart of Cloudcroft dining.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit Section -->
+        <section class="section" id="visit" aria-label="Visiting information">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Visit</span>
+                    <h2 class="section-title section-title-centered">Visit Western Bar & Cafe</h2>
+                    <p class="section-description">Everything you need to know before stopping by for a meal.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h4>Location</h4>
+                        <p>304 Burro Ave, Cloudcroft, NM 88317. Right in the heart of the village, easy to find on the main strip.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h4>Hours</h4>
+                        <p>Thursday through Monday: 11AM to Close. Wednesday: Closed. <em>Call to confirm hours, as seasonal changes may apply.</em></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4DE;</div>
+                        <h4>Contact</h4>
+                        <p>Phone: <a href="tel:5756822445">(575) 682-2445</a>. Call ahead for large parties or to check daily specials.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F17F;&#xFE0F;</div>
+                        <h4>Parking</h4>
+                        <p>Free street parking available on Burro Avenue and nearby side streets. Easy access right from the main road through town.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Ready for Some Home Cooking?</h2>
+                <p>Stop by Western Bar & Cafe for a taste of Cloudcroft tradition. Hearty meals, friendly faces, and mountain-town charm since 1950.</p>
+                <div class="cta-buttons">
+                    <a href="tel:5756822445" class="btn-primary">Call Ahead</a>
+                    <a href="dining.html" class="btn-secondary">Explore More Dining</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="lodging.html">Lodging</a>
+                <a href="dining.html">Dining</a>
+                <a href="hiking-trails.html">Hiking Trails</a>
+                <a href="activities.html">Activities</a>
+                <a href="events.html">Events</a>
+                <a href="seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="about.html">About Cloudcroft</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script>
+        (function() {
+            // Header scroll
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 60) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }, { passive: true });
+
+            // Hamburger toggle
+            var hamburger = document.querySelector('.hamburger');
+            var mobileMenu = document.querySelector('.mobile-menu');
+            hamburger.addEventListener('click', function() {
+                var isOpen = mobileMenu.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+
+            // Close mobile menu on link click
+            mobileMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Intersection Observer for fade-in elements
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+
+            // Back to top button
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }, { passive: true });
+
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+</body>
+</html>
