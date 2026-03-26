@@ -711,6 +711,37 @@
             opacity: 0.4;
         }
 
+        /* ========== LODGING DETAIL GRID ========== */
+        .lodging-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.4rem;
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+            background: var(--cloud-drift);
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .lodging-detail {
+            color: var(--granite);
+            line-height: 1.5;
+        }
+
+        .lodging-detail strong {
+            color: var(--midnight);
+        }
+
+        .lodging-detail a {
+            color: var(--alpine);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .lodging-detail a:hover {
+            color: var(--golden-hour);
+        }
+
         /* ========== CTA SECTION ========== */
         .cta-section {
             background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--midnight) 100%);
@@ -1126,30 +1157,47 @@
                 <article class="lodging-card">
                     <div class="lodging-card-image">
                         <img src="media/lodging-grand-cloudcroft-hotel.jpg"
-                            alt="The Grand Cloudcroft Hotel — historic mountain hotel with fine dining" loading="lazy"
+                            alt="The Grand Cloudcroft Hotel — Cloudcroft's newest hotel with 50 all-king rooms on James Canyon Highway" loading="lazy"
                             width="800" height="500">
                         <span class="lodging-card-type">New Hotel</span>
                         <span class="lodging-card-rating"
-                            aria-label="4 out of 5 stars">&#9733;&#9733;&#9733;&#9733;</span>
+                            aria-label="4.7 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                     </div>
                     <div class="lodging-card-body">
                         <h3>The Grand Cloudcroft Hotel</h3>
-                        <p>Step into history at this beautifully restored mountain hotel with fine dining and
-                            breathtaking views.</p>
+                        <p>Cloudcroft's newest hotel, opened in 2023, featuring 50 rooms with all king-sized beds,
+                            continental breakfast, and wood-accented interiors honoring Cloudcroft's logging heritage.
+                            Relax on the second-floor Aspen deck around the hot rock fire pit overlooking James Canyon Highway.</p>
+                        <div class="lodging-detail-grid">
+                            <div class="lodging-detail"><strong>Address:</strong> 1207 James Canyon Hwy, Cloudcroft, NM 88317</div>
+                            <div class="lodging-detail"><strong>Phone:</strong> <a href="tel:+15756012202">(575) 601-2202</a></div>
+                            <div class="lodging-detail"><strong>Check-in:</strong> After 4:00 PM &bull; <strong>Check-out:</strong> Before 11:00 AM</div>
+                            <div class="lodging-detail"><strong>Rooms:</strong> King, Two King, King with Seating Area, King with Loveseat, Connecting Rooms</div>
+                        </div>
                         <div class="lodging-amenities" aria-label="Amenities">
                             <span class="amenity-tag"><span class="amenity-icon" aria-hidden="true">&#8226;</span>
-                                WiFi</span>
+                                Free WiFi</span>
                             <span class="amenity-tag"><span class="amenity-icon" aria-hidden="true">&#8226;</span>
-                                Restaurant</span>
+                                Continental Breakfast</span>
                             <span class="amenity-tag"><span class="amenity-icon" aria-hidden="true">&#8226;</span>
-                                Bar</span>
+                                Fire Pit Deck</span>
                             <span class="amenity-tag"><span class="amenity-icon" aria-hidden="true">&#8226;</span>
-                                Mountain Views</span>
+                                43" HD TV</span>
+                            <span class="amenity-tag"><span class="amenity-icon" aria-hidden="true">&#8226;</span>
+                                Mini Fridge</span>
+                            <span class="amenity-tag"><span class="amenity-icon" aria-hidden="true">&#8226;</span>
+                                Coffee Station</span>
+                            <span class="amenity-tag"><span class="amenity-icon" aria-hidden="true">&#8226;</span>
+                                Underground Parking</span>
+                            <span class="amenity-tag"><span class="amenity-icon" aria-hidden="true">&#8226;</span>
+                                Pet-Friendly Rooms</span>
+                            <span class="amenity-tag"><span class="amenity-icon" aria-hidden="true">&#8226;</span>
+                                ADA Accessible</span>
                         </div>
                         <div class="lodging-card-ctas">
-                            <a href="#todo-grand-booking" class="btn-primary btn-book">Book Now</a>
-                            <a href="#todo-grand-details" class="btn-primary">View Details</a>
-                            <a href="https://www.google.com/maps/search/Grand+Cloudcroft+Hotel+NM" class="btn-secondary"
+                            <a href="https://www.grandcloudcroft.com" class="btn-primary btn-book" target="_blank" rel="noopener noreferrer">Book Now</a>
+                            <a href="https://www.grandcloudcroft.com/rooms.html" class="btn-primary" target="_blank" rel="noopener noreferrer">View Rooms</a>
+                            <a href="https://www.google.com/maps/place/1207+James+Canyon+Hwy,+Cloudcroft,+NM+88317" class="btn-secondary"
                                 target="_blank" rel="noopener noreferrer">Get Directions</a>
                         </div>
                     </div>
@@ -1352,7 +1400,7 @@
                             <td><span class="check" aria-label="Yes">&#10003;</span></td>
                             <td><span class="check" aria-label="Yes">&#10003;</span></td>
                             <td><span class="dash" aria-label="No">&mdash;</span></td>
-                            <td><span class="dash" aria-label="No">&mdash;</span></td>
+                            <td><span class="check" aria-label="Yes">&#10003;</span></td>
                             <td><span class="check" aria-label="Yes">&#10003;</span></td>
                             <td><span class="dash" aria-label="No">&mdash;</span></td>
                         </tr>
