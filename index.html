@@ -2044,12 +2044,11 @@
       <div class="newsletter-content fade-in-section">
         <h2>Stay in the Loop</h2>
         <p>Get seasonal guides, event alerts, and insider tips for your next mountain escape.</p>
-        <!-- Note: This form needs real integration. Currently uses mailto as a placeholder. -->
-        <form class="newsletter-form" action="mailto:info@discovercloudcroft.com" method="post" enctype="text/plain">
-          <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
-          <button type="submit">Subscribe</button>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" name="email" id="newsletter-email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" id="newsletter-btn">Subscribe</button>
         </form>
-        <p class="newsletter-note">No spam. Unsubscribe anytime. Form integration needed for production.</p>
+        <p class="newsletter-note" id="newsletter-msg">No spam. Unsubscribe anytime.</p>
       </div>
     </section>
 
@@ -2340,6 +2339,39 @@
               reelsTrack.style.animation = '';
             }, 50);
           }, 500);
+        });
+      }
+
+      // ===== NEWSLETTER FORM → GOOGLE SHEETS =====
+      var nlForm = document.getElementById('newsletter-form');
+      var nlBtn = document.getElementById('newsletter-btn');
+      var nlMsg = document.getElementById('newsletter-msg');
+
+      if (nlForm) {
+        nlForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var email = document.getElementById('newsletter-email').value.trim();
+          if (!email) return;
+
+          nlBtn.disabled = true;
+          nlBtn.textContent = 'Sending...';
+
+          fetch('https://script.google.com/macros/s/AKfycbz8nhsSvcqR-7fmk21RCrQnH7zwK62PdSd-JssiPFWCuPmSbrOlSt4-6ZJF4ynvy07D/exec', {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: 'email=' + encodeURIComponent(email)
+          }).then(function() {
+            nlMsg.textContent = 'You\'re subscribed! Welcome to the mountain.';
+            nlMsg.style.color = '#4ade80';
+            nlForm.reset();
+            nlBtn.textContent = 'Subscribed';
+          }).catch(function() {
+            nlMsg.textContent = 'Something went wrong. Please try again.';
+            nlMsg.style.color = '#f87171';
+            nlBtn.disabled = false;
+            nlBtn.textContent = 'Subscribe';
+          });
         });
       }
 
