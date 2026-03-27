@@ -329,8 +329,9 @@
         <div class="reassurance">No spam. Just mountain news.</div>
     </div>
 
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
     <script>
-        // REPLACE THIS with your Google Apps Script web app URL (see setup instructions)
         var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz8nhsSvcqR-7fmk21RCrQnH7zwK62PdSd-JssiPFWCuPmSbrOlSt4-6ZJF4ynvy07D/exec';
 
         document.getElementById('signupForm').addEventListener('submit', function (e) {
@@ -345,20 +346,26 @@
             btn.disabled = true;
             btn.textContent = 'Sending...';
 
-            fetch(GOOGLE_SCRIPT_URL, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: 'email=' + encodeURIComponent(email)
-            })
-                .then(function () {
-                    container.classList.add('success');
-                })
-                .catch(function () {
-                    container.classList.add('error');
-                    btn.disabled = false;
-                    btn.textContent = 'Notify Me';
-                });
+            // Create a temporary form that submits to a hidden iframe
+            var tempForm = document.createElement('form');
+            tempForm.method = 'POST';
+            tempForm.action = GOOGLE_SCRIPT_URL;
+            tempForm.target = 'hidden_iframe';
+            tempForm.style.display = 'none';
+
+            var input = document.createElement('input');
+            input.name = 'email';
+            input.value = email;
+            tempForm.appendChild(input);
+
+            document.body.appendChild(tempForm);
+            tempForm.submit();
+            document.body.removeChild(tempForm);
+
+            // Show success after a short delay to allow submission
+            setTimeout(function() {
+                container.classList.add('success');
+            }, 1000);
         });
     </script>
 </body>
