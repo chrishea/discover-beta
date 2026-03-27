@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Cloudcroft | Coming Soon</title>
-    <meta name="description" content="Cloudcroft, New Mexico — a new guide to everything worth exploring at 9,000 feet. Sign up to be the first to know when we launch.">
+    <meta name="description"
+        content="Cloudcroft, New Mexico — a new guide to everything worth exploring at 9,000 feet. Sign up to be the first to know when we launch.">
     <link rel="canonical" href="https://discovercloudcroft.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Sans:wght@500;700&display=swap"
+        rel="stylesheet">
     <style>
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -73,11 +79,11 @@
                 linear-gradient(to top, rgba(45, 80, 22, 0.06) 0%, transparent 100%);
             mask-image:
                 /* Tree 1 */
-                linear-gradient(to right, transparent 5%, transparent 7%, rgba(0,0,0,1) 7.5%, rgba(0,0,0,1) 8.5%, transparent 9%, transparent 100%),
-                linear-gradient(160deg, transparent 45%, rgba(0,0,0,1) 46%, rgba(0,0,0,1) 54%, transparent 55%),
+                linear-gradient(to right, transparent 5%, transparent 7%, rgba(0, 0, 0, 1) 7.5%, rgba(0, 0, 0, 1) 8.5%, transparent 9%, transparent 100%),
+                linear-gradient(160deg, transparent 45%, rgba(0, 0, 0, 1) 46%, rgba(0, 0, 0, 1) 54%, transparent 55%),
                 /* Tree 2 */
-                linear-gradient(to right, transparent 88%, rgba(0,0,0,1) 88.5%, rgba(0,0,0,1) 90%, transparent 90.5%),
-                linear-gradient(160deg, transparent 40%, rgba(0,0,0,1) 41%, rgba(0,0,0,1) 50%, transparent 51%);
+                linear-gradient(to right, transparent 88%, rgba(0, 0, 0, 1) 88.5%, rgba(0, 0, 0, 1) 90%, transparent 90.5%),
+                linear-gradient(160deg, transparent 40%, rgba(0, 0, 0, 1) 41%, rgba(0, 0, 0, 1) 50%, transparent 51%);
             mask-composite: add;
             -webkit-mask-composite: source-over;
             pointer-events: none;
@@ -99,6 +105,7 @@
                 opacity: 0;
                 transform: translateY(16px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -219,8 +226,13 @@
         }
 
         @keyframes scaleIn {
-            from { transform: scale(0); }
-            to { transform: scale(1); }
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
         }
 
         .success-message .check svg {
@@ -246,7 +258,7 @@
         }
 
         .form-container.success .form-row,
-        .form-container.success + .reassurance {
+        .form-container.success+.reassurance {
             display: none;
         }
 
@@ -290,20 +302,25 @@
         }
     </style>
 </head>
+
 <body>
     <div class="page">
         <div class="wordmark">DiscoverCloudcroft.com</div>
         <h1>Something's coming to the mountains.</h1>
-        <p class="subhead">Cloudcroft, New Mexico &mdash; elevation 9,000 ft. A new guide to everything worth exploring. Be the first to know when we launch.</p>
+        <p class="subhead">Cloudcroft, New Mexico &mdash; elevation 9,000 ft. A new guide to everything worth exploring.
+            Be the first to know when we launch.</p>
         <div class="form-container" id="formContainer">
             <form class="form-row" id="signupForm">
-                <input type="email" id="emailInput" placeholder="Your email address" required autocomplete="email" aria-label="Email address">
+                <input type="email" id="emailInput" placeholder="Your email address" required autocomplete="email"
+                    aria-label="Email address">
                 <button type="submit" id="submitBtn">Notify Me</button>
             </form>
             <div class="error-message" id="errorMessage">Something went wrong. Please try again.</div>
             <div class="success-message">
                 <div class="check">
-                    <svg viewBox="0 0 24 24"><polyline points="6 12 10 16 18 8"></polyline></svg>
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="6 12 10 16 18 8"></polyline>
+                    </svg>
                 </div>
                 <h2>You're on the list!</h2>
                 <p>We'll let you know when Discover Cloudcroft goes live.</p>
@@ -314,9 +331,9 @@
 
     <script>
         // REPLACE THIS with your Google Apps Script web app URL (see setup instructions)
-        var GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
+        var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz8nhsSvcqR-7fmk21RCrQnH7zwK62PdSd-JssiPFWCuPmSbrOlSt4-6ZJF4ynvy07D/exec';
 
-        document.getElementById('signupForm').addEventListener('submit', function(e) {
+        document.getElementById('signupForm').addEventListener('submit', function (e) {
             e.preventDefault();
             var email = document.getElementById('emailInput').value;
             var btn = document.getElementById('submitBtn');
@@ -334,15 +351,16 @@
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: 'email=' + encodeURIComponent(email)
             })
-            .then(function() {
-                container.classList.add('success');
-            })
-            .catch(function() {
-                container.classList.add('error');
-                btn.disabled = false;
-                btn.textContent = 'Notify Me';
-            });
+                .then(function () {
+                    container.classList.add('success');
+                })
+                .catch(function () {
+                    container.classList.add('error');
+                    btn.disabled = false;
+                    btn.textContent = 'Notify Me';
+                });
         });
     </script>
 </body>
+
 </html>
