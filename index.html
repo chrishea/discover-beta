@@ -337,8 +337,10 @@
     <div class="page">
         <div class="hero-carousel" id="heroCarousel">
             <img src="media/hero-elevate-your-fun.jpg" alt="Elevate Your Fun — Cloudcroft, New Mexico" class="active">
-            <img src="media/hero-elevate-adventure-vista.jpg" alt="Elevate Your Adventure — mountain vista view from Cloudcroft">
-            <img src="media/hero-elevate-adventure-forest.jpg" alt="Elevate Your Adventure — pine forest and bridge in Cloudcroft">
+            <img src="media/hero-elevate-adventure-vista.jpg"
+                alt="Elevate Your Adventure — mountain vista view from Cloudcroft">
+            <img src="media/hero-elevate-adventure-forest.jpg"
+                alt="Elevate Your Adventure — pine forest and bridge in Cloudcroft">
             <img src="media/hero-go-clubbing.jpg" alt="Go Clubbing at a cool 9,000 ft — Cloudcroft golf course">
             <img src="media/hero-saddle-up.jpg" alt="Saddle Up Your Fun — horseback riding in Cloudcroft">
         </div>
@@ -364,7 +366,7 @@
                 <p>We'll let you know when <b>Discover Cloudcroft</b> goes live.</p>
             </div>
         </div>
-        <div class="reassurance">No spam. Just mountain news.</div>
+        <div class="reassurance">No spam. Just advice from locals.</div>
     </div>
 
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
@@ -407,10 +409,10 @@
         });
 
         // Hero image carousel
-        (function() {
+        (function () {
             var images = document.querySelectorAll('#heroCarousel img');
             var current = 0;
-            setInterval(function() {
+            setInterval(function () {
                 images[current].classList.remove('active');
                 current = (current + 1) % images.length;
                 images[current].classList.add('active');
