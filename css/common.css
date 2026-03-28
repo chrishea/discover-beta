@@ -6,16 +6,27 @@
 }
 
 :root {
-  --midnight: #0B1D3A;
-  --summit: #1A3A5C;
-  --alpine: #2E6B8A;
-  --golden-hour: #E8A838;
-  --ember: #D4553A;
-  --pine-shadow: #1E3A2F;
-  --cloud-drift: #F0F4F8;
+  --pine: #2D5016;
+  --pine-light: #3A6B1E;
+  --cream: #FAF8F3;
+  --cream-dark: #F0EDE5;
+  --gold: #C8943E;
+  --gold-hover: #B5832E;
+  --charcoal: #2C2C2C;
+  --charcoal-light: #555555;
+  --charcoal-muted: #888888;
+
+  /* Legacy aliases so existing var() references still resolve */
+  --midnight: #2D5016;
+  --summit: #3A6B1E;
+  --alpine: #3A6B1E;
+  --golden-hour: #C8943E;
+  --ember: #B5832E;
+  --pine-shadow: #2D5016;
+  --cloud-drift: #F0EDE5;
   --snow-cap: #FFFFFF;
-  --granite: #6B7B8D;
-  --twilight: #4A2D6B;
+  --granite: #555555;
+  --twilight: #2D5016;
 }
 
 html {
@@ -23,15 +34,15 @@ html {
 }
 
 ::selection {
-  background: var(--golden-hour);
-  color: var(--midnight);
+  background: var(--gold);
+  color: white;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: var(--midnight);
-  background: var(--snow-cap);
+  color: var(--charcoal);
+  background: var(--cream);
   line-height: 1.6;
   overflow-x: hidden;
   animation: pageLoad 0.5s cubic-bezier(0, 0, 0.2, 1) both;
@@ -49,7 +60,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--golden-hour);
+  outline: 2px solid var(--gold);
   outline-offset: 2px;
 }
 
@@ -68,11 +79,11 @@ img {
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--golden-hour);
-  color: var(--midnight);
+  background: var(--gold);
+  color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 0 0 8px 8px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   z-index: 10000;
   transition: top 0.3s ease;
@@ -82,7 +93,7 @@ img {
   top: 0;
 }
 
-/* ===== HEADER (supports both .logo/.header-logo and .main-nav/.header-nav patterns) ===== */
+/* ===== HEADER ===== */
 .site-header {
   position: fixed;
   top: 0;
@@ -95,9 +106,9 @@ img {
 }
 
 .site-header.scrolled {
-  background: rgba(11, 29, 58, 0.97);
+  background: rgba(250, 248, 243, 0.97);
   padding: 0.6rem 2rem;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
 .header-inner {
@@ -108,13 +119,13 @@ img {
   justify-content: space-between;
 }
 
-/* Logo styles - both naming patterns */
+/* Logo */
 .logo,
 .header-logo {
-  font-family: 'Space Grotesk', sans-serif;
-  color: var(--snow-cap);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--pine);
   font-size: 1.4rem;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   display: flex;
   align-items: baseline;
   gap: 0.35rem;
@@ -134,7 +145,7 @@ img {
 }
 
 .header-logo span {
-  color: var(--golden-hour);
+  color: var(--gold);
 }
 
 .logo-beta {
@@ -142,7 +153,7 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(45, 80, 22, 0.12);
   padding: 2px 7px;
   border-radius: 4px;
   vertical-align: middle;
@@ -150,7 +161,7 @@ img {
   opacity: 0.75;
 }
 
-/* Nav styles - both naming patterns */
+/* Nav */
 .main-nav,
 .header-nav {
   display: flex;
@@ -160,10 +171,10 @@ img {
 
 .main-nav a,
 .header-nav a {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
-  color: var(--snow-cap);
+  color: var(--charcoal);
   opacity: 0.85;
   transition: opacity 0.3s ease, color 0.3s ease;
   letter-spacing: 0.03em;
@@ -177,7 +188,7 @@ img {
 .header-nav a:hover,
 .header-nav a:focus {
   opacity: 1;
-  color: var(--golden-hour);
+  color: var(--pine);
 }
 
 .header-nav a::after {
@@ -187,7 +198,7 @@ img {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--golden-hour);
+  background: var(--gold);
   transition: width 0.3s ease;
 }
 
@@ -195,17 +206,17 @@ img {
   width: 100%;
 }
 
-/* Phone link styles - all naming patterns */
+/* Phone link */
 .phone-link,
 .nav-phone,
 .header-phone {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
-  color: var(--golden-hour);
+  color: var(--pine);
   opacity: 0.9;
   text-decoration: none;
   transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
@@ -222,18 +233,18 @@ img {
 .header-phone svg {
   width: 16px;
   height: 16px;
-  fill: var(--golden-hour);
+  fill: var(--pine);
 }
 
 .header-phone {
-  border: 1px solid var(--golden-hour);
+  border: 1px solid var(--pine);
   padding: 0.4rem 1rem;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .header-phone:hover {
-  background: var(--golden-hour);
-  color: var(--midnight);
+  background: var(--pine);
+  color: white;
 }
 
 /* ===== HAMBURGER ===== */
@@ -252,7 +263,7 @@ img {
   display: block;
   width: 26px;
   height: 2px;
-  background: var(--snow-cap);
+  background: var(--charcoal);
   border-radius: 2px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -269,7 +280,7 @@ img {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* ===== MOBILE NAV (supports both patterns) ===== */
+/* ===== MOBILE NAV ===== */
 .mobile-nav-overlay,
 .mobile-menu,
 .mobile-overlay {
@@ -279,7 +290,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(11, 29, 58, 0.95);
+  background: rgba(250, 248, 243, 0.97);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   z-index: 1050;
@@ -301,22 +312,22 @@ img {
 .mobile-nav-overlay a,
 .mobile-menu a,
 .mobile-overlay a {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
-  color: var(--snow-cap);
+  color: var(--charcoal);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--cream-dark);
   transition: color 0.3s ease;
 }
 
 .mobile-nav-overlay a:hover,
 .mobile-menu a:hover,
 .mobile-overlay a:hover {
-  color: var(--golden-hour);
+  color: var(--pine);
 }
 
 .mobile-nav-backdrop {
@@ -326,7 +337,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.15);
   z-index: 1040;
 }
 
@@ -363,7 +374,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(74, 45, 107, 0.65));
+  background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
 
 .hero-content {
@@ -376,11 +387,11 @@ img {
 
 .hero-title,
 .hero-headline {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
   font-size: clamp(2.5rem, 5vw, 4rem);
-  color: var(--snow-cap);
-  line-height: 1.2;
+  color: white;
+  line-height: 1.15;
   margin-bottom: 1rem;
 }
 
@@ -388,7 +399,7 @@ img {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: clamp(1rem, 2vw, 1.35rem);
-  color: rgba(240, 244, 248, 0.9);
+  color: rgba(255, 255, 255, 0.92);
   letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
 }
@@ -424,40 +435,42 @@ img {
 /* ===== BUTTONS ===== */
 .btn-primary {
   display: inline-block;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 0.9rem 2.25rem;
-  background: var(--golden-hour);
-  color: var(--midnight);
-  border: 2px solid var(--golden-hour);
-  border-radius: 8px;
+  background: var(--gold);
+  color: white;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s, color 0.3s;
-  box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+  box-shadow: 0 4px 12px rgba(200, 148, 62, 0.3);
   min-height: 44px;
   text-decoration: none;
 }
 
 .btn-primary:hover {
+  background: var(--gold-hover);
+  border-color: var(--gold-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
+  box-shadow: 0 6px 20px rgba(200, 148, 62, 0.4);
 }
 
 .btn-outline {
   display: inline-block;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 0.9rem 2.25rem;
   background: transparent;
-  color: var(--snow-cap);
-  border: 2px solid var(--golden-hour);
-  border-radius: 8px;
+  color: white;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 44px;
@@ -465,8 +478,8 @@ img {
 }
 
 .btn-outline:hover {
-  background: var(--golden-hour);
-  color: var(--midnight);
+  background: var(--gold);
+  color: white;
   transform: translateY(-2px);
 }
 
@@ -487,10 +500,10 @@ img {
 }
 
 .section-header h2 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
-  color: var(--midnight);
+  color: var(--charcoal);
   line-height: 1.2;
   margin-bottom: 0.75rem;
   position: relative;
@@ -502,7 +515,7 @@ img {
   display: block;
   width: 48px;
   height: 3px;
-  background: var(--golden-hour);
+  background: var(--gold);
   border-radius: 2px;
   margin: 0.75rem auto 0;
 }
@@ -510,25 +523,25 @@ img {
 .section-header p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: var(--granite);
+  color: var(--charcoal-light);
   font-size: 1.05rem;
 }
 
 .section-label {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: var(--alpine);
+  color: var(--pine-light);
   margin-bottom: 0.75rem;
 }
 
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
-  color: var(--midnight);
+  color: var(--charcoal);
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -543,21 +556,21 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: var(--golden-hour);
+  background: var(--gold);
   margin: 0.75rem auto 0;
   border-radius: 2px;
 }
 
 /* ===== FOOTER ===== */
 .site-footer {
-  background: var(--midnight);
+  background: var(--cream-dark);
   padding-top: 4px;
   position: relative;
 }
 
 .footer-gradient-border {
   height: 4px;
-  background: linear-gradient(90deg, var(--alpine), var(--golden-hour), var(--ember), var(--alpine));
+  background: linear-gradient(90deg, var(--pine-light), var(--gold), var(--pine), var(--pine-light));
   background-size: 300% 100%;
   animation: footerBorderMorph 6s ease infinite;
 }
@@ -590,7 +603,7 @@ img {
 .footer-brand p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: var(--granite);
+  color: var(--charcoal-light);
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
@@ -607,7 +620,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(45, 80, 22, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -616,8 +629,8 @@ img {
 
 .social-icons a:hover,
 .footer-social a:hover {
-  background: var(--alpine);
-  border-color: var(--alpine);
+  background: var(--pine);
+  border-color: var(--pine);
   transform: translateY(-2px);
 }
 
@@ -625,14 +638,19 @@ img {
 .footer-social a svg {
   width: 18px;
   height: 18px;
-  fill: var(--cloud-drift);
+  fill: var(--charcoal-light);
+}
+
+.social-icons a:hover svg,
+.footer-social a:hover svg {
+  fill: white;
 }
 
 .footer-col h4 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
-  color: var(--snow-cap);
+  color: var(--charcoal);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 1.25rem;
@@ -648,18 +666,18 @@ img {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
-  color: var(--granite);
+  color: var(--charcoal-light);
   transition: color 0.3s ease;
   text-decoration: none;
 }
 
 .footer-col ul li a:hover,
 .footer-col a:hover {
-  color: var(--golden-hour);
+  color: var(--pine);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(45, 80, 22, 0.1);
   padding-top: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -672,7 +690,7 @@ img {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
-  color: var(--granite);
+  color: var(--charcoal-muted);
 }
 
 .footer-bottom-links {
@@ -684,12 +702,12 @@ img {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
-  color: var(--granite);
+  color: var(--charcoal-muted);
   transition: color 0.3s ease;
 }
 
 .footer-bottom-links a:hover {
-  color: var(--golden-hour);
+  color: var(--pine);
 }
 
 /* ===== BACK TO TOP ===== */
@@ -700,8 +718,8 @@ img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--golden-hour);
-  color: var(--midnight);
+  background: var(--gold);
+  color: white;
   border: none;
   cursor: pointer;
   display: flex;
@@ -714,7 +732,7 @@ img {
   transform: translateY(20px);
   transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease;
   z-index: 800;
-  box-shadow: 0 4px 15px rgba(232, 168, 56, 0.3);
+  box-shadow: 0 4px 12px rgba(200, 148, 62, 0.3);
 }
 
 .back-to-top.visible {
@@ -724,25 +742,25 @@ img {
 }
 
 .back-to-top:hover {
-  box-shadow: 0 8px 25px rgba(232, 168, 56, 0.5);
+  box-shadow: 0 8px 20px rgba(200, 148, 62, 0.4);
   transform: translateY(-3px);
 }
 
-/* ===== STAT ITEMS (shared pattern) ===== */
+/* ===== STAT ITEMS ===== */
 .stat-number {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-variant-numeric: tabular-nums;
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--golden-hour);
+  color: var(--gold);
   display: block;
 }
 
 .stat-label {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
-  color: var(--cloud-drift);
+  color: var(--charcoal-light);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 0.5rem;

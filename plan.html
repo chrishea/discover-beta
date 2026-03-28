@@ -20,7 +20,9 @@
     <meta name="twitter:title" content="Plan Your Cloudcroft Escape">
     <meta name="twitter:description" content="Everything you need for your mountain getaway at 8,676 feet.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/Index-2.webp"><link href="css/fonts.css" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/common.css">
     <style>
 .hero {
@@ -47,7 +49,7 @@ animation: kenBurns 20s ease-in-out infinite alternate;
 .hero-overlay {
 position: absolute;
 inset: 0;
-background: linear-gradient(135deg, rgba(232, 168, 56, 0.25), rgba(11, 29, 58, 0.75));
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
 .hero-content {
 position: relative;
@@ -57,8 +59,8 @@ padding: 0 2rem;
 max-width: 900px;
 }
 .hero-title {
-font-family: 'Playfair Display', serif;
-font-weight: 900;
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
 font-size: clamp(2.5rem, 5vw, 4rem);
 color: var(--snow-cap);
 line-height: 1.2;
@@ -93,7 +95,7 @@ background: var(--snow-cap);
 border-radius: 12px;
 padding: 2.25rem 2rem;
 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-border: 1px solid rgba(11, 29, 58, 0.06);
+border: 1px solid rgba(45, 80, 22, 0.06);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 opacity: 0;
 transform: translateY(40px);
@@ -122,13 +124,13 @@ height: 2rem;
 border-radius: 50%;
 background: var(--golden-hour);
 color: var(--midnight);
-font-family: 'Space Grotesk', sans-serif; font-variant-numeric: tabular-nums;
+font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
 font-weight: 700;
 font-size: 0.85rem;
 display: flex;
 align-items: center;
 justify-content: center;
-box-shadow: 0 2px 8px rgba(232,168,56,0.3);
+box-shadow: 0 2px 8px rgba(200,148,62,0.3);
 z-index: 2;
 }
 .plan-card--emergency {
@@ -140,7 +142,7 @@ margin-bottom: 1rem;
 display: block;
 }
 .plan-card h3 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.25rem;
 color: var(--midnight);
@@ -173,7 +175,7 @@ margin: 0.75rem 0;
 font-size: 0.92rem;
 color: var(--granite);
 padding: 0.5rem 0 0.5rem 1.5rem;
-border-bottom: 1px solid rgba(11, 29, 58, 0.06);
+border-bottom: 1px solid rgba(45, 80, 22, 0.06);
 position: relative;
 }
 .drive-list li::before {
@@ -183,7 +185,7 @@ left: 0.25rem;
 top: 0;
 bottom: 0;
 width: 2px;
-background: linear-gradient(to bottom, var(--golden-hour), rgba(232,168,56,0.2));
+background: linear-gradient(to bottom, var(--golden-hour), rgba(200,148,62,0.2));
 }
 .drive-list li::after {
 content: '';
@@ -221,7 +223,7 @@ padding: 0.5rem 0.75rem;
 text-align: center;
 }
 .weather-item .season-name {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.75rem;
 text-transform: uppercase;
@@ -230,7 +232,7 @@ color: var(--alpine);
 display: block;
 }
 .weather-item .season-temp {
-font-family: 'Space Grotesk', sans-serif; font-variant-numeric: tabular-nums;
+font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
 font-weight: 700;
 font-size: 0.85rem;
 color: var(--midnight);
@@ -292,7 +294,7 @@ scroll-snap-type: x mandatory;
 height: 6px;
 }
 .nearby-scroll::-webkit-scrollbar-track {
-background: rgba(11, 29, 58, 0.05);
+background: rgba(45, 80, 22, 0.05);
 border-radius: 3px;
 }
 .nearby-scroll::-webkit-scrollbar-thumb {
@@ -313,14 +315,14 @@ transform: translateY(-4px);
 box-shadow: 0 12px 32px rgba(0,0,0,0.15);
 }
 .nearby-card h3 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.15rem;
 color: var(--midnight);
 margin-bottom: 0.5rem;
 }
 .nearby-card .distance {
-font-family: 'Space Grotesk', sans-serif; font-variant-numeric: tabular-nums;
+font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
 font-weight: 700;
 font-size: 0.8rem;
 color: var(--golden-hour);
@@ -330,7 +332,7 @@ margin-bottom: 0.75rem;
 display: block;
 }
 .nearby-card a {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 color: var(--alpine);
@@ -343,20 +345,20 @@ transition: color 0.3s;
 color: var(--golden-hour);
 }
 .cta-section {
-background: var(--midnight);
+background: var(--cream-dark);
 padding: 6rem 2rem;
 text-align: center;
 }
 .cta-section h2 {
-font-family: 'Playfair Display', serif;
-font-weight: 900;
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
 font-size: clamp(2rem, 4vw, 3rem);
-color: var(--snow-cap);
+color: var(--pine);
 margin-bottom: 0.75rem;
 }
 .cta-section p {
 font-size: 1.1rem;
-color: var(--granite);
+color: var(--charcoal-light);
 margin-bottom: 2rem;
 }
 .cta-group {
@@ -367,7 +369,7 @@ flex-wrap: wrap;
 }
 .btn-primary {
 display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 text-transform: uppercase;
@@ -377,23 +379,23 @@ border-radius: 8px;
 text-decoration: none;
 background: var(--golden-hour);
 color: var(--midnight);
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 animation: ctaPulse 2.5s ease-in-out infinite;
 min-height: 44px;
 }
 @keyframes ctaPulse {
-0%, 100% { box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4); }
-50% { box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4), 0 0 0 12px rgba(232, 168, 56, 0); }
+0%, 100% { box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4); }
+50% { box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4), 0 0 0 12px rgba(200, 148, 62, 0); }
 }
 .btn-primary:hover {
 transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
+box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
 animation: none;
 }
 .btn-secondary {
 display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 text-transform: uppercase;
@@ -402,14 +404,14 @@ padding: 1rem 2.5rem;
 border-radius: 8px;
 text-decoration: none;
 background: transparent;
-color: var(--golden-hour);
-border: 2px solid var(--golden-hour);
+color: var(--pine);
+border: 2px solid var(--pine);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 min-height: 44px;
 }
 .btn-secondary:hover {
-background: var(--golden-hour);
-color: var(--midnight);
+background: var(--pine);
+color: white;
 transform: translateY(-2px);
 }
 .site-footer {
@@ -784,8 +786,8 @@ flex: 0 0 240px;
 <div id="beta-modal" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:1;transition:opacity 0.4s ease">
   <div style="background:#1a1a2e;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1)">
     <div style="font-size:2rem;margin-bottom:0.75rem">&#9888;</div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;margin:0 0 0.5rem;color:#d4a03c">Beta Site</h2>
-    <p style="font-family:'Space Grotesk',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
+    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#d4a03c">Beta Site</h2>
+    <p style="font-family:'DM Sans',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
     <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(255,255,255,0.15);overflow:hidden">
       <div id="beta-modal-progress" style="height:100%;width:100%;background:#d4a03c;border-radius:2px;transition:width 12s linear"></div>
     </div>

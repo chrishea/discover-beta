@@ -13,30 +13,9 @@
   src: url(../fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIq15j8eUY.woff2) format('woff2');
 }
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-display: swap;
-  src: url(../fonts/nuFiD-vYSZviVYUb_rj3ij__anPXPT7Sh2E-.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(../fonts/nuFiD-vYSZviVYUb_rj3ij__anPXPT7Sh2E-.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(../fonts/V8mDoQDjQSkFtoMM3T6r8E7mDbNyDNs1.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(../fonts/V8mDoQDjQSkFtoMM3T6r8E7mDbNyDNs1.woff2) format('woff2');
+  src: url(../fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIq15j8eUY.woff2) format('woff2');
 }

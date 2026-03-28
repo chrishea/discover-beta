@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries &amp; Bakeries | Discover Cloudcroft beta</title>
+    <meta name="description" content="Grocery shopping guide for Cloudcroft, NM. Local markets, bakeries, specialty food shops, and nearby Alamogordo options. Plan your mountain pantry.">
+    <meta name="keywords" content="Cloudcroft groceries, Allsups, Family Dollar, bakeries, Eight the Cake, Kennabelle's, High Rollin Coffee, Club Veg, Instant Karma">
+    <link rel="canonical" href="https://discovercloudcroft.com/groceries.html">
+    <meta property="og:title" content="Groceries &amp; Bakeries | Discover Cloudcroft beta">
+    <meta property="og:description" content="Grocery shopping guide for Cloudcroft. Local markets, bakeries, specialty shops, and Alamogordo options.">
+    <meta property="og:url" content="https://discovercloudcroft.com/groceries.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Groceries &amp; Bakeries | Discover Cloudcroft beta">
+    <meta name="twitter:description" content="Plan your mountain pantry with this Cloudcroft grocery guide.">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+
+    <style>
+.hero {
+position: relative;
+height: 55vh;
+min-height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.hero-bg {
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, var(--pine-shadow) 0%, #2E7D32 50%, var(--alpine) 100%);
+background-size: cover;
+background-position: center;
+animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(46, 125, 50, 0.55));
+}
+.hero-content {
+position: relative;
+z-index: 2;
+text-align: center;
+padding: 0 2rem;
+max-width: 900px;
+}
+.hero-badge {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+background: rgba(232, 168, 56, 0.2);
+border: 1px solid rgba(232, 168, 56, 0.4);
+padding: 0.5rem 1.25rem;
+border-radius: 30px;
+margin-bottom: 1.5rem;
+opacity: 0;
+animation: fadeUp 0.8s ease 0.2s forwards;
+}
+.hero-badge span {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 500;
+font-size: 0.8rem;
+color: var(--golden-hour);
+text-transform: uppercase;
+letter-spacing: 0.15em;
+}
+.hero-title {
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+font-size: clamp(2.5rem, 5vw, 4rem);
+color: var(--snow-cap);
+line-height: 1.2;
+margin-bottom: 1rem;
+}
+.hero-title .word {
+display: inline-block;
+opacity: 0;
+transform: translateY(20px);
+animation: wordReveal 0.6s ease forwards;
+}
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+@keyframes wordReveal {
+to { opacity: 1; transform: translateY(0); }
+}
+.hero-subtitle {
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: clamp(1rem, 2.5vw, 1.35rem);
+color: rgba(240, 244, 248, 0.9);
+letter-spacing: 0.05em;
+margin-bottom: 0;
+opacity: 0;
+animation: fadeUp 0.8s ease 1s forwards;
+}
+.info-banner {
+background: rgba(232, 168, 56, 0.12);
+border-left: 4px solid var(--golden-hour);
+padding: 1.5rem 2rem;
+}
+.info-banner-inner {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+.info-banner-icon {
+font-size: 1.5rem;
+flex-shrink: 0;
+}
+.info-banner p {
+color: var(--midnight);
+font-weight: 500;
+margin: 0;
+font-size: 0.95rem;
+}
+.section-description {
+font-size: 1.05rem;
+color: var(--granite);
+max-width: 600px;
+margin: 0 auto 3rem;
+text-align: center;
+}
+.stores-section {
+background: var(--cloud-drift);
+}
+.category-header {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+margin-bottom: 1.5rem;
+margin-top: 2.5rem;
+}
+.category-header:first-of-type {
+margin-top: 0;
+}
+.category-icon {
+font-size: 1.8rem;
+}
+.category-header h3 {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 700;
+font-size: 1.3rem;
+color: var(--midnight);
+}
+.store-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 1.5rem;
+margin-bottom: 2rem;
+}
+.store-card {
+background: var(--snow-cap);
+border-radius: 12px;
+padding: 1.5rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+border-left: 4px solid var(--golden-hour);
+transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+opacity: 0;
+transform: translateY(30px);
+}
+.store-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.store-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+.store-card h4 {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 700;
+font-size: 1.15rem;
+color: var(--midnight);
+margin-bottom: 0.5rem;
+}
+.store-card p {
+color: var(--granite);
+font-size: 0.95rem;
+margin-bottom: 1rem;
+line-height: 1.7;
+}
+.store-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 0.4rem;
+}
+.store-tag {
+font-size: 0.75rem;
+font-weight: 500;
+padding: 0.25rem 0.6rem;
+background: rgba(46, 107, 138, 0.1);
+color: var(--alpine);
+border-radius: 12px;
+}
+.nearby-section {
+background: var(--midnight);
+position: relative;
+overflow: hidden;
+}
+.nearby-section::before {
+content: '';
+position: absolute;
+inset: 0;
+opacity: 0.06;
+background-image:
+repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px),
+repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px);
+pointer-events: none;
+}
+.nearby-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+position: relative;
+}
+.nearby-card {
+text-align: center;
+padding: 2.5rem 2rem;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+transition: transform 0.3s ease, background 0.3s ease;
+opacity: 0;
+transform: translateY(30px);
+}
+.nearby-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+}
+.nearby-card:nth-child(2).visible { transition-delay: 0.1s; }
+.nearby-card:nth-child(3).visible { transition-delay: 0.2s; }
+.nearby-card:hover {
+transform: translateY(-6px);
+background: rgba(255, 255, 255, 0.1);
+}
+.nearby-icon {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+.nearby-card h3 {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+color: var(--golden-hour);
+margin-bottom: 0.5rem;
+}
+.nearby-distance {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 600;
+font-size: 0.85rem;
+color: var(--alpine);
+margin-bottom: 0.75rem;
+}
+.nearby-card p {
+color: rgba(240, 244, 248, 0.8);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.tips-section {
+background: var(--alpine);
+padding: 4rem 2rem;
+}
+.tips-container {
+max-width: 1200px;
+margin: 0 auto;
+}
+.tips-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2rem;
+}
+.tip-card {
+text-align: center;
+}
+.tip-icon {
+font-size: 2rem;
+margin-bottom: 0.75rem;
+}
+.tip-card h3 {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 700;
+font-size: 1rem;
+color: var(--golden-hour);
+margin-bottom: 0.4rem;
+}
+.tip-card p {
+color: rgba(240, 244, 248, 0.85);
+font-size: 0.9rem;
+line-height: 1.6;
+}
+.cta-section {
+background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+padding: 6rem 2rem;
+text-align: center;
+}
+.cta-container {
+max-width: 700px;
+margin: 0 auto;
+}
+.cta-container h2 {
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+font-size: clamp(1.8rem, 3vw, 2.5rem);
+color: var(--snow-cap);
+margin-bottom: 1rem;
+}
+.cta-container p {
+color: rgba(240, 244, 248, 0.85);
+font-size: 1.1rem;
+line-height: 1.7;
+margin-bottom: 2rem;
+}
+.cta-buttons {
+display: flex;
+gap: 1rem;
+justify-content: center;
+flex-wrap: wrap;
+}
+.site-footer { padding: 4rem 2rem 2rem; }
+.site-footer::before {
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+background-size: 300% 100%;
+animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder {
+0% { background-position: 0% 0; }
+100% { background-position: 300% 0; }
+}
+.footer-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.footer-brand { display: block; }
+@media (max-width: 1024px) {
+.nearby-grid { grid-template-columns: repeat(2, 1fr); }
+.tips-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+.store-grid { grid-template-columns: 1fr; }
+.nearby-grid { grid-template-columns: 1fr; }
+.tips-grid { grid-template-columns: 1fr; }
+.cta-buttons { flex-direction: column; align-items: center; }
+}</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner" aria-label="Site header">
+        <a href="index.html" class="header-logo">DISCOVER <span>CLOUDCROFT</span> <span class="logo-beta">beta</span></a>
+        <nav class="header-nav" role="menubar" aria-label="Main navigation">
+            <a href="lodging.html" role="menuitem">Stay</a>
+            <a href="dining.html" role="menuitem">Eat</a>
+            <a href="activities.html" role="menuitem">Explore</a>
+            <a href="hiking-trails.html" role="menuitem">Trails</a>
+            <a href="events.html" role="menuitem">Events</a>
+            <a href="seasonal.html" role="menuitem">Seasons</a>
+            <a href="plan.html" role="menuitem">Plan</a>
+            <a href="contact.html" role="menuitem">Contact</a>
+        </nav>
+        <a href="tel:+15555555555" class="header-phone" aria-label="Call us">(555) 555-5555</a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+        <a href="lodging.html">Stay</a>
+        <a href="dining.html">Eat</a>
+        <a href="activities.html">Explore</a>
+        <a href="hiking-trails.html">Trails</a>
+        <a href="events.html">Events</a>
+        <a href="seasonal.html">Seasons</a>
+        <a href="plan.html">Plan</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Cloudcroft Groceries"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Visitor Essentials</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Groceries </span>
+                <span class="word">&amp; </span>
+                <span class="word">Bakeries</span>
+            </h1>
+            <p class="hero-subtitle">Plan ahead for your mountain getaway &mdash; local markets, bakeries, and specialty shops to keep you well-supplied.</p>
+        </div>
+    </section>
+
+    <div class="info-banner">
+        <div class="info-banner-inner">
+            <span class="info-banner-icon">&#x1F4A1;</span>
+            <p><strong>Pro Tip:</strong> There is no full-scale grocery store in Cloudcroft. Stock up in Alamogordo (20 miles) before heading up the mountain, or use the local markets for essentials.</p>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <section class="section stores-section" aria-label="Local markets">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">In Cloudcroft</span>
+                    <h2 class="section-title section-title-centered">Local Markets &amp; Essentials</h2>
+                    <p class="section-description">Convenience stores and specialty shops in the village offer basics and unique local finds.</p>
+                </div>
+
+                <div class="category-header">
+                    <span class="category-icon">&#x1F3EA;</span>
+                    <h3>Convenience &amp; Basics</h3>
+                </div>
+                <div class="store-grid">
+                    <div class="store-card">
+                        <h4>Allsup's Market</h4>
+                        <p>Convenience store with gas, frozen and deli meats, milk, eggs, dry and canned goods. Also carries fresh cuts of meat.</p>
+                        <div class="store-tags">
+                            <span class="store-tag">Gas</span>
+                            <span class="store-tag">Groceries</span>
+                            <span class="store-tag">Fresh Meat</span>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <h4>Family Dollar</h4>
+                        <p>Discount groceries including cooking and baking supplies, milk, eggs, bread, and toiletries. Located at 309 James Canyon Highway.</p>
+                        <div class="store-tags">
+                            <span class="store-tag">Discount</span>
+                            <span class="store-tag">Essentials</span>
+                            <span class="store-tag">Toiletries</span>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <h4>The Weed Store</h4>
+                        <p>Located on Agua Chiquita Road, carrying grocery goods, diesel and unleaded fuel. A handy stop if you are coming from the south.</p>
+                        <div class="store-tags">
+                            <span class="store-tag">Gas</span>
+                            <span class="store-tag">Groceries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-header">
+                    <span class="category-icon">&#x1F950;</span>
+                    <h3>Bakeries &amp; Coffee</h3>
+                </div>
+                <div class="store-grid">
+                    <div class="store-card">
+                        <h4>Eight the Cake</h4>
+                        <p>Local bakery offering fresh baked goods, pastries, and sweet treats. A favorite stop for morning coffee and a pastry.</p>
+                        <div class="store-tags">
+                            <span class="store-tag">Bakery</span>
+                            <span class="store-tag">Pastries</span>
+                            <span class="store-tag">Coffee</span>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <h4>Kennabelle's Bakery</h4>
+                        <p>Fresh-baked breads, pastries, and specialty items. Perfect for picking up treats for your cabin stay.</p>
+                        <div class="store-tags">
+                            <span class="store-tag">Fresh Bread</span>
+                            <span class="store-tag">Pastries</span>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <h4>High Rollin' Coffee</h4>
+                        <p>Coffee shop with baked goods and light fare. Great spot for morning fuel before hitting the trails.</p>
+                        <div class="store-tags">
+                            <span class="store-tag">Coffee</span>
+                            <span class="store-tag">Baked Goods</span>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <h4>Black Bear Coffee</h4>
+                        <p>Cozy coffee shop serving specialty drinks and light bites. A warm gathering spot for locals and visitors alike.</p>
+                        <div class="store-tags">
+                            <span class="store-tag">Coffee</span>
+                            <span class="store-tag">Specialty Drinks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-header">
+                    <span class="category-icon">&#x2728;</span>
+                    <h3>Specialty &amp; Local</h3>
+                </div>
+                <div class="store-grid">
+                    <div class="store-card">
+                        <h4>Club Veg at Instant Karma</h4>
+                        <p>Organic produce and health foods at Instant Karma, serving the community for over 10 years. A rare find for organic and specialty items in the mountains.</p>
+                        <div class="store-tags">
+                            <span class="store-tag">Organic</span>
+                            <span class="store-tag">Health Food</span>
+                            <span class="store-tag">10+ Years</span>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <h4>Turquoise Shop</h4>
+                        <p>Carries Burnett Ranch beef alongside turquoise jewelry and gifts. A unique combination of local ranch-raised meat and Southwest treasures.</p>
+                        <div class="store-tags">
+                            <span class="store-tag">Local Beef</span>
+                            <span class="store-tag">Burnett Ranch</span>
+                            <span class="store-tag">Gifts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section nearby-section" aria-label="Nearby grocery stores">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: var(--golden-hour); letter-spacing: 3px;">Alamogordo</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--snow-cap);">Full Grocery Shopping</h2>
+                    <p class="section-description" style="color: rgba(240,244,248,0.7);">For a full grocery run, head to Alamogordo &mdash; just 20 miles and 30 minutes down the mountain.</p>
+                </div>
+                <div class="nearby-grid">
+                    <div class="nearby-card">
+                        <div class="nearby-icon">&#x1F6D2;</div>
+                        <h3>Walmart Supercenter</h3>
+                        <div class="nearby-distance">Alamogordo &bull; 30 min</div>
+                        <p>Full grocery selection, household items, and pharmacy. Offers delivery to some Cloudcroft addresses &mdash; check availability online.</p>
+                    </div>
+                    <div class="nearby-card">
+                        <div class="nearby-icon">&#x1F34E;</div>
+                        <h3>Albertsons</h3>
+                        <div class="nearby-distance">1300 E 10th St, Alamogordo</div>
+                        <p>Full-service grocery store with produce, deli, bakery, and pharmacy. A good option for quality groceries before heading up the mountain.</p>
+                    </div>
+                    <div class="nearby-card">
+                        <div class="nearby-icon">&#x1F6BB;</div>
+                        <h3>Other Alamogordo Stores</h3>
+                        <div class="nearby-distance">Various locations</div>
+                        <p>Alamogordo also has Dollar General, Family Dollar, and various specialty shops for additional grocery and household needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section" aria-label="Shopping tips">
+            <div class="tips-container">
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F4DD;</div>
+                        <h3>Make a List</h3>
+                        <p>Plan meals before your trip and stock up in Alamogordo on your way up.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x2744;&#xFE0F;</div>
+                        <h3>Bring a Cooler</h3>
+                        <p>Keep perishables fresh on the drive up. Most cabins have full kitchens and fridges.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F4F1;</div>
+                        <h3>Try Delivery</h3>
+                        <p>Walmart in Alamogordo delivers to some Cloudcroft addresses. Order ahead and skip the store.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F950;</div>
+                        <h3>Go Local</h3>
+                        <p>Don't miss the local bakeries and specialty shops for unique mountain treats and provisions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Ready for Your Mountain Getaway?</h2>
+                <p>Stock up, head up, and settle into mountain life. Cloudcroft's local shops and nearby stores have everything you need.</p>
+                <div class="cta-buttons">
+                    <a href="plan.html" class="btn-primary">Plan Your Trip</a>
+                    <a href="dining.html" class="btn-outline">Local Dining</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="lodging.html">Lodging</a>
+                <a href="dining.html">Dining</a>
+                <a href="hiking-trails.html">Hiking Trails</a>
+                <a href="activities.html">Activities</a>
+                <a href="events.html">Events</a>
+                <a href="seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="plan.html">Plan Your Trip</a>
+                <a href="faq.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.store-card, .nearby-card').forEach(function(el) { fadeObserver.observe(el); });
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() { if (window.scrollY > 400) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); } }, { passive: true });
+            backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
+    </script>
+</body>
+</html>

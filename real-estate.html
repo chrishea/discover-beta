@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate | Discover Cloudcroft beta — Cabins, Land &amp; Mountain Property</title>
+    <meta name="description" content="Explore Cloudcroft real estate: mountain cabins, vacant land, and ranches in the Sacramento Mountains. Local agents, property types, and what to know before buying.">
+    <meta name="keywords" content="Cloudcroft real estate, cabins for sale, mountain property, vacant land, Sacramento Mountains, Lincoln National Forest, New Mexico real estate">
+    <link rel="canonical" href="https://discovercloudcroft.com/real-estate.html">
+    <meta property="og:title" content="Real Estate | Discover Cloudcroft beta">
+    <meta property="og:description" content="Explore Cloudcroft real estate: mountain cabins, vacant land, and ranches in the Sacramento Mountains.">
+    <meta property="og:url" content="https://discovercloudcroft.com/real-estate.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Real Estate | Discover Cloudcroft beta">
+    <meta name="twitter:description" content="Mountain cabins, vacant land, and ranches in Cloudcroft, NM.">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+
+    <style>
+.hero {
+position: relative;
+height: 65vh;
+min-height: 450px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.hero-bg {
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, var(--pine-shadow) 0%, #2d5a47 50%, var(--twilight) 100%);
+background-size: cover;
+background-position: center;
+animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(30, 61, 47, 0.55));
+}
+.hero-content {
+position: relative;
+z-index: 2;
+text-align: center;
+padding: 0 2rem;
+max-width: 900px;
+}
+.hero-badge {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+background: rgba(232, 168, 56, 0.2);
+border: 1px solid rgba(232, 168, 56, 0.4);
+padding: 0.5rem 1.25rem;
+border-radius: 30px;
+margin-bottom: 1.5rem;
+opacity: 0;
+animation: fadeUp 0.8s ease 0.2s forwards;
+}
+.hero-badge span {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 500;
+font-size: 0.8rem;
+color: var(--golden-hour);
+text-transform: uppercase;
+letter-spacing: 0.15em;
+}
+.hero-title {
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+font-size: clamp(2.5rem, 5vw, 4rem);
+color: var(--snow-cap);
+line-height: 1.2;
+margin-bottom: 1rem;
+}
+.hero-title .word {
+display: inline-block;
+opacity: 0;
+transform: translateY(20px);
+animation: wordReveal 0.6s ease forwards;
+}
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+@keyframes wordReveal {
+to { opacity: 1; transform: translateY(0); }
+}
+.hero-subtitle {
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: clamp(1rem, 2.5vw, 1.35rem);
+color: rgba(240, 244, 248, 0.9);
+letter-spacing: 0.05em;
+margin-bottom: 2rem;
+opacity: 0;
+animation: fadeUp 0.8s ease 1s forwards;
+}
+.hero-ctas {
+display: flex;
+gap: 1.25rem;
+justify-content: center;
+flex-wrap: wrap;
+opacity: 0;
+animation: fadeUp 0.8s ease 1.4s forwards;
+}
+.section-description {
+font-size: 1.05rem;
+color: var(--granite);
+max-width: 600px;
+margin: 0 auto 3rem;
+text-align: center;
+}
+.about-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+}
+.about-text p {
+font-size: 1.05rem;
+color: var(--granite);
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+.about-features {
+display: flex;
+flex-wrap: wrap;
+gap: 0.75rem;
+margin-top: 2rem;
+}
+.about-feature {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+font-size: 0.85rem;
+font-weight: 500;
+padding: 0.5rem 1rem;
+background: var(--cloud-drift);
+color: var(--summit);
+border-radius: 25px;
+border: 1px solid rgba(46, 107, 138, 0.2);
+}
+.about-image {
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 20px 60px rgba(11, 29, 58, 0.15);
+background: linear-gradient(135deg, var(--pine-shadow) 0%, #2d5a47 100%);
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.about-image-placeholder {
+text-align: center;
+padding: 2rem;
+color: white;
+}
+.about-image-placeholder .icon {
+font-size: 5rem;
+margin-bottom: 1rem;
+}
+.about-image-placeholder p {
+color: rgba(255,255,255,0.85);
+font-weight: 500;
+}
+.properties-section {
+background: var(--cloud-drift);
+}
+.properties-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+.property-card {
+background: var(--snow-cap);
+border-radius: 12px;
+padding: 2.5rem 2rem;
+border-top: 4px solid var(--golden-hour);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+opacity: 0;
+transform: translateY(30px);
+}
+.property-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.property-card:nth-child(2).visible { transition-delay: 0.1s; }
+.property-card:nth-child(3).visible { transition-delay: 0.2s; }
+.property-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.property-card-icon {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+.property-card h3 {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+color: var(--midnight);
+margin-bottom: 0.5rem;
+}
+.property-card .price {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 700;
+font-size: 0.9rem;
+color: var(--golden-hour);
+margin-bottom: 0.75rem;
+}
+.property-card p {
+color: var(--granite);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.agents-section {
+background: var(--midnight);
+position: relative;
+overflow: hidden;
+}
+.agents-section::before {
+content: '';
+position: absolute;
+inset: 0;
+opacity: 0.06;
+background-image:
+repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px),
+repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px);
+pointer-events: none;
+}
+.agents-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+position: relative;
+}
+.agent-card {
+text-align: center;
+padding: 2.5rem 2rem;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+transition: transform 0.3s ease, background 0.3s ease;
+opacity: 0;
+transform: translateY(30px);
+}
+.agent-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+}
+.agent-card:nth-child(2).visible { transition-delay: 0.1s; }
+.agent-card:nth-child(3).visible { transition-delay: 0.2s; }
+.agent-card:nth-child(4).visible { transition-delay: 0.3s; }
+.agent-card:hover {
+transform: translateY(-6px);
+background: rgba(255, 255, 255, 0.1);
+}
+.agent-icon {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+.agent-card h3 {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+color: var(--golden-hour);
+margin-bottom: 0.75rem;
+}
+.agent-card p {
+color: rgba(240, 244, 248, 0.8);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.considerations-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem;
+}
+.consideration-card {
+background: var(--snow-cap);
+border-radius: 12px;
+padding: 2.5rem 2rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+border-left: 4px solid var(--golden-hour);
+transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+opacity: 0;
+transform: translateY(30px);
+}
+.consideration-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.consideration-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.consideration-icon {
+font-size: 2rem;
+margin-bottom: 0.75rem;
+}
+.consideration-card h4 {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 700;
+font-size: 1.1rem;
+color: var(--midnight);
+margin-bottom: 0.5rem;
+}
+.consideration-card p {
+color: var(--granite);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.cta-section {
+background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+padding: 6rem 2rem;
+text-align: center;
+}
+.cta-container {
+max-width: 700px;
+margin: 0 auto;
+}
+.cta-container h2 {
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+font-size: clamp(1.8rem, 3vw, 2.5rem);
+color: var(--snow-cap);
+margin-bottom: 1rem;
+}
+.cta-container p {
+color: rgba(240, 244, 248, 0.85);
+font-size: 1.1rem;
+line-height: 1.7;
+margin-bottom: 2rem;
+}
+.cta-buttons {
+display: flex;
+gap: 1rem;
+justify-content: center;
+flex-wrap: wrap;
+}
+.site-footer { padding: 4rem 2rem 2rem; }
+.site-footer::before {
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+background-size: 300% 100%;
+animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder {
+0% { background-position: 0% 0; }
+100% { background-position: 300% 0; }
+}
+.footer-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.footer-brand { display: block; }
+.fade-in { opacity: 0; transform: translateY(30px); }
+.fade-in.visible {
+opacity: 1; transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
+}
+@media (max-width: 1024px) {
+.about-grid { grid-template-columns: 1fr; gap: 2rem; }
+.considerations-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+.properties-grid { grid-template-columns: 1fr; }
+.agents-grid { grid-template-columns: 1fr; }
+.considerations-grid { grid-template-columns: 1fr; }
+.cta-buttons { flex-direction: column; align-items: center; }
+}</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner" aria-label="Site header">
+        <a href="index.html" class="header-logo">DISCOVER <span>CLOUDCROFT</span> <span class="logo-beta">beta</span></a>
+        <nav class="header-nav" role="menubar" aria-label="Main navigation">
+            <a href="lodging.html" role="menuitem">Stay</a>
+            <a href="dining.html" role="menuitem">Eat</a>
+            <a href="activities.html" role="menuitem">Explore</a>
+            <a href="hiking-trails.html" role="menuitem">Trails</a>
+            <a href="events.html" role="menuitem">Events</a>
+            <a href="seasonal.html" role="menuitem">Seasons</a>
+            <a href="plan.html" role="menuitem">Plan</a>
+            <a href="contact.html" role="menuitem">Contact</a>
+        </nav>
+        <a href="tel:+15555555555" class="header-phone" aria-label="Call us">(555) 555-5555</a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+        <a href="lodging.html">Stay</a>
+        <a href="dining.html">Eat</a>
+        <a href="activities.html">Explore</a>
+        <a href="hiking-trails.html">Trails</a>
+        <a href="events.html">Events</a>
+        <a href="seasonal.html">Seasons</a>
+        <a href="plan.html">Plan</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Cloudcroft Real Estate"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Mountain Living</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Cloudcroft </span>
+                <span class="word">Real </span>
+                <span class="word">Estate</span>
+            </h1>
+            <p class="hero-subtitle">Cabins, land, and mountain property in the Sacramento Mountains &mdash; surrounded by 1.1 million acres of Lincoln National Forest.</p>
+            <div class="hero-ctas">
+                <a href="#properties" class="btn-primary">Property Types</a>
+                <a href="#agents" class="btn-outline">Find an Agent</a>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <section class="section" id="about" aria-label="About Cloudcroft real estate">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">Mountain Property</span>
+                        <h2 class="section-title">Own a Piece of the Mountains</h2>
+                        <p>Cloudcroft offers a rare opportunity to own property in one of New Mexico's most beautiful mountain communities. Nestled at 8,676 feet in the Sacramento Mountains and surrounded by 1.1 million acres of Lincoln National Forest, the area attracts buyers seeking mountain retreats, vacation rentals, and full-time residences.</p>
+                        <p>From charming cabins on wooded lots to vacant land and sprawling ranches, the Cloudcroft real estate market offers something for every vision of mountain living. Local agents who know the area intimately can help you find the perfect property.</p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F3D4;&#xFE0F; 8,676 ft Elevation</span>
+                            <span class="about-feature">&#x1F332; National Forest</span>
+                            <span class="about-feature">&#x1F3E1; Cabins &amp; Homes</span>
+                            <span class="about-feature">&#x1F333; Wooded Lots</span>
+                            <span class="about-feature">&#x1F304; Mountain Views</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <div class="about-image-placeholder">
+                            <div class="icon">&#x1F3E1;</div>
+                            <p>Mountain Living</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section properties-section" id="properties" aria-label="Property types">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">What's Available</span>
+                    <h2 class="section-title section-title-centered">Property Types</h2>
+                    <p class="section-description">From cozy cabins to expansive ranches, explore what the Cloudcroft real estate market has to offer.</p>
+                </div>
+                <div class="properties-grid">
+                    <div class="property-card">
+                        <div class="property-card-icon">&#x1F3E1;</div>
+                        <h3>Mountain Cabins</h3>
+                        <div class="price">$300K &ndash; $600K typical range</div>
+                        <p>Classic mountain cabins on wooded lots, ranging from cozy weekend retreats to spacious family homes. Many feature fireplaces, decks, and pine forest settings. Popular as vacation rentals and second homes.</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="property-card-icon">&#x1F333;</div>
+                        <h3>Vacant Land</h3>
+                        <div class="price">Varies by location &amp; acreage</div>
+                        <p>Build your dream mountain home on a wooded lot or meadow. Parcels range from small residential lots in the village to larger acreage in surrounding areas. Utilities and access vary by location.</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="property-card-icon">&#x1F40E;</div>
+                        <h3>Ranches &amp; Acreage</h3>
+                        <div class="price">5+ acres available</div>
+                        <p>For those seeking more space, ranch properties and larger acreage parcels offer privacy and room to roam. Some border National Forest land with stunning mountain views and wildlife.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section agents-section" id="agents" aria-label="Local real estate agents">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: var(--golden-hour); letter-spacing: 3px;">Local Experts</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--snow-cap);">Real Estate Agents</h2>
+                    <p class="section-description" style="color: rgba(240,244,248,0.7);">Work with agents who know the Cloudcroft area and can guide you through the unique aspects of mountain property ownership.</p>
+                </div>
+                <div class="agents-grid">
+                    <div class="agent-card">
+                        <div class="agent-icon">&#x1F3E2;</div>
+                        <h3>Everett Team</h3>
+                        <p>Blue Canyon Realty. Experienced team specializing in Cloudcroft and Sacramento Mountain properties. Deep local knowledge and strong market expertise.</p>
+                    </div>
+                    <div class="agent-card">
+                        <div class="agent-icon">&#x1F3D8;&#xFE0F;</div>
+                        <h3>Cloudcroft Properties</h3>
+                        <p>Local real estate office focused exclusively on the Cloudcroft area. Cabins, land, and residential properties throughout the mountain community.</p>
+                    </div>
+                    <div class="agent-card">
+                        <div class="agent-icon">&#x1F3E0;</div>
+                        <h3>Cloudcroft Realty</h3>
+                        <p>Full-service real estate agency serving the Cloudcroft area. Helping buyers and sellers navigate the mountain property market.</p>
+                    </div>
+                    <div class="agent-card">
+                        <div class="agent-icon">&#x1F31F;</div>
+                        <h3>Future Real Estate</h3>
+                        <p>Real estate services for the Cloudcroft and surrounding mountain communities. Residential, land, and investment properties.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="considerations" aria-label="Buying considerations">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Before You Buy</span>
+                    <h2 class="section-title section-title-centered">Mountain Property Considerations</h2>
+                    <p class="section-description">Buying property in Cloudcroft comes with unique considerations. Here is what you should know.</p>
+                </div>
+                <div class="considerations-grid">
+                    <div class="consideration-card">
+                        <div class="consideration-icon">&#x1F4A7;</div>
+                        <h4>Water Supply</h4>
+                        <p>Many properties in the Cloudcroft area rely on well water rather than municipal water. Have wells inspected and tested before purchasing. Water rights and availability are important factors in the mountain market.</p>
+                    </div>
+                    <div class="consideration-card">
+                        <div class="consideration-icon">&#x2744;&#xFE0F;</div>
+                        <h4>Winter Access</h4>
+                        <p>Cloudcroft receives about 80 inches of snow annually. Consider road access during winter months, especially for properties on unpaved or steep roads. Four-wheel drive may be essential.</p>
+                    </div>
+                    <div class="consideration-card">
+                        <div class="consideration-icon">&#x1F332;</div>
+                        <h4>National Forest Proximity</h4>
+                        <p>Many properties border the 1.1 million acre Lincoln National Forest. This means incredible natural surroundings but also fire risk considerations and potential forest service regulations to be aware of.</p>
+                    </div>
+                    <div class="consideration-card">
+                        <div class="consideration-icon">&#x1F3D7;&#xFE0F;</div>
+                        <h4>Building &amp; Permits</h4>
+                        <p>Building codes and permit requirements vary. Work with local contractors experienced in mountain construction. Septic systems, elevation, and soil conditions all factor into building plans.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Find Your Mountain Home</h2>
+                <p>Whether you are looking for a weekend cabin, a vacation rental investment, or a full-time mountain residence, Cloudcroft has a property waiting for you.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                    <a href="lodging.html" class="btn-outline">Visit First</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="lodging.html">Lodging</a>
+                <a href="dining.html">Dining</a>
+                <a href="hiking-trails.html">Hiking Trails</a>
+                <a href="activities.html">Activities</a>
+                <a href="events.html">Events</a>
+                <a href="seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="plan.html">Plan Your Trip</a>
+                <a href="faq.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.fade-in, .property-card, .agent-card, .consideration-card').forEach(function(el) { fadeObserver.observe(el); });
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() { if (window.scrollY > 400) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); } }, { passive: true });
+            backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
+    </script>
+</body>
+</html>

@@ -18,6 +18,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cloudcroft Outdoor Recreation Guide | Discover Cloudcroft beta">
     <meta name="twitter:description" content="Your complete guide to outdoor recreation in Cloudcroft, New Mexico. Hiking, fishing, disc golf, skiing, stargazing, and more at 9,000 feet in the Sacramento Mountains."><link href="css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/common.css">
     <style>
@@ -45,7 +48,7 @@ animation: kenBurns 20s ease-in-out infinite alternate;
 .hero-overlay {
 position: absolute;
 inset: 0;
-background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(74, 45, 107, 0.65));
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.75), rgba(200, 148, 62, 0.65));
 }
 .hero-content {
 position: relative;
@@ -58,8 +61,8 @@ max-width: 900px;
 display: inline-flex;
 align-items: center;
 gap: 0.5rem;
-background: rgba(232, 168, 56, 0.2);
-border: 1px solid rgba(232, 168, 56, 0.4);
+background: rgba(200, 148, 62, 0.2);
+border: 1px solid rgba(200, 148, 62, 0.4);
 padding: 0.5rem 1.25rem;
 border-radius: 30px;
 margin-bottom: 1.5rem;
@@ -67,7 +70,7 @@ opacity: 0;
 animation: fadeUp 0.8s ease 0.2s forwards;
 }
 .hero-badge span {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 500;
 font-size: 0.8rem;
 color: var(--golden-hour);
@@ -75,7 +78,7 @@ text-transform: uppercase;
 letter-spacing: 0.15em;
 }
 .hero-title {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(2.5rem, 5vw, 4rem);
 color: var(--snow-cap);
@@ -120,7 +123,7 @@ to { opacity: 1; transform: translateY(0); }
 }
 .btn-primary {
 display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 text-transform: uppercase;
@@ -130,17 +133,17 @@ border-radius: 8px;
 text-decoration: none;
 background: var(--golden-hour);
 color: var(--midnight);
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 min-height: 44px;
 }
 .btn-primary:hover {
 transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
+box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
 }
 .btn-secondary {
 display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 text-transform: uppercase;
@@ -160,7 +163,7 @@ color: var(--midnight);
 transform: translateY(-2px);
 }
 .info-bar {
-background: var(--midnight);
+background: var(--cream-dark);
 padding: 1.5rem 2rem;
 }
 .info-bar-inner {
@@ -182,7 +185,7 @@ font-weight: 500;
 .info-bar-icon {
 width: 40px;
 height: 40px;
-background: rgba(232, 168, 56, 0.15);
+background: rgba(200, 148, 62, 0.15);
 border-radius: 50%;
 display: flex;
 align-items: center;
@@ -224,13 +227,13 @@ padding: 0.5rem 1rem;
 background: var(--cloud-drift);
 color: var(--summit);
 border-radius: 25px;
-border: 1px solid rgba(46, 107, 138, 0.2);
+border: 1px solid rgba(58, 107, 30, 0.2);
 }
 .about-image {
 border-radius: 16px;
 overflow: hidden;
-box-shadow: 0 20px 60px rgba(11, 29, 58, 0.15);
-background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(46, 107, 138, 0.1) 100%);
+box-shadow: 0 20px 60px rgba(45, 80, 22, 0.15);
+background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(58, 107, 30, 0.1) 100%);
 height: 400px;
 display: flex;
 align-items: center;
@@ -291,7 +294,7 @@ font-size: 2.5rem;
 margin-bottom: 1rem;
 }
 .activity-card h3 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.2rem;
 color: var(--midnight);
@@ -307,13 +310,13 @@ margin-bottom: 1rem;
 display: inline-flex;
 align-items: center;
 gap: 0.4rem;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-size: 0.75rem;
 font-weight: 500;
 text-transform: uppercase;
 letter-spacing: 1px;
 color: var(--alpine);
-background: rgba(46, 107, 138, 0.1);
+background: rgba(58, 107, 30, 0.1);
 padding: 0.3rem 0.75rem;
 border-radius: 15px;
 }
@@ -321,7 +324,7 @@ border-radius: 15px;
 display: inline-flex;
 align-items: center;
 gap: 0.4rem;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.8rem;
 text-transform: uppercase;
@@ -330,7 +333,7 @@ color: var(--golden-hour);
 margin-top: 0.75rem;
 }
 .seasons-section {
-background: var(--midnight);
+background: var(--cream-dark);
 position: relative;
 overflow: hidden;
 }
@@ -340,8 +343,8 @@ position: absolute;
 inset: 0;
 opacity: 0.06;
 background-image:
-repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px),
-repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px);
+repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px),
+repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px);
 pointer-events: none;
 }
 .seasons-grid {
@@ -353,9 +356,9 @@ position: relative;
 .season-card {
 text-align: center;
 padding: 2.5rem 2rem;
-background: rgba(255, 255, 255, 0.05);
+background: rgba(255, 255, 255, 0.7);
 border-radius: 12px;
-border: 1px solid rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(58, 107, 30, 0.15);
 transition: transform 0.3s ease, background 0.3s ease;
 opacity: 0;
 transform: translateY(30px);
@@ -370,21 +373,21 @@ transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier
 .season-card:nth-child(4).visible { transition-delay: 0.3s; }
 .season-card:hover {
 transform: translateY(-6px);
-background: rgba(255, 255, 255, 0.1);
+background: rgba(255, 255, 255, 0.9);
 }
 .season-icon {
 font-size: 3rem;
 margin-bottom: 1rem;
 }
 .season-card h3 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.2rem;
 color: var(--golden-hour);
 margin-bottom: 0.75rem;
 }
 .season-card p {
-color: rgba(240, 244, 248, 0.8);
+color: var(--charcoal);
 font-size: 0.95rem;
 line-height: 1.7;
 }
@@ -396,13 +399,13 @@ gap: 0.5rem;
 justify-content: center;
 }
 .season-tag {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-size: 0.7rem;
 font-weight: 500;
 text-transform: uppercase;
 letter-spacing: 0.5px;
 color: var(--golden-hour);
-background: rgba(232, 168, 56, 0.15);
+background: rgba(200, 148, 62, 0.15);
 padding: 0.25rem 0.6rem;
 border-radius: 12px;
 }
@@ -435,7 +438,7 @@ font-size: 2rem;
 margin-bottom: 0.75rem;
 }
 .tip-card h4 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.1rem;
 color: var(--midnight);
@@ -447,7 +450,7 @@ font-size: 0.95rem;
 line-height: 1.7;
 }
 .cta-section {
-background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+background: var(--cream-dark);
 padding: 6rem 2rem;
 text-align: center;
 }
@@ -456,14 +459,14 @@ max-width: 700px;
 margin: 0 auto;
 }
 .cta-container h2 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(1.8rem, 3vw, 2.5rem);
 color: var(--snow-cap);
 margin-bottom: 1rem;
 }
 .cta-container p {
-color: rgba(240, 244, 248, 0.85);
+color: var(--charcoal);
 font-size: 1.1rem;
 line-height: 1.7;
 margin-bottom: 2rem;

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Discover Cloudcroft beta — Frequently Asked Questions</title>
+    <meta name="description" content="Frequently asked questions about visiting Cloudcroft, NM. Directions, weather, lodging, activities, altitude tips, and practical information for your mountain getaway.">
+    <meta name="keywords" content="Cloudcroft FAQ, visiting Cloudcroft, directions, weather, altitude, lodging, hiking, White Sands, Sunspot Observatory">
+    <link rel="canonical" href="https://discovercloudcroft.com/faq.html">
+    <meta property="og:title" content="FAQ | Discover Cloudcroft beta">
+    <meta property="og:description" content="Everything you need to know about visiting Cloudcroft, NM. Directions, weather, lodging, activities, and more.">
+    <meta property="og:url" content="https://discovercloudcroft.com/faq.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAQ | Discover Cloudcroft beta">
+    <meta name="twitter:description" content="Everything you need to know about visiting Cloudcroft, NM.">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+
+    <style>
+.hero {
+position: relative;
+height: 50vh;
+min-height: 350px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.hero-bg {
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--twilight) 100%);
+background-size: cover;
+background-position: center;
+animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(74, 45, 107, 0.65));
+}
+.hero-content {
+position: relative;
+z-index: 2;
+text-align: center;
+padding: 0 2rem;
+max-width: 900px;
+}
+.hero-badge {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+background: rgba(232, 168, 56, 0.2);
+border: 1px solid rgba(232, 168, 56, 0.4);
+padding: 0.5rem 1.25rem;
+border-radius: 30px;
+margin-bottom: 1.5rem;
+opacity: 0;
+animation: fadeUp 0.8s ease 0.2s forwards;
+}
+.hero-badge span {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 500;
+font-size: 0.8rem;
+color: var(--golden-hour);
+text-transform: uppercase;
+letter-spacing: 0.15em;
+}
+.hero-title {
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+font-size: clamp(2.5rem, 5vw, 4rem);
+color: var(--snow-cap);
+line-height: 1.2;
+margin-bottom: 1rem;
+}
+.hero-title .word {
+display: inline-block;
+opacity: 0;
+transform: translateY(20px);
+animation: wordReveal 0.6s ease forwards;
+}
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+@keyframes wordReveal {
+to { opacity: 1; transform: translateY(0); }
+}
+.hero-subtitle {
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: clamp(1rem, 2.5vw, 1.35rem);
+color: rgba(240, 244, 248, 0.9);
+letter-spacing: 0.05em;
+margin-bottom: 0;
+opacity: 0;
+animation: fadeUp 0.8s ease 1s forwards;
+}
+.faq-main {
+padding: 4rem 2rem;
+max-width: 900px;
+margin: 0 auto;
+}
+.faq-intro {
+text-align: center;
+margin-bottom: 3rem;
+}
+.faq-intro p {
+color: var(--granite);
+font-size: 1.05rem;
+max-width: 600px;
+margin: 0 auto;
+line-height: 1.7;
+}
+.faq-category {
+margin-bottom: 3rem;
+}
+.faq-category-header {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+margin-bottom: 1.5rem;
+padding-bottom: 0.75rem;
+border-bottom: 2px solid var(--golden-hour);
+}
+.faq-category-icon {
+font-size: 1.5rem;
+}
+.faq-category-header h2 {
+font-family: 'Playfair Display', serif;
+font-weight: 700;
+font-size: 1.5rem;
+color: var(--midnight);
+}
+.faq-item {
+margin-bottom: 0.75rem;
+border: 1px solid rgba(232, 168, 56, 0.2);
+border-radius: 8px;
+overflow: hidden;
+background: var(--snow-cap);
+}
+.faq-question {
+width: 100%;
+padding: 1.25rem 1.5rem;
+background: var(--snow-cap);
+border: none;
+text-align: left;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: 'Inter', sans-serif;
+font-size: 1rem;
+font-weight: 600;
+color: var(--midnight);
+transition: background 0.3s ease;
+}
+.faq-question:hover {
+background: var(--cloud-drift);
+}
+.faq-question.active {
+background: var(--golden-hour);
+color: var(--midnight);
+}
+.faq-icon {
+font-size: 1rem;
+transition: transform 0.3s ease;
+flex-shrink: 0;
+margin-left: 1rem;
+}
+.faq-question.active .faq-icon {
+transform: rotate(180deg);
+}
+.faq-answer {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.faq-answer.active {
+max-height: 600px;
+padding: 1.25rem 1.5rem;
+border-top: 1px solid rgba(232, 168, 56, 0.2);
+}
+.faq-answer p {
+color: var(--granite);
+line-height: 1.8;
+margin-bottom: 1rem;
+font-size: 0.95rem;
+}
+.faq-answer p:last-child {
+margin-bottom: 0;
+}
+.faq-answer a {
+color: var(--alpine);
+text-decoration: none;
+font-weight: 500;
+}
+.faq-answer a:hover {
+text-decoration: underline;
+}
+.faq-answer ul {
+margin: 0.5rem 0 1rem 1.5rem;
+color: var(--granite);
+list-style: disc;
+font-size: 0.95rem;
+}
+.faq-answer li {
+margin-bottom: 0.5rem;
+line-height: 1.7;
+}
+.contact-cta {
+background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+padding: 3rem;
+border-radius: 12px;
+text-align: center;
+margin-top: 3rem;
+}
+.contact-cta h2 {
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+font-size: 1.8rem;
+color: var(--snow-cap);
+margin-bottom: 1rem;
+}
+.contact-cta p {
+color: rgba(240, 244, 248, 0.85);
+margin-bottom: 1.5rem;
+font-size: 1.05rem;
+}
+.site-footer { padding: 4rem 2rem 2rem; }
+.site-footer::before {
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+background-size: 300% 100%;
+animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder {
+0% { background-position: 0% 0; }
+100% { background-position: 300% 0; }
+}
+.footer-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.footer-brand { display: block; }
+@media (max-width: 768px) {
+.faq-main { padding: 3rem 1.5rem; }
+.contact-cta { padding: 2rem 1.5rem; }
+}</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner" aria-label="Site header">
+        <a href="index.html" class="header-logo">DISCOVER <span>CLOUDCROFT</span> <span class="logo-beta">beta</span></a>
+        <nav class="header-nav" role="menubar" aria-label="Main navigation">
+            <a href="lodging.html" role="menuitem">Stay</a>
+            <a href="dining.html" role="menuitem">Eat</a>
+            <a href="activities.html" role="menuitem">Explore</a>
+            <a href="hiking-trails.html" role="menuitem">Trails</a>
+            <a href="events.html" role="menuitem">Events</a>
+            <a href="seasonal.html" role="menuitem">Seasons</a>
+            <a href="plan.html" role="menuitem">Plan</a>
+            <a href="contact.html" role="menuitem">Contact</a>
+        </nav>
+        <a href="tel:+15555555555" class="header-phone" aria-label="Call us">(555) 555-5555</a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+        <a href="lodging.html">Stay</a>
+        <a href="dining.html">Eat</a>
+        <a href="activities.html">Explore</a>
+        <a href="hiking-trails.html">Trails</a>
+        <a href="events.html">Events</a>
+        <a href="seasonal.html">Seasons</a>
+        <a href="plan.html">Plan</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Cloudcroft FAQ"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Visitor Information</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Frequently </span>
+                <span class="word">Asked </span>
+                <span class="word">Questions</span>
+            </h1>
+            <p class="hero-subtitle">Everything you need to know about visiting Cloudcroft, New Mexico</p>
+        </div>
+    </section>
+
+    <main id="main-content" class="faq-main">
+        <div class="faq-intro">
+            <p>Planning your trip to Cloudcroft? Here are answers to the most common questions from our visitors. Can't find what you're looking for? Feel free to contact us.</p>
+        </div>
+
+        <!-- Getting Here -->
+        <div class="faq-category">
+            <div class="faq-category-header">
+                <span class="faq-category-icon">&#x1F697;</span>
+                <h2>Getting Here</h2>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I get to Cloudcroft?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cloudcroft is located in the Sacramento Mountains of south-central New Mexico, accessible via US Highway 82 from Alamogordo (16 miles east) or from Artesia (67 miles west).</p>
+                    <p><strong>Driving distances:</strong></p>
+                    <ul>
+                        <li>From Alamogordo: 30 minutes</li>
+                        <li>From Las Cruces: 1.5 hours</li>
+                        <li>From El Paso, TX: 2 hours</li>
+                        <li>From Albuquerque: 3.5 hours</li>
+                    </ul>
+                    <p>The nearest commercial airports are El Paso International (ELP) and Albuquerque International Sunport (ABQ).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Are the roads to Cloudcroft safe in winter?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Highway 82 is well-maintained but can be icy or snow-packed during winter storms. We recommend:</p>
+                    <ul>
+                        <li>Check road conditions before traveling at <a href="https://nmroads.com" target="_blank" rel="noopener noreferrer">NMRoads.com</a></li>
+                        <li>Carry tire chains, especially November through March</li>
+                        <li>Drive during daylight hours when possible</li>
+                        <li>Use a vehicle with good tires and, ideally, all-wheel or four-wheel drive</li>
+                    </ul>
+                    <p>The road climbs from about 4,300 feet in Alamogordo to 8,676 feet in Cloudcroft, with several switchbacks.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is there cell phone service in Cloudcroft?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cell coverage in Cloudcroft varies by carrier. Verizon and AT&amp;T generally have the best coverage in the village center. Coverage can be spotty or nonexistent on surrounding trails and in some cabin areas. Many accommodations offer WiFi.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is there public transportation to Cloudcroft?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>There is no public transportation to or within Cloudcroft. A personal vehicle is essential for getting here and getting around. The village is walkable once you arrive, but a car is needed for trailheads, Sunspot Observatory, and nearby attractions.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather & Best Time to Visit -->
+        <div class="faq-category">
+            <div class="faq-category-header">
+                <span class="faq-category-icon">&#x26C5;</span>
+                <h2>Weather &amp; Best Time to Visit</h2>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What's the weather like in Cloudcroft?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>At 8,676 feet elevation, Cloudcroft is typically 15-20 degrees cooler than the desert below. General seasonal temperatures:</p>
+                    <ul>
+                        <li><strong>Spring (Mar-May):</strong> Highs 50-65&deg;F, lows 25-40&deg;F</li>
+                        <li><strong>Summer (Jun-Aug):</strong> Highs 70-82&deg;F, lows 45-55&deg;F</li>
+                        <li><strong>Fall (Sep-Nov):</strong> Highs 55-70&deg;F, lows 30-45&deg;F</li>
+                        <li><strong>Winter (Dec-Feb):</strong> Highs 35-50&deg;F, lows 15-30&deg;F</li>
+                    </ul>
+                    <p>Summer afternoons (July-August) often bring brief monsoon thunderstorms. Cloudcroft receives an average of 80 inches of snow annually.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>When is the best time to visit?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Each season offers something special:</p>
+                    <ul>
+                        <li><strong>Summer</strong> is peak season &mdash; perfect for escaping the heat with ideal hiking weather</li>
+                        <li><strong>Fall</strong> (mid-September to mid-October) offers spectacular golden aspen foliage</li>
+                        <li><strong>Winter</strong> is great for skiing, snow activities, and cozy cabin getaways</li>
+                        <li><strong>Spring</strong> brings wildflowers and fewer crowds</li>
+                    </ul>
+                    <p>Book well in advance for summer weekends, fall foliage season, and holiday periods.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What should I pack for my visit?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Mountain weather can change quickly. We recommend:</p>
+                    <ul>
+                        <li>Layers &mdash; temperatures can vary 30+ degrees between morning and afternoon</li>
+                        <li>Comfortable walking shoes or hiking boots</li>
+                        <li>Sunscreen and sunglasses (the sun is intense at this elevation)</li>
+                        <li>Rain jacket, especially during monsoon season (July-August)</li>
+                        <li>Warm jacket for evenings, even in summer</li>
+                        <li>In winter: heavy coat, boots, gloves, and hat</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Does Cloudcroft get monsoons?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. The North American Monsoon typically brings afternoon thunderstorms to Cloudcroft from July through August. These storms are usually brief but can be intense, with heavy rain, lightning, and occasional hail. Mornings are typically clear, so plan outdoor activities early in the day during monsoon season.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much snow does Cloudcroft get?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cloudcroft receives an average of about 80 inches of snow annually. Snowfall is most common from November through March, with the heaviest months typically being December and January. Snow can linger on north-facing slopes and shaded forest areas well into spring.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lodging & Dining -->
+        <div class="faq-category">
+            <div class="faq-category-header">
+                <span class="faq-category-icon">&#x1F3E0;</span>
+                <h2>Lodging &amp; Dining</h2>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What types of lodging are available?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cloudcroft offers a variety of accommodations to suit every style and budget:</p>
+                    <ul>
+                        <li><strong>Historic Hotels:</strong> The Lodge Resort &amp; Spa, Summit Inn</li>
+                        <li><strong>Cabin Rentals:</strong> 200+ vacation rentals via VRBO, Airbnb, and local property managers</li>
+                        <li><strong>Bed &amp; Breakfasts:</strong> Intimate, locally-owned options</li>
+                        <li><strong>RV Parks &amp; Campgrounds:</strong> For those who prefer to stay closer to nature</li>
+                    </ul>
+                    <p>Visit our <a href="lodging.html">lodging page</a> for more information.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Are there restaurants and grocery stores?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! Cloudcroft has a variety of dining options, from casual BBQ to fine dining at Rebecca's in The Lodge. Popular spots include Mad Jack's Mountaintop Barbecue, Big Daddy's Diner, Cloudcroft Brewery, Western Bar &amp; Cafe, and High Rollin' Coffee.</p>
+                    <p>There is no full-scale grocery store in Cloudcroft. Local options include Allsup's and Family Dollar for basics. For larger shopping, Alamogordo (30 minutes away) has Walmart and Albertsons. Visit our <a href="groceries.html">groceries page</a> for details.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Are pets allowed?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Many vacation rentals and some hotels welcome pets &mdash; look for "pet-friendly" listings when booking. Dogs must be on leash in the village and on National Forest trails. Please clean up after your pets and be mindful of wildlife.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Should I bring my own food?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>If you are staying in a cabin and plan to cook, we recommend stocking up on groceries in Alamogordo before heading up the mountain. Cloudcroft has convenience stores and bakeries but not a full grocery store. Walmart in Alamogordo also offers delivery to some Cloudcroft addresses.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do I need reservations for restaurants?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Reservations are recommended for Rebecca's at The Lodge, especially on weekends and during peak season. Most casual restaurants do not require reservations but may have wait times on busy summer weekends and holiday periods. Some restaurants have limited hours, so check before you go.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activities & Attractions -->
+        <div class="faq-category">
+            <div class="faq-category-header">
+                <span class="faq-category-icon">&#x1F3D4;&#xFE0F;</span>
+                <h2>Activities &amp; Attractions</h2>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What outdoor activities are available?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cloudcroft is an outdoor lover's paradise, offering:</p>
+                    <ul>
+                        <li><strong>Hiking:</strong> 50+ miles of trails in Lincoln National Forest</li>
+                        <li><strong>Mountain Biking:</strong> Forest roads and single track</li>
+                        <li><strong>Golf:</strong> One of America's highest courses at The Lodge</li>
+                        <li><strong>Fishing:</strong> Nearby streams and lakes</li>
+                        <li><strong>Stargazing:</strong> Certified dark sky community</li>
+                        <li><strong>Winter Sports:</strong> Skiing at Ski Apache, plus tubing, snowmobiling, and ice skating</li>
+                    </ul>
+                    <p>Visit our <a href="activities.html">activities page</a> for more details.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is Cloudcroft good for families with kids?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely! Family-friendly activities include:</p>
+                    <ul>
+                        <li>Easy hiking trails suitable for all ages</li>
+                        <li>Ice skating at the outdoor rink (winter)</li>
+                        <li>Snow tubing (winter)</li>
+                        <li>Mini golf and disc golf</li>
+                        <li>Sunspot Solar Observatory (free visitor center)</li>
+                        <li>Seasonal events like Harvest Fest and Christmas in the Clouds</li>
+                    </ul>
+                    <p>Many cabins have games, fire pits, and outdoor space perfect for families.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How far is White Sands National Park?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>White Sands National Park is about 45 minutes from Cloudcroft (approximately 35 miles). It makes an excellent day trip! The park features the world's largest gypsum dune field and is especially beautiful at sunrise and sunset. Many visitors combine a mountain stay in Cloudcroft with a day exploring White Sands.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is Sunspot Observatory?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>The National Solar Observatory at Sacramento Peak (Sunspot) is a world-class solar research facility located about 18 miles south of Cloudcroft via the Sunspot Scenic Byway. The free visitor center offers exhibits about solar science, and the scenic drive itself is beautiful &mdash; especially during fall foliage. Visit our <a href="sunspot-observatory.html">Sunspot page</a> for more information.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Are there art galleries and shopping?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! Cloudcroft has a vibrant arts scene with several galleries along Burro Avenue, including Off the Beaten Path (est. 1996), Bear Track Gallery, Dancing Dog Gallery, and more. The village also has unique shops, antique stores, and the Cloudcroft Art Society. Visit our <a href="art-galleries.html">art galleries page</a> for a full guide.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Practical Information -->
+        <div class="faq-category">
+            <div class="faq-category-header">
+                <span class="faq-category-icon">&#x2139;&#xFE0F;</span>
+                <h2>Practical Information</h2>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What's the elevation, and will altitude affect me?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cloudcroft sits at 8,676 feet (2,644 meters) elevation. Some visitors from lower elevations may experience mild altitude effects including:</p>
+                    <ul>
+                        <li>Shortness of breath during physical activity</li>
+                        <li>Fatigue or headache</li>
+                        <li>Difficulty sleeping the first night</li>
+                    </ul>
+                    <p>To minimize effects: stay hydrated, limit alcohol the first day, take it easy on strenuous activities, and give yourself time to acclimate. Most people adjust within 24-48 hours.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Are there ATMs and banks?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>There are limited ATM options in Cloudcroft. We recommend bringing cash for smaller vendors and markets. Major banks and full banking services are available in Alamogordo. Most restaurants and shops accept credit cards.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is there a hospital or medical care?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cloudcroft has a volunteer fire department and emergency medical services. For non-emergency medical care, the nearest facilities are in Alamogordo (30 minutes), including Gerald Champion Regional Medical Center. For life-threatening emergencies, call 911.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What about fire restrictions?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Fire restrictions in Lincoln National Forest vary by season and conditions. During dry periods, campfires and even smoking may be prohibited. Always check current restrictions at the Ranger Station or <a href="https://www.fs.usda.gov/lincoln" target="_blank" rel="noopener noreferrer">Lincoln National Forest website</a>. Violating fire restrictions can result in significant fines and endangers the forest.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is cannabis legal in Cloudcroft?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Recreational cannabis is legal in New Mexico for adults 21+. Cloudcroft has local dispensaries. However, cannabis is NOT allowed on federal lands (Lincoln National Forest, trails, campgrounds). Do not transport cannabis across state lines. Effects may be stronger at altitude. Visit our <a href="cannabis.html">cannabis page</a> for full details and rules.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is Lincoln National Forest?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Lincoln National Forest is a 1.1 million acre forest surrounding Cloudcroft. It offers hiking, mountain biking, camping, fishing, and wildlife viewing. The forest is managed by the U.S. Forest Service and includes the Sacramento, Guadalupe, and Captain Mountain ranges. Many of Cloudcroft's best trails and outdoor activities are within the forest.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is there gas available in Cloudcroft?</span>
+                    <span class="faq-icon">&#x25BC;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, there are a couple of gas stations in the Cloudcroft area, including Allsup's and The Weed Store (on Agua Chiquita Road). However, it is a good idea to fill up in Alamogordo where gas is typically cheaper and more readily available, especially if you plan to drive the scenic byways.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="contact-cta">
+            <h2>Still Have Questions?</h2>
+            <p>We are happy to help you plan your perfect Cloudcroft getaway.</p>
+            <a href="contact.html" class="btn-primary">Contact Us</a>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="lodging.html">Lodging</a>
+                <a href="dining.html">Dining</a>
+                <a href="hiking-trails.html">Hiking Trails</a>
+                <a href="activities.html">Activities</a>
+                <a href="events.html">Events</a>
+                <a href="seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="plan.html">Plan Your Trip</a>
+                <a href="groceries.html">Groceries</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/common.js"></script>
+    <script>
+        (function() {
+            // FAQ Accordion
+            document.querySelectorAll('.faq-question').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var answer = button.nextElementSibling;
+                    var isActive = button.classList.contains('active');
+                    var category = button.closest('.faq-category');
+                    category.querySelectorAll('.faq-question').forEach(function(q) {
+                        q.classList.remove('active');
+                        q.nextElementSibling.classList.remove('active');
+                    });
+                    if (!isActive) {
+                        button.classList.add('active');
+                        answer.classList.add('active');
+                    }
+                });
+            });
+
+            // Back to top
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); }
+            }, { passive: true });
+            backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
+    </script>
+</body>
+</html>

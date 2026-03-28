@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beerfest | Discover Cloudcroft beta — Summer Craft Beer Festival</title>
+    <meta name="description" content="Join the Cloudcroft Beerfest, a summer craft beer festival at 8,676 feet. Enjoy craft breweries, food vendors, and live music. 21+ event, 12pm-6pm.">
+    <meta name="keywords" content="Cloudcroft Beerfest, craft beer festival, Cloudcroft NM, summer event, Sacramento Mountains, beer tasting">
+    <link rel="canonical" href="https://discovercloudcroft.com/beerfest.html">
+    <meta property="og:title" content="Beerfest | Discover Cloudcroft beta">
+    <meta property="og:description" content="Join the Cloudcroft Beerfest, a summer craft beer festival at 8,676 feet. Craft breweries, food vendors, and live music.">
+    <meta property="og:url" content="https://discovercloudcroft.com/beerfest.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beerfest | Discover Cloudcroft beta">
+    <meta name="twitter:description" content="Join the Cloudcroft Beerfest, a summer craft beer festival at 8,676 feet.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Cloudcroft Beerfest",
+      "description": "Annual summer craft beer festival in Cloudcroft, NM featuring craft breweries, food vendors, and live music.",
+      "location": {
+        "@type": "Place",
+        "name": "Cloudcroft",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cloudcroft",
+          "addressRegion": "NM",
+          "postalCode": "88317",
+          "addressCountry": "US"
+        }
+      }
+    }
+    </script>
+
+    <style>
+.hero {
+position: relative;
+height: 65vh;
+min-height: 450px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.hero-bg {
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, #8B6914 0%, #D4A017 50%, var(--twilight) 100%);
+background-size: cover;
+background-position: center;
+animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.75), rgba(139, 105, 20, 0.55));
+}
+.hero-content {
+position: relative;
+z-index: 2;
+text-align: center;
+padding: 0 2rem;
+max-width: 900px;
+}
+.hero-badge {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+background: rgba(200, 148, 62, 0.2);
+border: 1px solid rgba(200, 148, 62, 0.4);
+padding: 0.5rem 1.25rem;
+border-radius: 30px;
+margin-bottom: 1.5rem;
+opacity: 0;
+animation: fadeUp 0.8s ease 0.2s forwards;
+}
+.hero-badge span {
+font-family: 'DM Sans', sans-serif;
+font-weight: 500;
+font-size: 0.8rem;
+color: var(--pine);
+text-transform: uppercase;
+letter-spacing: 0.15em;
+}
+.hero-title {
+font-family: 'DM Sans', sans-serif;
+font-weight: 900;
+font-size: clamp(2.5rem, 5vw, 4rem);
+color: var(--snow-cap);
+line-height: 1.2;
+margin-bottom: 1rem;
+}
+.hero-title .word {
+display: inline-block;
+opacity: 0;
+transform: translateY(20px);
+animation: wordReveal 0.6s ease forwards;
+}
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+@keyframes wordReveal {
+to { opacity: 1; transform: translateY(0); }
+}
+.hero-subtitle {
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: clamp(1rem, 2.5vw, 1.35rem);
+color: rgba(240, 244, 248, 0.9);
+letter-spacing: 0.05em;
+margin-bottom: 2rem;
+opacity: 0;
+animation: fadeUp 0.8s ease 1s forwards;
+}
+.hero-ctas {
+display: flex;
+gap: 1.25rem;
+justify-content: center;
+flex-wrap: wrap;
+opacity: 0;
+animation: fadeUp 0.8s ease 1.4s forwards;
+}
+.info-bar {
+background: var(--cream-dark);
+padding: 1.5rem 2rem;
+}
+.info-bar-inner {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+gap: 3rem;
+flex-wrap: wrap;
+}
+.info-bar-item {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+color: var(--charcoal);
+font-size: 0.9rem;
+font-weight: 500;
+}
+.info-bar-icon {
+width: 40px;
+height: 40px;
+background: rgba(200, 148, 62, 0.15);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.1rem;
+}
+.section-description {
+font-size: 1.05rem;
+color: var(--granite);
+max-width: 600px;
+margin: 0 auto 3rem;
+text-align: center;
+}
+.about-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+}
+.about-text p {
+font-size: 1.05rem;
+color: var(--granite);
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+.about-features {
+display: flex;
+flex-wrap: wrap;
+gap: 0.75rem;
+margin-top: 2rem;
+}
+.about-feature {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+font-size: 0.85rem;
+font-weight: 500;
+padding: 0.5rem 1rem;
+background: var(--cloud-drift);
+color: var(--summit);
+border-radius: 25px;
+border: 1px solid rgba(58, 107, 30, 0.2);
+}
+.about-image {
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 20px 60px rgba(45, 80, 22, 0.15);
+background: linear-gradient(135deg, #D4A017 0%, #8B6914 100%);
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.about-image-placeholder {
+text-align: center;
+padding: 2rem;
+color: white;
+}
+.about-image-placeholder .icon {
+font-size: 5rem;
+margin-bottom: 1rem;
+}
+.about-image-placeholder p {
+color: rgba(255,255,255,0.85);
+font-weight: 500;
+}
+.schedule-section {
+background: var(--cloud-drift);
+}
+.schedule-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 2rem;
+}
+.schedule-card {
+background: var(--snow-cap);
+border-radius: 12px;
+padding: 2.5rem 2rem;
+border-left: 4px solid var(--golden-hour);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+opacity: 0;
+transform: translateY(30px);
+}
+.schedule-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.schedule-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.schedule-time {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 0.85rem;
+color: var(--pine);
+text-transform: uppercase;
+letter-spacing: 0.1em;
+margin-bottom: 0.5rem;
+}
+.schedule-card h3 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+color: var(--midnight);
+margin-bottom: 0.5rem;
+}
+.schedule-card p {
+color: var(--granite);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.highlights-section {
+background: var(--cream-dark);
+position: relative;
+overflow: hidden;
+}
+.highlights-section::before {
+content: '';
+position: absolute;
+inset: 0;
+opacity: 0.06;
+background-image:
+repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px),
+repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px);
+pointer-events: none;
+}
+.highlights-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+position: relative;
+}
+.highlight-card {
+text-align: center;
+padding: 2.5rem 2rem;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+transition: transform 0.3s ease, background 0.3s ease;
+opacity: 0;
+transform: translateY(30px);
+}
+.highlight-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+}
+.highlight-card:nth-child(2).visible { transition-delay: 0.1s; }
+.highlight-card:nth-child(3).visible { transition-delay: 0.2s; }
+.highlight-card:hover {
+transform: translateY(-6px);
+background: rgba(255, 255, 255, 0.1);
+}
+.highlight-icon {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+.highlight-card h3 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+color: var(--pine);
+margin-bottom: 0.75rem;
+}
+.highlight-card p {
+color: rgba(240, 244, 248, 0.8);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.visiting-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem;
+}
+.visiting-card {
+background: var(--snow-cap);
+border-radius: 12px;
+padding: 2.5rem 2rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+border-left: 4px solid var(--golden-hour);
+transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+opacity: 0;
+transform: translateY(30px);
+}
+.visiting-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.visiting-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.visiting-icon {
+font-size: 2rem;
+margin-bottom: 0.75rem;
+}
+.visiting-card h4 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.1rem;
+color: var(--midnight);
+margin-bottom: 0.5rem;
+}
+.visiting-card p {
+color: var(--granite);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.cta-section {
+background: var(--cream-dark);
+padding: 6rem 2rem;
+text-align: center;
+}
+.cta-container {
+max-width: 700px;
+margin: 0 auto;
+}
+.cta-container h2 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 900;
+font-size: clamp(1.8rem, 3vw, 2.5rem);
+color: var(--charcoal);
+margin-bottom: 1rem;
+}
+.cta-container p {
+color: rgba(240, 244, 248, 0.85);
+font-size: 1.1rem;
+line-height: 1.7;
+margin-bottom: 2rem;
+}
+.cta-buttons {
+display: flex;
+gap: 1rem;
+justify-content: center;
+flex-wrap: wrap;
+}
+.site-footer { padding: 4rem 2rem 2rem; }
+.site-footer::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+background-size: 300% 100%;
+animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder {
+0% { background-position: 0% 0; }
+100% { background-position: 300% 0; }
+}
+.footer-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.footer-brand { display: block; }
+.fade-in {
+opacity: 0;
+transform: translateY(30px);
+}
+.fade-in.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
+}
+@media (max-width: 1024px) {
+.about-grid { grid-template-columns: 1fr; gap: 2rem; }
+.highlights-grid { grid-template-columns: repeat(2, 1fr); }
+.visiting-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+.highlights-grid { grid-template-columns: 1fr; }
+.visiting-grid { grid-template-columns: 1fr; }
+.info-bar-inner { gap: 1.5rem; }
+.cta-buttons { flex-direction: column; align-items: center; }
+}</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner" aria-label="Site header">
+        <a href="index.html" class="header-logo">DISCOVER <span>CLOUDCROFT</span> <span class="logo-beta">beta</span></a>
+        <nav class="header-nav" role="menubar" aria-label="Main navigation">
+            <a href="lodging.html" role="menuitem">Stay</a>
+            <a href="dining.html" role="menuitem">Eat</a>
+            <a href="activities.html" role="menuitem">Explore</a>
+            <a href="hiking-trails.html" role="menuitem">Trails</a>
+            <a href="events.html" role="menuitem">Events</a>
+            <a href="seasonal.html" role="menuitem">Seasons</a>
+            <a href="plan.html" role="menuitem">Plan</a>
+            <a href="contact.html" role="menuitem">Contact</a>
+        </nav>
+        <a href="tel:+15555555555" class="header-phone" aria-label="Call us">(555) 555-5555</a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+        <a href="lodging.html">Stay</a>
+        <a href="dining.html">Eat</a>
+        <a href="activities.html">Explore</a>
+        <a href="hiking-trails.html">Trails</a>
+        <a href="events.html">Events</a>
+        <a href="seasonal.html">Seasons</a>
+        <a href="plan.html">Plan</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Cloudcroft Beerfest"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Summer Event &bull; 21+</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Cloudcroft </span>
+                <span class="word">Beerfest</span>
+            </h1>
+            <p class="hero-subtitle">Craft beer, food vendors, and live music at 8,676 feet &mdash; a summer tradition in the Sacramento Mountains.</p>
+            <div class="hero-ctas">
+                <a href="#schedule" class="btn-primary">View Schedule</a>
+                <a href="#details" class="btn-outline">Event Details</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4C5;</div>
+                <span>Summer 2026</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F550;</div>
+                <span>12:00 PM &ndash; 6:00 PM</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F37A;</div>
+                <span>21+ Only</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F3B5;</div>
+                <span>Live Music</span>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <section class="section" id="about" aria-label="About Beerfest">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About the Festival</span>
+                        <h2 class="section-title">Craft Beer at Altitude</h2>
+                        <p>The Cloudcroft Beerfest is a beloved summer tradition bringing together craft breweries from across the region for a day of tasting, food, and live music in the cool mountain air. At 8,676 feet, it is one of the highest altitude beer festivals in the Southwest.</p>
+                        <p>Sample craft beers from multiple breweries, enjoy delicious food from local vendors, and soak in live music performances throughout the afternoon. This is a 21+ only event, so leave the kiddos at home and enjoy a day of mountain craft culture.</p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F37A; Craft Breweries</span>
+                            <span class="about-feature">&#x1F354; Food Vendors</span>
+                            <span class="about-feature">&#x1F3B5; Live Music</span>
+                            <span class="about-feature">&#x1F3D4;&#xFE0F; Mountain Setting</span>
+                            <span class="about-feature">&#x1F9CA; Tasting Included</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <div class="about-image-placeholder">
+                            <div class="icon">&#x1F37B;</div>
+                            <p>Cloudcroft Beerfest</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section schedule-section" id="schedule" aria-label="Event schedule">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Day of Event</span>
+                    <h2 class="section-title section-title-centered">Event Schedule</h2>
+                    <p class="section-description">Plan your day at the Beerfest. Gates open at noon and the fun runs through the afternoon.</p>
+                </div>
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <div class="schedule-time">12:00 PM</div>
+                        <h3>Gates Open</h3>
+                        <p>Doors open to ticket holders. Pick up your tasting glass and event wristband at the entrance.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-time">12:30 PM</div>
+                        <h3>First Tasting Pours</h3>
+                        <p>Brewery booths begin serving. Sample craft beers from participating breweries and explore the vendor area.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-time">1:00 PM</div>
+                        <h3>Live Music Begins</h3>
+                        <p>Local and regional musicians take the stage. Enjoy live performances throughout the afternoon while you taste.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-time">All Day</div>
+                        <h3>Food Vendors</h3>
+                        <p>Local food vendors serve up delicious eats all afternoon. From BBQ to gourmet bites, there is something for every palate.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-time">6:00 PM</div>
+                        <h3>Festival Closes</h3>
+                        <p>Last call for tastings and the festival wraps up. Please drink responsibly and arrange safe transportation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section highlights-section" aria-label="Festival highlights">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: var(--pine); letter-spacing: 3px;">Why Attend</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">Festival Highlights</h2>
+                    <p class="section-description" style="color: rgba(240,244,248,0.7);">Three reasons to make the Cloudcroft Beerfest part of your summer plans.</p>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F37A;</div>
+                        <h3>Regional Craft Breweries</h3>
+                        <p>Sample beers from craft breweries across the Southwest. Discover new favorites and meet the brewers behind the pints.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F3B6;</div>
+                        <h3>Live Music All Day</h3>
+                        <p>Enjoy live performances from local and regional musicians. Great tunes and great brews in the cool mountain air.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F3D4;&#xFE0F;</div>
+                        <h3>Mountain Atmosphere</h3>
+                        <p>At 8,676 feet, escape the summer heat and enjoy the festival surrounded by pine forests and fresh mountain air.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="details" aria-label="Event details">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Visit</span>
+                    <h2 class="section-title section-title-centered">Event Details</h2>
+                    <p class="section-description">Everything you need to know before attending the Beerfest.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F6AB;</div>
+                        <h4>21+ Only</h4>
+                        <p>This is a 21 and over event. Valid government-issued photo ID is required for entry. No exceptions.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h4>Hours</h4>
+                        <p>Gates open at 12:00 PM. Festival runs until 6:00 PM. First tasting pours at 12:30 PM.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F3AB;</div>
+                        <h4>Tickets</h4>
+                        <p>Tickets available in advance and at the gate (subject to availability). VIP and general admission options available.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F697;</div>
+                        <h4>Getting There</h4>
+                        <p>Cloudcroft is 30 minutes from Alamogordo on US-82. Please drink responsibly and arrange a designated driver or ride share.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Ready for Mountain Craft Beer?</h2>
+                <p>Mark your calendar for this summer and join us for the Cloudcroft Beerfest &mdash; craft brews, live music, and mountain vibes at 8,676 feet.</p>
+                <div class="cta-buttons">
+                    <a href="events.html" class="btn-primary">View All Events</a>
+                    <a href="lodging.html" class="btn-outline">Find Lodging</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="lodging.html">Lodging</a>
+                <a href="dining.html">Dining</a>
+                <a href="hiking-trails.html">Hiking Trails</a>
+                <a href="activities.html">Activities</a>
+                <a href="events.html">Events</a>
+                <a href="seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="plan.html">Plan Your Trip</a>
+                <a href="faq.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.fade-in, .schedule-card, .highlight-card, .visiting-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); }
+            }, { passive: true });
+            backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alamogordo | Discover Cloudcroft beta — Gateway to the Mountains</title>
+    <meta name="description" content="Visit Alamogordo, NM — 30 minutes from Cloudcroft. White Sands National Park, Space History Museum, Alameda Park Zoo, shopping, dining, and medical services.">
+    <meta name="keywords" content="Alamogordo NM, White Sands, Space History Museum, Alameda Park Zoo, Cloudcroft day trip, Sacramento Mountains">
+    <link rel="canonical" href="https://discovercloudcroft.com/alamogordo.html">
+
+    <meta property="og:title" content="Alamogordo | Discover Cloudcroft beta">
+    <meta property="og:description" content="Visit Alamogordo, NM — gateway to White Sands and the Sacramento Mountains. 30 minutes from Cloudcroft.">
+    <meta property="og:url" content="https://discovercloudcroft.com/alamogordo.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alamogordo | Discover Cloudcroft beta">
+    <meta name="twitter:description" content="Visit Alamogordo, NM — gateway to White Sands and the Sacramento Mountains.">
+
+    <link href="css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "City",
+      "name": "Alamogordo",
+      "description": "Gateway city to the Sacramento Mountains, 30 minutes from Cloudcroft, NM. Home to White Sands National Park and the Space History Museum.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Alamogordo",
+        "addressRegion": "NM",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <style>
+.hero {
+    position: relative;
+    height: 65vh;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #C45A10 0%, var(--golden-hour) 50%, var(--twilight) 100%);
+    background-size: cover;
+    background-position: center;
+    animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(11, 29, 58, 0.7), rgba(196, 90, 16, 0.5));
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 2rem;
+    max-width: 900px;
+}
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(232, 168, 56, 0.2);
+    border: 1px solid rgba(232, 168, 56, 0.4);
+    padding: 0.5rem 1.25rem;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.2s forwards;
+}
+.hero-badge span {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--golden-hour);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--snow-cap);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.hero-title .word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: wordReveal 0.6s ease forwards;
+}
+.hero-title .word:nth-child(1) { animation-delay: 0.3s; }
+@keyframes wordReveal {
+    to { opacity: 1; transform: translateY(0); }
+}
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2.5vw, 1.35rem);
+    color: rgba(240, 244, 248, 0.9);
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 1s forwards;
+}
+.hero-ctas {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 1.4s forwards;
+}
+.info-bar {
+    background: var(--midnight);
+    padding: 1.5rem 2rem;
+}
+.info-bar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.info-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--cloud-drift);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.info-bar-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(232, 168, 56, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+.section-description {
+    font-size: 1.05rem;
+    color: var(--granite);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+.about-text p {
+    font-size: 1.05rem;
+    color: var(--granite);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+.about-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+.about-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background: var(--cloud-drift);
+    color: var(--summit);
+    border-radius: 25px;
+    border: 1px solid rgba(46, 107, 138, 0.2);
+}
+.about-image {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(11, 29, 58, 0.15);
+    background: linear-gradient(135deg, var(--golden-hour) 0%, #C45A10 100%);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-image-placeholder {
+    text-align: center;
+    padding: 2rem;
+}
+.about-image-placeholder .icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.about-image-placeholder p {
+    color: var(--snow-cap);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+.menu-section {
+    background: var(--cloud-drift);
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.menu-card {
+    background: var(--snow-cap);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(232, 168, 56, 0.2);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.menu-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.menu-card:nth-child(2).visible { transition-delay: 0.1s; }
+.menu-card:nth-child(3).visible { transition-delay: 0.2s; }
+.menu-card:nth-child(4).visible { transition-delay: 0.3s; }
+.menu-card:nth-child(5).visible { transition-delay: 0.4s; }
+.menu-card:nth-child(6).visible { transition-delay: 0.5s; }
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.menu-card-header {
+    background: linear-gradient(135deg, var(--golden-hour) 0%, #C45A10 100%);
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+.menu-card-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.menu-card-header h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.menu-card-body {
+    padding: 1.5rem;
+}
+.menu-card-body p {
+    color: var(--granite);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+.attraction-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.attraction-tag {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    background: rgba(232, 168, 56, 0.1);
+    color: var(--summit);
+    border-radius: 15px;
+    font-weight: 500;
+}
+.highlights-section {
+    background: var(--midnight);
+    position: relative;
+    overflow: hidden;
+}
+.highlights-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.06;
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px),
+        repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px);
+    pointer-events: none;
+}
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    position: relative;
+}
+.highlight-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.highlight-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+}
+.highlight-card:nth-child(2).visible { transition-delay: 0.1s; }
+.highlight-card:nth-child(3).visible { transition-delay: 0.2s; }
+.highlight-card:nth-child(4).visible { transition-delay: 0.3s; }
+.highlight-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.1);
+}
+.highlight-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.highlight-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--golden-hour);
+    margin-bottom: 0.75rem;
+}
+.highlight-card p {
+    color: rgba(240, 244, 248, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+.visiting-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.visiting-card {
+    background: var(--snow-cap);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid rgba(232, 168, 56, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.visiting-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.visiting-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.visiting-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--golden-hour) 0%, #C45A10 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto 1.5rem;
+}
+.visiting-card h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--midnight);
+    margin-bottom: 0.5rem;
+}
+.visiting-card p {
+    color: var(--granite);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+.cta-section {
+    background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+    padding: 6rem 2rem;
+    text-align: center;
+}
+.cta-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.cta-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: var(--snow-cap);
+    margin-bottom: 1rem;
+}
+.cta-container p {
+    color: rgba(240, 244, 248, 0.85);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.site-footer { padding: 4rem 2rem 2rem; }
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+    background-size: 300% 100%;
+    animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder {
+    0% { background-position: 0% 0; }
+    100% { background-position: 300% 0; }
+}
+.footer-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.footer-brand { display: block; }
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
+}
+@media (max-width: 1024px) {
+    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+    .menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .highlights-grid { grid-template-columns: 1fr; }
+    .menu-grid { grid-template-columns: 1fr; }
+    .visiting-grid { grid-template-columns: 1fr; }
+    .info-bar-inner { gap: 1.5rem; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+}
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner" aria-label="Site header">
+        <a href="index.html" class="header-logo">DISCOVER <span>CLOUDCROFT</span> <span class="logo-beta">beta</span></a>
+        <nav class="header-nav" role="menubar" aria-label="Main navigation">
+            <a href="lodging.html" role="menuitem">Stay</a>
+            <a href="dining.html" role="menuitem">Eat</a>
+            <a href="activities.html" role="menuitem">Explore</a>
+            <a href="hiking-trails.html" role="menuitem">Trails</a>
+            <a href="events.html" role="menuitem">Events</a>
+            <a href="seasonal.html" role="menuitem">Seasons</a>
+            <a href="plan.html" role="menuitem">Plan</a>
+            <a href="contact.html" role="menuitem">Contact</a>
+        </nav>
+        <a href="tel:+15555555555" class="header-phone" aria-label="Call us">(555) 555-5555</a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+        <a href="lodging.html">Stay</a>
+        <a href="dining.html">Eat</a>
+        <a href="activities.html">Explore</a>
+        <a href="hiking-trails.html">Trails</a>
+        <a href="events.html">Events</a>
+        <a href="seasonal.html">Seasons</a>
+        <a href="plan.html">Plan</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Alamogordo desert landscape"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Day Trip Destination</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Alamogordo</span>
+            </h1>
+            <p class="hero-subtitle">Gateway to the Sacramento Mountains. Discover White Sands, space history, and desert adventures just 30 minutes from Cloudcroft.</p>
+            <div class="hero-ctas">
+                <a href="#attractions" class="btn-primary">Explore Attractions</a>
+                <a href="#getting-there" class="btn-secondary">Getting There</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>30 min from Cloudcroft</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F3D4;&#xFE0F;</div>
+                <span>Elevation: 4,350 ft</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F465;</div>
+                <span>Population: ~32,000</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F321;&#xFE0F;</div>
+                <span>Desert Climate</span>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+
+        <section class="section" id="about" aria-label="About Alamogordo">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">Where Desert Meets Mountain</h2>
+                        <p>Alamogordo sits at the base of the Sacramento Mountains, serving as the gateway between the Tularosa Basin's stunning white sand dunes and the cool pine forests of Cloudcroft above. This desert city offers a striking contrast to the mountain village, with warm temperatures, world-class museums, and proximity to one of America's newest national parks.</p>
+                        <p>Whether you're looking for groceries, supplies, or a full day of exploration, Alamogordo provides everything you need while visiting Cloudcroft. From the otherworldly landscapes of White Sands to the fascinating history of space exploration, there's plenty to discover.</p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F3DC;&#xFE0F; White Sands National Park</span>
+                            <span class="about-feature">&#x1F680; Space History Museum</span>
+                            <span class="about-feature">&#x1F6D2; Shopping &amp; Supplies</span>
+                            <span class="about-feature">&#x1F37D;&#xFE0F; Diverse Dining</span>
+                            <span class="about-feature">&#x1F3E5; Medical Services</span>
+                            <span class="about-feature">&#x2708;&#xFE0F; Regional Airport</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <div class="about-image-placeholder">
+                            <div class="icon">&#x1F3DC;&#xFE0F;</div>
+                            <p>Alamogordo &amp; White Sands</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section menu-section" id="attractions" aria-label="Top attractions in Alamogordo">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Things To Do</span>
+                    <h2 class="section-title section-title-centered">Top Attractions</h2>
+                    <p class="section-description">From stunning natural wonders to fascinating museums, Alamogordo offers unforgettable experiences.</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <div class="menu-card-icon">&#x1F3DC;&#xFE0F;</div>
+                            <h3>White Sands National Park</h3>
+                        </div>
+                        <div class="menu-card-body">
+                            <p>Explore the world's largest gypsum dune field. Hike the trails, sled down pristine white dunes, and witness spectacular sunsets over this otherworldly landscape.</p>
+                            <div class="attraction-tags">
+                                <span class="attraction-tag">15 min drive</span>
+                                <span class="attraction-tag">Hiking</span>
+                                <span class="attraction-tag">Photography</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <div class="menu-card-icon">&#x1F680;</div>
+                            <h3>Space History Museum</h3>
+                        </div>
+                        <div class="menu-card-body">
+                            <p>Discover the history of space exploration at the New Mexico Museum of Space History. Features rockets, spacecraft, the International Space Hall of Fame, and an IMAX Theater.</p>
+                            <div class="attraction-tags">
+                                <span class="attraction-tag">Downtown</span>
+                                <span class="attraction-tag">Family-Friendly</span>
+                                <span class="attraction-tag">IMAX Theater</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <div class="menu-card-icon">&#x1F981;</div>
+                            <h3>Alameda Park Zoo</h3>
+                        </div>
+                        <div class="menu-card-body">
+                            <p>Visit the oldest zoo in the Southwest, home to over 250 animals from around the world. Perfect for families with children of all ages.</p>
+                            <div class="attraction-tags">
+                                <span class="attraction-tag">Downtown</span>
+                                <span class="attraction-tag">Kid-Friendly</span>
+                                <span class="attraction-tag">Affordable</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <div class="menu-card-icon">&#x1F3A8;</div>
+                            <h3>Tularosa Basin Museum</h3>
+                        </div>
+                        <div class="menu-card-body">
+                            <p>Learn about the rich cultural history of the region, from prehistoric peoples to the railroad era and the development of the space industry.</p>
+                            <div class="attraction-tags">
+                                <span class="attraction-tag">Local History</span>
+                                <span class="attraction-tag">Art Exhibits</span>
+                                <span class="attraction-tag">Free Admission</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <div class="menu-card-icon">&#x1F305;</div>
+                            <h3>Scenic Drive to Cloudcroft</h3>
+                        </div>
+                        <div class="menu-card-body">
+                            <p>Take the breathtaking Highway 82 from desert floor to mountain peaks. Watch the landscape transform as you climb 4,000+ feet in just 16 miles.</p>
+                            <div class="attraction-tags">
+                                <span class="attraction-tag">16 miles</span>
+                                <span class="attraction-tag">Scenic Views</span>
+                                <span class="attraction-tag">Photo Ops</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <div class="menu-card-icon">&#x1F6CD;&#xFE0F;</div>
+                            <h3>Shopping &amp; Dining</h3>
+                        </div>
+                        <div class="menu-card-body">
+                            <p>Find everything you need from Walmart, Albertsons, and a variety of restaurants serving cuisines from around the world.</p>
+                            <div class="attraction-tags">
+                                <span class="attraction-tag">Walmart &amp; More</span>
+                                <span class="attraction-tag">Restaurants</span>
+                                <span class="attraction-tag">Supplies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section highlights-section" id="getting-there" aria-label="Getting to Alamogordo">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: var(--golden-hour); letter-spacing: 3px;">Travel Info</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--snow-cap);">Getting to Alamogordo</h2>
+                    <p class="section-description" style="color: rgba(240,244,248,0.7);">Multiple routes bring you to this gateway city.</p>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F697;</div>
+                        <h3>From Cloudcroft</h3>
+                        <p>Take Highway 82 west down the mountain. The scenic 16-mile drive takes about 25-30 minutes with stunning views of the Tularosa Basin.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F6E3;&#xFE0F;</div>
+                        <h3>From El Paso</h3>
+                        <p>Head north on US-54 for approximately 90 miles. The drive takes about 1.5 hours through the desert landscape.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F9ED;</div>
+                        <h3>From Las Cruces</h3>
+                        <p>Take US-70 east for about 70 miles through the Organ Mountains-Desert Peaks. Allow approximately 1 hour and 15 minutes.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x2708;&#xFE0F;</div>
+                        <h3>By Air</h3>
+                        <p>The closest major airport is El Paso International (ELP), about 90 miles south. Alamogordo has a small regional airport for private aircraft.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="services" aria-label="Visitor services">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Visitor Services</span>
+                    <h2 class="section-title section-title-centered">What You'll Find</h2>
+                    <p class="section-description">Alamogordo offers all the amenities and services you might need during your mountain getaway.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F6D2;</div>
+                        <h4>Grocery Stores</h4>
+                        <p>Walmart, Albertsons, and other grocers for stocking up on supplies before heading to Cloudcroft.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x26FD;</div>
+                        <h4>Gas Stations</h4>
+                        <p>Multiple fuel stations throughout town with competitive prices. Fill up before the mountain drive.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F3E5;</div>
+                        <h4>Medical Services</h4>
+                        <p>Gerald Champion Regional Medical Center provides full emergency and medical services.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F3E8;</div>
+                        <h4>Lodging</h4>
+                        <p>Various hotel chains and motels if you prefer staying at lower elevation or need an early start.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F527;</div>
+                        <h4>Auto Services</h4>
+                        <p>Auto parts stores, repair shops, and dealerships for any vehicle needs.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4F1;</div>
+                        <h4>Cell Service</h4>
+                        <p>Excellent cell coverage from all major carriers throughout Alamogordo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Plan Your Day Trip</h2>
+                <p>Combine a visit to White Sands with your Cloudcroft getaway for the ultimate New Mexico experience!</p>
+                <div class="cta-buttons">
+                    <a href="https://maps.google.com/?q=Alamogordo+NM" target="_blank" rel="noopener noreferrer" class="btn-primary">Get Directions</a>
+                    <a href="nearby-destinations.html" class="btn-outline">All Destinations</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="lodging.html">Lodging</a>
+                <a href="dining.html">Dining</a>
+                <a href="hiking-trails.html">Hiking Trails</a>
+                <a href="activities.html">Activities</a>
+                <a href="events.html">Events</a>
+                <a href="seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Day Trips</h4>
+                <a href="nearby-destinations.html">Nearby Destinations</a>
+                <a href="alamogordo.html">Alamogordo</a>
+                <a href="timberon.html">Timberon</a>
+                <a href="mayhill.html">Mayhill</a>
+                <a href="sunspot-observatory.html">Sunspot Observatory</a>
+                <a href="dark-skies.html">Dark Skies</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="plan.html">Plan Your Trip</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Cloudcroft</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/common.js"></script>
+    <script>
+        (function() {
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 60) { header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
+            }, { passive: true });
+
+            var hamburger = document.querySelector('.hamburger');
+            var mobileMenu = document.querySelector('.mobile-menu');
+            hamburger.addEventListener('click', function() {
+                var isOpen = mobileMenu.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+            mobileMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+                });
+            });
+
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) { fadeObserver.observe(el); });
+
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); }
+            }, { passive: true });
+            backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
+    </script>
+</body>
+</html>

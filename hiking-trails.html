@@ -21,7 +21,9 @@
     <meta name="twitter:title" content="Hiking Trails in Cloudcroft, NM">
     <meta name="twitter:description" content="15+ trails through Lincoln National Forest await at 8,676 feet.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/Index-4.webp"><link href="css/fonts.css" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/common.css">
     <style>
 /* Page-specific hero */
@@ -35,11 +37,11 @@ animation: kenBurns 20s ease-in-out infinite alternate;
 100% { transform: scale(1.1) translate(-1%, -1%); }
 }
 .hero-overlay {
-background: linear-gradient(135deg, rgba(30, 58, 47, 0.85) 0%, rgba(30, 58, 47, 0.6) 50%, rgba(11, 29, 58, 0.7) 100%);
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
 .hero-content h1 span { color: var(--golden-hour); }
 .hero-content p {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-size: clamp(1rem, 2.5vw, 1.3rem);
 color: rgba(255,255,255,0.9);
 max-width: 600px;
@@ -55,7 +57,7 @@ gap: 0.75rem;
 margin-bottom: 3rem;
 }
 .filter-btn {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 letter-spacing: 0.05em;
@@ -70,13 +72,13 @@ cursor: pointer;
 transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover {
-background: rgba(46, 107, 138, 0.1);
+background: rgba(58, 107, 30, 0.1);
 transform: translateY(-1px);
 }
 .filter-btn.active {
 background: var(--alpine);
 color: var(--snow-cap);
-box-shadow: 0 4px 12px rgba(46, 107, 138, 0.3);
+box-shadow: 0 4px 12px rgba(58, 107, 30, 0.3);
 }
 .trails-list { display: flex; flex-direction: column; gap: 2rem; }
 .trail-card {
@@ -124,7 +126,7 @@ transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 position: absolute;
 top: 1rem;
 left: 1rem;
-font-family: 'Space Grotesk', sans-serif; font-variant-numeric: tabular-nums;
+font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
 font-weight: 700;
 font-size: 0.75rem;
 text-transform: uppercase;
@@ -138,7 +140,7 @@ color: var(--snow-cap);
 .badge-hard { background: var(--ember); }
 .trail-details { padding: 2rem; display: flex; flex-direction: column; justify-content: center; }
 .trail-details h3 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.5rem;
 color: var(--midnight);
@@ -155,7 +157,7 @@ margin-bottom: 1rem;
 display: flex;
 align-items: center;
 gap: 0.35rem;
-font-family: 'Space Grotesk', sans-serif; font-variant-numeric: tabular-nums;
+font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
 font-weight: 700;
 font-size: 0.85rem;
 color: var(--summit);
@@ -182,14 +184,14 @@ gap: 0.5rem;
 margin-bottom: 1.5rem;
 }
 .highlight-tag {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-size: 0.75rem;
 font-weight: 500;
 padding: 0.3rem 0.75rem;
 border-radius: 20px;
 background: var(--cloud-drift);
 color: var(--summit);
-border: 1px solid rgba(46, 107, 138, 0.15);
+border: 1px solid rgba(58, 107, 30, 0.15);
 }
 .trail-ctas {
 display: flex;
@@ -200,7 +202,7 @@ gap: 1rem;
 display: inline-flex;
 align-items: center;
 gap: 0.4rem;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 letter-spacing: 0.05em;
@@ -211,15 +213,15 @@ background: var(--golden-hour);
 color: var(--midnight);
 text-decoration: none;
 border-radius: 8px;
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.trail-cta-primary:hover { background: #d4961f; transform: translateY(-1px); box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6); }
+.trail-cta-primary:hover { background: #d4961f; transform: translateY(-1px); box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6); }
 .trail-cta-secondary {
 display: inline-flex;
 align-items: center;
 gap: 0.4rem;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 letter-spacing: 0.05em;
@@ -227,20 +229,20 @@ text-transform: uppercase;
 padding: 0.6rem 1.4rem;
 min-height: 44px;
 background: transparent;
-color: var(--golden-hour);
+color: var(--pine);
 text-decoration: none;
 border-radius: 8px;
-border: 2px solid var(--golden-hour);
+border: 2px solid var(--pine);
 transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.trail-cta-secondary:hover { background: var(--golden-hour); color: var(--midnight); transform: translateY(-1px); }
+.trail-cta-secondary:hover { background: var(--pine); color: white; transform: translateY(-1px); }
 .tips-section {
-background: var(--midnight);
+background: var(--cream-dark);
 padding: 6rem 2rem;
 }
-.tips-section .section-header h2 { color: var(--snow-cap); }
+.tips-section .section-header h2 { color: var(--pine); }
 .tips-section .section-header h2::after { background: var(--golden-hour); }
-.tips-section .section-header p { color: rgba(255,255,255,0.6); }
+.tips-section .section-header p { color: var(--charcoal-light); }
 .tips-grid {
 max-width: 1200px;
 margin: 0 auto;
@@ -251,9 +253,9 @@ gap: 2rem;
 .tip-card {
 text-align: center;
 padding: 2rem 1.5rem;
-background: rgba(255,255,255,0.05);
+background: var(--snow-cap);
 border-radius: 12px;
-border: 1px solid rgba(255,255,255,0.08);
+border: 1px solid rgba(45, 80, 22, 0.08);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 opacity: 0;
 transform: translateY(20px);
@@ -269,7 +271,7 @@ transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier
 .tip-card:nth-child(4).visible { transition-delay: 0.3s; }
 .tip-card:hover {
 transform: translateY(-4px);
-background: rgba(255,255,255,0.08);
+background: var(--cloud-drift);
 }
 .tip-icon {
 font-size: 2.5rem;
@@ -285,7 +287,7 @@ animation: tipBounce 3s ease-in-out infinite;
 .tip-card:nth-child(3) .tip-icon { animation-delay: 1s; }
 .tip-card:nth-child(4) .tip-icon { animation-delay: 1.5s; }
 .tip-card p {
-color: rgba(255,255,255,0.8);
+color: var(--charcoal-light);
 font-size: 0.95rem;
 line-height: 1.6;
 }
@@ -310,7 +312,7 @@ padding: 2rem 1.5rem;
 background: var(--cloud-drift);
 border-radius: 12px;
 text-decoration: none;
-border: 1px solid rgba(46, 107, 138, 0.1);
+border: 1px solid rgba(58, 107, 30, 0.1);
 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -323,7 +325,7 @@ font-size: 2rem;
 margin-bottom: 0.75rem;
 }
 .resource-card h4 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1rem;
 color: var(--midnight);
@@ -337,7 +339,7 @@ color: var(--granite);
 .adventure-cta-section {
 text-align: center;
 padding: 6rem 2rem;
-background: linear-gradient(135deg, var(--pine-shadow), var(--alpine));
+background: var(--cream-dark);
 position: relative;
 overflow: hidden;
 }
@@ -345,7 +347,7 @@ overflow: hidden;
 content: '';
 position: absolute;
 inset: 0;
-background: radial-gradient(circle at 70% 50%, rgba(232, 168, 56, 0.12) 0%, transparent 70%);
+background: radial-gradient(circle at 70% 50%, rgba(200, 148, 62, 0.12) 0%, transparent 70%);
 animation: gradientShift 8s ease-in-out infinite alternate;
 }
 @keyframes gradientShift {
@@ -357,15 +359,15 @@ position: relative;
 z-index: 2;
 }
 .adventure-cta-content h2 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: clamp(1.8rem, 3vw, 2.5rem);
-color: var(--snow-cap);
+color: var(--pine);
 margin-bottom: 1rem;
 line-height: 1.2;
 }
 .adventure-cta-content p {
-color: rgba(255,255,255,0.8);
+color: var(--charcoal-light);
 font-size: 1rem;
 margin-bottom: 2rem;
 }
@@ -373,7 +375,7 @@ margin-bottom: 2rem;
 display: inline-flex;
 align-items: center;
 gap: 0.5rem;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 letter-spacing: 0.05em;
@@ -384,18 +386,18 @@ background: var(--golden-hour);
 color: var(--midnight);
 text-decoration: none;
 border-radius: 8px;
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 animation: ctaPulse 3s ease-in-out infinite;
 }
 @keyframes ctaPulse {
-0%, 100% { box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4); }
-50% { box-shadow: 0 4px 15px rgba(232, 168, 56, 0), 0 0 0 12px rgba(232, 168, 56, 0); }
+0%, 100% { box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4); }
+50% { box-shadow: 0 4px 15px rgba(200, 148, 62, 0), 0 0 0 12px rgba(200, 148, 62, 0); }
 }
 .cta-button:hover {
 transform: translateY(-2px);
 background: #f0b448;
-box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
+box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
 }
 /* Page-specific footer */
 .site-footer { padding: 4rem 2rem 2rem; color: rgba(255,255,255,0.7); }
