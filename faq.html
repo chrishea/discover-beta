@@ -14,6 +14,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="FAQ | Discover Cloudcroft beta">
     <meta name="twitter:description" content="Everything you need to know about visiting Cloudcroft, NM.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
 
@@ -30,7 +33,7 @@ overflow: hidden;
 .hero-bg {
 position: absolute;
 inset: 0;
-background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--twilight) 100%);
+background: linear-gradient(135deg, var(--pine-shadow) 0%, var(--summit) 50%, var(--alpine) 100%);
 background-size: cover;
 background-position: center;
 animation: kenBurns 20s ease-in-out infinite alternate;
@@ -38,7 +41,7 @@ animation: kenBurns 20s ease-in-out infinite alternate;
 .hero-overlay {
 position: absolute;
 inset: 0;
-background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(74, 45, 107, 0.65));
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
 .hero-content {
 position: relative;
@@ -51,8 +54,8 @@ max-width: 900px;
 display: inline-flex;
 align-items: center;
 gap: 0.5rem;
-background: rgba(232, 168, 56, 0.2);
-border: 1px solid rgba(232, 168, 56, 0.4);
+background: rgba(200, 148, 62, 0.2);
+border: 1px solid rgba(200, 148, 62, 0.4);
 padding: 0.5rem 1.25rem;
 border-radius: 30px;
 margin-bottom: 1.5rem;
@@ -60,15 +63,15 @@ opacity: 0;
 animation: fadeUp 0.8s ease 0.2s forwards;
 }
 .hero-badge span {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 500;
 font-size: 0.8rem;
-color: var(--golden-hour);
+color: var(--pine);
 text-transform: uppercase;
 letter-spacing: 0.15em;
 }
 .hero-title {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(2.5rem, 5vw, 4rem);
 color: var(--snow-cap);
@@ -128,14 +131,14 @@ border-bottom: 2px solid var(--golden-hour);
 font-size: 1.5rem;
 }
 .faq-category-header h2 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.5rem;
 color: var(--midnight);
 }
 .faq-item {
 margin-bottom: 0.75rem;
-border: 1px solid rgba(232, 168, 56, 0.2);
+border: 1px solid rgba(200, 148, 62, 0.2);
 border-radius: 8px;
 overflow: hidden;
 background: var(--snow-cap);
@@ -180,7 +183,7 @@ transition: max-height 0.3s ease, padding 0.3s ease;
 .faq-answer.active {
 max-height: 600px;
 padding: 1.25rem 1.5rem;
-border-top: 1px solid rgba(232, 168, 56, 0.2);
+border-top: 1px solid rgba(200, 148, 62, 0.2);
 }
 .faq-answer p {
 color: var(--granite);
@@ -210,21 +213,21 @@ margin-bottom: 0.5rem;
 line-height: 1.7;
 }
 .contact-cta {
-background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+background: #F0EDE5;
 padding: 3rem;
 border-radius: 12px;
 text-align: center;
 margin-top: 3rem;
 }
 .contact-cta h2 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: 1.8rem;
-color: var(--snow-cap);
+color: #2D5016;
 margin-bottom: 1rem;
 }
 .contact-cta p {
-color: rgba(240, 244, 248, 0.85);
+color: #555555;
 margin-bottom: 1.5rem;
 font-size: 1.05rem;
 }

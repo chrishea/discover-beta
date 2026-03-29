@@ -21,9 +21,10 @@
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Contact DiscoverCloudcroft.com">
-    <meta name="twitter:description" content="Get in touch about visiting Cloudcroft, New Mexico."><link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap"
-        rel="stylesheet">
+    <meta name="twitter:description" content="Get in touch about visiting Cloudcroft, New Mexico.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/common.css">
     <style>
@@ -36,12 +37,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 overflow: hidden;
-background: var(--midnight);
+background: #F0EDE5;
 }
 .hero-gradient {
 position: absolute;
 inset: 0;
-background: linear-gradient(135deg, var(--alpine), var(--summit), var(--midnight));
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 background-size: 300% 300%;
 animation: gradientShift 8s ease infinite;
 }
@@ -64,10 +65,10 @@ padding: 0 2rem;
 max-width: 800px;
 }
 .hero-title {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(2.5rem, 5vw, 4rem);
-color: var(--snow-cap);
+color: white;
 line-height: 1.2;
 margin-bottom: 1rem;
 opacity: 0;
@@ -77,7 +78,7 @@ animation: fadeUp 0.8s ease 0.2s forwards;
 font-family: 'Inter', sans-serif;
 font-weight: 400;
 font-size: clamp(1rem, 2.5vw, 1.2rem);
-color: rgba(240, 244, 248, 0.85);
+color: rgba(255, 255, 255, 0.9);
 letter-spacing: 0.05em;
 opacity: 0;
 animation: fadeUp 0.8s ease 0.5s forwards;
@@ -124,7 +125,7 @@ flex-direction: column;
 gap: 0.4rem;
 }
 .form-group label {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 color: var(--midnight);
@@ -148,7 +149,7 @@ outline: none;
 .form-group select:focus,
 .form-group textarea:focus {
 border-color: var(--golden-hour);
-box-shadow: 0 0 0 3px rgba(232, 168, 56, 0.2);
+box-shadow: 0 0 0 3px rgba(200, 148, 62, 0.2);
 }
 .form-group textarea {
 resize: vertical;
@@ -163,7 +164,7 @@ background-position: right 1rem center;
 padding-right: 2.5rem;
 }
 .btn-submit {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 text-transform: uppercase;
@@ -175,7 +176,7 @@ background: var(--golden-hour);
 color: var(--midnight);
 cursor: pointer;
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 animation: pulse 2.5s ease-in-out infinite;
 margin-top: 0.5rem;
 min-height: 44px;
@@ -183,15 +184,15 @@ min-height: 44px;
 @keyframes pulse {
 0%,
 100% {
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 }
 50% {
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4), 0 0 0 12px rgba(232, 168, 56, 0);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4), 0 0 0 12px rgba(200, 148, 62, 0);
 }
 }
 .btn-submit:hover {
 transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
+box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
 animation: none;
 }
 .info-column {
@@ -215,7 +216,7 @@ transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-b
 }
 .contact-card:hover {
 transform: translateY(-4px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
 }
 @keyframes iconBounce {
 0%,
@@ -236,7 +237,7 @@ transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 animation: iconBounce 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-card h3 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.15rem;
 color: var(--midnight);
@@ -270,7 +271,7 @@ margin: 0 auto;
 text-align: center;
 }
 .map-placeholder {
-background: linear-gradient(135deg, var(--summit), var(--alpine), var(--midnight));
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 border: none;
 border-radius: 12px;
 padding: 5rem 2rem;
@@ -284,35 +285,35 @@ position: absolute;
 inset: 0;
 opacity: 0.08;
 background-image:
-radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
-radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.2) 0%, transparent 40%);
+radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.4) 0%, transparent 50%),
+radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.3) 0%, transparent 40%);
 pointer-events: none;
 }
 .map-pin-icon {
 display: block;
 margin: 0 auto 1.25rem;
 font-size: 3rem;
-filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
 }
 .map-placeholder p {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.2rem;
-color: var(--cloud-drift);
+color: white;
 margin-bottom: 1rem;
 position: relative;
 }
 .map-placeholder .map-coords {
-font-family: 'Space Grotesk', sans-serif; font-variant-numeric: tabular-nums;
+font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
 font-size: 0.85rem;
-color: rgba(240, 244, 248, 0.5);
+color: rgba(255, 255, 255, 0.7);
 margin-bottom: 1.5rem;
 display: block;
 position: relative;
 }
 .map-placeholder a {
 display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 text-transform: uppercase;
@@ -322,14 +323,14 @@ border-radius: 8px;
 text-decoration: none;
 background: var(--golden-hour);
 color: var(--midnight);
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
 min-height: 44px;
 }
 .map-placeholder a:hover {
 transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
+box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
 }
 /* Page-specific footer (uses ::before instead of .footer-gradient-border) */
 .site-footer { padding: 4rem 2rem 2rem; }
@@ -349,9 +350,9 @@ animation: gradientBorder 6s linear infinite;
 .footer-grid { max-width: 1200px; }
 .footer-col p, .footer-col a { line-height: 2; display: block; }
 .footer-brand {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700; font-size: 1.2rem;
-color: var(--snow-cap); letter-spacing: 2px;
+color: var(--charcoal); letter-spacing: 2px;
 text-transform: uppercase; margin-bottom: 1rem; display: block;
 }
 .footer-brand span { color: var(--golden-hour); }
@@ -634,11 +635,11 @@ color: var(--granite); font-size: 0.8rem;
     </script>
 
 <div id="beta-modal" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:1;transition:opacity 0.4s ease">
-  <div style="background:#1a1a2e;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1)">
+  <div style="background:#1a1a2e;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(45, 80, 22, 0.08)">
     <div style="font-size:2rem;margin-bottom:0.75rem">&#9888;</div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;margin:0 0 0.5rem;color:#d4a03c">Beta Site</h2>
-    <p style="font-family:'Space Grotesk',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
-    <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(255,255,255,0.15);overflow:hidden">
+    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#c8943e">Beta Site</h2>
+    <p style="font-family:'DM Sans',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
+    <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(45, 80, 22, 0.1);overflow:hidden">
       <div id="beta-modal-progress" style="height:100%;width:100%;background:#d4a03c;border-radius:2px;transition:width 12s linear"></div>
     </div>
   </div>

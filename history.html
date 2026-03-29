@@ -18,7 +18,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="History of Cloudcroft | Discover Cloudcroft beta">
     <meta name="twitter:description" content="Discover the rich history of Cloudcroft, NM. From ancient Apache trails to railroad boom town."><link href="css/fonts.css" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/common.css">
     <style>
 .hero {
@@ -45,7 +47,7 @@ animation: kenBurns 20s ease-in-out infinite alternate;
 .hero-overlay {
 position: absolute;
 inset: 0;
-background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(74, 45, 107, 0.65));
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
 .hero-content {
 position: relative;
@@ -58,8 +60,8 @@ max-width: 900px;
 display: inline-flex;
 align-items: center;
 gap: 0.5rem;
-background: rgba(232, 168, 56, 0.2);
-border: 1px solid rgba(232, 168, 56, 0.4);
+background: rgba(200, 148, 62, 0.2);
+border: 1px solid rgba(200, 148, 62, 0.4);
 padding: 0.5rem 1.25rem;
 border-radius: 30px;
 margin-bottom: 1.5rem;
@@ -67,7 +69,7 @@ opacity: 0;
 animation: fadeUp 0.8s ease 0.2s forwards;
 }
 .hero-badge span {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 500;
 font-size: 0.8rem;
 color: var(--golden-hour);
@@ -75,7 +77,7 @@ text-transform: uppercase;
 letter-spacing: 0.15em;
 }
 .hero-title {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(2.5rem, 5vw, 4rem);
 color: var(--snow-cap);
@@ -99,7 +101,7 @@ to { opacity: 1; transform: translateY(0); }
 font-family: 'Inter', sans-serif;
 font-weight: 400;
 font-size: clamp(1rem, 2.5vw, 1.35rem);
-color: rgba(240, 244, 248, 0.9);
+color: rgba(44, 44, 44, 0.9);
 letter-spacing: 0.05em;
 margin-bottom: 2rem;
 opacity: 0;
@@ -119,7 +121,7 @@ to { opacity: 1; transform: translateY(0); }
 }
 .btn-primary {
 display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 text-transform: uppercase;
@@ -129,17 +131,17 @@ border-radius: 8px;
 text-decoration: none;
 background: var(--golden-hour);
 color: var(--midnight);
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 min-height: 44px;
 }
 .btn-primary:hover {
 transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
+box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
 }
 .btn-secondary {
 display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 text-transform: uppercase;
@@ -148,18 +150,18 @@ padding: 0.9rem 2rem;
 border-radius: 8px;
 text-decoration: none;
 background: transparent;
-color: var(--golden-hour);
-border: 2px solid var(--golden-hour);
+color: #2D5016;
+border: 2px solid #2D5016;
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s, color 0.3s;
 min-height: 44px;
 }
 .btn-secondary:hover {
-background: var(--golden-hour);
-color: var(--midnight);
+background: #2D5016;
+color: white;
 transform: translateY(-2px);
 }
 .timeline-nav {
-background: var(--midnight);
+background: #F0EDE5;
 padding: 1.25rem 2rem;
 position: sticky;
 top: 0;
@@ -174,22 +176,22 @@ gap: 0.5rem;
 flex-wrap: wrap;
 }
 .timeline-link {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.8rem;
-color: var(--cloud-drift);
+color: #2C2C2C;
 text-decoration: none;
 padding: 0.5rem 1.25rem;
 border-radius: 25px;
 text-transform: uppercase;
 letter-spacing: 0.5px;
 transition: all 0.3s ease;
-border: 1px solid rgba(240, 244, 248, 0.15);
+border: 1px solid rgba(45, 80, 22, 0.15);
 }
 .timeline-link:hover {
-background: rgba(232, 168, 56, 0.2);
-border-color: var(--golden-hour);
-color: var(--golden-hour);
+background: rgba(45, 80, 22, 0.1);
+border-color: #2D5016;
+color: #2D5016;
 }
 .section-description {
 font-size: 1.05rem;
@@ -206,17 +208,17 @@ background: var(--cloud-drift);
 }
 .era-badge {
 display: inline-block;
-background: rgba(232, 168, 56, 0.15);
+background: rgba(200, 148, 62, 0.15);
 color: var(--golden-hour);
 padding: 0.4rem 1rem;
 border-radius: 25px;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-size: 0.8rem;
 font-weight: 700;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 margin-bottom: 1rem;
-border: 1px solid rgba(232, 168, 56, 0.3);
+border: 1px solid rgba(200, 148, 62, 0.3);
 }
 .section-intro {
 font-size: 1.15rem;
@@ -238,7 +240,7 @@ line-height: 1.9;
 margin-bottom: 1.5rem;
 }
 .history-content p:first-of-type::first-letter {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-size: 3.5rem;
 float: left;
 line-height: 1;
@@ -248,7 +250,7 @@ color: var(--golden-hour);
 }
 .feature-box {
 background: var(--snow-cap);
-border: 1px solid rgba(46, 107, 138, 0.15);
+border: 1px solid rgba(58, 107, 30, 0.15);
 border-radius: 12px;
 padding: 2rem;
 margin: 2rem 0;
@@ -258,7 +260,7 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 background: var(--cloud-drift);
 }
 .feature-box h4 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.2rem;
 color: var(--midnight);
@@ -297,7 +299,7 @@ overflow: hidden;
 }
 .quote-box::before {
 content: '\201C';
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-size: 6rem;
 position: absolute;
 top: -10px;
@@ -314,7 +316,7 @@ margin-bottom: 1rem;
 position: relative;
 }
 .quote-attribution {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-size: 0.85rem;
 opacity: 0.8;
 letter-spacing: 0.05em;
@@ -344,7 +346,7 @@ transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier
 .stat-item:nth-child(3).visible { transition-delay: 0.2s; }
 .stat-item:nth-child(4).visible { transition-delay: 0.3s; }
 .stat-number {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-size: 2.5rem;
 font-weight: 700;
 color: var(--golden-hour);
@@ -352,7 +354,7 @@ line-height: 1;
 margin-bottom: 0.5rem;
 }
 .stat-label {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-size: 0.8rem;
 color: var(--granite);
 text-transform: uppercase;
@@ -377,7 +379,7 @@ border-radius: 3px;
 position: relative;
 margin-bottom: 2rem;
 padding-bottom: 2rem;
-border-bottom: 1px solid rgba(46, 107, 138, 0.15);
+border-bottom: 1px solid rgba(58, 107, 30, 0.15);
 }
 .timeline-event:last-child {
 border-bottom: none;
@@ -398,14 +400,14 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 transform: translateX(-6px);
 }
 .timeline-year {
-font-family: 'Space Grotesk', sans-serif; font-variant-numeric: tabular-nums;
+font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
 font-size: 0.9rem;
 font-weight: 700;
 color: var(--golden-hour);
 margin-bottom: 0.5rem;
 }
 .timeline-event h4 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.2rem;
 color: var(--midnight);
@@ -428,7 +430,7 @@ border-radius: 12px;
 padding: 2rem 1.5rem;
 text-align: center;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-border: 1px solid rgba(46, 107, 138, 0.1);
+border: 1px solid rgba(58, 107, 30, 0.1);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
 opacity: 0;
 transform: translateY(30px);
@@ -443,12 +445,12 @@ transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier
 .gallery-card:nth-child(4).visible { transition-delay: 0.3s; }
 .gallery-card:hover {
 transform: translateY(-6px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
 }
 .gallery-icon {
 width: 70px;
 height: 70px;
-background: linear-gradient(135deg, rgba(232, 168, 56, 0.15), rgba(46, 107, 138, 0.15));
+background: linear-gradient(135deg, rgba(200, 148, 62, 0.15), rgba(58, 107, 30, 0.15));
 border-radius: 50%;
 display: flex;
 align-items: center;
@@ -457,7 +459,7 @@ margin: 0 auto 1rem;
 font-size: 2rem;
 }
 .gallery-card h4 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.05rem;
 color: var(--midnight);
@@ -469,7 +471,7 @@ color: var(--granite);
 line-height: 1.7;
 }
 .cta-section {
-background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+background: #F0EDE5;
 padding: 6rem 2rem;
 text-align: center;
 }
@@ -478,14 +480,14 @@ max-width: 700px;
 margin: 0 auto;
 }
 .cta-container h2 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(1.8rem, 3vw, 2.5rem);
-color: var(--snow-cap);
+color: #2D5016;
 margin-bottom: 1rem;
 }
 .cta-container p {
-color: rgba(240, 244, 248, 0.85);
+color: #555555;
 font-size: 1.1rem;
 line-height: 1.7;
 margin-bottom: 2rem;

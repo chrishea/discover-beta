@@ -1,95 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
   <url>
     <loc>https://discovercloudcroft.com/</loc>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Main Navigation / Info -->
   <url>
     <loc>https://discovercloudcroft.com/about.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/activities.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/hiking-trails.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/best-hiking-trails.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/osha-trail.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/mexican-canyon-trestle.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/disc-golf.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/fishing.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/pickleball.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/outdoor-recreation.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/dining.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/cloudcroft-brewery.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/western-bar.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/lodging.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/events.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/seasonal.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/history.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/local-parks.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/visiting-guide.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/emergency-services.html</loc>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/plan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/visiting-guide.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/contact.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://discovercloudcroft.com/faq.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/history.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/emergency-services.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Lodging -->
+  <url>
+    <loc>https://discovercloudcroft.com/lodging.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/grand-cloudcroft-hotel.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/cabins-at-cloudcroft.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/summit-inn.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/vacation-rentals.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dining -->
+  <url>
+    <loc>https://discovercloudcroft.com/dining.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/cloudcroft-brewery.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/western-bar.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/mad-jacks-bbq.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/brother-n-law-bbq.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/big-daddys.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/high-rollin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/instant-karma.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/groceries.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Activities & Recreation -->
+  <url>
+    <loc>https://discovercloudcroft.com/activities.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/hiking-trails.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/best-hiking-trails.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/osha-trail.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/mexican-canyon-trestle.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/biking.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/camping.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/fishing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/pickleball.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/disc-golf.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/outdoor-recreation.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/local-parks.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/dark-skies.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/shopping.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/art-galleries.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Events -->
+  <url>
+    <loc>https://discovercloudcroft.com/events.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/beerfest.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/lumberjack-day.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/high-altitude-classic.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Seasons -->
+  <url>
+    <loc>https://discovercloudcroft.com/seasonal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/spring.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/summer.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/fall.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/winter.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Nearby Destinations -->
+  <url>
+    <loc>https://discovercloudcroft.com/nearby-destinations.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/alamogordo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/timberon.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/mayhill.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/sunspot-observatory.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Services & Real Estate -->
+  <url>
+    <loc>https://discovercloudcroft.com/real-estate.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

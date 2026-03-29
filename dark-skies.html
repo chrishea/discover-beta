@@ -18,6 +18,9 @@
     <meta name="twitter:description" content="Bortle Class 2 skies, 300+ clear nights, 3 observatories.">
 
     <link href="css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
 
     <script type="application/ld+json">
@@ -33,13 +36,13 @@
     <style>
 .hero { position: relative; height: 70vh; min-height: 500px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #0a0a1a 0%, var(--midnight) 40%, var(--twilight) 100%); }
-.hero-overlay { position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 20%, rgba(74, 45, 107, 0.3) 0%, transparent 40%), radial-gradient(ellipse at 70% 60%, rgba(46, 107, 138, 0.25) 0%, transparent 45%); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35)); }
 .hero-stars { position: absolute; inset: 0; background-image: radial-gradient(2px 2px at 20px 30px, #f0f8ff, transparent), radial-gradient(2px 2px at 40px 70px, #ffd700, transparent), radial-gradient(1px 1px at 90px 40px, #f0f8ff, transparent), radial-gradient(2px 2px at 130px 80px, #f0f8ff, transparent), radial-gradient(1px 1px at 160px 120px, #ffd700, transparent), radial-gradient(2px 2px at 200px 50px, #f0f8ff, transparent), radial-gradient(1px 1px at 250px 160px, #f0f8ff, transparent), radial-gradient(2px 2px at 280px 90px, #ffd700, transparent), radial-gradient(1px 1px at 320px 140px, #f0f8ff, transparent), radial-gradient(2px 2px at 350px 200px, #f0f8ff, transparent); background-size: 500px 250px; animation: twinkle 8s ease-in-out infinite alternate; }
 @keyframes twinkle { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; } }
 .hero-content { position: relative; z-index: 2; text-align: center; padding: 2rem; max-width: 900px; }
-.hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(232, 168, 56, 0.2); border: 1px solid rgba(232, 168, 56, 0.4); padding: 0.5rem 1.25rem; border-radius: 30px; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
-.hero-badge span { font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 0.8rem; color: var(--golden-hour); text-transform: uppercase; letter-spacing: 0.15em; }
-.hero-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(2.5rem, 5vw, 4rem); color: var(--snow-cap); line-height: 1.2; margin-bottom: 1rem; text-shadow: 0 0 30px rgba(74, 45, 107, 0.5); }
+.hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(200, 148, 62, 0.2); border: 1px solid rgba(200, 148, 62, 0.4); padding: 0.5rem 1.25rem; border-radius: 30px; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
+.hero-badge span { font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 0.8rem; color: #2D5016; text-transform: uppercase; letter-spacing: 0.15em; }
+.hero-title { font-family: 'DM Sans', sans-serif; font-weight: 900; font-size: clamp(2.5rem, 5vw, 4rem); color: var(--snow-cap); line-height: 1.2; margin-bottom: 1rem; text-shadow: 0 0 30px rgba(200, 148, 62, 0.5); }
 .hero-title .word { display: inline-block; opacity: 0; transform: translateY(20px); animation: wordReveal 0.6s ease forwards; }
 .hero-title .word:nth-child(1) { animation-delay: 0.2s; }
 .hero-title .word:nth-child(2) { animation-delay: 0.4s; }
@@ -47,50 +50,50 @@
 @keyframes wordReveal { to { opacity: 1; transform: translateY(0); } }
 .hero-subtitle { font-family: 'Inter', sans-serif; font-weight: 400; font-size: clamp(1rem, 2.5vw, 1.25rem); color: rgba(196, 184, 220, 0.95); letter-spacing: 0.05em; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.8s ease 1s forwards; font-style: italic; }
 .hero-ctas { display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards; }
-.info-bar { background: #0a0a1a; padding: 1.5rem 2rem; }
+.info-bar { background: #F0EDE5; padding: 1.5rem 2rem; }
 .info-bar-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
-.info-bar-item { display: flex; align-items: center; gap: 0.75rem; color: rgba(196, 184, 220, 0.9); }
-.info-bar-icon { width: 40px; height: 40px; background: rgba(232, 168, 56, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+.info-bar-item { display: flex; align-items: center; gap: 0.75rem; color: #2C2C2C; }
+.info-bar-icon { width: 40px; height: 40px; background: rgba(200, 148, 62, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
 .info-text { display: flex; flex-direction: column; }
 .info-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
-.info-value { font-weight: 600; color: var(--snow-cap); }
+.info-value { font-weight: 600; color: #2C2C2C; }
 .section-description { font-size: 1.05rem; color: var(--granite); max-width: 700px; margin: 0 auto 3rem; text-align: center; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
 .about-text p { font-size: 1.05rem; color: var(--granite); margin-bottom: 1.5rem; line-height: 1.8; }
 .about-features { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
-.about-feature { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 500; padding: 0.5rem 1rem; background: var(--cloud-drift); color: var(--summit); border-radius: 25px; border: 1px solid rgba(46, 107, 138, 0.2); }
+.about-feature { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 500; padding: 0.5rem 1rem; background: var(--cloud-drift); color: var(--summit); border-radius: 25px; border: 1px solid rgba(58, 107, 30, 0.2); }
 .menu-section { background: var(--cloud-drift); }
 .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-.menu-card { background: var(--snow-cap); border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(11, 29, 58, 0.08); border: 1px solid rgba(74, 45, 107, 0.1); transition: all 0.3s ease; opacity: 0; transform: translateY(30px); }
+.menu-card { background: var(--snow-cap); border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(45, 80, 22, 0.08); border: 1px solid rgba(200, 148, 62, 0.1); transition: all 0.3s ease; opacity: 0; transform: translateY(30px); }
 .menu-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease; }
-.menu-card:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(11, 29, 58, 0.12); }
+.menu-card:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(45, 80, 22, 0.12); }
 .menu-card-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--twilight), var(--alpine)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; }
-.menu-card h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; color: var(--midnight); margin-bottom: 0.5rem; }
+.menu-card h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.2rem; color: var(--midnight); margin-bottom: 0.5rem; }
 .menu-card p { color: var(--granite); font-size: 0.95rem; line-height: 1.7; }
-.byway-section { background: linear-gradient(135deg, #0a0a1a 0%, var(--midnight) 100%); color: var(--snow-cap); padding: 5rem 2rem; }
-.byway-section .section-title { color: var(--snow-cap); }
-.byway-intro { font-family: 'Inter', sans-serif; font-size: 1.1rem; color: rgba(196, 184, 220, 0.9); margin-bottom: 2rem; font-style: italic; line-height: 1.8; border-left: 3px solid var(--golden-hour); padding-left: 1.5rem; max-width: 800px; }
+.byway-section { background: #F0EDE5; color: #2C2C2C; padding: 5rem 2rem; }
+.byway-section .section-title { color: #2D5016; }
+.byway-intro { font-family: 'Inter', sans-serif; font-size: 1.1rem; color: #555555; margin-bottom: 2rem; font-style: italic; line-height: 1.8; border-left: 3px solid var(--golden-hour); padding-left: 1.5rem; max-width: 800px; }
 .planet-markers { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 3rem 0; }
-.planet-marker { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(232, 168, 56, 0.3); border-radius: 8px; padding: 1rem 1.5rem; text-align: center; transition: all 0.3s ease; }
-.planet-marker:hover { background: rgba(232, 168, 56, 0.15); transform: scale(1.05); }
+.planet-marker { background: rgba(45, 80, 22, 0.08); border: 1px solid rgba(200, 148, 62, 0.3); border-radius: 8px; padding: 1rem 1.5rem; text-align: center; transition: all 0.3s ease; }
+.planet-marker:hover { background: rgba(200, 148, 62, 0.15); transform: scale(1.05); }
 .planet-icon { font-size: 2rem; margin-bottom: 0.5rem; }
-.planet-name { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: var(--golden-hour); }
-.planet-distance { font-size: 0.75rem; color: rgba(196, 184, 220, 0.8); margin-top: 0.25rem; }
-.byway-info { background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 2rem; margin-top: 2rem; }
-.byway-info p { font-size: 1.05rem; line-height: 1.8; color: rgba(196, 184, 220, 0.9); margin-bottom: 1rem; }
+.planet-name { font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 0.9rem; color: #2D5016; }
+.planet-distance { font-size: 0.75rem; color: #555555; margin-top: 0.25rem; }
+.byway-info { background: rgba(45, 80, 22, 0.05); border-radius: 12px; padding: 2rem; margin-top: 2rem; }
+.byway-info p { font-size: 1.05rem; line-height: 1.8; color: #555555; margin-bottom: 1rem; }
 .byway-info p:last-child { margin-bottom: 0; }
-.highlights-section { background: var(--midnight); position: relative; overflow: hidden; }
-.highlights-section::before { content: ''; position: absolute; inset: 0; opacity: 0.06; background-image: repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px), repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px); pointer-events: none; }
+.highlights-section { background: #F0EDE5; position: relative; overflow: hidden; }
+.highlights-section::before { content: ''; position: absolute; inset: 0; opacity: 0.06; background-image: repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px), repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px); pointer-events: none; }
 .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; position: relative; }
 .tip-card { background: var(--snow-cap); border-radius: 12px; padding: 1.5rem; border-left: 4px solid var(--twilight); opacity: 0; transform: translateY(30px); }
 .tip-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease; }
-.tip-number { display: inline-block; background: var(--twilight); color: var(--snow-cap); width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 0.9rem; margin-bottom: 1rem; }
-.tip-card h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--midnight); margin-bottom: 0.5rem; }
+.tip-number { display: inline-block; background: var(--twilight); color: var(--snow-cap); width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 0.9rem; margin-bottom: 1rem; }
+.tip-card h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--midnight); margin-bottom: 0.5rem; }
 .tip-card p { color: var(--granite); font-size: 0.95rem; line-height: 1.7; }
-.cta-section { background: linear-gradient(135deg, #0a0a1a 0%, var(--twilight) 100%); padding: 6rem 2rem; text-align: center; }
+.cta-section { background: #F0EDE5; padding: 6rem 2rem; text-align: center; }
 .cta-container { max-width: 700px; margin: 0 auto; }
-.cta-container h2 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(1.8rem, 3vw, 2.5rem); color: var(--snow-cap); margin-bottom: 1rem; }
-.cta-container p { color: rgba(240, 244, 248, 0.85); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; }
+.cta-container h2 { font-family: 'DM Sans', sans-serif; font-weight: 900; font-size: clamp(1.8rem, 3vw, 2.5rem); color: #2D5016; margin-bottom: 1rem; }
+.cta-container p { color: #555555; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; }
 .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 .site-footer { padding: 4rem 2rem 2rem; }
 .site-footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour)); background-size: 300% 100%; animation: gradientBorder 6s linear infinite; }
@@ -180,8 +183,8 @@
 
         <section class="byway-section" aria-label="Sunspot Scenic Byway">
             <div class="section-container fade-in">
-                <span class="section-label" style="color: var(--golden-hour); letter-spacing: 3px;">Scenic Drive</span>
-                <h2 class="section-title" style="color: var(--snow-cap);">Highway 6563: The Sunspot Scenic Byway</h2>
+                <span class="section-label" style="color: #2D5016; letter-spacing: 3px;">Scenic Drive</span>
+                <h2 class="section-title" style="color: #2D5016;">Highway 6563: The Sunspot Scenic Byway</h2>
                 <p class="byway-intro">The only highway in America named for a wavelength of light, this 15-mile journey from Cloudcroft to Sunspot features a scale model of our entire solar system.</p>
 
                 <div class="planet-markers">

@@ -18,6 +18,9 @@
     <meta name="twitter:description" content="Explore nearby destinations from Cloudcroft, NM. White Sands, Alamogordo, Timberon, Mayhill, Sunspot, and more.">
 
     <link href="css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
 
     <script type="application/ld+json">
@@ -56,7 +59,7 @@
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(74, 45, 107, 0.65));
+    background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
 .hero-content {
     position: relative;
@@ -69,8 +72,8 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(232, 168, 56, 0.2);
-    border: 1px solid rgba(232, 168, 56, 0.4);
+    background: rgba(200, 148, 62, 0.2);
+    border: 1px solid rgba(200, 148, 62, 0.4);
     padding: 0.5rem 1.25rem;
     border-radius: 30px;
     margin-bottom: 1.5rem;
@@ -78,15 +81,15 @@
     animation: fadeUp 0.8s ease 0.2s forwards;
 }
 .hero-badge span {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 0.8rem;
-    color: var(--golden-hour);
+    color: #2D5016;
     text-transform: uppercase;
     letter-spacing: 0.15em;
 }
 .hero-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 900;
     font-size: clamp(2.5rem, 5vw, 4rem);
     color: var(--snow-cap);
@@ -123,7 +126,7 @@
     animation: fadeUp 0.8s ease 1.4s forwards;
 }
 .info-bar {
-    background: var(--midnight);
+    background: #F0EDE5;
     padding: 1.5rem 2rem;
 }
 .info-bar-inner {
@@ -135,20 +138,20 @@
     flex-wrap: wrap;
 }
 .info-bar-item {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
-    color: var(--cloud-drift);
+    color: #2C2C2C;
     text-decoration: none;
     padding: 0.5rem 1.25rem;
     border-radius: 25px;
     transition: all 0.3s ease;
-    border: 1px solid rgba(232, 168, 56, 0.3);
+    border: 1px solid rgba(200, 148, 62, 0.3);
 }
 .info-bar-item:hover {
-    background: rgba(232, 168, 56, 0.15);
-    border-color: var(--golden-hour);
-    color: var(--golden-hour);
+    background: rgba(200, 148, 62, 0.15);
+    border-color: #2D5016;
+    color: #2D5016;
 }
 .section-description {
     font-size: 1.05rem;
@@ -181,7 +184,7 @@
     direction: ltr;
 }
 .destination-text h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
@@ -216,7 +219,7 @@
     flex-shrink: 0;
 }
 .destination-detail-content h4 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 0.95rem;
     margin-bottom: 0.25rem;
@@ -229,7 +232,7 @@
 .destination-image {
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(11, 29, 58, 0.15);
+    box-shadow: 0 20px 60px rgba(45, 80, 22, 0.15);
     height: 400px;
     display: flex;
     align-items: center;
@@ -250,7 +253,7 @@
     margin-bottom: 1rem;
 }
 .destination-image-placeholder p {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
 }
 .highlights-list {
@@ -268,7 +271,7 @@
     position: absolute;
     left: 0;
     font-weight: bold;
-    color: var(--golden-hour);
+    color: #2D5016;
 }
 /* Destination color themes */
 .white-sands-section .destination-text h2 { color: var(--alpine); }
@@ -291,8 +294,8 @@
 .mayhill-section .destination-detail-content h4 { color: var(--summit); }
 .mayhill-section .destination-image { background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--alpine) 100%); }
 
-.alamogordo-section .destination-text h2 { color: var(--golden-hour); }
-.alamogordo-section .destination-detail-content h4 { color: var(--golden-hour); }
+.alamogordo-section .destination-text h2 { color: #2D5016; }
+.alamogordo-section .destination-detail-content h4 { color: #2D5016; }
 .alamogordo-section .destination-image { background: linear-gradient(135deg, var(--golden-hour) 0%, #d4553a 50%, #8B4513 100%); }
 
 .sunspot-section .destination-text h2 { color: var(--twilight); }
@@ -300,7 +303,7 @@
 .sunspot-section .destination-image { background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 50%, var(--alpine) 100%); }
 
 .cta-section {
-    background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+    background: #F0EDE5;
     padding: 6rem 2rem;
     text-align: center;
 }
@@ -309,14 +312,14 @@
     margin: 0 auto;
 }
 .cta-container h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 900;
     font-size: clamp(1.8rem, 3vw, 2.5rem);
-    color: var(--snow-cap);
+    color: #2D5016;
     margin-bottom: 1rem;
 }
 .cta-container p {
-    color: rgba(240, 244, 248, 0.85);
+    color: #555555;
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 2rem;

@@ -18,6 +18,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Western Bar & Cafe | Discover Cloudcroft beta">
     <meta name="twitter:description" content="Dine at the Western Bar & Cafe in Cloudcroft, NM. A beloved local gathering spot serving classic American fare and cold drinks."><link href="css/fonts.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/common.css">
     <style>
@@ -45,7 +48,7 @@ animation: kenBurns 20s ease-in-out infinite alternate;
 .hero-overlay {
 position: absolute;
 inset: 0;
-background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(74, 45, 107, 0.65));
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
 .hero-content {
 position: relative;
@@ -58,8 +61,8 @@ max-width: 900px;
 display: inline-flex;
 align-items: center;
 gap: 0.5rem;
-background: rgba(232, 168, 56, 0.2);
-border: 1px solid rgba(232, 168, 56, 0.4);
+background: rgba(200, 148, 62, 0.2);
+border: 1px solid rgba(200, 148, 62, 0.4);
 padding: 0.5rem 1.25rem;
 border-radius: 30px;
 margin-bottom: 1.5rem;
@@ -67,7 +70,7 @@ opacity: 0;
 animation: fadeUp 0.8s ease 0.2s forwards;
 }
 .hero-badge span {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 500;
 font-size: 0.8rem;
 color: var(--golden-hour);
@@ -75,7 +78,7 @@ text-transform: uppercase;
 letter-spacing: 0.15em;
 }
 .hero-title {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(2.5rem, 5vw, 4rem);
 color: var(--snow-cap);
@@ -119,7 +122,7 @@ to { opacity: 1; transform: translateY(0); }
 }
 .btn-primary {
 display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 text-transform: uppercase;
@@ -129,17 +132,17 @@ border-radius: 8px;
 text-decoration: none;
 background: var(--golden-hour);
 color: var(--midnight);
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 min-height: 44px;
 }
 .btn-primary:hover {
 transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
+box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
 }
 .btn-secondary {
 display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 text-transform: uppercase;
@@ -148,18 +151,18 @@ padding: 0.9rem 2rem;
 border-radius: 8px;
 text-decoration: none;
 background: transparent;
-color: var(--golden-hour);
-border: 2px solid var(--golden-hour);
+color: var(--pine);
+border: 2px solid var(--pine);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s, color 0.3s;
 min-height: 44px;
 }
 .btn-secondary:hover {
-background: var(--golden-hour);
-color: var(--midnight);
+background: var(--pine);
+color: white;
 transform: translateY(-2px);
 }
 .info-bar {
-background: var(--midnight);
+background: var(--cream-dark);
 padding: 1.5rem 2rem;
 }
 .info-bar-inner {
@@ -174,12 +177,12 @@ flex-wrap: wrap;
 display: flex;
 align-items: center;
 gap: 0.75rem;
-color: var(--cloud-drift);
+color: var(--charcoal);
 font-size: 0.9rem;
 font-weight: 500;
 }
 .info-bar-item a {
-color: var(--cloud-drift);
+color: var(--charcoal);
 text-decoration: none;
 transition: color 0.3s;
 }
@@ -189,7 +192,7 @@ color: var(--golden-hour);
 .info-bar-icon {
 width: 40px;
 height: 40px;
-background: rgba(232, 168, 56, 0.15);
+background: rgba(200, 148, 62, 0.15);
 border-radius: 50%;
 display: flex;
 align-items: center;
@@ -231,13 +234,13 @@ padding: 0.5rem 1rem;
 background: var(--cloud-drift);
 color: var(--summit);
 border-radius: 25px;
-border: 1px solid rgba(46, 107, 138, 0.2);
+border: 1px solid rgba(58, 107, 30, 0.2);
 }
 .about-image {
 border-radius: 16px;
 overflow: hidden;
-box-shadow: 0 20px 60px rgba(11, 29, 58, 0.15);
-background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(46, 107, 138, 0.1) 100%);
+box-shadow: 0 20px 60px rgba(45, 80, 22, 0.15);
+background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(58, 107, 30, 0.1) 100%);
 height: 400px;
 display: flex;
 align-items: center;
@@ -290,14 +293,14 @@ transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier
 .menu-card:nth-child(6).visible { transition-delay: 0.3s; }
 .menu-card:hover {
 transform: translateY(-6px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
 }
 .menu-card-icon {
 font-size: 2.5rem;
 margin-bottom: 1rem;
 }
 .menu-card h3 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.2rem;
 color: var(--midnight);
@@ -322,7 +325,7 @@ font-size: 0.95rem;
 border-bottom: none;
 }
 .highlights-section {
-background: var(--midnight);
+background: var(--cream-dark);
 position: relative;
 overflow: hidden;
 }
@@ -332,8 +335,8 @@ position: absolute;
 inset: 0;
 opacity: 0.06;
 background-image:
-repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px),
-repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px);
+repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(45, 80, 22, 0.06) 40px, rgba(45, 80, 22, 0.06) 41px),
+repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(45, 80, 22, 0.06) 40px, rgba(45, 80, 22, 0.06) 41px);
 pointer-events: none;
 }
 .highlights-grid {
@@ -345,9 +348,9 @@ position: relative;
 .highlight-card {
 text-align: center;
 padding: 2.5rem 2rem;
-background: rgba(255, 255, 255, 0.05);
+background: rgba(45, 80, 22, 0.04);
 border-radius: 12px;
-border: 1px solid rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(45, 80, 22, 0.08);
 transition: transform 0.3s ease, background 0.3s ease;
 opacity: 0;
 transform: translateY(30px);
@@ -361,21 +364,21 @@ transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier
 .highlight-card:nth-child(3).visible { transition-delay: 0.2s; }
 .highlight-card:hover {
 transform: translateY(-6px);
-background: rgba(255, 255, 255, 0.1);
+background: rgba(45, 80, 22, 0.08);
 }
 .highlight-icon {
 font-size: 3rem;
 margin-bottom: 1rem;
 }
 .highlight-card h3 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.2rem;
-color: var(--golden-hour);
+color: var(--pine);
 margin-bottom: 0.75rem;
 }
 .highlight-card p {
-color: rgba(240, 244, 248, 0.8);
+color: #555555;
 font-size: 0.95rem;
 line-height: 1.7;
 }
@@ -401,14 +404,14 @@ transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier
 }
 .visiting-card:hover {
 transform: translateY(-6px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
 }
 .visiting-icon {
 font-size: 2rem;
 margin-bottom: 0.75rem;
 }
 .visiting-card h4 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.1rem;
 color: var(--midnight);
@@ -428,7 +431,7 @@ transition: color 0.3s;
 color: var(--golden-hour);
 }
 .cta-section {
-background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+background: #F0EDE5;
 padding: 6rem 2rem;
 text-align: center;
 }
@@ -437,14 +440,14 @@ max-width: 700px;
 margin: 0 auto;
 }
 .cta-container h2 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(1.8rem, 3vw, 2.5rem);
-color: var(--snow-cap);
+color: #2C2C2C;
 margin-bottom: 1rem;
 }
 .cta-container p {
-color: rgba(240, 244, 248, 0.85);
+color: #555555;
 font-size: 1.1rem;
 line-height: 1.7;
 margin-bottom: 2rem;
@@ -706,9 +709,9 @@ transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier
         <section class="section highlights-section" aria-label="Why visit Western Bar">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: var(--golden-hour); letter-spacing: 3px;">Why We're Special</span>
-                    <h2 class="section-title section-title-centered" style="color: var(--snow-cap);">A Cloudcroft Institution</h2>
-                    <p class="section-description" style="color: rgba(240,244,248,0.7);">What makes Western Bar & Cafe a must-visit when you're in the mountains.</p>
+                    <span class="section-label" style="color: var(--pine); letter-spacing: 3px;">Why We're Special</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">A Cloudcroft Institution</h2>
+                    <p class="section-description" style="color: #555555;">What makes Western Bar & Cafe a must-visit when you're in the mountains.</p>
                 </div>
                 <div class="highlights-grid">
                     <div class="highlight-card">

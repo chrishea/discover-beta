@@ -15,6 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Events & Festivals | Discover Cloudcroft">
     <meta name="twitter:description" content="Festivals, races, and gatherings — Cloudcroft knows how to celebrate at 8,676 feet."><link href="css/fonts.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/common.css">
     <style>body { background: var(--cloud-drift); }
@@ -44,15 +47,15 @@ transition: background 0.4s ease, box-shadow 0.4s ease, padding 0.3s ease;
 background: transparent;
 }
 header.scrolled {
-background: var(--midnight);
-box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+background: rgba(250, 248, 243, 0.95);
+box-shadow: 0 2px 20px rgba(0,0,0,0.06);
 padding: 0.6rem 2rem;
 }
 .logo {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: 1.5rem;
-color: var(--snow-cap);
+color: var(--charcoal);
 text-decoration: none;
 letter-spacing: 1px;
 }
@@ -62,7 +65,7 @@ font-size: 0.65rem;
 font-weight: 600;
 text-transform: uppercase;
 letter-spacing: 0.08em;
-background: rgba(255,255,255,0.18);
+background: rgba(45, 80, 22, 0.1);
 padding: 2px 7px;
 border-radius: 4px;
 vertical-align: middle;
@@ -71,23 +74,23 @@ opacity: 0.75;
 }
 nav { display: flex; align-items: center; gap: 0.25rem; }
 nav a {
-color: var(--snow-cap);
+color: var(--charcoal);
 text-decoration: none;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 500;
 font-size: 0.9rem;
 padding: 0.5rem 0.75rem;
 border-radius: 6px;
 transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-nav a:hover, nav a:focus { background: rgba(255,255,255,0.12); color: var(--golden-hour); }
+nav a:hover, nav a:focus { background: rgba(45, 80, 22, 0.08); color: var(--pine); }
 .phone-link {
 display: flex;
 align-items: center;
 gap: 0.4rem;
 color: var(--golden-hour);
 text-decoration: none;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.9rem;
 margin-left: 0.5rem;
@@ -106,7 +109,7 @@ padding: 0.5rem;
 display: block;
 width: 26px;
 height: 2px;
-background: var(--snow-cap);
+background: var(--charcoal);
 border-radius: 2px;
 transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -120,7 +123,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background: var(--midnight);
+background: var(--cream-dark);
 z-index: 999;
 flex-direction: column;
 align-items: center;
@@ -129,9 +132,9 @@ gap: 1.5rem;
 }
 .mobile-menu.open { display: flex; }
 .mobile-menu a {
-color: var(--snow-cap);
+color: var(--charcoal);
 text-decoration: none;
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.5rem;
 transition: color 0.3s ease;
@@ -165,7 +168,7 @@ will-change: transform;
 .hero-overlay {
 position: absolute;
 inset: 0;
-background: linear-gradient(135deg, rgba(11,29,58,0.82) 0%, rgba(74,45,107,0.6) 50%, rgba(212,85,58,0.4) 100%);
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
 .hero-content {
 position: relative;
@@ -175,7 +178,7 @@ padding: 2rem;
 max-width: 800px;
 }
 .hero-content h1 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(2.5rem, 5vw, 4rem);
 color: var(--snow-cap);
@@ -183,7 +186,7 @@ margin-bottom: 0.75rem;
 line-height: 1.2;
 }
 .hero-content p {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: clamp(1rem, 2.5vw, 1.35rem);
 color: rgba(255,255,255,0.85);
@@ -227,7 +230,7 @@ max-width: 1100px;
 margin: 0 auto;
 }
 .timeline-section > h2 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: clamp(1.8rem, 3vw, 2.5rem);
 text-align: center;
@@ -298,12 +301,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 z-index: 2;
-box-shadow: 0 0 0 5px var(--cloud-drift), 0 0 0 8px var(--golden-hour), 0 0 15px rgba(232, 168, 56, 0.3);
+box-shadow: 0 0 0 5px var(--cloud-drift), 0 0 0 8px var(--golden-hour), 0 0 15px rgba(200, 148, 62, 0.3);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .date-circle:hover {
 transform: scale(1.15);
-box-shadow: 0 0 0 5px var(--cloud-drift), 0 0 0 8px var(--ember), 0 0 20px rgba(232, 168, 56, 0.5);
+box-shadow: 0 0 0 5px var(--cloud-drift), 0 0 0 8px var(--ember), 0 0 20px rgba(200, 148, 62, 0.5);
 }
 .date-circle svg {
 width: 22px;
@@ -325,7 +328,7 @@ transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-b
 }
 .event-card:hover {
 transform: translateY(-4px);
-box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+box-shadow: 0 12px 32px rgba(0,0,0,0.06);
 }
 .event-card img {
 width: 100%;
@@ -338,7 +341,7 @@ padding: 1.5rem;
 }
 .date-badge {
 display: inline-block;
-font-family: 'Space Grotesk', sans-serif; font-variant-numeric: tabular-nums;
+font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
 font-weight: 700;
 font-size: 0.8rem;
 color: var(--snow-cap);
@@ -349,7 +352,7 @@ margin-bottom: 0.75rem;
 letter-spacing: 0.5px;
 }
 .event-card-body h3 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.4rem;
 color: var(--midnight);
@@ -381,7 +384,7 @@ flex-wrap: wrap;
 }
 .timeline-item.left .event-ctas { justify-content: flex-end; }
 .event-ctas a {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 letter-spacing: 0.05em;
@@ -397,31 +400,31 @@ transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-b
 .cta-primary {
 background: var(--golden-hour);
 color: var(--midnight);
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 }
-.cta-primary:hover { background: #d4961f; transform: translateY(-2px); box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6); }
+.cta-primary:hover { background: #d4961f; transform: translateY(-2px); box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6); }
 .cta-secondary {
 background: transparent;
-color: var(--golden-hour);
-border: 2px solid var(--golden-hour);
+color: var(--pine);
+border: 2px solid var(--pine);
 }
-.cta-secondary:hover { background: var(--golden-hour); color: var(--midnight); transform: translateY(-2px); }
+.cta-secondary:hover { background: var(--pine); color: white; transform: translateY(-2px); }
 .submit-event {
 text-align: center;
 padding: 6rem 2rem;
-background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 100%);
+background: #F0EDE5;
 margin-top: 2rem;
 }
 .submit-event h2 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: clamp(1.8rem, 3vw, 2.5rem);
-color: var(--snow-cap);
+color: #2C2C2C;
 margin-bottom: 0.75rem;
 line-height: 1.2;
 }
 .submit-event p {
-color: rgba(255,255,255,0.7);
+color: #555555;
 font-size: 1rem;
 max-width: 500px;
 margin: 0 auto 2rem;
@@ -430,7 +433,7 @@ margin: 0 auto 2rem;
 display: inline-flex;
 align-items: center;
 justify-content: center;
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.85rem;
 letter-spacing: 0.05em;
@@ -441,18 +444,18 @@ text-decoration: none;
 padding: 0.9rem 2.5rem;
 min-height: 44px;
 border-radius: 8px;
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
+box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
 transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 animation: pulseGlow 2.5s ease-in-out infinite;
 }
-.submit-event a:hover { background: #d4961f; transform: translateY(-3px); box-shadow: 0 6px 25px rgba(232,168,56,0.6); }
+.submit-event a:hover { background: #d4961f; transform: translateY(-3px); box-shadow: 0 6px 25px rgba(200, 148, 62,0.6); }
 @keyframes pulseGlow {
-0%, 100% { box-shadow: 0 4px 15px rgba(232,168,56,0.4); }
-50% { box-shadow: 0 4px 15px rgba(232,168,56,0), 0 0 0 12px rgba(232,168,56,0); }
+0%, 100% { box-shadow: 0 4px 15px rgba(200, 148, 62,0.4); }
+50% { box-shadow: 0 4px 15px rgba(200, 148, 62,0), 0 0 0 12px rgba(200, 148, 62,0); }
 }
 footer {
-background: var(--midnight);
-color: var(--snow-cap);
+background: var(--cream-dark);
+color: var(--charcoal);
 padding: 4rem 2rem 2rem;
 }
 .footer-grid {
@@ -464,10 +467,10 @@ gap: 2rem;
 margin-bottom: 3rem;
 }
 .footer-col h4 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1rem;
-color: var(--golden-hour);
+color: var(--pine);
 margin-bottom: 1rem;
 text-transform: uppercase;
 letter-spacing: 1px;
@@ -475,7 +478,7 @@ line-height: 1.2;
 }
 .footer-col a {
 display: block;
-color: rgba(255,255,255,0.7);
+color: #555555;
 text-decoration: none;
 font-size: 0.9rem;
 padding: 0.25rem 0;
@@ -483,7 +486,7 @@ transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-col a:hover { color: var(--golden-hour); }
 .footer-col p {
-color: rgba(255,255,255,0.6);
+color: #555555;
 font-size: 0.9rem;
 line-height: 1.6;
 }
@@ -491,9 +494,9 @@ line-height: 1.6;
 max-width: 1200px;
 margin: 0 auto;
 padding-top: 2rem;
-border-top: 1px solid rgba(255,255,255,0.1);
+border-top: 1px solid rgba(45, 80, 22, 0.15);
 text-align: center;
-color: rgba(255,255,255,0.4);
+color: #888888;
 font-size: 0.85rem;
 }
 .back-to-top {
@@ -882,11 +885,11 @@ html { scroll-behavior: auto; }
     </script>
 
 <div id="beta-modal" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:1;transition:opacity 0.4s ease">
-  <div style="background:#1a1a2e;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1)">
+  <div style="background:#1a1a2e;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(45, 80, 22, 0.08)">
     <div style="font-size:2rem;margin-bottom:0.75rem">&#9888;</div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;margin:0 0 0.5rem;color:#d4a03c">Beta Site</h2>
-    <p style="font-family:'Space Grotesk',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
-    <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(255,255,255,0.15);overflow:hidden">
+    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#c8943e">Beta Site</h2>
+    <p style="font-family:'DM Sans',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
+    <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(45, 80, 22, 0.1);overflow:hidden">
       <div id="beta-modal-progress" style="height:100%;width:100%;background:#d4a03c;border-radius:2px;transition:width 12s linear"></div>
     </div>
   </div>

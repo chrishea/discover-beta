@@ -14,6 +14,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Real Estate | Discover Cloudcroft beta">
     <meta name="twitter:description" content="Mountain cabins, vacant land, and ranches in Cloudcroft, NM.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
 
@@ -38,7 +41,7 @@ animation: kenBurns 20s ease-in-out infinite alternate;
 .hero-overlay {
 position: absolute;
 inset: 0;
-background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(30, 61, 47, 0.55));
+background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
 .hero-content {
 position: relative;
@@ -51,8 +54,8 @@ max-width: 900px;
 display: inline-flex;
 align-items: center;
 gap: 0.5rem;
-background: rgba(232, 168, 56, 0.2);
-border: 1px solid rgba(232, 168, 56, 0.4);
+background: rgba(200, 148, 62, 0.2);
+border: 1px solid rgba(200, 148, 62, 0.4);
 padding: 0.5rem 1.25rem;
 border-radius: 30px;
 margin-bottom: 1.5rem;
@@ -60,15 +63,15 @@ opacity: 0;
 animation: fadeUp 0.8s ease 0.2s forwards;
 }
 .hero-badge span {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 500;
 font-size: 0.8rem;
-color: var(--golden-hour);
+color: var(--pine);
 text-transform: uppercase;
 letter-spacing: 0.15em;
 }
 .hero-title {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(2.5rem, 5vw, 4rem);
 color: var(--snow-cap);
@@ -140,12 +143,12 @@ padding: 0.5rem 1rem;
 background: var(--cloud-drift);
 color: var(--summit);
 border-radius: 25px;
-border: 1px solid rgba(46, 107, 138, 0.2);
+border: 1px solid rgba(58, 107, 30, 0.2);
 }
 .about-image {
 border-radius: 16px;
 overflow: hidden;
-box-shadow: 0 20px 60px rgba(11, 29, 58, 0.15);
+box-shadow: 0 20px 60px rgba(45, 80, 22, 0.15);
 background: linear-gradient(135deg, var(--pine-shadow) 0%, #2d5a47 100%);
 height: 400px;
 display: flex;
@@ -199,14 +202,14 @@ font-size: 2.5rem;
 margin-bottom: 1rem;
 }
 .property-card h3 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.2rem;
 color: var(--midnight);
 margin-bottom: 0.5rem;
 }
 .property-card .price {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 0.9rem;
 color: var(--golden-hour);
@@ -218,7 +221,7 @@ font-size: 0.95rem;
 line-height: 1.7;
 }
 .agents-section {
-background: var(--midnight);
+background: #F0EDE5;
 position: relative;
 overflow: hidden;
 }
@@ -228,8 +231,8 @@ position: absolute;
 inset: 0;
 opacity: 0.06;
 background-image:
-repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px),
-repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px);
+repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px),
+repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px);
 pointer-events: none;
 }
 .agents-grid {
@@ -265,14 +268,14 @@ font-size: 3rem;
 margin-bottom: 1rem;
 }
 .agent-card h3 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.2rem;
-color: var(--golden-hour);
+color: #2D5016;
 margin-bottom: 0.75rem;
 }
 .agent-card p {
-color: rgba(240, 244, 248, 0.8);
+color: #555555;
 font-size: 0.95rem;
 line-height: 1.7;
 }
@@ -305,7 +308,7 @@ font-size: 2rem;
 margin-bottom: 0.75rem;
 }
 .consideration-card h4 {
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: 1.1rem;
 color: var(--midnight);
@@ -317,7 +320,7 @@ font-size: 0.95rem;
 line-height: 1.7;
 }
 .cta-section {
-background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
+background: #F0EDE5;
 padding: 6rem 2rem;
 text-align: center;
 }
@@ -326,14 +329,14 @@ max-width: 700px;
 margin: 0 auto;
 }
 .cta-container h2 {
-font-family: 'Playfair Display', serif;
+font-family: 'DM Sans', sans-serif;
 font-weight: 900;
 font-size: clamp(1.8rem, 3vw, 2.5rem);
-color: var(--snow-cap);
+color: #2D5016;
 margin-bottom: 1rem;
 }
 .cta-container p {
-color: rgba(240, 244, 248, 0.85);
+color: #555555;
 font-size: 1.1rem;
 line-height: 1.7;
 margin-bottom: 2rem;
@@ -488,9 +491,9 @@ transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier
         <section class="section agents-section" id="agents" aria-label="Local real estate agents">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: var(--golden-hour); letter-spacing: 3px;">Local Experts</span>
-                    <h2 class="section-title section-title-centered" style="color: var(--snow-cap);">Real Estate Agents</h2>
-                    <p class="section-description" style="color: rgba(240,244,248,0.7);">Work with agents who know the Cloudcroft area and can guide you through the unique aspects of mountain property ownership.</p>
+                    <span class="section-label" style="color: var(--pine); letter-spacing: 3px;">Local Experts</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">Real Estate Agents</h2>
+                    <p class="section-description" style="color: #555555;">Work with agents who know the Cloudcroft area and can guide you through the unique aspects of mountain property ownership.</p>
                 </div>
                 <div class="agents-grid">
                     <div class="agent-card">
