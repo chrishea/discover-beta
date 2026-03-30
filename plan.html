@@ -26,63 +26,25 @@
   <link rel="stylesheet" href="css/common.css">
     <style>
 .hero {
-position: relative;
 height: 60vh;
 min-height: 400px;
-display: flex;
-align-items: center;
-justify-content: center;
-overflow: hidden;
 }
 .hero-bg {
-position: absolute;
-inset: 0;
 background-image: url('media/Index-2.webp');
 background-size: cover;
 background-position: center;
 animation: kenBurns 20s ease-in-out infinite alternate;
 }
-@keyframes kenBurns {
-0% { transform: scale(1) translate(0, 0); }
-100% { transform: scale(1.1) translate(-1%, -1%); }
-}
 .hero-overlay {
-position: absolute;
-inset: 0;
 background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
-.hero-content {
-position: relative;
-z-index: 2;
-text-align: center;
-padding: 0 2rem;
-max-width: 900px;
-}
 .hero-title {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: clamp(2.5rem, 5vw, 4rem);
-color: var(--snow-cap);
-line-height: 1.2;
-margin-bottom: 1rem;
 opacity: 0;
 animation: fadeUp 0.8s ease 0.2s forwards;
 }
 .hero-subtitle {
-font-family: 'Inter', sans-serif;
-font-weight: 400;
-font-size: clamp(1rem, 2.5vw, 1.35rem);
-color: rgba(240, 244, 248, 0.9);
-letter-spacing: 0.05em;
 opacity: 0;
 animation: fadeUp 0.8s ease 0.5s forwards;
-}
-@keyframes fadeUp {
-from { opacity: 0; transform: translateY(20px); }
-to { opacity: 1; transform: translateY(0); }
-}
-.section-label {
-display: block;
 }
 .plan-grid {
 display: grid;
@@ -344,79 +306,6 @@ transition: color 0.3s;
 .nearby-card a:hover {
 color: var(--golden-hour);
 }
-.cta-section {
-background: var(--cream-dark);
-padding: 6rem 2rem;
-text-align: center;
-}
-.cta-section h2 {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: clamp(2rem, 4vw, 3rem);
-color: var(--pine);
-margin-bottom: 0.75rem;
-}
-.cta-section p {
-font-size: 1.1rem;
-color: var(--charcoal-light);
-margin-bottom: 2rem;
-}
-.cta-group {
-display: flex;
-justify-content: center;
-gap: 1.25rem;
-flex-wrap: wrap;
-}
-.btn-primary {
-display: inline-block;
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 0.85rem;
-text-transform: uppercase;
-letter-spacing: 0.05em;
-padding: 1rem 2.5rem;
-border-radius: 8px;
-text-decoration: none;
-background: var(--golden-hour);
-color: var(--midnight);
-box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-animation: ctaPulse 2.5s ease-in-out infinite;
-min-height: 44px;
-}
-@keyframes ctaPulse {
-0%, 100% { box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4); }
-50% { box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4), 0 0 0 12px rgba(200, 148, 62, 0); }
-}
-.btn-primary:hover {
-transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
-animation: none;
-}
-.btn-secondary {
-display: inline-block;
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 0.85rem;
-text-transform: uppercase;
-letter-spacing: 0.05em;
-padding: 1rem 2.5rem;
-border-radius: 8px;
-text-decoration: none;
-background: transparent;
-color: var(--pine);
-border: 2px solid var(--pine);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-min-height: 44px;
-}
-.btn-secondary:hover {
-background: var(--pine);
-color: white;
-transform: translateY(-2px);
-}
-.site-footer {
-padding: 4rem 2rem 2rem;
-}
 .site-footer::before {
 content: '';
 position: absolute;
@@ -432,13 +321,6 @@ animation: gradientBorder 6s linear infinite;
 0% { background-position: 0% 0; }
 100% { background-position: 300% 0; }
 }
-.footer-grid {
-grid-template-columns: repeat(4, 1fr);
-gap: 2rem;
-}
-.footer-brand {
-display: block;
-}
 @media (max-width: 1024px) {
 .plan-grid {
 grid-template-columns: repeat(2, 1fr);
@@ -449,20 +331,8 @@ grid-template-columns: repeat(2, 1fr);
 grid-template-columns: 1fr;
 gap: 16px;
 }
-.cta-section {
-padding: 3.5rem 1.5rem;
-}
 .nearby-scroll {
 gap: 16px;
-}
-}
-@media (max-width: 480px) {
-.cta-group {
-flex-direction: column;
-}
-.btn-primary, .btn-secondary {
-width: 100%;
-text-align: center;
 }
 }
 @media (max-width: 375px) {

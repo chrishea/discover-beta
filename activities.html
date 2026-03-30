@@ -31,15 +31,8 @@
 /* Page-specific hero */
 .hero { height: 60vh; text-align: center; }
 .hero-bg {
-background-image: url('media/placeholder-activity-biking.webp');
-animation: kenBurns 20s ease-in-out infinite alternate;
-}
-@keyframes kenBurns {
-0% { transform: scale(1) translate(0, 0); }
-100% { transform: scale(1.1) translate(-1%, -1%); }
-}
-.hero-overlay {
-background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
+    background-image: url('media/placeholder-activity-biking.webp');
+    animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-content h1 span { color: var(--golden-hour); }
 .hero-content p {
@@ -48,8 +41,7 @@ font-size: clamp(1rem, 2.5vw, 1.3rem);
 color: rgba(255,255,255,0.9);
 max-width: 600px; margin: 0 auto; letter-spacing: 0.05em;
 }
-.section-header { margin-bottom: 3.5rem; }
-/* Page content */
+/* Page-specific components */
 .activities-grid {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
@@ -298,15 +290,21 @@ background: #f0b448;
 box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
 }
 /* Page-specific footer */
-.site-footer { padding: 4rem 2rem 2rem; color: var(--charcoal-light); }
-.footer-col p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
-.footer-col a { display: block; color: var(--charcoal-light); font-size: 0.9rem; padding: 0.25rem 0; }
-.footer-social a {
-width: 36px; height: 36px; border-radius: 8px;
-background: rgba(45, 80, 22, 0.1); color: var(--charcoal-light); font-size: 0.85rem;
+.site-footer::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+background-size: 300% 100%;
+animation: gradientBorder 6s linear infinite;
 }
-.footer-social a:hover { background: var(--golden-hour); color: var(--charcoal); }
-.footer-bottom { max-width: 1400px; margin: 3rem auto 0; font-size: 0.8rem; color: var(--charcoal-light); }
+@keyframes gradientBorder {
+0% { background-position: 0% 0; }
+100% { background-position: 300% 0; }
+}
 /* Responsive */
 @media (max-width: 1024px) {
 .activities-grid { grid-template-columns: repeat(2, 1fr); }
@@ -314,7 +312,6 @@ background: rgba(45, 80, 22, 0.1); color: var(--charcoal-light); font-size: 0.85
 @media (max-width: 768px) {
 .activities-grid { grid-template-columns: 1fr; gap: 16px; }
 .hero { height: 50vh; }
-.section-container { padding: 3rem 1.25rem; }
 .seasonality-section { padding: 3rem 1rem; }
 }
 @media (max-width: 375px) {

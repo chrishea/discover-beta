@@ -32,10 +32,6 @@
 background-image: url('media/Index-4.webp');
 animation: kenBurns 20s ease-in-out infinite alternate;
 }
-@keyframes kenBurns {
-0% { transform: scale(1) translate(0, 0); }
-100% { transform: scale(1.1) translate(-1%, -1%); }
-}
 .hero-overlay {
 background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
 }
@@ -399,16 +395,6 @@ transform: translateY(-2px);
 background: #f0b448;
 box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
 }
-/* Page-specific footer */
-.site-footer { padding: 4rem 2rem 2rem; color: rgba(255,255,255,0.7); }
-.footer-col p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
-.footer-col a { display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem; padding: 0.25rem 0; }
-.footer-social a {
-width: 36px; height: 36px; border-radius: 8px;
-background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); font-size: 0.85rem;
-}
-.footer-social a:hover { background: var(--golden-hour); color: var(--midnight); }
-.footer-bottom { max-width: 1400px; margin: 3rem auto 0; font-size: 0.8rem; color: rgba(255,255,255,0.4); }
 /* Responsive */
 @media (max-width: 1024px) {
 .trail-card { grid-template-columns: 300px 1fr; }
