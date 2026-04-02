@@ -26,13 +26,13 @@
 /* Hero overrides */
 .hero { height: 65vh; min-height: 450px; }
 .hero-bg {
-    background: linear-gradient(135deg, #8B2500 0%, var(--ember) 50%, var(--golden-hour) 100%);
+    background: linear-gradient(135deg, #000000 0%, var(--ember) 50%, var(--golden-hour) 100%);
     animation: kenBurns 20s ease-in-out infinite alternate;
 }
-.hero-badge span { color: #2D5016; }
+.hero-badge span { color: #000000; }
 /* Season Nav */
 .season-nav {
-    background: #F0EDE5;
+    background: #f2f2f2;
     padding: 1rem 0;
 }
 .season-nav-container {
@@ -53,10 +53,10 @@
     font-size: 0.85rem;
     border-radius: 25px;
     transition: all 0.3s ease;
-    background: rgba(45, 80, 22, 0.08);
+    background: rgba(0, 0, 0, 0.08);
 }
 .season-nav a:hover {
-    background: rgba(45, 80, 22, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 .season-nav a.active {
     background: var(--golden-hour);
@@ -64,7 +64,7 @@
 }
 /* Button overrides */
 .btn-secondary {
-    color: #2D5016;
+    color: #000000;
     border: 2px solid var(--golden-hour);
 }
 .btn-secondary:hover {
@@ -184,9 +184,9 @@
 .weather-card {
     text-align: center;
     padding: 2.5rem 2rem;
-    background: rgba(45, 80, 22, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 12px;
-    border: 1px solid rgba(45, 80, 22, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background 0.3s ease;
     opacity: 0;
     transform: translateY(30px);
@@ -200,14 +200,14 @@
 .weather-card:nth-child(3).visible { transition-delay: 0.2s; }
 .weather-card:hover {
     transform: translateY(-6px);
-    background: rgba(45, 80, 22, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 .weather-icon { font-size: 3rem; margin-bottom: 1rem; }
 .weather-card h3 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-    color: #2D5016;
+    color: #000000;
     margin-bottom: 0.75rem;
 }
 .weather-card p { color: #555555; font-size: 0.95rem; line-height: 1.7; }
@@ -292,7 +292,7 @@
 }
 .tip-card p { color: var(--granite); font-size: 0.95rem; line-height: 1.7; }
 /* CTA overrides */
-.cta-container h2 { color: #2D5016; }
+.cta-container h2 { color: #000000; }
 /* Footer gradient border */
 .site-footer::before {
     content: '';
@@ -388,7 +388,7 @@
         </div>
     </div>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <!-- Overview Section -->
         <section class="section" aria-label="Fall overview">
@@ -485,8 +485,8 @@
         <section class="section highlights-section" aria-label="Fall weather">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: #2D5016; letter-spacing: 3px;">What to Expect</span>
-                    <h2 class="section-title section-title-centered" style="color: #2D5016;">Fall Weather</h2>
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">What to Expect</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">Fall Weather</h2>
                     <p class="section-description" style="color: rgba(240,244,248,0.7);">Crisp days, cool nights, and the first hints of winter at 8,676 feet.</p>
                 </div>
                 <div class="weather-grid">
@@ -555,22 +555,22 @@
                 <div class="tips-grid">
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F342;</div>
-                        <h4>Peak Foliage Timing</h4>
+                        <h3>Peak Foliage Timing</h3>
                         <p>Peak fall color typically arrives mid-to-late October, but varies by year. Follow local reports for the best timing. Weekdays are less crowded during peak.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F9E5;</div>
-                        <h4>What to Pack</h4>
+                        <h3>What to Pack</h3>
                         <p>Warm layers, a jacket, and sturdy hiking shoes. Mornings can start in the 30s and warm to the 60s by afternoon. Be prepared for possible early snow.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F697;</div>
-                        <h4>Scenic Drives</h4>
+                        <h3>Scenic Drives</h3>
                         <p>The Sunspot Scenic Byway is the premier fall drive. Allow extra time for photo stops and be aware that Highway 82 can be icy in late November.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F3E0;</div>
-                        <h4>Book for October</h4>
+                        <h3>Book for October</h3>
                         <p>October weekends are popular for foliage. Book lodging in advance, especially during Harvest Fest and Aspenfest Art Walk weekends.</p>
                     </div>
                 </div>

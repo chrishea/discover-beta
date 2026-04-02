@@ -53,7 +53,7 @@
 .hero-badge span { color: var(--golden-hour); }
 /* Page-specific: about-image override */
 .about-image {
-    box-shadow: 0 20px 60px rgba(45, 80, 22, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(58, 107, 30, 0.1) 100%);
 }
 .about-image-placeholder p { color: var(--summit); }
@@ -63,7 +63,7 @@
     padding: 2.5rem 1.5rem;
 }
 .highlight-card:nth-child(4).visible { transition-delay: 0.3s; }
-.highlight-card h3 { color: #2D5016; }
+.highlight-card h3 { color: #000000; }
 .highlight-card p { color: #555555; }
 /* Page-specific: info-bar-item link */
 .info-bar-item a { color: var(--charcoal); text-decoration: none; transition: color 0.3s; }
@@ -71,7 +71,7 @@
 /* Page-specific: menu-items dashed border override */
 .menu-items li { border-bottom-color: rgba(107, 123, 141, 0.2); }
 /* CTA override */
-.cta-container h2 { color: #2C2C2C; }
+.cta-container h2 { color: #000000; }
 .cta-container p { color: #555555; }
 /* Footer gradient border */
 .site-footer::before {
@@ -166,7 +166,7 @@
         </div>
     </div>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <section class="section" id="about" aria-label="About the hotel">
             <div class="section-container">
@@ -264,8 +264,8 @@
         <section class="section highlights-section" aria-label="Hotel amenities">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: #2D5016; letter-spacing: 3px;">Hotel Amenities</span>
-                    <h2 class="section-title section-title-centered" style="color: #2C2C2C;">Everything You Need</h2>
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">Hotel Amenities</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">Everything You Need</h2>
                     <p class="section-description" style="color: rgba(240,244,248,0.7);">Modern amenities and thoughtful touches make your stay comfortable.</p>
                 </div>
                 <div class="highlights-grid">
@@ -324,22 +324,22 @@
                 <div class="visiting-grid">
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4CD;</div>
-                        <h4>Location</h4>
+                        <h3>Location</h3>
                         <p>1207 James Canyon Hwy, Cloudcroft, NM 88317. Located on James Canyon Highway, just minutes from downtown Cloudcroft and 15 miles from White Sands National Park.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4DE;</div>
-                        <h4>Reservations</h4>
+                        <h3>Reservations</h3>
                         <p>Phone: <a href="tel:5756012202" style="color: var(--alpine); text-decoration: none;">(575) 601-2202</a>. Available 24 hours. Book online at <a href="https://www.grandcloudcroft.com" target="_blank" style="color: var(--alpine); text-decoration: none;">grandcloudcroft.com</a>.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F3D4;&#xFE0F;</div>
-                        <h4>White Sands Access</h4>
+                        <h3>White Sands Access</h3>
                         <p>Just 15 miles from White Sands National Park. The Grand is the perfect base camp for exploring this stunning natural wonder and the Sacramento Mountains.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F43E;</div>
-                        <h4>Pet Policy</h4>
+                        <h3>Pet Policy</h3>
                         <p>Service animals are welcome in accessible rooms. Contact the hotel for details and to make arrangements for your service animal.</p>
                     </div>
                 </div>

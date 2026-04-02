@@ -178,13 +178,13 @@ font-size: 0.8rem;
 font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 color: var(--pine);
-border-bottom: 2px solid rgba(200, 148, 62, 0.3);
+border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 font-size: 0.75rem;
 text-transform: uppercase;
 letter-spacing: 0.05em;
 }
-.season-table tbody tr:nth-child(odd) { background: rgba(45, 80, 22, 0.03); }
-.season-table tbody tr:nth-child(even) { background: rgba(45, 80, 22, 0.06); }
+.season-table tbody tr:nth-child(odd) { background: rgba(0, 0, 0, 0.03); }
+.season-table tbody tr:nth-child(even) { background: rgba(0, 0, 0, 0.06); }
 .season-table tbody th {
 font-family: 'DM Sans', sans-serif;
 font-weight: 700;
@@ -203,8 +203,8 @@ transition: transform 0.2s;
 }
 .season-cell:hover { transform: scale(1.3); }
 .season-cell.active-green { background: rgba(58, 107, 30, 0.7); }
-.season-cell.active-gold { background: rgba(200, 148, 62, 0.7); }
-.season-cell.peak { background: var(--golden-hour); box-shadow: 0 0 8px rgba(200, 148, 62, 0.4); }
+.season-cell.active-gold { background: rgba(0, 0, 0, 0.7); }
+.season-cell.peak { background: var(--golden-hour); box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); }
 .season-cell.inactive { background: rgba(107, 123, 141, 0.2); }
 .calendar-legend {
 display: flex;
@@ -237,7 +237,7 @@ overflow: hidden;
 content: '';
 position: absolute;
 inset: 0;
-background: radial-gradient(circle at 30% 50%, rgba(200, 148, 62, 0.15) 0%, transparent 70%);
+background: radial-gradient(circle at 30% 50%, rgba(0, 0, 0, 0.15) 0%, transparent 70%);
 animation: gradientPulse 6s ease-in-out infinite alternate;
 }
 @keyframes gradientPulse {
@@ -276,18 +276,18 @@ background: var(--golden-hour);
 color: var(--midnight);
 text-decoration: none;
 border-radius: 8px;
-box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 animation: ctaPulse 3s ease-in-out infinite;
 }
 @keyframes ctaPulse {
-0%, 100% { box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4); }
-50% { box-shadow: 0 4px 15px rgba(200, 148, 62, 0), 0 0 0 12px rgba(200, 148, 62, 0); }
+0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }
+50% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0), 0 0 0 12px rgba(0, 0, 0, 0); }
 }
 .cta-button:hover {
 transform: translateY(-2px);
-background: #f0b448;
-box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
+background: #888888;
+box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
 }
 /* Page-specific footer */
 .site-footer::before {
@@ -370,7 +370,7 @@ animation: gradientBorder 6s linear infinite;
     </section>
 
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
 
         <section class="section-container" aria-label="Activities">
@@ -702,7 +702,7 @@ animation: gradientBorder 6s linear infinite;
             </div>
             <div class="calendar-legend">
                 <div class="legend-item"><div class="legend-swatch" style="background: var(--golden-hour);"></div> Peak Season</div>
-                <div class="legend-item"><div class="legend-swatch" style="background: rgba(200, 148, 62, 0.7);"></div> Good Conditions</div>
+                <div class="legend-item"><div class="legend-swatch" style="background: rgba(0, 0, 0, 0.7);"></div> Good Conditions</div>
                 <div class="legend-item"><div class="legend-swatch" style="background: rgba(58, 107, 30, 0.7);"></div> Available (Limited)</div>
                 <div class="legend-item"><div class="legend-swatch" style="background: rgba(107, 123, 141, 0.2);"></div> Off Season</div>
             </div>
@@ -841,12 +841,12 @@ animation: gradientBorder 6s linear infinite;
     </script>
 
 <div id="beta-modal" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:1;transition:opacity 0.4s ease">
-  <div style="background:#1a1a2e;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(45, 80, 22, 0.08)">
+  <div style="background:#111111;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(0, 0, 0, 0.08)">
     <div style="font-size:2rem;margin-bottom:0.75rem">&#9888;</div>
-    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#c8943e">Beta Site</h2>
+    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#000000">Beta Site</h2>
     <p style="font-family:'DM Sans',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
-    <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(45, 80, 22, 0.1);overflow:hidden">
-      <div id="beta-modal-progress" style="height:100%;width:100%;background:#d4a03c;border-radius:2px;transition:width 12s linear"></div>
+    <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(0, 0, 0, 0.1);overflow:hidden">
+      <div id="beta-modal-progress" style="height:100%;width:100%;background:#888888;border-radius:2px;transition:width 12s linear"></div>
     </div>
   </div>
 </div>

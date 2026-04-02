@@ -62,7 +62,7 @@
     color: var(--midnight);
 }
 .trail-tab:hover:not(.active) {
-    background: rgba(200, 148, 62, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 .trails-section {
     background: var(--cloud-drift);
@@ -103,10 +103,10 @@
     position: relative;
 }
 .trail-card-image.road-bg {
-    background: linear-gradient(135deg, var(--summit) 0%, var(--alpine) 50%, #3a8ab0 100%);
+    background: linear-gradient(135deg, var(--summit) 0%, var(--alpine) 50%, #333333 100%);
 }
 .trail-card-image.gravel-bg {
-    background: linear-gradient(135deg, var(--pine-shadow) 0%, #3d5a47 50%, #5a7a5f 100%);
+    background: linear-gradient(135deg, var(--pine-shadow) 0%, #333333 50%, #555555 100%);
 }
 .trail-type-badge {
     position: absolute;
@@ -136,10 +136,10 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-.difficulty-easy { background: #4CAF50; color: white; }
+.difficulty-easy { background: #333333; color: white; }
 .difficulty-moderate { background: var(--golden-hour); color: var(--midnight); }
 .difficulty-hard { background: var(--ember); color: white; }
-.difficulty-epic { background: #7B1FA2; color: white; }
+.difficulty-epic { background: #111111; color: white; }
 .trail-card-content {
     padding: 2rem;
     display: flex;
@@ -184,10 +184,10 @@
     font-size: 0.75rem;
     font-weight: 500;
     padding: 0.3rem 0.7rem;
-    background: rgba(200, 148, 62, 0.12);
+    background: rgba(0, 0, 0, 0.12);
     color: var(--pine);
     border-radius: 15px;
-    border: 1px solid rgba(200, 148, 62, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 .trail-links {
     display: flex;
@@ -408,7 +408,7 @@
         </div>
     </div>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
         <section class="section trails-section" id="trails" aria-label="Featured bike routes">
             <div class="section-container">
                 <div style="text-align: center;">

@@ -47,11 +47,11 @@ height: 65vh;
 min-height: 450px;
 }
 .hero-bg {
-background: linear-gradient(135deg, #4a1a0a 0%, #8B0000 50%, #6b0000 100%);
+background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
 animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
-background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 }
 .hero-badge span {
 color: var(--golden-hour);
@@ -85,7 +85,7 @@ color: var(--golden-hour);
 .info-bar-icon {
 width: 40px;
 height: 40px;
-background: rgba(200, 148, 62, 0.15);
+background: rgba(0, 0, 0, 0.15);
 border-radius: 50%;
 display: flex;
 align-items: center;
@@ -111,23 +111,23 @@ font-size: 0.95rem;
 border-bottom: none;
 }
 .highlight-card {
-background: rgba(45, 80, 22, 0.05);
-border: 1px solid rgba(45, 80, 22, 0.1);
+background: rgba(0, 0, 0, 0.05);
+border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .highlight-card:hover {
-background: rgba(45, 80, 22, 0.1);
+background: rgba(0, 0, 0, 0.1);
 }
 .highlight-card h3 {
-color: #2D5016;
+color: #000000;
 }
 .highlight-card p {
 color: #555555;
 }
 .cta-section {
-background: #F0EDE5;
+background: #f2f2f2;
 }
 .cta-container h2 {
-color: #2C2C2C;
+color: #000000;
 }
 .cta-container p {
 color: #555555;
@@ -240,7 +240,7 @@ animation: gradientBorder 6s linear infinite;
     </div>
 
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <section class="section" id="about" aria-label="About Mad Jack's">
             <div class="section-container">
@@ -358,8 +358,8 @@ animation: gradientBorder 6s linear infinite;
         <section class="section highlights-section" aria-label="Why visit">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: #2D5016; letter-spacing: 3px;">Why Visit</span>
-                    <h2 class="section-title section-title-centered" style="color: #2C2C2C;">Highlights</h2>
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">Why Visit</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">Highlights</h2>
                     <p class="section-description" style="color: rgba(240,244,248,0.7);">Three reasons Mad Jack's is a must-visit in the mountains.</p>
                 </div>
                 <div class="highlights-grid">
@@ -393,22 +393,22 @@ animation: gradientBorder 6s linear infinite;
                 <div class="visiting-grid">
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4CD;</div>
-                        <h4>Location</h4>
+                        <h3>Location</h3>
                         <p>105 James Canyon Hwy, Cloudcroft, NM 88317. Located right on Highway 82 heading into the village.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F550;</div>
-                        <h4>Hours</h4>
+                        <h3>Hours</h3>
                         <p>Thursday&ndash;Sunday: 11AM until sold out (usually by 3PM). Monday&ndash;Wednesday: Closed. Check Facebook/Instagram for updates.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4DE;</div>
-                        <h4>Contact</h4>
+                        <h3>Contact</h3>
                         <p>Phone: <a href="tel:5756827577" style="color: var(--alpine); text-decoration: none;">(575) 682-7577</a>. Website: madjacksbbq.com. Follow on Facebook and Instagram.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
-                        <h4>Pro Tips</h4>
+                        <h3>Pro Tips</h3>
                         <p>Arrive early on weekends&mdash;lines can reach 2-3 hours! Sold out means sold out. The brisket is the star but don't sleep on the ribs.</p>
                     </div>
                 </div>
@@ -429,7 +429,7 @@ animation: gradientBorder 6s linear infinite;
     </main>
 
 
-    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <footer class="site-footer footer-restaurant" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col">
                 <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>

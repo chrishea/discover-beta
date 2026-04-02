@@ -36,7 +36,7 @@ background-position: center;
 animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
-background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 }
 .hero-title {
 opacity: 0;
@@ -57,7 +57,7 @@ background: var(--snow-cap);
 border-radius: 12px;
 padding: 2.25rem 2rem;
 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-border: 1px solid rgba(45, 80, 22, 0.06);
+border: 1px solid rgba(0, 0, 0, 0.06);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 opacity: 0;
 transform: translateY(40px);
@@ -137,7 +137,7 @@ margin: 0.75rem 0;
 font-size: 0.92rem;
 color: var(--granite);
 padding: 0.5rem 0 0.5rem 1.5rem;
-border-bottom: 1px solid rgba(45, 80, 22, 0.06);
+border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 position: relative;
 }
 .drive-list li::before {
@@ -256,7 +256,7 @@ scroll-snap-type: x mandatory;
 height: 6px;
 }
 .nearby-scroll::-webkit-scrollbar-track {
-background: rgba(45, 80, 22, 0.05);
+background: rgba(0, 0, 0, 0.05);
 border-radius: 3px;
 }
 .nearby-scroll::-webkit-scrollbar-thumb {
@@ -393,7 +393,7 @@ flex: 0 0 240px;
     </section>
 
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <section class="section" aria-label="Trip planning information">
             <div class="section-container">
@@ -654,12 +654,12 @@ flex: 0 0 240px;
     </script>
 
 <div id="beta-modal" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:1;transition:opacity 0.4s ease">
-  <div style="background:#1a1a2e;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1)">
+  <div style="background:#111111;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1)">
     <div style="font-size:2rem;margin-bottom:0.75rem">&#9888;</div>
-    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#d4a03c">Beta Site</h2>
+    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#888888">Beta Site</h2>
     <p style="font-family:'DM Sans',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
     <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(255,255,255,0.15);overflow:hidden">
-      <div id="beta-modal-progress" style="height:100%;width:100%;background:#d4a03c;border-radius:2px;transition:width 12s linear"></div>
+      <div id="beta-modal-progress" style="height:100%;width:100%;background:#888888;border-radius:2px;transition:width 12s linear"></div>
     </div>
   </div>
 </div>

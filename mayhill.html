@@ -36,10 +36,10 @@
     <style>
 .hero { position: relative; height: 65vh; min-height: 450px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, var(--summit) 0%, var(--midnight) 50%, var(--twilight) 100%); animation: kenBurns 20s ease-in-out infinite alternate; }
-.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35)); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)); }
 .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 2rem; max-width: 900px; }
-.hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(200, 148, 62, 0.2); border: 1px solid rgba(200, 148, 62, 0.4); padding: 0.5rem 1.25rem; border-radius: 30px; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
-.hero-badge span { font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 0.8rem; color: #2D5016; text-transform: uppercase; letter-spacing: 0.15em; }
+.hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0, 0, 0, 0.2); border: 1px solid rgba(0, 0, 0, 0.4); padding: 0.5rem 1.25rem; border-radius: 30px; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
+.hero-badge span { font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 0.8rem; color: #000000; text-transform: uppercase; letter-spacing: 0.15em; }
 .hero-title { font-family: 'DM Sans', sans-serif; font-weight: 900; font-size: clamp(2.5rem, 5vw, 4rem); color: var(--snow-cap); line-height: 1.2; margin-bottom: 1rem; }
 .hero-title .word { display: inline-block; opacity: 0; transform: translateY(20px); animation: wordReveal 0.6s ease 0.3s forwards; }
 @keyframes wordReveal { to { opacity: 1; transform: translateY(0); } }
@@ -48,19 +48,19 @@
 .info-bar { background: var(--cream-dark); padding: 1.5rem 2rem; }
 .info-bar-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
 .info-bar-item { display: flex; align-items: center; gap: 0.75rem; color: var(--charcoal); font-size: 0.9rem; font-weight: 500; }
-.info-bar-icon { width: 40px; height: 40px; background: rgba(200, 148, 62, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+.info-bar-icon { width: 40px; height: 40px; background: rgba(0, 0, 0, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
 .section-description { font-size: 1.05rem; color: var(--granite); max-width: 600px; margin: 0 auto 3rem; text-align: center; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .about-text p { font-size: 1.05rem; color: var(--granite); margin-bottom: 1.5rem; line-height: 1.8; }
 .about-features { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
 .about-feature { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 500; padding: 0.5rem 1rem; background: var(--cloud-drift); color: var(--summit); border-radius: 25px; border: 1px solid rgba(58, 107, 30, 0.2); }
-.about-image { border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(45, 80, 22, 0.15); background: linear-gradient(135deg, var(--summit) 0%, var(--midnight) 100%); height: 400px; display: flex; align-items: center; justify-content: center; }
+.about-image { border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); background: linear-gradient(135deg, var(--summit) 0%, var(--midnight) 100%); height: 400px; display: flex; align-items: center; justify-content: center; }
 .about-image-placeholder { text-align: center; padding: 2rem; }
 .about-image-placeholder .icon { font-size: 5rem; margin-bottom: 1rem; }
 .about-image-placeholder p { color: var(--snow-cap); font-family: 'DM Sans', sans-serif; font-weight: 500; }
 .menu-section { background: var(--cloud-drift); }
 .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-.menu-card { background: var(--snow-cap); border-radius: 12px; overflow: hidden; border: 1px solid rgba(200, 148, 62, 0.2); transition: transform 0.3s, box-shadow 0.3s; opacity: 0; transform: translateY(30px); }
+.menu-card { background: var(--snow-cap); border-radius: 12px; overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.2); transition: transform 0.3s, box-shadow 0.3s; opacity: 0; transform: translateY(30px); }
 .menu-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s; }
 .menu-card:nth-child(2).visible { transition-delay: 0.1s; }
 .menu-card:nth-child(3).visible { transition-delay: 0.2s; }
@@ -79,20 +79,20 @@
 .history-text h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.8rem; color: var(--pine-shadow); margin-bottom: 1.5rem; }
 .history-text p { color: var(--charcoal); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem; }
 .timeline-list { display: flex; flex-direction: column; gap: 1.5rem; }
-.timeline-item { display: flex; gap: 1.5rem; padding: 1.5rem; background: rgba(255, 255, 255, 0.7); border-radius: 12px; border: 1px solid rgba(45, 80, 22, 0.1); }
+.timeline-item { display: flex; gap: 1.5rem; padding: 1.5rem; background: rgba(255, 255, 255, 0.7); border-radius: 12px; border: 1px solid rgba(0, 0, 0, 0.1); }
 .timeline-year { font-family: 'DM Sans', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--pine-shadow); min-width: 80px; }
 .timeline-content h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1rem; color: var(--charcoal); margin-bottom: 0.25rem; }
 .timeline-content p { color: var(--granite); font-size: 0.9rem; margin: 0; }
 .visiting-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-.visiting-card { background: var(--snow-cap); border-radius: 12px; padding: 2rem; text-align: center; border: 1px solid rgba(200, 148, 62, 0.15); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); transition: transform 0.3s, box-shadow 0.3s; opacity: 0; transform: translateY(30px); }
+.visiting-card { background: var(--snow-cap); border-radius: 12px; padding: 2rem; text-align: center; border: 1px solid rgba(0, 0, 0, 0.15); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); transition: transform 0.3s, box-shadow 0.3s; opacity: 0; transform: translateY(30px); }
 .visiting-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s; }
 .visiting-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15); }
 .visiting-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--summit) 0%, var(--midnight) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1.5rem; }
 .visiting-card h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--midnight); margin-bottom: 0.5rem; }
 .visiting-card p { color: var(--granite); font-size: 0.95rem; line-height: 1.7; }
-.cta-section { background: #F0EDE5; padding: 6rem 2rem; text-align: center; }
+.cta-section { background: #f2f2f2; padding: 6rem 2rem; text-align: center; }
 .cta-container { max-width: 700px; margin: 0 auto; }
-.cta-container h2 { font-family: 'DM Sans', sans-serif; font-weight: 900; font-size: clamp(1.8rem, 3vw, 2.5rem); color: #2D5016; margin-bottom: 1rem; }
+.cta-container h2 { font-family: 'DM Sans', sans-serif; font-weight: 900; font-size: clamp(1.8rem, 3vw, 2.5rem); color: #000000; margin-bottom: 1rem; }
 .cta-container p { color: #555555; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; }
 .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 .site-footer { padding: 4rem 2rem 2rem; }
@@ -143,7 +143,7 @@
         </div>
     </div>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
         <section class="section" id="about" aria-label="About Mayhill">
             <div class="section-container">
                 <div class="about-grid">
@@ -192,8 +192,8 @@
         <section class="section highlights-section" aria-label="Mayhill history">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: #2D5016; letter-spacing: 3px;">Heritage</span>
-                    <h2 class="section-title section-title-centered" style="color: #2D5016;">Mayhill's Story</h2>
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">Heritage</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">Mayhill's Story</h2>
                 </div>
                 <div class="history-grid">
                     <div class="history-text">
@@ -218,12 +218,12 @@
                     <p class="section-description">What to know before visiting this quiet mountain community.</p>
                 </div>
                 <div class="visiting-grid">
-                    <div class="visiting-card"><div class="visiting-icon">&#x26FD;</div><h4>Services</h4><p>Mayhill has limited services. Fill up on gas and supplies in Cloudcroft or Alamogordo before visiting.</p></div>
-                    <div class="visiting-card"><div class="visiting-icon">&#x1F4F1;</div><h4>Cell Service</h4><p>Cell service may be limited in and around Mayhill. Plan accordingly and download offline maps.</p></div>
-                    <div class="visiting-card"><div class="visiting-icon">&#x1F697;</div><h4>Getting There</h4><p>Take Highway 82 east from Cloudcroft. The scenic 25-minute drive descends through forest to grassland.</p></div>
-                    <div class="visiting-card"><div class="visiting-icon">&#x1F3E0;</div><h4>Private Property</h4><p>Most land around Mayhill is private ranch land. Stay on public roads and respect property boundaries.</p></div>
-                    <div class="visiting-card"><div class="visiting-icon">&#x1F321;&#xFE0F;</div><h4>Climate</h4><p>Warmer than Cloudcroft due to lower elevation. Expect more sun and less precipitation.</p></div>
-                    <div class="visiting-card"><div class="visiting-icon">&#x1F4F8;</div><h4>Photo Ops</h4><p>Best photography at sunrise and sunset when the light illuminates the mountains and grasslands.</p></div>
+                    <div class="visiting-card"><div class="visiting-icon">&#x26FD;</div><h3>Services</h3><p>Mayhill has limited services. Fill up on gas and supplies in Cloudcroft or Alamogordo before visiting.</p></div>
+                    <div class="visiting-card"><div class="visiting-icon">&#x1F4F1;</div><h3>Cell Service</h3><p>Cell service may be limited in and around Mayhill. Plan accordingly and download offline maps.</p></div>
+                    <div class="visiting-card"><div class="visiting-icon">&#x1F697;</div><h3>Getting There</h3><p>Take Highway 82 east from Cloudcroft. The scenic 25-minute drive descends through forest to grassland.</p></div>
+                    <div class="visiting-card"><div class="visiting-icon">&#x1F3E0;</div><h3>Private Property</h3><p>Most land around Mayhill is private ranch land. Stay on public roads and respect property boundaries.</p></div>
+                    <div class="visiting-card"><div class="visiting-icon">&#x1F321;&#xFE0F;</div><h3>Climate</h3><p>Warmer than Cloudcroft due to lower elevation. Expect more sun and less precipitation.</p></div>
+                    <div class="visiting-card"><div class="visiting-icon">&#x1F4F8;</div><h3>Photo Ops</h3><p>Best photography at sunrise and sunset when the light illuminates the mountains and grasslands.</p></div>
                 </div>
             </div>
         </section>

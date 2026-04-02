@@ -31,7 +31,7 @@ animation: kenBurns 22s ease-in-out infinite alternate;
 will-change: transform;
 }
 .hero-overlay {
-background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 background-size: 200% 200%;
 animation: gradientShift 8s ease infinite;
 }
@@ -115,7 +115,7 @@ transform: scale(1.05);
 position: absolute;
 top: 1rem;
 left: 1rem;
-background: rgba(45, 80, 22, 0.85);
+background: rgba(0, 0, 0, 0.85);
 color: var(--golden-hour);
 font-family: 'DM Sans', sans-serif;
 font-weight: 700;
@@ -181,12 +181,12 @@ flex-wrap: wrap;
 .btn-book {
 background: var(--golden-hour);
 color: var(--midnight);
-box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 .btn-book:hover {
-background: #d49630;
+background: #666666;
 color: var(--midnight);
-box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
+box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
 }
 /* Lodging detail grid */
 .lodging-detail-grid {
@@ -311,7 +311,7 @@ opacity: 0.4;
 font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 font-size: clamp(1.8rem, 3vw, 2.5rem);
-color: #2D5016;
+color: #000000;
 line-height: 1.2;
 margin-bottom: 1rem;
 }
@@ -340,17 +340,17 @@ text-decoration: none;
 display: inline-block;
 cursor: pointer;
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 animation: pulse 3s ease-in-out infinite;
 min-height: 44px;
 }
 .cta-button:hover {
 transform: translateY(-2px) scale(1.03);
-box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
+box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
 }
 @keyframes pulse {
-0%, 100% { box-shadow: 0 0 0 0 rgba(200, 148, 62, 0.4); }
-50% { box-shadow: 0 0 0 12px rgba(200, 148, 62, 0); }
+0%, 100% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4); }
+50% { box-shadow: 0 0 0 12px rgba(0, 0, 0, 0); }
 }
 /* Footer gradient border */
 .footer-gradient-border {
@@ -370,11 +370,11 @@ display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem;
 }
 .footer-brand .footer-logo { display: flex; align-items: baseline; gap: 0.3rem; margin-bottom: 1rem; text-decoration: none; }
 .footer-brand .logo-discover { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.3rem; color: var(--golden-hour); letter-spacing: 0.15em; }
-.footer-brand .logo-cloudcroft { font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 1.3rem; color: #2C2C2C; letter-spacing: 0.05em; opacity: 0.85; }
+.footer-brand .logo-cloudcroft { font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 1.3rem; color: #000000; letter-spacing: 0.05em; opacity: 0.85; }
 .footer-brand p { font-size: 0.9rem; color: #555555; line-height: 1.7; margin-bottom: 1.5rem; }
-.footer-social a { width: 40px; height: 40px; background: rgba(45, 80, 22, 0.08); color: #2C2C2C; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 0.75rem; }
+.footer-social a { width: 40px; height: 40px; background: rgba(0, 0, 0, 0.08); color: #000000; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 0.75rem; }
 .footer-social a:hover { background: var(--golden-hour); color: var(--midnight); }
-.footer-column h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1rem; color: #2D5016; margin-bottom: 1.25rem; letter-spacing: 0.05em; text-transform: uppercase; }
+.footer-column h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1rem; color: #000000; margin-bottom: 1.25rem; letter-spacing: 0.05em; text-transform: uppercase; }
 .footer-column ul { list-style: none; }
 .footer-column li { margin-bottom: 0.6rem; }
 .footer-column a { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: #555555; text-decoration: none; transition: color 0.3s; }
@@ -466,7 +466,7 @@ display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem;
     </section>
 
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
 
         <section class="lodging-section" aria-label="Lodging options in Cloudcroft">
@@ -937,16 +937,16 @@ display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem;
     <div id="beta-modal"
         style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:1;transition:opacity 0.4s ease">
         <div
-            style="background:#1a1a2e;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1)">
+            style="background:#111111;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1)">
             <div style="font-size:2rem;margin-bottom:0.75rem">&#9888;</div>
-            <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#d4a03c">Beta Site
+            <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#888888">Beta Site
             </h2>
             <p style="font-family:'DM Sans',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction
             </p>
             <div id="beta-modal-bar"
                 style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(255,255,255,0.15);overflow:hidden">
                 <div id="beta-modal-progress"
-                    style="height:100%;width:100%;background:#d4a03c;border-radius:2px;transition:width 12s linear">
+                    style="height:100%;width:100%;background:#888888;border-radius:2px;transition:width 12s linear">
                 </div>
             </div>
         </div>

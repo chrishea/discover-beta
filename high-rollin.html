@@ -57,11 +57,11 @@
 /* Page-specific hero */
 .hero { height: 65vh; min-height: 450px; }
 .hero-bg {
-background: linear-gradient(135deg, #4E342E 0%, #6F4E37 50%, #5D4037 100%);
+background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
 animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
-background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 }
 .hero-title .word:nth-child(1) { animation-delay: 0.2s; }
 .hero-title .word:nth-child(2) { animation-delay: 0.4s; }
@@ -165,7 +165,7 @@ animation: gradientBorder 6s linear infinite;
     </div>
 
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <section class="section" id="about" aria-label="About High Rollin' Coffee">
             <div class="section-container">
@@ -260,8 +260,8 @@ animation: gradientBorder 6s linear infinite;
         <section class="section highlights-section" aria-label="Why visit">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: #2D5016; letter-spacing: 3px;">Why Visit</span>
-                    <h2 class="section-title section-title-centered" style="color: #2C2C2C;">Highlights</h2>
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">Why Visit</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">Highlights</h2>
                     <p class="section-description" style="color: rgba(240,244,248,0.7);">Three reasons to start your morning at High Rollin'.</p>
                 </div>
                 <div class="highlights-grid">
@@ -295,22 +295,22 @@ animation: gradientBorder 6s linear infinite;
                 <div class="visiting-grid">
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4CD;</div>
-                        <h4>Location</h4>
+                        <h3>Location</h3>
                         <p>201 James Canyon Highway, Cloudcroft, NM 88317. Right in the heart of the village.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F550;</div>
-                        <h4>Hours</h4>
+                        <h3>Hours</h3>
                         <p>Monday&ndash;Tuesday: 8AM&ndash;1PM. Friday&ndash;Sunday: 8AM&ndash;3PM. Closed Wednesday &amp; Thursday.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4F1;</div>
-                        <h4>Follow Us</h4>
+                        <h3>Follow Us</h3>
                         <p>Follow High Rollin' Coffee on Facebook for daily specials, seasonal menus, and updates on hours.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4A1;</div>
-                        <h4>Good to Know</h4>
+                        <h3>Good to Know</h3>
                         <p>Opened August 2023 by former yacht chef Beth Offolter. Hammock chairs available. 90% of customers are locals&mdash;a true community gem.</p>
                     </div>
                 </div>
@@ -331,7 +331,7 @@ animation: gradientBorder 6s linear infinite;
     </main>
 
 
-    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <footer class="site-footer footer-restaurant" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col">
                 <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>

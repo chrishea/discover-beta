@@ -47,10 +47,10 @@
     background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--twilight) 100%);
 }
 .hero-overlay {
-    background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 }
 .hero-badge span {
-    color: #2D5016;
+    color: #000000;
 }
 .hero-title .word:nth-child(1) { animation-delay: 0.2s; }
 .hero-title .word:nth-child(2) { animation-delay: 0.4s; }
@@ -66,17 +66,17 @@
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
-    color: #2C2C2C;
+    color: #000000;
     text-decoration: none;
     padding: 0.5rem 1.25rem;
     border-radius: 25px;
     transition: all 0.3s ease;
-    border: 1px solid rgba(200, 148, 62, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 .info-bar-item:hover {
-    background: rgba(200, 148, 62, 0.15);
-    border-color: #2D5016;
-    color: #2D5016;
+    background: rgba(0, 0, 0, 0.15);
+    border-color: #000000;
+    color: #000000;
 }
 .destination-section {
     padding: 5rem 2rem;
@@ -150,7 +150,7 @@
 .destination-image {
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(45, 80, 22, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     height: 400px;
     display: flex;
     align-items: center;
@@ -189,34 +189,34 @@
     position: absolute;
     left: 0;
     font-weight: bold;
-    color: #2D5016;
+    color: #000000;
 }
 .white-sands-section .destination-text h2 { color: var(--alpine); }
 .white-sands-section .destination-detail-content h4 { color: var(--alpine); }
 .white-sands-section .destination-image { background: linear-gradient(135deg, var(--cloud-drift) 0%, #e0e0e0 50%, var(--alpine) 100%); }
 .high-rolls-section .destination-text h2 { color: var(--ember); }
 .high-rolls-section .destination-detail-content h4 { color: var(--ember); }
-.high-rolls-section .destination-image { background: linear-gradient(135deg, var(--ember) 0%, #c0392b 50%, #e57373 100%); }
+.high-rolls-section .destination-image { background: linear-gradient(135deg, var(--ember) 0%, #111111 50%, #333333 100%); }
 .la-luz-section .destination-text h2 { color: var(--twilight); }
 .la-luz-section .destination-detail-content h4 { color: var(--twilight); }
-.la-luz-section .destination-image { background: linear-gradient(135deg, var(--twilight) 0%, #6d4c41 50%, #a1887f 100%); }
+.la-luz-section .destination-image { background: linear-gradient(135deg, var(--twilight) 0%, #222222 50%, #555555 100%); }
 .timberon-section .destination-text h2 { color: var(--pine-shadow); }
 .timberon-section .destination-detail-content h4 { color: var(--pine-shadow); }
-.timberon-section .destination-image { background: linear-gradient(135deg, var(--pine-shadow) 0%, #2e7d32 50%, #66bb6a 100%); }
+.timberon-section .destination-image { background: linear-gradient(135deg, var(--pine-shadow) 0%, #333333 50%, #666666 100%); }
 .mayhill-section .destination-text h2 { color: var(--summit); }
 .mayhill-section .destination-detail-content h4 { color: var(--summit); }
 .mayhill-section .destination-image { background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--alpine) 100%); }
-.alamogordo-section .destination-text h2 { color: #2D5016; }
-.alamogordo-section .destination-detail-content h4 { color: #2D5016; }
-.alamogordo-section .destination-image { background: linear-gradient(135deg, var(--golden-hour) 0%, #d4553a 50%, #8B4513 100%); }
+.alamogordo-section .destination-text h2 { color: #000000; }
+.alamogordo-section .destination-detail-content h4 { color: #000000; }
+.alamogordo-section .destination-image { background: linear-gradient(135deg, var(--golden-hour) 0%, #111111 50%, #000000 100%); }
 .sunspot-section .destination-text h2 { color: var(--twilight); }
 .sunspot-section .destination-detail-content h4 { color: var(--twilight); }
 .sunspot-section .destination-image { background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 50%, var(--alpine) 100%); }
 .cta-section {
-    background: #F0EDE5;
+    background: #f2f2f2;
 }
 .cta-container h2 {
-    color: #2D5016;
+    color: #000000;
 }
 .cta-container p {
     color: #555555;
@@ -302,7 +302,7 @@
         </div>
     </div>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <!-- White Sands National Park -->
         <section class="destination-section white-sands-section" id="white-sands" aria-label="White Sands National Park">
@@ -316,28 +316,28 @@
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F4CD;</span>
                             <div class="destination-detail-content">
-                                <h4>Distance</h4>
+                                <h3>Distance</h3>
                                 <p>~45 minutes from Cloudcroft</p>
                             </div>
                         </div>
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F4B0;</span>
                             <div class="destination-detail-content">
-                                <h4>Entrance Fee</h4>
+                                <h3>Entrance Fee</h3>
                                 <p>$25/vehicle, $15/person</p>
                             </div>
                         </div>
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F550;</span>
                             <div class="destination-detail-content">
-                                <h4>Hours</h4>
+                                <h3>Hours</h3>
                                 <p>Opens 7AM daily, closing varies</p>
                             </div>
                         </div>
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F6F7;</span>
                             <div class="destination-detail-content">
-                                <h4>Must Do</h4>
+                                <h3>Must Do</h3>
                                 <p>Sled the dunes at sunset</p>
                             </div>
                         </div>
@@ -372,14 +372,14 @@
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F4CD;</span>
                             <div class="destination-detail-content">
-                                <h4>Distance</h4>
+                                <h3>Distance</h3>
                                 <p>10 minutes from Cloudcroft</p>
                             </div>
                         </div>
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F34E;</span>
                             <div class="destination-detail-content">
-                                <h4>Known For</h4>
+                                <h3>Known For</h3>
                                 <p>Apple &amp; cherry orchards</p>
                             </div>
                         </div>
@@ -413,14 +413,14 @@
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F4CD;</span>
                             <div class="destination-detail-content">
-                                <h4>Distance</h4>
+                                <h3>Distance</h3>
                                 <p>25 minutes from Cloudcroft</p>
                             </div>
                         </div>
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1FAFE;</span>
                             <div class="destination-detail-content">
-                                <h4>Known For</h4>
+                                <h3>Known For</h3>
                                 <p>Historic pottery &amp; art community</p>
                             </div>
                         </div>
@@ -454,14 +454,14 @@
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F4CD;</span>
                             <div class="destination-detail-content">
-                                <h4>Distance</h4>
+                                <h3>Distance</h3>
                                 <p>35 minutes from Cloudcroft</p>
                             </div>
                         </div>
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x26F0;&#xFE0F;</span>
                             <div class="destination-detail-content">
-                                <h4>Elevation</h4>
+                                <h3>Elevation</h3>
                                 <p>7,500 feet</p>
                             </div>
                         </div>
@@ -496,14 +496,14 @@
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F4CD;</span>
                             <div class="destination-detail-content">
-                                <h4>Distance</h4>
+                                <h3>Distance</h3>
                                 <p>20 minutes east on Hwy 82</p>
                             </div>
                         </div>
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F31F;</span>
                             <div class="destination-detail-content">
-                                <h4>Known For</h4>
+                                <h3>Known For</h3>
                                 <p>Dark sky astronomy community</p>
                             </div>
                         </div>
@@ -531,14 +531,14 @@
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F4CD;</span>
                             <div class="destination-detail-content">
-                                <h4>Distance</h4>
+                                <h3>Distance</h3>
                                 <p>30 minutes from Cloudcroft</p>
                             </div>
                         </div>
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F3D4;&#xFE0F;</span>
                             <div class="destination-detail-content">
-                                <h4>Elevation</h4>
+                                <h3>Elevation</h3>
                                 <p>4,350 feet</p>
                             </div>
                         </div>
@@ -566,14 +566,14 @@
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x1F4CD;</span>
                             <div class="destination-detail-content">
-                                <h4>Distance</h4>
+                                <h3>Distance</h3>
                                 <p>16 miles via NM-6563</p>
                             </div>
                         </div>
                         <div class="destination-detail">
                             <span class="destination-detail-icon">&#x26F0;&#xFE0F;</span>
                             <div class="destination-detail-content">
-                                <h4>Elevation</h4>
+                                <h3>Elevation</h3>
                                 <p>9,200 feet</p>
                             </div>
                         </div>

@@ -22,16 +22,36 @@
             box-sizing: border-box;
         }
 
+        .skip-to-content {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0 0 8px 8px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            z-index: 10000;
+            transition: top 0.3s ease;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
         :root {
-            --pine: #2D5016;
-            --pine-light: #3A6B1E;
-            --cream: #FAF8F3;
-            --cream-dark: #F0EDE5;
-            --gold: #C8943E;
-            --gold-hover: #B5832E;
-            --charcoal: #2C2C2C;
-            --charcoal-light: #555555;
-            --charcoal-muted: #888888;
+            --pine: #000000;
+            --pine-light: #333333;
+            --cream: #ffffff;
+            --cream-dark: #f2f2f2;
+            --gold: #000000;
+            --gold-hover: #333333;
+            --charcoal: #000000;
+            --charcoal-light: #444444;
+            --charcoal-muted: #777777;
+            --cta-red: #000000;
         }
 
         html {
@@ -60,9 +80,9 @@
             right: 0;
             height: 35vh;
             background:
-                linear-gradient(165deg, transparent 40%, rgba(45, 80, 22, 0.04) 40.5%, rgba(45, 80, 22, 0.04) 55%, transparent 55.5%),
-                linear-gradient(195deg, transparent 35%, rgba(45, 80, 22, 0.03) 35.5%, rgba(45, 80, 22, 0.03) 50%, transparent 50.5%),
-                linear-gradient(175deg, transparent 30%, rgba(45, 80, 22, 0.05) 30.5%, rgba(45, 80, 22, 0.05) 60%, transparent 60.5%);
+                linear-gradient(165deg, transparent 40%, rgba(0, 0, 0, 0.04) 40.5%, rgba(0, 0, 0, 0.04) 55%, transparent 55.5%),
+                linear-gradient(195deg, transparent 35%, rgba(0, 0, 0, 0.03) 35.5%, rgba(0, 0, 0, 0.03) 50%, transparent 50.5%),
+                linear-gradient(175deg, transparent 30%, rgba(0, 0, 0, 0.05) 30.5%, rgba(0, 0, 0, 0.05) 60%, transparent 60.5%);
             pointer-events: none;
             z-index: 0;
         }
@@ -76,7 +96,7 @@
             right: 0;
             height: 20vh;
             background:
-                linear-gradient(to top, rgba(45, 80, 22, 0.06) 0%, transparent 100%);
+                linear-gradient(to top, rgba(0, 0, 0, 0.06) 0%, transparent 100%);
             mask-image:
                 /* Tree 1 */
                 linear-gradient(to right, transparent 5%, transparent 7%, rgba(0, 0, 0, 1) 7.5%, rgba(0, 0, 0, 1) 8.5%, transparent 9%, transparent 100%),
@@ -203,7 +223,7 @@
 
         .form-row input[type="email"]:focus {
             border-color: var(--pine);
-            box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
         }
 
         .form-row button {
@@ -222,7 +242,7 @@
 
         .form-row button:hover {
             background: var(--gold-hover);
-            box-shadow: 0 4px 12px rgba(200, 148, 62, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             transform: translateY(-1px);
         }
 
@@ -298,7 +318,7 @@
 
         .error-message {
             font-size: 0.85rem;
-            color: #c0392b;
+            color: #000000;
             margin-top: 0.75rem;
             display: none;
         }
@@ -334,6 +354,8 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    <main id="main-content" role="main">
     <div class="page">
         <div class="hero-carousel" id="heroCarousel">
             <img src="media/hero-elevate-your-fun.jpg" alt="Elevate Your Fun — Cloudcroft, New Mexico" class="active">
@@ -371,6 +393,7 @@
         </div>
         <div class="reassurance">No spam. Just advice from locals.</div>
     </div>
+    </main>
 
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 

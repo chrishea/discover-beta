@@ -25,7 +25,7 @@
     <style>
 /* Hero - page-specific */
 .hero-bg {
-    background: linear-gradient(135deg, #8B6914 0%, var(--golden-hour) 50%, #F0C850 100%);
+    background: linear-gradient(135deg, #000000 0%, var(--golden-hour) 50%, #333333 100%);
 }
 .hero-title .word:nth-child(1) { animation-delay: 0.2s; }
 .hero-title .word:nth-child(2) { animation-delay: 0.4s; }
@@ -33,7 +33,7 @@
 
 /* Season Nav */
 .season-nav {
-    background: #F0EDE5;
+    background: #f2f2f2;
     padding: 1rem 0;
 }
 .season-nav-container {
@@ -54,10 +54,10 @@
     font-size: 0.85rem;
     border-radius: 25px;
     transition: all 0.3s ease;
-    background: rgba(45, 80, 22, 0.08);
+    background: rgba(0, 0, 0, 0.08);
 }
 .season-nav a:hover {
-    background: rgba(45, 80, 22, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 .season-nav a.active {
     background: var(--golden-hour);
@@ -88,13 +88,13 @@
     padding: 1.5rem;
     background: var(--snow-cap);
     border-radius: 12px;
-    border: 1px solid rgba(200, 148, 62, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .stat-number {
     font-family: 'DM Sans', sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: #2D5016;
+    color: #000000;
 }
 .stat-label {
     font-family: 'DM Sans', sans-serif;
@@ -107,8 +107,8 @@
 .overview-image {
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(200, 148, 62, 0.15);
-    background: linear-gradient(135deg, var(--golden-hour) 0%, #8B6914 100%);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, var(--golden-hour) 0%, #000000 100%);
     height: 400px;
     display: flex;
     align-items: center;
@@ -131,7 +131,7 @@
 /* Activities */
 .activity-card-image {
     height: 180px;
-    background: linear-gradient(135deg, #F0C850 0%, var(--golden-hour) 100%);
+    background: linear-gradient(135deg, #333333 0%, var(--golden-hour) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,9 +148,9 @@
 .weather-card {
     text-align: center;
     padding: 2.5rem 2rem;
-    background: rgba(45, 80, 22, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 12px;
-    border: 1px solid rgba(45, 80, 22, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background 0.3s ease;
     opacity: 0;
     transform: translateY(30px);
@@ -164,7 +164,7 @@
 .weather-card:nth-child(3).visible { transition-delay: 0.2s; }
 .weather-card:hover {
     transform: translateY(-6px);
-    background: rgba(45, 80, 22, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 .weather-icon {
     font-size: 3rem;
@@ -174,7 +174,7 @@
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-    color: #2D5016;
+    color: #000000;
     margin-bottom: 0.75rem;
 }
 .weather-card p {
@@ -215,8 +215,8 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    background: rgba(200, 148, 62, 0.15);
-    color: #2D5016;
+    background: rgba(0, 0, 0, 0.15);
+    color: #000000;
     padding: 0.4rem 1rem;
     border-radius: 20px;
     margin-bottom: 1rem;
@@ -357,7 +357,7 @@
         </div>
     </div>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <!-- Overview Section -->
         <section class="section" aria-label="Summer overview">
@@ -454,8 +454,8 @@
         <section class="section highlights-section" aria-label="Summer weather">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: #2D5016; letter-spacing: 3px;">What to Expect</span>
-                    <h2 class="section-title section-title-centered" style="color: #2D5016;">Summer Weather</h2>
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">What to Expect</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">Summer Weather</h2>
                     <p class="section-description" style="color: rgba(240,244,248,0.7);">Sunny mornings, monsoon afternoons, and cool mountain nights.</p>
                 </div>
                 <div class="weather-grid">
@@ -524,22 +524,22 @@
                 <div class="tips-grid">
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F4C5;</div>
-                        <h4>Book Early</h4>
+                        <h3>Book Early</h3>
                         <p>Summer is peak season. Reserve lodging well in advance, especially for holiday weekends like July 4th. Weekday visits offer better availability.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x26C8;&#xFE0F;</div>
-                        <h4>Monsoon Prep</h4>
+                        <h3>Monsoon Prep</h3>
                         <p>Plan outdoor activities for mornings. Afternoon storms in July and August are brief but can be intense. Always carry a rain layer on hikes.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F9F4;</div>
-                        <h4>Sun Protection</h4>
+                        <h3>Sun Protection</h3>
                         <p>The sun is intense at 9,000 feet. Wear sunscreen, a hat, and sunglasses even when temperatures feel comfortable. Stay hydrated at altitude.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F319;</div>
-                        <h4>Evening Layers</h4>
+                        <h3>Evening Layers</h3>
                         <p>Temperatures drop into the 40s and 50s after sunset. Bring a jacket or fleece for evening dining, stargazing, and outdoor events.</p>
                     </div>
                 </div>

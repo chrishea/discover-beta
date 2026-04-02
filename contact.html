@@ -32,12 +32,12 @@
 .hero {
 height: 40vh;
 min-height: 320px;
-background: #F0EDE5;
+background: #f2f2f2;
 }
 .hero-gradient {
 position: absolute;
 inset: 0;
-background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 background-size: 300% 300%;
 animation: gradientShift 8s ease infinite;
 }
@@ -109,7 +109,7 @@ outline: none;
 .form-group select:focus,
 .form-group textarea:focus {
 border-color: var(--golden-hour);
-box-shadow: 0 0 0 3px rgba(200, 148, 62, 0.2);
+box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 .form-group textarea {
 resize: vertical;
@@ -136,18 +136,18 @@ background: var(--golden-hour);
 color: var(--midnight);
 cursor: pointer;
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 animation: pulse 2.5s ease-in-out infinite;
 margin-top: 0.5rem;
 min-height: 44px;
 }
 @keyframes pulse {
-0%, 100% { box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4); }
-50% { box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4), 0 0 0 12px rgba(200, 148, 62, 0); }
+0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }
+50% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 0 12px rgba(0, 0, 0, 0); }
 }
 .btn-submit:hover {
 transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
+box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
 animation: none;
 }
 .info-column {
@@ -221,7 +221,7 @@ margin: 0 auto;
 text-align: center;
 }
 .map-placeholder {
-background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 border: none;
 border-radius: 12px;
 padding: 5rem 2rem;
@@ -273,14 +273,14 @@ border-radius: 8px;
 text-decoration: none;
 background: var(--golden-hour);
 color: var(--midnight);
-box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
 min-height: 44px;
 }
 .map-placeholder a:hover {
 transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
+box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
 }
 /* Page-specific footer */
 .site-footer::before {
@@ -354,7 +354,7 @@ animation: gradientBorder 6s linear infinite;
     </section>
 
 
-    <main id="main-content">
+    <main id="main-content" role="main">
         <section class="contact-section" aria-label="Contact information and form">
             <div class="contact-container">
 
@@ -458,7 +458,7 @@ animation: gradientBorder 6s linear infinite;
     </main>
 
 
-    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <footer class="site-footer footer-green" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col">
                 <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
@@ -568,12 +568,12 @@ animation: gradientBorder 6s linear infinite;
     </script>
 
 <div id="beta-modal" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:1;transition:opacity 0.4s ease">
-  <div style="background:#1a1a2e;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(45, 80, 22, 0.08)">
+  <div style="background:#111111;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(0, 0, 0, 0.08)">
     <div style="font-size:2rem;margin-bottom:0.75rem">&#9888;</div>
-    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#c8943e">Beta Site</h2>
+    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#000000">Beta Site</h2>
     <p style="font-family:'DM Sans',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
-    <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(45, 80, 22, 0.1);overflow:hidden">
-      <div id="beta-modal-progress" style="height:100%;width:100%;background:#d4a03c;border-radius:2px;transition:width 12s linear"></div>
+    <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(0, 0, 0, 0.1);overflow:hidden">
+      <div id="beta-modal-progress" style="height:100%;width:100%;background:#888888;border-radius:2px;transition:width 12s linear"></div>
     </div>
   </div>
 </div>

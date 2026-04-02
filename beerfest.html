@@ -44,7 +44,7 @@
 /* Page-specific hero */
 .hero { height: 65vh; }
 .hero-bg {
-    background: linear-gradient(135deg, #8B6914 0%, #D4A017 50%, var(--twilight) 100%);
+    background: linear-gradient(135deg, #000000 0%, #111111 50%, var(--twilight) 100%);
     animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-title .word:nth-child(1) { animation-delay: 0.2s; }
@@ -53,7 +53,7 @@
 .hero-subtitle { opacity: 0; animation: fadeUp 0.8s ease 1s forwards; }
 /* Page-specific components */
 .about-image {
-    background: linear-gradient(135deg, #D4A017 0%, #8B6914 100%);
+    background: linear-gradient(135deg, #111111 0%, #000000 100%);
 }
 .about-image-placeholder { color: white; }
 .about-image-placeholder p { color: rgba(255,255,255,0.85); }
@@ -206,7 +206,7 @@ animation: gradientBorder 6s linear infinite;
         </div>
     </div>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
         <section class="section" id="about" aria-label="About Beerfest">
             <div class="section-container">
                 <div class="about-grid">
@@ -307,22 +307,22 @@ animation: gradientBorder 6s linear infinite;
                 <div class="visiting-grid">
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F6AB;</div>
-                        <h4>21+ Only</h4>
+                        <h3>21+ Only</h3>
                         <p>This is a 21 and over event. Valid government-issued photo ID is required for entry. No exceptions.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F550;</div>
-                        <h4>Hours</h4>
+                        <h3>Hours</h3>
                         <p>Gates open at 12:00 PM. Festival runs until 6:00 PM. First tasting pours at 12:30 PM.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F3AB;</div>
-                        <h4>Tickets</h4>
+                        <h3>Tickets</h3>
                         <p>Tickets available in advance and at the gate (subject to availability). VIP and general admission options available.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F697;</div>
-                        <h4>Getting There</h4>
+                        <h3>Getting There</h3>
                         <p>Cloudcroft is 30 minutes from Alamogordo on US-82. Please drink responsibly and arrange a designated driver or ride share.</p>
                     </div>
                 </div>

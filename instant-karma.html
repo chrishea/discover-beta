@@ -43,11 +43,11 @@
 /* Page-specific hero */
 .hero { height: 65vh; min-height: 450px; }
 .hero-bg {
-background: linear-gradient(135deg, #4A2D6B 0%, #6c3483 50%, #9b59b6 100%);
+background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
 animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
-background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0.35));
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 }
 .hero-title .word:nth-child(1) { animation-delay: 0.2s; }
 .hero-title .word:nth-child(2) { animation-delay: 0.4s; }
@@ -55,7 +55,7 @@ background: linear-gradient(135deg, rgba(45, 80, 22, 0.55), rgba(200, 148, 62, 0
 .hero-ctas { opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards; }
 /* About image override */
 .about-image {
-background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(200, 148, 62, 0.15) 100%);
+background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(0, 0, 0, 0.15) 100%);
 }
 /* Menu card extra stagger delays */
 .menu-card:nth-child(5).visible { transition-delay: 0.4s; }
@@ -156,7 +156,7 @@ animation: gradientBorder 6s linear infinite;
     </div>
 
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <section class="section" id="about" aria-label="About Instant Karma">
             <div class="section-container">
@@ -279,8 +279,8 @@ animation: gradientBorder 6s linear infinite;
         <section class="section highlights-section" aria-label="Why visit">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: #2D5016; letter-spacing: 3px;">Why Visit</span>
-                    <h2 class="section-title section-title-centered" style="color: #2C2C2C;">Highlights</h2>
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">Why Visit</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">Highlights</h2>
                     <p class="section-description" style="color: rgba(240,244,248,0.7);">Three reasons to explore Instant Karma.</p>
                 </div>
                 <div class="highlights-grid">
@@ -314,22 +314,22 @@ animation: gradientBorder 6s linear infinite;
                 <div class="visiting-grid">
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4CD;</div>
-                        <h4>Location</h4>
+                        <h3>Location</h3>
                         <p>Burro Avenue, Cloudcroft, NM 88317. Located on historic Burro Avenue in the heart of downtown Cloudcroft.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F550;</div>
-                        <h4>Hours</h4>
+                        <h3>Hours</h3>
                         <p>Open Daily: 10AM&ndash;6PM. Extended hours during peak season. Stop by anytime for good vibes and unique finds.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4DE;</div>
-                        <h4>Contact</h4>
+                        <h3>Contact</h3>
                         <p>Phone: <a href="tel:5756822225" style="color: var(--alpine); text-decoration: none;">(575) 682-2225</a>. Call ahead for special requests or product inquiries.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F17F;&#xFE0F;</div>
-                        <h4>Parking</h4>
+                        <h3>Parking</h3>
                         <p>Free street parking available on Burro Avenue and throughout the village. Easy walking distance from all downtown shops.</p>
                     </div>
                 </div>

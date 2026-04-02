@@ -25,7 +25,7 @@
     <style>
 /* Hero - page-specific */
 .hero-bg {
-    background: linear-gradient(135deg, var(--pine-shadow) 0%, #2E6B4A 50%, #4A9A6A 100%);
+    background: linear-gradient(135deg, var(--pine-shadow) 0%, #111111 50%, #333333 100%);
 }
 .hero-title .word:nth-child(1) { animation-delay: 0.2s; }
 .hero-title .word:nth-child(2) { animation-delay: 0.4s; }
@@ -34,7 +34,7 @@
 
 /* Season Nav */
 .season-nav {
-    background: #F0EDE5;
+    background: #f2f2f2;
     padding: 1rem 0;
 }
 .season-nav-container {
@@ -55,10 +55,10 @@
     font-size: 0.85rem;
     border-radius: 25px;
     transition: all 0.3s ease;
-    background: rgba(45, 80, 22, 0.08);
+    background: rgba(0, 0, 0, 0.08);
 }
 .season-nav a:hover {
-    background: rgba(45, 80, 22, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 .season-nav a.active {
     background: var(--golden-hour);
@@ -109,7 +109,7 @@
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(30, 58, 47, 0.15);
-    background: linear-gradient(135deg, #4A9A6A 0%, var(--pine-shadow) 100%);
+    background: linear-gradient(135deg, #333333 0%, var(--pine-shadow) 100%);
     height: 400px;
     display: flex;
     align-items: center;
@@ -132,7 +132,7 @@
 /* Activities */
 .activity-card-image {
     height: 180px;
-    background: linear-gradient(135deg, #4A9A6A 0%, var(--pine-shadow) 100%);
+    background: linear-gradient(135deg, #333333 0%, var(--pine-shadow) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,9 +149,9 @@
 .weather-card {
     text-align: center;
     padding: 2.5rem 2rem;
-    background: rgba(45, 80, 22, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 12px;
-    border: 1px solid rgba(45, 80, 22, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background 0.3s ease;
     opacity: 0;
     transform: translateY(30px);
@@ -165,7 +165,7 @@
 .weather-card:nth-child(3).visible { transition-delay: 0.2s; }
 .weather-card:hover {
     transform: translateY(-6px);
-    background: rgba(45, 80, 22, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 .weather-icon {
     font-size: 3rem;
@@ -175,7 +175,7 @@
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-    color: #2D5016;
+    color: #000000;
     margin-bottom: 0.75rem;
 }
 .weather-card p {
@@ -216,8 +216,8 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    background: rgba(200, 148, 62, 0.15);
-    color: #2D5016;
+    background: rgba(0, 0, 0, 0.15);
+    color: #000000;
     padding: 0.4rem 1rem;
     border-radius: 20px;
     margin-bottom: 1rem;
@@ -358,7 +358,7 @@
         </div>
     </div>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <!-- Overview Section -->
         <section class="section" aria-label="Spring overview">
@@ -455,8 +455,8 @@
         <section class="section highlights-section" aria-label="Spring weather">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: #2D5016; letter-spacing: 3px;">What to Expect</span>
-                    <h2 class="section-title section-title-centered" style="color: #2D5016;">Spring Weather</h2>
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">What to Expect</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">Spring Weather</h2>
                     <p class="section-description" style="color: rgba(240,244,248,0.7);">Variable conditions at 8,676 feet &mdash; come prepared and you'll love every moment.</p>
                 </div>
                 <div class="weather-grid">
@@ -520,22 +520,22 @@
                 <div class="tips-grid">
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F9E5;</div>
-                        <h4>What to Pack</h4>
+                        <h3>What to Pack</h3>
                         <p>Layers are essential. Bring a warm fleece, wind-resistant jacket, sunscreen, and sturdy hiking shoes. Mornings can start near freezing even in May.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F697;</div>
-                        <h4>Getting Here</h4>
+                        <h3>Getting Here</h3>
                         <p>Highway 82 from Alamogordo is the main route. Spring conditions are generally good, but occasional late-season snow is possible. Check road conditions before traveling.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F3E0;</div>
-                        <h4>Where to Stay</h4>
+                        <h3>Where to Stay</h3>
                         <p>Spring is low season, so lodging is easier to find. Cabins and vacation rentals offer the best mountain experience with fireplaces for cool evenings.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F30E;</div>
-                        <h4>Elevation Reminder</h4>
+                        <h3>Elevation Reminder</h3>
                         <p>At 8,676 feet, drink plenty of water and take it easy your first day. The sun is more intense at altitude &mdash; wear sunscreen and a hat even on cloudy days.</p>
                     </div>
                 </div>

@@ -29,16 +29,16 @@ padding: 0;
 box-sizing: border-box;
 }
 :root {
---midnight: #0B1D3A;
---summit: #1A3A5C;
---alpine: #2E6B8A;
---golden-hour: #E8A838;
---ember: #D4553A;
---pine-shadow: #1E3A2F;
---cloud-drift: #F0F4F8;
+--midnight: #000000;
+--summit: #111111;
+--alpine: #222222;
+--golden-hour: #888888;
+--ember: #111111;
+--pine-shadow: #111111;
+--cloud-drift: #f2f2f2;
 --snow-cap: #FFFFFF;
---granite: #6B7B8D;
---twilight: #4A2D6B;
+--granite: #555555;
+--twilight: #000000;
 }
 html {
 scroll-behavior: smooth;
@@ -692,7 +692,7 @@ animation-timing-function: ease;
 animation-iteration-count: infinite;
 }
 .season-spring .season-card-bg {
-background: linear-gradient(135deg, #2D8B4E, #5BB87A, #A8E06B, #2D8B4E);
+background: linear-gradient(135deg, #111111, #333333, #555555, #111111);
 animation-name: springGradient;
 }
 @keyframes springGradient {
@@ -701,7 +701,7 @@ animation-name: springGradient;
 100% { background-position: 0% 50%; }
 }
 .season-summer .season-card-bg {
-background: linear-gradient(135deg, #E8A838, #F0C75E, #E88B38, #E8A838);
+background: linear-gradient(135deg, #888888, #bbbbbb, #777777, #888888);
 animation-name: summerGradient;
 }
 @keyframes summerGradient {
@@ -710,7 +710,7 @@ animation-name: summerGradient;
 100% { background-position: 0% 50%; }
 }
 .season-fall .season-card-bg {
-background: linear-gradient(135deg, #D4553A, #E88B38, #BF3A1D, #D4553A);
+background: linear-gradient(135deg, #111111, #666666, #222222, #111111);
 animation-name: fallGradient;
 }
 @keyframes fallGradient {
@@ -719,7 +719,7 @@ animation-name: fallGradient;
 100% { background-position: 0% 50%; }
 }
 .season-winter .season-card-bg {
-background: linear-gradient(135deg, #2E6B8A, #A8D0E6, #F0F4F8, #2E6B8A);
+background: linear-gradient(135deg, #222222, #bbbbbb, #f2f2f2, #222222);
 animation-name: winterGradient;
 }
 @keyframes winterGradient {
@@ -1497,7 +1497,7 @@ transform: none !important;
   </div>
 
 
-  <main id="main-content">
+  <main id="main-content" role="main">
 
 
     <section class="reels-section" aria-label="Moments in the Mountains gallery">
@@ -2094,12 +2094,12 @@ transform: none !important;
   </script>
 
 <div id="beta-modal" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:1;transition:opacity 0.4s ease">
-  <div style="background:#1a1a2e;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1)">
+  <div style="background:#111111;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1)">
     <div style="font-size:2rem;margin-bottom:0.75rem">&#9888;</div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;margin:0 0 0.5rem;color:#d4a03c">Beta Site</h2>
+    <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;margin:0 0 0.5rem;color:#888888">Beta Site</h2>
     <p style="font-family:'Space Grotesk',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
     <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(255,255,255,0.15);overflow:hidden">
-      <div id="beta-modal-progress" style="height:100%;width:100%;background:#d4a03c;border-radius:2px;transition:width 12s linear"></div>
+      <div id="beta-modal-progress" style="height:100%;width:100%;background:#888888;border-radius:2px;transition:width 12s linear"></div>
     </div>
   </div>
 </div>

@@ -26,7 +26,7 @@
 /* Page-specific hero */
 .hero { height: 65vh; min-height: 450px; }
 .hero-bg {
-background: linear-gradient(135deg, #7A1B1B 0%, var(--ember) 50%, var(--midnight) 100%);
+background: linear-gradient(135deg, #000000 0%, var(--ember) 50%, var(--midnight) 100%);
 animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-badge {
@@ -55,11 +55,11 @@ box-shadow: 0 4px 15px rgba(212, 85, 58, 0.4);
 box-shadow: 0 6px 25px rgba(212, 85, 58, 0.6);
 }
 .btn-secondary {
-color: #2D5016;
-border: 2px solid #2D5016;
+color: #000000;
+border: 2px solid #000000;
 }
 .btn-secondary:hover {
-background: #2D5016;
+background: #000000;
 color: white;
 }
 /* Page-specific components */
@@ -296,7 +296,7 @@ border-radius: 20px;
 text-transform: uppercase;
 letter-spacing: 0.05em;
 }
-.cta-container h2 { color: #2D5016; }
+.cta-container h2 { color: #000000; }
 .btn-cta-primary {
 display: inline-block;
 font-family: 'DM Sans', sans-serif;
@@ -309,13 +309,13 @@ border-radius: 8px;
 text-decoration: none;
 background: var(--golden-hour);
 color: var(--midnight);
-box-shadow: 0 4px 15px rgba(200, 148, 62, 0.4);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 min-height: 44px;
 }
 .btn-cta-primary:hover {
 transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(200, 148, 62, 0.6);
+box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
 }
 /* Page-specific footer */
 .site-footer::before {
@@ -425,7 +425,7 @@ animation: gradientBorder 6s linear infinite;
     </div>
 
 
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <section class="section" id="services" aria-label="Emergency services in Cloudcroft">
             <div class="section-container">
@@ -599,22 +599,22 @@ animation: gradientBorder 6s linear infinite;
                 </div>
                 <div class="care-grid">
                     <div class="care-card">
-                        <h4>Trestle Medical Services</h4>
+                        <h3>Trestle Medical Services</h3>
                         <p>New medical practice located on James Canyon Highway in Cloudcroft, next to the fire station. Offering primary care services to mountain residents and visitors.</p>
                         <span class="care-tag">Cloudcroft</span>
                     </div>
                     <div class="care-card">
-                        <h4>Sacramento Mountain Medical</h4>
+                        <h3>Sacramento Mountain Medical</h3>
                         <p>Local medical provider serving the Cloudcroft community with primary care and general medical services.</p>
                         <span class="care-tag">Cloudcroft</span>
                     </div>
                     <div class="care-card">
-                        <h4>Presbyterian Medical Services</h4>
+                        <h3>Presbyterian Medical Services</h3>
                         <p>Healthcare services available in Alamogordo for a range of medical needs.</p>
                         <span class="care-tag">Alamogordo</span>
                     </div>
                     <div class="care-card">
-                        <h4>Ben Archer Health Center</h4>
+                        <h3>Ben Archer Health Center</h3>
                         <p>Comprehensive services including medical, dental, and behavioral health. No patient is denied services due to inability to pay.</p>
                         <span class="care-tag">Sliding Scale</span>
                     </div>
@@ -636,7 +636,7 @@ animation: gradientBorder 6s linear infinite;
     </main>
 
 
-    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <footer class="site-footer footer-green" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col">
                 <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
