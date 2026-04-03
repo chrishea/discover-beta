@@ -1,5 +1,7 @@
 /* ===== RESET & CUSTOM PROPERTIES ===== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -66,8 +68,13 @@ body {
 }
 
 @keyframes pageLoad {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 a {
@@ -141,7 +148,7 @@ img {
 .header-logo {
   font-family: 'DM Sans', sans-serif;
   color: var(--pine);
-  font-size: 1.4rem;
+  font-size: 1rem;
   letter-spacing: 0.12em;
   display: flex;
   align-items: baseline;
@@ -190,7 +197,7 @@ img {
 .header-nav a {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: var(--charcoal);
   opacity: 0.85;
   transition: opacity 0.3s ease, color 0.3s ease;
@@ -427,6 +434,7 @@ img {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -438,6 +446,7 @@ img {
     opacity: 0;
     transform: translateY(15px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -445,8 +454,13 @@ img {
 }
 
 @keyframes kenBurns {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.05); }
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
 }
 
 /* ===== BUTTONS ===== */
@@ -587,9 +601,14 @@ img {
 }
 
 /* Green-themed pages (about, contact, etc.) */
-.site-footer.footer-green { background: var(--footer-green); }
+.site-footer.footer-green {
+  background: var(--footer-green);
+}
+
 /* Restaurant pages */
-.site-footer.footer-restaurant { background: var(--footer-restaurant); }
+.site-footer.footer-restaurant {
+  background: var(--footer-restaurant);
+}
 
 .footer-gradient-border {
   height: 4px;
@@ -599,9 +618,17 @@ img {
 }
 
 @keyframes footerBorderMorph {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .footer-inner {
@@ -799,6 +826,7 @@ img {
 }
 
 @media (max-width: 768px) {
+
   .main-nav,
   .header-nav {
     display: none;
@@ -858,8 +886,13 @@ img {
 }
 
 @keyframes kenBurnsExtended {
-  0% { transform: scale(1) translate(0, 0); }
-  100% { transform: scale(1.1) translate(-1%, -1%); }
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+
+  100% {
+    transform: scale(1.1) translate(-1%, -1%);
+  }
 }
 
 .hero-badge {
@@ -891,15 +924,35 @@ img {
   animation: wordReveal 0.6s ease forwards;
 }
 
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
-.hero-title .word:nth-child(4) { animation-delay: 0.8s; }
-.hero-title .word:nth-child(5) { animation-delay: 1.0s; }
-.hero-title .word:nth-child(6) { animation-delay: 1.2s; }
+.hero-title .word:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.hero-title .word:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.hero-title .word:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.hero-title .word:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.hero-title .word:nth-child(5) {
+  animation-delay: 1.0s;
+}
+
+.hero-title .word:nth-child(6) {
+  animation-delay: 1.2s;
+}
 
 @keyframes wordReveal {
-  to { opacity: 1; transform: translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-subtitle {
@@ -1084,11 +1137,25 @@ img {
   transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
 }
 
-.menu-card:nth-child(2).visible { transition-delay: 0.1s; }
-.menu-card:nth-child(3).visible { transition-delay: 0.2s; }
-.menu-card:nth-child(4).visible { transition-delay: 0.3s; }
-.menu-card:nth-child(5).visible { transition-delay: 0.4s; }
-.menu-card:nth-child(6).visible { transition-delay: 0.5s; }
+.menu-card:nth-child(2).visible {
+  transition-delay: 0.1s;
+}
+
+.menu-card:nth-child(3).visible {
+  transition-delay: 0.2s;
+}
+
+.menu-card:nth-child(4).visible {
+  transition-delay: 0.3s;
+}
+
+.menu-card:nth-child(5).visible {
+  transition-delay: 0.4s;
+}
+
+.menu-card:nth-child(6).visible {
+  transition-delay: 0.5s;
+}
 
 .menu-card:hover {
   transform: translateY(-6px);
@@ -1108,7 +1175,7 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.menu-card > p {
+.menu-card>p {
   color: var(--charcoal-light);
   font-size: 0.95rem;
   line-height: 1.7;
@@ -1172,8 +1239,13 @@ img {
   transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
 }
 
-.highlight-card:nth-child(2).visible { transition-delay: 0.1s; }
-.highlight-card:nth-child(3).visible { transition-delay: 0.2s; }
+.highlight-card:nth-child(2).visible {
+  transition-delay: 0.1s;
+}
+
+.highlight-card:nth-child(3).visible {
+  transition-delay: 0.2s;
+}
 
 .highlight-card:hover {
   transform: translateY(-6px);
@@ -1295,23 +1367,53 @@ img {
 
 /* ===== COMPONENT RESPONSIVE ===== */
 @media (max-width: 1024px) {
-  .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .highlights-grid { grid-template-columns: repeat(2, 1fr); }
-  .menu-grid { grid-template-columns: repeat(2, 1fr); }
-  .visiting-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .visiting-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .highlights-grid { grid-template-columns: 1fr; }
-  .menu-grid { grid-template-columns: 1fr; }
-  .visiting-grid { grid-template-columns: 1fr; }
-  .info-bar-inner { gap: 1.5rem; }
-  .cta-buttons { flex-direction: column; align-items: center; }
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visiting-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-bar-inner {
+    gap: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

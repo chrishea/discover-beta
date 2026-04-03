@@ -351,6 +351,18 @@
             transition-delay: 0.3s;
         }
 
+        .lodging-item:nth-child(5).visible {
+            transition-delay: 0.4s;
+        }
+
+        .lodging-item:nth-child(6).visible {
+            transition-delay: 0.5s;
+        }
+
+        .lodging-item:nth-child(7).visible {
+            transition-delay: 0.6s;
+        }
+
         .lodging-item:hover {
             border-color: #000000;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
@@ -377,6 +389,21 @@
         .lodging-content {
             padding: 1.5rem 1.5rem 1.5rem 0;
             flex: 1;
+            min-width: 0;
+        }
+
+        .lodging-img {
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .lodging-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .lodging-content h3 {
@@ -910,12 +937,13 @@
     <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
     <header class="site-header" role="banner">
         <div class="header-inner">
-            <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
-                <span class="logo-discover">Discover</span>
-                <span class="logo-cloudcroft">Cloudcroft</span>
-                <span class="logo-beta">Beta</span>
-            </a>
+
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
                 <a href="lodging.html">Stay</a>
                 <a href="dining.html">Eat</a>
                 <a href="activities.html">Explore</a>
@@ -1063,6 +1091,10 @@
                     <div class="lodging-item fade-in">
                         <div class="lodging-badge">Historic Inn</div>
                         <div class="lodging-content">
+                            <div class="lodging-img">
+                                <img src="media/lodge-1.webp" alt="The Lodge Resort &amp; Spa, Cloudcroft"
+                                    loading="lazy">
+                            </div>
                             <h3>The Lodge Resort &amp; Spa</h3>
                             <p>Cloudcroft's iconic Victorian-era lodge has been welcoming guests since 1899. The
                                 Rebecca's Restaurant inside is one of the region's most romantic dining rooms. Rooms,
@@ -1078,6 +1110,10 @@
                     <div class="lodging-item fade-in">
                         <div class="lodging-badge">Hotel</div>
                         <div class="lodging-content">
+                            <div class="lodging-img">
+                                <img src="media/lodging-grand-cloudcroft-hotel.webp" alt="Grand Cloudcroft Hotel"
+                                    loading="lazy">
+                            </div>
                             <h3>Grand Cloudcroft Hotel</h3>
                             <p>A more contemporary option in the center of the village with easy walking access to shops
                                 and restaurants on Burro Avenue. Comfortable rooms with mountain views.</p>
@@ -1094,6 +1130,10 @@
                     <div class="lodging-item fade-in">
                         <div class="lodging-badge">Cabins</div>
                         <div class="lodging-content">
+                            <div class="lodging-img">
+                                <img src="media/lodging-cabins-at-cloudcroft.webp"
+                                    alt="Cabins at Cloudcroft surrounded by tall pines" loading="lazy">
+                            </div>
                             <h3>Cabins at Cloudcroft</h3>
                             <p>Fully equipped private cabins ideal for families and groups. Each cabin has a fireplace,
                                 kitchen, and deck surrounded by tall pines. The most popular choice for weekend
@@ -1105,6 +1145,81 @@
                                 <span class="lodging-tag">Fireplace</span>
                                 <span class="lodging-tag">Pet-friendly</span>
                                 <span class="lodging-tag">Private deck</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lodging-item fade-in">
+                        <div class="lodging-badge">Motel</div>
+                        <div class="lodging-content">
+
+                            <div class="lodging-img">
+                                <img src="media/lodging-dusty-boots.webp" alt="Dusty Boots Motel &amp; Cafe"
+                                    loading="lazy">
+                            </div>
+
+                            <h3>Dusty Boots Motel &amp; Cafe</h3>
+                            <p>15 uniquely themed rooms on James Canyon Highway — Roy Rogers, Harry Potter, Route 66,
+                                and more — with a scratch-kitchen cafe open daily, a hot tub, and Pedego e-bike rentals
+                                on-site. Pet-friendly. 0.7 miles from the village center.</p>
+                            <a href="dusty-boots-motel-cloudcroft.html" class="thing-card-link"
+                                style="margin-top:0.5rem;">View rooms &rarr;</a>
+                            <div class="lodging-tags" style="margin-top:0.75rem;">
+                                <span class="lodging-tag">Themed rooms</span>
+                                <span class="lodging-tag">On-site cafe</span>
+                                <span class="lodging-tag">Hot tub</span>
+                                <span class="lodging-tag">E-bike rentals</span>
+                                <span class="lodging-tag">Pet-friendly</span>
+                                <span class="lodging-tag">From $145/night</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lodging-item fade-in">
+                        <div class="lodging-badge">Inn</div>
+                        <div class="lodging-content">
+
+                            <div class="lodging-img">
+                                <img src="media/Lodging-summit-inn.webp" alt="The Summit Inn" loading="lazy">
+                            </div>
+
+                            <h3>The Summit Inn</h3>
+                            <p>A no-frills, well-kept inn at 9,000 feet on Chipmunk Avenue — 0.1 miles from downtown.
+                                Ten rooms named after New Mexico cities, each with a full kitchenette. Owned and
+                                operated by Timothy and Gail King, who are known for genuine local hospitality. Rated
+                                8.3 on Booking.com.</p>
+                            <a href="lodging-cloudcroft-2025-Summit-Inn.html" class="thing-card-link"
+                                style="margin-top:0.5rem;">View rooms &rarr;</a>
+                            <div class="lodging-tags" style="margin-top:0.75rem;">
+                                <span class="lodging-tag">Full kitchenette</span>
+                                <span class="lodging-tag">Fire pit</span>
+                                <span class="lodging-tag">Pets allowed</span>
+                                <span class="lodging-tag">Walk to restaurants</span>
+                                <span class="lodging-tag">From $134/night</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lodging-item fade-in">
+                        <div class="lodging-badge">B&amp;B</div>
+                        <div class="lodging-content">
+
+                            <div class="lodging-img">
+                                <img src="media/crofting-inn-front.jpg" alt="The Crofting Bed &amp; Breakfast"
+                                    loading="lazy">
+                            </div>
+
+
+                            <h3>The Crofting Bed &amp; Breakfast</h3>
+                            <p>A century-old historic home on Swallow Place, two blocks from Burro Avenue. Eight
+                                individually decorated rooms — several with private balconies and mountain views — and a
+                                full cooked breakfast served every morning at 8:30 a.m. Rated 9.2 out of 10 on Expedia
+                                (678 reviews).</p>
+                            <a href="crofting-inn-cloudcroft.html" class="thing-card-link"
+                                style="margin-top:0.5rem;">View rooms &rarr;</a>
+                            <div class="lodging-tags" style="margin-top:0.75rem;">
+                                <span class="lodging-tag">Full breakfast included</span>
+                                <span class="lodging-tag">Mountain view balconies</span>
+                                <span class="lodging-tag">Historic 1909</span>
+                                <span class="lodging-tag">Walk to village</span>
+                                <span class="lodging-tag">From $119/night</span>
                             </div>
                         </div>
                     </div>
