@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumberjack Day | DiscoverCloudcroft.com — Free September Festival</title>
+    <meta name="description" content="Cloudcroft Lumberjack Day at Zenith Park. Free admission, pancake breakfast, axe throwing, chainsaw competitions, and more. A September tradition in the Sacramento Mountains.">
+    <meta name="keywords" content="Cloudcroft Lumberjack Day, Zenith Park, axe throwing, chainsaw competition, Cloudcroft NM, September event, free festival">
+    <link rel="canonical" href="https://discovercloudcroft.com/lumberjack-day.html">
+    <meta property="og:title" content="Lumberjack Day | DiscoverCloudcroft.com">
+    <meta property="og:description" content="Cloudcroft Lumberjack Day at Zenith Park. Free admission, pancake breakfast, axe throwing, chainsaw competitions.">
+    <meta property="og:url" content="https://discovercloudcroft.com/lumberjack-day.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lumberjack Day | DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="Free September festival with lumberjack competitions at Zenith Park in Cloudcroft, NM.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Cloudcroft Lumberjack Day",
+      "description": "Free annual lumberjack competition featuring axe throwing, chainsaw events, and pancake breakfast at Zenith Park.",
+      "location": {
+        "@type": "Place",
+        "name": "Zenith Park",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cloudcroft",
+          "addressRegion": "NM",
+          "postalCode": "88317",
+          "addressCountry": "US"
+        }
+      },
+      "isAccessibleForFree": true
+    }
+    </script>
+
+    <style>
+/* Page-specific hero */
+.hero { height: 65vh; min-height: 450px; }
+.hero-bg {
+background: linear-gradient(135deg, #000000 0%, #111111 50%, var(--twilight) 100%);
+animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(139, 69, 19, 0.55));
+}
+.hero-badge span { color: var(--pine); }
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+.hero-subtitle { opacity: 0; animation: fadeUp 0.8s ease 1s forwards; }
+.hero-ctas { opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards; }
+/* About image overrides */
+.about-image {
+background: linear-gradient(135deg, #111111 0%, #333333 100%);
+}
+.about-image-placeholder { color: white; }
+.about-image-placeholder p {
+color: rgba(255,255,255,0.85);
+}
+/* Schedule section */
+.schedule-section {
+background: var(--cloud-drift);
+}
+.schedule-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 2rem;
+}
+.schedule-card {
+background: var(--snow-cap);
+border-radius: 12px;
+padding: 2.5rem 2rem;
+border-left: 4px solid var(--golden-hour);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+opacity: 0;
+transform: translateY(30px);
+}
+.schedule-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.schedule-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.schedule-time {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 0.85rem;
+color: var(--pine);
+text-transform: uppercase;
+letter-spacing: 0.1em;
+margin-bottom: 0.5rem;
+}
+.schedule-card h3 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+color: var(--midnight);
+margin-bottom: 0.5rem;
+}
+.schedule-card p {
+color: var(--granite);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+/* Competitions section */
+.competitions-section {
+background: var(--cream-dark);
+position: relative;
+overflow: hidden;
+}
+.competitions-section::before {
+content: '';
+position: absolute;
+inset: 0;
+opacity: 0.06;
+background-image:
+repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px),
+repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px);
+pointer-events: none;
+}
+.competitions-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+position: relative;
+}
+.competition-card {
+text-align: center;
+padding: 2.5rem 2rem;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+transition: transform 0.3s ease, background 0.3s ease;
+opacity: 0;
+transform: translateY(30px);
+}
+.competition-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+}
+.competition-card:nth-child(2).visible { transition-delay: 0.1s; }
+.competition-card:nth-child(3).visible { transition-delay: 0.2s; }
+.competition-card:nth-child(4).visible { transition-delay: 0.3s; }
+.competition-card:nth-child(5).visible { transition-delay: 0.4s; }
+.competition-card:nth-child(6).visible { transition-delay: 0.5s; }
+.competition-card:hover {
+transform: translateY(-6px);
+background: rgba(255, 255, 255, 0.1);
+}
+.competition-icon {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+.competition-card h3 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+color: var(--pine);
+margin-bottom: 0.75rem;
+}
+.competition-card p {
+color: #555555;
+font-size: 0.95rem;
+line-height: 1.7;
+}
+/* Visiting card link styles */
+.visiting-card a {
+color: var(--alpine);
+text-decoration: none;
+}
+.visiting-card a:hover {
+text-decoration: underline;
+}
+/* CTA color override */
+.cta-container h2 { color: var(--charcoal); }
+/* Footer border */
+.site-footer::before {
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+background-size: 300% 100%;
+animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder {
+0% { background-position: 0% 0; }
+100% { background-position: 300% 0; }
+}
+/* Responsive */
+@media (max-width: 1024px) {
+.competitions-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+.competitions-grid { grid-template-columns: 1fr; }
+}</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+    <div class="header-inner">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+            <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <span class="logo-discover">Discover</span>
+                <span class="logo-cloudcroft">Cloudcroft</span>
+                <span class="logo-beta">Beta</span>
+            </a>
+            <a href="../stay/lodging.html">Stay</a>
+            <a href="../eat/complete-guide-to-dining.html">Eat</a>
+            <a href="../do/complete-guide-to-activities.html">Explore</a>
+            <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+            <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+            <a href="../season/seasonal.html">Seasons</a>
+            <a href="../plan.html">Plan</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+    <a href="../stay/lodging.html">Stay</a>
+    <a href="../eat/complete-guide-to-dining.html">Eat</a>
+    <a href="../do/complete-guide-to-activities.html">Explore</a>
+    <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+    <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+    <a href="../season/seasonal.html">Seasons</a>
+    <a href="../plan.html">Plan</a>
+    <a href="../contact.html">Contact</a>
+</div>
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Cloudcroft Lumberjack Day"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>September &bull; Free Admission</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Cloudcroft </span>
+                <span class="word">Lumberjack </span>
+                <span class="word">Day</span>
+            </h1>
+            <p class="hero-subtitle">Axe throwing, chainsaw competitions, and pancake breakfasts at Zenith Park &mdash; a beloved fall tradition since the days of the timber industry.</p>
+            <div class="hero-ctas">
+                <a href="#competitions" class="btn-primary">View Competitions</a>
+                <a href="#details" class="btn-outline">Event Details</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4C5;</div>
+                <span>September 2026</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>Zenith Park, Cloudcroft</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F3AB;</div>
+                <span>FREE Admission</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1FAA3;</div>
+                <span>All Ages Welcome</span>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+        <section class="section" id="about" aria-label="About Lumberjack Day">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About the Event</span>
+                        <h2 class="section-title">A Mountain Tradition</h2>
+                        <p>Cloudcroft Lumberjack Day celebrates the village's rich timber heritage with a full day of lumberjack competitions, family fun, and mountain hospitality. Held each September at Zenith Park, this free event draws competitors and spectators from across the region.</p>
+                        <p>The day kicks off with a hearty pancake breakfast from 7:30 to 9:30 AM, followed by competitions starting at 9:00 AM. Watch skilled lumberjacks compete in axe throwing, chainsaw events, single buck sawing, and more &mdash; with both men's and women's divisions.</p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1FAA3; Axe Throwing</span>
+                            <span class="about-feature">&#x1F95E; Pancake Breakfast</span>
+                            <span class="about-feature">&#x1F3C6; Competitions</span>
+                            <span class="about-feature">&#x1F46A; Family Friendly</span>
+                            <span class="about-feature">&#x1F3AB; Free Admission</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <div class="about-image-placeholder">
+                            <div class="icon">&#x1FAA3;</div>
+                            <p>Lumberjack Day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section schedule-section" id="schedule" aria-label="Event schedule">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Day of Event</span>
+                    <h2 class="section-title section-title-centered">Event Schedule</h2>
+                    <p class="section-description">From breakfast to the final competition, here is how the day unfolds at Zenith Park.</p>
+                </div>
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <div class="schedule-time">7:30 AM &ndash; 9:30 AM</div>
+                        <h3>Pancake Breakfast</h3>
+                        <p>Start the day with a hearty all-you-can-eat pancake breakfast. Fuel up before the competitions begin.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-time">9:00 AM</div>
+                        <h3>Competitions Begin</h3>
+                        <p>Lumberjack competitions kick off with events running throughout the day. Men's and women's divisions compete for top honors.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-time">All Day</div>
+                        <h3>Vendors &amp; Activities</h3>
+                        <p>Browse food vendors, craft booths, and family activities. There is something for everyone throughout the day at Zenith Park.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section competitions-section" id="competitions" aria-label="Competitions">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: var(--pine); letter-spacing: 3px;">Compete</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">Competition Events</h2>
+                    <p class="section-description" style="color: #555555;">Watch skilled competitors battle it out in these classic lumberjack disciplines. Men's and women's divisions.</p>
+                </div>
+                <div class="competitions-grid">
+                    <div class="competition-card">
+                        <div class="competition-icon">&#x1FAA3;</div>
+                        <h3>Axe Throwing</h3>
+                        <p>Test your aim in this crowd favorite. Competitors throw axes at targets for points in both men's and women's categories.</p>
+                    </div>
+                    <div class="competition-card">
+                        <div class="competition-icon">&#x1FA9A;</div>
+                        <h3>Chainsaw Events</h3>
+                        <p>Speed and precision meet in the chainsaw competition. Watch competitors race through logs with impressive skill.</p>
+                    </div>
+                    <div class="competition-card">
+                        <div class="competition-icon">&#x1FAB5;</div>
+                        <h3>Single Buck Sawing</h3>
+                        <p>A classic test of endurance and technique. Competitors use a one-person crosscut saw to slice through timber.</p>
+                    </div>
+                    <div class="competition-card">
+                        <div class="competition-icon">&#x1F3CB;&#xFE0F;</div>
+                        <h3>Men's Division</h3>
+                        <p>Men compete across all events for individual and overall honors. Experience levels range from novice to professional.</p>
+                    </div>
+                    <div class="competition-card">
+                        <div class="competition-icon">&#x1F4AA;</div>
+                        <h3>Women's Division</h3>
+                        <p>Women compete in all events with their own division and awards. Fierce competition and incredible displays of skill.</p>
+                    </div>
+                    <div class="competition-card">
+                        <div class="competition-icon">&#x1F3C6;</div>
+                        <h3>Awards Ceremony</h3>
+                        <p>Top finishers in each event and overall champions are recognized at the awards ceremony at the end of the day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="details" aria-label="Event details">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Visit</span>
+                    <h2 class="section-title section-title-centered">Event Details</h2>
+                    <p class="section-description">Everything you need to know about attending Lumberjack Day.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h3>Location</h3>
+                        <p>Zenith Park, Cloudcroft, NM 88317. The park is located in the heart of the village and is easily accessible.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F3AB;</div>
+                        <h3>Admission</h3>
+                        <p>FREE admission for all ages. Pancake breakfast is available for a small donation. Come enjoy the fun with the whole family.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4E7;</div>
+                        <h3>Contact</h3>
+                        <p>Email: <a href="mailto:Cloudcroftlumberjackday@gmail.com">Cloudcroftlumberjackday@gmail.com</a> for competition registration or event inquiries.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F697;</div>
+                        <h3>Getting There</h3>
+                        <p>Cloudcroft is 30 minutes from Alamogordo on US-82. Parking is available near Zenith Park and throughout the village.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Join the Lumberjack Tradition</h2>
+                <p>Whether you come to compete or just to watch, Lumberjack Day is a one-of-a-kind mountain experience. Free admission, great food, and unforgettable entertainment.</p>
+                <div class="cta-buttons">
+                    <a href="../do/what-events-are-happening-in-cloudcroft-2026.html" class="btn-primary">View All Events</a>
+                    <a href="../stay/lodging.html" class="btn-outline">Find Lodging</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="../stay/lodging.html">Lodging</a>
+                <a href="../eat/complete-guide-to-dining.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="../faq.html">FAQs</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.fade-in, .schedule-card, .competition-card, .visiting-card').forEach(function(el) { fadeObserver.observe(el); });
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() { if (window.scrollY > 400) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); } }, { passive: true });
+            backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
+    </script>
+</body>
+</html>

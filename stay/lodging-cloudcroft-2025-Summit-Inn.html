@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Inn Cloudcroft (2025–2026) | Affordable Mountain Lodging on Chipmunk Ave</title>
+    <meta name="description" content="Stay at The Summit Inn in Cloudcroft, NM — 10 clean, well-kept rooms with full kitchenettes, outdoor fire pit, and a walkable location 0.1 miles from downtown. From $134/night.">
+    <meta name="keywords" content="Summit Inn Cloudcroft, Cloudcroft NM lodging 2026, affordable Cloudcroft hotel, Chipmunk Avenue inn, Sacramento Mountains lodging, kitchenette hotel Cloudcroft">
+    <link rel="canonical" href="https://discovercloudcroft.com/lodging-cloudcroft-2025-Summit-Inn.html">
+
+    <meta property="og:title" content="The Summit Inn — Cloudcroft, NM">
+    <meta property="og:description" content="10 clean rooms with kitchenettes, outdoor fire pit, and a 0.1-mile walk to downtown Cloudcroft. From $134/night. Owned and operated by Timothy and Gail King.">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/Lodging-summit-inn.webp">
+    <meta property="og:url" content="https://discovercloudcroft.com/lodging-cloudcroft-2025-Summit-Inn.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Summit Inn — Cloudcroft, NM">
+    <meta name="twitter:description" content="10 clean rooms with kitchenettes and a walkable location 0.1 miles from downtown Cloudcroft. From $134/night.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/Lodging-summit-inn.webp">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "The Summit Inn",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "103 Chipmunk Ave",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "url": "https://www.summitinnnm.com",
+      "telephone": "+15752953235",
+      "email": "ltk@summitinnnm.com",
+      "image": "https://discovercloudcroft.com/media/Lodging-summit-inn.webp",
+      "description": "A no-frills, well-kept inn at 9,000 feet on Chipmunk Avenue — 10 rooms with kitchenettes, outdoor fire pit, and a 0.1-mile walk to downtown Cloudcroft.",
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "8.3",
+        "bestRating": "10",
+        "ratingCount": "100",
+        "reviewAspect": "Booking.com"
+      }
+    }
+    </script>
+
+    <style>
+        /* Hero */
+        .hero-bg {
+            background-image: url('../media/Lodging-summit-inn.webp');
+            background-size: cover;
+            background-position: center;
+            animation: kenBurns 20s ease-in-out infinite alternate;
+        }
+
+        /* Info bar links */
+        .info-bar-item a {
+            color: var(--charcoal);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .info-bar-item a:hover { color: var(--charcoal-light); }
+
+        /* Rooms table */
+        .rooms-table-wrap {
+            overflow-x: auto;
+            margin-top: 2rem;
+            border-radius: 10px;
+            border: 1.5px solid #e8e8e8;
+        }
+
+        .rooms-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .rooms-table thead {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        .rooms-table th {
+            padding: 0.85rem 1.25rem;
+            text-align: left;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .rooms-table td {
+            padding: 0.75rem 1.25rem;
+            border-bottom: 1px solid #f0f0f0;
+            color: #333333;
+            line-height: 1.5;
+        }
+
+        .rooms-table tbody tr:last-child td { border-bottom: none; }
+
+        .rooms-table tbody tr:hover { background: #fafafa; }
+
+        .rooms-table td:first-child {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            color: #000000;
+            white-space: nowrap;
+        }
+
+        /* Lodging list */
+        .lodging-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+
+        .lodging-item {
+            display: flex;
+            border: 1.5px solid #e8e8e8;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: border-color 0.25s, box-shadow 0.25s;
+            opacity: 0;
+            transform: translateY(16px);
+        }
+
+        .lodging-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s;
+        }
+
+        .lodging-item:nth-child(2).visible { transition-delay: 0.1s; }
+        .lodging-item:nth-child(3).visible { transition-delay: 0.2s; }
+
+        .lodging-item:hover {
+            border-color: #000000;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+        }
+
+        .lodging-badge {
+            min-width: 80px;
+            background: #000000;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 1rem 0;
+        }
+
+        .lodging-content {
+            padding: 1.5rem;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .lodging-content h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #000000;
+            margin-bottom: 0.5rem;
+        }
+
+        .lodging-content p {
+            font-size: 0.9rem;
+            color: #555555;
+            line-height: 1.65;
+            margin-bottom: 0.75rem;
+        }
+
+        .lodging-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .lodging-tag {
+            font-size: 0.75rem;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            background: #f2f2f2;
+            color: #333333;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+        }
+
+        .lodging-price {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #000000;
+            margin-top: 0.75rem;
+            display: inline-block;
+        }
+
+        /* Review score badge */
+        .score-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #000000;
+            color: #ffffff;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 0.4rem 0.85rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+        }
+
+        .score-badge .score-num {
+            font-size: 1.1rem;
+        }
+
+        /* Social links */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            font-size: 0.8rem;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
+            border: 1.5px solid #000000;
+            padding: 0.35rem 0.8rem;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .social-link:hover {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        /* Highlights */
+        .highlights-grid { grid-template-columns: repeat(3, 1fr); }
+
+        @media (max-width: 1024px) {
+            .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .highlights-grid { grid-template-columns: 1fr; }
+            .lodging-badge {
+                writing-mode: horizontal-tb;
+                transform: none;
+                min-width: unset;
+                padding: 0.75rem 1rem;
+                font-size: 0.65rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+    <div class="header-inner">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+            <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <span class="logo-discover">Discover</span>
+                <span class="logo-cloudcroft">Cloudcroft</span>
+                <span class="logo-beta">Beta</span>
+            </a>
+            <a href="../stay/lodging.html">Stay</a>
+            <a href="../eat/complete-guide-to-dining.html">Eat</a>
+            <a href="../do/complete-guide-to-activities.html">Explore</a>
+            <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+            <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+            <a href="../season/seasonal.html">Seasons</a>
+            <a href="../plan.html">Plan</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+    <a href="../stay/lodging.html">Stay</a>
+    <a href="../eat/complete-guide-to-dining.html">Eat</a>
+    <a href="../do/complete-guide-to-activities.html">Explore</a>
+    <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+    <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+    <a href="../season/seasonal.html">Seasons</a>
+    <a href="../plan.html">Plan</a>
+    <a href="../contact.html">Contact</a>
+</div>
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="The Summit Inn exterior on Chipmunk Avenue, Cloudcroft"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Lodging &bull; 9,000 Ft &bull; 0.1 Mi from Downtown</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">The Summit </span>
+                <span class="word">Inn</span>
+            </h1>
+            <p class="hero-subtitle">A no-frills, well-kept inn at the heart of Cloudcroft — 10 clean rooms with kitchenettes, an outdoor fire pit, and friendly owners who know the mountains.</p>
+            <div class="hero-ctas">
+                <a href="https://www.summitinnnm.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Book Direct</a>
+                <a href="#rooms" class="btn-secondary">See All Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>103 Chipmunk Ave, Cloudcroft, NM 88317</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4DE;</div>
+                <a href="tel:+15752953235">(575) 295-3235</a>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F550;</div>
+                <span>Check-in 4:00 PM / Check-out 11:00 AM</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F310;</div>
+                <a href="https://www.summitinnnm.com" target="_blank" rel="noopener noreferrer">summitinnnm.com</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-labelledby="h-about">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title" id="h-about">A Practical Base for the Mountains</h2>
+                        <p>
+                            The Summit Inn sits at 9,000 feet on Chipmunk Avenue, a short walk from Cloudcroft's main street, restaurants, and shops. It's a no-fuss, well-run base for exploring the Sacramento Mountains — close to hiking trails in Lincoln National Forest, the Trestle Recreation Area, and Ski Cloudcroft.
+                        </p>
+                        <p>
+                            The inn has 10 rooms, each named after a New Mexico city. Rooms are simply furnished but consistently described by guests as clean and well-maintained. Owners Timothy and Gail King run the property themselves and are known for pointing guests toward trails, restaurants, and current road conditions. The property has gone through recent renovations under their ownership.
+                        </p>
+                        <p>
+                            This is not a resort. There's no hot tub, no concierge, no pool. What you get is a clean room with a kitchenette, Wi-Fi, a fire pit out back, and a location that puts you within walking distance of nearly everything in the village.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F373; Full Kitchenette</span>
+                            <span class="about-feature">&#x1F525; Outdoor Fire Pit</span>
+                            <span class="about-feature">&#x1F6B6; Walk to Downtown</span>
+                            <span class="about-feature">&#x1F33A; BBQ &amp; Picnic Area</span>
+                            <span class="about-feature">&#x1F95E; Continental Breakfast</span>
+                            <span class="about-feature">&#x1F436; Pets Allowed</span>
+                        </div>
+                        <div class="score-badge">
+                            <span class="score-num">8.3</span>
+                            <span>Booking.com &mdash; Recent Guests &bull; Location rated 9.3 by couples</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <img src="../media/Lodging-summit-inn.webp" alt="The Summit Inn on Chipmunk Avenue, Cloudcroft NM" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="rooms" aria-labelledby="h-rooms">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Accommodations</span>
+                    <h2 class="section-title section-title-centered" id="h-rooms">All 10 Rooms</h2>
+                    <p class="section-description">Every room is named after a New Mexico city. From standard single queens to a three-room suite that sleeps larger groups.</p>
+                </div>
+
+                <div class="rooms-table-wrap">
+                    <table class="rooms-table">
+                        <thead>
+                            <tr>
+                                <th>Room</th>
+                                <th>Type</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01 — Alamogordo</td>
+                                <td>Single Queen</td>
+                                <td>Standard room</td>
+                            </tr>
+                            <tr>
+                                <td>02 — Carlsbad</td>
+                                <td>Single Queen</td>
+                                <td>Standard room</td>
+                            </tr>
+                            <tr>
+                                <td>03 — Artesia</td>
+                                <td>Single Queen</td>
+                                <td>Standard room</td>
+                            </tr>
+                            <tr>
+                                <td>04 — Carrizozo</td>
+                                <td>Single Queen</td>
+                                <td>Standard room</td>
+                            </tr>
+                            <tr>
+                                <td>05 — Albuquerque</td>
+                                <td>Double Queen</td>
+                                <td>Two queen beds</td>
+                            </tr>
+                            <tr>
+                                <td>06 — Ruidoso</td>
+                                <td>Single Queen</td>
+                                <td>Standard room</td>
+                            </tr>
+                            <tr>
+                                <td>07 — Santa Fe</td>
+                                <td>Two-Room Suite</td>
+                                <td>Separate bedroom and living area</td>
+                            </tr>
+                            <tr>
+                                <td>08 — Roswell</td>
+                                <td>Single Queen</td>
+                                <td>Standard room</td>
+                            </tr>
+                            <tr>
+                                <td>09 — Las Cruces</td>
+                                <td>Queen + Twin</td>
+                                <td>Sleeps three — good for small families</td>
+                            </tr>
+                            <tr>
+                                <td>10 — El Paso</td>
+                                <td>Three-Room Suite</td>
+                                <td>Two bedrooms + main living area with breakfast bar; three TVs; sleeps larger groups</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tip-box" style="margin-top:1.5rem;">
+                    <span class="tip-icon">💡</span>
+                    <p><strong>Room 10 — El Paso:</strong> The three-room suite has two bedrooms (two queens + one queen) and a main living area with kitchenette. Best option for families or two couples traveling together.</p>
+                </div>
+
+                <div style="text-align:center;margin-top:2.5rem;">
+                    <span class="section-label">What's Included</span>
+                    <h3 style="font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.3rem;margin:0.5rem 0 1rem;">Every Room Has</h3>
+                </div>
+
+                <div class="lodging-list">
+                    <div class="lodging-item fade-in">
+                        <div class="lodging-badge">Kitchen</div>
+                        <div class="lodging-content">
+                            <h3>Full Kitchenette</h3>
+                            <p>Every room includes a sink, electric stovetop, mini-fridge, microwave, and Keurig coffee maker — making it easy to cook simple meals and skip a restaurant meal or two.</p>
+                            <div class="lodging-tags">
+                                <span class="lodging-tag">Electric Stovetop</span>
+                                <span class="lodging-tag">Mini-Fridge</span>
+                                <span class="lodging-tag">Microwave</span>
+                                <span class="lodging-tag">Keurig</span>
+                                <span class="lodging-tag">Ice Maker</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lodging-item fade-in">
+                        <div class="lodging-badge">Extras</div>
+                        <div class="lodging-content">
+                            <h3>Property Amenities</h3>
+                            <p>The communal areas are where the Summit Inn earns its repeat guests — a fire pit, BBQ area, and a light continental breakfast included with every room.</p>
+                            <div class="lodging-tags">
+                                <span class="lodging-tag">Outdoor Fire Pit</span>
+                                <span class="lodging-tag">BBQ &amp; Picnic Area</span>
+                                <span class="lodging-tag">Continental Breakfast</span>
+                                <span class="lodging-tag">Free Wi-Fi</span>
+                                <span class="lodging-tag">Cable TV</span>
+                                <span class="lodging-tag">Free Parking</span>
+                            </div>
+                            <span class="lodging-price">From $134 / night</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section highlights-section" aria-labelledby="h-why">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Why Stay Here</span>
+                    <h2 class="section-title section-title-centered" id="h-why">What Sets the Summit Inn Apart</h2>
+                    <p class="section-description">Honest strengths from a well-run, owner-operated inn at 9,000 feet.</p>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F6B6;</div>
+                        <h3>Walk Everywhere</h3>
+                        <p>At 0.1 miles from downtown Cloudcroft, you can walk to Mad Jack's BBQ, Brother-N-Law BBQ, Burro Avenue shops, and the Sacramento Mountains Museum without moving your car.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F373;</div>
+                        <h3>Kitchenette in Every Room</h3>
+                        <p>Full kitchenettes let you eat on your own schedule. Stock up at the grocery in Alamogordo on the way up and save on meals — or just make coffee and head out early to the trails.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F91D;</div>
+                        <h3>Owner-Operated</h3>
+                        <p>Timothy and Gail King run the property themselves. Guests consistently mention their helpfulness — particularly for trail recommendations, road conditions, and local knowledge.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F436;</div>
+                        <h3>Pets Welcome</h3>
+                        <p>Unlike most Cloudcroft lodging, the Summit Inn allows pets on request. Charges may apply — confirm at booking. A welcome option for guests traveling with dogs.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F525;</div>
+                        <h3>Outdoor Fire Pit</h3>
+                        <p>Summer evenings at 9,000 feet cool down quickly. The outdoor fire pit is a good place to wind down, swap stories, and actually see the Milky Way without driving anywhere.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4B0;</div>
+                        <h3>Good Value</h3>
+                        <p>Starting at $134/night with kitchenettes and breakfast included, the Summit Inn is one of the more affordable options in a village where lodging can run scarce on busy weekends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="nearby" aria-labelledby="h-nearby">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">What's Nearby</span>
+                    <h2 class="section-title section-title-centered" id="h-nearby">From the Inn's Front Door</h2>
+                    <p class="section-description">Cloudcroft's top attractions, all within reach.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F6E4;&#xFE0F;</div>
+                        <h3>Trestle Recreation Area</h3>
+                        <p>The Mexican Canyon Railroad Trestle — one of southern New Mexico's most photographed structures. 0.9 miles from the inn.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x26F7;&#xFE0F;</div>
+                        <h3>Ski Cloudcroft</h3>
+                        <p>The southernmost ski area in the U.S. is minutes away. A short drive up the mountain opens up winter terrain for all skill levels.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F52D;</div>
+                        <h3>Sunspot Solar Observatory</h3>
+                        <p>The Sacramento Peak Solar Observatory is 20 miles south — a fascinating detour with tours and one of the best dark-sky viewing spots in the region.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F3D6;&#xFE0F;</div>
+                        <h3>White Sands National Park</h3>
+                        <p>Approximately 60 miles west — a day trip that pairs perfectly with a mountain stay. Early morning or sunset are the best times to visit the gypsum dunes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="visit" aria-labelledby="h-visit">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Stay</span>
+                    <h2 class="section-title section-title-centered" id="h-visit">Before You Book</h2>
+                    <p class="section-description">Everything you need to know about policies, location, and booking.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h3>Location</h3>
+                        <p>103 Chipmunk Ave, Cloudcroft, NM 88317. At 9,000 ft elevation — no air conditioning needed. Winter guests should check road conditions before driving up US-82.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4B3;</div>
+                        <h3>Rates &amp; Booking</h3>
+                        <p>From $134/night. Book direct at <a href="https://www.summitinnnm.com" target="_blank" rel="noopener noreferrer" style="color:inherit;">summitinnnm.com</a> for the best rate. Also on Hotels.com, Expedia, Booking.com, and KAYAK.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h3>Check-In / Check-Out</h3>
+                        <p>Check-in: 4:00 PM. Check-out: 11:00 AM. Guests arriving outside desk hours receive an access code via email within 24 hours of arrival. Cancellation policy: confirm at booking.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F436;</div>
+                        <h3>Pets &amp; Parking</h3>
+                        <p>Pets allowed on request — charges may apply. Free self-parking on-site. No pool, no hot tub. Showers only (no bathtubs) in most rooms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="contact" aria-labelledby="h-contact">
+            <div class="section-container">
+                <div style="text-align:center;">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title section-title-centered" id="h-contact">Contact &amp; Find Us Online</h2>
+                    <p class="section-description">Book direct, call, email, or find the Summit Inn on your platform of choice.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F310;</div>
+                        <h3>Book Direct</h3>
+                        <p><a href="https://www.summitinnnm.com" target="_blank" rel="noopener noreferrer" style="color:inherit;font-weight:600;">summitinnnm.com</a> — may offer the lowest rate. Virtual tours also available on the site.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4DE;</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+15752953235" style="color:inherit;">(575) 295-3235</a><br>
+                        <a href="tel:+15752953236" style="color:inherit;">(575) 295-3236</a></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x2709;&#xFE0F;</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:ltk@summitinnnm.com" style="color:inherit;">ltk@summitinnnm.com</a></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4F1;</div>
+                        <h3>Social &amp; Reviews</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/summitinnnm/" target="_blank" rel="noopener noreferrer" class="social-link">Facebook</a>
+                            <a href="https://www.instagram.com/thesummitinncloudcroft/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g46989-d254512-Reviews-Summit_Inn-Cloudcroft_New_Mexico.html" target="_blank" rel="noopener noreferrer" class="social-link">TripAdvisor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section" aria-label="Book your stay">
+            <div class="cta-container">
+                <h2>Ready to Book the Summit Inn?</h2>
+                <p>Clean rooms, full kitchenettes, an outdoor fire pit, and friendly owners — 0.1 miles from downtown Cloudcroft at 9,000 feet.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.summitinnnm.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Book Direct at summitinnnm.com</a>
+                    <a href="lodging.html" class="btn-secondary">All Cloudcroft Lodging</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="lodging.html">Lodging</a>
+                <a href="../eat/complete-guide-to-dining.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+</body>
+</html>

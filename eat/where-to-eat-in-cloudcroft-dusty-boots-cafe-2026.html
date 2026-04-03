@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dusty Boots Cafe | Where to Eat in Cloudcroft, NM — Scratch-Made Breakfast, Lunch &amp; Dinner</title>
+    <meta name="description" content="Dusty Boots Cafe serves scratch-made breakfast, lunch, and dinner in Cloudcroft, NM. Biscuits and gravy, patty melts, Saturday German dinners, and famous banana bread at 8,600 feet.">
+    <meta name="keywords" content="Dusty Boots Cafe, Cloudcroft restaurants, breakfast Cloudcroft NM, German dinner Cloudcroft, scratch-made food, best restaurants cloudcroft nm, cloudcroft breakfast spots, where to eat cloudcroft">
+    <link rel="canonical" href="https://discovercloudcroft.com/eat/where-to-eat-in-cloudcroft-dusty-boots-cafe-2026.html">
+
+    <meta property="og:title" content="Dusty Boots Cafe | Where to Eat in Cloudcroft, NM">
+    <meta property="og:description" content="Scratch-made breakfast, lunch, and dinner in Cloudcroft. Biscuits and gravy, patty melts, Saturday German dinners, and famous banana bread at 8,600 feet.">
+    <meta property="og:url" content="https://discovercloudcroft.com/eat/where-to-eat-in-cloudcroft-dusty-boots-cafe-2026.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/lodging-dusty-boots.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dusty Boots Cafe | Where to Eat in Cloudcroft, NM">
+    <meta name="twitter:description" content="Scratch-made breakfast, lunch, and dinner in Cloudcroft, NM. Saturday German dinners and famous banana bread.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/lodging-dusty-boots.webp">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Dusty Boots Cafe",
+      "description": "Scratch-made breakfast, lunch, and dinner cafe on-site at the Dusty Boots Motel in Cloudcroft, New Mexico. Over 90% of menu items made from scratch. Saturday German dinner specials.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1315 James Canyon Highway",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "telephone": "+15756827736",
+      "email": "dusty@dustybootsmotel.com",
+      "url": "https://www.thedustyboots.com",
+      "servesCuisine": ["American", "German", "Breakfast"],
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "07:00",
+        "closes": "21:00"
+      },
+      "image": "https://discovercloudcroft.com/media/lodging-dusty-boots.webp"
+    }
+    </script>
+
+    <style>
+.hero {
+    height: 65vh;
+    min-height: 450px;
+}
+.hero-bg {
+    background: url('../media/lodging-dusty-boots.webp') center 40% / cover no-repeat;
+    background-size: cover;
+    animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
+}
+.hero-badge span {
+    color: var(--golden-hour);
+}
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+.hero-subtitle {
+    opacity: 0;
+    animation: fadeUp 0.8s ease 1s forwards;
+}
+.hero-ctas {
+    opacity: 0;
+    animation: fadeUp 0.8s ease 1.4s forwards;
+}
+.info-bar {
+    background: var(--cream-dark);
+}
+.info-bar-item {
+    color: var(--charcoal);
+}
+.info-bar-item a {
+    color: var(--charcoal);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.info-bar-item a:hover {
+    color: var(--golden-hour);
+}
+.info-bar-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ── Menu Section ── */
+.menu-section {
+    background: var(--cloud-drift);
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.menu-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--golden-hour);
+    opacity: 0;
+    transform: translateY(20px);
+}
+.menu-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.menu-card:nth-child(2).visible { transition-delay: 0.1s; }
+.menu-card:nth-child(3).visible { transition-delay: 0.2s; }
+.menu-card:nth-child(4).visible { transition-delay: 0.3s; }
+.menu-card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+.menu-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--midnight);
+    margin-bottom: 0.5rem;
+}
+.menu-card p {
+    color: var(--granite);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+.menu-items {
+    list-style: none;
+    margin-top: 1rem;
+}
+.menu-items li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed rgba(107, 123, 141, 0.2);
+    color: var(--midnight);
+    font-size: 0.95rem;
+}
+.menu-items li:last-child {
+    border-bottom: none;
+}
+
+/* ── German Dinner Feature ── */
+.german-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 3rem;
+    background: #000;
+    border-radius: 16px;
+    color: #fff;
+}
+.german-feature h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--golden-hour);
+    margin-bottom: 0.5rem;
+}
+.german-feature .german-subtitle {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1rem;
+}
+.german-feature p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+.german-menu-list {
+    list-style: none;
+    padding: 0;
+}
+.german-menu-list li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+}
+.german-menu-list li:last-child {
+    border-bottom: none;
+}
+
+/* ── Highlights ── */
+.highlight-card {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.highlight-card:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+.highlight-card h3 {
+    color: #000000;
+}
+.highlight-card p {
+    color: #555555;
+}
+
+/* ── Tip Box ── */
+.tip-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: #fffbe6;
+    border: 1px solid #f0d060;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 2rem;
+}
+.tip-box p {
+    color: var(--midnight);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── CTA ── */
+.cta-section {
+    background: #f2f2f2;
+}
+.cta-container h2 {
+    color: #000000;
+}
+.cta-container p {
+    color: #555555;
+}
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ── Footer gradient ── */
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+    background-size: 300% 100%;
+    animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder {
+    0% { background-position: 0% 0; }
+    100% { background-position: 300% 0; }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .menu-grid { grid-template-columns: repeat(2, 1fr); }
+    .german-feature { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
+}
+@media (max-width: 768px) {
+    .menu-grid { grid-template-columns: 1fr; }
+    .info-bar-inner { gap: 1.5rem; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/lodging.html">Stay</a>
+                <a href="../eat/complete-guide-to-dining.html">Eat</a>
+                <a href="../do/complete-guide-to-activities.html">Explore</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../plan.html">Plan</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+        <a href="../stay/lodging.html">Stay</a>
+        <a href="../eat/complete-guide-to-dining.html">Eat</a>
+        <a href="../do/complete-guide-to-activities.html">Explore</a>
+        <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+        <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../plan.html">Plan</a>
+        <a href="../contact.html">Contact</a>
+    </div>
+
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Dusty Boots Cafe exterior in Cloudcroft, New Mexico"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Dining</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Dusty </span>
+                <span class="word">Boots </span>
+                <span class="word">Cafe</span>
+            </h1>
+            <p class="hero-subtitle">Scratch-made breakfast, lunch, and dinner on James Canyon Highway. Over 90% of the menu made from scratch &mdash; plus Saturday German dinners and famous banana bread.</p>
+            <div class="hero-ctas">
+                <a href="#menu" class="btn-primary">See the Menu</a>
+                <a href="#visit" class="btn-secondary">Plan Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>1315 James Canyon Hwy, Cloudcroft</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F550;</div>
+                <span>Daily 7AM&ndash;9PM (summer)</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4DE;</div>
+                <a href="tel:5756827736">(575) 682-7736</a>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F373;</div>
+                <span>90%+ Made from Scratch</span>
+            </div>
+        </div>
+    </div>
+
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-label="About Dusty Boots Cafe">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">More Than a Motel Cafe</h2>
+                        <p>
+                            The Dusty Boots Cafe sits on-site at the Dusty Boots Motel on James Canyon Highway, about 0.7 miles from downtown Cloudcroft. What started as a convenient perk for motel guests has become a destination in its own right &mdash; open to the public and drawing locals and visitors for scratch-made meals three times a day during the summer season.
+                        </p>
+                        <p>
+                            Over 90 percent of the menu is made from scratch. Breakfast runs from 7 a.m. to noon and covers the classics done right &mdash; biscuits and gravy, French toast, and pancakes. Lunch and dinner bring BLTs, patty melts, chicken strips, taco platters, and steak and shrimp. The kitchen takes real pride in cooking from scratch at a time when most places don't.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F373; 90%+ Scratch-Made</span>
+                            <span class="about-feature">&#x1F95E; All-Day Breakfast</span>
+                            <span class="about-feature">&#x1F1E9;&#x1F1EA; Saturday German Dinners</span>
+                            <span class="about-feature">&#x1F35E; Famous Banana Bread</span>
+                            <span class="about-feature">&#x1F46A; Family-Friendly</span>
+                            <span class="about-feature">&#x1F6AA; Open to Public</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <img src="../media/lodging-dusty-boots.webp" alt="Dusty Boots Motel and Cafe on James Canyon Highway in Cloudcroft, NM" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section menu-section" id="menu" aria-label="Cafe menu">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">The Menu</span>
+                    <h2 class="section-title section-title-centered">Scratch-Made &amp; Served Fresh</h2>
+                    <p class="section-description">From early-morning biscuits to evening steak plates &mdash; everything cooked from scratch, daily.</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F95E;</div>
+                        <h3>Breakfast</h3>
+                        <p>Served 7:00 a.m. to noon. The kind of mountain breakfast that sticks with you.</p>
+                        <ul class="menu-items">
+                            <li>Biscuits &amp; Gravy &#x2B50;</li>
+                            <li>French Toast</li>
+                            <li>Pancakes</li>
+                            <li>Eggs &amp; Bacon</li>
+                            <li>Breakfast Burritos</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F354;</div>
+                        <h3>Lunch &amp; Dinner</h3>
+                        <p>Comfort food done right, from patty melts to steak plates.</p>
+                        <ul class="menu-items">
+                            <li>BLTs</li>
+                            <li>Patty Melts &#x2B50;</li>
+                            <li>Chicken Strips</li>
+                            <li>Taco Platters</li>
+                            <li>Steak &amp; Shrimp</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F35E;</div>
+                        <h3>From the Kitchen</h3>
+                        <p>House specialties and sides that keep people coming back.</p>
+                        <ul class="menu-items">
+                            <li>Famous Banana Bread &#x2B50;</li>
+                            <li>Housemade Cottage Rolls</li>
+                            <li>Fresh Baked Pies</li>
+                            <li>Daily Specials</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="german-feature fade-in">
+                    <div>
+                        <div class="german-subtitle">Every Saturday &bull; 5:00 PM &ndash; 8:00 PM</div>
+                        <h3>Saturday German Dinner</h3>
+                        <p>A weekly tradition at the Dusty Boots. The kitchen transforms for an evening of authentic German comfort food &mdash; schnitzel, bratwurst, and housemade cottage rolls. This is the kind of dinner you plan a weekend around.</p>
+                    </div>
+                    <div>
+                        <ul class="german-menu-list">
+                            <li>&#x1F356; Schnitzel</li>
+                            <li>&#x1F356; Sauerbraten</li>
+                            <li>&#x1F32D; Bratwurst</li>
+                            <li>&#x1F356; German Meatballs</li>
+                            <li>&#x1F35D; Spaetzle</li>
+                            <li>&#x1F35E; Housemade Cottage Rolls</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tip-box">
+                    <span>&#x1F4A1;</span>
+                    <p><strong>Motel Guest Perk:</strong> Guests staying at the Dusty Boots Motel receive a dining discount at the cafe. The famous banana bread is also served complimentary to motel guests each evening.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section highlights-section" aria-label="Highlights">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">Why Visit</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">Highlights</h2>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F373;</div>
+                        <h3>Truly Scratch-Made</h3>
+                        <p>Over 90% of the menu is made from scratch daily. Biscuits, gravy, bread, pies &mdash; all prepared in-house. You can taste the difference.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F1E9;&#x1F1EA;</div>
+                        <h3>Saturday German Night</h3>
+                        <p>Schnitzel, bratwurst, sauerbraten, and spaetzle every Saturday from 5&ndash;8 PM. A unique weekly tradition you won't find anywhere else in Cloudcroft.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F35E;</div>
+                        <h3>Famous Banana Bread</h3>
+                        <p>Ask any regular and they'll mention the banana bread. Motel guests get it complimentary each evening &mdash; but anyone can order it at the cafe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="visit" aria-label="Plan your visit">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Visit</span>
+                    <h2 class="section-title section-title-centered">Visit Dusty Boots Cafe</h2>
+                    <p class="section-description">Everything you need to know before you go.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h3>Location</h3>
+                        <p>1315 James Canyon Highway (US-82), Cloudcroft, NM 88317. About 0.7 miles from Burro Avenue &mdash; a 2-minute drive from the village center.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h3>Hours</h3>
+                        <p>Summer: daily 7:00 AM &ndash; 9:00 PM. Breakfast served until noon. Saturday German dinner 5:00&ndash;8:00 PM. <em>Hours may vary in winter &mdash; call ahead.</em></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4DE;</div>
+                        <h3>Contact</h3>
+                        <p>Phone: <a href="tel:5756827736" style="color: var(--alpine); text-decoration: none;">(575) 682-7736</a><br>Email: <a href="mailto:dusty@dustybootsmotel.com" style="color: var(--alpine); text-decoration: none;">dusty@dustybootsmotel.com</a><br>Web: <a href="https://www.thedustyboots.com" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">thedustyboots.com</a></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
+                        <h3>Good to Know</h3>
+                        <p>Open to the public &mdash; you don't need to be a motel guest. Gets busy on weekends, so expect a possible wait. Free parking on-site. Family-friendly and casual.</p>
+                    </div>
+                </div>
+
+                <div class="tip-box">
+                    <span>&#x1F6B2;</span>
+                    <p><strong>While you're here:</strong> The Dusty Boots is also an authorized Pedego e-bike dealer. Rent an electric bike and explore the Sacramento Mountains right from the property. Details at <a href="https://pedegoelectricbikes.com/dealers/dusty-boots-motel/rentals-tours/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine);">pedegoelectricbikes.com</a>.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Hungry at 8,600 Feet?</h2>
+                <p>Stop by Dusty Boots Cafe for scratch-made food, Saturday German dinners, and the best banana bread on the mountain. Open to everyone &mdash; not just motel guests.</p>
+                <div class="cta-buttons">
+                    <a href="tel:5756827736" class="btn-primary">Call Dusty Boots</a>
+                    <a href="complete-guide-to-dining.html" class="btn-secondary">Explore More Dining</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="../stay/lodging.html">Lodging</a>
+                <a href="complete-guide-to-dining.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15756827736">(575) 682-7736</a>
+                <a href="mailto:dusty@dustybootsmotel.com">dusty@dustybootsmotel.com</a>
+                <a href="https://www.thedustyboots.com" target="_blank" rel="noopener noreferrer">thedustyboots.com</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function() {
+            // Intersection observer for animations
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>

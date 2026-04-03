@@ -126,7 +126,7 @@ img {
   z-index: 1000;
   padding: 1rem 2rem;
   transition: background 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease;
-  background: transparent;
+  background: whitesmoke;
 }
 
 .site-header.scrolled {
@@ -165,7 +165,7 @@ img {
 .logo-cloudcroft {
   font-weight: 500;
   opacity: 0.75;
-  font-size: 0.85em;
+
 }
 
 .header-logo span {

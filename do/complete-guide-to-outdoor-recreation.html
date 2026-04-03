@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudcroft Outdoor Recreation Guide | DiscoverCloudcroft.com — Mountain Adventures at 9,000 Feet</title>
+    <meta name="description" content="Your complete guide to outdoor recreation in Cloudcroft, New Mexico. Hiking, fishing, disc golf, skiing, stargazing, and more at 9,000 feet in the Sacramento Mountains.">
+    <meta name="keywords" content="Cloudcroft outdoor recreation, Cloudcroft activities, hiking Cloudcroft, fishing Cloudcroft, disc golf, pickleball, mountain biking, stargazing, Ski Cloudcroft, Sacramento Mountains">
+    <link rel="canonical" href="https://discovercloudcroft.com/outdoor-recreation.html">
+
+
+    <meta property="og:title" content="Cloudcroft Outdoor Recreation Guide | DiscoverCloudcroft.com">
+    <meta property="og:description" content="Your complete guide to outdoor recreation in Cloudcroft, New Mexico. Hiking, fishing, disc golf, skiing, stargazing, and more at 9,000 feet.">
+    <meta property="og:url" content="https://discovercloudcroft.com/outdoor-recreation.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cloudcroft Outdoor Recreation Guide | DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="Your complete guide to outdoor recreation in Cloudcroft, New Mexico. Hiking, fishing, disc golf, skiing, stargazing, and more at 9,000 feet in the Sacramento Mountains.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "Cloudcroft Outdoor Recreation",
+      "description": "Complete guide to outdoor recreation in Cloudcroft, NM including hiking, fishing, disc golf, skiing, and stargazing.",
+      "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cloudcroft",
+            "addressRegion": "NM",
+            "postalCode": "88317",
+            "addressCountry": "US"
+      },
+      "url": "https://discovercloudcroft.com/do/complete-guide-to-outdoor-recreation.html"
+}
+    </script>
+<link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/common.css">
+    <style>
+.hero {
+height: 65vh;
+min-height: 450px;
+}
+.hero-bg {
+background: linear-gradient(135deg, var(--pine-shadow) 0%, var(--summit) 50%, var(--alpine) 100%);
+}
+.hero-overlay {
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65));
+}
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+.hero-title .word:nth-child(4) { animation-delay: 0.8s; }
+.hero-title .word:nth-child(5) { animation-delay: 1.0s; }
+.hero-subtitle {
+opacity: 0;
+animation: fadeUp 0.8s ease 1s forwards;
+}
+.hero-ctas {
+opacity: 0;
+animation: fadeUp 0.8s ease 1.4s forwards;
+}
+.info-bar-item {
+color: var(--cloud-drift);
+}
+.about-image-placeholder p {
+color: var(--summit);
+}
+.activities-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+.activity-card {
+background: var(--snow-cap);
+border-radius: 12px;
+padding: 2.5rem 2rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+border-top: 4px solid var(--golden-hour);
+transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+opacity: 0;
+transform: translateY(30px);
+text-decoration: none;
+color: inherit;
+display: block;
+}
+.activity-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.activity-card:nth-child(2).visible { transition-delay: 0.05s; }
+.activity-card:nth-child(3).visible { transition-delay: 0.1s; }
+.activity-card:nth-child(4).visible { transition-delay: 0.15s; }
+.activity-card:nth-child(5).visible { transition-delay: 0.2s; }
+.activity-card:nth-child(6).visible { transition-delay: 0.25s; }
+.activity-card:nth-child(7).visible { transition-delay: 0.05s; }
+.activity-card:nth-child(8).visible { transition-delay: 0.1s; }
+.activity-card:nth-child(9).visible { transition-delay: 0.15s; }
+.activity-card:nth-child(10).visible { transition-delay: 0.2s; }
+.activity-card:nth-child(11).visible { transition-delay: 0.25s; }
+.activity-card:nth-child(12).visible { transition-delay: 0.3s; }
+.activity-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.activity-icon {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+.activity-card h3 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+color: var(--midnight);
+margin-bottom: 0.5rem;
+}
+.activity-card p {
+color: var(--granite);
+font-size: 0.95rem;
+line-height: 1.7;
+margin-bottom: 1rem;
+}
+.activity-season {
+display: inline-flex;
+align-items: center;
+gap: 0.4rem;
+font-family: 'DM Sans', sans-serif;
+font-size: 0.75rem;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: var(--alpine);
+background: rgba(58, 107, 30, 0.1);
+padding: 0.3rem 0.75rem;
+border-radius: 15px;
+}
+.activity-link {
+display: inline-flex;
+align-items: center;
+gap: 0.4rem;
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+color: var(--golden-hour);
+margin-top: 0.75rem;
+}
+.seasons-section {
+background: var(--cream-dark);
+position: relative;
+overflow: hidden;
+}
+.seasons-section::before {
+content: '';
+position: absolute;
+inset: 0;
+opacity: 0.06;
+background-image:
+repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px),
+repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px);
+pointer-events: none;
+}
+.seasons-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2rem;
+position: relative;
+}
+.season-card {
+text-align: center;
+padding: 2.5rem 2rem;
+background: rgba(255, 255, 255, 0.7);
+border-radius: 12px;
+border: 1px solid rgba(58, 107, 30, 0.15);
+transition: transform 0.3s ease, background 0.3s ease;
+opacity: 0;
+transform: translateY(30px);
+}
+.season-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+}
+.season-card:nth-child(2).visible { transition-delay: 0.1s; }
+.season-card:nth-child(3).visible { transition-delay: 0.2s; }
+.season-card:nth-child(4).visible { transition-delay: 0.3s; }
+.season-card:hover {
+transform: translateY(-6px);
+background: rgba(255, 255, 255, 0.9);
+}
+.season-icon {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+.season-card h3 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+color: var(--golden-hour);
+margin-bottom: 0.75rem;
+}
+.season-card p {
+color: var(--charcoal);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.season-activities {
+margin-top: 1rem;
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+justify-content: center;
+}
+.season-tag {
+font-family: 'DM Sans', sans-serif;
+font-size: 0.7rem;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+color: var(--golden-hour);
+background: rgba(0, 0, 0, 0.15);
+padding: 0.25rem 0.6rem;
+border-radius: 12px;
+}
+.tips-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+.tip-card {
+background: var(--snow-cap);
+border-radius: 12px;
+padding: 2.5rem 2rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+border-left: 4px solid var(--golden-hour);
+transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+opacity: 0;
+transform: translateY(30px);
+}
+.tip-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.tip-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.tip-icon {
+font-size: 2rem;
+margin-bottom: 0.75rem;
+}
+.tip-card h4 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.1rem;
+color: var(--midnight);
+margin-bottom: 0.5rem;
+}
+.tip-card p {
+color: var(--granite);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.cta-container h2 {
+color: var(--snow-cap);
+}
+@keyframes gradientBorder {
+0% { background-position: 0% 0; }
+100% { background-position: 300% 0; }
+}
+@media (max-width: 1024px) {
+.activities-grid { grid-template-columns: repeat(2, 1fr); }
+.seasons-grid { grid-template-columns: repeat(2, 1fr); }
+.tips-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+.activities-grid { grid-template-columns: 1fr; }
+.seasons-grid { grid-template-columns: 1fr; }
+.tips-grid { grid-template-columns: 1fr; }
+}</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+
+    <header class="site-header" role="banner">
+    <div class="header-inner">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+            <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <span class="logo-discover">Discover</span>
+                <span class="logo-cloudcroft">Cloudcroft</span>
+                <span class="logo-beta">Beta</span>
+            </a>
+            <a href="../stay/lodging.html">Stay</a>
+            <a href="../eat/complete-guide-to-dining.html">Eat</a>
+            <a href="../do/complete-guide-to-activities.html">Explore</a>
+            <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+            <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+            <a href="../season/seasonal.html">Seasons</a>
+            <a href="../plan.html">Plan</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+    <a href="../stay/lodging.html">Stay</a>
+    <a href="../eat/complete-guide-to-dining.html">Eat</a>
+    <a href="../do/complete-guide-to-activities.html">Explore</a>
+    <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+    <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+    <a href="../season/seasonal.html">Seasons</a>
+    <a href="../plan.html">Plan</a>
+    <a href="../contact.html">Contact</a>
+</div>
+
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Cloudcroft mountain outdoor recreation scenery"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Adventure Awaits</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Cloudcroft </span>
+                <span class="word">Outdoor </span>
+                <span class="word">Recreation </span>
+                <span class="word">Guide</span>
+            </h1>
+            <p class="hero-subtitle">Mountain recreation at 9,000 feet &mdash; hiking, fishing, stargazing, and year-round adventure in the Sacramento Mountains</p>
+            <div class="hero-ctas">
+                <a href="#activities" class="btn-primary">Explore Activities</a>
+                <a href="#plan-adventure" class="btn-secondary">Plan Your Adventure</a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x26F0;&#xFE0F;</div>
+                <span>9,000 ft Elevation</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F332;</div>
+                <span>Lincoln National Forest</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F324;&#xFE0F;</div>
+                <span>Year-Round Activities</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F46A;</div>
+                <span>Family Friendly</span>
+            </div>
+        </div>
+    </div>
+
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-label="About outdoor recreation in Cloudcroft">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">Your Mountain Playground</span>
+                        <h2 class="section-title">A Premier Outdoor Recreation Destination</h2>
+                        <p>
+                            Perched at 9,000 feet in the Sacramento Mountains of southern New Mexico, Cloudcroft is a haven for outdoor enthusiasts. Surrounded by the Lincoln National Forest, the village offers an extraordinary range of recreational activities &mdash; from world-class hiking trails through ancient ponderosa pines to some of the darkest skies in the country for stargazing.
+                        </p>
+                        <p>
+                            Whether you are casting a line for rainbow trout, teeing off at the highest golf course in the United States, shredding trails on a mountain bike, or lacing up your skates at Zenith Park in winter, Cloudcroft delivers adventure in every season. The cool mountain air and stunning alpine scenery make every outing unforgettable.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F3D4;&#xFE0F; 9,000 ft Elevation</span>
+                            <span class="about-feature">&#x1F332; National Forest Access</span>
+                            <span class="about-feature">&#x2744;&#xFE0F; Four-Season Recreation</span>
+                            <span class="about-feature">&#x1F46A; Family Friendly</span>
+                            <span class="about-feature">&#x1F30C; Dark Sky Region</span>
+                            <span class="about-feature">&#x1F193; Many Free Activities</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <div class="about-image-placeholder">
+                            <div class="icon">&#x1F3D5;&#xFE0F;</div>
+                            <p>Cloudcroft Outdoor Recreation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="activities" style="background: var(--cloud-drift);" aria-label="Outdoor activities in Cloudcroft">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Things to Do</span>
+                    <h2 class="section-title section-title-centered">Outdoor Activities</h2>
+                    <p class="section-description">From forest trails to frozen rinks, Cloudcroft offers something for every adventurer. Explore our favorite ways to enjoy the mountain outdoors.</p>
+                </div>
+                <div class="activities-grid">
+                    <a href="best-hiking-trails-in-cloudcroft-new-mexico.html" class="activity-card">
+                        <div class="activity-icon">&#x1F97E;</div>
+                        <h3>Hiking</h3>
+                        <p>Explore miles of trails through the Lincoln National Forest, from easy nature walks to challenging summit routes with panoramic views of the Tularosa Basin and White Sands.</p>
+                        <span class="activity-season">&#x2600;&#xFE0F; Year-Round</span>
+                        <div class="activity-link">View Trail Guide &rarr;</div>
+                    </a>
+                    <a href="where to-fishing-in-Cloudcroft-New-Mexico-2026.html" class="activity-card">
+                        <div class="activity-icon">&#x1F3A3;</div>
+                        <h3>Fishing</h3>
+                        <p>Cast for rainbow trout at Silver Lake, Bonito Lake, and mountain streams like the Rio Pe&ntilde;asco. Stock schedules keep the fishing fresh from spring through fall.</p>
+                        <span class="activity-season">&#x1F33F; Spring &ndash; Fall</span>
+                        <div class="activity-link">Fishing Guide &rarr;</div>
+                    </a>
+                    <a href="complete-guide-to-disc-golf.html" class="activity-card">
+                        <div class="activity-icon">&#x1F94F;</div>
+                        <h3>Disc Golf</h3>
+                        <p>Play the top-rated Cloudcroft Community DGC &mdash; an 18-hole course winding through pine forests at 9,000 feet with stunning basin views. Free to play, open dawn to dusk.</p>
+                        <span class="activity-season">&#x2600;&#xFE0F; Year-Round</span>
+                        <div class="activity-link">Course Details &rarr;</div>
+                    </a>
+                    <a href="play-pickleball-cloudcroft-new-mexico-2026.html" class="activity-card">
+                        <div class="activity-icon">&#x1F3D3;</div>
+                        <h3>Pickleball</h3>
+                        <p>Free outdoor courts at Zenith Park, open 24/7 with lighting for evening play. Join the Pickleball Addicts of Cloudcroft (PAC) for open play sessions, clinics, and tournaments.</p>
+                        <span class="activity-season">&#x2600;&#xFE0F; Year-Round</span>
+                        <div class="activity-link">Court Info &rarr;</div>
+                    </a>
+                    <div class="activity-card">
+                        <div class="activity-icon">&#x1F6B5;</div>
+                        <h3>Mountain Biking</h3>
+                        <p>Ride single-track and forest roads through the Sacramento Mountains. Rim Trail, Osha Trail, and surrounding forest roads offer terrain for every skill level, with cool mountain temps even in summer.</p>
+                        <span class="activity-season">&#x1F33F; Spring &ndash; Fall</span>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">&#x1F40E;</div>
+                        <h3>Horseback Riding</h3>
+                        <p>Saddle up and explore the Sacramento Mountains on horseback. Local outfitters offer guided trail rides through pine forests and mountain meadows &mdash; a quintessential New Mexico experience.</p>
+                        <span class="activity-season">&#x1F33F; Spring &ndash; Fall</span>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">&#x1F426;</div>
+                        <h3>Bird Watching</h3>
+                        <p>The diverse habitats of the Sacramento Mountains host hummingbirds, jays, woodpeckers, hawks, and migrating songbirds. The Sunspot Scenic Byway and forest trails are prime birding spots.</p>
+                        <span class="activity-season">&#x1F33F; Spring &ndash; Fall</span>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">&#x1F52D;</div>
+                        <h3>Stargazing</h3>
+                        <p>Cloudcroft sits beneath some of the darkest skies in the country. Visit the Sunspot Solar Observatory for daytime solar viewing, then return after dark for extraordinary stargazing &mdash; the Milky Way is stunning here.</p>
+                        <span class="activity-season">&#x2600;&#xFE0F; Year-Round</span>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">&#x26F8;&#xFE0F;</div>
+                        <h3>Ice Skating</h3>
+                        <p>Lace up at the Zenith Park outdoor ice rink each winter. This community rink is a beloved Cloudcroft tradition, perfect for families and a magical experience under the mountain sky.</p>
+                        <span class="activity-season">&#x2744;&#xFE0F; Winter</span>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">&#x26F7;&#xFE0F;</div>
+                        <h3>Skiing &amp; Snow Sports</h3>
+                        <p>Ski Cloudcroft offers family-friendly slopes for skiing, snowboarding, and tubing. When fresh powder blankets the mountains, the surrounding forest becomes a winter wonderland for snow play and snowshoeing.</p>
+                        <span class="activity-season">&#x2744;&#xFE0F; Winter</span>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">&#x26F3;</div>
+                        <h3>Golf</h3>
+                        <p>The Lodge Golf Course is the highest golf course in the United States at over 9,000 feet. This historic 9-hole course offers a uniquely challenging round surrounded by towering pines and mountain vistas.</p>
+                        <span class="activity-season">&#x1F33F; Spring &ndash; Fall</span>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">&#x1F3D5;&#xFE0F;</div>
+                        <h3>Camping</h3>
+                        <p>Pitch your tent or park your RV at campgrounds throughout the Lincoln National Forest. Sites like Sleepy Grass, Silver, Saddle, and Deerhead offer a range of amenities from primitive to developed camping.</p>
+                        <span class="activity-season">&#x1F33F; Spring &ndash; Fall</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section seasons-section" id="seasons" aria-label="Seasonal recreation highlights">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: var(--golden-hour); letter-spacing: 3px;">Four Seasons of Fun</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--snow-cap);">Seasonal Highlights</h2>
+                    <p class="section-description" style="color: rgba(240,244,248,0.7);">Every season brings new reasons to get outside in Cloudcroft. Here is what to look forward to all year long.</p>
+                </div>
+                <div class="seasons-grid">
+                    <div class="season-card">
+                        <div class="season-icon">&#x1F338;</div>
+                        <h3>Spring</h3>
+                        <p>Wildflowers emerge, trails dry out, and trout stocking begins. Spring is the perfect time to hike, bird watch, and enjoy the forest as it comes alive after winter.</p>
+                        <div class="season-activities">
+                            <span class="season-tag">Hiking</span>
+                            <span class="season-tag">Birding</span>
+                            <span class="season-tag">Fishing</span>
+                            <span class="season-tag">Disc Golf</span>
+                        </div>
+                    </div>
+                    <div class="season-card">
+                        <div class="season-icon">&#x2600;&#xFE0F;</div>
+                        <h3>Summer</h3>
+                        <p>Escape the desert heat at 9,000 feet. Summer highs average in the mid-70s, making Cloudcroft ideal for mountain biking, horseback riding, camping, and all-day outdoor play.</p>
+                        <div class="season-activities">
+                            <span class="season-tag">Mountain Biking</span>
+                            <span class="season-tag">Camping</span>
+                            <span class="season-tag">Golf</span>
+                            <span class="season-tag">Stargazing</span>
+                        </div>
+                    </div>
+                    <div class="season-card">
+                        <div class="season-icon">&#x1F341;</div>
+                        <h3>Fall</h3>
+                        <p>Golden aspens blaze across the mountains in one of New Mexico's most stunning fall displays. Crisp air and thinner crowds make autumn the locals' favorite season.</p>
+                        <div class="season-activities">
+                            <span class="season-tag">Leaf Peeping</span>
+                            <span class="season-tag">Hiking</span>
+                            <span class="season-tag">Photography</span>
+                            <span class="season-tag">Fishing</span>
+                        </div>
+                    </div>
+                    <div class="season-card">
+                        <div class="season-icon">&#x2744;&#xFE0F;</div>
+                        <h3>Winter</h3>
+                        <p>Snow transforms Cloudcroft into a winter playground. Hit the slopes at Ski Cloudcroft, glide across the ice at Zenith Park, or snowshoe through quiet, snow-dusted forests.</p>
+                        <div class="season-activities">
+                            <span class="season-tag">Skiing</span>
+                            <span class="season-tag">Ice Skating</span>
+                            <span class="season-tag">Snow Play</span>
+                            <span class="season-tag">Snowshoeing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="plan-adventure" aria-label="Plan your adventure tips">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Be Prepared</span>
+                    <h2 class="section-title section-title-centered">Plan Your Adventure</h2>
+                    <p class="section-description">Tips and essentials to help you make the most of your Cloudcroft outdoor experience.</p>
+                </div>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x26F0;&#xFE0F;</div>
+                        <h3>Altitude Preparation</h3>
+                        <p>At 9,000 feet, the air is thinner. Take it easy your first day, drink plenty of water, and allow time to acclimate before strenuous activities. Altitude sickness is rare but possible for visitors from lower elevations.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F327;&#xFE0F;</div>
+                        <h3>Weather Awareness</h3>
+                        <p>Mountain weather changes quickly. Summer afternoons often bring brief thunderstorms, so start hikes early. Temperatures can drop 30+ degrees from day to night &mdash; always bring layers, even in summer.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F392;</div>
+                        <h3>Gear Essentials</h3>
+                        <p>Pack sunscreen (the UV is intense at altitude), a hat, plenty of water, and sturdy footwear for trails. In winter, bring warm layers, waterproof boots, and hand warmers for outdoor activities.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F46A;</div>
+                        <h3>Family-Friendly Picks</h3>
+                        <p>Disc golf, pickleball, ice skating, and the shorter hiking trails are all excellent for families with kids. Zenith Park is a central hub for family recreation year-round.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F4F6;</div>
+                        <h3>Connectivity</h3>
+                        <p>Cell service can be spotty in the forest and on remote trails. Download offline maps before heading out, and let someone know your plans if venturing into the backcountry.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F33F;</div>
+                        <h3>Leave No Trace</h3>
+                        <p>Help preserve Cloudcroft's natural beauty. Pack out all trash, stay on marked trails, respect wildlife, and follow fire restrictions &mdash; especially during dry summer months when fire danger is high.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Your Mountain Adventure Starts Here</h2>
+                <p>From forest trails to frozen rinks, Cloudcroft has something for every outdoor enthusiast. Start planning your mountain getaway and discover why this village at 9,000 feet is southern New Mexico's ultimate outdoor playground.</p>
+                <div class="cta-buttons">
+                    <a href="../plan.html" class="btn-primary">Plan Your Trip</a>
+                    <a href="../index.html" class="btn-secondary">Discover Cloudcroft</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="../stay/lodging.html">Lodging</a>
+                <a href="../eat/complete-guide-to-dining.html">Dining</a>
+                <a href="where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="complete-guide-to-activities.html">Activities</a>
+                <a href="what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+  <script>
+        (function() {
+            // Header scroll
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 60) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }, { passive: true });
+
+            // Hamburger toggle
+            var hamburger = document.querySelector('.hamburger');
+            var mobileMenu = document.querySelector('.mobile-menu');
+            hamburger.addEventListener('click', function() {
+                var isOpen = mobileMenu.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+
+            // Close mobile menu on link click
+            mobileMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Intersection Observer for fade-in elements
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .activity-card, .season-card, .tip-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+
+            // Back to top button
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }, { passive: true });
+
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+</body>
+</html>

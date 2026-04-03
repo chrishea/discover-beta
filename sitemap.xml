@@ -1,282 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Home -->
+  <!-- Homepage -->
   <url>
     <loc>https://discovercloudcroft.com/</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-03</lastmod>
     <priority>1.0</priority>
   </url>
 
-  <!-- Main Navigation / Info -->
+  <!-- Hub Pages -->
+  <url>
+    <loc>https://discovercloudcroft.com/stay/lodging.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/eat/complete-guide-to-dining.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/do/complete-guide-to-activities.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/complete-guide-to-cloudcroft-new-mexico-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/visiting-guide.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/season/seasonal.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/do/complete-guide-to-outdoor-recreation.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/explore/nearby-destinations.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/shop/shopping.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/do/what-events-are-happening-in-cloudcroft-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Key Content Pages -->
   <url>
     <loc>https://discovercloudcroft.com/about.html</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/dark-skies.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/plan.html</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/visiting-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/contact.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/faq.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/history.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/emergency-services.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Lodging -->
-  <url>
-    <loc>https://discovercloudcroft.com/lodging.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/grand-cloudcroft-hotel.html</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/cabins-at-cloudcroft.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/summit-inn.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/vacation-rentals.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Dining -->
-  <url>
-    <loc>https://discovercloudcroft.com/dining.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/cloudcroft-brewery.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/western-bar.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/mad-jacks-bbq.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/brother-n-law-bbq.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/big-daddys.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/high-rollin.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/instant-karma.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/groceries.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Activities & Recreation -->
-  <url>
-    <loc>https://discovercloudcroft.com/activities.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/hiking-trails.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/best-hiking-trails.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/osha-trail.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/mexican-canyon-trestle.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/biking.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/camping.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/fishing.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/pickleball.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/disc-golf.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/outdoor-recreation.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/local-parks.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
   </url>
+
+  <!-- DO (Activities) -->
   <url>
-    <loc>https://discovercloudcroft.com/dark-skies.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://discovercloudcroft.com/do/best-hiking-trails-in-cloudcroft-new-mexico.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/shopping.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/art-galleries.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Events -->
-  <url>
-    <loc>https://discovercloudcroft.com/events.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/beerfest.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/lumberjack-day.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/high-altitude-classic.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Seasons -->
-  <url>
-    <loc>https://discovercloudcroft.com/seasonal.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://discovercloudcroft.com/do/where%20to-hike-in-Cloudcroft-New-Mexico-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/spring.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/summer.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/fall.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/winter.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Nearby Destinations -->
-  <url>
-    <loc>https://discovercloudcroft.com/nearby-destinations.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://discovercloudcroft.com/do/where-to-bike-in-cloudcroft-new-mexico-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/alamogordo.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://discovercloudcroft.com/do/complete-guide-to-camping-around-cloudcroft-new-mexico-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/do/where%20to-fishing-in-Cloudcroft-New-Mexico-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/do/complete-guide-to-disc-golf.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/do/play-pickleball-cloudcroft-new-mexico-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/do/complete-guide-to-mexican-canyon-trestle.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/do/complete-guide-to-osha-trail.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/do/what-to-know-lincoln-national-forest-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- EAT (Dining) -->
+  <url>
+    <loc>https://discovercloudcroft.com/eat/complete-guide-to-groceries.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/eat/where-to-eat-cloudcroft-mad-jacks-bbq.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/eat/where-to-eat-cloudcroft-brother-n-law-bbq.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/eat/where-to-eat-cloudcroft-cloudcroft-brewery.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/eat/where-to-eat-cloudcroft-big-daddys.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/eat/where-to-eat-cloudcroft-high-rollin.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/eat/where-to-eat-cloudcroft-western-bar.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- EVENTS -->
+  <url>
+    <loc>https://discovercloudcroft.com/events/beerfest.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/events/high-altitude-classic.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/events/lumberjack-day.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- EXPLORE -->
+  <url>
+    <loc>https://discovercloudcroft.com/explore/sunspot-observatory.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/explore/alamogordo.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/explore/mayhill.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- STAY (Lodging) -->
+  <url>
+    <loc>https://discovercloudcroft.com/stay/the-lodge-at-cloudcroft-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/stay/grand-cloudcroft-hotel.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/stay/cabins-at-cloudcroft.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/stay/summit-inn.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/stay/stay-at-the-summit-inn-Cloudcroft-2026.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/stay/lodging-cloudcroft-2025-Summit-Inn.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/stay/dusty-boots-motel-cloudcroft.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/stay/crofting-inn-cloudcroft.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/stay/vacation-rentals.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SEASON -->
+  <url>
+    <loc>https://discovercloudcroft.com/season/spring.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/season/summer.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/season/fall.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/season/winter.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/season/timberon.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SHOP -->
+  <url>
+    <loc>https://discovercloudcroft.com/shop/art-galleries.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/shop/instant-karma.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- RESOURCES (Supporting Pages) -->
+  <url>
+    <loc>https://discovercloudcroft.com/contact.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/timberon.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/mayhill.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://discovercloudcroft.com/sunspot-observatory.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://discovercloudcroft.com/resources/history.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.7</priority>
   </url>
-
-  <!-- Services & Real Estate -->
   <url>
-    <loc>https://discovercloudcroft.com/real-estate.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://discovercloudcroft.com/resources/emergency-services.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://discovercloudcroft.com/resources/real-estate.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/resources/what-to-know-about-insurance-in-cloudcroft-nm.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>

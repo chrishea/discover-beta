@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Altitude Classic Bike Race | DiscoverCloudcroft.com</title>
+    <meta name="description" content="The High Altitude Classic is one of the most scenic and demanding cycling events in the Southwest. Classic, Half, and Junior categories. Summer 2026 in Cloudcroft, NM.">
+    <meta name="keywords" content="High Altitude Classic, bike race, cycling event, Cloudcroft NM, Sacramento Mountains, road cycling, bicycle race">
+    <link rel="canonical" href="https://discovercloudcroft.com/high-altitude-classic.html">
+    <meta property="og:title" content="High Altitude Classic Bike Race | DiscoverCloudcroft.com">
+    <meta property="og:description" content="One of the most scenic and demanding cycling events in the Southwest. Classic, Half, and Junior categories.">
+    <meta property="og:url" content="https://discovercloudcroft.com/high-altitude-classic.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="High Altitude Classic Bike Race | DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="Most scenic and demanding cycling event in the Southwest. Summer 2026.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsEvent",
+      "name": "High Altitude Classic Bike Race",
+      "description": "One of the most scenic and demanding cycling events in the Southwest, held in the Sacramento Mountains of New Mexico.",
+      "location": {
+        "@type": "Place",
+        "name": "Cloudcroft",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cloudcroft",
+          "addressRegion": "NM",
+          "postalCode": "88317",
+          "addressCountry": "US"
+        }
+      }
+    }
+    </script>
+
+    <style>
+/* Hero overrides */
+.hero { height: 65vh; min-height: 450px; }
+.hero-bg {
+    background: linear-gradient(135deg, #000000 0%, #111111 50%, var(--twilight) 100%);
+    animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(30, 90, 168, 0.55));
+}
+.hero-badge span { color: var(--pine); }
+/* Page-specific: about-image override */
+.about-image {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #111111 0%, #000000 100%);
+}
+.about-image-placeholder { color: white; }
+.about-image-placeholder p { color: rgba(255,255,255,0.85); }
+/* Categories */
+.categories-section { background: var(--cloud-drift); }
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.category-card {
+    background: var(--snow-cap);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    border-top: 4px solid var(--golden-hour);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.category-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.category-card:nth-child(2).visible { transition-delay: 0.1s; }
+.category-card:nth-child(3).visible { transition-delay: 0.2s; }
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.category-card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.category-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--midnight);
+    margin-bottom: 0.5rem;
+}
+.category-card > p { color: var(--granite); font-size: 0.95rem; line-height: 1.7; }
+/* Route section */
+.route-section {
+    background: var(--cream-dark);
+    position: relative;
+    overflow: hidden;
+}
+.route-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.06;
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px),
+        repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px);
+    pointer-events: none;
+}
+.route-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+.route-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.route-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+}
+.route-card:nth-child(2).visible { transition-delay: 0.1s; }
+.route-card:nth-child(3).visible { transition-delay: 0.2s; }
+.route-card:hover { transform: translateY(-6px); background: rgba(255, 255, 255, 0.1); }
+.route-icon { font-size: 3rem; margin-bottom: 1rem; }
+.route-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--pine);
+    margin-bottom: 0.75rem;
+}
+.route-card p { color: #555555; font-size: 0.95rem; line-height: 1.7; }
+/* Footer gradient border */
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+    background-size: 300% 100%;
+    animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder {
+    0% { background-position: 0% 0; }
+    100% { background-position: 300% 0; }
+}
+/* Responsive */
+@media (max-width: 1024px) {
+    .route-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .route-grid { grid-template-columns: 1fr; }
+    .categories-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+    <div class="header-inner">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+            <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <span class="logo-discover">Discover</span>
+                <span class="logo-cloudcroft">Cloudcroft</span>
+                <span class="logo-beta">Beta</span>
+            </a>
+            <a href="../stay/lodging.html">Stay</a>
+            <a href="../eat/complete-guide-to-dining.html">Eat</a>
+            <a href="../do/complete-guide-to-activities.html">Explore</a>
+            <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+            <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+            <a href="../season/seasonal.html">Seasons</a>
+            <a href="../plan.html">Plan</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+    <a href="../stay/lodging.html">Stay</a>
+    <a href="../eat/complete-guide-to-dining.html">Eat</a>
+    <a href="../do/complete-guide-to-activities.html">Explore</a>
+    <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+    <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+    <a href="../season/seasonal.html">Seasons</a>
+    <a href="../plan.html">Plan</a>
+    <a href="../contact.html">Contact</a>
+</div>
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="High Altitude Classic Bike Race"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Summer 2026 &bull; Cycling Event</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">High </span>
+                <span class="word">Altitude </span>
+                <span class="word">Classic</span>
+            </h1>
+            <p class="hero-subtitle">One of the most scenic and demanding cycling events in the Southwest &mdash; climbing through the Sacramento Mountains at nearly 9,000 feet.</p>
+            <div class="hero-ctas">
+                <a href="#categories" class="btn-primary">Race Categories</a>
+                <a href="#details" class="btn-outline">Race Details</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4C5;</div>
+                <span>Summer 2026</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F550;</div>
+                <span>7:00 AM Start</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F6B4;</div>
+                <span>Classic &bull; Half &bull; Junior</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F3D4;&#xFE0F;</div>
+                <span>~9,000 ft Elevation</span>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+        <section class="section" id="about" aria-label="About the race">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About the Race</span>
+                        <h2 class="section-title">Ride at Altitude</h2>
+                        <p>The High Altitude Classic is recognized as one of the most scenic and demanding cycling events in the Southwest. Riders tackle challenging mountain roads through the Sacramento Mountains, climbing to nearly 9,000 feet through pine forests, past dramatic switchbacks, and along the stunning Sunspot Scenic Byway.</p>
+                        <p>With Classic, Half, and Junior categories, there is a course for every level of cyclist. The race starts at 7:00 AM, and packet pickup is available the day before. Awards are presented at Zenith Park following the race.</p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F6B4; Road Cycling</span>
+                            <span class="about-feature">&#x1F3D4;&#xFE0F; Mountain Course</span>
+                            <span class="about-feature">&#x1F3C6; Awards Ceremony</span>
+                            <span class="about-feature">&#x1F332; Scenic Routes</span>
+                            <span class="about-feature">&#x1F4E6; Packet Pickup</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <div class="about-image-placeholder">
+                            <div class="icon">&#x1F6B4;</div>
+                            <p>High Altitude Classic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section categories-section" id="categories" aria-label="Race categories">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Race Day</span>
+                    <h2 class="section-title section-title-centered">Race Categories</h2>
+                    <p class="section-description">Choose the course that matches your skill level. Every category offers a challenging and scenic mountain ride.</p>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-card-icon">&#x1F947;</div>
+                        <h3>Classic</h3>
+                        <p>The full course for experienced riders. Tackle the complete mountain route with significant elevation gain through the Sacramento Mountains. This is the flagship event and the ultimate test of endurance at altitude.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-card-icon">&#x1F948;</div>
+                        <h3>Half Classic</h3>
+                        <p>A shorter but still demanding route covering roughly half the Classic distance. Perfect for intermediate riders who want the mountain cycling experience without the full course commitment.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-card-icon">&#x1F949;</div>
+                        <h3>Junior</h3>
+                        <p>A course designed for younger riders to experience competitive mountain cycling. A great introduction to altitude riding in a supportive, family-friendly environment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section route-section" aria-label="Route highlights">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: var(--pine); letter-spacing: 3px;">The Course</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">Route Highlights</h2>
+                    <p class="section-description" style="color: #555555;">What makes this one of the most talked-about cycling events in the region.</p>
+                </div>
+                <div class="route-grid">
+                    <div class="route-card">
+                        <div class="route-icon">&#x1F3D4;&#xFE0F;</div>
+                        <h3>Extreme Elevation</h3>
+                        <p>Ride at nearly 9,000 feet through the Sacramento Mountains. The thin air adds an extra challenge that sets this race apart from others.</p>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-icon">&#x1F332;</div>
+                        <h3>Scenic Mountain Roads</h3>
+                        <p>Wind through pine forests, past dramatic switchbacks on US-82, and along the stunning Sunspot Scenic Byway with panoramic views.</p>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-icon">&#x1F3C1;</div>
+                        <h3>Awards at Zenith Park</h3>
+                        <p>Celebrate your finish at Zenith Park in the heart of Cloudcroft. Awards ceremony, food, and camaraderie with fellow riders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="details" aria-label="Race details">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Race</span>
+                    <h2 class="section-title section-title-centered">Race Details</h2>
+                    <p class="section-description">Everything you need to know to prepare for race day.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h3>Race Start</h3>
+                        <p>7:00 AM start time for all categories. Arrive early for check-in and warm-up. Staggered starts may apply by category.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4E6;</div>
+                        <h3>Packet Pickup</h3>
+                        <p>Packet pickup is available the day before race day. Pick up your race number, timing chip, and event materials in advance.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F3C6;</div>
+                        <h3>Awards</h3>
+                        <p>Awards ceremony held at Zenith Park following the race. Category winners and overall champions recognized with prizes.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F697;</div>
+                        <h3>Getting There</h3>
+                        <p>Cloudcroft is 30 minutes from Alamogordo on US-82. Book lodging early as race weekend fills up quickly. El Paso airport is 2 hours away.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Ready to Ride at Altitude?</h2>
+                <p>Challenge yourself on one of the Southwest's most demanding and beautiful cycling courses. The High Altitude Classic awaits.</p>
+                <div class="cta-buttons">
+                    <a href="../do/what-events-are-happening-in-cloudcroft-2026.html" class="btn-primary">View All Events</a>
+                    <a href="../stay/lodging.html" class="btn-outline">Find Lodging</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="../stay/lodging.html">Lodging</a>
+                <a href="../eat/complete-guide-to-dining.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="../faq.html">FAQs</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.fade-in, .category-card, .route-card, .visiting-card').forEach(function(el) { fadeObserver.observe(el); });
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() { if (window.scrollY > 400) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); } }, { passive: true });
+            backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
+    </script>
+</body>
+</html>

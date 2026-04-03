@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay at the Summit Inn, Cloudcroft (2026) | DiscoverCloudcroft.com</title>
+    <meta name="description" content="Stay at Summit Inn in Cloudcroft, NM (2026) — hotel rooms and cottages with stone fireplaces, kitchenettes, continental breakfast, and beautiful gardens just 0.1 miles from downtown.">
+    <meta name="keywords" content="Summit Inn Cloudcroft 2026, stay at Summit Inn, Cloudcroft NM lodging, mountain cottages, stone fireplace, continental breakfast, Sacramento Mountains inn">
+    <link rel="canonical" href="https://discovercloudcroft.com/stay-at-the-summitt-inn-Cloudcroft-2026.html">
+
+    <meta property="og:title" content="Stay at the Summit Inn, Cloudcroft (2026)">
+    <meta property="og:description" content="Hotel rooms and cottages with stone fireplaces, continental breakfast, and beautiful gardens — steps from downtown Cloudcroft.">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/Lodging-summit-inn.webp">
+    <meta property="og:url" content="https://discovercloudcroft.com/stay-at-the-summitt-inn-Cloudcroft-2026.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Stay at the Summit Inn, Cloudcroft (2026)">
+    <meta name="twitter:description" content="Hotel rooms and cottages with stone fireplaces and continental breakfast, steps from downtown Cloudcroft.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/Lodging-summit-inn.webp">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Summit Inn",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "100 Chipmunk Ave",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "url": "https://www.summitinnnm.com",
+      "image": "https://discovercloudcroft.com/media/Lodging-summit-inn.webp",
+      "description": "Charming mountain lodge with hotel rooms and cottages featuring stone fireplaces, 0.1 miles from downtown Cloudcroft.",
+      "priceRange": "$$",
+      "servesCuisine": "Continental Breakfast"
+    }
+    </script>
+
+    <style>
+        /* Hero - page-specific */
+        .hero-bg {
+            background-image: url('../media/Lodging-summit-inn.webp');
+            background-size: cover;
+            background-position: center;
+            animation: kenBurns 20s ease-in-out infinite alternate;
+        }
+
+        .hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+        .hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+
+        /* Page-specific info-bar link styles */
+        .info-bar-item a {
+            color: var(--charcoal);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .info-bar-item a:hover {
+            color: var(--charcoal-light);
+        }
+
+        /* Lodging list */
+        .lodging-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+
+        .lodging-item {
+            display: flex;
+            border: 1.5px solid #e8e8e8;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: border-color 0.25s, box-shadow 0.25s;
+            opacity: 0;
+            transform: translateY(16px);
+        }
+
+        .lodging-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s;
+        }
+
+        .lodging-item:nth-child(2).visible { transition-delay: 0.1s; }
+        .lodging-item:nth-child(3).visible { transition-delay: 0.2s; }
+        .lodging-item:nth-child(4).visible { transition-delay: 0.3s; }
+
+        .lodging-item:hover {
+            border-color: #000000;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+        }
+
+        .lodging-badge {
+            min-width: 80px;
+            background: #000000;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 1rem 0;
+        }
+
+        .lodging-content {
+            padding: 1.5rem;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .lodging-content h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #000000;
+            margin-bottom: 0.5rem;
+        }
+
+        .lodging-content p {
+            font-size: 0.9rem;
+            color: #555555;
+            line-height: 1.65;
+            margin-bottom: 0.75rem;
+        }
+
+        .lodging-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .lodging-tag {
+            font-size: 0.75rem;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            background: #f2f2f2;
+            color: #333333;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            letter-spacing: 0.3px;
+        }
+
+        .lodging-price {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #000000;
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+
+        @media (max-width: 600px) {
+            .lodging-badge {
+                writing-mode: horizontal-tb;
+                transform: none;
+                min-width: unset;
+                padding: 0.75rem 1rem;
+                font-size: 0.65rem;
+            }
+        }
+
+        /* Highlights */
+        .highlights-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .highlights-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+    <div class="header-inner">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+            <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <span class="logo-discover">Discover</span>
+                <span class="logo-cloudcroft">Cloudcroft</span>
+                <span class="logo-beta">Beta</span>
+            </a>
+            <a href="../stay/lodging.html">Stay</a>
+            <a href="../eat/complete-guide-to-dining.html">Eat</a>
+            <a href="../do/complete-guide-to-activities.html">Explore</a>
+            <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+            <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+            <a href="../season/seasonal.html">Seasons</a>
+            <a href="../plan.html">Plan</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+    <a href="../stay/lodging.html">Stay</a>
+    <a href="../eat/complete-guide-to-dining.html">Eat</a>
+    <a href="../do/complete-guide-to-activities.html">Explore</a>
+    <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+    <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+    <a href="../season/seasonal.html">Seasons</a>
+    <a href="../plan.html">Plan</a>
+    <a href="../contact.html">Contact</a>
+</div>
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Summit Inn mountain lodge exterior"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Lodging &bull; Steps from Downtown</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Summit </span>
+                <span class="word">Inn</span>
+            </h1>
+            <p class="hero-subtitle">Charming hotel rooms and cottages with stone fireplaces, gardens, and continental breakfast &mdash; just 0.1 miles from downtown Cloudcroft.</p>
+            <div class="hero-ctas">
+                <a href="https://www.summitinnnm.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Book Your Stay</a>
+                <a href="#rooms" class="btn-secondary">View Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>100 Chipmunk Ave, Cloudcroft, NM</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F550;</div>
+                <span>Check-in 4:00 PM / Check-out 11:00 AM</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F6B6;</div>
+                <span>0.1 Miles from Downtown</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F310;</div>
+                <a href="https://www.summitinnnm.com" target="_blank" rel="noopener noreferrer">summitinnnm.com</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-labelledby="h-about">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title" id="h-about">Your Mountain Home Base</h2>
+                        <p>
+                            The Summit Inn offers a perfect blend of mountain charm and modern comfort, located just a short stroll from downtown Cloudcroft. Whether you choose a cozy hotel room with a stone fireplace or a private cottage with a full kitchen, you will find a welcoming retreat surrounded by beautiful gardens and towering pines.
+                        </p>
+                        <p>
+                            Start each morning with complimentary continental breakfast, then relax by the outdoor fire pit in the evening. The inn's peaceful gardens and BBQ area make it easy to unwind after a day of mountain exploring &mdash; all within steps of Cloudcroft's shops and restaurants.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1FAA8; Stone Fireplaces</span>
+                            <span class="about-feature">&#x1F95E; Continental Breakfast</span>
+                            <span class="about-feature">&#x1F525; Outdoor Fire Pit</span>
+                            <span class="about-feature">&#x1F33A; Beautiful Gardens</span>
+                            <span class="about-feature">&#x1F356; BBQ Area</span>
+                            <span class="about-feature">&#x1F6B6; Walk to Downtown</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <img src="../media/Lodging-summit-inn.webp" alt="Summit Inn exterior surrounded by pines" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="rooms" aria-labelledby="h-rooms">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Accommodations</span>
+                    <h2 class="section-title section-title-centered" id="h-rooms">Rooms &amp; Cottages</h2>
+                    <p class="section-description">From cozy hotel rooms to private cottages, find the perfect space for your mountain getaway.</p>
+                </div>
+                <div class="lodging-list">
+                    <div class="lodging-item fade-in">
+                        <div class="lodging-badge">Room</div>
+                        <div class="lodging-content">
+                            <h3>Hotel Room</h3>
+                            <p>A comfortable room with mountain lodge character and all the essentials for a relaxing stay.</p>
+                            <div class="lodging-tags">
+                                <span class="lodging-tag">Stone Fireplace</span>
+                                <span class="lodging-tag">Kitchenette</span>
+                                <span class="lodging-tag">Private Bathroom</span>
+                                <span class="lodging-tag">Continental Breakfast</span>
+                            </div>
+                            <span class="lodging-price">From $134 / night</span>
+                        </div>
+                    </div>
+                    <div class="lodging-item fade-in">
+                        <div class="lodging-badge">Cottage</div>
+                        <div class="lodging-content">
+                            <h3>One-Bedroom Cottage</h3>
+                            <p>A private cottage retreat with more space and a true home-away-from-home feel surrounded by pines.</p>
+                            <div class="lodging-tags">
+                                <span class="lodging-tag">Full Kitchen</span>
+                                <span class="lodging-tag">Stone Fireplace</span>
+                                <span class="lodging-tag">Separate Living Area</span>
+                                <span class="lodging-tag">Private Entrance</span>
+                                <span class="lodging-tag">Continental Breakfast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lodging-item fade-in">
+                        <div class="lodging-badge">Duplex</div>
+                        <div class="lodging-content">
+                            <h3>Duplex Cottage</h3>
+                            <p>Two connected units ideal for families or groups traveling together — shared outdoor space with mountain views.</p>
+                            <div class="lodging-tags">
+                                <span class="lodging-tag">Two Units</span>
+                                <span class="lodging-tag">Full Kitchen</span>
+                                <span class="lodging-tag">Stone Fireplace</span>
+                                <span class="lodging-tag">Shared Outdoor Space</span>
+                                <span class="lodging-tag">Continental Breakfast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lodging-item fade-in">
+                        <div class="lodging-badge">All Stays</div>
+                        <div class="lodging-content">
+                            <h3>Every Stay Includes</h3>
+                            <p>Standard amenities included with all room types at the Summit Inn.</p>
+                            <div class="lodging-tags">
+                                <span class="lodging-tag">Continental Breakfast</span>
+                                <span class="lodging-tag">Outdoor Fire Pit</span>
+                                <span class="lodging-tag">Gardens &amp; BBQ Area</span>
+                                <span class="lodging-tag">Free Parking</span>
+                                <span class="lodging-tag">Service Animals Welcome</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section highlights-section" aria-labelledby="h-why">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Why Stay</span>
+                    <h2 class="section-title section-title-centered" id="h-why">The Summit Experience</h2>
+                    <p class="section-description">What makes Summit Inn a favorite among Cloudcroft visitors.</p>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F6B6;</div>
+                        <h3>Steps from Downtown</h3>
+                        <p>At just 0.1 miles from downtown, you can walk to Cloudcroft's shops, restaurants, and galleries without ever needing to move your car.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1FAA8;</div>
+                        <h3>Stone Fireplaces</h3>
+                        <p>Authentic stone fireplaces in the rooms and cottages create the perfect ambiance for cool mountain evenings in the Sacramento Mountains.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F33A;</div>
+                        <h3>Gardens &amp; Fire Pit</h3>
+                        <p>Beautiful maintained gardens and an outdoor fire pit offer peaceful spaces to relax, stargaze, and enjoy the mountain air after a day of adventure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="visit" aria-labelledby="h-visit">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Stay</span>
+                    <h2 class="section-title section-title-centered" id="h-visit">Visit Summit Inn</h2>
+                    <p class="section-description">Everything you need to know before booking your mountain getaway.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h3>Location</h3>
+                        <p>100 Chipmunk Ave, Cloudcroft, NM 88317. Just 0.1 miles from downtown &mdash; an easy walk to all the village has to offer.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F310;</div>
+                        <h3>Reservations</h3>
+                        <p>Book online at <a href="https://www.summitinnnm.com" target="_blank" rel="noopener noreferrer" style="color:inherit;">summitinnnm.com</a>. Hotel rooms start at $134/night with continental breakfast included.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h3>Check-In / Check-Out</h3>
+                        <p>Check-in begins at 4:00 PM. Check-out is by 11:00 AM. Please contact the inn for early check-in or late check-out requests.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F43E;</div>
+                        <h3>Pet Policy</h3>
+                        <p>No pets allowed on the property. Service animals are welcome in accordance with ADA requirements. Please notify staff at booking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section" aria-label="Book your stay">
+            <div class="cta-container">
+                <h2>Ready for Your Mountain Retreat?</h2>
+                <p>Book your stay at Summit Inn and enjoy stone fireplaces, beautiful gardens, and the charm of downtown Cloudcroft just steps away.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.summitinnnm.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Book Your Stay</a>
+                    <a href="lodging.html" class="btn-secondary">Explore More Lodging</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="lodging.html">Lodging</a>
+                <a href="../eat/complete-guide-to-dining.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+</body>
+</html>
