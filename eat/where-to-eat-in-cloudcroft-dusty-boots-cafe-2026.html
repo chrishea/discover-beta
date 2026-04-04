@@ -29,27 +29,33 @@
     {
       "@context": "https://schema.org",
       "@type": "Restaurant",
-      "name": "Dusty Boots Cafe",
-      "description": "Scratch-made breakfast, lunch, and dinner cafe on-site at the Dusty Boots Motel in Cloudcroft, New Mexico. Over 90% of menu items made from scratch. Saturday German dinner specials.",
+      "name": "Dusty Boots Cafe & Taco Cantina",
+      "description": "Scratch-made breakfast, lunch, and dinner cafe in Cloudcroft, New Mexico. Over 90% of menu items made from scratch. Saturday German dinner specials.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "1315 James Canyon Highway",
+        "streetAddress": "1317 James Canyon Hwy",
         "addressLocality": "Cloudcroft",
         "addressRegion": "NM",
         "postalCode": "88317",
         "addressCountry": "US"
       },
-      "telephone": "+15756827736",
-      "email": "dusty@dustybootsmotel.com",
-      "url": "https://www.thedustyboots.com",
+      "telephone": "+15756012009",
       "servesCuisine": ["American", "German", "Breakfast"],
       "priceRange": "$$",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "07:00",
-        "closes": "21:00"
-      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "07:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sunday"],
+          "opens": "07:00",
+          "closes": "17:00"
+        }
+      ],
       "image": "https://discovercloudcroft.com/media/lodging-dusty-boots.webp"
     }
     </script>
@@ -341,7 +347,8 @@
             <h1 class="hero-title">
                 <span class="word">Dusty </span>
                 <span class="word">Boots </span>
-                <span class="word">Cafe</span>
+                <span class="word">Cafe </span>
+                <span class="word">&amp; Taco Cantina</span>
             </h1>
             <p class="hero-subtitle">Scratch-made breakfast, lunch, and dinner on James Canyon Highway. Over 90% of the menu made from scratch &mdash; plus Saturday German dinners and famous banana bread.</p>
             <div class="hero-ctas">
@@ -356,15 +363,15 @@
         <div class="info-bar-inner">
             <div class="info-bar-item">
                 <div class="info-bar-icon">&#x1F4CD;</div>
-                <span>1315 James Canyon Hwy, Cloudcroft</span>
+                <span>1317 James Canyon Hwy, Cloudcroft</span>
             </div>
             <div class="info-bar-item">
                 <div class="info-bar-icon">&#x1F550;</div>
-                <span>Daily 7AM&ndash;9PM (summer)</span>
+                <span>Mon&ndash;Sat 7AM&ndash;7PM &bull; Sun until 5PM</span>
             </div>
             <div class="info-bar-item">
                 <div class="info-bar-icon">&#x1F4DE;</div>
-                <a href="tel:5756827736">(575) 682-7736</a>
+                <a href="tel:5756012009">(575) 601-2009</a>
             </div>
             <div class="info-bar-item">
                 <div class="info-bar-icon">&#x1F373;</div>
@@ -514,17 +521,17 @@
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4CD;</div>
                         <h3>Location</h3>
-                        <p>1315 James Canyon Highway (US-82), Cloudcroft, NM 88317. About 0.7 miles from Burro Avenue &mdash; a 2-minute drive from the village center.</p>
+                        <p>1317 James Canyon Hwy, Cloudcroft, NM 88317. About 0.7 miles from Burro Avenue &mdash; a 2-minute drive from the village center.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F550;</div>
                         <h3>Hours</h3>
-                        <p>Summer: daily 7:00 AM &ndash; 9:00 PM. Breakfast served until noon. Saturday German dinner 5:00&ndash;8:00 PM. <em>Hours may vary in winter &mdash; call ahead.</em></p>
+                        <p>Monday&ndash;Saturday: 7:00 AM &ndash; 7:00 PM. Sunday: 7:00 AM &ndash; 5:00 PM. Breakfast served until noon. Saturday German dinner 5:00&ndash;8:00 PM.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4DE;</div>
                         <h3>Contact</h3>
-                        <p>Phone: <a href="tel:5756827736" style="color: var(--alpine); text-decoration: none;">(575) 682-7736</a><br>Email: <a href="mailto:dusty@dustybootsmotel.com" style="color: var(--alpine); text-decoration: none;">dusty@dustybootsmotel.com</a><br>Web: <a href="https://www.thedustyboots.com" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">thedustyboots.com</a></p>
+                        <p>Phone: <a href="tel:5756012009" style="color: var(--alpine); text-decoration: none;">(575) 601-2009</a></p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
@@ -546,7 +553,7 @@
                 <h2>Hungry at 8,600 Feet?</h2>
                 <p>Stop by Dusty Boots Cafe for scratch-made food, Saturday German dinners, and the best banana bread on the mountain. Open to everyone &mdash; not just motel guests.</p>
                 <div class="cta-buttons">
-                    <a href="tel:5756827736" class="btn-primary">Call Dusty Boots</a>
+                    <a href="tel:5756012009" class="btn-primary">Call Dusty Boots</a>
                     <a href="complete-guide-to-dining.html" class="btn-secondary">Explore More Dining</a>
                 </div>
             </div>
@@ -576,9 +583,8 @@
             </div>
             <div class="footer-col">
                 <h4>Connect</h4>
-                <a href="tel:+15756827736">(575) 682-7736</a>
-                <a href="mailto:dusty@dustybootsmotel.com">dusty@dustybootsmotel.com</a>
-                <a href="https://www.thedustyboots.com" target="_blank" rel="noopener noreferrer">thedustyboots.com</a>
+                <a href="tel:+15756012009">(575) 601-2009</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">

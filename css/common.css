@@ -20,20 +20,20 @@
   --charcoal-muted: #777777;
 
   /* CTA & accent — all black */
-  --cta-red: #000000;
+  --cta-red: #2B2B2B;
   --cta-red-hover: #333333;
-  --brown-accent: #000000;
-  --forest-green: #000000;
+  --brown-accent: #2B2B2B;
+  --forest-green: #2B2B2B;
 
   /* Activity-specific — all black */
-  --sports-green: #000000;
-  --sports-orange: #000000;
+  --sports-green: #2B2B2B;
+  --sports-orange: #2B2B2B;
   --sports-blue: #000000;
 
-  /* Footer backgrounds — black */
-  --footer-main: #000000;
-  --footer-green: #000000;
-  --footer-restaurant: #000000;
+  /* Footer backgrounds */
+  --footer-main: #2B2B2B;
+  --footer-green: #2B2B2B;
+  --footer-restaurant: #2B2B2B;
 
   /* Legacy aliases */
   --midnight: #000000;
@@ -980,7 +980,7 @@ img {
   padding: 0.9rem 2.25rem;
   border-radius: 10px;
   text-decoration: none;
-  background: transparent;
+  background: #ffffff;
   color: var(--pine);
   border: 2px solid var(--pine);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s, color 0.3s;
