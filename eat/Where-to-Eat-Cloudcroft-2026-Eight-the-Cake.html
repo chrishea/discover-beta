@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight the Cake | Bakery, Coffee &amp; Art on Burro Ave, Cloudcroft, NM</title>
+    <meta name="description" content="Eight the Cake on Burro Avenue in Cloudcroft serves organic coffee, signature cinnamon rolls, pies, pastries, and custom cakes in a bakery-gallery hybrid space.">
+    <meta name="keywords" content="eight the cake cloudcroft, cloudcroft bakery, burro avenue bakery, cloudcroft custom cakes, cloudcroft coffee, cloudcroft pastries, cloudcroft art gallery">
+    <link rel="canonical" href="https://discovercloudcroft.com/eat/Where-to-Eat-Cloudcroft-2026-Eight-the-Cake-content.html">
+
+    <meta property="og:title" content="Eight the Cake | Bakery, Coffee &amp; Art in Cloudcroft, NM">
+    <meta property="og:description" content="Organic coffee, signature cinnamon rolls, custom cakes, and fine art on Burro Avenue in Cloudcroft.">
+    <meta property="og:url" content="https://discovercloudcroft.com/eat/Where-to-Eat-Cloudcroft-2026-Eight-the-Cake-content.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eight the Cake | Cloudcroft, NM">
+    <meta name="twitter:description" content="Organic coffee, signature cinnamon rolls, custom cakes, and fine art on Burro Avenue.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Eight the Cake",
+      "description": "Bakery, coffee shop, and art space on Burro Avenue in Cloudcroft, NM. Organic coffee, espresso, signature cinnamon rolls, pies, pastries, custom cakes, and fine art.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "506A Burro Ave",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "telephone": "575-682-3088",
+      "url": "https://www.eightthecakellc.com",
+      "servesCuisine": ["Bakery", "Coffee", "Pastries", "Custom Cakes"]
+    }
+    </script>
+
+    <style>
+.hero { height: 65vh; min-height: 450px; }
+.hero-bg {
+    background: url('eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg') center 40% / cover no-repeat;
+    background-size: cover;
+    animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+}
+.hero-badge span { color: var(--golden-hour); }
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+.hero-title .word:nth-child(4) { animation-delay: 0.8s; }
+.hero-subtitle { opacity: 0; animation: fadeUp 0.8s ease 1s forwards; }
+.hero-ctas { opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards; }
+.info-bar { background: var(--cream-dark); }
+.info-bar-item { color: var(--charcoal); }
+.info-bar-item a { color: var(--charcoal); text-decoration: none; transition: color 0.3s; }
+.info-bar-item a:hover { color: var(--golden-hour); }
+.info-bar-icon {
+    width: 40px; height: 40px;
+    background: rgba(0, 0, 0, 0.15); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+}
+
+/* -- Menu cards -- */
+.menu-section { background: var(--cloud-drift); }
+.menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+.menu-card {
+    background: #ffffff; border-radius: 12px; padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border-top: 4px solid var(--golden-hour);
+    opacity: 0; transform: translateY(20px);
+}
+.menu-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease; }
+.menu-card:nth-child(2).visible { transition-delay: 0.1s; }
+.menu-card:nth-child(3).visible { transition-delay: 0.2s; }
+.menu-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.menu-card h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--midnight); margin-bottom: 0.5rem; }
+.menu-card p { color: var(--granite); font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.75rem; }
+.menu-items { list-style: none; margin-top: 1rem; }
+.menu-items li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(107, 123, 141, 0.2); color: var(--midnight); font-size: 0.95rem; }
+.menu-items li:last-child { border-bottom: none; }
+
+/* -- Highlights -- */
+.highlight-card { background: rgba(0, 0, 0, 0.05); border: 1px solid rgba(0, 0, 0, 0.1); }
+.highlight-card:hover { background: rgba(0, 0, 0, 0.1); }
+.highlight-card h3 { color: #2B2B2B; }
+.highlight-card p { color: #555555; }
+
+/* -- Tip Box -- */
+.tip-box {
+    display: flex; align-items: flex-start; gap: 1rem;
+    background: #fffbe6; border: 1px solid #f0d060;
+    border-radius: 12px; padding: 1.25rem 1.5rem; margin-top: 2rem;
+}
+.tip-box p { color: var(--midnight); font-size: 0.9rem; line-height: 1.6; margin: 0; }
+
+/* -- CTA -- */
+.cta-section { background: #f2f2f2; }
+.cta-container h2 { color: #2B2B2B; }
+.cta-container p { color: #555555; }
+.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* -- Footer gradient -- */
+.site-footer::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+    background-size: 300% 100%; animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder { 0% { background-position: 0% 0; } 100% { background-position: 300% 0; } }
+
+/* -- Responsive -- */
+@media (max-width: 1024px) {
+    .menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .menu-grid { grid-template-columns: 1fr; }
+    .info-bar-inner { gap: 1.5rem; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="complete-guide-to-dining.html">Eat</a>
+                <a href="../do/complete-guide-to-activities.html">Explore</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../plan.html">Plan</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="complete-guide-to-dining.html">Eat</a>
+        <a href="../do/complete-guide-to-activities.html">Explore</a>
+        <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+        <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../plan.html">Plan</a>
+        <a href="../contact.html">Contact</a>
+    </div>
+
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Eight the Cake bakery in Cloudcroft, New Mexico"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Bakery</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Eight </span>
+                <span class="word">the </span>
+                <span class="word">Cake </span>
+            </h1>
+            <p class="hero-subtitle">Organic coffee, signature cinnamon rolls, custom cakes, and fine art &mdash; a bakery-gallery hybrid on Burro Avenue in the heart of Cloudcroft.</p>
+            <div class="hero-ctas">
+                <a href="#menu" class="btn-primary">See the Bakery Case</a>
+                <a href="#visit" class="btn-secondary">Plan Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>506A Burro Ave, Cloudcroft</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F370;</div>
+                <span>Bakery, Coffee &amp; Art</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4DE;</div>
+                <span><a href="tel:5756823088">575-682-3088</a></span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F382;</div>
+                <span>Custom Cakes</span>
+            </div>
+        </div>
+    </div>
+
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-label="About Eight the Cake">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">Bakery, Coffee, and Art</h2>
+                        <p>
+                            Eight the Cake sits in the useful middle ground between bakery, coffee stop, and small art space on Burro Avenue. It is not a large caf&eacute; or full restaurant &mdash; it&rsquo;s better understood as a place to stop for pastries, coffee, cakes, and visual browsing while walking through downtown Cloudcroft.
+                        </p>
+                        <p>
+                            What makes Eight the Cake distinct is the art-forward identity. Multiple regional articles and listings describe art displayed in the space alongside baked goods &mdash; soft sculptures, paintings, and eclectic artworks share the room with the bakery case. That makes this more of a linger-a-little stop than a purely functional grab-and-go counter.
+                        </p>
+                        <p>
+                            The bakery side anchors around organic coffee, espresso, signature cinnamon rolls, pies, pastries, and custom cakes. The custom cake business adds a second lane beyond walk-in pastry trade, making this a dual-purpose shop on one of Cloudcroft&rsquo;s most walkable blocks.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x2615; Organic Coffee</span>
+                            <span class="about-feature">&#x1F3A8; Art Space</span>
+                            <span class="about-feature">&#x1F370; Cinnamon Rolls</span>
+                            <span class="about-feature">&#x1F382; Custom Cakes</span>
+                            <span class="about-feature">&#x1F4CD; Burro Ave</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg" alt="Eight the Cake storefront on Burro Avenue in Cloudcroft" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section menu-section" id="menu" aria-label="Menu and specialties">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">The Bakery Case</span>
+                    <h2 class="section-title section-title-centered">What&rsquo;s Inside</h2>
+                    <p class="section-description">Organic coffee, signature pastries, and custom cakes. Offerings may vary &mdash; check directly for what&rsquo;s available today.</p>
+                </div>
+                <div style="margin: 2rem auto 0; max-width: 700px;">
+                    <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00023.jpg" alt="Bakery display case at Eight the Cake with cakes, pastries, and cookies" loading="lazy" style="width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover;">
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x2615;</div>
+                        <h3>Coffee &amp; Espresso</h3>
+                        <p>The coffee program anchors around organic beans and espresso drinks.</p>
+                        <ul class="menu-items">
+                            <li>Organic coffee</li>
+                            <li>Espresso drinks</li>
+                            <li>Counter-service style</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F370;</div>
+                        <h3>Pastries &amp; Baked Goods</h3>
+                        <p>The bakery case features signature pastries baked on-site.</p>
+                        <ul class="menu-items">
+                            <li>Signature cinnamon rolls</li>
+                            <li>Pies</li>
+                            <li>Pastries</li>
+                            <li>Seasonal selections</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F382;</div>
+                        <h3>Custom Cakes</h3>
+                        <p>A second business lane beyond the walk-in bakery case &mdash; custom cakes made to order.</p>
+                        <ul class="menu-items">
+                            <li>Custom cake ordering</li>
+                            <li>Contact directly to order</li>
+                            <li>Special occasion cakes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tip-box">
+                    <span>&#x1F4F1;</span>
+                    <p><strong>Menu and hours may vary.</strong> Follow <a href="https://www.facebook.com/CoffeePastryArt8/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine);">Eight the Cake on Facebook</a> or <a href="https://www.instagram.com/eight_the_cake/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine);">@eight_the_cake on Instagram</a> for current offerings.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="gallery" aria-label="Art and atmosphere">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">The Space</span>
+                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">Pastries &amp; Art</h2>
+                </div>
+                <div style="margin: 2rem auto 2rem; max-width: 700px;">
+                    <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00024.jpg" alt="Interior gallery and gift shop space at Eight the Cake with art, gifts, and fireplace" loading="lazy" style="width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover;">
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F3A8;</div>
+                        <h3>Art-Forward Identity</h3>
+                        <p>Eight the Cake is not just a bakery. Regional coverage consistently describes art in the space &mdash; soft sculptures, paintings, and eclectic artworks displayed alongside baked goods. It reads more like a bakery-gallery hybrid than a standard pastry counter.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F6B6;</div>
+                        <h3>Burro Avenue Stop</h3>
+                        <p>Positioned on Cloudcroft&rsquo;s most walkable commercial block, Eight the Cake is a natural stop for strollers browsing Burro Avenue. The kind of place where people notice the displays and the bakery case rather than just grabbing a coffee and leaving.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4F0;</div>
+                        <h3>Regional Recognition</h3>
+                        <p>Eight the Cake has appeared in Cloudcroft Reader, New Mexico Tourism listings, and New Mexico Magazine coverage &mdash; establishing it as a recognizable Burro Avenue stop rather than a brand-new arrival.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="visit" aria-label="Plan your visit" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Visit</span>
+                    <h2 class="section-title section-title-centered">Visit Eight the Cake</h2>
+                    <p class="section-description">Everything you need to know before you go.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h3>Location</h3>
+                        <p>506A Burro Ave, Cloudcroft, NM 88317. Right on the main commercial block &mdash; walkable from anywhere in the village.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h3>Hours</h3>
+                        <p>Current hours are not confirmed from strong primary sources. Check their <a href="https://www.facebook.com/CoffeePastryArt8/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">Facebook</a> or <a href="https://www.instagram.com/eight_the_cake/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">Instagram</a> or call directly before visiting.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4DE;</div>
+                        <h3>Contact</h3>
+                        <p>Phone: <a href="tel:5756823088" style="color: var(--alpine); text-decoration: none;">575-682-3088</a><br>Email: <a href="mailto:eightthecake@gmail.com" style="color: var(--alpine); text-decoration: none;">eightthecake@gmail.com</a><br>Web: <a href="https://www.eightthecakellc.com/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">eightthecakellc.com</a></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
+                        <h3>Good to Know</h3>
+                        <p>This is a bakery-coffee stop, not a full restaurant. Counter service appears likely. Seating may be limited. Hours may be more variable than travelers expect &mdash; check directly. Custom cakes require advance ordering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Coffee, Cake, and Art on Burro Avenue</h2>
+                <p>Eight the Cake is where organic coffee, signature pastries, custom cakes, and local art come together on Cloudcroft&rsquo;s most walkable block. A bakery-gallery hybrid worth a stop.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.eightthecakellc.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Visit Website</a>
+                    <a href="https://www.facebook.com/CoffeePastryArt8/" target="_blank" rel="noopener noreferrer" class="btn-secondary">Follow on Facebook</a>
+                    <a href="complete-guide-to-dining.html" class="btn-secondary">Explore More Dining</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Lodging</a>
+                <a href="complete-guide-to-dining.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Eight the Cake</h4>
+                <a href="https://www.eightthecakellc.com/" target="_blank" rel="noopener noreferrer">eightthecakellc.com</a>
+                <a href="https://www.facebook.com/CoffeePastryArt8/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/eight_the_cake/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="tel:5756823088">575-682-3088</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>

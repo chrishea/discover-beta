@@ -57,7 +57,7 @@
         }
 
         .hero-bg {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            background: url('stay-photo/photo-the-lodge/Pix-Cloudcroft-Discover-the-lodge-6.jpg') center 40% / cover no-repeat;
             animation: kenBurns 20s ease-in-out infinite alternate;
         }
 
@@ -66,7 +66,7 @@
         }
 
         .hero-badge span {
-            color: var(--golden-hour);
+            color: white;
         }
 
         .hero-title .word:nth-child(1) {
@@ -219,43 +219,91 @@
             line-height: 1.6;
         }
 
-        /* ── Property Cards ── */
-        .property-list {
-            display: flex;
-            flex-direction: column;
+        /* ── Property Grid (compact cards matching market-grid) ── */
+        .lodge-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
             margin-top: 2rem;
         }
 
-        .property-card {
+        .lodge-card {
             background: #ffffff;
             border-radius: 12px;
-            padding: 2rem 2rem 2rem 2.5rem;
+            padding: 2rem;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            border-left: 4px solid var(--golden-hour);
+            border-top: 4px solid var(--golden-hour);
             opacity: 0;
             transform: translateY(20px);
+            display: flex;
+            flex-direction: column;
         }
 
-        .property-card.visible {
+        .lodge-card.visible {
             opacity: 1;
             transform: translateY(0);
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
-        .property-card h3 {
+        .lodge-card:nth-child(2).visible {
+            transition-delay: 0.05s;
+        }
+
+        .lodge-card:nth-child(3).visible {
+            transition-delay: 0.1s;
+        }
+
+        .lodge-card:nth-child(4).visible {
+            transition-delay: 0.15s;
+        }
+
+        .lodge-card:nth-child(5).visible {
+            transition-delay: 0.2s;
+        }
+
+        .lodge-card:nth-child(6).visible {
+            transition-delay: 0.25s;
+        }
+
+        .lodge-card:nth-child(7).visible {
+            transition-delay: 0.3s;
+        }
+
+        .lodge-card:nth-child(8).visible {
+            transition-delay: 0.35s;
+        }
+
+        .lodge-card:nth-child(9).visible {
+            transition-delay: 0.4s;
+        }
+
+        .lodge-card img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .lodge-card-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .lodge-card h3 {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             color: var(--midnight);
             margin-bottom: 0.35rem;
         }
 
         .property-type {
             display: inline-block;
+            align-self: flex-start;
             background: #000000;
             color: #ffffff;
-            font-size: 0.7rem;
+            font-size: 0.6rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -264,40 +312,46 @@
             margin-bottom: 0.75rem;
         }
 
-        .property-tagline {
-            font-style: italic;
-            font-size: 0.9rem;
-            color: var(--granite);
-            margin-bottom: 1rem;
-        }
-
-        .property-card>p {
-            color: var(--granite);
-            font-size: 0.95rem;
-            line-height: 1.7;
-            margin-bottom: 1.25rem;
-        }
-
-        .property-detail {
-            margin-bottom: 1rem;
-        }
-
-        .property-detail h4 {
-            font-family: 'DM Sans', sans-serif;
-            font-weight: 700;
-            font-size: 0.9rem;
-            color: var(--midnight);
-            margin-bottom: 0.35rem;
-            margin-top: 0;
-        }
-
-        .property-detail p {
+        .lodge-card p {
             color: var(--granite);
             font-size: 0.9rem;
             line-height: 1.6;
-            margin: 0;
+            margin-bottom: 0.75rem;
         }
 
+        .lodge-card-contact {
+            margin-top: auto;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            font-size: 0.8rem;
+            color: var(--granite);
+            line-height: 1.8;
+        }
+
+        .lodge-card-contact a {
+            color: var(--alpine);
+            text-decoration: none;
+        }
+
+        .lodge-card-contact a:hover {
+            text-decoration: underline;
+        }
+
+        .lodge-card-guide {
+            display: inline-block;
+            margin-top: 0.75rem;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: steelblue;
+            text-decoration: none;
+        }
+
+        .lodge-card-guide:hover {
+            text-decoration: underline;
+        }
+
+        /* Legacy property-contact kept for any other usage */
         .property-contact {
             margin-top: 1.25rem;
             padding-top: 1rem;
@@ -454,7 +508,7 @@
         }
 
         .pick-card {
-            background: #000000;
+            background: #c9e0a5;
             border-radius: 12px;
             padding: 1.75rem;
             color: #ffffff;
@@ -495,18 +549,19 @@
         .pick-card-icon {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
+            display: none;
         }
 
         .pick-card h3 {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
             font-size: 1rem;
-            color: var(--golden-hour);
+            color: #94692b;
             margin-bottom: 0.5rem;
         }
 
         .pick-card p {
-            color: rgba(255, 255, 255, 0.8);
+            color: #212121;
             font-size: 0.85rem;
             line-height: 1.6;
         }
@@ -614,10 +669,11 @@
             background: #000000;
             color: #ffffff;
             padding: 4rem 2rem;
+            display: none;
         }
 
         .bottom-line-inner {
-            max-width: 800px;
+            max-width: 400px;
             margin: 0 auto;
             text-align: center;
         }
@@ -626,8 +682,9 @@
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
             font-size: 1.8rem;
-            color: var(--golden-hour);
+            color: #e47911;
             margin-bottom: 1.5rem;
+            text-align: center;
         }
 
         .bottom-line-inner p {
@@ -636,6 +693,7 @@
             line-height: 1.8;
             margin-bottom: 1.25rem;
         }
+
 
         /* ── CTA Section ── */
         .cta-section {
@@ -687,6 +745,10 @@
 
         /* ── Responsive ── */
         @media (max-width: 1024px) {
+            .lodge-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .market-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -709,6 +771,10 @@
         }
 
         @media (max-width: 768px) {
+            .lodge-grid {
+                grid-template-columns: 1fr;
+            }
+
             .market-grid {
                 grid-template-columns: 1fr;
             }
@@ -761,7 +827,7 @@
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="../stay/lodging.html">Stay</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
                 <a href="../eat/complete-guide-to-dining.html">Eat</a>
                 <a href="../do/complete-guide-to-activities.html">Explore</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
@@ -776,7 +842,7 @@
         </div>
     </header>
     <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
-        <a href="../stay/lodging.html">Stay</a>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-to-dining.html">Eat</a>
         <a href="../do/complete-guide-to-activities.html">Explore</a>
         <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
@@ -922,505 +988,182 @@
                     <h2 class="section-title section-title-centered">Best-Known Lodging Options</h2>
                 </div>
 
-                <div class="property-list">
+                <div class="fade-in" style="max-width: 800px; margin: 0 auto 2rem auto;">
+                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
+                        Cloudcroft&rsquo;s lodging market runs from a historic 1899 resort to budget hostels, with cabin
+                        clusters, B&amp;Bs, motels, and a large rental layer in between. Each property has a different
+                        personality and a different guest fit. Below are the best-known options &mdash; click through
+                        for full booking guides with rooms, photos, and what to verify before you book.
+                    </p>
+                </div>
 
-                    <!-- ──── 1. The Lodge at Cloudcroft ──── -->
-                    <div class="property-card">
-                        <img src="../media/lodge-lobby-rustic-chandelier.webp"
-                            style="width: 100%; height: 300px; object-fit: cover;">
+                <div class="lodge-grid">
+
+                    <div class="lodge-card">
+                        <img src="stay-photo/photo-the-lodge/cloudcroft-lodge-horses-blue-sky.jpg"
+                            alt="The Lodge at Cloudcroft exterior" loading="lazy">
                         <h3>The Lodge at Cloudcroft</h3>
                         <span class="property-type">Historic Resort</span>
-                        <p class="property-tagline">Cloudcroft's signature historic stay, dating to 1899.</p>
-
-                        <div class="property-detail">
-                            <h4>What it is</h4>
-                            <p>Cloudcroft's signature historic stay. The current official site presents it as a hotel
-                                dating to 1899, with restaurant and lounge service and a golf course.</p>
+                        <p>Cloudcroft&rsquo;s signature stay since 1899. On-site dining at 1899, golf course, pool, and
+                            the most iconic atmosphere in town. Best for couples, golfers, and destination weekenders.
+                        </p>
+                        <div class="lodge-card-contact">
+                            &#x1F4CD; 601 Corona Place<br>
+                            &#x1F310; <a href="https://www.223collectionhotels.com/the-lodge" target="_blank"
+                                rel="noopener noreferrer">223collectionhotels.com</a>
                         </div>
-                        <div class="property-detail">
-                            <h4>What stands out</h4>
-                            <p>This is the property most clearly tied to Cloudcroft's old-guard identity. It sells
-                                history, views, food and drink, and a sense of occasion. The current operator site also
-                                presents the in-house restaurant as 1899 and positions the property as part of a broader
-                                hotel collection.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Guest fit</h4>
-                            <p>Best for couples, history-minded travelers, weekenders, golfers, and guests who want a
-                                destination stay rather than just a place to sleep.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Likely drawbacks</h4>
-                            <p>Historic hotels often trade some uniformity for character. Rooms are described as unique
-                                rather than standardized. Travelers who value predictable chain-style layouts or modern
-                                sameness may prefer something else.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Confirmed amenities</h4>
-                            <p>Restaurant, lounge dining, golf course, pool shown on major booking profile, unique
-                                rooms, on-site food and beverage.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Food &amp; drink</h4>
-                            <p>Yes. The current official site promotes 1899 and lounge dining.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Overall feel</h4>
-                            <p>Historic, romantic, destination-driven, and the most iconic stay in town.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>2026 context</h4>
-                            <p>The property is now presented through the 223 Collection Hotels site rather than the
-                                older Lodge domain. That suggests a more formal repositioning under a collection-style
-                                brand. Chamber text appears older and still references Rebecca's, but the current
-                                official hotel site promotes 1899 instead.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Planning note</h4>
-                            <p>If food and drink on site matter, this is the clearest full-service option in Cloudcroft.
-                            </p>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 601 Corona Place, Cloudcroft, NM 88317</span>
-                            <span>&#x1F310; <a href="https://www.223collectionhotels.com/the-lodge" target="_blank"
-                                    rel="noopener noreferrer">223collectionhotels.com/the-lodge</a></span>
-                        </div>
-
+                        <a href="guide-to-the-lodge-at-cloudcroft-2026.html" class="lodge-card-guide">Read full guide
+                            &rarr;</a>
                     </div>
 
-                    <!-- ──── 2. The Grand Cloudcroft Hotel ──── -->
-                    <div class="property-card">
+                    <div class="lodge-card">
+                        <img src="stay-photo/photo-grand-hotel/lodging-grand-cloudcroft-hotel.jpg"
+                            alt="The Grand Cloudcroft Hotel exterior" loading="lazy">
                         <h3>The Grand Cloudcroft Hotel</h3>
                         <span class="property-type">Hotel</span>
-                        <p class="property-tagline">A more conventional independent hotel on James Canyon Highway.</p>
-
-                        <div class="property-detail">
-                            <h4>What it is</h4>
-                            <p>A more conventional independent hotel on James Canyon Highway, with online booking,
-                                standard guest-room categories, and ADA room types listed on its official site.</p>
+                        <p>A more conventional independent hotel on James Canyon Highway. Standard rooms with Wi-Fi,
+                            work desk, mini fridge, and ADA options. Best for travelers who want a simple, practical
+                            hotel setup.</p>
+                        <div class="lodge-card-contact">
+                            &#x1F4CD; 1207 James Canyon Hwy<br>
+                            &#x1F310; <a href="https://www.grandcloudcroft.com/" target="_blank"
+                                rel="noopener noreferrer">grandcloudcroft.com</a>
                         </div>
-                        <div class="property-detail">
-                            <h4>What stands out</h4>
-                            <p>Compared with The Lodge, this looks more practical and standardized. The official room
-                                listings emphasize basics that travelers care about: Wi-Fi, work desk, mini
-                                refrigerator, coffee station, and some pet-friendly room types.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Guest fit</h4>
-                            <p>Best for travelers who want a simpler hotel setup, families needing standard room types,
-                                or guests who want something more straightforward than a historic resort stay.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Likely drawbacks</h4>
-                            <p>It does not appear to offer the same sense of history or on-site destination atmosphere
-                                as The Lodge. Its appeal is more about convenience than romance.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Confirmed amenities</h4>
-                            <p>Wi-Fi, work desk, coffee station, mini refrigerator, bath products, ADA room types, some
-                                pet-friendly rooms.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Food &amp; drink</h4>
-                            <p>Not confirmed on site as an in-house restaurant property.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Overall feel</h4>
-                            <p>Practical, clean-lined, convenience-driven.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>2026 context</h4>
-                            <p>Active official site and booking engine. Chamber and hotel site align on address and
-                                contact details.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Planning note</h4>
-                            <p>Good option for travelers who want a recognizable hotel format without paying for
-                                historic ambiance.</p>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 1207 James Canyon Hwy, Cloudcroft, NM 88317</span>
-                            <span>&#x1F310; <a href="https://www.grandcloudcroft.com/" target="_blank"
-                                    rel="noopener noreferrer">grandcloudcroft.com</a></span>
-                        </div>
+                        <a href="stay-grand-cloudcroft-hotel.html" class="lodge-card-guide">Read full guide &rarr;</a>
                     </div>
 
-                    <!-- ──── 3. Dusty Boots Motel & Caf&eacute; ──── -->
-                    <div class="property-card">
+                    <div class="lodge-card">
+                        <img src="stay-photo/photo-dusty-boots-motel/lodging-dusty-boots.jpg"
+                            alt="Dusty Boots Motel and Cafe exterior" loading="lazy">
                         <h3>Dusty Boots Motel &amp; Caf&eacute;</h3>
                         <span class="property-type">Motel &amp; Caf&eacute;</span>
-                        <p class="property-tagline">A themed, small-scale motel with an attached caf&eacute; on James
-                            Canyon Highway.</p>
-
-                        <div class="property-detail">
-                            <h4>What it is</h4>
-                            <p>A themed, small-scale motel with an attached caf&eacute;. The official site emphasizes
-                                room d&eacute;cor, homemade food, and a homespun approach rather than a stripped-down
-                                budget motel experience.</p>
+                        <p>A themed, small-scale motel with an attached caf&eacute; serving homemade food. Quirky,
+                            nostalgic, and more personal than polished. Best for travelers who like roadside character
+                            with on-site breakfast.</p>
+                        <div class="lodge-card-contact">
+                            &#x1F4CD; 1315 James Canyon Hwy<br>
+                            &#x1F310; <a href="https://www.thedustyboots.com/" target="_blank"
+                                rel="noopener noreferrer">thedustyboots.com</a>
                         </div>
-                        <div class="property-detail">
-                            <h4>What stands out</h4>
-                            <p>This is one of the few places in town that combines motel lodging with a distinct dining
-                                identity. The property leans hard into personality. The official site highlights themed
-                                rooms, made-from-scratch food, and room service for guests.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Guest fit</h4>
-                            <p>Best for travelers who like independent roadside properties with character, and for
-                                guests who value having breakfast or caf&eacute; food on site.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Likely drawbacks</h4>
-                            <p>The official site includes some clearly seasonal dining hours and some language that
-                                reads more promotional than operational. Travelers should verify current caf&eacute;
-                                hours directly, especially outside summer.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Confirmed amenities</h4>
-                            <p>Rooms with one king or two queens, caf&eacute;, room service for guests, direct booking.
-                            </p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Food &amp; drink</h4>
-                            <p>Yes. The site lists the Dusty Boots Caf&eacute; and gives summer hours for breakfast
-                                through dinner.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Overall feel</h4>
-                            <p>Quirky, nostalgic, casual, and more personal than polished.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>2026 context</h4>
-                            <p>Appears active on its own booking-enabled site and in the Chamber directory.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Planning note</h4>
-                            <p>Strong choice if you want a simple stay with personality and do not need a full-service
-                                resort.</p>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 1315 James Canyon Hwy, Cloudcroft, NM 88317</span>
-                            <span>&#x1F310; <a href="https://www.thedustyboots.com/" target="_blank"
-                                    rel="noopener noreferrer">thedustyboots.com</a></span>
-                        </div>
+                        <a href="stay-dusty-boots-motel-cloudcroft.html" class="lodge-card-guide">Read full guide
+                            &rarr;</a>
                     </div>
 
-                    <!-- ──── 4. The Cabins at Cloudcroft ──── -->
-                    <div class="property-card">
+                    <div class="lodge-card">
+                        <img src="stay-photo/photo-cabins-at/lodging-cabins-at-cloudcroft.JPG"
+                            alt="The Cabins at Cloudcroft" loading="lazy">
                         <h3>The Cabins at Cloudcroft</h3>
                         <span class="property-type">Cabin Resort</span>
-                        <p class="property-tagline">A professionally run cabin cluster in town, with its own booking
-                            engine.</p>
-
-                        <div class="property-detail">
-                            <h4>What it is</h4>
-                            <p>A professionally run cabin cluster in town, with its own booking engine and a clear focus
-                                on rustic cabins with basic modern comforts.</p>
+                        <p>A professionally run cabin cluster in town with kitchens, fireplaces, and a unified booking
+                            engine. The cleanest middle ground between a hotel and a vacation rental. Best for families
+                            and couples wanting cabin privacy.</p>
+                        <div class="lodge-card-contact">
+                            &#x1F4CD; 1006 Coyote Ave<br>
+                            &#x1F310; <a href="https://www.cabinsatcloudcroft.com/" target="_blank"
+                                rel="noopener noreferrer">cabinsatcloudcroft.com</a>
                         </div>
-                        <div class="property-detail">
-                            <h4>What stands out</h4>
-                            <p>This may be the cleanest middle ground between a hotel and a one-off vacation rental. The
-                                property offers a unified operation, consistent branding, and cabin privacy, without the
-                                friction that can come with individual-owner rentals.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Guest fit</h4>
-                            <p>Best for families, couples who want more space than a hotel room, and travelers who want
-                                cabin atmosphere without giving up organized booking.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Likely drawbacks</h4>
-                            <p>The brand promise is explicitly rustic. Travelers wanting sleek interiors or resort-style
-                                amenities may find it more simple than luxurious.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Confirmed amenities</h4>
-                            <p>Kitchens or kitchen setups described by Chamber text, living room space, fireplaces or
-                                wood stoves per Chamber description, outdoor pavilion, BBQ grills, picnic areas, online
-                                booking.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Food &amp; drink</h4>
-                            <p>No on-site restaurant confirmed.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Overall feel</h4>
-                            <p>Rustic, practical, family-friendly, and strongly suited to the Cloudcroft experience.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>2026 context</h4>
-                            <p>Active official site, Chamber listing, and live booking path.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Planning note</h4>
-                            <p>One of the safer picks for travelers who know they want a cabin, not a room.</p>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 1006 Coyote Ave, Cloudcroft, NM 88317</span>
-                            <span>&#x1F310; <a href="https://www.cabinsatcloudcroft.com/" target="_blank"
-                                    rel="noopener noreferrer">cabinsatcloudcroft.com</a></span>
-                        </div>
+                        <a href="stay-cabins-at-cloudcroft.html" class="lodge-card-guide">Read full guide &rarr;</a>
                     </div>
 
-                    <!-- ──── 5. The Crofting Bed & Breakfast ──── -->
-                    <div class="property-card">
-                        <h3>The Crofting Bed &amp; Breakfast</h3>
+                    <div class="lodge-card">
+                        <img src="stay-photo/photo-crofting-inn/crofting-inn-front.jpg"
+                            alt="The Crofting Bed and Breakfast exterior" loading="lazy">
+                        <h3>The Crofting B&amp;B</h3>
                         <span class="property-type">B&amp;B</span>
-                        <p class="property-tagline">A historic B&amp;B in a residential-feeling setting, a short
-                            distance from Cloudcroft's center.</p>
-
-                        <div class="property-detail">
-                            <h4>What it is</h4>
-                            <p>A historic B&amp;B in a residential-feeling setting, a short distance from Cloudcroft's
-                                center. Its official site emphasizes eight individually furnished rooms, balconies, and
-                                breakfast.</p>
+                        <p>A 1909 historic house with 8 individually furnished rooms, private balconies, and home-cooked
+                            breakfast. Intimate, quiet, and host-driven. Best for couples and travelers who want
+                            character over convenience.</p>
+                        <div class="lodge-card-contact">
+                            &#x1F4CD; 300 Swallow Place<br>
+                            &#x1F310; <a href="https://www.thecrofting.com/" target="_blank"
+                                rel="noopener noreferrer">thecrofting.com</a>
                         </div>
-                        <div class="property-detail">
-                            <h4>What stands out</h4>
-                            <p>This is a classic small-town B&amp;B play: historic house, personal hosting, fewer rooms,
-                                and a slower pace. It is better understood as an inn experience than as a hotel.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Guest fit</h4>
-                            <p>Best for couples, repeat visitors, and travelers who want a quieter, hosted stay.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Likely drawbacks</h4>
-                            <p>Fewer rooms means less flexibility. Travelers wanting anonymity, late arrivals, or
-                                hotel-like independence should verify check-in expectations directly.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Confirmed amenities</h4>
-                            <p>Eight rooms on current official and booking pages, breakfast, private balconies mentioned
-                                on official site.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Food &amp; drink</h4>
-                            <p>Breakfast appears to be part of the model.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Overall feel</h4>
-                            <p>Historic, intimate, quiet, and more host-driven than service-program-driven.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>2026 context</h4>
-                            <p>The current official site is active and updated through 2025 copyright language; large
-                                booking platforms still list the property as operating.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Planning note</h4>
-                            <p>Good choice when the stay itself is part of the trip.</p>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 300 Swallow Place, Cloudcroft, NM 88317</span>
-                            <span>&#x1F310; <a href="https://www.thecrofting.com/" target="_blank"
-                                    rel="noopener noreferrer">thecrofting.com</a></span>
-                        </div>
+                        <a href="stay-crofting-inn-cloudcroft.html" class="lodge-card-guide">Read full guide &rarr;</a>
                     </div>
 
-                    <!-- ──── 6. Burro Street Boarding House ──── -->
-                    <div class="property-card">
-                        <h3>Burro Street Boarding House Bed &amp; Breakfast</h3>
+                    <div class="lodge-card">
+                        <img src="stay-photo/photo-summit-inn/IMG_5063.jpg"
+                            alt="The Summit Inn renovated room in Cloudcroft" loading="lazy">
+                        <h3>The Summit Inn</h3>
+                        <span class="property-type">Inn</span>
+                        <p>A small, renovated, owner-run inn with 10 rooms, kitchenettes in every room, free Wi-Fi, and
+                            free parking. Walking distance to Burro Avenue. Best for budget-conscious travelers who want
+                            a practical base in town.</p>
+                        <div class="lodge-card-contact">
+                            &#x1F4CD; 103 Chipmunk Ave<br>
+                            &#x1F310; <a href="https://www.summitinnnm.com" target="_blank"
+                                rel="noopener noreferrer">summitinnnm.com</a>
+                        </div>
+                        <a href="stay-at-the-summit-inn-Cloudcroft-2026.html" class="lodge-card-guide">Read full guide
+                            &rarr;</a>
+                    </div>
+
+                    <div class="lodge-card">
+                        <img src="stay-photo/photo-hostel/cloudcroft-hostel-2.jpg"
+                            alt="Cloudcroft Hostel exterior from trail" loading="lazy">
+                        <h3>Cloudcroft Hostel</h3>
+                        <span class="property-type">Hostel</span>
+                        <p>A genuine mountain hostel on Highway 82 in High Rolls with dorm beds, private dorms, group
+                            rentals for up to 25, a shared kitchen, and trails from the door. The most budget-friendly
+                            option near Cloudcroft.</p>
+                        <div class="lodge-card-contact">
+                            &#x1F4CD; 1049 Hwy 82, High Rolls<br>
+                            &#x1F310; <a href="https://www.cloudcrofthostel.com/" target="_blank"
+                                rel="noopener noreferrer">cloudcrofthostel.com</a>
+                        </div>
+                        <a href="stay-at-cloudcroft-hostel-2026.html" class="lodge-card-guide">Read full guide
+                            &rarr;</a>
+                    </div>
+
+                    <div class="lodge-card">
+                        <img src="stay-photo/photo-burro-boardinghouse/burro-boarding-house-00024.jpg"
+                            alt="Burro Street Boarding House exterior from trail" loading="lazy">
+                        <h3>Burro Street Boarding House</h3>
                         <span class="property-type">B&amp;B</span>
-                        <p class="property-tagline">A long-running B&amp;B presence on Burro Avenue, one of the most
-                            central locations in town.</p>
-
-                        <div class="property-detail">
-                            <h4>What it is</h4>
-                            <p>A long-running B&amp;B presence on Burro Avenue. Chamber and member-profile pages confirm
-                                its listing, phone number, and email, but publicly available current detail is limited.
-                            </p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>What stands out</h4>
-                            <p>Location. If the Chamber information is current, this is one of the more central
-                                B&amp;B-style stays.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Guest fit</h4>
-                            <p>Best for travelers who want a local, independent stay and do not mind calling rather than
-                                relying on polished web information.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Likely drawbacks</h4>
-                            <p>This is one of the weakest current web profiles in the market. Official public-facing
-                                detail appears sparse. Amenities, room mix, and booking process are not clearly
-                                presented online.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Confirmed amenities</h4>
-                            <p>Not confirmed beyond basic B&amp;B identity and contact details in Chamber sources.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Food &amp; drink</h4>
-                            <p>Not confirmed.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Overall feel</h4>
-                            <p>Likely old-school and local, but current detail is limited.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>2026 context</h4>
-                            <p>Chamber pages still list it as a member business.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Planning note</h4>
-                            <p>Worth a direct call if you want a smaller local stay, but do not book based on
-                                assumptions.</p>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 608 Burro Ave, Cloudcroft, NM 88317</span>
+                        <p>A long-running B&amp;B on Burro Avenue &mdash; one of the most central locations in town.
+                            Limited web presence; call directly for current availability and details.</p>
+                        <div class="lodge-card-contact">
+                            &#x1F4CD; 608 Burro Ave
                         </div>
                     </div>
 
-                    <!-- ──── 7. Spruce Cabins ──── -->
-                    <div class="property-card">
+                    <div class="lodge-card">
+                        <div class="lodge-card-icon">&#x1F332;</div>
                         <h3>Spruce Cabins</h3>
-                        <span class="property-type">Cabin Property</span>
-                        <p class="property-tagline">A straightforward cabin operation aimed at travelers who want a
-                            classic Cloudcroft cabin.</p>
-
-                        <div class="property-detail">
-                            <h4>What it is</h4>
-                            <p>A cabin property with online reservations and a range of cabin sizes.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>What stands out</h4>
-                            <p>This looks like a straightforward cabin operation aimed at travelers who want a classic
-                                Cloudcroft cabin without the complexity of dealing with a one-off owner listing.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Guest fit</h4>
-                            <p>Best for travelers who want cabin atmosphere, online booking, and simple in-town access.
-                            </p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Likely drawbacks</h4>
-                            <p>Public-facing detail is lighter than at The Cabins at Cloudcroft. Reservations appear to
-                                be online-only.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Confirmed amenities</h4>
-                            <p>Cabin categories, online reservations, military and senior discounts.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Food &amp; drink</h4>
-                            <p>No on-site food service confirmed.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Overall feel</h4>
-                            <p>Rustic, direct, and convenience-oriented for cabin travelers.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>2026 context</h4>
-                            <p>Active booking engine and Chamber presence.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Planning note</h4>
-                            <p>A practical cabin option, especially if your priority is a simple reservation path.</p>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 100 Lynx Ave, Cloudcroft, NM 88317</span>
-                            <span>&#x1F310; <a href="https://sprucecabins.onressoftware.com/" target="_blank"
-                                    rel="noopener noreferrer">sprucecabins.onressoftware.com</a></span>
+                        <span class="property-type">Cabins</span>
+                        <p>A straightforward cabin operation with online reservations and a range of sizes. Rustic,
+                            direct, and convenience-oriented. Military and senior discounts available.</p>
+                        <div class="lodge-card-contact">
+                            &#x1F4CD; 100 Lynx Ave<br>
+                            &#x1F310; <a href="https://sprucecabins.onressoftware.com/" target="_blank"
+                                rel="noopener noreferrer">sprucecabins.onressoftware.com</a>
                         </div>
                     </div>
 
-                    <!-- ──── 8. Nostalgia Cabins ──── -->
-                    <div class="property-card">
+                    <div class="lodge-card">
+                        <div class="lodge-card-icon">&#x1F3D5;&#xFE0F;</div>
                         <h3>Nostalgia Cabins</h3>
-                        <span class="property-type">Cabin Property</span>
-                        <p class="property-tagline">A collection of individual cabins and a clubhouse, marketed through
-                            its own property site.</p>
-
-                        <div class="property-detail">
-                            <h4>What it is</h4>
-                            <p>A collection of individual cabins and a clubhouse, marketed through its own property site
-                                and Chamber listing.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>What stands out</h4>
-                            <p>The property functions more like a grouped vacation-rental compound than a hotel. The
-                                clubhouse and multiple cabin units may appeal to reunions or groups.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Guest fit</h4>
-                            <p>Best for family groups, reunions, or travelers who want separate cabins rather than one
-                                building.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Likely drawbacks</h4>
-                            <p>It reads more like a vacation-rental setup than an inn with staff-forward service.
-                                Travelers should verify check-in logistics and exactly what is included in each cabin.
-                            </p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Confirmed amenities</h4>
-                            <p>Multiple separate cabins, clubhouse, event-oriented clubhouse use.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Food &amp; drink</h4>
-                            <p>No on-site dining confirmed.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Overall feel</h4>
-                            <p>Rustic, group-friendly, and more functional than polished.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>2026 context</h4>
-                            <p>Active official site and Chamber listing.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Planning note</h4>
-                            <p>Better for groups than for travelers seeking classic hotel service.</p>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 201 Aspen, Cloudcroft, NM 88317</span>
-                            <span>&#x1F310; <a href="https://nostalgiacabins.com/" target="_blank"
-                                    rel="noopener noreferrer">nostalgiacabins.com</a></span>
+                        <span class="property-type">Cabins</span>
+                        <p>A collection of individual cabins plus a clubhouse. Functions more like a grouped rental
+                            compound than a hotel. Best for family reunions, groups, and events.</p>
+                        <div class="lodge-card-contact">
+                            &#x1F4CD; 201 Aspen<br>
+                            &#x1F310; <a href="https://nostalgiacabins.com/" target="_blank"
+                                rel="noopener noreferrer">nostalgiacabins.com</a>
                         </div>
                     </div>
 
-                    <!-- ──── 9. Cloudcroft Properties ──── -->
-                    <div class="property-card">
-                        <h3>Cloudcroft Properties</h3>
-                        <span class="property-type">Property Manager</span>
-                        <p class="property-tagline">A local operator that sells, lists, and manages properties across
-                            the mountain area.</p>
 
-                        <div class="property-detail">
-                            <h4>What it is</h4>
-                            <p>A local operator that sells, lists, and manages properties across the mountain area. It
-                                matters because Cloudcroft's lodging supply is heavily shaped by managed rentals, not
-                                just named inns and hotels.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>What stands out</h4>
-                            <p>If hotel inventory is tight, local managers like this become part of the real lodging
-                                market.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Guest fit</h4>
-                            <p>Best for repeat visitors, families, and longer stays.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Likely drawbacks</h4>
-                            <p>Inventory can vary, and managed rentals require closer reading of each listing.</p>
-                        </div>
-                        <div class="property-detail">
-                            <h4>Planning note</h4>
-                            <p>Important to the market, but not a substitute for travelers who want front-desk service.
-                            </p>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 505 Burro Ave, Suite 10, Cloudcroft, NM 88317</span>
-                            <span>&#x1F310; <a href="https://www.cloudcroftproperties.com" target="_blank"
-                                    rel="noopener noreferrer">cloudcroftproperties.com</a></span>
-                        </div>
+
+                    <div class="tip-box">
+                        <span>&#x1F4D6;</span>
+                        <p><strong>Want the full details?</strong> Several properties above have dedicated booking
+                            guides
+                            with room-by-room details, photos, amenities, guest reviews, and what to verify before you
+                            book.
+                            Look for the &ldquo;Read full guide&rdquo; links.</p>
                     </div>
-
                 </div>
-            </div>
         </section>
 
 
@@ -1788,7 +1531,7 @@
                 });
             }, observerOptions);
 
-            document.querySelectorAll('.market-card, .property-card, .compare-card, .pick-card, .tip-card, .fade-in').forEach(function (el) {
+            document.querySelectorAll('.market-card, .lodge-card, .property-card, .compare-card, .pick-card, .tip-card, .fade-in').forEach(function (el) {
                 fadeObserver.observe(el);
             });
         })();

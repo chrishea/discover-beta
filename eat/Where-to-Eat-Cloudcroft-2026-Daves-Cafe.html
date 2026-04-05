@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Caf&eacute; | Casual Dining in Cloudcroft, NM &mdash; Burgers, Breakfast &amp; Live Music</title>
+    <meta name="description" content="Dave's Caf&eacute; at 300 Burro Ave in Cloudcroft serves burgers, breakfast, and comfort food in a casual setting. A long-running local favorite with live music.">
+    <meta name="keywords" content="daves cafe cloudcroft, cloudcroft restaurants, burro avenue dining, cloudcroft burgers, cloudcroft breakfast, cloudcroft live music, cloudcroft nm dining">
+    <link rel="canonical" href="https://discovercloudcroft.com/eat/Where-to-Eat-Cloudcroft-2026-Daves-Cafe-content.html">
+
+    <meta property="og:title" content="Dave's Caf&eacute; | Casual Dining in Cloudcroft, NM">
+    <meta property="og:description" content="Burgers, breakfast, and comfort food at a long-running Cloudcroft favorite on Burro Avenue.">
+    <meta property="og:url" content="https://discovercloudcroft.com/eat/Where-to-Eat-Cloudcroft-2026-Daves-Cafe-content.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dave's Caf&eacute; | Cloudcroft, NM">
+    <meta name="twitter:description" content="Burgers, breakfast, and comfort food at a long-running Cloudcroft favorite on Burro Avenue.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Dave's Caf\u00e9",
+      "description": "Long-running casual restaurant on Burro Avenue in Cloudcroft, NM serving burgers, breakfast, and comfort food. Live music venue.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "300 Burro Ave",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "telephone": "(575) 682-2127",
+      "servesCuisine": ["American", "Burgers", "Breakfast", "Comfort Food"]
+    }
+    </script>
+
+    <style>
+.hero { height: 65vh; min-height: 450px; }
+.hero-bg {
+    background: linear-gradient(135deg, #1a1207 0%, #3b2a14 50%, #5e4228 100%);
+    animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+}
+.hero-badge span { color: var(--golden-hour); }
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-subtitle { opacity: 0; animation: fadeUp 0.8s ease 1s forwards; }
+.hero-ctas { opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards; }
+.info-bar { background: var(--cream-dark); }
+.info-bar-item { color: var(--charcoal); }
+.info-bar-item a { color: var(--charcoal); text-decoration: none; transition: color 0.3s; }
+.info-bar-item a:hover { color: var(--golden-hour); }
+.info-bar-icon {
+    width: 40px; height: 40px;
+    background: rgba(0, 0, 0, 0.15); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+}
+
+/* -- Menu cards -- */
+.menu-section { background: var(--cloud-drift); }
+.menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+.menu-card {
+    background: #ffffff; border-radius: 12px; padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border-top: 4px solid var(--golden-hour);
+    opacity: 0; transform: translateY(20px);
+}
+.menu-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease; }
+.menu-card:nth-child(2).visible { transition-delay: 0.1s; }
+.menu-card:nth-child(3).visible { transition-delay: 0.2s; }
+.menu-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.menu-card h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--midnight); margin-bottom: 0.5rem; }
+.menu-card p { color: var(--granite); font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.75rem; }
+.menu-items { list-style: none; margin-top: 1rem; }
+.menu-items li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(107, 123, 141, 0.2); color: var(--midnight); font-size: 0.95rem; }
+.menu-items li:last-child { border-bottom: none; }
+
+/* -- Highlights -- */
+.highlight-card { background: rgba(0, 0, 0, 0.05); border: 1px solid rgba(0, 0, 0, 0.1); }
+.highlight-card:hover { background: rgba(0, 0, 0, 0.1); }
+.highlight-card h3 { color: #2B2B2B; }
+.highlight-card p { color: #555555; }
+
+/* -- Tip Box -- */
+.tip-box {
+    display: flex; align-items: flex-start; gap: 1rem;
+    background: #fffbe6; border: 1px solid #f0d060;
+    border-radius: 12px; padding: 1.25rem 1.5rem; margin-top: 2rem;
+}
+.tip-box p { color: var(--midnight); font-size: 0.9rem; line-height: 1.6; margin: 0; }
+
+/* -- CTA -- */
+.cta-section { background: #f2f2f2; }
+.cta-container h2 { color: #2B2B2B; }
+.cta-container p { color: #555555; }
+.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* -- Footer gradient -- */
+.site-footer::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+    background-size: 300% 100%; animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder { 0% { background-position: 0% 0; } 100% { background-position: 300% 0; } }
+
+/* -- Responsive -- */
+@media (max-width: 1024px) {
+    .menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .menu-grid { grid-template-columns: 1fr; }
+    .info-bar-inner { gap: 1.5rem; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="complete-guide-to-dining.html">Eat</a>
+                <a href="../do/complete-guide-to-activities.html">Explore</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../plan.html">Plan</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="complete-guide-to-dining.html">Eat</a>
+        <a href="../do/complete-guide-to-activities.html">Explore</a>
+        <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+        <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../plan.html">Plan</a>
+        <a href="../contact.html">Contact</a>
+    </div>
+
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Dave's Caf&eacute; in Cloudcroft, New Mexico"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Dining</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Dave&rsquo;s </span>
+                <span class="word">Caf&eacute; </span>
+            </h1>
+            <p class="hero-subtitle">Burgers, breakfast, and comfort food at a long-running Cloudcroft institution on Burro Avenue &mdash; with live music and local character since 1984.</p>
+            <div class="hero-ctas">
+                <a href="#menu" class="btn-primary">See the Menu</a>
+                <a href="#visit" class="btn-secondary">Plan Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>300 Burro Ave, Cloudcroft</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F354;</div>
+                <span>Burgers &amp; Comfort Food</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4DE;</div>
+                <span><a href="tel:5756822127">(575) 682-2127</a></span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F3B5;</div>
+                <span>Live Music Venue</span>
+            </div>
+        </div>
+    </div>
+
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-label="About Dave's Caf&eacute;">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">A Cloudcroft Institution</h2>
+                        <p>
+                            Dave&rsquo;s Caf&eacute; is one of those durable Cloudcroft spots that matters because it is steady, familiar, and woven into local habit. Sitting at 300 Burro Avenue, it has been part of the village since 1984 when David Venable opened the original restaurant. His youngest son, Chuck Venable, now runs the place.
+                        </p>
+                        <p>
+                            The feel is more bar-and-grill or burger joint than polished caf&eacute;. This is a locals-and-visitors crossover place &mdash; a casual dining room where you can get burgers, breakfast, and comfort food without any formality. It also functions as a live-music spot, hosting performances throughout the week.
+                        </p>
+                        <p>
+                            If you want a familiar sit-down meal in Cloudcroft with some local character, Dave&rsquo;s is the kind of place that delivers exactly that.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F354; Burgers</span>
+                            <span class="about-feature">&#x1F373; Breakfast</span>
+                            <span class="about-feature">&#x1F3B5; Live Music</span>
+                            <span class="about-feature">&#x1F37D;&#xFE0F; Comfort Food</span>
+                            <span class="about-feature">&#x1F4CD; Burro Ave</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in" style="display: flex; align-items: center; justify-content: center; background: var(--cloud-drift); border-radius: 12px; min-height: 300px;">
+                        <span style="font-size: 6rem;">&#x1F354;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section menu-section" id="menu" aria-label="Menu">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">The Menu</span>
+                    <h2 class="section-title section-title-centered">What&rsquo;s Cooking</h2>
+                    <p class="section-description">Casual comfort food with a grill-style focus. Menu items may change &mdash; check directly for current offerings.</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F354;</div>
+                        <h3>Burgers &amp; Grill</h3>
+                        <p>The core of the menu. Grill-style burgers and hearty plates built for appetite, not presentation.</p>
+                        <ul class="menu-items">
+                            <li>Classic burgers</li>
+                            <li>BBQ bacon ranch burger</li>
+                            <li>Beer-battered onion rings</li>
+                            <li>Grill-style comfort plates</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F373;</div>
+                        <h3>Breakfast</h3>
+                        <p>Breakfast service has been noted at least part of the time. Availability may vary with staffing and season.</p>
+                        <ul class="menu-items">
+                            <li>Breakfast service (check availability)</li>
+                            <li>Morning comfort-food items</li>
+                            <li>Hours may vary by day</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F37D;&#xFE0F;</div>
+                        <h3>Comfort Food</h3>
+                        <p>The broader menu leans into casual American comfort food &mdash; the kind of cooking that fits a mountain-town grill.</p>
+                        <ul class="menu-items">
+                            <li>Casual American fare</li>
+                            <li>Specials rotate</li>
+                            <li>Full-service dining</li>
+                            <li>Dine-in available</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tip-box">
+                    <span>&#x260E;&#xFE0F;</span>
+                    <p><strong>Menu details may change.</strong> The best way to check current offerings is to call <a href="tel:5756822127" style="color: var(--alpine);">(575) 682-2127</a> or check the <a href="https://www.facebook.com/DavesCafe1/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine);">Dave&rsquo;s Caf&eacute; Facebook page</a> for posted specials.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="experience" aria-label="The Experience">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">The Experience</span>
+                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">What to Expect</h2>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F3B5;</div>
+                        <h3>Live Music</h3>
+                        <p>Dave&rsquo;s Caf&eacute; is among the Cloudcroft businesses that host live music throughout the week. It adds a social, small-town layer to a casual meal.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F3D8;&#xFE0F;</div>
+                        <h3>Local Favorite</h3>
+                        <p>This is the kind of place where locals and visitors overlap. No destination-dining pretension &mdash; just steady, familiar food and a relaxed atmosphere.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4C5;</div>
+                        <h3>Since 1984</h3>
+                        <p>Originally opened by David Venable and now run by his son Chuck, Dave&rsquo;s Caf&eacute; has been part of Cloudcroft&rsquo;s Burro Avenue for over four decades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="visit" aria-label="Plan your visit" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Visit</span>
+                    <h2 class="section-title section-title-centered">Visit Dave&rsquo;s Caf&eacute;</h2>
+                    <p class="section-description">Everything you need to know before you go.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h3>Location</h3>
+                        <p>300 Burro Ave, Cloudcroft, NM 88317. On the main street &mdash; walkable from anywhere in the village.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h3>Hours</h3>
+                        <p>Hours may vary and have been affected by staffing. Some days (including Wednesdays and Thursdays) may see reduced hours. Call ahead or check Facebook before visiting.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4DE;</div>
+                        <h3>Contact</h3>
+                        <p>Phone: <a href="tel:5756822127" style="color: var(--alpine); text-decoration: none;">(575) 682-2127</a><br>Email: <a href="mailto:cafe.daves@yahoo.com" style="color: var(--alpine); text-decoration: none;">cafe.daves@yahoo.com</a></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
+                        <h3>Good to Know</h3>
+                        <p>Small-town hours can shift, especially with staffing changes. Dine-in is available. Takeout, delivery, and patio details are not confirmed &mdash; call ahead to check. Alcohol may be available but is not fully confirmed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Burgers, Breakfast &amp; Live Music on Burro Ave</h2>
+                <p>Dave&rsquo;s Caf&eacute; is a Cloudcroft institution &mdash; casual comfort food, live music, and over four decades of local character at 300 Burro Avenue.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.facebook.com/DavesCafe1/" target="_blank" rel="noopener noreferrer" class="btn-primary">Visit on Facebook</a>
+                    <a href="tel:5756822127" class="btn-secondary">Call (575) 682-2127</a>
+                    <a href="complete-guide-to-dining.html" class="btn-secondary">Explore More Dining</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Lodging</a>
+                <a href="complete-guide-to-dining.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Dave&rsquo;s Caf&eacute;</h4>
+                <a href="https://www.facebook.com/DavesCafe1/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="tel:5756822127">(575) 682-2127</a>
+                <a href="mailto:cafe.daves@yahoo.com">cafe.daves@yahoo.com</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>

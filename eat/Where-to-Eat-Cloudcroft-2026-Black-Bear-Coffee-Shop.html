@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Bear Coffee Shop | Coffee &amp; Gallery on Burro Ave, Cloudcroft, NM</title>
+    <meta name="description" content="Black Bear Coffee Shop on Burro Avenue in Cloudcroft serves specialty coffee, seasonal drinks, and gluten-free options. A coffee shop and petite gallery featuring local artists.">
+    <meta name="keywords" content="black bear coffee cloudcroft, cloudcroft coffee shop, burro avenue coffee, cloudcroft cafe, specialty coffee cloudcroft nm, cloudcroft gallery">
+    <link rel="canonical" href="https://discovercloudcroft.com/eat/Where-to-Eat-Cloudcroft-2026-Black-Bear-Coffee-Shop-content.html">
+
+    <meta property="og:title" content="Black Bear Coffee Shop | Coffee &amp; Gallery in Cloudcroft, NM">
+    <meta property="og:description" content="Specialty coffee, seasonal drinks, and a petite gallery on Burro Avenue in Cloudcroft.">
+    <meta property="og:url" content="https://discovercloudcroft.com/eat/Where-to-Eat-Cloudcroft-2026-Black-Bear-Coffee-Shop-content.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Black Bear Coffee Shop | Cloudcroft, NM">
+    <meta name="twitter:description" content="Specialty coffee, seasonal drinks, and a petite gallery on Burro Avenue.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Black Bear Coffee Shop",
+      "description": "Specialty coffee shop and petite gallery on Burro Avenue in Cloudcroft, NM. Coffee drinks, roasted beans, seasonal menus, and gluten-free, dairy-free, and sugar-free options.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "200 Burro Ave",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "telephone": "575-682-1239",
+      "url": "https://www.mybbcoffee.com",
+      "servesCuisine": ["Coffee", "Cafe"]
+    }
+    </script>
+
+    <style>
+.hero { height: 65vh; min-height: 450px; }
+.hero-bg {
+    background: url('eat-photo/photo-eat-black-bear/img_7328.jpg.webp') center 40% / cover no-repeat;
+    background-size: cover;
+    animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+}
+.hero-badge span { color: var(--golden-hour); }
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+.hero-subtitle { opacity: 0; animation: fadeUp 0.8s ease 1s forwards; }
+.hero-ctas { opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards; }
+.info-bar { background: var(--cream-dark); }
+.info-bar-item { color: var(--charcoal); }
+.info-bar-item a { color: var(--charcoal); text-decoration: none; transition: color 0.3s; }
+.info-bar-item a:hover { color: var(--golden-hour); }
+.info-bar-icon {
+    width: 40px; height: 40px;
+    background: rgba(0, 0, 0, 0.15); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+}
+
+/* -- Menu cards -- */
+.menu-section { background: var(--cloud-drift); }
+.menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+.menu-card {
+    background: #ffffff; border-radius: 12px; padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border-top: 4px solid var(--golden-hour);
+    opacity: 0; transform: translateY(20px);
+}
+.menu-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease; }
+.menu-card:nth-child(2).visible { transition-delay: 0.1s; }
+.menu-card:nth-child(3).visible { transition-delay: 0.2s; }
+.menu-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.menu-card h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--midnight); margin-bottom: 0.5rem; }
+.menu-card p { color: var(--granite); font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.75rem; }
+.menu-items { list-style: none; margin-top: 1rem; }
+.menu-items li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(107, 123, 141, 0.2); color: var(--midnight); font-size: 0.95rem; }
+.menu-items li:last-child { border-bottom: none; }
+
+/* -- Highlights -- */
+.highlight-card { background: rgba(0, 0, 0, 0.05); border: 1px solid rgba(0, 0, 0, 0.1); }
+.highlight-card:hover { background: rgba(0, 0, 0, 0.1); }
+.highlight-card h3 { color: #2B2B2B; }
+.highlight-card p { color: #555555; }
+
+/* -- Photo Gallery -- */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; }
+.gallery-item {
+    position: relative; border-radius: 12px; overflow: hidden;
+    aspect-ratio: 4 / 3; opacity: 0; transform: translateY(20px);
+}
+.gallery-item.visible { opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease; }
+.gallery-item:nth-child(2).visible { transition-delay: 0.05s; }
+.gallery-item:nth-child(3).visible { transition-delay: 0.1s; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.gallery-item:hover img { transform: scale(1.05); }
+.gallery-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: #fff; font-size: 0.8rem; font-family: 'DM Sans', sans-serif;
+    opacity: 0; transition: opacity 0.3s ease;
+}
+.gallery-item:hover .gallery-caption { opacity: 1; }
+
+/* -- Tip Box -- */
+.tip-box {
+    display: flex; align-items: flex-start; gap: 1rem;
+    background: #fffbe6; border: 1px solid #f0d060;
+    border-radius: 12px; padding: 1.25rem 1.5rem; margin-top: 2rem;
+}
+.tip-box p { color: var(--midnight); font-size: 0.9rem; line-height: 1.6; margin: 0; }
+
+/* -- CTA -- */
+.cta-section { background: #f2f2f2; }
+.cta-container h2 { color: #2B2B2B; }
+.cta-container p { color: #555555; }
+.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* -- Footer gradient -- */
+.site-footer::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+    background-size: 300% 100%; animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder { 0% { background-position: 0% 0; } 100% { background-position: 300% 0; } }
+
+/* -- Responsive -- */
+@media (max-width: 1024px) {
+    .menu-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .menu-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .info-bar-inner { gap: 1.5rem; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="complete-guide-to-dining.html">Eat</a>
+                <a href="../do/complete-guide-to-activities.html">Explore</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../plan.html">Plan</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="complete-guide-to-dining.html">Eat</a>
+        <a href="../do/complete-guide-to-activities.html">Explore</a>
+        <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+        <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../plan.html">Plan</a>
+        <a href="../contact.html">Contact</a>
+    </div>
+
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Black Bear Coffee Shop in Cloudcroft, New Mexico"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Coffee</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Black </span>
+                <span class="word">Bear </span>
+                <span class="word">Coffee </span>
+            </h1>
+            <p class="hero-subtitle">Specialty coffee, seasonal drinks, roasted beans, and a petite gallery featuring local artists &mdash; right on Burro Avenue in the heart of Cloudcroft.</p>
+            <div class="hero-ctas">
+                <a href="#menu" class="btn-primary">See What&rsquo;s Brewing</a>
+                <a href="#visit" class="btn-secondary">Plan Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>200 Burro Ave, Cloudcroft</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x2615;</div>
+                <span>Coffee Shop &amp; Gallery</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4DE;</div>
+                <span><a href="tel:5756821239">575-682-1239</a></span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F331;</div>
+                <span>GF / DF / SF Options</span>
+            </div>
+        </div>
+    </div>
+
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-label="About Black Bear Coffee">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">More Than a Coffee Stop</h2>
+                        <p>
+                            Black Bear Coffee Shop is one of Cloudcroft&rsquo;s more established coffee anchors, sitting right on Burro Avenue at the center of the village. It&rsquo;s a specialty coffee shop with a real beverage program &mdash; not just drip coffee &mdash; plus roasted beans, seasonal drinks, and gluten-free, dairy-free, and sugar-free options.
+                        </p>
+                        <p>
+                            Owners Crystal and Nathan Tompkins have built the shop into more than a caffeine stop. Monthly featured artists rotate through a petite gallery space inside, and Crystal&rsquo;s own photography is displayed in the shop. The result is a place that functions as both coffee shop and small cultural stop on Burro Avenue.
+                        </p>
+                        <p>
+                            This is one of the better places in Cloudcroft to slow down rather than just refuel. Come for the coffee, stay for the art, take home a bag of beans.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x2615; Specialty Coffee</span>
+                            <span class="about-feature">&#x1F3A8; Gallery Space</span>
+                            <span class="about-feature">&#x1F331; Dietary Options</span>
+                            <span class="about-feature">&#x1F6CD;&#xFE0F; Beans to Go</span>
+                            <span class="about-feature">&#x1F4CD; Burro Ave</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <img src="eat-photo/photo-eat-black-bear/o.jpg" alt="Black Bear Coffee Shop building exterior on Burro Avenue in Cloudcroft" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section menu-section" id="menu" aria-label="Menu">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">The Menu</span>
+                    <h2 class="section-title section-title-centered">What&rsquo;s Brewing</h2>
+                    <p class="section-description">A real beverage program with seasonal rotations. The menu changes &mdash; follow their Instagram for current offerings.</p>
+                </div>
+                <div style="margin: 2rem auto 0; max-width: 700px;">
+                    <img src="eat-photo/photo-eat-black-bear/o-2.jpg" alt="Black Bear Coffee branded cup with Cloudcroft downtown in the background" loading="lazy" style="width: 100%; border-radius: 12px; aspect-ratio: 9/16; max-height: 400px; object-fit: cover; object-position: center;">
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x2615;</div>
+                        <h3>Coffee Drinks</h3>
+                        <p>The core of the shop. Specialty espresso drinks, drip coffee, and more.</p>
+                        <ul class="menu-items">
+                            <li>Espresso drinks</li>
+                            <li>Drip coffee</li>
+                            <li>Seasonal specials</li>
+                            <li>Honey chai</li>
+                            <li>Strawberry rose matcha</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F331;</div>
+                        <h3>Dietary Options</h3>
+                        <p>Real options for guests with dietary needs, not afterthoughts.</p>
+                        <ul class="menu-items">
+                            <li>Gluten-free options</li>
+                            <li>Dairy-free options</li>
+                            <li>Sugar-free options</li>
+                            <li>Baristas who know the menu</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-icon">&#x1F6CD;&#xFE0F;</div>
+                        <h3>Take Home</h3>
+                        <p>The coffee doesn&rsquo;t have to stay in Cloudcroft.</p>
+                        <ul class="menu-items">
+                            <li>Roasted coffee beans</li>
+                            <li>Available in-shop</li>
+                            <li>Shipped to your door via website</li>
+                            <li>Merchandise</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tip-box">
+                    <span>&#x1F4F1;</span>
+                    <p><strong>Menu changes seasonally.</strong> Follow <a href="https://www.instagram.com/blackbearcoffeenm/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine);">@blackbearcoffeenm on Instagram</a> for current seasonal drinks and specials.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="gallery" aria-label="The Gallery">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">The Gallery</span>
+                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">Coffee &amp; Art</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-black-bear/o-1.jpg" alt="Black Bear Coffee Shop storefront with patio seating on Burro Avenue" loading="lazy">
+                        <div class="gallery-caption">Storefront on Burro Ave</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-black-bear/img_5426.jpeg" alt="Customer at the counter inside Black Bear Coffee Shop" loading="lazy">
+                        <div class="gallery-caption">The counter</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-black-bear/img_4558.jpeg" alt="Cozy seating nook with stone wall and string lights at Black Bear Coffee" loading="lazy">
+                        <div class="gallery-caption">Cozy seating nook</div>
+                    </div>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F3A8;</div>
+                        <h3>Monthly Artists</h3>
+                        <p>Crystal and Nathan Tompkins host rotating monthly artists in the shop&rsquo;s petite gallery space. It&rsquo;s a small cultural stop on Burro Avenue that connects visitors with local creative work.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4F7;</div>
+                        <h3>Crystal&rsquo;s Photography</h3>
+                        <p>Co-owner Crystal Tompkins is a photographer whose work is displayed in the shop. She was the October featured artist in their own gallery space.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F3D4;&#xFE0F;</div>
+                        <h3>Burro Avenue Hub</h3>
+                        <p>More than a coffee counter. Black Bear functions as part of the current downtown business culture &mdash; a place where coffee, art, and community overlap.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="visit" aria-label="Plan your visit" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Visit</span>
+                    <h2 class="section-title section-title-centered">Visit Black Bear</h2>
+                    <p class="section-description">Everything you need to know before you go.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h3>Location</h3>
+                        <p>200 Burro Ave, Cloudcroft, NM 88317. Right on the main street &mdash; walkable from anywhere in the village.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h3>Hours</h3>
+                        <p>Hours vary by season and may change. Check their <a href="https://www.facebook.com/blackbearcoffeeshop/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">Facebook</a> or <a href="https://www.instagram.com/blackbearcoffeenm/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">Instagram</a> for current hours before visiting.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4DE;</div>
+                        <h3>Contact</h3>
+                        <p>Phone: <a href="tel:5756821239" style="color: var(--alpine); text-decoration: none;">575-682-1239</a><br>Web: <a href="https://www.mybbcoffee.com/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">mybbcoffee.com</a></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
+                        <h3>Good to Know</h3>
+                        <p>Small-town hours can vary, especially off-season. This is a coffee shop, not a full breakfast caf&eacute;. Counter service. Exact seating and patio details not confirmed &mdash; it&rsquo;s a cozy shop.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Coffee, Art, and Burro Avenue</h2>
+                <p>Black Bear Coffee Shop is where specialty coffee meets local art on Cloudcroft&rsquo;s main street. Seasonal drinks, dietary options, roasted beans to take home, and a rotating gallery inside.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.mybbcoffee.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Visit Website</a>
+                    <a href="https://www.instagram.com/blackbearcoffeenm/" target="_blank" rel="noopener noreferrer" class="btn-secondary">Follow on Instagram</a>
+                    <a href="complete-guide-to-dining.html" class="btn-secondary">Explore More Dining</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Lodging</a>
+                <a href="complete-guide-to-dining.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Black Bear</h4>
+                <a href="https://www.mybbcoffee.com/" target="_blank" rel="noopener noreferrer">mybbcoffee.com</a>
+                <a href="https://www.facebook.com/blackbearcoffeeshop/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/blackbearcoffeenm/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="tel:5756821239">575-682-1239</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card, .gallery-item').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>

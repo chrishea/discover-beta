@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Guide to Visiting Cloudcroft | DiscoverCloudcroft.com</title>
+    <meta name="description" content="Everything you need to plan the perfect mountain getaway to Cloudcroft, New Mexico at 9,000 feet. Getting here, where to stay, dining, activities, seasonal tips, and practical information.">
+    <meta name="keywords" content="Cloudcroft NM, visiting Cloudcroft, travel guide, Sacramento Mountains, mountain getaway, New Mexico tourism, things to do Cloudcroft">
+    <link rel="canonical" href="https://discovercloudcroft.com/visiting-guide.html">
+
+
+    <meta property="og:title" content="Complete Guide to Visiting Cloudcroft | DiscoverCloudcroft.com">
+    <meta property="og:description" content="Everything you need to plan the perfect mountain getaway to Cloudcroft, New Mexico at 9,000 feet.">
+    <meta property="og:url" content="https://discovercloudcroft.com/visiting-guide.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Complete Guide to Visiting Cloudcroft | DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="Everything you need to plan the perfect mountain getaway to Cloudcroft, New Mexico at 9,000 feet.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp"><link href="css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+    <style>
+/* Hero - page-specific */
+.hero-bg {
+background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--twilight) 100%);
+animation: kenBurns 20s ease-in-out infinite alternate;
+}
+.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+.hero-title .word:nth-child(4) { animation-delay: 0.8s; }
+.hero-title .word:nth-child(5) { animation-delay: 1.0s; }
+.hero-title .word:nth-child(6) { animation-delay: 1.2s; }
+.hero-subtitle {
+color: rgba(44, 44, 44, 0.9);
+animation: fadeUp 0.8s ease 1.4s forwards;
+}
+.hero-ctas {
+animation: fadeUp 0.8s ease 1.8s forwards;
+}
+.btn-secondary {
+color: #000000;
+border: 2px solid #000000;
+}
+.btn-secondary:hover {
+background: #000000;
+color: white;
+}
+.getting-here-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: start;
+}
+.getting-here-text p {
+font-size: 1.05rem;
+color: var(--granite);
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+.route-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.route-item {
+display: flex;
+align-items: flex-start;
+gap: 1rem;
+padding: 1.25rem;
+background: var(--cloud-drift);
+border-radius: 12px;
+margin-bottom: 1rem;
+border-left: 4px solid var(--golden-hour);
+opacity: 0;
+transform: translateY(30px);
+}
+.route-item.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
+}
+.route-item:nth-child(2).visible { transition-delay: 0.1s; }
+.route-item:nth-child(3).visible { transition-delay: 0.2s; }
+.route-item:nth-child(4).visible { transition-delay: 0.3s; }
+.route-icon {
+font-size: 1.5rem;
+flex-shrink: 0;
+}
+.route-info h4 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.05rem;
+color: var(--midnight);
+margin-bottom: 0.25rem;
+}
+.route-info p {
+color: var(--granite);
+font-size: 0.9rem;
+line-height: 1.6;
+margin-bottom: 0;
+}
+.airport-info {
+margin-top: 2rem;
+padding: 1.5rem;
+background: var(--snow-cap);
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.airport-info h4 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.05rem;
+color: var(--midnight);
+margin-bottom: 0.75rem;
+}
+.airport-info p {
+color: var(--granite);
+font-size: 0.9rem;
+line-height: 1.7;
+}
+.card-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+.card {
+background: var(--snow-cap);
+border-radius: 12px;
+padding: 2rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+border-top: 4px solid var(--golden-hour);
+transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+opacity: 0;
+transform: translateY(30px);
+text-decoration: none;
+display: block;
+}
+.card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.card:nth-child(2).visible { transition-delay: 0.1s; }
+.card:nth-child(3).visible { transition-delay: 0.15s; }
+.card:nth-child(4).visible { transition-delay: 0.2s; }
+.card:nth-child(5).visible { transition-delay: 0.25s; }
+.card:nth-child(6).visible { transition-delay: 0.3s; }
+.card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+.card-icon {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+.card h3 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.15rem;
+color: var(--midnight);
+margin-bottom: 0.5rem;
+}
+.card p {
+color: var(--granite);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.card-link {
+display: inline-block;
+font-family: 'DM Sans', sans-serif;
+font-weight: 500;
+font-size: 0.85rem;
+color: var(--alpine);
+margin-top: 0.75rem;
+transition: color 0.3s;
+}
+.card-link:hover {
+color: var(--golden-hour);
+}
+.section-link {
+text-align: center;
+margin-top: 2.5rem;
+}
+.section-link a {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1rem;
+color: var(--alpine);
+text-decoration: none;
+transition: color 0.3s;
+}
+.section-link a:hover {
+color: var(--golden-hour);
+}
+.seasonal-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2rem;
+}
+.seasonal-card {
+text-align: center;
+padding: 2.5rem 2rem;
+background: rgba(0, 0, 0, 0.04);
+border-radius: 12px;
+border: 1px solid rgba(0, 0, 0, 0.08);
+transition: transform 0.3s ease, background 0.3s ease;
+opacity: 0;
+transform: translateY(30px);
+}
+.seasonal-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+}
+.seasonal-card:nth-child(2).visible { transition-delay: 0.1s; }
+.seasonal-card:nth-child(3).visible { transition-delay: 0.2s; }
+.seasonal-card:nth-child(4).visible { transition-delay: 0.3s; }
+.seasonal-card:hover {
+transform: translateY(-6px);
+background: rgba(0, 0, 0, 0.08);
+}
+.seasonal-icon {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+.seasonal-card h3 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+color: #000000;
+margin-bottom: 0.25rem;
+}
+.seasonal-card .season-months {
+font-family: 'DM Sans', sans-serif;
+font-size: 0.8rem;
+color: #555555;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+margin-bottom: 0.75rem;
+}
+.seasonal-card p {
+color: #555555;
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.seasonal-section {
+background: #f2f2f2;
+position: relative;
+overflow: hidden;
+}
+.seasonal-section::before {
+content: '';
+position: absolute;
+inset: 0;
+opacity: 0.06;
+background-image:
+repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px),
+repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px);
+pointer-events: none;
+}
+.practical-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+.practical-card {
+background: var(--snow-cap);
+border-radius: 12px;
+padding: 2.5rem 2rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+border-left: 4px solid var(--golden-hour);
+transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+opacity: 0;
+transform: translateY(30px);
+}
+.practical-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.practical-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+.practical-icon {
+font-size: 2rem;
+margin-bottom: 0.75rem;
+}
+.practical-card h4 {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 1.1rem;
+color: var(--midnight);
+margin-bottom: 0.5rem;
+}
+.practical-card p {
+color: var(--granite);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+.history-culture-section {
+background: var(--cloud-drift);
+}
+.history-content {
+max-width: 900px;
+margin: 0 auto;
+}
+.history-text {
+font-size: 1.05rem;
+color: var(--granite);
+line-height: 1.9;
+margin-bottom: 1.5rem;
+}
+/* CTA color override */
+.cta-container h2 {
+color: #000000;
+}
+
+/* Footer ::before gradient */
+.site-footer::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
+background-size: 300% 100%;
+animation: gradientBorder 6s linear infinite;
+}
+@keyframes gradientBorder {
+0% { background-position: 0% 0; }
+100% { background-position: 300% 0; }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+.getting-here-grid { grid-template-columns: 1fr; gap: 2rem; }
+.card-grid { grid-template-columns: repeat(2, 1fr); }
+.seasonal-grid { grid-template-columns: repeat(2, 1fr); }
+.practical-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+.card-grid { grid-template-columns: 1fr; }
+.seasonal-grid { grid-template-columns: 1fr; }
+.practical-grid { grid-template-columns: 1fr; }
+}</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+
+    <header class="site-header" role="banner">
+    <div class="header-inner">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <span class="logo-discover">Discover</span>
+                <span class="logo-cloudcroft">Cloudcroft</span>
+                <span class="logo-beta">Beta</span>
+            </a>
+            <a href="stay/lodging.html">Stay</a>
+            <a href="eat/complete-guide-to-dining.html">Eat</a>
+            <a href="do/complete-guide-to-activities.html">Explore</a>
+            <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+            <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+            <a href="season/seasonal.html">Seasons</a>
+            <a href="plan.html">Plan</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+    <a href="stay/lodging.html">Stay</a>
+    <a href="eat/complete-guide-to-dining.html">Eat</a>
+    <a href="do/complete-guide-to-activities.html">Explore</a>
+    <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+    <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+    <a href="season/seasonal.html">Seasons</a>
+    <a href="plan.html">Plan</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Cloudcroft mountain village scenic view"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Your Guide</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Complete </span>
+                <span class="word">Guide </span>
+                <span class="word">to </span>
+                <span class="word">Visiting </span>
+                <span class="word">Cloudcroft</span>
+            </h1>
+            <p class="hero-subtitle">Everything you need to plan the perfect mountain getaway at 9,000 feet</p>
+            <div class="hero-ctas">
+                <a href="#where-to-stay" class="btn-primary">Find Lodging</a>
+                <a href="#things-to-do" class="btn-secondary">Explore Activities</a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x26F0;&#xFE0F;</div>
+                <span>9,000 ft Elevation</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F697;</div>
+                <span>2.5 hrs from El Paso</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F3D8;&#xFE0F;</div>
+                <span>Population ~750</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F332;</div>
+                <span>Lincoln National Forest</span>
+            </div>
+        </div>
+    </div>
+
+
+    <main id="main-content" role="main">
+
+
+        <section class="section" id="getting-here" aria-label="Getting here">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Getting Here</span>
+                    <h2 class="section-title section-title-centered">How to Reach Cloudcroft</h2>
+                    <p class="section-description">Cloudcroft is nestled in the Sacramento Mountains of southern New Mexico. The drive up the mountain is half the adventure.</p>
+                </div>
+                <div class="getting-here-grid">
+                    <div>
+                        <ul class="route-list">
+                            <li class="route-item">
+                                <div class="route-icon">&#x1F697;</div>
+                                <div class="route-info">
+                                    <h3>From El Paso, TX &mdash; 2.5 hours</h3>
+                                    <p>Head northeast on US-54 to Alamogordo, then climb US-82 into the mountains. The most popular route for visitors from Texas and southern New Mexico.</p>
+                                </div>
+                            </li>
+                            <li class="route-item">
+                                <div class="route-icon">&#x1F697;</div>
+                                <div class="route-info">
+                                    <h3>From Albuquerque, NM &mdash; 3.5 hours</h3>
+                                    <p>Take I-25 south to Las Cruces, then head east on US-70 to Alamogordo, and ascend US-82 to Cloudcroft. A scenic drive through the heart of New Mexico.</p>
+                                </div>
+                            </li>
+                            <li class="route-item">
+                                <div class="route-icon">&#x1F697;</div>
+                                <div class="route-info">
+                                    <h3>From Las Cruces, NM &mdash; 1.5 hours</h3>
+                                    <p>Drive east on US-70 through the Tularosa Basin to Alamogordo, then take US-82 up the mountain. A perfect day trip or weekend escape.</p>
+                                </div>
+                            </li>
+                            <li class="route-item">
+                                <div class="route-icon">&#x1F697;</div>
+                                <div class="route-info">
+                                    <h3>From Alamogordo, NM &mdash; 30 minutes</h3>
+                                    <p>A stunning 30-minute climb up US-82, gaining over 4,000 feet in elevation. Watch for the Mexican Canyon Trestle along the way &mdash; a must-see historic landmark.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="airport-info fade-in">
+                            <h3>&#x2708;&#xFE0F; Nearest Airports</h3>
+                            <p><strong>El Paso International Airport (ELP)</strong> &mdash; The closest major airport, approximately 2.5 hours from Cloudcroft. Rental cars are available at the terminal. This is the most convenient option for most visitors.</p>
+                            <br>
+                            <p><strong>Albuquerque International Sunport (ABQ)</strong> &mdash; About 3.5 hours from Cloudcroft. A good option if you are combining your trip with a visit to Santa Fe, Albuquerque, or other northern New Mexico destinations.</p>
+                            <br>
+                            <p><strong>Tip:</strong> There is no public transit to Cloudcroft. A rental car is essential for getting here and exploring the area. The scenic drive up US-82 from Alamogordo is one of the most beautiful stretches of road in southern New Mexico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="where-to-stay" style="background: var(--cloud-drift);" aria-label="Where to stay">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Where to Stay</span>
+                    <h2 class="section-title section-title-centered">Lodging in Cloudcroft</h2>
+                    <p class="section-description">From historic hotels to cozy cabins, find the perfect place to rest at the top.</p>
+                </div>
+                <div class="card-grid">
+                    <a href="stay/lodging.html" class="card">
+                        <div class="card-icon">&#x1F3F0;</div>
+                        <h3>The Lodge at Cloudcroft</h3>
+                        <p>A historic mountain resort dating back to 1899 with fine dining at Eighteen99, a nine-hole golf course, and stunning views. A true Cloudcroft landmark.</p>
+                    </a>
+                    <a href="stay/lodging.html" class="card">
+                        <div class="card-icon">&#x1F3E8;</div>
+                        <h3>Summit Inn</h3>
+                        <p>Affordable and centrally located in the heart of Cloudcroft. A great home base for exploring the village and surrounding mountains.</p>
+                    </a>
+                    <a href="stay/lodging.html" class="card">
+                        <div class="card-icon">&#x1F3E1;</div>
+                        <h3>Cabins at Cloudcroft</h3>
+                        <p>Private cabin rentals tucked among the pines. Perfect for families, couples, or groups looking for a secluded mountain retreat.</p>
+                    </a>
+                    <a href="stay/lodging.html" class="card">
+                        <div class="card-icon">&#x1F6CC;</div>
+                        <h3>Dusty Boots Motel</h3>
+                        <p>A charming roadside motel with a rustic mountain feel. Comfortable rooms at a great value right in the village.</p>
+                    </a>
+                    <a href="stay/lodging.html" class="card">
+                        <div class="card-icon">&#x1F3E8;</div>
+                        <h3>Grand Cloudcroft Hotel</h3>
+                        <p>Modern comforts with mountain character. A great choice for visitors seeking a comfortable stay with easy access to local attractions.</p>
+                    </a>
+                    <a href="stay/lodging.html" class="card">
+                        <div class="card-icon">&#x2795;</div>
+                        <h3>More Options</h3>
+                        <p>Browse vacation rentals, campgrounds, and additional lodging options to find the perfect fit for your mountain getaway.</p>
+                    </a>
+                </div>
+                <div class="section-link">
+                    <a href="stay/lodging.html">See all lodging options &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="where-to-eat" aria-label="Where to eat">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Where to Eat</span>
+                    <h2 class="section-title section-title-centered">Dining in Cloudcroft</h2>
+                    <p class="section-description">From fine dining to laid-back barbecue, Cloudcroft's restaurants serve up mountain flavor.</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">&#x1F37D;&#xFE0F;</div>
+                        <h3>Eighteen99 at The Lodge</h3>
+                        <p>Fine dining in the historic Lodge at Cloudcroft. Enjoy seasonal menus, craft cocktails, and panoramic mountain views in an elegant setting that has hosted guests for over a century.</p>
+                    </div>
+                    <a href="eat/where-to-eat-cloudcroft-western-bar.html" class="card">
+                        <div class="card-icon">&#x1F354;</div>
+                        <h3>Western Bar &amp; Cafe</h3>
+                        <p>A Cloudcroft institution since 1950, serving up hearty comfort food, cold beer, and a whole lot of character. A local favorite and a must-visit for first-timers.</p>
+                    </a>
+                    <a href="eat/where-to-eat-cloudcroft-cloudcroft-brewery.html" class="card">
+                        <div class="card-icon">&#x1F37A;</div>
+                        <h3>Cloudcroft Brewery</h3>
+                        <p>Craft beer brewed at 9,000 feet, paired with handmade pizza and a relaxed mountain atmosphere. Great outdoor seating and rotating taps.</p>
+                    </a>
+                    <div class="card">
+                        <div class="card-icon">&#x1F356;</div>
+                        <h3>Mad Jack's Mountaintop Barbecue</h3>
+                        <p>Slow-smoked barbecue with mountain views. Ribs, brisket, and all the fixings in a casual, family-friendly setting that is hard to beat.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">&#x2615;</div>
+                        <h3>Dave's Cafe</h3>
+                        <p>A cozy local spot for breakfast and lunch. Home-style cooking, friendly service, and the kind of place where everyone knows your name.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">&#x1F37B;</div>
+                        <h3>Trestle Brewing Company</h3>
+                        <p>Named for the historic Mexican Canyon Trestle, this brewery offers craft beers, pub fare, and a welcoming vibe in the heart of the village.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="things-to-do" style="background: var(--cloud-drift);" aria-label="Things to do">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Things to Do</span>
+                    <h2 class="section-title section-title-centered">Activities &amp; Attractions</h2>
+                    <p class="section-description">From scenic trails to local culture, there is no shortage of things to do in and around Cloudcroft.</p>
+                </div>
+                <div class="card-grid">
+                    <a href="do/best-hiking-trails-in-cloudcroft-new-mexico.html" class="card">
+                        <div class="card-icon">&#x1F97E;</div>
+                        <h3>Hiking</h3>
+                        <p>Explore miles of trails through the Lincoln National Forest. From easy nature walks to challenging summit hikes, the Sacramento Mountains have something for every skill level.</p>
+                    </a>
+                    <a href="do/complete-guide-to-mexican-canyon-trestle.html" class="card">
+                        <div class="card-icon">&#x1F682;</div>
+                        <h3>Mexican Canyon Trestle</h3>
+                        <p>Visit this iconic 1899 railroad trestle from the Cloud Climbing Railroad, listed on the National Register of Historic Places. Easy access and free to visit.</p>
+                    </a>
+                    <a href="do/where to-fishing-in-Cloudcroft-New-Mexico-2026.html" class="card">
+                        <div class="card-icon">&#x1F3A3;</div>
+                        <h3>Fishing</h3>
+                        <p>Cast a line in mountain streams and stocked lakes throughout the Lincoln National Forest. Trout fishing is especially popular in the cooler months.</p>
+                    </a>
+                    <a href="do/complete-guide-to-disc-golf.html" class="card">
+                        <div class="card-icon">&#x1F94F;</div>
+                        <h3>Disc Golf</h3>
+                        <p>Play one of the highest-elevation disc golf courses in the Southwest. Challenging terrain, beautiful forest setting, and fresh mountain air.</p>
+                    </a>
+                    <a href="do/play-pickleball-cloudcroft-new-mexico-2026.html" class="card">
+                        <div class="card-icon">&#x1F3D3;</div>
+                        <h3>Pickleball</h3>
+                        <p>Join the growing pickleball community in Cloudcroft. Courts are available for drop-in play, and the mountain air makes for a refreshing game.</p>
+                    </a>
+                    <a href="local-parks.html" class="card">
+                        <div class="card-icon">&#x1F333;</div>
+                        <h3>Local Parks</h3>
+                        <p>Enjoy Cloudcroft's well-maintained parks for picnics, playgrounds, and relaxation. Great for families with kids or anyone looking to unwind outdoors.</p>
+                    </a>
+                    <a href="do/complete-guide-to-outdoor-recreation.html" class="card">
+                        <div class="card-icon">&#x1F3D5;&#xFE0F;</div>
+                        <h3>Outdoor Recreation</h3>
+                        <p>Mountain biking, horseback riding, bird watching, and more. The Sacramento Mountains offer year-round outdoor adventures for every interest.</p>
+                    </a>
+                    <div class="card">
+                        <div class="card-icon">&#x1F52D;</div>
+                        <h3>Sunspot Solar Observatory</h3>
+                        <p>Visit the National Solar Observatory and Sunspot Visitor Center at the southern end of the Sacramento Mountains. Free admission with exhibits and stunning views.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">&#x1F6CD;&#xFE0F;</div>
+                        <h3>Shopping on Burro Avenue</h3>
+                        <p>Stroll Cloudcroft's main street and browse unique boutiques, art galleries, antique shops, and local crafts. A charming shopping experience in the heart of the village.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section seasonal-section" id="seasonal-guide" aria-label="Seasonal guide">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">Seasonal Guide</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">When to Visit</h2>
+                    <p class="section-description" style="color: #555555;">Every season brings something special to Cloudcroft. Here is what to expect throughout the year.</p>
+                </div>
+                <div class="seasonal-grid">
+                    <div class="seasonal-card">
+                        <div class="seasonal-icon">&#x1F33C;</div>
+                        <h3>Spring</h3>
+                        <div class="season-months">April &ndash; May</div>
+                        <p>Wildflowers begin to bloom across the mountain meadows. Mild temperatures make for ideal hiking conditions. A quieter time to visit before the summer crowds arrive.</p>
+                    </div>
+                    <div class="seasonal-card">
+                        <div class="seasonal-icon">&#x2600;&#xFE0F;</div>
+                        <h3>Summer</h3>
+                        <div class="season-months">June &ndash; August</div>
+                        <p>The perfect escape from desert heat below. Highs in the 70s when the valley hits triple digits. Peak season with events, festivals, and full trails. Afternoon thunderstorms are common.</p>
+                    </div>
+                    <div class="seasonal-card">
+                        <div class="seasonal-icon">&#x1F341;</div>
+                        <h3>Fall</h3>
+                        <div class="season-months">September &ndash; November</div>
+                        <p>Spectacular golden foliage as aspens turn. Aspenfest in October draws visitors from across the region. Cool temperatures and crisp mountain air make this many locals' favorite season.</p>
+                    </div>
+                    <div class="seasonal-card">
+                        <div class="seasonal-icon">&#x2744;&#xFE0F;</div>
+                        <h3>Winter</h3>
+                        <div class="season-months">December &ndash; March</div>
+                        <p>Snow blankets the mountains, creating a winter wonderland. Enjoy snow sports, cozy lodge fireplaces, and holiday events. A magical time to visit for those who embrace the cold.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="practical-info" aria-label="Practical information">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Know Before You Go</span>
+                    <h2 class="section-title section-title-centered">Practical Information</h2>
+                    <p class="section-description">Tips and essentials to help you make the most of your visit to Cloudcroft.</p>
+                </div>
+                <div class="practical-grid">
+                    <div class="practical-card">
+                        <div class="practical-icon">&#x26F0;&#xFE0F;</div>
+                        <h3>Altitude</h3>
+                        <p>Cloudcroft sits at approximately 9,000 feet above sea level. Drink plenty of water, take it easy your first day, and be mindful of altitude effects &mdash; especially if you are coming from sea level. Symptoms like headache or shortness of breath are common and usually pass quickly.</p>
+                    </div>
+                    <div class="practical-card">
+                        <div class="practical-icon">&#x1F326;&#xFE0F;</div>
+                        <h3>Weather</h3>
+                        <p>Expect temperatures 20&ndash;30 degrees cooler than the valley floor. Summer highs are typically in the 70s. Afternoon thunderstorms are common June through September. Winter brings snow and temperatures below freezing. Always bring layers.</p>
+                    </div>
+                    <div class="practical-card">
+                        <div class="practical-icon">&#x1F4F1;</div>
+                        <h3>Cell Service</h3>
+                        <p>Cell phone coverage is limited and spotty in Cloudcroft, especially on trails and in more remote areas. Download offline maps before your trip and let someone know your plans if you are heading into the backcountry.</p>
+                    </div>
+                    <div class="practical-card">
+                        <div class="practical-icon">&#x26FD;</div>
+                        <h3>Gas &amp; Supplies</h3>
+                        <p>Options for gas and groceries are limited in Cloudcroft. Fill up your tank and stock up on supplies in Alamogordo before making the drive up the mountain. There is a small general store in the village for basics.</p>
+                    </div>
+                    <div class="practical-card">
+                        <div class="practical-icon">&#x1F6A8;</div>
+                        <h3>Emergency Services</h3>
+                        <p>Cloudcroft has basic emergency services available. For detailed information on local fire, medical, and law enforcement resources, visit our <a href="resources/emergency-services.html" style="color: var(--alpine); text-decoration: underline;">emergency services page</a>.</p>
+                    </div>
+                    <div class="practical-card">
+                        <div class="practical-icon">&#x1F43E;</div>
+                        <h3>Pet Friendly</h3>
+                        <p>Many trails and outdoor areas in the Lincoln National Forest are dog-friendly. Keep pets on leash, bring waste bags, and carry extra water for your furry companion. Check individual lodging and restaurant policies for pet rules.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section history-culture-section" id="history" aria-label="History and culture">
+            <div class="section-container">
+                <div class="history-content">
+                    <div style="text-align: center;">
+                        <span class="section-label">History &amp; Culture</span>
+                        <h2 class="section-title section-title-centered">A Mountain Village with Deep Roots</h2>
+                    </div>
+                    <p class="history-text fade-in">
+                        Cloudcroft was born from the railroad. In 1899, the Alamogordo and Sacramento Mountain Railway &mdash; dubbed the "Cloud Climbing Railroad" &mdash; carved a path from the desert floor up into the Sacramento Mountains, bringing timber workers and tourists to a cool mountain retreat at the top. The village quickly grew into a beloved summer escape, and the railroad's legacy still defines Cloudcroft's character today.
+                    </p>
+                    <p class="history-text fade-in">
+                        The Lodge at Cloudcroft, originally built as a railroad lodge in 1899 and rebuilt after a fire in 1911, remains one of the most iconic historic hotels in New Mexico. With its Victorian charm, panoramic views, and storied past &mdash; including a famous resident ghost named Rebecca &mdash; The Lodge is a destination in itself. Throughout the village, you will find echoes of Cloudcroft's railroad heritage in its architecture, street names, and the Mexican Canyon Trestle that still stands along US-82.
+                    </p>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="resources/history.html" class="btn-primary">Explore Cloudcroft History</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Ready to Plan Your Mountain Getaway?</h2>
+                <p>Cloudcroft is waiting for you. Start planning your trip to this mountain village at 9,000 feet &mdash; where cool pines, clear skies, and small-town charm come together.</p>
+                <div class="cta-buttons">
+                    <a href="stay/lodging.html" class="btn-primary">Browse Lodging</a>
+                    <a href="contact.html" class="btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="stay/lodging.html">Lodging</a>
+                <a href="eat/complete-guide-to-dining.html">Dining</a>
+                <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="do/complete-guide-to-activities.html">Activities</a>
+                <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="about.html">About Cloudcroft</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/common.js"></script>
+  <script>
+        (function() {
+            // Header scroll
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 60) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }, { passive: true });
+
+            // Hamburger toggle
+            var hamburger = document.querySelector('.hamburger');
+            var mobileMenu = document.querySelector('.mobile-menu');
+            hamburger.addEventListener('click', function() {
+                var isOpen = mobileMenu.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+
+            // Close mobile menu on link click
+            mobileMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Intersection Observer for fade-in elements
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .card, .seasonal-card, .practical-card, .route-item').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+
+            // Back to top button
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }, { passive: true });
+
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+</body>
+</html>
