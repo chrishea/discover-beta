@@ -60,7 +60,7 @@
   }
 
   // ===== INTERSECTION OBSERVER: Fade-in elements =====
-  var fadeSelectors = '.fade-in-section, .slide-in-bottom, .fade-in, .info-card, .stat-item';
+  var fadeSelectors = '.fade-in-section, .slide-in-bottom, .fade-in, .info-card, .stat-item, .trail-card, .tip-card, .highlight-card';
   var fadeElements = document.querySelectorAll(fadeSelectors);
 
   if (fadeElements.length > 0) {

@@ -83,6 +83,20 @@ transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier
 transform: translateY(-6px);
 box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
+.trail-card-img {
+width: 100%;
+aspect-ratio: 16 / 9;
+overflow: hidden;
+}
+.trail-card-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.trail-card:hover .trail-card-img img {
+transform: scale(1.05);
+}
 .trail-card-body {
 padding: 2rem;
 }
@@ -361,6 +375,7 @@ margin-bottom: 0.5rem;
                 <div class="trail-cards-grid">
 
                     <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00022.jpeg" alt="Hiking trail through pine forest near Cloudcroft" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
                                 <h3><a href="complete-guide-to-osha-trail.html">Osha Trail</a></h3>
@@ -382,6 +397,7 @@ margin-bottom: 0.5rem;
                     </div>
 
                     <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00026.jpg" alt="Rim trail with canyon views in Sacramento Mountains" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
                                 <h3>Rim Trail</h3>
@@ -403,6 +419,7 @@ margin-bottom: 0.5rem;
                     </div>
 
                     <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00027.jpg" alt="Mexican Canyon Trestle trail through mountain forest" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
                                 <h3><a href="complete-guide-to-mexican-canyon-trestle.html">Mexican Canyon Trestle Trail</a></h3>
@@ -424,6 +441,7 @@ margin-bottom: 0.5rem;
                     </div>
 
                     <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00030.jpg" alt="Cloud-Climbing Rail Trail through Lincoln National Forest" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
                                 <h3>Cloud-Climbing Rail Trail</h3>
@@ -445,6 +463,7 @@ margin-bottom: 0.5rem;
                     </div>
 
                     <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00031.jpg" alt="Bluff Springs trail through old-growth forest" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
                                 <h3>Bluff Springs Trail</h3>
@@ -466,6 +485,7 @@ margin-bottom: 0.5rem;
                     </div>
 
                     <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00032.jpg.webp" alt="Willie White Loop trail through ponderosa pine forest" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
                                 <h3>Willie White Loop</h3>
@@ -487,6 +507,7 @@ margin-bottom: 0.5rem;
                     </div>
 
                     <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00033.jpg.webp" alt="Pumphouse Canyon trail with rocky terrain" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
                                 <h3>Pumphouse Canyon Trail</h3>
@@ -508,6 +529,7 @@ margin-bottom: 0.5rem;
                     </div>
 
                     <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00034.webp" alt="Dog Canyon trail with dramatic elevation change" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
                                 <h3>Dog Canyon Trail</h3>
@@ -529,6 +551,7 @@ margin-bottom: 0.5rem;
                     </div>
 
                     <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00035.webp" alt="Silver Springs Loop through meadows and forest" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
                                 <h3>Silver Springs Loop</h3>
@@ -550,6 +573,7 @@ margin-bottom: 0.5rem;
                     </div>
 
                     <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00036.webp" alt="Sunspot Trail along high ridgeline with expansive views" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
                                 <h3>Sunspot Trail</h3>
