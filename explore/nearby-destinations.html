@@ -41,29 +41,13 @@
     </script>
 
     <style>
-.hero {
-    height: 65vh;
-    min-height: 450px;
-}
 .hero-bg {
     background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--twilight) 100%);
 }
 .hero-overlay {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 }
-.hero-badge span {
-    color: #000000;
-}
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-subtitle {
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1s forwards;
-}
-.hero-ctas {
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1.4s forwards;
-}
+
 .info-bar-item {
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
@@ -214,19 +198,11 @@
 .sunspot-section .destination-text h2 { color: var(--twilight); }
 .sunspot-section .destination-detail-content h4 { color: var(--twilight); }
 .sunspot-section .destination-image { background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 50%, var(--alpine) 100%); }
-.cta-section {
-    background: #f2f2f2;
-}
+
 .cta-container h2 {
     color: #000000;
 }
-.cta-container p {
-    color: #555555;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
+
 @media (max-width: 1024px) {
     .destination-content,
     .destination-content.reverse {
@@ -236,7 +212,7 @@
     .destination-image { height: 300px; }
 }
 @media (max-width: 768px) {
-    .info-bar-inner { gap: 1rem; }
+    
     .destination-details { grid-template-columns: 1fr; }
 }
     </style>
@@ -619,7 +595,7 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="../eat/complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -628,7 +604,7 @@
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Day Trips</h4>
+                <h3>Day Trips</h3>
                 <a href="nearby-destinations.html">Nearby Destinations</a>
                 <a href="alamogordo.html">Alamogordo</a>
                 <a href="../season/timberon.html">Timberon</a>
@@ -637,7 +613,7 @@
                 <a href="../dark-skies.html">Dark Skies</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="../contact.html">Contact Us</a>
                 <a href="../about.html">About Cloudcroft</a>

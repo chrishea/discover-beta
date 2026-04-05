@@ -56,39 +56,19 @@
     </script>
 
     <style>
-/* Page-specific hero */
-.hero { height: 65vh; min-height: 450px; }
+
 .hero-bg {
-background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
-animation: kenBurns 20s ease-in-out infinite alternate;
+    background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
 }
 .hero-overlay {
 background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 }
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
-.hero-subtitle { opacity: 0; animation: fadeUp 0.8s ease 1s forwards; }
-.hero-ctas { opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards; }
+
 /* Footer border */
-.site-footer::before {
-content: '';
-position: absolute;
-top: 0; left: 0; right: 0;
-height: 3px;
-background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-background-size: 300% 100%;
-animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-0% { background-position: 0% 0; }
-100% { background-position: 300% 0; }
-}
 </style>
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
 
     <header class="site-header" role="banner">
     <div class="header-inner">
@@ -123,7 +103,6 @@ animation: gradientBorder 6s linear infinite;
     <a href="../contact.html">Contact</a>
 </div>
 
-
     <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="High Rollin' Coffee cafe view"></div>
         <div class="hero-overlay"></div>
@@ -143,7 +122,6 @@ animation: gradientBorder 6s linear infinite;
             </div>
         </div>
     </section>
-
 
     <div class="info-bar">
         <div class="info-bar-inner">
@@ -165,7 +143,6 @@ animation: gradientBorder 6s linear infinite;
             </div>
         </div>
     </div>
-
 
     <main id="main-content" role="main">
 
@@ -199,7 +176,6 @@ animation: gradientBorder 6s linear infinite;
                 </div>
             </div>
         </section>
-
 
         <section class="section menu-section" id="beers" aria-label="Our menu">
             <div class="section-container">
@@ -258,7 +234,6 @@ animation: gradientBorder 6s linear infinite;
             </div>
         </section>
 
-
         <section class="section highlights-section" aria-label="Why visit">
             <div class="section-container">
                 <div style="text-align: center;">
@@ -285,7 +260,6 @@ animation: gradientBorder 6s linear infinite;
                 </div>
             </div>
         </section>
-
 
         <section class="section" id="visit" aria-label="Visit High Rollin' Coffee">
             <div class="section-container">
@@ -319,7 +293,6 @@ animation: gradientBorder 6s linear infinite;
             </div>
         </section>
 
-
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
                 <h2>Start Your Morning Right</h2>
@@ -331,7 +304,6 @@ animation: gradientBorder 6s linear infinite;
             </div>
         </section>
     </main>
-
 
     <footer class="site-footer footer-restaurant" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
@@ -345,7 +317,7 @@ animation: gradientBorder 6s linear infinite;
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -354,14 +326,14 @@ animation: gradientBorder 6s linear infinite;
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="../about.html">About Cloudcroft</a>
@@ -372,7 +344,6 @@ animation: gradientBorder 6s linear infinite;
             <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
         </div>
     </footer>
-
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 

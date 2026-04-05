@@ -40,18 +40,11 @@
 .hero { height: 55vh; min-height: 400px; }
 .hero-bg {
     background: linear-gradient(135deg, #000000 0%, #111111 40%, var(--pine) 100%);
-    animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.45));
 }
-.hero-badge span { color: var(--pine); }
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
-.hero-title .word:nth-child(4) { animation-delay: 0.8s; }
-.hero-subtitle { opacity: 0; animation: fadeUp 0.8s ease 1.2s forwards; }
-.hero-ctas { opacity: 0; animation: fadeUp 0.8s ease 1.6s forwards; }
+
 /* Author byline */
 .author-bar {
     background: var(--cream-dark);
@@ -233,30 +226,13 @@
 .cta-section { background: var(--cream-dark); }
 .cta-container h2 { color: var(--pine); }
 .cta-container p { color: var(--charcoal-light); }
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 /* Footer gradient */
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%;
-    animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
+
 @media (max-width: 768px) {
     .key-points { grid-template-columns: 1fr; }
     .article-section { padding: 2.5rem 1.5rem; }
-    .cta-buttons { flex-direction: column; align-items: center; }
+    
 }
     </style>
 </head>
@@ -453,13 +429,13 @@
                 <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
                 <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
                 <div class="footer-social">
-                    <a href="#" aria-label="Facebook">FB</a>
-                    <a href="#" aria-label="Instagram">IG</a>
-                    <a href="#" aria-label="Twitter">X</a>
+                    <a href="https://www.facebook.com/DiscoverCloudcroft" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+                    <a href="https://www.instagram.com/discovercloudcroft/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+                    <a href="https://x.com/CloudcroftNM" aria-label="Twitter" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="../eat/complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -468,13 +444,13 @@
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="../faq.html">FAQs</a>
                 <a href="../contact.html">Contact Us</a>

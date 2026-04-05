@@ -8,13 +8,11 @@
     <meta name="keywords" content="Cloudcroft history, Cloudcroft New Mexico, Sacramento Mountains, Lincoln National Forest, mountain village, dark sky community">
     <link rel="canonical" href="https://discovercloudcroft.com/about.html">
 
-
     <meta property="og:title" content="About Cloudcroft — The Story of a Mountain Village">
     <meta property="og:description" content="Founded in 1899, Cloudcroft sits at 8,676 feet in the Sacramento Mountains. Discover the history, community, and culture of this beloved mountain escape.">
     <meta property="og:image" content="https://discovercloudcroft.com/media/opener-1.webp">
     <meta property="og:url" content="https://discovercloudcroft.com/about.html">
     <meta property="og:type" content="website">
-
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Cloudcroft — The Story of a Mountain Village">
@@ -54,7 +52,7 @@
     background-image: url('media/opener-1.webp');
     animation: kenBurns 20s ease-in-out infinite alternate;
 }
-.hero-subtitle { opacity: 0; animation: fadeUp 0.8s ease 1.2s forwards; }
+
 /* Page-specific components */
 .history-grid {
     display: grid;
@@ -194,22 +192,7 @@
     padding: 0.1em 0.4em;
     border-radius: 4px;
 }
-/* Page-specific footer */
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%;
-    animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .history-grid, .community-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -227,7 +210,6 @@
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
 
     <header class="site-header" role="banner">
     <div class="header-inner">
@@ -262,7 +244,6 @@
     <a href="contact.html">Contact</a>
 </div>
 
-
     <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="Scenic view of Cloudcroft, New Mexico"></div>
         <div class="hero-overlay"></div>
@@ -276,7 +257,6 @@
             <p class="hero-subtitle">A mountain village 8,676 feet closer to the sky.</p>
         </div>
     </section>
-
 
     <main id="main-content" role="main">
 
@@ -295,7 +275,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="section village-section" aria-label="The Village Today">
             <div class="section-container">
@@ -323,7 +302,6 @@
             </div>
         </section>
 
-
         <section class="stats-bar" aria-label="Cloudcroft statistics">
             <div class="stats-grid">
                 <div class="stat-item">
@@ -345,7 +323,6 @@
             </div>
         </section>
 
-
         <section class="section" aria-label="Community">
             <div class="section-container">
                 <div class="community-grid">
@@ -366,7 +343,6 @@
         </section>
     </main>
 
-
     <footer class="site-footer footer-green" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col">
@@ -379,7 +355,7 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="stay/lodging.html">Lodging</a>
                 <a href="eat/complete-guide-to-dining.html">Dining</a>
                 <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -388,14 +364,14 @@
                 <a href="season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="about.html">About Cloudcroft</a>
@@ -406,7 +382,6 @@
             <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
         </div>
     </footer>
-
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 

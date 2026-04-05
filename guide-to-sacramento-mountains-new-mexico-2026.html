@@ -47,86 +47,14 @@
     </script>
 
     <style>
-/* ── Hero ── */
-.hero {
-    height: 65vh;
-    min-height: 450px;
-}
+
 .hero-bg {
     background: linear-gradient(135deg, #1a3a2a 0%, #0d2818 50%, #1a472a 100%);
-    background-size: cover;
-    animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15));
 }
-.hero-badge span {
-    color: var(--golden-hour);
-}
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
-.hero-subtitle {
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1s forwards;
-}
-.hero-ctas {
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1.4s forwards;
-}
 
-/* ── Info Bar ── */
-.info-bar {
-    background: var(--cream-dark);
-}
-.info-bar-item {
-    color: var(--charcoal);
-}
-.info-bar-icon {
-    width: 40px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-}
-
-/* ── Sticky TOC Nav ── */
-.toc-nav {
-    position: sticky;
-    top: 60px;
-    z-index: 90;
-    background: var(--snow-cap);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    padding: 0.75rem 0;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-.toc-nav-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-}
-.toc-pill {
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    border-radius: 999px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--granite);
-    background: var(--cream-dark);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-}
 .toc-pill:hover,
 .toc-pill:focus {
     color: var(--midnight);
@@ -309,7 +237,6 @@
     line-height: 1.6;
 }
 
-/* ── Pick Cards (Traveler Type) ── */
 .pick-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -323,81 +250,6 @@
     padding: 2rem;
     opacity: 0;
     transform: translateY(20px);
-}
-.pick-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.pick-card:nth-child(2).visible { transition-delay: 0.1s; }
-.pick-card:nth-child(3).visible { transition-delay: 0.15s; }
-.pick-card:nth-child(4).visible { transition-delay: 0.2s; }
-.pick-card:nth-child(5).visible { transition-delay: 0.25s; }
-.pick-card:nth-child(6).visible { transition-delay: 0.3s; }
-.pick-card:nth-child(7).visible { transition-delay: 0.35s; }
-.pick-card:nth-child(8).visible { transition-delay: 0.4s; }
-.pick-card-icon {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-}
-.pick-card h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--golden-hour);
-    margin-bottom: 0.5rem;
-}
-.pick-card p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-/* ── Tip Cards ── */
-.tip-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-}
-.tip-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 1.75rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    opacity: 0;
-    transform: translateY(20px);
-}
-.tip-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.tip-card:nth-child(2).visible { transition-delay: 0.1s; }
-.tip-card:nth-child(3).visible { transition-delay: 0.15s; }
-.tip-card:nth-child(4).visible { transition-delay: 0.2s; }
-.tip-card:nth-child(5).visible { transition-delay: 0.25s; }
-.tip-card:nth-child(6).visible { transition-delay: 0.3s; }
-.tip-card:nth-child(7).visible { transition-delay: 0.35s; }
-.tip-card:nth-child(8).visible { transition-delay: 0.4s; }
-.tip-card-icon {
-    font-size: 1.75rem;
-    flex-shrink: 0;
-}
-.tip-card h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--midnight);
-    margin-bottom: 0.35rem;
-}
-.tip-card p {
-    color: var(--granite);
-    font-size: 0.88rem;
-    line-height: 1.6;
 }
 
 /* ── Alert Box ── */
@@ -428,23 +280,6 @@
     line-height: 1.6;
 }
 
-/* ── Tip Box ── */
-.tip-box {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    background: #fffbe6;
-    border: 1px solid #f0d060;
-    border-radius: 12px;
-    padding: 1.25rem 1.5rem;
-    margin-top: 2rem;
-}
-.tip-box p {
-    color: var(--midnight);
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin: 0;
-}
 .tip-box a {
     color: var(--alpine);
     text-decoration: underline;
@@ -493,7 +328,6 @@
     line-height: 1.6;
 }
 
-/* ── Bottom Line ── */
 .bottom-line-section {
     background: #000;
     color: #fff;
@@ -523,46 +357,19 @@
 .cta-container h2 {
     color: #000000;
 }
-.cta-container p {
-    color: #555555;
-}
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 /* ── Dining Section ── */
 .dining-section {
     background: var(--cloud-drift);
 }
 
-/* ── Footer gradient border ── */
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%;
-    animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
-
-/* ── Responsive ── */
 @media (max-width: 1024px) {
     .fact-grid { grid-template-columns: repeat(4, 1fr); }
     .community-grid { grid-template-columns: repeat(2, 1fr); }
     .activity-grid { grid-template-columns: repeat(2, 1fr); }
     .lodging-grid { grid-template-columns: repeat(2, 1fr); }
     .pick-grid { grid-template-columns: repeat(2, 1fr); }
-    .tip-grid { grid-template-columns: repeat(2, 1fr); }
+    
     .status-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 768px) {
@@ -571,10 +378,9 @@
     .activity-grid { grid-template-columns: 1fr; }
     .lodging-grid { grid-template-columns: 1fr; }
     .pick-grid { grid-template-columns: 1fr; }
-    .tip-grid { grid-template-columns: 1fr; }
+    
     .status-grid { grid-template-columns: 1fr; }
-    .toc-nav-inner { justify-content: flex-start; padding: 0 1rem; }
-    .cta-buttons { flex-direction: column; align-items: center; }
+    
 }
     </style>
 </head>
@@ -615,14 +421,13 @@
         <a href="contact.html">Contact</a>
     </div>
 
-
     <!-- ── HERO ── -->
     <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="Sacramento Mountains forest landscape in southern New Mexico"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="hero-image" style="width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 12px; margin-bottom: 2rem;">
-                <img src="media/placeholder-sac-mtns.webp" alt="Sacramento Mountains landscape near Cloudcroft, New Mexico" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                <img src="media/placeholder-sac-mtns.webp" alt="Sacramento Mountains landscape near Cloudcroft, New Mexico" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
             </div>
             <div class="hero-badge">
                 <span>2026 Regional Guide</span>
@@ -639,7 +444,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- ── INFO BAR ── -->
     <div class="info-bar">
@@ -663,7 +467,6 @@
         </div>
     </div>
 
-
     <!-- ── STICKY TOC NAV ── -->
     <nav class="toc-nav" aria-label="Page table of contents">
         <div class="toc-nav-inner">
@@ -676,7 +479,6 @@
             <a href="#travelers" class="toc-pill">By Traveler Type</a>
         </div>
     </nav>
-
 
     <main id="main-content" role="main">
 
@@ -731,13 +533,12 @@
                 <div class="alert-box">
                     <div class="alert-box-icon">&#x1F525;</div>
                     <div>
-                        <h4>2026 Fire Restrictions Active</h4>
+                        <h3>2026 Fire Restrictions Active</h3>
                         <p>Stage 1 fire restrictions have been in effect across the Sacramento Ranger District since March 27, 2026. No campfires, charcoal grills, or smoking outside of developed recreation sites. Check the Lincoln National Forest website or call the Sacramento Ranger District before your trip.</p>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!-- ── SECTION 02: COMMUNITIES ── -->
         <section class="section" id="communities" aria-label="Mountain communities in the Sacramento Mountains">
@@ -780,7 +581,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- ── SECTION 03: WHAT TO DO ── -->
         <section class="section" id="activities" aria-label="Things to do in the Sacramento Mountains">
@@ -834,7 +634,6 @@
             </div>
         </section>
 
-
         <!-- ── SECTION 04: WHERE TO STAY ── -->
         <section class="section" id="lodging" aria-label="Lodging across the Sacramento Mountains">
             <div class="section-container">
@@ -876,7 +675,6 @@
             </div>
         </section>
 
-
         <!-- ── SECTION 05: DINING ── -->
         <section class="section dining-section" id="dining" aria-label="Dining in the Sacramento Mountains">
             <div class="section-container">
@@ -895,7 +693,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- ── SECTION 06: BEFORE YOU GO ── -->
         <section class="section" id="know" aria-label="What to know before visiting the Sacramento Mountains">
@@ -965,7 +762,6 @@
             </div>
         </section>
 
-
         <!-- ── SECTION 07: BY TRAVELER TYPE ── -->
         <section class="section" id="travelers" aria-label="Best choices by traveler type">
             <div class="section-container">
@@ -1018,7 +814,6 @@
             </div>
         </section>
 
-
         <!-- ── THE REGION IN 2026 ── -->
         <section class="section status-section" aria-label="The Sacramento Mountains in 2026">
             <div class="section-container">
@@ -1048,7 +843,6 @@
             </div>
         </section>
 
-
         <!-- ── BOTTOM LINE ── -->
         <section class="bottom-line-section" aria-label="Bottom line">
             <div class="section-container">
@@ -1056,7 +850,6 @@
                 <p>The Sacramento Mountains reward travelers who can handle uncertainty, check conditions, and accept that the appeal is tied to place more than polish. This is not a resort destination with concierge service and predictable logistics. It is a real mountain landscape with real variability &mdash; weather shifts, seasonal closures, limited services, and a pace that does not bend to visitor expectations. Come prepared, stay flexible, and you will find something worth the trip.</p>
             </div>
         </section>
-
 
         <!-- ── CTA SECTION ── -->
         <section class="cta-section" aria-label="Call to action">
@@ -1072,7 +865,6 @@
 
     </main>
 
-
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col">
@@ -1085,7 +877,7 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="stay/lodging.html">Lodging</a>
                 <a href="eat/complete-guide-to-dining.html">Dining</a>
                 <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -1094,11 +886,11 @@
                 <a href="season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="about.html">About Cloudcroft</a>
@@ -1109,7 +901,6 @@
             <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
         </div>
     </footer>
-
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 

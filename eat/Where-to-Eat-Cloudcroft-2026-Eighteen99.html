@@ -54,83 +54,11 @@
     </script>
 
     <style>
-.hero { height: 65vh; min-height: 450px; }
 .hero-bg {
-    background: linear-gradient(135deg, #1a1225 0%, #2d1b3d 30%, #4a2c5a 60%, #6b4a3a 100%);
-    animation: kenBurns 20s ease-in-out infinite alternate;
+    background: url('eat-photo/photo-eat-eighteen99/Lodge%20Plates-10%20copy.jpg') center 40% / cover no-repeat;
 }
 .hero-overlay {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.2));
-}
-.hero-badge span { color: var(--golden-hour); }
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-subtitle { opacity: 0; animation: fadeUp 0.8s ease 1s forwards; }
-.hero-ctas { opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards; }
-.info-bar { background: var(--cream-dark); }
-.info-bar-item { color: var(--charcoal); }
-.info-bar-item a { color: var(--charcoal); text-decoration: none; transition: color 0.3s; }
-.info-bar-item a:hover { color: var(--golden-hour); }
-.info-bar-icon {
-    width: 40px; height: 40px;
-    background: rgba(0, 0, 0, 0.15); border-radius: 50%;
-    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
-}
-
-/* -- Menu cards -- */
-.menu-section { background: var(--cloud-drift); }
-.menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
-.menu-card {
-    background: #ffffff; border-radius: 12px; padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border-top: 4px solid var(--golden-hour);
-    opacity: 0; transform: translateY(20px);
-}
-.menu-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease; }
-.menu-card:nth-child(2).visible { transition-delay: 0.1s; }
-.menu-card:nth-child(3).visible { transition-delay: 0.2s; }
-.menu-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
-.menu-card h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--midnight); margin-bottom: 0.5rem; }
-.menu-card p { color: var(--granite); font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.75rem; }
-.menu-items { list-style: none; margin-top: 1rem; }
-.menu-items li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(107, 123, 141, 0.2); color: var(--midnight); font-size: 0.95rem; }
-.menu-items li:last-child { border-bottom: none; }
-
-/* -- Highlights -- */
-.highlight-card { background: rgba(0, 0, 0, 0.05); border: 1px solid rgba(0, 0, 0, 0.1); }
-.highlight-card:hover { background: rgba(0, 0, 0, 0.1); }
-.highlight-card h3 { color: #2B2B2B; }
-.highlight-card p { color: #555555; }
-
-/* -- Tip Box -- */
-.tip-box {
-    display: flex; align-items: flex-start; gap: 1rem;
-    background: #fffbe6; border: 1px solid #f0d060;
-    border-radius: 12px; padding: 1.25rem 1.5rem; margin-top: 2rem;
-}
-.tip-box p { color: var(--midnight); font-size: 0.9rem; line-height: 1.6; margin: 0; }
-
-/* -- CTA -- */
-.cta-section { background: #f2f2f2; }
-.cta-container h2 { color: #2B2B2B; }
-.cta-container p { color: #555555; }
-.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
-/* -- Footer gradient -- */
-.site-footer::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%; animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder { 0% { background-position: 0% 0; } 100% { background-position: 300% 0; } }
-
-/* -- Responsive -- */
-@media (max-width: 1024px) {
-    .menu-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 768px) {
-    .menu-grid { grid-template-columns: 1fr; }
-    .info-bar-inner { gap: 1.5rem; }
-    .cta-buttons { flex-direction: column; align-items: center; }
 }
 </style>
 </head>
@@ -171,7 +99,6 @@
         <a href="../contact.html">Contact</a>
     </div>
 
-
     <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="Eighteen99 fine dining at The Lodge at Cloudcroft, New Mexico"></div>
         <div class="hero-overlay"></div>
@@ -189,7 +116,6 @@
             </div>
         </div>
     </section>
-
 
     <div class="info-bar">
         <div class="info-bar-inner">
@@ -211,7 +137,6 @@
             </div>
         </div>
     </div>
-
 
     <main id="main-content" role="main">
 
@@ -238,13 +163,12 @@
                             <span class="about-feature">&#x1F4DD; Reservations</span>
                         </div>
                     </div>
-                    <div class="about-image fade-in" style="display: flex; align-items: center; justify-content: center; background: var(--cloud-drift); border-radius: 12px; min-height: 300px;">
-                        <span style="font-size: 6rem;">&#x1F37D;&#xFE0F;</span>
+                    <div class="about-image fade-in">
+                        <img src="eat-photo/photo-eat-eighteen99/Lodge%20Plates-9_websize%20copy.jpg" alt="Sliced duck breast with artichoke, beetroot purée, and roasted potato at Eighteen99" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
                     </div>
                 </div>
             </div>
         </section>
-
 
         <section class="section menu-section" id="dining" aria-label="Dining experience">
             <div class="section-container">
@@ -252,6 +176,9 @@
                     <span class="section-label">The Dining</span>
                     <h2 class="section-title section-title-centered">What to Expect</h2>
                     <p class="section-description">A chef-driven dinner menu that changes. Check the current menu directly before visiting.</p>
+                </div>
+                <div style="margin: 2rem auto 0; max-width: 700px;">
+                    <img src="eat-photo/photo-eat-eighteen99/Lodge%20Plates-12_websize%20copy.jpg" alt="Seared short rib with seasonal vegetables on cream sauce at Eighteen99" loading="lazy" style="width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover;">
                 </div>
                 <div class="menu-grid">
                     <div class="menu-card">
@@ -295,12 +222,14 @@
             </div>
         </section>
 
-
         <section class="section" id="experience" aria-label="The experience">
             <div class="section-container">
                 <div style="text-align: center;">
                     <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">The Experience</span>
                     <h2 class="section-title section-title-centered" style="color: #2B2B2B;">Best Fit For</h2>
+                </div>
+                <div style="margin: 2rem auto 0; max-width: 700px;">
+                    <img src="eat-photo/photo-eat-eighteen99/Lodge%20Plates-7%202%20copy.JPEG" alt="Crab cake with beet and pepper sauces on a handmade ceramic plate at Eighteen99" loading="lazy" style="width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover;">
                 </div>
                 <div class="highlights-grid">
                     <div class="highlight-card">
@@ -321,7 +250,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="section" id="history" aria-label="Background and history" style="background: var(--cloud-drift);">
             <div class="section-container">
@@ -349,7 +277,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="section" id="visit" aria-label="Plan your visit">
             <div class="section-container">
@@ -383,6 +310,28 @@
             </div>
         </section>
 
+        <section class="section" id="gallery" aria-label="Photo gallery">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Gallery</span>
+                    <h2 class="section-title section-title-centered">From the Kitchen</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-eighteen99/Lodge%20Plates-16%202%20copy.JPEG" alt="Caesar salad with anchovy, crostini, and parmesan crisp at Eighteen99" loading="lazy">
+                        <div class="gallery-caption">Caesar salad</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-eighteen99/Lodge%20Plates-2%202%20copy.JPEG" alt="Tuna tartare with crostini at Eighteen99" loading="lazy">
+                        <div class="gallery-caption">Tuna tartare</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-eighteen99/Lodge%20Plates-20%20copy.jpg" alt="Layered pastry dessert with cream and strawberry at Eighteen99" loading="lazy">
+                        <div class="gallery-caption">Pastry dessert</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
@@ -397,7 +346,6 @@
         </section>
     </main>
 
-
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col">
@@ -410,7 +358,7 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Lodging</a>
                 <a href="complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -419,13 +367,13 @@
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Eighteen99</h4>
+                <h3>Eighteen99</h3>
                 <a href="https://www.223collectionhotels.com/thelodge/dining" target="_blank" rel="noopener noreferrer">Lodge Dining Page</a>
                 <a href="https://www.coolcloudcroft.com/members/eighteen99" target="_blank" rel="noopener noreferrer">Chamber Listing</a>
                 <a href="tel:5756822098">575-682-2098</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="../about.html">About Cloudcroft</a>
@@ -436,7 +384,6 @@
             <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
         </div>
     </footer>
-
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
@@ -453,7 +400,7 @@
                 });
             }, observerOptions);
 
-            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) {
+            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card, .gallery-item').forEach(function(el) {
                 fadeObserver.observe(el);
             });
         })();

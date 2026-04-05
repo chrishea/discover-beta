@@ -43,23 +43,10 @@
     <style>
 /* Hero - page-specific */
 .hero-bg {
-background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--twilight) 100%);
-animation: kenBurns 20s ease-in-out infinite alternate;
+    background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--twilight) 100%);
 }
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
-.hero-title .word:nth-child(4) { animation-delay: 0.8s; }
 
 /* Page-specific info-bar link styles */
-.info-bar-item a {
-color: var(--charcoal);
-text-decoration: none;
-transition: color 0.3s;
-}
-.info-bar-item a:hover {
-color: var(--golden-hour);
-}
 
 /* Page-specific about image */
 .about-image {
@@ -70,19 +57,7 @@ color: var(--summit);
 }
 
 /* Menu items (page-specific) */
-.menu-items {
-list-style: none;
-margin-top: 1rem;
-}
-.menu-items li {
-padding: 0.5rem 0;
-border-bottom: 1px dashed rgba(107, 123, 141, 0.2);
-color: var(--midnight);
-font-size: 0.95rem;
-}
-.menu-items li:last-child {
-border-bottom: none;
-}
+
 /* Highlights */
 .highlights-grid {
 grid-template-columns: repeat(4, 1fr);
@@ -93,29 +68,9 @@ padding: 2.5rem 1.5rem;
 .highlight-card:nth-child(4).visible { transition-delay: 0.3s; }
 
 /* Footer ::before gradient */
-.site-footer::before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-height: 3px;
-background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-background-size: 300% 100%;
-animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-0% { background-position: 0% 0; }
-100% { background-position: 300% 0; }
-}
 
 /* Responsive */
-@media (max-width: 1024px) {
-.highlights-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 768px) {
-.highlights-grid { grid-template-columns: 1fr; }
-}</style>
+</style>
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -228,7 +183,6 @@ animation: gradientBorder 6s linear infinite;
             </div>
         </section>
 
-
         <section class="section menu-section" id="types" aria-label="Rental types">
             <div class="section-container">
                 <div style="text-align: center;">
@@ -289,7 +243,6 @@ animation: gradientBorder 6s linear infinite;
             </div>
         </section>
 
-
         <section class="section highlights-section" aria-label="Booking tips">
             <div class="section-container">
                 <div style="text-align: center;">
@@ -321,7 +274,6 @@ animation: gradientBorder 6s linear infinite;
                 </div>
             </div>
         </section>
-
 
         <section class="section" id="platforms" aria-label="Where to book">
             <div class="section-container">
@@ -355,7 +307,6 @@ animation: gradientBorder 6s linear infinite;
             </div>
         </section>
 
-
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
                 <h2>Ready to Book Your Mountain Escape?</h2>
@@ -367,7 +318,6 @@ animation: gradientBorder 6s linear infinite;
             </div>
         </section>
     </main>
-
 
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
@@ -381,7 +331,7 @@ animation: gradientBorder 6s linear infinite;
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="lodging.html">Lodging</a>
                 <a href="../eat/complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -390,14 +340,14 @@ animation: gradientBorder 6s linear infinite;
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="../about.html">About Cloudcroft</a>
@@ -408,7 +358,6 @@ animation: gradientBorder 6s linear infinite;
             <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
         </div>
     </footer>
-
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 

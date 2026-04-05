@@ -92,15 +92,6 @@
             padding-bottom: 2px;
         }
 
-        .hero-subtitle {
-            font-size: clamp(1rem, 2vw, 1.2rem);
-            color: rgba(255, 255, 255, 0.85);
-            max-width: 580px;
-            margin: 0 auto 2rem;
-            opacity: 0;
-            animation: fadeUp 0.7s ease 0.6s forwards;
-        }
-
         .hero-meta {
             display: flex;
             gap: 2rem;
@@ -798,7 +789,6 @@
             line-height: 1.6;
         }
 
-        /* ── Tip box ── */
         .tip-box {
             background: #f2f2f2;
             border-left: 4px solid #000000;
@@ -814,13 +804,6 @@
             font-size: 1.25rem;
             flex-shrink: 0;
             margin-top: 2px;
-        }
-
-        .tip-box p {
-            font-size: 0.9rem;
-            color: #444444;
-            line-height: 1.7;
-            margin: 0;
         }
 
         .tip-box strong {
@@ -893,7 +876,6 @@
             transform: translateY(-2px);
         }
 
-        /* ── Responsive ── */
         @media (max-width: 768px) {
             .things-grid {
                 grid-template-columns: 1fr;
@@ -1387,7 +1369,7 @@
                     </div>
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img alt="Hiking through Lincoln National Forest near Cloudcroft"
-                                src="media/placeholder-activity-biking.jpg"></div>
+                                src="media/placeholder-activity-biking.jpg" loading="lazy"></div>
                         <h3>Hike Lincoln National Forest</h3>
                         <p>Dozens of maintained trails thread through aspen groves and spruce stands. The Osha Trail
                             and
@@ -1398,7 +1380,7 @@
                     </div>
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img alt="Art galleries on Burro Avenue in Cloudcroft"
-                                src="media/placeholder-activity-biking.jpg"></div>
+                                src="media/placeholder-activity-biking.jpg" loading="lazy"></div>
                         <h3>Browse the Art Galleries</h3>
                         <p>Burro Avenue, Cloudcroft's main street, is lined with galleries featuring local and
                             regional
@@ -1409,7 +1391,7 @@
                     </div>
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img alt="Pickleball courts at Zenith Park in Cloudcroft"
-                                src="media/image-do-pickleball-group.webp"></div>
+                                src="media/image-do-pickleball-group.webp" loading="lazy"></div>
                         <h3>Play Pickleball at Zenith Park</h3>
                         <p>Six free outdoor courts at 8,676 feet — possibly the highest pickleball venue in New
                             Mexico.
@@ -1433,7 +1415,7 @@
 
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img alt="Stargazing and astronomy near Cloudcroft, NM"
-                                src="media/placeholder-activity-biking.jpg"></div>
+                                src="media/placeholder-activity-biking.jpg" loading="lazy"></div>
 
                         <h3>Stargaze at Sunspot Observatory</h3>
                         <p>The Sacramento Peak Solar Observatory sits at 9,200 ft with remarkably dark skies. Tour the
@@ -1578,7 +1560,6 @@
                                 <img src="media/crofting-inn-front.jpg" alt="The Crofting Bed &amp; Breakfast"
                                     loading="lazy">
                             </div>
-
 
                             <h3>The Crofting Bed &amp; Breakfast</h3>
                             <p>A century-old historic home on Swallow Place, two blocks from Burro Avenue. Eight
@@ -1873,7 +1854,7 @@
                         <div class="outdoor-detail">Best: May – October</div>
                     </div>
                     <div class="outdoor-card fade-in">
-                        <div class="outdoor-icon"><img alt="Cloudcroft, New Mexico" src="media/placeholder-activity-biking.jpg</div>
+                        <div class="outdoor-icon"><img alt="Cloudcroft, New Mexico" src="media/placeholder-activity-biking.jpg" loading="lazy"></div>
                         <h3>Mountain Biking</h3>
                         <p>Technical singletrack and forest road loops for all skill levels. Rentals available
                             seasonally in the village.</p>
@@ -1998,14 +1979,14 @@
                 </div>
                 <div class="seasonal-grid">
                     <div class="seasonal-card">
-                        <div class="seasonal-icon"><img src="media/image-winter.jpg"></div>
+                        <div class="seasonal-icon"><img src="media/image-winter.jpg" loading="lazy"></div>
                         <h3>Spring</h3>
                         <div class="season-months">April &ndash; May</div>
                         <p>Wildflowers begin to bloom across the mountain meadows. Mild temperatures make for ideal
                             hiking conditions. A quieter time to visit before the summer crowds arrive.</p>
                     </div>
                     <div class="seasonal-card">
-                        <div class="seasonal-icon"><img src="media/image-winter.jpg"></div>
+                        <div class="seasonal-icon"><img src="media/image-winter.jpg" loading="lazy"></div>
                         <h3>Summer</h3>
                         <div class="season-months">June &ndash; August</div>
                         <p>The perfect escape from desert heat below. Highs in the 70s when the valley hits triple
@@ -2013,7 +1994,7 @@
                             common.</p>
                     </div>
                     <div class="seasonal-card">
-                        <div class="seasonal-icon"><img src="media/image-winter.jpg"></div>
+                        <div class="seasonal-icon"><img src="media/image-winter.jpg" loading="lazy"></div>
                         <h3>Fall</h3>
                         <div class="season-months">September &ndash; November</div>
                         <p>Spectacular golden foliage as aspens turn. Aspenfest in October draws visitors from across
@@ -2021,7 +2002,7 @@
                         </p>
                     </div>
                     <div class="seasonal-card">
-                        <div class="seasonal-icon"><img src="media/image-winter.jpg"></div>
+                        <div class="seasonal-icon"><img src="media/image-winter.jpg" loading="lazy"></div>
                         <h3>Winter</h3>
                         <div class=" season-months">December &ndash; March</div>
                         <p>Snow blankets the mountains, creating a winter wonderland. Enjoy snow sports, cozy lodge
@@ -2167,7 +2148,7 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Explore</h4>
+                    <h3>Explore</h3>
                     <ul>
                         <li><a href="stay/lodging.html">Lodging</a></li>
                         <li><a href="eat/complete-guide-to-dining.html">Dining</a></li>
@@ -2178,7 +2159,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Connect</h4>
+                    <h3>Connect</h3>
                     <ul>
                         <li><a href="tel:+15755824585">(575) 682-4585</a></li>
                         <li><a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a></li>
@@ -2189,7 +2170,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Plan</h4>
+                    <h3>Plan</h3>
                     <ul>
                         <li><a href="complete-guide.html">Visitor Guide</a></li>
                         <li><a href="plan.html">Plan Your Trip</a></li>

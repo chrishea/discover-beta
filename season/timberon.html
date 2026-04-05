@@ -44,11 +44,6 @@
 /* Hero - page-specific */
 .hero-bg {
     background: linear-gradient(135deg, var(--pine-shadow) 0%, #333333 50%, var(--midnight) 100%);
-    animation: kenBurns 20s ease-in-out infinite alternate;
-}
-.hero-title .word:nth-child(1) { animation-delay: 0.3s; }
-.hero-subtitle {
-    animation: fadeUp 0.8s ease 1s forwards;
 }
 
 /* Page-specific about image */
@@ -72,22 +67,9 @@
 }
 
 /* Menu card color override */
-.menu-card h3 {
-    color: var(--charcoal);
-}
 
 /* Footer ::before gradient */
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%;
-    animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder { 0% { background-position: 0% 0; } 100% { background-position: 300% 0; } }
-    </style>
+</style>
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -245,9 +227,9 @@
                 <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
                 <div class="footer-social"><a href="#todo-facebook" aria-label="Facebook">FB</a><a href="#todo-instagram" aria-label="Instagram">IG</a><a href="#todo-twitter" aria-label="Twitter">X</a></div>
             </div>
-            <div class="footer-col"><h4>Explore</h4><a href="../stay/lodging.html">Lodging</a><a href="../eat/complete-guide-to-dining.html">Dining</a><a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a><a href="../do/complete-guide-to-activities.html">Activities</a><a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a><a href="seasonal.html">Seasons</a></div>
-            <div class="footer-col"><h4>Day Trips</h4><a href="../explore/nearby-destinations.html">Nearby Destinations</a><a href="../explore/alamogordo.html">Alamogordo</a><a href="timberon.html">Timberon</a><a href="../explore/mayhill.html">Mayhill</a><a href="../explore/sunspot-observatory.html">Sunspot Observatory</a><a href="../dark-skies.html">Dark Skies</a></div>
-            <div class="footer-col"><h4>Plan</h4><a href="../plan.html">Plan Your Trip</a><a href="../contact.html">Contact Us</a><a href="../about.html">About Cloudcroft</a></div>
+            <div class="footer-col"><h3>Explore</h3><a href="../stay/lodging.html">Lodging</a><a href="../eat/complete-guide-to-dining.html">Dining</a><a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a><a href="../do/complete-guide-to-activities.html">Activities</a><a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a><a href="seasonal.html">Seasons</a></div>
+            <div class="footer-col"><h3>Day Trips</h3><a href="../explore/nearby-destinations.html">Nearby Destinations</a><a href="../explore/alamogordo.html">Alamogordo</a><a href="timberon.html">Timberon</a><a href="../explore/mayhill.html">Mayhill</a><a href="../explore/sunspot-observatory.html">Sunspot Observatory</a><a href="../dark-skies.html">Dark Skies</a></div>
+            <div class="footer-col"><h3>Plan</h3><a href="../plan.html">Plan Your Trip</a><a href="../contact.html">Contact Us</a><a href="../about.html">About Cloudcroft</a></div>
         </div>
         <div class="footer-bottom"><p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p></div>
     </footer>

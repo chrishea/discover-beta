@@ -47,48 +47,13 @@
     </script>
 
     <style>
-/* ── Hero ── */
-.hero {
-    height: 65vh;
-    min-height: 450px;
-}
+
 .hero-bg {
     background: linear-gradient(135deg, #1a3a2a 0%, #0d2818 50%, #1a472a 100%);
-    animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
 }
-.hero-badge span {
-    color: var(--golden-hour);
-}
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
-.hero-title .word:nth-child(4) { animation-delay: 0.8s; }
-.hero-title .word:nth-child(5) { animation-delay: 1.0s; }
-.hero-subtitle {
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1s forwards;
-}
-.hero-ctas {
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1.4s forwards;
-}
-
-/* ── Info Bar ── */
-.info-bar { background: var(--cream-dark); }
-.info-bar-item { color: var(--charcoal); }
-.info-bar-item a { color: var(--charcoal); text-decoration: none; transition: color 0.3s; }
-.info-bar-item a:hover { color: var(--golden-hour); }
-.info-bar-icon {
-    width: 40px; height: 40px;
-    background: rgba(0, 0, 0, 0.15); border-radius: 50%;
-    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
-}
-
-/* ── About ── */
-.about-image img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
 
 /* ── Course Details (Fact Grid) ── */
 .fact-grid {
@@ -130,21 +95,13 @@
     line-height: 1.6;
 }
 
-/* ── Highlights ── */
 .highlights-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
-.highlight-card {
-    background: rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    padding: 2rem;
-    opacity: 0;
-    transform: translateY(20px);
-}
+
 .highlight-card.visible {
     opacity: 1;
     transform: translateY(0);
@@ -152,16 +109,9 @@
 }
 .highlight-card:nth-child(2).visible { transition-delay: 0.1s; }
 .highlight-card:nth-child(3).visible { transition-delay: 0.2s; }
-.highlight-card:hover { background: rgba(0, 0, 0, 0.1); }
-.highlight-icon { font-size: 2rem; margin-bottom: 0.75rem; }
-.highlight-card h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700; font-size: 1.1rem;
-    color: #2B2B2B; margin-bottom: 0.5rem;
-}
-.highlight-card p { color: #555555; font-size: 0.9rem; line-height: 1.6; }
 
-/* ── Pick Cards (Who It's For) ── */
+.highlight-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+
 .pick-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -176,55 +126,6 @@
     opacity: 0;
     transform: translateY(20px);
 }
-.pick-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.pick-card:nth-child(2).visible { transition-delay: 0.1s; }
-.pick-card:nth-child(3).visible { transition-delay: 0.2s; }
-.pick-card:nth-child(4).visible { transition-delay: 0.3s; }
-.pick-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
-.pick-card h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700; font-size: 1.1rem;
-    color: var(--golden-hour); margin-bottom: 0.5rem;
-}
-.pick-card p { color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; line-height: 1.6; }
-
-/* ── Tip Cards ── */
-.tip-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-}
-.tip-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-top: 4px solid var(--golden-hour);
-    opacity: 0;
-    transform: translateY(20px);
-}
-.tip-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.tip-card:nth-child(2).visible { transition-delay: 0.1s; }
-.tip-card:nth-child(3).visible { transition-delay: 0.2s; }
-.tip-card:nth-child(4).visible { transition-delay: 0.3s; }
-.tip-card:nth-child(5).visible { transition-delay: 0.4s; }
-.tip-card:nth-child(6).visible { transition-delay: 0.5s; }
-.tip-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
-.tip-card h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700; font-size: 1.1rem;
-    color: var(--midnight); margin-bottom: 0.5rem;
-}
-.tip-card p { color: var(--granite); font-size: 0.9rem; line-height: 1.6; }
 
 /* ── Visiting Grid ── */
 .visiting-grid {
@@ -260,46 +161,17 @@
 .visiting-card a { color: var(--alpine); text-decoration: none; }
 .visiting-card a:hover { text-decoration: underline; }
 
-/* ── Tip Box ── */
-.tip-box {
-    display: flex; align-items: flex-start; gap: 1rem;
-    background: #fffbe6; border: 1px solid #f0d060;
-    border-radius: 12px; padding: 1.25rem 1.5rem; margin-top: 2rem;
-}
-.tip-box p { color: var(--midnight); font-size: 0.9rem; line-height: 1.6; margin: 0; }
-
-/* ── CTA ── */
-.cta-section { background: #f2f2f2; }
-.cta-container h2 { color: #2B2B2B; }
-.cta-container p { color: #555555; }
-.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
-/* ── Footer gradient ── */
-.site-footer::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%; animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
-
-/* ── Responsive ── */
 @media (max-width: 1024px) {
     .fact-grid { grid-template-columns: repeat(2, 1fr); }
-    .highlights-grid { grid-template-columns: repeat(2, 1fr); }
-    .tip-grid { grid-template-columns: repeat(2, 1fr); }
+    
     .pick-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
     .fact-grid { grid-template-columns: 1fr; }
-    .highlights-grid { grid-template-columns: 1fr; }
-    .tip-grid { grid-template-columns: 1fr; }
+    
     .pick-grid { grid-template-columns: 1fr; }
     .visiting-grid { grid-template-columns: 1fr; }
-    .info-bar-inner { gap: 1.5rem; }
-    .cta-buttons { flex-direction: column; align-items: center; }
+    
 }
 </style>
 </head>
@@ -340,7 +212,6 @@
         <a href="../contact.html">Contact</a>
     </div>
 
-
     <!-- ════════════════════════════════════════════ HERO ════════════════════════════════════════════ -->
     <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="The Lodge Golf Course at Cloudcroft, New Mexico"></div>
@@ -363,7 +234,6 @@
         </div>
     </section>
 
-
     <!-- ════════════════════════════════════════════ INFO BAR ════════════════════════════════════════════ -->
     <div class="info-bar">
         <div class="info-bar-inner">
@@ -385,7 +255,6 @@
             </div>
         </div>
     </div>
-
 
     <main id="main-content" role="main">
 
@@ -423,7 +292,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- ════════════════════════════════════════════ COURSE DETAILS ════════════════════════════════════════════ -->
         <section class="section" id="course" aria-label="Course details" style="background: var(--cloud-drift);">
@@ -478,7 +346,6 @@
             </div>
         </section>
 
-
         <!-- ════════════════════════════════════════════ WHY PLAY HERE ════════════════════════════════════════════ -->
         <section class="section highlights-section" id="highlights" aria-label="Why play here">
             <div class="section-container">
@@ -505,7 +372,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- ════════════════════════════════════════════ WHO IT'S FOR ════════════════════════════════════════════ -->
         <section class="section" id="who" aria-label="Who it's for" style="background: var(--cloud-drift);">
@@ -539,7 +405,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- ════════════════════════════════════════════ PRACTICAL TIPS ════════════════════════════════════════════ -->
         <section class="section" id="tips" aria-label="Practical tips">
@@ -584,7 +449,6 @@
             </div>
         </section>
 
-
         <!-- ════════════════════════════════════════════ VISIT ════════════════════════════════════════════ -->
         <section class="section" id="visit" aria-label="Plan your round" style="background: var(--cloud-drift);">
             <div class="section-container">
@@ -625,7 +489,6 @@
             </div>
         </section>
 
-
         <!-- ════════════════════════════════════════════ CTA ════════════════════════════════════════════ -->
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
@@ -639,7 +502,6 @@
         </section>
     </main>
 
-
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col">
@@ -652,7 +514,7 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="../eat/complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -661,14 +523,14 @@
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="https://www.223collectionhotels.com/the-lodge" target="_blank" rel="noopener noreferrer">The Lodge Website</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="../about.html">About Cloudcroft</a>
@@ -679,7 +541,6 @@
             <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
         </div>
     </footer>
-
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 

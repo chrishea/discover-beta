@@ -36,21 +36,19 @@
     </script>
 
     <style>
-.hero { position: relative; height: 65vh; min-height: 450px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, var(--summit) 0%, var(--midnight) 50%, var(--twilight) 100%); animation: kenBurns 20s ease-in-out infinite alternate; }
+.hero-bg {
+    background: linear-gradient(135deg, var(--summit) 0%, var(--midnight) 50%, var(--twilight) 100%);
+}
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)); }
 .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 2rem; max-width: 900px; }
 .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0, 0, 0, 0.2); border: 1px solid rgba(0, 0, 0, 0.4); padding: 0.5rem 1.25rem; border-radius: 30px; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
-.hero-badge span { font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 0.8rem; color: #000000; text-transform: uppercase; letter-spacing: 0.15em; }
+
 .hero-title { font-family: 'DM Sans', sans-serif; font-weight: 900; font-size: clamp(2.5rem, 5vw, 4rem); color: var(--snow-cap); line-height: 1.2; margin-bottom: 1rem; }
 .hero-title .word { display: inline-block; opacity: 0; transform: translateY(20px); animation: wordReveal 0.6s ease 0.3s forwards; }
 @keyframes wordReveal { to { opacity: 1; transform: translateY(0); } }
-.hero-subtitle { font-family: 'Inter', sans-serif; font-weight: 400; font-size: clamp(1rem, 2.5vw, 1.35rem); color: rgba(240, 244, 248, 0.9); letter-spacing: 0.05em; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.8s ease 1s forwards; }
-.hero-ctas { display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards; }
-.info-bar { background: var(--cream-dark); padding: 1.5rem 2rem; }
+
 .info-bar-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
-.info-bar-item { display: flex; align-items: center; gap: 0.75rem; color: var(--charcoal); font-size: 0.9rem; font-weight: 500; }
-.info-bar-icon { width: 40px; height: 40px; background: rgba(0, 0, 0, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+
 .section-description { font-size: 1.05rem; color: var(--granite); max-width: 600px; margin: 0 auto 3rem; text-align: center; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .about-text p { font-size: 1.05rem; color: var(--granite); margin-bottom: 1.5rem; line-height: 1.8; }
@@ -60,16 +58,9 @@
 .about-image-placeholder { text-align: center; padding: 2rem; }
 .about-image-placeholder .icon { font-size: 5rem; margin-bottom: 1rem; }
 .about-image-placeholder p { color: var(--snow-cap); font-family: 'DM Sans', sans-serif; font-weight: 500; }
-.menu-section { background: var(--cloud-drift); }
-.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+
 .menu-card { background: var(--snow-cap); border-radius: 12px; overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.2); transition: transform 0.3s, box-shadow 0.3s; opacity: 0; transform: translateY(30px); }
-.menu-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s; }
-.menu-card:nth-child(2).visible { transition-delay: 0.1s; }
-.menu-card:nth-child(3).visible { transition-delay: 0.2s; }
-.menu-card:nth-child(4).visible { transition-delay: 0.3s; }
-.menu-card:nth-child(5).visible { transition-delay: 0.4s; }
-.menu-card:nth-child(6).visible { transition-delay: 0.5s; }
-.menu-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15); }
+
 .menu-card-header { background: linear-gradient(135deg, var(--summit) 0%, var(--midnight) 100%); padding: 2rem; color: white; text-align: center; }
 .menu-card-icon { font-size: 3rem; margin-bottom: 0.5rem; }
 .menu-card-header h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.2rem; }
@@ -92,20 +83,18 @@
 .visiting-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--summit) 0%, var(--midnight) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1.5rem; }
 .visiting-card h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--midnight); margin-bottom: 0.5rem; }
 .visiting-card p { color: var(--granite); font-size: 0.95rem; line-height: 1.7; }
-.cta-section { background: #f2f2f2; padding: 6rem 2rem; text-align: center; }
+
 .cta-container { max-width: 700px; margin: 0 auto; }
 .cta-container h2 { font-family: 'DM Sans', sans-serif; font-weight: 900; font-size: clamp(1.8rem, 3vw, 2.5rem); color: #000000; margin-bottom: 1rem; }
-.cta-container p { color: #555555; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; }
-.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
 .site-footer { padding: 4rem 2rem 2rem; }
-.site-footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour)); background-size: 300% 100%; animation: gradientBorder 6s linear infinite; }
-@keyframes gradientBorder { 0% { background-position: 0% 0; } 100% { background-position: 300% 0; } }
+
 .footer-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
 .footer-brand { display: block; }
 .fade-in { opacity: 0; transform: translateY(30px); }
 .fade-in.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1); }
 @media (max-width: 1024px) { .about-grid, .history-grid { grid-template-columns: 1fr; gap: 2rem; } }
-@media (max-width: 768px) { .menu-grid { grid-template-columns: 1fr; } .visiting-grid { grid-template-columns: 1fr; } .info-bar-inner { gap: 1.5rem; } .cta-buttons { flex-direction: column; align-items: center; } }
+@media (max-width: 768px) {  .visiting-grid { grid-template-columns: 1fr; }   }
     </style>
 </head>
 <body>
@@ -225,9 +214,9 @@
                         <p>The area's mild climate and reliable water sources made it ideal for cattle ranching, and many of the families who settled here in the late 1800s still have descendants working the land today.</p>
                     </div>
                     <div class="timeline-list">
-                        <div class="timeline-item"><div class="timeline-year">1880s</div><div class="timeline-content"><h4>Early Settlement</h4><p>First ranching families establish homesteads in the area.</p></div></div>
-                        <div class="timeline-item"><div class="timeline-year">1920s</div><div class="timeline-content"><h4>Community Growth</h4><p>School and church established, forming the heart of the community.</p></div></div>
-                        <div class="timeline-item"><div class="timeline-year">Today</div><div class="timeline-content"><h4>Living Heritage</h4><p>Multi-generational ranching families continue their traditions.</p></div></div>
+                        <div class="timeline-item"><div class="timeline-year">1880s</div><div class="timeline-content"><h3>Early Settlement</h3><p>First ranching families establish homesteads in the area.</p></div></div>
+                        <div class="timeline-item"><div class="timeline-year">1920s</div><div class="timeline-content"><h3>Community Growth</h3><p>School and church established, forming the heart of the community.</p></div></div>
+                        <div class="timeline-item"><div class="timeline-year">Today</div><div class="timeline-content"><h3>Living Heritage</h3><p>Multi-generational ranching families continue their traditions.</p></div></div>
                     </div>
                 </div>
             </div>
@@ -266,9 +255,9 @@
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col"><span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span><p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p><div class="footer-social"><a href="#todo-facebook" aria-label="Facebook">FB</a><a href="#todo-instagram" aria-label="Instagram">IG</a><a href="#todo-twitter" aria-label="Twitter">X</a></div></div>
-            <div class="footer-col"><h4>Explore</h4><a href="../stay/lodging.html">Lodging</a><a href="../eat/complete-guide-to-dining.html">Dining</a><a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a><a href="../do/complete-guide-to-activities.html">Activities</a><a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a><a href="../season/seasonal.html">Seasons</a></div>
-            <div class="footer-col"><h4>Day Trips</h4><a href="nearby-destinations.html">Nearby Destinations</a><a href="alamogordo.html">Alamogordo</a><a href="../season/timberon.html">Timberon</a><a href="mayhill.html">Mayhill</a><a href="sunspot-observatory.html">Sunspot Observatory</a><a href="../dark-skies.html">Dark Skies</a></div>
-            <div class="footer-col"><h4>Plan</h4><a href="../plan.html">Plan Your Trip</a><a href="../contact.html">Contact Us</a><a href="../about.html">About Cloudcroft</a></div>
+            <div class="footer-col"><h3>Explore</h3><a href="../stay/lodging.html">Lodging</a><a href="../eat/complete-guide-to-dining.html">Dining</a><a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a><a href="../do/complete-guide-to-activities.html">Activities</a><a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a><a href="../season/seasonal.html">Seasons</a></div>
+            <div class="footer-col"><h3>Day Trips</h3><a href="nearby-destinations.html">Nearby Destinations</a><a href="alamogordo.html">Alamogordo</a><a href="../season/timberon.html">Timberon</a><a href="mayhill.html">Mayhill</a><a href="sunspot-observatory.html">Sunspot Observatory</a><a href="../dark-skies.html">Dark Skies</a></div>
+            <div class="footer-col"><h3>Plan</h3><a href="../plan.html">Plan Your Trip</a><a href="../contact.html">Contact Us</a><a href="../about.html">About Cloudcroft</a></div>
         </div>
         <div class="footer-bottom"><p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p></div>
     </footer>

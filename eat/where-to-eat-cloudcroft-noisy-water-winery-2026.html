@@ -46,39 +46,11 @@
     </script>
 
     <style>
-.hero {
-    height: 65vh;
-    min-height: 450px;
-}
 .hero-bg {
     background: linear-gradient(135deg, #3d1c42 0%, #2a1230 50%, #4a1d52 100%);
-    animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25));
-}
-.hero-badge span {
-    color: var(--golden-hour);
-}
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
-.hero-subtitle {
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1s forwards;
-}
-.hero-ctas {
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1.4s forwards;
-}
-.info-bar { background: var(--cream-dark); }
-.info-bar-item { color: var(--charcoal); }
-.info-bar-item a { color: var(--charcoal); text-decoration: none; transition: color 0.3s; }
-.info-bar-item a:hover { color: var(--golden-hour); }
-.info-bar-icon {
-    width: 40px; height: 40px;
-    background: rgba(0, 0, 0, 0.15); border-radius: 50%;
-    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
 }
 
 /* ── Wine Grid ── */
@@ -169,41 +141,6 @@
 }
 .also-card p { color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; line-height: 1.6; }
 
-/* ── Highlights ── */
-.highlight-card {
-    background: rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.highlight-card:hover { background: rgba(0, 0, 0, 0.1); }
-.highlight-card h3 { color: #2B2B2B; }
-.highlight-card p { color: #555555; }
-
-/* ── Tip Box ── */
-.tip-box {
-    display: flex; align-items: flex-start; gap: 1rem;
-    background: #fffbe6; border: 1px solid #f0d060;
-    border-radius: 12px; padding: 1.25rem 1.5rem; margin-top: 2rem;
-}
-.tip-box p { color: var(--midnight); font-size: 0.9rem; line-height: 1.6; margin: 0; }
-
-/* ── CTA ── */
-.cta-section { background: #f2f2f2; }
-.cta-container h2 { color: #2B2B2B; }
-.cta-container p { color: #555555; }
-.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
-/* ── Footer ── */
-.site-footer::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%; animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
-
-/* ── Responsive ── */
 @media (max-width: 1024px) {
     .wine-grid { grid-template-columns: repeat(2, 1fr); }
     .also-grid { grid-template-columns: repeat(2, 1fr); }
@@ -212,8 +149,7 @@
 @media (max-width: 768px) {
     .wine-grid { grid-template-columns: 1fr; }
     .also-grid { grid-template-columns: 1fr; }
-    .info-bar-inner { gap: 1.5rem; }
-    .cta-buttons { flex-direction: column; align-items: center; }
+    
 }
 </style>
 </head>
@@ -254,7 +190,6 @@
         <a href="../contact.html">Contact</a>
     </div>
 
-
     <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="Noisy Water Winery tasting room in Cloudcroft, New Mexico"></div>
         <div class="hero-overlay"></div>
@@ -274,7 +209,6 @@
             </div>
         </div>
     </section>
-
 
     <div class="info-bar">
         <div class="info-bar-inner">
@@ -296,7 +230,6 @@
             </div>
         </div>
     </div>
-
 
     <main id="main-content" role="main">
 
@@ -333,7 +266,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="section" id="wines" style="background: var(--cloud-drift);" aria-label="Wine selection">
             <div class="section-container">
@@ -390,7 +322,6 @@
             </div>
         </section>
 
-
         <section class="section" id="events" aria-label="Events and activities">
             <div class="section-container">
                 <div style="text-align: center;">
@@ -414,7 +345,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="section highlights-section" aria-label="Highlights" style="background: var(--cloud-drift);">
             <div class="section-container">
@@ -441,7 +371,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="section" id="visit" aria-label="Plan your visit">
             <div class="section-container">
@@ -479,7 +408,6 @@
             </div>
         </section>
 
-
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
                 <h2>Taste New Mexico at 9,000 Feet</h2>
@@ -491,7 +419,6 @@
             </div>
         </section>
     </main>
-
 
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
@@ -505,7 +432,7 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -514,14 +441,14 @@
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="https://www.noisywaterwinery.com" target="_blank" rel="noopener noreferrer">noisywaterwinery.com</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="../about.html">About Cloudcroft</a>
@@ -532,7 +459,6 @@
             <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
         </div>
     </footer>
-
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 

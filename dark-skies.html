@@ -37,25 +37,24 @@
 
     <style>
 .hero { position: relative; height: 70vh; min-height: 500px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #000000 0%, var(--midnight) 40%, var(--twilight) 100%); }
+.hero-bg {
+    background: linear-gradient(135deg, #000000 0%, var(--midnight) 40%, var(--twilight) 100%);
+}
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)); }
 .hero-stars { position: absolute; inset: 0; background-image: radial-gradient(2px 2px at 20px 30px, #ffffff, transparent), radial-gradient(2px 2px at 40px 70px, #dddddd, transparent), radial-gradient(1px 1px at 90px 40px, #ffffff, transparent), radial-gradient(2px 2px at 130px 80px, #ffffff, transparent), radial-gradient(1px 1px at 160px 120px, #dddddd, transparent), radial-gradient(2px 2px at 200px 50px, #ffffff, transparent), radial-gradient(1px 1px at 250px 160px, #ffffff, transparent), radial-gradient(2px 2px at 280px 90px, #dddddd, transparent), radial-gradient(1px 1px at 320px 140px, #ffffff, transparent), radial-gradient(2px 2px at 350px 200px, #ffffff, transparent); background-size: 500px 250px; animation: twinkle 8s ease-in-out infinite alternate; }
 @keyframes twinkle { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; } }
 .hero-content { position: relative; z-index: 2; text-align: center; padding: 2rem; max-width: 900px; }
 .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0, 0, 0, 0.2); border: 1px solid rgba(0, 0, 0, 0.4); padding: 0.5rem 1.25rem; border-radius: 30px; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
-.hero-badge span { font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 0.8rem; color: #000000; text-transform: uppercase; letter-spacing: 0.15em; }
+
 .hero-title { font-family: 'DM Sans', sans-serif; font-weight: 900; font-size: clamp(2.5rem, 5vw, 4rem); color: var(--snow-cap); line-height: 1.2; margin-bottom: 1rem; text-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
 .hero-title .word { display: inline-block; opacity: 0; transform: translateY(20px); animation: wordReveal 0.6s ease forwards; }
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
+
 @keyframes wordReveal { to { opacity: 1; transform: translateY(0); } }
-.hero-subtitle { font-family: 'Inter', sans-serif; font-weight: 400; font-size: clamp(1rem, 2.5vw, 1.25rem); color: rgba(196, 184, 220, 0.95); letter-spacing: 0.05em; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.8s ease 1s forwards; font-style: italic; }
-.hero-ctas { display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards; }
+
 .info-bar { background: #f2f2f2; padding: 1.5rem 2rem; }
 .info-bar-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
 .info-bar-item { display: flex; align-items: center; gap: 0.75rem; color: #000000; }
-.info-bar-icon { width: 40px; height: 40px; background: rgba(0, 0, 0, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+
 .info-text { display: flex; flex-direction: column; }
 .info-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
 .info-value { font-weight: 600; color: #000000; }
@@ -64,14 +63,11 @@
 .about-text p { font-size: 1.05rem; color: var(--granite); margin-bottom: 1.5rem; line-height: 1.8; }
 .about-features { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
 .about-feature { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 500; padding: 0.5rem 1rem; background: var(--cloud-drift); color: var(--summit); border-radius: 25px; border: 1px solid rgba(58, 107, 30, 0.2); }
-.menu-section { background: var(--cloud-drift); }
-.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+
 .menu-card { background: var(--snow-cap); border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); border: 1px solid rgba(0, 0, 0, 0.1); transition: all 0.3s ease; opacity: 0; transform: translateY(30px); }
-.menu-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease; }
-.menu-card:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); }
+
 .menu-card-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--twilight), var(--alpine)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; }
-.menu-card h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.2rem; color: var(--midnight); margin-bottom: 0.5rem; }
-.menu-card p { color: var(--granite); font-size: 0.95rem; line-height: 1.7; }
+
 .byway-section { background: #f2f2f2; color: #000000; padding: 5rem 2rem; }
 .byway-section .section-title { color: #000000; }
 .byway-intro { font-family: 'Inter', sans-serif; font-size: 1.1rem; color: #555555; margin-bottom: 2rem; font-style: italic; line-height: 1.8; border-left: 3px solid var(--golden-hour); padding-left: 1.5rem; max-width: 800px; }
@@ -88,24 +84,21 @@
 .highlights-section::before { content: ''; position: absolute; inset: 0; opacity: 0.06; background-image: repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px), repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px); pointer-events: none; }
 .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; position: relative; }
 .tip-card { background: var(--snow-cap); border-radius: 12px; padding: 1.5rem; border-left: 4px solid var(--twilight); opacity: 0; transform: translateY(30px); }
-.tip-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease; }
+
 .tip-number { display: inline-block; background: var(--twilight); color: var(--snow-cap); width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 0.9rem; margin-bottom: 1rem; }
 .tip-card h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--midnight); margin-bottom: 0.5rem; }
-.tip-card p { color: var(--granite); font-size: 0.95rem; line-height: 1.7; }
-.cta-section { background: #f2f2f2; padding: 6rem 2rem; text-align: center; }
+
 .cta-container { max-width: 700px; margin: 0 auto; }
 .cta-container h2 { font-family: 'DM Sans', sans-serif; font-weight: 900; font-size: clamp(1.8rem, 3vw, 2.5rem); color: #000000; margin-bottom: 1rem; }
-.cta-container p { color: #555555; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; }
-.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
 .site-footer { padding: 4rem 2rem 2rem; }
-.site-footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour)); background-size: 300% 100%; animation: gradientBorder 6s linear infinite; }
-@keyframes gradientBorder { 0% { background-position: 0% 0; } 100% { background-position: 300% 0; } }
+
 .footer-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
 .footer-brand { display: block; }
 .fade-in { opacity: 0; transform: translateY(30px); }
 .fade-in.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1); }
 @media (max-width: 1024px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } }
-@media (max-width: 768px) { .menu-grid { grid-template-columns: 1fr; } .tips-grid { grid-template-columns: 1fr; } .info-bar-inner { gap: 1.5rem; } .planet-markers { gap: 0.75rem; } .planet-marker { padding: 0.75rem 1rem; } .cta-buttons { flex-direction: column; align-items: center; } }
+@media (max-width: 768px) {  .tips-grid { grid-template-columns: 1fr; }  .planet-markers { gap: 0.75rem; } .planet-marker { padding: 0.75rem 1rem; }  }
     </style>
 </head>
 <body>
@@ -277,9 +270,9 @@
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col"><span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span><p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p><div class="footer-social"><a href="#todo-facebook" aria-label="Facebook">FB</a><a href="#todo-instagram" aria-label="Instagram">IG</a><a href="#todo-twitter" aria-label="Twitter">X</a></div></div>
-            <div class="footer-col"><h4>Explore</h4><a href="stay/lodging.html">Lodging</a><a href="eat/complete-guide-to-dining.html">Dining</a><a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a><a href="do/complete-guide-to-activities.html">Activities</a><a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a><a href="season/seasonal.html">Seasons</a></div>
-            <div class="footer-col"><h4>Day Trips</h4><a href="explore/nearby-destinations.html">Nearby Destinations</a><a href="explore/alamogordo.html">Alamogordo</a><a href="season/timberon.html">Timberon</a><a href="explore/mayhill.html">Mayhill</a><a href="explore/sunspot-observatory.html">Sunspot Observatory</a><a href="dark-skies.html">Dark Skies</a></div>
-            <div class="footer-col"><h4>Plan</h4><a href="plan.html">Plan Your Trip</a><a href="contact.html">Contact Us</a><a href="about.html">About Cloudcroft</a></div>
+            <div class="footer-col"><h3>Explore</h3><a href="stay/lodging.html">Lodging</a><a href="eat/complete-guide-to-dining.html">Dining</a><a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a><a href="do/complete-guide-to-activities.html">Activities</a><a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a><a href="season/seasonal.html">Seasons</a></div>
+            <div class="footer-col"><h3>Day Trips</h3><a href="explore/nearby-destinations.html">Nearby Destinations</a><a href="explore/alamogordo.html">Alamogordo</a><a href="season/timberon.html">Timberon</a><a href="explore/mayhill.html">Mayhill</a><a href="explore/sunspot-observatory.html">Sunspot Observatory</a><a href="dark-skies.html">Dark Skies</a></div>
+            <div class="footer-col"><h3>Plan</h3><a href="plan.html">Plan Your Trip</a><a href="contact.html">Contact Us</a><a href="about.html">About Cloudcroft</a></div>
         </div>
         <div class="footer-bottom"><p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p></div>
     </footer>

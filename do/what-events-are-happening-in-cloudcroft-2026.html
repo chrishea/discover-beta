@@ -48,7 +48,6 @@ body { background: var(--cloud-drift); }
 .hero { height: 60vh; min-height: 400px; }
 .hero-bg {
     background: url('../media/placeholder-event-bikeclassic.webp') center/cover no-repeat;
-    animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-content { max-width: 800px; }
 .hero-content h1 {
@@ -307,19 +306,7 @@ body { background: var(--cloud-drift); }
     50% { box-shadow: 0 4px 15px rgba(0, 0, 0,0), 0 0 0 12px rgba(0, 0, 0,0); }
 }
 /* Footer gradient border */
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%;
-    animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
+
 /* Responsive */
 @media (max-width: 768px) {
     .timeline::before { left: 24px; }
@@ -343,7 +330,6 @@ body { background: var(--cloud-drift); }
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
 
     <header class="site-header" role="banner">
     <div class="header-inner">
@@ -378,7 +364,6 @@ body { background: var(--cloud-drift); }
     <a href="../contact.html">Contact</a>
 </div>
 
-
     <section class="hero" aria-label="Events hero">
         <div class="hero-bg" aria-hidden="true"></div>
         <div class="hero-overlay" aria-hidden="true"></div>
@@ -399,7 +384,6 @@ body { background: var(--cloud-drift); }
             <p>Festivals, races, and gatherings &mdash; Cloudcroft knows how to celebrate.</p>
         </div>
     </section>
-
 
     <main id="main-content" role="main">
         <section class="timeline-section" aria-label="Events timeline">
@@ -430,7 +414,6 @@ body { background: var(--cloud-drift); }
                     </div>
                 </article>
 
-
                 <article class="timeline-item right" id="bike-classic">
                     <div class="date-circle" aria-hidden="true">
                         <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
@@ -452,7 +435,6 @@ body { background: var(--cloud-drift); }
                         </div>
                     </div>
                 </article>
-
 
                 <article class="timeline-item left" id="july-4th">
                     <div class="date-circle" aria-hidden="true">
@@ -476,7 +458,6 @@ body { background: var(--cloud-drift); }
                     </div>
                 </article>
 
-
                 <article class="timeline-item right" id="farmers-market">
                     <div class="date-circle" aria-hidden="true">
                         <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
@@ -497,7 +478,6 @@ body { background: var(--cloud-drift); }
                         </div>
                     </div>
                 </article>
-
 
                 <article class="timeline-item left" id="lumberjack-day">
                     <div class="date-circle" aria-hidden="true">
@@ -521,7 +501,6 @@ body { background: var(--cloud-drift); }
                     </div>
                 </article>
 
-
                 <article class="timeline-item right" id="oktoberfest">
                     <div class="date-circle" aria-hidden="true">
                         <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
@@ -542,7 +521,6 @@ body { background: var(--cloud-drift); }
                         </div>
                     </div>
                 </article>
-
 
                 <article class="timeline-item left" id="christmas">
                     <div class="date-circle" aria-hidden="true">
@@ -567,7 +545,6 @@ body { background: var(--cloud-drift); }
             </div>
         </section>
 
-
         <section class="submit-event" aria-label="Submit your event">
             <h2>Hosting an Event?</h2>
             <p>Hosting an event in Cloudcroft? Let us help spread the word.</p>
@@ -575,11 +552,10 @@ body { background: var(--cloud-drift); }
         </section>
     </main>
 
-
     <footer role="contentinfo">
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="../eat/complete-guide-to-dining.html">Dining</a>
                 <a href="where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -588,21 +564,21 @@ body { background: var(--cloud-drift); }
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="../about.html">About Cloudcroft</a>
                 <a href="../contact.html">Contact Us</a>
             </div>
             <div class="footer-col">
-                <h4>About</h4>
+                <h3>About</h3>
                 <p>Cloudcroft, New Mexico &mdash; a mountain village at 8,676 feet in the Sacramento Mountains. Cool pines, clear skies, and endless adventure.</p>
             </div>
         </div>
@@ -610,7 +586,6 @@ body { background: var(--cloud-drift); }
             &copy; 2026 DiscoverCloudcroft.com. All rights reserved.
         </div>
     </footer>
-
 
     <button class="back-to-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>

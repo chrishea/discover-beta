@@ -44,15 +44,14 @@
 
     <style>
 /* Hero overrides */
-.hero { height: 65vh; min-height: 450px; }
+
 .hero-bg {
     background: linear-gradient(135deg, #000000 0%, #111111 50%, var(--twilight) 100%);
-    animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(30, 90, 168, 0.55));
 }
-.hero-badge span { color: var(--pine); }
+
 /* Page-specific: about-image override */
 .about-image {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
@@ -147,19 +146,7 @@
 }
 .route-card p { color: #555555; font-size: 0.95rem; line-height: 1.7; }
 /* Footer gradient border */
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%;
-    animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .route-grid { grid-template-columns: repeat(2, 1fr); }
@@ -378,13 +365,13 @@
                 <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
                 <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
                 <div class="footer-social">
-                    <a href="#" aria-label="Facebook">FB</a>
-                    <a href="#" aria-label="Instagram">IG</a>
-                    <a href="#" aria-label="Twitter">X</a>
+                    <a href="https://www.facebook.com/DiscoverCloudcroft" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+                    <a href="https://www.instagram.com/discovercloudcroft/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+                    <a href="https://x.com/CloudcroftNM" aria-label="Twitter" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="../eat/complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -393,13 +380,13 @@
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="../faq.html">FAQs</a>
                 <a href="../contact.html">Contact Us</a>

@@ -41,9 +41,8 @@
 .hero { height: 55vh; }
 .hero-bg {
     background: linear-gradient(135deg, var(--pine-shadow) 0%, #333333 50%, var(--alpine) 100%);
-    animation: kenBurns 20s ease-in-out infinite alternate;
 }
-.hero-badge span { color: var(--pine); }
+
 .hero-subtitle { margin-bottom: 0; }
 /* Info banner */
 .info-banner {
@@ -188,30 +187,11 @@
 }
 .tip-card { text-align: center; }
 .tip-icon { font-size: 2rem; margin-bottom: 0.75rem; }
-.tip-card h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: #000000;
-    margin-bottom: 0.4rem;
-}
-.tip-card p { color: #555555; font-size: 0.9rem; line-height: 1.6; }
+
 /* CTA override */
 .cta-container h2 { color: #000000; }
 /* Footer gradient border */
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%;
-    animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .nearby-grid { grid-template-columns: repeat(2, 1fr); }
@@ -298,7 +278,7 @@
                 </div>
                 <div class="store-grid">
                     <div class="store-card">
-                        <h4>Allsup's Market</h4>
+                        <h3>Allsup's Market</h3>
                         <p>Convenience store with gas, frozen and deli meats, milk, eggs, dry and canned goods. Also carries fresh cuts of meat.</p>
                         <div class="store-tags">
                             <span class="store-tag">Gas</span>
@@ -307,7 +287,7 @@
                         </div>
                     </div>
                     <div class="store-card">
-                        <h4>Family Dollar</h4>
+                        <h3>Family Dollar</h3>
                         <p>Discount groceries including cooking and baking supplies, milk, eggs, bread, and toiletries. Located at 309 James Canyon Highway.</p>
                         <div class="store-tags">
                             <span class="store-tag">Discount</span>
@@ -316,7 +296,7 @@
                         </div>
                     </div>
                     <div class="store-card">
-                        <h4>The Weed Store</h4>
+                        <h3>The Weed Store</h3>
                         <p>Located on Agua Chiquita Road, carrying grocery goods, diesel and unleaded fuel. A handy stop if you are coming from the south.</p>
                         <div class="store-tags">
                             <span class="store-tag">Gas</span>
@@ -331,7 +311,7 @@
                 </div>
                 <div class="store-grid">
                     <div class="store-card">
-                        <h4>Eight the Cake</h4>
+                        <h3>Eight the Cake</h3>
                         <p>Local bakery offering fresh baked goods, pastries, and sweet treats. A favorite stop for morning coffee and a pastry.</p>
                         <div class="store-tags">
                             <span class="store-tag">Bakery</span>
@@ -340,7 +320,7 @@
                         </div>
                     </div>
                     <div class="store-card">
-                        <h4>Kennabelle's Bakery</h4>
+                        <h3>Kennabelle's Bakery</h3>
                         <p>Fresh-baked breads, pastries, and specialty items. Perfect for picking up treats for your cabin stay.</p>
                         <div class="store-tags">
                             <span class="store-tag">Fresh Bread</span>
@@ -348,7 +328,7 @@
                         </div>
                     </div>
                     <div class="store-card">
-                        <h4>High Rollin' Coffee</h4>
+                        <h3>High Rollin' Coffee</h3>
                         <p>Coffee shop with baked goods and light fare. Great spot for morning fuel before hitting the trails.</p>
                         <div class="store-tags">
                             <span class="store-tag">Coffee</span>
@@ -356,7 +336,7 @@
                         </div>
                     </div>
                     <div class="store-card">
-                        <h4>Black Bear Coffee</h4>
+                        <h3>Black Bear Coffee</h3>
                         <p>Cozy coffee shop serving specialty drinks and light bites. A warm gathering spot for locals and visitors alike.</p>
                         <div class="store-tags">
                             <span class="store-tag">Coffee</span>
@@ -371,7 +351,7 @@
                 </div>
                 <div class="store-grid">
                     <div class="store-card">
-                        <h4>Club Veg at Instant Karma</h4>
+                        <h3>Club Veg at Instant Karma</h3>
                         <p>Organic produce and health foods at Instant Karma, serving the community for over 10 years. A rare find for organic and specialty items in the mountains.</p>
                         <div class="store-tags">
                             <span class="store-tag">Organic</span>
@@ -380,7 +360,7 @@
                         </div>
                     </div>
                     <div class="store-card">
-                        <h4>Turquoise Shop</h4>
+                        <h3>Turquoise Shop</h3>
                         <p>Carries Burnett Ranch beef alongside turquoise jewelry and gifts. A unique combination of local ranch-raised meat and Southwest treasures.</p>
                         <div class="store-tags">
                             <span class="store-tag">Local Beef</span>
@@ -467,13 +447,13 @@
                 <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
                 <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
                 <div class="footer-social">
-                    <a href="#" aria-label="Facebook">FB</a>
-                    <a href="#" aria-label="Instagram">IG</a>
-                    <a href="#" aria-label="Twitter">X</a>
+                    <a href="https://www.facebook.com/DiscoverCloudcroft" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+                    <a href="https://www.instagram.com/discovercloudcroft/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+                    <a href="https://x.com/CloudcroftNM" aria-label="Twitter" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -482,13 +462,13 @@
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="../faq.html">FAQs</a>
                 <a href="../contact.html">Contact Us</a>

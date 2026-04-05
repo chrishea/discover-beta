@@ -40,50 +40,12 @@
     </script>
 
     <style>
-/* ── Hero ── */
-.hero {
-    height: 65vh;
-    min-height: 450px;
-}
+
 .hero-bg {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    animation: kenBurns 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
-}
-.hero-badge span {
-    color: var(--golden-hour);
-}
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
-.hero-title .word:nth-child(4) { animation-delay: 0.8s; }
-.hero-subtitle {
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1s forwards;
-}
-.hero-ctas {
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1.4s forwards;
-}
-
-/* ── Info Bar ── */
-.info-bar {
-    background: var(--cream-dark);
-}
-.info-bar-item {
-    color: var(--charcoal);
-}
-.info-bar-icon {
-    width: 40px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
 }
 
 /* ── Bucket Grid (How to Choose) ── */
@@ -318,13 +280,6 @@
     margin-bottom: 0.5rem;
 }
 
-/* ── Picks Grid (Editor's Picks) ── */
-.picks-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
 .pick-card {
     background: #000000;
     border-radius: 12px;
@@ -333,152 +288,22 @@
     opacity: 0;
     transform: translateY(20px);
 }
-.pick-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.pick-card:nth-child(2).visible { transition-delay: 0.05s; }
-.pick-card:nth-child(3).visible { transition-delay: 0.1s; }
-.pick-card:nth-child(4).visible { transition-delay: 0.15s; }
-.pick-card:nth-child(5).visible { transition-delay: 0.2s; }
-.pick-card:nth-child(6).visible { transition-delay: 0.25s; }
-.pick-card:nth-child(7).visible { transition-delay: 0.3s; }
-.pick-card:nth-child(8).visible { transition-delay: 0.35s; }
-.pick-card-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-.pick-card h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--golden-hour);
-    margin-bottom: 0.5rem;
-}
-.pick-card p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.85rem;
-    line-height: 1.6;
-}
 
-/* ── Tip Grid (Practical Tips) ── */
-.tip-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-.tip-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 1.75rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-top: 3px solid var(--golden-hour);
-    opacity: 0;
-    transform: translateY(20px);
-}
-.tip-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.tip-card:nth-child(2).visible { transition-delay: 0.05s; }
-.tip-card:nth-child(3).visible { transition-delay: 0.1s; }
-.tip-card:nth-child(4).visible { transition-delay: 0.15s; }
-.tip-card:nth-child(5).visible { transition-delay: 0.2s; }
-.tip-card:nth-child(6).visible { transition-delay: 0.25s; }
-.tip-card:nth-child(7).visible { transition-delay: 0.3s; }
-.tip-card-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-.tip-card h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--midnight);
-    margin-bottom: 0.5rem;
-}
-.tip-card p {
-    color: var(--granite);
-    font-size: 0.85rem;
-    line-height: 1.6;
-}
-
-/* ── Tip Box ── */
-.tip-box {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    background: #fffbe6;
-    border: 1px solid #f0d060;
-    border-radius: 12px;
-    padding: 1.25rem 1.5rem;
-    margin-top: 2rem;
-}
-.tip-box p {
-    color: var(--midnight);
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* ── CTA Section ── */
-.cta-section {
-    background: #f2f2f2;
-}
 .cta-container h2 {
     color: #000000;
 }
-.cta-container p {
-    color: #555555;
-}
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
-/* ── Cloud-drift background sections ── */
-.section-alt {
-    background: var(--cloud-drift);
-}
-
-/* ── Footer gradient ── */
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%;
-    animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
-
-/* ── Responsive ── */
 @media (max-width: 1024px) {
     .bucket-grid { grid-template-columns: repeat(2, 1fr); }
     .camp-grid { grid-template-columns: repeat(2, 1fr); }
     .rental-grid { grid-template-columns: repeat(2, 1fr); }
-    .picks-grid { grid-template-columns: repeat(2, 1fr); }
-    .tip-grid { grid-template-columns: repeat(2, 1fr); }
+    
 }
 @media (max-width: 768px) {
     .bucket-grid { grid-template-columns: 1fr; }
     .camp-grid { grid-template-columns: 1fr; }
     .rental-grid { grid-template-columns: 1fr; }
-    .picks-grid { grid-template-columns: 1fr; }
-    .tip-grid { grid-template-columns: 1fr; }
-    .info-bar-inner { gap: 1.5rem; }
-    .cta-buttons { flex-direction: column; align-items: center; }
+    
     .property-contact { flex-direction: column; gap: 0.4rem; }
 }
 </style>
@@ -519,7 +344,6 @@
         <a href="../contact.html">Contact</a>
     </div>
 
-
     <!-- ════════════════════════════════════════════ HERO ════════════════════════════════════════════ -->
     <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="Cloudcroft lodging guide hero background"></div>
@@ -542,7 +366,6 @@
         </div>
     </section>
 
-
     <!-- ════════════════════════════════════════════ INFO BAR ════════════════════════════════════════════ -->
     <div class="info-bar">
         <div class="info-bar-inner">
@@ -564,7 +387,6 @@
             </div>
         </div>
     </div>
-
 
     <main id="main-content" role="main">
 
@@ -605,7 +427,6 @@
             </div>
         </section>
 
-
         <!-- ════════════════════════════════════════════ RV PARKS ════════════════════════════════════════════ -->
         <section class="section" id="rv-parks" aria-label="RV Parks">
             <div class="section-container">
@@ -622,7 +443,7 @@
                         <p class="property-best-for">Best for: walkability, village access, simple stays close to restaurants and shops.</p>
                         <p>Sugar Pines is the clearest choice for RV travelers who want to be in Cloudcroft, not outside it. The official site says it is the only RV park within walking distance of the village and lists 16 full-hookup 30-amp sites. It is open for the 2026 season, welcomes guests 18 and older, and notes holiday minimum stays plus nonrefundable deposits.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Strongest walk-to-town position</li>
                                 <li>Full hookups</li>
@@ -631,7 +452,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Adults only</li>
                                 <li>Back-in expectations on many sites</li>
@@ -651,7 +472,7 @@
                         <p class="property-best-for">Best for: a quiet adult-only RV stay east of town.</p>
                         <p>Scenic Canyon is about 6.5 miles east of Cloudcroft and explicitly markets itself as a peaceful adults-only park for guests 30 and over. It lists 14 spacious sites with Wi-Fi, water, sewer, and electric. The big caveat is that it does not provide bathroom or shower facilities.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Quiet setting</li>
                                 <li>Adults-only atmosphere</li>
@@ -660,7 +481,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Not close enough to walk to town</li>
                                 <li>No bathhouse</li>
@@ -678,7 +499,7 @@
                         <p class="property-best-for">Best for: pet-friendly RV trips, a more remote feel, and self-contained travelers.</p>
                         <p>16 Springs positions itself as an &ldquo;off the beaten path&rdquo; RV park in the Lincoln National Forest corridor, about 20 minutes east of Cloudcroft. The site emphasizes pets, open space, and nature. It also makes an important operational point: campers must be self-contained, and there are no public bathhouse or restrooms.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Pet-friendly</li>
                                 <li>More secluded feel</li>
@@ -687,7 +508,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Not in the village</li>
                                 <li>No public bathhouse/restrooms</li>
@@ -707,7 +528,7 @@
                         <p class="property-best-for">Best for: family-friendly RV stays and a slightly more recreation-oriented private park.</p>
                         <p>Silver Springs markets itself as a family-friendly park about 5 miles from Cloudcroft and highlights its trout pond. From a positioning standpoint, it looks more family-oriented than the adult-only parks.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Family-friendly</li>
                                 <li>Near Cloudcroft but not in the middle of town</li>
@@ -715,7 +536,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Official web detail is thinner than at some competitors, so verify current site specifics before booking</li>
                             </ul>
@@ -731,7 +552,7 @@
                         <p class="property-best-for">Best for: travelers who like history, High Rolls access, and year-round RV use.</p>
                         <p>This park is in High Rolls, not in the village, so it works best if you are comfortable being outside Cloudcroft proper. The official site says it offers year-round full-hookup RV sites and ties the property to the historic Cloud Climbing Railroad water stop in Wooten Canyon.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Year-round positioning</li>
                                 <li>Historic angle</li>
@@ -740,7 +561,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Not in Cloudcroft village</li>
                                 <li>Better framed as part of the broader Cloudcroft market than a downtown substitute</li>
@@ -759,7 +580,7 @@
                         <p class="property-best-for">Best for: travelers who want multiple lodging formats in one property.</p>
                         <p>Camp Rio, in Mayhill, is not just an RV park. The chamber listing and official site show full-hookup RV sites, tent sites, glamping, and cabins. That makes it one of the more flexible options in the broader Cloudcroft market.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Mixed lodging types</li>
                                 <li>Good for groups booking different stay styles</li>
@@ -768,7 +589,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Mayhill location means you are outside Cloudcroft proper</li>
                                 <li>Best for travelers willing to drive into town</li>
@@ -787,7 +608,7 @@
                         <p class="property-best-for">Best for: mixed cabin/RV stays and budget-conscious travelers who do not need to be in the village.</p>
                         <p>Lazy Day combines 6 pet-friendly cabins, 3 motel rooms, and 10 full-size RV spaces with full hookups. It sits in the Mayhill corridor and is one of the more practical hybrid properties in the area.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Cabins, motel rooms, and RV spaces in one place</li>
                                 <li>Pet-friendly cabins</li>
@@ -795,7 +616,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Outside Cloudcroft village</li>
                                 <li>Older-school operation and web presence; confirm current rates and exact unit fit before booking</li>
@@ -810,7 +631,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- ════════════════════════════════════════════ CAMPGROUNDS ════════════════════════════════════════════ -->
         <section class="section section-alt" id="campgrounds" aria-label="Public Campgrounds">
@@ -828,7 +648,7 @@
                         <p class="property-best-for">Best for: traditional forest camping close to Cloudcroft.</p>
                         <p>Pines Campground is in Lincoln National Forest at about 8,700 feet and is one of the main official campground options in the immediate Cloudcroft area. Recreation.gov says it is heavily forested with large pine trees and wildlife viewing.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Strong classic forest-camping feel</li>
                                 <li>Good proximity to Cloudcroft</li>
@@ -836,7 +656,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Seasonal</li>
                                 <li>Public campground tradeoffs: fewer comforts, more competition, more rules tied to fire and forest conditions</li>
@@ -851,7 +671,7 @@
                         <p class="property-best-for">Best for: campers who want to be close to town and trails.</p>
                         <p>The Forest Service says Deerhead has 19 sites, is very close to Cloudcroft, and sits across from the Rim Trail trailhead. Recreation.gov notes standard sites for tent and RV camping plus picnic tables, grills, fire rings, water spigots, vault toilets, and paved parking spurs.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Close to the village</li>
                                 <li>Trail access</li>
@@ -859,7 +679,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Seasonal conditions apply</li>
                                 <li>Less privacy than some private options</li>
@@ -874,7 +694,7 @@
                         <p class="property-best-for">Best for: campers who want a public campground just south of the village.</p>
                         <p>Recreation.gov describes Sleepy Grass as just south of Cloudcroft, with sites for RVs up to 30 feet, tents, and campers. The Forest Service page says it is typically first come, first served, with seasonal opening around mid-May.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Near town</li>
                                 <li>Traditional campground setup</li>
@@ -882,7 +702,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>30-foot RV limit is important</li>
                                 <li>First-come, first-served conditions can complicate peak weekends</li>
@@ -898,7 +718,7 @@
                         <p class="property-best-for">Best for: lower-elevation camping and shoulder-season flexibility.</p>
                         <p>The Forest Service says James Canyon has 5 sites along US 82 west of Mayhill at a lower elevation of about 6,800 feet, making it usable longer than many higher Sacramento Mountains campgrounds.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Lower elevation</li>
                                 <li>Simpler, smaller campground</li>
@@ -906,7 +726,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Small</li>
                                 <li>Not in the village</li>
@@ -919,7 +739,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- ════════════════════════════════════════════ CABINS & RENTALS ════════════════════════════════════════════ -->
         <section class="section" id="cabins" aria-label="Cabins and short-term rentals">
@@ -937,7 +756,7 @@
                         <p class="property-best-for">Best for: cabin travelers who want a known branded operation near the village.</p>
                         <p>The Cabins at Cloudcroft offers a cabin compound with rustic styling, kitchens, fireplaces or wood stoves, and a location close to village attractions. It is one of the clearest non-marketplace cabin options for visitors who want something more predictable than browsing hundreds of individual listings.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Close to village attractions</li>
                                 <li>Rustic cabin experience with some modern comforts</li>
@@ -945,7 +764,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>More limited style range than Airbnb/Vrbo inventory</li>
                                 <li>Book early for preferred units</li>
@@ -964,7 +783,7 @@
                         <p class="property-best-for">Best for: travelers who want a smaller curated cabin operator rather than a big marketplace.</p>
                         <p>This operator markets a smaller portfolio including Cedar Lodge and Fawn Passage. It appears best suited to travelers who want a more personal cabin-booking feel and are comfortable choosing among a limited number of units.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Smaller set of focused options</li>
                                 <li>Good for couples or small families depending on the unit</li>
@@ -972,7 +791,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Fewer choices than Airbnb/Vrbo</li>
                                 <li>Some units are outside immediate village limits</li>
@@ -989,7 +808,7 @@
                         <p class="property-best-for">Best for: guests who want broker-managed vacation homes and a local office.</p>
                         <p>Cloudcroft Properties combines real estate with vacation rental management and gives travelers access to homes in Cloudcroft and nearby areas. For some travelers, that local-office model feels safer than booking through a one-off host.</p>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Local office and phone support</li>
                                 <li>Broker/property-management structure</li>
@@ -997,7 +816,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Inventory changes</li>
                                 <li>You still need to inspect each individual home for location, pet rules, stairs, parking, and winter suitability</li>
@@ -1021,7 +840,7 @@
                             <span class="market-stat">4.9/5 Rating</span>
                         </div>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>By far the broadest inventory</li>
                                 <li>Best place to filter for pet-friendly, hot tub, fenced yard, workspace, decks, large kitchens, and group size</li>
@@ -1029,7 +848,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Inventory and rates move constantly</li>
                                 <li>Quality varies more than at a branded operation</li>
@@ -1048,7 +867,7 @@
                             <span class="market-stat">Widest Filters</span>
                         </div>
                         <div class="property-why">
-                            <h4>Why choose it</h4>
+                            <h3>Why choose it</h3>
                             <ul>
                                 <li>Deep inventory of vacation homes</li>
                                 <li>Excellent filtering for pet-friendly, hot tub, fenced yard, workspace, and group size</li>
@@ -1056,7 +875,7 @@
                             </ul>
                         </div>
                         <div class="property-watchouts">
-                            <h4>Watch-outs</h4>
+                            <h3>Watch-outs</h3>
                             <ul>
                                 <li>Inventory and rates move constantly</li>
                                 <li>Quality varies more than at a branded operation</li>
@@ -1068,7 +887,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- ════════════════════════════════════════════ EDITOR'S PICKS ════════════════════════════════════════════ -->
         <section class="section" id="picks" aria-label="Editor's picks by traveler type">
@@ -1132,7 +950,6 @@
             </div>
         </section>
 
-
         <!-- ════════════════════════════════════════════ PRACTICAL TIPS ════════════════════════════════════════════ -->
         <section class="section section-alt" id="tips" aria-label="Practical advice before you book">
             <div class="section-container">
@@ -1189,7 +1006,6 @@
             </div>
         </section>
 
-
         <!-- ════════════════════════════════════════════ CTA ════════════════════════════════════════════ -->
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
@@ -1204,7 +1020,6 @@
 
     </main>
 
-
     <!-- ════════════════════════════════════════════ FOOTER ════════════════════════════════════════════ -->
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
@@ -1218,7 +1033,7 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="../eat/complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -1227,12 +1042,12 @@
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="https://www.coolcloudcroft.com" target="_blank" rel="noopener noreferrer">Cloudcroft Chamber</a>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="../about.html">About Cloudcroft</a>
@@ -1243,7 +1058,6 @@
             <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
         </div>
     </footer>
-
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 

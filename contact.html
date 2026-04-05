@@ -11,14 +11,12 @@
         content="contact Cloudcroft, Cloudcroft phone number, Cloudcroft directions, Cloudcroft emergency services, Cloudcroft Tourism Alliance">
     <link rel="canonical" href="https://discovercloudcroft.com/contact.html">
 
-
     <meta property="og:title" content="Contact DiscoverCloudcroft.com">
     <meta property="og:description"
         content="Questions, tips, or just want to say hello — we'd love to hear from you. Contact us about visiting Cloudcroft, NM.">
     <meta property="og:url" content="https://discovercloudcroft.com/contact.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
-
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Contact DiscoverCloudcroft.com">
@@ -62,10 +60,7 @@ animation: gradientShift 8s ease infinite;
 opacity: 0;
 animation: fadeUp 0.8s ease 0.2s forwards;
 }
-.hero-subtitle {
-opacity: 0;
-animation: fadeUp 0.8s ease 0.5s forwards;
-}
+
 /* Page-specific components */
 .contact-section {
 padding: 6rem 2rem;
@@ -294,20 +289,7 @@ min-height: 44px;
 transform: translateY(-2px);
 box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
 }
-/* Page-specific footer */
-.site-footer::before {
-content: '';
-position: absolute;
-top: 0; left: 0; right: 0;
-height: 3px;
-background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-background-size: 300% 100%;
-animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-0% { background-position: 0% 0; }
-100% { background-position: 300% 0; }
-}
+
 /* Responsive */
 @media (max-width: 1024px) {
 .contact-container { grid-template-columns: 1fr; gap: 3rem; }
@@ -320,7 +302,6 @@ animation: gradientBorder 6s linear infinite;
 
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
 
     <header class="site-header" role="banner">
     <div class="header-inner">
@@ -355,7 +336,6 @@ animation: gradientBorder 6s linear infinite;
     <a href="contact.html">Contact</a>
 </div>
 
-
     <section class="hero" aria-label="Page hero">
         <div class="hero-gradient"></div>
         <div class="hero-content">
@@ -363,7 +343,6 @@ animation: gradientBorder 6s linear infinite;
             <p class="hero-subtitle">Questions, tips, or just want to say hello &mdash; we'd love to hear from you.</p>
         </div>
     </section>
-
 
     <main id="main-content" role="main">
         <section class="contact-section" aria-label="Contact information and form">
@@ -405,7 +384,6 @@ animation: gradientBorder 6s linear infinite;
                         <button type="submit" class="btn-submit">Send Message</button>
                     </form>
                 </div>
-
 
                 <div class="info-column">
                     <div class="contact-card">
@@ -451,7 +429,6 @@ animation: gradientBorder 6s linear infinite;
             </div>
         </section>
 
-
         <section class="map-section" aria-label="Map">
             <div class="map-container">
                 <span class="section-label" style="display:block; text-align:center;">Find Us</span>
@@ -468,7 +445,6 @@ animation: gradientBorder 6s linear infinite;
         </section>
     </main>
 
-
     <footer class="site-footer footer-green" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col">
@@ -481,7 +457,7 @@ animation: gradientBorder 6s linear infinite;
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="stay/lodging.html">Lodging</a>
                 <a href="eat/complete-guide-to-dining.html">Dining</a>
                 <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -490,7 +466,7 @@ animation: gradientBorder 6s linear infinite;
                 <a href="season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of
@@ -499,7 +475,7 @@ animation: gradientBorder 6s linear infinite;
                     rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank"
                     rel="noopener noreferrer">Weather</a>
@@ -511,7 +487,6 @@ animation: gradientBorder 6s linear infinite;
             <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
         </div>
     </footer>
-
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 

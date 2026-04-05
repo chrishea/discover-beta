@@ -40,12 +40,11 @@
 
     <style>
 /* Hero overrides */
-.hero { height: 65vh; min-height: 450px; }
+
 .hero-bg {
     background: linear-gradient(135deg, #000000 0%, var(--ember) 50%, var(--golden-hour) 100%);
-    animation: kenBurns 20s ease-in-out infinite alternate;
 }
-.hero-badge span { color: #000000; }
+
 /* Season Nav */
 .season-nav {
     background: #f2f2f2;
@@ -289,11 +288,7 @@
     opacity: 0;
     transform: translateY(30px);
 }
-.tip-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
-}
+
 .tip-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
@@ -306,23 +301,11 @@
     color: var(--midnight);
     margin-bottom: 0.5rem;
 }
-.tip-card p { color: var(--granite); font-size: 0.95rem; line-height: 1.7; }
+
 /* CTA overrides */
 .cta-container h2 { color: #000000; }
 /* Footer gradient border */
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%;
-    animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .overview-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -441,7 +424,6 @@
             </div>
         </section>
 
-
         <!-- Activities Section -->
         <section class="section" id="activities" style="background: var(--cloud-drift);" aria-label="Fall activities">
             <div class="section-container">
@@ -497,7 +479,6 @@
             </div>
         </section>
 
-
         <!-- Weather Section -->
         <section class="section highlights-section" aria-label="Fall weather">
             <div class="section-container">
@@ -525,7 +506,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Events Section -->
         <section class="section" id="events" aria-label="Fall events">
@@ -560,7 +540,6 @@
             </div>
         </section>
 
-
         <!-- Practical Tips Section -->
         <section class="section" style="background: var(--cloud-drift);" aria-label="Practical tips">
             <div class="section-container">
@@ -594,7 +573,6 @@
             </div>
         </section>
 
-
         <!-- CTA Section -->
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
@@ -608,7 +586,6 @@
         </section>
     </main>
 
-
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
         <div class="footer-grid">
             <div class="footer-col">
@@ -621,7 +598,7 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="../eat/complete-guide-to-dining.html">Dining</a>
                 <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -630,14 +607,14 @@
                 <a href="seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="../about.html">About Cloudcroft</a>

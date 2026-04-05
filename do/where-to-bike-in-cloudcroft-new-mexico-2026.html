@@ -35,7 +35,6 @@
 }
     </script>
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
@@ -43,17 +42,11 @@
     <link rel="stylesheet" href="../css/common.css">
 
     <style>
-/* Page-specific hero */
-.hero { height: 65vh; }
+
 .hero-bg {
     background: linear-gradient(135deg, var(--pine-shadow) 0%, var(--summit) 50%, var(--alpine) 100%);
-    animation: kenBurns 20s ease-in-out infinite alternate;
 }
-.hero-title .word:nth-child(1) { animation-delay: 0.2s; }
-.hero-title .word:nth-child(2) { animation-delay: 0.4s; }
-.hero-title .word:nth-child(3) { animation-delay: 0.6s; }
-.hero-title .word:nth-child(4) { animation-delay: 0.8s; }
-.hero-subtitle { opacity: 0; animation: fadeUp 0.8s ease 1s forwards; }
+
 /* Page-specific components */
 .trail-tabs {
     display: flex;
@@ -243,28 +236,13 @@
     opacity: 0;
     transform: translateY(30px);
 }
-.tip-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
-}
+
 .tip-card:hover {
     transform: translateY(-6px);
     background: rgba(255, 255, 255, 0.1);
 }
 .tip-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-.tip-card h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--pine);
-    margin-bottom: 0.75rem;
-}
-.tip-card p {
-    color: #555555;
-    font-size: 0.95rem;
-    line-height: 1.7;
-}
+
 .resources-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -323,20 +301,7 @@
     background: var(--alpine);
     color: var(--snow-cap);
 }
-/* Page-specific footer */
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--golden-hour), var(--ember), var(--alpine), var(--twilight), var(--golden-hour));
-    background-size: 300% 100%;
-    animation: gradientBorder 6s linear infinite;
-}
-@keyframes gradientBorder {
-    0% { background-position: 0% 0; }
-    100% { background-position: 300% 0; }
-}
+
 @media (max-width: 1024px) {
     .trail-card { grid-template-columns: 1fr; }
     .trail-card-image { min-height: 200px; }
@@ -794,7 +759,7 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <a href="../stay/lodging.html">Lodging</a>
                 <a href="../eat/complete-guide-to-dining.html">Dining</a>
                 <a href="where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
@@ -803,14 +768,14 @@
                 <a href="../season/seasonal.html">Seasons</a>
             </div>
             <div class="footer-col">
-                <h4>Connect</h4>
+                <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
                 <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
                 <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
-                <h4>Plan</h4>
+                <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
                 <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
                 <a href="../about.html">About Cloudcroft</a>
