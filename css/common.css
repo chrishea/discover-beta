@@ -1716,7 +1716,7 @@ img {
 }
 
 .pick-card {
-  background: #c9e0a5;
+  background: #ffffff;
   border-radius: 12px;
   padding: 1.75rem;
   opacity: 0;
@@ -1965,4 +1965,22 @@ img {
   .hero-overlay {
     animation: none;
   }
+}
+
+.guide-body {
+  max-width: 800px;
+}
+
+.lodging-badge {
+  visibility: hidden;
+  max-width: 0;
+  padding: 0 0;
+}
+
+.lodging-content {
+  padding: 1.5rem;
+}
+
+.lodging-content h3 {
+  font-size: 1.5rem;
 }

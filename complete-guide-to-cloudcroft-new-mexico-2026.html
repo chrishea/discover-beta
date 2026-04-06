@@ -40,6 +40,84 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://discovercloudcroft.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Visitor Guide",
+          "item": "https://discovercloudcroft.com/complete-guide.html"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the altitude of Cloudcroft, New Mexico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cloudcroft sits at approximately 9,000 feet above sea level. Drink plenty of water, take it easy your first day, and be mindful of altitude effects — especially if you are coming from sea level."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the weather like in Cloudcroft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Expect temperatures 20–30 degrees cooler than the valley floor. Summer highs are typically in the 70s. Afternoon thunderstorms are common June through September. Winter brings snow and temperatures below freezing. Always bring layers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there cell service in Cloudcroft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cell phone coverage is limited and spotty in Cloudcroft, especially on trails and in more remote areas. Download offline maps before your trip and let someone know your plans if you are heading into the backcountry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I get gas and supplies in Cloudcroft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Options for gas and groceries are limited in Cloudcroft. Fill up your tank and stock up on supplies in Alamogordo before making the drive up the mountain. There is a small general store in the village for basics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there emergency services in Cloudcroft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cloudcroft has basic emergency services available including local fire, medical, and law enforcement resources."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Cloudcroft pet friendly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many trails and outdoor areas in the Lincoln National Forest are dog-friendly. Keep pets on leash, bring waste bags, and carry extra water for your furry companion. Check individual lodging and restaurant policies for pet rules."
+          }
+        }
+      ]
+    }
+    </script>
+
     <link href="css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -254,9 +332,34 @@
         }
 
         .thing-card:hover {
-            border-color: #000000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            transform: translateY(-3px);
+            border-color: var(--alpine, #3a6b1e);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+            transform: translateY(-8px) scale(1.02);
+        }
+
+        .thing-card::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0;
+            background: linear-gradient(90deg, var(--alpine, #3a6b1e), var(--golden-hour, #c8943e));
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .thing-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .thing-card:hover::after {
+            width: 100%;
+        }
+
+        .thing-card:hover h3 {
+            color: var(--alpine, #3a6b1e);
+            transition: color 0.3s ease;
         }
 
         .thing-card-icon {
@@ -275,7 +378,12 @@
         }
 
         .thing-card:hover .thing-card-icon img {
-            filter: grayscale(100%);
+            filter: saturate(1.2) brightness(1.05);
+            transform: scale(1.14);
+        }
+
+        .thing-card-icon img {
+            transition: filter 0.4s ease, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .thing-card h3 {
@@ -385,7 +493,7 @@
         }
 
         .lodging-content {
-            padding: 1.5rem 1.5rem 1.5rem 0;
+            padding: 1.5rem;
             flex: 1;
             min-width: 0;
         }
@@ -1286,9 +1394,10 @@
                     <span class="logo-beta">Beta</span>
                 </a>
                 <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-to-dining.html">Eat</a>
+                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
                 <a href="do/complete-guide-to-activities.html">Explore</a>
-                <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+                <a href="do/where-to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
                 <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
                 <a href="season/seasonal.html">Seasons</a>
                 <a href="plan.html">Plan</a>
@@ -1301,10 +1410,11 @@
     </header>
 
     <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
-        <a href="stay/lodging.html">Stay</a>
-        <a href="eat/complete-guide-to-dining.html">Eat</a>
+        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
         <a href="do/complete-guide-to-activities.html">Explore</a>
-        <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+        <a href="do/where-to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
         <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
         <a href="season/seasonal.html">Seasons</a>
         <a href="plan.html">Plan</a>
@@ -1365,7 +1475,7 @@
                         <p>The Sacramento Mountains offer some of the best high-altitude singletrack in the Southwest.
                             The High Altitude Bike Classic each summer draws hundreds of riders. Trails range from
                             gentle forest roads to technical descents.</p>
-                        <a href=" biking.html" class="thing-card-link">Explore trails &rarr;</a>
+                        <a href="do/biking.html" class="thing-card-link">Explore trails &rarr;</a>
                     </div>
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img alt="Hiking through Lincoln National Forest near Cloudcroft"
@@ -1375,7 +1485,7 @@
                             and
                             Mexican Canyon Trestle loop are local favorites. Fall color season (mid-October) draws
                             crowds from across the region.</p>
-                        <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html" class="thing-card-link">View
+                        <a href="do/where-to-hike-in-Cloudcroft-New-Mexico-2026.html" class="thing-card-link">View
                             trails &rarr;</a>
                     </div>
                     <div class="thing-card fade-in">
@@ -1397,7 +1507,7 @@
                             Mexico.
                             Open play runs Tuesday, Thursday, and Saturday mornings. Equipment can be borrowed. All
                             skill levels welcome.</p>
-                        <a href="do/play-pickleball-cloudcroft-new-mexico-2026.html" class="thing-card-link">Court
+                        <a href="do/play-pickleball-in-cloudcroft-2026.html" class="thing-card-link">Court
                             details &rarr;</a>
                     </div>
                     <div class="thing-card fade-in">
@@ -1418,7 +1528,7 @@
                                 src="media/placeholder-activity-biking.jpg" loading="lazy"></div>
 
                         <h3>Stargaze at Sunspot Observatory</h3>
-                        <p>The Sacramento Peak Solar Observatory sits at 9,200 ft with remarkably dark skies. Tour the
+                        <p>The <a href="https://sunspot.solar/" target="_blank" rel="noopener noreferrer">Sacramento Peak Solar Observatory</a> sits at 9,200 ft with remarkably dark skies. Tour the
                             facilities, attend a night program, or simply pull off on the highway and look up — the
                             Milky Way here is genuinely breathtaking.</p>
                         <a href="explore/sunspot-observatory.html" class="thing-card-link">Learn more &rarr;</a>
@@ -1443,7 +1553,6 @@
 
                 <div class="lodging-list">
                     <div class="lodging-item fade-in">
-                        <div class="lodging-badge">Historic Inn</div>
                         <div class="lodging-content">
                             <div class="lodging-img">
                                 <img src="media/placeholder-stay-lodging.jpg"
@@ -1462,7 +1571,6 @@
                         </div>
                     </div>
                     <div class="lodging-item fade-in">
-                        <div class="lodging-badge">Hotel</div>
                         <div class="lodging-content">
                             <div class="lodging-img">
                                 <img src="media/lodging-grand-cloudcroft-hotel.webp" alt="Grand Cloudcroft Hotel"
@@ -1482,7 +1590,6 @@
                         </div>
                     </div>
                     <div class="lodging-item fade-in">
-                        <div class="lodging-badge">Cabins</div>
                         <div class="lodging-content">
                             <div class="lodging-img">
                                 <img src="media/lodging-cabins-at-cloudcroft.webp"
@@ -1504,7 +1611,6 @@
                         </div>
                     </div>
                     <div class="lodging-item fade-in">
-                        <div class="lodging-badge">Motel</div>
                         <div class="lodging-content">
 
                             <div class="lodging-img">
@@ -1529,7 +1635,6 @@
                         </div>
                     </div>
                     <div class="lodging-item fade-in">
-                        <div class="lodging-badge">Inn</div>
                         <div class="lodging-content">
 
                             <div class="lodging-img">
@@ -1553,7 +1658,6 @@
                         </div>
                     </div>
                     <div class="lodging-item fade-in">
-                        <div class="lodging-badge">B&amp;B</div>
                         <div class="lodging-content">
 
                             <div class="lodging-img">
@@ -1578,7 +1682,6 @@
                         </div>
                     </div>
                     <div class="lodging-item fade-in">
-                        <div class="lodging-badge">Camping</div>
                         <div class="lodging-content">
                             <h3>Lincoln National Forest Campgrounds</h3>
                             <p>Several established campgrounds within minutes of the village, including Pines and
@@ -1849,7 +1952,7 @@
                     <div class="outdoor-card fade-in">
                         <div class="outdoor-icon">🥾</div>
                         <h3>Hiking</h3>
-                        <p>40+ miles of trails in Lincoln National Forest, from easy nature walks to full-day ridge
+                        <p>40+ miles of trails in <a href="https://www.fs.usda.gov/lincoln" target="_blank" rel="noopener noreferrer">Lincoln National Forest</a>, from easy nature walks to full-day ridge
                             hikes.</p>
                         <div class="outdoor-detail">Best: May – October</div>
                     </div>
@@ -1878,7 +1981,7 @@
                         <div class="outdoor-icon">🌌</div>
                         <h3>Stargazing</h3>
                         <p>One of southern New Mexico's best dark-sky sites. The Sacramento Mountains have minimal light
-                            pollution and consistently clear nights at elevation.</p>
+                            pollution and consistently clear nights at elevation. <a href="stay/lodging.html">Stay overnight for stargazing</a>.</p>
                         <div class="outdoor-detail">Best: All year, new moons</div>
                     </div>
                     <div class="outdoor-card fade-in">
@@ -1922,7 +2025,7 @@
                         <p>Visit this iconic 1899 railroad trestle from the Cloud Climbing Railroad, listed on the
                             National Register of Historic Places. Easy access and free to visit.</p>
                     </a>
-                    <a href="do/where to-fishing-in-Cloudcroft-New-Mexico-2026.html" class="card">
+                    <a href="do/where-to-fishing-in-Cloudcroft-New-Mexico-2026.html" class="card">
                         <div class="card-icon">&#x1F3A3;</div>
                         <h3>Fishing</h3>
                         <p>Cast a line in mountain streams and stocked lakes throughout the Lincoln National Forest.
@@ -1934,7 +2037,7 @@
                         <p>Play one of the highest-elevation disc golf courses in the Southwest. Challenging terrain,
                             beautiful forest setting, and fresh mountain air.</p>
                     </a>
-                    <a href="do/play-pickleball-cloudcroft-new-mexico-2026.html" class="card">
+                    <a href="do/play-pickleball-in-cloudcroft-2026.html" class="card">
                         <div class="card-icon">&#x1F3D3;</div>
                         <h3>Pickleball</h3>
                         <p>Join the growing pickleball community in Cloudcroft. Courts are available for drop-in play,
@@ -1979,14 +2082,16 @@
                 </div>
                 <div class="seasonal-grid">
                     <div class="seasonal-card">
-                        <div class="seasonal-icon"><img src="media/image-winter.jpg" loading="lazy"></div>
+                        <!-- TODO: Replace image-winter.jpg with a spring-specific photo -->
+                        <div class="seasonal-icon"><img src="media/image-winter.jpg" alt="Spring in Cloudcroft, New Mexico" loading="lazy"></div>
                         <h3>Spring</h3>
                         <div class="season-months">April &ndash; May</div>
                         <p>Wildflowers begin to bloom across the mountain meadows. Mild temperatures make for ideal
                             hiking conditions. A quieter time to visit before the summer crowds arrive.</p>
                     </div>
                     <div class="seasonal-card">
-                        <div class="seasonal-icon"><img src="media/image-winter.jpg" loading="lazy"></div>
+                        <!-- TODO: Replace image-winter.jpg with a summer-specific photo -->
+                        <div class="seasonal-icon"><img src="media/image-winter.jpg" alt="Summer in Cloudcroft, New Mexico" loading="lazy"></div>
                         <h3>Summer</h3>
                         <div class="season-months">June &ndash; August</div>
                         <p>The perfect escape from desert heat below. Highs in the 70s when the valley hits triple
@@ -1994,7 +2099,8 @@
                             common.</p>
                     </div>
                     <div class="seasonal-card">
-                        <div class="seasonal-icon"><img src="media/image-winter.jpg" loading="lazy"></div>
+                        <!-- TODO: Replace image-winter.jpg with a fall-specific photo -->
+                        <div class="seasonal-icon"><img src="media/image-winter.jpg" alt="Fall in Cloudcroft, New Mexico" loading="lazy"></div>
                         <h3>Fall</h3>
                         <div class="season-months">September &ndash; November</div>
                         <p>Spectacular golden foliage as aspens turn. Aspenfest in October draws visitors from across
@@ -2002,7 +2108,7 @@
                         </p>
                     </div>
                     <div class="seasonal-card">
-                        <div class="seasonal-icon"><img src="media/image-winter.jpg" loading="lazy"></div>
+                        <div class="seasonal-icon"><img src="media/image-winter.jpg" alt="Winter in Cloudcroft, New Mexico" loading="lazy"></div>
                         <h3>Winter</h3>
                         <div class=" season-months">December &ndash; March</div>
                         <p>Snow blankets the mountains, creating a winter wonderland. Enjoy snow sports, cozy lodge
@@ -2063,9 +2169,9 @@
                     <div class="practical-card">
                         <div class="practical-icon">&#x1F43E;</div>
                         <h3>Pet Friendly</h3>
-                        <p>Many trails and outdoor areas in the Lincoln National Forest are dog-friendly. Keep pets on
-                            leash, bring waste bags, and carry extra water for your furry companion. Check individual
-                            lodging and restaurant policies for pet rules.</p>
+                        <p>Many trails and outdoor areas in the Lincoln National Forest are <a href="do/best-hiking-trails-in-cloudcroft-new-mexico.html">dog-friendly trails</a> for you and your companion. Keep pets on
+                            leash, bring waste bags, and carry extra water. Check individual
+                            <a href="stay/lodging.html">pet-friendly lodging</a> and restaurant policies for pet rules.</p>
                     </div>
                 </div>
             </div>
@@ -2105,7 +2211,7 @@
         <section class="guide-cta" aria-labelledby="h-cta">
             <h2 id="h-cta">Ready to Plan Your Trip?</h2>
             <p>Cloudcroft is a two-hour drive from El Paso and less than four from Albuquerque. The hardest part is
-                choosing a weekend.</p>
+                choosing a weekend. Start planning at <a href="https://www.newmexico.org/" target="_blank" rel="noopener noreferrer">New Mexico Tourism</a>.</p>
             <div class="guide-cta-buttons">
                 <a href="stay/lodging.html" class="btn-white btn-white-filled">Browse Lodging</a>
                 <a href="plan.html" class="btn-white btn-white-outline">Start Planning</a>
@@ -2127,19 +2233,22 @@
                     <p>Your guide to the mountain village at 8,676 feet — adventures, dining, lodging, and more in the
                         Sacramento Mountains of New Mexico.</p>
                     <div class="footer-social">
-                        <a href="#todo-facebook" aria-label="Facebook">
+                        <!-- TODO: Replace with real Facebook URL -->
+                        <a href="#" aria-label="Facebook">
                             <svg viewBox="0 0 24 24">
                                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
                             </svg>
                         </a>
-                        <a href="#todo-instagram" aria-label="Instagram">
+                        <!-- TODO: Replace with real Instagram URL -->
+                        <a href="#" aria-label="Instagram">
                             <svg viewBox="0 0 24 24">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                             </svg>
                         </a>
-                        <a href="#todo-twitter" aria-label="Twitter / X">
+                        <!-- TODO: Replace with real Twitter/X URL -->
+                        <a href="#" aria-label="Twitter / X">
                             <svg viewBox="0 0 24 24">
                                 <path
                                     d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
@@ -2151,8 +2260,8 @@
                     <h3>Explore</h3>
                     <ul>
                         <li><a href="stay/lodging.html">Lodging</a></li>
-                        <li><a href="eat/complete-guide-to-dining.html">Dining</a></li>
-                        <li><a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a></li>
+                        <li><a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a></li>
+                        <li><a href="do/where-to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a></li>
                         <li><a href="do/complete-guide-to-activities.html">All Activities</a></li>
                         <li><a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a></li>
                         <li><a href="season/seasonal.html">Seasonal Guide</a></li>

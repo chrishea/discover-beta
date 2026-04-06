@@ -1,7 +1,7 @@
 # SEO Strategy Memo
 ## Discover Cloudcroft Website
 
-**Date:** January 2025
+**Date:** January 2026
 **Prepared for:** Discover Cloudcroft Team
 **Subject:** Search Engine Optimization Strategy & Recommendations
 
