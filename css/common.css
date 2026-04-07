@@ -1982,5 +1982,39 @@ img {
 }
 
 .lodging-content h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+}
+
+/* Top-of-card icon slots: 100% width, 16:9 aspect ratio.
+   Emoji glyphs center inside; <img> children cover the box. */
+.card-icon,
+.lodge-card-icon,
+.thing-card-icon,
+.outdoor-icon,
+.seasonal-icon,
+.market-card-icon,
+.pick-card-icon,
+.compare-card-icon {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.card-icon img,
+.lodge-card-icon img,
+.thing-card-icon img,
+.outdoor-icon img,
+.seasonal-icon img,
+.market-card-icon img,
+.pick-card-icon img,
+.compare-card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
