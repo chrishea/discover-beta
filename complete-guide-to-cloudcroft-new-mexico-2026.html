@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>The Complete Guide to Visiting Cloudcroft, NM (2026) | DiscoverCloudcroft.com</title>
     <meta name="description"
         content="Everything you need to plan the perfect Cloudcroft, NM trip in 2026 — best things to do, where to stay, restaurants, seasonal events, outdoor activities, and a weekend itinerary.">
@@ -127,14 +127,54 @@
     <link rel="stylesheet" href="css/common.css">
 
     <style>
+        /* ── 2026 mobile-first modernization base ── */
+        html { -webkit-text-size-adjust: 100%; }
+        img, video { max-width: 100%; height: auto; }
+        body { font-size: 16px; }
+        :where(p, li) { max-width: 65ch; }
+        :where(a, button, .hamburger, .toc-links a, .btn-white, .thing-card-link):focus-visible {
+            outline: 2px solid #c8943e;
+            outline-offset: 2px;
+        }
+        /* Safe-area aware sticky/fixed regions */
+        .site-header {
+            padding-top: env(safe-area-inset-top);
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+        }
+        .site-footer {
+            padding-bottom: env(safe-area-inset-bottom);
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+        }
+        .mobile-nav-overlay {
+            padding-top: calc(env(safe-area-inset-top) + 1rem);
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        /* Touch targets */
+        .toc-links a,
+        .thing-card-link,
+        .hamburger,
+        .btn-white,
+        .back-to-top {
+            min-height: 44px;
+            min-width: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         /* ── Hero ── */
         .hero {
-            height: 70vh;
-            min-height: 500px;
+            height: clamp(440px, 70vh, 760px);
+            min-height: 440px;
+        }
+        @media (orientation: landscape) and (max-height: 500px) {
+            .hero { height: 100vh; min-height: 320px; }
         }
 
         .hero-bg {
-            background-image: url('media/placeholder-hero-main.webp');
+            background-image: url('media/historic-railroad-trestle-side-view.jpg');
             background-size: cover;
             background-position: center 40%;
             animation: kenBurns 20s ease-in-out infinite alternate;
@@ -157,7 +197,7 @@
         }
 
         .hero-title {
-            font-size: clamp(2.2rem, 5vw, 3.75rem);
+            font-size: clamp(1.85rem, 1.2rem + 4.2vw, 3.75rem);
             line-height: 1.1;
             margin-bottom: 1.25rem;
             opacity: 0;
@@ -172,7 +212,7 @@
 
         .hero-meta {
             display: flex;
-            gap: 2rem;
+            gap: clamp(0.75rem, 2vw, 2rem);
             justify-content: center;
             flex-wrap: wrap;
             opacity: 0;
@@ -191,7 +231,7 @@
         /* ── TOC ── */
         .toc-section {
             background: #f2f2f2;
-            padding: 2.5rem 2rem;
+            padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 4vw, 2rem);
             border-bottom: 1px solid #e0e0e0;
         }
 
@@ -199,9 +239,13 @@
             max-width: 900px;
             margin: 0 auto;
             display: flex;
+            flex-direction: column;
             align-items: flex-start;
-            gap: 2rem;
+            gap: 0.75rem;
             flex-wrap: wrap;
+        }
+        @media (min-width: 768px) {
+            .toc-inner { flex-direction: row; gap: 2rem; }
         }
 
         .toc-label {
@@ -223,10 +267,10 @@
 
         .toc-links a {
             font-family: 'DM Sans', sans-serif;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 500;
-            padding: 0.4rem 0.9rem;
-            border-radius: 20px;
+            padding: 0.6rem 1rem;
+            border-radius: 22px;
             border: 1.5px solid #000000;
             color: #000000;
             text-decoration: none;
@@ -240,14 +284,14 @@
 
         /* ── Article layout ── */
         .guide-body {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 clamp(1rem, 4vw, 2rem);
         }
 
         /* ── Guide sections ── */
         .guide-section {
-            padding: 5rem 0;
+            padding: clamp(2.5rem, 7vw, 5rem) 0;
             border-bottom: 1px solid #e8e8e8;
         }
 
@@ -269,7 +313,8 @@
         .guide-section h2 {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
-            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-size: clamp(1.65rem, 1.2rem + 2.2vw, 2.75rem);
+            max-width: 100%;
             color: #000000;
             line-height: 1.15;
             margin-bottom: 1rem;
@@ -279,18 +324,19 @@
         }
 
         .guide-intro {
-            font-size: 1.1rem;
-            line-height: 1.8;
+            font-size: clamp(1rem, 0.95rem + 0.3vw, 1.15rem);
+            line-height: 1.75;
             color: #444444;
-            margin-bottom: 2.5rem;
-            max-width: 720px;
+            margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+            max-width: 65ch;
         }
 
         /* ── Thing cards ── */
         .things-grid {
+            container-type: inline-size;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.25rem;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+            gap: clamp(1rem, 2.5vw, 1.25rem);
             margin-bottom: 2rem;
         }
 
@@ -428,6 +474,7 @@
 
         .lodging-item {
             display: flex;
+            flex-direction: column;
             gap: 1.5rem;
             background: #ffffff;
             border: 1.5px solid #e8e8e8;
@@ -475,7 +522,10 @@
         }
 
         .lodging-badge {
-            min-width: 80px;
+            min-width: auto;
+            writing-mode: horizontal-tb;
+            transform: none;
+            padding: 0.5rem 1rem;
             background: #2B2B2B;
             color: #ffffff;
             display: flex;
@@ -493,7 +543,7 @@
         }
 
         .lodging-content {
-            padding: 1.5rem;
+            padding: clamp(1rem, 3vw, 1.5rem);
             flex: 1;
             min-width: 0;
         }
@@ -520,7 +570,8 @@
         .lodging-content h3 {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
-            font-size: 1.75rem;
+            font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+            line-height: 1.2;
             color: #000000;
             margin-bottom: 0.35rem;
         }
@@ -549,9 +600,10 @@
 
         /* ── Restaurant cards ── */
         .restaurant-grid {
+            container-type: inline-size;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.25rem;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+            gap: clamp(1rem, 2.5vw, 1.25rem);
         }
 
         .restaurant-card {
@@ -734,11 +786,21 @@
             max-width: 560px;
         }
 
+        .event-image {
+            display: block;
+            width: 100%;
+            max-width: 560px;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+        }
+
         /* ── Outdoor activities ── */
         .outdoor-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.25rem;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+            gap: clamp(1rem, 2.5vw, 1.25rem);
         }
 
         .outdoor-card {
@@ -862,7 +924,7 @@
 
         .itin-stop {
             display: grid;
-            grid-template-columns: 80px 1fr;
+            grid-template-columns: clamp(56px, 18vw, 80px) 1fr;
             gap: 1rem;
             padding: 1.25rem 0;
             border-bottom: 1px solid #eeeeee;
@@ -922,19 +984,20 @@
         .guide-cta {
             background: #2B2B2B;
             color: #ffffff;
-            padding: 5rem 2rem;
+            padding: clamp(3rem, 7vw, 5rem) clamp(1rem, 4vw, 2rem);
+            padding-bottom: calc(clamp(3rem, 7vw, 5rem) + env(safe-area-inset-bottom));
             text-align: center;
         }
 
         .guide-cta h2 {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
-            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-size: clamp(1.65rem, 1.2rem + 2.2vw, 2.75rem);
             margin-bottom: 1rem;
         }
 
         .guide-cta p {
-            font-size: 1.1rem;
+            font-size: clamp(1rem, 0.95rem + 0.3vw, 1.15rem);
             color: rgba(255, 255, 255, 0.75);
             max-width: 500px;
             margin: 0 auto 2.5rem;
@@ -984,63 +1047,23 @@
             transform: translateY(-2px);
         }
 
-        @media (max-width: 768px) {
-            .things-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .restaurant-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .outdoor-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
+        /* md+ (>=768px): restore desktop affordances */
+        @media (min-width: 768px) {
+            .lodging-item { flex-direction: row; }
             .lodging-badge {
-                writing-mode: horizontal-tb;
-                transform: none;
-                min-width: auto;
-                padding: 0.5rem 1rem;
-            }
-
-            .lodging-item {
-                flex-direction: column;
-            }
-
-            .lodging-content {
-                padding: 1.25rem;
-            }
-
-            .itin-stop {
-                grid-template-columns: 60px 1fr;
-            }
-
-            .toc-inner {
-                flex-direction: column;
-                gap: 0.75rem;
-            }
-
-            .hero-meta {
-                gap: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .outdoor-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .guide-body {
-                padding: 0 1.25rem;
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                min-width: 80px;
+                padding: 1rem 0.75rem;
             }
         }
 
         /* ── Activity / Info Cards ── */
         .card-grid {
+            container-type: inline-size;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
         }
 
         .card {
@@ -1092,6 +1115,15 @@
             margin-bottom: 1rem;
         }
 
+        .card-image {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
         .card h3 {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
@@ -1126,8 +1158,8 @@
 
         .seasonal-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
         }
 
         .seasonal-card {
@@ -1194,8 +1226,8 @@
         /* ── Practical Info Cards ── */
         .practical-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
         }
 
         .practical-card {
@@ -1255,41 +1287,17 @@
             margin-bottom: 1.5rem;
         }
 
-        /* ── Responsive overrides for appended sections ── */
-        @media (max-width: 1024px) {
-            .card-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .seasonal-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .practical-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .card-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .seasonal-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .practical-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        /* Grid sizing now handled by auto-fit + minmax above */
 
         /* ── Getting Here ── */
         .getting-here-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            grid-template-columns: 1fr;
+            gap: 2rem;
             align-items: start;
+        }
+        @media (min-width: 1024px) {
+            .getting-here-grid { grid-template-columns: 1fr 1fr; gap: 4rem; }
         }
 
         .route-list {
@@ -1370,12 +1378,123 @@
             line-height: 1.7;
         }
 
-        @media (max-width: 768px) {
-            .getting-here-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
+        /* ═══ Reels Section ═══ */
+        .reels-section {
+            padding: clamp(3rem, 7vw, 5rem) clamp(1rem, 4vw, 2rem);
+            background: var(--cloud-drift);
+        }
+
+        .reels-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .reels-grid {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 70%;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            margin: 2rem 0 2rem;
+        }
+        @media (min-width: 768px) {
+            .reels-grid {
+                grid-auto-flow: row;
+                grid-auto-columns: auto;
+                grid-template-columns: repeat(3, 1fr);
+                overflow: visible;
+                scroll-snap-type: none;
+                gap: 1.5rem;
+                padding-bottom: 0;
+                margin: 3rem 0 2.5rem;
             }
         }
+        .reel-card { scroll-snap-align: center; }
+
+        .reel-card {
+            position: relative;
+            aspect-ratio: 9 / 16;
+            max-width: 260px;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            display: block;
+            background: #2B2B2B;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .reel-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .reel-card:nth-child(2).visible {
+            transition-delay: 0.05s;
+        }
+
+        .reel-card:nth-child(3).visible {
+            transition-delay: 0.1s;
+        }
+
+        .reel-card:nth-child(4).visible {
+            transition-delay: 0.15s;
+        }
+
+        .reel-card:nth-child(5).visible {
+            transition-delay: 0.2s;
+        }
+
+        .reel-card:nth-child(6).visible {
+            transition-delay: 0.25s;
+        }
+
+        .reel-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+        }
+
+        .reel-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .reel-card::after {
+            content: "▶";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 56px;
+            height: 56px;
+            background: rgba(255, 255, 255, 0.92);
+            color: var(--midnight);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            padding-left: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .reels-ctas {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* reels-grid responsive handled mobile-first above */
     </style>
 </head>
 
@@ -1397,10 +1516,10 @@
                 <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
                 <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
                 <a href="explore/where-to-visit.html">Visit</a>
-                <a href="do/where-to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
                 <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
                 <a href="season/seasonal.html">Seasons</a>
-                <a href="plan.html">Plan</a>
+                <a href="#reels">Reels</a>
+                <a href="resources.html">Resources</a>
                 <a href="contact.html">Contact</a>
             </nav>
             <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
@@ -1413,11 +1532,11 @@
         <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="do/complete-guide-to-activities.html">Explore</a>
-        <a href="do/where-to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
+        <a href="explore/where-to-visit.html">Visit</a>
+
         <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
         <a href="season/seasonal.html">Seasons</a>
-        <a href="plan.html">Plan</a>
+        <a href="#reels">Reels</a>
         <a href="contact.html">Contact</a>
     </div>
 
@@ -1425,12 +1544,14 @@
 
         <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
         <section class="hero" aria-label="Page hero">
-            <div class="hero-bg" role="img" aria-label="Cloudcroft mountain landscape"></div>
+            <div class="hero-bg" role="img" aria-label="Cloudcroft mountain landscape">
+
+            </div>
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <p class="hero-eyebrow">2026 Travel Guide</p>
                 <h1 class="hero-title">The Complete Guide to<br><em>Cloudcroft, New Mexico</em></h1>
-                <p class="hero-subtitle">Everything you need to plan the perfect mountain escape — at 8,676 feet in the
+                <p class="hero-subtitle">Everything you need to plan the perfect mountain escape in the
                     Sacramento Mountains.</p>
                 <div class="hero-meta">
                     <span class="hero-meta-item">&#9650; 8,676 ft elevation</span>
@@ -1470,7 +1591,7 @@
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img
                                 alt="Mountain biking on Sacramento Mountains trails near Cloudcroft"
-                                src="media/placeholder-activity-biking.jpg"></div>
+                                src="media/placeholder-activity-biking.jpg" loading="lazy" decoding="async"></div>
                         <h3>Ride the Mountain Bike Trails</h3>
                         <p>The Sacramento Mountains offer some of the best high-altitude singletrack in the Southwest.
                             The High Altitude Bike Classic each summer draws hundreds of riders. Trails range from
@@ -1479,7 +1600,7 @@
                     </div>
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img alt="Hiking through Lincoln National Forest near Cloudcroft"
-                                src="media/placeholder-activity-biking.jpg" loading="lazy"></div>
+                                src="media/placeholder-activity-biking.jpg" loading="lazy" decoding="async"></div>
                         <h3>Hike Lincoln National Forest</h3>
                         <p>Dozens of maintained trails thread through aspen groves and spruce stands. The Osha Trail
                             and
@@ -1490,7 +1611,7 @@
                     </div>
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img alt="Art galleries on Burro Avenue in Cloudcroft"
-                                src="media/placeholder-activity-biking.jpg" loading="lazy"></div>
+                                src="media/placeholder-activity-biking.jpg" loading="lazy" decoding="async"></div>
                         <h3>Browse the Art Galleries</h3>
                         <p>Burro Avenue, Cloudcroft's main street, is lined with galleries featuring local and
                             regional
@@ -1501,7 +1622,7 @@
                     </div>
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img alt="Pickleball courts at Zenith Park in Cloudcroft"
-                                src="media/image-do-pickleball-group.webp" loading="lazy"></div>
+                                src="media/image-do-pickleball-group.webp" loading="lazy" decoding="async"></div>
                         <h3>Play Pickleball at Zenith Park</h3>
                         <p>Six free outdoor courts at 8,676 feet — possibly the highest pickleball venue in New
                             Mexico.
@@ -1513,7 +1634,7 @@
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img
                                 alt="Mexican Canyon Trestle historic railroad landmark near Cloudcroft"
-                                src="media/placeholder-activity-biking.jpg"></div>
+                                src="media/placeholder-activity-biking.jpg" loading="lazy" decoding="async"></div>
                         <h3>Drive the Mexican Canyon Trestle</h3>
                         <p>This historic railroad trestle was built in 1899 and is one of the most photographed
                             structures in southern New Mexico. The surrounding canyon is striking in every season,
@@ -1525,7 +1646,7 @@
 
                     <div class="thing-card fade-in">
                         <div class="thing-card-icon"><img alt="Stargazing and astronomy near Cloudcroft, NM"
-                                src="media/placeholder-activity-biking.jpg" loading="lazy"></div>
+                                src="media/placeholder-activity-biking.jpg" loading="lazy" decoding="async"></div>
 
                         <h3>Stargaze at Sunspot Observatory</h3>
                         <p>The <a href="https://sunspot.solar/" target="_blank" rel="noopener noreferrer">Sacramento
@@ -1557,7 +1678,7 @@
                         <div class="lodging-content">
                             <div class="lodging-img">
                                 <img src="media/placeholder-stay-lodging.jpg"
-                                    alt="The Lodge Resort &amp; Spa, Cloudcroft" loading="lazy">
+                                    alt="The Lodge Resort &amp; Spa, Cloudcroft" loading="lazy" decoding="async">
                             </div>
                             <h3>The Lodge Resort &amp; Spa</h3>
                             <p>Cloudcroft's iconic Victorian-era lodge has been welcoming guests since 1899. The
@@ -1575,7 +1696,7 @@
                         <div class="lodging-content">
                             <div class="lodging-img">
                                 <img src="stay/stay-photo/photo-grand-hotel/lodging-grand-cloudcroft-hotel.jpg"
-                                    alt="Grand Cloudcroft Hotel" loading="lazy">
+                                    alt="Grand Cloudcroft Hotel" loading="lazy" decoding="async">
                             </div>
                             <h3>Grand Cloudcroft Hotel</h3>
                             <p>A more contemporary option in the center of the village with easy walking access to shops
@@ -1594,7 +1715,7 @@
                         <div class="lodging-content">
                             <div class="lodging-img">
                                 <img src="stay/stay-photo/photo-cabins-at/lodging-cabins-at-cloudcroft.JPG"
-                                    alt="Cabins at Cloudcroft surrounded by tall pines" loading="lazy">
+                                    alt="Cabins at Cloudcroft surrounded by tall pines" loading="lazy" decoding="async">
                             </div>
                             <h3>Cabins at Cloudcroft</h3>
                             <p>Fully equipped private cabins ideal for families and groups. Each cabin has a fireplace,
@@ -1616,7 +1737,7 @@
 
                             <div class="lodging-img">
                                 <img src="stay/stay-photo/photo-dusty-boots-motel/lodging-dusty-boots.jpg"
-                                    alt="Dusty Boots Motel &amp; Cafe" loading="lazy">
+                                    alt="Dusty Boots Motel &amp; Cafe" loading="lazy" decoding="async">
                             </div>
 
                             <h3>Dusty Boots Motel &amp; Cafe</h3>
@@ -1639,7 +1760,7 @@
                         <div class="lodging-content">
 
                             <div class="lodging-img">
-                                <img src="media/Lodging-summit-inn.webp" alt="The Summit Inn" loading="lazy">
+                                <img src="media/Lodging-summit-inn.webp" alt="The Summit Inn" loading="lazy" decoding="async">
                             </div>
 
                             <h3>The Summit Inn</h3>
@@ -1663,7 +1784,7 @@
 
                             <div class="lodging-img">
                                 <img src="stay/stay-photo/photo-crofting-inn/crofting-inn.jpg"
-                                    alt="The Crofting Bed &amp; Breakfast" loading="lazy">
+                                    alt="The Crofting Bed &amp; Breakfast" loading="lazy" decoding="async">
                             </div>
 
                             <h3>The Crofting Bed &amp; Breakfast</h3>
@@ -1784,7 +1905,7 @@
                     <div class=" restaurant-card fade-in">
                         <a target="_blank" href="eat/where-to-eat-cloudcroft-mad-jacks-bbq.html">
                             <div class="restaurant-card-img">
-                                <img src="media/image-mad-jack.jpg" alt="Mad Jack's Mountaintop BBQ" loading="lazy">
+                                <img src="media/image-mad-jack.jpg" alt="Mad Jack's Mountaintop BBQ" loading="lazy" decoding="async">
                             </div>
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">BBQ · Casual</p>
@@ -1798,7 +1919,7 @@
                     <div class="restaurant-card fade-in">
                         <a href="eat/where-to-eat-cloudcroft-brother-n-law-bbq.html">
                             <div class="restaurant-card-img">
-                                <img src="media/image-brother-in-law-bbq.jpg" alt="Brother-N-Law BBQ" loading="lazy">
+                                <img src="media/image-brother-in-law-bbq.jpg" alt="Brother-N-Law BBQ" loading="lazy" decoding="async">
                             </div>
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">BBQ · Family</p>
@@ -1814,7 +1935,7 @@
                         <a href="eat/where-to-eat-cloudcroft-cloudcroft-brewery.html">
                             <div class="restaurant-card-img">
                                 <img src="media/placeholder-explore-brewery.webp" alt="Cloudcroft Brewing Co."
-                                    loading="lazy">
+                                    loading="lazy" decoding="async">
                             </div>
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">Brewery · Pub</p>
@@ -1830,7 +1951,7 @@
                     <div class="restaurant-card fade-in">
                         <a href="eat/where-to-eat-cloudcroft-big-daddys.html">
                             <div class="restaurant-card-img">
-                                <img src="media/Index-10.webp" alt="Big Daddy's Diner" loading="lazy">
+                                <img src="media/Index-10.webp" alt="Big Daddy's Diner" loading="lazy" decoding="async">
                             </div>
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">Diner · Breakfast</p>
@@ -1845,7 +1966,7 @@
                     <div class="restaurant-card fade-in">
                         <a href="eat/where-to-eat-cloudcroft-western-bar.html">
                             <div class="restaurant-card-img">
-                                <img src="media/western-bar-1.webp" alt="Western Bar &amp; Café" loading="lazy">
+                                <img src="media/western-bar-1.webp" alt="Western Bar &amp; Café" loading="lazy" decoding="async">
                             </div>
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">Bar · American</p>
@@ -1860,7 +1981,7 @@
                     <div class="restaurant-card fade-in">
                         <a href="eat/where-to-eat-cloudcroft-high-rollin.html">
                             <div class="restaurant-card-img">
-                                <img src="media/image-high-rollin.jpg" alt="High Rollin'" loading="lazy">
+                                <img src="media/image-high-rollin.jpg" alt="High Rollin'" loading="lazy" decoding="async">
                             </div>
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">Bar · Entertainment</p>
@@ -1898,6 +2019,7 @@
                     </div>
                     <div class="event-item fade-in">
                         <p class="event-month">June</p>
+                        <img src="media/photos-bike/high-altitude-classic-hero.jpg" alt="High Altitude Bike Classic mountain biking event in Cloudcroft" loading="lazy" decoding="async" class="event-image">
                         <h3>High Altitude Bike Classic</h3>
                         <p>One of New Mexico's premier mountain biking events. Riders of all levels compete across five
                             route options ranging from 10 to 55 miles through Lincoln National Forest. Registration
@@ -1912,6 +2034,7 @@
                     </div>
                     <div class="event-item fade-in">
                         <p class="event-month">August</p>
+                        <img src="media/lumberjack-log-sawing-competition.jpg" alt="Lumberjack log sawing competition at Cloudcroft Lumberjack Day" loading="lazy" decoding="async" class="event-image">
                         <h3>Lumberjack Day</h3>
                         <p>A celebration of Cloudcroft's logging heritage featuring axe-throwing competitions,
                             log-rolling, chainsaw carving, and historical demonstrations. Rowdy, fun, and distinctly
@@ -1955,7 +2078,7 @@
                 </div>
                 <div class="card-grid">
                     <a href="do/best-hiking-trails-in-cloudcroft-new-mexico.html" class="card">
-                        <div class="card-icon">&#x1F97E;</div>
+                        <img src="media/hiker-and-dog-autumn-forest-trail.jpeg" alt="Hiker and dog on an autumn forest trail near Cloudcroft" loading="lazy" decoding="async" class="card-image">
                         <h3>Hiking</h3>
                         <p>Explore miles of trails through the Lincoln National Forest. From easy nature walks to
                             challenging summit hikes, the Sacramento Mountains have something for every skill level.</p>
@@ -1975,14 +2098,14 @@
                     <a href="do/complete-guide-to-disc-golf.html" class="card">
                         <div class="card-icon">
                             <img src="media/disc-golf-basket-course.jpeg"
-                                alt="Disc golf basket on the Cloudcroft course" loading="lazy">
+                                alt="Disc golf basket on the Cloudcroft course" loading="lazy" decoding="async">
                         </div>
                         <h3>Disc Golf</h3>
                         <p>Play one of the highest-elevation disc golf courses in the Southwest. Challenging terrain,
                             beautiful forest setting, and fresh mountain air.</p>
                     </a>
                     <a href="do/play-pickleball-in-cloudcroft-2026.html" class="card">
-                        <div class="card-icon">&#x1F3D3;</div>
+                        <img src="media/placeholder-event-july4th.jpg" alt="Pickleball in Cloudcroft" loading="lazy" decoding="async" class="card-image">
                         <h3>Pickleball</h3>
                         <p>Join the growing pickleball community in Cloudcroft. Courts are available for drop-in play,
                             and the mountain air makes for a refreshing game.</p>
@@ -2018,13 +2141,13 @@
                             seasonally in the village. Best June through September.</p>
                     </a>
                     <a href="season/winter.html" class="card">
-                        <div class="card-icon">&#x26F7;&#xFE0F;</div>
+                        <img src="media/image-dog-run-snow.jpg" alt="Dog running in fresh snow near Cloudcroft" loading="lazy" decoding="async" class="card-image">
                         <h3>Skiing &amp; Snow</h3>
                         <p>Ski Cloudcroft offers New Mexico's southernmost ski area &mdash; small but scenic, with a
                             genuine mountain atmosphere. Best December through March.</p>
                     </a>
                     <a href="dark-skies.html" class="card">
-                        <div class="card-icon">&#x1F30C;</div>
+                        <img src="media/milky-way-night-sky-mountains.jpg" alt="Milky Way over the Sacramento Mountains near Cloudcroft" loading="lazy" decoding="async" class="card-image">
                         <h3>Stargazing</h3>
                         <p>One of southern New Mexico's best dark-sky sites. Minimal light pollution and consistently
                             clear nights at elevation. Best on new-moon nights, year-round.</p>
@@ -2059,7 +2182,7 @@
                     <div class="seasonal-card">
                         <!-- TODO: Replace image-winter.jpg with a spring-specific photo -->
                         <div class="seasonal-icon"><img src="media/image-winter.jpg"
-                                alt="Spring in Cloudcroft, New Mexico" loading="lazy"></div>
+                                alt="Spring in Cloudcroft, New Mexico" loading="lazy" decoding="async"></div>
                         <h3>Spring</h3>
                         <div class="season-months">April &ndash; May</div>
                         <p>Wildflowers begin to bloom across the mountain meadows. Mild temperatures make for ideal
@@ -2068,7 +2191,7 @@
                     <div class="seasonal-card">
                         <!-- TODO: Replace image-winter.jpg with a summer-specific photo -->
                         <div class="seasonal-icon"><img src="media/image-winter.jpg"
-                                alt="Summer in Cloudcroft, New Mexico" loading="lazy"></div>
+                                alt="Summer in Cloudcroft, New Mexico" loading="lazy" decoding="async"></div>
                         <h3>Summer</h3>
                         <div class="season-months">June &ndash; August</div>
                         <p>The perfect escape from desert heat below. Highs in the 70s when the valley hits triple
@@ -2078,7 +2201,7 @@
                     <div class="seasonal-card">
                         <!-- TODO: Replace image-winter.jpg with a fall-specific photo -->
                         <div class="seasonal-icon"><img src="media/image-winter.jpg"
-                                alt="Fall in Cloudcroft, New Mexico" loading="lazy"></div>
+                                alt="Fall in Cloudcroft, New Mexico" loading="lazy" decoding="async"></div>
                         <h3>Fall</h3>
                         <div class="season-months">September &ndash; November</div>
                         <p>Spectacular golden foliage as aspens turn. Aspenfest in October draws visitors from across
@@ -2087,7 +2210,7 @@
                     </div>
                     <div class="seasonal-card">
                         <div class="seasonal-icon"><img src="media/image-winter.jpg"
-                                alt="Winter in Cloudcroft, New Mexico" loading="lazy"></div>
+                                alt="Winter in Cloudcroft, New Mexico" loading="lazy" decoding="async"></div>
                         <h3>Winter</h3>
                         <div class=" season-months">December &ndash; March</div>
                         <p>Snow blankets the mountains, creating a winter wonderland. Enjoy snow sports, cozy lodge
@@ -2189,6 +2312,50 @@
             </div>
         </section>
 
+        <!-- ═══════════════════════════════ REELS ═══════════════════════════════ -->
+        <section class="reels-section" id="reels" aria-labelledby="h-reels">
+            <div class="reels-inner">
+                <span class="section-label">Follow Along</span>
+                <h2 id="h-reels" class="section-title section-title-centered">Cloudcroft on Reels</h2>
+                <p class="section-description">Short videos from around the village and the Sacramento Mountains. Tap a
+                    reel to watch — and follow us for more.</p>
+
+                <div class="reels-grid">
+                    <a href="https://instagram.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
+                        class="reel-card" aria-label="Watch reel 1 on Instagram">
+                        <img src="media/reels/reel-1.jpg" alt="Cloudcroft reel 1" loading="lazy" decoding="async">
+                    </a>
+                    <a href="https://instagram.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
+                        class="reel-card" aria-label="Watch reel 2 on Instagram">
+                        <img src="media/reels/reel-2.jpg" alt="Cloudcroft reel 2" loading="lazy" decoding="async">
+                    </a>
+                    <a href="https://instagram.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
+                        class="reel-card" aria-label="Watch reel 3 on Instagram">
+                        <img src="media/reels/reel-3.jpg" alt="Cloudcroft reel 3" loading="lazy" decoding="async">
+                    </a>
+                    <a href="https://instagram.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
+                        class="reel-card" aria-label="Watch reel 4 on Instagram">
+                        <img src="media/reels/reel-4.jpg" alt="Cloudcroft reel 4" loading="lazy" decoding="async">
+                    </a>
+                    <a href="https://instagram.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
+                        class="reel-card" aria-label="Watch reel 5 on Instagram">
+                        <img src="media/reels/reel-5.jpg" alt="Cloudcroft reel 5" loading="lazy" decoding="async">
+                    </a>
+                    <a href="https://instagram.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
+                        class="reel-card" aria-label="Watch reel 6 on Instagram">
+                        <img src="media/reels/reel-6.jpg" alt="Cloudcroft reel 6" loading="lazy" decoding="async">
+                    </a>
+                </div>
+
+                <div class="reels-ctas">
+                    <a href="https://instagram.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
+                        class="btn-primary">Follow on Instagram</a>
+                    <a href="https://facebook.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
+                        class="btn-secondary">Follow on Facebook</a>
+                </div>
+            </div>
+        </section>
+
         <!-- ═══════════════════════════════ CTA BANNER ═══════════════════════════════ -->
         <section class="guide-cta" aria-labelledby="h-cta">
             <h2 id="h-cta">Ready to Plan Your Trip?</h2>
@@ -2284,7 +2451,7 @@
 
     <button class="back-to-top" aria-label="Back to top" title="Back to top">&#8593;</button>
 
-    <script src="js/common.js"></script>
+    <script src="js/common.js" defer></script>
     <script>
         (function () {
             // Intersection observer for fade-in animations
@@ -2297,7 +2464,7 @@
                 });
             }, { threshold: 0.12 });
 
-            document.querySelectorAll('.thing-card, .lodging-item, .restaurant-card, .event-item, .outdoor-card, .itinerary-day, .route-item, .card, .seasonal-card, .practical-card, .fade-in').forEach(function (el) {
+            document.querySelectorAll('.thing-card, .lodging-item, .restaurant-card, .event-item, .outdoor-card, .itinerary-day, .route-item, .card, .seasonal-card, .practical-card, .fade-in, .reel-card').forEach(function (el) {
                 observer.observe(el);
             });
 
