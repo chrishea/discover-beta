@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Hiking Trails Near Cloudcroft | DiscoverCloudcroft.com — Sacramento Mountains Guide</title>
-    <meta name="description" content="Discover the best hiking trails near Cloudcroft, NM — from easy forest loops to challenging canyon descents through Lincoln National Forest at 8,676 feet.">
-    <meta name="keywords" content="best hiking trails Cloudcroft, hiking Cloudcroft NM, Lincoln National Forest trails, Sacramento Mountains hiking, Osha Trail, Rim Trail, Dog Canyon, Cloud Climbing Rail Trail">
+    <meta name="description"
+        content="Discover the best hiking trails near Cloudcroft, NM — from easy forest loops to challenging canyon descents through Lincoln National Forest at 8,676 feet.">
+    <meta name="keywords"
+        content="best hiking trails Cloudcroft, hiking Cloudcroft NM, Lincoln National Forest trails, Sacramento Mountains hiking, Osha Trail, Rim Trail, Dog Canyon, Cloud Climbing Rail Trail">
     <link rel="canonical" href="https://discovercloudcroft.com/best-hiking-trails.html">
 
     <meta property="og:title" content="Best Hiking Trails Near Cloudcroft | DiscoverCloudcroft.com">
-    <meta property="og:description" content="Discover the best hiking trails near Cloudcroft, NM — from easy forest loops to challenging canyon descents through Lincoln National Forest.">
+    <meta property="og:description"
+        content="Discover the best hiking trails near Cloudcroft, NM — from easy forest loops to challenging canyon descents through Lincoln National Forest.">
     <meta property="og:url" content="https://discovercloudcroft.com/best-hiking-trails.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Best Hiking Trails Near Cloudcroft | DiscoverCloudcroft.com">
-    <meta name="twitter:description" content="Discover the best hiking trails near Cloudcroft, NM — from easy forest loops to challenging canyon descents through Lincoln National Forest.">
+    <meta name="twitter:description"
+        content="Discover the best hiking trails near Cloudcroft, NM — from easy forest loops to challenging canyon descents through Lincoln National Forest.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
     <script type="application/ld+json">
     {
@@ -34,225 +39,324 @@
       "url": "https://discovercloudcroft.com/do/best-hiking-trails-in-cloudcroft-new-mexico.html"
 }
     </script>
-<link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common.css">
     <style>
+        .hero-bg {
+            background: url('do-photo/hike/photo-hike-00026.jpg') center center / cover no-repeat;
+        }
 
-.hero-bg {
-    background: linear-gradient(135deg, var(--pine-shadow) 0%, var(--summit) 50%, var(--alpine) 100%);
-}
+        /* Page-specific components */
+        .about-image {
+            background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(58, 107, 30, 0.1) 100%);
+        }
 
-/* Page-specific components */
-.about-image {
-    background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(58, 107, 30, 0.1) 100%);
-}
-.trail-cards-grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 2rem;
-}
-.trail-card {
-background: var(--snow-cap);
-border-radius: 12px;
-overflow: hidden;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-opacity: 0;
-transform: translateY(30px);
-border-top: 4px solid var(--alpine);
-}
-.trail-card.visible {
-opacity: 1;
-transform: translateY(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
-}
-.trail-card:nth-child(2).visible { transition-delay: 0.1s; }
-.trail-card:nth-child(3).visible { transition-delay: 0.15s; }
-.trail-card:nth-child(4).visible { transition-delay: 0.2s; }
-.trail-card:nth-child(5).visible { transition-delay: 0.25s; }
-.trail-card:nth-child(6).visible { transition-delay: 0.3s; }
-.trail-card:nth-child(7).visible { transition-delay: 0.35s; }
-.trail-card:nth-child(8).visible { transition-delay: 0.4s; }
-.trail-card:nth-child(9).visible { transition-delay: 0.45s; }
-.trail-card:nth-child(10).visible { transition-delay: 0.5s; }
-.trail-card:hover {
-transform: translateY(-6px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-}
-.trail-card-img {
-width: 100%;
-aspect-ratio: 16 / 9;
-overflow: hidden;
-}
-.trail-card-img img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.trail-card:hover .trail-card-img img {
-transform: scale(1.05);
-}
-.trail-card-body {
-padding: 2rem;
-}
-.trail-card-header {
-display: flex;
-align-items: flex-start;
-justify-content: space-between;
-gap: 1rem;
-margin-bottom: 1rem;
-}
-.trail-card h3 {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 1.2rem;
-color: var(--midnight);
-line-height: 1.3;
-}
-.trail-card h3 a {
-color: inherit;
-text-decoration: none;
-transition: color 0.3s;
-}
-.trail-card h3 a:hover {
-color: var(--alpine);
-}
-.difficulty-badge {
-font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
-font-weight: 700;
-font-size: 0.7rem;
-text-transform: uppercase;
-letter-spacing: 0.05em;
-padding: 4px 12px;
-border-radius: 20px;
-color: var(--snow-cap);
-white-space: nowrap;
-flex-shrink: 0;
-}
-.badge-easy { background: #333333; }
-.badge-moderate { background: var(--golden-hour); color: var(--midnight); }
-.badge-hard { background: var(--ember); }
-.trail-stats {
-display: flex;
-flex-wrap: wrap;
-gap: 1rem;
-margin-bottom: 1rem;
-padding-bottom: 1rem;
-border-bottom: 1px solid var(--cloud-drift);
-}
-.trail-stat {
-display: flex;
-align-items: center;
-gap: 0.35rem;
-font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
-font-weight: 700;
-font-size: 0.8rem;
-color: var(--summit);
-}
-.trail-stat .stat-icon {
-font-size: 0.9rem;
-}
-.trail-card-body > p {
-color: var(--granite);
-font-size: 0.95rem;
-line-height: 1.7;
-margin-bottom: 1.25rem;
-}
-.trail-tags {
-display: flex;
-flex-wrap: wrap;
-gap: 0.5rem;
-margin-bottom: 1.5rem;
-}
-.trail-tag {
-font-family: 'DM Sans', sans-serif;
-font-size: 0.75rem;
-font-weight: 500;
-padding: 0.3rem 0.75rem;
-border-radius: 20px;
-background: var(--cloud-drift);
-color: var(--summit);
-border: 1px solid rgba(58, 107, 30, 0.15);
-}
-.trail-card-cta {
-display: inline-flex;
-align-items: center;
-gap: 0.4rem;
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 0.8rem;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-color: var(--alpine);
-text-decoration: none;
-transition: color 0.3s;
-}
-.trail-card-cta:hover {
-color: var(--golden-hour);
-}
-.highlights-grid { grid-template-columns: repeat(4, 1fr); }
-.highlight-card {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(58, 107, 30, 0.15);
-}
-.highlight-card:nth-child(4).visible { transition-delay: 0.3s; }
-.highlight-card:hover { background: rgba(255, 255, 255, 0.9); }
-.highlight-card h3 { color: var(--pine); }
-.highlight-card p { color: var(--charcoal); }
-.tips-section {
-background: var(--cloud-drift);
-}
-.tips-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 2rem;
-}
-.tip-card {
-background: var(--snow-cap);
-border-radius: 12px;
-padding: 2.5rem 2rem;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-border-left: 4px solid var(--golden-hour);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-opacity: 0;
-transform: translateY(30px);
-}
+        .trail-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
 
-.tip-card:hover {
-transform: translateY(-6px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-}
-.tip-icon {
-font-size: 2rem;
-margin-bottom: 0.75rem;
-}
-.tip-card h4 {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 1.1rem;
-color: var(--midnight);
-margin-bottom: 0.5rem;
-}
+        .trail-card {
+            background: var(--snow-cap);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(30px);
+            border-top: 4px solid var(--alpine);
+        }
 
-/* Responsive */
-@media (max-width: 1024px) {
-.about-grid { grid-template-columns: 1fr; gap: 2rem; }
+        .trail-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+        }
 
-.trail-cards-grid { grid-template-columns: repeat(2, 1fr); }
-.tips-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 768px) {
+        .trail-card:nth-child(2).visible {
+            transition-delay: 0.1s;
+        }
 
-.trail-cards-grid { grid-template-columns: 1fr; }
-.tips-grid { grid-template-columns: 1fr; }
+        .trail-card:nth-child(3).visible {
+            transition-delay: 0.15s;
+        }
 
-}</style>
+        .trail-card:nth-child(4).visible {
+            transition-delay: 0.2s;
+        }
+
+        .trail-card:nth-child(5).visible {
+            transition-delay: 0.25s;
+        }
+
+        .trail-card:nth-child(6).visible {
+            transition-delay: 0.3s;
+        }
+
+        .trail-card:nth-child(7).visible {
+            transition-delay: 0.35s;
+        }
+
+        .trail-card:nth-child(8).visible {
+            transition-delay: 0.4s;
+        }
+
+        .trail-card:nth-child(9).visible {
+            transition-delay: 0.45s;
+        }
+
+        .trail-card:nth-child(10).visible {
+            transition-delay: 0.5s;
+        }
+
+        .trail-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .trail-card-img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+
+        .trail-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .trail-card:hover .trail-card-img img {
+            transform: scale(1.05);
+        }
+
+        .trail-card-body {
+            padding: 2rem;
+        }
+
+        .trail-card-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .trail-card h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--midnight);
+            line-height: 1.3;
+        }
+
+        .trail-card h3 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .trail-card h3 a:hover {
+            color: var(--alpine);
+        }
+
+        .difficulty-badge {
+            font-family: 'DM Sans', sans-serif;
+            font-variant-numeric: tabular-nums;
+            font-weight: 700;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 12px;
+            border-radius: 20px;
+            color: var(--snow-cap);
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .badge-easy {
+            background: #333333;
+        }
+
+        .badge-moderate {
+            background: var(--golden-hour);
+            color: var(--midnight);
+        }
+
+        .badge-hard {
+            background: var(--ember);
+        }
+
+        .trail-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--cloud-drift);
+        }
+
+        .trail-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: 'DM Sans', sans-serif;
+            font-variant-numeric: tabular-nums;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: var(--summit);
+        }
+
+        .trail-stat .stat-icon {
+            font-size: 0.9rem;
+        }
+
+        .trail-card-body>p {
+            color: var(--granite);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+
+        .trail-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .trail-tag {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.3rem 0.75rem;
+            border-radius: 20px;
+            background: var(--cloud-drift);
+            color: var(--summit);
+            border: 1px solid rgba(58, 107, 30, 0.15);
+        }
+
+        .trail-card-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--alpine);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .trail-card-cta:hover {
+            color: var(--golden-hour);
+        }
+
+        .highlights-grid {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .highlight-card {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(58, 107, 30, 0.15);
+        }
+
+        .highlight-card:nth-child(4).visible {
+            transition-delay: 0.3s;
+        }
+
+        .highlight-card:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .highlight-card h3 {
+            color: var(--pine);
+        }
+
+        .highlight-card p {
+            color: var(--charcoal);
+        }
+
+        .tips-section {
+            background: var(--cloud-drift);
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .tip-card {
+            background: var(--snow-cap);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid var(--golden-hour);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .tip-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .tip-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .tip-card h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--midnight);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .trail-cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tips-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .trail-cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
 </head>
+
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
@@ -269,7 +373,7 @@ margin-bottom: 0.5rem;
                 <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
                 <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
                 <a href="../explore/where-to-visit.html">Visit</a>
-                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../events/top-events.html">Events</a>
                 <a href="../season/seasonal.html">Seasons</a>
                 <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
                 <a href="../resources.html">Resources</a>
@@ -287,7 +391,7 @@ margin-bottom: 0.5rem;
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
         <a href="../explore/where-to-visit.html">Visit</a>
 
-        <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+        <a href="../events/top-events.html">Events</a>
         <a href="../season/seasonal.html">Seasons</a>
         <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../contact.html">Contact</a>
@@ -307,7 +411,8 @@ margin-bottom: 0.5rem;
                 <span class="word">Near </span>
                 <span class="word">Cloudcroft</span>
             </h1>
-            <p class="hero-subtitle">50+ miles of trails through pine forests, mountain meadows, and dramatic canyons in the Sacramento Mountains</p>
+            <p class="hero-subtitle">50+ miles of trails through pine forests, mountain meadows, and dramatic canyons in
+                the Sacramento Mountains</p>
             <div class="hero-ctas">
                 <a href="#trails" class="btn-primary">Browse Trails</a>
                 <a href="#tips" class="btn-secondary">Trail Tips</a>
@@ -345,10 +450,18 @@ margin-bottom: 0.5rem;
                         <span class="section-label">High-Altitude Hiking</span>
                         <h2 class="section-title">A Hiker's Paradise in the Sky</h2>
                         <p>
-                            Perched at 8,676 feet in the Sacramento Mountains of southern New Mexico, Cloudcroft is a hidden gem for hikers seeking cool mountain air, towering ponderosa pines, and trails that range from gentle forest strolls to grueling canyon descents. Lincoln National Forest wraps around the village on all sides, offering an extensive network of paths through some of the most diverse terrain in the Southwest.
+                            Perched at 8,676 feet in the Sacramento Mountains of southern New Mexico, Cloudcroft is a
+                            hidden gem for hikers seeking cool mountain air, towering ponderosa pines, and trails that
+                            range from gentle forest strolls to grueling canyon descents. Lincoln National Forest wraps
+                            around the village on all sides, offering an extensive network of paths through some of the
+                            most diverse terrain in the Southwest.
                         </p>
                         <p>
-                            Whether you are looking for a quick family-friendly loop, a historic walk along an old railroad bed, or a challenging trek that drops thousands of feet from mountain peaks to the Tularosa Basin, Cloudcroft's trails deliver. Wildflowers blanket the meadows in summer, golden aspens light up the hillsides in fall, and the clean mountain air makes every mile feel earned and rewarding.
+                            Whether you are looking for a quick family-friendly loop, a historic walk along an old
+                            railroad bed, or a challenging trek that drops thousands of feet from mountain peaks to the
+                            Tularosa Basin, Cloudcroft's trails deliver. Wildflowers blanket the meadows in summer,
+                            golden aspens light up the hillsides in fall, and the clean mountain air makes every mile
+                            feel earned and rewarding.
                         </p>
                         <div class="about-features">
                             <span class="about-feature">&#x1F332; Pine &amp; Fir Forests</span>
@@ -361,7 +474,7 @@ margin-bottom: 0.5rem;
                     </div>
                     <div class="about-image fade-in">
                         <div class="about-image-placeholder">
-                            <div class="icon">&#x1F3D4;&#xFE0F;</div>
+                            <div class="icon"><img src="do-photo/hike/photo-hike-00027.jpg"></div>
                             <p>Sacramento Mountains Trails</p>
                         </div>
                     </div>
@@ -369,232 +482,547 @@ margin-bottom: 0.5rem;
             </div>
         </section>
 
-        <section class="section" id="trails" style="background: var(--cloud-drift);" aria-label="Trail guide">
+        <section class=" section" id="trails" style="background: var(--cloud-drift);" aria-label="Trail guide">
             <div class="section-container">
                 <div style="text-align: center;">
                     <span class="section-label">Trail Guide</span>
-                    <h2 class="section-title section-title-centered">Top Trails Near Cloudcroft</h2>
-                    <p class="section-description">From easy forest loops to challenging canyon descents, find the trail that matches your ambition.</p>
+                    <h2 class="section-title section-title-centered">Five Hikes Near Cloudcroft,
+                        Ranked Easiest to
+                        Hardest</h2>
+                    <p class="section-description">Five trails close to Cloudcroft, all supported by
+                        current Forest
+                        Service material — from easy railroad-grade walks to one harder canyon hike.
+                    </p>
                 </div>
                 <div class="trail-cards-grid">
 
                     <div class="trail-card">
-                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00022.jpeg" alt="Hiking trail through pine forest near Cloudcroft" loading="lazy"></div>
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00026.jpg"
+                                alt="Grand View Trail near High Rolls with Tularosa Basin views" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
-                                <h3><a href="complete-guide-to-osha-trail.html">Osha Trail</a></h3>
+                                <h3>1. Grand View Trail (T130)</h3>
                                 <span class="difficulty-badge badge-easy">Easy</span>
                             </div>
                             <div class="trail-stats">
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 2.2 mi loop</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> 200 ft gain</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> ~1 hr</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 1.3
+                                    mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> Open
+                                    year-round</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Easy</span>
                             </div>
-                            <p>A gentle loop through mixed conifer forest perfect for families. The trail meanders through pine and fir groves with opportunities for bird watching and seasonal wildflower displays.</p>
+                            <p>The easy one to give almost anybody first. Sits on the old
+                                Cloud-Climbing Railroad grade
+                                with open views, railroad history, and a lower-elevation feel than
+                                the higher Cloudcroft
+                                trails — a good "first day in the mountains" walk. Trailhead off
+                                Forest Road 162C just
+                                north of High Rolls.</p>
                             <div class="trail-tags">
-                                <span class="trail-tag">Wildflowers</span>
-                                <span class="trail-tag">Bird Watching</span>
-                                <span class="trail-tag">Family-Friendly</span>
-                            </div>
-                            <a href="complete-guide-to-osha-trail.html" class="trail-card-cta">View Trail Details &rarr;</a>
-                        </div>
-                    </div>
-
-                    <div class="trail-card">
-                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00026.jpg" alt="Rim trail with canyon views in Sacramento Mountains" loading="lazy"></div>
-                        <div class="trail-card-body">
-                            <div class="trail-card-header">
-                                <h3>Rim Trail</h3>
-                                <span class="difficulty-badge badge-moderate">Moderate</span>
-                            </div>
-                            <div class="trail-stats">
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 4.5 mi</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> 600 ft gain</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> ~2.5 hr</span>
-                            </div>
-                            <p>Stunning canyon-edge views along the Sacramento Mountain rim. The trail traverses diverse terrain from dense forest to dramatic overlooks with sweeping views of the Tularosa Basin far below.</p>
-                            <div class="trail-tags">
-                                <span class="trail-tag">Canyon Views</span>
-                                <span class="trail-tag">Photography</span>
-                                <span class="trail-tag">Diverse Terrain</span>
-                            </div>
-                            <a href="https://www.google.com/maps/search/Rim+Trail+Cloudcroft+NM" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
-                        </div>
-                    </div>
-
-                    <div class="trail-card">
-                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00027.jpg" alt="Mexican Canyon Trestle trail through mountain forest" loading="lazy"></div>
-                        <div class="trail-card-body">
-                            <div class="trail-card-header">
-                                <h3><a href="complete-guide-to-mexican-canyon-trestle.html">Mexican Canyon Trestle Trail</a></h3>
-                                <span class="difficulty-badge badge-moderate">Moderate</span>
-                            </div>
-                            <div class="trail-stats">
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 2.0 mi</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> 400 ft gain</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> ~1.5 hr</span>
-                            </div>
-                            <p>Hike to the iconic 1899 railroad trestle, one of the most photographed landmarks in the Sacramento Mountains. The trail leads to a dramatic wooden structure spanning a deep canyon.</p>
-                            <div class="trail-tags">
-                                <span class="trail-tag">Historic Trestle</span>
-                                <span class="trail-tag">Photography</span>
-                                <span class="trail-tag">Mountain Views</span>
-                            </div>
-                            <a href="complete-guide-to-mexican-canyon-trestle.html" class="trail-card-cta">View Trail Details &rarr;</a>
-                        </div>
-                    </div>
-
-                    <div class="trail-card">
-                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00030.jpg" alt="Cloud-Climbing Rail Trail through Lincoln National Forest" loading="lazy"></div>
-                        <div class="trail-card-body">
-                            <div class="trail-card-header">
-                                <h3>Cloud-Climbing Rail Trail</h3>
-                                <span class="difficulty-badge badge-easy">Easy</span>
-                            </div>
-                            <div class="trail-stats">
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 3.6 mi one-way</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> 300 ft gain</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> ~2 hr</span>
-                            </div>
-                            <p>Follow the historic railroad bed of the Cloud Climbing Railroad through tunnels and past trestles. This unique trail traces the route that first brought tourists to Cloudcroft in the late 1800s.</p>
-                            <div class="trail-tags">
-                                <span class="trail-tag">Historic Trestles</span>
-                                <span class="trail-tag">Tunnels</span>
                                 <span class="trail-tag">Railroad History</span>
+                                <span class="trail-tag">Open Views</span>
+                                <span class="trail-tag">Year-Round</span>
                             </div>
-                            <a href="https://www.google.com/maps/search/Cloud+Climbing+Rail+Trail+Cloudcroft+NM" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
+                            <a href="https://www.fs.usda.gov/media/94658" class="trail-card-cta" target="_blank"
+                                rel="noopener noreferrer">Forest Service Info
+                                &rarr;</a>
                         </div>
                     </div>
 
                     <div class="trail-card">
-                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00031.jpg" alt="Bluff Springs trail through old-growth forest" loading="lazy"></div>
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00022.jpeg"
+                                alt="Osha Trail through pine forest above the Tularosa Basin" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
-                                <h3>Bluff Springs Trail</h3>
-                                <span class="difficulty-badge badge-moderate">Moderate</span>
-                            </div>
-                            <div class="trail-stats">
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 3.0 mi</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> 500 ft gain</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> ~2 hr</span>
-                            </div>
-                            <p>A rewarding out-and-back trail descending through old-growth forest to a natural spring. The return climb is a good workout, but the lush canyon scenery and peaceful spring make it worthwhile.</p>
-                            <div class="trail-tags">
-                                <span class="trail-tag">Natural Spring</span>
-                                <span class="trail-tag">Old-Growth Forest</span>
-                                <span class="trail-tag">Quiet &amp; Secluded</span>
-                            </div>
-                            <a href="https://www.google.com/maps/search/Bluff+Springs+Trail+Cloudcroft+NM" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
-                        </div>
-                    </div>
-
-                    <div class="trail-card">
-                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00032.jpg.webp" alt="Willie White Loop trail through ponderosa pine forest" loading="lazy"></div>
-                        <div class="trail-card-body">
-                            <div class="trail-card-header">
-                                <h3>Willie White Loop</h3>
+                                <h3><a href="complete-guide-to-osha-trail.html">2. Osha Trail
+                                        (T10)</a></h3>
                                 <span class="difficulty-badge badge-easy">Easy</span>
                             </div>
                             <div class="trail-stats">
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 1.8 mi loop</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> 150 ft gain</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> ~45 min</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 2.2
+                                    mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span>
+                                    ~8,500–8,600 ft</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Easy</span>
                             </div>
-                            <p>A pleasant loop near the village center that winds through ponderosa pine forest. Well-maintained and easy to follow, this is an ideal quick outing or warm-up hike for visitors acclimating to the altitude.</p>
+                            <p>The classic Cloudcroft starter trail — "a nice, short hike that's not
+                                too hard and close
+                                to town," with vistas over the Tularosa Basin and even White Sands.
+                                Respect the
+                                altitude: carry at least a quart of water, a snack, and an extra
+                                jacket. No water or
+                                restrooms at the trailhead.</p>
                             <div class="trail-tags">
                                 <span class="trail-tag">Close to Town</span>
-                                <span class="trail-tag">Well-Maintained</span>
-                                <span class="trail-tag">Family-Friendly</span>
+                                <span class="trail-tag">Basin Views</span>
+                                <span class="trail-tag">White Sands Vista</span>
                             </div>
-                            <a href="https://www.google.com/maps/search/Willie+White+Trail+Cloudcroft+NM" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
+                            <a href="https://www.fs.usda.gov/media/94558" class="trail-card-cta" target="_blank"
+                                rel="noopener noreferrer">Forest Service Info
+                                &rarr;</a>
                         </div>
                     </div>
 
                     <div class="trail-card">
-                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00033.jpg.webp" alt="Pumphouse Canyon trail with rocky terrain" loading="lazy"></div>
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00030.jpg"
+                                alt="Salado Canyon Trail with historic railroad trestle remains" loading="lazy"></div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
-                                <h3>Pumphouse Canyon Trail</h3>
-                                <span class="difficulty-badge badge-moderate">Moderate</span>
-                            </div>
-                            <div class="trail-stats">
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 3.5 mi</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> 700 ft gain</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> ~2.5 hr</span>
-                            </div>
-                            <p>A moderately challenging trail that descends into a wooded canyon with rocky terrain and scenic creek crossings. The trail offers solitude and a true backcountry feel close to town.</p>
-                            <div class="trail-tags">
-                                <span class="trail-tag">Canyon Scenery</span>
-                                <span class="trail-tag">Creek Crossings</span>
-                                <span class="trail-tag">Backcountry Feel</span>
-                            </div>
-                            <a href="https://www.google.com/maps/search/Pumphouse+Canyon+Trail+Cloudcroft+NM" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
-                        </div>
-                    </div>
-
-                    <div class="trail-card">
-                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00034.webp" alt="Dog Canyon trail with dramatic elevation change" loading="lazy"></div>
-                        <div class="trail-card-body">
-                            <div class="trail-card-header">
-                                <h3>Dog Canyon Trail</h3>
-                                <span class="difficulty-badge badge-hard">Hard</span>
-                            </div>
-                            <div class="trail-stats">
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 6.4 mi</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> 3,100 ft gain</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> ~5 hr</span>
-                            </div>
-                            <p>The most challenging trail in the area, connecting the mountain forests to the Tularosa Basin floor with a dramatic 3,100-foot elevation change. Hikers pass through multiple ecosystems on this unforgettable descent.</p>
-                            <div class="trail-tags">
-                                <span class="trail-tag">Dramatic Views</span>
-                                <span class="trail-tag">Challenging Terrain</span>
-                                <span class="trail-tag">Desert-to-Forest</span>
-                            </div>
-                            <a href="https://www.google.com/maps/search/Dog+Canyon+Trail+NM" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
-                        </div>
-                    </div>
-
-                    <div class="trail-card">
-                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00035.webp" alt="Silver Springs Loop through meadows and forest" loading="lazy"></div>
-                        <div class="trail-card-body">
-                            <div class="trail-card-header">
-                                <h3>Silver Springs Loop</h3>
+                                <h3>3. Salado Canyon Trail (T128)</h3>
                                 <span class="difficulty-badge badge-easy">Easy</span>
                             </div>
                             <div class="trail-stats">
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 2.5 mi loop</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> 250 ft gain</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> ~1.5 hr</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 1.6
+                                    mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> Open
+                                    year-round</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Easy</span>
                             </div>
-                            <p>A peaceful forest loop that passes through open meadows and shaded groves. In summer, wildflowers dot the clearings and the air is filled with the scent of warm pine. A great trail for relaxed exploration.</p>
+                            <p>Part of the old railroad route above High Rolls, featuring the
+                                restored Salado Canyon
+                                trestle remains — a hike with a story behind it, not just a path
+                                through the woods.
+                                Lower and warmer than Cloudcroft proper. Trailhead via FR 162C north
+                                of High Rolls.</p>
                             <div class="trail-tags">
-                                <span class="trail-tag">Meadow Views</span>
-                                <span class="trail-tag">Wildflowers</span>
-                                <span class="trail-tag">Peaceful</span>
+                                <span class="trail-tag">Historic Trestle</span>
+                                <span class="trail-tag">Railroad Grade</span>
+                                <span class="trail-tag">Lower Elevation</span>
                             </div>
-                            <a href="https://www.google.com/maps/search/Silver+Springs+Loop+Cloudcroft+NM" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
+                            <a href="https://www.fs.usda.gov/media/94658" class="trail-card-cta" target="_blank"
+                                rel="noopener noreferrer">Forest Service Info
+                                &rarr;</a>
                         </div>
                     </div>
 
                     <div class="trail-card">
-                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00036.webp" alt="Sunspot Trail along high ridgeline with expansive views" loading="lazy"></div>
+                        <div class="trail-card-img">
+                            <img src="do-photo/hike/photo-hike-00027.jpg"
+                                alt="Cloud-Climbing Trestle Trail near the Mexican Canyon Trestle" loading="lazy">
+                        </div>
                         <div class="trail-card-body">
                             <div class="trail-card-header">
-                                <h3>Sunspot Trail</h3>
-                                <span class="difficulty-badge badge-hard">Hard</span>
+                                <h3><a href="complete-guide-to-mexican-canyon-trestle.html">4.
+                                        Cloud-Climbing Trestle
+                                        Trail (T5001)</a></h3>
+                                <span class="difficulty-badge badge-moderate">Moderate</span>
                             </div>
                             <div class="trail-stats">
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 5.0 mi one-way</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> 1,200 ft gain</span>
-                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> ~4 hr</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 1.5
+                                    mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> Short
+                                    but distinctive</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Moderate</span>
                             </div>
-                            <p>A challenging route leading south toward the National Solar Observatory at Sunspot. The trail traverses high ridgelines with expansive views and passes through pristine sections of Lincoln National Forest.</p>
+                            <p>Runs from just south of Trestle Recreation Area to the southern
+                                viewing area for the
+                                Mexican Canyon Trestle. Scenery tied to one of Cloudcroft's defining
+                                landmarks. Note:
+                                the Old Cloudcroft Highway Trail is not currently accessible from
+                                Trestle Recreation
+                                Area — check the latest Forest Service status before you go.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Mexican Canyon Trestle</span>
+                                <span class="trail-tag">Iconic Views</span>
+                                <span class="trail-tag">Railroad History</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta"
+                                target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00034.webp"
+                                alt="San Andres Canyon Trail with steep canyon terrain" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>5. San Andres Canyon Trail (T125)</h3>
+                                <span class="difficulty-badge badge-hard">Difficult</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> 2.0
+                                    mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> Rim
+                                    Trail to FR 90</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Difficult</span>
+                            </div>
+                            <p>For hikers who want a little more work and less casual strolling.
+                                Rated difficult not
+                                because it's long — canyon trails tend to be steeper, rougher, and
+                                less forgiving
+                                underfoot than the railroad-grade hikes. Ties into the Rim Trail
+                                system, so plan your
+                                start and finish carefully. Not the hike for your first afternoon at
+                                9,000 feet.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Steep Canyon</span>
+                                <span class="trail-tag">Rim Trail Access</span>
+                                <span class="trail-tag">Real Hike</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta"
+                                target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00031.jpg"
+                                alt="Willie White Trail through Sacramento Mountain forest" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>6. Willie White Trail (T113)</h3>
+                                <span class="difficulty-badge badge-easy">Easy</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span>
+                                    ~2.5 mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span>
+                                    Sacramento RD</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Easy</span>
+                            </div>
+                            <p>A quieter forest walk on the Sacramento Ranger District listed trail
+                                inventory. Good for
+                                hikers who want something peaceful close to town without the
+                                trailhead traffic of Osha.
+                                Check current access on the Lincoln National Forest trails page
+                                before you go.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Quiet Forest</span>
+                                <span class="trail-tag">Close to Town</span>
+                                <span class="trail-tag">Family-Friendly</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta"
+                                target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00035.webp"
+                                alt="Silver Springs Trail through meadow and pine" loading="lazy">
+                        </div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>7. Silver Springs Trail (T104)</h3>
+                                <span class="difficulty-badge badge-easy">Easy</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span>
+                                    ~2.0 mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span>
+                                    Sacramento RD</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Easy</span>
+                            </div>
+                            <p>A pleasant lower-effort route on the Sacramento Ranger District trail
+                                list that pairs
+                                nicely with a slow morning in town. Good pick for warming up legs on
+                                day one before
+                                heading to anything at higher elevation.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Warm-Up Hike</span>
+                                <span class="trail-tag">Easy Access</span>
+                                <span class="trail-tag">Morning Walk</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta"
+                                target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00032.jpg.webp"
+                                alt="Rim Trail with views across the Sacramento Mountains" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>8. Rim Trail (T105)</h3>
+                                <span class="difficulty-badge badge-moderate">Moderate</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> Up
+                                    to 14 mi one-way</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> Ridge
+                                    route</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Moderate</span>
+                            </div>
+                            <p>A long ridgeline route running along the edge of the Sacramento
+                                Mountains with multiple
+                                access points, making it flexible for short day hikes or longer
+                                traverses. One of the
+                                signature experiences in the district — most hikers do a section
+                                rather than the full
+                                length.</p>
                             <div class="trail-tags">
                                 <span class="trail-tag">Ridgeline Views</span>
-                                <span class="trail-tag">Solar Observatory</span>
-                                <span class="trail-tag">Remote</span>
+                                <span class="trail-tag">Flexible Length</span>
+                                <span class="trail-tag">Signature Trail</span>
                             </div>
-                            <a href="https://www.google.com/maps/search/Sunspot+Trail+Cloudcroft+NM" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta"
+                                target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00033.jpg.webp"
+                                alt="Bluff Springs Trail descending through old growth forest" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>9. Bluff Springs Trail (T108)</h3>
+                                <span class="difficulty-badge badge-moderate">Moderate</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span>
+                                    ~3.0 mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span>
+                                    Out-and-back</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Moderate</span>
+                            </div>
+                            <p>Descends through old-growth forest toward a natural spring — the
+                                return climb is where
+                                you earn it. A good step up from the easy railroad-grade hikes
+                                without committing to a
+                                full canyon day.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Natural Spring</span>
+                                <span class="trail-tag">Old Growth</span>
+                                <span class="trail-tag">Return Climb</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta"
+                                target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00037.jpg"
+                                alt="Wills Canyon Trail in the Sacramento Mountains" loading="lazy">
+                        </div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>10. Wills Canyon Trail (T112)</h3>
+                                <span class="difficulty-badge badge-moderate">Moderate</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span>
+                                    Varies</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span>
+                                    Canyon route</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Moderate</span>
+                            </div>
+                            <p>A canyon route on the Sacramento Ranger District trail list with a
+                                more remote feel than
+                                the trails clustered around town. Works well when you want solitude
+                                and canyon scenery
+                                without the difficulty of Dog Canyon.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Canyon Route</span>
+                                <span class="trail-tag">Solitude</span>
+                                <span class="trail-tag">Remote Feel</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta"
+                                target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00038.JPG"
+                                alt="Pumphouse Canyon Trail with rocky descent" loading="lazy">
+                        </div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>11. Pumphouse Canyon Trail (T111)</h3>
+                                <span class="difficulty-badge badge-moderate">Moderate</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span>
+                                    ~3.5 mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span>
+                                    Descent &amp; return</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Moderate</span>
+                            </div>
+                            <p>A wooded canyon descent with rockier footing than the easier
+                                railroad-grade hikes. A
+                                strong pick if you want a "real hike" day without the commitment of
+                                the hardest canyon
+                                routes on the district.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Wooded Canyon</span>
+                                <span class="trail-tag">Rocky Footing</span>
+                                <span class="trail-tag">Real Hike</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta"
+                                target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00034.webp"
+                                alt="Dog Canyon Trail with dramatic elevation change" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>12. Dog Canyon Trail (T106)</h3>
+                                <span class="difficulty-badge badge-hard">Difficult</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span>
+                                    ~5.5 mi one-way</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span>
+                                    ~3,000 ft change</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span>
+                                    Difficult</span>
+                            </div>
+                            <p>The hardest hike on this list. Connects the mountain forest with the
+                                Tularosa Basin floor
+                                through a dramatic elevation change and multiple ecosystems. Not a
+                                casual day hike —
+                                plan water, heat, and route carefully, and check Lincoln National
+                                Forest status before
+                                you go.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Dramatic Descent</span>
+                                <span class="trail-tag">Desert-to-Forest</span>
+                                <span class="trail-tag">Serious Hike</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta"
+                                target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00022.jpeg" alt="Trestle Recreation Area short loop" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>13. Trestle Recreation Area Loop</h3>
+                                <span class="difficulty-badge badge-easy">Easy</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> ~0.5 mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> Paved access</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> Easy</span>
+                            </div>
+                            <p>A short, mostly accessible walk from the Trestle Recreation Area parking to the primary Mexican Canyon Trestle viewpoint. The easiest way to photograph the iconic trestle without committing to a longer hike.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Accessible</span>
+                                <span class="trail-tag">Photo Stop</span>
+                                <span class="trail-tag">Iconic View</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00026.jpg" alt="Pines Campground loop trail" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>14. Pines Campground Loop</h3>
+                                <span class="difficulty-badge badge-easy">Easy</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> ~1.0 mi</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> Campground access</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> Easy</span>
+                            </div>
+                            <p>A short forest loop tied to the Pines Campground area — ideal for campers who want a relaxed stretch of the legs without driving to another trailhead. Good for families with young kids.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Campground</span>
+                                <span class="trail-tag">Family Loop</span>
+                                <span class="trail-tag">Short Walk</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00027.jpg" alt="Cathey Canyon Trail forested route" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>15. Cathey Canyon Trail</h3>
+                                <span class="difficulty-badge badge-moderate">Moderate</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> Varies</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> Canyon route</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> Moderate</span>
+                            </div>
+                            <p>A less-trafficked canyon route on the Sacramento Ranger District list. Good choice when the popular trailheads are crowded and you want a quieter day in the woods.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Less Crowded</span>
+                                <span class="trail-tag">Canyon</span>
+                                <span class="trail-tag">Quiet</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00030.jpg" alt="Deerhead Trail through mixed conifer forest" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>16. Deerhead Trail</h3>
+                                <span class="difficulty-badge badge-moderate">Moderate</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> Varies</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> Near Deerhead CG</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> Moderate</span>
+                            </div>
+                            <p>Forest trail near the Deerhead Campground area — a good pick for hikers staying at the campground or wanting a route that stays in the mixed conifer zone near Cloudcroft.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Mixed Conifer</span>
+                                <span class="trail-tag">Campground Nearby</span>
+                                <span class="trail-tag">Quiet</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00036.webp" alt="Sunspot Scenic Byway trail with high ridge views" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>17. Sunspot Area Trails</h3>
+                                <span class="difficulty-badge badge-moderate">Moderate</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> Varies</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> ~9,200 ft</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> Moderate</span>
+                            </div>
+                            <p>Forest routes off the Sunspot Scenic Byway south of Cloudcroft, with high-elevation ridgeline walking and access near the National Solar Observatory. Pairs well with an observatory visit the same day.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">High Elevation</span>
+                                <span class="trail-tag">Scenic Byway</span>
+                                <span class="trail-tag">Observatory</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="trail-card">
+                        <div class="trail-card-img"><img src="do-photo/hike/photo-hike-00034.webp" alt="Big Apache Canyon Trail remote forest route" loading="lazy"></div>
+                        <div class="trail-card-body">
+                            <div class="trail-card-header">
+                                <h3>18. Big Apache Canyon Trail</h3>
+                                <span class="difficulty-badge badge-hard">Difficult</span>
+                            </div>
+                            <div class="trail-stats">
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#128207;</span> Long day</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9650;</span> Remote canyon</span>
+                                <span class="trail-stat"><span class="stat-icon" aria-hidden="true">&#9201;</span> Difficult</span>
+                            </div>
+                            <p>One of the more remote canyon routes on the Sacramento Ranger District. For experienced hikers only — plan water, navigation, and time carefully, and verify current access and fire restrictions with the Lincoln National Forest before heading out.</p>
+                            <div class="trail-tags">
+                                <span class="trail-tag">Remote</span>
+                                <span class="trail-tag">Experienced Only</span>
+                                <span class="trail-tag">Big Day</span>
+                            </div>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" class="trail-card-cta" target="_blank" rel="noopener noreferrer">Forest Service Info &rarr;</a>
                         </div>
                     </div>
 
@@ -606,29 +1034,31 @@ margin-bottom: 0.5rem;
             <div class="section-container">
                 <div style="text-align: center;">
                     <span class="section-label" style="color: var(--pine); letter-spacing: 3px;">Why Cloudcroft</span>
-                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">What Makes Cloudcroft Hiking Special</h2>
-                    <p class="section-description" style="color: var(--charcoal);">Four reasons hikers keep coming back to these mountain trails.</p>
+                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">What Makes
+                        Cloudcroft Hiking Special</h2>
+                    <p class="section-description" style="color: var(--charcoal);">Four reasons hikers keep coming back
+                        to these mountain trails.</p>
                 </div>
                 <div class="highlights-grid">
                     <div class="highlight-card">
                         <div class="highlight-icon">&#x26F0;&#xFE0F;</div>
                         <h3>High-Altitude Cool</h3>
-                        <p>At nearly 9,000 feet, Cloudcroft offers 20&ndash;30 degrees cooler temperatures than the desert below. Hike comfortably even in midsummer when lower elevations are scorching.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F332;</div>
-                        <h3>Ancient Forests</h3>
-                        <p>Lincoln National Forest surrounds Cloudcroft with towering ponderosa pines, Douglas firs, and stands of quaking aspen that blaze gold in autumn. The forest canopy provides shade on every trail.</p>
+                        <p>At nearly 9,000 feet, Cloudcroft offers 20&ndash;30 degrees cooler temperatures than the
+                            desert below. Hike comfortably even in midsummer when lower elevations are scorching.</p>
                     </div>
                     <div class="highlight-card">
                         <div class="highlight-icon">&#x1F98C;</div>
                         <h3>Abundant Wildlife</h3>
-                        <p>Keep your eyes open for mule deer, elk, black bears, wild turkeys, and over 200 bird species. The convergence of ecosystems makes this area a biodiversity hotspot in southern New Mexico.</p>
+                        <p>Keep your eyes open for mule deer, elk, black bears, wild turkeys, and over 200 bird species.
+                            The convergence of ecosystems makes this area a biodiversity hotspot in southern New Mexico.
+                        </p>
                     </div>
                     <div class="highlight-card">
                         <div class="highlight-icon">&#x1F341;</div>
                         <h3>Four-Season Trails</h3>
-                        <p>Each season transforms the trails. Spring brings wildflowers, summer offers cool escapes, fall delivers spectacular foliage, and winter opens paths for snowshoeing and crisp mountain air.</p>
+                        <p>Each season transforms the trails. Spring brings wildflowers, summer offers cool escapes,
+                            fall delivers spectacular foliage, and winter opens paths for snowshoeing and crisp mountain
+                            air.</p>
                     </div>
                 </div>
             </div>
@@ -639,38 +1069,49 @@ margin-bottom: 0.5rem;
                 <div style="text-align: center;">
                     <span class="section-label">Before You Go</span>
                     <h2 class="section-title section-title-centered">Trail Tips &amp; Safety</h2>
-                    <p class="section-description">Essential advice for hiking at altitude in the Sacramento Mountains.</p>
+                    <p class="section-description">Essential advice for hiking at altitude in the Sacramento Mountains.
+                    </p>
                 </div>
                 <div class="tips-grid">
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F4A7;</div>
                         <h3>Hydrate Extra</h3>
-                        <p>You dehydrate faster above 8,000 feet. Carry at least 2 liters of water per person, even on short hikes. The dry mountain air and thin atmosphere increase fluid loss significantly.</p>
+                        <p>You dehydrate faster above 8,000 feet. Carry at least 2 liters of water per person, even on
+                            short hikes. The dry mountain air and thin atmosphere increase fluid loss significantly.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x26C8;&#xFE0F;</div>
                         <h3>Watch the Weather</h3>
-                        <p>Afternoon thunderstorms are common from July through September. Start hikes early in the morning and be prepared to turn back if storms develop. Lightning is a serious risk at altitude.</p>
+                        <p>Afternoon thunderstorms are common from July through September. Start hikes early in the
+                            morning and be prepared to turn back if storms develop. Lightning is a serious risk at
+                            altitude.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F3D4;&#xFE0F;</div>
                         <h3>Respect the Altitude</h3>
-                        <p>If you are visiting from lower elevations, take it easy your first day. Altitude sickness can affect anyone above 8,000 feet. Pace yourself and listen to your body on the trail.</p>
+                        <p>If you are visiting from lower elevations, take it easy your first day. Altitude sickness can
+                            affect anyone above 8,000 feet. Pace yourself and listen to your body on the trail.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F9F4;</div>
                         <h3>Sun Protection</h3>
-                        <p>UV radiation is significantly stronger at high altitude. Wear sunscreen (SPF 30+), sunglasses, and a hat even on cloudy days. The thinner atmosphere filters less ultraviolet light.</p>
+                        <p>UV radiation is significantly stronger at high altitude. Wear sunscreen (SPF 30+),
+                            sunglasses, and a hat even on cloudy days. The thinner atmosphere filters less ultraviolet
+                            light.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F43B;</div>
                         <h3>Bear Aware</h3>
-                        <p>Black bears are active in Lincoln National Forest. Store food properly, carry it in bear-resistant containers on overnight trips, and make noise on the trail to avoid surprise encounters.</p>
+                        <p>Black bears are active in Lincoln National Forest. Store food properly, carry it in
+                            bear-resistant containers on overnight trips, and make noise on the trail to avoid surprise
+                            encounters.</p>
                     </div>
                     <div class="tip-card">
                         <div class="tip-icon">&#x1F33F;</div>
                         <h3>Leave No Trace</h3>
-                        <p>Pack out all trash, stay on marked trails, and leave wildflowers for others to enjoy. These mountain ecosystems are fragile, and responsible recreation keeps them beautiful for everyone.</p>
+                        <p>Pack out all trash, stay on marked trails, and leave wildflowers for others to enjoy. These
+                            mountain ecosystems are fragile, and responsible recreation keeps them beautiful for
+                            everyone.</p>
                     </div>
                 </div>
             </div>
@@ -679,7 +1120,8 @@ margin-bottom: 0.5rem;
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
                 <h2>Ready to Hit the Trail?</h2>
-                <p>Cloudcroft's trails are waiting. Plan your mountain hiking adventure and discover why the Sacramento Mountains are one of New Mexico's best-kept secrets for outdoor exploration.</p>
+                <p>Cloudcroft's trails are waiting. Plan your mountain hiking adventure and discover why the Sacramento
+                    Mountains are one of New Mexico's best-kept secrets for outdoor exploration.</p>
                 <div class="cta-buttons">
                     <a href="where to-hike-in-Cloudcroft-New-Mexico-2026.html" class="btn-primary">View All Trails</a>
                     <a href="../plan.html" class="btn-secondary">Plan Your Trip</a>
@@ -712,13 +1154,16 @@ margin-bottom: 0.5rem;
                 <h3>Connect</h3>
                 <a href="tel:+15555555555">(555) 555-5555</a>
                 <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
-                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
-                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of
+                    Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank"
+                    rel="noopener noreferrer">Cloudcroft, NM 88317</a>
             </div>
             <div class="footer-col">
                 <h3>Plan</h3>
                 <a href="../plan.html">Plan Your Trip</a>
-                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank"
+                    rel="noopener noreferrer">Weather</a>
                 <a href="../about.html">About Cloudcroft</a>
                 <a href="../contact.html">Contact Us</a>
             </div>
@@ -731,11 +1176,11 @@ margin-bottom: 0.5rem;
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
     <script src="../js/common.js"></script>
-  <script>
-        (function() {
+    <script>
+        (function () {
             // Header scroll
             var header = document.querySelector('.site-header');
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 if (window.scrollY > 60) {
                     header.classList.add('scrolled');
                 } else {
@@ -746,7 +1191,7 @@ margin-bottom: 0.5rem;
             // Hamburger toggle
             var hamburger = document.querySelector('.hamburger');
             var mobileMenu = document.querySelector('.mobile-menu');
-            hamburger.addEventListener('click', function() {
+            hamburger.addEventListener('click', function () {
                 var isOpen = mobileMenu.classList.toggle('open');
                 hamburger.classList.toggle('active');
                 hamburger.setAttribute('aria-expanded', isOpen);
@@ -754,8 +1199,8 @@ margin-bottom: 0.5rem;
             });
 
             // Close mobile menu on link click
-            mobileMenu.querySelectorAll('a').forEach(function(link) {
-                link.addEventListener('click', function() {
+            mobileMenu.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
                     mobileMenu.classList.remove('open');
                     hamburger.classList.remove('active');
                     hamburger.setAttribute('aria-expanded', 'false');
@@ -764,8 +1209,8 @@ margin-bottom: 0.5rem;
             });
 
             // Smooth scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-                anchor.addEventListener('click', function(e) {
+            document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     var target = document.querySelector(this.getAttribute('href'));
                     if (target) {
@@ -776,8 +1221,8 @@ margin-bottom: 0.5rem;
 
             // Intersection Observer for fade-in elements
             var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         fadeObserver.unobserve(entry.target);
@@ -785,13 +1230,13 @@ margin-bottom: 0.5rem;
                 });
             }, observerOptions);
 
-            document.querySelectorAll('.fade-in, .trail-card, .highlight-card, .tip-card').forEach(function(el) {
+            document.querySelectorAll('.fade-in, .trail-card, .highlight-card, .tip-card').forEach(function (el) {
                 fadeObserver.observe(el);
             });
 
             // Back to top button
             var backToTop = document.querySelector('.back-to-top');
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 if (window.scrollY > 400) {
                     backToTop.classList.add('visible');
                 } else {
@@ -799,10 +1244,11 @@ margin-bottom: 0.5rem;
                 }
             }, { passive: true });
 
-            backToTop.addEventListener('click', function() {
+            backToTop.addEventListener('click', function () {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         })();
     </script>
 </body>
+
 </html>
