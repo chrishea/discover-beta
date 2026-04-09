@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "Static Site",
-      "runtimeExecutable": "ruby",
-      "runtimeArgs": ["-run", "-e", "httpd", "/tmp/discover-beta", "-p", "8000"],
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8000"],
       "port": 8000
     }
   ]

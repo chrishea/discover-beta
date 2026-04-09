@@ -6,11 +6,11 @@
     <title>Dave's Caf&eacute; | Casual Dining in Cloudcroft, NM &mdash; Burgers, Breakfast &amp; Live Music</title>
     <meta name="description" content="Dave's Caf&eacute; at 300 Burro Ave in Cloudcroft serves burgers, breakfast, and comfort food in a casual setting. A long-running local favorite with live music.">
     <meta name="keywords" content="daves cafe cloudcroft, cloudcroft restaurants, burro avenue dining, cloudcroft burgers, cloudcroft breakfast, cloudcroft live music, cloudcroft nm dining">
-    <link rel="canonical" href="https://discovercloudcroft.com/eat/Where-to-Eat-Cloudcroft-2026-Daves-Cafe-content.html">
+    <link rel="canonical" href="https://discovercloudcroft.com/eat/daves-cafe.html">
 
     <meta property="og:title" content="Dave's Caf&eacute; | Casual Dining in Cloudcroft, NM">
     <meta property="og:description" content="Burgers, breakfast, and comfort food at a long-running Cloudcroft favorite on Burro Avenue.">
-    <meta property="og:url" content="https://discovercloudcroft.com/eat/Where-to-Eat-Cloudcroft-2026-Daves-Cafe-content.html">
+    <meta property="og:url" content="https://discovercloudcroft.com/eat/daves-cafe.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
@@ -50,6 +50,64 @@
 }
 .hero-overlay {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+}
+.section-image {
+    margin: 2rem auto 0;
+    max-width: 700px;
+}
+.section-image img {
+    width: 100%;
+    border-radius: 12px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.section-label-dark {
+    color: var(--midnight);
+    letter-spacing: 3px;
+}
+.section-title-dark {
+    color: var(--midnight);
+}
+.visiting-card a,
+.tip-box a {
+    color: var(--alpine);
+    text-decoration: none;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.gallery-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+.gallery-caption {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    color: var(--granite);
+    text-align: center;
+}
+@media (max-width: 1024px) {
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .gallery-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -158,7 +216,7 @@
                         </div>
                     </div>
                     <div class="about-image fade-in">
-                        <img src="eat-photo/photo-eat-daves-cafe/photo-daves-cafe-00025.jpg" alt="Inside Dave's Café — live music at the bar with patrons on stools" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <img src="eat-photo/photo-eat-daves-cafe/photo-daves-cafe-00025.jpg" alt="Inside Dave's Café — live music at the bar with patrons on stools" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -171,8 +229,8 @@
                     <h2 class="section-title section-title-centered">What&rsquo;s Cooking</h2>
                     <p class="section-description">Casual comfort food with a grill-style focus. Menu items may change &mdash; check directly for current offerings.</p>
                 </div>
-                <div style="margin: 2rem auto 0; max-width: 700px;">
-                    <img src="eat-photo/photo-eat-daves-cafe/photo-daves-cafe-00022.jpg" alt="Burger with melted cheese and chips alongside fresh-cut fries at Dave's Café" loading="lazy" style="width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover;">
+                <div class="section-image">
+                    <img src="eat-photo/photo-eat-daves-cafe/photo-daves-cafe-00022.jpg" alt="Burger with melted cheese and chips alongside fresh-cut fries at Dave's Café" loading="lazy">
                 </div>
                 <div class="menu-grid">
                     <div class="menu-card">
@@ -210,7 +268,7 @@
                 </div>
                 <div class="tip-box">
                     <span>&#x260E;&#xFE0F;</span>
-                    <p><strong>Menu details may change.</strong> The best way to check current offerings is to call <a href="tel:5756822127" style="color: var(--alpine);">(575) 682-2127</a> or check the <a href="https://www.facebook.com/DavesCafe1/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine);">Dave&rsquo;s Caf&eacute; Facebook page</a> for posted specials.</p>
+                    <p><strong>Menu details may change.</strong> The best way to check current offerings is to call <a href="tel:5756822127">(575) 682-2127</a> or check the <a href="https://www.facebook.com/DavesCafe1/" target="_blank" rel="noopener noreferrer">Dave&rsquo;s Caf&eacute; Facebook page</a> for posted specials.</p>
                 </div>
             </div>
         </section>
@@ -218,11 +276,11 @@
         <section class="section" id="experience" aria-label="The Experience">
             <div class="section-container">
                 <div style="text-align: center;">
-                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">The Experience</span>
-                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">What to Expect</h2>
+                    <span class="section-label section-label-dark">The Experience</span>
+                    <h2 class="section-title section-title-centered section-title-dark">What to Expect</h2>
                 </div>
-                <div style="margin: 2rem auto 0; max-width: 700px;">
-                    <img src="eat-photo/photo-eat-daves-cafe/photo-daves-cafe-00026.jpg" alt="A wrap held up inside Dave's Café with American flag and neon signs in the background" loading="lazy" style="width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover;">
+                <div class="section-image">
+                    <img src="eat-photo/photo-eat-daves-cafe/photo-daves-cafe-00026.jpg" alt="A wrap held up inside Dave's Café with American flag and neon signs in the background" loading="lazy">
                 </div>
                 <div class="highlights-grid">
                     <div class="highlight-card">
@@ -265,7 +323,7 @@
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4DE;</div>
                         <h3>Contact</h3>
-                        <p>Phone: <a href="tel:5756822127" style="color: var(--alpine); text-decoration: none;">(575) 682-2127</a><br>Email: <a href="mailto:cafe.daves@yahoo.com" style="color: var(--alpine); text-decoration: none;">cafe.daves@yahoo.com</a></p>
+                        <p>Phone: <a href="tel:5756822127">(575) 682-2127</a><br>Email: <a href="mailto:cafe.daves@yahoo.com">cafe.daves@yahoo.com</a></p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x26A0;&#xFE0F;</div>

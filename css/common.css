@@ -1739,7 +1739,6 @@ img {
   border-radius: 12px;
   padding: 1.75rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-top: 3px solid var(--gold);
   opacity: 0;
   transform: translateY(20px);
 }
@@ -1880,7 +1879,6 @@ img {
   border-radius: 12px;
   padding: 1.75rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-top: 3px solid var(--gold);
   opacity: 0;
   transform: translateY(20px);
 }
