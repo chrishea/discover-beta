@@ -560,6 +560,56 @@
             </div>
         </section>
 
+        <section class="section" id="gallery" aria-labelledby="h-gallery">
+            <div class="container">
+                <h2 id="h-gallery" class="section-title">Gallery</h2>
+                <p class="section-intro">A look around Dusty Boots Motel &mdash; rooms, cafe, and grounds.</p>
+                <style>
+                    .gallery-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+                        gap: 1rem;
+                        margin-top: 1.5rem;
+                    }
+                    .gallery-grid figure {
+                        margin: 0;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        aspect-ratio: 4 / 3;
+                        background: #f2f2f2;
+                    }
+                    .gallery-grid img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                        transition: transform 0.5s ease;
+                    }
+                    .gallery-grid figure:hover img {
+                        transform: scale(1.09);
+                    }
+                    @media (prefers-reduced-motion: reduce) {
+                        .gallery-grid img,
+                        .gallery-grid figure:hover img {
+                            transition: none;
+                            transform: none;
+                        }
+                    }
+                </style>
+                <div class="gallery-grid">
+                    <figure><img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00555.jpg" alt="Dusty Boots Motel, Cloudcroft" loading="lazy" decoding="async"></figure>
+                    <figure><img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00556.jpg" alt="Dusty Boots Motel, Cloudcroft" loading="lazy" decoding="async"></figure>
+                    <figure><img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00557.jpg" alt="Dusty Boots Motel, Cloudcroft" loading="lazy" decoding="async"></figure>
+                    <figure><img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00558.jpg" alt="Dusty Boots Motel, Cloudcroft" loading="lazy" decoding="async"></figure>
+                    <figure><img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00559.jpeg" alt="Dusty Boots Motel, Cloudcroft" loading="lazy" decoding="async"></figure>
+                    <figure><img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00560.jpg" alt="Dusty Boots Motel, Cloudcroft" loading="lazy" decoding="async"></figure>
+                    <figure><img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00561.JPEG" alt="Dusty Boots Motel, Cloudcroft" loading="lazy" decoding="async"></figure>
+                    <figure><img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00562.jpg" alt="Dusty Boots Motel, Cloudcroft" loading="lazy" decoding="async"></figure>
+                    <figure><img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00563.jpg" alt="Dusty Boots Motel, Cloudcroft" loading="lazy" decoding="async"></figure>
+                </div>
+            </div>
+        </section>
+
         <section class="cta-section" aria-label="Book your stay">
             <div class="cta-container">
                 <h2>Sleep in a Roy Rogers Room. Eat Schnitzel on Saturday.</h2>

@@ -577,11 +577,19 @@
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: filter 0.4s;
+            transition: transform 0.5s ease;
         }
 
         .lodging-item:hover .lodging-img img {
-            filter: grayscale(100%);
+            transform: scale(1.09);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .lodging-img img,
+            .lodging-item:hover .lodging-img img {
+                transition: none;
+                transform: none;
+            }
         }
 
         .lodging-content h3 {
@@ -683,10 +691,6 @@
             height: 100%;
             object-fit: cover;
             transition: filter 0.4s;
-        }
-
-        .restaurant-card:hover .restaurant-card-img img {
-            filter: grayscale(100%);
         }
 
         .restaurant-card-body {
@@ -1611,7 +1615,7 @@
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <p class="hero-eyebrow">2026 Travel Guide</p>
-                <h1 class="hero-title">The Complete Guide to<br><em>Cloudcroft, New Mexico</em></h1>
+                <h1 class="hero-title">The Complete Guide to Cloudcroft, New Mexico</h1>
                 <p class="hero-subtitle">Everything you need to plan the perfect mountain escape in the
                     Sacramento Mountains.</p>
                 <div class="hero-meta">
@@ -1650,9 +1654,8 @@
                 <div class="things-grid">
 
                     <div class="thing-card fade-in">
-                        <div class="thing-card-icon"><img
-                                alt="Mountain biking on Sacramento Mountains trails near Cloudcroft"
-                                src="media/placeholder-activity-biking.jpg" loading="lazy" decoding="async"></div>
+                        <div class="thing-card-icon"><img alt="Pickleball courts at Zenith Park in Cloudcroft"
+                                src="do/do-photo/bike/bike-00555.jpeg" loading="lazy" decoding="async"></div>
                         <h3>Ride the Mountain Bike Trails</h3>
                         <p>The Sacramento Mountains offer some of the best high-altitude singletrack in the Southwest.
                             The High Altitude Bike Classic each summer draws hundreds of riders. Trails range from
@@ -1660,8 +1663,8 @@
                         <a href="do/biking.html" class="thing-card-link">Explore trails &rarr;</a>
                     </div>
                     <div class="thing-card fade-in">
-                        <div class="thing-card-icon"><img alt="Hiking through Lincoln National Forest near Cloudcroft"
-                                src="media/placeholder-activity-biking.jpg" loading="lazy" decoding="async"></div>
+                        <div class="thing-card-icon"><img alt="Pickleball courts at Zenith Park in Cloudcroft"
+                                src="do/do-photo/hike/photo-hike-00032.jpg" loading="lazy" decoding="async"></div>
                         <h3>Hike Lincoln National Forest</h3>
                         <p>Dozens of maintained trails thread through aspen groves and spruce stands. The Osha Trail
                             and
@@ -1671,8 +1674,8 @@
                             trails &rarr;</a>
                     </div>
                     <div class="thing-card fade-in">
-                        <div class="thing-card-icon"><img alt="Art galleries on Burro Avenue in Cloudcroft"
-                                src="media/placeholder-activity-biking.jpg" loading="lazy" decoding="async"></div>
+                        <div class="thing-card-icon"><img alt="Pickleball courts at Zenith Park in Cloudcroft"
+                                src="media/image-do-pickleball-group.webp" loading="lazy" decoding="async"></div>
                         <h3>Browse the Art Galleries</h3>
                         <p>Burro Avenue, Cloudcroft's main street, is lined with galleries featuring local and
                             regional
@@ -1682,8 +1685,8 @@
                         <a href="shop/art-galleries.html" class="thing-card-link">See galleries &rarr;</a>
                     </div>
                     <div class="thing-card fade-in">
-                        <div class="thing-card-icon"><img alt="Pickleball courts at Zenith Park in Cloudcroft"
-                                src="media/image-do-pickleball-group.webp" loading="lazy" decoding="async"></div>
+                        <img alt="Pickleball courts at Zenith Park in Cloudcroft"
+                            src="media/image-do-pickleball-group.webp" loading="lazy" decoding="async">
                         <h3>Play Pickleball at Zenith Park</h3>
                         <p>Six free outdoor courts at 8,676 feet — possibly the highest pickleball venue in New
                             Mexico.
@@ -1693,11 +1696,12 @@
                             details &rarr;</a>
                     </div>
                     <div class="thing-card fade-in">
-                        <div class="thing-card-icon"><img
-                                alt="Mexican Canyon Trestle historic railroad landmark near Cloudcroft"
-                                src="media/placeholder-activity-biking.jpg" loading="lazy" decoding="async"></div>
+
+
+                        <img src="media/historic-railroad-trestle-top-view.jpg" loading="lazy" decoding="async">
+
                         <h3>Drive the Mexican Canyon Trestle</h3>
-                        <p>This historic railroad trestle was built in 1899 and is one of the most photographed
+                        <p>This historic railroad trestle wass built in 1899 and is one of the most photographed
                             structures in southern New Mexico. The surrounding canyon is striking in every season,
                             and
                             the drive itself through the forest is worth it.</p>
