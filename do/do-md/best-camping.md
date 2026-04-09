@@ -836,3 +836,36 @@ For most visitors, the decision is simpler than it first looks.
 - Choose **Sleepy Grass** if you want a family-friendly forest campground near easy trails.
 - Choose **James Canyon**, **Baca**, **Upper Karr**, or **Lower Karr** only if you are comfortable with a more basic or primitive setup.
 - Treat **dispersed camping** near Cloudcroft as a legal-mapping problem, not a casual improvisation. Check the MVUM, closure order, alerts, and fire restrictions first.
+
+---
+
+## Arts & Culture
+
+If you want to add an arts stop to a Cloudcroft camping trip, **Cloudcroft Art Workshops** is one of the stronger summer cultural programs in town. The nonprofit program runs workshops in **June through early August 2026** at the **Michael Nivison Library (Old Brick Schoolhouse), 90 Swallow Place, Cloudcroft, NM 88317**. The organization says workshops are designed for a range of skill levels, with small classes and individualized instruction. It also notes that opening reception and setup time is typically held on the evening before each workshop, and that classes generally run during the day with snacks provided.
+
+### 2026 summer workshop lineup
+- **David Barranti** — **June 8–12, 2026**
+- **Ken Hosmer** — **June 15–19, 2026**
+- **Hannah Dean** — **June 23–26, 2026**
+- **Mike Mahon** — **July 14–17, 2026**
+- **Suzy “Pal” Powell** — **July 20–24, 2026**
+- **Lorenzo Chavez** — **July 28–31, 2026**
+- **Allison Jones Hunt** — **August 4–7, 2026**
+
+### Why it matters for trip planning
+- It gives campers a good non-hiking option on a longer stay.
+- It is in town, so it pairs well with campgrounds near Cloudcroft such as Deerhead, Pines, Sleepy Grass, and the Silver/Saddle/Apache cluster.
+- Workshop weeks can add summer visitor traffic, so campers who want a quieter in-town feel may want to check dates before booking nearby lodging or campsites.
+
+### Best official links
+- Main site: https://cloudcroftart.com/
+- 2026 workshops page: https://cloudcroftart.com/2026-workshops/
+- About / venue details: https://cloudcroftart.com/about/
+- FAQs and tips: https://cloudcroftart.com/faqs/
+
+### What to verify directly
+- Whether a specific workshop is sold out or has a waiting list
+- Exact daily hours for the class you want
+- Material lists and skill-level fit
+- Any schedule changes or cancellations
+- Whether public receptions, demos, or related events are open to nonparticipants

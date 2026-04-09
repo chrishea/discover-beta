@@ -405,8 +405,8 @@ img {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 0 2rem;
-  max-width: 900px;
+  padding: 0 4rem;
+  max-width: 800px;
 }
 
 .hero-title,
@@ -980,7 +980,7 @@ img {
   padding: 0.9rem 2.25rem;
   border-radius: 10px;
   text-decoration: none;
-  background: #ffffff;
+  background: #FFFFFF90;
   color: var(--pine);
   border: 2px solid var(--pine);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s, color 0.3s;
