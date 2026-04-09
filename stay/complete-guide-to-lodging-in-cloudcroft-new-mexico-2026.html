@@ -50,10 +50,25 @@
     </script>
 
     <style>
-        
+        .market-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 800px) {
+            .market-grid {
+                grid-template-columns: 2, 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .market-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .hero-bg {
-    background: url('stay-photo/photo-the-lodge/Pix-Cloudcroft-Discover-the-lodge-6.jpg') center 40% / cover no-repeat;
-}
+            background: url('stay-photo/photo-the-lodge/Pix-Cloudcroft-Discover-the-lodge-6.jpg') center 40% / cover no-repeat;
+        }
 
         .hero-overlay {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
@@ -137,14 +152,14 @@
         }
 
         @media (max-width: 1024px) {
-            
+
             .pros-cons {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
         @media (max-width: 768px) {
-            
+
             .pros-cons {
                 grid-template-columns: 1fr;
             }
@@ -161,7 +176,7 @@
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-        <header class="site-header" role="banner">
+    <header class="site-header" role="banner">
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
@@ -197,7 +212,7 @@
         <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../contact.html">Contact</a>
     </div>
-<!-- ════════════════════════════════════════════ HERO ════════════════════════════════════════════ -->
+    <!-- ════════════════════════════════════════════ HERO ════════════════════════════════════════════ -->
     <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="Cloudcroft lodging guide hero background"></div>
         <div class="hero-overlay"></div>
@@ -232,10 +247,7 @@
                 <div class="info-bar-icon">&#x1F3E1;</div>
                 <span>148+ Vacation Rentals</span>
             </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F3D4;</div>
-                <span>~9,000 ft Elevation</span>
-            </div>
+
             <div class="info-bar-item">
                 <div class="info-bar-icon">&#x1F332;</div>
                 <span>Cabin-Driven Market</span>
@@ -252,7 +264,7 @@
             <a href="#compare" class="toc-pill">Compare</a>
             <a href="#tips" class="toc-pill">Tips</a>
             <a href="#picks" class="toc-pill">Editor's Picks</a>
-            <a href="#bottom-line" class="toc-pill">Bottom Line</a>
+
         </div>
     </nav>
 
@@ -300,10 +312,7 @@
                         <p>Holidays, festivals, fall color, and summer peaks drive the highest demand across the market.
                         </p>
                     </div>
-                    <div class="market-card">
-                        <h3>Family Rentals</h3>
-                        <p>Larger homes with kitchens and space for groups. These are harder to replace last-minute.</p>
-                    </div>
+
                 </div>
 
                 <div class="tip-box">
@@ -734,43 +743,36 @@
 
                 <div class="picks-grid">
                     <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F491;</div>
                         <h3>Romantic Weekend</h3>
                         <p><strong>The Lodge at Cloudcroft</strong> &mdash; History, atmosphere, and on-site food and
                             drink make it the strongest romantic pick.</p>
                     </div>
                     <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F466;</div>
                         <h3>Family Mountain Trip</h3>
                         <p><strong>The Cabins at Cloudcroft</strong> &mdash; More space and a cabin layout usually beat
                             a standard room for family travel here.</p>
                     </div>
                     <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F3DB;</div>
                         <h3>Historic or Nostalgic Stay</h3>
                         <p><strong>The Lodge</strong> for grandeur, <strong>The Crofting</strong> for intimacy. Both
                             deliver a sense of place and history that newer properties cannot match.</p>
                     </div>
                     <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F6CF;</div>
                         <h3>Practical Overnight</h3>
                         <p><strong>The Grand Cloudcroft Hotel</strong> &mdash; The cleanest fit for a straightforward
                             hotel stay without the extras.</p>
                     </div>
                     <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F3E1;</div>
                         <h3>Cabin Getaway</h3>
                         <p><strong>The Cabins at Cloudcroft</strong> &mdash; The clearest professionally operated
                             cabin-resort structure in the market.</p>
                     </div>
                     <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F415;</div>
                         <h3>Bringing a Dog</h3>
                         <p><strong>The Grand Cloudcroft Hotel</strong> &mdash; Pet rooms are clearly listed. Verify
                             current policy and fees directly before booking.</p>
                     </div>
                     <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F37D;</div>
                         <h3>Food &amp; Drinks On-Site</h3>
                         <p><strong>The Lodge at Cloudcroft</strong> &mdash; Dusty Boots also matters here, but its
                             dining hours appear more seasonal and should be checked directly.</p>

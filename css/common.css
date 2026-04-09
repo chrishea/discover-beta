@@ -1375,11 +1375,25 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.gallery-item:nth-child(2).visible { transition-delay: 0.1s; }
-.gallery-item:nth-child(3).visible { transition-delay: 0.15s; }
-.gallery-item:nth-child(4).visible { transition-delay: 0.2s; }
-.gallery-item:nth-child(5).visible { transition-delay: 0.25s; }
-.gallery-item:nth-child(6).visible { transition-delay: 0.3s; }
+.gallery-item:nth-child(2).visible {
+  transition-delay: 0.1s;
+}
+
+.gallery-item:nth-child(3).visible {
+  transition-delay: 0.15s;
+}
+
+.gallery-item:nth-child(4).visible {
+  transition-delay: 0.2s;
+}
+
+.gallery-item:nth-child(5).visible {
+  transition-delay: 0.25s;
+}
+
+.gallery-item:nth-child(6).visible {
+  transition-delay: 0.3s;
+}
 
 .gallery-item img {
   width: 100%;
@@ -1443,8 +1457,13 @@ img {
 }
 
 @keyframes gradientBorder {
-  0% { background-position: 0% 0; }
-  100% { background-position: 300% 0; }
+  0% {
+    background-position: 0% 0;
+  }
+
+  100% {
+    background-position: 300% 0;
+  }
 }
 
 /* ===== STICKY TOC NAV (Guide Pages) ===== */
@@ -1495,7 +1514,7 @@ img {
 /* ===== MARKET CARDS (Guide At-a-Glance) ===== */
 .market-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -1516,9 +1535,17 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.market-card:nth-child(2).visible { transition-delay: 0.1s; }
-.market-card:nth-child(3).visible { transition-delay: 0.2s; }
-.market-card:nth-child(4).visible { transition-delay: 0.3s; }
+.market-card:nth-child(2).visible {
+  transition-delay: 0.1s;
+}
+
+.market-card:nth-child(3).visible {
+  transition-delay: 0.2s;
+}
+
+.market-card:nth-child(4).visible {
+  transition-delay: 0.3s;
+}
 
 .market-card-icon {
   font-size: 2rem;
@@ -1565,21 +1592,65 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.lodge-card:nth-child(2).visible { transition-delay: 0.05s; }
-.lodge-card:nth-child(3).visible { transition-delay: 0.1s; }
-.lodge-card:nth-child(4).visible { transition-delay: 0.15s; }
-.lodge-card:nth-child(5).visible { transition-delay: 0.2s; }
-.lodge-card:nth-child(6).visible { transition-delay: 0.25s; }
-.lodge-card:nth-child(7).visible { transition-delay: 0.3s; }
-.lodge-card:nth-child(8).visible { transition-delay: 0.35s; }
-.lodge-card:nth-child(9).visible { transition-delay: 0.4s; }
-.lodge-card:nth-child(10).visible { transition-delay: 0.45s; }
-.lodge-card:nth-child(11).visible { transition-delay: 0.5s; }
-.lodge-card:nth-child(12).visible { transition-delay: 0.55s; }
-.lodge-card:nth-child(13).visible { transition-delay: 0.6s; }
-.lodge-card:nth-child(14).visible { transition-delay: 0.65s; }
-.lodge-card:nth-child(15).visible { transition-delay: 0.7s; }
-.lodge-card:nth-child(16).visible { transition-delay: 0.75s; }
+.lodge-card:nth-child(2).visible {
+  transition-delay: 0.05s;
+}
+
+.lodge-card:nth-child(3).visible {
+  transition-delay: 0.1s;
+}
+
+.lodge-card:nth-child(4).visible {
+  transition-delay: 0.15s;
+}
+
+.lodge-card:nth-child(5).visible {
+  transition-delay: 0.2s;
+}
+
+.lodge-card:nth-child(6).visible {
+  transition-delay: 0.25s;
+}
+
+.lodge-card:nth-child(7).visible {
+  transition-delay: 0.3s;
+}
+
+.lodge-card:nth-child(8).visible {
+  transition-delay: 0.35s;
+}
+
+.lodge-card:nth-child(9).visible {
+  transition-delay: 0.4s;
+}
+
+.lodge-card:nth-child(10).visible {
+  transition-delay: 0.45s;
+}
+
+.lodge-card:nth-child(11).visible {
+  transition-delay: 0.5s;
+}
+
+.lodge-card:nth-child(12).visible {
+  transition-delay: 0.55s;
+}
+
+.lodge-card:nth-child(13).visible {
+  transition-delay: 0.6s;
+}
+
+.lodge-card:nth-child(14).visible {
+  transition-delay: 0.65s;
+}
+
+.lodge-card:nth-child(15).visible {
+  transition-delay: 0.7s;
+}
+
+.lodge-card:nth-child(16).visible {
+  transition-delay: 0.75s;
+}
 
 .lodge-card img {
   width: 100%;
@@ -1679,14 +1750,37 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.compare-card:nth-child(2).visible { transition-delay: 0.05s; }
-.compare-card:nth-child(3).visible { transition-delay: 0.1s; }
-.compare-card:nth-child(4).visible { transition-delay: 0.15s; }
-.compare-card:nth-child(5).visible { transition-delay: 0.2s; }
-.compare-card:nth-child(6).visible { transition-delay: 0.25s; }
-.compare-card:nth-child(7).visible { transition-delay: 0.3s; }
-.compare-card:nth-child(8).visible { transition-delay: 0.35s; }
-.compare-card:nth-child(9).visible { transition-delay: 0.4s; }
+.compare-card:nth-child(2).visible {
+  transition-delay: 0.05s;
+}
+
+.compare-card:nth-child(3).visible {
+  transition-delay: 0.1s;
+}
+
+.compare-card:nth-child(4).visible {
+  transition-delay: 0.15s;
+}
+
+.compare-card:nth-child(5).visible {
+  transition-delay: 0.2s;
+}
+
+.compare-card:nth-child(6).visible {
+  transition-delay: 0.25s;
+}
+
+.compare-card:nth-child(7).visible {
+  transition-delay: 0.3s;
+}
+
+.compare-card:nth-child(8).visible {
+  transition-delay: 0.35s;
+}
+
+.compare-card:nth-child(9).visible {
+  transition-delay: 0.4s;
+}
 
 .compare-card h3 {
   font-family: 'DM Sans', sans-serif;
@@ -1729,12 +1823,29 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.pick-card:nth-child(2).visible { transition-delay: 0.05s; }
-.pick-card:nth-child(3).visible { transition-delay: 0.1s; }
-.pick-card:nth-child(4).visible { transition-delay: 0.15s; }
-.pick-card:nth-child(5).visible { transition-delay: 0.2s; }
-.pick-card:nth-child(6).visible { transition-delay: 0.25s; }
-.pick-card:nth-child(7).visible { transition-delay: 0.3s; }
+.pick-card:nth-child(2).visible {
+  transition-delay: 0.05s;
+}
+
+.pick-card:nth-child(3).visible {
+  transition-delay: 0.1s;
+}
+
+.pick-card:nth-child(4).visible {
+  transition-delay: 0.15s;
+}
+
+.pick-card:nth-child(5).visible {
+  transition-delay: 0.2s;
+}
+
+.pick-card:nth-child(6).visible {
+  transition-delay: 0.25s;
+}
+
+.pick-card:nth-child(7).visible {
+  transition-delay: 0.3s;
+}
 
 .pick-card-icon {
   font-size: 1.5rem;
@@ -1780,14 +1891,37 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.tip-card:nth-child(2).visible { transition-delay: 0.05s; }
-.tip-card:nth-child(3).visible { transition-delay: 0.1s; }
-.tip-card:nth-child(4).visible { transition-delay: 0.15s; }
-.tip-card:nth-child(5).visible { transition-delay: 0.2s; }
-.tip-card:nth-child(6).visible { transition-delay: 0.25s; }
-.tip-card:nth-child(7).visible { transition-delay: 0.3s; }
-.tip-card:nth-child(8).visible { transition-delay: 0.35s; }
-.tip-card:nth-child(9).visible { transition-delay: 0.4s; }
+.tip-card:nth-child(2).visible {
+  transition-delay: 0.05s;
+}
+
+.tip-card:nth-child(3).visible {
+  transition-delay: 0.1s;
+}
+
+.tip-card:nth-child(4).visible {
+  transition-delay: 0.15s;
+}
+
+.tip-card:nth-child(5).visible {
+  transition-delay: 0.2s;
+}
+
+.tip-card:nth-child(6).visible {
+  transition-delay: 0.25s;
+}
+
+.tip-card:nth-child(7).visible {
+  transition-delay: 0.3s;
+}
+
+.tip-card:nth-child(8).visible {
+  transition-delay: 0.35s;
+}
+
+.tip-card:nth-child(9).visible {
+  transition-delay: 0.4s;
+}
 
 .tip-card-icon {
   font-size: 1.5rem;
@@ -1915,9 +2049,7 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .market-grid {
-    grid-template-columns: 1fr;
-  }
+
 
   .compare-grid {
     grid-template-columns: 1fr;
