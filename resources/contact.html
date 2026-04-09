@@ -1,308 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | DiscoverCloudcroft.com — Reach Out, Ask Questions, Say Hello</title>
-    <meta name="description"
-        content="Get in touch with DiscoverCloudcroft.com. Contact the Cloudcroft Tourism Alliance, find emergency services, get directions, and plan your mountain visit.">
-    <meta name="keywords"
-        content="contact Cloudcroft, Cloudcroft phone number, Cloudcroft directions, Cloudcroft emergency services, Cloudcroft Tourism Alliance">
-    <link rel="canonical" href="https://discovercloudcroft.com/contact.html">
-
-    <meta property="og:title" content="Contact DiscoverCloudcroft.com">
-    <meta property="og:description"
-        content="Questions, tips, or just want to say hello — we'd love to hear from you. Contact us about visiting Cloudcroft, NM.">
-    <meta property="og:url" content="https://discovercloudcroft.com/contact.html">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Contact DiscoverCloudcroft.com">
-    <meta name="twitter:description" content="Get in touch about visiting Cloudcroft, New Mexico.">
-    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "Contact DiscoverCloudcroft.com",
-      "description": "Get in touch with DiscoverCloudcroft.com for questions about visiting Cloudcroft, NM.",
-      "url": "https://discovercloudcroft.com/contact.html"
-}
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/common.css">
-    <style>
-/* Page-specific hero */
-.hero {
-height: 40vh;
-min-height: 320px;
-background: #f2f2f2;
-}
-.hero-gradient {
-position: absolute;
-inset: 0;
-background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
-background-size: 300% 300%;
-animation: gradientShift 8s ease infinite;
-}
-@keyframes gradientShift {
-0% { background-position: 0% 50%; }
-50% { background-position: 100% 50%; }
-100% { background-position: 0% 50%; }
-}
-.hero-title {
-opacity: 0;
-animation: fadeUp 0.8s ease 0.2s forwards;
-}
-
-/* Page-specific components */
-.contact-section {
-padding: 6rem 2rem;
-}
-.contact-container {
-max-width: 1200px;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 4rem;
-}
-.form-column {
-opacity: 0;
-transform: translateX(-30px);
-}
-.form-column.visible {
-opacity: 1;
-transform: translateX(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
-}
-.contact-form {
-display: flex;
-flex-direction: column;
-gap: 1.25rem;
-}
-.form-group {
-display: flex;
-flex-direction: column;
-gap: 0.4rem;
-}
-.form-group label {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 0.85rem;
-color: var(--midnight);
-text-transform: uppercase;
-letter-spacing: 1px;
-}
-.form-group input,
-.form-group select,
-.form-group textarea {
-font-family: 'Inter', sans-serif;
-font-size: 1rem;
-padding: 0.85rem 1rem;
-border: 2px solid var(--cloud-drift);
-border-radius: 8px;
-background: var(--snow-cap);
-color: var(--midnight);
-transition: border-color 0.3s, box-shadow 0.3s;
-outline: none;
-}
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-border-color: var(--golden-hour);
-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
-}
-.form-group textarea {
-resize: vertical;
-min-height: 140px;
-}
-.form-group select {
-cursor: pointer;
-appearance: none;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B7B8D' stroke-width='2' fill='none'/%3E%3C/svg%3E");
-background-repeat: no-repeat;
-background-position: right 1rem center;
-padding-right: 2.5rem;
-}
-.btn-submit {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 0.85rem;
-text-transform: uppercase;
-letter-spacing: 0.05em;
-padding: 1rem 2rem;
-border: none;
-border-radius: 8px;
-background: var(--golden-hour);
-color: var(--midnight);
-cursor: pointer;
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-animation: pulse 2.5s ease-in-out infinite;
-margin-top: 0.5rem;
-min-height: 44px;
-}
-@keyframes pulse {
-0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }
-50% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 0 12px rgba(0, 0, 0, 0); }
-}
-.btn-submit:hover {
-transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
-animation: none;
-}
-.info-column {
-display: flex;
-flex-direction: column;
-gap: 1.25rem;
-opacity: 0;
-transform: translateX(30px);
-}
-.info-column.visible {
-opacity: 1;
-transform: translateX(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
-}
-.contact-card {
-background: var(--cloud-drift);
-border-radius: 12px;
-padding: 1.75rem;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-card:hover {
-transform: translateY(-4px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
-}
-@keyframes iconBounce {
-0%, 100% { transform: translateY(0); }
-50% { transform: translateY(-4px); }
-}
-.contact-card .card-icon {
-font-size: 1.8rem;
-margin-bottom: 0.5rem;
-display: inline-block;
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-card:hover .card-icon {
-animation: iconBounce 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-card h3 {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 1.15rem;
-color: var(--midnight);
-margin-bottom: 0.6rem;
-}
-.contact-card p {
-font-size: 0.92rem;
-color: var(--granite);
-line-height: 1.7;
-}
-.contact-card a {
-color: var(--alpine);
-text-decoration: none;
-font-weight: 500;
-transition: color 0.3s;
-}
-.contact-card a:hover {
-color: var(--golden-hour);
-}
-.contact-card .card-detail {
-display: block;
-margin-top: 0.3rem;
-}
-.map-section {
-padding: 6rem 2rem;
-background: var(--cloud-drift);
-}
-.map-container {
-max-width: 1200px;
-margin: 0 auto;
-text-align: center;
-}
-.map-placeholder {
-background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
-border: none;
-border-radius: 12px;
-padding: 5rem 2rem;
-margin-top: 2rem;
-position: relative;
-overflow: hidden;
-}
-.map-placeholder::before {
-content: '';
-position: absolute;
-inset: 0;
-opacity: 0.08;
-background-image:
-radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.4) 0%, transparent 50%),
-radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.3) 0%, transparent 40%);
-pointer-events: none;
-}
-.map-pin-icon {
-display: block;
-margin: 0 auto 1.25rem;
-font-size: 3rem;
-filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
-}
-.map-placeholder p {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 1.2rem;
-color: white;
-margin-bottom: 1rem;
-position: relative;
-}
-.map-placeholder .map-coords {
-font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
-font-size: 0.85rem;
-color: rgba(255, 255, 255, 0.7);
-margin-bottom: 1.5rem;
-display: block;
-position: relative;
-}
-.map-placeholder a {
-display: inline-block;
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 0.85rem;
-text-transform: uppercase;
-letter-spacing: 0.05em;
-padding: 0.9rem 2rem;
-border-radius: 8px;
-text-decoration: none;
-background: var(--golden-hour);
-color: var(--midnight);
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-position: relative;
-min-height: 44px;
-}
-.map-placeholder a:hover {
-transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-.contact-container { grid-template-columns: 1fr; gap: 3rem; }
-}
-@media (max-width: 768px) {
-.contact-section { padding: 3.5rem 1.5rem; }
-.map-section { padding: 3rem 1.5rem; }
-}</style>
-</head>
-
-<body>
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Get in Touch | DiscoverCloudcroft.com</title>
+<meta name="description" content="Questions, tips, or just want to say hello -- we&#x27;d love to hear from you.">
+<link rel="canonical" href="https://discovercloudcroft.com/contact.html">
+<meta property="og:title" content="Get in Touch">
+<meta property="og:description" content="Questions, tips, or just want to say hello -- we&#x27;d love to hear from you.">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--midnight:#1a1a1a;--golden-hour:#c9a74e;--granite:#555;--cloud-drift:#f5f2ec;--snow-cap:#fff;--alpine:#2e6b8a;--charcoal:#2b2b2b;--cream-dark:#e8e2d2;--ember:#c65d3a;--twilight:#3a4a6b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter','Helvetica Neue',sans-serif;color:var(--midnight);line-height:1.7;background:#fff}
+a{color:var(--alpine);text-decoration:none}a:hover{text-decoration:underline}
+.skip-to-content{position:absolute;left:-9999px}
+.site-header{background:#fff;border-bottom:1px solid #eee;padding:1rem 2rem;position:sticky;top:0;z-index:50}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.header-nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+.header-nav a{font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;color:var(--midnight);text-transform:uppercase;letter-spacing:.05em}
+.logo{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;display:flex;gap:.25rem;align-items:baseline}
+.logo-cloudcroft{color:var(--golden-hour)}
+.logo-beta{font-size:.6rem;background:var(--golden-hour);color:#fff;padding:.1rem .4rem;border-radius:4px;text-transform:uppercase}
+.hero{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;padding:6rem 2rem}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#2b2b2b 0%,#3a4a6b 50%,#1a1a1a 100%)}
+.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.35)}
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-badge{display:inline-block;background:var(--golden-hour);color:#fff;padding:.4rem 1rem;border-radius:20px;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.5rem}
+.hero-title{font-family:'DM Sans',sans-serif;font-weight:700;font-size:clamp(2.2rem,5vw,3.75rem);line-height:1.1;margin-bottom:1.25rem}
+.hero-subtitle{font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.9);max-width:640px;margin:0 auto 2rem}
+.hero-ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-primary,.btn-secondary{font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.9rem 1.8rem;border-radius:6px;transition:all .25s;display:inline-block}
+.btn-primary{background:var(--golden-hour);color:#fff}
+.btn-primary:hover{background:#b3923e;text-decoration:none}
+.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
+.btn-secondary:hover{background:#fff;color:var(--midnight);text-decoration:none}
+.info-bar{background:var(--cream-dark);padding:1.25rem 2rem;border-bottom:1px solid #d8cfb8}
+.info-bar-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem}
+.info-bar-item{display:flex;align-items:center;gap:.6rem;font-family:'DM Sans',sans-serif;font-size:.85rem;color:var(--charcoal)}
+.info-bar-icon{font-size:1.25rem}
+.section{padding:4.5rem 2rem}
+.section:nth-of-type(even){background:var(--cloud-drift)}
+.section-container{max-width:900px;margin:0 auto}
+.section-label{display:block;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--golden-hour);margin-bottom:.75rem}
+.section-title{font-family:'DM Sans',sans-serif;font-weight:700;font-size:clamp(1.75rem,3vw,2.5rem);color:var(--midnight);line-height:1.2;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:3px solid var(--golden-hour);display:inline-block}
+.section-body{font-size:1.05rem;color:#333}
+.section-body p{margin-bottom:1.25rem}
+.section-body ul,.section-body ol{margin:0 0 1.25rem 1.5rem}
+.section-body li{margin-bottom:.5rem}
+.section-body h2{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.75rem;margin:2.5rem 0 1rem;color:var(--midnight);padding-bottom:.5rem;border-bottom:2px solid var(--cream-dark)}
+.section-body h3{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.35rem;margin:2rem 0 .75rem;color:var(--midnight)}
+.section-body h4{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;margin:1.5rem 0 .5rem;color:var(--charcoal)}
+.section-body img{max-width:100%;height:auto;border-radius:12px;margin:1.5rem 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.section-body blockquote{border-left:4px solid var(--golden-hour);padding:.5rem 0 .5rem 1.5rem;margin:1.5rem 0;color:var(--granite);font-style:italic}
+.section-body table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+.section-body th,.section-body td{padding:.75rem;border-bottom:1px solid #e5e0d0;text-align:left}
+.section-body th{background:var(--cream-dark);font-family:'DM Sans',sans-serif}
+.section-body code{background:#f0ebe0;padding:.15rem .4rem;border-radius:4px;font-size:.9em}
+.cta-section{background:#2b2b2b;color:#fff;padding:5rem 2rem;text-align:center}
+.cta-container{max-width:700px;margin:0 auto}
+.cta-section h2{font-family:'DM Sans',sans-serif;font-size:2rem;margin-bottom:1rem;color:var(--golden-hour)}
+.cta-section p{color:rgba(255,255,255,.8);margin-bottom:2rem}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+footer.site-footer{background:#1a1a1a;color:rgba(255,255,255,.7);padding:3rem 2rem 1.5rem;text-align:center;font-size:.85rem}
+footer.site-footer a{color:var(--golden-hour)}
+.footer-bottom{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #333;color:rgba(255,255,255,.5)}
+@media(max-width:768px){.header-nav a{font-size:.75rem}.section{padding:3rem 1.25rem}.hero{padding:4rem 1.25rem;min-height:50vh}}
+</style></head><body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
     <header class="site-header" role="banner">
         <div class="header-inner">
 
@@ -315,12 +79,12 @@ box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
                 <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
                 <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
                 <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="../explore/where-to-visit.html">Visit</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
                 <a href="../events/top-events.html">Events</a>
                 <a href="../season/seasonal.html">Seasons</a>
                 <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
-                <a href="../resources.html">Resources</a>
-                <a href="../contact.html">Contact</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resource/contact.html">Contact</a>
             </nav>
             <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -339,236 +103,78 @@ box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
         <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../contact.html">Contact</a>
     </div>
-
-    <section class="hero" aria-label="Page hero">
-        <div class="hero-gradient"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Get in Touch</h1>
-            <p class="hero-subtitle">Questions, tips, or just want to say hello &mdash; we'd love to hear from you.</p>
-        </div>
-    </section>
-
-    <main id="main-content" role="main">
-        <section class="contact-section" aria-label="Contact information and form">
-            <div class="contact-container">
-
-                <div class="form-column">
-                    <span class="section-label">Send a Message</span>
-                    <h2 class="section-title">We'd Love to Hear From You</h2>
-
-                    <form class="contact-form" action="mailto:info@discovercloudcroft.com" method="POST"
-                        enctype="text/plain" aria-label="Contact form">
-                        <div class="form-group">
-                            <label for="contact-name">Name</label>
-                            <input type="text" id="contact-name" name="name" required placeholder="Your full name"
-                                autocomplete="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-email">Email</label>
-                            <input type="email" id="contact-email" name="email" required placeholder="you@email.com"
-                                autocomplete="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-subject">Subject</label>
-                            <select id="contact-subject" name="subject" required>
-                                <option value="" disabled selected>Select a topic</option>
-                                <option value="General Inquiry">General Inquiry</option>
-                                <option value="Trip Planning">Trip Planning</option>
-                                <option value="Event Info">Event Info</option>
-                                <option value="Business Listing">Business Listing</option>
-                                <option value="Press/Media">Press/Media</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-message">Message</label>
-                            <textarea id="contact-message" name="message" required
-                                placeholder="How can we help?"></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Send Message</button>
-                    </form>
-                </div>
-
-                <div class="info-column">
-                    <div class="contact-card">
-                        <span class="card-icon" aria-hidden="true">&#128222;</span>
-                        <h3>Call Us</h3>
-                        <p>Cloudcroft Tourism Alliance</p>
-                        <p><a href="tel:+15555555555">(555) 555-5555</a></p>
-                        <p class="card-detail">Mon&ndash;Fri, 9am&ndash;5pm MT</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <span class="card-icon" aria-hidden="true">&#128231;</span>
-                        <h3>Email Us</h3>
-                        <p><a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a></p>
-                        <p class="card-detail">We respond within 24 hours</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <span class="card-icon" aria-hidden="true">&#128205;</span>
-                        <h3>Visit Us</h3>
-                        <p>Cloudcroft, New Mexico 88317</p>
-                        <p>Sacramento Mountains, Lincoln National Forest</p>
-                        <p><a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank"
-                                rel="noopener noreferrer">Get Directions</a></p>
-                    </div>
-
-                    <div class="contact-card">
-                        <span class="card-icon" aria-hidden="true">&#128680;</span>
-                        <h3>Emergency Services</h3>
-                        <p>Otero County Sheriff: <a href="tel:+15754372210">(575) 437-2210</a></p>
-                        <p>Fire/EMS: <strong>911</strong></p>
-                        <p>Cloudcroft Fire Dept: <a href="tel:+15756822322">(575) 682-2322</a></p>
-                    </div>
-
-                    <div class="contact-card">
-                        <span class="card-icon" aria-hidden="true">&#127780;</span>
-                        <h3>Weather</h3>
-                        <p>Check current conditions before you visit</p>
-                        <p><a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank"
-                                rel="noopener noreferrer">Cloudcroft Weather</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="map-section" aria-label="Map">
-            <div class="map-container">
-                <span class="section-label" style="display:block; text-align:center;">Find Us</span>
-                <h2 class="section-title section-title-centered">Cloudcroft, New Mexico</h2>
-
-                <div class="map-placeholder">
-                    <span class="map-pin-icon" aria-hidden="true">&#128205;</span>
-                    <p>Cloudcroft, NM 88317</p>
-                    <span class="map-coords">32.9576&deg; N, 105.7425&deg; W &middot; Elev. 8,676 ft</span>
-                    <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank"
-                        rel="noopener noreferrer">Open in Google Maps</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer footer-green" role="contentinfo" aria-label="Site footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
-                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
-                <div class="footer-social">
-                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
-                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
-                    <a href="#todo-twitter" aria-label="Twitter">X</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Explore</h3>
-                <a href="stay/lodging.html">Lodging</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
-                <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
-                <a href="do/complete-guide-to-activities.html">Activities</a>
-                <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="season/seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h3>Connect</h3>
-                <a href="tel:+15555555555">(555) 555-5555</a>
-                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
-                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of
-                    Cloudcroft</a>
-                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank"
-                    rel="noopener noreferrer">Cloudcroft, NM 88317</a>
-            </div>
-            <div class="footer-col">
-                <h3>Plan</h3>
-                <a href="plan.html">Plan Your Trip</a>
-                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank"
-                    rel="noopener noreferrer">Weather</a>
-                <a href="about.html">About Cloudcroft</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
-
-    <script src="js/common.js"></script>
-  <script>
-        (function () {
-            // Header scroll
-            var header = document.querySelector('.site-header');
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > 60) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            }, { passive: true });
-
-            // Hamburger toggle
-            var hamburger = document.querySelector('.hamburger');
-            var mobileMenu = document.querySelector('.mobile-menu');
-            hamburger.addEventListener('click', function () {
-                var isOpen = mobileMenu.classList.toggle('open');
-                hamburger.classList.toggle('active');
-                hamburger.setAttribute('aria-expanded', isOpen);
-                document.body.style.overflow = isOpen ? 'hidden' : '';
-            });
-
-            mobileMenu.querySelectorAll('a').forEach(function (link) {
-                link.addEventListener('click', function () {
-                    mobileMenu.classList.remove('open');
-                    hamburger.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                });
-            });
-
-            // Intersection Observer for fade-in
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        fadeObserver.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('.form-column, .info-column, .contact-card').forEach(function (el) {
-                fadeObserver.observe(el);
-            });
-
-            // Back to top
-            var backToTop = document.querySelector('.back-to-top');
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > 400) {
-                    backToTop.classList.add('visible');
-                } else {
-                    backToTop.classList.remove('visible');
-                }
-            }, { passive: true });
-
-            backToTop.addEventListener('click', function () {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        })();
-    </script>
-
-<div id="beta-modal" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:1;transition:opacity 0.4s ease">
-  <div style="background:#111111;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(0, 0, 0, 0.08)">
-    <div style="font-size:2rem;margin-bottom:0.75rem">&#9888;</div>
-    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#000000">Beta Site</h2>
-    <p style="font-family:'DM Sans',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
-    <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(0, 0, 0, 0.1);overflow:hidden">
-      <div id="beta-modal-progress" style="height:100%;width:100%;background:#888888;border-radius:2px;transition:width 12s linear"></div>
-    </div>
-  </div>
-</div>
-<script>
-(function(){var m=document.getElementById('beta-modal');var p=document.getElementById('beta-modal-progress');requestAnimationFrame(function(){requestAnimationFrame(function(){p.style.width='0%'})});setTimeout(function(){m.style.opacity='0';setTimeout(function(){m.remove()},400)},12000)})();
-</script>
-</body>
-</html>
+<section class="hero"><div class="hero-bg"></div><div class="hero-overlay"></div>
+<div class="hero-content">
+<div class="hero-badge"><span>DiscoverCloudcroft</span></div>
+<h1 class="hero-title">Get in Touch</h1>
+<p class="hero-subtitle">Questions, tips, or just want to say hello -- we&#x27;d love to hear from you.</p>
+<div class="hero-ctas"><a href="#main-content" class="btn-primary">Read More</a><a href="resources.html" class="btn-secondary">All Resources</a></div>
+</div></section>
+<div class="info-bar"><div class="info-bar-inner">
+<div class="info-bar-item"><span class="info-bar-icon">🏔️</span><span>Elevation 8,676 ft</span></div>
+<div class="info-bar-item"><span class="info-bar-icon">🌲</span><span>Lincoln National Forest</span></div>
+<div class="info-bar-item"><span class="info-bar-icon">🌟</span><span>Dark Sky Community</span></div>
+<div class="info-bar-item"><span class="info-bar-icon">📍</span><span>Sacramento Mountains, NM</span></div>
+</div></div>
+<main id="main-content">
+<section class="section"><div class="section-container">
+<span class="section-label">Overview</span><br>
+<h2 class="section-title">Get in Touch</h2>
+<div class="section-body"><p>Questions, tips, or just want to say hello -- we'd love to hear from you.</p>
+<p>Send a Message</p>
+<h2>We'd Love to Hear From You</h2>
+<p>Name</p>
+<p>Email</p>
+<p>Subject Select a topic General Inquiry Trip Planning Event Info Business Listing Press/Media Other</p>
+<p>Message</p>
+<p>Send Message</p>
+<p>📞</p>
+<h3>Call Us</h3>
+<p>Cloudcroft Tourism Alliance</p>
+<p><a href="tel:+15555555555">(555) 555-5555</a></p>
+<p>Mon-Fri, 9am-5pm MT</p>
+<p>📧</p>
+<h3>Email Us</h3>
+<p><a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a></p>
+<p>We respond within 24 hours</p>
+<p>📍</p>
+<h3>Visit Us</h3>
+<p>Cloudcroft, New Mexico 88317</p>
+<p>Sacramento Mountains, Lincoln National Forest</p>
+<p><a href="https://www.google.com/maps/place/Cloudcroft,+NM">Get Directions</a></p>
+<p>🚨</p>
+<h3>Emergency Services</h3>
+<p>Otero County Sheriff: <a href="tel:+15754372210">(575) 437-2210</a></p>
+<p>Fire/EMS: <strong>911</strong></p>
+<p>Cloudcroft Fire Dept: <a href="tel:+15756822322">(575) 682-2322</a></p>
+<p>🌤</p>
+<h3>Weather</h3>
+<p>Check current conditions before you visit</p>
+<p><a href="https://weather.com/weather/today/l/Cloudcroft+NM">Cloudcroft Weather</a></p>
+<p>Find Us</p>
+<h2>Cloudcroft, New Mexico</h2>
+<p>📍</p>
+<p>Cloudcroft, NM 88317</p>
+<p>32.9576° N, 105.7425° W * Elev. 8,676 ft <a href="https://www.google.com/maps/place/Cloudcroft,+NM">Open in Google Maps</a></p>
+<p>DISCOVER CLOUDCROFT</p>
+<p>Your guide to Cloudcroft, New Mexico -- 8,676 feet of mountain magic.</p>
+<p>FB IG X</p>
+<h3>Explore</h3>
+<p><a href="stay/lodging.html">Lodging</a> <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a> <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a> <a href="do/complete-guide-to-activities.html">Activities</a> <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a> <a href="season/seasonal.html">Seasons</a></p>
+<h3>Connect</h3>
+<p><a href="tel:+15555555555">(555) 555-5555</a> <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a> <a href="https://villageofcloudcroft.com">Village of Cloudcroft</a> <a href="https://www.google.com/maps/place/Cloudcroft,+NM">Cloudcroft, NM 88317</a></p>
+<h3>Plan</h3>
+<p><a href="plan.html">Plan Your Trip</a> <a href="https://weather.com/weather/today/l/Cloudcroft+NM">Weather</a> <a href="about.html">About Cloudcroft</a> <a href="contact.html">Contact Us</a></p>
+<p>(C) 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+<p>↑</p>
+<p>⚠</p>
+<h2>Beta Site</h2>
+<p>Under Construction</p></div>
+</div></section>
+</main>
+<section class="cta-section"><div class="cta-container">
+<h2>Plan Your Mountain Escape</h2><p>Explore more guides, trip planning tools, and local insights for Cloudcroft, New Mexico.</p>
+<div class="cta-buttons"><a href="resources.html" class="btn-primary">Browse Resources</a><a href="contact.html" class="btn-secondary">Contact Us</a></div>
+</div></section>
+<footer class="site-footer"><div>© 2026 DiscoverCloudcroft.com — A mountain village 8,676 feet closer to the sky.</div><div class="footer-bottom"><a href="resources.html">All Resources</a></div></footer>
+</body></html>

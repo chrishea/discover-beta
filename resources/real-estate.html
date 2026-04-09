@@ -1,227 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate | DiscoverCloudcroft.com — Cabins, Land &amp; Mountain Property</title>
-    <meta name="description" content="Explore Cloudcroft real estate: mountain cabins, vacant land, and ranches in the Sacramento Mountains. Local agents, property types, and what to know before buying.">
-    <meta name="keywords" content="Cloudcroft real estate, cabins for sale, mountain property, vacant land, Sacramento Mountains, Lincoln National Forest, New Mexico real estate">
-    <link rel="canonical" href="https://discovercloudcroft.com/real-estate.html">
-    <meta property="og:title" content="Real Estate | DiscoverCloudcroft.com">
-    <meta property="og:description" content="Explore Cloudcroft real estate: mountain cabins, vacant land, and ranches in the Sacramento Mountains.">
-    <meta property="og:url" content="https://discovercloudcroft.com/real-estate.html">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Real Estate | DiscoverCloudcroft.com">
-    <meta name="twitter:description" content="Mountain cabins, vacant land, and ranches in Cloudcroft, NM.">
-    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "name": "Cloudcroft Real Estate",
-      "description": "Mountain cabins, vacant land, and ranches in the Sacramento Mountains near Cloudcroft, NM.",
-      "about": {
-            "@type": "City",
-            "name": "Cloudcroft"
-      },
-      "url": "https://discovercloudcroft.com/resources/real-estate.html"
-}
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
-    <link href="../css/fonts.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/common.css">
-
-    <style>
-.hero-bg {
-    background: linear-gradient(135deg, var(--pine-shadow) 0%, #111111 50%, var(--twilight) 100%);
-}
-.hero-overlay {
-background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
-}
-
-.about-image {
-background: linear-gradient(135deg, var(--pine-shadow) 0%, #111111 100%);
-}
-.about-image-placeholder {
-color: white;
-}
-.about-image-placeholder p {
-color: rgba(255,255,255,0.85);
-}
-.properties-section {
-background: var(--cloud-drift);
-}
-.properties-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 2rem;
-}
-.property-card {
-background: var(--snow-cap);
-border-radius: 12px;
-padding: 2.5rem 2rem;
-border-top: 4px solid var(--golden-hour);
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
-opacity: 0;
-transform: translateY(30px);
-}
-.property-card.visible {
-opacity: 1;
-transform: translateY(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
-}
-.property-card:nth-child(2).visible { transition-delay: 0.1s; }
-.property-card:nth-child(3).visible { transition-delay: 0.2s; }
-.property-card:hover {
-transform: translateY(-6px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-}
-.property-card-icon {
-font-size: 2.5rem;
-margin-bottom: 1rem;
-}
-.property-card h3 {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 1.2rem;
-color: var(--midnight);
-margin-bottom: 0.5rem;
-}
-.property-card .price {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 0.9rem;
-color: var(--golden-hour);
-margin-bottom: 0.75rem;
-}
-.property-card p {
-color: var(--granite);
-font-size: 0.95rem;
-line-height: 1.7;
-}
-.agents-section {
-background: #f2f2f2;
-position: relative;
-overflow: hidden;
-}
-.agents-section::before {
-content: '';
-position: absolute;
-inset: 0;
-opacity: 0.06;
-background-image:
-repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px),
-repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px);
-pointer-events: none;
-}
-.agents-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 2rem;
-position: relative;
-}
-.agent-card {
-text-align: center;
-padding: 2.5rem 2rem;
-background: rgba(255, 255, 255, 0.05);
-border-radius: 12px;
-border: 1px solid rgba(255, 255, 255, 0.1);
-transition: transform 0.3s ease, background 0.3s ease;
-opacity: 0;
-transform: translateY(30px);
-}
-.agent-card.visible {
-opacity: 1;
-transform: translateY(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
-}
-.agent-card:nth-child(2).visible { transition-delay: 0.1s; }
-.agent-card:nth-child(3).visible { transition-delay: 0.2s; }
-.agent-card:nth-child(4).visible { transition-delay: 0.3s; }
-.agent-card:hover {
-transform: translateY(-6px);
-background: rgba(255, 255, 255, 0.1);
-}
-.agent-icon {
-font-size: 3rem;
-margin-bottom: 1rem;
-}
-.agent-card h3 {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 1.2rem;
-color: #000000;
-margin-bottom: 0.75rem;
-}
-.agent-card p {
-color: #555555;
-font-size: 0.95rem;
-line-height: 1.7;
-}
-.considerations-grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 2rem;
-}
-.consideration-card {
-background: var(--snow-cap);
-border-radius: 12px;
-padding: 2.5rem 2rem;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-border-left: 4px solid var(--golden-hour);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
-opacity: 0;
-transform: translateY(30px);
-}
-.consideration-card.visible {
-opacity: 1;
-transform: translateY(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
-}
-.consideration-card:hover {
-transform: translateY(-6px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-}
-.consideration-icon {
-font-size: 2rem;
-margin-bottom: 0.75rem;
-}
-.consideration-card h4 {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 1.1rem;
-color: var(--midnight);
-margin-bottom: 0.5rem;
-}
-.consideration-card p {
-color: var(--granite);
-font-size: 0.95rem;
-line-height: 1.7;
-}
-
-.cta-container h2 {
-color: #000000;
-}
-
-@media (max-width: 1024px) {
-.considerations-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 768px) {
-.properties-grid { grid-template-columns: 1fr; }
-.agents-grid { grid-template-columns: 1fr; }
-.considerations-grid { grid-template-columns: 1fr; }
-
-}</style>
-</head>
-<body>
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Cloudcroft Real Estate | DiscoverCloudcroft.com</title>
+<meta name="description" content="Cabins, land, and mountain property in the Sacramento Mountains -- surrounded by 1.1 million acres of Lincoln National Forest.">
+<link rel="canonical" href="https://discovercloudcroft.com/real-estate.html">
+<meta property="og:title" content="Cloudcroft Real Estate">
+<meta property="og:description" content="Cabins, land, and mountain property in the Sacramento Mountains -- surrounded by 1.1 million acres of Lincoln National Forest.">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--midnight:#1a1a1a;--golden-hour:#c9a74e;--granite:#555;--cloud-drift:#f5f2ec;--snow-cap:#fff;--alpine:#2e6b8a;--charcoal:#2b2b2b;--cream-dark:#e8e2d2;--ember:#c65d3a;--twilight:#3a4a6b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter','Helvetica Neue',sans-serif;color:var(--midnight);line-height:1.7;background:#fff}
+a{color:var(--alpine);text-decoration:none}a:hover{text-decoration:underline}
+.skip-to-content{position:absolute;left:-9999px}
+.site-header{background:#fff;border-bottom:1px solid #eee;padding:1rem 2rem;position:sticky;top:0;z-index:50}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.header-nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+.header-nav a{font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;color:var(--midnight);text-transform:uppercase;letter-spacing:.05em}
+.logo{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;display:flex;gap:.25rem;align-items:baseline}
+.logo-cloudcroft{color:var(--golden-hour)}
+.logo-beta{font-size:.6rem;background:var(--golden-hour);color:#fff;padding:.1rem .4rem;border-radius:4px;text-transform:uppercase}
+.hero{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;padding:6rem 2rem}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#2b2b2b 0%,#3a4a6b 50%,#1a1a1a 100%)}
+.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.35)}
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-badge{display:inline-block;background:var(--golden-hour);color:#fff;padding:.4rem 1rem;border-radius:20px;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.5rem}
+.hero-title{font-family:'DM Sans',sans-serif;font-weight:700;font-size:clamp(2.2rem,5vw,3.75rem);line-height:1.1;margin-bottom:1.25rem}
+.hero-subtitle{font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.9);max-width:640px;margin:0 auto 2rem}
+.hero-ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-primary,.btn-secondary{font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.9rem 1.8rem;border-radius:6px;transition:all .25s;display:inline-block}
+.btn-primary{background:var(--golden-hour);color:#fff}
+.btn-primary:hover{background:#b3923e;text-decoration:none}
+.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
+.btn-secondary:hover{background:#fff;color:var(--midnight);text-decoration:none}
+.info-bar{background:var(--cream-dark);padding:1.25rem 2rem;border-bottom:1px solid #d8cfb8}
+.info-bar-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem}
+.info-bar-item{display:flex;align-items:center;gap:.6rem;font-family:'DM Sans',sans-serif;font-size:.85rem;color:var(--charcoal)}
+.info-bar-icon{font-size:1.25rem}
+.section{padding:4.5rem 2rem}
+.section:nth-of-type(even){background:var(--cloud-drift)}
+.section-container{max-width:900px;margin:0 auto}
+.section-label{display:block;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--golden-hour);margin-bottom:.75rem}
+.section-title{font-family:'DM Sans',sans-serif;font-weight:700;font-size:clamp(1.75rem,3vw,2.5rem);color:var(--midnight);line-height:1.2;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:3px solid var(--golden-hour);display:inline-block}
+.section-body{font-size:1.05rem;color:#333}
+.section-body p{margin-bottom:1.25rem}
+.section-body ul,.section-body ol{margin:0 0 1.25rem 1.5rem}
+.section-body li{margin-bottom:.5rem}
+.section-body h2{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.75rem;margin:2.5rem 0 1rem;color:var(--midnight);padding-bottom:.5rem;border-bottom:2px solid var(--cream-dark)}
+.section-body h3{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.35rem;margin:2rem 0 .75rem;color:var(--midnight)}
+.section-body h4{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;margin:1.5rem 0 .5rem;color:var(--charcoal)}
+.section-body img{max-width:100%;height:auto;border-radius:12px;margin:1.5rem 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.section-body blockquote{border-left:4px solid var(--golden-hour);padding:.5rem 0 .5rem 1.5rem;margin:1.5rem 0;color:var(--granite);font-style:italic}
+.section-body table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+.section-body th,.section-body td{padding:.75rem;border-bottom:1px solid #e5e0d0;text-align:left}
+.section-body th{background:var(--cream-dark);font-family:'DM Sans',sans-serif}
+.section-body code{background:#f0ebe0;padding:.15rem .4rem;border-radius:4px;font-size:.9em}
+.cta-section{background:#2b2b2b;color:#fff;padding:5rem 2rem;text-align:center}
+.cta-container{max-width:700px;margin:0 auto}
+.cta-section h2{font-family:'DM Sans',sans-serif;font-size:2rem;margin-bottom:1rem;color:var(--golden-hour)}
+.cta-section p{color:rgba(255,255,255,.8);margin-bottom:2rem}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+footer.site-footer{background:#1a1a1a;color:rgba(255,255,255,.7);padding:3rem 2rem 1.5rem;text-align:center;font-size:.85rem}
+footer.site-footer a{color:var(--golden-hour)}
+.footer-bottom{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #333;color:rgba(255,255,255,.5)}
+@media(max-width:768px){.header-nav a{font-size:.75rem}.section{padding:3rem 1.25rem}.hero{padding:4rem 1.25rem;min-height:50vh}}
+</style></head><body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
     <header class="site-header" role="banner">
         <div class="header-inner">
 
@@ -234,12 +79,12 @@ color: #000000;
                 <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
                 <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
                 <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="../explore/where-to-visit.html">Visit</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
                 <a href="../events/top-events.html">Events</a>
                 <a href="../season/seasonal.html">Seasons</a>
                 <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
-                <a href="../resources.html">Resources</a>
-                <a href="../contact.html">Contact</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resource/contact.html">Contact</a>
             </nav>
             <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -258,214 +103,97 @@ color: #000000;
         <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../contact.html">Contact</a>
     </div>
-
-    <section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Cloudcroft Real Estate"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>Mountain Living</span>
-            </div>
-            <h1 class="hero-title">
-                <span class="word">Cloudcroft </span>
-                <span class="word">Real </span>
-                <span class="word">Estate</span>
-            </h1>
-            <p class="hero-subtitle">Cabins, land, and mountain property in the Sacramento Mountains &mdash; surrounded by 1.1 million acres of Lincoln National Forest.</p>
-            <div class="hero-ctas">
-                <a href="#properties" class="btn-primary">Property Types</a>
-                <a href="#agents" class="btn-outline">Find an Agent</a>
-            </div>
-        </div>
-    </section>
-
-    <main id="main-content" role="main">
-        <section class="section" id="about" aria-label="About Cloudcroft real estate">
-            <div class="section-container">
-                <div class="about-grid">
-                    <div class="about-text fade-in">
-                        <span class="section-label">Mountain Property</span>
-                        <h2 class="section-title">Own a Piece of the Mountains</h2>
-                        <p>Cloudcroft offers a rare opportunity to own property in one of New Mexico's most beautiful mountain communities. Nestled at 8,676 feet in the Sacramento Mountains and surrounded by 1.1 million acres of Lincoln National Forest, the area attracts buyers seeking mountain retreats, vacation rentals, and full-time residences.</p>
-                        <p>From charming cabins on wooded lots to vacant land and sprawling ranches, the Cloudcroft real estate market offers something for every vision of mountain living. Local agents who know the area intimately can help you find the perfect property.</p>
-                        <div class="about-features">
-                            <span class="about-feature">&#x1F3D4;&#xFE0F; 8,676 ft Elevation</span>
-                            <span class="about-feature">&#x1F332; National Forest</span>
-                            <span class="about-feature">&#x1F3E1; Cabins &amp; Homes</span>
-                            <span class="about-feature">&#x1F333; Wooded Lots</span>
-                            <span class="about-feature">&#x1F304; Mountain Views</span>
-                        </div>
-                    </div>
-                    <div class="about-image fade-in">
-                        <div class="about-image-placeholder">
-                            <div class="icon">&#x1F3E1;</div>
-                            <p>Mountain Living</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section properties-section" id="properties" aria-label="Property types">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">What's Available</span>
-                    <h2 class="section-title section-title-centered">Property Types</h2>
-                    <p class="section-description">From cozy cabins to expansive ranches, explore what the Cloudcroft real estate market has to offer.</p>
-                </div>
-                <div class="properties-grid">
-                    <div class="property-card">
-                        <div class="property-card-icon">&#x1F3E1;</div>
-                        <h3>Mountain Cabins</h3>
-                        <div class="price">$300K &ndash; $600K typical range</div>
-                        <p>Classic mountain cabins on wooded lots, ranging from cozy weekend retreats to spacious family homes. Many feature fireplaces, decks, and pine forest settings. Popular as vacation rentals and second homes.</p>
-                    </div>
-                    <div class="property-card">
-                        <div class="property-card-icon">&#x1F333;</div>
-                        <h3>Vacant Land</h3>
-                        <div class="price">Varies by location &amp; acreage</div>
-                        <p>Build your dream mountain home on a wooded lot or meadow. Parcels range from small residential lots in the village to larger acreage in surrounding areas. Utilities and access vary by location.</p>
-                    </div>
-                    <div class="property-card">
-                        <div class="property-card-icon">&#x1F40E;</div>
-                        <h3>Ranches &amp; Acreage</h3>
-                        <div class="price">5+ acres available</div>
-                        <p>For those seeking more space, ranch properties and larger acreage parcels offer privacy and room to roam. Some border National Forest land with stunning mountain views and wildlife.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section agents-section" id="agents" aria-label="Local real estate agents">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label" style="color: var(--pine); letter-spacing: 3px;">Local Experts</span>
-                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">Real Estate Agents</h2>
-                    <p class="section-description" style="color: #555555;">Work with agents who know the Cloudcroft area and can guide you through the unique aspects of mountain property ownership.</p>
-                </div>
-                <div class="agents-grid">
-                    <div class="agent-card">
-                        <div class="agent-icon">&#x1F3E2;</div>
-                        <h3>Everett Team</h3>
-                        <p>Blue Canyon Realty. Experienced team specializing in Cloudcroft and Sacramento Mountain properties. Deep local knowledge and strong market expertise.</p>
-                    </div>
-                    <div class="agent-card">
-                        <div class="agent-icon">&#x1F3D8;&#xFE0F;</div>
-                        <h3>Cloudcroft Properties</h3>
-                        <p>Local real estate office focused exclusively on the Cloudcroft area. Cabins, land, and residential properties throughout the mountain community.</p>
-                    </div>
-                    <div class="agent-card">
-                        <div class="agent-icon">&#x1F3E0;</div>
-                        <h3>Cloudcroft Realty</h3>
-                        <p>Full-service real estate agency serving the Cloudcroft area. Helping buyers and sellers navigate the mountain property market.</p>
-                    </div>
-                    <div class="agent-card">
-                        <div class="agent-icon">&#x1F31F;</div>
-                        <h3>Future Real Estate</h3>
-                        <p>Real estate services for the Cloudcroft and surrounding mountain communities. Residential, land, and investment properties.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="considerations" aria-label="Buying considerations">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Before You Buy</span>
-                    <h2 class="section-title section-title-centered">Mountain Property Considerations</h2>
-                    <p class="section-description">Buying property in Cloudcroft comes with unique considerations. Here is what you should know.</p>
-                </div>
-                <div class="considerations-grid">
-                    <div class="consideration-card">
-                        <div class="consideration-icon">&#x1F4A7;</div>
-                        <h3>Water Supply</h3>
-                        <p>Many properties in the Cloudcroft area rely on well water rather than municipal water. Have wells inspected and tested before purchasing. Water rights and availability are important factors in the mountain market.</p>
-                    </div>
-                    <div class="consideration-card">
-                        <div class="consideration-icon">&#x2744;&#xFE0F;</div>
-                        <h3>Winter Access</h3>
-                        <p>Cloudcroft receives about 80 inches of snow annually. Consider road access during winter months, especially for properties on unpaved or steep roads. Four-wheel drive may be essential.</p>
-                    </div>
-                    <div class="consideration-card">
-                        <div class="consideration-icon">&#x1F332;</div>
-                        <h3>National Forest Proximity</h3>
-                        <p>Many properties border the 1.1 million acre Lincoln National Forest. This means incredible natural surroundings but also fire risk considerations and potential forest service regulations to be aware of.</p>
-                    </div>
-                    <div class="consideration-card">
-                        <div class="consideration-icon">&#x1F3D7;&#xFE0F;</div>
-                        <h3>Building &amp; Permits</h3>
-                        <p>Building codes and permit requirements vary. Work with local contractors experienced in mountain construction. Septic systems, elevation, and soil conditions all factor into building plans.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Find Your Mountain Home</h2>
-                <p>Whether you are looking for a weekend cabin, a vacation rental investment, or a full-time mountain residence, Cloudcroft has a property waiting for you.</p>
-                <div class="cta-buttons">
-                    <a href="../contact.html" class="btn-primary">Contact Us</a>
-                    <a href="../stay/lodging.html" class="btn-outline">Visit First</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
-                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/DiscoverCloudcroft" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
-                    <a href="https://www.instagram.com/discovercloudcroft/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
-                    <a href="https://x.com/CloudcroftNM" aria-label="Twitter" target="_blank" rel="noopener">X</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Explore</h3>
-                <a href="../stay/lodging.html">Lodging</a>
-                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
-                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
-                <a href="../do/complete-guide-to-activities.html">Activities</a>
-                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="../season/seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h3>Connect</h3>
-                <a href="tel:+15555555555">(555) 555-5555</a>
-                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
-                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
-            </div>
-            <div class="footer-col">
-                <h3>Plan</h3>
-                <a href="../plan.html">Plan Your Trip</a>
-                <a href="../faq.html">FAQs</a>
-                <a href="../contact.html">Contact Us</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
-
-    <script src="../js/common.js"></script>
-    <script>
-        (function() {
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); }
-                });
-            }, observerOptions);
-            document.querySelectorAll('.fade-in, .property-card, .agent-card, .consideration-card').forEach(function(el) { fadeObserver.observe(el); });
-            var backToTop = document.querySelector('.back-to-top');
-            window.addEventListener('scroll', function() { if (window.scrollY > 400) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); } }, { passive: true });
-            backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
-        })();
-    </script>
-</body>
-</html>
+<section class="hero"><div class="hero-bg"></div><div class="hero-overlay"></div>
+<div class="hero-content">
+<div class="hero-badge"><span>DiscoverCloudcroft</span></div>
+<h1 class="hero-title">Cloudcroft Real Estate</h1>
+<p class="hero-subtitle">Cabins, land, and mountain property in the Sacramento Mountains -- surrounded by 1.1 million acres of Lincoln National Forest.</p>
+<div class="hero-ctas"><a href="#main-content" class="btn-primary">Read More</a><a href="resources.html" class="btn-secondary">All Resources</a></div>
+</div></section>
+<div class="info-bar"><div class="info-bar-inner">
+<div class="info-bar-item"><span class="info-bar-icon">🏔️</span><span>Elevation 8,676 ft</span></div>
+<div class="info-bar-item"><span class="info-bar-icon">🌲</span><span>Lincoln National Forest</span></div>
+<div class="info-bar-item"><span class="info-bar-icon">🌟</span><span>Dark Sky Community</span></div>
+<div class="info-bar-item"><span class="info-bar-icon">📍</span><span>Sacramento Mountains, NM</span></div>
+</div></div>
+<main id="main-content">
+<section class="section"><div class="section-container">
+<span class="section-label">Overview</span><br>
+<h2 class="section-title">Cloudcroft Real Estate</h2>
+<div class="section-body"><p>Mountain Living</p>
+<p>Cabins, land, and mountain property in the Sacramento Mountains -- surrounded by 1.1 million acres of Lincoln National Forest.</p>
+<p>Property Types Find an Agent</p>
+<p>Mountain Property</p>
+<h2>Own a Piece of the Mountains</h2>
+<p>Cloudcroft offers a rare opportunity to own property in one of New Mexico's most beautiful mountain communities. Nestled at 8,676 feet in the Sacramento Mountains and surrounded by 1.1 million acres of Lincoln National Forest, the area attracts buyers seeking mountain retreats, vacation rentals, and full-time residences.</p>
+<p>From charming cabins on wooded lots to vacant land and sprawling ranches, the Cloudcroft real estate market offers something for every vision of mountain living. Local agents who know the area intimately can help you find the perfect property.</p>
+<p>🏔️ 8,676 ft Elevation 🌲 National Forest 🏡 Cabins &amp; Homes 🌳 Wooded Lots 🌄 Mountain Views</p>
+<p>🏡</p>
+<p>Mountain Living</p>
+<p>What's Available</p>
+<h2>Property Types</h2>
+<p>From cozy cabins to expansive ranches, explore what the Cloudcroft real estate market has to offer.</p>
+<p>🏡</p>
+<h3>Mountain Cabins</h3>
+<p>$300K - $600K typical range</p>
+<p>Classic mountain cabins on wooded lots, ranging from cozy weekend retreats to spacious family homes. Many feature fireplaces, decks, and pine forest settings. Popular as vacation rentals and second homes.</p>
+<p>🌳</p>
+<h3>Vacant Land</h3>
+<p>Varies by location &amp; acreage</p>
+<p>Build your dream mountain home on a wooded lot or meadow. Parcels range from small residential lots in the village to larger acreage in surrounding areas. Utilities and access vary by location.</p>
+<p>🐎</p>
+<h3>Ranches &amp; Acreage</h3>
+<p>5+ acres available</p>
+<p>For those seeking more space, ranch properties and larger acreage parcels offer privacy and room to roam. Some border National Forest land with stunning mountain views and wildlife.</p>
+<p>Local Experts</p>
+<h2>Real Estate Agents</h2>
+<p>Work with agents who know the Cloudcroft area and can guide you through the unique aspects of mountain property ownership.</p>
+<p>🏢</p>
+<h3>Everett Team</h3>
+<p>Blue Canyon Realty. Experienced team specializing in Cloudcroft and Sacramento Mountain properties. Deep local knowledge and strong market expertise.</p>
+<p>🏘️</p>
+<h3>Cloudcroft Properties</h3>
+<p>Local real estate office focused exclusively on the Cloudcroft area. Cabins, land, and residential properties throughout the mountain community.</p>
+<p>🏠</p>
+<h3>Cloudcroft Realty</h3>
+<p>Full-service real estate agency serving the Cloudcroft area. Helping buyers and sellers navigate the mountain property market.</p>
+<p>🌟</p>
+<h3>Future Real Estate</h3>
+<p>Real estate services for the Cloudcroft and surrounding mountain communities. Residential, land, and investment properties.</p>
+<p>Before You Buy</p>
+<h2>Mountain Property Considerations</h2>
+<p>Buying property in Cloudcroft comes with unique considerations. Here is what you should know.</p>
+<p>💧</p>
+<h3>Water Supply</h3>
+<p>Many properties in the Cloudcroft area rely on well water rather than municipal water. Have wells inspected and tested before purchasing. Water rights and availability are important factors in the mountain market.</p>
+<p>❄️</p>
+<h3>Winter Access</h3>
+<p>Cloudcroft receives about 80 inches of snow annually. Consider road access during winter months, especially for properties on unpaved or steep roads. Four-wheel drive may be essential.</p>
+<p>🌲</p>
+<h3>National Forest Proximity</h3>
+<p>Many properties border the 1.1 million acre Lincoln National Forest. This means incredible natural surroundings but also fire risk considerations and potential forest service regulations to be aware of.</p>
+<p>🏗️</p>
+<h3>Building &amp; Permits</h3>
+<p>Building codes and permit requirements vary. Work with local contractors experienced in mountain construction. Septic systems, elevation, and soil conditions all factor into building plans.</p>
+<h2>Find Your Mountain Home</h2>
+<p>Whether you are looking for a weekend cabin, a vacation rental investment, or a full-time mountain residence, Cloudcroft has a property waiting for you.</p>
+<p><a href="../contact.html">Contact Us</a> <a href="../stay/lodging.html">Visit First</a></p>
+<p>DISCOVER CLOUDCROFT</p>
+<p>Your guide to Cloudcroft, New Mexico -- 8,676 feet of mountain magic.</p>
+<p><a href="https://www.facebook.com/DiscoverCloudcroft">FB</a> <a href="https://www.instagram.com/discovercloudcroft/">IG</a> <a href="https://x.com/CloudcroftNM">X</a></p>
+<h3>Explore</h3>
+<p><a href="../stay/lodging.html">Lodging</a> <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a> <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a> <a href="../do/complete-guide-to-activities.html">Activities</a> <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a> <a href="../season/seasonal.html">Seasons</a></p>
+<h3>Connect</h3>
+<p><a href="tel:+15555555555">(555) 555-5555</a> <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a> <a href="https://villageofcloudcroft.com">Village of Cloudcroft</a></p>
+<h3>Plan</h3>
+<p><a href="../plan.html">Plan Your Trip</a> <a href="../faq.html">FAQs</a> <a href="../contact.html">Contact Us</a></p>
+<p>(C) 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+<p>↑</p></div>
+</div></section>
+</main>
+<section class="cta-section"><div class="cta-container">
+<h2>Plan Your Mountain Escape</h2><p>Explore more guides, trip planning tools, and local insights for Cloudcroft, New Mexico.</p>
+<div class="cta-buttons"><a href="resources.html" class="btn-primary">Browse Resources</a><a href="contact.html" class="btn-secondary">Contact Us</a></div>
+</div></section>
+<footer class="site-footer"><div>© 2026 DiscoverCloudcroft.com — A mountain village 8,676 feet closer to the sky.</div><div class="footer-bottom"><a href="resources.html">All Resources</a></div></footer>
+</body></html>

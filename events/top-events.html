@@ -58,8 +58,16 @@
         :root {
             -webkit-text-size-adjust: 100%;
         }
-        body { font-size: 16px; }
-        img, video { max-width: 100%; height: auto; }
+
+        body {
+            font-size: 16px;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
 
         /* ── Hero ── */
         .hero {
@@ -67,12 +75,15 @@
             min-height: 440px;
             position: relative;
         }
+
         .hero-bg {
             background: url('../media/placeholder-event-lumberjack.jpg') center center / cover no-repeat;
         }
+
         .hero-overlay {
             background: linear-gradient(160deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.3) 100%);
         }
+
         .hero-eyebrow {
             font-family: 'DM Sans', sans-serif;
             font-size: 0.75rem;
@@ -82,28 +93,33 @@
             color: rgba(255, 255, 255, 0.7);
             margin-bottom: 1rem;
         }
+
         .hero-title {
             font-size: clamp(1.85rem, 1.2rem + 4.2vw, 3.75rem);
             line-height: 1.1;
             margin-bottom: 1.25rem;
         }
+
         .hero-title em {
             font-style: normal;
             border-bottom: 3px solid #ffffff;
             padding-bottom: 2px;
         }
+
         .hero-subtitle {
             font-size: clamp(1rem, 0.95rem + 0.4vw, 1.2rem);
             color: rgba(255, 255, 255, 0.85);
             max-width: 620px;
             margin: 0 auto 2rem;
         }
+
         .hero-meta {
             display: flex;
             gap: clamp(1rem, 2vw, 2rem);
             justify-content: center;
             flex-wrap: wrap;
         }
+
         .hero-meta-item {
             font-family: 'DM Sans', sans-serif;
             font-size: 0.8rem;
@@ -119,6 +135,7 @@
             padding: clamp(1.5rem, 2vw, 2.5rem) clamp(1rem, 3vw, 2rem);
             border-bottom: 1px solid #e0e0e0;
         }
+
         .toc-inner {
             max-width: 900px;
             margin: 0 auto;
@@ -127,6 +144,7 @@
             gap: 1.5rem;
             flex-wrap: wrap;
         }
+
         .toc-label {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
@@ -137,11 +155,13 @@
             padding-top: 0.6rem;
             white-space: nowrap;
         }
+
         .toc-links {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
         }
+
         .toc-links a {
             font-family: 'DM Sans', sans-serif;
             font-size: 0.9rem;
@@ -156,6 +176,7 @@
             align-items: center;
             transition: background 0.2s, color 0.2s;
         }
+
         .toc-links a:hover {
             background: #2B2B2B;
             color: #ffffff;
@@ -167,11 +188,15 @@
             margin: 0 auto;
             padding: 0 clamp(1rem, 4vw, 2rem);
         }
+
         .guide-section {
             padding: clamp(3rem, 5vw, 5rem) 0;
             border-bottom: 1px solid #e8e8e8;
         }
-        .guide-section:last-of-type { border-bottom: none; }
+
+        .guide-section:last-of-type {
+            border-bottom: none;
+        }
 
         .section-number {
             font-family: 'DM Sans', sans-serif;
@@ -183,6 +208,7 @@
             display: block;
             margin-bottom: 0.5rem;
         }
+
         .guide-section h2 {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
@@ -194,6 +220,7 @@
             border-bottom: 3px solid #000000;
             display: inline-block;
         }
+
         .guide-intro {
             font-size: clamp(1rem, 0.95rem + 0.3vw, 1.15rem);
             line-height: 1.8;
@@ -208,6 +235,7 @@
             flex-direction: column;
             gap: 1.25rem;
         }
+
         .event-item {
             display: grid;
             grid-template-columns: 110px 1fr;
@@ -221,20 +249,38 @@
             transform: translateY(20px);
             transition: border-color 0.25s, box-shadow 0.25s;
         }
+
         .event-item.visible {
             opacity: 1;
             transform: translateY(0);
             transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s;
         }
-        .event-item:nth-child(2).visible { transition-delay: 0.06s; }
-        .event-item:nth-child(3).visible { transition-delay: 0.12s; }
-        .event-item:nth-child(4).visible { transition-delay: 0.18s; }
-        .event-item:nth-child(5).visible { transition-delay: 0.24s; }
-        .event-item:nth-child(6).visible { transition-delay: 0.30s; }
+
+        .event-item:nth-child(2).visible {
+            transition-delay: 0.06s;
+        }
+
+        .event-item:nth-child(3).visible {
+            transition-delay: 0.12s;
+        }
+
+        .event-item:nth-child(4).visible {
+            transition-delay: 0.18s;
+        }
+
+        .event-item:nth-child(5).visible {
+            transition-delay: 0.24s;
+        }
+
+        .event-item:nth-child(6).visible {
+            transition-delay: 0.30s;
+        }
+
         .event-item:hover {
             border-color: #000000;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
         }
+
         .event-month {
             font-family: 'DM Sans', sans-serif;
             font-size: 0.7rem;
@@ -251,6 +297,7 @@
             text-align: center;
             line-height: 1.3;
         }
+
         .event-image {
             display: block;
             width: 100%;
@@ -259,6 +306,7 @@
             border-radius: 8px;
             margin-bottom: 0.75rem;
         }
+
         .event-content h3 {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
@@ -266,6 +314,7 @@
             color: #000000;
             margin: 0 0 0.25rem 0;
         }
+
         .event-dates {
             font-family: 'DM Sans', sans-serif;
             font-size: 0.85rem;
@@ -273,6 +322,7 @@
             color: var(--golden-hour, #c89b3c);
             margin-bottom: 0.5rem;
         }
+
         .event-best {
             font-size: 0.8rem;
             text-transform: uppercase;
@@ -281,6 +331,7 @@
             margin-bottom: 0.6rem;
             font-weight: 600;
         }
+
         .event-content p {
             font-size: 0.95rem;
             color: #555555;
@@ -295,6 +346,7 @@
             grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
             gap: 1.25rem;
         }
+
         .pick-card {
             background: #ffffff;
             border: 1.5px solid #e8e8e8;
@@ -303,15 +355,29 @@
             opacity: 0;
             transform: translateY(20px);
         }
+
         .pick-card.visible {
             opacity: 1;
             transform: translateY(0);
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
-        .pick-card:nth-child(2).visible { transition-delay: 0.08s; }
-        .pick-card:nth-child(3).visible { transition-delay: 0.16s; }
-        .pick-card:nth-child(4).visible { transition-delay: 0.24s; }
-        .pick-card:nth-child(5).visible { transition-delay: 0.32s; }
+
+        .pick-card:nth-child(2).visible {
+            transition-delay: 0.08s;
+        }
+
+        .pick-card:nth-child(3).visible {
+            transition-delay: 0.16s;
+        }
+
+        .pick-card:nth-child(4).visible {
+            transition-delay: 0.24s;
+        }
+
+        .pick-card:nth-child(5).visible {
+            transition-delay: 0.32s;
+        }
+
         .pick-card h3 {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
@@ -319,6 +385,7 @@
             color: #000000;
             margin: 0 0 0.5rem 0;
         }
+
         .pick-card p {
             font-size: 0.9rem;
             color: #555555;
@@ -339,7 +406,10 @@
             color: #444;
             line-height: 1.65;
         }
-        .tip-icon { font-size: 1.5rem; }
+
+        .tip-icon {
+            font-size: 1.5rem;
+        }
 
         /* ── CTA ── */
         .guide-cta {
@@ -348,11 +418,13 @@
             padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem);
             text-align: center;
         }
+
         .guide-cta h2 {
             font-family: 'DM Sans', sans-serif;
             font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
             margin: 0 0 1rem 0;
         }
+
         .guide-cta p {
             color: rgba(255, 255, 255, 0.75);
             max-width: 560px;
@@ -360,6 +432,7 @@
             font-size: 1.05rem;
             line-height: 1.7;
         }
+
         .guide-cta-buttons {
             display: flex;
             gap: 1rem;
@@ -368,12 +441,16 @@
         }
 
         @media (min-width: 768px) {
-            .toc-inner { gap: 2rem; }
+            .toc-inner {
+                gap: 2rem;
+            }
         }
+
         @media (max-width: 600px) {
             .event-item {
                 grid-template-columns: 1fr;
             }
+
             .event-month {
                 writing-mode: horizontal-tb;
                 padding: 0.6rem 1rem;
@@ -386,8 +463,9 @@
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-    <header class="site-header" role="banner">
+        <header class="site-header" role="banner">
         <div class="header-inner">
+
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
                 <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
@@ -401,8 +479,8 @@
                 <a href="../events/top-events.html">Events</a>
                 <a href="../season/seasonal.html">Seasons</a>
                 <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
-                <a href="../resources.html">Resources</a>
-                <a href="../contact.html">Contact</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resource/contact.html">Contact</a>
             </nav>
             <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -414,15 +492,14 @@
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../explore/where-to-visit.html">Visit</a>
+
         <a href="../events/top-events.html">Events</a>
         <a href="../season/seasonal.html">Seasons</a>
         <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
-        <a href="../resources.html">Resources</a>
         <a href="../contact.html">Contact</a>
     </div>
-
-    <main id="main-content" role="main">
+<main id="main-content" role="main">
 
         <!-- HERO -->
         <section class="hero" aria-label="Page hero">
@@ -430,8 +507,9 @@
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <p class="hero-eyebrow">2026 Event Calendar</p>
-                <h1 class="hero-title">The Top <em>Events in Cloudcroft</em></h1>
-                <p class="hero-subtitle">A visitor's month-by-month guide to the festivals, race weekends, and holiday events that shape the year.</p>
+                <h1 class="hero-title">The Top Events in Cloudcroft</h1>
+                <p class="hero-subtitle">A visitor's month-by-month guide to the festivals, race weekends, and holiday
+                    events that shape the year.</p>
                 <div class="hero-meta">
                     <span class="hero-meta-item">▲ 8,676 ft</span>
                     <span class="hero-meta-item">★ 11 marquee weekends</span>
@@ -458,7 +536,9 @@
             <section class="guide-section" id="calendar" aria-labelledby="h-calendar">
                 <span class="section-number">01 — The Calendar</span>
                 <h2 id="h-calendar">Cloudcroft 2026, Month by Month</h2>
-                <p class="guide-intro">From the first spring art weekend in May to the marquee Christmas Village block in December, these are the events worth planning a Cloudcroft trip around in 2026. Sourced from the Chamber calendar; race dates verified against live registration pages.</p>
+                <p class="guide-intro">From the first spring art weekend in May to the marquee Christmas Village block
+                    in December, these are the events worth planning a Cloudcroft trip around in 2026. Sourced from the
+                    Chamber calendar; race dates verified against live registration pages.</p>
 
                 <div class="event-list">
 
@@ -468,7 +548,9 @@
                             <h3>Mayfair Juried Artshow</h3>
                             <p class="event-dates">May 23–24, 2026</p>
                             <p class="event-best">Best for: art buyers · couples · weekend visitors</p>
-                            <p>The first strong spring event on the 2026 Chamber calendar — a good reason to come up before the heavier summer crowds. Pair it with Burro Avenue shopping and a slow lunch in town.</p>
+                            <p>The first strong spring event on the 2026 Chamber calendar — a good reason to come up
+                                before the heavier summer crowds. Pair it with Burro Avenue shopping and a slow lunch in
+                                town.</p>
                         </div>
                     </article>
 
@@ -478,7 +560,8 @@
                             <h3>BeerFest</h3>
                             <p class="event-dates">June 13–14, 2026</p>
                             <p class="event-best">Best for: adults · groups · summer-weekend visitors</p>
-                            <p>One of the bigger early-summer social weekends. Cloudcroft at its more festive and crowded — expect a stronger weekend-town atmosphere than on a quiet weekday.</p>
+                            <p>One of the bigger early-summer social weekends. Cloudcroft at its more festive and
+                                crowded — expect a stronger weekend-town atmosphere than on a quiet weekday.</p>
                         </div>
                     </article>
 
@@ -488,7 +571,9 @@
                             <h3>Trails &amp; Rails</h3>
                             <p class="event-dates">June 13, 2026</p>
                             <p class="event-best">Best for: runners · active visitors · race-weekend travelers</p>
-                            <p>A strong reason to plan an outdoor weekend around the trestle area and Cloudcroft trail culture. It adds real event energy without requiring a full ultra-distance commitment.</p>
+                            <p>A strong reason to plan an outdoor weekend around the trestle area and Cloudcroft trail
+                                culture. It adds real event energy without requiring a full ultra-distance commitment.
+                            </p>
                         </div>
                     </article>
 
@@ -497,8 +582,11 @@
                         <div class="event-content">
                             <h3>Christmas in July</h3>
                             <p class="event-dates">July 11–12, 2026</p>
-                            <p class="event-best">Best for: families · first-time visitors · classic Cloudcroft summer</p>
-                            <p>One of the most recognizable Cloudcroft weekends. It leans into the town's cool-weather identity and works for visitors who want a broad "mountain town in summer" experience rather than one niche activity.</p>
+                            <p class="event-best">Best for: families · first-time visitors · classic Cloudcroft summer
+                            </p>
+                            <p>One of the most recognizable Cloudcroft weekends. It leans into the town's cool-weather
+                                identity and works for visitors who want a broad "mountain town in summer" experience
+                                rather than one niche activity.</p>
                         </div>
                     </article>
 
@@ -508,7 +596,8 @@
                             <h3>Art and Wine in the Cool Pines</h3>
                             <p class="event-dates">August 7–9, 2026</p>
                             <p class="event-best">Best for: adults · art shoppers · couples · repeat visitors</p>
-                            <p>One of the strongest event weekends if you want Cloudcroft at its more polished and browse-friendly. It pairs naturally with galleries, shops, and slower in-town time.</p>
+                            <p>One of the strongest event weekends if you want Cloudcroft at its more polished and
+                                browse-friendly. It pairs naturally with galleries, shops, and slower in-town time.</p>
                         </div>
                     </article>
 
@@ -518,7 +607,8 @@
                             <h3>Cloudcroft Ultra</h3>
                             <p class="event-dates">August 15, 2026</p>
                             <p class="event-best">Best for: trail runners · race crews · strong outdoor travelers</p>
-                            <p>One of the most serious athletic events on the calendar. Even if you're not racing, it's a good weekend for people who like trail-running culture and an active town feel.</p>
+                            <p>One of the most serious athletic events on the calendar. Even if you're not racing, it's
+                                a good weekend for people who like trail-running culture and an active town feel.</p>
                         </div>
                     </article>
 
@@ -527,8 +617,11 @@
                         <div class="event-content">
                             <h3>Labor Day Hoopla</h3>
                             <p class="event-dates">September 5–6, 2026</p>
-                            <p class="event-best">Best for: holiday-weekend visitors · families · easy festival weekends</p>
-                            <p>One of the most practical event weekends because Labor Day already gives many people time to travel. Expect more town activity and less quiet than on a normal September weekend.</p>
+                            <p class="event-best">Best for: holiday-weekend visitors · families · easy festival weekends
+                            </p>
+                            <p>One of the most practical event weekends because Labor Day already gives many people time
+                                to travel. Expect more town activity and less quiet than on a normal September weekend.
+                            </p>
                         </div>
                     </article>
 
@@ -537,8 +630,11 @@
                         <div class="event-content">
                             <h3>Cactus to Cloud Sky Race</h3>
                             <p class="event-dates">October 17, 2026</p>
-                            <p class="event-best">Best for: serious runners · ambitious outdoor visitors · shoulder season</p>
-                            <p>The strongest October event we could verify. More specialized than the broad Chamber festival weekends, but a real draw if you like high-effort race events and cooler fall conditions.</p>
+                            <p class="event-best">Best for: serious runners · ambitious outdoor visitors · shoulder
+                                season</p>
+                            <p>The strongest October event we could verify. More specialized than the broad Chamber
+                                festival weekends, but a real draw if you like high-effort race events and cooler fall
+                                conditions.</p>
                         </div>
                     </article>
 
@@ -548,7 +644,8 @@
                             <h3>Christmas Market</h3>
                             <p class="event-dates">November 27–28, 2026</p>
                             <p class="event-best">Best for: holiday shoppers · families · early Christmas atmosphere</p>
-                            <p>The cleanest late-November event on the Chamber calendar. A good fit if you want Cloudcroft leaning into holiday mode without waiting for mid-December.</p>
+                            <p>The cleanest late-November event on the Chamber calendar. A good fit if you want
+                                Cloudcroft leaning into holiday mode without waiting for mid-December.</p>
                         </div>
                     </article>
 
@@ -558,7 +655,9 @@
                             <h3>Mountain Christmas Village</h3>
                             <p class="event-dates">December 11–19, 2026</p>
                             <p class="event-best">Best for: families · holiday travelers · peak seasonal atmosphere</p>
-                            <p>The marquee Christmas-period event block. If you want the strongest holiday feel in Cloudcroft, this is the one to plan around. Also one of the better reasons to book lodging early.</p>
+                            <p>The marquee Christmas-period event block. If you want the strongest holiday feel in
+                                Cloudcroft, this is the one to plan around. Also one of the better reasons to book
+                                lodging early.</p>
                         </div>
                     </article>
 
@@ -569,28 +668,34 @@
             <section class="guide-section" id="picks" aria-labelledby="h-picks">
                 <span class="section-number">02 — Editor's Picks</span>
                 <h2 id="h-picks">Best Event Weekends by Visitor Type</h2>
-                <p class="guide-intro">Not every weekend works for every traveler. These are the matches we'd start with based on who's coming and what kind of trip they want.</p>
+                <p class="guide-intro">Not every weekend works for every traveler. These are the matches we'd start with
+                    based on who's coming and what kind of trip they want.</p>
 
                 <div class="picks-grid">
                     <div class="pick-card">
                         <h3>First-Time Visitors</h3>
-                        <p><strong>Christmas in July, Labor Day Hoopla, Mountain Christmas Village.</strong> Broadest Cloudcroft feel and the lowest barrier to entry.</p>
+                        <p><strong>Christmas in July, Labor Day Hoopla, Mountain Christmas Village.</strong> Broadest
+                            Cloudcroft feel and the lowest barrier to entry.</p>
                     </div>
                     <div class="pick-card">
                         <h3>Couples</h3>
-                        <p><strong>Art and Wine in the Cool Pines, Mayfair Juried Artshow, Christmas Market.</strong> Slower shopping, strolling, and dinner-centered weekends.</p>
+                        <p><strong>Art and Wine in the Cool Pines, Mayfair Juried Artshow, Christmas Market.</strong>
+                            Slower shopping, strolling, and dinner-centered weekends.</p>
                     </div>
                     <div class="pick-card">
                         <h3>Families</h3>
-                        <p><strong>Christmas in July, Labor Day Hoopla, Mountain Christmas Village.</strong> The safest "there will be enough going on" answers.</p>
+                        <p><strong>Christmas in July, Labor Day Hoopla, Mountain Christmas Village.</strong> The safest
+                            "there will be enough going on" answers.</p>
                     </div>
                     <div class="pick-card">
                         <h3>Runners</h3>
-                        <p><strong>Trails &amp; Rails, Cloudcroft Ultra, Cactus to Cloud Sky Race.</strong> The clearest race-centered reasons to plan a trip.</p>
+                        <p><strong>Trails &amp; Rails, Cloudcroft Ultra, Cactus to Cloud Sky Race.</strong> The clearest
+                            race-centered reasons to plan a trip.</p>
                     </div>
                     <div class="pick-card">
                         <h3>Town Lively, Not Niche</h3>
-                        <p><strong>Christmas in July and Labor Day Hoopla.</strong> Festive town atmosphere without one specific crowd dominating the weekend.</p>
+                        <p><strong>Christmas in July and Labor Day Hoopla.</strong> Festive town atmosphere without one
+                            specific crowd dominating the weekend.</p>
                     </div>
                 </div>
             </section>
@@ -599,7 +704,8 @@
             <section class="guide-section" id="planning" aria-labelledby="h-planning">
                 <span class="section-number">03 — Before You Go</span>
                 <h2 id="h-planning">Practical Planning Notes</h2>
-                <p class="guide-intro">Event details can still shift, so it's smart to recheck dates, times, and ticket/registration requirements.</p>
+                <p class="guide-intro">Event details can still shift, so it's smart to recheck dates, times, and
+                    ticket/registration requirements.</p>
 
             </section>
 
@@ -608,10 +714,13 @@
         <!-- CTA -->
         <section class="guide-cta" aria-labelledby="h-cta">
             <h2 id="h-cta">Plan Your Event Weekend</h2>
-            <p>Pick a weekend that fits your trip and book early — the marquee weekends (Christmas in July, Labor Day, Mountain Christmas Village) sell out lodging first.</p>
+            <p>Pick a weekend that fits your trip and book early — the marquee weekends (Christmas in July, Labor Day,
+                Mountain Christmas Village) sell out lodging first.</p>
             <div class="guide-cta-buttons">
-                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html" class="btn-primary">Find Lodging</a>
-                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html" class="btn-secondary">Complete Cloudcroft Guide</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html" class="btn-primary">Find
+                    Lodging</a>
+                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html" class="btn-secondary">Complete Cloudcroft
+                    Guide</a>
             </div>
         </section>
 
@@ -641,4 +750,5 @@
         })();
     </script>
 </body>
+
 </html>

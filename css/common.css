@@ -982,7 +982,7 @@ img {
   text-decoration: none;
   background: #FFFFFF90;
   color: var(--pine);
-  border: 2px solid var(--pine);
+  border: 2px solid #fbfbfb;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s, color 0.3s;
   min-height: 44px;
   cursor: pointer;

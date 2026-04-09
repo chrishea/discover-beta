@@ -1,355 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan Your Trip | DiscoverCloudcroft.com — Getting Here, Weather, Packing & Local Tips</title>
-    <meta name="description" content="Plan your trip to Cloudcroft, New Mexico. Drive times, weather info, packing tips, emergency contacts, and local advice for your mountain getaway at 8,676 feet.">
-    <meta name="keywords" content="Cloudcroft trip planning, Cloudcroft directions, Cloudcroft weather, visiting Cloudcroft NM, Sacramento Mountains vacation">
-    <link rel="canonical" href="https://discovercloudcroft.com/plan.html">
-
-    <meta property="og:title" content="Plan Your Cloudcroft Escape">
-    <meta property="og:description" content="Everything you need to plan your visit to Cloudcroft, NM — directions, weather, packing tips, and local advice.">
-    <meta property="og:image" content="https://discovercloudcroft.com/media/Index-2.webp">
-    <meta property="og:url" content="https://discovercloudcroft.com/plan.html">
-    <meta property="og:type" content="website">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Plan Your Cloudcroft Escape">
-    <meta name="twitter:description" content="Everything you need for your mountain getaway at 8,676 feet.">
-    <meta name="twitter:image" content="https://discovercloudcroft.com/media/Index-2.webp">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "name": "Plan Your Trip to Cloudcroft, NM",
-      "description": "Drive times, weather info, packing tips, and local advice for visiting Cloudcroft, New Mexico.",
-      "about": {
-            "@type": "City",
-            "name": "Cloudcroft",
-            "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": "Cloudcroft",
-                  "addressRegion": "NM",
-                  "postalCode": "88317",
-                  "addressCountry": "US"
-            }
-      },
-      "url": "https://discovercloudcroft.com/plan.html"
-}
-    </script>
-<link href="css/fonts.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/common.css">
-    <style>
-.hero {
-height: 60vh;
-min-height: 400px;
-}
-.hero-bg {
-background-image: url('media/Index-2.webp');
-background-size: cover;
-background-position: center;
-animation: kenBurns 20s ease-in-out infinite alternate;
-}
-.hero-overlay {
-background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
-}
-.hero-title {
-opacity: 0;
-animation: fadeUp 0.8s ease 0.2s forwards;
-}
-
-.plan-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 2rem;
-margin-top: 3rem;
-}
-.plan-card {
-background: var(--snow-cap);
-border-radius: 12px;
-padding: 2.25rem 2rem;
-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-border: 1px solid rgba(0, 0, 0, 0.06);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-opacity: 0;
-transform: translateY(40px);
-position: relative;
-}
-.plan-card.visible {
-opacity: 1;
-transform: translateY(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.plan-card:nth-child(2).visible { transition-delay: 0.1s; }
-.plan-card:nth-child(3).visible { transition-delay: 0.2s; }
-.plan-card:nth-child(4).visible { transition-delay: 0.1s; }
-.plan-card:nth-child(5).visible { transition-delay: 0.2s; }
-.plan-card:nth-child(6).visible { transition-delay: 0.3s; }
-.plan-card:hover {
-transform: translateY(-6px);
-box-shadow: 0 12px 32px rgba(0,0,0,0.15);
-}
-.card-number {
-position: absolute;
-top: -0.65rem;
-left: -0.65rem;
-width: 2rem;
-height: 2rem;
-border-radius: 50%;
-background: var(--golden-hour);
-color: var(--midnight);
-font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
-font-weight: 700;
-font-size: 0.85rem;
-display: flex;
-align-items: center;
-justify-content: center;
-box-shadow: 0 2px 8px rgba(200,148,62,0.3);
-z-index: 2;
-}
-.plan-card--emergency {
-border-left: 4px solid var(--ember);
-}
-.plan-card .card-icon {
-font-size: 2.2rem;
-margin-bottom: 1rem;
-display: block;
-}
-.plan-card h3 {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 1.25rem;
-color: var(--midnight);
-margin-bottom: 0.75rem;
-}
-.plan-card p {
-font-size: 0.95rem;
-color: var(--granite);
-line-height: 1.7;
-margin-bottom: 0.75rem;
-}
-.plan-card p:last-child {
-margin-bottom: 0;
-}
-.plan-card a {
-color: var(--alpine);
-text-decoration: none;
-font-weight: 500;
-transition: color 0.3s;
-}
-.plan-card a:hover {
-color: var(--golden-hour);
-}
-.drive-list {
-list-style: none;
-padding: 0;
-margin: 0.75rem 0;
-}
-.drive-list li {
-font-size: 0.92rem;
-color: var(--granite);
-padding: 0.5rem 0 0.5rem 1.5rem;
-border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-position: relative;
-}
-.drive-list li::before {
-content: '';
-position: absolute;
-left: 0.25rem;
-top: 0;
-bottom: 0;
-width: 2px;
-background: linear-gradient(to bottom, var(--golden-hour), rgba(200,148,62,0.2));
-}
-.drive-list li::after {
-content: '';
-position: absolute;
-left: 0;
-top: 50%;
-transform: translateY(-50%);
-width: 8px;
-height: 8px;
-border-radius: 50%;
-background: var(--golden-hour);
-}
-.drive-list li:last-child {
-border-bottom: none;
-}
-.drive-list a {
-color: var(--alpine);
-text-decoration: none;
-font-weight: 500;
-transition: color 0.3s;
-}
-.drive-list a:hover {
-color: var(--golden-hour);
-}
-.weather-grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 0.5rem;
-margin: 0.75rem 0;
-}
-.weather-item {
-background: var(--cloud-drift);
-border-radius: 8px;
-padding: 0.5rem 0.75rem;
-text-align: center;
-}
-.weather-item .season-name {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 0.75rem;
-text-transform: uppercase;
-letter-spacing: 1px;
-color: var(--alpine);
-display: block;
-}
-.weather-item .season-temp {
-font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
-font-weight: 700;
-font-size: 0.85rem;
-color: var(--midnight);
-}
-.tip-list {
-list-style: none;
-padding: 0;
-margin: 0;
-}
-.tip-list li {
-font-size: 0.92rem;
-color: var(--granite);
-padding: 0.5rem 0;
-padding-left: 1.5rem;
-position: relative;
-line-height: 1.6;
-}
-.tip-list li::before {
-content: '\2022';
-color: var(--golden-hour);
-font-weight: 700;
-position: absolute;
-left: 0;
-}
-.nearby-section {
-background: var(--cloud-drift);
-}
-.nearby-wrapper {
-position: relative;
-}
-.nearby-wrapper::before,
-.nearby-wrapper::after {
-content: '';
-position: absolute;
-top: 0;
-bottom: 1rem;
-width: 60px;
-z-index: 2;
-pointer-events: none;
-}
-.nearby-wrapper::before {
-left: 0;
-background: linear-gradient(to right, var(--cloud-drift), transparent);
-}
-.nearby-wrapper::after {
-right: 0;
-background: linear-gradient(to left, var(--cloud-drift), transparent);
-}
-.nearby-scroll {
-display: flex;
-gap: 24px;
-overflow-x: auto;
-padding-bottom: 1rem;
-margin-top: 2rem;
-scroll-snap-type: x mandatory;
--webkit-overflow-scrolling: touch;
-}
-.nearby-scroll::-webkit-scrollbar {
-height: 6px;
-}
-.nearby-scroll::-webkit-scrollbar-track {
-background: rgba(0, 0, 0, 0.05);
-border-radius: 3px;
-}
-.nearby-scroll::-webkit-scrollbar-thumb {
-background: var(--alpine);
-border-radius: 3px;
-}
-.nearby-card {
-flex: 0 0 280px;
-background: var(--snow-cap);
-border-radius: 12px;
-padding: 2rem;
-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-scroll-snap-align: start;
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nearby-card:hover {
-transform: translateY(-4px);
-box-shadow: 0 12px 32px rgba(0,0,0,0.15);
-}
-.nearby-card h3 {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 1.15rem;
-color: var(--midnight);
-margin-bottom: 0.5rem;
-}
-.nearby-card .distance {
-font-family: 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
-font-weight: 700;
-font-size: 0.8rem;
-color: var(--golden-hour);
-text-transform: uppercase;
-letter-spacing: 1px;
-margin-bottom: 0.75rem;
-display: block;
-}
-.nearby-card a {
-font-family: 'DM Sans', sans-serif;
-font-weight: 700;
-font-size: 0.85rem;
-color: var(--alpine);
-text-decoration: none;
-text-transform: uppercase;
-letter-spacing: 1px;
-transition: color 0.3s;
-}
-.nearby-card a:hover {
-color: var(--golden-hour);
-}
-
-@media (max-width: 1024px) {
-.plan-grid {
-grid-template-columns: repeat(2, 1fr);
-}
-}
-@media (max-width: 768px) {
-.plan-grid {
-grid-template-columns: 1fr;
-gap: 16px;
-}
-.nearby-scroll {
-gap: 16px;
-}
-}
-@media (max-width: 375px) {
-.weather-grid {
-grid-template-columns: 1fr;
-}
-.nearby-card {
-flex: 0 0 240px;
-}
-}</style>
-    <link rel="preload" as="image" href="media/Index-2.webp">
-</head>
-<body>
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Plan Your Escape | DiscoverCloudcroft.com</title>
+<meta name="description" content="Everything you need to make the most of your mountain getaway.">
+<link rel="canonical" href="https://discovercloudcroft.com/plan.html">
+<meta property="og:title" content="Plan Your Escape">
+<meta property="og:description" content="Everything you need to make the most of your mountain getaway.">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--midnight:#1a1a1a;--golden-hour:#c9a74e;--granite:#555;--cloud-drift:#f5f2ec;--snow-cap:#fff;--alpine:#2e6b8a;--charcoal:#2b2b2b;--cream-dark:#e8e2d2;--ember:#c65d3a;--twilight:#3a4a6b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter','Helvetica Neue',sans-serif;color:var(--midnight);line-height:1.7;background:#fff}
+a{color:var(--alpine);text-decoration:none}a:hover{text-decoration:underline}
+.skip-to-content{position:absolute;left:-9999px}
+.site-header{background:#fff;border-bottom:1px solid #eee;padding:1rem 2rem;position:sticky;top:0;z-index:50}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.header-nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+.header-nav a{font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;color:var(--midnight);text-transform:uppercase;letter-spacing:.05em}
+.logo{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;display:flex;gap:.25rem;align-items:baseline}
+.logo-cloudcroft{color:var(--golden-hour)}
+.logo-beta{font-size:.6rem;background:var(--golden-hour);color:#fff;padding:.1rem .4rem;border-radius:4px;text-transform:uppercase}
+.hero{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;padding:6rem 2rem}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#2b2b2b 0%,#3a4a6b 50%,#1a1a1a 100%)}
+.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.35)}
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-badge{display:inline-block;background:var(--golden-hour);color:#fff;padding:.4rem 1rem;border-radius:20px;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.5rem}
+.hero-title{font-family:'DM Sans',sans-serif;font-weight:700;font-size:clamp(2.2rem,5vw,3.75rem);line-height:1.1;margin-bottom:1.25rem}
+.hero-subtitle{font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.9);max-width:640px;margin:0 auto 2rem}
+.hero-ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-primary,.btn-secondary{font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.9rem 1.8rem;border-radius:6px;transition:all .25s;display:inline-block}
+.btn-primary{background:var(--golden-hour);color:#fff}
+.btn-primary:hover{background:#b3923e;text-decoration:none}
+.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
+.btn-secondary:hover{background:#fff;color:var(--midnight);text-decoration:none}
+.info-bar{background:var(--cream-dark);padding:1.25rem 2rem;border-bottom:1px solid #d8cfb8}
+.info-bar-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem}
+.info-bar-item{display:flex;align-items:center;gap:.6rem;font-family:'DM Sans',sans-serif;font-size:.85rem;color:var(--charcoal)}
+.info-bar-icon{font-size:1.25rem}
+.section{padding:4.5rem 2rem}
+.section:nth-of-type(even){background:var(--cloud-drift)}
+.section-container{max-width:900px;margin:0 auto}
+.section-label{display:block;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--golden-hour);margin-bottom:.75rem}
+.section-title{font-family:'DM Sans',sans-serif;font-weight:700;font-size:clamp(1.75rem,3vw,2.5rem);color:var(--midnight);line-height:1.2;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:3px solid var(--golden-hour);display:inline-block}
+.section-body{font-size:1.05rem;color:#333}
+.section-body p{margin-bottom:1.25rem}
+.section-body ul,.section-body ol{margin:0 0 1.25rem 1.5rem}
+.section-body li{margin-bottom:.5rem}
+.section-body h2{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.75rem;margin:2.5rem 0 1rem;color:var(--midnight);padding-bottom:.5rem;border-bottom:2px solid var(--cream-dark)}
+.section-body h3{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.35rem;margin:2rem 0 .75rem;color:var(--midnight)}
+.section-body h4{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;margin:1.5rem 0 .5rem;color:var(--charcoal)}
+.section-body img{max-width:100%;height:auto;border-radius:12px;margin:1.5rem 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.section-body blockquote{border-left:4px solid var(--golden-hour);padding:.5rem 0 .5rem 1.5rem;margin:1.5rem 0;color:var(--granite);font-style:italic}
+.section-body table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+.section-body th,.section-body td{padding:.75rem;border-bottom:1px solid #e5e0d0;text-align:left}
+.section-body th{background:var(--cream-dark);font-family:'DM Sans',sans-serif}
+.section-body code{background:#f0ebe0;padding:.15rem .4rem;border-radius:4px;font-size:.9em}
+.cta-section{background:#2b2b2b;color:#fff;padding:5rem 2rem;text-align:center}
+.cta-container{max-width:700px;margin:0 auto}
+.cta-section h2{font-family:'DM Sans',sans-serif;font-size:2rem;margin-bottom:1rem;color:var(--golden-hour)}
+.cta-section p{color:rgba(255,255,255,.8);margin-bottom:2rem}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+footer.site-footer{background:#1a1a1a;color:rgba(255,255,255,.7);padding:3rem 2rem 1.5rem;text-align:center;font-size:.85rem}
+footer.site-footer a{color:var(--golden-hour)}
+.footer-bottom{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #333;color:rgba(255,255,255,.5)}
+@media(max-width:768px){.header-nav a{font-size:.75rem}.section{padding:3rem 1.25rem}.hero{padding:4rem 1.25rem;min-height:50vh}}
+</style></head><body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
     <header class="site-header" role="banner">
         <div class="header-inner">
 
@@ -362,12 +79,12 @@ flex: 0 0 240px;
                 <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
                 <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
                 <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="../explore/where-to-visit.html">Visit</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
                 <a href="../events/top-events.html">Events</a>
                 <a href="../season/seasonal.html">Seasons</a>
                 <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
-                <a href="../resources.html">Resources</a>
-                <a href="../contact.html">Contact</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resource/contact.html">Contact</a>
             </nav>
             <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -386,279 +103,105 @@ flex: 0 0 240px;
         <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../contact.html">Contact</a>
     </div>
-
-    <section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Scenic mountain view near Cloudcroft"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Plan Your Escape</h1>
-            <p class="hero-subtitle">Everything you need to make the most of your mountain getaway.</p>
-        </div>
-    </section>
-
-    <main id="main-content" role="main">
-
-        <section class="section" aria-label="Trip planning information">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Trip Essentials</span>
-                    <h2 class="section-title section-title-centered">Everything You Need to Know</h2>
-                </div>
-
-                <div class="plan-grid">
-
-                    <div class="plan-card">
-                        <span class="card-number" aria-hidden="true">1</span>
-                        <span class="card-icon" aria-hidden="true">&#128663;</span>
-                        <h3>Getting Here</h3>
-                        <p>Cloudcroft is nestled in the Sacramento Mountains of southern New Mexico.</p>
-                        <ul class="drive-list">
-                            <li><a href="https://www.google.com/maps/dir/El+Paso+TX/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">From El Paso, TX</a> &mdash; ~2 hours (130 mi)</li>
-                            <li><a href="https://www.google.com/maps/dir/Las+Cruces+NM/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">From Las Cruces, NM</a> &mdash; ~1.5 hours (85 mi)</li>
-                            <li><a href="https://www.google.com/maps/dir/Albuquerque+NM/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">From Albuquerque, NM</a> &mdash; ~3.5 hours (215 mi)</li>
-                            <li><a href="https://www.google.com/maps/dir/Alamogordo+NM/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">From Alamogordo, NM</a> &mdash; ~30 min (20 mi)</li>
-                        </ul>
-                        <p>Take US-82 East from Alamogordo &mdash; a stunning mountain drive climbing 4,000 feet in 16 miles.</p>
-                    </div>
-
-                    <div class="plan-card">
-                        <span class="card-number" aria-hidden="true">2</span>
-                        <span class="card-icon" aria-hidden="true">&#127780;</span>
-                        <h3>Weather &amp; When to Visit</h3>
-                        <p>Cloudcroft averages 200+ days of sunshine with four distinct seasons.</p>
-                        <div class="weather-grid">
-                            <div class="weather-item">
-                                <span class="season-name">Spring</span>
-                                <span class="season-temp">55&ndash;70&deg;F</span>
-                            </div>
-                            <div class="weather-item">
-                                <span class="season-name">Summer</span>
-                                <span class="season-temp">70&ndash;82&deg;F</span>
-                            </div>
-                            <div class="weather-item">
-                                <span class="season-name">Fall</span>
-                                <span class="season-temp">55&ndash;68&deg;F</span>
-                            </div>
-                            <div class="weather-item">
-                                <span class="season-name">Winter</span>
-                                <span class="season-temp">38&ndash;50&deg;F</span>
-                            </div>
-                        </div>
-                        <p><a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Current Conditions</a></p>
-                        <p>Summer highs rarely exceed 82&deg;F &mdash; a cool escape when the desert hits 100&deg;+.</p>
-                    </div>
-
-                    <div class="plan-card">
-                        <span class="card-number" aria-hidden="true">3</span>
-                        <span class="card-icon" aria-hidden="true">&#127890;</span>
-                        <h3>What to Pack</h3>
-                        <p>Altitude essentials: sunscreen (UV is stronger up here), layers (temps drop 20&deg; at sunset), sturdy shoes, and water.</p>
-                        <ul class="tip-list">
-                            <li><strong>Summer:</strong> Rain jacket for afternoon storms</li>
-                            <li><strong>Winter:</strong> Warm layers + snow gear</li>
-                            <li><strong>All seasons:</strong> Sunglasses</li>
-                        </ul>
-                    </div>
-
-                    <div class="plan-card">
-                        <span class="card-number" aria-hidden="true">4</span>
-                        <span class="card-icon" aria-hidden="true">&#128722;</span>
-                        <h3>Groceries &amp; Supplies</h3>
-                        <p>Stock up before you arrive or find essentials in the village.</p>
-                        <p>Cloudcroft has limited grocery options &mdash; consider stopping in Alamogordo for a full grocery run.</p>
-                        <p><a href="https://www.google.com/maps/search/grocery+Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Local Markets</a></p>
-                        <p><a href="https://www.google.com/maps/search/Walmart+Alamogordo+NM" target="_blank" rel="noopener noreferrer">Alamogordo Walmart</a></p>
-                    </div>
-
-                    <div class="plan-card plan-card--emergency">
-                        <span class="card-number" aria-hidden="true">5</span>
-                        <span class="card-icon" aria-hidden="true">&#128680;</span>
-                        <h3>Emergency Info</h3>
-                        <p><strong>Emergency: 911</strong></p>
-                        <p>Otero County Sheriff: <a href="tel:+15754372210">(575) 437-2210</a></p>
-                        <p>Gerald Champion Hospital (Alamogordo): <a href="tel:+15754396100">(575) 439-6100</a></p>
-                        <p>Nearest hospital is 30 min downhill in Alamogordo.</p>
-                    </div>
-
-                    <div class="plan-card">
-                        <span class="card-number" aria-hidden="true">6</span>
-                        <span class="card-icon" aria-hidden="true">&#128161;</span>
-                        <h3>Local Tips</h3>
-                        <ul class="tip-list">
-                            <li>Gas up in Alamogordo &mdash; fuel options are limited in Cloudcroft.</li>
-                            <li>Cell service can be spotty in the forest &mdash; download offline maps.</li>
-                            <li>Afternoon thunderstorms are common in summer &mdash; plan outdoor activities for mornings.</li>
-                            <li>Wildlife is abundant &mdash; store food properly and give elk the right of way.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section nearby-section" aria-label="Nearby destinations">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">While You're Here</span>
-                    <h2 class="section-title section-title-centered">Nearby Destinations</h2>
-                </div>
-
-                <div class="nearby-wrapper">
-                <div class="nearby-scroll" role="list" aria-label="Nearby destinations list">
-                    <div class="nearby-card" role="listitem">
-                        <h3>White Sands National Park</h3>
-                        <span class="distance">~1 hour</span>
-                        <a href="https://www.google.com/maps/place/White+Sands+National+Park" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
-                    </div>
-
-                    <div class="nearby-card" role="listitem">
-                        <h3>Ruidoso, NM</h3>
-                        <span class="distance">~1 hour</span>
-                        <a href="https://www.google.com/maps/place/Ruidoso+NM" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
-                    </div>
-
-                    <div class="nearby-card" role="listitem">
-                        <h3>Sunspot Observatory</h3>
-                        <span class="distance">~20 minutes</span>
-                        <a href="https://www.google.com/maps/search/Sunspot+Observatory+NM" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
-                    </div>
-
-                    <div class="nearby-card" role="listitem">
-                        <h3>Alamogordo</h3>
-                        <span class="distance">~30 minutes</span>
-                        <a href="https://www.google.com/maps/place/Alamogordo+NM" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section" aria-label="Call to action">
-            <h2>Ready to Book?</h2>
-            <p>Find your perfect mountain stay</p>
-            <div class="cta-group">
-                <a href="stay/lodging.html" class="btn-primary">Find Lodging</a>
-                <a href="contact.html" class="btn-secondary">Questions?</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
-                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
-                <div class="footer-social">
-                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
-                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
-                    <a href="#todo-twitter" aria-label="Twitter">X</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Explore</h3>
-                <a href="stay/lodging.html">Lodging</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
-                <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
-                <a href="do/complete-guide-to-activities.html">Activities</a>
-                <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="season/seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h3>Connect</h3>
-                <a href="tel:+15555555555">(555) 555-5555</a>
-                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
-                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
-                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
-            </div>
-            <div class="footer-col">
-                <h3>Plan</h3>
-                <a href="plan.html">Plan Your Trip</a>
-                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
-                <a href="about.html">About Cloudcroft</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
-
-    <script src="js/common.js"></script>
-  <script>
-        (function() {
-            // Header scroll
-            var header = document.querySelector('.site-header');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 60) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            }, { passive: true });
-
-            // Hamburger toggle
-            var hamburger = document.querySelector('.hamburger');
-            var mobileMenu = document.querySelector('.mobile-menu');
-            hamburger.addEventListener('click', function() {
-                var isOpen = mobileMenu.classList.toggle('open');
-                hamburger.classList.toggle('active');
-                hamburger.setAttribute('aria-expanded', isOpen);
-                document.body.style.overflow = isOpen ? 'hidden' : '';
-            });
-
-            mobileMenu.querySelectorAll('a').forEach(function(link) {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.remove('open');
-                    hamburger.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                });
-            });
-
-            // Intersection Observer for staggered card entrance
-            var observerOptions = { threshold: 0.1, rootMargin: '0px 0px -40px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        fadeObserver.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('.plan-card').forEach(function(el) {
-                fadeObserver.observe(el);
-            });
-
-            // Back to top
-            var backToTop = document.querySelector('.back-to-top');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 400) {
-                    backToTop.classList.add('visible');
-                } else {
-                    backToTop.classList.remove('visible');
-                }
-            }, { passive: true });
-
-            backToTop.addEventListener('click', function() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        })();
-    </script>
-
-<div id="beta-modal" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:1;transition:opacity 0.4s ease">
-  <div style="background:#111111;color:#fff;padding:2.5rem 3rem;border-radius:12px;text-align:center;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1)">
-    <div style="font-size:2rem;margin-bottom:0.75rem">&#9888;</div>
-    <h2 style="font-family:'DM Sans',sans-serif;font-size:1.6rem;margin:0 0 0.5rem;color:#888888">Beta Site</h2>
-    <p style="font-family:'DM Sans',sans-serif;font-size:1rem;margin:0;opacity:0.85">Under Construction</p>
-    <div id="beta-modal-bar" style="margin-top:1.5rem;height:4px;border-radius:2px;background:rgba(255,255,255,0.15);overflow:hidden">
-      <div id="beta-modal-progress" style="height:100%;width:100%;background:#888888;border-radius:2px;transition:width 12s linear"></div>
-    </div>
-  </div>
-</div>
-<script>
-(function(){var m=document.getElementById('beta-modal');var p=document.getElementById('beta-modal-progress');requestAnimationFrame(function(){requestAnimationFrame(function(){p.style.width='0%'})});setTimeout(function(){m.style.opacity='0';setTimeout(function(){m.remove()},400)},12000)})();
-</script>
-</body>
-</html>
+<section class="hero"><div class="hero-bg"></div><div class="hero-overlay"></div>
+<div class="hero-content">
+<div class="hero-badge"><span>DiscoverCloudcroft</span></div>
+<h1 class="hero-title">Plan Your Escape</h1>
+<p class="hero-subtitle">Everything you need to make the most of your mountain getaway.</p>
+<div class="hero-ctas"><a href="#main-content" class="btn-primary">Read More</a><a href="resources.html" class="btn-secondary">All Resources</a></div>
+</div></section>
+<div class="info-bar"><div class="info-bar-inner">
+<div class="info-bar-item"><span class="info-bar-icon">🏔️</span><span>Elevation 8,676 ft</span></div>
+<div class="info-bar-item"><span class="info-bar-icon">🌲</span><span>Lincoln National Forest</span></div>
+<div class="info-bar-item"><span class="info-bar-icon">🌟</span><span>Dark Sky Community</span></div>
+<div class="info-bar-item"><span class="info-bar-icon">📍</span><span>Sacramento Mountains, NM</span></div>
+</div></div>
+<main id="main-content">
+<section class="section"><div class="section-container">
+<span class="section-label">Overview</span><br>
+<h2 class="section-title">Plan Your Escape</h2>
+<div class="section-body"><p>Everything you need to make the most of your mountain getaway.</p>
+<p>Trip Essentials</p>
+<h2>Everything You Need to Know</h2>
+<p>1 🚗</p>
+<h3>Getting Here</h3>
+<p>Cloudcroft is nestled in the Sacramento Mountains of southern New Mexico.</p>
+<ul>
+<li><a href="https://www.google.com/maps/dir/El+Paso+TX/Cloudcroft+NM">From El Paso, TX</a> -- ~2 hours (130 mi)</li>
+<li><a href="https://www.google.com/maps/dir/Las+Cruces+NM/Cloudcroft+NM">From Las Cruces, NM</a> -- ~1.5 hours (85 mi)</li>
+<li><a href="https://www.google.com/maps/dir/Albuquerque+NM/Cloudcroft+NM">From Albuquerque, NM</a> -- ~3.5 hours (215 mi)</li>
+<li><a href="https://www.google.com/maps/dir/Alamogordo+NM/Cloudcroft+NM">From Alamogordo, NM</a> -- ~30 min (20 mi)</li>
+</ul>
+<p>Take US-82 East from Alamogordo -- a stunning mountain drive climbing 4,000 feet in 16 miles.</p>
+<p>2 🌤</p>
+<h3>Weather &amp; When to Visit</h3>
+<p>Cloudcroft averages 200+ days of sunshine with four distinct seasons.</p>
+<p>Spring 55-70°F</p>
+<p>Summer 70-82°F</p>
+<p>Fall 55-68°F</p>
+<p>Winter 38-50°F</p>
+<p><a href="https://weather.com/weather/today/l/Cloudcroft+NM">Current Conditions</a></p>
+<p>Summer highs rarely exceed 82°F -- a cool escape when the desert hits 100°+.</p>
+<p>3 🎒</p>
+<h3>What to Pack</h3>
+<p>Altitude essentials: sunscreen (UV is stronger up here), layers (temps drop 20° at sunset), sturdy shoes, and water.</p>
+<ul>
+<li><strong>Summer:</strong> Rain jacket for afternoon storms</li>
+<li><strong>Winter:</strong> Warm layers + snow gear</li>
+<li><strong>All seasons:</strong> Sunglasses</li>
+</ul>
+<p>4 🛒</p>
+<h3>Groceries &amp; Supplies</h3>
+<p>Stock up before you arrive or find essentials in the village.</p>
+<p>Cloudcroft has limited grocery options -- consider stopping in Alamogordo for a full grocery run.</p>
+<p><a href="https://www.google.com/maps/search/grocery+Cloudcroft+NM">Local Markets</a></p>
+<p><a href="https://www.google.com/maps/search/Walmart+Alamogordo+NM">Alamogordo Walmart</a></p>
+<p>5 🚨</p>
+<h3>Emergency Info</h3>
+<p><strong>Emergency: 911</strong></p>
+<p>Otero County Sheriff: <a href="tel:+15754372210">(575) 437-2210</a></p>
+<p>Gerald Champion Hospital (Alamogordo): <a href="tel:+15754396100">(575) 439-6100</a></p>
+<p>Nearest hospital is 30 min downhill in Alamogordo.</p>
+<p>6 💡</p>
+<h3>Local Tips</h3>
+<ul>
+<li>Gas up in Alamogordo -- fuel options are limited in Cloudcroft.</li>
+<li>Cell service can be spotty in the forest -- download offline maps.</li>
+<li>Afternoon thunderstorms are common in summer -- plan outdoor activities for mornings.</li>
+<li>Wildlife is abundant -- store food properly and give elk the right of way.</li>
+</ul>
+<p>While You're Here</p>
+<h2>Nearby Destinations</h2>
+<h3>White Sands National Park</h3>
+<p>~1 hour <a href="https://www.google.com/maps/place/White+Sands+National+Park">Get Directions -&gt;</a></p>
+<h3>Ruidoso, NM</h3>
+<p>~1 hour <a href="https://www.google.com/maps/place/Ruidoso+NM">Get Directions -&gt;</a></p>
+<h3>Sunspot Observatory</h3>
+<p>~20 minutes <a href="https://www.google.com/maps/search/Sunspot+Observatory+NM">Get Directions -&gt;</a></p>
+<h3>Alamogordo</h3>
+<p>~30 minutes <a href="https://www.google.com/maps/place/Alamogordo+NM">Get Directions -&gt;</a></p>
+<h2>Ready to Book?</h2>
+<p>Find your perfect mountain stay</p>
+<p><a href="stay/lodging.html">Find Lodging</a> <a href="contact.html">Questions?</a></p>
+<p>DISCOVER CLOUDCROFT</p>
+<p>Your guide to Cloudcroft, New Mexico -- 8,676 feet of mountain magic.</p>
+<p>FB IG X</p>
+<h3>Explore</h3>
+<p><a href="stay/lodging.html">Lodging</a> <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a> <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a> <a href="do/complete-guide-to-activities.html">Activities</a> <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a> <a href="season/seasonal.html">Seasons</a></p>
+<h3>Connect</h3>
+<p><a href="tel:+15555555555">(555) 555-5555</a> <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a> <a href="https://villageofcloudcroft.com">Village of Cloudcroft</a> <a href="https://www.google.com/maps/place/Cloudcroft,+NM">Cloudcroft, NM 88317</a></p>
+<h3>Plan</h3>
+<p><a href="plan.html">Plan Your Trip</a> <a href="https://weather.com/weather/today/l/Cloudcroft+NM">Weather</a> <a href="about.html">About Cloudcroft</a> <a href="contact.html">Contact Us</a></p>
+<p>(C) 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+<p>↑</p>
+<p>⚠</p>
+<h2>Beta Site</h2>
+<p>Under Construction</p></div>
+</div></section>
+</main>
+<section class="cta-section"><div class="cta-container">
+<h2>Plan Your Mountain Escape</h2><p>Explore more guides, trip planning tools, and local insights for Cloudcroft, New Mexico.</p>
+<div class="cta-buttons"><a href="resources.html" class="btn-primary">Browse Resources</a><a href="contact.html" class="btn-secondary">Contact Us</a></div>
+</div></section>
+<footer class="site-footer"><div>© 2026 DiscoverCloudcroft.com — A mountain village 8,676 feet closer to the sky.</div><div class="footer-bottom"><a href="resources.html">All Resources</a></div></footer>
+</body></html>

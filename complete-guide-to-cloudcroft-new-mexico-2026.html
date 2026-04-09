@@ -128,29 +128,47 @@
 
     <style>
         /* ── 2026 mobile-first modernization base ── */
-        html { -webkit-text-size-adjust: 100%; }
-        img, video { max-width: 100%; height: auto; }
-        body { font-size: 16px; }
-        :where(p, li) { max-width: 65ch; }
+        html {
+            -webkit-text-size-adjust: 100%;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        :where(p, li) {
+            max-width: 65ch;
+        }
+
         :where(a, button, .hamburger, .toc-links a, .btn-white, .thing-card-link):focus-visible {
             outline: 2px solid #c8943e;
             outline-offset: 2px;
         }
+
         /* Safe-area aware sticky/fixed regions */
         .site-header {
             padding-top: env(safe-area-inset-top);
             padding-left: env(safe-area-inset-left);
             padding-right: env(safe-area-inset-right);
         }
+
         .site-footer {
             padding-bottom: env(safe-area-inset-bottom);
             padding-left: env(safe-area-inset-left);
             padding-right: env(safe-area-inset-right);
         }
+
         .mobile-nav-overlay {
             padding-top: calc(env(safe-area-inset-top) + 1rem);
             padding-bottom: env(safe-area-inset-bottom);
         }
+
         /* Touch targets */
         .toc-links a,
         .thing-card-link,
@@ -169,8 +187,12 @@
             height: clamp(440px, 70vh, 760px);
             min-height: 440px;
         }
+
         @media (orientation: landscape) and (max-height: 500px) {
-            .hero { height: 100vh; min-height: 320px; }
+            .hero {
+                height: 100vh;
+                min-height: 320px;
+            }
         }
 
         .hero-bg {
@@ -244,8 +266,12 @@
             gap: 0.75rem;
             flex-wrap: wrap;
         }
+
         @media (min-width: 768px) {
-            .toc-inner { flex-direction: row; gap: 2rem; }
+            .toc-inner {
+                flex-direction: row;
+                gap: 2rem;
+            }
         }
 
         .toc-label {
@@ -1049,7 +1075,10 @@
 
         /* md+ (>=768px): restore desktop affordances */
         @media (min-width: 768px) {
-            .lodging-item { flex-direction: row; }
+            .lodging-item {
+                flex-direction: row;
+            }
+
             .lodging-badge {
                 writing-mode: vertical-rl;
                 transform: rotate(180deg);
@@ -1296,8 +1325,12 @@
             gap: 2rem;
             align-items: start;
         }
+
         @media (min-width: 1024px) {
-            .getting-here-grid { grid-template-columns: 1fr 1fr; gap: 4rem; }
+            .getting-here-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 4rem;
+            }
         }
 
         .route-list {
@@ -1400,6 +1433,7 @@
             padding-bottom: 1rem;
             margin: 2rem 0 2rem;
         }
+
         @media (min-width: 768px) {
             .reels-grid {
                 grid-auto-flow: row;
@@ -1412,7 +1446,10 @@
                 margin: 3rem 0 2.5rem;
             }
         }
-        .reel-card { scroll-snap-align: center; }
+
+        .reel-card {
+            scroll-snap-align: center;
+        }
 
         .reel-card {
             position: relative;
@@ -1515,12 +1552,12 @@
                 <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
                 <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
                 <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="explore/where-to-visit.html">Visit</a>
+                <a href="visit/where-to-visit.html">Visit</a>
                 <a href="events/top-events.html">Events</a>
                 <a href="season/seasonal.html">Seasons</a>
                 <a href="#reels">Reels</a>
-                <a href="resources.html">Resources</a>
-                <a href="contact.html">Contact</a>
+                <a href="resources/resources.html">Resources</a>
+                <a href="resource/contact.html">Contact</a>
             </nav>
             <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -1760,7 +1797,8 @@
                         <div class="lodging-content">
 
                             <div class="lodging-img">
-                                <img src="media/Lodging-summit-inn.webp" alt="The Summit Inn" loading="lazy" decoding="async">
+                                <img src="media/Lodging-summit-inn.webp" alt="The Summit Inn" loading="lazy"
+                                    decoding="async">
                             </div>
 
                             <h3>The Summit Inn</h3>
@@ -1905,7 +1943,8 @@
                     <div class=" restaurant-card fade-in">
                         <a target="_blank" href="eat/where-to-eat-cloudcroft-mad-jacks-bbq.html">
                             <div class="restaurant-card-img">
-                                <img src="media/image-mad-jack.jpg" alt="Mad Jack's Mountaintop BBQ" loading="lazy" decoding="async">
+                                <img src="media/image-mad-jack.jpg" alt="Mad Jack's Mountaintop BBQ" loading="lazy"
+                                    decoding="async">
                             </div>
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">BBQ · Casual</p>
@@ -1919,7 +1958,8 @@
                     <div class="restaurant-card fade-in">
                         <a href="eat/where-to-eat-cloudcroft-brother-n-law-bbq.html">
                             <div class="restaurant-card-img">
-                                <img src="media/image-brother-in-law-bbq.jpg" alt="Brother-N-Law BBQ" loading="lazy" decoding="async">
+                                <img src="media/image-brother-in-law-bbq.jpg" alt="Brother-N-Law BBQ" loading="lazy"
+                                    decoding="async">
                             </div>
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">BBQ · Family</p>
@@ -1966,7 +2006,8 @@
                     <div class="restaurant-card fade-in">
                         <a href="eat/where-to-eat-cloudcroft-western-bar.html">
                             <div class="restaurant-card-img">
-                                <img src="media/western-bar-1.webp" alt="Western Bar &amp; Café" loading="lazy" decoding="async">
+                                <img src="media/western-bar-1.webp" alt="Western Bar &amp; Café" loading="lazy"
+                                    decoding="async">
                             </div>
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">Bar · American</p>
@@ -1981,7 +2022,8 @@
                     <div class="restaurant-card fade-in">
                         <a href="eat/where-to-eat-cloudcroft-high-rollin.html">
                             <div class="restaurant-card-img">
-                                <img src="media/image-high-rollin.jpg" alt="High Rollin'" loading="lazy" decoding="async">
+                                <img src="media/image-high-rollin.jpg" alt="High Rollin'" loading="lazy"
+                                    decoding="async">
                             </div>
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">Bar · Entertainment</p>
@@ -2019,7 +2061,9 @@
                     </div>
                     <div class="event-item fade-in">
                         <p class="event-month">June</p>
-                        <img src="media/photos-bike/high-altitude-classic-hero.jpg" alt="High Altitude Bike Classic mountain biking event in Cloudcroft" loading="lazy" decoding="async" class="event-image">
+                        <img src="media/photos-bike/high-altitude-classic-hero.jpg"
+                            alt="High Altitude Bike Classic mountain biking event in Cloudcroft" loading="lazy"
+                            decoding="async" class="event-image">
                         <h3>High Altitude Bike Classic</h3>
                         <p>One of New Mexico's premier mountain biking events. Riders of all levels compete across five
                             route options ranging from 10 to 55 miles through Lincoln National Forest. Registration
@@ -2034,7 +2078,9 @@
                     </div>
                     <div class="event-item fade-in">
                         <p class="event-month">August</p>
-                        <img src="media/lumberjack-log-sawing-competition.jpg" alt="Lumberjack log sawing competition at Cloudcroft Lumberjack Day" loading="lazy" decoding="async" class="event-image">
+                        <img src="media/lumberjack-log-sawing-competition.jpg"
+                            alt="Lumberjack log sawing competition at Cloudcroft Lumberjack Day" loading="lazy"
+                            decoding="async" class="event-image">
                         <h3>Lumberjack Day</h3>
                         <p>A celebration of Cloudcroft's logging heritage featuring axe-throwing competitions,
                             log-rolling, chainsaw carving, and historical demonstrations. Rowdy, fun, and distinctly
@@ -2078,7 +2124,9 @@
                 </div>
                 <div class="card-grid">
                     <a href="do/best-hiking-trails-in-cloudcroft-new-mexico.html" class="card">
-                        <img src="media/hiker-and-dog-autumn-forest-trail.jpeg" alt="Hiker and dog on an autumn forest trail near Cloudcroft" loading="lazy" decoding="async" class="card-image">
+                        <img src="media/hiker-and-dog-autumn-forest-trail.jpeg"
+                            alt="Hiker and dog on an autumn forest trail near Cloudcroft" loading="lazy"
+                            decoding="async" class="card-image">
                         <h3>Hiking</h3>
                         <p>Explore miles of trails through the Lincoln National Forest. From easy nature walks to
                             challenging summit hikes, the Sacramento Mountains have something for every skill level.</p>
@@ -2105,7 +2153,8 @@
                             beautiful forest setting, and fresh mountain air.</p>
                     </a>
                     <a href="do/play-pickleball-in-cloudcroft-2026.html" class="card">
-                        <img src="media/placeholder-event-july4th.jpg" alt="Pickleball in Cloudcroft" loading="lazy" decoding="async" class="card-image">
+                        <img src="media/placeholder-event-july4th.jpg" alt="Pickleball in Cloudcroft" loading="lazy"
+                            decoding="async" class="card-image">
                         <h3>Pickleball</h3>
                         <p>Join the growing pickleball community in Cloudcroft. Courts are available for drop-in play,
                             and the mountain air makes for a refreshing game.</p>
@@ -2141,13 +2190,16 @@
                             seasonally in the village. Best June through September.</p>
                     </a>
                     <a href="season/winter.html" class="card">
-                        <img src="media/image-dog-run-snow.jpg" alt="Dog running in fresh snow near Cloudcroft" loading="lazy" decoding="async" class="card-image">
+                        <img src="media/image-dog-run-snow.jpg" alt="Dog running in fresh snow near Cloudcroft"
+                            loading="lazy" decoding="async" class="card-image">
                         <h3>Skiing &amp; Snow</h3>
                         <p>Ski Cloudcroft offers New Mexico's southernmost ski area &mdash; small but scenic, with a
                             genuine mountain atmosphere. Best December through March.</p>
                     </a>
                     <a href="dark-skies.html" class="card">
-                        <img src="media/milky-way-night-sky-mountains.jpg" alt="Milky Way over the Sacramento Mountains near Cloudcroft" loading="lazy" decoding="async" class="card-image">
+                        <img src="media/milky-way-night-sky-mountains.jpg"
+                            alt="Milky Way over the Sacramento Mountains near Cloudcroft" loading="lazy"
+                            decoding="async" class="card-image">
                         <h3>Stargazing</h3>
                         <p>One of southern New Mexico's best dark-sky sites. Minimal light pollution and consistently
                             clear nights at elevation. Best on new-moon nights, year-round.</p>
