@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>The Complete Guide to Visiting Cloudcroft, NM (2026) | DiscoverCloudcroft.com</title>
+    <title>Complete Guide to Cloudcroft, NM (2026) | DiscoverCloudcroft</title>
     <meta name="description"
-        content="Everything you need to plan the perfect Cloudcroft, NM trip in 2026 — best things to do, where to stay, restaurants, seasonal events, outdoor activities, and a weekend itinerary.">
+        content="Plan the perfect Cloudcroft, NM trip in 2026: top things to do, where to stay, restaurants, seasonal events, and a weekend itinerary.">
     <meta name="keywords"
         content="Cloudcroft NM guide 2026, things to do Cloudcroft, where to stay Cloudcroft, Cloudcroft restaurants, Cloudcroft weekend itinerary, Sacramento Mountains">
     <link rel="canonical" href="https://discovercloudcroft.com/complete-guide.html">
@@ -118,6 +118,7 @@
     }
     </script>
 
+    <link rel="preload" as="image" href="media/historic-railroad-trestle-side-view.jpg" fetchpriority="high">
     <link href="css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -143,7 +144,7 @@
         }
 
         :where(p, li) {
-            max-width: 65ch;
+            max-width: 85ch;
         }
 
         :where(a, button, .hamburger, .toc-links a, .btn-white, .thing-card-link):focus-visible {
@@ -367,6 +368,8 @@
         }
 
         .thing-card {
+            position: relative;
+            overflow: hidden;
             background: #ffffff;
             border: 1.5px solid #e8e8e8;
             border-radius: 12px;
@@ -420,11 +423,6 @@
             transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .thing-card {
-            position: relative;
-            overflow: hidden;
-        }
-
         .thing-card:hover::after {
             width: 100%;
         }
@@ -446,16 +444,12 @@
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: filter 0.4s;
+            transition: filter 0.4s ease, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .thing-card:hover .thing-card-icon img {
             filter: saturate(1.2) brightness(1.05);
             transform: scale(1.14);
-        }
-
-        .thing-card-icon img {
-            transition: filter 0.4s ease, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .thing-card h3 {
@@ -563,9 +557,6 @@
             letter-spacing: 0.1em;
             text-transform: uppercase;
             text-align: center;
-            padding: 1rem 0.75rem;
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
         }
 
         .lodging-content {
@@ -705,7 +696,7 @@
         .restaurant-card-body h3 {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: #000000;
             margin-bottom: 0.25rem;
         }
@@ -1449,9 +1440,6 @@
 
         .reel-card {
             scroll-snap-align: center;
-        }
-
-        .reel-card {
             position: relative;
             aspect-ratio: 9 / 16;
             max-width: 260px;
@@ -1532,6 +1520,41 @@
         }
 
         /* reels-grid responsive handled mobile-first above */
+
+        /* ── Reduced motion fallback ── */
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+                scroll-behavior: auto !important;
+            }
+
+            .hero-bg {
+                animation: none !important;
+            }
+
+            .thing-card,
+            .lodging-item,
+            .restaurant-card,
+            .event-item,
+            .outdoor-card,
+            .itinerary-day,
+            .route-item,
+            .card,
+            .seasonal-card,
+            .practical-card,
+            .reel-card,
+            .hero-eyebrow,
+            .hero-title,
+            .hero-meta {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -1557,25 +1580,26 @@
                 <a href="season/seasonal.html">Seasons</a>
                 <a href="#reels">Reels</a>
                 <a href="resources/resources.html">Resources</a>
-                <a href="resource/contact.html">Contact</a>
+                <a href="resources/contact.html">Contact</a>
             </nav>
-            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-nav">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
-    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
         <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="explore/where-to-visit.html">Visit</a>
-
+        <a href="visit/where-to-visit.html">Visit</a>
         <a href="events/top-events.html">Events</a>
         <a href="season/seasonal.html">Seasons</a>
         <a href="#reels">Reels</a>
-        <a href="contact.html">Contact</a>
-    </div>
+        <a href="resources/resources.html">Resources</a>
+        <a href="resources/contact.html">Contact</a>
+    </nav>
 
     <main id="main-content" role="main">
 
@@ -1591,10 +1615,10 @@
                 <p class="hero-subtitle">Everything you need to plan the perfect mountain escape in the
                     Sacramento Mountains.</p>
                 <div class="hero-meta">
-                    <span class="hero-meta-item">&#9650; 8,676 ft elevation</span>
-                    <span class="hero-meta-item">&#9670; Lincoln National Forest</span>
-                    <span class="hero-meta-item">&#9656; ~90 min from El Paso</span>
-                    <span class="hero-meta-item">&#9670; Updated for 2026</span>
+                    <span class="hero-meta-item"><span aria-hidden="true">&#9650;</span> 8,676 ft elevation</span>
+                    <span class="hero-meta-item"><span aria-hidden="true">&#9670;</span> Lincoln National Forest</span>
+                    <span class="hero-meta-item"><span aria-hidden="true">&#9656;</span> ~90 min from El Paso</span>
+
                 </div>
             </div>
         </section>
@@ -1679,18 +1703,6 @@
                             the drive itself through the forest is worth it.</p>
                         <a href="do/complete-guide-to-mexican-canyon-trestle.html" class="thing-card-link">See the
                             trestle &rarr;</a>
-                    </div>
-
-                    <div class="thing-card fade-in">
-                        <div class="thing-card-icon"><img alt="Stargazing and astronomy near Cloudcroft, NM"
-                                src="media/placeholder-activity-biking.jpg" loading="lazy" decoding="async"></div>
-
-                        <h3>Stargaze at Sunspot Observatory</h3>
-                        <p>The <a href="https://sunspot.solar/" target="_blank" rel="noopener noreferrer">Sacramento
-                                Peak Solar Observatory</a> sits at 9,200 ft with remarkably dark skies. Tour the
-                            facilities, attend a night program, or simply pull off on the highway and look up — the
-                            Milky Way here is genuinely breathtaking.</p>
-                        <a href="explore/sunspot-observatory.html" class="thing-card-link">Learn more &rarr;</a>
                     </div>
 
                 </div>
@@ -1940,7 +1952,7 @@
 
                 <div class="restaurant-grid">
 
-                    <div class=" restaurant-card fade-in">
+                    <div class="restaurant-card fade-in">
                         <a target="_blank" href="eat/where-to-eat-cloudcroft-mad-jacks-bbq.html">
                             <div class="restaurant-card-img">
                                 <img src="media/image-mad-jack.jpg" alt="Mad Jack's Mountaintop BBQ" loading="lazy"
@@ -2264,7 +2276,7 @@
                         <div class="seasonal-icon"><img src="media/image-winter.jpg"
                                 alt="Winter in Cloudcroft, New Mexico" loading="lazy" decoding="async"></div>
                         <h3>Winter</h3>
-                        <div class=" season-months">December &ndash; March</div>
+                        <div class="season-months">December &ndash; March</div>
                         <p>Snow blankets the mountains, creating a winter wonderland. Enjoy snow sports, cozy lodge
                             fireplaces, and holiday events. A magical time to visit for those who embrace the cold.</p>
                     </div>
@@ -2501,7 +2513,8 @@
         </div>
     </footer>
 
-    <button class="back-to-top" aria-label="Back to top" title="Back to top">&#8593;</button>
+    <button type="button" class="back-to-top" aria-label="Back to top" title="Back to top"><span
+            aria-hidden="true">&#8593;</span></button>
 
     <script src="js/common.js" defer></script>
     <script>

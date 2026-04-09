@@ -30,9 +30,11 @@
 
     if (isOpen) {
       mobileNav.classList.remove('open');
+      mobileNav.setAttribute('hidden', '');
       document.body.style.overflow = '';
       if (mobileBackdrop) mobileBackdrop.classList.remove('open');
     } else {
+      mobileNav.removeAttribute('hidden');
       mobileNav.classList.add('open');
       document.body.style.overflow = 'hidden';
       if (mobileBackdrop) mobileBackdrop.classList.add('open');
