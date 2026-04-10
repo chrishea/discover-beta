@@ -327,14 +327,7 @@
         }
 
         .section-number {
-            font-family: 'DM Sans', sans-serif;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: #999999;
-            display: block;
-            margin-bottom: 0.5rem;
+            display: none;
         }
 
         .guide-section h2 {
@@ -585,6 +578,7 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
+
             .lodging-img img,
             .lodging-item:hover .lodging-img img {
                 transition: none;
@@ -1644,9 +1638,10 @@
         <!-- ═══════════════════════════════ BODY ═══════════════════════════════ -->
         <div class="guide-body">
 
+
             <!-- 1. BEST THINGS TO DO -->
             <section class="guide-section" id="best-things-to-do" aria-labelledby="h-things">
-                <span class="section-number">01</span>
+                <span class="section-number"></span>
                 <h2 id="h-things">Best Things to Do in Cloudcroft</h2>
                 <p class="guide-intro">From world-class stargazing to mountain biking through pine forests, Cloudcroft
                     punches well above its size. These are the experiences that make the trip worth making.</p>
@@ -1716,6 +1711,37 @@
                         is
                         May–June or September. Summer weekends in July–August fill up fast — book lodging weeks in
                         advance.</p>
+                </div>
+            </section>
+
+            <!-- ═══════════════════════════════ RECENT NEWS ═══════════════════════════════ -->
+            <section class="section" id="recent-news" aria-label="Recent news">
+                <div class="section-container">
+                    <div style="text-align: center;">
+                        <span class="section-label">News</span>
+                        <h2 class="section-title section-title-centered">Recent News</h2>
+                        <p class="section-description">The latest from Cloudcroft and the Sacramento Mountains.</p>
+                    </div>
+                    <div class="highlights-grid">
+                        <div class="highlight-card news-card">
+                            <div class="highlight-icon">&#x1F464;</div>
+                            <h3>Meet Joe Black</h3>
+                            <p>A profile of one of Cloudcroft&rsquo;s notable community members making an impact in the
+                                Sacramento Mountains.</p>
+                        </div>
+                        <div class="highlight-card news-card">
+                            <div class="highlight-icon">&#x1F4A7;</div>
+                            <h3>Water Restrictions Lifted</h3>
+                            <p>After months of conservation measures, water restrictions in the Cloudcroft area have
+                                officially been lifted.</p>
+                        </div>
+                        <div class="highlight-card news-card">
+                            <div class="highlight-icon">&#x1F525;</div>
+                            <h3>Fire Warnings Set to High</h3>
+                            <p>Fire danger in the Lincoln National Forest has been elevated to high. Campfire
+                                restrictions and trail closures may apply.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -1789,7 +1815,7 @@
                         <div class="lodging-content">
 
                             <div class="lodging-img">
-                                <img src="stay/stay-photo/photo-dusty-boots-motel/lodging-dusty-boots.jpg"
+                                <img src="stay/stay-photo/photo-dusty-boots-motel/dusty-boots-00563.jpg"
                                     alt="Dusty Boots Motel &amp; Cafe" loading="lazy" decoding="async">
                             </div>
 
@@ -1883,6 +1909,7 @@
                 </div>
             </section>
 
+
             <!-- 3. HOW TO REACH CLOUDCROFT -->
             <section class="guide-section" id="getting-here" aria-labelledby="h-getting-here">
                 <span class="section-number">03</span>
@@ -1894,32 +1921,20 @@
                     <div>
                         <ul class="route-list">
                             <li class="route-item">
-                                <div class="route-icon">&#x1F697;</div>
+
                                 <div class="route-info">
                                     <h3>From El Paso, TX &mdash; 2.5 hours</h3>
                                     <p>Head northeast on US-54 to Alamogordo, then climb US-82 into the mountains. The
                                         most popular route for visitors from Texas and southern New Mexico.</p>
-                                </div>
-                            </li>
-                            <li class="route-item">
-                                <div class="route-icon">&#x1F697;</div>
-                                <div class="route-info">
+
                                     <h3>From Albuquerque, NM &mdash; 3.5 hours</h3>
                                     <p>Take I-25 south to Las Cruces, then head east on US-70 to Alamogordo, and ascend
                                         US-82 to Cloudcroft. A scenic drive through the heart of New Mexico.</p>
-                                </div>
-                            </li>
-                            <li class="route-item">
-                                <div class="route-icon">&#x1F697;</div>
-                                <div class="route-info">
+
                                     <h3>From Las Cruces, NM &mdash; 1.5 hours</h3>
                                     <p>Drive east on US-70 through the Tularosa Basin to Alamogordo, then take US-82 up
                                         the mountain. A perfect day trip or weekend escape.</p>
-                                </div>
-                            </li>
-                            <li class="route-item">
-                                <div class="route-icon">&#x1F697;</div>
-                                <div class="route-info">
+
                                     <h3>From Alamogordo, NM &mdash; 30 minutes</h3>
                                     <p>A stunning 30-minute climb up US-82, gaining over 4,000 feet in elevation. Watch
                                         for the Mexican Canyon Trestle along the way &mdash; a must-see historic
@@ -1971,26 +1986,11 @@
                             </div>
                         </a>
                     </div>
-                    <div class="restaurant-card fade-in">
-                        <a href="eat/where-to-eat-cloudcroft-brother-n-law-bbq.html">
-                            <div class="restaurant-card-img">
-                                <img src="media/image-brother-in-law-bbq.jpg" alt="Brother-N-Law BBQ" loading="lazy"
-                                    decoding="async">
-                            </div>
-                            <div class="restaurant-card-body">
-                                <p class="restaurant-type">BBQ · Family</p>
-                                <h3>Brother-N-Law BBQ</h3>
-                                <p>A local favorite for hearty portions of smoked meats and classic sides. More casual
-                                    than
-                                    Mad Jack's and often less crowded — a solid backup plan that's earned its own loyal
-                                    following.</p>
-                            </div>
-                        </a>
-                    </div>
+
                     <div class="restaurant-card fade-in">
                         <a href="eat/where-to-eat-cloudcroft-cloudcroft-brewery.html">
                             <div class="restaurant-card-img">
-                                <img src="media/placeholder-explore-brewery.webp" alt="Cloudcroft Brewing Co."
+                                <img src="eat/eat-photo/photos-brewery/brewery-00559.jpeg" alt="Cloudcroft Brewing Co."
                                     loading="lazy" decoding="async">
                             </div>
                             <div class="restaurant-card-body">
@@ -2004,21 +2004,23 @@
                             </div>
                         </a>
                     </div>
+
                     <div class="restaurant-card fade-in">
-                        <a href="eat/where-to-eat-cloudcroft-big-daddys.html">
+                        <a href="eat/where-to-eat-cloudcroft-high-rollin.html">
                             <div class="restaurant-card-img">
-                                <img src="media/Index-10.webp" alt="Big Daddy's Diner" loading="lazy" decoding="async">
+                                <img src="eat/eat-photo/photo-high-rollin/high-rollin-00556.jpg" alt="High Rollin'"
+                                    loading="lazy" decoding="async">
                             </div>
                             <div class="restaurant-card-body">
-                                <p class="restaurant-type">Diner · Breakfast</p>
-                                <h3>Big Daddy's Diner</h3>
-                                <p>The go-to breakfast spot. Big portions, good coffee, friendly service. The green
-                                    chile
-                                    omelet and pancakes are the regulars' orders. Gets busy by 9am on weekends — show up
-                                    early.</p>
+                                <p class="restaurant-type">Bar · Entertainment</p>
+                                <h3>High Rollin'</h3>
+                                <p>Bowling, burgers, and craft cocktails under one roof. A great rainy-day option or
+                                    after-dinner stop. The lanes are well-maintained and the appetizers are better than
+                                    you'd expect.</p>
                             </div>
                         </a>
                     </div>
+
                     <div class="restaurant-card fade-in">
                         <a href="eat/where-to-eat-cloudcroft-western-bar.html">
                             <div class="restaurant-card-img">
@@ -2035,21 +2037,42 @@
                             </div>
                         </a>
                     </div>
+
                     <div class="restaurant-card fade-in">
-                        <a href="eat/where-to-eat-cloudcroft-high-rollin.html">
+                        <a href="eat/where-to-eat-cloudcroft-brother-n-law-bbq.html">
                             <div class="restaurant-card-img">
-                                <img src="media/image-high-rollin.jpg" alt="High Rollin'" loading="lazy"
+                                <img src="media/image-brother-in-law-bbq.jpg" alt="Brother-N-Law BBQ" loading="lazy"
                                     decoding="async">
                             </div>
                             <div class="restaurant-card-body">
-                                <p class="restaurant-type">Bar · Entertainment</p>
-                                <h3>High Rollin'</h3>
-                                <p>Bowling, burgers, and craft cocktails under one roof. A great rainy-day option or
-                                    after-dinner stop. The lanes are well-maintained and the appetizers are better than
-                                    you'd expect.</p>
+                                <p class="restaurant-type">BBQ · Family</p>
+                                <h3>Brother-N-Law BBQ</h3>
+                                <p>A local favorite for hearty portions of smoked meats and classic sides. More casual
+                                    than
+                                    Mad Jack's and often less crowded — a solid backup plan that's earned its own loyal
+                                    following.</p>
                             </div>
                         </a>
                     </div>
+
+                    <div class="restaurant-card fade-in">
+                        <a href="eat/where-to-eat-cloudcroft-big-daddys.html">
+                            <div class="restaurant-card-img">
+                                <img src="eat/eat-photo/photo-big-daddys/big-daddys-00556.jpg" alt="Big Daddy's Diner"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="restaurant-card-body">
+                                <p class="restaurant-type">Diner · Breakfast</p>
+                                <h3>Big Daddy's Diner</h3>
+                                <p>The go-to breakfast spot. Big portions, good coffee, friendly service. The green
+                                    chile
+                                    omelet and pancakes are the regulars' orders. Gets busy by 9am on weekends — show up
+                                    early.</p>
+                            </div>
+                        </a>
+                    </div>
+
+
                 </div>
 
                 <div class="tip-box">
@@ -2533,7 +2556,7 @@
                 });
             }, { threshold: 0.12 });
 
-            document.querySelectorAll('.thing-card, .lodging-item, .restaurant-card, .event-item, .outdoor-card, .itinerary-day, .route-item, .card, .seasonal-card, .practical-card, .fade-in, .reel-card').forEach(function (el) {
+            document.querySelectorAll('.thing-card, .lodging-item, .restaurant-card, .event-item, .outdoor-card, .itinerary-day, .route-item, .card, .seasonal-card, .practical-card, .news-card, .fade-in, .reel-card').forEach(function (el) {
                 observer.observe(el);
             });
 
