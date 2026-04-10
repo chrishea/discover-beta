@@ -63,7 +63,10 @@
         .hero-overlay {
             background: linear-gradient(135deg, rgba(40, 25, 15, 0.78), rgba(0, 0, 0, 0.65));
         }
-        .hero-badge { background: #FFFFFF90; }
+
+        .hero-badge {
+            background: #FFFFFF90;
+        }
 
         .hero-title em {
             font-style: italic;
@@ -208,13 +211,14 @@
             gap: 1rem;
             margin-top: 2rem;
         }
+
         .gallery-grid img {
             display: block;
             width: 100%;
             aspect-ratio: 4 / 3;
             object-fit: cover;
             border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
         }
     </style>
 </head>
@@ -222,7 +226,7 @@
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-        <header class="site-header" role="banner">
+    <header class="site-header" role="banner">
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
@@ -241,7 +245,8 @@
                 <a href="../resources/resources.html">Resources</a>
                 <a href="../resources/contact.html">Contact</a>
             </nav>
-            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-nav">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -258,7 +263,7 @@
         <a href="../resources/resources.html">Resources</a>
         <a href="../resources/contact.html">Contact</a>
     </nav>
-<section class="hero" aria-label="Page hero">
+    <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="Cloudcroft Brewing Company taproom and brewery"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -290,7 +295,15 @@
                         pizza, salads, and soup. With indoor and outdoor seating, a family-friendly atmosphere, and
                         recurring live music, it works as one of Cloudcroft's main evening anchors — a place where
                         visitors often stay longer than one drink.</p>
+
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=1301+Burro+Ave,+Cloudcroft,+NM+88317"
+                        target="_blank" rel="noopener noreferrer"
+                        style="display:inline-block;margin-top:1rem;padding:0.75rem 2rem;background:var(--golden-hour);color:#fff;font-family:'DM Sans',sans-serif;font-weight:700;font-size:1rem;border-radius:8px;text-decoration:none;text-align:center;transition:background 0.25s ease;"
+                        onmouseover="this.style.background='var(--ember)'"
+                        onmouseout="this.style.background='var(--golden-hour)'">Get Directions &rarr;</a>
                 </div>
+
+
 
                 <img src="../eat/eat-photo/photos-brewery/brewery-00027.jpg"
                     alt="Wood-fired pizza at Cloudcroft Brewing Company" loading="lazy" decoding="async"
@@ -394,16 +407,26 @@
                     <p class="section-description">A look at the taproom, kitchen, and atmosphere.</p>
                 </div>
                 <div class="gallery-grid">
-                    <img src="../eat/eat-photo/photos-brewery/brewery-00026.jpg" alt="Cloudcroft Brewing Company interior" loading="lazy" decoding="async">
-                    <img src="../eat/eat-photo/photos-brewery/brewery-00028.jpg" alt="Cloudcroft Brewing Company taproom detail" loading="lazy" decoding="async">
-                    <img src="../eat/eat-photo/photos-brewery/brewery-00029.jpg" alt="Brewing equipment at Cloudcroft Brewing Company" loading="lazy" decoding="async">
-                    <img src="../eat/eat-photo/photos-brewery/brewery-00030.jpg" alt="Outdoor seating at Cloudcroft Brewing Company" loading="lazy" decoding="async">
-                    <img src="../eat/eat-photo/photos-brewery/brewery-00031.jpg" alt="Beer lineup at Cloudcroft Brewing Company" loading="lazy" decoding="async">
-                    <img src="../eat/eat-photo/photos-brewery/brewery-00032.jpg" alt="Live music night at Cloudcroft Brewing Company" loading="lazy" decoding="async">
-                    <img src="../eat/eat-photo/photos-brewery/brewery-00033.jpg" alt="Cloudcroft Brewing Company exterior" loading="lazy" decoding="async">
-                    <img src="../eat/eat-photo/photos-brewery/brewery-00034.jpg" alt="Cloudcroft Brewing Company patio" loading="lazy" decoding="async">
-                    <img src="../eat/eat-photo/photos-brewery/brewery-00555.jpeg" alt="Cloudcroft Brewing Company scene" loading="lazy" decoding="async">
-                    <img src="../eat/eat-photo/photos-brewery/brewery-00556.jpeg" alt="Cloudcroft Brewing Company scene" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00026.jpg"
+                        alt="Cloudcroft Brewing Company interior" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00028.jpg"
+                        alt="Cloudcroft Brewing Company taproom detail" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00029.jpg"
+                        alt="Brewing equipment at Cloudcroft Brewing Company" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00030.jpg"
+                        alt="Outdoor seating at Cloudcroft Brewing Company" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00031.jpg"
+                        alt="Beer lineup at Cloudcroft Brewing Company" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00032.jpg"
+                        alt="Live music night at Cloudcroft Brewing Company" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00033.jpg"
+                        alt="Cloudcroft Brewing Company exterior" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00034.jpg" alt="Cloudcroft Brewing Company patio"
+                        loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00555.jpeg" alt="Cloudcroft Brewing Company scene"
+                        loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00556.jpeg" alt="Cloudcroft Brewing Company scene"
+                        loading="lazy" decoding="async">
                 </div>
             </div>
         </section>
@@ -500,7 +523,7 @@
 
                 <div class="visiting-grid">
                     <div class="visiting-card">
-                        <h3>Location</h3>
+                        <h3>Location</h3>r
                         <p>Cloudcroft Brewing Company<br>
                             1301 Burro Ave<br>
                             Cloudcroft, NM 88317</p>
@@ -531,6 +554,11 @@
                         <p>On the east side of the village at 1301 Burro Avenue. From central Cloudcroft, head east
                             along Burro Avenue / U.S. 82 and continue through the main town stretch — the brewery sits
                             farther east along the same corridor, easy to reach by car.</p>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=1301+Burro+Ave,+Cloudcroft,+NM+88317"
+                            target="_blank" rel="noopener noreferrer"
+                            style="display:inline-block;margin-top:1rem;padding:0.75rem 2rem;background:var(--golden-hour);color:#fff;font-family:'DM Sans',sans-serif;font-weight:700;font-size:1rem;border-radius:8px;text-decoration:none;text-align:center;transition:background 0.25s ease;"
+                            onmouseover="this.style.background='var(--ember)'"
+                            onmouseout="this.style.background='var(--golden-hour)'">Get Directions &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -613,6 +641,23 @@
     </footer>
 
     <script src="../js/common.js"></script>
+    <script>
+        (function () {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.menu-card, .lodge-card, .visiting-card, .feature-card, .compare-card, .tip-card, .fade-in').forEach(function (el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
 </body>
 
 </html>

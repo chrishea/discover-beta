@@ -168,9 +168,7 @@ img {
 
 }
 
-.header-logo span {
-  color: var(--gold);
-}
+.header-logo span {}
 
 .logo-beta {
   font-size: 0.55em;
