@@ -102,3 +102,12 @@ Old Barrel is not just a one-off gift shop. It is part of a broader branded tea 
 - **Hours:** Current Cloudcroft hours were not clearly posted in strong primary sources I trust enough to set here.
 - **Drink-service detail:** The current site strongly supports retail tea sales but does not clearly spell out the exact beverage-service experience at the Cloudcroft store.
 - **Patio / dine-in seating:** Not confirmed.
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Dining guide inclusion**
+- Per local judgment, Old Barrel Tea Company is a retail shop, not a dining stop. Excluded from the Cloudcroft dining guide.

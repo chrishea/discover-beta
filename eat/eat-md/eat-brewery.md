@@ -233,3 +233,20 @@ What the coverage suggests people value:
 - **Accessibility details:** likely accessible to most visitors, but specific ADA features were not clearly documented in the strongest public sources reviewed.
 - **Reservations:** the business appears walk-in friendly, but no strong public source clearly states whether reservations are accepted or useful on peak nights.
 - **Current food breadth beyond pizza, salad, and soup:** the strongest official menu page reviewed is pizza-forward. There may be more seasonal or special items, but I did not treat those as confirmed without stronger menu support.
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Food**
+- The wood-fired pizza is consistently good — not an afterthought brewery menu.
+- The soups deliver.
+
+**Layout and seating**
+- Multiple spaces, both indoor and outdoor, with tables and benches. Easy to find seating that suits your group.
+- The Distillery is located next door as a connected but separate space.
+
+**Atmosphere**
+- Family-friendly.

@@ -69,3 +69,12 @@ Ski Cloudcroft has long been part of Cloudcroft recreation culture, but I did no
 - **Current operating days for pizza:** not confirmed.
 - **Full menu:** not confirmed.
 - **Standalone restaurant status:** this should be treated as seasonal ski-area food service, not a normal in-town restaurant.
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Dining guide inclusion**
+- Per local judgment, Ski Cloudcroft food service is a seasonal recreation amenity, not a standalone dining destination. Excluded from the Cloudcroft dining guide.

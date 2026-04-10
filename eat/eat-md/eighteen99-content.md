@@ -91,3 +91,20 @@ Across official and local reporting, the restaurant’s identity is less about b
 - **Website note:** Chamber pages still point to `thelodgeresort.com/dining`, while the current active dining page is on the 223 Collection Hotels domain.
 - **Menu specifics:** Because the menu appears to change, specific dishes beyond broad examples should be checked directly before publication.
 - **Lunch / brunch status:** Not confirmed for the restaurant itself; breakfast and lounge hours are listed separately on the hotel dining page.
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Overall experience**
+- Described as a memorable dining experience — the clear special-occasion destination in Cloudcroft.
+
+**Chef and staff**
+- Executive Chef Richard Lepree confirmed still on-site and doing well as of April 2026.
+- Staff service and kitchen output have noticeably improved under the current operation.
+
+**Menu and programming**
+- Prime Rib Nights are a hit — a specific draw worth planning around.
+- The restaurant is programming different menus for specific times and days, not running a single static dinner menu.

@@ -75,3 +75,21 @@ One current Facebook profile says the café was built in 1984 and that David Ven
 - **Website:** not confirmed.
 - **Alcohol service:** likely, but not confirmed strongly enough to state as settled fact.
 - **Ownership history:** supported by the business’s own Facebook description, but not independently reported in a strong source I found.
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Operating status**
+- Confirmed still open and operating as of April 2026.
+
+**Ownership**
+- Chuck Venable confirmed as current owner/operator.
+
+**Atmosphere and layout**
+- Bar and booth seating.
+
+**Menu**
+- Ice cream available by the scoop — not documented in any prior source.

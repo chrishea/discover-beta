@@ -110,3 +110,23 @@ Dusty Boots is not important because it is the fanciest place in town. It is imp
 - **Service format:** The site confirms room service for motel guests and shows the café as active, but does not fully spell out whether service is table service, counter ordering, or a mix.
 - **Beer / cantina angle:** Supported by local coverage, but the current official site still leans more on country cooking and café language than on a full cantina identity.
 - **Phone conflict:** The official website lists 575-682-7736. Chamber pages do not clearly display a phone number on the member page.
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Ownership**
+- The Wiley family owns and operates Dusty Boots Motel & Cafe.
+
+**Service model**
+- Table service.
+
+**Menu and recommendations**
+- The taco program is real and ongoing — not just a signage experiment.
+- Breakfast is the strong suit. Popular with law enforcement and U.S. Forest Service workers.
+- Recommended order: chicken fried steak with two eggs over easy, hash browns, and biscuits.
+
+**Atmosphere**
+- Functions as a regular breakfast spot for locals and working crews, not just motel guests and tourists.

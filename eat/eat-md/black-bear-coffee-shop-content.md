@@ -85,3 +85,17 @@ I did not find a full reported origin story in the sources I checked, but Cloudc
 - **Hours:** I found hints on social media about seasonal Monday hours, but not a strong crawlable official hours block I trust enough to lock in here. Check directly.
 - **Food menu:** beverage program and beans are clear; pastry or food breadth is not fully confirmed.
 - **Email:** not confirmed from current crawlable sources.
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Food**
+- Cookies are available in addition to the documented beverage and bean program.
+
+**Atmosphere and experience**
+- Cozy spot with an upstairs seating area suited for relaxing with a friend or a book.
+- Popular gathering place for locals — described as a place to catch up on town gossip.
+- Functions more as a linger-and-socialize stop than a grab-and-go counter.

@@ -109,3 +109,15 @@ The most consistent identity is not “restaurant” in the full-service sense. 
 - **Ownership / baker identity:** Not confirmed from strong current sources.
 - **Service model:** Counter service is the likely model, but the current website was not available to confirm layout or seating details.
 - **Menu breadth:** Coffee, pastries, pies, cinnamon rolls, and custom cakes are supported. A fuller menu is not confirmed.
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Layout**
+- About half a dozen tables for seating — small but not strictly grab-and-go.
+
+**Art**
+- The art is more like pieces on the wall than a true gallery experience. Decorative backdrop, not a destination art stop.

@@ -79,3 +79,18 @@ Because it is in High Rolls rather than Cloudcroft proper, it belongs to the bro
 - **Phone number:** not confirmed
 - **Instagram:** not confirmed in the strongest current sources reviewed
 - **Exact standing menu:** not confirmed; menu appears to rotate
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Operating status**
+- Garrett Barnett and Steven Jackson confirmed still running the bakery as of April 2026.
+
+**Service model**
+- Walk-up stop. Pull over, park, step inside, order, get your food, and go. No lingering café experience.
+
+**Worth the trip**
+- Described as definitely worth a stop — a local endorsement for a newer business with limited hours.

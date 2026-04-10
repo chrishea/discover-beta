@@ -1726,6 +1726,22 @@ img {
   text-decoration: underline;
 }
 
+.lodge-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.lodge-card-link .lodge-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.lodge-card-link:hover .lodge-card {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background: #e7e7e7;
+}
+
 /* ===== COMPARE CARDS ===== */
 .compare-grid {
   display: grid;

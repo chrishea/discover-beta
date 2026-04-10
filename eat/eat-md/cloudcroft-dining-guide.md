@@ -36,7 +36,7 @@ Cloudcroft has enough variety that where you eat depends less on raw quality tha
 | Old Barrel Tea Company | Best for tea lovers, gifts, or a non-coffee pause rather than a full meal | $-$$ | Tea/light snack stop | Medium |
 | Ski Cloudcroft | Useful when you are already skiing and do not want to leave the mountain for lunch | $$ | Pizza/food during ski season | Medium |
 | Western Bar & Cafe | A good pick if you want a no-frills local hangout, a burger-and-beer kind of meal, or a place with more bar energy | $$ | Breakfast/burgers/Southwestern/American fare/bar service suggested by tourism and legacy listings | Low |
-| Black Bear Coffee Shop | One of the best picks for coffee, a light breakfast, or a slower sit with a laptop or friend | $-$$ | Coffee/pastries/light breakfast/lunch items | High |
+| Black Bear Coffee Shop | Cozy locals' hangout with specialty drinks, cookies, upstairs seating, and a small gallery feel | $-$$ | Coffee/cookies/specialty drinks | High |
 | High Rollin' Coffee | Go here if you want coffee plus fresher, lighter food, or if you want a cafe that feels a bit more contemporary | $-$$ | Coffee/baked goods/vegetarian-leaning eats | Low |
 | St. Andrew's Bar | Best for a drink, a lighter meal, or a more atmospheric stop than the standard small-town bar | $$ | Cocktails and bar food | Low |
 
@@ -55,7 +55,7 @@ Cloudcroft has enough variety that where you eat depends less on raw quality tha
 - **Old Barrel Tea Company** - More tea shop than restaurant, this is a stop for loose-leaf tea, honey, wellness items, and a quieter break on Burro Avenue.
 - **Ski Cloudcroft** - This is food at the ski area, not a standalone town restaurant. Think convenience and slope-day utility first.
 - **Western Bar & Cafe** - A longstanding Burro Street restaurant-bar with more local-bar character than most spots in town.
-- **Black Bear Coffee Shop** - A popular village coffee shop with a polished small-town feel, specialty drinks, and a menu built to catch both casual visitors and regulars.
+- **Black Bear Coffee Shop** - A cozy locals' hangout with specialty drinks, cookies, and a small gallery feel. Upstairs seating makes it one of the best spots in town to settle in with a friend or a book.
 - **High Rollin' Coffee** - A newer, bright coffee shop with a more health-conscious and vegetable-forward angle than the average mountain cafe.
 - **St. Andrew's Bar** - The Lodge's casual drinking-and-dining room, built around the historic bar and mountain-hotel setting.
 
@@ -423,32 +423,33 @@ Current official digital presence is messy, but the business appears active.
 
 ### Black Bear Coffee Shop
 
-A popular village coffee shop with a polished small-town feel, specialty drinks, and a menu built to catch both casual visitors and regulars. One of the best picks for coffee, a light breakfast, or a slower sit with a laptop or friend.
+A cozy locals' hangout with specialty drinks, cookies, and a small gallery feel — not just a coffee counter. The upstairs seating area makes it one of the best spots in Cloudcroft to settle in with a friend or a book, and it doubles as a place to catch up on village gossip.
 
-**Quick facts**  
-- **Address:** 200 Burro Ave, Cloudcroft, NM 88317  
-- **Phone:** 575-682-1239  
-- **Website:** https://www.mybbcoffee.com/  
-- **Email:** Not confirmed  
-- **Hours:** Recent listings indicate roughly Wed-Sat 8 a.m.-4 p.m. and Sun 8 a.m.-3 p.m.; verify directly because schedules may change  
-- **Type:** Coffee shop  
-- **Best for:** One of the best picks for coffee, a light breakfast, or a slower sit with a laptop or friend.  
-- **Service style:** Cafe service  
+**Quick facts**
+- **Address:** 200 Burro Ave, Cloudcroft, NM 88317
+- **Phone:** 575-682-1239
+- **Website:** https://www.mybbcoffee.com/
+- **Email:** Not confirmed
+- **Hours:** Recent listings indicate roughly Wed-Sat 8 a.m.-4 p.m. and Sun 8 a.m.-3 p.m.; verify directly because schedules may change
+- **Type:** Coffee shop
+- **Best for:** Relaxing with a friend, a book, or a laptop; specialty coffee; catching the local pulse
+- **Service style:** Cafe counter service
 
-**What to expect**  
-Craft-coffee shop vibe, friendly service, and a broader drink menu than a basic drip-and-donut stop.
+**What to expect**
+Cozy, linger-friendly space with an upstairs seating area. Popular gathering spot for locals, not just tourists passing through. Co-owners Crystal and Nathan Tompkins host monthly featured artists in a petite gallery space, giving it a small-cultural-stop feel that fits Burro Avenue.
 
-**Menu and specialties**  
-Espresso drinks, tea options, steamers, Italian cream sodas, hot cocoa, and dietary-option flexibility; the site says drinks can be made hot or cold and alternative milk is available.
+**Menu and specialties**
+Espresso drinks, tea options, steamers, Italian cream sodas, hot cocoa, and dietary-option flexibility (gluten-free, dairy-free, sugar-free). Seasonal drinks rotate — recent offerings include honey chai and strawberry rose matcha. Cookies available. Roasted beans sold for home use and shipped.
 
-**Practical call**  
-Good fit for people who care about coffee quality more than a full meal.
+**Practical call**
+More of a sit-and-socialize stop than a grab-and-go counter. Good fit for coffee-focused visitors who want atmosphere and a local vibe, not just caffeine. Not a full breakfast café.
 
-**Source notes**  
+**Source notes**
 - Official site about/menu
 - Instagram
 - Facebook
 - current location listings
+- Local knowledge (Chris Hea, April 2026)
 
 ### High Rollin' Coffee
 

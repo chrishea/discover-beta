@@ -75,3 +75,16 @@ I did not find a deeply reported opening-history piece, but local coverage in 20
 - I did not find a strong standalone official menu page beyond the current homepage descriptors.
 - Patio, delivery, and reservation details are not confirmed.
 - Ownership history is not confirmed from strong public sources.
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Menu**
+- The BLT with jalapeños is a recommended order.
+
+**Atmosphere and experience**
+- Indoor and outdoor seating available.
+- Casual, friendly environment — more of a sit-down lunch spot than a strict grab-and-go counter.

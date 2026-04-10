@@ -80,3 +80,18 @@ That makes KennaBelles look established and woven into daily town life, not just
 - **Current hours:** older local coverage supports early weekday hours, but current hours should be checked directly
 - **Owner identity:** Kenna Leonard is supported by a 2020 travel feature, but I did not find a current official business page repeating it
 - **Online sales / custom-order policies:** not clearly confirmed in the strongest current sources reviewed
+
+---
+
+## Owner / Local Knowledge (added April 10, 2026)
+
+**Source:** Direct input from Chris Hea, Cloudcroft local
+
+**Ownership**
+- Kenna Leonard confirmed still owning and operating the bakery as of April 2026.
+
+**Menu**
+- Croissants, kolaches, and fresh-baked pies are current offerings — expanding the documented menu beyond cinnamon rolls, cookies, and cupcakes.
+
+**Foot traffic**
+- Draws a steady flow of customers off Burro Avenue stepping inside for baked goods. Functions as a reliable walk-in bakery stop, not appointment-only or custom-order-driven.
