@@ -101,6 +101,26 @@
 .highlight-card:nth-child(7).visible { transition-delay: 0.3s; }
 .highlight-card:nth-child(8).visible { transition-delay: 0.1s; }
 
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: 0 auto;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+}
+
 @media (max-width: 1024px) {
     
     .know-grid { grid-template-columns: repeat(2, 1fr); }
@@ -224,6 +244,19 @@
                     <div class="about-image fade-in">
                         <img src="../media/lodging-grand-cloudcroft-hotel.webp" alt="Grand Cloudcroft Hotel exterior on James Canyon Highway" loading="lazy">
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="video" aria-label="Hotel video tour" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Video Tour</span>
+                    <h2 class="section-title section-title-centered">See The Grand</h2>
+                    <p class="section-description">Take a look inside Cloudcroft&rsquo;s newest hotel.</p>
+                </div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/NCJCqScc8gc" title="Grand Cloudcroft Hotel video tour" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                 </div>
             </div>
         </section>

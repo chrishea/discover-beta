@@ -197,6 +197,25 @@
     .fit-grid { grid-template-columns: 1fr; }
     
 }
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: 0 auto;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+}
 </style>
 </head>
 <body>
@@ -312,7 +331,20 @@
             </div>
         </section>
 
-        <section class="section" id="rooms" aria-label="Rooms and suites" style="background: var(--cloud-drift);">
+        <section class="section" id="video" aria-label="Lodge video" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Video</span>
+                    <h2 class="section-title section-title-centered">See The Lodge</h2>
+                    <p class="section-description">A closer look at Cloudcroft&rsquo;s iconic mountain resort.</p>
+                </div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/WBoTveI-3PM" title="The Lodge at Cloudcroft video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="rooms" aria-label="Rooms and suites">
             <div class="section-container">
                 <div style="text-align: center;">
                     <span class="section-label">Accommodations</span>
