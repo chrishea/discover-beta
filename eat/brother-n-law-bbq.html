@@ -176,10 +176,10 @@
                         </div>
                     </div>
                     <div class="about-image fade-in">
-                        <div class="about-image-placeholder">
-                            <div class="icon">&#x1F356;</div>
-                            <p>Brother-N-Law BBQ</p>
-                        </div>
+                        <img src="../eat/eat-photo/photo-brother-in-law-bbq/brother-in-law-front.jpg"
+                            alt="Brother-N-Law BBQ carved wooden sign with flame logo, established 2021, Cloudcroft NM"
+                            style="width: 100%; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);"
+                            loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -390,22 +390,26 @@
             }, { passive: true });
 
             var hamburger = document.querySelector('.hamburger');
-            var mobileMenu = document.querySelector('.mobile-menu');
-            hamburger.addEventListener('click', function() {
-                var isOpen = mobileMenu.classList.toggle('open');
-                hamburger.classList.toggle('active');
-                hamburger.setAttribute('aria-expanded', isOpen);
-                document.body.style.overflow = isOpen ? 'hidden' : '';
-            });
-
-            mobileMenu.querySelectorAll('a').forEach(function(link) {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.remove('open');
-                    hamburger.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
+            var mobileMenu = document.getElementById('mobile-nav');
+            if (hamburger && mobileMenu) {
+                hamburger.addEventListener('click', function() {
+                    var isOpen = mobileMenu.classList.toggle('open');
+                    hamburger.classList.toggle('active');
+                    hamburger.setAttribute('aria-expanded', isOpen);
+                    mobileMenu.hidden = !isOpen;
+                    document.body.style.overflow = isOpen ? 'hidden' : '';
                 });
-            });
+
+                mobileMenu.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                        mobileMenu.hidden = true;
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
 
             document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
                 anchor.addEventListener('click', function(e) {

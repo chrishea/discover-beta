@@ -39,6 +39,7 @@ Cloudcroft has enough variety that where you eat depends less on raw quality tha
 | Black Bear Coffee Shop | Cozy locals' hangout with specialty drinks, cookies, upstairs seating, and a small gallery feel | $-$$ | Coffee/cookies/specialty drinks | High |
 | High Rollin' Coffee | Go here if you want coffee plus fresher, lighter food, or if you want a cafe that feels a bit more contemporary | $-$$ | Coffee/baked goods/vegetarian-leaning eats | Low |
 | St. Andrew's Bar | Best for a drink, a lighter meal, or a more atmospheric stop than the standard small-town bar | $$ | Cocktails and bar food | Low |
+| Levain It Up | Worth a stop for sourdough lovers — a small walk-up bakery in High Rolls with rotating baked goods, Fri–Sun only | $-$$ | Sourdough/danishes/bagels/pastries | Medium |
 
 ## Reader's Shortlist
 
@@ -57,6 +58,7 @@ Cloudcroft has enough variety that where you eat depends less on raw quality tha
 - **Western Bar & Cafe** - A longstanding Burro Street restaurant-bar with more local-bar character than most spots in town.
 - **Black Bear Coffee Shop** - A cozy locals' hangout with specialty drinks, cookies, and a small gallery feel. Upstairs seating makes it one of the best spots in town to settle in with a friend or a book.
 - **High Rollin' Coffee** - A newer, bright coffee shop with a more health-conscious and vegetable-forward angle than the average mountain cafe.
+- **Levain It Up** - A small sourdough bakery in High Rolls worth the detour. Walk-up only, Fri–Sun afternoons, with rotating baked goods from Garrett Barnett and Steven Jackson.
 - **St. Andrew's Bar** - The Lodge's casual drinking-and-dining room, built around the historic bar and mountain-hotel setting.
 
 
@@ -309,6 +311,37 @@ One of the hardest places on this list to verify in detail.
 
 **Source notes**  
 - Cloudcroft Chamber dining directory
+
+### Levain It Up Sourdough Bakery
+
+A small, focused sourdough bakery in High Rolls — not Cloudcroft proper, but part of the mountain corridor and worth the detour. Garrett Barnett and Steven Jackson run the operation out of a renovated building on Highway 82. Pull over, park, step inside, order, and go. This is a walk-up stop, not a café.
+
+![Levain It Up Sourdough Bakery](eat/eat-photo/photos-levain-bakery/Levain%20It%20Up.jpg)
+
+**Quick facts**
+- **Address:** 880 US Highway 82, High Rolls, NM
+- **Phone:** Not confirmed
+- **Website:** Not confirmed
+- **Email:** Not confirmed
+- **Hours:** Friday–Sunday, 2:00 p.m.–6:00 p.m.
+- **Type:** Sourdough bakery / grab-and-go
+- **Best for:** Bread lovers, weekend travelers, anyone who likes small-batch baking more than standard café fare
+- **Service style:** Walk-up counter; no seating
+
+**What to expect**
+A focused bakery stop with limited hours and a rotating menu. Sourdough is the core identity. Expect to find whatever Barnett and Jackson baked that day — not a fixed, broad menu.
+
+**Menu and specialties**
+Sourdough baked goods, danishes, bagels, and rotating pastries. The menu varies, so treat each visit as its own discovery.
+
+**Practical call**
+Definitely worth a stop per local recommendation, but plan around the Fri–Sun 2–6 p.m. window. Not a lingering destination — this is a pull-over-and-go operation.
+
+**Source notes**
+- Cloudcroft Reader, "Rising to the Occasion: Levain It Up in High Rolls" (January 2026)
+- Cloudcroft Reader, "Cloudcroft's Fall Forecast" (September 2025)
+- Facebook page
+- Local knowledge (Chris Hea, April 2026)
 
 ### Mad Jack's Mountaintop Barbecue
 

@@ -7,7 +7,7 @@ Black Bear Coffee Shop is one of Cloudcroft's more established coffee anchors. C
 ## 2. Verified business facts
 
 - **Official business name:** Black Bear Coffee Shop
-- **Address:** 200 Burro Ave, Cloudcroft, NM
+- **Address:** 200 Burro Ave, Cloudcroft, NM 88317
 - **Phone:** (575) 682-1239
 - **Website:** https://www.mybbcoffee.com/
 - **Facebook:** https://www.facebook.com/blackbearcoffeeshop/

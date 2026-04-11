@@ -55,6 +55,23 @@
     background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(58, 107, 30, 0.1) 100%);
 }
 
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.gallery-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .about-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -172,10 +189,10 @@
                         </div>
                     </div>
                     <div class="about-image fade-in">
-                        <div class="about-image-placeholder">
-                            <div class="icon">&#x1F920;</div>
-                            <p>Big Daddy's Diner</p>
-                        </div>
+                        <img src="../eat/eat-photo/photo-big-daddys/big-daddys-00556.jpg"
+                            alt="Inside Big Daddy's Diner with Western decor, booths, and barrel accents"
+                            style="width: 100%; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);"
+                            loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -296,6 +313,22 @@
             </div>
         </section>
 
+        <section class="section" id="gallery" aria-label="Photo gallery">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Gallery</span>
+                    <h2 class="section-title section-title-centered">Big Daddy's Diner</h2>
+                    <p class="section-description">Cowboy heritage on James Canyon Highway.</p>
+                </div>
+                <div class="gallery-grid">
+                    <img src="../eat/eat-photo/photo-big-daddys/big-daddys-00555.jpg"
+                        alt="Big Daddy's Diner roadside sign with smoker and mountain pines" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photo-big-daddys/big-daddys-00556.jpg"
+                        alt="Interior of Big Daddy's Diner with Western decor, booths, and barrel accents" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </section>
+
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
                 <h2>Hungry for Some Good Grub?</h2>
@@ -363,22 +396,26 @@
             }, { passive: true });
 
             var hamburger = document.querySelector('.hamburger');
-            var mobileMenu = document.querySelector('.mobile-menu');
-            hamburger.addEventListener('click', function() {
-                var isOpen = mobileMenu.classList.toggle('open');
-                hamburger.classList.toggle('active');
-                hamburger.setAttribute('aria-expanded', isOpen);
-                document.body.style.overflow = isOpen ? 'hidden' : '';
-            });
-
-            mobileMenu.querySelectorAll('a').forEach(function(link) {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.remove('open');
-                    hamburger.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
+            var mobileMenu = document.getElementById('mobile-nav');
+            if (hamburger && mobileMenu) {
+                hamburger.addEventListener('click', function() {
+                    var isOpen = mobileMenu.classList.toggle('open');
+                    hamburger.classList.toggle('active');
+                    hamburger.setAttribute('aria-expanded', isOpen);
+                    mobileMenu.hidden = !isOpen;
+                    document.body.style.overflow = isOpen ? 'hidden' : '';
                 });
-            });
+
+                mobileMenu.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                        mobileMenu.hidden = true;
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
 
             document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
                 anchor.addEventListener('click', function(e) {

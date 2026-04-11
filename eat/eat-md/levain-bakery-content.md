@@ -9,15 +9,15 @@ It looks most appealing to bread-focused shoppers, pastry seekers, and travelers
 ## 2. Verified business facts
 
 - **Official business name:** Levain It Up LLC / Levain It Up Sourdough Bakery
-- **Address:** 880 US Highway 82, High Rolls, NM
+- **Address:** 880 US Highway 82, High Rolls, NM 88325
 - **Facebook:** current Facebook page exists
 - **Current operating status:** appears current
 - **Type of shop:** sourdough bakery / grab-and-go baked goods business
 - **Hours supported by current Facebook and local reporting:** Friday through Sunday, 2:00 PM to 6:00 PM
 - **Current merchandise identity clearly supported:** sourdough baked goods
-- **Official website:** not confirmed
+- **Official website:** none confirmed; Facebook page serves as primary online presence
 - **Instagram:** not confirmed from the strongest current sources reviewed
-- **Phone:** not confirmed from the strongest current sources reviewed
+- **Phone:** (575) 520-8096 (source: Yelp listing, December 2025)
 - **Online sales:** not confirmed
 
 ## 3. What the shop appears to be

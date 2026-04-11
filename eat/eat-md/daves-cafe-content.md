@@ -10,7 +10,7 @@ Dave's Café is a long-running Cloudcroft casual restaurant at 300 Burro Ave. Th
 - **Address:** 300 Burro Ave, Cloudcroft, NM 88317
 - **Phone:** (575) 682-2127
 - **Email:** cafe.daves@yahoo.com
-- **Website:** not confirmed
+- **Website:** none confirmed; Facebook page (facebook.com/DavesCafe1) serves as primary online presence. NetWaiter ordering page exists at davescafe1.netwaiter.com.
 - **Facebook:** https://www.facebook.com/DavesCafe1/ and older page variants also appear
 - **Instagram:** not confirmed
 - **Operating status:** appears current

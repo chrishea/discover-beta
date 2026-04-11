@@ -65,6 +65,22 @@ background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 }
 
 /* Footer border */
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-grid img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
 </style>
 </head>
 <body>
@@ -171,10 +187,10 @@ background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
                         </div>
                     </div>
                     <div class="about-image fade-in">
-                        <div class="about-image-placeholder">
-                            <div class="icon">&#x2615;</div>
-                            <p>High Rollin' Coffee</p>
-                        </div>
+                        <img src="../eat/eat-photo/photo-high-rollin/high-rollin-00557.jpg"
+                            alt="Cozy interior of High Rollin' Coffee with floral accent wall and hammock chair"
+                            style="width: 100%; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);"
+                            loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -296,6 +312,28 @@ background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
             </div>
         </section>
 
+        <section class="section" id="gallery" aria-label="Photo gallery">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Gallery</span>
+                    <h2 class="section-title section-title-centered">Inside High Rollin' Coffee</h2>
+                    <p class="section-description">A look at the cafe, the food, and the vibe.</p>
+                </div>
+                <div class="gallery-grid">
+                    <img src="../eat/eat-photo/photo-high-rollin/high-rollin-00555.jpg"
+                        alt="Behind the counter at High Rollin' Coffee with fresh-baked goods on display" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photo-high-rollin/high-rollin-00556.jpg"
+                        alt="Acai bowls topped with granola, fresh fruit, and mint alongside house-baked muffins" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photo-high-rollin/high-rollin-00557.jpg"
+                        alt="Cozy seating area with floral accent wall, hanging plants, and hammock chair" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photo-high-rollin/high-rollin-00558.jpeg"
+                        alt="Hammock chairs by the window at High Rollin' Coffee" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photo-high-rollin/high-rollin-00559.jpeg"
+                        alt="High Rollin' Coffee hand-drawn logo with coffee cup and sunflower" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </section>
+
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
                 <h2>Start Your Morning Right</h2>
@@ -363,22 +401,26 @@ background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
             }, { passive: true });
 
             var hamburger = document.querySelector('.hamburger');
-            var mobileMenu = document.querySelector('.mobile-menu');
-            hamburger.addEventListener('click', function() {
-                var isOpen = mobileMenu.classList.toggle('open');
-                hamburger.classList.toggle('active');
-                hamburger.setAttribute('aria-expanded', isOpen);
-                document.body.style.overflow = isOpen ? 'hidden' : '';
-            });
-
-            mobileMenu.querySelectorAll('a').forEach(function(link) {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.remove('open');
-                    hamburger.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
+            var mobileMenu = document.getElementById('mobile-nav');
+            if (hamburger && mobileMenu) {
+                hamburger.addEventListener('click', function() {
+                    var isOpen = mobileMenu.classList.toggle('open');
+                    hamburger.classList.toggle('active');
+                    hamburger.setAttribute('aria-expanded', isOpen);
+                    mobileMenu.hidden = !isOpen;
+                    document.body.style.overflow = isOpen ? 'hidden' : '';
                 });
-            });
+
+                mobileMenu.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                        mobileMenu.hidden = true;
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
 
             document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
                 anchor.addEventListener('click', function(e) {
