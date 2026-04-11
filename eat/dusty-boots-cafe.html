@@ -340,6 +340,65 @@
             </div>
         </section>
 
+        <section class="section" id="gallery" aria-label="Photo gallery">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">The Food</span>
+                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">From the Kitchen</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03566.jpg" alt="Scratch-made biscuits and gravy at Dusty Boots Cafe" loading="lazy">
+                        <div class="gallery-caption">Biscuits and gravy</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03556.jpg" alt="Bratwurst with sauerkraut from Saturday German dinner" loading="lazy">
+                        <div class="gallery-caption">Saturday German dinner</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03565.jpg" alt="Stacked BLT sandwich with fries at Dusty Boots Cafe" loading="lazy">
+                        <div class="gallery-caption">The BLT</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03558.jpg" alt="Chicken fried steak with mashed potatoes, gravy, and green beans" loading="lazy">
+                        <div class="gallery-caption">Chicken fried steak</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03562.jpg" alt="Biscuits and gravy breakfast plate with eggs, bacon, and hash browns" loading="lazy">
+                        <div class="gallery-caption">Breakfast plate</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03559.jpg" alt="Omelet with toast and home-fried potatoes" loading="lazy">
+                        <div class="gallery-caption">Omelet breakfast</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03557.jpg" alt="Taco plate with rice, beans, and guacamole from the Taco Cantina" loading="lazy">
+                        <div class="gallery-caption">Taco Cantina plate</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03561.jpg" alt="Golden chicken strips with fries and ranch" loading="lazy">
+                        <div class="gallery-caption">Chicken strips</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03560.jpg" alt="Biscuits and gravy with breakfast sides at the cafe" loading="lazy">
+                        <div class="gallery-caption">Biscuits and gravy duo</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03563.jpg" alt="Biscuits, gravy, eggs, bacon, and hash browns breakfast plate" loading="lazy">
+                        <div class="gallery-caption">The full breakfast</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03564.jpg" alt="Omelet with wheat toast and seasoned home fries" loading="lazy">
+                        <div class="gallery-caption">Omelet and home fries</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03555.jpg" alt="Fresh fruit bowl with yogurt, berries, banana, and granola" loading="lazy">
+                        <div class="gallery-caption">Fresh fruit bowl</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section" id="visit" aria-label="Plan your visit">
             <div class="section-container">
                 <div style="text-align: center;">
@@ -444,7 +503,7 @@
                 });
             }, observerOptions);
 
-            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) {
+            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card, .gallery-item').forEach(function(el) {
                 fadeObserver.observe(el);
             });
         })();
