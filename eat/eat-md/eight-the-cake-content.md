@@ -64,14 +64,7 @@ Likely drawbacks:
 
 ## 6. Background and history
 
-I did not find a strong current reported history piece laying out the opening date or ownership history in detail. What can be said with confidence is that Eight the Cake has been part of the current Cloudcroft business mix long enough to appear in:
-- Chamber materials
-- New Mexico Tourism
-- Cloudcroft Reader’s 2024 holiday shopping coverage
-- Cloudcroft Reader’s 2025 grocery-and-bakery roundup
-- New Mexico Magazine’s 2023 Cloudcroft travel feature
 
-Those repeated mentions suggest it has become a recognizable Burro Avenue stop rather than a brand-new arrival.
 
 ## 7. Media coverage and other articles
 
@@ -98,10 +91,7 @@ The most consistent identity is not “restaurant” in the full-service sense. 
 - Website domain listed consistently by Chamber and tourism sources: https://www.eightthecakellc.com
 
 ### Tourism / editorial coverage
-- New Mexico Tourism listing: https://www.newmexico.org/listing/eight-the-cake/8749/
-- Cloudcroft Reader, “Where to Play in New Mexico’s Christmas Capital this Season”
-- Cloudcroft Reader, “Find Fresh Groceries and Pantry Staples in Cloudcroft”
-- New Mexico Magazine, “Feel at Ho-Ho-Home in Cloudcroft”
+
 
 ## 9. Fact-check notes and open questions
 
@@ -114,7 +104,7 @@ The most consistent identity is not “restaurant” in the full-service sense. 
 
 ## Owner / Local Knowledge (added April 10, 2026)
 
-**Source:** Direct input from Chris Hea, Cloudcroft local
+**Source:** rne
 
 **Layout**
 - About half a dozen tables for seating — small but not strictly grab-and-go.

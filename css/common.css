@@ -897,7 +897,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: #ffffff70;
   border: 1px solid rgba(0, 0, 0, 0.4);
   padding: 0.5rem 1.25rem;
   border-radius: 30px;
@@ -980,7 +980,7 @@ img {
   text-decoration: none;
   background: #FFFFFF90;
   color: var(--pine);
-  border: 2px solid #fbfbfb;
+  border: 0px solid #fbfbfb;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s, color 0.3s;
   min-height: 44px;
   cursor: pointer;
@@ -1049,9 +1049,10 @@ img {
 /* ===== ABOUT GRID ===== */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 4rem;
   align-items: center;
+  padding: 3vh 12vw;
 }
 
 .about-text p {
@@ -1116,6 +1117,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  padding: 3vh 2vw;
 }
 
 .menu-card {
