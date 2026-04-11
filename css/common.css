@@ -1585,6 +1585,12 @@ img {
   transform: translateY(20px);
   display: flex;
   flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.lodge-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .lodge-card.visible {
@@ -1706,11 +1712,15 @@ img {
 
 .lodge-card-contact a {
   color: steelblue;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 .lodge-card-contact a:hover {
-  text-decoration: underline;
+  color: #3a7abf;
+  text-decoration-color: steelblue;
 }
 
 .lodge-card-guide {
@@ -1817,6 +1827,16 @@ img {
   color: var(--charcoal);
 }
 
+.compare-card a.pick-name {
+  color: steelblue;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.compare-card a.pick-name:hover {
+  opacity: 0.7;
+}
+
 /* ===== PICK CARDS (Editor's Picks) ===== */
 .picks-grid {
   display: grid;
@@ -1873,7 +1893,7 @@ img {
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  color: #94692b;
+  color: #373737;
   margin-bottom: 0.5rem;
 }
 
@@ -1881,6 +1901,10 @@ img {
   color: #212121;
   font-size: 0.85rem;
   line-height: 1.6;
+}
+
+.pick-card p a {
+  color: steelblue;
 }
 
 /* ===== TIP CARDS ===== */
