@@ -1,4 +1,4 @@
-# Five Hikes Near Cloudcroft, Ranked Easiest to Hardest
+# Hikes Near Cloudcroft, Ranked Easiest to Hardest
 
 ## 1. Grand View Trail (T130)
 
