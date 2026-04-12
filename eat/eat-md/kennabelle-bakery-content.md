@@ -11,9 +11,9 @@ This looks like a true bakery stop, not just a cake-order business. It appears t
 - **Official business name:** KennaBelles Kreations Bakery
 - **Address:** 308 Burro Ave, Cloudcroft, NM 88317
 - **Phone:** 575-682-2712
-- **Official website:** possibly kennabelleskreationsbakery.com (not independently verified; confirm directly). Facebook page (facebook.com/KennaBellesKreationsBakery) is confirmed active.
-- **Facebook:** current Facebook page exists
-- **Instagram:** @kennabelleskreationsbakery
+- **Official website:** https://www.kennabelleskreationsbakery.com
+- **Facebook:** https://www.facebook.com/KennaBellesKreationsBakery/
+- **Instagram:** https://www.instagram.com/kennabelleskreationsbakery/
 - **Current operating status:** appears current
 - **Type of shop:** bakery / pastry shop / cupcake shop
 - **Current merchandise identity clearly supported:** homemade pastries, cookies, cupcakes, coffee and bakery items

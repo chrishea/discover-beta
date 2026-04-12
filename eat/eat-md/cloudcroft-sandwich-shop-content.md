@@ -11,6 +11,8 @@ Cloudcroft Sandwich Shop is a downtown Cloudcroft sandwich counter at 505 Burro 
 - **Phone:** (575) 551-0065
 - **Email:** info@cloudcroftdeli.com
 - **Website:** https://cloudcroftsandwich.shop/
+- **Facebook:** https://www.facebook.com/CloudcroftSandwichShop/
+- **Instagram:** https://www.instagram.com/cloudcroft.sandwich.shop/
 - **Operating status:** appears current
 - **Current hours:** open daily 11:00 a.m. to 4:00 p.m.; closed Wednesdays
 - **Cuisine / category:** sandwich shop / deli / lunch spot

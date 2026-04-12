@@ -12,6 +12,7 @@ Dusty Boots Café is the on-site restaurant component of Dusty Boots Motel at 13
 - **Email:** dusty@dustybootsmotel.com
 - **Website:** https://www.thedustyboots.com/
 - **Facebook:** https://www.facebook.com/dustybootsmotel/
+- **Instagram:** https://www.instagram.com/dustybootsmotel/
 - **Operating status:** Appears current
 - **Current hours:** The official site states **summer hours** of 7:00 AM–9:00 PM daily; breakfast served daily from 7:00 AM–12:00 PM
 - **Cuisine / category:** Café / country cooking / motel restaurant

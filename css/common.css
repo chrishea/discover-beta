@@ -514,13 +514,13 @@ img {
 
 /* ===== SECTION UTILITIES ===== */
 .section {
-  padding: 3rem;
+  padding: 2vh 2vw;
 }
 
 .section-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2vw;
 }
 
 .section-header {
@@ -818,7 +818,7 @@ img {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 }
@@ -1037,6 +1037,25 @@ img {
   font-size: 1.1rem;
 }
 
+/* ===== SECTION HEADER CENTER ===== */
+.section-header-center {
+  text-align: center;
+}
+
+/* ===== ENTITY PHOTO FEATURE ===== */
+.entity-photo-feature {
+  margin: 2rem auto 0;
+  max-width: 700px;
+}
+
+.entity-photo-feature img {
+  width: 100%;
+  border-radius: 12px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* ===== SECTION DESCRIPTION ===== */
 .section-description {
   font-size: 1.05rem;
@@ -1052,7 +1071,7 @@ img {
   grid-template-columns: 1fr;
   gap: 4rem;
   align-items: center;
-  padding: 3vh 12vw;
+  padding: 3vh 2vw;
 }
 
 .about-text p {
@@ -1274,7 +1293,7 @@ img {
 /* ===== VISITING SECTION ===== */
 .visiting-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -1317,6 +1336,15 @@ img {
   color: var(--charcoal-light);
   font-size: 0.95rem;
   line-height: 1.7;
+}
+
+.visiting-card a {
+  color: steelblue;
+  text-decoration: none;
+}
+
+.visiting-card a:hover {
+  text-decoration: underline;
 }
 
 /* ===== CTA SECTION ===== */
@@ -1446,6 +1474,10 @@ img {
 
 .tip-box strong {
   color: #000000;
+}
+
+.tip-box a {
+  color: steelblue;
 }
 
 .tip-icon {
@@ -2214,6 +2246,7 @@ img {
   object-fit: cover;
   display: block;
 }
+
 /* ═══════════════════════════════════════════════════════════════
    MERGED FROM ui-topic-theme.md — Topic Page Components
    ═══════════════════════════════════════════════════════════════ */
@@ -2371,11 +2404,25 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s;
 }
 
-.thing-card:nth-child(2).visible { transition-delay: 0.07s; }
-.thing-card:nth-child(3).visible { transition-delay: 0.14s; }
-.thing-card:nth-child(4).visible { transition-delay: 0.21s; }
-.thing-card:nth-child(5).visible { transition-delay: 0.28s; }
-.thing-card:nth-child(6).visible { transition-delay: 0.35s; }
+.thing-card:nth-child(2).visible {
+  transition-delay: 0.07s;
+}
+
+.thing-card:nth-child(3).visible {
+  transition-delay: 0.14s;
+}
+
+.thing-card:nth-child(4).visible {
+  transition-delay: 0.21s;
+}
+
+.thing-card:nth-child(5).visible {
+  transition-delay: 0.28s;
+}
+
+.thing-card:nth-child(6).visible {
+  transition-delay: 0.35s;
+}
 
 .thing-card:hover {
   border-color: #000000;
@@ -2461,12 +2508,29 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s;
 }
 
-.lodging-item:nth-child(2).visible { transition-delay: 0.1s; }
-.lodging-item:nth-child(3).visible { transition-delay: 0.2s; }
-.lodging-item:nth-child(4).visible { transition-delay: 0.3s; }
-.lodging-item:nth-child(5).visible { transition-delay: 0.4s; }
-.lodging-item:nth-child(6).visible { transition-delay: 0.5s; }
-.lodging-item:nth-child(7).visible { transition-delay: 0.6s; }
+.lodging-item:nth-child(2).visible {
+  transition-delay: 0.1s;
+}
+
+.lodging-item:nth-child(3).visible {
+  transition-delay: 0.2s;
+}
+
+.lodging-item:nth-child(4).visible {
+  transition-delay: 0.3s;
+}
+
+.lodging-item:nth-child(5).visible {
+  transition-delay: 0.4s;
+}
+
+.lodging-item:nth-child(6).visible {
+  transition-delay: 0.5s;
+}
+
+.lodging-item:nth-child(7).visible {
+  transition-delay: 0.6s;
+}
 
 .lodging-item:hover {
   border-color: #000000;
@@ -2485,11 +2549,6 @@ img {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: filter 0.4s;
-}
-
-.lodging-item:hover .lodging-img img {
-  filter: grayscale(100%);
 }
 
 .lodging-tags {
@@ -2537,11 +2596,25 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s;
 }
 
-.restaurant-card:nth-child(2).visible { transition-delay: 0.07s; }
-.restaurant-card:nth-child(3).visible { transition-delay: 0.14s; }
-.restaurant-card:nth-child(4).visible { transition-delay: 0.21s; }
-.restaurant-card:nth-child(5).visible { transition-delay: 0.28s; }
-.restaurant-card:nth-child(6).visible { transition-delay: 0.35s; }
+.restaurant-card:nth-child(2).visible {
+  transition-delay: 0.07s;
+}
+
+.restaurant-card:nth-child(3).visible {
+  transition-delay: 0.14s;
+}
+
+.restaurant-card:nth-child(4).visible {
+  transition-delay: 0.21s;
+}
+
+.restaurant-card:nth-child(5).visible {
+  transition-delay: 0.28s;
+}
+
+.restaurant-card:nth-child(6).visible {
+  transition-delay: 0.35s;
+}
 
 .restaurant-card:hover {
   border-color: #000000;
@@ -2622,11 +2695,25 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.event-item:nth-child(2).visible { transition-delay: 0.1s; }
-.event-item:nth-child(3).visible { transition-delay: 0.2s; }
-.event-item:nth-child(4).visible { transition-delay: 0.3s; }
-.event-item:nth-child(5).visible { transition-delay: 0.4s; }
-.event-item:nth-child(6).visible { transition-delay: 0.5s; }
+.event-item:nth-child(2).visible {
+  transition-delay: 0.1s;
+}
+
+.event-item:nth-child(3).visible {
+  transition-delay: 0.2s;
+}
+
+.event-item:nth-child(4).visible {
+  transition-delay: 0.3s;
+}
+
+.event-item:nth-child(5).visible {
+  transition-delay: 0.4s;
+}
+
+.event-item:nth-child(6).visible {
+  transition-delay: 0.5s;
+}
 
 .event-item::before {
   content: '';
@@ -2689,11 +2776,25 @@ img {
   transition: opacity 0.5s ease, transform 0.5s ease, background 0.25s;
 }
 
-.outdoor-card:nth-child(2).visible { transition-delay: 0.07s; }
-.outdoor-card:nth-child(3).visible { transition-delay: 0.14s; }
-.outdoor-card:nth-child(4).visible { transition-delay: 0.21s; }
-.outdoor-card:nth-child(5).visible { transition-delay: 0.28s; }
-.outdoor-card:nth-child(6).visible { transition-delay: 0.35s; }
+.outdoor-card:nth-child(2).visible {
+  transition-delay: 0.07s;
+}
+
+.outdoor-card:nth-child(3).visible {
+  transition-delay: 0.14s;
+}
+
+.outdoor-card:nth-child(4).visible {
+  transition-delay: 0.21s;
+}
+
+.outdoor-card:nth-child(5).visible {
+  transition-delay: 0.28s;
+}
+
+.outdoor-card:nth-child(6).visible {
+  transition-delay: 0.35s;
+}
 
 .outdoor-card:hover {
   background: #e8e8e8;
@@ -2907,11 +3008,25 @@ img {
   transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
 }
 
-.card:nth-child(2).visible { transition-delay: 0.1s; }
-.card:nth-child(3).visible { transition-delay: 0.15s; }
-.card:nth-child(4).visible { transition-delay: 0.2s; }
-.card:nth-child(5).visible { transition-delay: 0.25s; }
-.card:nth-child(6).visible { transition-delay: 0.3s; }
+.card:nth-child(2).visible {
+  transition-delay: 0.1s;
+}
+
+.card:nth-child(3).visible {
+  transition-delay: 0.15s;
+}
+
+.card:nth-child(4).visible {
+  transition-delay: 0.2s;
+}
+
+.card:nth-child(5).visible {
+  transition-delay: 0.25s;
+}
+
+.card:nth-child(6).visible {
+  transition-delay: 0.3s;
+}
 
 .card:hover {
   transform: translateY(-6px);
@@ -2972,9 +3087,17 @@ img {
   transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.seasonal-card:nth-child(2).visible { transition-delay: 0.1s; }
-.seasonal-card:nth-child(3).visible { transition-delay: 0.2s; }
-.seasonal-card:nth-child(4).visible { transition-delay: 0.3s; }
+.seasonal-card:nth-child(2).visible {
+  transition-delay: 0.1s;
+}
+
+.seasonal-card:nth-child(3).visible {
+  transition-delay: 0.2s;
+}
+
+.seasonal-card:nth-child(4).visible {
+  transition-delay: 0.3s;
+}
 
 .seasonal-card:hover {
   transform: translateY(-6px);
@@ -3106,9 +3229,17 @@ img {
   transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.route-item:nth-child(2).visible { transition-delay: 0.1s; }
-.route-item:nth-child(3).visible { transition-delay: 0.2s; }
-.route-item:nth-child(4).visible { transition-delay: 0.3s; }
+.route-item:nth-child(2).visible {
+  transition-delay: 0.1s;
+}
+
+.route-item:nth-child(3).visible {
+  transition-delay: 0.2s;
+}
+
+.route-item:nth-child(4).visible {
+  transition-delay: 0.3s;
+}
 
 .route-icon {
   font-size: 1.5rem;
@@ -3156,9 +3287,11 @@ img {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .seasonal-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .practical-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3168,43 +3301,55 @@ img {
   .things-grid {
     grid-template-columns: 1fr;
   }
+
   .restaurant-grid {
     grid-template-columns: 1fr;
   }
+
   .outdoor-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .lodging-badge {
     writing-mode: horizontal-tb;
     transform: none;
     min-width: auto;
     padding: 0.5rem 1rem;
   }
+
   .lodging-item {
     flex-direction: column;
   }
+
   .lodging-content {
     padding: 1.25rem;
   }
+
   .itin-stop {
     grid-template-columns: 60px 1fr;
   }
+
   .toc-inner {
     flex-direction: column;
     gap: 0.75rem;
   }
+
   .hero-meta {
     gap: 1rem;
   }
+
   .card-grid {
     grid-template-columns: 1fr;
   }
+
   .seasonal-grid {
     grid-template-columns: 1fr;
   }
+
   .practical-grid {
     grid-template-columns: 1fr;
   }
+
   .getting-here-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -3215,6 +3360,7 @@ img {
   .outdoor-grid {
     grid-template-columns: 1fr;
   }
+
   .guide-body {
     padding: 0 1.25rem;
   }

@@ -16,7 +16,7 @@ This appears to be a better fit for pre-dinner drinks, post-golf drinks, or a sl
 - **Website:** https://www.223collectionhotels.com/the-lodge
 - **Dining page:** https://www.223collectionhotels.com/thelodge/dining
 - **Official Facebook:** https://www.facebook.com/LodgeAtCloudcroft/
-- **Official Instagram:** linked from the Lodge dining page through the parent property site
+- **Official Instagram:** https://www.instagram.com/lodgeatcloudcroft/ (shared with The Lodge)
 - **Current operating status:** appears current
 - **Current hours on official dining page:** Wednesday–Saturday, 12:00 PM–8:00 PM
 - **Bar service:** active

@@ -11,6 +11,8 @@ Ski Cloudcroft's food service is best understood as a seasonal amenity tied to t
 - **Phone:** (575) 682-2333
 - **Email:** info@skicloudcroft.net
 - **Website:** https://skicloudcroft.net/
+- **Facebook:** https://www.facebook.com/SkiCloudcroft/
+- **Instagram:** https://www.instagram.com/skicloudcroft/
 - **Operating status:** appears current as a ski/tubing business
 - **Food-service status:** appears current seasonally; exact schedule should be checked directly
 - **Cuisine / category:** seasonal pizza / snack-bar style food service tied to recreation operations

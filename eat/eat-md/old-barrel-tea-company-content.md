@@ -13,6 +13,7 @@ Old Barrel Tea Company is a female-run, family-owned loose-leaf tea business wit
 - **Website:** https://oldbarreltea.com/
 - **Locations page:** https://oldbarreltea.com/pages/locations
 - **Facebook:** https://www.facebook.com/oldbarrelteaco/
+- **Instagram:** https://www.instagram.com/oldbarrelteaco/
 - **Operating status:** Appears current
 - **Cuisine / category:** Specialty loose-leaf tea shop / gourmet provisions / wellness retail
 - **Known products:** Loose-leaf teas, raw and unfiltered honey, gourmet herbs and spices, wellness elixirs, essential oils, brewing tools

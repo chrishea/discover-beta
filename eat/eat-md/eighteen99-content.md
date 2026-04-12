@@ -12,6 +12,8 @@ Eighteen99 is the current signature restaurant inside The Lodge at Cloudcroft. I
 - **Email:** jon.mancillas@thelodgeresort.com
 - **Website / dining page:** https://www.223collectionhotels.com/thelodge/dining
 - **Chamber listing URL:** https://www.coolcloudcroft.com/members/eighteen99
+- **Facebook:** https://www.facebook.com/LodgeAtCloudcroft/ (shared with The Lodge)
+- **Instagram:** https://www.instagram.com/lodgeatcloudcroft/ (shared with The Lodge)
 - **Operating status:** Appears current
 - **Current hours:** Open Wednesday–Saturday, 5:00 PM–8:00 PM
 - **Reservations:** Yes; the current official dining page includes a reservation link

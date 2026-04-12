@@ -14,8 +14,8 @@ This does not look like a quiet, fine-dining destination. It looks more like a c
 - **Website:** https://www.cloudcroftbrewing.com/
 - **Public contact email:** Chamber page lists `jmaynard@greenmnt.com`
 - **Band-booking email:** `booking@cloudcroftbrewing.com`
-- **Official Facebook:** linked from the official website
-- **Official Instagram:** `@cloudcroftbrewing`
+- **Official Facebook:** https://www.facebook.com/cloudcroftbrewingcompany/
+- **Official Instagram:** https://www.instagram.com/cloudcroftbrewing/
 - **Current operating status:** appears current
 - **Food service:** active
 - **Beer service:** active
