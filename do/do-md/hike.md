@@ -60,3 +60,23 @@ https://www.fs.usda.gov/r03/lincoln/recreation/trails
 Cloudcroft hiking is high-country hiking. Osha alone sits around 8,500 to 8,600 feet, and even easy trails can feel harder if you came up from Alamogordo the same day. Weather swings fast. Carry more water than you think you need, and keep an extra layer in the car or pack. Cell service can be spotty once you get away from town. Stay on the trail, leash dogs where required, and check Lincoln National Forest alerts before you leave. As of March 27, 2026, the forest has Stage 1 fire restrictions in effect, and closures or seasonal access limits can change trail logistics. ([fs.usda.gov](https://www.fs.usda.gov/media/94558))
 
 High-level reasoning: I picked five trails that are close to Cloudcroft, different from one another, and supported by current Forest Service material. I leaned toward hikes that give you a real spread of experiences: basin views, old railroad grades, trestle history, and one harder canyon option.
+
+---
+
+## Quick Reference: Key Contacts
+
+| Organization | Phone | Address | Web |
+|---|---|---|---|
+| **Sacramento Ranger District** (trails, closures, maps) | (575) 682-2551 | 4 Lost Lodge Rd, Cloudcroft, NM 88317 | [fs.usda.gov](https://www.fs.usda.gov/r03/lincoln/offices/sacramento-ranger-district) |
+| **High Altitude Outfitters** (maps, gear, trail advice) | (575) 682-1229 | 310 Burro Ave, Cloudcroft, NM 88317 | [highaltitudenm.com](https://www.highaltitudenm.com/) |
+| **Cloudcroft Chamber of Commerce** | (575) 682-2733 | 1001 James Canyon Hwy, Cloudcroft, NM 88317 | [coolcloudcroft.com](https://www.coolcloudcroft.com/) |
+
+**Facebook pages:**
+- High Altitude Outfitters: https://www.facebook.com/pages/High-Altitude-Outfitters/576328489172929
+- Cloudcroft Chamber: https://www.facebook.com/CloudcroftChamber/
+
+**Essential planning links:**
+- Lincoln NF trail listing: https://www.fs.usda.gov/r03/lincoln/recreation/trails
+- Sacramento Ranger District recreation: https://www.fs.usda.gov/r03/lincoln/recreation/sacramento-ranger-district
+- Current forest alerts & closures: https://www.fs.usda.gov/r03/lincoln/alerts
+- Current fire restrictions: https://www.fs.usda.gov/r03/lincoln/alerts/current-fire-restrictions-and-related-prohibitions

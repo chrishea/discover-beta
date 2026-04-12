@@ -4,6 +4,22 @@
 
 If you want **the best overall developed camping near Cloudcroft**, start with the main Forest Service cluster east and south of town: **Pines, Deerhead, Apache, Saddle, Silver, Sleepy Grass, and Silver Overflow**. These are the easiest public options to use, the best base for hiking and cool-weather forest camping, and the simplest choices for first-time visitors.
 
+All campgrounds listed here are managed by the **Lincoln National Forest, Sacramento Ranger District** unless otherwise noted. For questions about any Forest Service campground — site availability, road conditions, fire restrictions, or RV fit — contact the district office directly:
+
+> **Sacramento Ranger District**
+> 4 Lost Lodge Rd, Cloudcroft, NM 88317
+> Phone: **(575) 682-2551**
+> Hours: M–F 9:00 AM – 3:00 PM (closed federal holidays)
+> Web: https://www.fs.usda.gov/r03/lincoln/offices/sacramento-ranger-district
+
+For general Cloudcroft visitor information:
+
+> **Cloudcroft Chamber of Commerce**
+> 1001 James Canyon Hwy, Cloudcroft, NM 88317
+> Phone: **(575) 682-2733**
+> Web: https://www.coolcloudcroft.com/
+> Facebook: https://www.facebook.com/CloudcroftChamber/
+
 ### Best picks by use case
 
 - **Best overall developed campground:** **Pines Campground**
@@ -538,12 +554,17 @@ Useful official pages:
 ### Nearby public alternative: Oliver Lee Memorial State Park
 **Why include it:** It is not a Cloudcroft forest campground, but it is a reasonable nearby public alternative for people who want a more reliable state-park setup or are pairing Cloudcroft with Alamogordo and White Sands.
 
+**Contact**
+- Address: **409 Dog Canyon Rd, Alamogordo, NM 88310**
+- Phone: **(575) 437-8284**
+- Reservations: **1-877-664-7787**
+
 **Key facts**
 - About **35 miles / 44 minutes from Cloudcroft**
 - Elevation **4,400 feet**
 - Very different setting: desert foothill rather than cool mountain forest
 - Official state page says the park is a good base for day trips
-- As of April 2026, the official state park alerts page says the entry is under construction, the **group area is closed**, **no overflow camping is available**, and the **dump station is closed**, with alternate dump sites available on request
+- As of April 2026, the official state park alerts page says the entry is under construction (expected through June 2026), the **group area is closed**, **no overflow camping is available**, and the **dump station is closed**, with alternate dump sites available on request
 
 **Best for**
 - People who want a public campground with easier lower-elevation access
@@ -671,21 +692,24 @@ Best picks:
 
 ## 7. Weather, altitude, and seasonal considerations
 
-Cloudcroft camping is shaped by elevation more than by the New Mexico stereotype.
+Cloudcroft camping is shaped by elevation more than by the New Mexico stereotype. Most campgrounds sit between **8,700 and 9,000 feet** — comparable to many Colorado ski towns. If you are arriving from lower elevation, the altitude affects you whether you notice it or not.
 
 ### Practical realities
 - The Sacramento Ranger District ranges from about **5,400 feet to over 9,600 feet**.
 - Many of the best Cloudcroft campgrounds are in the upper-elevation band around the village.
-- This is why they are marketed as relief from desert-floor heat.
-- Nights can be cold even in summer.
-- Afternoon thunderstorms are a real issue in the warm season.
+- This is why they are marketed as relief from desert-floor heat — Cloudcroft typically runs **20–30°F cooler** than Alamogordo or Las Cruces.
+- **Nights can drop into the 40s even in July and August.** Bring warmer layers than you think you need.
+- **Afternoon thunderstorms** are common from late June through August (monsoon season). Lightning is a real concern at this elevation. Plan outdoor activity for mornings.
 - Higher campgrounds often open in **May** and close in **October**.
-- Lower sites such as **James Canyon** can remain usable later because they sit lower.
+- Lower sites such as **James Canyon** (6,800 ft) can remain usable later because they sit lower.
 - Snow and mud can affect access in shoulder seasons and winter.
 - Fire restrictions can change the camping experience significantly, especially for anyone expecting campfires.
 
-### What this means for campers
-- Bring warmer layers than you think you need.
+### Altitude advisory for visitors
+- **Hydrate aggressively.** The air is drier and thinner than most visitors expect. Drink more water than you think you need, starting before you arrive.
+- **Sun exposure is stronger at 9,000 feet.** Sunscreen and shade matter even on overcast days.
+- **Exertion hits harder.** Hiking, biking, and even setting up camp will leave you more winded than at sea level.
+- **Alcohol hits harder at altitude.** One beer at 9,000 feet can feel like two.
 - Do not assume a summer afternoon stays dry.
 - Recheck opening dates right before departure.
 - Recheck fire rules right before departure.
@@ -869,3 +893,27 @@ If you want to add an arts stop to a Cloudcroft camping trip, **Cloudcroft Art W
 - Material lists and skill-level fit
 - Any schedule changes or cancellations
 - Whether public receptions, demos, or related events are open to nonparticipants
+
+---
+
+## Quick Reference: Key Contacts
+
+| Organization | Phone | Address | Web |
+|---|---|---|---|
+| **Sacramento Ranger District** (all Forest Service campgrounds) | (575) 682-2551 | 4 Lost Lodge Rd, Cloudcroft, NM 88317 | [fs.usda.gov/r03/lincoln/offices/sacramento-ranger-district](https://www.fs.usda.gov/r03/lincoln/offices/sacramento-ranger-district) |
+| **Cloudcroft Chamber of Commerce** | (575) 682-2733 | 1001 James Canyon Hwy, Cloudcroft, NM 88317 | [coolcloudcroft.com](https://www.coolcloudcroft.com/) |
+| **Village of Cloudcroft** | (575) 682-2411 | 201 Burro Ave, Cloudcroft, NM 88317 | [villageofcloudcroftnm.net](https://www.villageofcloudcroftnm.net/) |
+| **Oliver Lee Memorial State Park** | (575) 437-8284 | 409 Dog Canyon Rd, Alamogordo, NM 88310 | [emnrd.nm.gov](https://www.emnrd.nm.gov/spd/find-a-park/oliver-lee-memorial-state-park/) |
+| **NM State Parks Reservations** | 1-877-664-7787 | — | [reserveamerica.com](https://newmexicostateparks.reserveamerica.com/) |
+| **Cloudcroft Art Workshops** | — | 90 Swallow Pl, Cloudcroft, NM 88317 | [cloudcroftart.com](https://cloudcroftart.com/) |
+
+**Facebook pages:**
+- Cloudcroft Chamber: https://www.facebook.com/CloudcroftChamber/
+- Village of Cloudcroft: https://www.facebook.com/VillageOfCloudcroft/
+
+**Essential planning links:**
+- Lincoln NF Camping & Cabins hub: https://www.fs.usda.gov/r03/lincoln/recreation/camping-cabins
+- Current fire restrictions: https://www.fs.usda.gov/r03/lincoln/alerts/current-fire-restrictions-and-related-prohibitions
+- Current alerts & closures: https://www.fs.usda.gov/r03/lincoln/alerts
+- Motor Vehicle Use Maps (MVUM): https://www.fs.usda.gov/r03/lincoln/maps-guides/motor-vehicle-use-maps
+- Sacramento District camping brochure (PDF): https://www.fs.usda.gov/media/94466

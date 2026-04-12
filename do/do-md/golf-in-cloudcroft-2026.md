@@ -210,3 +210,22 @@ The repeated cautions are:
 - **Golf-course opening year:** many golf sources say 1899, but the current official pages more clearly support the hotel’s 1899 founding than a separately documented course-opening year.
 - **Practice facilities:** putting green is supported; driving range is consistently listed as absent on tee-time pages, but that detail is not clearly stated on the current official Lodge site.
 - **Public access wording:** multiple public-facing booking sources strongly suggest open public play, but I did not find a clear official sentence stating “open to the public” on the current official Lodge site.
+
+---
+
+## Quick Reference: Key Contacts
+
+| Organization | Phone | Address | Web |
+|---|---|---|---|
+| **The Lodge Golf Course** | (575) 682-2098 | 601 Corona Pl, Cloudcroft, NM 88317 | [thelodgeresort.com](https://www.thelodgeresort.com/) |
+| **The Lodge Resort (main)** | (575) 682-2566 | 601 Corona Pl, Cloudcroft, NM 88317 | [223collectionhotels.com/the-lodge](https://www.223collectionhotels.com/the-lodge) |
+| **Cloudcroft Chamber of Commerce** | (575) 682-2733 | 1001 James Canyon Hwy, Cloudcroft, NM 88317 | [coolcloudcroft.com](https://www.coolcloudcroft.com/) |
+
+**Facebook pages:**
+- The Lodge at Cloudcroft: https://www.facebook.com/LodgeAtCloudcroft/
+- Lodge Golf Course: https://www.facebook.com/LodgeGolfatCloudcroft/
+- Cloudcroft Chamber: https://www.facebook.com/CloudcroftChamber/
+
+**Book tee times:**
+- GolfNow: https://www.golfnow.com/tee-times/facility/12629-the-lodge-golf-course/search
+- TeeOff: https://www.teeoff.com/tee-times/facility/12629-the-lodge-golf-course/search

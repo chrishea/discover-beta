@@ -58,7 +58,12 @@ Best for shorter, scenic runs or race-day training-style efforts close to town.
 Best for visitors who want moderate trail texture without needing a full backcountry plan.
 
 ### Shuttle and support
-Cloudcroft Reader’s summer guide says High Altitude offered a **free Saturday Rim Trail shuttle** from its Burro Avenue shop, leaving Saturdays at 9:00 a.m., and gave **575-682-1229** for details. Because that information came from 2025 coverage, it should be checked directly before relying on it.
+Cloudcroft Reader’s summer guide says **High Altitude Outfitters** offered a **free Saturday Rim Trail shuttle** from its Burro Avenue shop, leaving Saturdays at 9:00 a.m. Because that information came from 2025 coverage, it should be checked directly before relying on it.
+
+- **High Altitude Outfitters**: 310 Burro Ave, Cloudcroft, NM 88317
+- Phone: **(575) 682-1229**
+- Website: https://www.highaltitudenm.com/
+- Facebook: https://www.facebook.com/pages/High-Altitude-Outfitters/576328489172929
 
 ## What it’s actually like
 
@@ -81,10 +86,21 @@ The race culture also seems real, not forced. UltraSignup and RunSignup both sho
 - Strong recreational runners who want forest trails instead of road mileage
 - Repeat Cloudcroft visitors who want a more active trip
 
+## Altitude advisory
+
+Cloudcroft trails sit between **8,500 and 9,000+ feet**. That changes every run:
+
+- **Do not judge effort by mileage alone.** A 3-mile trail run at 9,000 feet can feel like 5 miles at sea level.
+- **Hydrate aggressively.** Start drinking extra water before you run, not just during.
+- **Keep the first run short.** If you drove up from Alamogordo or El Paso the same day, back off your normal pace and distance.
+- **Sun exposure is stronger at altitude.** Sunscreen and a hat matter even on overcast mornings.
+- **Afternoon thunderstorms** are common in summer (late June through August). Plan runs for mornings. Lightning on exposed ridgelines is a real risk.
+- **Cell service is spotty** on forest trails. Tell someone your route and expected return time.
+
 ## Potential drawbacks or cautions
 
 - Altitude is the biggest issue. Do not judge effort by mileage alone.
-- Forest access can change with fire restrictions or closures.
+- Forest access can change with fire restrictions or closures. As of March 27, 2026, Stage 1 fire restrictions are in effect forest-wide.
 - Rim Trail route planning matters more than many visitors expect.
 - Trails that are great for hiking can still be awkward for running if you want a smooth, uninterrupted workout.
 - If you are only in town for a weekend, it is smart to keep the first run shorter than planned.
@@ -130,3 +146,27 @@ Main sources used:
 - Best breakfast after a run in Cloudcroft
 - Best nearby scenic drives for recovery days
 - Where to stay for Cloudcroft race weekends
+
+---
+
+## Quick Reference: Key Contacts
+
+| Organization | Phone | Address | Web |
+|---|---|---|---|
+| **High Altitude Outfitters** (shuttle, maps, gear) | (575) 682-1229 | 310 Burro Ave, Cloudcroft, NM 88317 | [highaltitudenm.com](https://www.highaltitudenm.com/) |
+| **Sacramento Ranger District** (trails, closures) | (575) 682-2551 | 4 Lost Lodge Rd, Cloudcroft, NM 88317 | [fs.usda.gov](https://www.fs.usda.gov/r03/lincoln/offices/sacramento-ranger-district) |
+| **Cloudcroft Chamber of Commerce** | (575) 682-2733 | 1001 James Canyon Hwy, Cloudcroft, NM 88317 | [coolcloudcroft.com](https://www.coolcloudcroft.com/) |
+
+**Facebook pages:**
+- High Altitude Outfitters: https://www.facebook.com/pages/High-Altitude-Outfitters/576328489172929
+- Cloudcroft Chamber: https://www.facebook.com/CloudcroftChamber/
+
+**2026 races:**
+- Trails & Rails (June 13): https://ultrasignup.com/register.aspx?did=132654
+- Cloudcroft Ultra (August 15): https://ultrasignup.com/register.aspx?did=132657
+- Wanderlust Running (race organizer): https://wanderlust.run/
+
+**Essential planning links:**
+- Lincoln NF trail pages: https://www.fs.usda.gov/r03/lincoln/recreation/trails
+- Current forest alerts & closures: https://www.fs.usda.gov/r03/lincoln/alerts
+- Current fire restrictions: https://www.fs.usda.gov/r03/lincoln/alerts/current-fire-restrictions-and-related-prohibitions

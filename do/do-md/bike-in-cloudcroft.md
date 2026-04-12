@@ -36,9 +36,13 @@ Useful link:
 - https://cloudcroftbikeracing.com/
 
 ### Local bike support
-High Altitude remains the main in-town bike shop/outdoor store resource, but its official site says it is not doing bike rentals for the season. That matters if you were hoping to arrive without a bike.
-Useful link:
-- https://www.highaltitudenm.com/bicycles
+**High Altitude Outfitters** remains the main in-town bike shop and outdoor store. They are a certified Specialized and Scott dealer with a full bike repair shop (flat tires through full tune-ups). Their official site says they are not doing bike rentals for the 2026 season. That matters if you were hoping to arrive without a bike.
+
+- Address: **310 Burro Ave, Cloudcroft, NM 88317**
+- Phone: **(575) 682-1229**
+- Website: https://www.highaltitudenm.com/bicycles
+- Facebook: https://www.facebook.com/pages/High-Altitude-Outfitters/576328489172929
+- Hours vary seasonally — check website before visiting
 
 ## What it’s actually like
 
@@ -68,13 +72,24 @@ That makes Cloudcroft a good bike destination for people who already like riding
 - riders traveling with their own bikes
 - repeat visitors who want an active trip
 
+## Altitude advisory
+
+Cloudcroft sits at roughly **9,000 feet**. That changes the riding experience:
+
+- **Exertion hits harder.** Climbs that would feel moderate at lower elevation will tax your breathing. Back off your pace if you arrived the same day.
+- **Hydrate aggressively.** The air is drier and thinner than most riders expect.
+- **Sun exposure is stronger at altitude.** Sunscreen matters even on overcast days.
+- **The ball/tire pressure equation changes.** Check tire pressure after driving up from the basin — heat and altitude shift it.
+- **Afternoon thunderstorms** are common in summer (late June through August). Plan rides for mornings. Lightning at 9,000 feet on an exposed ridge is not theoretical.
+
 ## Potential drawbacks or cautions
 
 - Altitude and climbing are the main issues.
 - Some trails are mixed-use, not bike-only.
-- Forest restrictions and closures can affect plans.
+- Forest restrictions and closures can affect plans. As of March 27, 2026, Stage 1 fire restrictions are in effect forest-wide on Lincoln National Forest.
 - Current in-town rental availability appears limited.
 - Riders should check trail condition after storms, snow, or fire-related closures.
+- Cell service is spotty on forest trails. Tell someone your route.
 
 ## Related nearby options
 
@@ -107,3 +122,23 @@ Main sources used:
 - Cloudcroft Bike Racing site
 - Cloudcroft Reader mountain-bike feature
 - High Altitude bicycles page
+
+---
+
+## Quick Reference: Key Contacts
+
+| Organization | Phone | Address | Web |
+|---|---|---|---|
+| **High Altitude Outfitters** | (575) 682-1229 | 310 Burro Ave, Cloudcroft, NM 88317 | [highaltitudenm.com](https://www.highaltitudenm.com/) |
+| **Sacramento Ranger District** | (575) 682-2551 | 4 Lost Lodge Rd, Cloudcroft, NM 88317 | [fs.usda.gov](https://www.fs.usda.gov/r03/lincoln/offices/sacramento-ranger-district) |
+
+
+**Facebook pages:**
+- High Altitude Outfitters: https://www.facebook.com/pages/High-Altitude-Outfitters/576328489172929
+
+
+**Essential planning links:**
+- Lincoln NF biking page: https://www.fs.usda.gov/r03/lincoln/recreation/opportunities/biking
+- Cloudcroft Bike Racing (2026 events): https://cloudcroftbikeracing.com/
+- Current forest alerts & closures: https://www.fs.usda.gov/r03/lincoln/alerts
+- Current fire restrictions: https://www.fs.usda.gov/r03/lincoln/alerts/current-fire-restrictions-and-related-prohibitions

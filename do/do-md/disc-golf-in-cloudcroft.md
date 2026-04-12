@@ -16,20 +16,26 @@ It also gives repeat visitors something to do besides the usual loop of coffee, 
 
 ### The main course
 The strongest current public evidence supports the **Cloudcroft Community Disc Golf Course** as the main course in town:
-- 18 holes
-- free to play
-- established in 2018 or 2019, depending on source
-- wooded, hilly, and more challenging than it first looks
-- located near Mescalero Avenue / the softball-field side of town
+- **Address:** 1 Mescalero Ave, Cloudcroft, NM 88317
+- 18 holes, free to play
+- Established in 2018 or 2019, depending on source
+- Wooded, hilly, and more challenging than it first looks
+- **4.6 stars** on UDisc based on 500+ reviews
 
-Current UDisc and PDGA pages both support the course as active and 18 holes. UDisc shows it as free to play and recently played in 2026. PDGA lists the course as permanent and heavily wooded with lots of elevation.  
+Current UDisc and PDGA pages both support the course as active and 18 holes. UDisc shows it as free to play and recently played in 2026. PDGA lists the course as permanent and heavily wooded with lots of elevation.
+
+The **Cloudcroft Disc Golf Association (CCDGA)** supports the course and organizes events:
+- Website: https://ccdga.org/
+
 Useful links:
 - UDisc: https://udisc.com/courses/cloudcroft-community-dgc-xPud
 - PDGA course page: https://www.pdga.com/course-directory/course/byron-ligon-memorial-dgc
 
 ### The easier option
-Cloudcroft Reader’s summer 2025 guide says the **9-hole Byron Ligon Disc Golf Course at Zenith Park** was remodeled into a beginner-friendly par-3 route that follows the park’s accessible walking path. That is the strongest current source I found for the easier in-town option.
-Useful link:
+The **9-hole Byron Ligon Memorial Tiki DGC at Zenith Park** was remodeled into a beginner-friendly par-3 route that follows the park’s accessible walking path (per Cloudcroft Reader’s summer 2025 guide).
+- **Location:** Zenith Park, Cloudcroft, NM 88317
+- Free to play
+- UDisc: https://udisc.com/courses/byron-ligon-memorial-tiki-dgc-kl29
 - Cloudcroft Reader summer guide: https://www.cloudcroftreader.com/p/whats-going-on-in-cloudcroft-find
 
 ### What kind of player each suits
@@ -49,14 +55,23 @@ The Zenith Park course appears to be the opposite kind of outing. It sounds more
 - Repeat visitors looking for something different from the usual Cloudcroft loop
 - Travelers who want a 1.5- to 2.5-hour outing without a full hike
 
+## Altitude advisory
+
+Both courses sit at roughly **9,000 feet**. The 18-hole mountain course involves significant elevation change and walking through forest:
+
+- **Bring water.** A free course in the mountains can still turn into a real workout. Carry at least a liter per person.
+- **Exertion hits harder at altitude.** The 18-hole course plays longer than you expect because of the terrain.
+- **Sun exposure is stronger at 9,000 feet.** Sunscreen and a hat matter.
+- **Afternoon thunderstorms** are common in summer. Play mornings when possible.
+
 ## Potential drawbacks or cautions
 
 - The main 18-hole course is **not ideal for beginners** if the goal is a very easy round.
 - Elevation and footing matter more than the scorecard suggests.
 - Course-condition and navigation details are strongest on UDisc, not on a formal municipal course page.
 - The exact relationship between the 18-hole course name and the PDGA’s “Byron Ligon Memorial DGC” naming should be treated carefully; current public sources are not perfectly aligned.
-- Bring water. A free course in the mountains can still turn into a real workout.
 - If you are traveling with non-players, the easier Zenith Park option is likely the better shared outing.
+- Bring your own discs. There is no confirmed on-site rental.
 
 ## Related nearby options
 
@@ -92,3 +107,21 @@ Main sources used:
 - Best things to do with kids in Cloudcroft
 - Complete guide to hiking in Cloudcroft
 - Where to eat after outdoor activities in Cloudcroft
+
+---
+
+## Quick Reference: Key Contacts
+
+| Organization | Phone | Address | Web |
+|---|---|---|---|
+| **Cloudcroft Disc Golf Association** | — | Cloudcroft, NM 88317 | [ccdga.org](https://ccdga.org/) |
+| **Village of Cloudcroft** (manages Zenith Park) | (575) 682-2411 | 201 Burro Ave, Cloudcroft, NM 88317 | [villageofcloudcroftnm.net](https://www.villageofcloudcroftnm.net/) |
+| **Cloudcroft Chamber of Commerce** | (575) 682-2733 | 1001 James Canyon Hwy, Cloudcroft, NM 88317 | [coolcloudcroft.com](https://www.coolcloudcroft.com/) |
+
+**Facebook pages:**
+- Village of Cloudcroft: https://www.facebook.com/VillageOfCloudcroft/
+- Cloudcroft Chamber: https://www.facebook.com/CloudcroftChamber/
+
+**Course links:**
+- Cloudcroft Community DGC (18 holes): https://udisc.com/courses/cloudcroft-community-dgc-xPud
+- Byron Ligon Memorial Tiki DGC (9 holes, Zenith Park): https://udisc.com/courses/byron-ligon-memorial-tiki-dgc-kl29
