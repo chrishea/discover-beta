@@ -22,7 +22,6 @@ This appears to be a better fit for pre-dinner drinks, post-golf drinks, or a sl
 - **Bar service:** active
 - **Food service at the bar:** official dining page says “elevated bar fare”
 - **Setting within the property:** official site says it is “tucked inside 1899 at The Lodge”
-- **Historic feature:** official site says guests can sip drinks at Al Capone’s historic bar
 - **Walk-ins:** appears current and likely standard, though not explicitly stated
 - **Reservations:** not clearly emphasized for the lounge itself
 - **Parking:** appears straightforward through Lodge parking, though exact layout is not separately documented for the bar
@@ -90,7 +89,6 @@ The strongest current signals suggest a bar that feels:
 - tied to the Lodge’s broader destination feel
 
 Official and social material emphasize:
-- Al Capone’s historic bar
 - mountain views
 - lounge positioning
 - hotel-bar calm rather than event-heavy programming
@@ -168,10 +166,10 @@ Planning notes:
 ## 10. Media coverage and other articles
 
 ### Official Lodge dining page
-This is the strongest current source. It supports the current St. Andrew’s Lounge name, hours, its location inside 1899, cocktails, elevated bar fare, and the Al Capone historic-bar reference.
+This is the strongest current source. It supports the current St. Andrew’s Lounge name, hours, its location inside 1899, cocktails, and elevated bar fare.
 
 ### Lodge Facebook posts
-Current Facebook snippets reinforce that St. Andrew’s Lounge is open Wednesday–Saturday from noon to 8 p.m. and position it as a historic-bar and cocktail stop.
+Current Facebook snippets reinforce that St. Andrew’s Lounge is open Wednesday–Saturday from noon to 8 p.m. and position it as a cocktail stop within the Lodge.
 
 ### Cloudcroft Reader coverage of the Lodge
 The strongest Lodge-wide Cloudcroft Reader coverage focuses more on the property and restaurant revival than on the bar alone, but it is still useful for broader context. It supports the Lodge as a major destination property and gives context for why the bar matters as part of the broader Lodge experience.
