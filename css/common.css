@@ -58,7 +58,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   color: var(--charcoal);
   background: var(--cream);
@@ -112,7 +112,7 @@ img {
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 0 0 8px 8px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   z-index: 10000;
   transition: top 0.3s ease;
@@ -151,7 +151,7 @@ img {
 /* Logo */
 .logo,
 .header-logo {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   color: var(--pine);
   font-size: 1rem;
   letter-spacing: 0.12em;
@@ -198,7 +198,7 @@ img {
 
 .main-nav a,
 .header-nav a {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
   font-size: 0.7rem;
   color: var(--charcoal);
@@ -240,7 +240,7 @@ img {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   color: var(--pine);
@@ -339,7 +339,7 @@ img {
 .mobile-nav-overlay a,
 .mobile-menu a,
 .mobile-overlay a {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
   color: var(--charcoal);
@@ -414,7 +414,7 @@ img {
 
 .hero-title,
 .hero-headline {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   font-weight: 700;
   font-size: clamp(2.5rem, 5vw, 4rem);
   color: white;
@@ -423,7 +423,7 @@ img {
 }
 
 .hero-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   font-size: clamp(1rem, 2vw, 1.35rem);
   color: rgba(255, 255, 255, 0.92);
@@ -469,7 +469,7 @@ img {
 /* ===== BUTTONS ===== */
 .btn-primary {
   display: inline-block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
@@ -495,7 +495,7 @@ img {
 
 .btn-outline {
   display: inline-block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
@@ -534,7 +534,7 @@ img {
 }
 
 .section-header h2 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   color: var(--charcoal);
@@ -555,14 +555,14 @@ img {
 }
 
 .section-header p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   color: var(--charcoal-light);
   font-size: 1.05rem;
 }
 
 .section-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -572,7 +572,7 @@ img {
 }
 
 .section-title {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   font-weight: 700;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   color: var(--charcoal);
@@ -655,7 +655,7 @@ img {
 }
 
 .footer-brand p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
@@ -701,7 +701,7 @@ img {
 }
 
 .footer-col h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.95);
@@ -717,7 +717,7 @@ img {
 .footer-col ul li a,
 .footer-col p,
 .footer-col a {
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
@@ -741,7 +741,7 @@ img {
 }
 
 .footer-bottom p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
@@ -753,7 +753,7 @@ img {
 }
 
 .footer-bottom-links a {
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
@@ -802,7 +802,7 @@ img {
 
 /* ===== STAT ITEMS ===== */
 .stat-number {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-variant-numeric: tabular-nums;
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 3rem);
@@ -811,7 +811,7 @@ img {
 }
 
 .stat-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   color: var(--charcoal-light);
@@ -912,7 +912,7 @@ img {
 }
 
 .hero-badge span {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
   color: var(--gold);
@@ -975,7 +975,7 @@ img {
 /* ===== BUTTONS (extended) ===== */
 .btn-secondary {
   display: inline-block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -1192,7 +1192,7 @@ img {
 }
 
 .menu-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: var(--charcoal);
@@ -1282,7 +1282,7 @@ img {
 }
 
 .highlight-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: var(--pine);
@@ -1330,7 +1330,7 @@ img {
 }
 
 .visiting-card h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--charcoal);
@@ -1365,7 +1365,7 @@ img {
 }
 
 .cta-container h2 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   font-weight: 700;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   color: var(--charcoal);
@@ -1530,6 +1530,7 @@ img {
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
+  justify-content: center;
   gap: 0.5rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -1546,7 +1547,7 @@ img {
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 600;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   color: var(--granite);
   background: var(--cream-dark);
   text-decoration: none;
@@ -1601,7 +1602,7 @@ img {
 }
 
 .market-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--charcoal);
@@ -1720,7 +1721,7 @@ img {
 }
 
 .lodge-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--charcoal);
@@ -1773,7 +1774,7 @@ img {
 .lodge-card-guide {
   display: inline-block;
   margin-top: 0.75rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   color: steelblue;
@@ -1856,7 +1857,7 @@ img {
 }
 
 .compare-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   color: var(--charcoal);
@@ -1937,7 +1938,7 @@ img {
 }
 
 .pick-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   color: #373737;
@@ -2015,7 +2016,7 @@ img {
 }
 
 .tip-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   color: var(--charcoal);
@@ -2043,7 +2044,7 @@ img {
 }
 
 .bottom-line-inner h2 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   font-weight: 700;
   font-size: 1.8rem;
   color: #e47911;
@@ -2204,7 +2205,7 @@ img {
 }
 
 .lodging-content h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   color: #000000;
@@ -2258,7 +2259,7 @@ img {
 
 /* ── Hero extras ── */
 .hero-eyebrow {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -2285,7 +2286,7 @@ img {
 }
 
 .hero-meta-item {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
@@ -2310,7 +2311,7 @@ img {
 }
 
 .toc-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -2327,7 +2328,7 @@ img {
 }
 
 .toc-links a {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.85rem;
   font-weight: 500;
   padding: 0.4rem 0.9rem;
@@ -2354,7 +2355,7 @@ img {
 }
 
 .section-number {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -2365,7 +2366,7 @@ img {
 }
 
 .guide-section h2 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   color: #000000;
@@ -2451,11 +2452,11 @@ img {
 }
 
 .thing-card:hover .thing-card-icon img {
-  filter: grayscale(100%);
+  filter: none;
 }
 
 .thing-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.05rem;
   color: #000000;
@@ -2471,7 +2472,7 @@ img {
 .thing-card-link {
   display: inline-block;
   margin-top: 0.75rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -2593,6 +2594,11 @@ img {
   text-decoration: none;
   color: inherit;
   display: block;
+  transition: none;
+}
+
+.restaurant-card a:hover {
+  font-weight: inherit;
 }
 
 .restaurant-card.visible {
@@ -2641,7 +2647,7 @@ img {
 }
 
 .restaurant-card:hover .restaurant-card-img img {
-  filter: grayscale(100%);
+  filter: none;
 }
 
 .restaurant-card-body {
@@ -2649,7 +2655,7 @@ img {
 }
 
 .restaurant-card-body h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   color: #000000;
@@ -2734,7 +2740,7 @@ img {
 }
 
 .event-month {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -2744,7 +2750,7 @@ img {
 }
 
 .event-item h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.05rem;
   color: #000000;
@@ -2812,7 +2818,7 @@ img {
 }
 
 .outdoor-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   color: #000000;
@@ -2859,7 +2865,7 @@ img {
 }
 
 .day-badge {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.7rem;
   letter-spacing: 0.12em;
@@ -2872,7 +2878,7 @@ img {
 }
 
 .day-header h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.3rem;
   color: #000000;
@@ -2898,7 +2904,7 @@ img {
 }
 
 .itin-time {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
   color: #888888;
@@ -2908,7 +2914,7 @@ img {
 }
 
 .itin-stop h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   color: #000000;
@@ -2930,7 +2936,7 @@ img {
 }
 
 .guide-cta h2 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   margin-bottom: 1rem;
@@ -2953,7 +2959,7 @@ img {
 
 .btn-white {
   display: inline-block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
@@ -3039,7 +3045,7 @@ img {
 }
 
 .card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
   color: var(--midnight);
@@ -3115,7 +3121,7 @@ img {
 }
 
 .seasonal-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: #000;
@@ -3123,7 +3129,7 @@ img {
 }
 
 .seasonal-card .season-months {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.8rem;
   color: #555;
   text-transform: uppercase;
@@ -3171,7 +3177,7 @@ img {
 }
 
 .practical-card h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--midnight);
@@ -3252,7 +3258,7 @@ img {
 }
 
 .route-info h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--midnight);
@@ -3274,7 +3280,7 @@ img {
 }
 
 .airport-info h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--midnight);
