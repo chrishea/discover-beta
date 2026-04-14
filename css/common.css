@@ -84,7 +84,7 @@ a {
 }
 
 a:hover {
-  font-weight: 700;
+  color: coral;
 }
 
 a:focus-visible,
