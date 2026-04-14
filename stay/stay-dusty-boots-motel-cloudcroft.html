@@ -210,6 +210,44 @@
             grid-template-columns: repeat(3, 1fr);
         }
 
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .gallery-grid figure {
+            margin: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 4 / 3;
+            background: #f2f2f2;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-grid figure:hover img {
+            transform: scale(1.09);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .gallery-grid img,
+            .gallery-grid figure:hover img {
+                transition: none;
+                transform: none;
+            }
+        }
+
+
         @media (max-width: 1024px) {
 
             .cafe-grid {
@@ -340,297 +378,14 @@
                             <span class="about-feature">&#x2668;&#xFE0F; Hot Tub</span>
                             <span class="about-feature">&#x1F6B2; E-Bike Rentals</span>
                             <span class="about-feature">&#x1F436; Pet-Friendly</span>
-                            <span class="about-feature">&#x1F6F7; Sleds Loaned</span>
-                            <span class="about-feature">&#x1F9FA; Laundromat</span>
+
+
                         </div>
                     </div>
-                    <div class="about-image fade-in">
-                        <img src="../media/lodging-dusty-boots.webp" alt="Dusty Boots Motel on James Canyon Highway"
-                            style="width:100%;height:100%;object-fit:cover;border-radius:12px;" loading="lazy">
-                    </div>
+
                 </div>
             </div>
         </section>
-
-        <section class="section" id="rooms" aria-labelledby="h-rooms">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Accommodations</span>
-                    <h2 class="section-title section-title-centered" id="h-rooms">15 Themed Rooms</h2>
-                    <p class="section-description">Every room has its own personality. All include memory foam
-                        mattresses, high thread-count cotton sheets, hypoallergenic comforters, and thick cotton towels.
-                    </p>
-                </div>
-
-                <div class="rooms-table-wrap">
-                    <table class="rooms-table">
-                        <thead>
-                            <tr>
-                                <th>Room Type</th>
-                                <th>Beds</th>
-                                <th>Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Deluxe Single</td>
-                                <td>2 Queen Beds</td>
-                                <td>Mountain view available; memory foam beds</td>
-                            </tr>
-                            <tr>
-                                <td>Deluxe Room</td>
-                                <td>Multiple Beds</td>
-                                <td>Living area; 40" flat-screen TV</td>
-                            </tr>
-                            <tr>
-                                <td>Superior Double</td>
-                                <td>2 Queen Beds</td>
-                                <td>Kitchenette (fridge, microwave, stovetop)</td>
-                            </tr>
-                            <tr>
-                                <td>Standard King</td>
-                                <td>1 King Bed</td>
-                                <td>Standard room</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div style="margin-top:2rem;">
-                    <h3
-                        style="font-family:'IBM Plex Sans',sans-serif;font-weight:700;font-size:1rem;margin-bottom:0.5rem;">
-                        Confirmed Room Themes</h3>
-                    <p style="font-size:0.9rem;color:#555555;margin-bottom:0.75rem;">Each room is individually decorated
-                        — themes rotate as renovation continues. These have been confirmed by recent guests:</p>
-                    <div class="theme-grid">
-                        <span class="theme-tag">Roy Rogers</span>
-                        <span class="theme-tag">Route 66</span>
-                        <span class="theme-tag">Antique Rose</span>
-                        <span class="theme-tag">Beverly Hills / Texas Oil</span>
-                        <span class="theme-tag">Boy Scout</span>
-                        <span class="theme-tag">Ski</span>
-                        <span class="theme-tag">Harry Potter</span>
-                        <span class="theme-tag">Western</span>
-                    </div>
-                </div>
-
-                <div class="tip-box" style="margin-top:1.5rem;">
-                    <span class="tip-icon">💡</span>
-                    <p><strong>Highway noise:</strong> Some rooms face James Canyon Highway. If you're a light sleeper,
-                        request a room away from the road when booking.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="cafe" aria-labelledby="h-cafe">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">On-Site Dining</span>
-                    <h2 class="section-title section-title-centered" id="h-cafe">The Dusty Boots Cafe</h2>
-                    <p class="section-description">Open daily in summer. More than 90% made from scratch. Open to the
-                        public — expect a wait on weekend mornings.</p>
-                </div>
-                <div class="cafe-grid">
-                    <div class="cafe-card">
-                        <p class="meal-time">Breakfast &mdash; 7:00 AM to Noon</p>
-                        <h3>Morning Menu</h3>
-                        <p>Biscuits and gravy, French toast, pancakes, and made-from-scratch staples. Motel guests
-                            receive a dining discount. Arrive early on weekends — it gets busy.</p>
-                    </div>
-                    <div class="cafe-card">
-                        <p class="meal-time">Lunch &amp; Dinner &mdash; Noon to 9:00 PM</p>
-                        <h3>All-Day Menu</h3>
-                        <p>BLTs, patty melts, chicken strips, taco platters, steak and shrimp. The menu rotates — nearly
-                            everything is made from scratch in-house.</p>
-                    </div>
-                    <div class="cafe-card">
-                        <p class="meal-time">Saturday Evenings &mdash; 5:00 to 8:00 PM</p>
-                        <h3>German Dinner Night</h3>
-                        <p>Schnitzel, sauerbraten, bratwurst, German meatballs, spaetzle, and housemade cottage rolls. A
-                            weekly highlight that draws both guests and locals.</p>
-                    </div>
-                    <div class="cafe-card">
-                        <p class="meal-time">Nightly Complimentary</p>
-                        <h3>Banana Bread</h3>
-                        <p>Every motel guest receives complimentary banana bread in the evening — one of the most
-                            frequently mentioned touches in guest reviews.</p>
-                    </div>
-                </div>
-                <div class="tip-box" style="margin-top:1.5rem;">
-                    <span class="tip-icon">⚠️</span>
-                    <p><strong>Hours listed are summer hours.</strong> Confirm winter and shoulder-season cafe hours
-                        directly with the property before your visit.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section highlights-section" aria-labelledby="h-why">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Why Stay Here</span>
-                    <h2 class="section-title section-title-centered" id="h-why">The Dusty Boots Experience</h2>
-                    <p class="section-description">What sets this motel apart from every other option in the Sacramento
-                        Mountains.</p>
-                </div>
-                <div class="highlights-grid">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F3A8;</div>
-                        <h3>Rooms With Real Character</h3>
-                        <p>Each of the 15 rooms is a fully realized theme — not a framed poster and a color palette, but
-                            antiques, custom fixtures, quilts, and details you'll actually remember. Roy Rogers, Harry
-                            Potter, Route 66, Antique Rose, and more.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x2615;</div>
-                        <h3>Scratch-Kitchen Cafe On-Site</h3>
-                        <p>More than 90% of the menu is made from scratch. Breakfast, lunch, and dinner daily in summer
-                            — plus a German dinner every Saturday night. Motel guests get a dining discount.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F6B2;</div>
-                        <h3>Pedego E-Bike Rentals</h3>
-                        <p>Dusty Boots is an authorized Pedego electric bike dealer. Rent an e-bike on-site and explore
-                            Lincoln National Forest trails without needing to drive to a trailhead or rental shop.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x2668;&#xFE0F;</div>
-                        <h3>Hot Tub &amp; Lounge</h3>
-                        <p>An on-site hot tub, laundromat, and 24-hour front desk make this genuinely convenient for
-                            longer stays — especially after full days on the trails or slopes.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F436;</div>
-                        <h3>Pet-Friendly</h3>
-                        <p>Pets are allowed on request — call ahead to confirm and ask about any charges. One of the
-                            more dog-welcoming options in the Cloudcroft area.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F6F7;</div>
-                        <h3>Winter Sled Loans</h3>
-                        <p>In winter, the property loans sleds to guests for snow play — a small but memorable touch
-                            that reflects the owners' approach to hospitality throughout the property.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="nearby" aria-labelledby="h-nearby">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">What's Nearby</span>
-                    <h2 class="section-title section-title-centered" id="h-nearby">From 1315 James Canyon Highway</h2>
-                    <p class="section-description">Cloudcroft's top attractions, all within easy reach.</p>
-                </div>
-                <div class="visiting-grid">
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F3DB;&#xFE0F;</div>
-                        <h3>Sacramento Mountains Museum</h3>
-                        <p>A 5-minute walk (0.2 miles) from the motel. The museum and Pioneer Village tell the story of
-                            Cloudcroft and the Sacramento Mountains from settlement to the present.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F6E4;&#xFE0F;</div>
-                        <h3>Trestle Recreation Area</h3>
-                        <p>The Mexican Canyon Railroad Trestle — built in 1899 and one of southern New Mexico's most
-                            photographed landmarks — is 1 mile from the motel.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x26F7;&#xFE0F;</div>
-                        <h3>Ski Cloudcroft</h3>
-                        <p>The southernmost ski area in the United States is nearby. Rent sleds from the motel or head
-                            up for a full day on the slopes in winter.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F3D6;&#xFE0F;</div>
-                        <h3>White Sands National Park</h3>
-                        <p>About 60 miles west — a classic day trip from Cloudcroft. Early morning or sunset visits
-                            offer the best light on the gypsum dunes.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="visit" aria-labelledby="h-visit">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Plan Your Stay</span>
-                    <h2 class="section-title section-title-centered" id="h-visit">Before You Book</h2>
-                    <p class="section-description">Key policies and practical details for Dusty Boots.</p>
-                </div>
-                <div class="visiting-grid">
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4CD;</div>
-                        <h3>Location</h3>
-                        <p>1315 James Canyon Highway (US-82), Cloudcroft, NM 88317. 0.7 miles from the village center —
-                            a 5-minute drive to Burro Avenue. Lincoln National Forest trails are walkable from the
-                            property.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F550;</div>
-                        <h3>Check-In / Check-Out</h3>
-                        <p>24-hour front desk with flexible check-in. Early check-in accommodated when available.
-                            Confirm check-out time at booking — not published on the property website.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4B3;</div>
-                        <h3>Rates &amp; Booking</h3>
-                        <p>From $145/night; average around $172/night. Book direct at <a
-                                href="https://direct-book.com/properties/dustybootsmoteldirect" target="_blank"
-                                rel="noopener noreferrer" style="color:inherit;">thedustyboots.com</a> for the best
-                            rate. Also on KAYAK, Hotels.com, Priceline, and Trip.com.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F436;</div>
-                        <h3>Pets &amp; Policies</h3>
-                        <p>Pets allowed on request — call ahead to confirm and ask about fees. Photo ID and credit card
-                            required at check-in. Housekeeping available on request, not automatic daily service.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="contact" aria-labelledby="h-contact">
-            <div class="section-container">
-                <div style="text-align:center;">
-                    <span class="section-label">Get in Touch</span>
-                    <h2 class="section-title section-title-centered" id="h-contact">Contact &amp; Book</h2>
-                </div>
-                <div class="visiting-grid">
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F310;</div>
-                        <h3>Book Direct</h3>
-                        <p><a href="https://direct-book.com/properties/dustybootsmoteldirect" target="_blank"
-                                rel="noopener noreferrer" style="color:inherit;font-weight:600;">direct-book.com / Dusty
-                                Boots</a><br>
-                            <a href="https://www.thedustyboots.com" target="_blank" rel="noopener noreferrer"
-                                style="color:inherit;">thedustyboots.com</a>
-                        </p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4DE;</div>
-                        <h3>Phone</h3>
-                        <p><a href="tel:+15756827736" style="color:inherit;">(575) 682-7736</a></p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x2709;&#xFE0F;</div>
-                        <h3>Email</h3>
-                        <p><a href="mailto:dusty@dustybootsmotel.com"
-                                style="color:inherit;">dusty@dustybootsmotel.com</a></p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4F1;</div>
-                        <h3>Social &amp; E-Bikes</h3>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/dustybootsmotel" target="_blank" rel="noopener noreferrer"
-                                class="social-link">Facebook</a>
-                            <a href="https://pedegoelectricbikes.com/dealers/dusty-boots-motel/rentals-tours/"
-                                target="_blank" rel="noopener noreferrer" class="social-link">Pedego Rentals</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="section" id="gallery" aria-labelledby="h-gallery">
             <div class="section-container">
                 <div style="text-align: center;">
@@ -638,43 +393,7 @@
                     <h2 id="h-gallery" class="section-title section-title-centered">A Look Around</h2>
                     <p class="section-description">Rooms, cafe, and grounds at Dusty Boots Motel.</p>
                 </div>
-                <style>
-                    .gallery-grid {
-                        display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-                        gap: 1rem;
-                        margin-top: 1.5rem;
-                    }
 
-                    .gallery-grid figure {
-                        margin: 0;
-                        border-radius: 8px;
-                        overflow: hidden;
-                        aspect-ratio: 4 / 3;
-                        background: #f2f2f2;
-                    }
-
-                    .gallery-grid img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        display: block;
-                        transition: transform 0.5s ease;
-                    }
-
-                    .gallery-grid figure:hover img {
-                        transform: scale(1.09);
-                    }
-
-                    @media (prefers-reduced-motion: reduce) {
-
-                        .gallery-grid img,
-                        .gallery-grid figure:hover img {
-                            transition: none;
-                            transform: none;
-                        }
-                    }
-                </style>
                 <div class="gallery-grid">
                     <figure><img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00555.jpg"
                             alt="Dusty Boots Motel, Cloudcroft" loading="lazy" decoding="async"></figure>
@@ -697,19 +416,268 @@
                 </div>
             </div>
         </section>
-
-        <section class="cta-section" aria-label="Book your stay">
-            <div class="cta-container">
-                <h2>Sleep in a Roy Rogers Room. Eat Schnitzel on Saturday.</h2>
-                <p>15 uniquely themed rooms, a scratch-kitchen cafe, hot tub, and Pedego e-bike rentals — on James
-                    Canyon Highway at the edge of Lincoln National Forest.</p>
-                <div class="cta-buttons">
-                    <a href="https://direct-book.com/properties/dustybootsmoteldirect" target="_blank"
-                        rel="noopener noreferrer" class="btn-primary">Book Direct</a>
-                    <a href="lodging.html" class="btn-secondary">All Cloudcroft Lodging</a>
+        <section class="section" id="rooms" aria-labelledby="h-rooms">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Accommodations</span>
+                    <h2 class="section-title section-title-centered" id="h-rooms">15 Themed Rooms</h2>
+                    <p class="section-description">Every room has its own personality. All include memory foam
+                        mattresses, high thread-count cotton sheets, hypoallergenic comforters, and thick cotton towels.
+                    </p>
                 </div>
-            </div>
-        </section>
+
+
+                <section class="section" id="cafe" aria-labelledby="h-cafe">
+                    <div class="section-container">
+                        <div style="text-align: center;">
+                            <span class="section-label">On-Site Dining</span>
+                            <h2 class="section-title section-title-centered" id="h-cafe">The Dusty Boots Cafe</h2>
+                            <p class="section-description">Open daily in summer. More than 90% made from scratch. Open
+                                to the
+                                public — expect a wait on weekend mornings.</p>
+                        </div>
+                        <div class="cafe-grid">
+                            <div class="cafe-card">
+                                <p class="meal-time">Breakfast &mdash; 7:00 AM to Noon</p>
+                                <h3>Morning Menu</h3>
+                                <p>Biscuits and gravy, French toast, pancakes, and made-from-scratch staples. Motel
+                                    guests
+                                    receive a dining discount. Arrive early on weekends — it gets busy.</p>
+                            </div>
+                            <div class="cafe-card">
+                                <p class="meal-time">Lunch &amp; Dinner &mdash; Noon to 9:00 PM</p>
+                                <h3>All-Day Menu</h3>
+                                <p>BLTs, patty melts, chicken strips, taco platters, steak and shrimp. The menu rotates
+                                    — nearly
+                                    everything is made from scratch in-house.</p>
+                            </div>
+                            <div class="cafe-card">
+                                <p class="meal-time">Saturday Evenings &mdash; 5:00 to 8:00 PM</p>
+                                <h3>German Dinner Night</h3>
+                                <p>Schnitzel, sauerbraten, bratwurst, German meatballs, spaetzle, and housemade cottage
+                                    rolls. A
+                                    weekly highlight that draws both guests and locals.</p>
+                            </div>
+                            <div class="cafe-card">
+                                <p class="meal-time">Nightly Complimentary</p>
+                                <h3>Banana Bread</h3>
+                                <p>Every motel guest receives complimentary banana bread in the evening — one of the
+                                    most
+                                    frequently mentioned touches in guest reviews.</p>
+                            </div>
+                        </div>
+                        <div class="tip-box" style="margin-top:1.5rem;">
+                            <span class="tip-icon">⚠️</span>
+                            <p><strong>Hours listed are summer hours.</strong> Confirm winter and shoulder-season cafe
+                                hours
+                                directly with the property before your visit.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section highlights-section" aria-labelledby="h-why">
+                    <div class="section-container">
+                        <div style="text-align: center;">
+                            <span class="section-label">Why Stay Here</span>
+                            <h2 class="section-title section-title-centered" id="h-why">The Dusty Boots Experience</h2>
+                            <p class="section-description">What sets this motel apart from every other option in the
+                                Sacramento
+                                Mountains.</p>
+                        </div>
+                        <div class="highlights-grid">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#x1F3A8;</div>
+                                <h3>Rooms With Real Character</h3>
+                                <p>Each of the 15 rooms is a fully realized theme — not a framed poster and a color
+                                    palette, but
+                                    antiques, custom fixtures, quilts, and details you'll actually remember. Roy Rogers,
+                                    Harry
+                                    Potter, Route 66, Antique Rose, and more.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#x2615;</div>
+                                <h3>Scratch-Kitchen Cafe On-Site</h3>
+                                <p>More than 90% of the menu is made from scratch. Breakfast, lunch, and dinner daily in
+                                    summer
+                                    — plus a German dinner every Saturday night. Motel guests get a dining discount.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#x1F6B2;</div>
+                                <h3>Pedego E-Bike Rentals</h3>
+                                <p>Dusty Boots is an authorized Pedego electric bike dealer. Rent an e-bike on-site and
+                                    explore
+                                    Lincoln National Forest trails without needing to drive to a trailhead or rental
+                                    shop.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#x2668;&#xFE0F;</div>
+                                <h3>Hot Tub &amp; Lounge</h3>
+                                <p>An on-site hot tub, laundromat, and 24-hour front desk make this genuinely convenient
+                                    for
+                                    longer stays — especially after full days on the trails or slopes.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#x1F436;</div>
+                                <h3>Pet-Friendly</h3>
+                                <p>Pets are allowed on request — call ahead to confirm and ask about any charges. One of
+                                    the
+                                    more dog-welcoming options in the Cloudcroft area.</p>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">&#x1F6F7;</div>
+                                <h3>Winter Sled Loans</h3>
+                                <p>In winter, the property loans sleds to guests for snow play — a small but memorable
+                                    touch
+                                    that reflects the owners' approach to hospitality throughout the property.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="nearby" aria-labelledby="h-nearby">
+                    <div class="section-container">
+                        <div style="text-align: center;">
+                            <span class="section-label">What's Nearby</span>
+                            <h2 class="section-title section-title-centered" id="h-nearby">From 1315 James Canyon
+                                Highway</h2>
+                            <p class="section-description">Cloudcroft's top attractions, all within easy reach.</p>
+                        </div>
+                        <div class="visiting-grid">
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x1F3DB;&#xFE0F;</div>
+                                <h3>Sacramento Mountains Museum</h3>
+                                <p>A 5-minute walk (0.2 miles) from the motel. The museum and Pioneer Village tell the
+                                    story of
+                                    Cloudcroft and the Sacramento Mountains from settlement to the present.</p>
+                            </div>
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x1F6E4;&#xFE0F;</div>
+                                <h3>Trestle Recreation Area</h3>
+                                <p>The Mexican Canyon Railroad Trestle — built in 1899 and one of southern New Mexico's
+                                    most
+                                    photographed landmarks — is 1 mile from the motel.</p>
+                            </div>
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x26F7;&#xFE0F;</div>
+                                <h3>Ski Cloudcroft</h3>
+                                <p>The southernmost ski area in the United States is nearby. Rent sleds from the motel
+                                    or head
+                                    up for a full day on the slopes in winter.</p>
+                            </div>
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x1F3D6;&#xFE0F;</div>
+                                <h3>White Sands National Park</h3>
+                                <p>About 60 miles west — a classic day trip from Cloudcroft. Early morning or sunset
+                                    visits
+                                    offer the best light on the gypsum dunes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="visit" aria-labelledby="h-visit">
+                    <div class="section-container">
+                        <div style="text-align: center;">
+                            <span class="section-label">Plan Your Stay</span>
+                            <h2 class="section-title section-title-centered" id="h-visit">Before You Book</h2>
+                            <p class="section-description">Key policies and practical details for Dusty Boots.</p>
+                        </div>
+                        <div class="visiting-grid">
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x1F4CD;</div>
+                                <h3>Location</h3>
+                                <p>1315 James Canyon Highway (US-82), Cloudcroft, NM 88317. 0.7 miles from the village
+                                    center —
+                                    a 5-minute drive to Burro Avenue. Lincoln National Forest trails are walkable from
+                                    the
+                                    property.</p>
+                            </div>
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x1F550;</div>
+                                <h3>Check-In / Check-Out</h3>
+                                <p>24-hour front desk with flexible check-in. Early check-in accommodated when
+                                    available.
+                                    Confirm check-out time at booking — not published on the property website.</p>
+                            </div>
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x1F4B3;</div>
+                                <h3>Rates &amp; Booking</h3>
+                                <p>From $145/night; average around $172/night. Book direct at <a
+                                        href="https://direct-book.com/properties/dustybootsmoteldirect" target="_blank"
+                                        rel="noopener noreferrer" style="color:inherit;">thedustyboots.com</a> for the
+                                    best
+                                    rate. Also on KAYAK, Hotels.com, Priceline, and Trip.com.</p>
+                            </div>
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x1F436;</div>
+                                <h3>Pets &amp; Policies</h3>
+                                <p>Pets allowed on request — call ahead to confirm and ask about fees. Photo ID and
+                                    credit card
+                                    required at check-in. Housekeeping available on request, not automatic daily
+                                    service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="contact" aria-labelledby="h-contact">
+                    <div class="section-container">
+                        <div style="text-align:center;">
+                            <span class="section-label">Get in Touch</span>
+                            <h2 class="section-title section-title-centered" id="h-contact">Contact &amp; Book</h2>
+                        </div>
+                        <div class="visiting-grid">
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x1F310;</div>
+                                <h3>Book Direct</h3>
+                                <p><a href="https://direct-book.com/properties/dustybootsmoteldirect" target="_blank"
+                                        rel="noopener noreferrer" style="color:inherit;font-weight:600;">direct-book.com
+                                        / Dusty
+                                        Boots</a><br>
+                                    <a href="https://www.thedustyboots.com" target="_blank" rel="noopener noreferrer"
+                                        style="color:inherit;">thedustyboots.com</a>
+                                </p>
+                            </div>
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x1F4DE;</div>
+                                <h3>Phone</h3>
+                                <p><a href="tel:+15756827736" style="color:inherit;">(575) 682-7736</a></p>
+                            </div>
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x2709;&#xFE0F;</div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:dusty@dustybootsmotel.com"
+                                        style="color:inherit;">dusty@dustybootsmotel.com</a></p>
+                            </div>
+                            <div class="visiting-card">
+                                <div class="visiting-icon">&#x1F4F1;</div>
+                                <h3>Social &amp; E-Bikes</h3>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/dustybootsmotel" target="_blank"
+                                        rel="noopener noreferrer" class="social-link">Facebook</a>
+                                    <a href="https://pedegoelectricbikes.com/dealers/dusty-boots-motel/rentals-tours/"
+                                        target="_blank" rel="noopener noreferrer" class="social-link">Pedego Rentals</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="cta-section" aria-label="Book your stay">
+                    <div class="cta-container">
+                        <h2>Sleep in a Roy Rogers Room. Eat Schnitzel on Saturday.</h2>
+                        <p>15 uniquely themed rooms, a scratch-kitchen cafe, hot tub, and Pedego e-bike rentals — on
+                            James
+                            Canyon Highway at the edge of Lincoln National Forest.</p>
+                        <div class="cta-buttons">
+                            <a href="https://direct-book.com/properties/dustybootsmoteldirect" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary">Book Direct</a>
+                            <a href="lodging.html" class="btn-secondary">All Cloudcroft Lodging</a>
+                        </div>
+                    </div>
+                </section>
 
     </main>
 
