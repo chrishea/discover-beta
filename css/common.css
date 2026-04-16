@@ -534,7 +534,7 @@ img {
 }
 
 .section-header h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Newsreader', 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   color: var(--charcoal);
@@ -1365,7 +1365,7 @@ img {
 }
 
 .cta-container h2 {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Newsreader', 'IBM Plex Serif', serif;
   font-weight: 700;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   color: var(--charcoal);
@@ -2044,7 +2044,7 @@ img {
 }
 
 .bottom-line-inner h2 {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Newsreader', 'IBM Plex Serif', serif;
   font-weight: 700;
   font-size: 1.8rem;
   color: #e47911;
@@ -2366,7 +2366,7 @@ img {
 }
 
 .guide-section h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Newsreader', 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   color: #000000;
@@ -2936,7 +2936,7 @@ img {
 }
 
 .guide-cta h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Newsreader', 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   margin-bottom: 1rem;
