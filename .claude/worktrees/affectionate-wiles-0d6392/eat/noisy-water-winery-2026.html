@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noisy Water Winery | Wine Tasting in Cloudcroft, NM — Award-Winning New Mexico Wines</title>
+    <meta name="description" content="Visit Noisy Water Winery on Burro Avenue in Cloudcroft, NM. Over 30 award-winning New Mexico wines including the famous green chile wine. Tastings, bottles, gourmet goods, and special events at 9,000 feet.">
+    <meta name="keywords" content="noisy water winery cloudcroft, wine tasting cloudcroft nm, green chile wine, new mexico wines, things to do cloudcroft, burro avenue cloudcroft, cloudcroft winery">
+    <link rel="canonical" href="https://discovercloudcroft.com/eat/where-to-eat-cloudcroft-noisy-water-winery-2026.html">
+
+    <meta property="og:title" content="Noisy Water Winery | Wine Tasting in Cloudcroft, NM">
+    <meta property="og:description" content="Over 30 award-winning New Mexico wines including the famous green chile wine. Tastings, bottles, and gourmet goods on Burro Avenue at 9,000 feet.">
+    <meta property="og:url" content="https://discovercloudcroft.com/eat/where-to-eat-cloudcroft-noisy-water-winery-2026.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Noisy Water Winery | Wine Tasting in Cloudcroft, NM">
+    <meta name="twitter:description" content="Award-winning New Mexico wines and the famous green chile wine on Burro Avenue in Cloudcroft.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Winery",
+      "name": "Noisy Water Winery",
+      "description": "Award-winning family-owned New Mexico winery with a tasting room on Burro Avenue in Cloudcroft. Over 30 wines including the famous green chile wine. Tastings, retail, gourmet goods, and special events.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "505 Burro Avenue",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "url": "https://www.noisywaterwinery.com",
+      "priceRange": "$$",
+      "image": "https://discovercloudcroft.com/media/og-default.webp"
+    }
+    </script>
+
+    <style>
+.hero-bg {
+    background: linear-gradient(135deg, #3d1c42 0%, #2a1230 50%, #4a1d52 100%);
+}
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25));
+}
+
+/* ── Wine Grid ── */
+.wine-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.wine-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--golden-hour);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.wine-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.wine-card:nth-child(2).visible { transition-delay: 0.1s; }
+.wine-card:nth-child(3).visible { transition-delay: 0.2s; }
+.wine-card:nth-child(4).visible { transition-delay: 0.3s; }
+.wine-card:nth-child(5).visible { transition-delay: 0.35s; }
+.wine-card:nth-child(6).visible { transition-delay: 0.4s; }
+.wine-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.wine-card h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700; font-size: 1.1rem;
+    color: var(--midnight); margin-bottom: 0.5rem;
+}
+.wine-card p { color: var(--granite); font-size: 0.9rem; line-height: 1.6; }
+
+/* ── Signature Feature ── */
+.signature-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 3rem;
+    background: #2B2B2B;
+    border-radius: 16px;
+    color: #fff;
+}
+.signature-feature h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700; font-size: 1.4rem;
+    color: var(--golden-hour); margin-bottom: 0.5rem;
+}
+.signature-subtitle {
+    font-size: 0.85rem; text-transform: uppercase;
+    letter-spacing: 0.15em; color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1rem;
+}
+.signature-feature p { color: rgba(255, 255, 255, 0.8); font-size: 0.95rem; line-height: 1.7; }
+
+/* ── Also Section ── */
+.also-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.also-card {
+    background: #2B2B2B;
+    border-radius: 12px;
+    padding: 2rem;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.also-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.also-card:nth-child(2).visible { transition-delay: 0.1s; }
+.also-card:nth-child(3).visible { transition-delay: 0.15s; }
+.also-card h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700; font-size: 1.1rem;
+    color: var(--golden-hour); margin-bottom: 0.5rem;
+}
+.also-card p { color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; line-height: 1.6; }
+
+@media (max-width: 1024px) {
+    .wine-grid { grid-template-columns: repeat(2, 1fr); }
+    .also-grid { grid-template-columns: repeat(2, 1fr); }
+    .signature-feature { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
+}
+@media (max-width: 768px) {
+    .wine-grid { grid-template-columns: 1fr; }
+    .also-grid { grid-template-columns: 1fr; }
+    
+}
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+        <header class="site-header" role="banner">
+        <div class="header-inner">
+
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../events/top-events.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+        <a href="../resources/resources.html">Resources</a>
+        <a href="../resources/contact.html">Contact</a>
+    </nav>
+<section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Noisy Water Winery tasting room in Cloudcroft, New Mexico"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Wine</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Noisy </span>
+                <span class="word">Water </span>
+                <span class="word">Winery</span>
+            </h1>
+            <p class="hero-subtitle">Award-winning New Mexico wines in a cozy mountain tasting room on Burro Avenue. Over 30 wines to taste &mdash; including the famous green chile wine.</p>
+            <div class="hero-ctas">
+                <a href="#wines" class="btn-primary">Explore the Wines</a>
+                <a href="#visit" class="btn-secondary">Plan Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>505 Burro Ave, Cloudcroft</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F377;</div>
+                <span>30+ Wines to Taste</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F3C6;</div>
+                <span>Award-Winning</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F476;</div>
+                <span>Family-Owned</span>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-label="About Noisy Water Winery">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">A Mountain Tasting Room</h2>
+                        <p>
+                            Noisy Water Winery is a family-owned New Mexico winery with a tasting room right on Burro Avenue in Cloudcroft. It's part retail shop, part wine bar, and part gathering spot &mdash; the kind of place where you walk in planning to taste one wine and end up staying for an hour.
+                        </p>
+                        <p>
+                            The tasting room offers over 30 wines, ranging from traditional reds and whites to distinctly New Mexican creations. Their green chile wine is the signature &mdash; the bottle people talk about, bring home as a gift, and remember long after the trip. Beyond wine, the shop carries gourmet cheeses, olive oils, balsamic vinegars, and gift items that make it double as a specialty food stop.
+                        </p>
+                        <p>
+                            Even if you don't think of wine as "shopping," Noisy Water functions that way on Burro Avenue. Bottles, tastings, gift items, and the lingering pause it encourages are all part of the Cloudcroft strolling rhythm.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F377; 30+ Wines</span>
+                            <span class="about-feature">&#x1F336;&#xFE0F; Famous Green Chile Wine</span>
+                            <span class="about-feature">&#x1F9C0; Gourmet Cheeses</span>
+                            <span class="about-feature">&#x1F3C6; Award-Winning</span>
+                            <span class="about-feature">&#x1F46A; Family-Owned</span>
+                            <span class="about-feature">&#x1F6D2; Retail &amp; Gifts</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <img src="../eat/eat-photo/photo-noisy-water/noisy-water-sign.jpg"
+                            alt="Noisy Water Winery barrel sign with mountain scene and Zia symbol on Burro Avenue"
+                            style="width: 100%; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="wines" style="background: var(--cloud-drift);" aria-label="Wine selection">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">The Wines</span>
+                    <h2 class="section-title section-title-centered">What's in the Glass</h2>
+                    <p class="section-description">Over 30 wines to taste, from classic varietals to distinctly New Mexican creations. Here's what to expect.</p>
+                </div>
+                <div class="wine-grid">
+                    <div class="wine-card">
+                        <div class="wine-icon">&#x1F347;</div>
+                        <h3>Reds</h3>
+                        <p>A selection of red wines crafted from New Mexico-grown grapes. Bold enough for mountain evenings, smooth enough for afternoon sipping.</p>
+                    </div>
+                    <div class="wine-card">
+                        <div class="wine-icon">&#x1F95B;</div>
+                        <h3>Whites</h3>
+                        <p>Crisp whites and lighter wines that pair well with Cloudcroft's cool mountain air and casual dining scene.</p>
+                    </div>
+                    <div class="wine-card">
+                        <div class="wine-icon">&#x1F336;&#xFE0F;</div>
+                        <h3>Green Chile Wine</h3>
+                        <p>The signature. The one people talk about. A uniquely New Mexican creation that manages to be both a conversation starter and a genuinely interesting wine.</p>
+                    </div>
+                    <div class="wine-card">
+                        <div class="wine-icon">&#x1F353;</div>
+                        <h3>Fruit Wines</h3>
+                        <p>Sweeter, fruit-forward wines for those who prefer something lighter and more approachable. Good entry point for non-wine-drinkers.</p>
+                    </div>
+                    <div class="wine-card">
+                        <div class="wine-icon">&#x1F381;</div>
+                        <h3>Gift Bottles</h3>
+                        <p>The tasting room doubles as a gift shop. Bottles make excellent take-home souvenirs &mdash; especially the green chile wine for friends who haven't tried it.</p>
+                    </div>
+                    <div class="wine-card">
+                        <div class="wine-icon">&#x1F9C0;</div>
+                        <h3>Gourmet Goods</h3>
+                        <p>Beyond wine: gourmet cheeses, olive oils, balsamic vinegars, and specialty food items. Build your own pairing or grab provisions for a cabin evening.</p>
+                    </div>
+                </div>
+
+                <div class="signature-feature fade-in">
+                    <div>
+                        <div class="signature-subtitle">The Signature</div>
+                        <h3>Green Chile Wine</h3>
+                        <p>It sounds like a gimmick. It isn't. Noisy Water's green chile wine has become one of Cloudcroft's most distinctive products &mdash; the bottle that visitors bring home and that locals actually drink. It pairs perfectly with crisp fall days in the mountains, and it's the reason half the people who walk in stay longer than they planned.</p>
+                    </div>
+                    <div>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">What people say</p>
+                        <p>"I came in skeptical about green chile wine and left with three bottles." &mdash; a common visitor refrain.</p>
+                        <p style="margin-top: 1rem;">The wine works because it balances the heat of New Mexico green chile with the sweetness and body of the wine. It's not a novelty. It's a legitimate product that happens to be unlike anything you'll find outside the state.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="events" aria-label="Events and activities">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">More Than Wine</span>
+                    <h2 class="section-title section-title-centered">Events &amp; Experiences</h2>
+                    <p class="section-description">The tasting room is just the start. Noisy Water hosts events that make it more than a quick stop.</p>
+                </div>
+                <div class="also-grid">
+                    <div class="also-card">
+                        <h3>Wine Tastings</h3>
+                        <p>Walk in and taste your way through the lineup. The staff is knowledgeable and happy to guide you from reds to whites to the green chile signature. No appointment needed for standard tastings.</p>
+                    </div>
+                    <div class="also-card">
+                        <h3>Sip &amp; Paint Nights</h3>
+                        <p>Periodic sip-and-paint events combine wine with creativity. A fun evening option, especially for couples and groups looking for something beyond dinner.</p>
+                    </div>
+                    <div class="also-card">
+                        <h3>Yoga &amp; Special Events</h3>
+                        <p>The winery hosts yoga sessions and seasonal events like their 21+ Easter egg hunt. Check their calendar for upcoming dates &mdash; these events tend to fill up.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section highlights-section" aria-label="Highlights" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">Why Visit</span>
+                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">Highlights</h2>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F377;</div>
+                        <h3>30+ Wines to Taste</h3>
+                        <p>One of the broadest wine selections you'll find in a small mountain town. Enough variety to satisfy serious wine drinkers and casual tasters alike.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4CD;</div>
+                        <h3>Right on Burro Avenue</h3>
+                        <p>In the heart of Cloudcroft's walkable shopping district. Step in between shops, galleries, and coffee stops. It fits naturally into the Burro Avenue stroll.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F336;&#xFE0F;</div>
+                        <h3>The Green Chile Wine</h3>
+                        <p>Noisy Water's most famous product. A uniquely New Mexican wine that somehow works &mdash; and makes the perfect take-home souvenir or conversation-starter gift.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="visit" aria-label="Plan your visit">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Visit</span>
+                    <h2 class="section-title section-title-centered">Visit Noisy Water Winery</h2>
+                    <p class="section-description">Everything you need to know before you go.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h3>Location</h3>
+                        <p>505 Burro Avenue, Cloudcroft, NM 88317. Right in the heart of the village's walkable shopping and dining district.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h3>Hours</h3>
+                        <p>Hours vary by season. Open most days during summer and fall. <em>Check directly with the winery for current hours, especially in winter and shoulder seasons.</em></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F310;</div>
+                        <h3>Contact</h3>
+                        <p>Web: <a href="https://www.noisywaterwinery.com" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">noisywaterwinery.com</a></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
+                        <h3>Good to Know</h3>
+                        <p>Must be 21+ to taste. No appointment needed for standard tastings. Special events (sip &amp; paint, yoga) may require advance sign-up. Great stop to pair with Burro Avenue browsing.</p>
+                    </div>
+                </div>
+                <div class="tip-box">
+                    <span>&#x1F341;</span>
+                    <p><strong>Best season to visit:</strong> Fall is especially good &mdash; warm up with local wines after a crisp mountain walk. As the fall page puts it: their famous green chile wine pairs perfectly with crisp fall days in the mountains.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Taste New Mexico at 9,000 Feet</h2>
+                <p>Noisy Water Winery is where Cloudcroft's Burro Avenue stroll turns into something worth lingering over. Walk in for a tasting, stay for the green chile wine, and leave with a bottle or three.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.noisywaterwinery.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Visit Noisy Water</a>
+                    <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html" class="btn-secondary">Explore More Dining</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <a href="../stay/lodging.html">Lodging</a>
+                <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <a href="https://www.noisywaterwinery.com" target="_blank" rel="noopener noreferrer">noisywaterwinery.com</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h3>Plan</h3>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .wine-card, .also-card, .highlight-card, .visiting-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring in Cloudcroft | DiscoverCloudcroft.com — Wildflowers &amp; Mountain Renewal</title>
+    <meta name="description" content="Experience spring in Cloudcroft, NM. Wildflower hiking, birdwatching, mountain biking, and seasonal events from March through May at 8,676 feet.">
+    <meta name="keywords" content="Cloudcroft spring, wildflower hiking, birdwatching, Sacramento Mountains, mountain biking, Mayfair, spring events">
+    <link rel="canonical" href="https://discovercloudcroft.com/spring.html">
+
+    <meta property="og:title" content="Spring in Cloudcroft | DiscoverCloudcroft.com">
+    <meta property="og:description" content="Experience spring in Cloudcroft, NM. Wildflower hiking, birdwatching, mountain biking, and seasonal events from March through May at 8,676 feet.">
+    <meta property="og:url" content="https://discovercloudcroft.com/spring.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Spring in Cloudcroft | DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="Experience spring in Cloudcroft, NM. Wildflower hiking, birdwatching, and mountain renewal from March through May.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "name": "Spring in Cloudcroft, NM",
+      "description": "Spring in Cloudcroft brings wildflower hiking, birdwatching, and mountain biking from March through May.",
+      "about": {
+            "@type": "City",
+            "name": "Cloudcroft"
+      },
+      "url": "https://discovercloudcroft.com/season/spring.html"
+}
+    </script>
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <style>
+/* Hero - page-specific */
+.hero-bg {
+    background: linear-gradient(135deg, var(--pine-shadow) 0%, #111111 50%, #333333 100%);
+}
+
+/* Season Nav */
+.season-nav {
+    background: #f2f2f2;
+    padding: 1rem 0;
+}
+.season-nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.season-nav a {
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    color: #555555;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.08);
+}
+.season-nav a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+.season-nav a.active {
+    background: var(--golden-hour);
+    color: var(--midnight);
+}
+
+/* Overview */
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+.overview-text p {
+    font-size: 1.05rem;
+    color: var(--granite);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+.overview-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.stat-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--snow-cap);
+    border-radius: 12px;
+    border: 1px solid rgba(58, 107, 30, 0.15);
+}
+.stat-number {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--pine-shadow);
+}
+.stat-label {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.8rem;
+    color: var(--granite);
+    margin-top: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.overview-image {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(30, 58, 47, 0.15);
+    background: linear-gradient(135deg, #333333 0%, var(--pine-shadow) 100%);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overview-image-placeholder {
+    text-align: center;
+    padding: 2rem;
+}
+.overview-image-placeholder .icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.overview-image-placeholder p {
+    color: var(--snow-cap);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+}
+
+/* Activities */
+.activity-card-image {
+    height: 180px;
+    background: linear-gradient(135deg, #333333 0%, var(--pine-shadow) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+/* Weather */
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+.weather-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.weather-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+}
+.weather-card:nth-child(2).visible { transition-delay: 0.1s; }
+.weather-card:nth-child(3).visible { transition-delay: 0.2s; }
+.weather-card:hover {
+    transform: translateY(-6px);
+    background: rgba(0, 0, 0, 0.1);
+}
+.weather-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.weather-card h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 0.75rem;
+}
+.weather-card p {
+    color: #555555;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Events */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.event-card {
+    background: var(--snow-cap);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--golden-hour);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(30px);
+}
+.event-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.event-date {
+    display: inline-block;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: rgba(0, 0, 0, 0.15);
+    color: #000000;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+.event-card h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--midnight);
+    margin-bottom: 0.5rem;
+}
+.event-card p {
+    color: var(--granite);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Tips */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.tip-card {
+    background: var(--snow-cap);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--alpine);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.tip-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.tip-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+.tip-card h4 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--midnight);
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .overview-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .weather-grid { grid-template-columns: repeat(2, 1fr); }
+    .tips-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .weather-grid { grid-template-columns: 1fr; }
+    .activities-grid { grid-template-columns: 1fr; }
+    .tips-grid { grid-template-columns: 1fr; }
+    .overview-stats { grid-template-columns: 1fr; }
+    .season-nav-container { gap: 0.5rem; }
+    .season-nav a { padding: 0.5rem 1rem; font-size: 0.8rem; }
+}
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+        <header class="site-header" role="banner">
+        <div class="header-inner">
+
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../events/top-events.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+        <a href="../resources/resources.html">Resources</a>
+        <a href="../resources/contact.html">Contact</a>
+    </nav>
+<section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Spring wildflowers in the Sacramento Mountains"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>&#x1F338; March &ndash; May</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Spring </span>
+                <span class="word">in </span>
+                <span class="word">Cloudcroft</span>
+            </h1>
+            <p class="hero-subtitle">Wildflowers bloom as the forest awakens at 8,676 feet. Fewer crowds, perfect temperatures, and trails bursting with color.</p>
+            <div class="hero-ctas">
+                <a href="#activities" class="btn-primary">Spring Activities</a>
+                <a href="#events" class="btn-secondary">Spring Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Season Navigation -->
+    <div class="season-nav">
+        <div class="season-nav-container">
+            <a href="spring.html" class="active">&#x1F338; Spring</a>
+            <a href="summer.html">&#x2600;&#xFE0F; Summer</a>
+            <a href="fall.html">&#x1F342; Fall</a>
+            <a href="winter.html">&#x2744;&#xFE0F; Winter</a>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+
+        <!-- Overview Section -->
+        <section class="section" aria-label="Spring overview">
+            <div class="section-container">
+                <div class="overview-grid">
+                    <div class="overview-text fade-in">
+                        <span class="section-label">Season Overview</span>
+                        <h2 class="section-title">A Season of Renewal</h2>
+                        <p>Spring in Cloudcroft is a magical time of transition. The last traces of winter snow give way to an explosion of wildflowers, and the forest transforms from its winter slumber into a vibrant tapestry of green. Established in 1899, this mountain village at 8,676 feet comes alive each spring with blooming meadows and returning songbirds.</p>
+                        <p>This is the perfect season for hiking, with comfortable temperatures averaging 50&ndash;65&deg;F during the day. The trails are less crowded than summer, and the wildlife is active after the long winter months. Evenings cool to 25&ndash;40&deg;F, so layering is essential.</p>
+                        <div class="overview-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">50&ndash;65&deg;</div>
+                                <div class="stat-label">Avg. High</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">25&ndash;40&deg;</div>
+                                <div class="stat-label">Avg. Low</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">Low</div>
+                                <div class="stat-label">Crowd Level</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-image fade-in">
+                        <div class="overview-image-placeholder">
+                            <div class="icon">&#x1F338;</div>
+                            <p>Wildflowers in Bloom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section class="section" id="activities" style="background: var(--cloud-drift);" aria-label="Spring activities">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Spring Activities</span>
+                    <h2 class="section-title section-title-centered">Things to Do This Season</h2>
+                    <p class="section-description" style="color: var(--granite); max-width: 600px; margin: 0 auto 3rem; text-align: center;">From wildflower hikes to birdwatching, spring offers unique experiences you won't find any other time of year.</p>
+                </div>
+                <div class="activities-grid">
+                    <div class="activity-card">
+                        <div class="activity-card-image">&#x1F97E;</div>
+                        <div class="activity-card-content">
+                            <h3>Wildflower Hiking</h3>
+                            <p>Hit the trails to see carpets of bluebonnets, Indian paintbrush, and mountain wildflowers. The Rim Trail and Osha Trail are particularly spectacular in spring.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-card-image">&#x1F426;</div>
+                        <div class="activity-card-content">
+                            <h3>Birdwatching</h3>
+                            <p>Spring migration brings hummingbirds, warblers, and tanagers through the Sacramento Mountains. Bring your binoculars and a field guide for excellent sightings.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-card-image">&#x1F6B4;</div>
+                        <div class="activity-card-content">
+                            <h3>Mountain Biking</h3>
+                            <p>As the trails dry out, mountain bikers flock to the forest roads and single track. Cool temps make for excellent riding conditions at altitude.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-card-image">&#x1F4F7;</div>
+                        <div class="activity-card-content">
+                            <h3>Photography</h3>
+                            <p>The soft spring light and blooming landscapes create perfect conditions for landscape and nature photography throughout the mountains.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-card-image">&#x26F3;</div>
+                        <div class="activity-card-content">
+                            <h3>Golf at The Lodge</h3>
+                            <p>The Lodge Golf Course opens for the season, offering play on one of the highest courses in North America with stunning mountain views.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-card-image">&#x1F3A8;</div>
+                        <div class="activity-card-content">
+                            <h3>Art Galleries</h3>
+                            <p>Local galleries feature new spring collections. Stroll Burro Avenue and discover works by regional artists inspired by the mountain landscape.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="section highlights-section" aria-label="Spring weather">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">What to Expect</span>
+                    <h2 class="section-title section-title-centered" style="color: #000000;">Spring Weather</h2>
+                    <p class="section-description" style="color: rgba(240,244,248,0.7);">Variable conditions at 8,676 feet &mdash; come prepared and you'll love every moment.</p>
+                </div>
+                <div class="weather-grid">
+                    <div class="weather-card">
+                        <div class="weather-icon">&#x1F324;&#xFE0F;</div>
+                        <h3>Variable Conditions</h3>
+                        <p>Spring weather can change quickly at altitude. Expect sunny mornings that may turn to afternoon clouds or brief showers. Always check forecasts before heading out.</p>
+                    </div>
+                    <div class="weather-card">
+                        <div class="weather-icon">&#x1F9E5;</div>
+                        <h3>Layer Up</h3>
+                        <p>Mornings are cool, afternoons are mild. Bring layers you can add or remove as temperatures swing from the 20s to the 60s throughout the day.</p>
+                    </div>
+                    <div class="weather-card">
+                        <div class="weather-icon">&#x1F4A8;</div>
+                        <h3>April Winds</h3>
+                        <p>April can be particularly windy in the Sacramento Mountains. Secure your hat and bring a wind-resistant outer layer for hikes and outdoor activities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="section" id="events" aria-label="Spring events">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Spring Events</span>
+                    <h2 class="section-title section-title-centered">Celebrate the Season</h2>
+                    <p class="section-description" style="color: var(--granite); max-width: 600px; margin: 0 auto 3rem; text-align: center;">Community celebrations mark the arrival of spring in the mountains.</p>
+                </div>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <span class="event-date">May</span>
+                        <h3>Mayfair</h3>
+                        <p>Cloudcroft's beloved spring festival kicks off the season with arts, crafts, live music, food vendors, and community celebration on Burro Avenue.</p>
+                    </div>
+                    <div class="event-card">
+                        <span class="event-date">April</span>
+                        <h3>Easter Egg Hunt</h3>
+                        <p>The annual community Easter egg hunt brings families together at Zenith Park for springtime fun and treats at 8,676 feet.</p>
+                    </div>
+                    <div class="event-card">
+                        <span class="event-date">May</span>
+                        <h3>Memorial Day Weekend</h3>
+                        <p>The unofficial start of summer brings visitors for the long weekend. Book early for this popular getaway time in the mountains.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Tips Section -->
+        <section class="section" style="background: var(--cloud-drift);" aria-label="Practical tips">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Practical Tips</span>
+                    <h2 class="section-title section-title-centered">Plan Your Spring Visit</h2>
+                    <p class="section-description" style="color: var(--granite); max-width: 600px; margin: 0 auto 3rem; text-align: center;">Everything you need for a perfect spring trip to Cloudcroft.</p>
+                </div>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F9E5;</div>
+                        <h3>What to Pack</h3>
+                        <p>Layers are essential. Bring a warm fleece, wind-resistant jacket, sunscreen, and sturdy hiking shoes. Mornings can start near freezing even in May.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F697;</div>
+                        <h3>Getting Here</h3>
+                        <p>Highway 82 from Alamogordo is the main route. Spring conditions are generally good, but occasional late-season snow is possible. Check road conditions before traveling.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F3E0;</div>
+                        <h3>Where to Stay</h3>
+                        <p>Spring is low season, so lodging is easier to find. Cabins and vacation rentals offer the best mountain experience with fireplaces for cool evenings.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">&#x1F30E;</div>
+                        <h3>Elevation Reminder</h3>
+                        <p>At 8,676 feet, drink plenty of water and take it easy your first day. The sun is more intense at altitude &mdash; wear sunscreen and a hat even on cloudy days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Ready for a Spring Mountain Escape?</h2>
+                <p>Escape to the mountains and experience the magic of spring in Cloudcroft. Wildflowers, fresh air, and mountain peace await.</p>
+                <div class="cta-buttons">
+                    <a href="../stay/lodging.html" class="btn-primary">Find Lodging</a>
+                    <a href="seasonal.html" class="btn-secondary">Explore All Seasons</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <a href="../stay/lodging.html">Lodging</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h3>Plan</h3>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function() {
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 60) { header.classList.add('scrolled'); }
+                else { header.classList.remove('scrolled'); }
+            }, { passive: true });
+
+            var hamburger = document.querySelector('.hamburger');
+            var mobileMenu = document.querySelector('.mobile-menu');
+            hamburger.addEventListener('click', function() {
+                var isOpen = mobileMenu.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+            mobileMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+                });
+            });
+
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.fade-in, .activity-card, .weather-card, .event-card, .tip-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) { backToTop.classList.add('visible'); }
+                else { backToTop.classList.remove('visible'); }
+            }, { passive: true });
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+</body>
+</html>

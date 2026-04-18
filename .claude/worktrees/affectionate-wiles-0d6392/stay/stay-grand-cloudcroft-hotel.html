@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Cloudcroft Hotel | DiscoverCloudcroft.com — Modern Mountain Hotel Near White Sands</title>
+    <meta name="description"
+        content="Stay at The Grand Cloudcroft Hotel — 50 modern rooms with complimentary breakfast, 24hr front desk, and free parking. Just 15 miles from White Sands National Park.">
+    <meta name="keywords"
+        content="Grand Cloudcroft Hotel, Cloudcroft NM, hotel, White Sands, Sacramento Mountains, mountain hotel, complimentary breakfast">
+    <link rel="canonical" href="https://discovercloudcroft.com/grand-cloudcroft-hotel.html">
+
+    <meta property="og:title" content="Grand Cloudcroft Hotel | DiscoverCloudcroft.com">
+    <meta property="og:description"
+        content="50 modern rooms with complimentary breakfast, 24hr front desk, and free parking — just 15 miles from White Sands National Park.">
+    <meta property="og:url" content="https://discovercloudcroft.com/grand-cloudcroft-hotel.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grand Cloudcroft Hotel | DiscoverCloudcroft.com">
+    <meta name="twitter:description"
+        content="Modern mountain hotel with 50 rooms, complimentary breakfast, and stunning views near White Sands.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "The Grand Cloudcroft Hotel",
+      "description": "The Grand Cloudcroft Hotel is a 50-room independent hotel on James Canyon Highway in Cloudcroft, New Mexico. Opened September 15, 2023, it is the newest lodging property in the village — designed, built, and managed locally with custom white fir woodwork by co-owner Jim Maynard reflecting Cloudcroft's logging heritage. Features complimentary breakfast, indoor year-round pool and hot tub, 24-hour front desk, underground heated parking, and modern rooms with king beds, just 15 miles from White Sands National Park.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1207 James Canyon Hwy",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "telephone": "+15756012202",
+      "url": "https://www.grandcloudcroft.com",
+      "openingDate": "2023-09-15",
+      "numberOfRooms": 50,
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Complimentary Breakfast" },
+        { "@type": "LocationFeatureSpecification", "name": "Indoor Pool & Hot Tub" },
+        { "@type": "LocationFeatureSpecification", "name": "Free Parking" },
+        { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi" },
+        { "@type": "LocationFeatureSpecification", "name": "24-Hour Front Desk" },
+        { "@type": "LocationFeatureSpecification", "name": "Pet-Friendly Rooms" },
+        { "@type": "LocationFeatureSpecification", "name": "ADA-Accessible Rooms" }
+      ]
+    }
+    </script>
+
+    <style>
+        .hero-bg {
+            background: url('stay-photo/photo-grand-hotel/grand-hotel-00255.jpg') center 40% / cover no-repeat;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.35));
+        }
+
+        /* ── Good to Know (dark cards) ── */
+        .know-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .know-card {
+            background: #2B2B2B;
+            border-radius: 12px;
+            padding: 2rem;
+            color: #fff;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .know-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .know-card:nth-child(2).visible {
+            transition-delay: 0.1s;
+        }
+
+        .know-card:nth-child(3).visible {
+            transition-delay: 0.15s;
+        }
+
+        .know-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .know-card p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .highlights-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .highlight-card:nth-child(4).visible {
+            transition-delay: 0.3s;
+        }
+
+        .highlight-card:nth-child(5).visible {
+            transition-delay: 0.1s;
+        }
+
+        .highlight-card:nth-child(6).visible {
+            transition-delay: 0.2s;
+        }
+
+        .highlight-card:nth-child(7).visible {
+            transition-delay: 0.3s;
+        }
+
+        .highlight-card:nth-child(8).visible {
+            transition-delay: 0.1s;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 1024px) {
+
+            .know-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .know-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        /* ── Photo Gallery ── */
+        .hotel-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .hotel-gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 4 / 3;
+        }
+
+        .hotel-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.35s ease;
+        }
+
+        .hotel-gallery-item:hover img {
+            transform: scale(1.03);
+        }
+
+        .hotel-gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0.6rem 0.85rem;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../events/top-events.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+        <a href="../resources/resources.html">Resources</a>
+        <a href="../resources/contact.html">Contact</a>
+    </nav>
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Grand Cloudcroft Hotel exterior on James Canyon Highway"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Lodging &bull; Opened 2023</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">The </span>
+                <span class="word">Grand </span>
+                <span class="word">Cloudcroft </span>
+                <span class="word">Hotel</span>
+            </h1>
+            <p class="hero-subtitle">Modern comfort meets mountain majesty &mdash; 50 beautifully appointed rooms with
+                complimentary breakfast, just 15 miles from White Sands National Park.</p>
+            <div class="hero-ctas">
+                <a href="https://www.grandcloudcroft.com" target="_blank" class="btn-primary">Book Your Stay</a>
+                <a href="#rooms" class="btn-secondary">View Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <span>1207 James Canyon Hwy</span>
+            </div>
+            <div class="info-bar-item">
+                <span>24-Hour Front Desk</span>
+            </div>
+            <div class="info-bar-item">
+                <a href="tel:5756012202">(575) 601-2202</a>
+            </div>
+            <div class="info-bar-item">
+                <a href="https://www.grandcloudcroft.com" target="_blank">grandcloudcroft.com</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-label="About the hotel">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">Your Mountain Retreat Awaits</h2>
+                        <p>
+                            The Grand Cloudcroft Hotel is a 50-room independent hotel on James Canyon Highway in
+                            Cloudcroft, New Mexico. Opened on September 15, 2023, it is the newest lodging property in
+                            the village and the first purpose-built hotel in Cloudcroft in recent memory. The property
+                            was designed, built, and managed locally, positioning itself as an affordable alternative to
+                            The Lodge with a modern feel that still reflects the mountain character of Cloudcroft.
+                        </p>
+                        <p>
+                            Co-owner Jim Maynard handled much of the custom woodwork throughout the property, using
+                            white fir &mdash; a nod to Cloudcroft's logging heritage. General Manager Julie Bragg, a
+                            native Cloudcrofter and former ICU nurse, joined the project in January 2023 and assembled
+                            the initial 15-person staff. Local artist displays line the halls throughout the hotel, each
+                            with QR codes linking to the artist's portfolio.
+                        </p>
+                        <p>
+                            As Bragg describes the hotel's positioning: &ldquo;We are affordable but with the feel of a
+                            luxury hotel. It feels modern while evoking a sense of Cloudcroft and its place in the
+                            mountains.&rdquo;
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">King Beds in Every Room</span>
+                            <span class="about-feature">Complimentary Breakfast</span>
+                            <span class="about-feature">Free WiFi</span>
+                            <span class="about-feature">Work Desk</span>
+                            <span class="about-feature">Mini Fridge</span>
+                            <span class="about-feature">Coffee Station</span>
+                            <span class="about-feature">Pet-Friendly Rooms</span>
+                            <span class="about-feature">ADA Room Types</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section" id="photos" aria-label="Hotel photo gallery">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Photos</span>
+                    <h2 class="section-title section-title-centered">Inside &amp; Out</h2>
+                    <p class="section-description">A closer look at The Grand Cloudcroft Hotel.</p>
+                </div>
+                <div class="hotel-gallery">
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00255.jpg"
+                            alt="Grand Cloudcroft Hotel exterior at dusk with tall pines and warm lighting"
+                            loading="lazy">
+                        <span class="hotel-gallery-caption">Hotel exterior at dusk</span>
+                    </div>
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00263.jpg"
+                            alt="Grand Cloudcroft Hotel full exterior view on a clear day surrounded by ponderosa pines"
+                            loading="lazy">
+                        <span class="hotel-gallery-caption">Full exterior with mountain pines</span>
+                    </div>
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00256.jpg"
+                            alt="Hotel front entrance and Aspen Deck balcony with Grand Cloudcroft Hotel sign"
+                            loading="lazy">
+                        <span class="hotel-gallery-caption">Front entrance and Aspen Deck</span>
+                    </div>
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00254.jpg"
+                            alt="Two-story lobby with exposed white fir beams, stone fireplace, and front desk"
+                            loading="lazy">
+                        <span class="hotel-gallery-caption">Grand lobby with white fir beams</span>
+                    </div>
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00264.jpg"
+                            alt="Lobby view showing stone fireplace, leather seating, and mezzanine level"
+                            loading="lazy">
+                        <span class="hotel-gallery-caption">Lobby fireplace and mezzanine</span>
+                    </div>
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00257.jpg"
+                            alt="Stone fireplace with Christmas tree and leather club chairs in the lobby"
+                            loading="lazy">
+                        <span class="hotel-gallery-caption">Lobby fireplace lounge</span>
+                    </div>
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00260.jpg"
+                            alt="King bed with custom white fir headboard, sconce lighting, and Southwestern blanket"
+                            loading="lazy">
+                        <span class="hotel-gallery-caption">King room with custom woodwork</span>
+                    </div>
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00262.jpg"
+                            alt="King room with warm orange accent wall, leather armchair, and historic Cloudcroft photograph"
+                            loading="lazy">
+                        <span class="hotel-gallery-caption">King room with accent wall</span>
+                    </div>
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00258.jpg"
+                            alt="Breakfast dining room with booth seating, tables, and local art on the walls"
+                            loading="lazy">
+                        <span class="hotel-gallery-caption">Complimentary breakfast room</span>
+                    </div>
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00259.jpg"
+                            alt="Aspen Deck with modern outdoor furniture, fire pit, and pine forest views"
+                            loading="lazy">
+                        <span class="hotel-gallery-caption">Aspen Deck with fire pit</span>
+                    </div>
+                    <div class="hotel-gallery-item">
+                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00261.jpg"
+                            alt="Indoor pool and hot tub with large windows overlooking the property" loading="lazy">
+                        <span class="hotel-gallery-caption">Indoor pool and hot tub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section menu-section" id="rooms" aria-label="Room accommodations">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Accommodations</span>
+                    <h2 class="section-title section-title-centered">Our Rooms</h2>
+                    <p class="section-description">50 beautifully appointed rooms designed for your comfort, each
+                        featuring king-sized beds and modern amenities.</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <h3>King Room</h3>
+                        <p>Comfortable room featuring one king-sized bed and a cozy seating area.</p>
+                        <ul class="menu-items">
+                            <li>1 King Bed</li>
+                            <li>Seating Area</li>
+                            <li>43" HD Smart TV</li>
+                            <li>Work Desk</li>
+                            <li>Coffee Station</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <h3>Double King Room</h3>
+                        <p>Spacious room with two king-sized beds, perfect for families or groups. Sleeps 4.</p>
+                        <ul class="menu-items">
+                            <li>2 King Beds</li>
+                            <li>Sleeps 4 Guests</li>
+                            <li>Connecting Rooms Available</li>
+                            <li>Mini Fridge</li>
+                            <li>43" HD Smart TV</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <h3>Accessible Room</h3>
+                        <p>ADA-accessible room with thoughtful features for all guests. 2 rooms available.</p>
+                        <ul class="menu-items">
+                            <li>ADA-Accessible Shower</li>
+                            <li>Mobility Features</li>
+                            <li>Service Animals Welcome</li>
+                            <li>1 King Bed</li>
+                            <li>All Standard Amenities</li>
+                        </ul>
+                    </div>
+                    <div class="menu-card">
+                        <h3>Every Room Includes</h3>
+                        <p>Standard amenities in all of our 50 rooms for your comfort.</p>
+                        <ul class="menu-items">
+                            <li>Free High-Speed Wi-Fi</li>
+                            <li>Microwave &amp; Mini Fridge</li>
+                            <li>Coffee Station</li>
+                            <li>Complimentary Bath Products</li>
+                            <li>Air Conditioning &amp; Heating</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="know" aria-label="Good to know" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Good to Know</span>
+                    <h2 class="section-title section-title-centered">Before You Book</h2>
+                    <p class="section-description">Three things worth knowing about The Grand Cloudcroft Hotel.</p>
+                </div>
+                <div class="know-grid">
+                    <div class="know-card">
+                        <h3>Pet-Friendly Rooms</h3>
+                        <p>The Grand has 2 designated pet-friendly rooms, making it one of the clearer dog-travel
+                            options in Cloudcroft. These rooms book up fast &mdash; reserve early if you're bringing a
+                            pet.</p>
+                    </div>
+                    <div class="know-card">
+                        <h3>White Sands Access</h3>
+                        <p>Just 15 miles from White Sands National Park, The Grand is one of the closest Cloudcroft
+                            hotels to the dunes. Head down the mountain in the morning, explore the gypsum sand, and be
+                            back at altitude by dinner.</p>
+                    </div>
+                    <div class="know-card">
+                        <h3>Public Pool</h3>
+                        <p>Indoor year-round pool &amp; hot tub for guests. Public swim every Sunday: 12&ndash;2 PM and
+                            2&ndash;4 PM. $10 per person, $5 for children under 5. Ages 14 and under require adult
+                            supervision.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section highlights-section" aria-label="Hotel amenities">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">Hotel Amenities</span>
+                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">Everything You Need</h2>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <h3>Complimentary Breakfast</h3>
+                        <p>Hot breakfast 5 mornings per week. Muffins and cereal the other 2. Included for all guests.
+                        </p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>24-Hour Front Desk</h3>
+                        <p>Our friendly staff is available around the clock for your convenience.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>24-Hour Snack Area</h3>
+                        <p>Cereals, fresh fruits, yogurt, and juice available anytime day or night.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Indoor Pool &amp; Hot Tub</h3>
+                        <p>Year-round indoor pool. Public swim every Sunday &mdash; see details above.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Free Parking</h3>
+                        <p>Underground (20 cars, 10 motorcycles) plus surface parking. Radiant heated concrete prevents
+                            ice.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Free Wi-Fi</h3>
+                        <p>Stay connected with high-speed internet throughout the entire hotel.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Aspen Deck</h3>
+                        <p>Second-floor deck overlooking James Canyon Hwy with a hot rock fire pit.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Locally Owned</h3>
+                        <p>Designed, built, and managed by locals. Custom white fir woodwork by co-owner Jim Maynard.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="visit" aria-label="Visit the hotel" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Stay</span>
+                    <h2 class="section-title section-title-centered">Visit The Grand</h2>
+                    <p class="section-description">Everything you need to know before booking your mountain hotel stay.
+                    </p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <h3>Location</h3>
+                        <p>1207 James Canyon Hwy, Cloudcroft, NM 88317. Located on James Canyon Highway, a short drive
+                            to Burro Avenue and the heart of downtown Cloudcroft.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <h3>Reservations</h3>
+                        <p>Phone: <a href="tel:5756012202" style="color: var(--alpine); text-decoration: none;">(575)
+                                601-2202</a>. Available 24 hours. Book online at <a
+                                href="https://www.grandcloudcroft.com" target="_blank"
+                                style="color: var(--alpine); text-decoration: none;">grandcloudcroft.com</a>.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <h3>White Sands Access</h3>
+                        <p>Just 15 miles from White Sands National Park. The Grand is the perfect base camp for
+                            exploring this stunning natural wonder and the Sacramento Mountains.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <h3>Pet Policy</h3>
+                        <p>2 designated pet-friendly rooms &mdash; book early. Service animals are welcome in accessible
+                            rooms. Contact the hotel directly for current pet policy and fees.</p>
+                    </div>
+                </div>
+                <div class="tip-box">
+                    <p><strong>Comparing lodging options?</strong> See how The Grand stacks up against The Lodge,
+                        cabins, and vacation rentals in our <a
+                            href="complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html"
+                            style="color: var(--alpine);">complete guide to Cloudcroft lodging &rarr;</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Ready for Your Mountain Escape?</h2>
+                <p>Book your stay at The Grand Cloudcroft Hotel and experience the best of the Sacramento Mountains
+                    &mdash; modern comfort, mountain views, and White Sands just 15 miles away.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.grandcloudcroft.com" target="_blank" class="btn-primary">Book Your Stay</a>
+                    <a href="tel:5756012202" class="btn-secondary">Call (575) 601-2202</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <a href="lodging.html">Lodging</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <a href="tel:5756012202">(575) 601-2202</a>
+                <a href="https://www.grandcloudcroft.com" target="_blank"
+                    rel="noopener noreferrer">grandcloudcroft.com</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of
+                    Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank"
+                    rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h3>Plan</h3>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank"
+                    rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function () {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .menu-card, .know-card, .highlight-card, .visiting-card, .hotel-gallery-item').forEach(function (el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
+</body>
+
+</html>

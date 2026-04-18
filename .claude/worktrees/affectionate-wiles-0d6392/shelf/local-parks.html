@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Parks & Recreation | DiscoverCloudcroft.com</title>
+    <meta name="description" content="Discover Cloudcroft's local parks and recreation areas — from Zenith Park and the Elevation Paw Park to pickleball courts, ice skating, and disc golf in the Sacramento Mountains.">
+    <meta name="keywords" content="Cloudcroft parks, Zenith Park, Elevation Paw Park, pickleball, ice skating, disc golf, Sacramento Mountains, recreation">
+    <link rel="canonical" href="https://discovercloudcroft.com/local-parks.html">
+
+    <meta property="og:title" content="Local Parks & Recreation | DiscoverCloudcroft.com">
+    <meta property="og:description" content="Discover Cloudcroft's local parks and recreation areas — from Zenith Park and the Elevation Paw Park to pickleball courts, ice skating, and disc golf in the Sacramento Mountains.">
+    <meta property="og:url" content="https://discovercloudcroft.com/local-parks.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Local Parks & Recreation | DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="Discover Cloudcroft's local parks and recreation areas — from Zenith Park to pickleball, ice skating, and disc golf.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "Cloudcroft Local Parks & Recreation",
+      "description": "Parks, pickleball courts, ice skating, disc golf, and recreation in Cloudcroft, NM.",
+      "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cloudcroft",
+            "addressRegion": "NM",
+            "postalCode": "88317",
+            "addressCountry": "US"
+      },
+      "url": "https://discovercloudcroft.com/local-parks.html"
+}
+    </script>
+<link href="css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/common.css">
+    <style>
+
+.hero-bg {
+    background: linear-gradient(135deg, var(--pine-shadow) 0%, var(--summit) 50%, var(--alpine) 100%);
+}
+.hero-overlay {
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(30, 58, 47, 0.65));
+}
+
+/* Info bar color override */
+.info-bar-item { color: var(--cloud-drift); }
+/* Parks grid */
+.parks-grid {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+.park-card {
+background: var(--snow-cap);
+border-radius: 12px;
+overflow: hidden;
+border: 1px solid rgba(58, 107, 30, 0.15);
+display: grid;
+grid-template-columns: 280px 1fr;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+opacity: 0;
+transform: translateY(30px);
+}
+.park-card.visible {
+opacity: 1;
+transform: translateY(0);
+transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+}
+.park-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.park-card-image {
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 4rem;
+min-height: 220px;
+}
+.park-card:nth-child(1) .park-card-image {
+background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(58, 107, 30, 0.15) 100%);
+}
+.park-card:nth-child(2) .park-card-image {
+background: linear-gradient(135deg, #f2f2f2 0%, rgba(0, 0, 0, 0.15) 100%);
+}
+.park-card:nth-child(3) .park-card-image {
+background: linear-gradient(135deg, #eeeeee 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.park-card:nth-child(4) .park-card-image {
+background: linear-gradient(135deg, #eeeeee 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.park-card:nth-child(5) .park-card-image {
+background: linear-gradient(135deg, #f2f2f2 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.park-card-content {
+padding: 2rem 2.5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.park-card-tag {
+display: inline-block;
+font-family: 'IBM Plex Sans', sans-serif;
+font-size: 0.7rem;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 0.15em;
+color: var(--alpine);
+margin-bottom: 0.75rem;
+padding: 0.3rem 0.8rem;
+background: rgba(58, 107, 30, 0.1);
+border-radius: 15px;
+width: fit-content;
+}
+.park-card-content h3 {
+font-family: 'IBM Plex Sans', sans-serif;
+font-weight: 700;
+font-size: 1.5rem;
+color: var(--midnight);
+margin-bottom: 0.75rem;
+}
+.park-card-content p {
+color: var(--granite);
+font-size: 0.95rem;
+line-height: 1.7;
+margin-bottom: 1rem;
+}
+.park-card-details {
+display: flex;
+gap: 1.5rem;
+flex-wrap: wrap;
+margin-bottom: 1rem;
+}
+.park-detail {
+display: flex;
+align-items: center;
+gap: 0.4rem;
+font-size: 0.85rem;
+color: var(--alpine);
+font-weight: 500;
+}
+.park-card-link {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+color: var(--golden-hour);
+font-family: 'IBM Plex Sans', sans-serif;
+font-weight: 700;
+text-decoration: none;
+font-size: 0.9rem;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+transition: color 0.3s ease;
+}
+.park-card-link:hover {
+color: var(--ember);
+}
+/* Highlights overrides (4-column, different colors) */
+.highlights-grid {
+grid-template-columns: repeat(4, 1fr);
+}
+.highlight-card {
+background: rgba(255, 255, 255, 0.7);
+border: 1px solid rgba(58, 107, 30, 0.15);
+}
+.highlight-card:nth-child(4).visible { transition-delay: 0.3s; }
+.highlight-card:hover {
+background: rgba(255, 255, 255, 0.9);
+}
+.highlight-card h3 {
+color: var(--golden-hour);
+}
+.highlight-card p {
+color: var(--charcoal);
+}
+/* Visiting overrides (3-column) */
+.visiting-grid {
+grid-template-columns: repeat(3, 1fr);
+}
+/* CTA overrides */
+.cta-section {
+background: var(--cream-dark);
+}
+.cta-container h2 {
+color: var(--snow-cap);
+}
+.cta-container p {
+color: var(--charcoal);
+}
+/* Footer border */
+
+/* Responsive */
+@media (max-width: 1024px) {
+.park-card { grid-template-columns: 1fr; }
+.park-card-image { min-height: 180px; }
+
+.visiting-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+
+.visiting-grid { grid-template-columns: 1fr; }
+}</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+        <header class="site-header" role="banner">
+        <div class="header-inner">
+
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../events/top-events.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+        <a href="../resources/resources.html">Resources</a>
+        <a href="../resources/contact.html">Contact</a>
+    </nav>
+<section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Cloudcroft parks and recreation scenic view"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Recreation</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Local </span>
+                <span class="word">Parks </span>
+                <span class="word">&amp; </span>
+                <span class="word">Recreation</span>
+            </h1>
+            <p class="hero-subtitle">Play, Explore, and Unwind in the Sacramento Mountains</p>
+            <div class="hero-ctas">
+                <a href="#parks" class="btn-primary">Explore Parks</a>
+                <a href="#visit" class="btn-secondary">Plan Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F332;</div>
+                <span>5 Parks &amp; Recreation Areas</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4C5;</div>
+                <span>Open Year-Round</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F193;</div>
+                <span>Free Admission</span>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-label="About Cloudcroft parks">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">Parks &amp; Green Spaces in the Pines</h2>
+                        <p>
+                            Cloudcroft may be a small mountain village, but it offers a surprising variety of parks and outdoor recreation areas right in and around town. From the bustling community hub of Zenith Park to a dedicated dog park, free pickleball courts, a scenic disc golf course, and the Southwest's only natural outdoor ice rink, there is something for everyone.
+                        </p>
+                        <p>
+                            These spaces are where the community comes together &mdash; for festivals, fitness, family time, and fun at 8,676 feet.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F3DE;&#xFE0F; Community Parks</span>
+                            <span class="about-feature">&#x1F415; Dog Park</span>
+                            <span class="about-feature">&#x1F3D3; Pickleball</span>
+                            <span class="about-feature">&#x26F8;&#xFE0F; Ice Skating</span>
+                            <span class="about-feature">&#x1F94F; Disc Golf</span>
+                            <span class="about-feature">&#x1F3AA; Event Venues</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <div class="about-image-placeholder">
+                            <div class="icon">&#x1F332;</div>
+                            <p>Cloudcroft Parks &amp; Recreation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="parks" aria-label="Parks and recreation areas" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Explore Our Parks</span>
+                    <h2 class="section-title section-title-centered">Parks &amp; Recreation</h2>
+                    <p class="section-description">Five unique parks and recreation areas to enjoy during your visit to Cloudcroft.</p>
+                </div>
+                <div class="parks-grid">
+
+                    <div class="park-card">
+                        <div class="park-card-image">&#x1F3DE;&#xFE0F;</div>
+                        <div class="park-card-content">
+                            <span class="park-card-tag">Community Park</span>
+                            <h3>Zenith Park</h3>
+                            <p>The main community park and social heart of Cloudcroft. Zenith Park features pavilions, open green space, and serves as the host venue for the village's biggest events including the Mayfair Art Show, Beerfest, Christmas in July, and the Labor Day Hoopla. Whether you are attending a festival or simply enjoying a picnic under the pines, Zenith Park is the place to be.</p>
+                            <div class="park-card-details">
+                                <span class="park-detail">&#x1F4CD; Central Cloudcroft</span>
+                                <span class="park-detail">&#x1F3AA; Major Event Venue</span>
+                                <span class="park-detail">&#x1F3D5;&#xFE0F; Pavilions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="park-card">
+                        <div class="park-card-image">&#x1F415;</div>
+                        <div class="park-card-content">
+                            <span class="park-card-tag">Dog Park</span>
+                            <h3>Elevation Paw Park</h3>
+                            <p>Cloudcroft's dog-friendly park where four-legged friends can run and play off-leash. The fenced area features separate sections for large and small dogs, so pups of all sizes can enjoy some freedom. Bring your furry companion for fresh mountain air and exercise at nearly 9,000 feet.</p>
+                            <div class="park-card-details">
+                                <span class="park-detail">&#x1F43E; Off-Leash Area</span>
+                                <span class="park-detail">&#x1F512; Fully Fenced</span>
+                                <span class="park-detail">&#x1F436; Large &amp; Small Sections</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="park-card">
+                        <div class="park-card-image">&#x1F3D3;</div>
+                        <div class="park-card-content">
+                            <span class="park-card-tag">Sports &amp; Recreation</span>
+                            <h3>Pickleball Courts</h3>
+                            <p>Free courts located at Zenith Park, open 24/7 for players of all skill levels. Home to the Pickleball Addicts of Cloudcroft, the courts draw locals and visitors alike for games, socials, and tournaments. Bring your own paddle or join the community for some high-altitude rally action.</p>
+                            <div class="park-card-details">
+                                <span class="park-detail">&#x1F550; Open 24/7</span>
+                                <span class="park-detail">&#x1F4B0; Free to Play</span>
+                                <span class="park-detail">&#x1F4CD; Zenith Park</span>
+                            </div>
+                            <a href="do/play-pickleball-cloudcroft-new-mexico-2026.html" class="park-card-link">Learn More About Pickleball &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="park-card">
+                        <div class="park-card-image">&#x26F8;&#xFE0F;</div>
+                        <div class="park-card-content">
+                            <span class="park-card-tag">Seasonal &mdash; Winter</span>
+                            <h3>Ice Skating Rink</h3>
+                            <p>The Southwest's only natural outdoor ice rink, the Cloudcroft ice skating rink is a beloved winter tradition. Lace up your skates and glide under the pines while enjoying hot chocolate, a cozy fireplace, and stunning mountain views. A magical winter experience for families, couples, and visitors of all ages.</p>
+                            <div class="park-card-details">
+                                <span class="park-detail">&#x2744;&#xFE0F; Seasonal (Winter)</span>
+                                <span class="park-detail">&#x2615; Hot Chocolate</span>
+                                <span class="park-detail">&#x1F525; Fireplace</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="park-card">
+                        <div class="park-card-image">&#x1F94F;</div>
+                        <div class="park-card-content">
+                            <span class="park-card-tag">Outdoor Sports</span>
+                            <h3>Disc Golf Course</h3>
+                            <p>A scenic disc golf course winding through the pines of Cloudcroft. Free to play and open to all skill levels, the course offers a fun challenge amid towering trees and mountain terrain. Bring your own discs and enjoy one of the highest-elevation disc golf experiences in the Southwest.</p>
+                            <div class="park-card-details">
+                                <span class="park-detail">&#x1F4B0; Free to Play</span>
+                                <span class="park-detail">&#x1F94F; Bring Your Own Discs</span>
+                                <span class="park-detail">&#x1F332; Scenic Pine Setting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section highlights-section" aria-label="Why visit Cloudcroft parks">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: var(--golden-hour); letter-spacing: 3px;">Why Visit</span>
+                    <h2 class="section-title section-title-centered" style="color: var(--snow-cap);">Park Highlights</h2>
+                    <p class="section-description" style="color: rgba(240,244,248,0.7);">Four reasons Cloudcroft's parks are worth the trip.</p>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x26F0;&#xFE0F;</div>
+                        <h3>High-Altitude Recreation</h3>
+                        <p>Play at 8,676 feet in the cool mountain air of the Sacramento Mountains. Cloudcroft's parks offer a refreshing escape from the desert heat below with temperatures 20&ndash;30 degrees cooler.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F3AA;</div>
+                        <h3>Community Events</h3>
+                        <p>Zenith Park hosts the village's biggest gatherings including the Mayfair Art Show, Beerfest, Christmas in July, and the Labor Day Hoopla. There is always something happening.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x2744;&#xFE0F;</div>
+                        <h3>Year-Round Activities</h3>
+                        <p>From pickleball and disc golf in summer to the Southwest's only natural outdoor ice rink in winter, Cloudcroft's parks offer recreation in every season.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4B0;</div>
+                        <h3>Free &amp; Accessible</h3>
+                        <p>All parks offer free admission and parking. Most are within walking distance of downtown Cloudcroft shops and restaurants, making them easy to fit into any visit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="visit" aria-label="Plan your visit">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Know Before You Go</span>
+                    <h2 class="section-title section-title-centered">Plan Your Visit</h2>
+                    <p class="section-description">Everything you need to know for a great day at Cloudcroft's parks.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F324;&#xFE0F;</div>
+                        <h3>Weather &amp; Seasons</h3>
+                        <p>Cloudcroft's mountain climate means cooler temperatures year-round. Summer highs are in the 70s, and winters bring snow and ice skating season. Dress in layers and be prepared for afternoon thunderstorms in summer.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F17F;&#xFE0F;</div>
+                        <h3>Parking &amp; Access</h3>
+                        <p>All parks offer free parking and are easily accessible from the main village area. Most parks are within walking distance of downtown Cloudcroft shops and restaurants.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F415;</div>
+                        <h3>Pet Policy</h3>
+                        <p>Dogs are welcome at the Elevation Paw Park off-leash. In other park areas, pets should be kept on a leash. Please clean up after your pets and respect other visitors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Get Outside and Play in Cloudcroft</h2>
+                <p>From community festivals at Zenith Park to ice skating under the stars, Cloudcroft's parks offer year-round recreation at 8,676 feet.</p>
+                <div class="cta-buttons">
+                    <a href="do/complete-guide-to-activities.html" class="btn-primary">More Activities</a>
+                    <a href="index.html" class="btn-secondary">Discover Cloudcroft</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <a href="stay/lodging.html">Lodging</a>
+                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
+                <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="do/complete-guide-to-activities.html">Activities</a>
+                <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <a href="tel:+15555555555">(555) 555-5555</a>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h3>Plan</h3>
+                <a href="plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="about.html">About Cloudcroft</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/common.js"></script>
+  <script>
+        (function() {
+            // Header scroll
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 60) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }, { passive: true });
+
+            // Hamburger toggle
+            var hamburger = document.querySelector('.hamburger');
+            var mobileMenu = document.querySelector('.mobile-menu');
+            hamburger.addEventListener('click', function() {
+                var isOpen = mobileMenu.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+
+            // Close mobile menu on link click
+            mobileMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Intersection Observer for fade-in elements
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .park-card, .highlight-card, .visiting-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+
+            // Back to top button
+            var backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }, { passive: true });
+
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+</body>
+</html>

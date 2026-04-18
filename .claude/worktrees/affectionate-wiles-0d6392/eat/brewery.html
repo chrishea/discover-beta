@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Cloudcroft Brewery | DiscoverCloudcroft.com</title>
+    <meta name="description"
+        content="Cloudcroft Brewing Company: on-site microbrews, wood-fired pizza, rotating taps, and live music in a family-friendly taproom on Burro Avenue at 9,000 feet.">
+    <meta name="keywords"
+        content="Cloudcroft Brewing Company, Cloudcroft brewery, wood-fired pizza, craft beer, Burro Avenue, live music, taproom, Cloudcroft NM, 2026">
+    <link rel="canonical" href="https://discovercloudcroft.com/eat/brewery.html">
+
+    <meta property="og:title" content="Cloudcroft Brewery | DiscoverCloudcroft.com">
+    <meta property="og:description"
+        content="On-site microbrews, wood-fired pizza, and live music in a family-friendly taproom at 9,000 feet.">
+    <meta property="og:url" content="https://discovercloudcroft.com/eat/brewery.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/brewery-00033.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cloudcroft Brewery | DiscoverCloudcroft.com">
+    <meta name="twitter:description"
+        content="On-site microbrews, wood-fired pizza, and live music on Burro Avenue in Cloudcroft, NM.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/brewery-00033.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Cloudcroft Brewing Company",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1301 Burro Ave",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-575-682-2337",
+      "servesCuisine": ["American", "Pub Food"],
+      "priceRange": "$$",
+      "url": "https://discovercloudcroft.com/eat/brewery.html",
+      "sameAs": [
+        "https://www.cloudcroftbrewing.com/",
+        "https://www.instagram.com/cloudcroftbrewing/"
+      ]
+    }
+    </script>
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+
+    <style>
+        .hero-bg {
+            background: url('../eat/eat-photo/photos-brewery/brewery-00025.jpg') center center / cover no-repeat;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(40, 25, 15, 0.78), rgba(0, 0, 0, 0.65));
+        }
+
+        .hero-badge {
+            background: #FFFFFF90;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            color: var(--golden-hour);
+        }
+
+        .section-description {
+            font-size: clamp(1rem, 1.5vw, 1.1rem);
+            color: var(--granite);
+            max-width: 720px;
+            margin: 0 auto 3rem;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        .about-text p {
+            font-size: clamp(1rem, 1.5vw, 1.1rem);
+            color: var(--granite);
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--golden-hour);
+        }
+
+        .feature-card h3 {
+            font-size: clamp(1.1rem, 1.6vw, 1.25rem);
+            color: var(--midnight);
+            margin: 0 0 0.6rem;
+        }
+
+        .feature-card p,
+        .feature-card li {
+            color: var(--granite);
+            line-height: 1.7;
+            margin: 0 0 0.5rem;
+            font-size: 0.98rem;
+        }
+
+        .feature-card ul {
+            margin: 0.25rem 0 0;
+            padding-left: 1.1rem;
+        }
+
+        .visiting-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .visiting-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--golden-hour);
+        }
+
+        .visiting-card h3 {
+            margin: 0 0 0.5rem;
+            color: var(--midnight);
+            font-size: clamp(1.1rem, 1.6vw, 1.25rem);
+        }
+
+        .visiting-card p {
+            color: var(--granite);
+            line-height: 1.7;
+            margin: 0 0 0.4rem;
+            font-size: 0.98rem;
+        }
+
+        .visiting-card a {
+            color: var(--midnight);
+            text-decoration: underline;
+            min-height: 44px;
+            display: inline-block;
+            padding: 0.25rem 0;
+        }
+
+        .feature-image {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+
+        .tip-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: #fffbe6;
+            border: 1px solid #f0d060;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-top: 2rem;
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        .hours-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.35rem 0;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+            font-size: 0.95rem;
+            color: var(--granite);
+        }
+
+        .hours-list li:last-child {
+            border-bottom: none;
+        }
+
+        .hours-list .day {
+            font-weight: 700;
+            color: var(--charcoal);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-grid img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../events/top-events.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+        <a href="../resources/resources.html">Resources</a>
+        <a href="../resources/contact.html">Contact</a>
+    </nav>
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Cloudcroft Brewing Company taproom and brewery"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge"><span>CLOUDCROFT · BREWERY &amp; TAPROOM</span></div>
+            <h1 class="hero-title">Cloudcroft Brewery</h1>
+            <p class="hero-subtitle">A family-friendly brewery and restaurant with on-site microbrews, wood-fired pizza,
+                and regular live music, tucked into a renovated Forest Service tanker bay on Burro Avenue.</p>
+            <div class="hero-ctas">
+                <a href="#menu" class="btn-primary">View Menu</a>
+                <a href="#visit" class="btn-secondary">Visit &amp; Hours</a>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="overview" aria-label="Overview">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">The Place</span>
+                    <h2 class="section-title section-title-centered">One Stop for Beer, Pizza, and an Evening Out</h2>
+                </div>
+                <div class="about-text" style="max-width: 820px; margin: 0 auto;">
+                    <p>Cloudcroft Brewing Company is a true brewery-with-food rather than a restaurant that merely
+                        happens to serve craft beer. Housed in a renovated Forest Service tanker bay station that once
+                        held wildland firefighting engines, it has become a cornerstone of the village's food and drink
+                        scene at nearly 9,000 feet.</p>
+                    <p>The official site emphasizes on-site microbrewed beer, and the kitchen is built around wood-fired
+                        pizza, salads, and soup. With indoor and outdoor seating, a family-friendly atmosphere, and
+                        recurring live music, it works as one of Cloudcroft's main evening anchors — a place where
+                        visitors often stay longer than one drink.</p>
+
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=1301+Burro+Ave,+Cloudcroft,+NM+88317"
+                        target="_blank" rel="noopener noreferrer"
+                        style="display:inline-block;margin-top:1rem;padding:0.75rem 2rem;background:var(--golden-hour);color:#fff;font-family:'IBM Plex Sans',sans-serif;font-weight:700;font-size:1rem;border-radius:8px;text-decoration:none;text-align:center;transition:background 0.25s ease;"
+                        onmouseover="this.style.background='var(--ember)'"
+                        onmouseout="this.style.background='var(--golden-hour)'">Get Directions &rarr;</a>
+                </div>
+
+
+
+                <img src="../eat/eat-photo/photos-brewery/brewery-00027.jpg"
+                    alt="Wood-fired pizza at Cloudcroft Brewing Company" loading="lazy" decoding="async"
+                    class="feature-image">
+            </div>
+        </section>
+
+        <section class="section" id="menu" aria-label="Food and drink" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Food &amp; Drink</span>
+                    <h2 class="section-title section-title-centered">Wood-Fired Pizza, Microbrews, and In-House Spirits
+                    </h2>
+                    <p class="section-description">A focused brewery menu built around pizza, a few salad and soup
+                        options, and flexibility through toppings — paired with beer made on site with rainwater.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Wood-Fired Pizza</h3>
+                        <ul>
+                            <li>Pizza Margherita</li>
+                            <li>Pepperoni Pizza</li>
+                            <li>Greek Pizza</li>
+                            <li>Zia Pie</li>
+                            <li>Cory's Fave</li>
+                            <li>Build Your Own Pie</li>
+                        </ul>
+                        <p>Gluten-free crust and vegan cheese available for an upcharge.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Salads &amp; Soup</h3>
+                        <ul>
+                            <li>House Salad</li>
+                            <li>Soup du Jour (changes daily)</li>
+                        </ul>
+                        <p>House-made chips and salsa round out the lighter side of the menu.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Beer on Tap</h3>
+                        <p>On-site microbrewed beer is central, with named brews like Railspike Red Ale and Trainwreck
+                            IPA alongside light favorites like the Cowboy Beer and American Lager. Five extra taps
+                            rotate constantly, and a seasonal German Pilsner appears in summer.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>In-House Spirits</h3>
+                        <p>The adjoining Distillery side serves pizza by the slice and craft cocktails in a 21+ setting.
+                            In-house spirits include Mountain Smoke Whiskey, Skywater Vodka, and Mountaintop Gin.
+                            Microbrew packs and in-house spirits are available to take home.</p>
+                    </div>
+                </div>
+
+                <div class="tip-box">
+                    <div><strong>Brewed with rainwater at 9,000 feet.</strong> Head brewer Elliot Bell uses collected
+                        rainwater — unusually pure but mineral-free — then adds calcium chloride, gypsum, magnesium
+                        sulfate, and sodium bicarbonate back in for grain health and flavor.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="atmosphere" aria-label="Atmosphere">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">The Vibe</span>
+                    <h2 class="section-title section-title-centered">Casual, Social, and Event-Driven</h2>
+                    <p class="section-description">A relaxed brewery room with indoor and outdoor seating and a weekly
+                        rhythm of karaoke and live music.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Indoor &amp; Outdoor Seating</h3>
+                        <p>Indoor and outdoor seating in a family-friendly setting. Late-2024 expansion added more
+                            indoor seating and a new bar, with private-event ambitions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Family-Friendly</h3>
+                        <p>The official FAQ confirms the brewery is family friendly during all operating hours. Service
+                            animals are allowed inside; note that there is no dedicated dog patio.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Weekly Entertainment</h3>
+                        <p>Monday karaoke 6–9 p.m., Friday and Saturday live music 6–9 p.m., and Sunday live music 1–4
+                            p.m. Follow the brewery on Facebook or Instagram for the current schedule.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Seasonal Notes</h3>
+                        <p>Closed Thanksgiving and Christmas Day. Christmas Eve hours run 11 a.m. to 4 p.m. Thursdays
+                            may feature chili or Frito pie specials.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section" id="gallery" aria-label="Photo gallery">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Gallery</span>
+                    <h2 class="section-title section-title-centered">Inside Cloudcroft Brewing Company</h2>
+                    <p class="section-description">A look at the taproom, kitchen, and atmosphere.</p>
+                </div>
+                <div class="gallery-grid">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00026.jpg"
+                        alt="Cloudcroft Brewing Company interior" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00028.jpg"
+                        alt="Cloudcroft Brewing Company taproom detail" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00029.jpg"
+                        alt="Brewing equipment at Cloudcroft Brewing Company" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00030.jpg"
+                        alt="Outdoor seating at Cloudcroft Brewing Company" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00031.jpg"
+                        alt="Beer lineup at Cloudcroft Brewing Company" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00032.jpg"
+                        alt="Live music night at Cloudcroft Brewing Company" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00033.jpg"
+                        alt="Cloudcroft Brewing Company exterior" loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00034.jpg" alt="Cloudcroft Brewing Company patio"
+                        loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00555.jpeg" alt="Cloudcroft Brewing Company scene"
+                        loading="lazy" decoding="async">
+                    <img src="../eat/eat-photo/photos-brewery/brewery-00556.jpeg" alt="Cloudcroft Brewing Company scene"
+                        loading="lazy" decoding="async">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="highlights" aria-label="Highlights" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Why Go</span>
+                    <h2 class="section-title section-title-centered">What Makes It Worth a Stop</h2>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Brewed on Site with Rainwater</h3>
+                        <p>A truly unique water source. Head brewer Elliot Bell brings 15 years of commercial brewing
+                            experience, including 12 years at Colorado Boy Pub &amp; Brewery at 7,000 feet.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Wood-Fired Pizza Focus</h3>
+                        <p>The kitchen is built around wood-fired pies rather than a sprawling menu — a focused food
+                            program that earns its place next to the beer.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Live Music Most Nights</h3>
+                        <p>A structured weekly rhythm of karaoke and live music makes this one of the most useful
+                            live-music venues in town.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Rotating Taps</h3>
+                        <p>Five extra taps rotate constantly alongside the core lineup, so repeat visits pay off.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Attached Distillery</h3>
+                        <p>The 21+ Distillery side adds Mountain Smoke Whiskey, Skywater Vodka, Mountaintop Gin, and
+                            craft cocktails to the draw.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Take Some Home</h3>
+                        <p>Merchandise is sold in-house only, and visitors can buy microbrew packs and in-house spirits
+                            to take with them.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="tips" aria-label="Visitor tips">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Visitor Tips</span>
+                    <h2 class="section-title section-title-centered">Know Before You Go</h2>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Walk-Ins Welcome</h3>
+                        <p>Reservations do not appear central to the experience, but if you're coming on a music night
+                            or holiday weekend, calling ahead is wise.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Mind the Kitchen Close</h3>
+                        <p>Food service ends earlier than closing on Friday and Saturday — the kitchen wraps at 9 p.m.
+                            even though the taproom stays open until 10 p.m.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Closed Tuesdays</h3>
+                        <p>The brewery is closed on Tuesdays. Monday, Friday, Saturday, and Sunday tend to feel more
+                            event-driven thanks to the entertainment schedule.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>No Dog Patio</h3>
+                        <p>Service animals are welcome inside, but the official FAQ says there is no dog patio — plan
+                            accordingly if you're traveling with a pet.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Pair It With a Walk</h3>
+                        <p>Good pairings include a stroll along Burro Avenue, a stop at the Mexican Canyon Trestle
+                            Vista, or an easy hike on Osha Trail before pizza and beer.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Not a Quiet Dinner</h3>
+                        <p>This isn't a fine-dining destination. If you want a quieter meal or a broader entrée menu,
+                            consider a different stop in town.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="visit" aria-label="Visit information" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Visit</span>
+                    <h2 class="section-title section-title-centered">Location, Hours &amp; Contact</h2>
+                </div>
+
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <h3>Location</h3>r
+                        <p>Cloudcroft Brewing Company<br>
+                            1301 Burro Ave<br>
+                            Cloudcroft, NM 88317</p>
+                    </div>
+                    <div class="visiting-card">
+                        <h3>Contact</h3>
+                        <p>Phone: <a href="tel:+15756822337">(575) 682-2337</a></p>
+                        <p>Website: <a href="https://www.cloudcroftbrewing.com/" target="_blank"
+                                rel="noopener">cloudcroftbrewing.com</a></p>
+                        <p>Instagram: <a href="https://www.instagram.com/cloudcroftbrewing/" target="_blank"
+                                rel="noopener">@cloudcroftbrewing</a></p>
+                    </div>
+                    <div class="visiting-card">
+                        <h3>Hours</h3>
+                        <ul class="hours-list">
+                            <li><span class="day">Mon</span><span>11 a.m.–9 p.m.</span></li>
+                            <li><span class="day">Tue</span><span>Closed</span></li>
+                            <li><span class="day">Wed</span><span>11 a.m.–9 p.m.</span></li>
+                            <li><span class="day">Thu</span><span>11 a.m.–9 p.m.</span></li>
+                            <li><span class="day">Fri</span><span>11 a.m.–10 p.m.*</span></li>
+                            <li><span class="day">Sat</span><span>11 a.m.–10 p.m.*</span></li>
+                            <li><span class="day">Sun</span><span>11 a.m.–9 p.m.</span></li>
+                        </ul>
+                        <p style="margin-top:0.6rem;font-size:0.85rem;">*Food service ends at 9 p.m. Fri &amp; Sat.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <h3>Getting There</h3>
+                        <p>On the east side of the village at 1301 Burro Avenue. From central Cloudcroft, head east
+                            along Burro Avenue / U.S. 82 and continue through the main town stretch — the brewery sits
+                            farther east along the same corridor, easy to reach by car.</p>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=1301+Burro+Ave,+Cloudcroft,+NM+88317"
+                            target="_blank" rel="noopener noreferrer"
+                            style="display:inline-block;margin-top:1rem;padding:0.75rem 2rem;background:var(--golden-hour);color:#fff;font-family:'IBM Plex Sans',sans-serif;font-weight:700;font-size:1rem;border-radius:8px;text-decoration:none;text-align:center;transition:background 0.25s ease;"
+                            onmouseover="this.style.background='var(--ember)'"
+                            onmouseout="this.style.background='var(--golden-hour)'">Get Directions &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="verify" aria-label="Verify before you go">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Verify</span>
+                    <h2 class="section-title section-title-centered">Confirm Directly Before You Go</h2>
+                    <p class="section-description">A few things worth confirming with the brewery, especially around
+                        holidays or special events.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Current Hours</h3>
+                        <p>Hours shift around Thanksgiving, Christmas Eve, and Christmas Day. Check the official site or
+                            call (575) 682-2337 before planning a holiday visit.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Seasonal Menu Items</h3>
+                        <p>The Soup du Jour changes daily, the German Pilsner is summer-only, and Thursdays may bring
+                            chili or Frito pie specials. Call ahead if a specific item is the reason you're going.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Live Music &amp; Events</h3>
+                        <p>The weekly karaoke and live music schedule is posted on the official FAQ, but specific acts
+                            and private events are best confirmed via the brewery's Facebook or Instagram.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container">
+                <h2>Ready for a Pint?</h2>
+                <p>Grab a table, order a wood-fired pie, and try something from the rotating taps at Cloudcroft Brewing
+                    Company.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.cloudcroftbrewing.com/" class="btn-primary" target="_blank"
+                        rel="noopener">Visit the Brewery Website</a>
+                    <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html" class="btn-secondary">Where to Eat in
+                        Cloudcroft</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="../index.html" class="logo footer-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                </a>
+                <p>Your guide to the village of Cloudcroft, NM and the Sacramento Mountains.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="../stay/lodging.html">Stay</a>
+                <a href="../eat/complete-guide-to-dining.html">Eat</a>
+                <a href="../do/complete-guide-to-activities.html">Do</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="../contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Plan</h4>
+                <a href="../plan.html">Trip Planner</a>
+                <a href="../explore/where-to-visit.html">Nearby Visits</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 DiscoverCloudcroft.com</p>
+        </div>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function () {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.menu-card, .lodge-card, .visiting-card, .feature-card, .compare-card, .tip-card, .fade-in').forEach(function (el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
+</body>
+
+</html>

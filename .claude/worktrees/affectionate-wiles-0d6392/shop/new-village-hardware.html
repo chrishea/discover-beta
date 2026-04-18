@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Village Hardware — Cloudcroft, NM | Plumbing, Electrical, Paint, Wood Pellets</title>
+    <meta name="description"
+        content="New Village Hardware on Curlew Place is Cloudcroft's working hardware store — plumbing, electrical, paint, tools, and wood pellets. Family-run, open seven days a week.">
+    <meta name="keywords"
+        content="New Village Hardware Cloudcroft, Cloudcroft hardware store, wood pellets Cloudcroft, paint Cloudcroft, Sacramento Mountains hardware, NM 88317 hardware">
+    <link rel="canonical" href="https://discovercloudcroft.com/shop/new-village-hardware.html">
+
+    <meta property="og:title" content="New Village Hardware — Cloudcroft, NM">
+    <meta property="og:description"
+        content="Cloudcroft's working hardware store — plumbing, electrical, paint, tools, and wood pellets. Family-run.">
+    <meta property="og:url" content="https://discovercloudcroft.com/shop/new-village-hardware.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="New Village Hardware — Cloudcroft, NM">
+    <meta name="twitter:description"
+        content="Cloudcroft's working hardware store — plumbing, electrical, paint, tools, and wood pellets.">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HardwareStore",
+      "name": "New Village Hardware",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "61 Curlew Place",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "telephone": "+15756822849",
+      "email": "Help@newvillagehardware.com",
+      "description": "Cloudcroft's working hardware store — plumbing, electrical, paint, tools, and wood pellets. Family-run and open seven days a week.",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "07:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "16:00"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* Hero */
+        .hero-bg {
+            background-image: url('shop-photo/shop-photo-new-village-hardware/new-village-hardware-00444.jpg');
+            background-size: cover;
+            background-position: center;
+            animation: kenBurns 20s ease-in-out infinite alternate;
+        }
+
+        /* Category tag cloud */
+        .category-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1.5rem;
+        }
+
+        .category-tag {
+            font-size: 0.8rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            background: #000000;
+            color: #ffffff;
+            padding: 0.35rem 0.8rem;
+            border-radius: 4px;
+        }
+
+        /* Social links */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            font-size: 0.8rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
+            border: 1.5px solid #000000;
+            padding: 0.35rem 0.8rem;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .social-link:hover {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        /* Hours card */
+        .hours-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .hours-card {
+            background: #f2f2f2;
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+
+        .hours-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #000000;
+            margin-bottom: 0.5rem;
+        }
+
+        .hours-card p {
+            font-size: 0.875rem;
+            color: #555555;
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        .hours-card .hours-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 0.4rem;
+        }
+
+        /* Highlights */
+        .highlights-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .gallery-grid figure {
+            margin: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 4 / 3;
+            background: #f2f2f2;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-grid figure:hover img {
+            transform: scale(1.09);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .gallery-grid img,
+            .gallery-grid figure:hover img {
+                transition: none;
+                transform: none;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hours-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hours-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../events/top-events.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+        <a href="../resources/resources.html">Resources</a>
+        <a href="../resources/contact.html">Contact</a>
+    </nav>
+
+    <section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img"
+            aria-label="New Village Hardware on Curlew Place, Cloudcroft, New Mexico"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Local Hardware &bull; Plumbing, Electrical, Paint &bull; Wood Pellets</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">New </span>
+                <span class="word">Village</span>
+                <span class="word">Hardware</span>
+            </h1>
+            <p class="hero-subtitle">Cloudcroft's working hardware store. Plumbing, electrical, paint, tools, and wood
+                pellets — family-run and open seven days a week.</p>
+            <div class="hero-ctas">
+                <a href="tel:+15756822849" class="btn-primary">Call the Store</a>
+                <a href="#hours" class="btn-secondary">See Hours</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>61 Curlew Place, Cloudcroft, NM</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4DE;</div>
+                <a href="tel:+15756822849">(575) 682-2849</a>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F550;</div>
+                <span>Mon–Sat 7a–5p &bull; Sun 10a–4p</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x2709;&#xFE0F;</div>
+                <a href="mailto:Help@newvillagehardware.com">Help@newvillagehardware.com</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-labelledby="h-about">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title" id="h-about">The Store That Keeps You On the Mountain</h2>
+                        <p>
+                            New Village Hardware is the working hardware store of Cloudcroft. It is not a gift boutique
+                            or a crafts stop. It is the place residents, cabin owners, contractors, and visitors with
+                            mountain-life needs go for plumbing, electrical, paint, lumber, tools, and wood pellets. In
+                            a village where most retail leans toward souvenirs and galleries, this one plays the
+                            opposite role.
+                        </p>
+                        <p>
+                            The store runs seven days a week with early 7:00 a.m. weekday openings — hours that match
+                            contractors and early-start home projects more than browsing tourists. Customer reviews
+                            describe a family-run operation with friendly, knowledgeable staff and a willingness to
+                            track down items the store does not keep in stock.
+                        </p>
+                        <p>
+                            For Cloudcroft households and cabin owners, New Village Hardware is the difference between
+                            solving a problem at 7:15 a.m. and losing half a day driving to Alamogordo for a $6
+                            plumbing fitting.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F527; Tools &amp; Hardware</span>
+                            <span class="about-feature">&#x1F3A8; Paint</span>
+                            <span class="about-feature">&#x1F525; Wood Pellets</span>
+                            <span class="about-feature">&#x1F4A1; Electrical &amp; Plumbing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="gallery" aria-labelledby="h-gallery">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Gallery</span>
+                    <h2 id="h-gallery" class="section-title section-title-centered">A Look Inside</h2>
+                    <p class="section-description">Aisles, stock, and storefront at New Village Hardware.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <figure><img
+                            src="shop-photo/shop-photo-new-village-hardware/new-village-hardware-00444.jpg"
+                            alt="New Village Hardware storefront, Cloudcroft" loading="lazy" decoding="async"></figure>
+                    <figure><img
+                            src="shop-photo/shop-photo-new-village-hardware/new-village-hardware-00445.jpg"
+                            alt="New Village Hardware interior, Cloudcroft" loading="lazy" decoding="async"></figure>
+                    <figure><img
+                            src="shop-photo/shop-photo-new-village-hardware/new-village-hardware-00446.jpg"
+                            alt="New Village Hardware shelves and stock, Cloudcroft" loading="lazy"
+                            decoding="async"></figure>
+                    <figure><img
+                            src="shop-photo/shop-photo-new-village-hardware/new-village-hardware-00447.jpg"
+                            alt="New Village Hardware merchandise display, Cloudcroft" loading="lazy"
+                            decoding="async"></figure>
+                    <figure><img
+                            src="shop-photo/shop-photo-new-village-hardware/new-village-hardware-00448.jpg"
+                            alt="New Village Hardware product aisle, Cloudcroft" loading="lazy"
+                            decoding="async"></figure>
+                    <figure><img src="shop-photo/shop-photo-new-village-hardware/new-village-hardware-00449.jpg"
+                            alt="New Village Hardware in Cloudcroft, New Mexico" loading="lazy"
+                            decoding="async"></figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="departments" aria-labelledby="h-departments">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">What You'll Find</span>
+                    <h2 class="section-title section-title-centered" id="h-departments">Products &amp; Departments</h2>
+                    <p class="section-description">The core categories local sources and customer reviews consistently
+                        support. Call before driving over for specialty items.</p>
+                </div>
+                <div class="category-grid">
+                    <span class="category-tag">Plumbing</span>
+                    <span class="category-tag">Electrical</span>
+                    <span class="category-tag">Paint</span>
+                    <span class="category-tag">Wood Pellets</span>
+                    <span class="category-tag">Hand Tools</span>
+                    <span class="category-tag">Power Tool Supplies</span>
+                    <span class="category-tag">Home Maintenance</span>
+                    <span class="category-tag">Lumber &amp; Building Materials</span>
+                    <span class="category-tag">Seasonal &amp; Winter Supplies</span>
+                    <span class="category-tag">Housewares</span>
+                </div>
+                <div class="tip-box" style="margin-top:2rem;">
+                    <span class="tip-icon">⚠️</span>
+                    <p><strong>Some categories are likely but not fully confirmed.</strong> Lumber depth, propane
+                        service, key cutting, paint color matching, and rentals are not directly documented in public
+                        sources. Call <a href="tel:+15756822849" style="color:inherit;font-weight:600;">(575)
+                            682-2849</a> before a timed visit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="hours" aria-labelledby="h-hours">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">When to Visit</span>
+                    <h2 class="section-title section-title-centered" id="h-hours">Hours &amp; Access</h2>
+                    <p class="section-description">Seven days a week, with early weekday openings for contractors and
+                        early-start projects.</p>
+                </div>
+                <div class="hours-grid">
+                    <div class="hours-card">
+                        <p class="hours-label">Weekdays</p>
+                        <h3>Monday – Friday</h3>
+                        <p>7:00 a.m. – 5:00 p.m. Early openings match the store's contractor and trades clientele. One
+                            alternate listing shows Saturday extended to 6:00 p.m. — confirm directly.</p>
+                    </div>
+                    <div class="hours-card">
+                        <p class="hours-label">Weekend</p>
+                        <h3>Saturday &amp; Sunday</h3>
+                        <p>Saturday 7:00 a.m. – 5:00 p.m. (some listings show 6:00 p.m.). Sunday 10:00 a.m. – 4:00 p.m.
+                            Weekend hours are shorter — plan accordingly.</p>
+                    </div>
+                    <div class="hours-card">
+                        <p class="hours-label">Contact</p>
+                        <h3>Phone &amp; Email</h3>
+                        <p>Call <a href="tel:+15756822849" style="color:inherit;font-weight:600;">(575) 682-2849</a> or
+                            email <a href="mailto:Help@newvillagehardware.com"
+                                style="color:inherit;">Help@newvillagehardware.com</a> to check stock before driving
+                            over.</p>
+                    </div>
+                    <div class="hours-card">
+                        <p class="hours-label">Location</p>
+                        <h3>Off Burro Avenue</h3>
+                        <p>61 Curlew Place sits off Cloudcroft's main corridor — easier for truck pickups than the
+                            pedestrian-focused Burro Avenue gift strip. Short drive from most Cloudcroft lodging.</p>
+                    </div>
+                </div>
+                <div class="tip-box" style="margin-top:1.5rem;">
+                    <span class="tip-icon">⚠️</span>
+                    <p><strong>Hours above are from public map and listing sources.</strong> Holiday and snow-event
+                        hours may differ. Confirm same-day hours before a timed visit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section highlights-section" aria-labelledby="h-why">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Why Shop Here</span>
+                    <h2 class="section-title section-title-centered" id="h-why">The New Village Hardware Difference</h2>
+                    <p class="section-description">What sets this store apart from a big-box drive down the
+                        mountain.</p>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F9F0;</div>
+                        <h3>A Real Working Hardware Store</h3>
+                        <p>Not a gift shop with hardware on the side. Plumbing, electrical, paint, lumber, and tools are
+                            the core categories — stocked for actual cabin and home-maintenance work.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F468;&#x200D;&#x1F527;</div>
+                        <h3>Staff Who Know the Mountain</h3>
+                        <p>Customer reviews repeatedly describe helpful, knowledgeable staff who know Cloudcroft's
+                            specific climate, elevation, and cabin-construction realities — useful if you are not from
+                            here.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4E6;</div>
+                        <h3>"They'll Order It"</h3>
+                        <p>A pattern that shows up in reviews: if they don't have it, they'll get it. Worth a call
+                            before driving to Alamogordo for a specialty part.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F525;</div>
+                        <h3>Wood Pellets &amp; Winter Supplies</h3>
+                        <p>Wood pellets are a confirmed category — meaningful in a village where winter heat and snow
+                            prep are a seven-month concern, not a quarterly one.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F3E0;</div>
+                        <h3>Family-Run</h3>
+                        <p>Presented as family-owned and operated in listing language and review snippets. Expect
+                            conversation, not anonymous self-service.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F5D3;&#xFE0F;</div>
+                        <h3>Open Seven Days</h3>
+                        <p>Weekday openings at 7:00 a.m. and Sunday hours mean you are rarely more than a day away from
+                            solving a repair problem without leaving the mountain.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="before-you-go" aria-labelledby="h-before">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Plan Your Visit</span>
+                    <h2 class="section-title section-title-centered" id="h-before">Before You Go</h2>
+                    <p class="section-description">Practical questions worth a call for shoppers with specific needs.
+                    </p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CB;</div>
+                        <h3>Confirm Stock</h3>
+                        <p>Call ahead for plumbing, electrical, or specialty items. Independent mountain hardware
+                            inventory varies by season and demand.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F3A8;</div>
+                        <h3>Paint &amp; Color Matching</h3>
+                        <p>Paint is a confirmed category. Color matching and tinting are common at village hardware
+                            stores but not directly documented for this one. Confirm if it matters to your project.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F506;</div>
+                        <h3>Propane &amp; Rentals</h3>
+                        <p>Propane service, tool rentals, and key cutting are not confirmed in current public sources.
+                            Ask directly before planning a trip around them.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F69A;</div>
+                        <h3>Contractor &amp; Delivery</h3>
+                        <p>Contractor pricing programs, local delivery, and hold-for-pickup arrangements are not
+                            published. Worth asking if you are on an active Cloudcroft job.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact" aria-labelledby="h-contact">
+            <div class="section-container">
+                <div style="text-align:center;">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title section-title-centered" id="h-contact">Contact New Village Hardware</h2>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h3>Address</h3>
+                        <p>61 Curlew Place<br>Cloudcroft, NM 88317</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4DE;</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+15756822849" style="color:inherit;">(575) 682-2849</a></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x2709;&#xFE0F;</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:Help@newvillagehardware.com"
+                                style="color:inherit;">Help@newvillagehardware.com</a></p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4F1;</div>
+                        <h3>Find &amp; Follow</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                                class="social-link">Facebook</a>
+                            <a href="https://www.google.com/maps/search/New+Village+Hardware+Cloudcroft+NM"
+                                target="_blank" rel="noopener noreferrer" class="social-link">Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="Plan your visit">
+            <div class="cta-container">
+                <h2>Stay on the Mountain. Shop Local.</h2>
+                <p>Plumbing, electrical, paint, tools, and wood pellets — seven days a week on Curlew Place.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+15756822849" class="btn-primary">Call the Store</a>
+                    <a href="complete-guide-to-shopping-in-cloudcroft.html" class="btn-secondary">All Cloudcroft
+                        Shopping</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Lodging</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
+                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of
+                    Cloudcroft</a>
+                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank"
+                    rel="noopener noreferrer">Cloudcroft, NM 88317</a>
+            </div>
+            <div class="footer-col">
+                <h3>Plan</h3>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank"
+                    rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function () {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card, .cafe-card, .hours-card').forEach(function (el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Cloudcroft, NM | Things to Do, Where to Stay & Eat in Cloudcroft New Mexico</title>
+    <meta name="description"
+        content="Plan your Cloudcroft, NM getaway. Discover hiking trails, cozy cabins, local restaurants, stargazing, and year-round mountain adventures at 9,000 feet in the Sacramento Mountains.">
+    <link rel="canonical" href="https://discovercloudcroft.com/">
+
+    <meta property="og:title" content="Discover Cloudcroft, NM | Things to Do, Where to Stay & Eat">
+    <meta property="og:description"
+        content="Plan your Cloudcroft, NM getaway. Discover hiking trails, cozy cabins, local restaurants, stargazing, and year-round mountain adventures at 9,000 feet.">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <meta property="og:url" content="https://discovercloudcroft.com/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Discover Cloudcroft, NM | Things to Do, Where to Stay & Eat">
+    <meta name="twitter:description"
+        content="Plan your Cloudcroft, NM getaway. Hiking, cabins, restaurants, stargazing at 9,000 feet.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name": "Cloudcroft, New Mexico",
+      "description": "A mountain village at 9,000 feet in the Sacramento Mountains of New Mexico, known for hiking, dark skies, cool summer escapes, and charming local dining.",
+      "url": "https://discovercloudcroft.com/",
+      "touristType": ["Family", "Outdoor Enthusiasts", "Stargazers", "Hikers"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .skip-to-content {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0 0 8px 8px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            z-index: 10000;
+            transition: top 0.3s ease;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
+        :root {
+            --pine: #000000;
+            --pine-light: #333333;
+            --cream: #ffffff;
+            --cream-dark: #f2f2f2;
+            --gold: #000000;
+            --gold-hover: #333333;
+            --charcoal: #000000;
+            --charcoal-light: #444444;
+            --charcoal-muted: #777777;
+            --cta-red: #000000;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        @media (max-height: 700px) {
+            body {
+                align-items: flex-start;
+                padding-top: 3rem;
+            }
+        }
+
+        /* Subtle mountain silhouette background */
+        body::before {
+            content: '';
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 35vh;
+            background:
+                linear-gradient(165deg, transparent 40%, rgba(0, 0, 0, 0.04) 40.5%, rgba(0, 0, 0, 0.04) 55%, transparent 55.5%),
+                linear-gradient(195deg, transparent 35%, rgba(0, 0, 0, 0.03) 35.5%, rgba(0, 0, 0, 0.03) 50%, transparent 50.5%),
+                linear-gradient(175deg, transparent 30%, rgba(0, 0, 0, 0.05) 30.5%, rgba(0, 0, 0, 0.05) 60%, transparent 60.5%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Pine tree silhouettes */
+        body::after {
+            content: '';
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20vh;
+            background:
+                linear-gradient(to top, rgba(0, 0, 0, 0.06) 0%, transparent 100%);
+            mask-image:
+                /* Tree 1 */
+                linear-gradient(to right, transparent 5%, transparent 7%, rgba(0, 0, 0, 1) 7.5%, rgba(0, 0, 0, 1) 8.5%, transparent 9%, transparent 100%),
+                linear-gradient(160deg, transparent 45%, rgba(0, 0, 0, 1) 46%, rgba(0, 0, 0, 1) 54%, transparent 55%),
+                /* Tree 2 */
+                linear-gradient(to right, transparent 88%, rgba(0, 0, 0, 1) 88.5%, rgba(0, 0, 0, 1) 90%, transparent 90.5%),
+                linear-gradient(160deg, transparent 40%, rgba(0, 0, 0, 1) 41%, rgba(0, 0, 0, 1) 50%, transparent 51%);
+            mask-composite: add;
+            -webkit-mask-composite: source-over;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .page {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 480px;
+            width: 100%;
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-carousel {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            max-height: 50vh;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-carousel img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+            opacity: 0;
+            transition: opacity 1.5s ease;
+        }
+
+        .hero-carousel img.active {
+            opacity: 1;
+        }
+
+        .hero-carousel img:first-child {
+            position: relative;
+        }
+
+        .wordmark {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 500;
+            font-size: 0.85rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--pine);
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: clamp(2rem, 6vw, 2.75rem);
+            color: var(--charcoal);
+            line-height: 1.15;
+            margin-bottom: 1.25rem;
+        }
+
+        .subhead {
+            font-size: 1.05rem;
+            line-height: 1.65;
+            color: var(--charcoal-light);
+            margin-bottom: 2.5rem;
+            max-width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-container {
+            background: white;
+            border-radius: 16px;
+            padding: 1.75rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+            margin-bottom: 1rem;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .form-row input[type="email"] {
+            flex: 1;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            padding: 0.85rem 1.1rem;
+            border: 1.5px solid var(--cream-dark);
+            border-radius: 10px;
+            background: var(--cream);
+            color: var(--charcoal);
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .form-row input[type="email"]::placeholder {
+            color: var(--charcoal-muted);
+        }
+
+        .form-row input[type="email"]:focus {
+            border-color: var(--pine);
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-row button {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.85rem 1.5rem;
+            background: var(--gold);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+            white-space: nowrap;
+        }
+
+        .form-row button:hover {
+            background: var(--gold-hover);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .form-row button:active {
+            transform: translateY(0);
+        }
+
+        .reassurance {
+            font-size: 0.8rem;
+            color: var(--charcoal-muted);
+            margin-top: 1rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Success state */
+        .success-message {
+            display: none;
+            padding: 1.5rem;
+        }
+
+        .success-message .check {
+            width: 48px;
+            height: 48px;
+            background: var(--pine);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            animation: scaleIn 0.4s ease-out;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .success-message .check svg {
+            width: 24px;
+            height: 24px;
+            stroke: white;
+            stroke-width: 2.5;
+            fill: none;
+        }
+
+        .success-message h2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+
+        .success-message p {
+            font-size: 0.95rem;
+            color: var(--charcoal-light);
+            line-height: 1.5;
+        }
+
+        .form-container.success .form-row,
+        .form-container.success+.reassurance {
+            display: none;
+        }
+
+        .form-container.success .success-message {
+            display: block;
+        }
+
+        .error-message {
+            font-size: 0.85rem;
+            color: #000000;
+            margin-top: 0.75rem;
+            display: none;
+        }
+
+        .form-container.error .error-message {
+            display: block;
+        }
+
+        .form-row button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 480px) {
+            .form-row {
+                flex-direction: column;
+            }
+
+            .form-row button {
+                padding: 0.9rem 1.5rem;
+            }
+
+            .form-container {
+                padding: 1.25rem;
+            }
+
+            .wordmark {
+                margin-bottom: 2.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    <header class="site-header" role="banner">
+
+    </header>
+
+    <main id="main-content" role="main">
+        <div class="page">
+            <div class="hero-carousel" id="heroCarousel">
+                <img src="media/hero-elevate-your-fun.jpg" alt="Elevate Your Fun — Cloudcroft, New Mexico"
+                    class="active" loading="lazy">
+                <img src="media/hero-local-color.jpg" alt="Local Color — Cloudcroft, New Mexico" loading="lazy">
+                <img src="media/hero-elevate-adventure-vista.jpg"
+                    alt="Elevate Your Adventure — mountain vista view from Cloudcroft" loading="lazy">
+                <img src="media/hero-elevate-bbq-iq.jpg" alt="Elevate Your BBQ IQ — Cloudcroft, New Mexico"
+                    loading="lazy">
+                <img src="media/hero-art-seen.jpg" alt="Art Seen — Cloudcroft, New Mexico" loading="lazy">
+                <img src="media/hero-pie-in-the-sky.jpg" alt="Pie in the Sky — Cloudcroft, New Mexico" loading="lazy">
+                <img src="media/hero-go-clubbing.jpg" alt="Go Clubbing at a cool 9,000 ft — Cloudcroft golf course"
+                    loading="lazy">
+                <img src="media/hero-saddle-up.jpg" alt="Saddle Up Your Fun — horseback riding in Cloudcroft"
+                    loading="lazy">
+                <img src="media/hero-white-sands-ahead.jpg" alt="White Sands Ahead — Cloudcroft, New Mexico"
+                    loading="lazy">
+            </div>
+            <div class="wordmark">DiscoverCloudcroft.com</div>
+            <h1>Discover Cloudcroft, New Mexico &mdash; Your Mountain Escape at 9,000 Feet</h1>
+            <p class="subhead">The complete guide to things to do in Cloudcroft, NM is almost here. From the best hiking
+                trails and cozy cabins to local restaurants, stargazing under dark skies, and year-round mountain
+                adventures in the Sacramento Mountains &mdash; we're building the resource visitors have been
+                asking for.
+                <span style="font-weight:700;color:steelblue">DiscoverCloudcroft.com</span> will help you make the most
+                of your time.<br />
+                Be the first to know when we launch.
+            </p>
+            <div class="form-container" id="formContainer">
+                <form class="form-row" id="signupForm">
+                    <input type="email" id="emailInput" placeholder="Your email address" required autocomplete="email"
+                        aria-label="Email address">
+                    <button type="submit" id="submitBtn">Notify Me</button>
+                </form>
+                <div class="error-message" id="errorMessage">Something went wrong. Please try again.</div>
+                <div class="success-message">
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="6 12 10 16 18 8"></polyline>
+                        </svg>
+                    </div>
+                    <h2>You're on the list!</h2>
+                    <p>We'll let you know when <b>Discover Cloudcroft</b> goes live.</p>
+                </div>
+            </div>
+            <div class="reassurance">No spam. Just advice from locals.</div>
+        </div>
+    </main>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+    <script>
+        var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxBHtNoCm_a44NFoYyUerR8qUqj5379Wb1GgbIMjZeHVBoF2f2jH79HclzLzK9j_frT/exec';
+
+        document.getElementById('signupForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var email = document.getElementById('emailInput').value;
+            var btn = document.getElementById('submitBtn');
+            var container = document.getElementById('formContainer');
+
+            if (!email) return;
+
+            container.classList.remove('error');
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+
+            // Create a temporary form that submits to a hidden iframe
+            var tempForm = document.createElement('form');
+            tempForm.method = 'POST';
+            tempForm.action = GOOGLE_SCRIPT_URL;
+            tempForm.target = 'hidden_iframe';
+            tempForm.style.display = 'none';
+
+            var input = document.createElement('input');
+            input.name = 'email';
+            input.value = email;
+            tempForm.appendChild(input);
+
+            document.body.appendChild(tempForm);
+            tempForm.submit();
+            document.body.removeChild(tempForm);
+
+            // Show success after a short delay to allow submission
+            setTimeout(function () {
+                container.classList.add('success');
+            }, 1000);
+        });
+
+        // Hero image carousel
+        (function () {
+            var images = document.querySelectorAll('#heroCarousel img');
+            var current = 0;
+            setInterval(function () {
+                images[current].classList.remove('active');
+                current = (current + 1) % images.length;
+                images[current].classList.add('active');
+            }, 9000);
+        })();
+    </script>
+</body>
+
+</html>

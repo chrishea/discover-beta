@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Privacy Policy | DiscoverCloudcroft.com</title>
+<meta name="description" content="Privacy Policy for DiscoverCloudcroft.com, operated by Mountain Monthly LLC.">
+<link rel="canonical" href="https://discovercloudcroft.com/about/privacy.html">
+<meta property="og:title" content="Privacy Policy | DiscoverCloudcroft.com">
+<meta property="og:description" content="Privacy Policy for DiscoverCloudcroft.com, operated by Mountain Monthly LLC.">
+<meta property="og:type" content="article">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --midnight:#1a1a1a;
+  --golden-hour:#c9a74e;
+  --granite:#555;
+  --cloud-drift:#f5f2ec;
+  --snow-cap:#fff;
+  --alpine:#2e6b8a;
+  --charcoal:#2b2b2b;
+  --cream-dark:#e8e2d2;
+  --ember:#c65d3a;
+  --twilight:#3a4a6b;
+  --pine:#000;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IBM Plex Sans','Helvetica Neue',sans-serif;color:var(--midnight);line-height:1.7;background:#fff}
+a{color:var(--alpine);text-decoration:none}
+a:hover{text-decoration:underline}
+.skip-to-content{position:absolute;left:-9999px}
+.skip-to-content:focus{left:1rem;top:1rem;background:var(--golden-hour);color:#fff;padding:.75rem 1.25rem;border-radius:6px;z-index:1000}
+
+/* Header */
+.site-header{background:#fff;border-bottom:1px solid #eee;padding:1rem 2rem;position:sticky;top:0;z-index:50}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.header-nav{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center}
+.header-nav a{font-family:'IBM Plex Sans',sans-serif;font-size:.85rem;font-weight:500;color:var(--midnight);text-transform:uppercase;letter-spacing:.05em}
+.header-nav a:hover{color:var(--golden-hour);text-decoration:none}
+.logo{font-family:'IBM Plex Sans',sans-serif;font-weight:700;font-size:1.1rem;display:flex;gap:.25rem;align-items:baseline;text-transform:uppercase;letter-spacing:.08em}
+.logo-discover{color:var(--midnight)}
+.logo-cloudcroft{color:var(--golden-hour);font-weight:500}
+.logo-beta{font-size:.55rem;background:var(--golden-hour);color:#fff;padding:.15rem .45rem;border-radius:4px;text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+
+/* Hero */
+.hero{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;padding:5rem 2rem 4rem}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#1a1a1a 0%,#2b2b2b 50%,#0a0a0a 100%)}
+.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.25)}
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-badge{display:inline-block;background:var(--golden-hour);color:#fff;padding:.4rem 1rem;border-radius:20px;font-family:'IBM Plex Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.5rem}
+.hero-title{font-family:'IBM Plex Sans',sans-serif;font-weight:700;font-size:clamp(2rem,5vw,3.25rem);line-height:1.1;margin-bottom:1rem}
+.hero-subtitle{font-size:clamp(.95rem,2vw,1.1rem);color:rgba(255,255,255,.85);max-width:640px;margin:0 auto}
+
+/* Info bar (effective dates) */
+.info-bar{background:var(--cream-dark);padding:1.25rem 2rem;border-bottom:1px solid #d8cfb8}
+.info-bar-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:center;flex-wrap:wrap;gap:2rem}
+.info-bar-item{display:flex;align-items:center;gap:.6rem;font-family:'IBM Plex Sans',sans-serif;font-size:.85rem;color:var(--charcoal)}
+.info-bar-label{font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--golden-hour);font-size:.7rem}
+
+/* Main / Section */
+.section{padding:4rem 2rem}
+.section-container{max-width:860px;margin:0 auto}
+.section-label{display:block;font-family:'IBM Plex Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--golden-hour);margin-bottom:.75rem}
+.section-title{font-family:'IBM Plex Sans',sans-serif;font-weight:700;font-size:clamp(1.5rem,3vw,2rem);color:var(--midnight);line-height:1.2;margin-bottom:2rem;padding-bottom:1rem;border-bottom:3px solid var(--golden-hour);display:inline-block}
+
+.section-body{font-size:1rem;color:#333}
+.section-body p{margin-bottom:1.1rem}
+.section-body ul,.section-body ol{margin:0 0 1.25rem 1.5rem}
+.section-body li{margin-bottom:.45rem}
+.section-body h2{font-family:'IBM Plex Sans',sans-serif;font-weight:700;font-size:1.4rem;margin:2.5rem 0 1rem;color:var(--midnight);padding-bottom:.5rem;border-bottom:2px solid var(--cream-dark)}
+.section-body h3{font-family:'IBM Plex Sans',sans-serif;font-weight:700;font-size:1.1rem;margin:1.75rem 0 .6rem;color:var(--charcoal)}
+.section-body strong{color:var(--midnight)}
+.section-body a{color:var(--alpine);font-weight:500}
+
+.contact-card{background:var(--cloud-drift);border-left:4px solid var(--golden-hour);padding:1.25rem 1.5rem;margin:1.5rem 0;border-radius:4px;font-size:.95rem;line-height:1.7}
+
+/* CTA */
+.cta-section{background:#1a1a1a;color:#fff;padding:4rem 2rem;text-align:center}
+.cta-container{max-width:700px;margin:0 auto}
+.cta-section h2{font-family:'IBM Plex Sans',sans-serif;font-size:1.75rem;margin-bottom:1rem;color:var(--golden-hour)}
+.cta-section p{color:rgba(255,255,255,.8);margin-bottom:2rem}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-primary,.btn-secondary{font-family:'IBM Plex Sans',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.85rem 1.6rem;border-radius:6px;transition:all .25s;display:inline-block}
+.btn-primary{background:var(--golden-hour);color:#fff}
+.btn-primary:hover{background:#b3923e;text-decoration:none}
+.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
+.btn-secondary:hover{background:#fff;color:var(--midnight);text-decoration:none}
+
+/* Footer */
+footer.site-footer{background:#0f0f0f;color:rgba(255,255,255,.7);padding:2.5rem 2rem 1.5rem;text-align:center;font-size:.85rem}
+footer.site-footer a{color:var(--golden-hour)}
+footer.site-footer a:hover{color:#fff;text-decoration:none}
+.footer-bottom{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid #2a2a2a;color:rgba(255,255,255,.5);display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap}
+
+@media(max-width:768px){
+  .header-nav{gap:1rem}
+  .header-nav a{font-size:.75rem}
+  .section{padding:2.5rem 1.25rem}
+  .hero{padding:3.5rem 1.25rem 2.5rem}
+  .info-bar-inner{gap:1rem;flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <nav class="header-nav" role="navigation" aria-label="Main navigation">
+      <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+        <span class="logo-discover">Discover</span>
+        <span class="logo-cloudcroft">Cloudcroft</span>
+        <span class="logo-beta">Beta</span>
+      </a>
+      <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+      <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+      <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+      <a href="../visit/where-to-visit.html">Visit</a>
+      <a href="../events/top-events.html">Events</a>
+      <a href="../season/seasonal.html">Seasons</a>
+      <a href="../resources/resources.html">Resources</a>
+      <a href="../resources/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span>DiscoverCloudcroft</span></div>
+    <h1 class="hero-title">Privacy Policy</h1>
+    <p class="hero-subtitle">How Mountain Monthly LLC collects, uses, and protects information on DiscoverCloudcroft.com.</p>
+  </div>
+</section>
+
+<div class="info-bar">
+  <div class="info-bar-inner">
+    <div class="info-bar-item">
+      <span class="info-bar-label">Effective Date:</span>
+      <span>[INSERT EFFECTIVE DATE]</span>
+    </div>
+    <div class="info-bar-item">
+      <span class="info-bar-label">Last Updated:</span>
+      <span>[INSERT LAST UPDATED DATE]</span>
+    </div>
+  </div>
+</div>
+
+<main id="main-content">
+  <section class="section">
+    <div class="section-container">
+      <span class="section-label">About This Policy</span>
+      <h2 class="section-title">Privacy Policy</h2>
+
+      <div class="section-body">
+        <p>DiscoverCloudcroft.com is operated by <strong>Mountain Monthly LLC</strong> (&ldquo;<strong>Mountain Monthly</strong>,&rdquo; &ldquo;<strong>we</strong>,&rdquo; &ldquo;<strong>us</strong>,&rdquo; or &ldquo;<strong>our</strong>&rdquo;). This Privacy Policy explains how we collect, use, disclose, and protect information when you visit <strong>discovercloudcroft.com</strong> (the &ldquo;<strong>Site</strong>&rdquo;).</p>
+
+        <h3>Operator Contact Information</h3>
+        <div class="contact-card">
+          Mountain Monthly LLC<br>
+          PO Box 495<br>
+          Cloudcroft, New Mexico 88317<br>
+          <a href="mailto:hello@mountainmonthly.com">hello@mountainmonthly.com</a>
+        </div>
+
+        <p>By using the Site, you agree to the practices described in this Privacy Policy.</p>
+
+        <h2>1. Scope of This Privacy Policy</h2>
+        <p>This Privacy Policy applies to information collected through the Site and through communications you send to us through the Site or by email in connection with the Site. It does not apply to information collected by third-party websites, services, or platforms that we do not control, even if we link to them or embed their content.</p>
+
+        <h2>2. Information We Collect</h2>
+
+        <h3>A. Information You Provide Directly</h3>
+        <p>You may choose to provide information to us, including:</p>
+        <ul>
+          <li>your email address when you sign up for our newsletter</li>
+          <li>information you include if you contact us by email</li>
+          <li>any other information you voluntarily provide to us</li>
+        </ul>
+        <p>At this time, the Site does not offer user accounts, public comments, or on-site purchases.</p>
+
+        <h3>B. Information Collected Automatically</h3>
+        <p>When you visit the Site, we and our service providers may automatically collect certain information, such as:</p>
+        <ul>
+          <li>IP address</li>
+          <li>browser type and version</li>
+          <li>device type</li>
+          <li>operating system</li>
+          <li>pages viewed</li>
+          <li>referring website or source</li>
+          <li>date and time of visits</li>
+          <li>approximate geographic location derived from IP address</li>
+          <li>interactions with Site content</li>
+          <li>cookie identifiers and similar identifiers</li>
+        </ul>
+        <p>This information may be collected through cookies, pixels, analytics tools, server logs, and similar technologies.</p>
+
+        <h2>3. Newsletter Signups</h2>
+        <p>The Site includes a newsletter signup feature. Newsletter signups are handled through <strong>Substack</strong>. If you subscribe, you provide your email address and any other information requested through the signup form. Your information may then be processed and stored by Substack in accordance with its own terms and privacy practices.</p>
+
+        <p>We use newsletter signup information to:</p>
+        <ul>
+          <li>add you to the requested mailing list</li>
+          <li>send newsletters and related updates</li>
+          <li>manage subscriptions and unsubscribe requests</li>
+          <li>understand newsletter performance and engagement</li>
+        </ul>
+
+        <p>You may unsubscribe at any time through the unsubscribe link in an email or by contacting us at <a href="mailto:hello@mountainmonthly.com">hello@mountainmonthly.com</a>.</p>
+
+        <h2>4. Cookies and Similar Technologies</h2>
+        <p>The Site may use cookies, pixels, tags, local storage, and similar technologies to:</p>
+        <ul>
+          <li>operate and improve the Site</li>
+          <li>understand how visitors use the Site</li>
+          <li>measure traffic and audience behavior</li>
+          <li>support embedded content</li>
+          <li>support advertising, marketing, and ad measurement</li>
+        </ul>
+
+        <p>Some cookies may be set by us, and others may be set by third parties whose tools or content appear on the Site.</p>
+
+        <p>You can usually control cookies through your browser settings. Blocking some cookies may affect Site functionality or the display of embedded content.</p>
+
+        <h2>5. Analytics, Pixels, Advertising, and Embedded Tools</h2>
+        <p>We may use or may in the future use third-party tools and services, including:</p>
+        <ul>
+          <li>Google Analytics</li>
+          <li>Meta Pixel</li>
+          <li>Substack</li>
+          <li>Mailchimp</li>
+          <li>YouTube embeds</li>
+          <li>Instagram embeds</li>
+          <li>Google Maps embeds</li>
+          <li>ad networks</li>
+        </ul>
+
+        <h3>Google Analytics</h3>
+        <p>We may use Google Analytics to help us understand Site traffic, visitor behavior, and general audience trends.</p>
+
+        <h3>Meta Pixel</h3>
+        <p>We may use Meta Pixel to measure advertising performance, understand visitor actions on the Site, and support advertising or remarketing activities.</p>
+
+        <h3>Ad Networks</h3>
+        <p>The Site may use advertising technologies or ad network services that collect information about visits, browser activity, or interactions in order to serve ads, measure ad performance, or support ad delivery.</p>
+
+        <h3>Embedded Content</h3>
+        <p>Pages on the Site may include embedded content from third parties such as YouTube, Instagram, and Google Maps. Embedded content may behave as if you visited the third-party platform directly and may allow that platform to collect data about you, set cookies, or track your interaction.</p>
+
+        <h3>Mailchimp</h3>
+        <p>Mailchimp is listed as a tool that may be used or may be used in the future in connection with communications or audience management. If Mailchimp is activated for the Site, it may collect and process data in accordance with its own privacy practices.</p>
+
+        <p>We are not responsible for the privacy practices of third-party services. We encourage users to review the privacy policies of those providers.</p>
+
+        <h2>6. How We Use Information</h2>
+        <p>We may use collected information to:</p>
+        <ul>
+          <li>operate, maintain, and improve the Site</li>
+          <li>provide tourism and visitor information</li>
+          <li>respond to inquiries and communications</li>
+          <li>send newsletters and related messages you request</li>
+          <li>analyze traffic and visitor behavior</li>
+          <li>measure content and advertising performance</li>
+          <li>detect, prevent, or address technical issues or misuse</li>
+          <li>protect our rights, users, or the Site</li>
+          <li>comply with legal obligations</li>
+        </ul>
+
+        <h2>7. How We Share Information</h2>
+        <p>We may share information in the following circumstances:</p>
+        <ul>
+          <li>with service providers that help us operate the Site, analytics, newsletter delivery, hosting, advertising, and related functions</li>
+          <li>with third-party platforms involved in analytics, advertising, email delivery, and embedded content</li>
+          <li>when required by law, subpoena, court order, or other legal process</li>
+          <li>when necessary to protect our rights, property, safety, or users</li>
+          <li>in connection with a merger, sale, transfer, restructuring, or acquisition involving all or part of our business or assets</li>
+        </ul>
+
+        <p>We do not state that we &ldquo;sell&rdquo; personal information in any legal sense unless that characterization applies under a specific law. Some privacy laws may define certain advertising or tracking practices broadly. Our actual obligations may depend on legal thresholds and the details of Site operations.</p>
+
+        <h2>8. Data Retention</h2>
+        <p>We retain information for as long as reasonably necessary for the purposes described in this Privacy Policy, including to:</p>
+        <ul>
+          <li>provide requested communications</li>
+          <li>maintain business and Site records</li>
+          <li>analyze Site performance</li>
+          <li>comply with legal obligations</li>
+          <li>resolve disputes</li>
+          <li>enforce agreements</li>
+        </ul>
+        <p>Retention periods may vary depending on the type of information and the reason it was collected.</p>
+
+        <h2>9. Your Choices</h2>
+        <ul>
+          <li><strong>Newsletter emails:</strong> You may unsubscribe at any time using the unsubscribe link in a message.</li>
+          <li><strong>Cookies:</strong> You may control or block cookies through your browser settings.</li>
+          <li><strong>Communications:</strong> You may contact us to ask questions or request correction or deletion of information you provided directly, subject to legal and operational limits.</li>
+        </ul>
+        <p>To make a request, contact: <a href="mailto:hello@mountainmonthly.com">hello@mountainmonthly.com</a></p>
+
+        <h2>10. Children&rsquo;s Privacy</h2>
+        <p>The Site is a general audience website and is not directed to children under 13. We do not knowingly collect personal information from children under 13 through the Site. If you believe a child has provided personal information through the Site, contact us at <a href="mailto:hello@mountainmonthly.com">hello@mountainmonthly.com</a> and we will review the request and take appropriate action.</p>
+
+        <h2>11. External Links and Third-Party Services</h2>
+        <p>The Site may link to third-party websites, businesses, booking tools, social media platforms, maps, attractions, public agencies, or other outside resources. We do not control those third parties and are not responsible for their privacy practices, content, or security. Your use of third-party websites and services is governed by their own terms and privacy policies.</p>
+
+        <h2>12. Security</h2>
+        <p>We take reasonable steps to help protect information under our control. However, no method of transmitting or storing data over the internet is completely secure, and we cannot guarantee absolute security.</p>
+
+        <h2>13. State Privacy Rights and Applicable Laws</h2>
+        <p>Certain privacy laws may provide rights to residents of particular states. Whether those laws apply to Mountain Monthly or this Site may depend on factors such as revenue, the volume of personal information processed, whether data is used for targeted advertising, and other legal thresholds.</p>
+
+        <p>If you are a resident of a state that provides privacy rights and you believe those rights apply to information collected through this Site, you may contact us at <a href="mailto:hello@mountainmonthly.com">hello@mountainmonthly.com</a>. We will review the request and respond as appropriate under applicable law.</p>
+
+        <h2>14. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do, we will post the revised version on the Site and update the &ldquo;Last Updated&rdquo; date above. Your continued use of the Site after changes are posted means you accept the revised Privacy Policy.</p>
+
+        <h2>15. Contact Us</h2>
+        <div class="contact-card">
+          Mountain Monthly LLC<br>
+          PO Box 495<br>
+          Cloudcroft, New Mexico 88317<br>
+          <a href="mailto:hello@mountainmonthly.com">hello@mountainmonthly.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="cta-section">
+  <div class="cta-container">
+    <h2>Plan Your Mountain Escape</h2>
+    <p>Explore guides, trip planning tools, and local insights for Cloudcroft, New Mexico.</p>
+    <div class="cta-buttons">
+      <a href="../resources/resources.html" class="btn-primary">Browse Resources</a>
+      <a href="../resources/contact.html" class="btn-secondary">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div>&copy; 2026 DiscoverCloudcroft.com &mdash; A mountain village 8,676 feet closer to the sky.</div>
+  <div class="footer-bottom">
+    <a href="../index.html">Home</a>
+    <a href="../resources/resources.html">All Resources</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crofting Bed &amp; Breakfast | Historic B&amp;B in Cloudcroft, NM — Since 1909</title>
+    <meta name="description" content="The Crofting is a century-old bed and breakfast in Cloudcroft with 8 individually decorated rooms, homemade breakfast, private balconies, and a walkable location two blocks from Burro Avenue.">
+    <meta name="keywords" content="crofting inn cloudcroft, cloudcroft bed and breakfast, cloudcroft bnb, historic inn cloudcroft, cloudcroft lodging, bed breakfast cloudcroft nm, cloudcroft new mexico lodging">
+    <link rel="canonical" href="https://discovercloudcroft.com/stay/stay-crofting-inn-cloudcroft.html">
+
+    <meta property="og:title" content="The Crofting Bed &amp; Breakfast | Historic B&amp;B in Cloudcroft, NM">
+    <meta property="og:description" content="A 1909 house turned B&B with 8 rooms, homemade breakfast, private balconies, and a walkable location in the heart of Cloudcroft.">
+    <meta property="og:url" content="https://discovercloudcroft.com/stay/stay-crofting-inn-cloudcroft.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/photo-stay/photo-crofting-inn/crofting-inn-front.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Crofting Bed &amp; Breakfast | Historic B&amp;B in Cloudcroft">
+    <meta name="twitter:description" content="Century-old B&B with 8 rooms, homemade breakfast, and a walkable location in Cloudcroft.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/photo-stay/photo-crofting-inn/crofting-inn-front.jpg">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "The Crofting Bed & Breakfast",
+      "description": "A century-old historic home turned B&B in Cloudcroft, NM with 8 individually decorated rooms, homemade breakfast, private balconies, and a walkable location near Burro Avenue.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "300 Swallow Place",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "telephone": "575-682-3604",
+      "email": "lindalc@tularosa.net",
+      "url": "https://www.thecrofting.com",
+      "numberOfRooms": 8,
+      "checkinTime": "15:00",
+      "checkoutTime": "11:00",
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Full Breakfast Included", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Private Balconies", "value": true }
+      ],
+      "image": "https://discovercloudcroft.com/photo-stay/photo-crofting-inn/crofting-inn-front.jpg"
+    }
+    </script>
+
+    <style>
+.hero-bg {
+    background: url('stay-photo/photo-crofting-inn/crofting-inn-front.jpg') center 40% / cover no-repeat;
+}
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.35));
+}
+
+/* -- Room table -- */
+.room-table-wrap { overflow-x: auto; margin-top: 2rem; }
+.room-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 0.9rem; line-height: 1.6;
+}
+.room-table th {
+    font-family: 'IBM Plex Sans', sans-serif; font-weight: 700;
+    text-align: left; padding: 0.75rem 1rem;
+    background: #2B2B2B; color: #fff;
+    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;
+}
+.room-table th:first-child { border-radius: 8px 0 0 0; }
+.room-table th:last-child { border-radius: 0 8px 0 0; }
+.room-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(107, 123, 141, 0.15);
+    color: var(--midnight);
+}
+.room-table tr:nth-child(even) td { background: rgba(0, 0, 0, 0.02); }
+.room-table tr:hover td { background: rgba(0, 0, 0, 0.05); }
+
+/* -- Amenity cards -- */
+.amenity-section { background: var(--cloud-drift); }
+.amenity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.amenity-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--golden-hour);
+    opacity: 0;
+    transform: translateY(20px);
+}
+.amenity-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.amenity-card:nth-child(2).visible { transition-delay: 0.1s; }
+.amenity-card:nth-child(3).visible { transition-delay: 0.2s; }
+.amenity-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.amenity-card h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700; font-size: 1.1rem;
+    color: var(--midnight); margin-bottom: 0.5rem;
+}
+.amenity-card p { color: var(--granite); font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.75rem; }
+.amenity-items { list-style: none; margin-top: 1rem; }
+.amenity-items li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed rgba(107, 123, 141, 0.2);
+    color: var(--midnight); font-size: 0.95rem;
+}
+.amenity-items li:last-child { border-bottom: none; }
+
+/* -- Fit grid -- */
+.fit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.fit-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transform: translateY(20px);
+}
+.fit-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fit-card:nth-child(2).visible { transition-delay: 0.1s; }
+.fit-card h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700; font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.fit-card ul { list-style: none; margin: 0; padding: 0; }
+.fit-card ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed rgba(107, 123, 141, 0.2);
+    font-size: 0.95rem; line-height: 1.6;
+    color: var(--midnight);
+}
+.fit-card ul li:last-child { border-bottom: none; }
+.fit-best { border-top: 4px solid var(--alpine); }
+.fit-best h3 { color: var(--alpine); }
+.fit-consider { border-top: 4px solid var(--ember); }
+.fit-consider h3 { color: var(--ember); }
+
+/* -- Reviews -- */
+.review-score {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--golden-hour); color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif; font-weight: 700;
+    font-size: 1.5rem; padding: 0.5rem 1rem;
+    border-radius: 8px; margin-bottom: 1.5rem;
+}
+.review-score span { font-size: 0.85rem; font-weight: 500; }
+
+@media (max-width: 1024px) {
+    .amenity-grid { grid-template-columns: repeat(2, 1fr); }
+    
+}
+@media (max-width: 768px) {
+    .amenity-grid { grid-template-columns: 1fr; }
+    .fit-grid { grid-template-columns: 1fr; }
+    
+}
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+        <header class="site-header" role="banner">
+        <div class="header-inner">
+
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../events/top-events.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+        <a href="../resources/resources.html">Resources</a>
+        <a href="../resources/contact.html">Contact</a>
+    </nav>
+<section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="The Crofting Bed and Breakfast exterior in Cloudcroft, New Mexico"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Lodging</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">The </span>
+                <span class="word">Crofting </span>
+                <span class="word">B&amp;B </span>
+            </h1>
+            <p class="hero-subtitle">A century-old historic home turned bed and breakfast, two blocks from Burro Avenue, with homemade breakfast and individually decorated rooms since 1909.</p>
+            <div class="hero-ctas">
+                <a href="#rooms" class="btn-primary">See the Rooms</a>
+                <a href="#booking" class="btn-secondary">Book Your Stay</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>300 Swallow Place, Cloudcroft</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F3E8;</div>
+                <span>8 Rooms</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4DE;</div>
+                <span><a href="tel:5756823604">575-682-3604</a></span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F373;</div>
+                <span>Full Breakfast Included</span>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-label="About The Crofting">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">A True Bed &amp; Breakfast</h2>
+                        <p>
+                            The Crofting is a true bed and breakfast &mdash; not a hotel that happens to serve breakfast. The house dates to 1909, making it one of the oldest structures in Cloudcroft. It sits on Swallow Place, a quiet side street just a short walk from the village&rsquo;s main drag, surrounded by spruce trees.
+                        </p>
+                        <p>
+                            The inn has eight individually furnished rooms with private balconies, vintage decor, and the kind of character you don&rsquo;t find in new construction: creaky wood floors, antique furnishings, and rooms full of country charm. Mornings include a full home-cooked breakfast served at 8:30 a.m.
+                        </p>
+                        <p>
+                            This is a stay built around charm, breakfast, quiet, and host interaction. If you want a small B&amp;B with a personal feel and a real breakfast, this is one of the strongest options in Cloudcroft. If you want a front desk, flexible check-in, or resort amenities, look elsewhere.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F3E0; Est. 1909</span>
+                            <span class="about-feature">&#x1F373; Full Breakfast</span>
+                            <span class="about-feature">&#x1F6CF;&#xFE0F; 8 Rooms</span>
+                            <span class="about-feature">&#x1F6B6; Walkable</span>
+                            <span class="about-feature">&#x1F305; Balconies</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in">
+                        <img src="stay-photo/photo-crofting-inn/348s.jpg" alt="Interior parlor with vintage furnishings at The Crofting Bed and Breakfast" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="rooms" aria-label="Rooms" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Accommodations</span>
+                    <h2 class="section-title section-title-centered">8 Individually Decorated Rooms</h2>
+                    <p class="section-description">Each room is unique &mdash; vintage furnishings, antique decor, and the character of a 1909 house.</p>
+                </div>
+                <div class="room-table-wrap">
+                    <table class="room-table">
+                        <thead>
+                            <tr>
+                                <th>Room</th>
+                                <th>Configuration</th>
+                                <th>Capacity</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>The Crofting Suite</td><td>2 Bedrooms</td><td>Sleeps 4</td><td>1 Queen + 2 Twins, private balcony</td></tr>
+                            <tr><td>Room 2</td><td>1 King</td><td>Sleeps 2</td><td>Downstairs</td></tr>
+                            <tr><td>Room 3</td><td>1 Queen</td><td>Sleeps 2</td><td>Mountain view, private balcony</td></tr>
+                            <tr><td>Room 4</td><td>1 Queen</td><td>Sleeps 2</td><td>Mountain view</td></tr>
+                            <tr><td>Room 5</td><td>1 Queen</td><td>Sleeps 2</td><td>Standard room</td></tr>
+                            <tr><td>Room 6</td><td>1 King</td><td>Sleeps 3</td><td>Standard room</td></tr>
+                            <tr><td>Room 7</td><td>1 King</td><td>Sleeps 2</td><td>Private balcony</td></tr>
+                            <tr><td>Room 8</td><td>1 King</td><td>Sleeps 3</td><td>Standard room</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tip-box">
+                    <span>&#x1F3E0;</span>
+                    <p><strong>Room character varies.</strong> This is a 1909 house, not a purpose-built hotel. Some rooms are more memorable than others. Check photos on the website or Expedia before you book to get a feel for the style.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section amenity-section" id="amenities" aria-label="Amenities">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Amenities</span>
+                    <h2 class="section-title section-title-centered">What You Get</h2>
+                    <p class="section-description">A hosted B&amp;B experience, not a hotel amenity package.</p>
+                </div>
+                <div class="amenity-grid">
+                    <div class="amenity-card">
+                        <div class="amenity-card-icon">&#x1F373;</div>
+                        <h3>Breakfast</h3>
+                        <p>One of the strongest reasons to book here. Hearty, home-cooked, and served daily.</p>
+                        <ul class="amenity-items">
+                            <li>Full cooked breakfast included</li>
+                            <li>Served at 8:30 a.m. daily</li>
+                            <li>Menu changes daily</li>
+                            <li>Ask about dietary needs when booking</li>
+                            <li>Early departures may miss it</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-card-icon">&#x1F6CF;&#xFE0F;</div>
+                        <h3>In the Rooms</h3>
+                        <p>Private rooms with vintage character and practical basics.</p>
+                        <ul class="amenity-items">
+                            <li>Private bathrooms</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Microwave &amp; tea/coffee</li>
+                            <li>Private balconies (select rooms)</li>
+                            <li>Individually furnished &amp; decorated</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-card-icon">&#x1F6AB;</div>
+                        <h3>Not Available</h3>
+                        <p>This is a B&amp;B, not a resort. Set expectations accordingly.</p>
+                        <ul class="amenity-items">
+                            <li>No kitchenettes</li>
+                            <li>No daily housekeeping</li>
+                            <li>No rollaway beds or cribs</li>
+                            <li>No front desk</li>
+                            <li>No after-hours check-in</li>
+                            <li>No pool, spa, bar, or lounge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="fit" aria-label="Who should book" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Is It Right for You?</span>
+                    <h2 class="section-title section-title-centered">Who Should Book The Crofting</h2>
+                    <p class="section-description">A hosted B&amp;B for travelers who want character over convenience.</p>
+                </div>
+                <div class="fit-grid">
+                    <div class="fit-card fit-best">
+                        <h3>Best For</h3>
+                        <ul>
+                            <li>Couples and quiet weekenders</li>
+                            <li>Breakfast-forward travelers who want a real cooked meal</li>
+                            <li>History-minded guests who like old houses and vintage character</li>
+                            <li>Visitors who want a small B&amp;B with host interaction</li>
+                            <li>Solo travelers looking for a personal, hosted experience</li>
+                        </ul>
+                    </div>
+                    <div class="fit-card fit-consider">
+                        <h3>Consider Alternatives If&hellip;</h3>
+                        <ul>
+                            <li>You&rsquo;re arriving late (no after-hours check-in)</li>
+                            <li>You travel with pets (confirm policy directly)</li>
+                            <li>You want hotel anonymity or a front desk</li>
+                            <li>You need guaranteed accessibility (1909 building)</li>
+                            <li>You want pool, spa, bar, or resort amenities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="verify" aria-label="What to verify before booking">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Before You Book</span>
+                    <h2 class="section-title section-title-centered">What to Verify</h2>
+                    <p class="section-description">A small B&amp;B in a 1909 house. A quick call clears up everything.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F6CF;&#xFE0F;</div>
+                        <h3>Your Room</h3>
+                        <p>Ask which room you&rsquo;re getting, its bed configuration, and whether it has a TV or air conditioning.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F373;</div>
+                        <h3>Breakfast</h3>
+                        <p>Served at 8:30 a.m. &mdash; no flexibility. Ask about dietary accommodations when you book. Early departures will miss it.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F43E;</div>
+                        <h3>Pets &amp; Access</h3>
+                        <p>Pet policy conflicts between sources &mdash; confirm directly. Accessibility not detailed; the building is from 1909 with stairs.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F510;</div>
+                        <h3>Arrival &amp; Payment</h3>
+                        <p>Contact the property 24 hours before arrival for your access code. No after-hours check-in. 3% credit card surcharge &mdash; confirm at booking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="gallery" aria-label="Photo gallery" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">The Property</span>
+                    <h2 class="section-title section-title-centered">A Look Around</h2>
+                    <p class="section-description">A 1909 house surrounded by spruce trees, with vintage charm inside and mountain air outside.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="stay-photo/photo-crofting-inn/crofting-inn-front.jpg" alt="The Crofting Bed and Breakfast exterior with sign and spruce trees" loading="lazy">
+                        <div class="gallery-caption">The Crofting &mdash; summer</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="stay-photo/photo-crofting-inn/f3a4080b.jpg" alt="The Crofting Bed and Breakfast exterior with holiday lights in winter" loading="lazy">
+                        <div class="gallery-caption">The Crofting &mdash; winter</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="stay-photo/photo-crofting-inn/348s.jpg" alt="Interior parlor with vintage furnishings and antique decor" loading="lazy">
+                        <div class="gallery-caption">The parlor</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="reviews" aria-label="What guests say">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">Guest Reviews</span>
+                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">What Guests Say</h2>
+                    <div class="review-score">9.2 <span>Expedia (678 reviews)</span></div>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x2B50;</div>
+                        <h3>What Works</h3>
+                        <p>Warm and knowledgeable hosts, good full breakfast, charming antique decor, mountain views from balcony rooms, quiet setting, and consistently praised cleanliness.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4AC;</div>
+                        <h3>Common Cautions</h3>
+                        <p>Rooms are small. Wood floors carry noise between rooms. Decor is heavy vintage &mdash; may not suit minimalist tastes. Breakfast at a fixed time doesn&rsquo;t work for early departures.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4A1;</div>
+                        <h3>The Pattern</h3>
+                        <p>Favorable if you want a hosted B&amp;B experience with character and breakfast. May frustrate travelers who want hotel-style convenience and flexibility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="location" aria-label="Location" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Location</span>
+                    <h2 class="section-title section-title-centered">Quiet but Close to Everything</h2>
+                    <p class="section-description">Two blocks from Burro Avenue. Quiet residential street, walkable to shops and restaurants.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F3DE;&#xFE0F;</div>
+                        <h3>Walkable</h3>
+                        <p>Cloudcroft village center &mdash; less than 0.5 miles. Sacramento Mountains Museum &mdash; walking distance. Lincoln National Forest trailheads &mdash; immediate vicinity.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F697;</div>
+                        <h3>Short Drives</h3>
+                        <p>Cloudcroft Ski Area &mdash; 3 miles. Grindstone Lake &mdash; nearby. Sunspot Solar Observatory &mdash; ~20 miles.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F30E;</div>
+                        <h3>Day Trips</h3>
+                        <p>White Sands National Park &mdash; ~60 miles west. NM Museum of Space History (Alamogordo) &mdash; ~20 miles.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
+                        <h3>Good to Know</h3>
+                        <p>Elevation 9,000 feet. No AC in rooms &mdash; not needed at altitude. Free self-parking on-site. Smoke-free property.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="policies" aria-label="Policies and rates">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Policies &amp; Rates</span>
+                    <h2 class="section-title section-title-centered">The Details</h2>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F550;</div>
+                        <h3>Check-in / Check-out</h3>
+                        <p>Check-in 3:00&ndash;9:00 PM. Check-out 11:00 AM. Contact property 24 hours before for access code. No after-hours check-in. Min age 20.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4B2;</div>
+                        <h3>Rates</h3>
+                        <p>Starting around $119&ndash;$140/night. Suite and balcony rooms run higher. 3% credit card surcharge. Rates vary by season.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F43E;</div>
+                        <h3>Pets</h3>
+                        <p>Not allowed per Expedia/Hotels.com. Service animals exempt. Sources conflict &mdash; confirm directly.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F46A;</div>
+                        <h3>Children &amp; Extras</h3>
+                        <p>Children welcome. No rollaway beds or cribs available. Accessibility not detailed &mdash; confirm directly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="booking" aria-label="Book your stay">
+            <div class="cta-container">
+                <h2>Charm, Breakfast, and a 1909 House</h2>
+                <p>The Crofting is what a bed and breakfast is supposed to be &mdash; a historic home, a real cooked breakfast, and hosts who know the mountains. Eight rooms, two blocks from Burro Avenue, since 1909.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.expedia.com/Alamogordo-Hotels-The-Crofting-Inn.h5556117.Hotel-Information" target="_blank" rel="noopener noreferrer" class="btn-primary">Book on Expedia</a>
+                    <a href="tel:5756823604" class="btn-secondary">Call 575-682-3604</a>
+                    <a href="mailto:lindalc@tularosa.net" class="btn-secondary">Email the Inn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <a href="lodging.html">Lodging</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h3>The Crofting</h3>
+                <a href="https://www.thecrofting.com" target="_blank" rel="noopener noreferrer">thecrofting.com</a>
+                <a href="https://www.facebook.com/thecroftinginn/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g46989-d1880244-Reviews-The_Crofting_Inn-Cloudcroft_New_Mexico.html" target="_blank" rel="noopener noreferrer">TripAdvisor</a>
+                <a href="mailto:lindalc@tularosa.net">lindalc@tularosa.net</a>
+            </div>
+            <div class="footer-col">
+                <h3>Plan</h3>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .amenity-card, .fit-card, .highlight-card, .visiting-card, .gallery-item').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>

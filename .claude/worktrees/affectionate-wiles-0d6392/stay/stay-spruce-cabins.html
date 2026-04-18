@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spruce Cabins | Private Cabins in Cloudcroft, NM — From $89/Night</title>
+    <meta name="description" content="Spruce Cabins offers private cabins in Cloudcroft starting at $89/night. Simple, independent cabin lodging with online booking and military/senior discounts.">
+    <meta name="keywords" content="spruce cabins cloudcroft, cloudcroft cabins, cabin rental cloudcroft nm, budget cabins cloudcroft, cloudcroft lodging, private cabin cloudcroft">
+    <link rel="canonical" href="https://discovercloudcroft.com/stay/stay-spruce-cabins.html">
+
+    <meta property="og:title" content="Spruce Cabins | Private Cabins in Cloudcroft, NM">
+    <meta property="og:description" content="Private cabins in Cloudcroft starting at $89/night. Simple, independent cabin lodging with online booking.">
+    <meta property="og:url" content="https://discovercloudcroft.com/stay/stay-spruce-cabins.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Spruce Cabins | Private Cabins in Cloudcroft, NM">
+    <meta name="twitter:description" content="Private cabins starting at $89/night. Simple mountain lodging in Cloudcroft.">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Spruce Cabins",
+      "description": "A no-frills independent cabin court in Cloudcroft with private cabins, online booking, and military/senior discounts starting at $89/night.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "100 Lynx Avenue",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "telephone": "575-621-2344",
+      "email": "sprucecabins@pvtnetworks.net",
+      "url": "https://sprucecabins.onressoftware.com"
+    }
+    </script>
+
+    <style>
+.hero-bg {
+    background: linear-gradient(135deg, #2d5016 0%, #4a7c28 50%, #6b8f4a 100%);
+}
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+}
+
+/* -- Room table -- */
+.room-table-wrap { overflow-x: auto; margin-top: 2rem; }
+.room-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; line-height: 1.6; }
+.room-table th {
+    font-family: 'IBM Plex Sans', sans-serif; font-weight: 700;
+    text-align: left; padding: 0.75rem 1rem;
+    background: #2B2B2B; color: #fff;
+    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;
+}
+.room-table th:first-child { border-radius: 8px 0 0 0; }
+.room-table th:last-child { border-radius: 0 8px 0 0; }
+.room-table td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(107, 123, 141, 0.15); color: var(--midnight); }
+.room-table tr:nth-child(even) td { background: rgba(0, 0, 0, 0.02); }
+.room-table tr:hover td { background: rgba(0, 0, 0, 0.05); }
+
+/* -- Amenity cards -- */
+.amenity-section { background: var(--cloud-drift); }
+.amenity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+.amenity-card {
+    background: #ffffff; border-radius: 12px; padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); border-top: 4px solid var(--golden-hour);
+    opacity: 0; transform: translateY(20px);
+}
+.amenity-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease; }
+.amenity-card:nth-child(2).visible { transition-delay: 0.1s; }
+.amenity-card:nth-child(3).visible { transition-delay: 0.2s; }
+.amenity-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.amenity-card h3 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--midnight); margin-bottom: 0.5rem; }
+.amenity-card p { color: var(--granite); font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.75rem; }
+.amenity-items { list-style: none; margin-top: 1rem; }
+.amenity-items li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(107, 123, 141, 0.2); color: var(--midnight); font-size: 0.95rem; }
+.amenity-items li:last-child { border-bottom: none; }
+
+/* -- Fit grid -- */
+.fit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 2rem; }
+.fit-card {
+    background: #ffffff; border-radius: 12px; padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); opacity: 0; transform: translateY(20px);
+}
+.fit-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease; }
+.fit-card:nth-child(2).visible { transition-delay: 0.1s; }
+.fit-card h3 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 1rem; }
+.fit-card ul { list-style: none; margin: 0; padding: 0; }
+.fit-card ul li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(107, 123, 141, 0.2); font-size: 0.95rem; line-height: 1.6; color: var(--midnight); }
+.fit-card ul li:last-child { border-bottom: none; }
+.fit-best { border-top: 4px solid var(--alpine); }
+.fit-best h3 { color: var(--alpine); }
+.fit-consider { border-top: 4px solid var(--ember); }
+.fit-consider h3 { color: var(--ember); }
+
+@media (max-width: 1024px) {
+    .amenity-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .amenity-grid { grid-template-columns: 1fr; }
+    .fit-grid { grid-template-columns: 1fr; }
+    
+}
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+        <header class="site-header" role="banner">
+        <div class="header-inner">
+
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../visit/where-to-visit.html">Visit</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+            </nav>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../events/top-events.html">Events</a>
+        <a href="../season/seasonal.html">Seasons</a>
+        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
+        <a href="../resources/resources.html">Resources</a>
+        <a href="../resources/contact.html">Contact</a>
+    </nav>
+<section class="hero" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Spruce Cabins in Cloudcroft, New Mexico"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Cloudcroft Lodging</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Spruce </span>
+                <span class="word">Cabins </span>
+            </h1>
+            <p class="hero-subtitle">A no-frills independent cabin court in Cloudcroft &mdash; private cabins, online booking, and military/senior discounts starting at $89/night.</p>
+            <div class="hero-ctas">
+                <a href="#cabins" class="btn-primary">See the Cabins</a>
+                <a href="#booking" class="btn-secondary">Book Your Stay</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4CD;</div>
+                <span>100 Lynx Ave, Cloudcroft</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F3E1;</div>
+                <span>Private Cabins</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F4B2;</div>
+                <span>From $89/night</span>
+            </div>
+            <div class="info-bar-item">
+                <div class="info-bar-icon">&#x1F396;&#xFE0F;</div>
+                <span>Military &amp; Senior Discounts</span>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+
+        <section class="section" id="about" aria-label="About Spruce Cabins">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">A Simple Cabin Base</h2>
+                        <p>
+                            Spruce Cabins is a straightforward, old-school cabin court for travelers who want a simple private cabin rather than a hotel room. This is not a destination resort. It&rsquo;s a practical cabin base with online-only reservations, cabins for two or four guests, and a location close enough to town to be convenient.
+                        </p>
+                        <p>
+                            The strongest reasons to book here are privacy, simplicity, a cabin-like feel, and modest pricing starting at $89/night. The tradeoffs are equally clear: the official site is thin on detail, policy specifics require a phone call, and you won&rsquo;t find on-site dining, a front desk, or a polished brand presentation.
+                        </p>
+                        <p>
+                            If you want your own cabin and don&rsquo;t need much ceremony around it, Spruce Cabins is a sensible pick. If you want amenity certainty, resort-style service, or a detailed pre-booking experience, look elsewhere.
+                        </p>
+                        <div class="about-features">
+                            <span class="about-feature">&#x1F3E1; Private Cabins</span>
+                            <span class="about-feature">&#x1F4B2; From $89</span>
+                            <span class="about-feature">&#x1F396;&#xFE0F; Discounts</span>
+                            <span class="about-feature">&#x1F4BB; Book Online</span>
+                            <span class="about-feature">&#x1F332; In Cloudcroft</span>
+                        </div>
+                    </div>
+                    <div class="about-image fade-in" style="display: flex; align-items: center; justify-content: center; background: var(--cloud-drift); border-radius: 12px; min-height: 300px;">
+                        <span style="font-size: 6rem;">&#x1F332;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="cabins" aria-label="Cabins" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Accommodations</span>
+                    <h2 class="section-title section-title-centered">Private Cabins for 2 or 4</h2>
+                    <p class="section-description">A cabin court with online booking. Simple, private, and reasonably priced.</p>
+                </div>
+                <div class="room-table-wrap">
+                    <table class="room-table">
+                        <thead>
+                            <tr>
+                                <th>Cabin</th>
+                                <th>Capacity</th>
+                                <th>Starting Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Cabin #1</td><td>Sleeps 2</td><td>From $89/day</td></tr>
+                            <tr><td>Cabin #2</td><td>Sleeps 2</td><td>From $89/day</td></tr>
+                            <tr><td>Cabin #14</td><td>Sleeps 4</td><td>From $95/day</td></tr>
+                            <tr><td>Cabin #18</td><td>Sleeps 4</td><td>From $95/day</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tip-box">
+                    <span>&#x1F4A1;</span>
+                    <p><strong>More cabins may be available.</strong> The booking site lists at least four numbered cabins, but total inventory is not published. Exact bed configurations, kitchen setups, and in-cabin amenities are not detailed online &mdash; confirm directly when booking.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section amenity-section" id="amenities" aria-label="Amenities">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Amenities</span>
+                    <h2 class="section-title section-title-centered">What You Get</h2>
+                    <p class="section-description">A cabin and privacy. Everything else, confirm before you book.</p>
+                </div>
+                <div class="amenity-grid">
+                    <div class="amenity-card">
+                        <div class="amenity-card-icon">&#x2705;</div>
+                        <h3>Confirmed</h3>
+                        <p>What the booking site clearly states.</p>
+                        <ul class="amenity-items">
+                            <li>Private cabins</li>
+                            <li>Online reservation system</li>
+                            <li>Military &amp; senior discounts</li>
+                            <li>Cabins for 2 or 4 guests</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-card-icon">&#x2753;</div>
+                        <h3>Verify Directly</h3>
+                        <p>Not confirmed on the official site. Ask before booking.</p>
+                        <ul class="amenity-items">
+                            <li>Wi-Fi availability</li>
+                            <li>Kitchen or kitchenette</li>
+                            <li>TV / streaming</li>
+                            <li>Heating &amp; cooling</li>
+                            <li>Parking arrangements</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-card-icon">&#x1F6AB;</div>
+                        <h3>Not Available</h3>
+                        <p>This is lodging-only. Set expectations accordingly.</p>
+                        <ul class="amenity-items">
+                            <li>No on-site restaurant or caf&eacute;</li>
+                            <li>No breakfast service</li>
+                            <li>No front desk</li>
+                            <li>No pool, spa, or gym</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="fit" aria-label="Who should book" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Is It Right for You?</span>
+                    <h2 class="section-title section-title-centered">Who Should Book Spruce Cabins</h2>
+                    <p class="section-description">A practical cabin pick for travelers who don&rsquo;t need ceremony.</p>
+                </div>
+                <div class="fit-grid">
+                    <div class="fit-card fit-best">
+                        <h3>Best For</h3>
+                        <ul>
+                            <li>Couples wanting a small, private cabin</li>
+                            <li>Small families needing a cabin that sleeps 4</li>
+                            <li>Repeat Cloudcroft visitors who know the area</li>
+                            <li>Travelers who prefer cabin privacy over hotel amenities</li>
+                            <li>Budget-conscious guests looking for a simple base</li>
+                        </ul>
+                    </div>
+                    <div class="fit-card fit-consider">
+                        <h3>Consider Alternatives If&hellip;</h3>
+                        <ul>
+                            <li>You want a destination property or resort experience</li>
+                            <li>You need on-site food or social spaces</li>
+                            <li>You need detailed amenity certainty before booking</li>
+                            <li>You want a polished, upscale cabin-resort experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="verify" aria-label="What to verify">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Before You Book</span>
+                    <h2 class="section-title section-title-centered">What to Verify</h2>
+                    <p class="section-description">Online-only reservations. The burden is on you to confirm the details that matter.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F3E1;</div>
+                        <h3>Your Cabin</h3>
+                        <p>Ask which exact cabin you&rsquo;re getting, its bed configuration, and whether it has a kitchen or kitchenette.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4F6;</div>
+                        <h3>Connectivity</h3>
+                        <p>Wi-Fi, TV, and streaming are not confirmed on the official site. Ask before you book if these matter to your stay.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F43E;</div>
+                        <h3>Pets &amp; Access</h3>
+                        <p>Local sources suggest pets may be allowed with conditions. Accessibility not detailed. Confirm both directly.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CB;</div>
+                        <h3>Policies</h3>
+                        <p>Check-in/out times, cancellation terms, and parking are not published on the official site. Confirm all when booking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="location" aria-label="Location" style="background: var(--cloud-drift);">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">Location</span>
+                    <h2 class="section-title section-title-centered">In Cloudcroft Proper</h2>
+                    <p class="section-description">Close to town without the hotel-strip feel. Cabin privacy with village convenience.</p>
+                </div>
+                <div class="visiting-grid">
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F3DE;&#xFE0F;</div>
+                        <h3>Nearby</h3>
+                        <p>Sacramento Mountains Museum, Zenith Park, and Cloudcroft village center &mdash; all nearby. Lincoln National Forest trailheads in the surrounding area.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F697;</div>
+                        <h3>Short Drives</h3>
+                        <p>Ski Cloudcroft &mdash; minutes away. Sunspot Solar Observatory &mdash; ~20 miles. White Sands National Park &mdash; ~60 miles west.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x1F4CD;</div>
+                        <h3>Address</h3>
+                        <p>100 Lynx Avenue, Cloudcroft, NM 88317. Parking is strongly implied but not officially stated &mdash; confirm when booking.</p>
+                    </div>
+                    <div class="visiting-card">
+                        <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
+                        <h3>Good to Know</h3>
+                        <p>Cloudcroft elevation is ~8,676 feet. No on-site dining &mdash; plan to eat in town or self-cater if your cabin has a kitchen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="reviews" aria-label="What guests say">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">Guest Reviews</span>
+                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">What Guests Say</h2>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x2B50;</div>
+                        <h3>What Works</h3>
+                        <p>Cabin privacy, convenient Cloudcroft location, and a straightforward mountain cabin experience without complexity or pretense.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4AC;</div>
+                        <h3>Common Cautions</h3>
+                        <p>Policy detail is thinner than at larger properties. The official site is functional but not detailed. Pet rules, amenity specifics, and exact cabin setups need direct confirmation.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#x1F4A1;</div>
+                        <h3>The Pattern</h3>
+                        <p>A sensible choice if you want a simple private cabin in Cloudcroft and are comfortable confirming details yourself. Not a place to book for amenities &mdash; a place to book because you want your own cabin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="booking" aria-label="Book your stay">
+            <div class="cta-container">
+                <h2>Your Own Cabin, Starting at $89</h2>
+                <p>Spruce Cabins is what it sounds like &mdash; private cabins in Cloudcroft, online booking, and a price that makes sense. No ceremony required.</p>
+                <div class="cta-buttons">
+                    <a href="https://sprucecabins.onressoftware.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Book Online</a>
+                    <a href="tel:5756212344" class="btn-secondary">Call 575-621-2344</a>
+                    <a href="mailto:sprucecabins@pvtnetworks.net" class="btn-secondary">Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
+                <div class="footer-social">
+                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
+                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
+                    <a href="#todo-twitter" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <a href="lodging.html">Lodging</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
+                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
+                <a href="../do/complete-guide-to-activities.html">Activities</a>
+                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
+                <a href="../season/seasonal.html">Seasons</a>
+            </div>
+            <div class="footer-col">
+                <h3>Spruce Cabins</h3>
+                <a href="https://sprucecabins.onressoftware.com/" target="_blank" rel="noopener noreferrer">Book Online</a>
+                <a href="mailto:sprucecabins@pvtnetworks.net">sprucecabins@pvtnetworks.net</a>
+                <a href="tel:5756212344">575-621-2344</a>
+            </div>
+            <div class="footer-col">
+                <h3>Plan</h3>
+                <a href="../plan.html">Plan Your Trip</a>
+                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
+                <a href="../about.html">About Cloudcroft</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js"></script>
+    <script>
+        (function() {
+            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .amenity-card, .fit-card, .highlight-card, .visiting-card').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>

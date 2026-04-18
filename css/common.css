@@ -153,7 +153,7 @@ img {
 .header-logo {
   font-family: 'IBM Plex Sans', sans-serif;
   color: var(--pine);
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.12em;
   display: flex;
   align-items: baseline;
@@ -165,12 +165,13 @@ img {
 
 .logo-discover {
   font-weight: 700;
+  font-size: 1rem;
 }
 
 .logo-cloudcroft {
   font-weight: 500;
   opacity: 0.75;
-
+  font-size: 1rem
 }
 
 .header-logo span {}
@@ -200,7 +201,7 @@ img {
 .header-nav a {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
-  font-size: 0.7rem;
+  font-size: .7rem;
   color: var(--charcoal);
   opacity: 0.85;
   transition: opacity 0.3s ease, color 0.3s ease;
@@ -582,7 +583,7 @@ img {
 
 .section-title-centered {
   text-align: center;
-  padding-bottom: 1.25rem;
+  padding-bottom: 0;
 }
 
 .section-title-centered::after {
@@ -1465,6 +1466,7 @@ img {
   padding: 1.25rem 1.5rem;
   margin: 2rem 0;
   display: flex;
+  max-width: 800px;
   gap: 1rem;
   align-items: flex-start;
   margin: 2rem auto;
@@ -2187,7 +2189,7 @@ img {
 }
 
 .guide-body {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 2rem;
 }
