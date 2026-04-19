@@ -183,6 +183,29 @@
             justify-content: center;
         }
 
+        /* ── Mobile header: keep logo visible, hamburger right-aligned ── */
+        @media (max-width: 768px) {
+            .header-inner {
+                justify-content: space-between;
+            }
+
+            .header-nav {
+                display: flex;
+            }
+
+            .header-nav > a:not(.header-logo) {
+                display: none;
+            }
+
+            .header-logo {
+                display: flex;
+            }
+
+            .hamburger {
+                margin-left: auto;
+            }
+        }
+
         /* ── Hero ── */
         .hero {
             height: clamp(440px, 70vh, 760px);
@@ -1705,34 +1728,6 @@
                             skill levels welcome.</p>
                         <a href="do/play-pickleball-cloudcroft-new-mexico-2026" class="thing-card-link">Court
                             details &rarr;</a>
-                    </div>
-                    <div class="thing-card fade-in">
-                        <div class="thing-card-icon"><img alt="Elk Shed interior — Cloudcroft shopping"
-                                src="shop/shop-photo/elk-shed-interior.jpg" loading="lazy" decoding="async"></div>
-                        <h3>Shopping</h3>
-                        <p>Stroll Cloudcroft's main street and browse unique boutiques, art galleries, antique shops,
-                            and local crafts. A charming shopping experience in the heart of the village.</p>
-                        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html" class="thing-card-link">Shop
-                            the village &rarr;</a>
-                    </div>
-                    <div class="thing-card fade-in">
-                        <div class="thing-card-icon"><img
-                                alt="Trout fishing in the Lincoln National Forest near Cloudcroft"
-                                src="do/do-photo/fish/fish-333.jpeg" loading="lazy" decoding="async"></div>
-                        <h3>Fishing</h3>
-                        <p>Cast a line in mountain streams and stocked lakes throughout the Lincoln National Forest.
-                            Trout fishing is especially popular in the cooler months.</p>
-                        <a href="do/fish.html" class="thing-card-link">Where to
-                            fish &rarr;</a>
-                    </div>
-                    <div class="thing-card fade-in">
-                        <div class="thing-card-icon"><img alt="Camping in the pines near Cloudcroft"
-                                src="do/do-photo/camp/camp-00756.jpg" loading="lazy" decoding="async"></div>
-                        <h3>Camping</h3>
-                        <p>USFS campgrounds within 10 minutes of the village. Primitive and developed sites available
-                            &mdash; reserve well ahead for summer weekends. Best May through October.</p>
-                        <a href="do/guide-to-camping-cloudcroft-new-mexico-2026.html" class="thing-card-link">Plan your
-                            stay &rarr;</a>
                     </div>
                 </div>
 
