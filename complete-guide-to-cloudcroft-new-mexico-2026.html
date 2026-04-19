@@ -148,7 +148,7 @@
         }
 
         :where(a, button, .hamburger, .toc-links a, .btn-white, .thing-card-link):focus-visible {
-            outline: 2px solid #c8943e;
+            outline: 2px solid #000000;
             outline-offset: 2px;
         }
 
@@ -193,7 +193,7 @@
                 display: flex;
             }
 
-            .header-nav > a:not(.header-logo) {
+            .header-nav>a:not(.header-logo) {
                 display: none;
             }
 
@@ -361,8 +361,8 @@
         }
 
         .guide-section h2 {
-            font-family: 'IBM Plex serif, sans-serif;
- font-weight: 700;
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
             font-size: clamp(1.65rem, 1.2rem + 2.2vw, 2.75rem);
             max-width: 100%;
             color: #000000;
@@ -430,7 +430,7 @@
         }
 
         .thing-card:hover {
-            border-color: var(--alpine, #3a6b1e);
+            border-color: var(--alpine, #000000);
             box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
             transform: translateY(-8px) scale(1.02);
         }
@@ -442,7 +442,7 @@
             bottom: 0;
             height: 3px;
             width: 0;
-            background: linear-gradient(90deg, var(--alpine, #3a6b1e), var(--golden-hour, #c8943e));
+            background: linear-gradient(90deg, var(--alpine, #000000), var(--golden-hour, #000000));
             transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -451,7 +451,7 @@
         }
 
         .thing-card:hover h3 {
-            color: var(--alpine, #3a6b1e);
+            color: var(--alpine, #000000);
             transition: color 0.3s ease;
         }
 
@@ -1627,8 +1627,23 @@
         <a href="resources/resources.html">Resources</a>
         <a href="resources/contact.html">Contact</a>
     </nav>
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+        <a href="events/top-events.html">Events</a>
+        <a href="#reels">Reels</a>
+        <a href="resources/resources.html">Resources</a>
+        <a href="resources/contact.html">Contact</a>
+    </nav>
 
     <main id="main-content" role="main">
+
+        <div class="updated-stamp-wrap">
+            <span class="updated-stamp">Last updated · April 2026</span>
+        </div>
+
 
         <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
         <section class="hero" aria-label="Page hero">
@@ -1657,9 +1672,12 @@
                 <div class="toc-links">
                     <a href="#best-things-to-do">Best Things To Do</a>
                     <a href="#where-to-stay">Where To Stay</a>
-                    <a href="#restaurants">Restaurants</a>
+                    <a href="#restaurants">Food</a>
                     <a href="#seasonal-events">Events</a>
-                    <a href="#things-to-do">Activities &amp; Attractions</a>
+                    <a href="#things-to-do">Activities</a>
+                    <a href="#">Camp</a>
+                    <a href="#">Hike</a>
+                    <a href="#">Shop</a>
                     <a href="#getting-here">Directions</a>
                 </div>
             </div>
@@ -1728,6 +1746,62 @@
                             skill levels welcome.</p>
                         <a href="do/play-pickleball-cloudcroft-new-mexico-2026" class="thing-card-link">Court
                             details &rarr;</a>
+                    </div>
+                    <div class="thing-card fade-in">
+                        <div class="thing-card-icon"><img alt="Elk Shed interior — Cloudcroft shopping"
+                                src="shop/shop-photo/elk-shed-interior.jpg" loading="lazy" decoding="async"></div>
+                        <h3>Shopping</h3>
+                        <p>Stroll Cloudcroft's main street and browse unique boutiques, art galleries, antique shops,
+                            and local crafts. A charming shopping experience in the heart of the village.</p>
+                        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html" class="thing-card-link">Shop
+                            the village &rarr;</a>
+                    </div>
+                    <div class="thing-card fade-in">
+                        <div class="thing-card-icon"><img
+                                alt="Trout fishing in the Lincoln National Forest near Cloudcroft"
+                                src="do/do-photo/fish/fish-333.jpeg" loading="lazy" decoding="async"></div>
+                        <h3>Fishing</h3>
+                        <p>Cast a line in mountain streams and stocked lakes throughout the Lincoln National Forest.
+                            Trout fishing is especially popular in the cooler months.</p>
+                        <a href="do/fish.html" class="thing-card-link">Where to
+                            fish &rarr;</a>
+                    </div>
+                    <div class="thing-card fade-in">
+                        <div class="thing-card-icon"><img alt="Camping in the pines near Cloudcroft"
+                                src="do/do-photo/camp/camp-00756.jpg" loading="lazy" decoding="async"></div>
+                        <h3>Camping</h3>
+                        <p>USFS campgrounds within 10 minutes of the village. Primitive and developed sites available
+                            &mdash; reserve well ahead for summer weekends. Best May through October.</p>
+                        <a href="do/guide-to-camping-cloudcroft-new-mexico-2026.html" class="thing-card-link">Plan your
+                            stay &rarr;</a>
+                    </div>
+                    <div class="thing-card fade-in">
+                        <div class="thing-card-icon"><img alt="Elk Shed interior — Cloudcroft shopping"
+                                src="shop/shop-photo/elk-shed-interior.jpg" loading="lazy" decoding="async"></div>
+                        <h3>Shopping</h3>
+                        <p>Stroll Cloudcroft's main street and browse unique boutiques, art galleries, antique shops,
+                            and local crafts. A charming shopping experience in the heart of the village.</p>
+                        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html" class="thing-card-link">Shop
+                            the village &rarr;</a>
+                    </div>
+                    <div class="thing-card fade-in">
+                        <div class="thing-card-icon"><img
+                                alt="Trout fishing in the Lincoln National Forest near Cloudcroft"
+                                src="do/do-photo/fish/fish-333.jpeg" loading="lazy" decoding="async"></div>
+                        <h3>Fishing</h3>
+                        <p>Cast a line in mountain streams and stocked lakes throughout the Lincoln National Forest.
+                            Trout fishing is especially popular in the cooler months.</p>
+                        <a href="do/fish.html" class="thing-card-link">Where to
+                            fish &rarr;</a>
+                    </div>
+                    <div class="thing-card fade-in">
+                        <div class="thing-card-icon"><img alt="Camping in the pines near Cloudcroft"
+                                src="do/do-photo/camp/camp-00756.jpg" loading="lazy" decoding="async"></div>
+                        <h3>Camping</h3>
+                        <p>USFS campgrounds within 10 minutes of the village. Primitive and developed sites available
+                            &mdash; reserve well ahead for summer weekends. Best May through October.</p>
+                        <a href="do/guide-to-camping-cloudcroft-new-mexico-2026.html" class="thing-card-link">Plan your
+                            stay &rarr;</a>
                     </div>
                 </div>
 
@@ -1908,57 +1982,6 @@
             </section>
 
 
-            <!-- 3. HOW TO REACH CLOUDCROFT -->
-            <section class="guide-section" id="getting-here" aria-labelledby="h-getting-here">
-
-                <h2 id="h-getting-here">How to <span style="color:#d13d08">Reach</span> Cloudcroft</h2>
-                <p class="guide-intro">Cloudcroft is nestled in the Sacramento Mountains of southern New Mexico. The
-                    drive up the mountain is half the adventure.</p>
-
-                <div class="getting-here-grid">
-                    <div>
-                        <ul class="route-list">
-                            <li class="route-item">
-
-                                <div class="route-info">
-                                    <h3>From El Paso, TX &mdash; 2.5 hours</h3>
-                                    <p>Head northeast on US-54 to Alamogordo, then climb US-82 into the mountains. The
-                                        most popular route for visitors from Texas and southern New Mexico.</p>
-
-                                    <h3>From Albuquerque, NM &mdash; 3.5 hours</h3>
-                                    <p>Take I-25 south to Las Cruces, then head east on US-70 to Alamogordo, and ascend
-                                        US-82 to Cloudcroft. A scenic drive through the heart of New Mexico.</p>
-
-                                    <h3>From Las Cruces, NM &mdash; 1.5 hours</h3>
-                                    <p>Drive east on US-70 through the Tularosa Basin to Alamogordo, then take US-82 up
-                                        the mountain. A perfect day trip or weekend escape.</p>
-
-                                    <h3>From Alamogordo, NM &mdash; 30 minutes</h3>
-                                    <p>A stunning 30-minute climb up US-82, gaining over 4,000 feet in elevation. Watch
-                                        for the Mexican Canyon Trestle along the way &mdash; a must-see historic
-                                        landmark.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="airport-info fade-in">
-                            <h3>&#x2708;&#xFE0F; Nearest Airports</h3>
-                            <p><strong>El Paso International Airport (ELP)</strong> &mdash; The closest major airport,
-                                approximately 2.5 hours from Cloudcroft. Rental cars are available at the terminal. This
-                                is the most convenient option for most visitors.</p>
-                            <br>
-                            <p><strong>Albuquerque International Sunport (ABQ)</strong> &mdash; About 3.5 hours from
-                                Cloudcroft. A good option if you are combining your trip with a visit to Santa Fe,
-                                Albuquerque, or other northern New Mexico destinations.</p>
-                            <br>
-                            <p><strong>Tip:</strong> There is no public transit to Cloudcroft. A rental car is essential
-                                for getting here and exploring the area. The scenic drive up US-82 from Alamogordo is
-                                one of the most beautiful stretches of road in southern New Mexico.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <!-- 4. RESTAURANTS -->
             <section class="guide-section" id="restaurants" aria-labelledby="h-restaurants">
@@ -2176,65 +2199,11 @@
                 </div>
             </section>
 
-        </div><!-- /.guide-body -->
-
-        <!-- ═══════════════════════════════ THINGS TO DO ═══════════════════════════════ -->
-        <section class="section" id="things-to-do" style="background: var(--cloud-drift);" aria-label="Things to do">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Things to Do</span>
-                    <h2 class="section-title section-title-centered">More Activities &amp; Attractions</h2>
-                    <p class="section-description">From scenic trails to local culture, there is no shortage of things
-                        to do in and around Cloudcroft.</p>
-                </div>
-                <div class="card-grid">
-
-                    <a href="do/bike.html" class="card">
-                        <div class="card-icon"><img src="do/do-photo/bike/bike-00559.jpeg" alt="Bike" loading="lazy"
-                                decoding="async"></div>
-                        <h3>Mountain Biking</h3>
-                        <p>Technical singletrack and forest road loops for all skill levels. Rentals available
-                            seasonally in the village. Best June through September.</p>
-                    </a>
-                    <a href="do/disc-golf.html" class="card">
-                        <div class="card-icon">
-                            <img src="do/do-photo/disc-golf/disc-golf-00445.jpeg"
-                                alt="Disc golf basket on the Cloudcroft course" loading="lazy" decoding="async">
-                        </div>
-                        <h3>Disc Golf</h3>
-                        <p>Play one of the highest-elevation disc golf courses in the Southwest. Challenging terrain,
-                            beautiful forest setting, and fresh mountain air.</p>
-                    </a>
-
-                    <a href="local-parks.html" class="card">
-                        <div class="card-icon">
-                            <img src="media/zenith-park.jpg" alt="Fish" loading="lazy" decoding="async">
-                        </div>
-                        <h3>Local Parks</h3>
-                        <p>Enjoy Cloudcroft's well-maintained parks for picnics, playgrounds, and relaxation. Great for
-                            families with kids or anyone looking to unwind outdoors.</p>
-                    </a>
+        </div>
 
 
-                    <a href="dark-skies.html" class="card">
-                        <img src="media/milky-way-night-sky-mountains.jpg"
-                            alt="Milky Way over the Sacramento Mountains near Cloudcroft" loading="lazy"
-                            decoding="async" class="card-image">
-                        <h3>Stargazing</h3>
-                        <p>One of southern New Mexico's best dark-sky sites. Minimal light pollution and consistently
-                            clear nights at elevation. Best on new-moon nights, year-round.</p>
-                    </a>
+        <!-- /.guide-body -->
 
-                </div>
-
-                <div class="tip-box" style="margin-top: 2rem;">
-                    <span class="tip-icon">&#x26F0;&#xFE0F;</span>
-                    <p><strong>Altitude reminder:</strong> Cloudcroft sits at 8,676 feet. If you're coming from sea
-                        level or from El Paso (4,000 ft), plan a slower first day. Headaches and shortness of breath
-                        are common &mdash; drink extra water and avoid overexertion on arrival.</p>
-                </div>
-            </div>
-        </section>
 
         <!-- ═══════════════════════════════ SEASONAL GUIDE ═══════════════════════════════ -->
         <section class="section seasonal-section" id="seasonal-guide" aria-label="Seasonal guide">
@@ -2286,6 +2255,60 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- 3. HOW TO REACH CLOUDCROFT -->
+        <section class="guide-section" id="getting-here" aria-labelledby="h-getting-here">
+
+            <h2 id="h-getting-here">How to <span style="color:#d13d08">Reach</span> Cloudcroft</h2>
+            <p class="guide-intro">Cloudcroft is nestled in the Sacramento Mountains of southern New Mexico. The
+                drive up the mountain is half the adventure.</p>
+
+            <div class="getting-here-grid">
+                <div>
+                    <ul class="route-list">
+                        <li class="route-item">
+
+                            <div class="route-info">
+                                <h3>From El Paso, TX &mdash; 2.5 hours</h3>
+                                <p>Head northeast on US-54 to Alamogordo, then climb US-82 into the mountains. The
+                                    most popular route for visitors from Texas and southern New Mexico.</p>
+
+                                <h3>From Albuquerque, NM &mdash; 3.5 hours</h3>
+                                <p>Take I-25 south to Las Cruces, then head east on US-70 to Alamogordo, and ascend
+                                    US-82 to Cloudcroft. A scenic drive through the heart of New Mexico.</p>
+
+                                <h3>From Las Cruces, NM &mdash; 1.5 hours</h3>
+                                <p>Drive east on US-70 through the Tularosa Basin to Alamogordo, then take US-82 up
+                                    the mountain. A perfect day trip or weekend escape.</p>
+
+                                <h3>From Alamogordo, NM &mdash; 30 minutes</h3>
+                                <p>A stunning 30-minute climb up US-82, gaining over 4,000 feet in elevation. Watch
+                                    for the Mexican Canyon Trestle along the way &mdash; a must-see historic
+                                    landmark.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="airport-info fade-in">
+                        <h3>&#x2708;&#xFE0F; Nearest Airports</h3>
+                        <p><strong>El Paso International Airport (ELP)</strong> &mdash; The closest major airport,
+                            approximately 2.5 hours from Cloudcroft. Rental cars are available at the terminal. This
+                            is the most convenient option for most visitors.</p>
+                        <br>
+                        <p><strong>Albuquerque International Sunport (ABQ)</strong> &mdash; About 3.5 hours from
+                            Cloudcroft. A good option if you are combining your trip with a visit to Santa Fe,
+                            Albuquerque, or other northern New Mexico destinations.</p>
+                        <br>
+                        <p><strong>Tip:</strong> There is no public transit to Cloudcroft. A rental car is essential
+                            for getting here and exploring the area. The scenic drive up US-82 from Alamogordo is
+                            one of the most beautiful stretches of road in southern New Mexico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- ═══════════════════════════════ PRACTICAL INFO ═══════════════════════════════ -->
         <section class="section" id="practical-info" aria-label="Practical information">
