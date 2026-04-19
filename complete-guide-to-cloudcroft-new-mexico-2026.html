@@ -183,6 +183,29 @@
             justify-content: center;
         }
 
+        /* ── Mobile header: keep logo visible, hamburger right-aligned ── */
+        @media (max-width: 768px) {
+            .header-inner {
+                justify-content: space-between;
+            }
+
+            .header-nav {
+                display: flex;
+            }
+
+            .header-nav > a:not(.header-logo) {
+                display: none;
+            }
+
+            .header-logo {
+                display: flex;
+            }
+
+            .hamburger {
+                margin-left: auto;
+            }
+        }
+
         /* ── Hero ── */
         .hero {
             height: clamp(440px, 70vh, 760px);
