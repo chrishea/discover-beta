@@ -195,7 +195,7 @@ The true transformation came in 1963 when visionary entrepreneur Buddy Ritter fo
 ### Historic Firsts
 
   * The Lodge golf course (1909) is the oldest in the Southwest
-  * At 9,000 feet, Ski Cloudcroft is the southernmost ski area in North America
+  * At 8,676 feet, Ski Cloudcroft is the southernmost ski area in North America
   * Cloudcroft was one of the first planned resort communities in New Mexico
   * The Mexican Canyon Trestle is one of the best-preserved railroad trestles in the country
 

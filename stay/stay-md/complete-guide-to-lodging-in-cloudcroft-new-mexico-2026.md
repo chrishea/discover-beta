@@ -222,7 +222,7 @@ The short version: if you want the most Cloudcroft-like stay, a cabin is often t
 
 **Snow and winter driving:** Check road conditions before you go. A place can be bookable and still be harder to reach than expected in winter weather.
 
-**Altitude:** Cloudcroft sits around 9,000 feet. Guests arriving from low elevation may want an easier first evening.
+**Altitude:** Cloudcroft sits at 8,676 feet. Guests arriving from low elevation may want an easier first evening.
 
 **Parking:** Verify directly, especially for cabins and older in-town properties.
 

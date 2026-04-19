@@ -4,7 +4,7 @@
 
 If you want to play golf in Cloudcroft, The Lodge Golf Course is the main game that matters.
 
-That is not because it is the longest or most polished course in New Mexico. It is because it is unusually tied to place. You are playing at roughly 9,000 feet, next to one of the region’s landmark hotels, on a historic short course that uses a Scottish-style two-loop setup to turn nine holes into an 18-hole experience. Current official and tourism sources consistently position it as one of the highest courses in New Mexico and one of the core on-site experiences at The Lodge.
+That is not because it is the longest or most polished course in New Mexico. It is because it is unusually tied to place. You are playing at 8,676 feet, next to one of the region’s landmark hotels, on a historic short course that uses a Scottish-style two-loop setup to turn nine holes into an 18-hole experience. Current official and tourism sources consistently position it as one of the highest courses in New Mexico and one of the core on-site experiences at The Lodge.
 
 For the right player, that is the draw. You are not coming here for a sprawling modern resort layout. You are coming for altitude, history, mountain air, compact shot values, and the fact that a round here fits naturally into a Cloudcroft weekend built around the hotel, dinner, drinks, hiking, and cool weather.
 
@@ -35,7 +35,7 @@ For the right player, that is the draw. You are not coming here for a sprawling 
 
 This looks like a short, high-altitude mountain course where setting matters as much as score.
 
-The Lodge’s own site leans hard on views, demanding terrain, elk sightings, and the fact that you are golfing at 9,000 feet. New Mexico Tourism and golf-directory sources reinforce the same picture: this is a compact historic course where the routing and elevation are the story. The course is not sold as a championship-length test. It is sold as a distinctive round in unusual terrain.
+The Lodge’s own site leans hard on views, demanding terrain, elk sightings, and the fact that you are golfing at 8,676 feet. New Mexico Tourism and golf-directory sources reinforce the same picture: this is a compact historic course where the routing and elevation are the story. The course is not sold as a championship-length test. It is sold as a distinctive round in unusual terrain.
 
 The most useful way to think about it is this: it appears to be a destination golf experience for travelers who like quirky, scenic, shot-making courses and do not need a full-scale modern golf complex to have a good time.
 
@@ -58,7 +58,7 @@ The most consistent description across current and legacy sources is that this i
 That matters because the golf experience is shaped by repetition with variation rather than by 18 separate holes. New Mexico Tourism says the course is “governed by the Scottish tradition of playing different tees and separate flags on each hole.” GolfPass and other course-detail pages describe the same thing in plainer terms: it is a 9-hole course you play twice with different tee and hole locations.
 
 Verified or strongly supported character points:
-- **High elevation:** about 9,000 feet
+- **High elevation:** 8,676 feet
 - **Short course:** the common 9-hole number is about 2,387 yards, par 34
 - **18-hole logic:** two-loop format with alternate tees / flags
 - **Terrain:** mountain terrain with drop-offs and elevation change
@@ -124,7 +124,7 @@ There is also a recurring historical claim in golf directories and tourism blurb
 ## 7. What golfers should know before they go
 
 ### Altitude changes the round
-At roughly 9,000 feet, your ball will travel farther. That can be fun, but it also changes club selection fast. If you came up from Alamogordo or El Paso the same day, the walk and the swing can both feel different.
+At 8,676 feet, your ball will travel farther. That can be fun, but it also changes club selection fast. If you came up from Alamogordo or El Paso the same day, the walk and the swing can both feel different.
 
 ### Weather is not a small variable
 Cloudcroft summer weather is usually cooler than the basin below, which is part of the appeal. But mountain weather can turn quickly. Layers matter. Afternoon storms are not a theoretical concern in summer mountain golf.
@@ -151,7 +151,7 @@ That is where the course’s value is clearest.
 
 ### Official / tourism framing
 - **The Lodge official site** presents the course as one of the hotel’s signature experiences, with demanding terrain, views, wildlife, and high-altitude identity.
-- **New Mexico Tourism** describes the course as governed by the Scottish tradition of different tees and separate flags on each hole and emphasizes the 9,000-foot setting.
+- **New Mexico Tourism** describes the course as governed by the Scottish tradition of different tees and separate flags on each hole and emphasizes the 8,676-foot setting.
 
 ### Local reporting
 - **Cloudcroft Reader, June 29, 2025 (“What’s Going on in Cloudcroft? Find out with Our Summer Guide”)** described the course as a “Scottish 9” style course and added a practical note about the Lodge Bistro at the golf course.

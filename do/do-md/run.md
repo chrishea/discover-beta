@@ -90,7 +90,7 @@ The race culture also seems real, not forced. UltraSignup and RunSignup both sho
 
 Cloudcroft trails sit between **8,500 and 9,000+ feet**. That changes every run:
 
-- **Do not judge effort by mileage alone.** A 3-mile trail run at 9,000 feet can feel like 5 miles at sea level.
+- **Do not judge effort by mileage alone.** A 3-mile trail run at 8,676 feet can feel like 5 miles at sea level.
 - **Hydrate aggressively.** Start drinking extra water before you run, not just during.
 - **Keep the first run short.** If you drove up from Alamogordo or El Paso the same day, back off your normal pace and distance.
 - **Sun exposure is stronger at altitude.** Sunscreen and a hat matter even on overcast mornings.

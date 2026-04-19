@@ -4,14 +4,14 @@
 
 ## Executive Summary
 
-Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at roughly 8,600–9,000 feet in the Sacramento Mountains and surrounded entirely by Lincoln National Forest. It was planned in 1898–1900 as a combined timber town and rail-served summer resort by the El Paso and Northeastern / Alamogordo and Sacramento Mountain Railway, and The Lodge at Cloudcroft has anchored its resort identity since 1899–1911. The village was incorporated in 1948 and today runs on tourism, second homes, forest recreation, and a thin year-round service base centered on Burro Avenue. Climate contrast with the hot Tularosa Basin below (Alamogordo is ~16 miles and 4,700 vertical feet away via U.S. 82) is the core draw. In 2026 the region operates under persistent wildfire risk, Stage 1 fire restrictions forest-wide (as of March 27, 2026), tightening home insurance markets, and a shaky winter ski season — Ski Cloudcroft closed its 2025–26 season early on March 7, 2026.
+Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at 8,676 feet in the Sacramento Mountains and surrounded entirely by Lincoln National Forest. It was planned in 1898–1900 as a combined timber town and rail-served summer resort by the El Paso and Northeastern / Alamogordo and Sacramento Mountain Railway, and The Lodge at Cloudcroft has anchored its resort identity since 1899–1911. The village was incorporated in 1948 and today runs on tourism, second homes, forest recreation, and a thin year-round service base centered on Burro Avenue. Climate contrast with the hot Tularosa Basin below (Alamogordo is ~16 miles and 4,700 vertical feet away via U.S. 82) is the core draw. In 2026 the region operates under persistent wildfire risk, Stage 1 fire restrictions forest-wide (as of March 27, 2026), tightening home insurance markets, and a shaky winter ski season — Ski Cloudcroft closed its 2025–26 season early on March 7, 2026.
 
 ---
 
 ## 1. Overview & Identity
 
 - **Location:** Otero County, southern New Mexico, inside Lincoln National Forest, in the Sacramento Mountains above the Tularosa Basin.
-- **Elevation:** ~8,600–9,000 ft (sources give "nearly 9,000 ft" and "8,600–9,000 ft"). Ski Cloudcroft operates between 8,500–9,500 ft.
+- **Elevation:** 8,676 ft. Ski Cloudcroft operates between 8,500–9,500 ft.
 - **Incorporated:** 1948 (Village of Cloudcroft).
 - **Name:** Widely glossed as "pasture for the clouds" / English "a clearing covered in clouds"; treated by local sources as origin story, not rigorously documented etymology.
 - **Commercial spine:** Burro Avenue; secondary commercial strip along James Canyon Highway (U.S. 82).

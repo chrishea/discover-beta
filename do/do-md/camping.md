@@ -707,9 +707,9 @@ Cloudcroft camping is shaped by elevation more than by the New Mexico stereotype
 
 ### Altitude advisory for visitors
 - **Hydrate aggressively.** The air is drier and thinner than most visitors expect. Drink more water than you think you need, starting before you arrive.
-- **Sun exposure is stronger at 9,000 feet.** Sunscreen and shade matter even on overcast days.
+- **Sun exposure is stronger at 8,676 feet.** Sunscreen and shade matter even on overcast days.
 - **Exertion hits harder.** Hiking, biking, and even setting up camp will leave you more winded than at sea level.
-- **Alcohol hits harder at altitude.** One beer at 9,000 feet can feel like two.
+- **Alcohol hits harder at altitude.** One beer at 8,676 feet can feel like two.
 - Do not assume a summer afternoon stays dry.
 - Recheck opening dates right before departure.
 - Recheck fire rules right before departure.

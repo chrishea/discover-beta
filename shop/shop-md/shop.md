@@ -4,9 +4,9 @@
 
 If you come to Cloudcroft expecting a major retail district, you will be done in twenty minutes and wonder what the fuss was about. If you come expecting a compact mountain-town stroll with a real mix of gift shops, boutiques, art, jewelry, outdoor gear, sweets, wine, and a few stores that feel genuinely rooted in place, Burro Avenue works well.
 
-This is not serious metropolitan shopping. It is browsing. It is stepping in and out of small storefronts at nearly 9,000 feet, coffee in hand, jacket half-zipped even in warm months, with the whole commercial core compressed into a walkable strip and a few side streets. Some stores are plainly tourist-facing. Some feel more curated. A few are worth seeking out even if you do not usually like shopping. Instant Karma belongs in that second group because it adds a different note to the street: less souvenir, more lifestyle habitat.
+This is not serious metropolitan shopping. It is browsing. It is stepping in and out of small storefronts at 8,676 feet, coffee in hand, jacket half-zipped even in warm months, with the whole commercial core compressed into a walkable strip and a few side streets. Some stores are plainly tourist-facing. Some feel more curated. A few are worth seeking out even if you do not usually like shopping. Instant Karma belongs in that second group because it adds a different note to the street: less souvenir, more lifestyle habitat.
 
-**At a glance:** 20+ shops and galleries, a Burro Avenue hub, ~9,000 ft elevation, and a district best paired with coffee.
+**At a glance:** 20+ shops and galleries, a Burro Avenue hub, 8,676 ft elevation, and a district best paired with coffee.
 
 ## 1. What shopping in Cloudcroft is really like
 

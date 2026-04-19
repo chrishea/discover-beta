@@ -51,7 +51,7 @@
 \f1\b0\fs24 \cf0 \
 \pard\pardeftab720\partightenfactor0
 
-\f2\fs29\fsmilli14667 \cf0 "The higher you go, the harder it is," Denver explains. At nearly 9,000 feet, brewing in Cloudcroft requires constant vigilance and adaptation. Water boils at a lower temperature here, which means the brewers have to modify nearly every step of the process.
+\f2\fs29\fsmilli14667 \cf0 "The higher you go, the harder it is," Denver explains. At 8,676 feet, brewing in Cloudcroft requires constant vigilance and adaptation. Water boils at a lower temperature here, which means the brewers have to modify nearly every step of the process.
 \f1\fs24 \
 \
 

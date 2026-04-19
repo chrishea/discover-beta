@@ -108,7 +108,7 @@ The property sits on Coyote Avenue among tall pines. Guests repeatedly mention e
 Setting strengths:
 - walkable to Burro Street (main street) shops and restaurants
 - within easy driving distance of Lincoln National Forest trails, Trestle Recreation Area, and Ski Cloudcroft
-- quiet pine-forest atmosphere at roughly 9,000 feet
+- quiet pine-forest atmosphere at 8,676 feet
 - wildlife sightings on property, not just nearby
 
 What the setting is not:

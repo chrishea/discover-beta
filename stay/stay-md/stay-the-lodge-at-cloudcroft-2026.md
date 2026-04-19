@@ -99,7 +99,7 @@ Beyond golf, current booking-platform pages list:
 
 Appears current; should be checked directly.
 
-The setting is one of the clearest strengths. The official site and official history both emphasize the 9,000-foot elevation and mountain views.
+The setting is one of the clearest strengths. The official site and official history both emphasize the 8,676-foot elevation and mountain views.
 
 ## 7. History and significance
 

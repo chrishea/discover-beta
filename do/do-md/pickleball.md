@@ -56,11 +56,11 @@ The Zenith Park setting also helps. You are not driving far out to play. You are
 
 ## Altitude advisory
 
-Zenith Park sits at roughly **9,000 feet**. Pickleball is high-exertion in short bursts, and altitude amplifies that:
+Zenith Park sits at **8,676 feet**. Pickleball is high-exertion in short bursts, and altitude amplifies that:
 
 - **Hydrate before, during, and after play.** The dry mountain air dehydrates you faster than you expect.
 - **Exertion hits harder.** You will feel winded sooner than at lower elevation, especially if you arrived the same day.
-- **Sun exposure is stronger at 9,000 feet.** Wear sunscreen and a hat. The courts are outdoor with no shade structure.
+- **Sun exposure is stronger at 8,676 feet.** Wear sunscreen and a hat. The courts are outdoor with no shade structure.
 - **Mornings are cooler and calmer.** Afternoon wind and summer thunderstorms (late June through August) can end a session fast.
 
 ## Potential drawbacks or cautions

@@ -1505,7 +1505,7 @@
                             <div class="restaurant-card-body">
                                 <p class="restaurant-type">BBQ · Casual</p>
                                 <h3>Mad Jack's Mountaintop BBQ</h3>
-                                <p>Slow-smoked brisket, ribs, and pulled pork at 9,000 feet. The patio views are as good
+                                <p>Slow-smoked brisket, ribs, and pulled pork at 8,676 feet. The patio views are as good
                                     as
                                     the meat. A Cloudcroft institution — arrive early or expect a wait on weekends.</p>
                             </div>
@@ -1845,7 +1845,7 @@
                     <div class="practical-card">
                         <div class="practical-icon">&#x26F0;&#xFE0F;</div>
                         <h3>Altitude</h3>
-                        <p>Cloudcroft sits at approximately 9,000 feet above sea level. Drink plenty of water, take it
+                        <p>Cloudcroft sits at 8,676 feet above sea level. Drink plenty of water, take it
                             easy your first day, and be mindful of altitude effects &mdash; especially if you are coming
                             from sea level. Symptoms like headache or shortness of breath are common and usually pass
                             quickly.</p>
@@ -2043,3 +2043,33 @@
 </body>
 
 </html>
+---
+
+## Exemptions from the standard template
+
+### MAIN (complete-guide-to-cloudcroft-new-mexico-2026.html)
+
+The root-level flagship guide intentionally diverges from the standard topic-page template:
+
+- Uses `.guide-section` with numbered section badges (`01 / Overview`, `02 / Things to Do`, …) instead of the `.section` / `.section-alt` alternating pattern.
+- Uses `.hero-meta` inside the hero for key facts rather than a separate `.info-bar` strip.
+- JSON-LD `@type` is `TouristDestination` (with nested `BreadcrumbList` and `FAQPage`) rather than `Article`.
+
+**Why:** MAIN is the meta-guide that links out to all category guides. The numbered section system signals "this is the hub" and differentiates it visually from the category-level guides it links to. Keep this treatment on MAIN only; do not replicate it on new category guides.
+
+### CAMP and HIKE (guide-to-camping…, guide-to-hiking…)
+
+These single-topic reference pages may use:
+
+- `@type: TouristAttraction` in JSON-LD (not `Article`) because they describe a specific place/activity rather than a category overview.
+- Custom component vocabularies (`.campground-card`, `.menu-card`, `.gallery-grid`) that layer on top of the shared baseline.
+
+They MUST still include the standard `.toc-nav`, `.info-bar`, hero, CTA, footer, and "Last updated" stamp.
+
+---
+
+## Required on every topic page (standardized 2026-04)
+
+- `<div class="updated-stamp-wrap"><span class="updated-stamp">Last updated · [Month YYYY]</span></div>` placed as the first child of `<main id="main-content">`.
+- Inline color overrides must stay within the monochrome palette defined in `css/common.css :root`. Hero gradients, badges, and accents must resolve to `#000`, `#2B2B2B`, `#333`, `#444`, `#666`, `#999`, `#f2f2f2`, or `#fff`. No greens, ambers, purples, or other hues.
+- `.toc-nav` with 4–6 `.toc-pill` anchors is required unless the page is documented as an exemption above.
