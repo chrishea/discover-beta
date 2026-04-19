@@ -1464,7 +1464,7 @@ img {
   border-left: 4px solid #000000;
   border-radius: 0 8px 8px 0;
   padding: 1.25rem 1.5rem;
-  margin: 2rem 0;
+  margin: 2vh auto;
   display: flex;
   max-width: 800px;
   gap: 1rem;
@@ -2323,7 +2323,7 @@ img {
   text-align: center;
 }
 
-.toc-inner > * {
+.toc-inner>* {
   text-align: center;
 }
 
@@ -3394,12 +3394,14 @@ img {
     padding: 0 1.25rem;
   }
 }
+
 /* ===== Updated stamp (topic-page target-state standard) ===== */
 .updated-stamp-wrap {
   max-width: var(--max-width-content, 1200px);
   margin: 0 auto;
   padding: 1.5rem 2rem 0;
 }
+
 .updated-stamp {
   display: inline-block;
   padding: 0.35rem 0.75rem;
