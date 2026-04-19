@@ -83,10 +83,10 @@ Use this as your primary source. Web-search to verify or supplement as needed.
 For each guide, add or enhance content that shows genuine local knowledge. A tourist reading this should think "this person actually lives here." Specifically:
 
 - **Insider tips**: What do locals actually do vs. what the brochure says? (e.g., "The back nine plays completely different than the front — same holes, but the afternoon wind off the peak changes everything.")
-- **Practical logistics**: Parking, trailhead access, what to bring, altitude considerations (9,000 ft), weather patterns (afternoon thunderstorms in summer), cell coverage gaps.
+- **Practical logistics**: Parking, trailhead access, what to bring, altitude considerations (8,676 ft), weather patterns (afternoon thunderstorms in summer), cell coverage gaps.
 - **Seasonal context**: What's open when? What's the best month for each activity? When is it crowded vs. quiet?
 - **Connections between activities**: If someone finishes a hike, where do they grab lunch? If the golf course is closed for weather, what's the backup plan?
-- **Altitude warnings**: Repeat as needed — visitors from sea level underestimate 9,000 ft. Hydration, sun exposure, shortened breath on exertion.
+- **Altitude warnings**: Repeat as needed — visitors from sea level underestimate 8,676 ft. Hydration, sun exposure, shortened breath on exertion.
 - **Family-friendliness**: Note which activities work for kids, which are adults-only or require fitness.
 
 ### 4. TONE & STYLE GUIDELINES

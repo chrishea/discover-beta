@@ -60,9 +60,8 @@
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
         }
 
-        .hero-badge {
-            background: rgba(185, 228, 190, 0.6);
-        }
+        /* Removed non-monochrome .hero-badge override (was rgba(185,228,190,0.6) — light green).
+           Falls back to common.css default badge style. */
 
         .lodge-card-contact {
             margin-top: auto;
@@ -116,6 +115,15 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+        <a href="events/top-events.html">Events</a>
+        <a href="#reels">Reels</a>
+        <a href="resources/resources.html">Resources</a>
+        <a href="resources/contact.html">Contact</a>
+    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
         <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
@@ -178,6 +186,10 @@
     </nav>
 
     <main id="main-content" role="main">
+
+        <div class="updated-stamp-wrap">
+            <span class="updated-stamp">Last updated · April 2026</span>
+        </div>
 
         <!-- ════════════════════════════════════════════ 01 THE SCENE ════════════════════════════════════════════ -->
         <section class="section" id="overview" aria-label="Dining scene overview">

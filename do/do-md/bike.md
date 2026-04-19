@@ -74,13 +74,13 @@ That makes Cloudcroft a good bike destination for people who already like riding
 
 ## Altitude advisory
 
-Cloudcroft sits at roughly **9,000 feet**. That changes the riding experience:
+Cloudcroft sits at **8,676 feet**. That changes the riding experience:
 
 - **Exertion hits harder.** Climbs that would feel moderate at lower elevation will tax your breathing. Back off your pace if you arrived the same day.
 - **Hydrate aggressively.** The air is drier and thinner than most riders expect.
 - **Sun exposure is stronger at altitude.** Sunscreen matters even on overcast days.
 - **The ball/tire pressure equation changes.** Check tire pressure after driving up from the basin — heat and altitude shift it.
-- **Afternoon thunderstorms** are common in summer (late June through August). Plan rides for mornings. Lightning at 9,000 feet on an exposed ridge is not theoretical.
+- **Afternoon thunderstorms** are common in summer (late June through August). Plan rides for mornings. Lightning at 8,676 feet on an exposed ridge is not theoretical.
 
 ## Potential drawbacks or cautions
 

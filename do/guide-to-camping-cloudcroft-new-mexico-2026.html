@@ -177,7 +177,7 @@
             background: var(--cloud-drift);
             padding: 0.3rem 0.6rem;
             border-radius: 12px;
-            border: 1px solid rgba(58, 107, 30, 0.15);
+            border: 1px solid rgba(0, 0, 0, 0.15);
         }
 
         .campground-link {
@@ -322,28 +322,37 @@
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="../visit/where-to-visit.html">Visit</a>
-                <a href="../events/top-events.html">Events</a>
-                <a href="../season/seasonal.html">Seasons</a>
-                <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
-                <a href="../resources/resources.html">Resources</a>
-                <a href="../resources/contact.html">Contact</a>
+                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="events/top-events.html">Events</a>
+                <a href="#reels">Reels</a>
+                <a href="resources/resources.html">Resources</a>
+                <a href="resources/contact.html">Contact</a>
             </nav>
-            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-nav">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+        <a href="events/top-events.html">Events</a>
+        <a href="#reels">Reels</a>
+        <a href="resources/resources.html">Resources</a>
+        <a href="resources/contact.html">Contact</a>
+    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
@@ -397,7 +406,23 @@
         </div>
     </div>
 
+    <!-- ════════════════════════════════════════════ STICKY TOC NAV ════════════════════════════════════════════ -->
+    <nav class="toc-nav" aria-label="Table of contents">
+        <div class="toc-nav-inner">
+            <a href="#campgrounds" class="toc-pill">Campgrounds</a>
+            <a href="#family" class="toc-pill">Family</a>
+            <a href="#dispersed" class="toc-pill">Dispersed</a>
+            <a href="#tips" class="toc-pill">Tips</a>
+            <a href="#resources" class="toc-pill">Resources</a>
+        </div>
+    </nav>
+
     <main id="main-content" role="main">
+
+        <div class="updated-stamp-wrap">
+            <span class="updated-stamp">Last updated · April 2026</span>
+        </div>
+
         <section class="section" id="campgrounds" aria-label="Campgrounds near Cloudcroft">
             <div class="section-container">
                 <div style="text-align: center;">
@@ -407,7 +432,7 @@
                         group sites, plus abundant dispersed camping opportunities.</p>
                 </div>
 
-                <div class="camp-type-header">
+                <div class="camp-type-header" id="family">
                     <span class="camp-type-icon">&#x1F3D5;&#xFE0F;</span>
                     <h3>Family Campgrounds</h3>
                 </div>
@@ -683,7 +708,7 @@
             </div>
         </section>
 
-        <section class="section highlights-section" aria-label="Camping tips">
+        <section class="section highlights-section" id="tips" aria-label="Camping tips">
             <div class="section-container">
                 <div style="text-align: center;">
                     <span class="section-label" style="color: var(--pine); letter-spacing: 3px;">Camping Tips</span>
@@ -740,7 +765,7 @@
             </div>
         </section>
 
-        <section class="section" aria-label="Camping resources">
+        <section class="section" id="resources" aria-label="Camping resources">
             <div class="section-container">
                 <div style="text-align: center;">
                     <span class="section-label">Resources</span>

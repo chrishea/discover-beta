@@ -57,11 +57,11 @@ The Zenith Park course appears to be the opposite kind of outing. It sounds more
 
 ## Altitude advisory
 
-Both courses sit at roughly **9,000 feet**. The 18-hole mountain course involves significant elevation change and walking through forest:
+Both courses sit at **8,676 feet**. The 18-hole mountain course involves significant elevation change and walking through forest:
 
 - **Bring water.** A free course in the mountains can still turn into a real workout. Carry at least a liter per person.
 - **Exertion hits harder at altitude.** The 18-hole course plays longer than you expect because of the terrain.
-- **Sun exposure is stronger at 9,000 feet.** Sunscreen and a hat matter.
+- **Sun exposure is stronger at 8,676 feet.** Sunscreen and a hat matter.
 - **Afternoon thunderstorms** are common in summer. Play mornings when possible.
 
 ## Potential drawbacks or cautions

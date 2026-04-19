@@ -1635,12 +1635,20 @@ img {
   transform: translateY(20px);
   display: flex;
   flex-direction: column;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-top-color 0.25s ease;
 }
 
 .lodge-card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+  border-top-color: steelblue;
+  border-top-width: 12px;
+}
+
+.lodge-card:active {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
 }
 
 .lodge-card.visible {
@@ -1752,6 +1760,7 @@ img {
 }
 
 .lodge-card-contact {
+  display: none;
   margin-top: auto;
   padding-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
@@ -2308,8 +2317,14 @@ img {
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  text-align: center;
+}
+
+.toc-inner > * {
+  text-align: center;
 }
 
 .toc-label {
@@ -2630,9 +2645,10 @@ img {
 }
 
 .restaurant-card:hover {
-  border-color: #000000;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transform: translateY(-3px);
+  border-color: steelblue;
+  border-top-width: 12px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+  transform: translateY(-6px) scale(1.02);
 }
 
 .restaurant-card-img {
@@ -3377,4 +3393,21 @@ img {
   .guide-body {
     padding: 0 1.25rem;
   }
+}
+/* ===== Updated stamp (topic-page target-state standard) ===== */
+.updated-stamp-wrap {
+  max-width: var(--max-width-content, 1200px);
+  margin: 0 auto;
+  padding: 1.5rem 2rem 0;
+}
+.updated-stamp {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background: #000000;
+  color: #ffffff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }

@@ -42,7 +42,7 @@ Used on About, Contact, and similar informational pages:
 | Mountain Shadow | `#1a4a2e` | Dark backgrounds, footer |
 | Sunset Gold | `#d4a84b` | Accent highlights |
 
-**Rationale:** The green palette represents the pine forests surrounding Cloudcroft (elevation 9,000 ft). It's used for pages focused on community and information rather than tourism promotion.
+**Rationale:** The green palette represents the pine forests surrounding Cloudcroft (elevation 8,676 ft). It's used for pages focused on community and information rather than tourism promotion.
 
 ---
 

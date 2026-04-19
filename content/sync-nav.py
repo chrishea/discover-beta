@@ -10,38 +10,37 @@ def build_nav(prefix):
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="{p}index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="{p}stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="{p}eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="{p}do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="{p}do/complete-guide-to-activities.html">Explore</a>
-                <a href="{p}do/where-to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
-                <a href="{p}do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="{p}season/seasonal.html">Seasons</a>
-                <a href="{p}plan.html">Plan</a>
-                <a href="{p}contact.html">Contact</a>
+                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="events/top-events.html">Events</a>
+                <a href="#reels">Reels</a>
+                <a href="resources/resources.html">Resources</a>
+                <a href="resources/contact.html">Contact</a>
             </nav>
-            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-nav">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
-    <div class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
-        <a href="{p}stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="{p}eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="{p}do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="{p}do/complete-guide-to-activities.html">Explore</a>
-        <a href="{p}do/where-to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>
-        <a href="{p}do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-        <a href="{p}season/seasonal.html">Seasons</a>
-        <a href="{p}plan.html">Plan</a>
-        <a href="{p}contact.html">Contact</a>
-    </div>'''
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+        <a href="events/top-events.html">Events</a>
+        <a href="#reels">Reels</a>
+        <a href="resources/resources.html">Resources</a>
+        <a href="resources/contact.html">Contact</a>
+    </nav>'''
 
 # Match header...</header> followed by optional whitespace and mobile-nav-overlay div
 PATTERN = re.compile(

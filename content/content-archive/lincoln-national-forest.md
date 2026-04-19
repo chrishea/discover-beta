@@ -136,8 +136,8 @@ Resources:
 ## Practical Tips
 
 - **Water:** Many dispersed areas and free campgrounds have no water. Bring more than you think you'll need.
-- **Weather:** Conditions change fast at 9,000 feet. Summer afternoon thunderstorms are common. Check forecasts before heading out.
-- **Altitude:** Cloudcroft sits at 8,600–9,000 feet. Give yourself time to adjust, especially if arriving from sea level.
+- **Weather:** Conditions change fast at 8,676 feet. Summer afternoon thunderstorms are common. Check forecasts before heading out.
+- **Altitude:** Cloudcroft sits at 8,676 feet. Give yourself time to adjust, especially if arriving from sea level.
 - **Leave No Trace:** Pack out everything you pack in. Camp at least 200 feet from water sources when dispersed camping.
 - **Military land:** Some areas adjacent to the forest are part of Holloman AFB and White Sands Missile Range. Stay on mapped public land.
 

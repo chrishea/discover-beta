@@ -163,7 +163,7 @@ From mountain biking in the Lincoln National Forest to low-friction disc golf at
 
 ## 04 — Tips: Practical Planning Notes
 
-1. **Altitude** — Cloudcroft sits around 9,000 feet. Easy activities can still feel harder than expected. Hydrate, pace yourself, and ease into effort on day one.
+1. **Altitude** — Cloudcroft sits at 8,676 feet. Easy activities can still feel harder than expected. Hydrate, pace yourself, and ease into effort on day one.
 2. **Weather Swings** — You can leave cool forest and reach hot basin quickly. Dress for the full range, not just Cloudcroft's temperature. Afternoon weather shifts are common in summer.
 3. **Cell Service** — Do not count on constant service outside town or deeper in the forest. Download maps and route notes before you head out.
 4. **Fire Restrictions** — Check Lincoln National Forest official alerts and restrictions before hiking, camping, or planning long forest drives. Restrictions change with conditions.
