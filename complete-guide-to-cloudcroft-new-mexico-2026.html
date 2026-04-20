@@ -170,6 +170,25 @@
             padding-bottom: env(safe-area-inset-bottom);
         }
 
+        .mobile-nav-close {
+            position: absolute;
+            top: calc(env(safe-area-inset-top) + 1rem);
+            right: 1.25rem;
+            width: 44px;
+            height: 44px;
+            background: transparent;
+            border: none;
+            font-size: 2rem;
+            line-height: 1;
+            color: var(--charcoal);
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .mobile-nav-close:hover {
+            color: var(--pine);
+        }
+
         /* Touch targets */
         .toc-links a,
         .thing-card-link,
@@ -456,7 +475,7 @@
         }
 
         .thing-card-icon {
-            aspect-ratio: 16 / 9;
+            aspect-ratio: 8 / 6;
             overflow: hidden;
             margin: 0 0 0 0;
             border-radius: 10px 10px 0 0;
@@ -1571,6 +1590,7 @@
 
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
+
     <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
     <header class="site-header" role="banner">
         <div class="header-inner">
@@ -1598,7 +1618,10 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+            Home</a>
+        </a><a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
         <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
@@ -1607,16 +1630,7 @@
         <a href="resources/resources.html">Resources</a>
         <a href="resources/contact.html">Contact</a>
     </nav>
-    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav>
+
 
     <main id="main-content" role="main">
 
@@ -1927,20 +1941,33 @@
 
 
 
-                            <a href="stay/stay-crofting-inn-cloudcroft.html" class="thing-card-link"
-                                style="margin-top:0.5rem;">View rooms &rarr;</a>
+                            <a href="complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html"
+                                class="thing-card-link" style="margin-top:0.5rem;">View rooms &rarr;</a>
                         </div>
 
+
                     </div>
 
-                    <div class="tip-box">
-                        <span class="tip-icon">📅</span>
-                        <p><strong>Booking tip:</strong> Fall color weekend (mid-to-late October) is the
-                            single most
-                            competitive booking weekend of the year. Reserve 6–8 weeks out. Summer July 4th
-                            weekend is a
-                            close second.</p>
-                    </div>
+
+
+                </div>
+
+                <div style="text-align: center; margin: 2.5rem 0;">
+                    <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html"
+                        style="display: inline-block; padding: 1rem 3rem; font-family: 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: #fff; background: var(--golden-hour); border-radius: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: background 0.25s ease, transform 0.25s ease;"
+                        onmouseover="this.style.background='var(--ember)';this.style.transform='translateY(-2px)'"
+                        onmouseout="this.style.background='var(--golden-hour)';this.style.transform='translateY(0)'">View
+                        More Lodging Options &rarr;</a>
+                </div>
+
+                <div class="tip-box">
+                    <span class="tip-icon">📅</span>
+                    <p><strong>Booking tip:</strong> Fall color weekend (mid-to-late October) is the
+                        single most
+                        competitive booking weekend of the year. Reserve 6–8 weeks out. Summer July 4th
+                        weekend is a
+                        close second.</p>
+                </div>
             </section>
 
 
@@ -2095,7 +2122,7 @@
 
 
 
-                            <h3 style="text-align:center;padding-top:50%;color:#fff">View More</h3>
+                            <h3 style="text-align:center;padding-top:35%;color:#fff">View More Food Options</h3>
 
 
 
@@ -2109,6 +2136,67 @@
         </div>
 
         </section>
+
+
+        <!-- ═══════════════════════════════ RECENT NEWS ═══════════════════════════════ -->
+        <section class="section" style="padding:2vh 5vw;background-color:#dedede" id=" recent-news"
+            aria-label="Recent news">
+            <div class="section-container">
+                <div style="text-align: center;">
+                    <span class="section-label">News</span>
+                    <h2 class="section-title section-title-centered">Recent News</h2>
+
+                    <div class="restaurant-grid">
+
+                        <div class="restaurant-card fade-in">
+
+                            <div class="restaurant-card-img">
+                                <img src="https://substackcdn.com/image/fetch/$s_!m84N!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2454fe08-2de7-41f0-abd6-6e324e7578ef_3801x2138.jpeg"
+                                    alt="Cloudcroft Sandwich Shop on Burro Avenue" loading="lazy" decoding="async">
+                            </div>
+                            <div class="restaurant-card-body" style="text-align:left">
+
+                                <a href="https://www.cloudcroftreader.com/p/new-rule-greets-shed-antler-hunters"
+                                    target="_blank">New Rule Greets Shed Antler Hunters</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="restaurant-card fade-in">
+
+                            <div class="restaurant-card-img">
+                                <img src="https://substackcdn.com/image/fetch/$s_!m84N!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2454fe08-2de7-41f0-abd6-6e324e7578ef_3801x2138.jpeg"
+                                    alt="Cloudcroft Sandwich Shop on Burro Avenue" loading="lazy" decoding="async">
+                            </div>
+                            <div class="restaurant-card-body" style="text-align:left">
+
+                                <a href="https://www.cloudcroftreader.com/p/video-a-kitchen-reborn-one-chefs"
+                                    target="_blank">Video:
+                                    A Kitchen Reborn</a>
+
+                            </div>
+                        </div>
+                        <div class="restaurant-card fade-in">
+                            <a href="https://www.cloudcroftreader.com/p/meet-mad-jacks-left-hand-man" target="_blank">
+                                <div class="restaurant-card-img">
+                                    <img src="https://substackcdn.com/image/fetch/$s_!m84N!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2454fe08-2de7-41f0-abd6-6e324e7578ef_3801x2138.jpeg"
+                                        alt="Cloudcroft Sandwich Shop on Burro Avenue" loading="lazy" decoding="async">
+                                </div>
+                                <div class="restaurant-card-body" style="text-align:left">
+
+                                    <a href="https://www.cloudcroftreader.com/p/new-rule-greets-shed-antler-hunters"
+                                        target="_blank">Meet
+                                        Mad
+                                        Jack's Left-Hand Man</a>
+
+                                </div>
+
+                        </div>
+
+                    </div>
+        </section>
+
 
         <!-- 5. SEASONAL EVENTS -->
         <section class="guide-section" id="seasonal-events" aria-labelledby="h-events">
@@ -2417,17 +2505,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- ═══════════════════════════════ RECENT NEWS ═══════════════════════════════ -->
-        <section class="section" style="padding:2vh 5vw;background-color:#dedede" id=" recent-news"
-            aria-label="Recent news">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">News</span>
-                    <h2 class="section-title section-title-centered">Recent News</h2>
-                </div>
-            </div>
-        </section>
         <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
         <footer class="site-footer" role="contentinfo">
             <div class="footer-gradient-border"></div>
@@ -2540,6 +2617,13 @@
                         if (link) window.location.href = link.href;
                     });
                 });
+
+                // Mobile nav close button — reuse hamburger toggle logic in common.js
+                var closeBtn = document.querySelector('.mobile-nav-close');
+                var hamburger = document.querySelector('.hamburger');
+                if (closeBtn && hamburger) {
+                    closeBtn.addEventListener('click', function () { hamburger.click(); });
+                }
             })();
         </script>
 

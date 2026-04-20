@@ -172,17 +172,24 @@
             }
 
         }
+
+        /* "Search Vacation Rentals" button — custom hover */
+        a.btn-secondary[href*="vrbo.com"]:hover {
+            background: #000;
+            color: coral;
+        }
     </style>
 </head>
 
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
+    <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
     <header class="site-header" role="banner">
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
@@ -204,16 +211,10 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+            Home</a>
+        </a><a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
         <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
@@ -222,6 +223,7 @@
         <a href="resources/resources.html">Resources</a>
         <a href="resources/contact.html">Contact</a>
     </nav>
+
 
     <!-- ════════════════════════════════════════════ HERO ════════════════════════════════════════════ -->
     <section class="hero" aria-label="Page hero">
@@ -471,7 +473,7 @@
                 </div>
         </section>
 
-        <section style="padding:3vh 10vw;background-color:#f9f6f0">
+        <section style="padding:3vh 10vw;">
             <div class="market-grid">
                 <div class="market-card" style="background:transparent">
                     <h3>Historic Stays</h3>
@@ -499,7 +501,8 @@
             </div>
         </section>
         <!-- ════════════════════════════════════════════ 03 CABINS & RENTALS ════════════════════════════════════════════ -->
-        <section class="section" style="padding:3vh 10vw;" id="rentals" aria-label="Cabins and short-term rentals">
+        <section class="section" style="padding:3vh 10vw;background-color:#f9f9f9" id="rentals"
+            aria-label="Cabins and short-term rentals">
             <div class="section-container">
                 <div style="text-align: center;">
 
@@ -646,7 +649,7 @@
                     </div>
                     <div class="tip-card">
                         <h3>Altitude</h3>
-                        <p>Cloudcroft sits around 9,000 feet. Guests arriving from low elevation may want an easier
+                        <p>Cloudcroft sits around 8,600 feet. Guests arriving from low elevations may want an easier
                             first evening. Hydrate, take it slow, and avoid overexertion on day one.</p>
                     </div>
                     <div class="tip-card">
@@ -775,13 +778,6 @@
                         rel="noopener noreferrer" class="btn-secondary">Search Vacation Rentals</a>
                 </div>
             </div>
-        </section>
-
-
-        <section>
-            <iframe src="https://www.cloudcroftreader.com/embed" width="480" height="320"
-                style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no"></iframe>
-
         </section>
     </main>
 
