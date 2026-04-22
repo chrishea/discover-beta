@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Guide to Lodging in Cloudcroft, New Mexico (2026) | DiscoverCloudcroft.com</title>
     <meta name="description"
-        content="Where to stay in Cloudcroft, NM — from The Lodge's historic rooms to cabin clusters, B&Bs, and 148+ vacation rentals. Compare every lodging option for 2026.">
+        content="Where to stay in Cloudcroft, NM — filter 9 named properties by vibe, budget, and walkability. A decision-driven guide to hotels, cabins, B&Bs, and 148+ vacation rentals.">
     <meta name="keywords"
         content="where to stay in cloudcroft, cloudcroft cabins, lodging near cloudcroft new mexico, cloudcroft hotels, pet friendly cabins cloudcroft nm">
     <link rel="canonical"
@@ -15,7 +15,7 @@
     <meta property="og:title"
         content="Complete Guide to Lodging in Cloudcroft, New Mexico (2026) | DiscoverCloudcroft.com">
     <meta property="og:description"
-        content="Where to stay in Cloudcroft, NM — from The Lodge's historic rooms to cabin clusters, B&Bs, and 148+ vacation rentals. Compare every lodging option for 2026.">
+        content="Where to stay in Cloudcroft, NM — filter 9 named properties by vibe, budget, and walkability. A decision-driven guide to hotels, cabins, B&Bs, and 148+ vacation rentals.">
     <meta property="og:url"
         content="https://discovercloudcroft.com/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">
     <meta property="og:type" content="website">
@@ -25,7 +25,7 @@
     <meta name="twitter:title"
         content="Complete Guide to Lodging in Cloudcroft, New Mexico (2026) | DiscoverCloudcroft.com">
     <meta name="twitter:description"
-        content="Where to stay in Cloudcroft, NM — from The Lodge's historic rooms to cabin clusters, B&Bs, and 148+ vacation rentals. Compare every lodging option for 2026.">
+        content="Where to stay in Cloudcroft, NM — filter 9 named properties by vibe, budget, and walkability. A decision-driven guide to hotels, cabins, B&Bs, and 148+ vacation rentals.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <link href="../css/fonts.css" rel="stylesheet">
@@ -47,136 +47,974 @@
         "name": "Cloudcroft, New Mexico",
         "description": "Lodging options including hotels, cabins, B&Bs, and short-term rentals in Cloudcroft, NM"
       },
-      "datePublished": "2026-04-03"
+      "datePublished": "2026-04-03",
+      "dateModified": "2026-04-21"
     }
     </script>
 
     <style>
-        .market-grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
+        /* =====================================================================
+           CHANGELOG (2026-04-21 rebuild)
+           FIXED
+             - Nav paths now resolve from /stay/ (was 404 site-wide on this page).
+               NOTE: content/sync-nav.py has a latent bug — its build_nav()
+               receives `prefix` but never applies it. Running sync-nav.py on
+               subpages would reintroduce broken paths. Fix the script before
+               resyncing nav.
+             - Card CTAs pointed at nonexistent files:
+                 The Lodge:      guide-to-the-lodge-…  → stay-the-lodge-…
+                 Summit Inn:     stay-at-the-summit-… → stay-the-summit-…
+                 Cloudcroft Hostel: stay-at-cloudcroft-hostel → stay-cloudcroft-hostel
+                 Cabins (wrap):  stay/cabins-at-…     → stay-cabins-at-…
+             - Burro Street Boarding House card was missing its "Read full guide" CTA.
+             - Property count mismatch: info bar claimed 9, page showed 8.
+             - Invalid CSS: `grid-template-columns: 2, 1fr` (broke 800px breakpoint).
+             - Invalid unit `margin: 2vhm`.
+             - Malformed attribute on #compare section container.
+             - Malformed footer copyright <a> tag.
+             - Dead `#reels` anchor in nav (never existed on this page).
+             - Stray </a> after "Home" in mobile overlay.
+             - Mixed-case image extensions verified against disk.
+           ADDED
+             - Hero 2-up (photo + "Find my stay" 4-chip quiz).
+             - Sticky filter rail synced with the hero quiz.
+             - Property card meta: price band, sleeps, walk-to-Burro minutes,
+               amenity chips. No fabricated dollar figures; bands are editorial.
+             - Compare-matrix with client-side checkbox toggles (replaces the
+               9-blurb "compare" grid — rows are properties, columns are facts).
+             - Schematic map (inline SVG) with numbered pins + legend.
+             - Practical-notes accordion (<details>), collapsing 10 tip cards → 4.
+             - One "Editor's Call" pull-quote section replaces 7-card Picks grid.
+             - TOC pills now highlight the active section on scroll.
+           REMOVED
+             - The "Bottom Line" dark section (thesis moved to hero, once).
+             - Emoji icons in info bar / contact blocks (inline SVG instead).
+             - Word-span hero reveal animation (low value, 5-word title).
+             - Repeated "not a chain-hotel market" paragraphs (said once, in hero).
+           ================================================================= */
 
-        @media (max-width: 800px) {
-            .market-grid {
-                grid-template-columns: 2, 1fr;
-            }
-        }
-
-        @media (max-width: 500px) {
-            .market-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
+        /* ---- Hero ---- */
         .hero-bg {
             background: url('stay-photo/photo-the-lodge/Pix-Cloudcroft-Discover-the-lodge-6.jpg') center 40% / cover no-repeat;
+            filter: saturate(0.9);
         }
 
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.55));
         }
 
-        /* Legacy property-contact kept for any other usage */
-        .property-contact {
-            margin-top: 1.25rem;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        .hero.hero-split {
+            min-height: 560px;
+            padding: 5rem 2rem;
+        }
+
+        .hero-split-grid {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-left .hero-eyebrow-pill {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 20px;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-left h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+            color: #fff;
+            line-height: 1.08;
+            margin-bottom: 1rem;
+        }
+
+        .hero-left .hero-deck {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            max-width: 30rem;
+        }
+
+        .hero-byline {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.82rem;
+            letter-spacing: 0.04em;
+        }
+
+        .hero-byline strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* ---- Finder quiz in hero ---- */
+        .finder {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 1.5rem 1.5rem 1.25rem;
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        .finder h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0 0 1rem;
+        }
+
+        .finder-row {
+            margin-bottom: 0.85rem;
+        }
+
+        .finder-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 0.45rem;
+        }
+
+        .chip-row {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem 1.5rem;
-            font-size: 0.85rem;
-            color: var(--granite);
+            gap: 0.4rem;
         }
 
-        .property-contact a {
-            color: var(--alpine);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .property-contact a:hover {
-            color: var(--golden-hour);
-        }
-
-        /* ── Rental Section ── */
-        .rental-section {
-            margin-top: 2rem;
-        }
-
-        /* ── Pros / Cons ── */
-        .pros-cons {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .pros-cons h4 {
+        .chip {
             font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            padding: 0.4rem 0.85rem;
+            border-radius: 999px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .chip:hover {
+            border-color: #000;
+        }
+
+        .chip[aria-pressed="true"] {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .finder-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .finder-actions .btn-primary {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.8rem;
+        }
+
+        .finder-clear {
+            background: none;
+            border: none;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Stats strip (replaces emoji info bar) ---- */
+        .stats-strip {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.6rem;
             font-weight: 700;
-            font-size: 1rem;
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.4rem;
+        }
+
+        /* ---- Thesis + byline ---- */
+        .thesis {
+            max-width: 820px;
+            margin: 3rem auto 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .thesis p {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            color: #222;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        .thesis .thesis-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            letter-spacing: 0.04em;
+        }
+
+        /* ---- Sticky filter rail ---- */
+        .filter-rail {
+            position: sticky;
+            top: 64px;
+            z-index: 80;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: saturate(140%) blur(6px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 0.75rem 2rem;
+        }
+
+        .filter-rail-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .filter-rail-inner::-webkit-scrollbar {
+            display: none;
+        }
+
+        .filter-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            white-space: nowrap;
+            margin-right: 0.25rem;
+        }
+
+        .filter-count {
+            margin-left: auto;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            white-space: nowrap;
+            padding-left: 1rem;
+        }
+
+        .filter-count strong {
+            color: #000;
+        }
+
+        /* ---- Property grid (richer cards) ---- */
+        .properties-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lodge-grid.is-grid-plus {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .lodge-card.card-plus {
+            padding: 0;
+            border-top: none;
+            overflow: hidden;
+            cursor: default;
+            position: relative;
+        }
+
+        .lodge-card.card-plus:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+            border-top-color: transparent;
+            border-top-width: 0;
+        }
+
+        .lodge-card.card-plus img {
+            margin-bottom: 0;
+            border-radius: 0;
+            aspect-ratio: 16 / 10;
+        }
+
+        .card-body {
+            padding: 1.25rem 1.25rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .card-head {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-head h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            color: #000;
+            margin: 0;
+            line-height: 1.25;
+        }
+
+        .price-band {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+        }
+
+        .price-band .dim {
+            color: #bbb;
+        }
+
+        .property-type.type-inline {
             margin-bottom: 0.75rem;
         }
 
-        .pros-cons ul {
-            list-style: none;
-            padding: 0;
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem 1rem;
+            font-size: 0.78rem;
+            color: #555;
+            margin-bottom: 0.6rem;
+        }
+
+        .card-meta svg {
+            vertical-align: -3px;
+            margin-right: 0.3rem;
+        }
+
+        .card-body p.card-desc {
+            color: var(--charcoal-light);
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0 0 0.85rem;
+        }
+
+        .amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .amenity {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.2rem 0.55rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .card-foot {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            padding-top: 0.85rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .compare-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #444;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .compare-toggle input {
+            accent-color: #000;
+            width: 14px;
+            height: 14px;
+        }
+
+        .card-foot .lodge-card-guide {
             margin: 0;
         }
 
-        .pros-cons ul li {
-            padding: 0.4rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            color: var(--granite);
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        .pros-col-gain ul li::before {
-            content: "\2713";
+        .card-pin {
             position: absolute;
-            left: 0;
-            color: #000000;
+            top: 0.6rem;
+            left: 0.6rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
             font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
         }
 
-        .pros-col-trade ul li::before {
-            content: "\26A0";
+        .lodge-card[hidden] {
+            display: none !important;
+        }
+
+        .empty-state {
+            display: none;
+            padding: 3rem 1rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+            border: 1px dashed rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+        }
+
+        .empty-state.is-visible {
+            display: block;
+        }
+
+        /* ---- Compare matrix ---- */
+        .matrix-section {
+            background: #f8f8f8;
+            padding: 3.5rem 2rem;
+        }
+
+        .matrix-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .matrix-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .matrix-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0;
+        }
+
+        .matrix-count {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .matrix-scroll {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .matrix {
+            width: 100%;
+            min-width: 720px;
+            border-collapse: collapse;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .matrix thead th {
+            text-align: left;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #666;
+            font-weight: 700;
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fafafa;
+        }
+
+        .matrix tbody td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            color: #333;
+            vertical-align: top;
+        }
+
+        .matrix tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .matrix tbody .prop-name {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            color: #000;
+            font-size: 0.95rem;
+        }
+
+        .matrix tbody .prop-name a {
+            color: #000;
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 0, 0, 0.2);
+            text-underline-offset: 3px;
+        }
+
+        .matrix tbody .prop-name a:hover {
+            text-decoration-color: #000;
+        }
+
+        .matrix .ok { color: #000; font-weight: 600; }
+        .matrix .no { color: #aaa; }
+
+        .matrix-empty {
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        /* ---- Map block ---- */
+        .map-section {
+            padding: 3.5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-head {
+            margin-bottom: 1.5rem;
+        }
+
+        .map-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.35rem;
+        }
+
+        .map-head p {
+            color: #555;
+            font-size: 0.9rem;
+            max-width: 600px;
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .map-figure {
+            background: #f0efeb;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .map-svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .map-legend {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        .map-legend li {
+            display: grid;
+            grid-template-columns: 28px 1fr;
+            gap: 0.75rem;
+            align-items: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            color: #333;
+        }
+
+        .map-legend .lg-pin {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-legend a {
+            color: #000;
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 0, 0, 0.2);
+            text-underline-offset: 3px;
+        }
+
+        .map-legend a:hover { text-decoration-color: #000; }
+
+        .map-footnote {
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 1rem;
+        }
+
+        /* ---- Editor's Call ---- */
+        .editor-section {
+            background: #111;
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+
+        .editor-wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .editor-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.6rem, 2.4vw, 2rem);
+            margin: 0 0 2rem;
+            color: #fff;
+        }
+
+        .editor-picks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .editor-pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .editor-pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .editor-pick .pick-answer {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .editor-pick .pick-answer a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .editor-pick .pick-answer a:hover {
+            color: #fff;
+            text-decoration-color: #fff;
+        }
+
+        /* ---- Practical notes accordion ---- */
+        .notes-section {
+            padding: 4rem 2rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .notes-section h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+
+        .note {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .note:last-of-type {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .note > summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .note > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .note > summary::after {
+            content: '+';
             position: absolute;
-            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+            transition: transform 0.2s ease;
+        }
+
+        .note[open] > summary::after {
+            content: '−';
+        }
+
+        .note > summary:hover {
+            color: #444;
+        }
+
+        .note .note-body {
+            padding: 0 2rem 1.25rem 0;
+            color: #444;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .note .note-body p + p {
+            margin-top: 0.65rem;
+        }
+
+        /* ---- Rentals handoff ---- */
+        .rentals-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+        }
+
+        .rentals-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .rentals-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .rentals-wrap p {
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0 0 1.25rem;
+        }
+
+        .rentals-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .rentals-buttons a {
+            min-height: 44px;
+        }
+
+        .rentals-stat {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .rentals-stat .big {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000;
+            display: block;
+            line-height: 1;
+        }
+
+        .rentals-stat .mid {
+            font-family: 'IBM Plex Sans', sans-serif;
             font-size: 0.8rem;
-            color: #444444;
+            color: #555;
+            display: block;
+            margin-top: 0.5rem;
         }
 
-        .cta-container h2 {
-            color: #000000;
+        .rentals-stat hr {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            margin: 1rem 0;
         }
 
+        /* ---- TOC active state ---- */
+        .toc-pill[aria-current="true"] {
+            background: #000;
+            color: #fff;
+        }
+
+        /* ---- Footer override ---- */
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        /* ---- Responsive ---- */
         @media (max-width: 1024px) {
+            .hero-split-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
 
-            .pros-cons {
+            .hero.hero-split {
+                padding: 4rem 2rem;
+            }
+
+            .lodge-grid.is-grid-plus {
                 grid-template-columns: repeat(2, 1fr);
             }
-        }
 
-        @media (max-width: 768px) {
+            .stats-strip-inner {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem 1rem;
+            }
 
-            .pros-cons {
+            .editor-picks {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .map-grid {
                 grid-template-columns: 1fr;
             }
 
-            .property-contact {
-                flex-direction: column;
-                gap: 0.4rem;
+            .rentals-wrap {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
             }
-
         }
 
-        /* "Search Vacation Rentals" button — custom hover */
-        a.btn-secondary[href*="vrbo.com"]:hover {
-            background: #000;
-            color: coral;
+        @media (max-width: 640px) {
+            .hero.hero-split {
+                padding: 3rem 1.25rem;
+                min-height: 0;
+            }
+
+            .finder {
+                padding: 1.25rem;
+            }
+
+            .stats-strip {
+                padding: 1.25rem 1rem;
+            }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .lodge-grid.is-grid-plus {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-rail {
+                padding: 0.6rem 1rem;
+            }
+
+            .filter-count {
+                display: none;
+            }
+
+            .properties-section,
+            .map-section,
+            .matrix-section,
+            .editor-section,
+            .notes-section,
+            .rentals-section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
         }
     </style>
 </head>
@@ -184,24 +1022,22 @@
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-    <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+    <!-- HEADER (paths relative to /stay/) -->
     <header class="site-header" role="banner">
         <div class="header-inner">
-
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
                 <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html" aria-current="page">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
@@ -212,585 +1048,647 @@
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
         <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
-        <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
-            Home</a>
-        </a><a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+        <a href="../events/top-events.html">Events</a>
+        <a href="../resources/resources.html">Resources</a>
+        <a href="../resources/contact.html">Contact</a>
     </nav>
 
-
-    <!-- ════════════════════════════════════════════ HERO ════════════════════════════════════════════ -->
-    <section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Cloudcroft lodging guide hero background"></div>
+    <!-- HERO (2-up: photo + finder) -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="The Lodge at Cloudcroft, the village's 1899 flagship property"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>2026 Lodging Guide</span>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">2026 Lodging Guide</span>
+                <h1>Where to stay in Cloudcroft.</h1>
+                <p class="hero-deck">Cloudcroft is a village, not a chain-hotel market. Nine named properties, 148+ vacation rentals, and a choice that comes down to what you want the trip to feel like.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
             </div>
-            <h1 class="hero-title">
-                <span class="word">Where </span>
-                <span class="word">to </span>
-                <span class="word">Stay </span>
-                <span class="word">in </span>
-                <span class="word">Cloudcroft</span>
-            </h1>
-            <p class="hero-subtitle">Not a chain-hotel market. A mountain village where lodging is historic properties,
-                cabin clusters, B&amp;Bs, and 148+ vacation rentals. This guide covers every option.</p>
-            <div class="hero-ctas">
-                <a href="#properties" class="btn-primary">Browse Properties</a>
-                <a href="#picks" class="btn-secondary">Editor's Picks</a>
+            <div class="hero-right">
+                <form class="finder" aria-label="Find my stay" id="finder" onsubmit="return false;">
+                    <h2>Find my stay</h2>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-vibe">Vibe</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-vibe" data-filter-group="vibe">
+                            <button type="button" class="chip" data-value="historic" aria-pressed="false">Historic</button>
+                            <button type="button" class="chip" data-value="cabin" aria-pressed="false">Cabin</button>
+                            <button type="button" class="chip" data-value="hotel" aria-pressed="false">Hotel</button>
+                            <button type="button" class="chip" data-value="bnb" aria-pressed="false">B&amp;B</button>
+                            <button type="button" class="chip" data-value="hostel" aria-pressed="false">Hostel</button>
+                            <button type="button" class="chip" data-value="motel" aria-pressed="false">Motel</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-group">Group</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-group" data-filter-group="group">
+                            <button type="button" class="chip" data-value="couple" aria-pressed="false">Couple</button>
+                            <button type="button" class="chip" data-value="family" aria-pressed="false">Family</button>
+                            <button type="button" class="chip" data-value="solo" aria-pressed="false">Solo</button>
+                            <button type="button" class="chip" data-value="group" aria-pressed="false">Group 6+</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-budget">Budget</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-budget" data-filter-group="budget">
+                            <button type="button" class="chip" data-value="1" aria-pressed="false">$</button>
+                            <button type="button" class="chip" data-value="2" aria-pressed="false">$$</button>
+                            <button type="button" class="chip" data-value="3" aria-pressed="false">$$$</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-pets">Traveling with pets?</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-pets" data-filter-group="pets">
+                            <button type="button" class="chip" data-value="yes" aria-pressed="false">Yes</button>
+                            <button type="button" class="chip" data-value="no" aria-pressed="false">No</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-actions">
+                        <a href="#properties" class="btn-primary">Show matches</a>
+                        <button type="button" class="finder-clear" id="finder-clear">Clear</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════ INFO BAR ════════════════════════════════════════════ -->
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F3E8;</div>
-                <span>9 Named Properties</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F3E1;</div>
-                <span>148+ Vacation Rentals</span>
-            </div>
-
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F332;</div>
-                <span>Cabin-Driven Market</span>
-            </div>
+    <!-- STATS STRIP (replaces emoji info bar) -->
+    <div class="stats-strip" aria-label="Market at a glance">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">9</span><span class="stat-label">Named properties</span></div>
+            <div class="stat"><span class="stat-num">148+</span><span class="stat-label">Vacation rentals</span></div>
+            <div class="stat"><span class="stat-num">~$192</span><span class="stat-label">Median nightly (AirDNA)</span></div>
+            <div class="stat"><span class="stat-num">8,676 ft</span><span class="stat-label">Elevation</span></div>
+            <div class="stat"><span class="stat-num">4</span><span class="stat-label">Walkable to Burro Ave</span></div>
         </div>
     </div>
 
-    <!-- ════════════════════════════════════════════ STICKY TOC NAV ════════════════════════════════════════════ -->
+    <!-- STICKY TOC NAV -->
     <nav class="toc-nav" aria-label="Table of contents">
         <div class="toc-nav-inner">
-            <a href="#overview" class="toc-pill">Overview</a>
             <a href="#properties" class="toc-pill">Properties</a>
-            <a href="#rentals" class="toc-pill">Cabins &amp; Rentals</a>
+            <a href="#map" class="toc-pill">Map</a>
             <a href="#compare" class="toc-pill">Compare</a>
-            <a href="#tips" class="toc-pill">Tips</a>
-            <a href="#picks" class="toc-pill">Editor's Picks</a>
-
+            <a href="#editor" class="toc-pill">Editor's Call</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
+            <a href="#rentals" class="toc-pill">Rentals</a>
         </div>
     </nav>
 
     <main id="main-content" role="main">
 
-        <div class="updated-stamp-wrap">
-            <span class="updated-stamp">Last updated · April 2026</span>
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>The real choice isn't hotel vs. hotel. It's history, walkability, cabin privacy, a practical basecamp, or room for the whole group.</p>
+            <span class="thesis-meta">Price bands are editorial estimates. Always confirm current rates and policies with the property.</span>
         </div>
 
-        <!-- ════════════════════════════════════════════ 01 MARKET OVERVIEW ════════════════════════════════════════════ -->
-        <section class="section" id="overview" aria-label="Market overview">
-            <div class="section-container">
-                <div style="text-align: center;">
-
-                    <span class="section-label">The Market</span>
-                    <h2 class="section-title section-title-centered">Cloudcroft Lodging at a Glance</h2>
+        <!-- FILTER RAIL (synced with hero finder) -->
+        <div class="filter-rail" id="filter-rail" aria-label="Filter properties">
+            <div class="filter-rail-inner">
+                <span class="filter-label">Filter</span>
+                <div class="chip-row" role="group" aria-label="Filter chips" data-filter-group="rail">
+                    <button type="button" class="chip" data-rail="historic" aria-pressed="false">Historic</button>
+                    <button type="button" class="chip" data-rail="cabin" aria-pressed="false">Cabin</button>
+                    <button type="button" class="chip" data-rail="hotel" aria-pressed="false">Hotel</button>
+                    <button type="button" class="chip" data-rail="bnb" aria-pressed="false">B&amp;B</button>
+                    <button type="button" class="chip" data-rail="walkable" aria-pressed="false">Walkable</button>
+                    <button type="button" class="chip" data-rail="pets" aria-pressed="false">Pet-friendly</button>
+                    <button type="button" class="chip" data-rail="dining" aria-pressed="false">On-site dining</button>
+                    <button type="button" class="chip" data-rail="kitchen" aria-pressed="false">Kitchen</button>
+                    <button type="button" class="chip" data-rail="under200" aria-pressed="false">Under $200</button>
+                    <button type="button" class="chip" data-rail="sleeps4" aria-pressed="false">Sleeps 4+</button>
                 </div>
-
-                <div class="fade-in" style="max-width: 800px; margin: 0 auto 2rem auto;">
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        Cloudcroft is not a chain-hotel market. It is a small mountain village where the lodging mix
-                        leans toward historic properties, cabin clusters, small independent motels, bed-and-breakfasts,
-                        and a large layer of short-term rentals. That is part of the appeal. It also means travelers
-                        need to adjust expectations. You come here for pine air, elevation, quiet, and character &mdash;
-                        not for uniform brand standards or a deep bench of late-night services.
-                    </p>
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        For most travelers, the real choice is not simply hotel versus hotel. It is whether you want
-                        history, walkability, cabin privacy, a simple basecamp, or more room for family and friends. The
-                        booking logic is different here. Travelers looking for a classic &ldquo;hotel stay&rdquo; have
-                        limited choices. Travelers willing to book a cabin, condo, or professionally managed short-term
-                        rental have many more.
-                    </p>
-                </div>
-
+                <span class="filter-count"><strong id="filter-count-n">8</strong> of 8 shown</span>
             </div>
-        </section>
+        </div>
 
-        <!-- ════════════════════════════════════════════ 02 PROPERTIES ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="properties" aria-label="Lodging properties">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-num">02</span>
-                    <span class="section-label">Where to Stay</span>
-                    <h2 class="section-title section-title-centered">Best-Known Lodging Options</h2>
-                </div>
+        <!-- ================================ PROPERTIES ================================ -->
+        <section class="properties-section" id="properties" aria-label="Lodging properties">
 
-                <div class="fade-in" style="max-width: 800px; margin: 0 auto 2rem auto;">
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        Cloudcroft&rsquo;s lodging market runs from a historic 1899 resort to budget hostels, with cabin
-                        clusters, B&amp;Bs, motels, and a large rental layer in between. Each property has a different
-                        personality and a different guest fit. Below are the best-known options &mdash; click through
-                        for full booking guides with rooms, photos, and what to verify before you book.
-                    </p>
-                </div>
+            <div class="lodge-grid is-grid-plus" id="lodge-grid">
 
-                <div class="lodge-grid">
-
-                    <div class="lodge-card">
-                        <img src="stay-photo/photo-the-lodge/cloudcroft-lodge-horses-blue-sky.jpg"
-                            alt="The Lodge at Cloudcroft exterior" loading="lazy">
-                        <h3>The Lodge at Cloudcroft</h3>
-                        <span class="property-type">Historic Resort</span>
-                        <p>Cloudcroft&rsquo;s signature stay since 1899. On-site dining at 1899, golf course, pool, and
-                            the most iconic atmosphere in town. Best for couples, golfers, and destination weekenders.
-                        </p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; 601 Corona Place<br>
-                            &#x1F310; <a href="https://www.223collectionhotels.com/the-lodge" target="_blank"
-                                rel="noopener noreferrer">223collectionhotels.com</a>
+                <!-- 1. The Lodge at Cloudcroft -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="lodge"
+                    data-types="historic hotel"
+                    data-groups="couple family"
+                    data-price="3"
+                    data-walkable="true"
+                    data-pets="unknown"
+                    data-dining="true"
+                    data-kitchen="false"
+                    data-sleeps4="true">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <img src="stay-photo/photo-the-lodge/cloudcroft-lodge-horses-blue-sky.jpg"
+                        alt="The Lodge at Cloudcroft — 1899 Bavarian-style exterior with horses in the foreground"
+                        loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>The Lodge at Cloudcroft</h3>
+                            <span class="price-band" aria-label="Price band three of three">$$$</span>
                         </div>
-                        <a href="guide-to-the-lodge-at-cloudcroft-2026.html" class="lodge-card-guide">Read full guide
-                            &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <img src="stay-photo/photo-grand-hotel/grand-hotel-00256.jpg"
-                            alt=" The Grand Cloudcroft Hotel exterior" loading="lazy">
-                        <h3>The Grand Cloudcroft Hotel</h3>
-                        <span class="property-type">Hotel</span>
-                        <p>A more conventional independent hotel on James Canyon Highway. Standard rooms with Wi-Fi,
-                            work desk, mini fridge, and ADA options. Best for travelers who want a simple, practical
-                            hotel setup.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; 1207 James Canyon Hwy<br>
-                            &#x1F310; <a href="https://www.grandcloudcroft.com/" target="_blank"
-                                rel="noopener noreferrer">grandcloudcroft.com</a>
+                        <span class="property-type type-inline">Historic resort</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>601 Corona Pl · ~10 min to Burro</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v12H3z"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>Sleeps 2–6</span>
                         </div>
-                        <a href="stay-grand-cloudcroft-hotel.html" class="lodge-card-guide">Read full guide &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00559.jpeg"
-                            alt="Dusty Boots Motel and Cafe exterior" loading="lazy">
-                        <h3>Dusty Boots Motel &amp; Caf&eacute;</h3>
-                        <span class="property-type">Motel &amp; Caf&eacute;</span>
-                        <p>A themed, small-scale motel with an attached caf&eacute; serving homemade food. Quirky,
-                            nostalgic, and more personal than polished. Best for travelers who like roadside character
-                            with on-site breakfast.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; 1315 James Canyon Hwy<br>
-                            &#x1F310; <a href="https://www.thedustyboots.com/" target="_blank"
-                                rel="noopener noreferrer">thedustyboots.com</a>
+                        <p class="card-desc">Cloudcroft's signature stay since 1899. On-site dining at 1899, golf course, pool, and the most iconic atmosphere in town. Best for couples, golfers, destination weekenders.</p>
+                        <div class="amenities">
+                            <span class="amenity">On-site dining</span>
+                            <span class="amenity">Golf</span>
+                            <span class="amenity">Pool</span>
+                            <span class="amenity">Walkable</span>
+                            <span class="amenity">Historic</span>
                         </div>
-                        <a href="stay-dusty-boots-motel-cloudcroft.html" class="lodge-card-guide">Read full guide
-                            &rarr;</a>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="lodge"> Compare</label>
+                            <a href="stay-the-lodge-at-cloudcroft-2026.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
                     </div>
+                </article>
 
-                    <div class="lodge-card">
-                        <a href="stay/cabins-at-cloudcroft.html">
-                            <img src="stay-photo/photo-cabins-at/cabins-at-00451.JPG" alt="The Cabins at Cloudcroft"
-                                loading="lazy">
+                <!-- 2. The Grand Cloudcroft Hotel -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="grand"
+                    data-types="hotel"
+                    data-groups="couple family solo"
+                    data-price="2"
+                    data-walkable="false"
+                    data-pets="yes"
+                    data-dining="false"
+                    data-kitchen="false"
+                    data-sleeps4="true">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <img src="stay-photo/photo-grand-hotel/grand-hotel-00256.jpg"
+                        alt="The Grand Cloudcroft Hotel exterior along James Canyon Highway"
+                        loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>The Grand Cloudcroft Hotel</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Hotel</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>1207 James Canyon Hwy · drive to village</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v12H3z"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>Sleeps 2–4</span>
+                        </div>
+                        <p class="card-desc">A conventional independent hotel. Standard rooms with Wi-Fi, work desk, mini fridge, ADA options, and listed pet rooms. The cleanest fit if you just want a practical room.</p>
+                        <div class="amenities">
+                            <span class="amenity">Wi-Fi</span>
+                            <span class="amenity">ADA rooms</span>
+                            <span class="amenity">Pet rooms</span>
+                            <span class="amenity">Parking</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="grand"> Compare</label>
+                            <a href="stay-grand-cloudcroft-hotel.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
 
+                <!-- 3. Dusty Boots Motel & Cafe -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="dusty"
+                    data-types="motel"
+                    data-groups="couple solo"
+                    data-price="2"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-dining="true"
+                    data-kitchen="false"
+                    data-sleeps4="false">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <img src="stay-photo/photo-dusty-boots-motel/dusty-boots-00559.jpeg"
+                        alt="Dusty Boots Motel and Cafe themed exterior along James Canyon Highway"
+                        loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Dusty Boots Motel &amp; Caf&eacute;</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Motel &amp; caf&eacute;</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>1315 James Canyon Hwy · drive to village</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v12H3z"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>Sleeps 2</span>
+                        </div>
+                        <p class="card-desc">A themed, small-scale motel with an attached caf&eacute; serving homemade food. Quirky and personal rather than polished — good for travelers who like roadside character.</p>
+                        <div class="amenities">
+                            <span class="amenity">Caf&eacute; on-site</span>
+                            <span class="amenity">Themed rooms</span>
+                            <span class="amenity">Parking</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="dusty"> Compare</label>
+                            <a href="stay-dusty-boots-motel-cloudcroft.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. The Cabins at Cloudcroft -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="cabins"
+                    data-types="cabin"
+                    data-groups="family couple group"
+                    data-price="2"
+                    data-walkable="true"
+                    data-pets="unknown"
+                    data-dining="false"
+                    data-kitchen="true"
+                    data-sleeps4="true">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <img src="stay-photo/photo-cabins-at/cabins-at-00451.JPG"
+                        alt="A private cabin at The Cabins at Cloudcroft under tall ponderosa pines"
+                        loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
                             <h3>The Cabins at Cloudcroft</h3>
-                            <span class="property-type">Cabin Resort</span>
-                            <p>A professionally run cabin cluster in town with kitchens, fireplaces, and a unified
-                                booking
-                                engine. The cleanest middle ground between a hotel and a vacation rental. Best for
-                                families
-                                and couples wanting cabin privacy.</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; 1006 Coyote Ave<br>
-                            &#x1F310; <a href="https://www.cabinsatcloudcroft.com/" target="_blank"
-                                rel="noopener noreferrer">cabinsatcloudcroft.com</a>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
                         </div>
-                        <a href="stay-cabins-at-cloudcroft.html" class="lodge-card-guide">Read full guide &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <img src="stay-photo/photo-crofting-inn/crofting-inn-front.jpg"
-                            alt="The Crofting Bed and Breakfast exterior" loading="lazy">
-                        <h3>The Crofting B&amp;B</h3>
-                        <span class="property-type">B&amp;B</span>
-                        <p>A 1909 historic house with 8 individually furnished rooms, private balconies, and home-cooked
-                            breakfast. Intimate, quiet, and host-driven. Best for couples and travelers who want
-                            character over convenience.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; 300 Swallow Place<br>
-                            &#x1F310; <a href="https://www.thecrofting.com/" target="_blank"
-                                rel="noopener noreferrer">thecrofting.com</a>
+                        <span class="property-type type-inline">Cabin resort</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>1006 Coyote Ave · ~7 min to Burro</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v12H3z"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>Sleeps 2–8</span>
                         </div>
-                        <a href="stay-crofting-inn-cloudcroft.html" class="lodge-card-guide">Read full guide &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <img src="stay-photo/photo-summit-inn/IMG_5063.jpg"
-                            alt="The Summit Inn renovated room in Cloudcroft" loading="lazy">
-                        <h3>The Summit Inn</h3>
-                        <span class="property-type">Inn</span>
-                        <p>A small, renovated, owner-run inn with 10 rooms, kitchenettes in every room, free Wi-Fi, and
-                            free parking. Walking distance to Burro Avenue. Best for budget-conscious travelers who want
-                            a practical base in town.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; 103 Chipmunk Ave<br>
-                            &#x1F310; <a href="https://www.summitinnnm.com" target="_blank"
-                                rel="noopener noreferrer">summitinnnm.com</a>
+                        <p class="card-desc">A professionally run cabin cluster in town with kitchens, fireplaces, and a unified booking engine. The cleanest middle ground between a hotel and a vacation rental.</p>
+                        <div class="amenities">
+                            <span class="amenity">Kitchen</span>
+                            <span class="amenity">Fireplace</span>
+                            <span class="amenity">Walkable</span>
+                            <span class="amenity">Family-friendly</span>
                         </div>
-                        <a href="stay-at-the-summit-inn-Cloudcroft-2026.html" class="lodge-card-guide">Read full guide
-                            &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <img src="stay-photo/photo-hostel/cloudcroft-hostel-2.jpg"
-                            alt="Cloudcroft Hostel exterior from trail" loading="lazy">
-                        <h3>Cloudcroft Hostel</h3>
-                        <span class="property-type">Hostel</span>
-                        <p>A genuine mountain hostel on Highway 82 in High Rolls with dorm beds, private dorms, group
-                            rentals for up to 25, a shared kitchen, and trails from the door. The most budget-friendly
-                            option near Cloudcroft.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; 1049 Hwy 82, High Rolls<br>
-                            &#x1F310; <a href="https://www.cloudcrofthostel.com/" target="_blank"
-                                rel="noopener noreferrer">cloudcrofthostel.com</a>
-                        </div>
-                        <a href="stay-at-cloudcroft-hostel-2026.html" class="lodge-card-guide">Read full guide
-                            &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <img src="stay-photo/photo-burro-boardinghouse/burro-boarding-house-00024.jpg"
-                            alt="Burro Street Boarding House exterior from trail" loading="lazy">
-                        <h3>Burro Street Boarding House</h3>
-                        <span class="property-type">B&amp;B</span>
-                        <p>A long-running B&amp;B on Burro Avenue &mdash; one of the most central locations in town.
-                            Limited web presence; call directly for current availability and details.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; 608 Burro Ave
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="cabins"> Compare</label>
+                            <a href="stay-cabins-at-cloudcroft.html" class="lodge-card-guide">Read full guide &rarr;</a>
                         </div>
                     </div>
+                </article>
 
+                <!-- 5. The Crofting B&B -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="crofting"
+                    data-types="bnb historic"
+                    data-groups="couple solo"
+                    data-price="2"
+                    data-walkable="true"
+                    data-pets="unknown"
+                    data-dining="true"
+                    data-kitchen="false"
+                    data-sleeps4="false">
+                    <span class="card-pin" aria-hidden="true">5</span>
+                    <img src="stay-photo/photo-crofting-inn/crofting-inn-front.jpg"
+                        alt="The Crofting Bed and Breakfast — a 1909 historic house exterior"
+                        loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>The Crofting B&amp;B</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Bed &amp; breakfast</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>300 Swallow Pl · ~8 min to Burro</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v12H3z"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>Sleeps 2 · 8 rooms</span>
+                        </div>
+                        <p class="card-desc">A 1909 historic house with 8 individually furnished rooms, private balconies, and home-cooked breakfast. Intimate, quiet, host-driven — character over convenience.</p>
+                        <div class="amenities">
+                            <span class="amenity">Breakfast</span>
+                            <span class="amenity">Historic</span>
+                            <span class="amenity">Balconies</span>
+                            <span class="amenity">Walkable</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="crofting"> Compare</label>
+                            <a href="stay-crofting-inn-cloudcroft.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
 
-                </div>
-        </section>
+                <!-- 6. The Summit Inn -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="summit"
+                    data-types="hotel"
+                    data-groups="couple solo family"
+                    data-price="1"
+                    data-walkable="true"
+                    data-pets="unknown"
+                    data-dining="false"
+                    data-kitchen="true"
+                    data-sleeps4="false">
+                    <span class="card-pin" aria-hidden="true">6</span>
+                    <img src="stay-photo/photo-summit-inn/IMG_5063.jpg"
+                        alt="A renovated room at The Summit Inn in Cloudcroft"
+                        loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>The Summit Inn</h3>
+                            <span class="price-band" aria-label="Price band one of three">$<span class="dim">$$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Inn</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>103 Chipmunk Ave · ~4 min to Burro</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v12H3z"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>Sleeps 2–3 · 10 rooms</span>
+                        </div>
+                        <p class="card-desc">A small, renovated, owner-run inn with 10 rooms, kitchenettes in every room, free Wi-Fi and parking. The most central budget option, walkable to Burro Avenue.</p>
+                        <div class="amenities">
+                            <span class="amenity">Kitchenette</span>
+                            <span class="amenity">Wi-Fi</span>
+                            <span class="amenity">Free parking</span>
+                            <span class="amenity">Walkable</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="summit"> Compare</label>
+                            <a href="stay-the-summit-inn-Cloudcroft-2026.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
 
-        <section style="padding:3vh 10vw;">
-            <div class="market-grid">
-                <div class="market-card" style="background:transparent">
-                    <h3>Historic Stays</h3>
-                    <p>The Lodge and character properties book first. These are the stays most tied to Cloudcroft's
-                        identity.</p>
-                </div>
-                <div class="market-card" style="background:transparent">
-                    <h3>In-Town Cabins</h3>
-                    <p>Walkable cabin properties fill quickly. They combine cabin atmosphere with village
-                        convenience.</p>
-                </div>
-                <div class="market-card" style="background:transparent">
-                    <h3>Event Weekends</h3>
-                    <p>Holidays, festivals, fall color, and summer peaks drive the highest demand across the market.
-                    </p>
-                </div>
+                <!-- 7. Cloudcroft Hostel -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="hostel"
+                    data-types="hostel"
+                    data-groups="solo group family"
+                    data-price="1"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-dining="false"
+                    data-kitchen="true"
+                    data-sleeps4="true">
+                    <span class="card-pin" aria-hidden="true">7</span>
+                    <img src="stay-photo/photo-hostel/cloudcroft-hostel-2.jpg"
+                        alt="Cloudcroft Hostel exterior with access to the surrounding trails"
+                        loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Cloudcroft Hostel</h3>
+                            <span class="price-band" aria-label="Price band one of three">$<span class="dim">$$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Hostel</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>1049 Hwy 82, High Rolls · drive to village</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v12H3z"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>Sleeps 1–25</span>
+                        </div>
+                        <p class="card-desc">A genuine mountain hostel on Highway 82 with dorm beds, private dorms, group rentals for up to 25, a shared kitchen, and trails from the door. The most budget-friendly option near Cloudcroft.</p>
+                        <div class="amenities">
+                            <span class="amenity">Shared kitchen</span>
+                            <span class="amenity">Dorm beds</span>
+                            <span class="amenity">Group rental</span>
+                            <span class="amenity">Trail access</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="hostel"> Compare</label>
+                            <a href="stay-cloudcroft-hostel-2026.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. Burro Street Boarding House -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="burro"
+                    data-types="bnb"
+                    data-groups="couple solo"
+                    data-price="2"
+                    data-walkable="true"
+                    data-pets="unknown"
+                    data-dining="false"
+                    data-kitchen="false"
+                    data-sleeps4="false">
+                    <span class="card-pin" aria-hidden="true">8</span>
+                    <img src="stay-photo/photo-burro-boardinghouse/burro-boarding-house-00024.jpg"
+                        alt="Burro Street Boarding House on Burro Avenue in Cloudcroft village center"
+                        loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Burro Street Boarding House</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Bed &amp; breakfast</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>608 Burro Ave · on Burro</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v12H3z"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>Call for details</span>
+                        </div>
+                        <p class="card-desc">A long-running B&amp;B on Burro Avenue — one of the most central locations in town. Limited web presence; call directly for current availability and details.</p>
+                        <div class="amenities">
+                            <span class="amenity">On Burro Ave</span>
+                            <span class="amenity">Historic</span>
+                            <span class="amenity">Walkable</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="burro"> Compare</label>
+                            <a href="stay-burro-street-boardinghouse.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
 
             </div>
 
-            <div class="tip-box" style="background:transparent">
-                <span>&#x1F4A1;</span>
-                <p><strong>Seasonality matters.</strong> Summer and early fall are prime. Winter is conditional
-                    &mdash; snow, road conditions, and Ski Cloudcroft operations vary. Shoulder seasons are quieter
-                    and easier to book.</p>
-            </div>
-        </section>
-        <!-- ════════════════════════════════════════════ 03 CABINS & RENTALS ════════════════════════════════════════════ -->
-        <section class="section" style="padding:3vh 10vw;background-color:#f9f9f9" id="rentals"
-            aria-label="Cabins and short-term rentals">
-            <div class="section-container">
-                <div style="text-align: center;">
-
-                    <span class="section-label">Cabins &amp; Rentals</span>
-                    <h2 class="section-title section-title-centered">Cabins, Condos &amp; Short-Term Rentals</h2>
-                </div>
-
-                <div class="rental-section fade-in" style="max-width: 800px; margin: 0 auto;">
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        This is a major part of Cloudcroft's lodging market, not a side note. AirDNA pegs the combined
-                        Airbnb/Vrbo market at about 296 listings, averaging around $192 per night with guest ratings
-                        near 4.9/5, and Vrbo alone shows more than 148 Cloudcroft vacation-rental properties &mdash;
-                        which helps explain why the market feels broader online than it does if you look only at
-                        traditional hotels.
-                    </p>
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        The biggest practical divide isn't price &mdash; it's style of stay. Some cabins are walkable to
-                        the village core; others are basecamps in the wider Cloudcroft, Mayhill, and High Rolls corridor
-                        that work best if you're driving everywhere. Alongside cabins and vacation homes, the broader
-                        market also includes RV parks and Lincoln National Forest campgrounds for travelers who want a
-                        non-hotel stay.
-                    </p>
-                </div>
-
-
-                <div style="text-align: center; margin: 2vhm;">
-                    <a href="complete-guide-to-other-lodging-in-cloudcroft-2026.html" class="btn-primary">Explore
-                        Cabins, RV Parks &amp; Campgrounds</a>
-                </div>
-
-                <div class="tip-box">
-                    <span>&#x1F4A1;</span>
-                    <p><strong>The short version:</strong> If you want the most Cloudcroft-like stay, a cabin is often
-                        the right answer. If you want the least friction, a hotel or B&amp;B may still be smarter.</p>
-                </div>
-
-
+            <div class="empty-state" id="empty-state" role="status">
+                No properties match your filters. Try clearing a chip or two — Cloudcroft is small, and some combinations have no match.
             </div>
         </section>
 
-        <!-- ════════════════════════════════════════════ 04 COMPARE ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="compare" aria-label="Compare lodging options">
-            <div class="section-container" background-color:#f9f6f0">
-                <div style="text-align: center;">
-
-                    <span class="section-label">Head to Head</span>
-                    <h2 class="section-title section-title-centered">How the Main Options Compare</h2>
-                </div>
-
-                <div class="compare-grid">
-                    <div class="compare-card">
-                        <h3>Best Historic Stay</h3>
-                        <p><a class="pick-name" href="stay-the-lodge-at-cloudcroft-2026.html">The Lodge at
-                                Cloudcroft</a> &mdash; This is the clearest
-                            &ldquo;come for the property itself&rdquo; stay.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Classic Cloudcroft Trip</h3>
-                        <p><a class="pick-name" href="stay-the-lodge-at-cloudcroft-2026.html">The Lodge at
-                                Cloudcroft</a> or <a class="pick-name" href="stay-cabins-at-cloudcroft.html">The Cabins
-                                at Cloudcroft</a> &mdash; Pick The Lodge for history and on-site dining. Pick The
-                            Cabins for pine-town cabin atmosphere.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best for Families</h3>
-                        <p><a class="pick-name" href="stay-cabins-at-cloudcroft.html">The Cabins at Cloudcroft</a>
-                            &mdash; Cabin format, space, and a
-                            more flexible family setup make this a strong default choice.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best for Couples</h3>
-                        <p><a class="pick-name" href="stay-the-lodge-at-cloudcroft-2026.html">The Lodge at
-                                Cloudcroft</a> or <a class="pick-name" href="stay-crofting-inn-cloudcroft.html">The
-                                Crofting B&amp;B</a> &mdash; The Lodge is better for a romantic weekend with dinner
-                            and drinks. The Crofting is better for a quieter B&amp;B stay.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Simple Overnight</h3>
-                        <p><a class="pick-name" href="stay-grand-cloudcroft-hotel.html">The Grand Cloudcroft Hotel</a>
-                            &mdash; It appears to offer the
-                            most standard hotel-style setup.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Cabin Privacy</h3>
-                        <p><a class="pick-name" href="stay-cabins-at-cloudcroft.html">Cabins at Cloudcroft</a>, <a
-                                class="pick-name" href="stay-spruce-cabins.html">Spruce
-                                Cabins</a>, or <span class="pick-name">Nostalgia Cabins</span> &mdash; Your choice
-                            depends on whether you want a more unified operation or a more group-oriented cabin
-                            compound.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best for Walking to Town</h3>
-                        <p><a class="pick-name" href="stay-the-lodge-at-cloudcroft-2026.html">The Lodge</a>, <a
-                                class="pick-name" href="stay-burro-street-boardinghouse.html">Burro Street Boarding
-                                House</a>, <a class="pick-name" href="stay-the-summit-inn-Cloudcroft-2026.html">The
-                                Summit Inn</a>, and some in-town cabin properties &mdash; Walking convenience varies by
-                            exact property, but these are among the more central-feeling options.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Mountain Atmosphere</h3>
-                        <p><a class="pick-name" href="stay-the-lodge-at-cloudcroft-2026.html">The Lodge at
-                                Cloudcroft</a> and the cabin properties &mdash; The
-                            choice is whether you want historic common spaces or private cabin time.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best for Convenience Over Charm</h3>
-                        <p><a class="pick-name" href="stay-grand-cloudcroft-hotel.html">The Grand Cloudcroft Hotel</a>
-                            &mdash; It looks built around room
-                            utility rather than romance or nostalgia.</p>
-                    </div>
-                </div>
+        <!-- ================================ MAP ================================ -->
+        <section class="map-section" id="map" aria-label="Village map">
+            <div class="map-head">
+                <h2>Where each property sits</h2>
+                <p>Burro Avenue is the commercial core. Four of the eight named properties are walkable to it; the rest are along the highway corridor or in High Rolls.</p>
             </div>
-        </section>
+            <div class="map-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 600 400" role="img" aria-label="Schematic map of Cloudcroft lodging locations">
+                        <defs>
+                            <pattern id="pines" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                                <circle cx="8" cy="8" r="1.2" fill="#c4c9bf"/>
+                                <circle cx="22" cy="20" r="1" fill="#c4c9bf"/>
+                            </pattern>
+                        </defs>
+                        <rect width="600" height="400" fill="#e8eae2"/>
+                        <rect width="600" height="400" fill="url(#pines)"/>
 
-        <!-- ════════════════════════════════════════════ 05 TIPS ════════════════════════════════════════════ -->
-        <section class="section" id="tips" aria-label="Booking tips">
-            <div class="section-container">
-                <div style="text-align: center;">
+                        <!-- Highway 82 / James Canyon Hwy — diagonal -->
+                        <path d="M0 330 L600 80" stroke="#9b9b8f" stroke-width="12" opacity="0.55"/>
+                        <path d="M0 330 L600 80" stroke="#fff" stroke-width="2" stroke-dasharray="10 12"/>
+                        <text x="540" y="70" fill="#555" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="700">HWY 82</text>
 
-                    <span class="section-label">Before You Book</span>
-                    <h2 class="section-title section-title-centered">What Travelers Should Know</h2>
+                        <!-- Burro Avenue — short horizontal through village -->
+                        <rect x="210" y="215" width="180" height="10" fill="#8a8a7d" opacity="0.85" rx="2"/>
+                        <text x="300" y="245" fill="#333" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="700">BURRO AVE</text>
+
+                        <!-- Village center shape -->
+                        <rect x="200" y="180" width="200" height="80" fill="#fff" opacity="0.45" rx="6"/>
+
+                        <!-- High Rolls marker -->
+                        <text x="60" y="360" fill="#666" font-family="IBM Plex Sans, sans-serif" font-size="10">HIGH ROLLS →</text>
+
+                        <!-- Pins (match legend order) -->
+                        <!-- 1. The Lodge (Corona Place, SE of village) -->
+                        <g><circle cx="400" cy="260" r="14" fill="#000"/><text x="400" y="264" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">1</text></g>
+                        <!-- 2. Grand (James Canyon Hwy E) -->
+                        <g><circle cx="490" cy="160" r="14" fill="#000"/><text x="490" y="164" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">2</text></g>
+                        <!-- 3. Dusty Boots (James Canyon Hwy further E) -->
+                        <g><circle cx="545" cy="120" r="14" fill="#000"/><text x="545" y="124" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">3</text></g>
+                        <!-- 4. Cabins at Cloudcroft (Coyote Ave, near village) -->
+                        <g><circle cx="250" cy="165" r="14" fill="#000"/><text x="250" y="169" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">4</text></g>
+                        <!-- 5. Crofting (Swallow Place, S of village) -->
+                        <g><circle cx="340" cy="300" r="14" fill="#000"/><text x="340" y="304" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">5</text></g>
+                        <!-- 6. Summit Inn (Chipmunk, very close to village) -->
+                        <g><circle cx="285" cy="195" r="14" fill="#000"/><text x="285" y="199" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">6</text></g>
+                        <!-- 7. Hostel (High Rolls, far west) -->
+                        <g><circle cx="55" cy="320" r="14" fill="#000"/><text x="55" y="324" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">7</text></g>
+                        <!-- 8. Burro Street Boarding House (on Burro Ave) -->
+                        <g><circle cx="300" cy="220" r="14" fill="#000"/><text x="300" y="224" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">8</text></g>
+                    </svg>
                 </div>
-
-                <div class="tip-grid">
-                    <div class="tip-card">
-                        <h3>Seasonality</h3>
-                        <p>Summer, fall color periods, holidays, and snowy winter weekends drive demand. Plan ahead for
-                            peak times and expect higher prices during these windows.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Weekend Demand</h3>
-                        <p>Friday and Saturday nights can tighten quickly, especially when there is an event in town or
-                            attractive weather down in the basin draws people up the mountain.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Holiday Demand</h3>
-                        <p>Book early for holiday weekends, summer peak periods, and Christmas-season visits. These
-                            windows sell out faster than any other time of year.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Snow &amp; Winter Driving</h3>
-                        <p>Check road conditions before you go. A place can be bookable and still be harder to reach
-                            than expected in winter weather. US-82 can close or require chains.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Altitude</h3>
-                        <p>Cloudcroft sits around 8,600 feet. Guests arriving from low elevations may want an easier
-                            first evening. Hydrate, take it slow, and avoid overexertion on day one.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Parking</h3>
-                        <p>Verify directly, especially for cabins and older in-town properties. Some spots are tighter
-                            than expected, and winter conditions can complicate access further.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Pet Policies</h3>
-                        <p>Do not assume. Some properties explicitly allow some pet rooms; others do not. Always ask
-                            directly before booking if you are traveling with a pet.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Late-Night Services</h3>
-                        <p>This is a small village. Do not assume broad late-night dining, easy front-desk staffing, or
-                            round-the-clock backup. Plan accordingly.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>No Chain Consistency</h3>
-                        <p>That is part of the appeal, but it also means photos, room categories, and guest expectations
-                            deserve careful reading. Every property here is independent.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Verify Amenities</h3>
-                        <p>Wi-Fi quality, fireplaces, breakfast service, ADA access, restaurant hours, and winter access
-                            can matter more here than in a larger market. Confirm directly.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ════════════════════════════════════════════ 06 EDITOR'S PICKS ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="picks" aria-label="Editor's picks">
-            <div class="section-container">
-                <div style="text-align: center;">
-
-                    <span class="section-label">Editor's Picks</span>
-                    <h2 class="section-title section-title-centered">Best Choices by Traveler Type</h2>
-                </div>
-
-                <div class="picks-grid">
-                    <div class="pick-card">
-                        <h3>Romantic Weekend</h3>
-                        <p><strong><a href="stay-the-lodge-at-cloudcroft-2026.html">The Lodge at Cloudcroft</a></strong>
-                            &mdash; History, atmosphere, and on-site food and
-                            drink make it the strongest romantic pick.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Family Mountain Trip</h3>
-                        <p><strong><a href="stay-cabins-at-cloudcroft.html">The Cabins at Cloudcroft</a></strong>
-                            &mdash; More space and a cabin layout usually beat
-                            a standard room for family travel here.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Historic or Nostalgic Stay</h3>
-                        <p><strong><a href="stay-the-lodge-at-cloudcroft-2026.html">The Lodge</a></strong> for grandeur,
-                            <strong><a href="stay-crofting-inn-cloudcroft.html">The Crofting</a></strong> for intimacy.
-                            Both
-                            deliver a sense of place and history that newer properties cannot match.
-                        </p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Practical Overnight</h3>
-                        <p><strong><a href="stay-grand-cloudcroft-hotel.html">The Grand Cloudcroft Hotel</a></strong>
-                            &mdash; The cleanest fit for a straightforward
-                            hotel stay without the extras.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Cabin Getaway</h3>
-                        <p><strong><a href="stay-cabins-at-cloudcroft.html">The Cabins at Cloudcroft</a></strong>
-                            &mdash; The clearest professionally operated
-                            cabin-resort structure in the market.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Bringing a Dog</h3>
-                        <p><strong><a href="stay-grand-cloudcroft-hotel.html">The Grand Cloudcroft Hotel</a></strong>
-                            &mdash; Pet rooms are clearly listed. Verify
-                            current policy and fees directly before booking.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Food &amp; Drinks On-Site</h3>
-                        <p><strong><a href="stay-the-lodge-at-cloudcroft-2026.html">The Lodge at Cloudcroft</a></strong>
-                            &mdash; <a href="stay-dusty-boots-motel-cloudcroft.html">Dusty Boots</a> also matters here,
-                            but its
-                            dining hours appear more seasonal and should be checked directly.</p>
-                    </div>
+                <div>
+                    <ol class="map-legend">
+                        <li><span class="lg-pin">1</span><span><a href="stay-the-lodge-at-cloudcroft-2026.html">The Lodge at Cloudcroft</a> · Corona Pl</span></li>
+                        <li><span class="lg-pin">2</span><span><a href="stay-grand-cloudcroft-hotel.html">The Grand Cloudcroft Hotel</a> · Hwy 82</span></li>
+                        <li><span class="lg-pin">3</span><span><a href="stay-dusty-boots-motel-cloudcroft.html">Dusty Boots Motel &amp; Caf&eacute;</a> · Hwy 82</span></li>
+                        <li><span class="lg-pin">4</span><span><a href="stay-cabins-at-cloudcroft.html">The Cabins at Cloudcroft</a> · Coyote Ave</span></li>
+                        <li><span class="lg-pin">5</span><span><a href="stay-crofting-inn-cloudcroft.html">The Crofting B&amp;B</a> · Swallow Pl</span></li>
+                        <li><span class="lg-pin">6</span><span><a href="stay-the-summit-inn-Cloudcroft-2026.html">The Summit Inn</a> · Chipmunk Ave</span></li>
+                        <li><span class="lg-pin">7</span><span><a href="stay-cloudcroft-hostel-2026.html">Cloudcroft Hostel</a> · High Rolls</span></li>
+                        <li><span class="lg-pin">8</span><span><a href="stay-burro-street-boardinghouse.html">Burro Street Boarding House</a> · Burro Ave</span></li>
+                    </ol>
+                    <p class="map-footnote">Schematic — distances and angles are approximate. Walk times are estimates from property address to the Burro Avenue commercial core.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ════════════════════════════════════════════ 07 BOTTOM LINE ════════════════════════════════════════════ -->
-        <section class="bottom-line-section" id="bottom-line" aria-label="Bottom line">
-            <div class="bottom-line-inner">
-                <span class="section-num" style="color: rgba(255,255,255,0.4);">07</span>
-                <h2>The Bottom Line</h2>
-                <p>
-                    The truth about staying in Cloudcroft in 2026 is simple: this is a mountain village where lodging is
-                    part of the character of the trip. The best stays are not the most uniform ones. They are the ones
-                    that fit the kind of trip you want.
-                </p>
-                <p>
-                    Travelers who want history, atmosphere, and a proper sense of place should start with The Lodge.
-                    Travelers who want a simple hotel should look hard at The Grand. Travelers who want the strongest
-                    all-around cabin answer should study The Cabins at Cloudcroft. Travelers who enjoy smaller hosted
-                    properties should consider The Crofting. And travelers who like local, independent, slightly
-                    idiosyncratic places may find Dusty Boots or one of the smaller cabin properties more memorable than
-                    any standard room.
-                </p>
-                <p>
-                    Cloudcroft will reward travelers who like pine air, character, and a slower pace. Travelers who want
-                    chain predictability, lots of services, and broad inventory may prefer to sleep in Alamogordo or a
-                    larger mountain market and visit Cloudcroft by day.
-                </p>
-            </div>
-        </section>
-
-        <!-- ════════════════════════════════════════════ CTA ════════════════════════════════════════════ -->
-        <section class="cta-section" aria-label="Call to action" style="background:white">
-            <div class="cta-container">
-                <h2>Ready to Book Your Mountain Stay?</h2>
-                <p>From historic hotel rooms to private cabins in the pines &mdash; Cloudcroft has a place for every
-                    kind of traveler.</p>
-                <div class="cta-buttons">
-                    <a href="lodging.html" class="btn-primary">Browse All Lodging</a>
-                    <a href="https://www.vrbo.com/vacation-rentals/usa/new-mexico/cloudcroft" target="_blank"
-                        rel="noopener noreferrer" class="btn-secondary">Search Vacation Rentals</a>
+        <!-- ================================ COMPARE MATRIX ================================ -->
+        <section class="matrix-section" id="compare" aria-label="Compare properties side by side">
+            <div class="matrix-wrap">
+                <div class="matrix-head">
+                    <h2>Compare side-by-side</h2>
+                    <span class="matrix-count" id="matrix-count">Select properties above (check the Compare box on any card)</span>
+                </div>
+                <div class="matrix-scroll">
+                    <table class="matrix" id="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Type</th>
+                                <th>Price</th>
+                                <th>Sleeps</th>
+                                <th>Walkable</th>
+                                <th>Kitchen</th>
+                                <th>Dining on-site</th>
+                                <th>Pets</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-body">
+                            <tr><td colspan="9" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
+
+        <!-- ================================ EDITOR'S CALL ================================ -->
+        <section class="editor-section" id="editor" aria-label="Editor's call">
+            <div class="editor-wrap">
+                <h2>If we had to pick three</h2>
+                <div class="editor-picks">
+                    <div class="editor-pick">
+                        <span class="pick-for">For couples</span>
+                        <blockquote>"History, atmosphere, and a fire in the grate at 1899. Nothing else in the village does this."</blockquote>
+                        <p class="pick-answer">Book <a href="stay-the-lodge-at-cloudcroft-2026.html">The Lodge at Cloudcroft</a>.</p>
+                    </div>
+                    <div class="editor-pick">
+                        <span class="pick-for">For families</span>
+                        <blockquote>"Kitchens, fireplaces, and doors that actually shut. A cabin beats a hotel room when you've got kids."</blockquote>
+                        <p class="pick-answer">Book <a href="stay-cabins-at-cloudcroft.html">The Cabins at Cloudcroft</a>.</p>
+                    </div>
+                    <div class="editor-pick">
+                        <span class="pick-for">On a budget</span>
+                        <blockquote>"Owner-run, kitchenettes, four minutes from Burro Avenue. The cheapest way to be in the middle of town."</blockquote>
+                        <p class="pick-answer">Book <a href="stay-the-summit-inn-Cloudcroft-2026.html">The Summit Inn</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================ PRACTICAL NOTES ================================ -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Before you book</h2>
+
+            <details class="note">
+                <summary>Seasonality &amp; weather</summary>
+                <div class="note-body">
+                    <p>Summer and fall color are prime. Winter is conditional — snow, road conditions, and Ski Cloudcroft operations vary year to year. Shoulder seasons are quieter and easier to book. Friday and Saturday nights tighten fastest during events and attractive weekends.</p>
+                    <p>Book early for holiday weekends, summer peaks, and the Christmas season; these windows sell out first.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Altitude &amp; arrival</summary>
+                <div class="note-body">
+                    <p>Cloudcroft sits around 8,676 feet. Guests arriving from low elevations should plan an easier first evening — hydrate, slow down, and avoid overexertion on day one. Headaches and fatigue the first night are normal and pass.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Parking, pets &amp; access</summary>
+                <div class="note-body">
+                    <p>Pet policies vary by property and are often a moving target. The Grand Cloudcroft Hotel publicly lists pet rooms; elsewhere, ask directly and confirm any fees before booking.</p>
+                    <p>Parking is usually fine but tighter than it looks at cabins and older in-town properties; winter conditions can narrow access further. Verify anything load-bearing — ADA access, Wi-Fi quality, breakfast hours, fireplaces.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Winter driving &amp; late-night services</summary>
+                <div class="note-body">
+                    <p>US-82 can close or require chains after significant storms. A property can be bookable and still be harder to reach than expected in winter weather. Check road conditions before driving up.</p>
+                    <p>This is a small village. Do not assume broad late-night dining, 24-hour front-desk staffing, or round-the-clock backup. Every property here is independent — there is no chain-consistency safety net. That's part of the appeal; it also means photos, room categories, and policies deserve careful reading.</p>
+                </div>
+            </details>
+        </section>
+
+        <!-- ================================ RENTALS HANDOFF ================================ -->
+        <section class="rentals-section" id="rentals" aria-label="Cabins, RV parks and campgrounds">
+            <div class="rentals-wrap">
+                <div>
+                    <h2>Cabins, rentals, RV parks &amp; campgrounds</h2>
+                    <p>The 148+ vacation rentals on Vrbo are a bigger slice of the market than the named properties above. If you want the most Cloudcroft-like stay, a cabin is usually the answer; if you want the least friction, a hotel or B&amp;B is still smarter.</p>
+                    <div class="rentals-buttons">
+                        <a href="complete-guide-to-other-lodging-in-cloudcroft-2026.html" class="btn-primary">Cabins, RV &amp; campgrounds</a>
+                        <a href="https://www.vrbo.com/vacation-rentals/usa/new-mexico/cloudcroft" target="_blank"
+                            rel="noopener noreferrer" class="btn-outline" style="color:#000;border-color:#000;">Search Vrbo rentals</a>
+                    </div>
+                </div>
+                <div class="rentals-stat" aria-label="Vrbo market at a glance">
+                    <span class="big">148+</span>
+                    <span class="mid">Vrbo rentals in Cloudcroft</span>
+                    <hr>
+                    <span class="big">~$192</span>
+                    <span class="mid">Median nightly · AirDNA</span>
+                    <hr>
+                    <span class="big">4.9</span>
+                    <span class="mid">Average guest rating</span>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-
-        <p style="text-align:center;padding: 1vh">
+        <p style="text-align:center;padding:1vh">
             <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
             New Mexico's Mountain Retreat.
-            <br /><span style="font-size:85%">
-                &copy; 2026 <a style="color:steelblue;text-decoration:underline;"="https://www.DiscoverCloudcroft.com"
-                    target="_blank">DiscoverCloudcroft.com</a>. All rights reserved.</span>
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
         </p>
-
     </footer>
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
@@ -798,6 +1696,7 @@
     <script src="../js/common.js"></script>
     <script>
         (function () {
+            // ---- Fade-in on scroll ----
             var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
             var fadeObserver = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
@@ -807,10 +1706,228 @@
                     }
                 });
             }, observerOptions);
-
-            document.querySelectorAll('.market-card, .lodge-card, .property-card, .compare-card, .pick-card, .tip-card, .fade-in').forEach(function (el) {
+            document.querySelectorAll('.lodge-card, .fade-in').forEach(function (el) {
                 fadeObserver.observe(el);
             });
+
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sectionIds = tocPills.map(function (p) { return p.getAttribute('href').replace('#', ''); });
+            var sections = sectionIds.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
+
+            // ---- Finder + filter-rail shared state ----
+            var state = {
+                vibe: new Set(),    // historic, cabin, hotel, bnb, hostel, motel
+                group: new Set(),   // couple, family, solo, group
+                budget: new Set(),  // "1","2","3"
+                pets: null,         // "yes" | "no" | null
+                rail: new Set()     // walkable, pets, dining, kitchen, under200, sleeps4, historic, cabin, hotel, bnb
+            };
+
+            // Map finder "vibe" chips ↔ rail chips where names overlap
+            var VIBE_ALIASES = { historic: 'historic', cabin: 'cabin', hotel: 'hotel', bnb: 'bnb' };
+
+            function applyPressed(btn, on) {
+                btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+            }
+
+            function syncRailWithFinder() {
+                // Mirror finder vibes into rail chips where aliases exist
+                document.querySelectorAll('.filter-rail .chip[data-rail]').forEach(function (b) {
+                    var key = b.getAttribute('data-rail');
+                    if (key in VIBE_ALIASES) {
+                        applyPressed(b, state.vibe.has(key));
+                        if (state.vibe.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key === 'pets') {
+                        var on = state.pets === 'yes';
+                        applyPressed(b, on);
+                        if (on) state.rail.add('pets'); else state.rail.delete('pets');
+                    }
+                });
+            }
+
+            function syncFinderWithRail() {
+                document.querySelectorAll('#finder .chip[data-value]').forEach(function (b) {
+                    var grp = b.parentElement.getAttribute('data-filter-group');
+                    var v = b.getAttribute('data-value');
+                    if (grp === 'vibe' && v in VIBE_ALIASES) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.vibe.add(v); else state.vibe.delete(v);
+                    }
+                    if (grp === 'pets' && v === 'yes') {
+                        applyPressed(b, state.rail.has('pets'));
+                        state.pets = state.rail.has('pets') ? 'yes' : (state.pets === 'no' ? 'no' : null);
+                    }
+                });
+            }
+
+            // Finder chip clicks
+            document.querySelectorAll('#finder .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var grp = btn.parentElement.getAttribute('data-filter-group');
+                    var v = btn.getAttribute('data-value');
+                    if (grp === 'vibe') {
+                        if (state.vibe.has(v)) state.vibe.delete(v); else state.vibe.add(v);
+                    } else if (grp === 'group') {
+                        if (state.group.has(v)) state.group.delete(v); else state.group.add(v);
+                    } else if (grp === 'budget') {
+                        if (state.budget.has(v)) state.budget.delete(v); else state.budget.add(v);
+                    } else if (grp === 'pets') {
+                        state.pets = (state.pets === v) ? null : v;
+                        // exclusive: deselect sibling
+                        btn.parentElement.querySelectorAll('.chip').forEach(function (s) { applyPressed(s, false); });
+                    }
+                    applyPressed(btn, btn.getAttribute('aria-pressed') !== 'true');
+                    // except for the exclusive pets row, re-assert based on state
+                    if (grp === 'vibe') applyPressed(btn, state.vibe.has(v));
+                    if (grp === 'group') applyPressed(btn, state.group.has(v));
+                    if (grp === 'budget') applyPressed(btn, state.budget.has(v));
+                    if (grp === 'pets') applyPressed(btn, state.pets === v);
+                    syncRailWithFinder();
+                    applyFilters();
+                });
+            });
+
+            // Rail chip clicks
+            document.querySelectorAll('.filter-rail .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var k = btn.getAttribute('data-rail');
+                    if (state.rail.has(k)) state.rail.delete(k); else state.rail.add(k);
+                    applyPressed(btn, state.rail.has(k));
+                    syncFinderWithRail();
+                    applyFilters();
+                });
+            });
+
+            // Clear
+            document.getElementById('finder-clear').addEventListener('click', function () {
+                state.vibe.clear(); state.group.clear(); state.budget.clear(); state.rail.clear(); state.pets = null;
+                document.querySelectorAll('.chip[aria-pressed]').forEach(function (c) { applyPressed(c, false); });
+                applyFilters();
+            });
+
+            // ---- Filter matching ----
+            function cardMatches(card) {
+                var types = (card.getAttribute('data-types') || '').split(/\s+/);
+                var groups = (card.getAttribute('data-groups') || '').split(/\s+/);
+                var price = card.getAttribute('data-price');
+                var walkable = card.getAttribute('data-walkable') === 'true';
+                var pets = card.getAttribute('data-pets');
+                var dining = card.getAttribute('data-dining') === 'true';
+                var kitchen = card.getAttribute('data-kitchen') === 'true';
+                var sleeps4 = card.getAttribute('data-sleeps4') === 'true';
+
+                // Finder: vibe — at least one selected vibe must intersect types
+                if (state.vibe.size) {
+                    var hit = false;
+                    state.vibe.forEach(function (v) { if (types.indexOf(v) !== -1) hit = true; });
+                    if (!hit) return false;
+                }
+                // Finder: group
+                if (state.group.size) {
+                    var gh = false;
+                    state.group.forEach(function (g) { if (groups.indexOf(g) !== -1) gh = true; });
+                    if (!gh) return false;
+                }
+                // Finder: budget
+                if (state.budget.size && !state.budget.has(price)) return false;
+                // Finder: pets
+                if (state.pets === 'yes' && pets !== 'yes') return false;
+
+                // Rail chips
+                if (state.rail.has('walkable') && !walkable) return false;
+                if (state.rail.has('pets') && pets !== 'yes') return false;
+                if (state.rail.has('dining') && !dining) return false;
+                if (state.rail.has('kitchen') && !kitchen) return false;
+                if (state.rail.has('sleeps4') && !sleeps4) return false;
+                if (state.rail.has('under200') && price !== '1' && price !== '2') return false;
+
+                // Rail type aliases (already mirrored from finder for historic/cabin/hotel/bnb)
+                ['historic', 'cabin', 'hotel', 'bnb'].forEach(function (t) {
+                    // handled via vibe intersection above when mirrored; rail-only clicks also set state.vibe via sync
+                });
+
+                return true;
+            }
+
+            function applyFilters() {
+                var shown = 0;
+                var cards = document.querySelectorAll('#lodge-grid .lodge-card');
+                cards.forEach(function (c) {
+                    if (cardMatches(c)) { c.hidden = false; shown++; }
+                    else { c.hidden = true; }
+                });
+                document.getElementById('filter-count-n').textContent = shown;
+                var empty = document.getElementById('empty-state');
+                if (shown === 0) empty.classList.add('is-visible');
+                else empty.classList.remove('is-visible');
+            }
+
+            // ---- Compare matrix ----
+            var matrixData = {
+                lodge:    { name: 'The Lodge at Cloudcroft',     href: 'stay-the-lodge-at-cloudcroft-2026.html',    type: 'Historic resort', price: '$$$',  sleeps: '2–6',  walk: 'Yes · ~10 min', kitchen: false, dining: true,  pets: 'Verify',   notes: 'On-site dining at 1899, golf, pool.' },
+                grand:    { name: 'The Grand Cloudcroft Hotel',  href: 'stay-grand-cloudcroft-hotel.html',          type: 'Hotel',           price: '$$',   sleeps: '2–4',  walk: 'No · drive',   kitchen: false, dining: false, pets: 'Yes · listed', notes: 'Conventional hotel, ADA rooms, pet rooms.' },
+                dusty:    { name: 'Dusty Boots Motel &amp; Caf&eacute;', href: 'stay-dusty-boots-motel-cloudcroft.html', type: 'Motel &amp; caf&eacute;', price: '$$', sleeps: '2', walk: 'No · drive', kitchen: false, dining: true, pets: 'Verify', notes: 'Themed rooms, caf&eacute; with homemade food.' },
+                cabins:   { name: 'The Cabins at Cloudcroft',    href: 'stay-cabins-at-cloudcroft.html',            type: 'Cabin resort',    price: '$$',   sleeps: '2–8', walk: 'Yes · ~7 min', kitchen: true,  dining: false, pets: 'Verify',   notes: 'Kitchens, fireplaces, unified booking.' },
+                crofting: { name: 'The Crofting B&amp;B',            href: 'stay-crofting-inn-cloudcroft.html',         type: 'B&amp;B',             price: '$$',   sleeps: '2',   walk: 'Yes · ~8 min', kitchen: false, dining: true,  pets: 'Verify',   notes: '1909 house, 8 rooms, home-cooked breakfast.' },
+                summit:   { name: 'The Summit Inn',              href: 'stay-the-summit-inn-Cloudcroft-2026.html',  type: 'Inn',             price: '$',    sleeps: '2–3', walk: 'Yes · ~4 min', kitchen: true,  dining: false, pets: 'Verify',   notes: 'Owner-run, kitchenettes, 10 rooms.' },
+                hostel:   { name: 'Cloudcroft Hostel',           href: 'stay-cloudcroft-hostel-2026.html',          type: 'Hostel',          price: '$',    sleeps: '1–25',walk: 'No · drive',   kitchen: true,  dining: false, pets: 'Verify',   notes: 'Dorm + private + group rental up to 25.' },
+                burro:    { name: 'Burro Street Boarding House', href: 'stay-burro-street-boardinghouse.html',      type: 'B&amp;B',             price: '$$',   sleeps: 'Call', walk: 'Yes · on Burro', kitchen: false, dining: false, pets: 'Verify',  notes: 'Limited web presence — call directly.' }
+            };
+
+            var selected = new Set();
+
+            function renderMatrix() {
+                var body = document.getElementById('matrix-body');
+                var count = document.getElementById('matrix-count');
+                if (selected.size === 0) {
+                    body.innerHTML = '<tr><td colspan="9" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>';
+                    count.textContent = 'Select properties above (check the Compare box on any card)';
+                    return;
+                }
+                count.textContent = selected.size + ' selected';
+                var rows = [];
+                selected.forEach(function (key) {
+                    var d = matrixData[key]; if (!d) return;
+                    rows.push(
+                        '<tr>' +
+                        '<td class="prop-name"><a href="' + d.href + '">' + d.name + '</a></td>' +
+                        '<td>' + d.type + '</td>' +
+                        '<td>' + d.price + '</td>' +
+                        '<td>' + d.sleeps + '</td>' +
+                        '<td class="' + (d.walk.indexOf('Yes') === 0 ? 'ok' : 'no') + '">' + d.walk + '</td>' +
+                        '<td class="' + (d.kitchen ? 'ok">Yes' : 'no">—') + '</td>' +
+                        '<td class="' + (d.dining ? 'ok">Yes' : 'no">—') + '</td>' +
+                        '<td>' + d.pets + '</td>' +
+                        '<td>' + d.notes + '</td>' +
+                        '</tr>'
+                    );
+                });
+                body.innerHTML = rows.join('');
+            }
+
+            document.querySelectorAll('.cmp').forEach(function (cb) {
+                cb.addEventListener('change', function () {
+                    var key = cb.getAttribute('data-property');
+                    if (cb.checked) selected.add(key); else selected.delete(key);
+                    renderMatrix();
+                });
+            });
+
+            // Initial render
+            applyFilters();
+            renderMatrix();
         })();
     </script>
 </body>

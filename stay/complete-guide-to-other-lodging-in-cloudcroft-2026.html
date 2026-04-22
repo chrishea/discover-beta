@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Guide to RV Parks, Campgrounds &amp; Cabin Rentals in Cloudcroft, NM (2026)</title>
-    <meta name="description" content="Explore RV parks, forest campgrounds, cabin rentals, and 296+ vacation homes near Cloudcroft, NM. Compare Sugar Pines, Scenic Canyon, Lincoln National Forest camping, and Airbnb options for 2026.">
-    <link rel="canonical" href="https://discovercloudcroft.com/stay/complete-guide-to-other-lodging-in-cloudcroft-2026.html">
+    <title>Complete Guide to RV Parks, Campgrounds &amp; Cabin Rentals in Cloudcroft, NM (2026) | DiscoverCloudcroft.com</title>
+    <meta name="description"
+        content="RV parks, forest campgrounds, cabin operators, and 296+ short-term rentals near Cloudcroft, NM — filtered by walkability, hookups, pets, and vibe. A decision-driven 2026 guide.">
+    <meta name="keywords"
+        content="cloudcroft rv parks, cloudcroft campgrounds, cloudcroft cabin rentals, sugar pines rv, lincoln national forest camping, cloudcroft airbnb, cloudcroft vrbo">
+    <link rel="canonical"
+        href="https://discovercloudcroft.com/stay/complete-guide-to-other-lodging-in-cloudcroft-2026.html">
 
-    <meta property="og:title" content="Complete Guide to RV Parks, Campgrounds &amp; Cabin Rentals in Cloudcroft, NM (2026)">
-    <meta property="og:description" content="Explore RV parks, forest campgrounds, cabin rentals, and 296+ vacation homes near Cloudcroft, NM. Compare Sugar Pines, Scenic Canyon, Lincoln National Forest camping, and Airbnb options for 2026.">
-    <meta property="og:url" content="https://discovercloudcroft.com/stay/complete-guide-to-other-lodging-in-cloudcroft-2026.html">
+    <meta property="og:title"
+        content="Complete Guide to RV Parks, Campgrounds &amp; Cabin Rentals in Cloudcroft, NM (2026) | DiscoverCloudcroft.com">
+    <meta property="og:description"
+        content="RV parks, forest campgrounds, cabin operators, and 296+ short-term rentals near Cloudcroft, NM — filtered by walkability, hookups, pets, and vibe.">
+    <meta property="og:url"
+        content="https://discovercloudcroft.com/stay/complete-guide-to-other-lodging-in-cloudcroft-2026.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Complete Guide to RV Parks, Campgrounds &amp; Cabin Rentals in Cloudcroft, NM (2026)">
-    <meta name="twitter:description" content="Explore RV parks, forest campgrounds, cabin rentals, and 296+ vacation homes near Cloudcroft, NM.">
+    <meta name="twitter:title"
+        content="Complete Guide to RV Parks, Campgrounds &amp; Cabin Rentals in Cloudcroft, NM (2026) | DiscoverCloudcroft.com">
+    <meta name="twitter:description"
+        content="RV parks, forest campgrounds, cabin operators, and 296+ short-term rentals near Cloudcroft, NM — filtered by walkability, hookups, pets, and vibe.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <link href="../css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/common.css">
 
     <script type="application/ld+json">
@@ -29,305 +41,1075 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "name": "Complete Guide to RV Parks, Campgrounds & Cabin Rentals in Cloudcroft, NM (2026)",
-      "description": "Explore RV parks, forest campgrounds, cabin rentals, and 296+ vacation homes near Cloudcroft, NM. Compare Sugar Pines, Scenic Canyon, Lincoln National Forest camping, and Airbnb options for 2026.",
+      "description": "Explore RV parks, forest campgrounds, cabin operators, and 296+ vacation rentals near Cloudcroft, NM. Compare Sugar Pines, Scenic Canyon, Lincoln National Forest campgrounds, and Airbnb/Vrbo options for 2026.",
       "about": {
         "@type": "Place",
         "name": "Cloudcroft, New Mexico",
         "description": "Lodging options including RV parks, campgrounds, cabins, and short-term rentals in Cloudcroft, NM"
       },
-      "datePublished": "2026-04-03"
+      "datePublished": "2026-04-03",
+      "dateModified": "2026-04-21"
     }
     </script>
 
     <style>
+        /* =====================================================================
+           CHANGELOG (2026-04-21 rebuild — mirrors /stay/complete-guide-to-lodging-…2026)
+           FIXED
+             - Nav paths now resolve from /stay/ (was broken site-wide).
+             - Duplicate <nav class="mobile-nav-overlay"> block (page had two).
+             - Invalid heading hierarchy — cards used <h3>Why choose it</h3>
+               nested inside an outer <h3> card title. Lowered to <h4> so the
+               CSS (.property-why h4) actually applies and the outline is valid.
+             - Dead `#reels` anchor in nav (never existed on this page).
+             - Broken footer paths: "where to-hike-…" (literal space in URL),
+               ../stay/lodging.html, ../do/complete-guide-to-activities.html,
+               ../about.html, ../contact.html — all removed in favor of the
+               standard minimal footer used on the lodging page.
+             - CTA "Browse All Lodging" → lodging.html (does not exist).
+             - Hero bg was a flat dark-blue gradient — now uses a real photo.
+           ADDED
+             - Hero 2-up (photo + "Find my stay" 4-chip quiz).
+             - Stats strip (RV parks / campgrounds / marketplace size / median
+               rate / elevation) replacing the emoji info bar.
+             - Sticky filter rail synced with the hero quiz.
+             - Richer property cards with numbered pin, price band, setup meta
+               (sites, hookups, elevation), amenity chips, Compare checkbox.
+             - Schematic map (inline SVG) with 13 numbered pins + linked legend.
+             - Client-side compare matrix (checkbox-driven).
+             - Editor's Call (3 opinionated picks, pull-quote treatment).
+             - Practical-notes accordion (4 items, collapsing 7 tip cards).
+             - TOC pills track the active section on scroll.
+           REMOVED
+             - Emoji icons (info bar, bucket cards, pick cards, tip cards, tip
+               box). Replaced where useful with inline SVG.
+             - Word-span hero animation (low value for a short title).
+             - "Four Ways to Stay" bucket grid (redundant — the filter chips
+               serve the same purpose more usefully).
+             - 8-card Editor's Picks grid (same entries kept saying the same
+               thing; reduced to 3 strong calls).
+             - Old multi-column footer with its broken links.
+           ================================================================= */
 
-.hero-bg {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-}
-.hero-overlay {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
-}
+        /* ---- Hero ---- */
+        .hero-bg {
+            background: url('../media/Pix-Cloudcroft-Discover-img-camp-2-1.jpg') center 45% / cover no-repeat;
+            filter: saturate(0.9);
+        }
 
-/* ── Bucket Grid (How to Choose) ── */
-.bucket-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-}
-.bucket-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-top: 4px solid var(--golden-hour);
-    opacity: 0;
-    transform: translateY(20px);
-}
-.bucket-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.bucket-card:nth-child(2).visible { transition-delay: 0.1s; }
-.bucket-card:nth-child(3).visible { transition-delay: 0.2s; }
-.bucket-card:nth-child(4).visible { transition-delay: 0.3s; }
-.bucket-card-icon {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-}
-.bucket-card h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--midnight);
-    margin-bottom: 0.5rem;
-}
-.bucket-card p {
-    color: var(--granite);
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.38) 60%, rgba(0, 0, 0, 0.58));
+        }
 
-/* ── Property List (RV Parks) ── */
-.property-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-.property-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 2rem 2rem 2rem 2.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 4px solid var(--golden-hour);
-    opacity: 0;
-    transform: translateY(20px);
-}
-.property-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.property-card h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--midnight);
-    margin-bottom: 0.35rem;
-}
-.property-best-for {
-    font-style: italic;
-    font-size: 0.9rem;
-    color: var(--granite);
-    margin-bottom: 1rem;
-}
-.property-card > p {
-    color: var(--granite);
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 1.25rem;
-}
-.property-why h4,
-.property-watchouts h4 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 0.9rem;
-    color: var(--midnight);
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-}
-.property-why ul,
-.property-watchouts ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 0.5rem 0;
-}
-.property-why ul li,
-.property-watchouts ul li {
-    padding: 0.35rem 0;
-    padding-left: 1.25rem;
-    position: relative;
-    color: var(--granite);
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-.property-why ul li::before {
-    content: "\2713";
-    position: absolute;
-    left: 0;
-    color: var(--alpine);
-    font-weight: 700;
-}
-.property-watchouts ul li::before {
-    content: "\26A0";
-    position: absolute;
-    left: 0;
-    font-size: 0.8rem;
-}
-.property-contact {
-    margin-top: 1.25rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem 1.5rem;
-    font-size: 0.85rem;
-    color: var(--granite);
-}
-.property-contact a {
-    color: var(--alpine);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-.property-contact a:hover {
-    color: var(--golden-hour);
-}
+        .hero.hero-split {
+            min-height: 560px;
+            padding: 5rem 2rem;
+        }
 
-/* ── Camp Grid (Campgrounds) ── */
-.camp-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-}
-.camp-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 4px solid var(--golden-hour);
-    opacity: 0;
-    transform: translateY(20px);
-}
-.camp-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.camp-card:nth-child(2).visible { transition-delay: 0.1s; }
-.camp-card:nth-child(3).visible { transition-delay: 0.2s; }
-.camp-card:nth-child(4).visible { transition-delay: 0.3s; }
-.camp-card h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: var(--midnight);
-    margin-bottom: 0.35rem;
-}
-.camp-card .property-best-for {
-    margin-bottom: 0.75rem;
-}
-.camp-card p {
-    color: var(--granite);
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
-}
+        .hero-split-grid {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
 
-/* ── Rental Grid (Cabins & Rentals) ── */
-.rental-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-}
-.rental-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 4px solid var(--golden-hour);
-    opacity: 0;
-    transform: translateY(20px);
-}
-.rental-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.rental-card:nth-child(2).visible { transition-delay: 0.1s; }
-.rental-card:nth-child(3).visible { transition-delay: 0.2s; }
-.rental-card:nth-child(4).visible { transition-delay: 0.3s; }
-.rental-card:nth-child(5).visible { transition-delay: 0.4s; }
-.rental-card h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: var(--midnight);
-    margin-bottom: 0.35rem;
-}
-.rental-card .property-best-for {
-    margin-bottom: 0.75rem;
-}
-.rental-card p {
-    color: var(--granite);
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
-}
-.market-stat {
-    display: inline-block;
-    background: var(--cream-dark);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    padding: 0.3rem 0.85rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--midnight);
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-}
+        .hero-left .hero-eyebrow-pill {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 20px;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
 
-.pick-card {
-    background: #000000;
-    border-radius: 12px;
-    padding: 1.75rem;
-    color: #ffffff;
-    opacity: 0;
-    transform: translateY(20px);
-}
+        .hero-left h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+            color: #fff;
+            line-height: 1.08;
+            margin-bottom: 1rem;
+        }
 
-.cta-container h2 {
-    color: #000000;
-}
+        .hero-left .hero-deck {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            max-width: 30rem;
+        }
 
-@media (max-width: 1024px) {
-    .bucket-grid { grid-template-columns: repeat(2, 1fr); }
-    .camp-grid { grid-template-columns: repeat(2, 1fr); }
-    .rental-grid { grid-template-columns: repeat(2, 1fr); }
-    
-}
-@media (max-width: 768px) {
-    .bucket-grid { grid-template-columns: 1fr; }
-    .camp-grid { grid-template-columns: 1fr; }
-    .rental-grid { grid-template-columns: 1fr; }
-    
-    .property-contact { flex-direction: column; gap: 0.4rem; }
-}
-</style>
+        .hero-byline {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.82rem;
+            letter-spacing: 0.04em;
+        }
+
+        .hero-byline strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* ---- Finder quiz in hero ---- */
+        .finder {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 1.5rem 1.5rem 1.25rem;
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        .finder h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0 0 1rem;
+        }
+
+        .finder-row {
+            margin-bottom: 0.85rem;
+        }
+
+        .finder-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 0.45rem;
+        }
+
+        .chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .chip {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            padding: 0.4rem 0.85rem;
+            border-radius: 999px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .chip:hover {
+            border-color: #000;
+        }
+
+        .chip[aria-pressed="true"] {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .finder-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .finder-actions .btn-primary {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.8rem;
+        }
+
+        .finder-clear {
+            background: none;
+            border: none;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Stats strip (replaces emoji info bar) ---- */
+        .stats-strip {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.4rem;
+        }
+
+        /* ---- Thesis + byline ---- */
+        .thesis {
+            max-width: 820px;
+            margin: 3rem auto 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .thesis p {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            color: #222;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        .thesis .thesis-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            letter-spacing: 0.04em;
+        }
+
+        /* ---- Sticky filter rail ---- */
+        .filter-rail {
+            position: sticky;
+            top: 64px;
+            z-index: 80;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: saturate(140%) blur(6px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 0.75rem 2rem;
+        }
+
+        .filter-rail-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .filter-rail-inner::-webkit-scrollbar {
+            display: none;
+        }
+
+        .filter-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            white-space: nowrap;
+            margin-right: 0.25rem;
+        }
+
+        .filter-count {
+            margin-left: auto;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            white-space: nowrap;
+            padding-left: 1rem;
+        }
+
+        .filter-count strong {
+            color: #000;
+        }
+
+        /* ---- Sections containers ---- */
+        .props-block {
+            padding: 3rem 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .props-block-head {
+            margin-bottom: 1rem;
+        }
+
+        .props-block-head .eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .props-block-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0.2rem 0 0.35rem;
+        }
+
+        .props-block-head p {
+            color: #555;
+            font-size: 0.92rem;
+            max-width: 620px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        .props-block-head .section-hide {
+            display: none;
+            color: #888;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            margin-top: 0.75rem;
+        }
+
+        .section-hidden .props-block-head .section-hide {
+            display: block;
+        }
+
+        /* ---- Property grid (richer cards) ---- */
+        .lodge-grid.is-grid-plus {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .lodge-card.card-plus {
+            padding: 0;
+            border-top: none;
+            overflow: hidden;
+            cursor: default;
+            position: relative;
+        }
+
+        .lodge-card.card-plus:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+            border-top-color: transparent;
+            border-top-width: 0;
+        }
+
+        .lodge-card.card-plus.no-photo .card-body {
+            padding-top: 1.75rem;
+        }
+
+        .card-body {
+            padding: 1.25rem 1.25rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .card-head {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-head h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            color: #000;
+            margin: 0;
+            line-height: 1.25;
+        }
+
+        .price-band {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+        }
+
+        .price-band .dim {
+            color: #bbb;
+        }
+
+        .property-type.type-inline {
+            margin-bottom: 0.75rem;
+        }
+
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem 1rem;
+            font-size: 0.78rem;
+            color: #555;
+            margin-bottom: 0.6rem;
+        }
+
+        .card-meta svg {
+            vertical-align: -3px;
+            margin-right: 0.3rem;
+        }
+
+        .card-body p.card-desc {
+            color: var(--charcoal-light);
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0 0 0.85rem;
+        }
+
+        .amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .amenity {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.2rem 0.55rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .amenity.warn {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.18);
+        }
+
+        .card-foot {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            padding-top: 0.85rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .compare-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #444;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .compare-toggle input {
+            accent-color: #000;
+            width: 14px;
+            height: 14px;
+        }
+
+        .card-foot .lodge-card-guide {
+            margin: 0;
+        }
+
+        .card-pin {
+            position: absolute;
+            top: 0.6rem;
+            left: 0.6rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+            z-index: 2;
+        }
+
+        .card-pin.pin-none {
+            background: #888;
+        }
+
+        .lodge-card[hidden] {
+            display: none !important;
+        }
+
+        /* Marketplace card — no photo, no pin, different look */
+        .lodge-card.card-market {
+            background: #111;
+            color: #fff;
+            border-radius: 12px;
+            padding: 1.75rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .lodge-card.card-market .card-head h3 { color: #fff; }
+        .lodge-card.card-market .property-type { background: #fff; color: #000; }
+        .lodge-card.card-market p.card-desc { color: rgba(255,255,255,0.82); }
+        .lodge-card.card-market .amenity {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.18);
+        }
+        .lodge-card.card-market .card-foot {
+            border-top-color: rgba(255, 255, 255, 0.15);
+        }
+        .lodge-card.card-market .compare-toggle { color: #ddd; }
+        .lodge-card.card-market .lodge-card-guide { color: #fff; }
+        .lodge-card.card-market .lodge-card-guide:hover { color: #ccc; }
+        .lodge-card.card-market .card-meta { color: #bbb; }
+        .lodge-card.card-market .price-band { color: #fff; }
+        .lodge-card.card-market .price-band .dim { color: #555; }
+
+        .empty-state {
+            display: none;
+            padding: 3rem 1rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+            border: 1px dashed rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+        }
+
+        .empty-state.is-visible {
+            display: block;
+        }
+
+        /* ---- Compare matrix ---- */
+        .matrix-section {
+            background: #f8f8f8;
+            padding: 3.5rem 2rem;
+        }
+
+        .matrix-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .matrix-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .matrix-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0;
+        }
+
+        .matrix-count {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .matrix-scroll {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .matrix {
+            width: 100%;
+            min-width: 780px;
+            border-collapse: collapse;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .matrix thead th {
+            text-align: left;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #666;
+            font-weight: 700;
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fafafa;
+        }
+
+        .matrix tbody td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            color: #333;
+            vertical-align: top;
+        }
+
+        .matrix tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .matrix tbody .prop-name {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            color: #000;
+            font-size: 0.95rem;
+        }
+
+        .matrix tbody .prop-name a {
+            color: #000;
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 0, 0, 0.2);
+            text-underline-offset: 3px;
+        }
+
+        .matrix tbody .prop-name a:hover {
+            text-decoration-color: #000;
+        }
+
+        .matrix .ok { color: #000; font-weight: 600; }
+        .matrix .no { color: #aaa; }
+
+        .matrix-empty {
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        /* ---- Map block ---- */
+        .map-section {
+            padding: 3.5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-head {
+            margin-bottom: 1.5rem;
+        }
+
+        .map-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.35rem;
+        }
+
+        .map-head p {
+            color: #555;
+            font-size: 0.9rem;
+            max-width: 640px;
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .map-figure {
+            background: #f0efeb;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .map-svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .map-legend {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        .map-legend li {
+            display: grid;
+            grid-template-columns: 28px 1fr;
+            gap: 0.75rem;
+            align-items: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: #333;
+        }
+
+        .map-legend .lg-pin {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-size: 0.76rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-legend a {
+            color: #000;
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 0, 0, 0.2);
+            text-underline-offset: 3px;
+        }
+
+        .map-legend a:hover { text-decoration-color: #000; }
+
+        .map-footnote {
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 1rem;
+        }
+
+        /* ---- Editor's Call ---- */
+        .editor-section {
+            background: #111;
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+
+        .editor-wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .editor-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.6rem, 2.4vw, 2rem);
+            margin: 0 0 2rem;
+            color: #fff;
+        }
+
+        .editor-picks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .editor-pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .editor-pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .editor-pick .pick-answer {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .editor-pick .pick-answer a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Practical notes accordion ---- */
+        .notes-section {
+            padding: 4rem 2rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .notes-section h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+
+        .note {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .note:last-of-type {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .note > summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .note > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .note > summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+            transition: transform 0.2s ease;
+        }
+
+        .note[open] > summary::after {
+            content: '−';
+        }
+
+        .note > summary:hover {
+            color: #444;
+        }
+
+        .note .note-body {
+            padding: 0 2rem 1.25rem 0;
+            color: #444;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .note .note-body p + p {
+            margin-top: 0.65rem;
+        }
+
+        /* ---- Back-to-hotels handoff ---- */
+        .rentals-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+        }
+
+        .rentals-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .rentals-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .rentals-wrap p {
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0 0 1.25rem;
+        }
+
+        .rentals-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .rentals-buttons a {
+            min-height: 44px;
+        }
+
+        .rentals-stat {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .rentals-stat .big {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000;
+            display: block;
+            line-height: 1;
+        }
+
+        .rentals-stat .mid {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #555;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .rentals-stat hr {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            margin: 1rem 0;
+        }
+
+        /* ---- TOC active state ---- */
+        .toc-pill[aria-current="true"] {
+            background: #000;
+            color: #fff;
+        }
+
+        /* ---- Footer override ---- */
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 1024px) {
+            .hero-split-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero.hero-split {
+                padding: 4rem 2rem;
+            }
+
+            .lodge-grid.is-grid-plus {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem 1rem;
+            }
+
+            .editor-picks {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .map-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .rentals-wrap {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero.hero-split {
+                padding: 3rem 1.25rem;
+                min-height: 0;
+            }
+
+            .finder {
+                padding: 1.25rem;
+            }
+
+            .stats-strip {
+                padding: 1.25rem 1rem;
+            }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .lodge-grid.is-grid-plus {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-rail {
+                padding: 0.6rem 1rem;
+            }
+
+            .filter-count {
+                display: none;
+            }
+
+            .props-block,
+            .map-section,
+            .matrix-section,
+            .editor-section,
+            .notes-section,
+            .rentals-section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-        <header class="site-header" role="banner">
+    <!-- HEADER (paths relative to /stay/) -->
+    <header class="site-header" role="banner">
         <div class="header-inner">
-
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html" aria-current="page">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
@@ -337,759 +1119,1232 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
         <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../resources/resources.html">Resources</a>
         <a href="../resources/contact.html">Contact</a>
     </nav>
-<!-- ════════════════════════════════════════════ HERO ════════════════════════════════════════════ -->
-    <section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Cloudcroft lodging guide hero background"></div>
+
+    <!-- HERO (2-up: photo + finder) -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Pine-forest campsite in the Lincoln National Forest near Cloudcroft"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>Cloudcroft Lodging</span>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">Beyond the hotels · 2026</span>
+                <h1>RVs, tents, cabins &amp; rentals.</h1>
+                <p class="hero-deck">The non-hotel half of the Cloudcroft lodging market: seven RV parks, four forest campgrounds, three cabin operators, and 296+ short-term rentals. Filter by how you actually want to stay.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
             </div>
-            <h1 class="hero-title">
-                <span class="word">Beyond </span>
-                <span class="word">Hotels </span>
-                <span class="word">&amp; </span>
-                <span class="word">Motels</span>
-            </h1>
-            <p class="hero-subtitle">Cloudcroft has RV parks, forest campgrounds, private cabins, and 296+ short-term rentals. This guide covers every option beyond the traditional hotel.</p>
-            <div class="hero-ctas">
-                <a href="#categories" class="btn-primary">Browse by Type</a>
-                <a href="#picks" class="btn-secondary">Editor's Picks</a>
+            <div class="hero-right">
+                <form class="finder" aria-label="Find my stay" id="finder" onsubmit="return false;">
+                    <h2>Find my stay</h2>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-type">Stay type</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-type" data-filter-group="vibe">
+                            <button type="button" class="chip" data-value="rv" aria-pressed="false">RV park</button>
+                            <button type="button" class="chip" data-value="camp" aria-pressed="false">Campground</button>
+                            <button type="button" class="chip" data-value="cabin" aria-pressed="false">Cabin</button>
+                            <button type="button" class="chip" data-value="marketplace" aria-pressed="false">Airbnb/Vrbo</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-group">Group</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-group" data-filter-group="group">
+                            <button type="button" class="chip" data-value="couple" aria-pressed="false">Couple</button>
+                            <button type="button" class="chip" data-value="family" aria-pressed="false">Family</button>
+                            <button type="button" class="chip" data-value="solo" aria-pressed="false">Solo</button>
+                            <button type="button" class="chip" data-value="group" aria-pressed="false">Group 6+</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-budget">Budget</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-budget" data-filter-group="budget">
+                            <button type="button" class="chip" data-value="1" aria-pressed="false">$</button>
+                            <button type="button" class="chip" data-value="2" aria-pressed="false">$$</button>
+                            <button type="button" class="chip" data-value="3" aria-pressed="false">$$$</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-pets">Traveling with pets?</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-pets" data-filter-group="pets">
+                            <button type="button" class="chip" data-value="yes" aria-pressed="false">Yes</button>
+                            <button type="button" class="chip" data-value="no" aria-pressed="false">No</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-actions">
+                        <a href="#rv-parks" class="btn-primary">Show matches</a>
+                        <button type="button" class="finder-clear" id="finder-clear">Clear</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════ INFO BAR ════════════════════════════════════════════ -->
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F3E0;</div>
-                <span>296+ Rentals on Airbnb/Vrbo</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F699;</div>
-                <span>7 RV Parks</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x26FA;</div>
-                <span>4 Forest Campgrounds</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F3E1;</div>
-                <span>148+ Vrbo Properties</span>
-            </div>
+    <!-- STATS STRIP -->
+    <div class="stats-strip" aria-label="Market at a glance">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">7</span><span class="stat-label">RV parks</span></div>
+            <div class="stat"><span class="stat-num">4</span><span class="stat-label">Forest campgrounds</span></div>
+            <div class="stat"><span class="stat-num">296+</span><span class="stat-label">Airbnb / Vrbo listings</span></div>
+            <div class="stat"><span class="stat-num">~$192</span><span class="stat-label">Median rental / night</span></div>
+            <div class="stat"><span class="stat-num">8,676 ft</span><span class="stat-label">Village elevation</span></div>
         </div>
     </div>
 
+    <!-- STICKY TOC NAV -->
+    <nav class="toc-nav" aria-label="Table of contents">
+        <div class="toc-nav-inner">
+            <a href="#rv-parks" class="toc-pill">RV Parks</a>
+            <a href="#campgrounds" class="toc-pill">Campgrounds</a>
+            <a href="#cabins" class="toc-pill">Cabins &amp; Rentals</a>
+            <a href="#map" class="toc-pill">Map</a>
+            <a href="#compare" class="toc-pill">Compare</a>
+            <a href="#editor" class="toc-pill">Editor's Call</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
+        </div>
+    </nav>
+
     <main id="main-content" role="main">
 
-        <!-- ════════════════════════════════════════════ HOW TO CHOOSE ════════════════════════════════════════════ -->
-        <section class="section" id="categories" aria-label="How to choose your lodging type">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">How to Choose</span>
-                    <h2 class="section-title section-title-centered">Four Ways to Stay</h2>
-                </div>
-                <div class="bucket-grid">
-                    <div class="bucket-card">
-                        <div class="bucket-card-icon">&#x1F699;</div>
-                        <h3>In-Village RV Parks</h3>
-                        <p>Park once and walk to Burro Avenue shops, restaurants, and the village core.</p>
-                    </div>
-                    <div class="bucket-card">
-                        <div class="bucket-card-icon">&#x26FA;</div>
-                        <h3>Forest Campgrounds</h3>
-                        <p>Lower-cost stays in Lincoln National Forest with trails, campfires, and a classic outdoors feel.</p>
-                    </div>
-                    <div class="bucket-card">
-                        <div class="bucket-card-icon">&#x1F3D5;&#xFE0F;</div>
-                        <h3>Private RV Parks</h3>
-                        <p>Hookups, quieter settings, and longer-stay options east or west of town.</p>
-                    </div>
-                    <div class="bucket-card">
-                        <div class="bucket-card-icon">&#x1F3E1;</div>
-                        <h3>Cabins &amp; Short-Term Rentals</h3>
-                        <p>Kitchens, decks, fireplaces, and more privacy. Over 296 options on Airbnb and Vrbo alone.</p>
-                    </div>
-                </div>
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>The biggest practical divide isn't price. It's walkability — and whether your rig, tent, or rental is self-contained enough to enjoy where it's parked.</p>
+            <span class="thesis-meta">Price bands are editorial estimates. Always confirm current rates, hookups, age rules, and pet policies with the operator.</span>
+        </div>
 
-                <div class="tip-box">
-                    <span>&#x1F4A1;</span>
-                    <p><strong>Key insight:</strong> The biggest practical divide is not price &mdash; it's style of stay. Some places are walkable to the village. Others are basecamps in the wider Cloudcroft/Mayhill corridor and work best if you're driving everywhere.</p>
+        <!-- FILTER RAIL (synced with hero finder) -->
+        <div class="filter-rail" id="filter-rail" aria-label="Filter properties">
+            <div class="filter-rail-inner">
+                <span class="filter-label">Filter</span>
+                <div class="chip-row" role="group" aria-label="Filter chips" data-filter-group="rail">
+                    <button type="button" class="chip" data-rail="rv" aria-pressed="false">RV park</button>
+                    <button type="button" class="chip" data-rail="camp" aria-pressed="false">Campground</button>
+                    <button type="button" class="chip" data-rail="cabin" aria-pressed="false">Cabin</button>
+                    <button type="button" class="chip" data-rail="marketplace" aria-pressed="false">Airbnb/Vrbo</button>
+                    <button type="button" class="chip" data-rail="walkable" aria-pressed="false">Walkable</button>
+                    <button type="button" class="chip" data-rail="hookups" aria-pressed="false">Full hookups</button>
+                    <button type="button" class="chip" data-rail="bathhouse" aria-pressed="false">Bathhouse</button>
+                    <button type="button" class="chip" data-rail="pets" aria-pressed="false">Pet-friendly</button>
+                    <button type="button" class="chip" data-rail="yearround" aria-pressed="false">Year-round</button>
+                    <button type="button" class="chip" data-rail="family" aria-pressed="false">Family-friendly</button>
+                </div>
+                <span class="filter-count"><strong id="filter-count-n">16</strong> of 16 shown</span>
+            </div>
+        </div>
+
+        <!-- =========================================== RV PARKS =========================================== -->
+        <section class="props-block" id="rv-parks" aria-label="RV parks">
+            <div class="props-block-head">
+                <span class="eyebrow">Seven operators</span>
+                <h2>RV parks</h2>
+                <p>One is genuinely walkable to Burro Avenue. The rest are basecamps in the wider corridor from High Rolls to Mayhill — each with its own hookups, age, and bathhouse tradeoffs.</p>
+                <p class="section-hide">No RV parks match the current filters.</p>
+            </div>
+
+            <div class="lodge-grid is-grid-plus" data-grid="rv-parks">
+
+                <!-- 1. Sugar Pines -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="sugar"
+                    data-types="rv"
+                    data-groups="couple solo"
+                    data-price="2"
+                    data-walkable="true"
+                    data-pets="unknown"
+                    data-hookups="true"
+                    data-bathhouse="unknown"
+                    data-yearround="false"
+                    data-family="false"
+                    data-adults="true">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Sugar Pines RV Park</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">RV park · walkable</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>601 Columbine Blvd · walk to Burro</span>
+                            <span>16 sites · 30-amp full hookups</span>
+                        </div>
+                        <p class="card-desc">The only RV park within walking distance of the village. Sixteen full-hookup 30-amp sites, 18+ guests, holiday minimum stays and nonrefundable deposits.</p>
+                        <div class="amenities">
+                            <span class="amenity">Walkable</span>
+                            <span class="amenity">Full hookups</span>
+                            <span class="amenity">Adults only</span>
+                            <span class="amenity warn">Strict deposit</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="sugar"> Compare</label>
+                            <a href="https://www.sugarpinesrvpark.com/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Book direct &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. Scenic Canyon -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="scenic"
+                    data-types="rv"
+                    data-groups="couple solo"
+                    data-price="2"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-hookups="true"
+                    data-bathhouse="false"
+                    data-yearround="false"
+                    data-family="false"
+                    data-adults="true">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Scenic Canyon RV Park</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">RV park · adults 30+</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>~6.5 mi east of Cloudcroft · drive</span>
+                            <span>14 sites · water, sewer, electric, Wi-Fi</span>
+                        </div>
+                        <p class="card-desc">A peaceful adults-only park marketed to guests 30 and up. Fourteen spacious sites with full hookups and Wi-Fi. The catch: no bathhouse or shower facilities, so self-contained rigs only.</p>
+                        <div class="amenities">
+                            <span class="amenity">Full hookups</span>
+                            <span class="amenity">Wi-Fi</span>
+                            <span class="amenity">Adults 30+</span>
+                            <span class="amenity warn">No bathhouse</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="scenic"> Compare</label>
+                            <a href="https://www.cloudcroft-rv.com/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Book direct &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. 16 Springs -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="springs16"
+                    data-types="rv"
+                    data-groups="couple solo"
+                    data-price="1"
+                    data-walkable="false"
+                    data-pets="yes"
+                    data-hookups="true"
+                    data-bathhouse="false"
+                    data-yearround="false"
+                    data-family="false"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>16 Springs</h3>
+                            <span class="price-band" aria-label="Price band one of three">$<span class="dim">$$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Pet-friendly RV park</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>594 16 Springs Canyon Rd · ~20 min east</span>
+                            <span>Water, electric, septic, dump station</span>
+                        </div>
+                        <p class="card-desc">"Off the beaten path" in the Lincoln National Forest corridor. Pet-friendly with real space and a nature-first pitch. Important: no public bathhouse or restrooms — campers must be self-contained.</p>
+                        <div class="amenities">
+                            <span class="amenity">Pet-friendly</span>
+                            <span class="amenity">Hookups</span>
+                            <span class="amenity">Secluded</span>
+                            <span class="amenity warn">No bathhouse</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="springs16"> Compare</label>
+                            <a href="https://www.16springs.com/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Book direct &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. Silver Springs -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="silver"
+                    data-types="rv"
+                    data-groups="family couple"
+                    data-price="2"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-hookups="true"
+                    data-bathhouse="unknown"
+                    data-yearround="false"
+                    data-family="true"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Silver Springs RV Park &amp; Trout Pond</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Family-friendly RV park</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>~5 mi from Cloudcroft · drive</span>
+                            <span>Trout pond · recreation-oriented</span>
+                        </div>
+                        <p class="card-desc">Family-oriented private park with a trout pond as the headline feature. Positioned more toward recreation than seclusion. Web detail is thinner than some competitors — verify current site specifics before booking.</p>
+                        <div class="amenities">
+                            <span class="amenity">Family-friendly</span>
+                            <span class="amenity">Trout pond</span>
+                            <span class="amenity warn">Verify amenities</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="silver"> Compare</label>
+                            <a href="https://silverspringsrv.com/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Book direct &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. Cloud Climbing Railroad -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="ccrr"
+                    data-types="rv"
+                    data-groups="couple solo"
+                    data-price="2"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-hookups="true"
+                    data-bathhouse="unknown"
+                    data-yearround="true"
+                    data-family="false"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">5</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Cloud Climbing Railroad RV Park</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Year-round RV park</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>1093 US-82, High Rolls · drive</span>
+                            <span>Year-round full-hookup sites</span>
+                        </div>
+                        <p class="card-desc">Year-round full-hookup RV park in High Rolls, tied to the historic Cloud Climbing Railroad water stop in Wooten Canyon. Works best if you're comfortable being outside Cloudcroft proper.</p>
+                        <div class="amenities">
+                            <span class="amenity">Year-round</span>
+                            <span class="amenity">Full hookups</span>
+                            <span class="amenity">Historic</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="ccrr"> Compare</label>
+                            <a href="https://www.cloudclimbingrailroad.com/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Book direct &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. Camp Rio -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="camprio"
+                    data-types="rv cabin"
+                    data-groups="family group couple"
+                    data-price="2"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-hookups="true"
+                    data-bathhouse="unknown"
+                    data-yearround="false"
+                    data-family="true"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">6</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Camp Rio</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Mixed RV / tent / glamping / cabin</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>2180 Rio Penasco Rd, Mayhill · drive</span>
+                            <span>RV + tent + glamping + cabins</span>
+                        </div>
+                        <p class="card-desc">One of the more flexible properties in the broader market — full-hookup RV sites, tent sites, glamping, and cabins on the same river property. Strong for groups who want to book different stay styles together.</p>
+                        <div class="amenities">
+                            <span class="amenity">Multi-format</span>
+                            <span class="amenity">Glamping</span>
+                            <span class="amenity">River setting</span>
+                            <span class="amenity">Family-friendly</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="camprio"> Compare</label>
+                            <a href="https://www.camprionm.com/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Book direct &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. Lazy Day -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="lazyday"
+                    data-types="rv cabin"
+                    data-groups="family couple group"
+                    data-price="1"
+                    data-walkable="false"
+                    data-pets="yes"
+                    data-hookups="true"
+                    data-bathhouse="unknown"
+                    data-yearround="false"
+                    data-family="true"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">7</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Lazy Day Cabins &amp; RV Hideaway</h3>
+                            <span class="price-band" aria-label="Price band one of three">$<span class="dim">$$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Hybrid cabins + motel + RV</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Mayhill corridor · drive</span>
+                            <span>6 cabins · 3 motel · 10 RV sites</span>
+                        </div>
+                        <p class="card-desc">Six pet-friendly cabins, three motel rooms, and ten full-hookup RV spaces. Useful for reunions or mixed-group stays. Older-school operation — confirm rates and unit fit directly before booking.</p>
+                        <div class="amenities">
+                            <span class="amenity">Pet-friendly</span>
+                            <span class="amenity">Mixed formats</span>
+                            <span class="amenity">Budget</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="lazyday"> Compare</label>
+                            <a href="https://www.lazydaycabins.com/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Book direct &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- =========================================== CAMPGROUNDS =========================================== -->
+        <section class="props-block" id="campgrounds" aria-label="Public campgrounds">
+            <div class="props-block-head">
+                <span class="eyebrow">Lincoln National Forest</span>
+                <h2>Forest campgrounds</h2>
+                <p>Four public campgrounds book through Recreation.gov or the Forest Service. Lower cost, seasonal openings, and real forest immersion — trail access trumps bathhouse comfort.</p>
+                <p class="section-hide">No campgrounds match the current filters.</p>
+            </div>
+
+            <div class="lodge-grid is-grid-plus" data-grid="campgrounds">
+
+                <!-- 8. Pines Campground -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="pines"
+                    data-types="camp"
+                    data-groups="couple solo family"
+                    data-price="1"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-hookups="false"
+                    data-bathhouse="false"
+                    data-yearround="false"
+                    data-family="true"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">8</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Pines Campground</h3>
+                            <span class="price-band" aria-label="Price band one of three">$<span class="dim">$$</span></span>
+                        </div>
+                        <span class="property-type type-inline">USFS campground</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Lincoln NF · ~8,700 ft</span>
+                            <span>Heavy pine forest · wildlife viewing</span>
+                        </div>
+                        <p class="card-desc">One of the main official campgrounds in the immediate Cloudcroft area. Heavily forested with large pines and wildlife viewing. Reserve via Recreation.gov.</p>
+                        <div class="amenities">
+                            <span class="amenity">Forested</span>
+                            <span class="amenity">Reservable</span>
+                            <span class="amenity warn">Seasonal</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="pines"> Compare</label>
+                            <a href="https://www.recreation.gov/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Reserve on Recreation.gov &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. Deerhead -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="deerhead"
+                    data-types="camp"
+                    data-groups="couple solo family"
+                    data-price="1"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-hookups="false"
+                    data-bathhouse="false"
+                    data-yearround="false"
+                    data-family="true"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">9</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Deerhead Campground</h3>
+                            <span class="price-band" aria-label="Price band one of three">$<span class="dim">$$</span></span>
+                        </div>
+                        <span class="property-type type-inline">USFS campground · trail access</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Close to Cloudcroft village</span>
+                            <span>19 sites · across from Rim Trail</span>
+                        </div>
+                        <p class="card-desc">Nineteen sites for tents and RVs with picnic tables, grills, fire rings, water spigots, vault toilets, and paved spurs. Positioned directly across from the Rim Trail trailhead.</p>
+                        <div class="amenities">
+                            <span class="amenity">Trail access</span>
+                            <span class="amenity">Close to village</span>
+                            <span class="amenity">Vault toilets</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="deerhead"> Compare</label>
+                            <a href="https://www.recreation.gov/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Reserve on Recreation.gov &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. Sleepy Grass -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="sleepy"
+                    data-types="camp"
+                    data-groups="couple solo"
+                    data-price="1"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-hookups="false"
+                    data-bathhouse="false"
+                    data-yearround="false"
+                    data-family="false"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">10</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Sleepy Grass Campground</h3>
+                            <span class="price-band" aria-label="Price band one of three">$<span class="dim">$$</span></span>
+                        </div>
+                        <span class="property-type type-inline">USFS · first-come, first-served</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Just south of the village</span>
+                            <span>RVs up to 30 ft · tents · opens mid-May</span>
+                        </div>
+                        <p class="card-desc">Small public campground just south of Cloudcroft, typically first-come, first-served with a seasonal opening around mid-May. Hard ceiling of 30-ft RVs.</p>
+                        <div class="amenities">
+                            <span class="amenity">Near town</span>
+                            <span class="amenity warn">First-come</span>
+                            <span class="amenity warn">30-ft max</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="sleepy"> Compare</label>
+                            <a href="https://www.recreation.gov/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS / Recreation.gov &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. James Canyon -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="jamescanyon"
+                    data-types="camp"
+                    data-groups="couple solo"
+                    data-price="1"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-hookups="false"
+                    data-bathhouse="false"
+                    data-yearround="false"
+                    data-family="false"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">11</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>James Canyon Campground</h3>
+                            <span class="price-band" aria-label="Price band one of three">$<span class="dim">$$</span></span>
+                        </div>
+                        <span class="property-type type-inline">USFS · lower elevation</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>US 82 west of Mayhill · ~6,800 ft</span>
+                            <span>5 sites · shoulder-season friendly</span>
+                        </div>
+                        <p class="card-desc">Five sites along US 82 at about 6,800 feet — noticeably lower than the higher Sacramento campgrounds, making it usable longer through the shoulder seasons.</p>
+                        <div class="amenities">
+                            <span class="amenity">Lower elevation</span>
+                            <span class="amenity">Shoulder-season</span>
+                            <span class="amenity">Small</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="jamescanyon"> Compare</label>
+                            <a href="https://www.recreation.gov/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS / Recreation.gov &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- =========================================== CABINS & RENTALS =========================================== -->
+        <section class="props-block" id="cabins" aria-label="Cabins, vacation rentals, and marketplaces">
+            <div class="props-block-head">
+                <span class="eyebrow">Three operators + two marketplaces</span>
+                <h2>Cabins &amp; short-term rentals</h2>
+                <p>Three named cabin operators with real offices and phone numbers — plus the 296-listing marketplace layer on Airbnb and Vrbo where most of the village's private-rental inventory actually lives.</p>
+                <p class="section-hide">No cabin or rental options match the current filters.</p>
+            </div>
+
+            <div class="lodge-grid is-grid-plus" data-grid="cabins">
+
+                <!-- 12. The Cabins at Cloudcroft -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="cabinsat"
+                    data-types="cabin"
+                    data-groups="family couple group"
+                    data-price="2"
+                    data-walkable="true"
+                    data-pets="unknown"
+                    data-hookups="false"
+                    data-bathhouse="true"
+                    data-yearround="true"
+                    data-family="true"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">12</span>
+                    <img src="stay-photo/photo-cabins-at/cabins-at-00451.JPG"
+                        alt="A private cabin at The Cabins at Cloudcroft under tall ponderosa pines"
+                        loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>The Cabins at Cloudcroft</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Cabin resort · walkable</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>1006 Coyote Ave · ~7 min to Burro</span>
+                            <span>Kitchens · fireplaces / wood stoves</span>
+                        </div>
+                        <p class="card-desc">A cabin compound with rustic styling, kitchens, and fireplaces close to the village. The clearest non-marketplace option for travelers who want something more predictable than scrolling 148 Vrbo listings.</p>
+                        <div class="amenities">
+                            <span class="amenity">Walkable</span>
+                            <span class="amenity">Kitchen</span>
+                            <span class="amenity">Fireplace</span>
+                            <span class="amenity">Family-friendly</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="cabinsat"> Compare</label>
+                            <a href="stay-cabins-at-cloudcroft.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 13. Cabin Rentals Cloudcroft -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="cabinrentals"
+                    data-types="cabin"
+                    data-groups="couple family"
+                    data-price="2"
+                    data-walkable="false"
+                    data-pets="unknown"
+                    data-hookups="false"
+                    data-bathhouse="true"
+                    data-yearround="true"
+                    data-family="false"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">13</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Cabin Rentals Cloudcroft</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Small curated operator</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Cloudcroft / area · varies by unit</span>
+                            <span>Cedar Lodge · Fawn Passage · more</span>
+                        </div>
+                        <p class="card-desc">A smaller portfolio including Cedar Lodge and Fawn Passage. Suited to travelers who want a personal cabin-booking feel rather than scrolling a marketplace. Some units sit outside immediate village limits.</p>
+                        <div class="amenities">
+                            <span class="amenity">Curated</span>
+                            <span class="amenity">Named units</span>
+                            <span class="amenity">Couples-friendly</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="cabinrentals"> Compare</label>
+                            <a href="https://cabinrentalscloudcroft.com/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Book direct &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14. Cloudcroft Properties -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="cloudcroftproperties"
+                    data-types="cabin"
+                    data-groups="family group couple"
+                    data-price="2"
+                    data-walkable="true"
+                    data-pets="unknown"
+                    data-hookups="false"
+                    data-bathhouse="true"
+                    data-yearround="true"
+                    data-family="true"
+                    data-adults="false">
+                    <span class="card-pin" aria-hidden="true">14</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Cloudcroft Properties</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Broker-managed vacation homes</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>505 Burro Ave Suite 110 · on Burro</span>
+                            <span>Local office · (575) 682-4555</span>
+                        </div>
+                        <p class="card-desc">A real-estate broker who also manages vacation rentals across Cloudcroft and nearby areas. The local-office model feels safer than booking a one-off host — but inventory shifts, so still inspect each home for pets, stairs, parking, and winter suitability.</p>
+                        <div class="amenities">
+                            <span class="amenity">Managed</span>
+                            <span class="amenity">Local office</span>
+                            <span class="amenity">Vacation homes</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="cloudcroftproperties"> Compare</label>
+                            <a href="https://cloudcroftproperties.com/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Browse homes &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 15. Airbnb (marketplace card) -->
+                <article class="lodge-card card-market fade-in"
+                    data-property="airbnb"
+                    data-types="marketplace cabin"
+                    data-groups="family group couple solo"
+                    data-price="2"
+                    data-walkable="true"
+                    data-pets="yes"
+                    data-hookups="false"
+                    data-bathhouse="true"
+                    data-yearround="true"
+                    data-family="true"
+                    data-adults="false">
+                    <span class="card-pin pin-none" aria-hidden="true">M</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Airbnb</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Marketplace · 296 listings</span>
+                        <div class="card-meta">
+                            <span>AirDNA: ~$192 median nightly · 4.9 avg rating</span>
+                        </div>
+                        <p class="card-desc">Not a single property — the broader short-term rental layer. AirDNA pegs the Airbnb/Vrbo market at 296 Cloudcroft listings with strong guest sentiment. Best for filtering by pet-friendly, hot tub, fenced yard, workspace, decks, and group size.</p>
+                        <div class="amenities">
+                            <span class="amenity">Widest inventory</span>
+                            <span class="amenity">Filter-rich</span>
+                            <span class="amenity">Multi-group</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="airbnb"> Compare</label>
+                            <a href="https://www.airbnb.com/s/Cloudcroft--NM/homes" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Search Airbnb &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 16. Vrbo (marketplace card) -->
+                <article class="lodge-card card-market fade-in"
+                    data-property="vrbo"
+                    data-types="marketplace cabin"
+                    data-groups="family group couple"
+                    data-price="2"
+                    data-walkable="true"
+                    data-pets="yes"
+                    data-hookups="false"
+                    data-bathhouse="true"
+                    data-yearround="true"
+                    data-family="true"
+                    data-adults="false">
+                    <span class="card-pin pin-none" aria-hidden="true">M</span>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Vrbo</h3>
+                            <span class="price-band" aria-label="Price band two of three">$$<span class="dim">$</span></span>
+                        </div>
+                        <span class="property-type type-inline">Marketplace · 148+ homes</span>
+                        <div class="card-meta">
+                            <span>Vacation-home focus · deep filters</span>
+                        </div>
+                        <p class="card-desc">Currently shows more than 148 Cloudcroft vacation rentals. Stronger than Airbnb on the whole-home and multigenerational axis — large kitchens, bedrooms, fenced yards, and workspace.</p>
+                        <div class="amenities">
+                            <span class="amenity">Whole homes</span>
+                            <span class="amenity">Family-friendly</span>
+                            <span class="amenity">Deep filters</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="vrbo"> Compare</label>
+                            <a href="https://www.vrbo.com/vacation-rentals/usa/new-mexico/cloudcroft" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Search Vrbo &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="empty-state" id="empty-state" role="status">
+            No properties match your filters. Cloudcroft's non-hotel market is small — try dropping a chip or two.
+        </div>
+
+        <!-- =========================================== MAP =========================================== -->
+        <section class="map-section" id="map" aria-label="Where each property sits">
+            <div class="map-head">
+                <h2>Where each property sits</h2>
+                <p>Cloudcroft village sits along US 82 between High Rolls to the west and Mayhill to the east. Only Sugar Pines, The Cabins at Cloudcroft, and Cloudcroft Properties are genuinely walkable to Burro Avenue; the rest are corridor stays. Marketplaces (Airbnb/Vrbo) aren't on the map — those listings are everywhere.</p>
+            </div>
+            <div class="map-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 620 420" role="img" aria-label="Schematic map of RV parks, campgrounds, and cabin operators near Cloudcroft">
+                        <defs>
+                            <pattern id="pines" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                                <circle cx="8" cy="8" r="1.2" fill="#c4c9bf"/>
+                                <circle cx="22" cy="20" r="1" fill="#c4c9bf"/>
+                            </pattern>
+                        </defs>
+                        <rect width="620" height="420" fill="#e8eae2"/>
+                        <rect width="620" height="420" fill="url(#pines)"/>
+
+                        <!-- US 82 — runs W→E -->
+                        <path d="M0 240 L620 180" stroke="#9b9b8f" stroke-width="12" opacity="0.55"/>
+                        <path d="M0 240 L620 180" stroke="#fff" stroke-width="2" stroke-dasharray="10 12"/>
+                        <text x="555" y="170" fill="#555" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">US-82 →</text>
+
+                        <!-- Village block -->
+                        <rect x="240" y="190" width="140" height="70" fill="#fff" opacity="0.55" rx="6"/>
+                        <text x="310" y="230" fill="#222" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="700">CLOUDCROFT</text>
+
+                        <!-- Region labels -->
+                        <text x="30" y="270" fill="#666" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">HIGH ROLLS</text>
+                        <text x="525" y="275" fill="#666" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">MAYHILL →</text>
+
+                        <!-- PINS -->
+                        <!-- 1. Sugar Pines (walkable / in village) -->
+                        <g><circle cx="290" cy="218" r="13" fill="#000"/><text x="290" y="222" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">1</text></g>
+                        <!-- 2. Scenic Canyon (6.5mi east) -->
+                        <g><circle cx="465" cy="208" r="13" fill="#000"/><text x="465" y="212" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">2</text></g>
+                        <!-- 3. 16 Springs (20min east) -->
+                        <g><circle cx="540" cy="195" r="13" fill="#000"/><text x="540" y="199" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">3</text></g>
+                        <!-- 4. Silver Springs (5 mi, slightly off corridor) -->
+                        <g><circle cx="420" cy="265" r="13" fill="#000"/><text x="420" y="269" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">4</text></g>
+                        <!-- 5. Cloud Climbing Railroad (High Rolls, west) -->
+                        <g><circle cx="90" cy="252" r="13" fill="#000"/><text x="90" y="256" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">5</text></g>
+                        <!-- 6. Camp Rio (Mayhill, far east) -->
+                        <g><circle cx="575" cy="260" r="13" fill="#000"/><text x="575" y="264" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">6</text></g>
+                        <!-- 7. Lazy Day (Mayhill corridor) -->
+                        <g><circle cx="520" cy="295" r="13" fill="#000"/><text x="520" y="299" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">7</text></g>
+                        <!-- 8. Pines Campground (in NF, S-ish of village) -->
+                        <g><circle cx="345" cy="310" r="13" fill="#000"/><text x="345" y="314" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">8</text></g>
+                        <!-- 9. Deerhead (close to village, Rim Trail) -->
+                        <g><circle cx="270" cy="270" r="13" fill="#000"/><text x="270" y="274" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">9</text></g>
+                        <!-- 10. Sleepy Grass (south of village) -->
+                        <g><circle cx="320" cy="360" r="13" fill="#000"/><text x="320" y="364" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">10</text></g>
+                        <!-- 11. James Canyon (US 82 west of Mayhill, lower) -->
+                        <g><circle cx="470" cy="340" r="13" fill="#000"/><text x="470" y="344" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">11</text></g>
+                        <!-- 12. The Cabins at Cloudcroft (Coyote Ave, in village) -->
+                        <g><circle cx="265" cy="205" r="13" fill="#000"/><text x="265" y="209" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">12</text></g>
+                        <!-- 13. Cabin Rentals Cloudcroft (spread — nominal) -->
+                        <g><circle cx="200" cy="310" r="13" fill="#000"/><text x="200" y="314" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">13</text></g>
+                        <!-- 14. Cloudcroft Properties (Burro Ave office) -->
+                        <g><circle cx="340" cy="230" r="13" fill="#000"/><text x="340" y="234" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">14</text></g>
+                    </svg>
+                </div>
+                <div>
+                    <ol class="map-legend">
+                        <li><span class="lg-pin">1</span><span><a href="https://www.sugarpinesrvpark.com/" target="_blank" rel="noopener noreferrer">Sugar Pines RV Park</a> · walkable</span></li>
+                        <li><span class="lg-pin">2</span><span><a href="https://www.cloudcroft-rv.com/" target="_blank" rel="noopener noreferrer">Scenic Canyon RV Park</a> · ~6.5 mi east</span></li>
+                        <li><span class="lg-pin">3</span><span><a href="https://www.16springs.com/" target="_blank" rel="noopener noreferrer">16 Springs</a> · ~20 min east</span></li>
+                        <li><span class="lg-pin">4</span><span><a href="https://silverspringsrv.com/" target="_blank" rel="noopener noreferrer">Silver Springs RV Park</a> · ~5 mi</span></li>
+                        <li><span class="lg-pin">5</span><span><a href="https://www.cloudclimbingrailroad.com/" target="_blank" rel="noopener noreferrer">Cloud Climbing Railroad RV Park</a> · High Rolls</span></li>
+                        <li><span class="lg-pin">6</span><span><a href="https://www.camprionm.com/" target="_blank" rel="noopener noreferrer">Camp Rio</a> · Mayhill</span></li>
+                        <li><span class="lg-pin">7</span><span><a href="https://www.lazydaycabins.com/" target="_blank" rel="noopener noreferrer">Lazy Day Cabins &amp; RV Hideaway</a> · Mayhill corridor</span></li>
+                        <li><span class="lg-pin">8</span><span>Pines Campground · Lincoln NF</span></li>
+                        <li><span class="lg-pin">9</span><span>Deerhead Campground · Rim Trail</span></li>
+                        <li><span class="lg-pin">10</span><span>Sleepy Grass Campground · south of village</span></li>
+                        <li><span class="lg-pin">11</span><span>James Canyon Campground · west of Mayhill</span></li>
+                        <li><span class="lg-pin">12</span><span><a href="stay-cabins-at-cloudcroft.html">The Cabins at Cloudcroft</a> · Coyote Ave</span></li>
+                        <li><span class="lg-pin">13</span><span><a href="https://cabinrentalscloudcroft.com/" target="_blank" rel="noopener noreferrer">Cabin Rentals Cloudcroft</a> · varies</span></li>
+                        <li><span class="lg-pin">14</span><span><a href="https://cloudcroftproperties.com/" target="_blank" rel="noopener noreferrer">Cloudcroft Properties</a> · 505 Burro Ave</span></li>
+                    </ol>
+                    <p class="map-footnote">Schematic — distances and angles are approximate. Airbnb and Vrbo listings are not plotted because they're dispersed across the village and corridor.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ════════════════════════════════════════════ RV PARKS ════════════════════════════════════════════ -->
-        <section class="section" id="rv-parks" aria-label="RV Parks">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">RV Parks</span>
-                    <h2 class="section-title section-title-centered">Where to Park Your Rig</h2>
+        <!-- =========================================== COMPARE MATRIX =========================================== -->
+        <section class="matrix-section" id="compare" aria-label="Compare side by side">
+            <div class="matrix-wrap">
+                <div class="matrix-head">
+                    <h2>Compare side-by-side</h2>
+                    <span class="matrix-count" id="matrix-count">Select properties above (check the Compare box on any card)</span>
                 </div>
-
-                <div class="property-list">
-
-                    <!-- Sugar Pines -->
-                    <div class="property-card">
-                        <h3>Sugar Pines RV Park</h3>
-                        <p class="property-best-for">Best for: walkability, village access, simple stays close to restaurants and shops.</p>
-                        <p>Sugar Pines is the clearest choice for RV travelers who want to be in Cloudcroft, not outside it. The official site says it is the only RV park within walking distance of the village and lists 16 full-hookup 30-amp sites. It is open for the 2026 season, welcomes guests 18 and older, and notes holiday minimum stays plus nonrefundable deposits.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Strongest walk-to-town position</li>
-                                <li>Full hookups</li>
-                                <li>Good fit for short or extended stays</li>
-                                <li>Cleaner choice for visitors who want Cloudcroft itself, not just the surrounding mountains</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Adults only</li>
-                                <li>Back-in expectations on many sites</li>
-                                <li>Deposit policy is strict</li>
-                            </ul>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 601 Columbine Boulevard, Cloudcroft, NM 88317</span>
-                            <span>&#x1F4DE; <a href="tel:5756823375">(575) 682-3375</a></span>
-                            <span>&#x1F310; <a href="https://www.sugarpinesrvpark.com/" target="_blank" rel="noopener noreferrer">sugarpinesrvpark.com</a></span>
-                        </div>
-                    </div>
-
-                    <!-- Scenic Canyon -->
-                    <div class="property-card">
-                        <h3>Scenic Canyon RV Park</h3>
-                        <p class="property-best-for">Best for: a quiet adult-only RV stay east of town.</p>
-                        <p>Scenic Canyon is about 6.5 miles east of Cloudcroft and explicitly markets itself as a peaceful adults-only park for guests 30 and over. It lists 14 spacious sites with Wi-Fi, water, sewer, and electric. The big caveat is that it does not provide bathroom or shower facilities.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Quiet setting</li>
-                                <li>Adults-only atmosphere</li>
-                                <li>Good if you dislike crowded family parks</li>
-                                <li>Full hookups and Wi-Fi</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Not close enough to walk to town</li>
-                                <li>No bathhouse</li>
-                                <li>Better for fully equipped rigs</li>
-                            </ul>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F310; <a href="https://www.cloudcroft-rv.com/" target="_blank" rel="noopener noreferrer">cloudcroft-rv.com</a></span>
-                        </div>
-                    </div>
-
-                    <!-- 16 Springs -->
-                    <div class="property-card">
-                        <h3>16 Springs</h3>
-                        <p class="property-best-for">Best for: pet-friendly RV trips, a more remote feel, and self-contained travelers.</p>
-                        <p>16 Springs positions itself as an &ldquo;off the beaten path&rdquo; RV park in the Lincoln National Forest corridor, about 20 minutes east of Cloudcroft. The site emphasizes pets, open space, and nature. It also makes an important operational point: campers must be self-contained, and there are no public bathhouse or restrooms.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Pet-friendly</li>
-                                <li>More secluded feel</li>
-                                <li>Good for travelers who want to disconnect</li>
-                                <li>Water, electric, septic, and dump station access</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Not in the village</li>
-                                <li>No public bathhouse/restrooms</li>
-                                <li>Some sites have tight occupancy limits</li>
-                            </ul>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 594 16 Springs Canyon Road, Cloudcroft, NM 88317</span>
-                            <span>&#x1F4DE; <a href="tel:5054700313">(505) 470-0313</a></span>
-                            <span>&#x1F310; <a href="https://www.16springs.com/" target="_blank" rel="noopener noreferrer">16springs.com</a></span>
-                        </div>
-                    </div>
-
-                    <!-- Silver Springs -->
-                    <div class="property-card">
-                        <h3>Silver Springs RV Park &amp; Trout Pond</h3>
-                        <p class="property-best-for">Best for: family-friendly RV stays and a slightly more recreation-oriented private park.</p>
-                        <p>Silver Springs markets itself as a family-friendly park about 5 miles from Cloudcroft and highlights its trout pond. From a positioning standpoint, it looks more family-oriented than the adult-only parks.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Family-friendly</li>
-                                <li>Near Cloudcroft but not in the middle of town</li>
-                                <li>Trout pond adds a distinct on-site feature</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Official web detail is thinner than at some competitors, so verify current site specifics before booking</li>
-                            </ul>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F310; <a href="https://silverspringsrv.com/" target="_blank" rel="noopener noreferrer">silverspringsrv.com</a></span>
-                        </div>
-                    </div>
-
-                    <!-- Cloud Climbing Railroad -->
-                    <div class="property-card">
-                        <h3>Cloud Climbing Railroad RV Park</h3>
-                        <p class="property-best-for">Best for: travelers who like history, High Rolls access, and year-round RV use.</p>
-                        <p>This park is in High Rolls, not in the village, so it works best if you are comfortable being outside Cloudcroft proper. The official site says it offers year-round full-hookup RV sites and ties the property to the historic Cloud Climbing Railroad water stop in Wooten Canyon.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Year-round positioning</li>
-                                <li>Historic angle</li>
-                                <li>Full hookups</li>
-                                <li>Can fit travelers who prefer High Rolls as a base</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Not in Cloudcroft village</li>
-                                <li>Better framed as part of the broader Cloudcroft market than a downtown substitute</li>
-                            </ul>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 1093 US-82, High Rolls, NM 88325</span>
-                            <span>&#x1F4DE; <a href="tel:5752650640">(575) 265-0640</a></span>
-                            <span>&#x1F310; <a href="https://www.cloudclimbingrailroad.com/" target="_blank" rel="noopener noreferrer">cloudclimbingrailroad.com</a></span>
-                        </div>
-                    </div>
-
-                    <!-- Camp Rio -->
-                    <div class="property-card">
-                        <h3>Camp Rio</h3>
-                        <p class="property-best-for">Best for: travelers who want multiple lodging formats in one property.</p>
-                        <p>Camp Rio, in Mayhill, is not just an RV park. The chamber listing and official site show full-hookup RV sites, tent sites, glamping, and cabins. That makes it one of the more flexible options in the broader Cloudcroft market.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Mixed lodging types</li>
-                                <li>Good for groups booking different stay styles</li>
-                                <li>River setting</li>
-                                <li>Strong option for campers who want more than a basic RV pad</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Mayhill location means you are outside Cloudcroft proper</li>
-                                <li>Best for travelers willing to drive into town</li>
-                            </ul>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 2180 Rio Penasco Rd, Mayhill, NM 88339</span>
-                            <span>&#x1F4DE; <a href="tel:5756873715">(575) 687-3715</a></span>
-                            <span>&#x1F310; <a href="https://www.camprionm.com/" target="_blank" rel="noopener noreferrer">camprionm.com</a></span>
-                        </div>
-                    </div>
-
-                    <!-- Lazy Day -->
-                    <div class="property-card">
-                        <h3>Lazy Day Cabins &amp; RV Hideaway</h3>
-                        <p class="property-best-for">Best for: mixed cabin/RV stays and budget-conscious travelers who do not need to be in the village.</p>
-                        <p>Lazy Day combines 6 pet-friendly cabins, 3 motel rooms, and 10 full-size RV spaces with full hookups. It sits in the Mayhill corridor and is one of the more practical hybrid properties in the area.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Cabins, motel rooms, and RV spaces in one place</li>
-                                <li>Pet-friendly cabins</li>
-                                <li>Useful for reunions or mixed-group stays</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Outside Cloudcroft village</li>
-                                <li>Older-school operation and web presence; confirm current rates and exact unit fit before booking</li>
-                            </ul>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4DE; <a href="tel:5753222329">(575) 322-2329</a></span>
-                            <span>&#x1F310; <a href="https://www.lazydaycabins.com/" target="_blank" rel="noopener noreferrer">lazydaycabins.com</a></span>
-                        </div>
-                    </div>
-
+                <div class="matrix-scroll">
+                    <table class="matrix" id="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Type</th>
+                                <th>Price</th>
+                                <th>Sites / setup</th>
+                                <th>Walkable</th>
+                                <th>Hookups</th>
+                                <th>Bathhouse</th>
+                                <th>Pets</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-body">
+                            <tr><td colspan="9" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
 
-        <!-- ════════════════════════════════════════════ CAMPGROUNDS ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="campgrounds" aria-label="Public Campgrounds">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Public Campgrounds</span>
-                    <h2 class="section-title section-title-centered">Camp in Lincoln National Forest</h2>
-                </div>
-
-                <div class="camp-grid">
-
-                    <!-- Pines -->
-                    <div class="camp-card">
-                        <h3>Pines Campground</h3>
-                        <p class="property-best-for">Best for: traditional forest camping close to Cloudcroft.</p>
-                        <p>Pines Campground is in Lincoln National Forest at about 8,700 feet and is one of the main official campground options in the immediate Cloudcroft area. Recreation.gov says it is heavily forested with large pine trees and wildlife viewing.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Strong classic forest-camping feel</li>
-                                <li>Good proximity to Cloudcroft</li>
-                                <li>Official reservation system</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Seasonal</li>
-                                <li>Public campground tradeoffs: fewer comforts, more competition, more rules tied to fire and forest conditions</li>
-                            </ul>
-                        </div>
-                        <p style="font-size: 0.85rem; color: var(--granite); margin-top: 0.75rem;"><em>Book/verify via Recreation.gov Pines Campground listing</em></p>
+        <!-- =========================================== EDITOR'S CALL =========================================== -->
+        <section class="editor-section" id="editor" aria-label="Editor's call">
+            <div class="editor-wrap">
+                <h2>If we had to pick three</h2>
+                <div class="editor-picks">
+                    <div class="editor-pick">
+                        <span class="pick-for">Walk to Burro Avenue</span>
+                        <blockquote>"If the trip is built around the village core, there's really only one RV answer — and a cabin compound that comes a close second."</blockquote>
+                        <p class="pick-answer">Book <a href="https://www.sugarpinesrvpark.com/" target="_blank" rel="noopener noreferrer">Sugar Pines RV Park</a> or <a href="stay-cabins-at-cloudcroft.html">The Cabins at Cloudcroft</a>.</p>
                     </div>
-
-                    <!-- Deerhead -->
-                    <div class="camp-card">
-                        <h3>Deerhead Campground</h3>
-                        <p class="property-best-for">Best for: campers who want to be close to town and trails.</p>
-                        <p>The Forest Service says Deerhead has 19 sites, is very close to Cloudcroft, and sits across from the Rim Trail trailhead. Recreation.gov notes standard sites for tent and RV camping plus picnic tables, grills, fire rings, water spigots, vault toilets, and paved parking spurs.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Close to the village</li>
-                                <li>Trail access</li>
-                                <li>Good balance between campground feel and Cloudcroft convenience</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Seasonal conditions apply</li>
-                                <li>Less privacy than some private options</li>
-                            </ul>
-                        </div>
-                        <p style="font-size: 0.85rem; color: var(--granite); margin-top: 0.75rem;"><em>Book/verify via Forest Service Deerhead page or Recreation.gov listing</em></p>
+                    <div class="editor-pick">
+                        <span class="pick-for">Self-contained RV, quiet setting</span>
+                        <blockquote>"Adults-only, full hookups, elbow room. You give up a bathhouse; you gain the quietest RV nights in the market."</blockquote>
+                        <p class="pick-answer">Book <a href="https://www.cloudcroft-rv.com/" target="_blank" rel="noopener noreferrer">Scenic Canyon RV Park</a>.</p>
                     </div>
-
-                    <!-- Sleepy Grass -->
-                    <div class="camp-card">
-                        <h3>Sleepy Grass Campground</h3>
-                        <p class="property-best-for">Best for: campers who want a public campground just south of the village.</p>
-                        <p>Recreation.gov describes Sleepy Grass as just south of Cloudcroft, with sites for RVs up to 30 feet, tents, and campers. The Forest Service page says it is typically first come, first served, with seasonal opening around mid-May.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Near town</li>
-                                <li>Traditional campground setup</li>
-                                <li>Good option for smaller RVs and tents</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>30-foot RV limit is important</li>
-                                <li>First-come, first-served conditions can complicate peak weekends</li>
-                                <li>Seasonality matters</li>
-                            </ul>
-                        </div>
-                        <p style="font-size: 0.85rem; color: var(--granite); margin-top: 0.75rem;"><em>Book/verify via Recreation.gov Sleepy Grass listing</em></p>
+                    <div class="editor-pick">
+                        <span class="pick-for">Forest immersion, small rig or tent</span>
+                        <blockquote>"Pine trees, trailheads from the campsite, and a Recreation.gov reservation. The classic Cloudcroft camping trip."</blockquote>
+                        <p class="pick-answer">Reserve <a href="https://www.recreation.gov/" target="_blank" rel="noopener noreferrer">Deerhead or Pines campground</a>.</p>
                     </div>
-
-                    <!-- James Canyon -->
-                    <div class="camp-card">
-                        <h3>James Canyon Campground</h3>
-                        <p class="property-best-for">Best for: lower-elevation camping and shoulder-season flexibility.</p>
-                        <p>The Forest Service says James Canyon has 5 sites along US 82 west of Mayhill at a lower elevation of about 6,800 feet, making it usable longer than many higher Sacramento Mountains campgrounds.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Lower elevation</li>
-                                <li>Simpler, smaller campground</li>
-                                <li>Can work well when higher sites are colder or closed</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Small</li>
-                                <li>Not in the village</li>
-                                <li>More basic setup than private campgrounds</li>
-                            </ul>
-                        </div>
-                        <p style="font-size: 0.85rem; color: var(--granite); margin-top: 0.75rem;"><em>Book/verify via Forest Service James Canyon page</em></p>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- ════════════════════════════════════════════ CABINS & RENTALS ════════════════════════════════════════════ -->
-        <section class="section" id="cabins" aria-label="Cabins and short-term rentals">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Cabins &amp; Rentals</span>
-                    <h2 class="section-title section-title-centered">Cabins, Vacation Homes &amp; Short-Term Rentals</h2>
+        <!-- =========================================== PRACTICAL NOTES =========================================== -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Before you book</h2>
+
+            <details class="note">
+                <summary>Location &amp; walkability</summary>
+                <div class="note-body">
+                    <p>"Cloudcroft" on a listing can mean the village, outside town, east toward Mayhill, or west toward High Rolls. Always verify the actual address before booking. Only Sugar Pines, The Cabins at Cloudcroft, and homes managed by Cloudcroft Properties reliably walk to Burro Avenue.</p>
+                    <p>Many properties are "near Cloudcroft" but not close enough to walk anywhere. If walkability matters, ask for the exact distance to the village.</p>
                 </div>
+            </details>
 
-                <div class="rental-grid">
-
-                    <!-- The Cabins at Cloudcroft -->
-                    <div class="rental-card">
-                        <h3>The Cabins at Cloudcroft</h3>
-                        <p class="property-best-for">Best for: cabin travelers who want a known branded operation near the village.</p>
-                        <p>The Cabins at Cloudcroft offers a cabin compound with rustic styling, kitchens, fireplaces or wood stoves, and a location close to village attractions. It is one of the clearest non-marketplace cabin options for visitors who want something more predictable than browsing hundreds of individual listings.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Close to village attractions</li>
-                                <li>Rustic cabin experience with some modern comforts</li>
-                                <li>Easier to shop than large marketplace inventory</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>More limited style range than Airbnb/Vrbo inventory</li>
-                                <li>Book early for preferred units</li>
-                            </ul>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 1006 Coyote Avenue, Cloudcroft, NM 88317</span>
-                            <span>&#x1F4DE; <a href="tel:5756822396">(575) 682-2396</a></span>
-                            <span>&#x1F310; <a href="https://www.cabinsatcloudcroft.com/" target="_blank" rel="noopener noreferrer">cabinsatcloudcroft.com</a></span>
-                        </div>
-                    </div>
-
-                    <!-- Cabin Rentals Cloudcroft -->
-                    <div class="rental-card">
-                        <h3>Cabin Rentals Cloudcroft</h3>
-                        <p class="property-best-for">Best for: travelers who want a smaller curated cabin operator rather than a big marketplace.</p>
-                        <p>This operator markets a smaller portfolio including Cedar Lodge and Fawn Passage. It appears best suited to travelers who want a more personal cabin-booking feel and are comfortable choosing among a limited number of units.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Smaller set of focused options</li>
-                                <li>Good for couples or small families depending on the unit</li>
-                                <li>Clear personality versus generic listings</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Fewer choices than Airbnb/Vrbo</li>
-                                <li>Some units are outside immediate village limits</li>
-                            </ul>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F310; <a href="https://cabinrentalscloudcroft.com/" target="_blank" rel="noopener noreferrer">cabinrentalscloudcroft.com</a></span>
-                        </div>
-                    </div>
-
-                    <!-- Cloudcroft Properties -->
-                    <div class="rental-card">
-                        <h3>Cloudcroft Properties</h3>
-                        <p class="property-best-for">Best for: guests who want broker-managed vacation homes and a local office.</p>
-                        <p>Cloudcroft Properties combines real estate with vacation rental management and gives travelers access to homes in Cloudcroft and nearby areas. For some travelers, that local-office model feels safer than booking through a one-off host.</p>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Local office and phone support</li>
-                                <li>Broker/property-management structure</li>
-                                <li>Better fit for travelers who want a managed-home feel</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Inventory changes</li>
-                                <li>You still need to inspect each individual home for location, pet rules, stairs, parking, and winter suitability</li>
-                            </ul>
-                        </div>
-                        <div class="property-contact">
-                            <span>&#x1F4CD; 505 Burro Ave Suite 110, Cloudcroft, NM 88317</span>
-                            <span>&#x1F4DE; <a href="tel:5756824555">(575) 682-4555</a></span>
-                            <span>&#x1F310; <a href="https://cloudcroftproperties.com/" target="_blank" rel="noopener noreferrer">cloudcroftproperties.com</a></span>
-                        </div>
-                    </div>
-
-                    <!-- Airbnb -->
-                    <div class="rental-card">
-                        <h3>Airbnb</h3>
-                        <p class="property-best-for">Best for: widest choice and strong guest reviews.</p>
-                        <p>Airbnb is not a single property, but it defines the broader short-term rental market. AirDNA pegs the total Airbnb/Vrbo market at 296 listings. Airbnb surfaces strong guest sentiment, with Cloudcroft stays averaging about 4.9 out of 5.</p>
-                        <div style="margin: 1rem 0;">
-                            <span class="market-stat">296 Listings</span>
-                            <span class="market-stat">$192 Avg Rate</span>
-                            <span class="market-stat">4.9/5 Rating</span>
-                        </div>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>By far the broadest inventory</li>
-                                <li>Best place to filter for pet-friendly, hot tub, fenced yard, workspace, decks, large kitchens, and group size</li>
-                                <li>Strong for families and multigenerational trips</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Inventory and rates move constantly</li>
-                                <li>Quality varies more than at a branded operation</li>
-                                <li>Read cancellation rules and winter access notes carefully</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Vrbo -->
-                    <div class="rental-card">
-                        <h3>Vrbo</h3>
-                        <p class="property-best-for">Best for: widest filter options and vacation-home focus.</p>
-                        <p>Vrbo currently shows more than 148 vacation rentals in the Cloudcroft market. It is a strong option for families, groups, and travelers who prefer the vacation-home model over hotels or RV parks.</p>
-                        <div style="margin: 1rem 0;">
-                            <span class="market-stat">148+ Properties</span>
-                            <span class="market-stat">Widest Filters</span>
-                        </div>
-                        <div class="property-why">
-                            <h3>Why choose it</h3>
-                            <ul>
-                                <li>Deep inventory of vacation homes</li>
-                                <li>Excellent filtering for pet-friendly, hot tub, fenced yard, workspace, and group size</li>
-                                <li>Strong for families and multigenerational trips</li>
-                            </ul>
-                        </div>
-                        <div class="property-watchouts">
-                            <h3>Watch-outs</h3>
-                            <ul>
-                                <li>Inventory and rates move constantly</li>
-                                <li>Quality varies more than at a branded operation</li>
-                                <li>Read cancellation rules and winter access notes carefully</li>
-                            </ul>
-                        </div>
-                    </div>
-
+            <details class="note">
+                <summary>Winter access &amp; fire restrictions</summary>
+                <div class="note-body">
+                    <p>Grades, snow, and unpaved driveways matter. Some properties become difficult or impossible to reach in winter conditions. US-82 itself can close or require chains after significant storms.</p>
+                    <p>Campfire and grill rules can change quickly in the Sacramento Mountains. Always check current conditions before your trip, especially if a campfire is part of your plan.</p>
                 </div>
-            </div>
+            </details>
+
+            <details class="note">
+                <summary>Age, pet &amp; bathhouse policies</summary>
+                <div class="note-body">
+                    <p>Policies vary widely. Sugar Pines is 18+; Scenic Canyon is 30+; several parks have no age restriction. Pet policies range from fully welcoming (16 Springs, Lazy Day) to explicitly unknown — always confirm before booking.</p>
+                    <p>Scenic Canyon and 16 Springs have no public bathhouse. If you need shower and restroom facilities, your rig must provide them. Silver Springs and the Forest Service campgrounds all offer some form of restrooms but vault toilets, not showers.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Cancellations, deposits &amp; first-come sites</summary>
+                <div class="note-body">
+                    <p>Some private RV parks use strict, nonrefundable deposit policies (Sugar Pines explicitly). Read cancellation rules before committing — especially if you're booking far out for a peak weekend.</p>
+                    <p>Sleepy Grass is typically first-come, first-served, which complicates peak weekends. James Canyon is very small. If you're arriving Friday night in summer, have a backup plan.</p>
+                </div>
+            </details>
         </section>
 
-        <!-- ════════════════════════════════════════════ EDITOR'S PICKS ════════════════════════════════════════════ -->
-        <section class="section" id="picks" aria-label="Editor's picks by traveler type">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Editor's Picks</span>
-                    <h2 class="section-title section-title-centered">Best Choices by Traveler Type</h2>
+        <!-- =========================================== HANDOFF =========================================== -->
+        <section class="rentals-section" id="handoff" aria-label="Back to hotels and B&amp;Bs">
+            <div class="rentals-wrap">
+                <div>
+                    <h2>Prefer a hotel, B&amp;B, or historic resort?</h2>
+                    <p>If none of this sounds like the right trip — if you'd rather have a front desk, daily housekeeping, or an on-site restaurant — the main lodging guide covers Cloudcroft's nine named hotel, B&amp;B, and inn properties with the same decision-driven format.</p>
+                    <div class="rentals-buttons">
+                        <a href="complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html" class="btn-primary">See hotels &amp; B&amp;Bs</a>
+                        <a href="https://www.vrbo.com/vacation-rentals/usa/new-mexico/cloudcroft" target="_blank"
+                            rel="noopener noreferrer" class="btn-outline" style="color:#000;border-color:#000;">Search Vrbo rentals</a>
+                    </div>
                 </div>
-
-                <div class="picks-grid">
-
-                    <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F6B6;</div>
-                        <h3>Walking to Town</h3>
-                        <p>Sugar Pines RV Park, The Cabins at Cloudcroft, or a village-based Airbnb/Vrbo. If your trip is built around Burro Avenue and avoiding repeated drives, staying in or near the village matters most.</p>
-                    </div>
-
-                    <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F92B;</div>
-                        <h3>Quiet RV Stay</h3>
-                        <p>Scenic Canyon, 16 Springs, or Silver Springs. These work best for travelers who value elbow room, scenery, and a lower-key environment more than immediate village access.</p>
-                    </div>
-
-                    <div class="pick-card">
-                        <div class="pick-card-icon">&#x26FA;</div>
-                        <h3>Tent Camping</h3>
-                        <p>Pines, Deerhead, Sleepy Grass, or James Canyon. Stronger picks if your trip is about the forest, trails, campfires when allowed, and a less commercial feel.</p>
-                    </div>
-
-                    <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F466;</div>
-                        <h3>Families or Groups</h3>
-                        <p>The Cabins at Cloudcroft, Cloudcroft Properties vacation rentals, or larger homes on Vrbo. Families usually do better in the short-term rental market because kitchens, bedrooms, decks, and living space matter.</p>
-                    </div>
-
-                    <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F491;</div>
-                        <h3>Couples</h3>
-                        <p>Cabin Rentals Cloudcroft or smaller village Airbnb cabins. For two people, the best options are often the smallest cabins with privacy and a porch rather than the biggest houses.</p>
-                    </div>
-
-                    <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F4C5;</div>
-                        <h3>Longer Stays</h3>
-                        <p>Sugar Pines RV Park, Lazy Day Cabins &amp; RV Hideaway, or monthly-discount properties on Vrbo.</p>
-                    </div>
-
-                    <div class="pick-card">
-                        <div class="pick-card-icon">&#x1F699;</div>
-                        <h3>Self-Contained RVs</h3>
-                        <p>16 Springs or Scenic Canyon. Both make more sense if you are arriving with a rig that can operate comfortably without depending on a bathhouse.</p>
-                    </div>
-
-                    <div class="pick-card">
-                        <div class="pick-card-icon">&#x2705;</div>
-                        <h3>Simplest Answer</h3>
-                        <p>Book inside or next to the village unless you have a reason not to. Many visitors underestimate how much easier the trip feels when you can get to shops, dining, and the village core quickly.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ════════════════════════════════════════════ PRACTICAL TIPS ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="tips" aria-label="Practical advice before you book">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Before You Book</span>
-                    <h2 class="section-title section-title-centered">Practical Advice</h2>
-                </div>
-
-                <div class="tip-grid">
-
-                    <div class="tip-card">
-                        <div class="tip-card-icon">&#x1F4CD;</div>
-                        <h3>Check Exact Location</h3>
-                        <p>&ldquo;Cloudcroft&rdquo; listings can be in the village, outside town, east toward Mayhill, or west toward High Rolls. Always verify the actual address before booking.</p>
-                    </div>
-
-                    <div class="tip-card">
-                        <div class="tip-card-icon">&#x2744;&#xFE0F;</div>
-                        <h3>Ask About Winter Access</h3>
-                        <p>Grades, snow, and driveways matter. Some properties become difficult or impossible to reach in winter conditions.</p>
-                    </div>
-
-                    <div class="tip-card">
-                        <div class="tip-card-icon">&#x1F525;</div>
-                        <h3>Check Fire Restrictions</h3>
-                        <p>Campfire and grill rules can change quickly in the Sacramento Mountains. Always check current conditions before your trip.</p>
-                    </div>
-
-                    <div class="tip-card">
-                        <div class="tip-card-icon">&#x1F6BF;</div>
-                        <h3>Verify Bathhouse Access</h3>
-                        <p>Some RV parks are best only for self-contained rigs. If you need shower and restroom facilities, confirm before booking.</p>
-                    </div>
-
-                    <div class="tip-card">
-                        <div class="tip-card-icon">&#x1F43E;</div>
-                        <h3>Check Age &amp; Pet Rules</h3>
-                        <p>They vary widely. Some parks are adults-only, some are 30+, and pet policies range from fully welcoming to no pets allowed.</p>
-                    </div>
-
-                    <div class="tip-card">
-                        <div class="tip-card-icon">&#x1F6B6;</div>
-                        <h3>Don't Assume Walkability</h3>
-                        <p>Many properties are &ldquo;near Cloudcroft&rdquo; but not close enough to walk anywhere. If walkability matters, verify the exact distance to the village.</p>
-                    </div>
-
-                    <div class="tip-card">
-                        <div class="tip-card-icon">&#x1F4CB;</div>
-                        <h3>Read Cancellation Terms</h3>
-                        <p>Some private RV parks and rentals use strict deposit policies. Know the rules before you commit.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ════════════════════════════════════════════ CTA ════════════════════════════════════════════ -->
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Find Your Perfect Cloudcroft Stay</h2>
-                <p>Whether you're parking an RV, pitching a tent, or renting a cabin in the pines &mdash; Cloudcroft has a spot for you.</p>
-                <div class="cta-buttons">
-                    <a href="lodging.html" class="btn-primary">Browse All Lodging</a>
-                    <a href="https://www.vrbo.com/vacation-rentals/usa/new-mexico/cloudcroft" target="_blank" rel="noopener noreferrer" class="btn-secondary">Search Vrbo</a>
+                <div class="rentals-stat" aria-label="Non-hotel market at a glance">
+                    <span class="big">7</span>
+                    <span class="mid">RV parks</span>
+                    <hr>
+                    <span class="big">4</span>
+                    <span class="mid">Forest campgrounds</span>
+                    <hr>
+                    <span class="big">296+</span>
+                    <span class="mid">Airbnb/Vrbo listings</span>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- ════════════════════════════════════════════ FOOTER ════════════════════════════════════════════ -->
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
-                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
-                <div class="footer-social">
-                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
-                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
-                    <a href="#todo-twitter" aria-label="Twitter">X</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Explore</h3>
-                <a href="../stay/lodging.html">Lodging</a>
-                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
-                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
-                <a href="../do/complete-guide-to-activities.html">Activities</a>
-                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="../season/seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h3>Connect</h3>
-                <a href="https://www.coolcloudcroft.com" target="_blank" rel="noopener noreferrer">Cloudcroft Chamber</a>
-                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
-            </div>
-            <div class="footer-col">
-                <h3>Plan</h3>
-                <a href="../plan.html">Plan Your Trip</a>
-                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
-                <a href="../about.html">About Cloudcroft</a>
-                <a href="../contact.html">Contact Us</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-        </div>
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
     </footer>
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
     <script src="../js/common.js"></script>
     <script>
-        (function() {
+        (function () {
+            // ---- Fade-in ----
             var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         fadeObserver.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
-
-            document.querySelectorAll('.bucket-card, .property-card, .camp-card, .rental-card, .pick-card, .tip-card, .fade-in').forEach(function(el) {
+            document.querySelectorAll('.lodge-card, .fade-in').forEach(function (el) {
                 fadeObserver.observe(el);
             });
+
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sectionIds = tocPills.map(function (p) { return p.getAttribute('href').replace('#', ''); });
+            var sections = sectionIds.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
+
+            // ---- Finder + filter-rail shared state ----
+            var state = {
+                vibe: new Set(),    // rv, camp, cabin, marketplace
+                group: new Set(),
+                budget: new Set(),
+                pets: null,
+                rail: new Set()     // rv, camp, cabin, marketplace, walkable, hookups, bathhouse, pets, yearround, family
+            };
+
+            var VIBE_ALIASES = { rv: 'rv', camp: 'camp', cabin: 'cabin', marketplace: 'marketplace' };
+
+            function applyPressed(btn, on) {
+                btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+            }
+
+            function syncRailWithFinder() {
+                document.querySelectorAll('.filter-rail .chip[data-rail]').forEach(function (b) {
+                    var key = b.getAttribute('data-rail');
+                    if (key in VIBE_ALIASES) {
+                        applyPressed(b, state.vibe.has(key));
+                        if (state.vibe.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key === 'pets') {
+                        var on = state.pets === 'yes';
+                        applyPressed(b, on);
+                        if (on) state.rail.add('pets'); else state.rail.delete('pets');
+                    }
+                });
+            }
+
+            function syncFinderWithRail() {
+                document.querySelectorAll('#finder .chip[data-value]').forEach(function (b) {
+                    var grp = b.parentElement.getAttribute('data-filter-group');
+                    var v = b.getAttribute('data-value');
+                    if (grp === 'vibe' && v in VIBE_ALIASES) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.vibe.add(v); else state.vibe.delete(v);
+                    }
+                    if (grp === 'pets' && v === 'yes') {
+                        applyPressed(b, state.rail.has('pets'));
+                        state.pets = state.rail.has('pets') ? 'yes' : (state.pets === 'no' ? 'no' : null);
+                    }
+                });
+            }
+
+            document.querySelectorAll('#finder .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var grp = btn.parentElement.getAttribute('data-filter-group');
+                    var v = btn.getAttribute('data-value');
+                    if (grp === 'vibe') {
+                        if (state.vibe.has(v)) state.vibe.delete(v); else state.vibe.add(v);
+                    } else if (grp === 'group') {
+                        if (state.group.has(v)) state.group.delete(v); else state.group.add(v);
+                    } else if (grp === 'budget') {
+                        if (state.budget.has(v)) state.budget.delete(v); else state.budget.add(v);
+                    } else if (grp === 'pets') {
+                        state.pets = (state.pets === v) ? null : v;
+                        btn.parentElement.querySelectorAll('.chip').forEach(function (s) { applyPressed(s, false); });
+                    }
+                    if (grp === 'vibe') applyPressed(btn, state.vibe.has(v));
+                    if (grp === 'group') applyPressed(btn, state.group.has(v));
+                    if (grp === 'budget') applyPressed(btn, state.budget.has(v));
+                    if (grp === 'pets') applyPressed(btn, state.pets === v);
+                    syncRailWithFinder();
+                    applyFilters();
+                });
+            });
+
+            document.querySelectorAll('.filter-rail .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var k = btn.getAttribute('data-rail');
+                    if (state.rail.has(k)) state.rail.delete(k); else state.rail.add(k);
+                    applyPressed(btn, state.rail.has(k));
+                    syncFinderWithRail();
+                    applyFilters();
+                });
+            });
+
+            document.getElementById('finder-clear').addEventListener('click', function () {
+                state.vibe.clear(); state.group.clear(); state.budget.clear(); state.rail.clear(); state.pets = null;
+                document.querySelectorAll('.chip[aria-pressed]').forEach(function (c) { applyPressed(c, false); });
+                applyFilters();
+            });
+
+            function cardMatches(card) {
+                var types = (card.getAttribute('data-types') || '').split(/\s+/);
+                var groups = (card.getAttribute('data-groups') || '').split(/\s+/);
+                var price = card.getAttribute('data-price');
+                var walkable = card.getAttribute('data-walkable') === 'true';
+                var pets = card.getAttribute('data-pets');
+                var hookups = card.getAttribute('data-hookups') === 'true';
+                var bathhouse = card.getAttribute('data-bathhouse') === 'true';
+                var yearround = card.getAttribute('data-yearround') === 'true';
+                var family = card.getAttribute('data-family') === 'true';
+
+                if (state.vibe.size) {
+                    var hit = false;
+                    state.vibe.forEach(function (v) { if (types.indexOf(v) !== -1) hit = true; });
+                    if (!hit) return false;
+                }
+                if (state.group.size) {
+                    var gh = false;
+                    state.group.forEach(function (g) { if (groups.indexOf(g) !== -1) gh = true; });
+                    if (!gh) return false;
+                }
+                if (state.budget.size && !state.budget.has(price)) return false;
+                if (state.pets === 'yes' && pets !== 'yes') return false;
+
+                if (state.rail.has('walkable') && !walkable) return false;
+                if (state.rail.has('pets') && pets !== 'yes') return false;
+                if (state.rail.has('hookups') && !hookups) return false;
+                if (state.rail.has('bathhouse') && !bathhouse) return false;
+                if (state.rail.has('yearround') && !yearround) return false;
+                if (state.rail.has('family') && !family) return false;
+
+                return true;
+            }
+
+            function applyFilters() {
+                var shown = 0;
+                var cards = document.querySelectorAll('[data-grid] .lodge-card');
+                cards.forEach(function (c) {
+                    if (cardMatches(c)) { c.hidden = false; shown++; }
+                    else { c.hidden = true; }
+                });
+                document.getElementById('filter-count-n').textContent = shown;
+
+                // Hide entire section if no cards match inside it
+                document.querySelectorAll('section.props-block').forEach(function (sec) {
+                    var grid = sec.querySelector('[data-grid]');
+                    if (!grid) return;
+                    var visible = grid.querySelectorAll('.lodge-card:not([hidden])').length;
+                    sec.classList.toggle('section-hidden', visible === 0);
+                });
+
+                var empty = document.getElementById('empty-state');
+                if (shown === 0) empty.classList.add('is-visible');
+                else empty.classList.remove('is-visible');
+            }
+
+            // ---- Compare matrix ----
+            var matrixData = {
+                sugar:      { name: 'Sugar Pines RV Park',              href: 'https://www.sugarpinesrvpark.com/',    type: 'RV · walkable',  price: '$$',  setup: '16 sites · 30-amp',       walk: 'Yes · walk',      hookups: 'Full',   bath: 'Verify',  pets: 'Verify',  notes: '18+ guests · strict deposit.' },
+                scenic:     { name: 'Scenic Canyon RV Park',            href: 'https://www.cloudcroft-rv.com/',        type: 'RV · adults 30+',price: '$$',  setup: '14 sites · water/sewer/electric/Wi-Fi', walk: 'No · ~6.5 mi', hookups: 'Full', bath: 'No', pets: 'Verify', notes: 'No bathhouse — self-contained rigs only.' },
+                springs16:  { name: '16 Springs',                       href: 'https://www.16springs.com/',           type: 'RV · pet-friendly',price: '$',  setup: 'Water/electric/septic',   walk: 'No · ~20 min',    hookups: 'Full',   bath: 'No',      pets: 'Yes',     notes: 'No public bathhouse — self-contained.' },
+                silver:     { name: 'Silver Springs RV Park',           href: 'https://silverspringsrv.com/',          type: 'RV · family',    price: '$$',  setup: 'Trout pond on-site',     walk: 'No · ~5 mi',      hookups: 'Full',   bath: 'Verify',  pets: 'Verify',  notes: 'Thinner official detail — verify amenities.' },
+                ccrr:       { name: 'Cloud Climbing Railroad RV Park',  href: 'https://www.cloudclimbingrailroad.com/',type: 'RV · year-round',price: '$$',  setup: 'Full-hookup sites',      walk: 'No · High Rolls', hookups: 'Full',   bath: 'Verify',  pets: 'Verify',  notes: 'Year-round; historic railroad site.' },
+                camprio:    { name: 'Camp Rio',                         href: 'https://www.camprionm.com/',           type: 'RV + tent + glamping + cabin', price: '$$', setup: 'Multiple formats', walk: 'No · Mayhill',    hookups: 'Full',   bath: 'Verify',  pets: 'Verify',  notes: 'Good for mixed-format group stays.' },
+                lazyday:    { name: 'Lazy Day Cabins &amp; RV Hideaway',    href: 'https://www.lazydaycabins.com/',       type: 'Hybrid RV/motel/cabin', price: '$', setup: '6 cabins · 3 motel · 10 RV', walk: 'No · Mayhill',    hookups: 'Full',   bath: 'Verify',  pets: 'Yes',     notes: 'Older-school; confirm current rates.' },
+                pines:      { name: 'Pines Campground',                 href: 'https://www.recreation.gov/',           type: 'USFS campground',price: '$',   setup: 'Forested; ~8,700 ft',    walk: 'No',              hookups: 'None',   bath: 'No',      pets: 'Verify',  notes: 'Seasonal; Recreation.gov reservations.' },
+                deerhead:   { name: 'Deerhead Campground',              href: 'https://www.recreation.gov/',           type: 'USFS · Rim Trail',price: '$',  setup: '19 sites · vault toilets', walk: 'No · near village', hookups: 'None',   bath: 'No',      pets: 'Verify',  notes: 'Across from Rim Trail trailhead.' },
+                sleepy:     { name: 'Sleepy Grass Campground',          href: 'https://www.recreation.gov/',           type: 'USFS · first-come',price: '$', setup: 'RV up to 30 ft · tents', walk: 'No · S of village', hookups: 'None',   bath: 'No',      pets: 'Verify',  notes: 'Opens mid-May; no reservations.' },
+                jamescanyon:{ name: 'James Canyon Campground',          href: 'https://www.recreation.gov/',           type: 'USFS · lower elev.',price: '$',setup: '5 sites · ~6,800 ft',     walk: 'No · W of Mayhill', hookups: 'None',   bath: 'No',      pets: 'Verify',  notes: 'Small; good shoulder-season option.' },
+                cabinsat:   { name: 'The Cabins at Cloudcroft',         href: 'stay-cabins-at-cloudcroft.html',        type: 'Cabin resort',   price: '$$',  setup: 'Kitchens · fireplaces',  walk: 'Yes · ~7 min',    hookups: 'N/A',    bath: 'Yes',     pets: 'Verify',  notes: 'Most predictable non-marketplace cabin option.' },
+                cabinrentals:{ name: 'Cabin Rentals Cloudcroft',         href: 'https://cabinrentalscloudcroft.com/',   type: 'Small operator', price: '$$',  setup: 'Cedar Lodge · Fawn Passage', walk: 'Varies',      hookups: 'N/A',    bath: 'Yes',     pets: 'Verify',  notes: 'Curated portfolio of named cabin units.' },
+                cloudcroftproperties:{ name: 'Cloudcroft Properties',   href: 'https://cloudcroftproperties.com/',     type: 'Broker-managed homes', price: '$$', setup: '505 Burro Ave office', walk: 'Yes · varies by home', hookups: 'N/A', bath: 'Yes', pets: 'Verify', notes: 'Local office; inventory shifts.' },
+                airbnb:     { name: 'Airbnb',                           href: 'https://www.airbnb.com/s/Cloudcroft--NM/homes', type: 'Marketplace · 296 listings', price: '$$', setup: '~$192 median · 4.9 rating', walk: 'Varies', hookups: 'N/A', bath: 'Yes', pets: 'Filter', notes: 'Widest inventory; filter for pet/hot-tub/workspace.' },
+                vrbo:       { name: 'Vrbo',                             href: 'https://www.vrbo.com/vacation-rentals/usa/new-mexico/cloudcroft', type: 'Marketplace · 148+ homes', price: '$$', setup: 'Whole-home focus', walk: 'Varies', hookups: 'N/A', bath: 'Yes', pets: 'Filter', notes: 'Stronger for whole homes and groups.' }
+            };
+
+            var selected = new Set();
+
+            function okCell(v) {
+                if (v === 'Yes' || (typeof v === 'string' && v.indexOf('Yes') === 0)) return 'ok';
+                if (v === 'No' || v === 'None') return 'no';
+                return '';
+            }
+
+            function renderMatrix() {
+                var body = document.getElementById('matrix-body');
+                var count = document.getElementById('matrix-count');
+                if (selected.size === 0) {
+                    body.innerHTML = '<tr><td colspan="9" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>';
+                    count.textContent = 'Select properties above (check the Compare box on any card)';
+                    return;
+                }
+                count.textContent = selected.size + ' selected';
+                var rows = [];
+                selected.forEach(function (key) {
+                    var d = matrixData[key]; if (!d) return;
+                    var isExternal = d.href.indexOf('http') === 0;
+                    var linkAttrs = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+                    rows.push(
+                        '<tr>' +
+                        '<td class="prop-name"><a href="' + d.href + '"' + linkAttrs + '>' + d.name + '</a></td>' +
+                        '<td>' + d.type + '</td>' +
+                        '<td>' + d.price + '</td>' +
+                        '<td>' + d.setup + '</td>' +
+                        '<td class="' + okCell(d.walk) + '">' + d.walk + '</td>' +
+                        '<td class="' + okCell(d.hookups) + '">' + d.hookups + '</td>' +
+                        '<td class="' + okCell(d.bath) + '">' + d.bath + '</td>' +
+                        '<td>' + d.pets + '</td>' +
+                        '<td>' + d.notes + '</td>' +
+                        '</tr>'
+                    );
+                });
+                body.innerHTML = rows.join('');
+            }
+
+            document.querySelectorAll('.cmp').forEach(function (cb) {
+                cb.addEventListener('change', function () {
+                    var key = cb.getAttribute('data-property');
+                    if (cb.checked) selected.add(key); else selected.delete(key);
+                    renderMatrix();
+                });
+            });
+
+            applyFilters();
+            renderMatrix();
         })();
     </script>
 </body>
+
 </html>
