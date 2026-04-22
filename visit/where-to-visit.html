@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Where to Visit Near Cloudcroft | DiscoverCloudcroft.com — 16 Best Nearby Trips for 2026</title>
-    <meta name="description" content="The 16 best nearby places to visit from Cloudcroft, NM in 2026 — White Sands, Ruidoso, Sunspot Scenic Byway, Oliver Lee, Las Cruces, and more, with drive times and tips.">
-    <meta name="keywords" content="Cloudcroft NM, nearby visits, day trips, White Sands, Ruidoso, Alamogordo, Sacramento Mountains, Lincoln National Forest, Tularosa Basin, 2026">
-    <link rel="canonical" href="https://discovercloudcroft.com/explore/where-to-visit.html">
+    <title>Where to Visit Near Cloudcroft, NM (2026) — 16 Trips Within Easy Reach | DiscoverCloudcroft.com</title>
+    <meta name="description"
+        content="Sixteen nearby trips from Cloudcroft, NM in 2026 — White Sands, Ruidoso, Sunspot Scenic Byway, Oliver Lee, Las Cruces, and more — filtered by drive time, vibe, and region.">
+    <meta name="keywords"
+        content="Cloudcroft nearby trips, White Sands day trip, Ruidoso, Sunspot Scenic Byway, Oliver Lee, Las Cruces, Tularosa, Alamogordo, Mayhill, Timberon, Sacramento Mountains">
+    <link rel="canonical" href="https://discovercloudcroft.com/visit/where-to-visit.html">
 
-    <meta property="og:title" content="Where to Visit Near Cloudcroft | DiscoverCloudcroft.com">
-    <meta property="og:description" content="16 best nearby places to visit from Cloudcroft, NM in 2026 — forest, desert, history, and culture within easy reach.">
-    <meta property="og:url" content="https://discovercloudcroft.com/explore/where-to-visit.html">
+    <meta property="og:title" content="Where to Visit Near Cloudcroft, NM (2026) — 16 Trips Within Easy Reach | DiscoverCloudcroft.com">
+    <meta property="og:description"
+        content="Sixteen nearby trips from Cloudcroft, NM in 2026 — filtered by drive time, vibe, and region.">
+    <meta property="og:url" content="https://discovercloudcroft.com/visit/where-to-visit.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Where to Visit Near Cloudcroft | DiscoverCloudcroft.com">
-    <meta name="twitter:description" content="16 best nearby places to visit from Cloudcroft in 2026 — forest, desert, history, and culture within easy reach.">
+    <meta name="twitter:title" content="Where to Visit Near Cloudcroft, NM (2026) — 16 Trips Within Easy Reach | DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="Sixteen nearby trips from Cloudcroft, NM — filter by time, vibe, region.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Where to Visit Near Cloudcroft — 16 Best Nearby Trips for 2026",
-      "description": "A guide to the 16 best nearby places to visit from Cloudcroft, NM in 2026, with drive times, season tips, and 2026 access notes.",
-      "url": "https://discovercloudcroft.com/explore/where-to-visit.html",
+      "headline": "Where to Visit Near Cloudcroft — 16 Trips Within Easy Reach (2026)",
+      "description": "Sixteen nearby trips from Cloudcroft, NM with drive times, 2026 access notes, and practical tips.",
+      "url": "https://discovercloudcroft.com/visit/where-to-visit.html",
       "about": {
         "@type": "Place",
         "name": "Cloudcroft",
@@ -36,7 +40,8 @@
           "postalCode": "88317",
           "addressCountry": "US"
         }
-      }
+      },
+      "dateModified": "2026-04-22"
     }
     </script>
 
@@ -44,209 +49,977 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="../css/common.css">
 
     <style>
+        /* =====================================================================
+           CHANGELOG (2026-04-22 rebuild — mirrors /shop/ guide design)
+           FIXED
+             - Canonical + og:url + schema.org url pointed to /explore/ — a
+               directory that does not exist. Real path is /visit/.
+             - Hardcoded nav paths with no ../ prefix (every link 404'd).
+             - Duplicate <nav class="mobile-nav-overlay"> block (two with
+               conflicting hrefs sharing id="mobile-nav").
+             - Dead `#reels` anchor in nav.
+             - Broken CTA/footer links: ../stay/lodging.html (doesn't exist),
+               ../eat/complete-guide-to-dining.html (doesn't exist),
+               ../do/complete-guide-to-activities.html (doesn't exist),
+               ../plan.html (doesn't exist), ../contact.html (doesn't exist).
+               Swapped to the real complete-guide filenames or the standard
+               minimal footer.
+           ADDED
+             - Hero 2-up (photo + "Plan my day" 4-chip quiz).
+             - Stats strip (16 trips · 8,676→4,350 ft drop · Stage 1 fire
+               restrictions · US-70 missile checks · Sunspot closed).
+             - Sticky filter rail synced with the hero quiz (11 chips:
+               village/basin/further, time bands, category axes, indoor).
+             - Richer destination cards with numbered pins, category tags,
+               drive-time + time-needed meta, attribute chips (with warn
+               chips for "Construction 2026", "Call for hours", "Snow-
+               dependent"), Compare checkboxes, per-card photos where media
+               exists, styled header strips where it doesn't.
+             - Three auto-hiding grid regions: Close to the village (7) /
+               Down in the basin (6) / Full day or overnight (3).
+             - Inline-SVG regional map with Sacramento Mountains and
+               Tularosa Basin zones, US-82 + US-70 corridors, and 16 pins
+               + linked legend.
+             - Compare matrix with 8 columns.
+             - Editor's Call — 3 picks (5-minute roadside / basin half-day /
+               full overnight).
+             - Practical-notes accordion (4 panels: 2026 closures / roads &
+               US-70 checks / weather &amp; elevation drop / cell service &amp;
+               rangers).
+             - Handoff to lodging, dining, and activities guides.
+             - TOC pills track active section on scroll.
+           REMOVED
+             - Emoji icons in info bar, visit cards, tip box, highlight
+               cards, visiting cards.
+             - Word-span hero animation on a 5-word title.
+             - Redundant "Why Cloudcroft" setup paragraphs (thesis now one
+               line under the hero).
+             - Standalone "Three Ways to Use This List" section — its three
+               ideas became Editor's Call picks.
+             - Multi-column broken footer.
+           ================================================================= */
+
+        /* ---- Hero ---- */
         .hero-bg {
             background: url('../media/white-sands-dunes-mountains.jpg') center center / cover no-repeat;
+            filter: saturate(0.95);
         }
+
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(20, 40, 35, 0.78), rgba(0, 0, 0, 0.6));
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.6));
         }
 
-        .section-description {
-            font-size: 1.05rem;
-            color: var(--granite);
-            max-width: 720px;
-            margin: 0 auto 3rem;
-            text-align: center;
-            line-height: 1.7;
+        .hero.hero-split {
+            min-height: 560px;
+            padding: 5rem 2rem;
         }
 
-        .about-text p {
-            font-size: 1.05rem;
-            color: var(--granite);
-            margin-bottom: 1.25rem;
-            line-height: 1.8;
-        }
-
-        /* Visit cards grid */
-        .visit-grid {
+        .hero-split-grid {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-left .hero-eyebrow-pill {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 20px;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-left h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+            color: #fff;
+            line-height: 1.08;
+            margin-bottom: 1rem;
+        }
+
+        .hero-left .hero-deck {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            max-width: 30rem;
+        }
+
+        .hero-byline { color: rgba(255, 255, 255, 0.75); font-size: 0.82rem; letter-spacing: 0.04em; }
+        .hero-byline strong { color: #fff; font-weight: 600; }
+
+        /* ---- Finder ---- */
+        .finder {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 1.5rem 1.5rem 1.25rem;
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        .finder h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0 0 1rem;
+        }
+
+        .finder-row { margin-bottom: 0.85rem; }
+
+        .finder-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 0.45rem;
+        }
+
+        .chip-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+        .chip {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            padding: 0.4rem 0.85rem;
+            border-radius: 999px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .chip:hover { border-color: #000; }
+
+        .chip[aria-pressed="true"] {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .finder-actions {
+            display: flex;
+            gap: 0.75rem;
             margin-top: 1rem;
         }
-        .visit-card {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            border-top: 4px solid var(--golden-hour);
+
+        .finder-actions .btn-primary {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.8rem;
+        }
+
+        .finder-clear {
+            background: none;
+            border: none;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Stats strip ---- */
+        .stats-strip {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .stat { text-align: center; }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.4rem;
+        }
+
+        /* ---- Thesis ---- */
+        .thesis {
+            max-width: 820px;
+            margin: 3rem auto 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .thesis p {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            color: #222;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        .thesis .thesis-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            letter-spacing: 0.04em;
+        }
+
+        .thesis a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Sticky filter rail ---- */
+        .filter-rail {
+            position: sticky;
+            top: 64px;
+            z-index: 80;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: saturate(140%) blur(6px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 0.75rem 2rem;
+        }
+
+        .filter-rail-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .filter-rail-inner::-webkit-scrollbar { display: none; }
+
+        .filter-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            white-space: nowrap;
+            margin-right: 0.25rem;
+        }
+
+        .filter-count {
+            margin-left: auto;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            white-space: nowrap;
+            padding-left: 1rem;
+        }
+
+        .filter-count strong { color: #000; }
+
+        /* ---- Section containers ---- */
+        .trips-block {
+            padding: 3rem 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .trips-block-head { margin-bottom: 1rem; }
+
+        .trips-block-head .eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .trips-block-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0.2rem 0 0.35rem;
+        }
+
+        .trips-block-head p {
+            color: #555;
+            font-size: 0.92rem;
+            max-width: 620px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        .section-hidden { display: none; }
+
+        /* ---- Cards ---- */
+        .lodge-grid.is-grid-plus {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .lodge-card.card-plus {
+            padding: 0;
+            border-top: none;
+            overflow: hidden;
+            cursor: default;
+            position: relative;
+        }
+
+        .lodge-card.card-plus:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+            border-top-color: transparent;
+            border-top-width: 0;
+        }
+
+        .lodge-card.card-plus img {
+            margin-bottom: 0;
+            border-radius: 0;
+            aspect-ratio: 16 / 10;
+        }
+
+        /* Styled header strip for no-photo cards */
+        .card-header-strip {
+            aspect-ratio: 16 / 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
+
+        .card-header-strip.head-village { background: linear-gradient(135deg, #1a2a18 0%, #2d4a2a 50%, #1a2a18 100%); }
+        .card-header-strip.head-basin   { background: linear-gradient(135deg, #3a2a12 0%, #5a4224 50%, #3a2a12 100%); }
+        .card-header-strip.head-further { background: linear-gradient(135deg, #1c1c1c 0%, #3a3a3a 50%, #1c1c1c 100%); }
+
+        .card-body {
+            padding: 1.25rem 1.25rem 1.25rem;
             display: flex;
             flex-direction: column;
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        .visit-card.visible {
-            opacity: 1;
-            transform: translateY(0);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-        .visit-card:nth-child(2).visible { transition-delay: 0.05s; }
-        .visit-card:nth-child(3).visible { transition-delay: 0.1s; }
-        .visit-card:nth-child(4).visible { transition-delay: 0.15s; }
-        .visit-card:nth-child(5).visible { transition-delay: 0.2s; }
-        .visit-card:nth-child(6).visible { transition-delay: 0.25s; }
-
-        .visit-icon {
-            font-size: 2rem;
-            margin-bottom: 0.75rem;
-        }
-        .visit-image {
-            display: block;
-            width: calc(100% + 4rem);
-            margin: -2rem -2rem 1rem;
-            aspect-ratio: 16 / 9;
-            object-fit: cover;
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
-        }
-        .visit-card h3 {
-            font-size: 1.25rem;
-            color: var(--midnight);
-            margin: 0 0 0.5rem 0;
-        }
-        .visit-meta {
-            font-size: 0.85rem;
-            color: var(--granite);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.75rem;
-            font-weight: 700;
-        }
-        .visit-card p {
-            color: var(--granite);
-            font-size: 0.98rem;
-            line-height: 1.6;
-            margin: 0 0 1rem 0;
-        }
-        .visit-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-            margin-top: auto;
-        }
-        .visit-tag {
-            background: var(--cloud-drift);
-            color: var(--charcoal);
-            font-size: 0.75rem;
-            padding: 0.3rem 0.7rem;
-            border-radius: 999px;
-            font-weight: 500;
+            flex: 1;
         }
 
-        /* Highlights */
-        .highlights-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        .highlight-card {
-            background: #ffffff;
-            border: 1px solid rgba(0,0,0,0.06);
-            border-radius: 12px;
-            padding: 2rem;
-            text-align: center;
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        .highlight-card.visible {
-            opacity: 1;
-            transform: translateY(0);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-        .highlight-card:nth-child(2).visible { transition-delay: 0.1s; }
-        .highlight-card:nth-child(3).visible { transition-delay: 0.2s; }
-        .highlight-icon { font-size: 2.25rem; margin-bottom: 0.75rem; }
-        .highlight-card h3 { color: var(--midnight); margin: 0 0 0.5rem; }
-        .highlight-card p { color: var(--granite); line-height: 1.6; margin: 0; }
-
-        /* Visiting / Plan section */
-        .visiting-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        .visiting-card {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            border-top: 4px solid var(--golden-hour);
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        .visiting-card.visible {
-            opacity: 1;
-            transform: translateY(0);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-        .visiting-card:nth-child(2).visible { transition-delay: 0.1s; }
-        .visiting-card:nth-child(3).visible { transition-delay: 0.2s; }
-        .visiting-card:nth-child(4).visible { transition-delay: 0.3s; }
-        .visiting-icon { font-size: 1.75rem; margin-bottom: 0.5rem; }
-        .visiting-card h3 { margin: 0 0 0.5rem; color: var(--midnight); }
-        .visiting-card p { color: var(--granite); line-height: 1.7; margin: 0; }
-
-        .tip-box {
+        .card-head {
             display: flex;
             align-items: flex-start;
-            gap: 1rem;
-            background: #fffbe6;
-            border: 1px solid #f0d060;
-            border-radius: 12px;
-            padding: 1.25rem 1.5rem;
-            margin-top: 2rem;
-            color: var(--charcoal);
-            line-height: 1.6;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
         }
-        .tip-box .tip-icon { font-size: 1.5rem; }
 
-        @media (max-width: 1024px) {
-            .visit-grid { grid-template-columns: repeat(2, 1fr); }
-            .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+        .card-head h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.12rem;
+            color: #000;
+            margin: 0;
+            line-height: 1.25;
         }
-        @media (max-width: 768px) {
-            .visit-grid,
-            .highlights-grid,
-            .visiting-grid { grid-template-columns: 1fr; }
+
+        .cat-tag {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            padding: 0.25rem 0.55rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .cat-tag.cat-nature  { background: #e4eedd; color: #2a4a1a; border-color: rgba(42, 74, 26, 0.22); }
+        .cat-tag.cat-history { background: #f4ebe0; color: #4a2e12; border-color: rgba(74, 46, 18, 0.18); }
+        .cat-tag.cat-town    { background: #eaf1ea; color: #254a33; border-color: rgba(37, 74, 51, 0.18); }
+        .cat-tag.cat-science { background: #e4ecf4; color: #1e3a5a; border-color: rgba(30, 58, 90, 0.2); }
+        .cat-tag.cat-drive   { background: #efe8dc; color: #3a2a12; border-color: rgba(58, 42, 18, 0.2); }
+        .cat-tag.cat-family  { background: #f4e4e4; color: #5a2525; border-color: rgba(90, 37, 37, 0.18); }
+        .cat-tag.cat-dark    { background: #1c1c2a; color: #e4e4f4; border-color: rgba(255, 255, 255, 0.08); }
+
+        .property-type.type-inline { margin-bottom: 0.75rem; }
+
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem 1rem;
+            font-size: 0.78rem;
+            color: #555;
+            margin-bottom: 0.6rem;
+        }
+
+        .card-meta svg { vertical-align: -3px; margin-right: 0.3rem; }
+
+        .card-body p.card-desc {
+            color: var(--charcoal-light);
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0 0 0.85rem;
+        }
+
+        .amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .amenity {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.2rem 0.55rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .amenity.warn {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.18);
+        }
+
+        .card-foot {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            padding-top: 0.85rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .compare-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #444;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .compare-toggle input {
+            accent-color: #000;
+            width: 14px;
+            height: 14px;
+        }
+
+        .card-foot .lodge-card-guide { margin: 0; }
+
+        .card-pin {
+            position: absolute;
+            top: 0.6rem;
+            left: 0.6rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+            z-index: 2;
+        }
+
+        .lodge-card[hidden] { display: none !important; }
+
+        .empty-state {
+            display: none;
+            padding: 3rem 1rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+            border: 1px dashed rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+        }
+
+        .empty-state.is-visible { display: block; }
+
+        /* ---- Compare matrix ---- */
+        .matrix-section {
+            background: #f8f8f8;
+            padding: 3.5rem 2rem;
+        }
+
+        .matrix-wrap { max-width: 1200px; margin: 0 auto; }
+
+        .matrix-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .matrix-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0;
+        }
+
+        .matrix-count {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .matrix-scroll {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .matrix {
+            width: 100%;
+            min-width: 820px;
+            border-collapse: collapse;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .matrix thead th {
+            text-align: left;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #666;
+            font-weight: 700;
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fafafa;
+        }
+
+        .matrix tbody td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            color: #333;
+            vertical-align: top;
+        }
+
+        .matrix tbody tr:last-child td { border-bottom: none; }
+
+        .matrix tbody .prop-name {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            color: #000;
+            font-size: 0.95rem;
+        }
+
+        .matrix .ok { color: #000; font-weight: 600; }
+        .matrix .no { color: #aaa; }
+        .matrix .warn-cell { color: #7a4a00; font-weight: 600; }
+
+        .matrix-empty {
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        /* ---- Map block ---- */
+        .map-section {
+            padding: 3.5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-head { margin-bottom: 1.5rem; }
+
+        .map-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.35rem;
+        }
+
+        .map-head p {
+            color: #555;
+            font-size: 0.9rem;
+            max-width: 640px;
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .map-figure {
+            background: #f2ede3;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .map-svg { width: 100%; height: auto; display: block; }
+
+        .map-legend {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.45rem;
+        }
+
+        .map-legend li {
+            display: grid;
+            grid-template-columns: 26px 1fr;
+            gap: 0.6rem;
+            align-items: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #333;
+        }
+
+        .map-legend .lg-pin {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-footnote {
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 1rem;
+        }
+
+        /* ---- Editor's Call ---- */
+        .editor-section {
+            background: #111;
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+
+        .editor-wrap { max-width: 1100px; margin: 0 auto; }
+
+        .editor-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.6rem, 2.4vw, 2rem);
+            margin: 0 0 2rem;
+            color: #fff;
+        }
+
+        .editor-picks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .editor-pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .editor-pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .editor-pick .pick-answer {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .editor-pick .pick-answer a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Practical notes accordion ---- */
+        .notes-section {
+            padding: 4rem 2rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .notes-section h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+
+        .note { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        .note:last-of-type { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+        .note > summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .note > summary::-webkit-details-marker { display: none; }
+
+        .note > summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+            transition: transform 0.2s ease;
+        }
+
+        .note[open] > summary::after { content: '−'; }
+
+        .note > summary:hover { color: #444; }
+
+        .note .note-body {
+            padding: 0 2rem 1.25rem 0;
+            color: #444;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .note .note-body p + p { margin-top: 0.65rem; }
+
+        .note .note-body a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Handoff ---- */
+        .handoff-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+        }
+
+        .handoff-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .handoff-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .handoff-wrap p {
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0 0 1.25rem;
+        }
+
+        .handoff-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .handoff-buttons a { min-height: 44px; }
+
+        .handoff-stat {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .handoff-stat .big {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000;
+            display: block;
+            line-height: 1;
+        }
+
+        .handoff-stat .mid {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #555;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .handoff-stat hr {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            margin: 1rem 0;
+        }
+
+        /* ---- TOC active state ---- */
+        .toc-pill[aria-current="true"] { background: #000; color: #fff; }
+
+        /* ---- Footer override ---- */
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 1024px) {
+            .hero-split-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero.hero-split { padding: 4rem 2rem; }
+
+            .lodge-grid.is-grid-plus {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem 1rem;
+            }
+
+            .editor-picks {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .map-grid { grid-template-columns: 1fr; }
+
+            .handoff-wrap {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero.hero-split {
+                padding: 3rem 1.25rem;
+                min-height: 0;
+            }
+
+            .finder { padding: 1.25rem; }
+
+            .stats-strip { padding: 1.25rem 1rem; }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .lodge-grid.is-grid-plus { grid-template-columns: 1fr; }
+
+            .filter-rail { padding: 0.6rem 1rem; }
+
+            .filter-count { display: none; }
+
+            .trips-block,
+            .map-section,
+            .matrix-section,
+            .editor-section,
+            .notes-section,
+            .handoff-section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-        <header class="site-header" role="banner">
+    <!-- HEADER (paths relative to /visit/) -->
+    <header class="site-header" role="banner">
         <div class="header-inner">
-
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
@@ -256,354 +1029,1213 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
         <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../resources/resources.html">Resources</a>
         <a href="../resources/contact.html">Contact</a>
     </nav>
-<section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="High forest meeting the white gypsum dunes of the Tularosa Basin"></div>
+
+    <!-- HERO (2-up: photo + finder) -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="White Sands dunes with the Sacramento Mountains rising in the distance"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge"><span>Nearby Trips</span></div>
-            <h1 class="hero-title">
-                <span class="word">Where </span>
-                <span class="word">to </span>
-                <span class="word">Visit </span>
-                <span class="word">Near </span>
-                <span class="word">Cloudcroft</span>
-            </h1>
-            <p class="hero-subtitle">Sixteen practical trips from your mountain base camp — forest, desert, history, and culture, all within an easy drive.</p>
-            <div class="hero-ctas">
-                <a href="#places" class="btn-primary">See the 16 Places</a>
-                <a href="#plan" class="btn-secondary">Plan Your Visit</a>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">Base camp · 2026</span>
+                <h1>Sixteen trips from 8,676 feet.</h1>
+                <p class="hero-deck">Drop 4,400 feet into the Tularosa Basin for White Sands, space history, or a pistachio farm. Stay high for trestle views, scenic drives, and a family ski hill. Push further for Ruidoso theater or Las Cruces culture.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
+            </div>
+            <div class="hero-right">
+                <form class="finder" aria-label="Plan my day" id="finder" onsubmit="return false;">
+                    <h2>Plan my day</h2>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-region">Region</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-region" data-filter-group="region">
+                            <button type="button" class="chip" data-value="village" aria-pressed="false">Village / nearby</button>
+                            <button type="button" class="chip" data-value="basin" aria-pressed="false">Basin (down)</button>
+                            <button type="button" class="chip" data-value="further" aria-pressed="false">Further afield</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-time">Time available</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-time" data-filter-group="time">
+                            <button type="button" class="chip" data-value="quick" aria-pressed="false">Quick stop</button>
+                            <button type="button" class="chip" data-value="halfday" aria-pressed="false">Half day</button>
+                            <button type="button" class="chip" data-value="fullday" aria-pressed="false">Full day</button>
+                            <button type="button" class="chip" data-value="overnight" aria-pressed="false">Overnight</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-vibe">Vibe</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-vibe" data-filter-group="vibe">
+                            <button type="button" class="chip" data-value="nature" aria-pressed="false">Nature</button>
+                            <button type="button" class="chip" data-value="history" aria-pressed="false">History</button>
+                            <button type="button" class="chip" data-value="science" aria-pressed="false">Science</button>
+                            <button type="button" class="chip" data-value="town" aria-pressed="false">Town &amp; dining</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-weather">If the weather is</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-weather" data-filter-group="weather">
+                            <button type="button" class="chip" data-value="indoor" aria-pressed="false">Rainy (indoor OK)</button>
+                            <button type="button" class="chip" data-value="family" aria-pressed="false">Family-friendly</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-actions">
+                        <a href="#village" class="btn-primary">Show matches</a>
+                        <button type="button" class="finder-clear" id="finder-clear">Clear</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <div class="info-bar-item">
-                <div class="info-bar-icon">⛰️</div>
-                <span>Base camp at 8,676 ft</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">🚗</div>
-                <span>Drops 4,400 ft to the basin</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">🔥</div>
-                <span>Stage 1 fire restrictions through Sept 30, 2026</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">🗺️</div>
-                <span>16 places, all currently open</span>
-            </div>
+    <!-- STATS STRIP -->
+    <div class="stats-strip" aria-label="Regional snapshot">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">16</span><span class="stat-label">Trips in this guide</span></div>
+            <div class="stat"><span class="stat-num">4,400 ft</span><span class="stat-label">Drop to the basin</span></div>
+            <div class="stat"><span class="stat-num">1 hr 35</span><span class="stat-label">To Las Cruces</span></div>
+            <div class="stat"><span class="stat-num">Stage 1</span><span class="stat-label">Fire restrictions</span></div>
+            <div class="stat"><span class="stat-num">US-70</span><span class="stat-label">Missile-range checks</span></div>
         </div>
     </div>
 
+    <!-- STICKY TOC NAV -->
+    <nav class="toc-nav" aria-label="Table of contents">
+        <div class="toc-nav-inner">
+            <a href="#village" class="toc-pill">Village &amp; nearby</a>
+            <a href="#basin" class="toc-pill">Basin</a>
+            <a href="#further" class="toc-pill">Further afield</a>
+            <a href="#map" class="toc-pill">Map</a>
+            <a href="#compare" class="toc-pill">Compare</a>
+            <a href="#editor" class="toc-pill">Editor's Call</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
+        </div>
+    </nav>
+
     <main id="main-content" role="main">
 
-        <section class="section" id="about" aria-label="About this guide">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Why Cloudcroft</span>
-                    <h2 class="section-title section-title-centered">A Mountain Base Camp with Two Worlds in Reach</h2>
-                </div>
-                <div class="about-text" style="max-width: 820px; margin: 0 auto;">
-                    <p>Cloudcroft has a strong advantage as a base camp. In one direction sit high forest, railroad history, short scenic stops, and a beginner-friendly ski area. In the other, you can drop into the basin for White Sands, space history, pistachio farms, and a state park with desert scenery. For more active travelers, Ruidoso adds live performance and adventure sports, and a full day can reach Las Cruces or the smaller villages of Mayhill, Tularosa, and Timberon.</p>
-                    <p>In 2026, the main planning issue isn't a lack of options — it's access. Sunspot Solar Observatory is permanently closed. Stage 1 fire restrictions are in effect through September 30, 2026. Bluff Springs remains under closure. Even easy outings can feel different depending on weather and road conditions on US-82 and US-70. The 16 places below are the ones that are practical, distinct, and currently open.</p>
-                </div>
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>Cloudcroft's real trick is verticality — one direction is forest and trestle history, the other drops 4,400 feet into desert and White Sands. Plan around access, not distance.</p>
+            <span class="thesis-meta">2026 closures to know: Sunspot Solar Observatory (permanent), Bluff Springs (ongoing), Oliver Lee entrance (construction through June). Check <a href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank" rel="noopener noreferrer">Lincoln NF alerts</a> before you drive.</span>
+        </div>
 
-                <div class="tip-box">
-                    <div class="tip-icon">💡</div>
-                    <div><strong>Plan around access, not just distance.</strong> Always check fire restrictions, US-70 missile range closures, and seasonal road status before driving. Cell coverage is unreliable outside the villages.</div>
+        <!-- FILTER RAIL -->
+        <div class="filter-rail" id="filter-rail" aria-label="Filter trips">
+            <div class="filter-rail-inner">
+                <span class="filter-label">Filter</span>
+                <div class="chip-row" role="group" aria-label="Filter chips" data-filter-group="rail">
+                    <button type="button" class="chip" data-rail="village" aria-pressed="false">Village</button>
+                    <button type="button" class="chip" data-rail="basin" aria-pressed="false">Basin</button>
+                    <button type="button" class="chip" data-rail="further" aria-pressed="false">Further</button>
+                    <button type="button" class="chip" data-rail="quick" aria-pressed="false">Quick stop</button>
+                    <button type="button" class="chip" data-rail="halfday" aria-pressed="false">Half day</button>
+                    <button type="button" class="chip" data-rail="fullday" aria-pressed="false">Full day</button>
+                    <button type="button" class="chip" data-rail="nature" aria-pressed="false">Nature</button>
+                    <button type="button" class="chip" data-rail="history" aria-pressed="false">History</button>
+                    <button type="button" class="chip" data-rail="indoor" aria-pressed="false">Indoor</button>
+                    <button type="button" class="chip" data-rail="family" aria-pressed="false">Families</button>
+                    <button type="button" class="chip" data-rail="open" aria-pressed="false">Fully open 2026</button>
+                </div>
+                <span class="filter-count"><strong id="filter-count-n">16</strong> of 16 shown</span>
+            </div>
+        </div>
+
+        <!-- ================================ VILLAGE & NEARBY ================================ -->
+        <section class="trips-block" id="village" aria-label="Village and nearby trips">
+            <div class="trips-block-head">
+                <span class="eyebrow">Seven stops</span>
+                <h2>Close to the village</h2>
+                <p>Five-minute detours and in-town stops. The strongest daily rhythm is one forest walk, one sit-down, and one scenic drive — all from an 8,676-ft base.</p>
+            </div>
+
+            <div class="lodge-grid is-grid-plus" data-grid="village">
+
+                <!-- 2. Mexican Canyon Trestle Vista -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="trestle-vista"
+                    data-region="village"
+                    data-time="quick"
+                    data-vibes="history nature drive"
+                    data-indoor="false"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <img src="../media/mexican-canyon-trestle-bridge.jpeg" alt="Mexican Canyon Trestle — a six-story 1899 wooden railroad trestle in a quiet canyon near Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Mexican Canyon Trestle Vista</h3>
+                            <span class="cat-tag cat-history">History</span>
+                        </div>
+                        <span class="property-type type-inline">Roadside overlook · 1899 trestle</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5 min · quick stop</span>
+                            <span>Free</span>
+                        </div>
+                        <p class="card-desc">Roadside overlook with a direct view of the 1899 Cloud-Climbing Railroad trestle — six stories of preserved wood in a quiet canyon. Biggest scenic payoff in town for zero commitment.</p>
+                        <div class="amenities">
+                            <span class="amenity">Free</span>
+                            <span class="amenity">Quick</span>
+                            <span class="amenity">Photo stop</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="trestle-vista"> Compare</label>
+                            <a href="../do/mexican-canyon-trestle.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. Trestle Recreation Area -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="trestle-rec"
+                    data-region="village"
+                    data-time="halfday"
+                    data-vibes="nature history"
+                    data-indoor="false"
+                    data-family="true"
+                    data-open="partial">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <img src="../media/historic-railroad-trestle-side-view.jpg" alt="Historic Cloud-Climbing Railroad trestle bridge framed by green mountain forest" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Trestle Recreation Area</h3>
+                            <span class="cat-tag cat-nature">Nature</span>
+                        </div>
+                        <span class="property-type type-inline">USFS day-use site · picnic &amp; trails</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5 min · 1–4 hours</span>
+                            <span>$5 day-use fee</span>
+                        </div>
+                        <p class="card-desc">Clean Forest Service day-use site with picnic tables, water, restrooms, and direct trail access. Seasonal: closed December through March, reopens in spring.</p>
+                        <div class="amenities">
+                            <span class="amenity">Picnic</span>
+                            <span class="amenity">Restrooms</span>
+                            <span class="amenity">Trail access</span>
+                            <span class="amenity warn">Closed Dec–Mar</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="trestle-rec"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS info &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. Osha Trail -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="osha"
+                    data-region="village"
+                    data-time="halfday"
+                    data-vibes="nature"
+                    data-indoor="false"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <img src="../media/trail-runner-mountain-cliffs-sunset.jpg" alt="Cloudcroft-area forest trail with mountain ridges and sunset colors in the distance" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Osha Trail</h3>
+                            <span class="cat-tag cat-nature">Hike</span>
+                        </div>
+                        <span class="property-type type-inline">2.2-mi easy forest loop · 8,600 ft</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5 min · 1–2 hours</span>
+                            <span>Free · no permits</span>
+                        </div>
+                        <p class="card-desc">A family-friendly forest loop at 8,600 feet. Shaded fir and ponderosa with glimpses of White Sands off the western rim on a clear day. The local favorite for an easy walk.</p>
+                        <div class="amenities">
+                            <span class="amenity">Easy</span>
+                            <span class="amenity">Free</span>
+                            <span class="amenity">Shaded</span>
+                            <span class="amenity">Family</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="osha"> Compare</label>
+                            <a href="../do/osha-trail.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. Sacramento Mountains Museum -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="sac-museum"
+                    data-region="village"
+                    data-time="halfday"
+                    data-vibes="history science"
+                    data-indoor="true"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">5</span>
+                    <div class="card-header-strip head-village">Local history · pioneer village</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Sacramento Mountains Museum</h3>
+                            <span class="cat-tag cat-history">Museum</span>
+                        </div>
+                        <span class="property-type type-inline">Cloudcroft's local-history museum</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>In town · 1–2 hours</span>
+                            <span>Volunteer-run</span>
+                        </div>
+                        <p class="card-desc">Local-history museum and pioneer village. Real value for understanding the railroad and resort identity of the town. Call to confirm hours — it's volunteer-run and seasonal.</p>
+                        <div class="amenities">
+                            <span class="amenity">Indoor</span>
+                            <span class="amenity">Rainy day</span>
+                            <span class="amenity warn">Call for hours</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="sac-museum"> Compare</label>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Sacramento+Mountains+Historical+Museum+Cloudcroft" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">View on map &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. Burro Avenue -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="burro-ave"
+                    data-region="village"
+                    data-time="halfday"
+                    data-vibes="town"
+                    data-indoor="true"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">6</span>
+                    <div class="card-header-strip head-village">Main street · shops &amp; dining</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Burro Avenue</h3>
+                            <span class="cat-tag cat-town">Town</span>
+                        </div>
+                        <span class="property-type type-inline">Shops, bakeries, tea, wine tasting</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>In town · 1–3 hours</span>
+                            <span>Walkable</span>
+                        </div>
+                        <p class="card-desc">The downtown main street: small shops, the Burro Street Exchange, bakeries, a tea house, Noisy Water Winery's tasting room, and easy mountain-village atmosphere.</p>
+                        <div class="amenities">
+                            <span class="amenity">Walkable</span>
+                            <span class="amenity">Shops</span>
+                            <span class="amenity">Dining</span>
+                            <span class="amenity">Tasting rooms</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="burro-ave"> Compare</label>
+                            <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html" class="lodge-card-guide">Shopping guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. Ski Cloudcroft -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="ski-cloudcroft"
+                    data-region="village"
+                    data-time="halfday"
+                    data-vibes="nature family"
+                    data-indoor="false"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">7</span>
+                    <div class="card-header-strip head-village">Family ski area · tubing in summer</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Ski Cloudcroft</h3>
+                            <span class="cat-tag cat-family">Family</span>
+                        </div>
+                        <span class="property-type type-inline">Small family ski area · south of town</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10–15 min · half day</span>
+                            <span>Snow-dependent</span>
+                        </div>
+                        <p class="card-desc">Family-friendly ski area on the south side of town. Beginner slopes and lessons in winter; tubing and recreation in summer. Book tubing slots ahead.</p>
+                        <div class="amenities">
+                            <span class="amenity">Beginners</span>
+                            <span class="amenity">Lessons</span>
+                            <span class="amenity">Summer tubing</span>
+                            <span class="amenity warn">Snow-dependent</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="ski-cloudcroft"> Compare</label>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Ski+Cloudcroft" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">View on map &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. Sunspot Scenic Byway -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="sunspot-byway"
+                    data-region="village"
+                    data-time="halfday"
+                    data-vibes="drive nature"
+                    data-indoor="false"
+                    data-family="true"
+                    data-open="partial">
+                    <span class="card-pin" aria-hidden="true">8</span>
+                    <img src="../do/do-photo/sunspot-byway.webp" alt="Forested scenic drive heading south from Cloudcroft on the Sunspot Scenic Byway" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Sunspot Scenic Byway</h3>
+                            <span class="cat-tag cat-drive">Scenic drive</span>
+                        </div>
+                        <span class="property-type type-inline">15-mi drive south through deep forest</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>20–40 min · 1–3 hours</span>
+                            <span>Free</span>
+                        </div>
+                        <p class="card-desc">Fifteen miles of scenic drive through deep forest with basin glimpses. Treat this as a drive, not an observatory visit — Sunspot Solar Observatory is permanently closed.</p>
+                        <div class="amenities">
+                            <span class="amenity">Scenic drive</span>
+                            <span class="amenity">Free</span>
+                            <span class="amenity">Forest</span>
+                            <span class="amenity warn">Observatory closed</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="sunspot-byway"> Compare</label>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Sunspot+Scenic+Byway+NM" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">View on map &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================================ BASIN ================================ -->
+        <section class="trips-block" id="basin" aria-label="Basin day trips">
+            <div class="trips-block-head">
+                <span class="eyebrow">Six destinations</span>
+                <h2>Down in the basin</h2>
+                <p>US-82 drops you 4,400 feet in under an hour — from alpine forest to Chihuahuan desert. White Sands, space history, pistachios, and one state park with a serious hike.</p>
+            </div>
+
+            <div class="lodge-grid is-grid-plus" data-grid="basin">
+
+                <!-- 1. White Sands NP -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="white-sands"
+                    data-region="basin"
+                    data-time="fullday"
+                    data-vibes="nature"
+                    data-indoor="false"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <img src="../media/white-sands-dunes-mountains.jpg" alt="White gypsum dunes of White Sands National Park with the Sacramento Mountains rising behind" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>White Sands National Park</h3>
+                            <span class="cat-tag cat-nature">National Park</span>
+                        </div>
+                        <span class="property-type type-inline">World's largest gypsum dunefield</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>35–45 min · half–full day</span>
+                            <span>NPS fee · watch US-70</span>
+                        </div>
+                        <p class="card-desc">The world's largest gypsum dunefield. Drive Dunes Drive, sled the dunes, stay for a sunset that feels otherworldly. Bring far more water than you think you need — heat is no joke.</p>
+                        <div class="amenities">
+                            <span class="amenity">Iconic</span>
+                            <span class="amenity">Photography</span>
+                            <span class="amenity">Sunset</span>
+                            <span class="amenity warn">US-70 closures</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="white-sands"> Compare</label>
+                            <a href="https://www.nps.gov/whsa/index.htm" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">NPS info &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. NM Museum of Space History -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="space-museum"
+                    data-region="basin"
+                    data-time="halfday"
+                    data-vibes="science history"
+                    data-indoor="true"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">9</span>
+                    <div class="card-header-strip head-basin">Alamogordo · rockets &amp; planetarium</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>NM Museum of Space History</h3>
+                            <span class="cat-tag cat-science">Science</span>
+                        </div>
+                        <span class="property-type type-inline">State museum with planetarium</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>30–35 min · half day</span>
+                            <span>Closed Tue</span>
+                        </div>
+                        <p class="card-desc">A well-curated state museum in Alamogordo with rockets, a planetarium, and the International Space Hall of Fame. Strong rainy-day or hot-afternoon backup.</p>
+                        <div class="amenities">
+                            <span class="amenity">Indoor</span>
+                            <span class="amenity">Planetarium</span>
+                            <span class="amenity">Family</span>
+                            <span class="amenity warn">Closed Tue</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="space-museum"> Compare</label>
+                            <a href="https://nmspacemuseum.org/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Museum site &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. Alameda Park Zoo -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="alameda-zoo"
+                    data-region="basin"
+                    data-time="halfday"
+                    data-vibes="family"
+                    data-indoor="false"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">10</span>
+                    <div class="card-header-strip head-basin">Oldest zoos in the Southwest</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Alameda Park Zoo</h3>
+                            <span class="cat-tag cat-family">Family</span>
+                        </div>
+                        <span class="property-type type-inline">Alamogordo city zoo</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>30–35 min · 1–2 hours</span>
+                            <span>Affordable</span>
+                        </div>
+                        <p class="card-desc">One of the oldest zoos in the Southwest. Smaller in scope but well-maintained and easy to pair with other basin stops. Best for families with younger kids.</p>
+                        <div class="amenities">
+                            <span class="amenity">Family</span>
+                            <span class="amenity">Kids</span>
+                            <span class="amenity">Affordable</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="alameda-zoo"> Compare</label>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Alameda+Park+Zoo+Alamogordo" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">View on map &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. McGinn's PistachioLand -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="pistachioland"
+                    data-region="basin"
+                    data-time="halfday"
+                    data-vibes="town family"
+                    data-indoor="true"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">11</span>
+                    <div class="card-header-strip head-basin">World's largest pistachio</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>McGinn's PistachioLand</h3>
+                            <span class="cat-tag cat-town">Roadtrip</span>
+                        </div>
+                        <span class="property-type type-inline">Working farm · ice cream · winery</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>35–40 min · 30 min–1.5 hr</span>
+                            <span>Free to visit</span>
+                        </div>
+                        <p class="card-desc">Working pistachio farm with the World's Largest Pistachio out front, an ice-cream parlor, and Arena Blanca Winery's tasting room. Book farm tours online — no walk-ins.</p>
+                        <div class="amenities">
+                            <span class="amenity">Novelty</span>
+                            <span class="amenity">Ice cream</span>
+                            <span class="amenity">Wine tasting</span>
+                            <span class="amenity warn">Tours: book ahead</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="pistachioland"> Compare</label>
+                            <a href="https://pistachioland.com/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Farm site &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12. Oliver Lee Memorial State Park -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="oliver-lee"
+                    data-region="basin"
+                    data-time="fullday"
+                    data-vibes="nature history"
+                    data-indoor="false"
+                    data-family="true"
+                    data-open="partial">
+                    <span class="card-pin" aria-hidden="true">12</span>
+                    <div class="card-header-strip head-basin">Dog Canyon · state park</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Oliver Lee Memorial State Park</h3>
+                            <span class="cat-tag cat-nature">Hike</span>
+                        </div>
+                        <span class="property-type type-inline">Desert oasis + Dog Canyon Trail</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>40–50 min · half–full day</span>
+                            <span>State park fee</span>
+                        </div>
+                        <p class="card-desc">Dramatic desert at the base of the Sacramentos — the steep Dog Canyon Trail and a surprising oasis of cottonwoods and water. Entrance under construction through June 2026.</p>
+                        <div class="amenities">
+                            <span class="amenity">Dog Canyon</span>
+                            <span class="amenity">Desert oasis</span>
+                            <span class="amenity">Less crowded</span>
+                            <span class="amenity warn">Construction through June</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="oliver-lee"> Compare</label>
+                            <a href="https://www.emnrd.nm.gov/spd/find-a-park/oliver-lee-memorial-state-park/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Park site &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14. Tularosa -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="tularosa"
+                    data-region="basin"
+                    data-time="halfday"
+                    data-vibes="history town"
+                    data-indoor="false"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">14</span>
+                    <div class="card-header-strip head-basin">1869 mission · Granado Street</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Tularosa</h3>
+                            <span class="cat-tag cat-history">Village</span>
+                        </div>
+                        <span class="property-type type-inline">1869 St. Francis de Paula · galleries</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>~32 min · 1–4 hours</span>
+                            <span>Free wander</span>
+                        </div>
+                        <p class="card-desc">Small basin village with the striking 1869 St. Francis de Paula Church and the galleries of historic Granado Street. Quieter than Ruidoso, less touristed than Cloudcroft.</p>
+                        <div class="amenities">
+                            <span class="amenity">Historic mission</span>
+                            <span class="amenity">Galleries</span>
+                            <span class="amenity">Quiet</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="tularosa"> Compare</label>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Tularosa+NM+Granado+Street" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">View on map &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================================ FURTHER AFIELD ================================ -->
+        <section class="trips-block" id="further" aria-label="Full day or overnight">
+            <div class="trips-block-head">
+                <span class="eyebrow">Three full-day or overnight trips</span>
+                <h2>Full day or overnight</h2>
+                <p>Worth staying the night. A bustling mountain sister-town, New Mexico's second-largest city, and two quiet Sacramento villages with real dark skies.</p>
+            </div>
+
+            <div class="lodge-grid is-grid-plus" data-grid="further">
+
+                <!-- 13. Ruidoso -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="ruidoso"
+                    data-region="further"
+                    data-time="overnight"
+                    data-vibes="town nature"
+                    data-indoor="true"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">13</span>
+                    <div class="card-header-strip head-further">Mountain village · Ski Apache · Spencer Theater</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Ruidoso</h3>
+                            <span class="cat-tag cat-town">Town</span>
+                        </div>
+                        <span class="property-type type-inline">Theater, lakes, mountain coaster</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>50–70 min · full day→overnight</span>
+                            <span>Operational post-2024 fire</span>
+                        </div>
+                        <p class="card-desc">A bustling mountain village with the world-class Spencer Theater, Ski Apache, a mountain coaster, lakes, and Midtown shops. Recovering and operational after the 2024 South Fork Fire.</p>
+                        <div class="amenities">
+                            <span class="amenity">Theater</span>
+                            <span class="amenity">Ski Apache</span>
+                            <span class="amenity">Mountain coaster</span>
+                            <span class="amenity">Midtown shops</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="ruidoso"> Compare</label>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Ruidoso+NM" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">View on map &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 15. Las Cruces -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="las-cruces"
+                    data-region="further"
+                    data-time="overnight"
+                    data-vibes="town history"
+                    data-indoor="true"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">15</span>
+                    <div class="card-header-strip head-further">Southern NM's cultural center</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Las Cruces</h3>
+                            <span class="cat-tag cat-town">City</span>
+                        </div>
+                        <span class="property-type type-inline">Old Mesilla · farmers market · dining</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>~1 hr 35 min · overnight</span>
+                            <span>US-70 via White Sands</span>
+                        </div>
+                        <p class="card-desc">Southern New Mexico's cultural center: free downtown museums, historic Old Mesilla Village, a great Saturday farmers market, and real city dining. Best as an overnight rather than a day trip.</p>
+                        <div class="amenities">
+                            <span class="amenity">Free museums</span>
+                            <span class="amenity">Old Mesilla</span>
+                            <span class="amenity">Farmers market</span>
+                            <span class="amenity">Real dining</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="las-cruces"> Compare</label>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Old+Mesilla+Las+Cruces+NM" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">View on map &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 16. Mayhill & Timberon -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="mayhill-timberon"
+                    data-region="further"
+                    data-time="halfday"
+                    data-vibes="nature"
+                    data-indoor="false"
+                    data-family="true"
+                    data-open="yes">
+                    <span class="card-pin" aria-hidden="true">16</span>
+                    <img src="../media/milky-way-night-sky-mountains.jpg" alt="Milky Way arching over the Sacramento Mountains — dark-sky stargazing near Mayhill" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Mayhill &amp; Timberon</h3>
+                            <span class="cat-tag cat-dark">Dark skies</span>
+                        </div>
+                        <span class="property-type type-inline">Stargazing + 18-hole golf</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>25 min – 1 hr · half day</span>
+                            <span>Remote</span>
+                        </div>
+                        <p class="card-desc">Two quiet Sacramento Mountains communities. Mayhill offers Lincoln NF trails and excellent dark-sky stargazing; Timberon is a small resort village with an 18-hole golf course and a lake.</p>
+                        <div class="amenities">
+                            <span class="amenity">Remote</span>
+                            <span class="amenity">Stargazing</span>
+                            <span class="amenity">Golf</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="mayhill-timberon"> Compare</label>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Mayhill+NM+Timberon" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">View on map &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="empty-state" id="empty-state" role="status">
+            No trips match your filters. Cloudcroft's day-trip radius is narrow by design — try dropping a chip or two.
+        </div>
+
+        <!-- ================================ MAP ================================ -->
+        <section class="map-section" id="map" aria-label="Regional map">
+            <div class="map-head">
+                <h2>The regional picture</h2>
+                <p>Cloudcroft sits on the Sacramento escarpment. US-82 is your drop into the Tularosa Basin; US-70 runs west to White Sands and Las Cruces. Ruidoso is up and north; Mayhill, Timberon, and the quieter Sacramento villages are back in the forest.</p>
+            </div>
+            <div class="map-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 720 500" role="img" aria-label="Schematic regional map from Cloudcroft">
+                        <defs>
+                            <pattern id="pines" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                                <circle cx="8" cy="8" r="1.4" fill="#b3c4a8"/>
+                                <circle cx="22" cy="20" r="1.1" fill="#b3c4a8"/>
+                            </pattern>
+                            <pattern id="sand" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <circle cx="6" cy="6" r="0.8" fill="#d8c38e"/>
+                                <circle cx="14" cy="14" r="0.8" fill="#d8c38e"/>
+                            </pattern>
+                        </defs>
+
+                        <!-- Sacramento Mountains zone (right half, forest) -->
+                        <rect x="320" y="0" width="400" height="500" fill="#d9e6d2"/>
+                        <rect x="320" y="0" width="400" height="500" fill="url(#pines)"/>
+
+                        <!-- Tularosa Basin zone (left half, desert) -->
+                        <rect x="0" y="0" width="320" height="500" fill="#e8dcc5"/>
+                        <rect x="0" y="0" width="320" height="500" fill="url(#sand)" opacity="0.6"/>
+
+                        <!-- Boundary label -->
+                        <text x="160" y="30" fill="#7a6a45" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">TULAROSA BASIN</text>
+                        <text x="520" y="30" fill="#3a4a2a" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">SACRAMENTO MOUNTAINS</text>
+
+                        <!-- US-70 — diagonal W↔E across basin -->
+                        <path d="M0 340 L400 240 L470 235" stroke="#9b9b8f" stroke-width="8" opacity="0.55" fill="none"/>
+                        <path d="M0 340 L400 240 L470 235" stroke="#fff" stroke-width="2" stroke-dasharray="8 10" fill="none"/>
+                        <text x="30" y="330" fill="#555" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">US-70 ← LAS CRUCES</text>
+
+                        <!-- US-82 — climbs from basin up to Cloudcroft -->
+                        <path d="M250 220 Q 350 200 440 195" stroke="#9b9b8f" stroke-width="9" opacity="0.55" fill="none"/>
+                        <path d="M250 220 Q 350 200 440 195" stroke="#fff" stroke-width="2" stroke-dasharray="8 10" fill="none"/>
+                        <text x="310" y="185" fill="#555" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">US-82</text>
+
+                        <!-- Cloudcroft village marker -->
+                        <rect x="430" y="180" width="100" height="40" fill="#fff" opacity="0.75" rx="5"/>
+                        <text x="480" y="204" fill="#222" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">CLOUDCROFT</text>
+
+                        <!-- Alamogordo marker (basin, near Cloudcroft) -->
+                        <text x="230" y="265" fill="#7a6a45" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">ALAMOGORDO</text>
+
+                        <!-- PINS -->
+                        <!-- 1. White Sands (far W basin) -->
+                        <g><circle cx="90" cy="295" r="13" fill="#000"/><text x="90" y="299" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">1</text></g>
+                        <!-- 2. Trestle Vista (near Cloudcroft, just west) -->
+                        <g><circle cx="435" cy="150" r="13" fill="#000"/><text x="435" y="154" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">2</text></g>
+                        <!-- 3. Trestle Rec Area (adjacent) -->
+                        <g><circle cx="460" cy="155" r="13" fill="#000"/><text x="460" y="159" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">3</text></g>
+                        <!-- 4. Osha Trail (near village, south slightly) -->
+                        <g><circle cx="445" cy="240" r="13" fill="#000"/><text x="445" y="244" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">4</text></g>
+                        <!-- 5. Sac Mountains Museum (in village) -->
+                        <g><circle cx="475" cy="205" r="11" fill="#000"/><text x="475" y="208" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">5</text></g>
+                        <!-- 6. Burro Avenue (in village) -->
+                        <g><circle cx="505" cy="205" r="11" fill="#000"/><text x="505" y="208" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">6</text></g>
+                        <!-- 7. Ski Cloudcroft (south of village) -->
+                        <g><circle cx="495" cy="260" r="13" fill="#000"/><text x="495" y="264" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">7</text></g>
+                        <!-- 8. Sunspot Scenic Byway (south forest) -->
+                        <g><circle cx="525" cy="340" r="13" fill="#000"/><text x="525" y="344" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">8</text></g>
+                        <!-- 9. Space History (Alamogordo basin) -->
+                        <g><circle cx="240" cy="295" r="13" fill="#000"/><text x="240" y="299" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">9</text></g>
+                        <!-- 10. Alameda Zoo (Alamogordo basin) -->
+                        <g><circle cx="215" cy="280" r="13" fill="#000"/><text x="215" y="284" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">10</text></g>
+                        <!-- 11. PistachioLand (S of Alamogordo) -->
+                        <g><circle cx="220" cy="355" r="13" fill="#000"/><text x="220" y="359" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">11</text></g>
+                        <!-- 12. Oliver Lee (SE of Alamogordo, base of Sacramentos) -->
+                        <g><circle cx="295" cy="385" r="13" fill="#000"/><text x="295" y="389" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">12</text></g>
+                        <!-- 13. Ruidoso (N) -->
+                        <g><circle cx="540" cy="75" r="14" fill="#000"/><text x="540" y="79" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">13</text></g>
+                        <!-- 14. Tularosa (N of Alamogordo) -->
+                        <g><circle cx="245" cy="215" r="13" fill="#000"/><text x="245" y="219" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">14</text></g>
+                        <!-- 15. Las Cruces (far SW corner) -->
+                        <g><circle cx="35" cy="440" r="14" fill="#000"/><text x="35" y="444" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">15</text></g>
+                        <!-- 16. Mayhill & Timberon (E of Cloudcroft, forest) -->
+                        <g><circle cx="640" cy="260" r="14" fill="#000"/><text x="640" y="264" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">16</text></g>
+                    </svg>
+                </div>
+                <div>
+                    <ol class="map-legend">
+                        <li><span class="lg-pin">1</span><span><a href="https://www.nps.gov/whsa/index.htm" target="_blank" rel="noopener noreferrer">White Sands National Park</a></span></li>
+                        <li><span class="lg-pin">2</span><span><a href="../do/mexican-canyon-trestle.html">Mexican Canyon Trestle Vista</a></span></li>
+                        <li><span class="lg-pin">3</span><span>Trestle Recreation Area</span></li>
+                        <li><span class="lg-pin">4</span><span><a href="../do/osha-trail.html">Osha Trail</a></span></li>
+                        <li><span class="lg-pin">5</span><span>Sacramento Mountains Museum</span></li>
+                        <li><span class="lg-pin">6</span><span><a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Burro Avenue</a></span></li>
+                        <li><span class="lg-pin">7</span><span>Ski Cloudcroft</span></li>
+                        <li><span class="lg-pin">8</span><span>Sunspot Scenic Byway</span></li>
+                        <li><span class="lg-pin">9</span><span>NM Museum of Space History · Alamogordo</span></li>
+                        <li><span class="lg-pin">10</span><span>Alameda Park Zoo · Alamogordo</span></li>
+                        <li><span class="lg-pin">11</span><span>McGinn's PistachioLand</span></li>
+                        <li><span class="lg-pin">12</span><span>Oliver Lee Memorial State Park</span></li>
+                        <li><span class="lg-pin">13</span><span>Ruidoso</span></li>
+                        <li><span class="lg-pin">14</span><span>Tularosa</span></li>
+                        <li><span class="lg-pin">15</span><span>Las Cruces &amp; Old Mesilla</span></li>
+                        <li><span class="lg-pin">16</span><span>Mayhill &amp; Timberon</span></li>
+                    </ol>
+                    <p class="map-footnote">Schematic only — distances and angles are approximate. The real picture is a 4,400-ft elevation drop from Cloudcroft into the Tularosa Basin via US-82.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="places" aria-label="Places to visit" style="background: var(--cloud-drift);">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">The List</span>
-                    <h2 class="section-title section-title-centered">16 Best Nearby Places to Visit</h2>
-                    <p class="section-description">Practical, distinct, and verified-open for 2026 — from a 5-minute roadside stop to a full-day outing in the desert or the basin.</p>
+        <!-- ================================ COMPARE MATRIX ================================ -->
+        <section class="matrix-section" id="compare" aria-label="Compare trips side by side">
+            <div class="matrix-wrap">
+                <div class="matrix-head">
+                    <h2>Compare side-by-side</h2>
+                    <span class="matrix-count" id="matrix-count">Select trips above (check the Compare box on any card)</span>
                 </div>
-
-                <div class="visit-grid">
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🏜️</div>
-                        <h3>1. White Sands National Park</h3>
-                        <div class="visit-meta">35–45 min · Half to full day</div>
-                        <p>The world's largest gypsum dunefield. Drive Dunes Drive, sled the dunes, and stay for a sunset that feels otherworldly. Bring far more water than you think you need.</p>
-                        <div class="visit-tags"><span class="visit-tag">Iconic</span><span class="visit-tag">Families</span><span class="visit-tag">Photography</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <img src="../media/mexican-canyon-trestle-bridge.jpeg" alt="Mexican Canyon Trestle bridge near Cloudcroft" loading="lazy" decoding="async" class="visit-image">
-                        <h3>2. Mexican Canyon Trestle Vista</h3>
-                        <div class="visit-meta">5 min · Quick stop</div>
-                        <p>A roadside overlook with a direct view of the 1899 Cloud-Climbing Railroad trestle — six stories of preserved wood in a quiet canyon. Strong scenic payoff with no commitment.</p>
-                        <div class="visit-tags"><span class="visit-tag">History</span><span class="visit-tag">Free</span><span class="visit-tag">Quick</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🌲</div>
-                        <h3>3. Trestle Recreation Area</h3>
-                        <div class="visit-meta">5 min · 1–4 hours</div>
-                        <p>A clean Forest Service day-use site with picnic tables, water, restrooms, and trail access. Seasonal: closed December through March, reopens in spring.</p>
-                        <div class="visit-tags"><span class="visit-tag">Picnic</span><span class="visit-tag">Families</span><span class="visit-tag">$5 day-use</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🥾</div>
-                        <h3>4. Osha Trail</h3>
-                        <div class="visit-meta">5 min · 1–2 hours</div>
-                        <p>A 2.5-mile family-friendly forest loop at 8,600 ft. Shaded fir and ponderosa with western-rim glimpses of White Sands on a clear day. The local favorite for an easy walk.</p>
-                        <div class="visit-tags"><span class="visit-tag">Hiking</span><span class="visit-tag">Easy</span><span class="visit-tag">Free</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🏛️</div>
-                        <h3>5. Sacramento Mountains Museum</h3>
-                        <div class="visit-meta">In town · 1–2 hours</div>
-                        <p>Cloudcroft's local-history museum and pioneer village. Real value for understanding the railroad and resort identity of the town. Volunteer-run — call to confirm hours.</p>
-                        <div class="visit-tags"><span class="visit-tag">History</span><span class="visit-tag">Rainy day</span><span class="visit-tag">Indoor</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🛍️</div>
-                        <h3>6. Burro Avenue</h3>
-                        <div class="visit-meta">In town · 1–3 hours</div>
-                        <p>The downtown main street: small shops, the Burro Street Exchange, bakeries, a tea house, the Noisy Water Winery tasting room, and easy mountain-village atmosphere.</p>
-                        <div class="visit-tags"><span class="visit-tag">Shopping</span><span class="visit-tag">Dining</span><span class="visit-tag">Walkable</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🎿</div>
-                        <h3>7. Ski Cloudcroft</h3>
-                        <div class="visit-meta">10–15 min · Half day</div>
-                        <p>The small, family-friendly ski area on the south side of town. Beginner slopes and lessons in winter; tubing and recreation in summer. Snow-dependent — book tubing slots ahead.</p>
-                        <div class="visit-tags"><span class="visit-tag">Winter</span><span class="visit-tag">Beginners</span><span class="visit-tag">Tubing</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🛣️</div>
-                        <h3>8. Sunspot Scenic Byway</h3>
-                        <div class="visit-meta">20–40 min · 1–3 hours</div>
-                        <p>A 15-mile scenic drive south through deep forest with basin glimpses. Note: Sunspot Solar Observatory is permanently closed — treat this as a drive, not an observatory visit.</p>
-                        <div class="visit-tags"><span class="visit-tag">Scenic drive</span><span class="visit-tag">Free</span><span class="visit-tag">Photography</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🚀</div>
-                        <h3>9. NM Museum of Space History</h3>
-                        <div class="visit-meta">30–35 min · Half day</div>
-                        <p>A real, well-curated state museum in Alamogordo with rockets, a planetarium, and the International Space Hall of Fame. Strong rainy-day or hot-afternoon backup.</p>
-                        <div class="visit-tags"><span class="visit-tag">Indoor</span><span class="visit-tag">Families</span><span class="visit-tag">Closed Tue</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🦒</div>
-                        <h3>10. Alameda Park Zoo</h3>
-                        <div class="visit-meta">30–35 min · 1–2 hours</div>
-                        <p>One of the oldest zoos in the Southwest, in Alamogordo. Smaller in scope but well-maintained and easy to pair with other basin stops. Best for families with younger kids.</p>
-                        <div class="visit-tags"><span class="visit-tag">Families</span><span class="visit-tag">Kids</span><span class="visit-tag">Affordable</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🌰</div>
-                        <h3>11. McGinn's PistachioLand</h3>
-                        <div class="visit-meta">35–40 min · 30 min–1.5 hr</div>
-                        <p>A working pistachio farm with the World's Largest Pistachio out front, an ice cream parlor, and Arena Blanca Winery's tasting room. Book farm tours online — no walk-ins.</p>
-                        <div class="visit-tags"><span class="visit-tag">Roadtrip</span><span class="visit-tag">Novelty</span><span class="visit-tag">Wine</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🌵</div>
-                        <h3>12. Oliver Lee Memorial State Park</h3>
-                        <div class="visit-meta">40–50 min · Half to full day</div>
-                        <p>Dramatic desert at the base of the Sacramentos with the steep Dog Canyon Trail and a surprising oasis of cottonwoods and water. Entrance under construction through June 2026.</p>
-                        <div class="visit-tags"><span class="visit-tag">Hiking</span><span class="visit-tag">Desert</span><span class="visit-tag">Less crowded</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🎭</div>
-                        <h3>13. Ruidoso</h3>
-                        <div class="visit-meta">50–70 min · Full day to overnight</div>
-                        <p>A bustling mountain village with the world-class Spencer Theater, Ski Apache, a mountain coaster, lakes, and Midtown shops. Recovering and operational after the 2024 South Fork Fire.</p>
-                        <div class="visit-tags"><span class="visit-tag">Adventure</span><span class="visit-tag">Theater</span><span class="visit-tag">Overnight</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">⛪</div>
-                        <h3>14. Tularosa</h3>
-                        <div class="visit-meta">~32 min · 1–4 hours</div>
-                        <p>A small village with the striking 1869 St. Francis de Paula Church and the galleries of historic Granado Street. Quieter than Ruidoso and less touristed than Cloudcroft.</p>
-                        <div class="visit-tags"><span class="visit-tag">Art</span><span class="visit-tag">History</span><span class="visit-tag">Small town</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🏙️</div>
-                        <h3>15. Las Cruces</h3>
-                        <div class="visit-meta">~1 hr 35 min · Full day or overnight</div>
-                        <p>Southern New Mexico's cultural center: free downtown museums, historic Old Mesilla Village, a great Saturday farmers market, and real city dining. Best as an overnight, not a day trip.</p>
-                        <div class="visit-tags"><span class="visit-tag">City</span><span class="visit-tag">Museums</span><span class="visit-tag">Dining</span></div>
-                    </div>
-
-                    <div class="visit-card">
-                        <div class="visit-icon">🌌</div>
-                        <h3>16. Mayhill &amp; Timberon</h3>
-                        <div class="visit-meta">25 min – 1 hr · Half day</div>
-                        <p>Two quiet Sacramento Mountains communities. Mayhill offers Lincoln NF trails and excellent dark-sky stargazing; Timberon is a small resort village with an 18-hole golf course and lake.</p>
-                        <div class="visit-tags"><span class="visit-tag">Remote</span><span class="visit-tag">Stargazing</span><span class="visit-tag">Golf</span></div>
-                    </div>
-
+                <div class="matrix-scroll">
+                    <table class="matrix" id="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Destination</th>
+                                <th>Region</th>
+                                <th>Drive time</th>
+                                <th>Time needed</th>
+                                <th>Vibe</th>
+                                <th>Indoor option</th>
+                                <th>2026 access</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-body">
+                            <tr><td colspan="8" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="highlights" aria-label="Trip highlights">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Pick Your Trip</span>
-                    <h2 class="section-title section-title-centered">Three Ways to Use This List</h2>
-                    <p class="section-description">Most visitors mix and match. These three pairings cover the strongest contrasts the area has to offer.</p>
-                </div>
-
-                <div class="highlights-grid">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🏔️</div>
-                        <h3>The Forest Day</h3>
-                        <p>Mexican Canyon Trestle Vista, Osha Trail, lunch on Burro Avenue, and a slow drive on the Sunspot Scenic Byway. Cool, shaded, and never far from town.</p>
+        <!-- ================================ EDITOR'S CALL ================================ -->
+        <section class="editor-section" id="editor" aria-label="Editor's call">
+            <div class="editor-wrap">
+                <h2>Three days, three directions</h2>
+                <div class="editor-picks">
+                    <div class="editor-pick">
+                        <span class="pick-for">The forest day</span>
+                        <blockquote>"Trestle vista, Osha Trail, a slow lunch on Burro, and a scenic drive south. Cool, shaded, and never more than twenty minutes from town."</blockquote>
+                        <p class="pick-answer">Chain <a href="../do/mexican-canyon-trestle.html">Mexican Canyon Trestle</a> → <a href="../do/osha-trail.html">Osha</a> → <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Burro Avenue</a> → Sunspot Byway.</p>
                     </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🌅</div>
-                        <h3>The Basin Day</h3>
-                        <p>Drop down US-82 for the Space History Museum or PistachioLand, then end at White Sands for sunset. A 4,000-foot elevation drop in a single afternoon.</p>
+                    <div class="editor-pick">
+                        <span class="pick-for">The basin day</span>
+                        <blockquote>"Drop US-82 for the Space History Museum or PistachioLand, then end at White Sands for sunset. A 4,000-foot elevation drop in a single afternoon."</blockquote>
+                        <p class="pick-answer">Chain <a href="https://nmspacemuseum.org/" target="_blank" rel="noopener noreferrer">Space History</a> → <a href="https://pistachioland.com/" target="_blank" rel="noopener noreferrer">PistachioLand</a> → <a href="https://www.nps.gov/whsa/index.htm" target="_blank" rel="noopener noreferrer">White Sands sunset</a>.</p>
                     </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🎟️</div>
-                        <h3>The Big Day Out</h3>
-                        <p>Drive to Ruidoso for adventure sports and a Spencer Theater show, or go all the way to Las Cruces and Old Mesilla for a real city break. Better as overnights.</p>
+                    <div class="editor-pick">
+                        <span class="pick-for">The big day out</span>
+                        <blockquote>"One hour to Ruidoso for adventure sports and the Spencer Theater, or two hours to Las Cruces and Old Mesilla. Better as overnights."</blockquote>
+                        <p class="pick-answer">Overnight in Ruidoso or Las Cruces — see <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">lodging options</a> back in Cloudcroft.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="plan" aria-label="Plan your visit" style="background: var(--cloud-drift);">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Plan Your Visit</span>
-                    <h2 class="section-title section-title-centered">Before You Go</h2>
-                    <p class="section-description">A few practical notes for getting the most out of nearby trips in 2026.</p>
-                </div>
+        <!-- ================================ PRACTICAL NOTES ================================ -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Before you go</h2>
 
-                <div class="visiting-grid">
-                    <div class="visiting-card">
-                        <div class="visiting-icon">📍</div>
-                        <h3>Distances</h3>
-                        <p>Most stops are 5 to 50 minutes from the village. Ruidoso runs about an hour; Las Cruces is 1 hour 35 minutes one-way. Plan basin trips around the 4,400-foot drop in elevation and temperature.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">🕒</div>
-                        <h3>Hours &amp; Seasons</h3>
-                        <p>Trestle Recreation Area is closed December through March. The Sacramento Mountains Museum is volunteer-run with seasonal hours. Always call or check websites the day before.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">🚗</div>
-                        <h3>Roads &amp; Closures</h3>
-                        <p>US-70 is periodically closed for missile tests at White Sands Missile Range — call 575-678-1178 for the day's status. US-82 has steep grades, tight curves, and a tunnel.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">💧</div>
-                        <h3>Good to Know</h3>
-                        <p>Stage 1 fire restrictions are in effect through Sept 30, 2026. Cell coverage is unreliable outside the villages. The basin can be 40°F hotter than Cloudcroft — bring extra water.</p>
-                    </div>
+            <details class="note">
+                <summary>2026 closures to know</summary>
+                <div class="note-body">
+                    <p><strong>Sunspot Solar Observatory</strong> is permanently closed — the Sunspot Scenic Byway remains a scenic drive but not an observatory visit. <strong>Bluff Springs</strong> remains under closure as of April 2026. <strong>Oliver Lee State Park's</strong> entrance is under construction through June 2026 — park access continues but expect disruption.</p>
+                    <p><strong>Stage 1 fire restrictions</strong> are in effect forest-wide through September 30, 2026 — check <a href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank" rel="noopener noreferrer">Lincoln NF alerts</a> before any forest trip.</p>
                 </div>
+            </details>
 
-                <div class="tip-box">
-                    <div class="tip-icon">⚠️</div>
-                    <div><strong>2026 closures to know:</strong> Sunspot Solar Observatory is permanently closed. Bluff Springs remains under closure. Oliver Lee's entrance is under construction through June 2026.</div>
+            <details class="note">
+                <summary>Roads &amp; US-70 missile-range checks</summary>
+                <div class="note-body">
+                    <p><strong>US-70</strong> (Alamogordo to Las Cruces via White Sands) is periodically closed for missile tests at White Sands Missile Range. Call <a href="tel:5756781178">575-678-1178</a> for the day's status before driving that direction — closures can run several hours.</p>
+                    <p><strong>US-82</strong> between the basin and Cloudcroft has steep grades, tight curves, and a tunnel. Snow, ice, or low clouds can change the drive substantially. Allow extra time and carry chains in winter.</p>
                 </div>
-            </div>
+            </details>
+
+            <details class="note">
+                <summary>Weather &amp; the 4,400-ft elevation drop</summary>
+                <div class="note-body">
+                    <p>The basin can easily run <strong>30–40°F hotter</strong> than Cloudcroft in summer, and the sun at low elevations is much stronger. A comfortable morning hike at 8,676 feet becomes a dangerous afternoon at White Sands without water, shade, and a hat.</p>
+                    <p>Reverse in winter: the basin is mild while Cloudcroft is icy. Plan the direction of your day trip around the weather, not the clock.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Cell service, rangers &amp; hours</summary>
+                <div class="note-body">
+                    <p>Cell coverage is unreliable outside the villages — download maps and the Recreation.gov listing before leaving. The Sacramento Ranger District is at <a href="tel:5756822551">575-682-2551</a>, 4 Lost Lodge Rd, Cloudcroft (M–F 9am–3pm).</p>
+                    <p>Several of these destinations have seasonal or volunteer hours — Sacramento Mountains Museum, Trestle Recreation Area, Ski Cloudcroft summer tubing. If one stop is the whole reason you drove, call first.</p>
+                </div>
+            </details>
         </section>
 
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Ready to Explore Beyond the Village?</h2>
-                <p>Pair these nearby trips with a stay in Cloudcroft and you have a base camp for forest, desert, history, and culture — all within an easy drive.</p>
-                <div class="cta-buttons">
-                    <a href="../stay/lodging.html" class="btn-primary">Find a Place to Stay</a>
-                    <a href="../plan.html" class="btn-secondary">Plan Your Trip</a>
+        <!-- ================================ HANDOFF ================================ -->
+        <section class="handoff-section" id="handoff" aria-label="Related Cloudcroft guides">
+            <div class="handoff-wrap">
+                <div>
+                    <h2>Base-camp essentials.</h2>
+                    <p>Day trips work best with a real base camp. The lodging guide covers hotels, B&amp;Bs, and cabins; the activities guide maps what else is worth doing in and around the village between excursions.</p>
+                    <div class="handoff-buttons">
+                        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html" class="btn-primary">Lodging guide</a>
+                        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html" class="btn-outline" style="color:#000;border-color:#000;">Activities</a>
+                        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html" class="btn-outline" style="color:#000;border-color:#000;">Dining</a>
+                    </div>
+                </div>
+                <div class="handoff-stat" aria-label="Region at a glance">
+                    <span class="big">16</span>
+                    <span class="mid">Nearby trips</span>
+                    <hr>
+                    <span class="big">4,400 ft</span>
+                    <span class="mid">Drop to the basin</span>
+                    <hr>
+                    <span class="big">8,676 ft</span>
+                    <span class="mid">Cloudcroft base</span>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <a href="../index.html" class="logo footer-logo" aria-label="Discover Cloudcroft — home">
-                    <span class="logo-discover">Discover</span>
-                    <span class="logo-cloudcroft">Cloudcroft</span>
-                </a>
-                <p>Your guide to the village of Cloudcroft, NM and the Sacramento Mountains.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Explore</h4>
-                <a href="../stay/lodging.html">Stay</a>
-                <a href="../eat/complete-guide-to-dining.html">Eat</a>
-                <a href="../do/complete-guide-to-activities.html">Do</a>
-                <a href="../season/seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h4>Connect</h4>
-                <a href="../contact.html">Contact</a>
-            </div>
-            <div class="footer-col">
-                <h4>Plan</h4>
-                <a href="../plan.html">Trip Planner</a>
-                <a href="where-to-visit.html">Nearby Visits</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 DiscoverCloudcroft.com</p>
-        </div>
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
     </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
     <script src="../js/common.js"></script>
     <script>
-        (function() {
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+        (function () {
+            // ---- Fade-in ----
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         fadeObserver.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
-            document.querySelectorAll('.visit-card, .highlight-card, .visiting-card').forEach(function(el) {
-                fadeObserver.observe(el);
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.lodge-card, .fade-in').forEach(function (el) { fadeObserver.observe(el); });
+
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sections = tocPills
+                .map(function (p) { return document.getElementById(p.getAttribute('href').replace('#','')); })
+                .filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
+
+            // ---- Finder + filter-rail shared state ----
+            var state = {
+                region: new Set(),
+                time: new Set(),
+                vibe: new Set(),
+                weather: new Set(),
+                rail: new Set()
+            };
+
+            var REGION_KEYS = { village: 1, basin: 1, further: 1 };
+            var TIME_KEYS = { quick: 1, halfday: 1, fullday: 1, overnight: 1 };
+            var VIBE_KEYS = { nature: 1, history: 1, science: 1, town: 1 };
+
+            function applyPressed(btn, on) { btn.setAttribute('aria-pressed', on ? 'true' : 'false'); }
+
+            function syncRailWithFinder() {
+                document.querySelectorAll('.filter-rail .chip[data-rail]').forEach(function (b) {
+                    var key = b.getAttribute('data-rail');
+                    if (key in REGION_KEYS) {
+                        applyPressed(b, state.region.has(key));
+                        if (state.region.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key in TIME_KEYS) {
+                        applyPressed(b, state.time.has(key));
+                        if (state.time.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key in VIBE_KEYS) {
+                        applyPressed(b, state.vibe.has(key));
+                        if (state.vibe.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key === 'indoor') {
+                        applyPressed(b, state.weather.has('indoor'));
+                        if (state.weather.has('indoor')) state.rail.add('indoor'); else state.rail.delete('indoor');
+                    }
+                    if (key === 'family') {
+                        applyPressed(b, state.weather.has('family'));
+                        if (state.weather.has('family')) state.rail.add('family'); else state.rail.delete('family');
+                    }
+                });
+            }
+
+            function syncFinderWithRail() {
+                document.querySelectorAll('#finder .chip[data-value]').forEach(function (b) {
+                    var grp = b.parentElement.getAttribute('data-filter-group');
+                    var v = b.getAttribute('data-value');
+                    if (grp === 'region' && v in REGION_KEYS) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.region.add(v); else state.region.delete(v);
+                    }
+                    if (grp === 'time' && v in TIME_KEYS) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.time.add(v); else state.time.delete(v);
+                    }
+                    if (grp === 'vibe' && v in VIBE_KEYS) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.vibe.add(v); else state.vibe.delete(v);
+                    }
+                    if (grp === 'weather' && (v === 'indoor' || v === 'family')) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.weather.add(v); else state.weather.delete(v);
+                    }
+                });
+            }
+
+            document.querySelectorAll('#finder .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var grp = btn.parentElement.getAttribute('data-filter-group');
+                    var v = btn.getAttribute('data-value');
+                    var set = state[grp];
+                    if (set) {
+                        if (set.has(v)) set.delete(v); else set.add(v);
+                    }
+                    if (grp === 'region') applyPressed(btn, state.region.has(v));
+                    if (grp === 'time') applyPressed(btn, state.time.has(v));
+                    if (grp === 'vibe') applyPressed(btn, state.vibe.has(v));
+                    if (grp === 'weather') applyPressed(btn, state.weather.has(v));
+                    syncRailWithFinder();
+                    applyFilters();
+                });
             });
+
+            document.querySelectorAll('.filter-rail .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var k = btn.getAttribute('data-rail');
+                    if (state.rail.has(k)) state.rail.delete(k); else state.rail.add(k);
+                    applyPressed(btn, state.rail.has(k));
+                    syncFinderWithRail();
+                    applyFilters();
+                });
+            });
+
+            document.getElementById('finder-clear').addEventListener('click', function () {
+                state.region.clear(); state.time.clear(); state.vibe.clear(); state.weather.clear(); state.rail.clear();
+                document.querySelectorAll('.chip[aria-pressed]').forEach(function (c) { applyPressed(c, false); });
+                applyFilters();
+            });
+
+            function cardMatches(card) {
+                var region = card.getAttribute('data-region');
+                var time = card.getAttribute('data-time');
+                var vibes = (card.getAttribute('data-vibes') || '').split(/\s+/);
+                var indoor = card.getAttribute('data-indoor') === 'true';
+                var family = card.getAttribute('data-family') === 'true';
+                var open = card.getAttribute('data-open');
+
+                if (state.region.size && !state.region.has(region)) return false;
+                if (state.time.size && !state.time.has(time)) return false;
+                if (state.vibe.size) {
+                    var hit = false;
+                    state.vibe.forEach(function (v) { if (vibes.indexOf(v) !== -1) hit = true; });
+                    if (!hit) return false;
+                }
+                if (state.weather.has('indoor') && !indoor) return false;
+                if (state.weather.has('family') && !family) return false;
+
+                if (state.rail.has('open') && open !== 'yes') return false;
+
+                return true;
+            }
+
+            function applyFilters() {
+                var shown = 0;
+                document.querySelectorAll('[data-grid] .lodge-card').forEach(function (c) {
+                    if (cardMatches(c)) { c.hidden = false; shown++; }
+                    else { c.hidden = true; }
+                });
+                document.getElementById('filter-count-n').textContent = shown;
+
+                document.querySelectorAll('section.trips-block').forEach(function (sec) {
+                    var grid = sec.querySelector('[data-grid]');
+                    if (!grid) return;
+                    var visible = grid.querySelectorAll('.lodge-card:not([hidden])').length;
+                    sec.classList.toggle('section-hidden', visible === 0);
+                });
+
+                var empty = document.getElementById('empty-state');
+                if (shown === 0) empty.classList.add('is-visible');
+                else empty.classList.remove('is-visible');
+            }
+
+            // ---- Compare matrix ----
+            var tripData = {
+                'white-sands':      { name: 'White Sands National Park',        href: 'https://www.nps.gov/whsa/index.htm',                                 region: 'Basin',   drive: '35–45 min',   need: 'Half–full day',  vibe: 'Nature · iconic',    indoor: 'No',  access: 'Open',        notes: 'Watch US-70 closures; bring water.' },
+                'trestle-vista':    { name: 'Mexican Canyon Trestle Vista',     href: '../do/mexican-canyon-trestle.html',                                  region: 'Village', drive: '5 min',       need: 'Quick stop',     vibe: 'History · photo',    indoor: 'No',  access: 'Open',        notes: '1899 trestle overlook — free.' },
+                'trestle-rec':      { name: 'Trestle Recreation Area',          href: 'https://www.fs.usda.gov/r03/lincoln/recreation',                     region: 'Village', drive: '5 min',       need: '1–4 hours',      vibe: 'Nature · picnic',    indoor: 'No',  access: 'Seasonal',    notes: 'Closed December–March; $5 day-use.' },
+                'osha':             { name: 'Osha Trail',                        href: '../do/osha-trail.html',                                              region: 'Village', drive: '5 min',       need: '1–2 hours',      vibe: 'Nature · easy hike', indoor: 'No',  access: 'Open',        notes: '2.2-mi family loop at 8,600 ft.' },
+                'sac-museum':       { name: 'Sacramento Mountains Museum',       href: 'https://www.google.com/maps/search/?api=1&query=Sacramento+Mountains+Historical+Museum+Cloudcroft', region: 'Village', drive: 'In town', need: '1–2 hours', vibe: 'History · indoor', indoor: 'Yes', access: 'Call ahead', notes: 'Volunteer-run; seasonal hours.' },
+                'burro-ave':        { name: 'Burro Avenue',                      href: '../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html',       region: 'Village', drive: 'In town',     need: '1–3 hours',      vibe: 'Town · shopping',    indoor: 'Yes', access: 'Open',        notes: 'Shops, bakeries, tasting rooms.' },
+                'ski-cloudcroft':   { name: 'Ski Cloudcroft',                    href: 'https://www.google.com/maps/search/?api=1&query=Ski+Cloudcroft',     region: 'Village', drive: '10–15 min',   need: 'Half day',       vibe: 'Family · snow',      indoor: 'No',  access: 'Seasonal',    notes: 'Snow-dependent; summer tubing.' },
+                'sunspot-byway':    { name: 'Sunspot Scenic Byway',              href: 'https://www.google.com/maps/search/?api=1&query=Sunspot+Scenic+Byway+NM', region: 'Village', drive: '20–40 min', need: '1–3 hours', vibe: 'Scenic drive', indoor: 'No', access: 'Partial', notes: 'Drive only — observatory is closed.' },
+                'space-museum':     { name: 'NM Museum of Space History',        href: 'https://nmspacemuseum.org/',                                         region: 'Basin',   drive: '30–35 min',   need: 'Half day',       vibe: 'Science · history',  indoor: 'Yes', access: 'Open · closed Tue', notes: 'Planetarium + Space Hall of Fame.' },
+                'alameda-zoo':      { name: 'Alameda Park Zoo',                  href: 'https://www.google.com/maps/search/?api=1&query=Alameda+Park+Zoo+Alamogordo', region: 'Basin', drive: '30–35 min', need: '1–2 hours', vibe: 'Family', indoor: 'No', access: 'Open', notes: 'One of the oldest zoos in the Southwest.' },
+                'pistachioland':    { name: 'McGinn\'s PistachioLand',           href: 'https://pistachioland.com/',                                         region: 'Basin',   drive: '35–40 min',   need: '30 min–1.5 hr',  vibe: 'Town · novelty',     indoor: 'Yes', access: 'Open',        notes: 'Book farm tours online (no walk-ins).' },
+                'oliver-lee':       { name: 'Oliver Lee Memorial State Park',    href: 'https://www.emnrd.nm.gov/spd/find-a-park/oliver-lee-memorial-state-park/', region: 'Basin', drive: '40–50 min', need: 'Half–full day', vibe: 'Nature · desert', indoor: 'No', access: 'Construction thru June', notes: 'Dog Canyon Trail; oasis.' },
+                'tularosa':         { name: 'Tularosa',                          href: 'https://www.google.com/maps/search/?api=1&query=Tularosa+NM+Granado+Street', region: 'Basin', drive: '~32 min', need: '1–4 hours', vibe: 'History · village', indoor: 'No', access: 'Open', notes: '1869 mission; galleries on Granado.' },
+                'ruidoso':          { name: 'Ruidoso',                            href: 'https://www.google.com/maps/search/?api=1&query=Ruidoso+NM',         region: 'Further', drive: '50–70 min',   need: 'Full day→overnight', vibe: 'Town · theater · ski', indoor: 'Yes', access: 'Open',  notes: 'Operational after 2024 South Fork Fire.' },
+                'las-cruces':       { name: 'Las Cruces &amp; Old Mesilla',          href: 'https://www.google.com/maps/search/?api=1&query=Old+Mesilla+Las+Cruces+NM', region: 'Further', drive: '~1 hr 35 min', need: 'Overnight', vibe: 'City · dining · history', indoor: 'Yes', access: 'Open (via US-70)', notes: 'Check missile-range closure first.' },
+                'mayhill-timberon': { name: 'Mayhill &amp; Timberon',                href: 'https://www.google.com/maps/search/?api=1&query=Mayhill+NM+Timberon', region: 'Further', drive: '25 min – 1 hr', need: 'Half day', vibe: 'Remote · stargazing · golf', indoor: 'No', access: 'Open', notes: 'Dark skies; quieter Sacramento villages.' }
+            };
+
+            var selected = new Set();
+
+            function okCell(v) {
+                if (v === 'Yes' || (typeof v === 'string' && v.indexOf('Yes') === 0)) return 'ok';
+                if (v === 'No') return 'no';
+                return '';
+            }
+
+            function accessCell(v) {
+                if (v === 'Open' || v === 'Open (via US-70)') return 'ok';
+                if (typeof v === 'string' && (v.indexOf('Construction') === 0 || v.indexOf('Seasonal') === 0 || v.indexOf('Partial') === 0 || v.indexOf('Call') === 0)) return 'warn-cell';
+                return '';
+            }
+
+            function renderMatrix() {
+                var body = document.getElementById('matrix-body');
+                var count = document.getElementById('matrix-count');
+                if (selected.size === 0) {
+                    body.innerHTML = '<tr><td colspan="8" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>';
+                    count.textContent = 'Select trips above (check the Compare box on any card)';
+                    return;
+                }
+                count.textContent = selected.size + ' selected';
+                var rows = [];
+                selected.forEach(function (key) {
+                    var d = tripData[key]; if (!d) return;
+                    var isExternal = d.href.indexOf('http') === 0;
+                    var linkAttrs = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+                    rows.push(
+                        '<tr>' +
+                        '<td class="prop-name"><a href="' + d.href + '"' + linkAttrs + '>' + d.name + '</a></td>' +
+                        '<td>' + d.region + '</td>' +
+                        '<td>' + d.drive + '</td>' +
+                        '<td>' + d.need + '</td>' +
+                        '<td>' + d.vibe + '</td>' +
+                        '<td class="' + okCell(d.indoor) + '">' + d.indoor + '</td>' +
+                        '<td class="' + accessCell(d.access) + '">' + d.access + '</td>' +
+                        '<td>' + d.notes + '</td>' +
+                        '</tr>'
+                    );
+                });
+                body.innerHTML = rows.join('');
+            }
+
+            document.querySelectorAll('.cmp').forEach(function (cb) {
+                cb.addEventListener('change', function () {
+                    var key = cb.getAttribute('data-property');
+                    if (cb.checked) selected.add(key); else selected.delete(key);
+                    renderMatrix();
+                });
+            });
+
+            applyFilters();
+            renderMatrix();
         })();
     </script>
 </body>
+
 </html>

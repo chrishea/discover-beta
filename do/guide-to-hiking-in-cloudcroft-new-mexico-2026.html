@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12 Hikes Near Cloudcroft | Best Trails Ranked Easy to Hard, Cloudcroft, NM</title>
+    <title>12 Hikes Near Cloudcroft, NM (2026) — Ranked Easy to Hard | DiscoverCloudcroft.com</title>
     <meta name="description"
-        content="12 best hikes near Cloudcroft, NM ranked easiest to hardest. Forest walks, waterfall trails, railroad history, rim views, canyon descents, and a desert-to-summit climb — with trail details, maps, and altitude tips.">
+        content="Twelve trails near Cloudcroft, NM, ranked easiest to hardest — filter by difficulty, distance, vibe, and drive time. A decision-driven hiking guide for the Lincoln National Forest.">
     <meta name="keywords"
-        content="cloudcroft hiking, cloudcroft trails, osha trail cloudcroft, cloudcroft hikes, lincoln national forest trails, best hikes cloudcroft nm, cloud climbing trestle trail, rim trail cloudcroft, dog canyon trail, bluff springs, willie white trail">
-    <link rel="canonical" href="https://discovercloudcroft.com/do/hike-in-cloudcroft.html">
+        content="cloudcroft hiking, cloudcroft trails, osha trail cloudcroft, lincoln national forest trails, rim trail cloudcroft, dog canyon trail, bluff springs, willie white trail, mexican canyon trestle">
+    <link rel="canonical"
+        href="https://discovercloudcroft.com/do/guide-to-hiking-in-cloudcroft-new-mexico-2026.html">
 
-    <meta property="og:title" content="12 Hikes Near Cloudcroft | Best Trails Ranked Easy to Hard">
+    <meta property="og:title" content="12 Hikes Near Cloudcroft, NM (2026) — Ranked Easy to Hard | DiscoverCloudcroft.com">
     <meta property="og:description"
-        content="12 best hikes near Cloudcroft, NM with trail distances, difficulty, and practical tips for hiking at 9,000 feet.">
-    <meta property="og:url" content="https://discovercloudcroft.com/do/hike-in-cloudcroft.html">
+        content="Twelve trails near Cloudcroft, NM, ranked easiest to hardest — filter by difficulty, distance, vibe, and drive time.">
+    <meta property="og:url"
+        content="https://discovercloudcroft.com/do/guide-to-hiking-in-cloudcroft-new-mexico-2026.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="12 Hikes Near Cloudcroft | Cloudcroft, NM">
-    <meta name="twitter:description" content="12 best trails near Cloudcroft ranked easy to hard. Distances, maps, and altitude tips.">
+    <meta name="twitter:title" content="12 Hikes Near Cloudcroft, NM (2026) — Ranked Easy to Hard | DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="Twelve trails near Cloudcroft, NM, ranked easiest to hardest — filter by difficulty, distance, vibe, and drive time.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <link href="../css/fonts.css" rel="stylesheet">
@@ -49,20 +51,913 @@
     </script>
 
     <style>
+        /* =====================================================================
+           CHANGELOG (2026-04-22 rebuild — mirrors /stay/ guide design system)
+           FIXED
+             - Canonical + og:url pointed to a nonexistent file
+               (/do/hike-in-cloudcroft.html). Now points at the real filename.
+               This was a live SEO / share-card disaster.
+             - 12 broken trail images: cards referenced
+               `do-photo/hike/trail-01-grand-view.jpg` through `trail-12-…`,
+               none of which exist on disk. Swapped to files that actually
+               exist in do/do-photo/hike/.
+             - Nav paths hardcoded without `../` prefix — every link was 404.
+             - Duplicate <nav class="mobile-nav-overlay"> block (page had two
+               with conflicting hrefs). One removed.
+             - Dead `#reels` anchor in nav.
+           ADDED
+             - Hero 2-up (photo + "Find my hike" 4-chip quiz).
+             - Stats strip (12 trails · 8,500–9,500 ft · free / no permits ·
+               Stage 1 fire restrictions · 31-mi Rim Trail).
+             - Sticky filter rail synced with the hero quiz — difficulty,
+               distance band, vibe, walkable-from-town, waterfall.
+             - Richer trail cards: numbered pin, difficulty band (Easy → Very
+               Hard), distance meta, elevation, attribute chips, Compare.
+             - Inline-SVG schematic map with 12 pins plotting the rough
+               trailhead zones (FR 162C, village core, Sunspot Hwy corridor,
+               Rim Trail, Oliver Lee State Park) + linked legend.
+             - Compare matrix with 8 columns (difficulty, distance,
+               elevation, trailhead, best-for, year-round, …).
+             - Editor's Call — 3 opinionated picks (first-timers, with kids
+               or a dog, real challenge).
+             - Practical-notes accordion (Altitude · Fire & weather ·
+               Gear & cell service · Seasonality) — collapses the tip-box
+               stack and the "Plan Your Hike" grid into one tighter region.
+             - TOC pills track active section on scroll.
+             - Handoff section to camping and lodging guides.
+           REMOVED
+             - Emoji icons from info bar, about-features, highlights, tips.
+             - Word-span animation on a 3-word hero title.
+             - "About" section — the thesis now sits in the hero + one line
+               under it. Three paragraphs of setup were redundant.
+             - Separate "Resources" section — merged into the accordion and
+               the CTA.
+             - Broken/partial footer-grid markup.
+           ================================================================= */
+
+        /* ---- Hero ---- */
         .hero-bg {
             background: url('do-photo/hike/hike-00037.jpg') center 40% / cover no-repeat;
+            filter: saturate(0.9);
         }
 
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15));
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.55));
         }
 
-        .menu-card .trail-photo {
-            width: 100%;
-            border-radius: 8px;
-            aspect-ratio: 16 / 9;
-            object-fit: cover;
+        .hero.hero-split {
+            min-height: 560px;
+            padding: 5rem 2rem;
+        }
+
+        .hero-split-grid {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-left .hero-eyebrow-pill {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 20px;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-left h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+            color: #fff;
+            line-height: 1.08;
             margin-bottom: 1rem;
+        }
+
+        .hero-left .hero-deck {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            max-width: 30rem;
+        }
+
+        .hero-byline {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.82rem;
+            letter-spacing: 0.04em;
+        }
+
+        .hero-byline strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* ---- Finder quiz in hero ---- */
+        .finder {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 1.5rem 1.5rem 1.25rem;
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        .finder h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0 0 1rem;
+        }
+
+        .finder-row { margin-bottom: 0.85rem; }
+
+        .finder-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 0.45rem;
+        }
+
+        .chip-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+        .chip {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            padding: 0.4rem 0.85rem;
+            border-radius: 999px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .chip:hover { border-color: #000; }
+
+        .chip[aria-pressed="true"] {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .finder-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .finder-actions .btn-primary {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.8rem;
+        }
+
+        .finder-clear {
+            background: none;
+            border: none;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Stats strip ---- */
+        .stats-strip {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .stat { text-align: center; }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.4rem;
+        }
+
+        /* ---- Thesis ---- */
+        .thesis {
+            max-width: 820px;
+            margin: 3rem auto 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .thesis p {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            color: #222;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        .thesis .thesis-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            letter-spacing: 0.04em;
+        }
+
+        /* ---- Sticky filter rail ---- */
+        .filter-rail {
+            position: sticky;
+            top: 64px;
+            z-index: 80;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: saturate(140%) blur(6px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 0.75rem 2rem;
+        }
+
+        .filter-rail-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .filter-rail-inner::-webkit-scrollbar { display: none; }
+
+        .filter-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            white-space: nowrap;
+            margin-right: 0.25rem;
+        }
+
+        .filter-count {
+            margin-left: auto;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            white-space: nowrap;
+            padding-left: 1rem;
+        }
+
+        .filter-count strong { color: #000; }
+
+        /* ---- Trails grid (richer cards, reused from lodging rebuild) ---- */
+        .trails-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lodge-grid.is-grid-plus {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .lodge-card.card-plus {
+            padding: 0;
+            border-top: none;
+            overflow: hidden;
+            cursor: default;
+            position: relative;
+        }
+
+        .lodge-card.card-plus:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+            border-top-color: transparent;
+            border-top-width: 0;
+        }
+
+        .lodge-card.card-plus img {
+            margin-bottom: 0;
+            border-radius: 0;
+            aspect-ratio: 16 / 10;
+        }
+
+        .card-body {
+            padding: 1.25rem 1.25rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .card-head {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-head h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            color: #000;
+            margin: 0;
+            line-height: 1.25;
+        }
+
+        /* Difficulty band — color-neutral but semantically coded */
+        .diff-band {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            padding: 0.25rem 0.55rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .diff-band.d-easy     { background: #efefef; color: #111; }
+        .diff-band.d-moderate { background: #444;    color: #fff; border-color: #444; }
+        .diff-band.d-hard     { background: #111;    color: #fff; border-color: #111; }
+        .diff-band.d-vhard    { background: #000;    color: #fff; border-color: #000; box-shadow: inset 0 0 0 2px #fff; }
+
+        .property-type.type-inline { margin-bottom: 0.75rem; }
+
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem 1rem;
+            font-size: 0.78rem;
+            color: #555;
+            margin-bottom: 0.6rem;
+        }
+
+        .card-meta svg {
+            vertical-align: -3px;
+            margin-right: 0.3rem;
+        }
+
+        .card-body p.card-desc {
+            color: var(--charcoal-light);
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0 0 0.85rem;
+        }
+
+        .amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .amenity {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.2rem 0.55rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .amenity.warn {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.18);
+        }
+
+        .card-foot {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            padding-top: 0.85rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .compare-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #444;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .compare-toggle input {
+            accent-color: #000;
+            width: 14px;
+            height: 14px;
+        }
+
+        .card-foot .lodge-card-guide { margin: 0; }
+
+        .card-pin {
+            position: absolute;
+            top: 0.6rem;
+            left: 0.6rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+            z-index: 2;
+        }
+
+        .lodge-card[hidden] { display: none !important; }
+
+        .empty-state {
+            display: none;
+            padding: 3rem 1rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+            border: 1px dashed rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+        }
+
+        .empty-state.is-visible { display: block; }
+
+        /* ---- Compare matrix ---- */
+        .matrix-section {
+            background: #f8f8f8;
+            padding: 3.5rem 2rem;
+        }
+
+        .matrix-wrap { max-width: 1200px; margin: 0 auto; }
+
+        .matrix-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .matrix-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0;
+        }
+
+        .matrix-count {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .matrix-scroll {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .matrix {
+            width: 100%;
+            min-width: 780px;
+            border-collapse: collapse;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .matrix thead th {
+            text-align: left;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #666;
+            font-weight: 700;
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fafafa;
+        }
+
+        .matrix tbody td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            color: #333;
+            vertical-align: top;
+        }
+
+        .matrix tbody tr:last-child td { border-bottom: none; }
+
+        .matrix tbody .prop-name {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            color: #000;
+            font-size: 0.95rem;
+        }
+
+        .matrix .ok { color: #000; font-weight: 600; }
+        .matrix .no { color: #aaa; }
+
+        .matrix-empty {
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        /* ---- Map block ---- */
+        .map-section {
+            padding: 3.5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-head { margin-bottom: 1.5rem; }
+
+        .map-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.35rem;
+        }
+
+        .map-head p {
+            color: #555;
+            font-size: 0.9rem;
+            max-width: 640px;
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .map-figure {
+            background: #e4ecdf;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .map-svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .map-legend {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        .map-legend li {
+            display: grid;
+            grid-template-columns: 28px 1fr;
+            gap: 0.75rem;
+            align-items: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: #333;
+        }
+
+        .map-legend .lg-pin {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-size: 0.76rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-footnote {
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 1rem;
+        }
+
+        /* ---- Editor's Call ---- */
+        .editor-section {
+            background: #111;
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+
+        .editor-wrap { max-width: 1100px; margin: 0 auto; }
+
+        .editor-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.6rem, 2.4vw, 2rem);
+            margin: 0 0 2rem;
+            color: #fff;
+        }
+
+        .editor-picks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .editor-pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .editor-pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .editor-pick .pick-answer {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .editor-pick .pick-answer a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Practical notes accordion ---- */
+        .notes-section {
+            padding: 4rem 2rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .notes-section h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+
+        .note {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .note:last-of-type {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .note > summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .note > summary::-webkit-details-marker { display: none; }
+
+        .note > summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+            transition: transform 0.2s ease;
+        }
+
+        .note[open] > summary::after { content: '−'; }
+
+        .note > summary:hover { color: #444; }
+
+        .note .note-body {
+            padding: 0 2rem 1.25rem 0;
+            color: #444;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .note .note-body p + p { margin-top: 0.65rem; }
+
+        .note .note-body a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Handoff to related guides ---- */
+        .handoff-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+        }
+
+        .handoff-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .handoff-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .handoff-wrap p {
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0 0 1.25rem;
+        }
+
+        .handoff-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .handoff-buttons a { min-height: 44px; }
+
+        .handoff-stat {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .handoff-stat .big {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000;
+            display: block;
+            line-height: 1;
+        }
+
+        .handoff-stat .mid {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #555;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .handoff-stat hr {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            margin: 1rem 0;
+        }
+
+        /* ---- TOC active state ---- */
+        .toc-pill[aria-current="true"] {
+            background: #000;
+            color: #fff;
+        }
+
+        /* ---- Footer override ---- */
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 1024px) {
+            .hero-split-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero.hero-split { padding: 4rem 2rem; }
+
+            .lodge-grid.is-grid-plus {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem 1rem;
+            }
+
+            .editor-picks {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .map-grid { grid-template-columns: 1fr; }
+
+            .handoff-wrap {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero.hero-split {
+                padding: 3rem 1.25rem;
+                min-height: 0;
+            }
+
+            .finder { padding: 1.25rem; }
+
+            .stats-strip { padding: 1.25rem 1rem; }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .lodge-grid.is-grid-plus { grid-template-columns: 1fr; }
+
+            .filter-rail { padding: 0.6rem 1rem; }
+
+            .filter-count { display: none; }
+
+            .trails-section,
+            .map-section,
+            .matrix-section,
+            .editor-section,
+            .notes-section,
+            .handoff-section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
         }
     </style>
 </head>
@@ -70,23 +965,22 @@
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
+    <!-- HEADER (paths relative to /do/) -->
     <header class="site-header" role="banner">
         <div class="header-inner">
-
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html" aria-current="page">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
@@ -96,428 +990,769 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
         <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../resources/resources.html">Resources</a>
         <a href="../resources/contact.html">Contact</a>
     </nav>
 
-    <section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Narrow trail along a ridgeline with fall colors and basin views near Cloudcroft"></div>
+    <!-- HERO (2-up: photo + finder) -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Narrow ridgeline trail with fall color and Tularosa Basin views near Cloudcroft"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>Cloudcroft Trails</span>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">Sacramento Mountains · 2026</span>
+                <h1>Twelve hikes, ranked.</h1>
+                <p class="hero-deck">Forest walks, waterfall spurs, railroad-grade loops, a 31-mile rim trail, and a desert-to-summit canyon climb — all within driving distance of Cloudcroft, all in the Lincoln National Forest, all free.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
             </div>
-            <h1 class="hero-title">
-                <span class="word">12 Hikes </span>
-                <span class="word">Near </span>
-                <span class="word">Cloudcroft </span>
-            </h1>
-            <p class="hero-subtitle">Forest walks, waterfalls, railroad history, rim views, canyon descents, and a desert-to-summit climb &mdash; twelve trails ranked easiest to hardest.</p>
-            <div class="hero-ctas">
-                <a href="#trails" class="btn-primary">See the Trails</a>
-                <a href="#visit" class="btn-secondary">Plan Your Hike</a>
+            <div class="hero-right">
+                <form class="finder" aria-label="Find my hike" id="finder" onsubmit="return false;">
+                    <h2>Find my hike</h2>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-diff">Difficulty</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-diff" data-filter-group="diff">
+                            <button type="button" class="chip" data-value="easy" aria-pressed="false">Easy</button>
+                            <button type="button" class="chip" data-value="moderate" aria-pressed="false">Moderate</button>
+                            <button type="button" class="chip" data-value="hard" aria-pressed="false">Hard</button>
+                            <button type="button" class="chip" data-value="vhard" aria-pressed="false">Very hard</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-dist">Distance</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-dist" data-filter-group="dist">
+                            <button type="button" class="chip" data-value="short" aria-pressed="false">Under 2 mi</button>
+                            <button type="button" class="chip" data-value="med" aria-pressed="false">2–5 mi</button>
+                            <button type="button" class="chip" data-value="long" aria-pressed="false">5+ mi</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-vibe">Looking for</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-vibe" data-filter-group="vibe">
+                            <button type="button" class="chip" data-value="views" aria-pressed="false">Views</button>
+                            <button type="button" class="chip" data-value="waterfall" aria-pressed="false">Waterfall</button>
+                            <button type="button" class="chip" data-value="railroad" aria-pressed="false">Railroad history</button>
+                            <button type="button" class="chip" data-value="forest" aria-pressed="false">Quiet forest</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-from">From Cloudcroft</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-from" data-filter-group="from">
+                            <button type="button" class="chip" data-value="walk" aria-pressed="false">Walk from town</button>
+                            <button type="button" class="chip" data-value="short-drive" aria-pressed="false">Under 20 min</button>
+                            <button type="button" class="chip" data-value="long-drive" aria-pressed="false">30+ min</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-actions">
+                        <a href="#trails" class="btn-primary">Show matches</a>
+                        <button type="button" class="finder-clear" id="finder-clear">Clear</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F4CD;</div>
-                <span>Lincoln National Forest</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F97E;</div>
-                <span>12 Trails, Easy to Hard</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x26F0;&#xFE0F;</div>
-                <span>8,500&ndash;9,000+ ft</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F6AB;</div>
-                <span>Free / No Permits</span>
-            </div>
+    <!-- STATS STRIP -->
+    <div class="stats-strip" aria-label="Trail network at a glance">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">12</span><span class="stat-label">Trails in this guide</span></div>
+            <div class="stat"><span class="stat-num">31 mi</span><span class="stat-label">Rim Trail (T105)</span></div>
+            <div class="stat"><span class="stat-num">8,500–9,500</span><span class="stat-label">ft elevation range</span></div>
+            <div class="stat"><span class="stat-num">Free</span><span class="stat-label">No permits required</span></div>
+            <div class="stat"><span class="stat-num">Stage 1</span><span class="stat-label">Fire restrictions in effect</span></div>
         </div>
     </div>
 
-    <!-- ════════════════════════════════════════════ STICKY TOC NAV ════════════════════════════════════════════ -->
+    <!-- STICKY TOC NAV -->
     <nav class="toc-nav" aria-label="Table of contents">
         <div class="toc-nav-inner">
-            <a href="#about" class="toc-pill">About</a>
             <a href="#trails" class="toc-pill">Trails</a>
-            <a href="#gallery" class="toc-pill">Gallery</a>
-            <a href="#visit" class="toc-pill">Plan Your Hike</a>
-            <a href="#profile" class="toc-pill">Resources</a>
+            <a href="#map" class="toc-pill">Map</a>
+            <a href="#compare" class="toc-pill">Compare</a>
+            <a href="#editor" class="toc-pill">Editor's Call</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
+            <a href="#handoff" class="toc-pill">More guides</a>
         </div>
     </nav>
 
     <main id="main-content" role="main">
 
-        <div class="updated-stamp-wrap">
-            <span class="updated-stamp">Last updated · April 2026</span>
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>At 8,500–9,500 feet, "easy" is relative. Pick the right trail for your lungs, your legs, and the weather — not the one with the best name.</p>
+            <span class="thesis-meta">Trail facts are sourced from Lincoln National Forest materials. Always check <a href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank" rel="noopener noreferrer">current alerts</a> before you go.</span>
         </div>
 
-        <section class="section" id="about" aria-label="About hiking near Cloudcroft">
-            <div class="section-container">
-                <div class="about-grid">
-                    <div class="about-text fade-in">
-                        <span class="section-label">About</span>
-                        <h2 class="section-title">High-Country Hiking</h2>
-                        <p>
-                            Cloudcroft hiking is high-country hiking. The trails here sit between 8,500 and 9,000+ feet in the Sacramento Mountains, inside the Lincoln National Forest. That means cooler air, mountain forest, and views that stretch across the Tularosa Basin to White Sands &mdash; but it also means altitude changes everything.
-                        </p>
-                        <p>
-                            Even easy trails can feel harder if you drove up from Alamogordo the same day. Weather swings fast. Carry more water than you think you need, keep an extra layer in the car or pack, and check Lincoln National Forest alerts before you leave. As of March 27, 2026, Stage 1 fire restrictions are in effect forest-wide.
-                        </p>
-                        <p>
-                            These twelve trails are close to Cloudcroft, different from one another, and all supported by current Forest Service material &mdash; a real spread of experiences from quiet forest roads and waterfall spurs to railroad-grade loops, rim views, backcountry loop hikes, and a serious desert-to-summit canyon climb.
-                        </p>
-                        <div class="about-features">
-                            <span class="about-feature">&#x1F332; Forest Trails</span>
-                            <span class="about-feature">&#x1F682; Railroad History</span>
-                            <span class="about-feature">&#x1F3D4;&#xFE0F; Basin Views</span>
-                            <span class="about-feature">&#x1F6AB; Free Access</span>
-                            <span class="about-feature">&#x26A0;&#xFE0F; Altitude Matters</span>
+        <!-- FILTER RAIL -->
+        <div class="filter-rail" id="filter-rail" aria-label="Filter trails">
+            <div class="filter-rail-inner">
+                <span class="filter-label">Filter</span>
+                <div class="chip-row" role="group" aria-label="Filter chips" data-filter-group="rail">
+                    <button type="button" class="chip" data-rail="easy" aria-pressed="false">Easy</button>
+                    <button type="button" class="chip" data-rail="moderate" aria-pressed="false">Moderate</button>
+                    <button type="button" class="chip" data-rail="hard" aria-pressed="false">Hard</button>
+                    <button type="button" class="chip" data-rail="vhard" aria-pressed="false">Very hard</button>
+                    <button type="button" class="chip" data-rail="walk" aria-pressed="false">Walk from town</button>
+                    <button type="button" class="chip" data-rail="short" aria-pressed="false">Under 2 mi</button>
+                    <button type="button" class="chip" data-rail="long" aria-pressed="false">5+ mi</button>
+                    <button type="button" class="chip" data-rail="views" aria-pressed="false">Views</button>
+                    <button type="button" class="chip" data-rail="waterfall" aria-pressed="false">Waterfall</button>
+                    <button type="button" class="chip" data-rail="railroad" aria-pressed="false">Railroad</button>
+                    <button type="button" class="chip" data-rail="yearround" aria-pressed="false">Year-round</button>
+                </div>
+                <span class="filter-count"><strong id="filter-count-n">12</strong> of 12 shown</span>
+            </div>
+        </div>
+
+        <!-- ================================ TRAILS ================================ -->
+        <section class="trails-section" id="trails" aria-label="All trails, easy to hard">
+
+            <div class="lodge-grid is-grid-plus" id="trails-grid">
+
+                <!-- 1. Grand View -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="grandview"
+                    data-diff="easy"
+                    data-dist="short"
+                    data-vibes="views railroad"
+                    data-from="long-drive"
+                    data-walk="false"
+                    data-yearround="true">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <img src="do-photo/hike/hike-00026.jpg" alt="Panoramic Sacramento Mountain basin overlook from a forested trail bench" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>1. Grand View Trail</h3>
+                            <span class="diff-band d-easy">Easy</span>
+                        </div>
+                        <span class="property-type type-inline">T130 · old railroad grade</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>FR 162C, north of High Rolls</span>
+                            <span>1.3 mi · year-round</span>
+                        </div>
+                        <p class="card-desc">The easy one for almost anybody. Old railroad grade with open views and a lower-elevation feel. Year-round access.</p>
+                        <div class="amenities">
+                            <span class="amenity">Views</span>
+                            <span class="amenity">Railroad history</span>
+                            <span class="amenity">Year-round</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="grandview"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS listing &rarr;</a>
                         </div>
                     </div>
+                </article>
+
+                <!-- 2. Pumphouse Ridge -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="pumphouse"
+                    data-diff="easy"
+                    data-dist="short"
+                    data-vibes="forest"
+                    data-from="short-drive"
+                    data-walk="false"
+                    data-yearround="false">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <img src="do-photo/hike/hike-00035.webp" alt="Open ponderosa pine forest with mountain grass along a quiet ridge" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>2. Pumphouse Ridge Trails</h3>
+                            <span class="diff-band d-easy">Easy</span>
+                        </div>
+                        <span class="property-type type-inline">T5661 system · former logging roads</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>FR 24B, south of Cloudcroft</span>
+                            <span>0.4–2.6 mi segments</span>
+                        </div>
+                        <p class="card-desc">The quietest trails on the list. Gentle old logging roads through ponderosa forest — birding, families, and solitude more than scenery.</p>
+                        <div class="amenities">
+                            <span class="amenity">Quiet forest</span>
+                            <span class="amenity">Family</span>
+                            <span class="amenity">Birding</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="pumphouse"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS listing &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. Osha Trail -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="osha"
+                    data-diff="easy"
+                    data-dist="med"
+                    data-vibes="views forest"
+                    data-from="short-drive"
+                    data-walk="false"
+                    data-yearround="false">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <img src="do-photo/hike/hike-00031.jpg" alt="Weathered Forest Service sign for the Osha Trail loop at the trailhead" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>3. Osha Trail</h3>
+                            <span class="diff-band d-easy">Easy</span>
+                        </div>
+                        <span class="property-type type-inline">T10 · classic Cloudcroft starter</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Near Cloudcroft village · 8,500–8,600 ft</span>
+                            <span>2.2 mi</span>
+                        </div>
+                        <p class="card-desc">The classic Cloudcroft starter. Close to town, solid scenery, vistas over the Tularosa Basin and White Sands. No water or restrooms at the trailhead — carry what you need.</p>
+                        <div class="amenities">
+                            <span class="amenity">Views</span>
+                            <span class="amenity">Classic</span>
+                            <span class="amenity warn">No water at TH</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="osha"> Compare</label>
+                            <a href="osha-trail.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. Salado Canyon -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="salado"
+                    data-diff="easy"
+                    data-dist="short"
+                    data-vibes="railroad"
+                    data-from="long-drive"
+                    data-walk="false"
+                    data-yearround="true">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <img src="do-photo/hike/hike-00022.jpeg" alt="Forest Service trailhead parking area with log barriers and bare early-spring trees" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>4. Salado Canyon Trail</h3>
+                            <span class="diff-band d-easy">Easy</span>
+                        </div>
+                        <span class="property-type type-inline">T128 · railroad route with trestle remains</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>FR 162C, north of High Rolls</span>
+                            <span>1.6 mi · year-round</span>
+                        </div>
+                        <p class="card-desc">Railroad route with restored trestle remains — a hike with a story, not just a path through the woods. Lower and warmer than Cloudcroft proper.</p>
+                        <div class="amenities">
+                            <span class="amenity">Railroad history</span>
+                            <span class="amenity">Year-round</span>
+                            <span class="amenity">Lower elevation</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="salado"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS listing &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. Bluff Springs -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="bluff"
+                    data-diff="easy"
+                    data-dist="med"
+                    data-vibes="waterfall forest"
+                    data-from="short-drive"
+                    data-walk="false"
+                    data-yearround="false">
+                    <span class="card-pin" aria-hidden="true">5</span>
+                    <img src="do-photo/hike/hike-00032.jpg" alt="Hiker walking a leashed dog along a canopied forest trail near Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>5. Bluff Springs</h3>
+                            <span class="diff-band d-easy">Easy → Mod</span>
+                        </div>
+                        <span class="property-type type-inline">T5006 · Benson Ridge / Bluff Springs</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Sunspot Hwy · ~20 min from Cloudcroft</span>
+                            <span>0.2 mi spur / 2.3 mi full</span>
+                        </div>
+                        <p class="card-desc">The waterfall hike. A spring-fed cascade drops off a 100-foot plateau into ferns and wildflowers. Check closures before you go — call <a href="tel:5756822551">575-682-2551</a>.</p>
+                        <div class="amenities">
+                            <span class="amenity">Waterfall</span>
+                            <span class="amenity">Short spur option</span>
+                            <span class="amenity warn">Check closures</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="bluff"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS listing &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. Cloud-Climbing Trestle -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="trestle"
+                    data-diff="moderate"
+                    data-dist="short"
+                    data-vibes="railroad views"
+                    data-from="walk"
+                    data-walk="true"
+                    data-yearround="false">
+                    <span class="card-pin" aria-hidden="true">6</span>
+                    <img src="do-photo/hike/hike-00027.jpg" alt="Forest Service trail sign pointing to Cloud-Climbing Trestle Trail and the Mexican Canyon Trestle overlook" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>6. Cloud-Climbing Trestle Trail</h3>
+                            <span class="diff-band d-moderate">Moderate</span>
+                        </div>
+                        <span class="property-type type-inline">T5001 · iconic Cloudcroft landmark</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Trestle Recreation Area · NM 82</span>
+                            <span>1.3–1.5 mi</span>
+                        </div>
+                        <p class="card-desc">Best short trail near Cloudcroft for railroad history. Ends at the Mexican Canyon Trestle overlook — the image on every Cloudcroft postcard. Check Forest Service for closure updates.</p>
+                        <div class="amenities">
+                            <span class="amenity">Railroad history</span>
+                            <span class="amenity">Iconic overlook</span>
+                            <span class="amenity">Walkable-ish</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="trestle"> Compare</label>
+                            <a href="mexican-canyon-trestle.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. Switchback + Old Cloudcroft Hwy Loop -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="switchback"
+                    data-diff="moderate"
+                    data-dist="med"
+                    data-vibes="views railroad"
+                    data-from="walk"
+                    data-walk="true"
+                    data-yearround="false">
+                    <span class="card-pin" aria-hidden="true">7</span>
+                    <img src="do-photo/hike/hike-00030.jpg" alt="Shaded forest trail dappled with sunlight winding between tall pines near Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>7. Switchback + Old Cloudcroft Hwy Loop</h3>
+                            <span class="diff-band d-moderate">Moderate</span>
+                        </div>
+                        <span class="property-type type-inline">T5004 + T5002 · historic railroad corridor</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Trestle Rec Area · walk from town</span>
+                            <span>~4.4 mi loop</span>
+                        </div>
+                        <p class="card-desc">The trail you can walk to from town. A 4.4-mile loop on the historic railroad corridor with basin views. Caution: the tunnel under US-82 ices over in winter.</p>
+                        <div class="amenities">
+                            <span class="amenity">Walk from town</span>
+                            <span class="amenity">Loop</span>
+                            <span class="amenity">Railroad history</span>
+                            <span class="amenity warn">Icy tunnel in winter</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="switchback"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS listing &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. Rim Trail -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="rim"
+                    data-diff="moderate"
+                    data-dist="long"
+                    data-vibes="views forest"
+                    data-from="short-drive"
+                    data-walk="false"
+                    data-yearround="false">
+                    <span class="card-pin" aria-hidden="true">8</span>
+                    <img src="do-photo/hike/hike-00037.jpg" alt="Narrow ridgeline trail with fall color and Tularosa Basin views through pine and oak" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>8. Rim Trail (short sections)</h3>
+                            <span class="diff-band d-hard">Mod → Hard</span>
+                        </div>
+                        <span class="property-type type-inline">T105 · NM's first National Recreation Trail</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>North Trailhead off NM 130</span>
+                            <span>2–11 mi sections · 8,350–9,500 ft</span>
+                        </div>
+                        <p class="card-desc">31 miles total, but short out-and-backs from Cloudcroft are the move. Twelve access points — you don't need to hike it all. Basin views, aspen groves, high ridgelines.</p>
+                        <div class="amenities">
+                            <span class="amenity">Views</span>
+                            <span class="amenity">Aspen groves</span>
+                            <span class="amenity">Ridgeline</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="rim"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS listing &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. Wills Canyon -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="wills"
+                    data-diff="moderate"
+                    data-dist="med"
+                    data-vibes="forest"
+                    data-from="short-drive"
+                    data-walk="false"
+                    data-yearround="false">
+                    <span class="card-pin" aria-hidden="true">9</span>
+                    <img src="do-photo/hike/hike-00036.webp" alt="Single-track trail through a green mountain meadow bordered by tall ponderosa pines" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>9. Wills Canyon Trail</h3>
+                            <span class="diff-band d-moderate">Moderate</span>
+                        </div>
+                        <span class="property-type type-inline">T5008 · high-elevation forest and meadows</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Bluff Springs area · 8,700–9,360 ft</span>
+                            <span>4.4 mi one-way · ~660 ft gain</span>
+                        </div>
+                        <p class="card-desc">Old railroad grade through high-elevation forest and meadows. Best as the return leg of a 10.3-mile Willie White loop.</p>
+                        <div class="amenities">
+                            <span class="amenity">Meadows</span>
+                            <span class="amenity">Loop-pair option</span>
+                            <span class="amenity">Railroad grade</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="wills"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS listing &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. San Andres Canyon -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="sanandres"
+                    data-diff="hard"
+                    data-dist="short"
+                    data-vibes="views"
+                    data-from="short-drive"
+                    data-walk="false"
+                    data-yearround="false">
+                    <span class="card-pin" aria-hidden="true">10</span>
+                    <img src="do-photo/hike/hike-00034.webp" alt="Misty forest trail winding uphill through tall pines with fog filtering the canopy" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>10. San Andres Canyon Trail</h3>
+                            <span class="diff-band d-hard">Hard</span>
+                        </div>
+                        <span class="property-type type-inline">T125 · ties into the Rim Trail system</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Starts from the Rim Trail</span>
+                            <span>2.0 mi</span>
+                        </div>
+                        <p class="card-desc">Steeper, rougher canyon terrain than the rim. A real hike, not a stroll. Know your route before you start — this is not where you want to improvise.</p>
+                        <div class="amenities">
+                            <span class="amenity">Canyon</span>
+                            <span class="amenity warn">Rough underfoot</span>
+                            <span class="amenity warn">Route-find</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="sanandres"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS listing &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. Willie White -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="willie"
+                    data-diff="hard"
+                    data-dist="long"
+                    data-vibes="views waterfall forest"
+                    data-from="short-drive"
+                    data-walk="false"
+                    data-yearround="false">
+                    <span class="card-pin" aria-hidden="true">11</span>
+                    <img src="do-photo/hike/hike-00033.jpg.webp" alt="Hiker with daypack pausing with a dog on a trail through tall ponderosa pines" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>11. Willie White Trail</h3>
+                            <span class="diff-band d-hard">Hard</span>
+                        </div>
+                        <span class="property-type type-inline">T113 · forest, meadows, ridgeline, waterfall</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Near Bluff Springs / CR C17 · 8,000–9,360 ft</span>
+                            <span>5.2 mi one-way · ~1,360 ft gain</span>
+                        </div>
+                        <p class="card-desc">A bit of everything: forest, meadows, ridgeline views of White Sands, and a small waterfall. Roughly 90% rock surface underfoot. Pairs with Wills Canyon for the premier 10.3-mile loop.</p>
+                        <div class="amenities">
+                            <span class="amenity">Views</span>
+                            <span class="amenity">Waterfall</span>
+                            <span class="amenity">Premier loop</span>
+                            <span class="amenity warn">Rocky surface</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="willie"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS listing &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12. Dog Canyon -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="dogcanyon"
+                    data-diff="vhard"
+                    data-dist="long"
+                    data-vibes="views"
+                    data-from="long-drive"
+                    data-walk="false"
+                    data-yearround="true">
+                    <span class="card-pin" aria-hidden="true">12</span>
+                    <img src="do-photo/hike/hike-00038.JPG" alt="Hiker with trekking poles and pack walking through golden fall foliage on a forest trail" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>12. Dog Canyon Trail</h3>
+                            <span class="diff-band d-vhard">Very hard</span>
+                        </div>
+                        <span class="property-type type-inline">T106 · desert floor to mountain top</span>
+                        <div class="card-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Oliver Lee State Park · ~30 min from Cloudcroft</span>
+                            <span>5.5 mi one-way (11 RT) · 4,500–7,750 ft</span>
+                        </div>
+                        <p class="card-desc">The hardest hike on this list. Desert floor to mountain top with 3,100+ ft of gain through a dramatic canyon. 8–10 hours round trip. State park fee required.</p>
+                        <div class="amenities">
+                            <span class="amenity">Desert-to-summit</span>
+                            <span class="amenity">3,100+ ft gain</span>
+                            <span class="amenity">Year-round</span>
+                            <span class="amenity warn">State park fee</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="dogcanyon"> Compare</label>
+                            <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">USFS listing &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="empty-state" id="empty-state" role="status">
+                No trails match your filters. Try clearing a chip — at 8,500–9,500 ft, the matrix of options is narrower than it looks.
+            </div>
+        </section>
+
+        <!-- ================================ MAP ================================ -->
+        <section class="map-section" id="map" aria-label="Trailhead locations">
+            <div class="map-head">
+                <h2>Where each trailhead sits</h2>
+                <p>Cloudcroft village is the center. Trailheads cluster along three corridors: FR 162C to the north near High Rolls, the village core itself, and the Sunspot Highway corridor to the south. Dog Canyon sits down in the basin at Oliver Lee State Park.</p>
+            </div>
+            <div class="map-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 680 420" role="img" aria-label="Schematic map of twelve trailheads around Cloudcroft">
+                        <defs>
+                            <pattern id="pines" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                                <circle cx="8" cy="8" r="1.4" fill="#b3c4a8"/>
+                                <circle cx="22" cy="20" r="1.1" fill="#b3c4a8"/>
+                            </pattern>
+                        </defs>
+                        <rect width="680" height="420" fill="#d9e6d2"/>
+                        <rect width="680" height="420" fill="url(#pines)"/>
+
+                        <!-- Basin (desert) block at far left -->
+                        <rect x="0" y="300" width="150" height="120" fill="#e8dcc5" opacity="0.75"/>
+                        <text x="75" y="360" fill="#7a6a45" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">TULAROSA</text>
+                        <text x="75" y="376" fill="#7a6a45" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">BASIN</text>
+
+                        <!-- US 82 diagonal across the map -->
+                        <path d="M0 250 L680 140" stroke="#9b9b8f" stroke-width="10" opacity="0.55"/>
+                        <path d="M0 250 L680 140" stroke="#fff" stroke-width="2" stroke-dasharray="10 12"/>
+                        <text x="615" y="130" fill="#555" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">US-82 →</text>
+
+                        <!-- Sunspot Hwy (NM 6563) — south from village -->
+                        <path d="M360 215 Q 350 300 300 380" stroke="#9b9b8f" stroke-width="8" opacity="0.45" fill="none"/>
+                        <text x="260" y="395" fill="#666" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">SUNSPOT HWY</text>
+
+                        <!-- FR 162C — short spur northwest -->
+                        <path d="M120 160 Q 100 140 80 120" stroke="#a99e85" stroke-width="6" opacity="0.55" fill="none" stroke-dasharray="4 4"/>
+                        <text x="30" y="110" fill="#666" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">FR 162C</text>
+
+                        <!-- Village block -->
+                        <rect x="320" y="180" width="120" height="70" fill="#fff" opacity="0.62" rx="6"/>
+                        <text x="380" y="220" fill="#222" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="700">CLOUDCROFT</text>
+
+                        <text x="160" y="245" fill="#666" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">HIGH ROLLS</text>
+                        <text x="580" y="280" fill="#666" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">MAYHILL →</text>
+
+                        <!-- PINS -->
+                        <!-- 1. Grand View — FR 162C, far NW -->
+                        <g><circle cx="90" cy="135" r="13" fill="#000"/><text x="90" y="139" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">1</text></g>
+                        <!-- 2. Pumphouse Ridge — FR 24B, south of village -->
+                        <g><circle cx="350" cy="290" r="13" fill="#000"/><text x="350" y="294" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">2</text></g>
+                        <!-- 3. Osha Trail — near village -->
+                        <g><circle cx="320" cy="195" r="13" fill="#000"/><text x="320" y="199" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">3</text></g>
+                        <!-- 4. Salado Canyon — FR 162C, far NW (below 1) -->
+                        <g><circle cx="125" cy="170" r="13" fill="#000"/><text x="125" y="174" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">4</text></g>
+                        <!-- 5. Bluff Springs — Sunspot Hwy, south -->
+                        <g><circle cx="320" cy="355" r="13" fill="#000"/><text x="320" y="359" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">5</text></g>
+                        <!-- 6. Cloud-Climbing Trestle — Trestle Rec Area, just E of village -->
+                        <g><circle cx="440" cy="210" r="13" fill="#000"/><text x="440" y="214" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">6</text></g>
+                        <!-- 7. Switchback Loop — near village -->
+                        <g><circle cx="395" cy="245" r="13" fill="#000"/><text x="395" y="249" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">7</text></g>
+                        <!-- 8. Rim Trail — north of village off NM 130 -->
+                        <g><circle cx="480" cy="150" r="13" fill="#000"/><text x="480" y="154" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">8</text></g>
+                        <!-- 9. Wills Canyon — Bluff Springs area -->
+                        <g><circle cx="380" cy="345" r="13" fill="#000"/><text x="380" y="349" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">9</text></g>
+                        <!-- 10. San Andres — off Rim Trail -->
+                        <g><circle cx="500" cy="320" r="13" fill="#000"/><text x="500" y="324" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">10</text></g>
+                        <!-- 11. Willie White — near Bluff Springs / CR C17 -->
+                        <g><circle cx="435" cy="370" r="13" fill="#000"/><text x="435" y="374" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">11</text></g>
+                        <!-- 12. Dog Canyon — Oliver Lee State Park, Tularosa Basin -->
+                        <g><circle cx="60" cy="355" r="13" fill="#000"/><text x="60" y="359" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">12</text></g>
+                    </svg>
+                </div>
+                <div>
+                    <ol class="map-legend">
+                        <li><span class="lg-pin">1</span><span>Grand View · FR 162C (north of High Rolls)</span></li>
+                        <li><span class="lg-pin">2</span><span>Pumphouse Ridge · FR 24B</span></li>
+                        <li><span class="lg-pin">3</span><span><a href="osha-trail.html">Osha Trail</a> · near village</span></li>
+                        <li><span class="lg-pin">4</span><span>Salado Canyon · FR 162C</span></li>
+                        <li><span class="lg-pin">5</span><span>Bluff Springs · Sunspot Hwy</span></li>
+                        <li><span class="lg-pin">6</span><span><a href="mexican-canyon-trestle.html">Cloud-Climbing Trestle</a> · Trestle Rec Area</span></li>
+                        <li><span class="lg-pin">7</span><span>Switchback + Old Hwy Loop · Trestle Rec Area</span></li>
+                        <li><span class="lg-pin">8</span><span>Rim Trail · North Trailhead, NM 130</span></li>
+                        <li><span class="lg-pin">9</span><span>Wills Canyon · Bluff Springs area</span></li>
+                        <li><span class="lg-pin">10</span><span>San Andres Canyon · off Rim Trail</span></li>
+                        <li><span class="lg-pin">11</span><span>Willie White · CR C17</span></li>
+                        <li><span class="lg-pin">12</span><span>Dog Canyon · Oliver Lee State Park</span></li>
+                    </ol>
+                    <p class="map-footnote">Schematic only — relative positions and corridors are approximate. Always carry a real map (or downloaded USFS trail guide) and check alerts before driving to a trailhead.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section menu-section" id="trails" aria-label="Trail details">
-            <div class="section-container">
-                <div class="section-header-center">
-                    <span class="section-label">The Trails</span>
-                    <h2 class="section-title section-title-centered">Easiest to Hardest</h2>
-                    <p class="section-description">Twelve hikes ranked by difficulty. All are close to Cloudcroft and free to access.</p>
+        <!-- ================================ COMPARE MATRIX ================================ -->
+        <section class="matrix-section" id="compare" aria-label="Compare trails side by side">
+            <div class="matrix-wrap">
+                <div class="matrix-head">
+                    <h2>Compare side-by-side</h2>
+                    <span class="matrix-count" id="matrix-count">Select trails above (check the Compare box on any card)</span>
                 </div>
-                <div class="entity-photo-feature">
-                    <img src="do-photo/hike/hike-00026.jpg"
-                        alt="Hiker with daypack standing at a bench overlook with panoramic basin views stretching to the horizon" loading="lazy">
-                </div>
-                <div class="menu-grid">
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-01-grand-view.jpg" class="trail-photo" alt="Layered Sacramento Mountain ridges receding into blue haze with dense conifer forest in foreground" loading="lazy">
-                        <h3>1. Grand View Trail</h3>
-                        <p>The easy one for almost anybody. Old railroad grade with open views and a lower-elevation feel.</p>
-                        <ul class="menu-items">
-                            <li><strong>1.3 miles</strong> &mdash; Easy</li>
-                            <li>Trail T130, off FR 162C north of High Rolls</li>
-                            <li>Open year-round</li>
-                            <li>Railroad history, basin views</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-02-ponderosa-forest.jpg" class="trail-photo" alt="Open ponderosa pine forest with tall trees, green grass, and blue sky with clouds" loading="lazy">
-                        <h3>2. Pumphouse Ridge Trails</h3>
-                        <p>The quietest trails on the list. Gentle old logging roads through ponderosa forest. Nobody is out here.</p>
-                        <ul class="menu-items">
-                            <li><strong>0.4&ndash;2.6 mi segments</strong> &mdash; Easy</li>
-                            <li>T5661 system, off FR 24B south of Cloudcroft</li>
-                            <li>Wide grass-covered former timber roads</li>
-                            <li>Good for birding, families, solitude</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-03-osha.jpg" class="trail-photo" alt="Panoramic view across the Tularosa Basin from a forested mountain ridge near Sunspot, New Mexico" loading="lazy">
-                        <h3>3. Osha Trail</h3>
-                        <p>The classic Cloudcroft starter. Close to town, solid scenery, vistas over the Tularosa Basin and White Sands.</p>
-                        <ul class="menu-items">
-                            <li><strong>2.2 miles</strong> &mdash; Easy</li>
-                            <li>Trail T10, ~8,500&ndash;8,600 ft</li>
-                            <li>No water or restrooms at trailhead</li>
-                            <li>Carry water, snack, extra jacket</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-04-salado.jpg" class="trail-photo" alt="Close-up of historic wooden railroad trestle timbers and cross-bracing near Cloudcroft, New Mexico" loading="lazy">
-                        <h3>4. Salado Canyon Trail</h3>
-                        <p>Railroad route with restored trestle remains. A hike with a story, not just a path through the woods.</p>
-                        <ul class="menu-items">
-                            <li><strong>1.6 miles</strong> &mdash; Easy</li>
-                            <li>Trail T128, off FR 162C north of High Rolls</li>
-                            <li>Open year-round</li>
-                            <li>Lower, warmer zone than Cloudcroft proper</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-05-nm-waterfall.jpg" class="trail-photo" alt="Waterfall cascading through a narrow rock channel in the New Mexico mountains" loading="lazy">
-                        <h3>5. Bluff Springs</h3>
-                        <p>The waterfall hike. A spring-fed cascade drops off a 100-foot plateau into ferns and wildflowers.</p>
-                        <ul class="menu-items">
-                            <li><strong>0.2 mi spur / 2.3 mi full</strong> &mdash; Easy&ndash;Moderate</li>
-                            <li>Trail T5006, Benson Ridge / Bluff Springs</li>
-                            <li>~20 min drive from Cloudcroft via Sunspot Hwy</li>
-                            <li>Check for closures: call 575-682-2551</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-06-cloud-climbing.jpg" class="trail-photo" alt="Mexican Canyon Trestle spanning a snow-covered canyon with snow-laden pines in winter" loading="lazy">
-                        <h3>6. Cloud-Climbing Trestle Trail</h3>
-                        <p>Best short trail near Cloudcroft for railroad history. Ends at the Mexican Canyon Trestle overlook.</p>
-                        <ul class="menu-items">
-                            <li><strong>1.3&ndash;1.5 miles</strong> &mdash; Moderate</li>
-                            <li>Trail T5001, near Trestle Recreation Area</li>
-                            <li>Check Forest Service for closure updates</li>
-                            <li>Iconic Cloudcroft landmark at the end</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-07-switchback.jpg" class="trail-photo" alt="Historic wooden railroad trestle nestled among green forest in a mountain canyon near Cloudcroft" loading="lazy">
-                        <h3>7. Switchback + Old Cloudcroft Hwy Loop</h3>
-                        <p>The trail you can walk to from town. A 4.4-mile loop on the historic railroad corridor with basin views.</p>
-                        <ul class="menu-items">
-                            <li><strong>~4.4 mi loop</strong> &mdash; Moderate</li>
-                            <li>Trails T5004 + T5002, from Trestle Rec Area</li>
-                            <li>No driving to a remote trailhead</li>
-                            <li>Caution: icy tunnel under US 82 in winter</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-08-rim.jpg" class="trail-photo" alt="View through pines and mountain grass across the Tularosa Basin from the Sacramento Mountain rim near Sunspot" loading="lazy">
-                        <h3>8. Rim Trail (short sections)</h3>
-                        <p>NM&rsquo;s first National Recreation Trail. 31 miles total, but short out-and-backs from Cloudcroft are the move.</p>
-                        <ul class="menu-items">
-                            <li><strong>2&ndash;11 mi sections</strong> &mdash; Moderate&ndash;Hard</li>
-                            <li>Trail T105, North Trailhead off NM 130</li>
-                            <li>12 access points; no need to hike it all</li>
-                            <li>Basin views, aspen groves, 8,350&ndash;9,500 ft</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-09-aspens.jpg" class="trail-photo" alt="Golden quaking aspens in autumn at 8,600 feet in the Lincoln National Forest near Cloudcroft" loading="lazy">
-                        <h3>9. Wills Canyon Trail</h3>
-                        <p>Old railroad grade through high-elevation forest and meadows. Best as the return leg of a Willie White loop.</p>
-                        <ul class="menu-items">
-                            <li><strong>4.4 mi one-way</strong> &mdash; Moderate</li>
-                            <li>Trail T5008, Bluff Springs area</li>
-                            <li>8,700&ndash;9,360 ft, ~660 ft gain</li>
-                            <li>Pairs with T113 for a 10.3-mile loop</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-10-san-andres.jpg" class="trail-photo" alt="Aerial view of Sacramento Mountain escarpments and forested ridges in southern New Mexico" loading="lazy">
-                        <h3>10. San Andres Canyon Trail</h3>
-                        <p>Steeper, rougher canyon terrain that ties into the Rim Trail system. A real hike, not a stroll.</p>
-                        <ul class="menu-items">
-                            <li><strong>2.0 miles</strong> &mdash; Difficult</li>
-                            <li>Trail T125, starts from Rim Trail</li>
-                            <li>Steeper and less forgiving underfoot</li>
-                            <li>Know your route before you start</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-11-willie-white.jpg" class="trail-photo" alt="Snow-capped Sacramento Mountains rising above desert foothills and scrubland viewed from the Tularosa Basin" loading="lazy">
-                        <h3>11. Willie White Trail</h3>
-                        <p>A bit of everything: forest, meadows, ridgeline views of White Sands, and a small waterfall. 90% rock surface.</p>
-                        <ul class="menu-items">
-                            <li><strong>5.2 mi one-way</strong> &mdash; Difficult</li>
-                            <li>Trail T113, near Bluff Springs / CR C17</li>
-                            <li>8,000&ndash;9,360 ft, ~1,360 ft gain</li>
-                            <li>Premier loop with Wills Canyon (10.3 mi)</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <img src="do-photo/hike/trail-12-dog-canyon-final.jpg" class="trail-photo" alt="Dramatic steep escarpment dropping into Dog Canyon with desert basin and forested slopes at Oliver Lee State Park" loading="lazy">
-                        <h3>12. Dog Canyon Trail</h3>
-                        <p>The hardest hike on this list. Desert floor to mountain top with 3,100+ ft of gain through a dramatic canyon.</p>
-                        <ul class="menu-items">
-                            <li><strong>5.5 mi one-way (11 RT)</strong> &mdash; Very Difficult</li>
-                            <li>Trail T106, Oliver Lee State Park</li>
-                            <li>~4,500&ndash;7,750 ft, 8&ndash;10 hr round trip</li>
-                            <li>State park fee; 30 min from Cloudcroft</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tip-box">
-                    <span>&#x26A0;&#xFE0F;</span>
-                    <p><strong>Altitude changes everything.</strong> Even easy trails feel harder at 8,500&ndash;9,000 feet. Carry at least a quart of water per person, bring a snack and extra layer, and back off your pace if you arrived from lower elevation the same day. The Forest Service specifically warns hikers to stop and rest if lightheaded or nauseous.</p>
+                <div class="matrix-scroll">
+                    <table class="matrix" id="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Trail</th>
+                                <th>Difficulty</th>
+                                <th>Distance</th>
+                                <th>Elevation</th>
+                                <th>Trailhead</th>
+                                <th>Walk from town</th>
+                                <th>Year-round</th>
+                                <th>Best for</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-body">
+                            <tr><td colspan="8" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="gallery" aria-label="Trail photos">
-            <div class="section-container">
-                <div class="section-header-center">
-                    <span class="section-label">On the Trail</span>
-                    <h2 class="section-title section-title-centered">Hiking at 9,000 Feet</h2>
-                </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00037.jpg"
-                            alt="Narrow ridgeline trail with fall foliage and expansive basin views through pine and oak trees" loading="lazy">
-                        <div class="gallery-caption">Ridgeline trail with fall color</div>
+        <!-- ================================ EDITOR'S CALL ================================ -->
+        <section class="editor-section" id="editor" aria-label="Editor's call">
+            <div class="editor-wrap">
+                <h2>If we had to pick three</h2>
+                <div class="editor-picks">
+                    <div class="editor-pick">
+                        <span class="pick-for">First time in Cloudcroft</span>
+                        <blockquote>"Start with the classic. Close to town, 2.2 miles, big views over the basin. You'll know whether the altitude is going to be a problem."</blockquote>
+                        <p class="pick-answer">Hike <a href="osha-trail.html">Osha Trail</a>.</p>
                     </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00036.webp"
-                            alt="Single-track trail through green mountain meadow bordered by tall ponderosa pines under blue sky" loading="lazy">
-                        <div class="gallery-caption">Meadow trail through the forest</div>
+                    <div class="editor-pick">
+                        <span class="pick-for">With kids or a dog</span>
+                        <blockquote>"Quiet ponderosa forest on an old logging grade. Nobody else is out here. Turn around whenever you want — it's a network, not a route."</blockquote>
+                        <p class="pick-answer">Hike <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer">Pumphouse Ridge (T5661)</a>.</p>
                     </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00027.jpg"
-                            alt="Forest Service trail sign showing directions to Cloud-Climbing Trestle Trail, Mexican Canyon Trestle Overlook, and Old Cloudcroft Highway" loading="lazy">
-                        <div class="gallery-caption">Cloud-Climbing Trestle trailhead sign</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00034.webp"
-                            alt="Misty forest trail winding uphill through tall pines with fog filtering through the canopy" loading="lazy">
-                        <div class="gallery-caption">Mountain weather rolls in fast</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00032.jpg"
-                            alt="Hiker walking a dog on a leash down a forest trail canopied by green oaks and mixed conifers" loading="lazy">
-                        <div class="gallery-caption">Dog-friendly trails (leash required)</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00030.jpg"
-                            alt="Soft dirt trail stretching into shaded forest with dappled sunlight through tall pines" loading="lazy">
-                        <div class="gallery-caption">Shaded forest trail near Cloudcroft</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00031.jpg"
-                            alt="Weathered wooden Forest Service sign showing Osha Trail loop, junction, trailhead parking, and Pines Trail distances" loading="lazy">
-                        <div class="gallery-caption">Osha Trail sign</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00038.JPG"
-                            alt="Hiker with trekking poles and backpack walking through golden fall foliage on a forest trail" loading="lazy">
-                        <div class="gallery-caption">Fall hiking in the Sacramentos</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00035.webp"
-                            alt="Open mountain meadow with lone ponderosa pine and dense conifer forest along the ridgeline under blue sky" loading="lazy">
-                        <div class="gallery-caption">High meadow along the trail</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00033.jpg.webp"
-                            alt="Hiker with daypack and dog pausing on a trail through tall ponderosa pines and mountain grass" loading="lazy">
-                        <div class="gallery-caption">Hiking with a trail partner</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00022.jpeg"
-                            alt="Trailhead parking area with log barriers and Forest Service sign surrounded by bare early-spring trees" loading="lazy">
-                        <div class="gallery-caption">Trailhead access</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="do-photo/hike/hike-00026.jpg"
-                            alt="Hiker at a bench overlook with panoramic view of green forested mountains and distant Tularosa Basin" loading="lazy">
-                        <div class="gallery-caption">Basin overlook</div>
-                    </div>
-                </div>
-                <div class="highlights-grid" style="margin-top: 2rem;">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F682;</div>
-                        <h3>Railroad History</h3>
-                        <p>Several of these trails follow or connect to the old Cloud-Climbing Railroad grade. Grand View, Salado Canyon, Cloud-Climbing Trestle, and the Switchback Trail all tie into the railroad story that shaped Cloudcroft.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F30E;</div>
-                        <h3>Basin Views</h3>
-                        <p>Osha Trail and the Rim Trail system offer panoramic views across the Tularosa Basin to White Sands. On clear days, the vista stretches over 50 miles from the mountain edge.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F3AF;</div>
-                        <h3>Real Range of Difficulty</h3>
-                        <p>From a 0.4-mile paved loop to a 5.5-mile desert-to-summit climb, these twelve trails cover the full spectrum. First-time visitors start with Grand View or Pumphouse Ridge; experienced hikers tackle Dog Canyon or Willie White.</p>
+                    <div class="editor-pick">
+                        <span class="pick-for">You want a real challenge</span>
+                        <blockquote>"Desert floor to mountain summit. 3,100 feet of gain, 8–10 hours, and a start in Tularosa Basin heat. This is the one you train for."</blockquote>
+                        <p class="pick-answer">Hike <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer">Dog Canyon (T106)</a>.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section-alt" id="visit" aria-label="Plan your hike">
-            <div class="section-container">
-                <div class="section-header-center">
-                    <span class="section-label">Plan Your Hike</span>
-                    <h2 class="section-title section-title-centered">Before You Go</h2>
-                    <p class="section-description">Practical details for hiking near Cloudcroft.</p>
+        <!-- ================================ PRACTICAL NOTES ================================ -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Before you go</h2>
+
+            <details class="note">
+                <summary>Altitude, water &amp; pace</summary>
+                <div class="note-body">
+                    <p>Cloudcroft trails sit between 8,500 and 9,500 feet. Even easy trails feel harder if you drove up from Alamogordo the same day. Carry at least a quart of water per person, bring a snack and an extra layer, and back off your pace if you arrived from lower elevation.</p>
+                    <p>The Forest Service specifically warns hikers to stop and rest if they feel lightheaded or nauseous. If it doesn't pass, turn around. Every trail here will still be here next weekend.</p>
                 </div>
-                <div class="visiting-grid">
-                    <div class="visiting-card">
-                        <h3>Trailheads</h3>
-                        <p>Grand View, Salado Canyon: off <strong>FR 162C north of High Rolls</strong>. Pumphouse Ridge, Osha Trail: near Cloudcroft village. Cloud-Climbing Trestle, Switchback Loop: near <strong>Trestle Recreation Area</strong> on NM 82. Bluff Springs: off <strong>Sunspot Highway (NM 6563)</strong>. Rim Trail, Wills Canyon, San Andres Canyon, Willie White: access from Rim Trail system or FR roads south of Cloudcroft. Dog Canyon: <strong>Oliver Lee State Park</strong>, Alamogordo.</p>
+            </details>
+
+            <details class="note">
+                <summary>Fire restrictions &amp; weather</summary>
+                <div class="note-body">
+                    <p><strong>Stage 1 fire restrictions</strong> are in effect forest-wide through September 30, 2026. Check <a href="https://www.fs.usda.gov/r03/lincoln/alerts/current-fire-restrictions-and-related-prohibitions" target="_blank" rel="noopener noreferrer">current fire restrictions</a> before you leave — conditions can change fast.</p>
+                    <p>Afternoon thunderstorms are common June through August. Plan for early morning starts and be off exposed ridges by noon on summer days. In winter, the tunnel under US-82 on the Switchback Loop can ice over.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Gear, maps &amp; cell service</summary>
+                <div class="note-body">
+                    <p>Cell service is spotty on most forest trails. Download USFS trail guides and offline maps before you leave the village. High Altitude Outfitters (<a href="tel:5756821229">575-682-1229</a>, 310 Burro Ave) stocks gear and current trail information.</p>
+                    <p>For ranger-district questions, call the Sacramento Ranger District at <a href="tel:5756822551">575-682-2551</a>, 4 Lost Lodge Rd, Monday–Friday 9 AM–3 PM. No trailhead fees or permits are required for the trails in this guide; Dog Canyon requires a state park fee at Oliver Lee.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Seasonality &amp; year-round access</summary>
+                <div class="note-body">
+                    <p>Grand View, Salado Canyon, and Dog Canyon are the three trails most reliably year-round (Dog Canyon sits low enough in the basin that winter is actually a better time to attempt it). Higher-elevation trails can be snowbound or icy November through March.</p>
+                    <p>Fall color on the aspen-heavy stretches of the Rim Trail typically peaks late September through mid-October — but exact timing shifts year to year. Check <a href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank" rel="noopener noreferrer">forest alerts</a> for any seasonal closures.</p>
+                </div>
+            </details>
+        </section>
+
+        <!-- ================================ HANDOFF ================================ -->
+        <section class="handoff-section" id="handoff" aria-label="Related Cloudcroft guides">
+            <div class="handoff-wrap">
+                <div>
+                    <h2>Need a place to stay or a campsite?</h2>
+                    <p>A 5.2-mile hike is a lot more fun when you sleep in a cabin instead of driving back to Alamogordo. The lodging guide covers hotels, B&amp;Bs, and cabin resorts; the camping guide covers the forest campgrounds that put you at the trailhead before sunrise.</p>
+                    <div class="handoff-buttons">
+                        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html" class="btn-primary">Lodging guide</a>
+                        <a href="../stay/complete-guide-to-other-lodging-in-cloudcroft-2026.html" class="btn-outline" style="color:#000;border-color:#000;">RV &amp; camping guide</a>
                     </div>
-                    <div class="visiting-card">
-                        <h3>Ranger District</h3>
-                        <p><a href="tel:5756822551">575-682-2551</a><br>
-                           <a href="https://www.fs.usda.gov/r03/lincoln/offices/sacramento-ranger-district" target="_blank" rel="noopener noreferrer">Sacramento Ranger District</a><br>
-                           4 Lost Lodge Rd, Cloudcroft, NM 88317<br>
-                           M&ndash;F 9 AM&ndash;3 PM</p>
-                    </div>
-                    <div class="visiting-card">
-                        <h3>Gear &amp; Maps</h3>
-                        <p><strong>High Altitude Outfitters</strong><br>
-                           <a href="tel:5756821229">575-682-1229</a><br>
-                           <a href="https://www.highaltitudenm.com/" target="_blank" rel="noopener noreferrer">highaltitudenm.com</a><br>
-                           310 Burro Ave, Cloudcroft</p>
-                    </div>
-                    <div class="visiting-card">
-                        <h3>Good to Know</h3>
-                        <p><strong>Stage 1 fire restrictions</strong> in effect through Sept 30, 2026. No trailhead fees or permits required. Cell service is spotty on forest trails. Leash dogs where required. Afternoon thunderstorms are common June&ndash;August &mdash; plan for mornings. Check <a href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank" rel="noopener noreferrer">forest alerts</a> before you go.</p>
-                    </div>
+                </div>
+                <div class="handoff-stat" aria-label="Trail network at a glance">
+                    <span class="big">12</span>
+                    <span class="mid">Trails in this guide</span>
+                    <hr>
+                    <span class="big">31 mi</span>
+                    <span class="mid">Rim Trail (T105)</span>
+                    <hr>
+                    <span class="big">8,500–9,500</span>
+                    <span class="mid">ft elevation range</span>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="profile" aria-label="Trail resources">
-            <div class="section-container">
-                <div class="section-header-center">
-                    <span class="section-label">Resources</span>
-                    <h2 class="section-title section-title-centered">Official Trail Information</h2>
-                </div>
-                <div class="tip-box">
-                    <span>&#x1F5FA;&#xFE0F;</span>
-                    <p><strong>Lincoln National Forest</strong> &mdash; <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer">Sacramento Ranger District Trail Listing</a>. The official trail index with distances, difficulty ratings, and downloadable trail guides for every trail near Cloudcroft.</p>
-                </div>
-                <div class="tip-box">
-                    <span>&#x1F4CB;</span>
-                    <p><strong>Current Alerts</strong> &mdash; <a href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank" rel="noopener noreferrer">Lincoln National Forest Alerts Page</a>. Check closures, fire restrictions, and seasonal access limits before your trip.</p>
-                </div>
-                <div class="tip-box">
-                    <span>&#x1F525;</span>
-                    <p><strong>Fire Restrictions</strong> &mdash; <a href="https://www.fs.usda.gov/r03/lincoln/alerts/current-fire-restrictions-and-related-prohibitions" target="_blank" rel="noopener noreferrer">Current Fire Restrictions</a>. Stage 1 restrictions are in effect forest-wide March 27 through September 30, 2026.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Hit the Trail</h2>
-                <p>Twelve trails, twelve different experiences &mdash; from paved forest loops to a desert-to-summit canyon climb. All free, all close to Cloudcroft, all in the Sacramento Mountains.</p>
-                <div class="cta-buttons">
-                    <a href="https://www.fs.usda.gov/r03/lincoln/recreation/trails" target="_blank" rel="noopener noreferrer" class="btn-primary">View Trail Maps</a>
-                    <a href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank" rel="noopener noreferrer" class="btn-secondary">Check Forest Alerts</a>
-                    <a href="complete-guide-to-activities-to-do-in-cloudcroft-2026.html" class="btn-secondary">Explore More Activities</a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-        <div class="footer-grid">
-            <div class="footer-col footer-brand" style="padding-top:2vh;text-align:center">DISCOVER CLOUDCROFT
-                <span style="font-size:90%;">New Mexico's Mountain Retreat</span>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-        </div>
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
     </footer>
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
@@ -525,7 +1760,7 @@
     <script src="../js/common.js"></script>
     <script>
         (function () {
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            // ---- Fade-in ----
             var fadeObserver = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
@@ -533,11 +1768,229 @@
                         fadeObserver.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.lodge-card, .fade-in').forEach(function (el) { fadeObserver.observe(el); });
 
-            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card, .gallery-item').forEach(function (el) {
-                fadeObserver.observe(el);
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sections = tocPills
+                .map(function (p) { return document.getElementById(p.getAttribute('href').replace('#','')); })
+                .filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
+
+            // ---- Finder + filter-rail shared state ----
+            var state = {
+                diff: new Set(),     // easy, moderate, hard, vhard
+                dist: new Set(),     // short, med, long
+                vibe: new Set(),     // views, waterfall, railroad, forest
+                from: new Set(),     // walk, short-drive, long-drive
+                rail: new Set()      // easy, moderate, hard, vhard, walk, short, long, views, waterfall, railroad, yearround
+            };
+
+            // Overlap between finder & rail chips
+            var DIFF_KEYS = { easy: 1, moderate: 1, hard: 1, vhard: 1 };
+            var VIBE_KEYS = { views: 1, waterfall: 1, railroad: 1 };
+
+            function applyPressed(btn, on) {
+                btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+            }
+
+            function syncRailWithFinder() {
+                document.querySelectorAll('.filter-rail .chip[data-rail]').forEach(function (b) {
+                    var key = b.getAttribute('data-rail');
+                    if (key in DIFF_KEYS) {
+                        applyPressed(b, state.diff.has(key));
+                        if (state.diff.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key in VIBE_KEYS) {
+                        applyPressed(b, state.vibe.has(key));
+                        if (state.vibe.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key === 'walk') {
+                        var w = state.from.has('walk');
+                        applyPressed(b, w);
+                        if (w) state.rail.add('walk'); else state.rail.delete('walk');
+                    }
+                    if (key === 'short') {
+                        var s = state.dist.has('short');
+                        applyPressed(b, s);
+                        if (s) state.rail.add('short'); else state.rail.delete('short');
+                    }
+                    if (key === 'long') {
+                        var l = state.dist.has('long');
+                        applyPressed(b, l);
+                        if (l) state.rail.add('long'); else state.rail.delete('long');
+                    }
+                });
+            }
+
+            function syncFinderWithRail() {
+                document.querySelectorAll('#finder .chip[data-value]').forEach(function (b) {
+                    var grp = b.parentElement.getAttribute('data-filter-group');
+                    var v = b.getAttribute('data-value');
+                    if (grp === 'diff' && v in DIFF_KEYS) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.diff.add(v); else state.diff.delete(v);
+                    }
+                    if (grp === 'vibe' && v in VIBE_KEYS) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.vibe.add(v); else state.vibe.delete(v);
+                    }
+                    if (grp === 'from' && v === 'walk') {
+                        applyPressed(b, state.rail.has('walk'));
+                        if (state.rail.has('walk')) state.from.add('walk'); else state.from.delete('walk');
+                    }
+                    if (grp === 'dist' && (v === 'short' || v === 'long')) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.dist.add(v); else state.dist.delete(v);
+                    }
+                });
+            }
+
+            document.querySelectorAll('#finder .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var grp = btn.parentElement.getAttribute('data-filter-group');
+                    var v = btn.getAttribute('data-value');
+                    var set = state[grp];
+                    if (set) {
+                        if (set.has(v)) set.delete(v); else set.add(v);
+                    }
+                    if (grp === 'diff') applyPressed(btn, state.diff.has(v));
+                    if (grp === 'dist') applyPressed(btn, state.dist.has(v));
+                    if (grp === 'vibe') applyPressed(btn, state.vibe.has(v));
+                    if (grp === 'from') applyPressed(btn, state.from.has(v));
+                    syncRailWithFinder();
+                    applyFilters();
+                });
             });
+
+            document.querySelectorAll('.filter-rail .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var k = btn.getAttribute('data-rail');
+                    if (state.rail.has(k)) state.rail.delete(k); else state.rail.add(k);
+                    applyPressed(btn, state.rail.has(k));
+                    syncFinderWithRail();
+                    applyFilters();
+                });
+            });
+
+            document.getElementById('finder-clear').addEventListener('click', function () {
+                state.diff.clear(); state.dist.clear(); state.vibe.clear(); state.from.clear(); state.rail.clear();
+                document.querySelectorAll('.chip[aria-pressed]').forEach(function (c) { applyPressed(c, false); });
+                applyFilters();
+            });
+
+            function cardMatches(card) {
+                var diff = card.getAttribute('data-diff');
+                var dist = card.getAttribute('data-dist');
+                var vibes = (card.getAttribute('data-vibes') || '').split(/\s+/);
+                var from = card.getAttribute('data-from');
+                var walk = card.getAttribute('data-walk') === 'true';
+                var yearround = card.getAttribute('data-yearround') === 'true';
+
+                if (state.diff.size && !state.diff.has(diff)) return false;
+                if (state.dist.size && !state.dist.has(dist)) return false;
+                if (state.vibe.size) {
+                    var hit = false;
+                    state.vibe.forEach(function (v) { if (vibes.indexOf(v) !== -1) hit = true; });
+                    if (!hit) return false;
+                }
+                if (state.from.size && !state.from.has(from)) return false;
+
+                if (state.rail.has('walk') && !walk) return false;
+                if (state.rail.has('yearround') && !yearround) return false;
+                if (state.rail.has('short') && dist !== 'short') return false;
+                if (state.rail.has('long') && dist !== 'long') return false;
+                // Difficulty and vibe rail chips are mirrored into state.diff / state.vibe, so no extra check here.
+
+                return true;
+            }
+
+            function applyFilters() {
+                var shown = 0;
+                document.querySelectorAll('#trails-grid .lodge-card').forEach(function (c) {
+                    if (cardMatches(c)) { c.hidden = false; shown++; }
+                    else { c.hidden = true; }
+                });
+                document.getElementById('filter-count-n').textContent = shown;
+                var empty = document.getElementById('empty-state');
+                if (shown === 0) empty.classList.add('is-visible');
+                else empty.classList.remove('is-visible');
+            }
+
+            // ---- Compare matrix ----
+            var trailData = {
+                grandview:  { name: 'Grand View Trail',               href: 'https://www.fs.usda.gov/r03/lincoln/recreation/trails', diff: 'Easy',          dist: '1.3 mi',        elev: 'Lower',           th: 'FR 162C, N of High Rolls', walk: 'No',  year: 'Yes', best: 'Easy views, year-round access.' },
+                pumphouse:  { name: 'Pumphouse Ridge Trails',         href: 'https://www.fs.usda.gov/r03/lincoln/recreation/trails', diff: 'Easy',          dist: '0.4–2.6 mi',   elev: 'Mid-high',        th: 'FR 24B, S of Cloudcroft',  walk: 'No',  year: 'Seasonal', best: 'Solitude, birding, families.' },
+                osha:       { name: 'Osha Trail',                      href: 'osha-trail.html',                                       diff: 'Easy',          dist: '2.2 mi',        elev: '8,500–8,600 ft',  th: 'Near village',             walk: 'No',  year: 'Seasonal', best: 'Classic Cloudcroft starter.' },
+                salado:     { name: 'Salado Canyon Trail',             href: 'https://www.fs.usda.gov/r03/lincoln/recreation/trails', diff: 'Easy',          dist: '1.6 mi',        elev: 'Lower, warmer',   th: 'FR 162C, N of High Rolls', walk: 'No',  year: 'Yes', best: 'Railroad history; year-round.' },
+                bluff:      { name: 'Bluff Springs',                   href: 'https://www.fs.usda.gov/r03/lincoln/recreation/trails', diff: 'Easy → Mod',    dist: '0.2 / 2.3 mi',  elev: 'High',            th: 'Sunspot Hwy, ~20 min',     walk: 'No',  year: 'Seasonal', best: 'The waterfall hike.' },
+                trestle:    { name: 'Cloud-Climbing Trestle Trail',    href: 'mexican-canyon-trestle.html',                           diff: 'Moderate',      dist: '1.3–1.5 mi',    elev: 'High',            th: 'Trestle Rec Area',         walk: 'Yes', year: 'Seasonal', best: 'Iconic trestle overlook.' },
+                switchback: { name: 'Switchback + Old Hwy Loop',       href: 'https://www.fs.usda.gov/r03/lincoln/recreation/trails', diff: 'Moderate',      dist: '~4.4 mi loop',  elev: 'High',            th: 'Trestle Rec Area',         walk: 'Yes', year: 'Seasonal', best: 'Loop you can walk to.' },
+                rim:        { name: 'Rim Trail (short sections)',      href: 'https://www.fs.usda.gov/r03/lincoln/recreation/trails', diff: 'Mod → Hard',    dist: '2–11 mi sec.',  elev: '8,350–9,500 ft',  th: 'North Trailhead, NM 130',  walk: 'No',  year: 'Seasonal', best: 'Ridgeline views, aspens.' },
+                wills:      { name: 'Wills Canyon Trail',              href: 'https://www.fs.usda.gov/r03/lincoln/recreation/trails', diff: 'Moderate',      dist: '4.4 mi one-way',elev: '8,700–9,360 ft',  th: 'Bluff Springs area',       walk: 'No',  year: 'Seasonal', best: 'Return leg of Willie White loop.' },
+                sanandres:  { name: 'San Andres Canyon Trail',         href: 'https://www.fs.usda.gov/r03/lincoln/recreation/trails', diff: 'Hard',          dist: '2.0 mi',        elev: 'Rim zone',        th: 'Off Rim Trail',            walk: 'No',  year: 'Seasonal', best: 'A real hike — rough canyon.' },
+                willie:     { name: 'Willie White Trail',              href: 'https://www.fs.usda.gov/r03/lincoln/recreation/trails', diff: 'Hard',          dist: '5.2 mi one-way',elev: '8,000–9,360 ft',  th: 'Bluff Springs / CR C17',   walk: 'No',  year: 'Seasonal', best: 'Everything in one hike.' },
+                dogcanyon:  { name: 'Dog Canyon Trail',                href: 'https://www.fs.usda.gov/r03/lincoln/recreation/trails', diff: 'Very hard',     dist: '5.5 mi / 11 RT', elev: '4,500–7,750 ft', th: 'Oliver Lee State Park',    walk: 'No',  year: 'Yes', best: 'Desert-to-summit challenge.' }
+            };
+
+            var selected = new Set();
+
+            function okCell(v) {
+                if (v === 'Yes' || (typeof v === 'string' && v.indexOf('Yes') === 0)) return 'ok';
+                if (v === 'No' || v === 'Seasonal') return 'no';
+                return '';
+            }
+
+            function renderMatrix() {
+                var body = document.getElementById('matrix-body');
+                var count = document.getElementById('matrix-count');
+                if (selected.size === 0) {
+                    body.innerHTML = '<tr><td colspan="8" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>';
+                    count.textContent = 'Select trails above (check the Compare box on any card)';
+                    return;
+                }
+                count.textContent = selected.size + ' selected';
+                var rows = [];
+                selected.forEach(function (key) {
+                    var d = trailData[key]; if (!d) return;
+                    var isExternal = d.href.indexOf('http') === 0;
+                    var linkAttrs = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+                    rows.push(
+                        '<tr>' +
+                        '<td class="prop-name"><a href="' + d.href + '"' + linkAttrs + '>' + d.name + '</a></td>' +
+                        '<td>' + d.diff + '</td>' +
+                        '<td>' + d.dist + '</td>' +
+                        '<td>' + d.elev + '</td>' +
+                        '<td>' + d.th + '</td>' +
+                        '<td class="' + okCell(d.walk) + '">' + d.walk + '</td>' +
+                        '<td class="' + okCell(d.year) + '">' + d.year + '</td>' +
+                        '<td>' + d.best + '</td>' +
+                        '</tr>'
+                    );
+                });
+                body.innerHTML = rows.join('');
+            }
+
+            document.querySelectorAll('.cmp').forEach(function (cb) {
+                cb.addEventListener('change', function () {
+                    var key = cb.getAttribute('data-property');
+                    if (cb.checked) selected.add(key); else selected.delete(key);
+                    renderMatrix();
+                });
+            });
+
+            applyFilters();
+            renderMatrix();
         })();
     </script>
 </body>
