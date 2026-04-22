@@ -4,35 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Guide to Dining in Cloudcroft, New Mexico (2026) | DiscoverCloudcroft.com</title>
+    <title>Complete Guide to Dining in Cloudcroft, NM (2026) — 19 Independent Spots | DiscoverCloudcroft.com</title>
     <meta name="description"
-        content="Where to eat in Cloudcroft, NM — from fine dining at Eighteen99 to roadside BBQ, bakeries, coffee shops, and specialty stops. Every independent restaurant covered for 2026.">
+        content="Where to eat in Cloudcroft, NM in 2026 — 19 independent restaurants, cafés, BBQ joints, bakeries, bars, and a winery — filtered by meal, style, and location along Burro Ave, James Canyon Hwy, and The Lodge.">
     <meta name="keywords"
-        content="where to eat in cloudcroft, cloudcroft restaurants, cloudcroft dining, cloudcroft cafes, cloudcroft bbq, cloudcroft coffee">
-    <link rel="canonical" href="https://discovercloudcroft.com/eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">
+        content="where to eat in cloudcroft, cloudcroft restaurants, cloudcroft dining, cloudcroft cafes, cloudcroft bbq, cloudcroft coffee, eighteen99, mad jacks, burro avenue">
+    <link rel="canonical"
+        href="https://discovercloudcroft.com/eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">
 
     <meta property="og:title"
-        content="Complete Guide to Dining in Cloudcroft, New Mexico (2026) | DiscoverCloudcroft.com">
+        content="Complete Guide to Dining in Cloudcroft, NM (2026) — 19 Independent Spots | DiscoverCloudcroft.com">
     <meta property="og:description"
-        content="Where to eat in Cloudcroft, NM — from fine dining at Eighteen99 to roadside BBQ, bakeries, coffee shops, and specialty stops. Every independent restaurant covered for 2026.">
+        content="Where to eat in Cloudcroft, NM — 19 independent restaurants, cafés, BBQ joints, bakeries, bars, and a winery. Filter by meal, style, and location.">
     <meta property="og:url"
         content="https://discovercloudcroft.com/eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title"
-        content="Complete Guide to Dining in Cloudcroft, New Mexico (2026) | DiscoverCloudcroft.com">
-    <meta name="twitter:description"
-        content="Where to eat in Cloudcroft, NM — from fine dining at Eighteen99 to roadside BBQ, bakeries, coffee shops, and specialty stops. Every independent restaurant covered for 2026.">
+    <meta name="twitter:title" content="Complete Guide to Dining in Cloudcroft, NM (2026) — 19 Independent Spots | DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="Where to eat in Cloudcroft, NM — filter by meal, style, and location.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <link href="../css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/common.css">
 
     <script type="application/ld+json">
@@ -40,48 +37,950 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "name": "Complete Guide to Dining in Cloudcroft, New Mexico (2026)",
-      "description": "Where to eat in Cloudcroft, NM — from fine dining at Eighteen99 to roadside BBQ, bakeries, coffee shops, and specialty stops. Every independent restaurant covered for 2026.",
+      "description": "Nineteen independent restaurants, cafés, BBQ joints, bakeries, bars, and a winery in Cloudcroft, NM. Filter by meal, style, and location.",
       "about": {
         "@type": "Place",
         "name": "Cloudcroft, New Mexico",
-        "description": "Dining options including restaurants, cafes, bakeries, BBQ, and specialty shops in Cloudcroft, NM"
+        "description": "Independent dining in Cloudcroft, NM"
       },
-      "datePublished": "2026-04-05"
+      "datePublished": "2026-04-05",
+      "dateModified": "2026-04-22"
     }
     </script>
 
     <style>
+        /* =====================================================================
+           CHANGELOG (2026-04-22 rebuild — mirrors the rest of the 2026 guides)
+           FIXED
+             - Hardcoded nav paths with no ../ (every link 404'd from /eat/).
+             - Duplicate <nav class="mobile-nav-overlay"> block with conflicting
+               hrefs sharing id="mobile-nav".
+             - Altitude claim "around 9,000 feet" in tips + bottom-line — site
+               canon is 8,676 ft. Corrected everywhere.
+             - Every .lodge-card-link had target="_blank" — meaning every
+               internal restaurant link opened a new tab. Unusual and annoying;
+               removed target attributes on internal links.
+             - Ski Cloudcroft card had broken nested markup (a stray </a>
+               outside the div it was supposed to close). Rebuilt cleanly.
+             - The "More →" text in each card was styled like a link but was
+               a <p> element — decorative, not clickable. Replaced with a real
+               "Read full guide →" anchor in the card foot.
+             - Dead `#reels` anchor in nav.
+             - Dark-on-dark Bottom Line section already hidden by common.css
+               display:none; removed the empty markup.
+           ADDED
+             - Hero 2-up (photo + "What are you hungry for?" 3-chip quiz).
+             - Stats strip (19 spots · 0 chains · 3 dining corridors · 8,676
+               ft · 2 BBQ joints + 3 bakeries).
+             - Sticky filter rail synced with the hero quiz (11 chips).
+             - Three auto-hiding grid regions organized by location:
+               Burro Avenue (9) / James Canyon Highway (5) / The Lodge &amp;
+               US-82 (4) + an "Awaiting confirmation" stub (1) for Fernando's.
+             - Added cards for Old Barrel Tea Company and St. Andrew's Bar —
+               both have dedicated detail pages on disk but were absent from
+               the guide (total now 19, matches the original "18+" claim).
+             - Richer restaurant cards with numbered pins, category tags,
+               address / phone / hours meta, attribute chips (with warn chips
+               for "Closed Wed", "Sold out by 3 PM", "Seasonal only"), Compare
+               checkboxes.
+             - Compact linear map of Burro Avenue + James Canyon Highway
+               branches, with 18 pins placed by address.
+             - 8-column compare matrix.
+             - Editor's Call (3 opinionated picks).
+             - Practical-notes accordion (4 panels: seasonal hours / call
+               ahead / reservations &amp; late-night / altitude &amp; pace).
+             - Handoff to lodging, shop, and activities guides.
+             - TOC pills track active section on scroll.
+           REMOVED
+             - Emoji icons in info bar + tip boxes.
+             - Word-span animation on the 5-word hero title.
+             - Free-standing "Compare" grid of 8 one-line blurbs — replaced
+               by the interactive compare matrix.
+             - 9-card "Tips" section — collapsed into 4 accordion panels.
+             - Bottom Line section (hidden anyway).
+           ================================================================= */
+
+        /* ---- Hero ---- */
         .hero-bg {
             background: url('eat-photo/chicken-fried-steak.png') center 40% / cover no-repeat;
-
+            filter: saturate(0.92);
         }
 
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.6));
         }
 
-        /* Removed non-monochrome .hero-badge override (was rgba(185,228,190,0.6) — light green).
-           Falls back to common.css default badge style. */
+        .hero.hero-split {
+            min-height: 560px;
+            padding: 5rem 2rem;
+        }
 
-        .lodge-card-contact {
-            margin-top: auto;
-            padding-top: 0.75rem;
-            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        .hero-split-grid {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-left .hero-eyebrow-pill {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 20px;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-left h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+            color: #fff;
+            line-height: 1.08;
+            margin-bottom: 1rem;
+        }
+
+        .hero-left .hero-deck {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            max-width: 30rem;
+        }
+
+        .hero-byline { color: rgba(255, 255, 255, 0.75); font-size: 0.82rem; letter-spacing: 0.04em; }
+        .hero-byline strong { color: #fff; font-weight: 600; }
+
+        /* ---- Finder ---- */
+        .finder {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 1.5rem 1.5rem 1.25rem;
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        .finder h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0 0 1rem;
+        }
+
+        .finder-row { margin-bottom: 0.85rem; }
+
+        .finder-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 0.45rem;
+        }
+
+        .chip-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+        .chip {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            padding: 0.4rem 0.85rem;
+            border-radius: 999px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .chip:hover { border-color: #000; }
+
+        .chip[aria-pressed="true"] {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .finder-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .finder-actions .btn-primary {
+            padding: 0.75rem 1.5rem;
             font-size: 0.8rem;
-            line-height: 1.8;
+        }
+
+        .finder-clear {
+            background: none;
+            border: none;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
             color: #555;
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Stats strip ---- */
+        .stats-strip {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .stat { text-align: center; }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.4rem;
+        }
+
+        /* ---- Thesis ---- */
+        .thesis {
+            max-width: 820px;
+            margin: 3rem auto 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .thesis p {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            color: #222;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        .thesis .thesis-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            letter-spacing: 0.04em;
+        }
+
+        /* ---- Sticky filter rail ---- */
+        .filter-rail {
+            position: sticky;
+            top: 64px;
+            z-index: 80;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: saturate(140%) blur(6px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 0.75rem 2rem;
+        }
+
+        .filter-rail-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .filter-rail-inner::-webkit-scrollbar { display: none; }
+
+        .filter-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            white-space: nowrap;
+            margin-right: 0.25rem;
+        }
+
+        .filter-count {
+            margin-left: auto;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            white-space: nowrap;
+            padding-left: 1rem;
+        }
+
+        .filter-count strong { color: #000; }
+
+        /* ---- Section containers ---- */
+        .eat-block {
+            padding: 3rem 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .eat-block-head { margin-bottom: 1rem; }
+
+        .eat-block-head .eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .eat-block-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0.2rem 0 0.35rem;
+        }
+
+        .eat-block-head p {
+            color: #555;
+            font-size: 0.92rem;
+            max-width: 620px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        .section-hidden { display: none; }
+
+        /* ---- Cards ---- */
+        .lodge-grid.is-grid-plus {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .lodge-card.card-plus {
+            padding: 0;
+            border-top: none;
+            overflow: hidden;
+            cursor: default;
+            position: relative;
+        }
+
+        .lodge-card.card-plus:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+            border-top-color: transparent;
+            border-top-width: 0;
+        }
+
+        .lodge-card.card-plus img {
+            margin-bottom: 0;
+            border-radius: 0;
+            aspect-ratio: 16 / 10;
+        }
+
+        .lodge-card.no-photo .card-header-strip {
+            aspect-ratio: 16 / 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #2a1a0c 0%, #3a2612 50%, #2a1a0c 100%);
+        }
+
+        .card-body {
+            padding: 1.25rem 1.25rem 1.25rem;
             display: flex;
             flex-direction: column;
-            gap: 0.15rem;
+            flex: 1;
         }
 
-        .lodge-card-contact a {
-            color: steelblue;
-            text-decoration: none;
+        .card-head {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
         }
 
-        .lodge-card-contact a:hover {
+        .card-head h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.12rem;
+            color: #000;
+            margin: 0;
+            line-height: 1.25;
+        }
+
+        .cat-tag {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            padding: 0.25rem 0.55rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .cat-tag.cat-fine    { background: #eae3f1; color: #3a2555; border-color: rgba(58, 37, 85, 0.2); }
+        .cat-tag.cat-bbq     { background: #f4e4dc; color: #6a2a12; border-color: rgba(106, 42, 18, 0.22); }
+        .cat-tag.cat-coffee  { background: #f4ebe0; color: #4a2e12; border-color: rgba(74, 46, 18, 0.18); }
+        .cat-tag.cat-bakery  { background: #f1ead2; color: #5a4512; border-color: rgba(90, 69, 18, 0.18); }
+        .cat-tag.cat-brewery { background: #e4eedd; color: #2a4a1a; border-color: rgba(42, 74, 26, 0.22); }
+        .cat-tag.cat-bar     { background: #1c1c2a; color: #e4e4f4; border-color: rgba(255, 255, 255, 0.08); }
+        .cat-tag.cat-diner   { background: #eaf1ea; color: #254a33; border-color: rgba(37, 74, 51, 0.18); }
+        .cat-tag.cat-wine    { background: #f4e4e4; color: #5a2525; border-color: rgba(90, 37, 37, 0.18); }
+        .cat-tag.cat-deli    { background: #e4ecf4; color: #1e3a5a; border-color: rgba(30, 58, 90, 0.2); }
+        .cat-tag.cat-mex     { background: #f4dcd0; color: #6b2e0e; border-color: rgba(107, 46, 14, 0.22); }
+        .cat-tag.cat-tea     { background: #e6efe3; color: #38542a; border-color: rgba(56, 84, 42, 0.22); }
+
+        .property-type.type-inline { margin-bottom: 0.75rem; }
+
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem 1rem;
+            font-size: 0.78rem;
+            color: #555;
+            margin-bottom: 0.6rem;
+        }
+
+        .card-meta a {
+            color: #555;
             text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .card-meta a:hover { color: #000; text-decoration-color: #000; }
+
+        .card-body p.card-desc {
+            color: var(--charcoal-light);
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0 0 0.85rem;
+        }
+
+        .amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .amenity {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.2rem 0.55rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .amenity.warn {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.18);
+        }
+
+        .card-foot {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            padding-top: 0.85rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .compare-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #444;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .compare-toggle input {
+            accent-color: #000;
+            width: 14px;
+            height: 14px;
+        }
+
+        .card-foot .lodge-card-guide { margin: 0; }
+
+        .card-pin {
+            position: absolute;
+            top: 0.6rem;
+            left: 0.6rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+            z-index: 2;
+        }
+
+        .lodge-card[hidden] { display: none !important; }
+
+        .empty-state {
+            display: none;
+            padding: 3rem 1rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+            border: 1px dashed rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+        }
+
+        .empty-state.is-visible { display: block; }
+
+        /* ---- Compare matrix ---- */
+        .matrix-section {
+            background: #f8f8f8;
+            padding: 3.5rem 2rem;
+        }
+
+        .matrix-wrap { max-width: 1200px; margin: 0 auto; }
+
+        .matrix-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .matrix-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0;
+        }
+
+        .matrix-count {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .matrix-scroll {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .matrix {
+            width: 100%;
+            min-width: 820px;
+            border-collapse: collapse;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .matrix thead th {
+            text-align: left;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #666;
+            font-weight: 700;
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fafafa;
+        }
+
+        .matrix tbody td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            color: #333;
+            vertical-align: top;
+        }
+
+        .matrix tbody tr:last-child td { border-bottom: none; }
+
+        .matrix tbody .prop-name {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            color: #000;
+            font-size: 0.95rem;
+        }
+
+        .matrix .ok { color: #000; font-weight: 600; }
+        .matrix .no { color: #aaa; }
+
+        .matrix-empty {
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        /* ---- Map block (linear Burro Ave stroll + Hwy branch) ---- */
+        .map-section {
+            padding: 3.5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-head { margin-bottom: 1.5rem; }
+
+        .map-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.35rem;
+        }
+
+        .map-head p {
+            color: #555;
+            font-size: 0.9rem;
+            max-width: 640px;
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .map-figure {
+            background: #f2ede3;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .map-svg { width: 100%; height: auto; display: block; }
+
+        .map-legend {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.4rem;
+        }
+
+        .map-legend li {
+            display: grid;
+            grid-template-columns: 26px 1fr;
+            gap: 0.6rem;
+            align-items: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #333;
+        }
+
+        .map-legend .lg-pin {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-legend a {
+            color: #000;
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 0, 0, 0.2);
+            text-underline-offset: 3px;
+        }
+
+        .map-legend a:hover { text-decoration-color: #000; }
+
+        .map-footnote { font-size: 0.72rem; color: #888; margin-top: 1rem; }
+
+        /* ---- Editor's Call ---- */
+        .editor-section {
+            background: #111;
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+
+        .editor-wrap { max-width: 1100px; margin: 0 auto; }
+
+        .editor-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.6rem, 2.4vw, 2rem);
+            margin: 0 0 2rem;
+            color: #fff;
+        }
+
+        .editor-picks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .editor-pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .editor-pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .editor-pick .pick-answer {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .editor-pick .pick-answer a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Practical notes accordion ---- */
+        .notes-section {
+            padding: 4rem 2rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .notes-section h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+
+        .note { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        .note:last-of-type { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+        .note > summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .note > summary::-webkit-details-marker { display: none; }
+
+        .note > summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+        }
+
+        .note[open] > summary::after { content: '−'; }
+
+        .note > summary:hover { color: #444; }
+
+        .note .note-body {
+            padding: 0 2rem 1.25rem 0;
+            color: #444;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .note .note-body p + p { margin-top: 0.65rem; }
+
+        .note .note-body a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Handoff ---- */
+        .handoff-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+        }
+
+        .handoff-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .handoff-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .handoff-wrap p {
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0 0 1.25rem;
+        }
+
+        .handoff-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .handoff-buttons a { min-height: 44px; }
+
+        .handoff-stat {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .handoff-stat .big {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000;
+            display: block;
+            line-height: 1;
+        }
+
+        .handoff-stat .mid {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #555;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .handoff-stat hr {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            margin: 1rem 0;
+        }
+
+        /* ---- TOC active state ---- */
+        .toc-pill[aria-current="true"] { background: #000; color: #fff; }
+
+        /* ---- Footer override ---- */
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 1024px) {
+            .hero-split-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero.hero-split { padding: 4rem 2rem; }
+
+            .lodge-grid.is-grid-plus { grid-template-columns: repeat(2, 1fr); }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem 1rem;
+            }
+
+            .editor-picks { grid-template-columns: 1fr; gap: 2rem; }
+            .map-grid { grid-template-columns: 1fr; }
+            .handoff-wrap { grid-template-columns: 1fr; gap: 1.5rem; }
+        }
+
+        @media (max-width: 640px) {
+            .hero.hero-split {
+                padding: 3rem 1.25rem;
+                min-height: 0;
+            }
+
+            .finder { padding: 1.25rem; }
+            .stats-strip { padding: 1.25rem 1rem; }
+            .stats-strip-inner { grid-template-columns: repeat(2, 1fr); }
+            .lodge-grid.is-grid-plus { grid-template-columns: 1fr; }
+            .filter-rail { padding: 0.6rem 1rem; }
+            .filter-count { display: none; }
+
+            .eat-block,
+            .map-section,
+            .matrix-section,
+            .editor-section,
+            .notes-section,
+            .handoff-section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
         }
     </style>
 </head>
@@ -89,23 +988,22 @@
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
+    <!-- HEADER (paths relative to /eat/) -->
     <header class="site-header" role="banner">
         <div class="header-inner">
-
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html" aria-current="page">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
@@ -115,887 +1013,1050 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
+        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+        <a href="../events/top-events.html">Events</a>
+        <a href="../resources/resources.html">Resources</a>
+        <a href="../resources/contact.html">Contact</a>
     </nav>
 
-    <!-- ════════════════════════════════════════════ HERO ════════════════════════════════════════════ -->
-    <section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Cloudcroft dining guide hero background"></div>
+    <!-- HERO (2-up: photo + finder) -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Chicken-fried steak at a Cloudcroft diner"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>2026 Dining Guide</span>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">Independent · no chains · 2026</span>
+                <h1>Nineteen places to eat.</h1>
+                <p class="hero-deck">Cloudcroft is a mountain village, not a retail district. Dining means a fine-dining room at The Lodge, roadside BBQ on James Canyon Highway, and a cluster of cafés, bakeries, bars, and a winery along Burro Avenue.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
             </div>
-            <h1 class="hero-title">
-                <span class="word">Where </span>
-                <span class="word">to </span>
-                <span class="word">Eat </span>
-                <span class="word">in </span>
-                <span class="word">Cloudcroft</span>
-            </h1>
-            <p class="hero-subtitle">Not a chain-restaurant town. A mountain village where dining means independent
-                caf&eacute;s, roadside country cooking, BBQ joints, a fine-dining room, bakeries, and specialty shops.
-                This guide covers every option.</p>
-            <div class="hero-ctas">
-                <a href="#restaurants" class="btn-primary">Browse Restaurants</a>
-                <a href="#picks" class="btn-secondary">Editor's Picks</a>
+            <div class="hero-right">
+                <form class="finder" aria-label="What are you hungry for?" id="finder" onsubmit="return false;">
+                    <h2>What are you hungry for?</h2>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-meal">Meal</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-meal" data-filter-group="meal">
+                            <button type="button" class="chip" data-value="breakfast" aria-pressed="false">Breakfast</button>
+                            <button type="button" class="chip" data-value="lunch" aria-pressed="false">Lunch</button>
+                            <button type="button" class="chip" data-value="dinner" aria-pressed="false">Dinner</button>
+                            <button type="button" class="chip" data-value="coffee" aria-pressed="false">Coffee</button>
+                            <button type="button" class="chip" data-value="drinks" aria-pressed="false">Drinks</button>
+                            <button type="button" class="chip" data-value="sweet" aria-pressed="false">Sweet</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-style">Style</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-style" data-filter-group="style">
+                            <button type="button" class="chip" data-value="fine" aria-pressed="false">Fine dining</button>
+                            <button type="button" class="chip" data-value="bbq" aria-pressed="false">BBQ</button>
+                            <button type="button" class="chip" data-value="casual" aria-pressed="false">Casual</button>
+                            <button type="button" class="chip" data-value="bakery" aria-pressed="false">Bakery</button>
+                            <button type="button" class="chip" data-value="bar" aria-pressed="false">Bar / brewery</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-where">Where</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-where" data-filter-group="where">
+                            <button type="button" class="chip" data-value="burro" aria-pressed="false">Burro Ave</button>
+                            <button type="button" class="chip" data-value="highway" aria-pressed="false">James Canyon Hwy</button>
+                            <button type="button" class="chip" data-value="lodge" aria-pressed="false">Lodge &amp; Hwy 82</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-actions">
+                        <a href="#burro" class="btn-primary">Show matches</a>
+                        <button type="button" class="finder-clear" id="finder-clear">Clear</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════ INFO BAR ════════════════════════════════════════════ -->
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F37D;&#xFE0F;</div>
-                <span>18+ Dining Spots</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F6AB;</div>
-                <span>No Chain Restaurants</span>
-            </div>
-
+    <!-- STATS STRIP -->
+    <div class="stats-strip" aria-label="Dining scene at a glance">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">19</span><span class="stat-label">Independent spots</span></div>
+            <div class="stat"><span class="stat-num">0</span><span class="stat-label">Chain restaurants</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Dining corridors</span></div>
+            <div class="stat"><span class="stat-num">2 BBQ · 3 bakeries</span><span class="stat-label">Signature categories</span></div>
+            <div class="stat"><span class="stat-num">8,676 ft</span><span class="stat-label">Village elevation</span></div>
         </div>
     </div>
 
-    <!-- ════════════════════════════════════════════ STICKY TOC NAV ════════════════════════════════════════════ -->
+    <!-- STICKY TOC NAV -->
     <nav class="toc-nav" aria-label="Table of contents">
         <div class="toc-nav-inner">
-            <a href="#overview" class="toc-pill">Overview</a>
-            <a href="#restaurants" class="toc-pill">Restaurants</a>
+            <a href="#burro" class="toc-pill">Burro Ave</a>
+            <a href="#highway" class="toc-pill">James Canyon Hwy</a>
+            <a href="#lodge" class="toc-pill">Lodge &amp; Hwy 82</a>
+            <a href="#map" class="toc-pill">Map</a>
             <a href="#compare" class="toc-pill">Compare</a>
-            <a href="#tips" class="toc-pill">Tips</a>
-            <a href="#picks" class="toc-pill">Editor's Picks</a>
+            <a href="#editor" class="toc-pill">Editor's Call</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
         </div>
     </nav>
 
     <main id="main-content" role="main">
 
-        <div class="updated-stamp-wrap">
-            <span class="updated-stamp">Last updated · April 2026</span>
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>Three dining corridors, nineteen kitchens, zero chains. The best meals here reward flexibility — a quick call, a walk-in attitude, and a willingness to follow posted hours.</p>
+            <span class="thesis-meta">Hours shift by season and staffing. If one stop is the whole plan, call first.</span>
         </div>
 
-        <!-- ════════════════════════════════════════════ 01 THE SCENE ════════════════════════════════════════════ -->
-        <section class="section" id="overview" aria-label="Dining scene overview">
-            <div class="section-container">
-                <div style="text-align: center;">
-
-                    <span class="section-label">The Scene</span>
-                    <h2 class="section-title section-title-centered">Cloudcroft Dining at a Glance</h2>
+        <!-- FILTER RAIL -->
+        <div class="filter-rail" id="filter-rail" aria-label="Filter restaurants">
+            <div class="filter-rail-inner">
+                <span class="filter-label">Filter</span>
+                <div class="chip-row" role="group" aria-label="Filter chips" data-filter-group="rail">
+                    <button type="button" class="chip" data-rail="breakfast" aria-pressed="false">Breakfast</button>
+                    <button type="button" class="chip" data-rail="lunch" aria-pressed="false">Lunch</button>
+                    <button type="button" class="chip" data-rail="dinner" aria-pressed="false">Dinner</button>
+                    <button type="button" class="chip" data-rail="coffee" aria-pressed="false">Coffee</button>
+                    <button type="button" class="chip" data-rail="drinks" aria-pressed="false">Drinks</button>
+                    <button type="button" class="chip" data-rail="bbq" aria-pressed="false">BBQ</button>
+                    <button type="button" class="chip" data-rail="bakery" aria-pressed="false">Bakery</button>
+                    <button type="button" class="chip" data-rail="burro" aria-pressed="false">On Burro</button>
+                    <button type="button" class="chip" data-rail="reservable" aria-pressed="false">Reservations</button>
+                    <button type="button" class="chip" data-rail="late" aria-pressed="false">Open past 8 PM</button>
+                    <button type="button" class="chip" data-rail="family" aria-pressed="false">Family-friendly</button>
                 </div>
-
-                <div class="fade-in" style="max-width: 800px; margin: 0 auto 2rem auto;">
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        Cloudcroft&rsquo;s dining scene is independent, seasonal, and small-scale. No chains. Burro
-                        Avenue is the walkable core with coffee shops, bakeries, a tea shop, a sandwich counter, bars,
-                        and galleries. James Canyon Highway has roadside spots &mdash; BBQ, country cooking, diners. The
-                        Lodge offers the only fine-dining option.
-                    </p>
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        Hours shift by season and staffing. Many places close early or reduce days off-season. The
-                        dining here rewards flexibility and a willingness to call ahead.
-                    </p>
-                </div>
-
-
-
-                <div class="tip-box">
-                    <span>&#x1F4A1;</span>
-                    <p><strong>Cloudcroft is a small village.</strong> Late-night dining options are very limited. Plan
-                        your meals around posted hours, and don&rsquo;t assume anything is open past 8 or 9 PM outside
-                        of summer weekends.</p>
-                </div>
+                <span class="filter-count"><strong id="filter-count-n">19</strong> of 19 shown</span>
             </div>
-        </section>
+        </div>
 
-        <!-- ════════════════════════════════════════════ 02 WHERE TO EAT ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="restaurants" aria-label="Where to eat">
-            <div class="section-container">
-                <div style="text-align: center;">
+        <!-- ================================ BURRO AVE ================================ -->
+        <section class="eat-block" id="burro" aria-label="Burro Avenue dining">
+            <div class="eat-block-head">
+                <span class="eyebrow">Nine spots · walk the block</span>
+                <h2>Burro Avenue</h2>
+                <p>The walkable downtown corridor. Coffee in the morning, a bakery pause, sandwiches for lunch, wine tasting at 505, and a brewery or bar after dinner. Mix two or three in an afternoon.</p>
+            </div>
 
-                    <span class="section-label">Where to Eat</span>
-                    <h2 class="section-title section-title-centered">Every Dining Option in Cloudcroft</h2>
-                </div>
+            <div class="lodge-grid is-grid-plus" data-grid="burro">
 
-                <div class="fade-in" style="max-width: 800px; margin: 0 auto 2rem auto;">
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        Cloudcroft&rsquo;s dining runs from a chef-driven fine-dining room to roadside BBQ, with coffee
-                        shops, bakeries, delis, bars, and specialty shops in between. Each spot has its own personality.
-                        Below are all the options &mdash; click through for full guides with menus, photos, and what to
-                        know before you visit.
-                    </p>
-                </div>
-
-                <div class="lodge-grid">
-
-                    <!-- PHOTO CARD 1: Eighteen99 -->
-
-                    <div class="lodge-card">
-                        <a href="eighteen99.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-eat-eighteen99/Lodge%20Plates-9_websize%20copy.jpg"
-                                alt="Eighteen99 fine dining plate" loading="lazy">
-                            <h3>Eighteen99</h3>
-                            <span class="property-type">Fine Dining</span>
-                            <p>The sole fine-dining option in Cloudcroft, set inside the historic Lodge at the end of
-                                Corona Place. Executive Chef Richard Lepree oversees a changing dinner menu &mdash; past
-                                features have included ahi ceviche and prime New York strip, though specific dishes
-                                rotate.</p>
-                            <p>St. Andrew&rsquo;s Lounge serves cocktails in the same space. Open Wednesday through
-                                Saturday, 5&ndash;8 PM.</p>
-                            <p>Reservations are available through the Lodge&rsquo;s dining page. This is the clear
-                                choice
-                                for anniversaries, date nights, or any meal where the occasion matters as much as the
-                                food.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15756822098">575-682-2098</a></span>
-                            <span><a href="https://www.223collectionhotels.com/thelodge/dining" target="_blank"
-                                    rel="noopener">223collectionhotels.com/thelodge/dining</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=601%20Corona%20Place%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">601 Corona Place, Cloudcroft, NM 88317</a></span>
-                        </div>
-                    </div>
-
-
-                    <!-- EMOJI CARD 14: Cloudcroft Brewery -->
-
-                    <div class="lodge-card">
-                        <a href="brewery.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-brewery/brewery-00033.jpg" alt="Cloudcroft Brewery" loading="lazy"
-                                decoding="async" class="lodge-card-image">
-                            <h3>Cloudcroft Brewery</h3>
-                            <span class="property-type">Brewery</span>
-                            <p>The village&rsquo;s craft brewery and the evening anchor of Burro Avenue. House-brewed
-                                ales, IPAs, and lagers on rotating taps, plus in-house distilled spirits including
-                                Mountain
-                                Smoke Whiskey and Skywater Vodka.</p>
-                            <p>The food menu centers on wood-fired pizza &mdash; Margherita, Greek, Zia Pie, and
-                                build-your-own options with gluten-free crust and vegan cheese available. Live music
-                                runs
-                                Friday through Sunday evenings; Monday is karaoke night.</p>
-                            <p>Open daily except Tuesday, 11 AM&ndash;9 PM (10 PM Friday&ndash;Saturday). Walk-in
-                                friendly,
-                                no reservations needed.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15756822337">(575) 682-2337</a></span>
-                            <span><a href="https://www.cloudcroftbrewing.com/" target="_blank"
-                                    rel="noopener">cloudcroftbrewing.com</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=1301%20Burro%20Ave%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">1301 Burro Ave, Cloudcroft, NM 88317</a></span>
-                        </div>
-                    </div>
-
-
-                    <!-- EMOJI CARD 9: Mad Jack's Mountaintop BBQ -->
-
-                    <div class="lodge-card">
-                        <a href="mad-jacks-bbq.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-00026.jpg"
-                                alt="Mad Jack's Mountaintop BBQ in Cloudcroft" loading="lazy" decoding="async"
-                                class="lodge-card-image">
-                            <h3>Mad Jack&rsquo;s Mountaintop BBQ</h3>
-                            <span class="property-type">BBQ</span>
-                            <p>Owner James Jackson grew up in Lockhart, Texas, and drives 644 miles every six to eight
-                                weeks to haul authentic post oak for overnight smoking. The menu runs through brisket,
-                                ribs,
-                                pulled pork, smoked turkey, sausage, and scratch-made sides like potato salad and pinto
-                                beans.</p>
-                            <p>Desserts by Gracie Jo Grey include fruit cobblers and green chile cornbread. Open
-                                Thursday
-                                through Sunday at 11 AM, serving until sold out &mdash; typically by 3 PM.</p>
-                            <p>Weekend lines stretch two to three hours. Arrive early.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15756827577">(575) 682-7577</a></span>
-                            <span><a href="https://www.madjacksbbq.com/" target="_blank"
-                                    rel="noopener">madjacksbbq.com</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=105%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">105 James Canyon Hwy, Cloudcroft, NM
-                                    88317</a></span>
-                        </div>
-                    </div>
-
-
-
-                    <!-- PHOTO CARD 3: Dusty Boots Cafe -->
-
-                    <div class="lodge-card">
-                        <a href="dusty-boots-cafe.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03565.jpg"
-                                alt="Dusty Boots Caf&eacute; on James Canyon Highway in Cloudcroft" loading="lazy">
-                            <h3>Dusty Boots Caf&eacute;</h3>
-                            <span class="property-type">Country Cooking</span>
-                            <p>A motel caf&eacute; on James Canyon Highway where most of what you eat is made from
-                                scratch. Breakfast runs 7 AM to noon daily &mdash; biscuits and gravy, French toast,
-                                pancakes, and hearty plates.</p>
-                            <p>Lunch and dinner bring rotating daily specials: BLTs, chicken strips, patty melts, steak
-                                and shrimp. Saturday is German dinner night with schnitzel, sauerbraten, and bratwurst.
-                            </p>
-                            <p>Beer is available. Gluten-free and nut-free options noted.</p>
-                            <p>Summer hours run 7 AM&ndash;9 PM; off-season hours may differ.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15756827736">575-682-7736</a></span>
-                            <span><a href="https://www.thedustyboots.com/" target="_blank"
-                                    rel="noopener">thedustyboots.com</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=1315%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">1315 James Canyon Hwy, Cloudcroft, NM
-                                    88317</a></span>
-                        </div>
-                    </div>
-
-
-                    <!-- PHOTO CARD 4: Black Bear Coffee Shop -->
-
-                    <div class="lodge-card">
-                        <a href="black-bear-coffee-shop.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-eat-black-bear/black-bear-03560.jpg"
-                                alt="Black Bear Coffee Shop on Burro Avenue in Cloudcroft" loading="lazy">
+                <!-- 1. Black Bear Coffee Shop -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="blackbear"
+                    data-meal="coffee sweet"
+                    data-style="coffee"
+                    data-region="burro"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <img src="eat-photo/photo-eat-black-bear/black-bear-03560.jpg" alt="Black Bear Coffee Shop on Burro Avenue" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
                             <h3>Black Bear Coffee Shop</h3>
-                            <span class="property-type">Coffee &amp; Gallery</span>
-                            <p>More than a coffee counter. Crystal and Nathan Tompkins run a shop at 200 Burro Avenue
-                                that doubles as a petite art gallery with monthly rotating displays.</p>
-                            <p>The drink menu goes beyond standard espresso &mdash; seasonal offerings have included
-                                honey
-                                chai and strawberry rose matcha. Gluten-free, dairy-free, and sugar-free options are
-                                available.</p>
-                            <p>You can also buy roasted beans to take home or have shipped.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
+                            <span class="cat-tag cat-coffee">Coffee</span>
+                        </div>
+                        <span class="property-type type-inline">Coffee counter + petite art gallery</span>
+                        <div class="card-meta">
+                            <span>200 Burro Ave</span>
                             <span><a href="tel:+15756821239">(575) 682-1239</a></span>
-                            <span><a href="https://www.mybbcoffee.com/" target="_blank"
-                                    rel="noopener">mybbcoffee.com</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=200%20Burro%20Ave%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">200 Burro Ave, Cloudcroft, NM 88317</a></span>
+                        </div>
+                        <p class="card-desc">Crystal and Nathan Tompkins run a shop that doubles as a monthly-rotating art gallery. Seasonal drinks (honey chai, strawberry-rose matcha), roasted beans to take home, and GF/DF/sugar-free options.</p>
+                        <div class="amenities">
+                            <span class="amenity">Art gallery</span>
+                            <span class="amenity">Seasonal drinks</span>
+                            <span class="amenity">GF / DF</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="blackbear"> Compare</label>
+                            <a href="black-bear-coffee-shop.html" class="lodge-card-guide">Read full guide &rarr;</a>
                         </div>
                     </div>
+                </article>
 
-
-
-                    <!-- PHOTO CARD 7: Cloudcroft Sandwich Shop -->
-
-                    <div class="lodge-card">
-                        <a href="cloudcroft-sandwich-shop.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-eat-cloudcroft-sandwich/photo-cloudcroft-sandwich-00022.jpeg.webp"
-                                alt="Cloudcroft Sandwich Shop" loading="lazy">
-                            <h3>Cloudcroft Sandwich Shop</h3>
-                            <span class="property-type">Deli</span>
-                            <p>Counter-service deli at 505 Burro Avenue, near the post office. The menu covers fresh
-                                subs, paninis, soup of the day, salads, fresh-baked jumbo cookies, and soft-serve ice
-                                cream.</p>
-                            <p>No reservations, no frills &mdash; just a practical midday lunch stop. Open daily 11 AM
-                                to
-                                4 PM, closed Wednesdays.</p>
-                            <p>This is one of the easier grab-and-go options if you are building a walking afternoon
-                                around downtown and want something quick between shops.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15755510065">(575) 551-0065</a></span>
-                            <span><a href="https://cloudcroftsandwich.shop/" target="_blank"
-                                    rel="noopener">cloudcroftsandwich.shop</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=505%20Burro%20Ave%2C%20Suite%20112%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">505 Burro Ave, Suite 112, Cloudcroft, NM
-                                    88317</a></span>
+                <!-- 2. Dave's Café -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="daves"
+                    data-meal="breakfast lunch dinner drinks"
+                    data-style="bar casual"
+                    data-region="burro"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <img src="eat-photo/photo-eat-daves-cafe/photo-daves-cafe-00024.jpg" alt="Dave's Café on Burro Avenue in Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Dave's Café</h3>
+                            <span class="cat-tag cat-bar">Bar &amp; grill</span>
                         </div>
-                    </div>
-
-
-                    <!-- EMOJI CARD 8: Western Bar & Cafe -->
-
-                    <div class="lodge-card">
-                        <a href="western-bar.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-western-bar/western-bar-00555.jpg" alt="Western Bar"
-                                loading="lazy">
-                            <h3>Western Bar &amp; Cafe</h3>
-                            <span class="property-type">Bar &amp; Grill</span>
-                            <p>Three generations have run this bar and grill at 304 Burro Avenue since 1950. The menu
-                                covers all-day breakfast, hand-pattied burgers, green chile cheeseburgers, chicken fried
-                                steak, enchiladas, and homemade pies.</p>
-                            <p>New Mexican plates round out the dinner side. Open Thursday through Monday, 11 AM to
-                                close;
-                                closed Wednesdays.</p>
-                            <p>Seasonal hours may shift, so a quick call to confirm is worth the effort before walking
-                                over.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15756822445">(575) 682-2445</a></span>
-                            <span><a href="https://westernbarandcafe.net/" target="_blank"
-                                    rel="noopener">westernbarandcafe.net</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=304%20Burro%20Ave%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">304 Burro Ave, Cloudcroft, NM 88317</a></span>
-                        </div>
-                    </div>
-
-
-
-                    <!-- EMOJI CARD 10: Brother-N-Law BBQ -->
-
-                    <div class="lodge-card">
-                        <a href="brother-n-law-bbq.html" class="lodge-card-link" target="_blank">
-
-                            <img src="eat-photo/photo-brother-in-law-bbq/brother-in-law-front.jpg"
-                                alt="Brother-N-Law BBQ" loading="lazy">
-                            <h3>Brother-N-Law BBQ</h3>
-                            <span class="property-type">BBQ</span>
-                            <p>Central Texas barbecue at 209 James Canyon Highway. The meat board runs through sliced
-                                brisket (you choose moist or lean), baby back ribs, beef ribs, smoked turkey, BBQ
-                                chicken,
-                                and jalape&ntilde;o cheddar sausage.</p>
-                            <p>Sides include brisket fries, mac and cheese, and banana pudding. The staff is known for
-                                remembering names and keeping the atmosphere personal.</p>
-                            <p>Open daily except Thursday, 11 AM to 6 PM. Less of a wait than Mad Jack&rsquo;s most
-                                days,
-                                which makes this a strong alternative when time is short.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+12158580400">(215) 858-0400</a></span>
-                            <span><a href="https://brothernlawbbq.com/" target="_blank"
-                                    rel="noopener">brothernlawbbq.com</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=209%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">209 James Canyon Hwy, Cloudcroft, NM 88317</a></span>
-                        </div>
-                    </div>
-
-
-                    <!-- EMOJI CARD 11: Big Daddy's Diner -->
-
-                    <div class="lodge-card">
-                        <a href="big-daddys.html" class="lodge-card-link" target="_blank">
-
-
-                            <img src="eat-photo/photo-big-daddys/big-daddys-00556.jpg" alt="Big Daddy's Diner"
-                                loading="lazy">
-                            <h3>Big Daddy&rsquo;s Diner</h3>
-                            <span class="property-type">Diner</span>
-                            <p>Roadside diner at 1705 James Canyon Highway with cowboy-heritage decor and a menu that
-                                crosses American and New Mexican lines. Rib eye steaks, Texas mesquite smoked BBQ,
-                                street
-                                tacos, enchiladas, smothered burritos, homemade soups, and pies baked in-house.</p>
-                            <p>Open daily 7 AM to 9 PM, which gives it some of the longest hours in the area &mdash;
-                                useful
-                                when other kitchens have already closed. Catering services are also available for
-                                groups.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15756821224">(575) 682-1224</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=1705%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">1705 James Canyon Hwy, Cloudcroft, NM
-                                    88317</a></span>
-                        </div>
-                    </div>
-
-
-
-                    <!-- EMOJI CARD 13: Noisy Water Winery -->
-
-                    <div class="lodge-card">
-                        <a href="noisy-water-winery-2026.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-noisy-water/noisy-water-sign.jpg" alt="Noisy Water Winery"
-                                loading="lazy">
-                            <h3>Noisy Water Winery</h3>
-                            <span class="property-type">Winery</span>
-                            <p>A tasting room on Burro Avenue pouring over 30 award-winning New Mexico wines &mdash;
-                                reds, whites, fruit wines, and a signature green chile wine that draws curiosity from
-                                first-time visitors. Beyond the flights, the shop stocks gourmet cheeses, olive oils,
-                                and
-                                balsamic vinegars.</p>
-                            <p>Part wine bar, part specialty retail, part afternoon browsing stop. Hours shift by
-                                season,
-                                so check the website or call before building your afternoon around a visit.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15756826610">(575) 682-6610</a></span>
-                            <span><a href="https://noisywaterwinery.com/" target="_blank"
-                                    rel="noopener">noisywaterwinery.com</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=505%20Burro%20Ave%2C%20Ste%20105%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">505 Burro Ave, Ste 105, Cloudcroft, NM
-                                    88317</a></span>
-                        </div>
-                    </div>
-
-
-                    <!-- EMOJI CARD 12: High Rollin' Coffee -->
-
-                    <div class="lodge-card">
-                        <a href="high-rollin.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-high-rollin/high-rollin-00556.jpg" alt="High Rollin' Coffee"
-                                loading="lazy">
-                            <h3>High Rollin&rsquo; Coffee</h3>
-                            <span class="property-type">Coffee &amp; Caf&eacute;</span>
-                            <p>Opened in 2023 by former yacht chef Beth Offolter, this from-scratch caf&eacute; at
-                                109 James Canyon Highway takes a different approach to mountain-town food. Espresso
-                                drinks,
-                                acai bowls, weekly rotating grain bowls, signature daily toasts, muffins, scones,
-                                cinnamon
-                                rolls, and vegan baked goods.</p>
-                            <p>The vibe is warm and intentional &mdash; hammock chairs, calm lighting, and a menu built
-                                around whole ingredients. Open Monday&ndash;Tuesday 8 AM&ndash;1 PM, Friday&ndash;Sunday
-                                8 AM&ndash;3 PM.</p>
-                            <p>Closed Wednesday and Thursday.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="https://www.facebook.com/p/High-Rollin-Coffee-61550359681157/"
-                                    target="_blank" rel="noopener">Facebook</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=109%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">109 James Canyon Hwy, Cloudcroft, NM
-                                    88317</a></span>
-                        </div>
-                    </div>
-
-
-
-                    <!-- PHOTO CARD 2: Dave's Cafe -->
-
-                    <div class="lodge-card">
-                        <a href="daves-cafe.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-eat-daves-cafe/photo-daves-cafe-00024.jpg"
-                                alt="Dave's Caf&eacute; exterior in snow" loading="lazy">
-                            <h3>Dave&rsquo;s Caf&eacute;</h3>
-                            <span class="property-type">Bar &amp; Grill</span>
-                            <p>David Venable opened this spot at 300 Burro Avenue in 1984; his son Chuck runs it now.
-                                The menu leans toward burgers, breakfast, and grill-style comfort food &mdash; the BBQ
-                                bacon
-                                ranch burger and beer-battered onion rings show up in local mentions.</p>
-                            <p>Live music runs throughout the week, giving the place a social layer most Cloudcroft
-                                restaurants lack. Hours have been affected by staffing, with Wednesdays and Thursdays
-                                sometimes reduced or closed.</p>
-                            <p>Check Facebook or call before heading over.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
+                        <span class="property-type type-inline">Burgers, breakfast &amp; live music since 1984</span>
+                        <div class="card-meta">
+                            <span>300 Burro Ave</span>
                             <span><a href="tel:+15756822127">(575) 682-2127</a></span>
-                            <span><a href="https://www.facebook.com/DavesCafe1/" target="_blank"
-                                    rel="noopener">Facebook</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=300%20Burro%20Ave%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">300 Burro Ave, Cloudcroft, NM 88317</a></span>
+                        </div>
+                        <p class="card-desc">David Venable opened the place in 1984; son Chuck runs it now. Burgers and grill-style comfort food — the BBQ bacon ranch burger and beer-battered onion rings show up in local mentions. Live music most weeks.</p>
+                        <div class="amenities">
+                            <span class="amenity">All-day menu</span>
+                            <span class="amenity">Live music</span>
+                            <span class="amenity warn">Check Wed/Thu</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="daves"> Compare</label>
+                            <a href="daves-cafe.html" class="lodge-card-guide">Read full guide &rarr;</a>
                         </div>
                     </div>
+                </article>
 
+                <!-- 3. Western Bar & Cafe -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="western"
+                    data-meal="breakfast lunch dinner drinks"
+                    data-style="bar casual"
+                    data-region="burro"
+                    data-reservable="false"
+                    data-late="true"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <img src="eat-photo/photo-western-bar/western-bar-00555.jpg" alt="Western Bar and Café on Burro Avenue" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Western Bar &amp; Cafe</h3>
+                            <span class="cat-tag cat-bar">Bar &amp; grill</span>
+                        </div>
+                        <span class="property-type type-inline">Three-generation bar &amp; grill since 1950</span>
+                        <div class="card-meta">
+                            <span>304 Burro Ave</span>
+                            <span><a href="tel:+15756822445">(575) 682-2445</a></span>
+                        </div>
+                        <p class="card-desc">All-day breakfast, hand-pattied burgers, green chile cheeseburgers, chicken-fried steak, enchiladas, homemade pies. Thu–Mon, 11 AM to close; closed Wednesdays.</p>
+                        <div class="amenities">
+                            <span class="amenity">Green chile</span>
+                            <span class="amenity">All-day breakfast</span>
+                            <span class="amenity warn">Closed Wed</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="western"> Compare</label>
+                            <a href="western-bar.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
 
+                <!-- 4. Cloudcroft Sandwich Shop -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="sandwich"
+                    data-meal="lunch sweet"
+                    data-style="casual"
+                    data-region="burro"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <img src="eat-photo/photo-eat-cloudcroft-sandwich/photo-cloudcroft-sandwich-00022.jpeg.webp" alt="Cloudcroft Sandwich Shop on Burro Avenue" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Cloudcroft Sandwich Shop</h3>
+                            <span class="cat-tag cat-deli">Deli</span>
+                        </div>
+                        <span class="property-type type-inline">Counter-service deli near the post office</span>
+                        <div class="card-meta">
+                            <span>505 Burro Ave, Suite 112</span>
+                            <span><a href="tel:+15755510065">(575) 551-0065</a></span>
+                        </div>
+                        <p class="card-desc">Subs, paninis, soup of the day, salads, fresh-baked jumbo cookies, and soft-serve. Daily 11 AM–4 PM; closed Wednesdays. Locals recommend the BLT with jalape&ntilde;os.</p>
+                        <div class="amenities">
+                            <span class="amenity">Grab &amp; go</span>
+                            <span class="amenity">Soft-serve</span>
+                            <span class="amenity warn">Closed Wed</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="sandwich"> Compare</label>
+                            <a href="cloudcroft-sandwich-shop.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
 
-
-                    <!-- PHOTO CARD 5: Eight the Cake -->
-
-                    <div class="lodge-card">
-                        <a href="eight-the-cake.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg"
-                                alt="Eight the Cake storefront" loading="lazy">
+                <!-- 5. Eight the Cake -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="eightcake"
+                    data-meal="coffee sweet breakfast"
+                    data-style="bakery"
+                    data-region="burro"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">5</span>
+                    <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg" alt="Eight the Cake bakery storefront on Burro Avenue" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
                             <h3>Eight the Cake</h3>
-                            <span class="property-type">Bakery &amp; Coffee</span>
-                            <p>A bakery and coffee stop at 506A Burro Avenue with art pieces lining the walls
-                                alongside the bakery case. The counter features organic coffee, espresso, signature
-                                cinnamon rolls, pies, pastries, and custom cakes.</p>
-                            <p>About half a dozen tables provide seating &mdash; small but not strictly grab-and-go.
-                                The art reads more as decorative backdrop than destination gallery, but it adds
-                                visual texture that makes this more of a linger-a-little stop.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15756823088">575-682-3088</a></span>
-                            <span><a href="https://www.eightthecakellc.com" target="_blank"
-                                    rel="noopener">eightthecakellc.com</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=506A%20Burro%20Ave%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">506A Burro Ave, Cloudcroft, NM 88317</a></span>
+                            <span class="cat-tag cat-bakery">Bakery</span>
+                        </div>
+                        <span class="property-type type-inline">Bakery &amp; coffee with art on the walls</span>
+                        <div class="card-meta">
+                            <span>506A Burro Ave</span>
+                            <span><a href="tel:+15756823088">(575) 682-3088</a></span>
+                        </div>
+                        <p class="card-desc">Organic coffee, espresso, signature cinnamon rolls, pies, pastries, and custom cakes. About six tables. Small but not strictly grab-and-go — the art adds linger-a-little texture.</p>
+                        <div class="amenities">
+                            <span class="amenity">Custom cakes</span>
+                            <span class="amenity">Organic coffee</span>
+                            <span class="amenity">Linger-OK</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="eightcake"> Compare</label>
+                            <a href="eight-the-cake.html" class="lodge-card-guide">Read full guide &rarr;</a>
                         </div>
                     </div>
+                </article>
 
-
-                    <!-- EMOJI CARD 15: Ski Cloudcroft Food Service -->
-
-                    <div class="lodge-card">
-                        <a href="ski-cloudcroft-food-service.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-eat-ski-cloudcroft/ski-cloudcroft-eat-00557.jpg"
-                                alt="Ski Cloudcroft Food Service" loading="lazy">
-                            <h3>Ski Cloudcroft Food Service</h3>
-                            <span class="property-type">Pizza</span>
-                            <p>Wood-fired pizza served at the Ski Cloudcroft base area on Highway 82. This is not a
-                                standalone restaurant &mdash; it operates as part of the ski and tubing facility,
-                                and food service is tied directly to seasonal recreation operations.</p>
-                            <p>When the slopes or tubing runs are open, the pizza operation runs. When they close
-                                for the season (the 2025&ndash;26 ski season ended March 7 due to warm weather),
-                                food service closes too.</p>
-                            <p>No year-round hours. Check the ski area directly before driving up.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                            <div class="lodge-card-contact">
-                                <span><a href="tel:+15756822333">(575) 682-2333</a></span>
-                                <span><a href="https://skicloudcroft.net/" target="_blank"
-                                        rel="noopener">skicloudcroft.net</a></span>
-                                <span><a href="https://www.google.com/maps/dir/?api=1&destination=1920+%C2%BD+US+Hwy+82%2C+Cloudcroft%2C+NM+88317"
-                                        target="_blank" rel="noopener">1920&frac12; US Hwy 82, Cloudcroft, NM
-                                        88317</a></span>
-                            </div>
-                    </div>
-                    </a>
-
-                    <!-- Levain It Up Sourdough Bakery -->
-                    <div class="lodge-card">
-                        <img src="eat-photo/photo-levain-bakery/Levain It Up.jpg"
-                            alt="Levain It Up Sourdough Bakery in High Rolls" loading="lazy">
-                        <h3>Levain It Up Sourdough Bakery</h3>
-                        <span class="property-type">Bakery</span>
-                        <p>A focused sourdough operation in High Rolls, directly off Highway 82 on the drive between
-                            Alamogordo and Cloudcroft. Garrett Barnett and Steven Jackson converted an old building
-                            into a small-batch bakery where sourdough loaves, danishes, and rotating baked goods fill
-                            the case on weekends.</p>
-                        <p>This is grab-and-go only &mdash; no seating, no caf&eacute; service. Open Friday through
-                            Sunday, 2 to 6 PM.</p>
-                        <p>When the bread sells out, the day is done. The Cloudcroft Reader profiled the bakery in
-                            January 2026.</p>
-                        <p
-                            style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                            More &rarr;</p>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15755208096">(575) 520-8096</a></span>
-                            <span><a href="https://www.facebook.com/levainitup/" target="_blank"
-                                    rel="noopener">Facebook</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=880%20US%20Hwy%2082%2C%20High%20Rolls%2C%20NM%2088325"
-                                    target="_blank" rel="noopener">880 US Hwy 82, High Rolls, NM 88325</a></span>
-                        </div>
-                    </div>
-
-                    <!-- Fernando's -->
-                    <div class="lodge-card">
-                        <img src="eat-photo/photo-fernando/fernando-03555.jpeg"
-                            alt="Fernando's Mexican restaurant in Cloudcroft" loading="lazy">
-                        <h3>Fernando&rsquo;s</h3>
-                        <span class="property-type">Mexican</span>
-                        <p>A Mexican restaurant in the Cloudcroft area. We have not been able to independently
-                            confirm current hours, a full menu, or an exact address through the sources available to
-                            us at this time.</p>
-                        <p>If you are planning to visit, call ahead to confirm they are open and to check what is
-                            being served that day. We will update this listing as more information becomes
-                            available.</p>
-                    </div>
-
-                    <!-- KennaBelles Kreations Bakery -->
-
-                    <div class="lodge-card">
-                        <a href="kennabelle-bakery.html" class="lodge-card-link" target="_blank">
-                            <img src="eat-photo/photo-kennabelle/kennabelle-03555.webp"
-                                alt="KennaBelles Kreations Bakery storefront on Burro Avenue" loading="lazy">
+                <!-- 6. KennaBelles Kreations -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="kennabelle"
+                    data-meal="coffee sweet breakfast"
+                    data-style="bakery"
+                    data-region="burro"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">6</span>
+                    <img src="eat-photo/photo-kennabelle/kennabelle-03555.webp" alt="KennaBelles Kreations bakery on Burro Avenue" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
                             <h3>KennaBelles Kreations Bakery</h3>
-                            <span class="property-type">Bakery</span>
-                            <p>Baker Kenna Leonard&rsquo;s shop at 308 Burro Avenue, serving homemade pastries,
-                                cookies, cupcakes, and coffee. Cinnamon rolls and pistachio bread are the items
-                                locals mention most.</p>
-                            <p>The Cloudcroft Reader featured the bakery in 2023 and still included it in a 2025
-                                pantry roundup &mdash; a sign it remains woven into daily town life. The case is
-                                freshest early in the morning.</p>
-                            <p>Older sources note weekday opening around 7 AM, but current hours should be
-                                confirmed directly. Call 575-682-2712.</p>
-                            <p
-                                style="text-transform: uppercase;text-align:right;font-weight:700;color:steelblue;font-size:.85rem">
-                                More &rarr;</p>
-                        </a>
-                        <div class="lodge-card-contact">
-                            <span><a href="tel:+15756822712">575-682-2712</a></span>
-                            <span><a href="https://www.facebook.com/KennaBellesKreationsBakery/" target="_blank"
-                                    rel="noopener">Facebook</a></span>
-                            <span><a href="https://www.google.com/maps/dir/?api=1&destination=308%20Burro%20Ave%2C%20Cloudcroft%2C%20NM%2088317"
-                                    target="_blank" rel="noopener">308 Burro Ave, Cloudcroft, NM 88317</a></span>
+                            <span class="cat-tag cat-bakery">Bakery</span>
+                        </div>
+                        <span class="property-type type-inline">Cinnamon rolls &amp; pistachio bread</span>
+                        <div class="card-meta">
+                            <span>308 Burro Ave</span>
+                            <span><a href="tel:+15756822712">(575) 682-2712</a></span>
+                        </div>
+                        <p class="card-desc">Baker Kenna Leonard's shop — homemade pastries, cookies, cupcakes, coffee. Cinnamon rolls and pistachio bread are the items locals mention most. Freshest early; confirm current hours.</p>
+                        <div class="amenities">
+                            <span class="amenity">Cinnamon rolls</span>
+                            <span class="amenity">Pistachio bread</span>
+                            <span class="amenity warn">Call for hours</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="kennabelle"> Compare</label>
+                            <a href="kennabelle-bakery.html" class="lodge-card-guide">Read full guide &rarr;</a>
                         </div>
                     </div>
+                </article>
 
+                <!-- 7. Noisy Water Winery -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="noisywater"
+                    data-meal="drinks"
+                    data-style="bar"
+                    data-region="burro"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="false">
+                    <span class="card-pin" aria-hidden="true">7</span>
+                    <img src="eat-photo/photo-noisy-water/noisy-water-sign.jpg" alt="Noisy Water Winery tasting room" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Noisy Water Winery</h3>
+                            <span class="cat-tag cat-wine">Winery</span>
+                        </div>
+                        <span class="property-type type-inline">30+ award-winning NM wines · tasting room</span>
+                        <div class="card-meta">
+                            <span>505 Burro Ave, Ste 105</span>
+                            <span><a href="tel:+15756826610">(575) 682-6610</a></span>
+                        </div>
+                        <p class="card-desc">A tasting room pouring 30+ NM wines — reds, whites, fruit wines, and a signature green-chile wine. Cheeses, olive oils, and balsamics on the retail side. Part wine bar, part specialty shop.</p>
+                        <div class="amenities">
+                            <span class="amenity">30+ wines</span>
+                            <span class="amenity">Green chile wine</span>
+                            <span class="amenity">Gourmet retail</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="noisywater"> Compare</label>
+                            <a href="noisy-water-winery-2026.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
 
+                <!-- 8. Old Barrel Tea Company -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="oldbarrel"
+                    data-meal="coffee drinks"
+                    data-style="casual"
+                    data-region="burro"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">8</span>
+                    <div class="card-header-strip">Tea · honey · blended in-house</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Old Barrel Tea Company</h3>
+                            <span class="cat-tag cat-tea">Tea</span>
+                        </div>
+                        <span class="property-type type-inline">Female-run, family-owned</span>
+                        <div class="card-meta">
+                            <span>505 Burro Ave · Exchange</span>
+                            <span><a href="tel:+15756827474">(575) 682-7474</a></span>
+                        </div>
+                        <p class="card-desc">Loose-leaf teas blended in-house, raw honey, gourmet herbs and spices, essential oils, wellness products. A Burro Street Exchange mainstay.</p>
+                        <div class="amenities">
+                            <span class="amenity">Loose-leaf</span>
+                            <span class="amenity">Raw honey</span>
+                            <span class="amenity">Family-owned</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="oldbarrel"> Compare</label>
+                            <a href="old-barrel-tea-company.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. Cloudcroft Brewery -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="brewery"
+                    data-meal="lunch dinner drinks"
+                    data-style="bar"
+                    data-region="burro"
+                    data-reservable="false"
+                    data-late="true"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">9</span>
+                    <img src="eat-photo/photo-brewery/brewery-00033.jpg" alt="Cloudcroft Brewing taproom" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Cloudcroft Brewery</h3>
+                            <span class="cat-tag cat-brewery">Brewery</span>
+                        </div>
+                        <span class="property-type type-inline">Craft brewery · wood-fired pizza</span>
+                        <div class="card-meta">
+                            <span>1301 Burro Ave</span>
+                            <span><a href="tel:+15756822337">(575) 682-2337</a></span>
+                        </div>
+                        <p class="card-desc">House-brewed ales, IPAs, lagers on rotating taps, plus in-house spirits (Mountain Smoke Whiskey, Skywater Vodka). Wood-fired pizza menu with GF crust and vegan cheese options. Live music Fri–Sun; karaoke Monday.</p>
+                        <div class="amenities">
+                            <span class="amenity">Craft beer</span>
+                            <span class="amenity">Wood-fired pizza</span>
+                            <span class="amenity">Live music</span>
+                            <span class="amenity warn">Closed Tue</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="brewery"> Compare</label>
+                            <a href="brewery.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================================ JAMES CANYON HWY ================================ -->
+        <section class="eat-block" id="highway" aria-label="James Canyon Highway dining">
+            <div class="eat-block-head">
+                <span class="eyebrow">Five stops · roadside eating</span>
+                <h2>James Canyon Highway</h2>
+                <p>The roadside corridor just east of the village. BBQ, diners, a motel café, and the village's other coffee shop. A short drive from downtown — worth it for dedicated BBQ or a long-hours dinner.</p>
+            </div>
+
+            <div class="lodge-grid is-grid-plus" data-grid="highway">
+
+                <!-- 10. Mad Jack's Mountaintop BBQ -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="madjacks"
+                    data-meal="lunch"
+                    data-style="bbq"
+                    data-region="highway"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">10</span>
+                    <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-00026.jpg" alt="Mad Jack's Mountaintop BBQ" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Mad Jack's Mountaintop BBQ</h3>
+                            <span class="cat-tag cat-bbq">BBQ</span>
+                        </div>
+                        <span class="property-type type-inline">Post-oak smoked · Lockhart TX lineage</span>
+                        <div class="card-meta">
+                            <span>105 James Canyon Hwy</span>
+                            <span><a href="tel:+15756827577">(575) 682-7577</a></span>
+                        </div>
+                        <p class="card-desc">Owner James Jackson drives 644 miles every six to eight weeks for authentic post oak. Brisket, ribs, pulled pork, smoked turkey, sausage, scratch sides. Desserts by Gracie Jo Grey. Thu–Sun from 11 AM, until sold out.</p>
+                        <div class="amenities">
+                            <span class="amenity">Post-oak smoked</span>
+                            <span class="amenity">Cobblers &amp; cornbread</span>
+                            <span class="amenity warn">Sold out by 3 PM</span>
+                            <span class="amenity warn">Thu–Sun only</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="madjacks"> Compare</label>
+                            <a href="mad-jacks-bbq.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. Brother-N-Law BBQ -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="brothernlaw"
+                    data-meal="lunch dinner"
+                    data-style="bbq"
+                    data-region="highway"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">11</span>
+                    <img src="eat-photo/photo-brother-in-law-bbq/brother-in-law-front.jpg" alt="Brother-N-Law BBQ on James Canyon Highway" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Brother-N-Law BBQ</h3>
+                            <span class="cat-tag cat-bbq">BBQ</span>
+                        </div>
+                        <span class="property-type type-inline">Central Texas BBQ · less wait than Mad Jack's</span>
+                        <div class="card-meta">
+                            <span>209 James Canyon Hwy</span>
+                            <span><a href="tel:+12158580400">(215) 858-0400</a></span>
+                        </div>
+                        <p class="card-desc">Sliced brisket (moist or lean), baby back ribs, beef ribs, smoked turkey, BBQ chicken, jalape&ntilde;o cheddar sausage. Brisket fries, mac and cheese, banana pudding. Daily except Thursday, 11 AM–6 PM.</p>
+                        <div class="amenities">
+                            <span class="amenity">Brisket fries</span>
+                            <span class="amenity">Less wait</span>
+                            <span class="amenity warn">Closed Thu</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="brothernlaw"> Compare</label>
+                            <a href="brother-n-law-bbq.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12. Dusty Boots Café -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="dustyboots"
+                    data-meal="breakfast lunch dinner"
+                    data-style="casual"
+                    data-region="highway"
+                    data-reservable="false"
+                    data-late="true"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">12</span>
+                    <img src="eat-photo/photo-eat-dusty-boots/dusty-cafe-03565.jpg" alt="Dusty Boots Café on James Canyon Highway" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Dusty Boots Café</h3>
+                            <span class="cat-tag cat-diner">Country cooking</span>
+                        </div>
+                        <span class="property-type type-inline">Motel café · scratch-made plates</span>
+                        <div class="card-meta">
+                            <span>1315 James Canyon Hwy</span>
+                            <span><a href="tel:+15756827736">(575) 682-7736</a></span>
+                        </div>
+                        <p class="card-desc">Breakfast 7 AM–noon daily — biscuits &amp; gravy, French toast, pancakes. Lunch/dinner daily specials: BLTs, chicken strips, patty melts, steak and shrimp. Saturday German night (schnitzel, sauerbraten, bratwurst). Summer hours 7 AM–9 PM.</p>
+                        <div class="amenities">
+                            <span class="amenity">Breakfast all day</span>
+                            <span class="amenity">German Saturdays</span>
+                            <span class="amenity">GF / nut-free noted</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="dustyboots"> Compare</label>
+                            <a href="dusty-boots-cafe.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 13. High Rollin' Coffee -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="highrollin"
+                    data-meal="breakfast coffee lunch sweet"
+                    data-style="coffee"
+                    data-region="highway"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">13</span>
+                    <img src="eat-photo/photo-high-rollin/high-rollin-00556.jpg" alt="High Rollin' Coffee on James Canyon Highway" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>High Rollin' Coffee</h3>
+                            <span class="cat-tag cat-coffee">Coffee &amp; café</span>
+                        </div>
+                        <span class="property-type type-inline">From-scratch café · opened 2023</span>
+                        <div class="card-meta">
+                            <span>109 James Canyon Hwy</span>
+                            <span><a href="https://www.facebook.com/p/High-Rollin-Coffee-61550359681157/" target="_blank" rel="noopener noreferrer">Facebook</a></span>
+                        </div>
+                        <p class="card-desc">Former yacht chef Beth Offolter's café — espresso drinks, acai bowls, weekly rotating grain bowls, signature toasts, muffins, scones, cinnamon rolls, and vegan baked goods. Hammock chairs, calm lighting.</p>
+                        <div class="amenities">
+                            <span class="amenity">Acai bowls</span>
+                            <span class="amenity">Vegan options</span>
+                            <span class="amenity warn">Closed Wed–Thu</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="highrollin"> Compare</label>
+                            <a href="high-rollin.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14. Big Daddy's Diner -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="bigdaddys"
+                    data-meal="breakfast lunch dinner"
+                    data-style="casual"
+                    data-region="highway"
+                    data-reservable="false"
+                    data-late="true"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">14</span>
+                    <img src="eat-photo/photo-big-daddys/big-daddys-00556.jpg" alt="Big Daddy's Diner on James Canyon Highway" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Big Daddy's Diner</h3>
+                            <span class="cat-tag cat-diner">Diner</span>
+                        </div>
+                        <span class="property-type type-inline">Longest hours in the area · 7 AM–9 PM</span>
+                        <div class="card-meta">
+                            <span>1705 James Canyon Hwy</span>
+                            <span><a href="tel:+15756821224">(575) 682-1224</a></span>
+                        </div>
+                        <p class="card-desc">Cowboy-heritage decor and an American + New Mexican menu: rib eye steaks, Texas mesquite BBQ, street tacos, enchiladas, smothered burritos, homemade soups, in-house pies. Daily 7 AM–9 PM. Catering available.</p>
+                        <div class="amenities">
+                            <span class="amenity">Daily 7–9</span>
+                            <span class="amenity">Pies in-house</span>
+                            <span class="amenity">Catering</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="bigdaddys"> Compare</label>
+                            <a href="big-daddys.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================================ LODGE & HWY 82 ================================ -->
+        <section class="eat-block" id="lodge" aria-label="The Lodge and Highway 82">
+            <div class="eat-block-head">
+                <span class="eyebrow">Four spots · the special-occasion tier</span>
+                <h2>The Lodge &amp; Hwy 82</h2>
+                <p>Fine dining at the 1899 Lodge, its historic bar, the seasonal ski-area kitchen, and a High Rolls sourdough bakery on the drive up from Alamogordo.</p>
+            </div>
+
+            <div class="lodge-grid is-grid-plus" data-grid="lodge">
+
+                <!-- 15. Eighteen99 -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="eighteen99"
+                    data-meal="dinner drinks"
+                    data-style="fine"
+                    data-region="lodge"
+                    data-reservable="true"
+                    data-late="false"
+                    data-family="false">
+                    <span class="card-pin" aria-hidden="true">15</span>
+                    <img src="eat-photo/photo-eat-eighteen99/Lodge%20Plates-9_websize%20copy.jpg" alt="Eighteen99 fine dining plate at The Lodge" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Eighteen99</h3>
+                            <span class="cat-tag cat-fine">Fine dining</span>
+                        </div>
+                        <span class="property-type type-inline">The Lodge's signature dining room</span>
+                        <div class="card-meta">
+                            <span>601 Corona Place</span>
+                            <span><a href="tel:+15756822098">575-682-2098</a></span>
+                        </div>
+                        <p class="card-desc">The only fine-dining option in Cloudcroft. Chef Richard Lepree's changing dinner menu. St. Andrew's Lounge serves cocktails in the same space. Wed–Sat, 5–8 PM. Reservations via The Lodge's dining page.</p>
+                        <div class="amenities">
+                            <span class="amenity">Reservations</span>
+                            <span class="amenity">Special occasion</span>
+                            <span class="amenity">Wed–Sat 5–8</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="eighteen99"> Compare</label>
+                            <a href="eighteen99.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 16. St. Andrew's Bar -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="standrews"
+                    data-meal="drinks"
+                    data-style="bar"
+                    data-region="lodge"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="false">
+                    <span class="card-pin" aria-hidden="true">16</span>
+                    <div class="card-header-strip">Cocktail lounge · The Lodge</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>St. Andrew's Bar</h3>
+                            <span class="cat-tag cat-bar">Cocktail lounge</span>
+                        </div>
+                        <span class="property-type type-inline">Historic bar at The Lodge · same space as Eighteen99</span>
+                        <div class="card-meta">
+                            <span>601 Corona Place</span>
+                            <span><a href="tel:+15756822098">575-682-2098</a></span>
+                        </div>
+                        <p class="card-desc">The historic lounge inside The Lodge. Cocktails in a room full of golf memorabilia and mountain views. Works as a pre-dinner drink before Eighteen99 or a quiet post-dinner nightcap.</p>
+                        <div class="amenities">
+                            <span class="amenity">Cocktails</span>
+                            <span class="amenity">Mountain views</span>
+                            <span class="amenity">Adults</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="standrews"> Compare</label>
+                            <a href="st-andrews-bar.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 17. Ski Cloudcroft Food Service -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="skifood"
+                    data-meal="lunch"
+                    data-style="casual"
+                    data-region="lodge"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">17</span>
+                    <img src="eat-photo/photo-eat-ski-cloudcroft/ski-cloudcroft-eat-00557.jpg" alt="Ski Cloudcroft Food Service at the ski area base" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Ski Cloudcroft Food Service</h3>
+                            <span class="cat-tag cat-diner">Pizza</span>
+                        </div>
+                        <span class="property-type type-inline">Wood-fired pizza · ski-area base only</span>
+                        <div class="card-meta">
+                            <span>1920½ US Hwy 82</span>
+                            <span><a href="tel:+15756822333">(575) 682-2333</a></span>
+                        </div>
+                        <p class="card-desc">Wood-fired pizza at the Ski Cloudcroft base area. Tied directly to seasonal recreation operations — when the slopes or tubing runs are open, the pizza operation runs. Check the ski area directly before driving up.</p>
+                        <div class="amenities">
+                            <span class="amenity">Wood-fired</span>
+                            <span class="amenity">Ski/tubing day</span>
+                            <span class="amenity warn">Seasonal only</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="skifood"> Compare</label>
+                            <a href="ski-cloudcroft-food-service.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 18. Levain It Up -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="levain"
+                    data-meal="sweet coffee"
+                    data-style="bakery"
+                    data-region="lodge"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">18</span>
+                    <img src="eat-photo/photo-levain-bakery/Levain%20It%20Up.jpg" alt="Levain It Up Sourdough Bakery in High Rolls" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Levain It Up Sourdough</h3>
+                            <span class="cat-tag cat-bakery">Bakery</span>
+                        </div>
+                        <span class="property-type type-inline">High Rolls · sourdough, danishes</span>
+                        <div class="card-meta">
+                            <span>880 US Hwy 82, High Rolls</span>
+                            <span><a href="tel:+15755208096">(575) 520-8096</a></span>
+                        </div>
+                        <p class="card-desc">Garrett Barnett and Steven Jackson's small-batch sourdough operation in a converted High Rolls building, on the drive between Alamogordo and Cloudcroft. Sourdough loaves, danishes, rotating baked goods. Grab-and-go only.</p>
+                        <div class="amenities">
+                            <span class="amenity">Sourdough</span>
+                            <span class="amenity">On the drive up</span>
+                            <span class="amenity warn">Fri–Sun 2–6 PM</span>
+                            <span class="amenity warn">Sells out</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="levain"> Compare</label>
+                            <a href="levain.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================================ UNCONFIRMED ================================ -->
+        <section class="eat-block" id="unconfirmed" aria-label="Awaiting confirmation">
+            <div class="eat-block-head">
+                <span class="eyebrow">Confirm before visiting</span>
+                <h2>Awaiting confirmation</h2>
+                <p>One spot we know is out there but can't yet source current hours, a menu, or a verified address for. Call ahead.</p>
+            </div>
+
+            <div class="lodge-grid is-grid-plus" data-grid="unconfirmed">
+
+                <!-- 19. Fernando's -->
+                <article class="lodge-card card-plus fade-in no-photo"
+                    data-property="fernandos"
+                    data-meal="lunch dinner"
+                    data-style="casual"
+                    data-region="burro"
+                    data-reservable="false"
+                    data-late="false"
+                    data-family="true">
+                    <span class="card-pin" aria-hidden="true">19</span>
+                    <div class="card-header-strip">Mexican · unconfirmed</div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Fernando's</h3>
+                            <span class="cat-tag cat-mex">Mexican</span>
+                        </div>
+                        <span class="property-type type-inline">Mexican restaurant in the Cloudcroft area</span>
+                        <div class="card-meta">
+                            <span>Location unconfirmed</span>
+                        </div>
+                        <p class="card-desc">A Mexican restaurant in the Cloudcroft area. We have not been able to independently confirm current hours, a full menu, or an exact address. Call ahead. We'll update as more information becomes available.</p>
+                        <div class="amenities">
+                            <span class="amenity warn">Hours unconfirmed</span>
+                            <span class="amenity warn">Address unconfirmed</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="fernandos"> Compare</label>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Fernando%27s+Mexican+Cloudcroft+NM" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Search on map &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="empty-state" id="empty-state" role="status">
+            No restaurants match your filters. Try dropping a chip — Cloudcroft's dining market is small by design.
+        </div>
+
+        <!-- ================================ MAP ================================ -->
+        <section class="map-section" id="map" aria-label="Dining corridor map">
+            <div class="map-head">
+                <h2>The three dining corridors</h2>
+                <p>Nearly everything is on one of three lines: Burro Avenue (the walkable downtown), James Canyon Highway (the roadside strip east of the village), and the Lodge + Hwy 82 axis (fine dining, the ski-area kitchen, and a High Rolls bakery).</p>
+            </div>
+            <div class="map-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 720 460" role="img" aria-label="Schematic map of Cloudcroft dining corridors">
+                        <rect width="720" height="460" fill="#f2ede3"/>
+
+                        <!-- Burro Avenue (horizontal, middle) -->
+                        <rect x="40" y="200" width="640" height="20" fill="#c4ae8a" opacity="0.75" rx="2"/>
+                        <text x="360" y="190" fill="#3a2812" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="3">BURRO AVENUE</text>
+                        <text x="70" y="245" fill="#8a7352" font-family="IBM Plex Sans, sans-serif" font-size="10">200</text>
+                        <text x="230" y="245" fill="#8a7352" font-family="IBM Plex Sans, sans-serif" font-size="10">300</text>
+                        <text x="400" y="245" fill="#8a7352" font-family="IBM Plex Sans, sans-serif" font-size="10">500 · Exchange</text>
+                        <text x="570" y="245" fill="#8a7352" font-family="IBM Plex Sans, sans-serif" font-size="10">1301</text>
+
+                        <!-- James Canyon Hwy branching NE up -->
+                        <path d="M200 200 Q 180 130 150 70" stroke="#c4ae8a" stroke-width="10" opacity="0.55" fill="none"/>
+                        <text x="100" y="60" fill="#8a7352" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">JAMES CANYON HWY</text>
+
+                        <!-- Hwy 82 / Lodge branching down -->
+                        <path d="M400 220 Q 440 320 500 400" stroke="#c4ae8a" stroke-width="10" opacity="0.55" fill="none"/>
+                        <text x="510" y="420" fill="#8a7352" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">LODGE &amp; HWY 82</text>
+
+                        <!-- Burro Ave pins (east→west by address) -->
+                        <!-- 1. Black Bear (200) -->
+                        <g><circle cx="80" cy="210" r="11" fill="#000"/><text x="80" y="213" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">1</text></g>
+                        <!-- 2. Dave's (300) -->
+                        <g><circle cx="240" cy="210" r="11" fill="#000"/><text x="240" y="213" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">2</text></g>
+                        <!-- 3. Western Bar (304) -->
+                        <g><circle cx="265" cy="210" r="11" fill="#000"/><text x="265" y="213" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">3</text></g>
+                        <!-- 6. KennaBelles (308) -->
+                        <g><circle cx="290" cy="180" r="11" fill="#000"/><text x="290" y="183" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">6</text></g>
+                        <!-- 4. Sandwich (505 #112) -->
+                        <g><circle cx="400" cy="210" r="11" fill="#000"/><text x="400" y="213" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">4</text></g>
+                        <!-- 5. Eight the Cake (506A) -->
+                        <g><circle cx="425" cy="180" r="11" fill="#000"/><text x="425" y="183" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">5</text></g>
+                        <!-- 7. Noisy Water (505 #105) -->
+                        <g><circle cx="450" cy="180" r="11" fill="#000"/><text x="450" y="183" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">7</text></g>
+                        <!-- 8. Old Barrel Tea (505 Exchange) -->
+                        <g><circle cx="475" cy="180" r="11" fill="#000"/><text x="475" y="183" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">8</text></g>
+                        <!-- 9. Brewery (1301) -->
+                        <g><circle cx="595" cy="210" r="11" fill="#000"/><text x="595" y="213" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">9</text></g>
+
+                        <!-- James Canyon Hwy pins -->
+                        <!-- 10. Mad Jack's (105) -->
+                        <g><circle cx="190" cy="150" r="11" fill="#000"/><text x="190" y="153" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">10</text></g>
+                        <!-- 13. High Rollin' (109) -->
+                        <g><circle cx="180" cy="130" r="11" fill="#000"/><text x="180" y="133" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">13</text></g>
+                        <!-- 11. Brother-N-Law (209) -->
+                        <g><circle cx="170" cy="110" r="11" fill="#000"/><text x="170" y="113" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">11</text></g>
+                        <!-- 12. Dusty Boots (1315) -->
+                        <g><circle cx="155" cy="90" r="11" fill="#000"/><text x="155" y="93" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">12</text></g>
+                        <!-- 14. Big Daddy's (1705) -->
+                        <g><circle cx="140" cy="60" r="11" fill="#000"/><text x="140" y="63" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">14</text></g>
+
+                        <!-- Lodge / Hwy 82 pins -->
+                        <!-- 15. Eighteen99 (Lodge) -->
+                        <g><circle cx="430" cy="290" r="11" fill="#000"/><text x="430" y="293" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">15</text></g>
+                        <!-- 16. St. Andrew's (Lodge) -->
+                        <g><circle cx="455" cy="310" r="11" fill="#000"/><text x="455" y="313" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">16</text></g>
+                        <!-- 17. Ski Food (Hwy 82) -->
+                        <g><circle cx="480" cy="360" r="11" fill="#000"/><text x="480" y="363" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">17</text></g>
+                        <!-- 18. Levain (Hwy 82 further) -->
+                        <g><circle cx="515" cy="405" r="11" fill="#000"/><text x="515" y="408" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">18</text></g>
+                    </svg>
                 </div>
-
-                <div class="tip-box">
-                    <span>&#x1F4D6;</span>
-                    <p><strong>Want the full details?</strong> Click any restaurant card to open its dedicated guide
-                        with menus, photos, hours, and what to know before you visit.</p>
+                <div>
+                    <ol class="map-legend">
+                        <li><span class="lg-pin">1</span><span><a href="black-bear-coffee-shop.html">Black Bear Coffee</a> · 200 Burro</span></li>
+                        <li><span class="lg-pin">2</span><span><a href="daves-cafe.html">Dave's Café</a> · 300 Burro</span></li>
+                        <li><span class="lg-pin">3</span><span><a href="western-bar.html">Western Bar &amp; Cafe</a> · 304 Burro</span></li>
+                        <li><span class="lg-pin">4</span><span><a href="cloudcroft-sandwich-shop.html">Cloudcroft Sandwich Shop</a> · 505 #112</span></li>
+                        <li><span class="lg-pin">5</span><span><a href="eight-the-cake.html">Eight the Cake</a> · 506A</span></li>
+                        <li><span class="lg-pin">6</span><span><a href="kennabelle-bakery.html">KennaBelles Bakery</a> · 308</span></li>
+                        <li><span class="lg-pin">7</span><span><a href="noisy-water-winery-2026.html">Noisy Water Winery</a> · 505 #105</span></li>
+                        <li><span class="lg-pin">8</span><span><a href="old-barrel-tea-company.html">Old Barrel Tea</a> · 505</span></li>
+                        <li><span class="lg-pin">9</span><span><a href="brewery.html">Cloudcroft Brewery</a> · 1301</span></li>
+                        <li><span class="lg-pin">10</span><span><a href="mad-jacks-bbq.html">Mad Jack's BBQ</a> · 105 JCH</span></li>
+                        <li><span class="lg-pin">11</span><span><a href="brother-n-law-bbq.html">Brother-N-Law BBQ</a> · 209 JCH</span></li>
+                        <li><span class="lg-pin">12</span><span><a href="dusty-boots-cafe.html">Dusty Boots Café</a> · 1315 JCH</span></li>
+                        <li><span class="lg-pin">13</span><span><a href="high-rollin.html">High Rollin' Coffee</a> · 109 JCH</span></li>
+                        <li><span class="lg-pin">14</span><span><a href="big-daddys.html">Big Daddy's Diner</a> · 1705 JCH</span></li>
+                        <li><span class="lg-pin">15</span><span><a href="eighteen99.html">Eighteen99</a> · 601 Corona</span></li>
+                        <li><span class="lg-pin">16</span><span><a href="st-andrews-bar.html">St. Andrew's Bar</a> · The Lodge</span></li>
+                        <li><span class="lg-pin">17</span><span><a href="ski-cloudcroft-food-service.html">Ski Cloudcroft Food</a> · 1920½ Hwy 82</span></li>
+                        <li><span class="lg-pin">18</span><span><a href="levain.html">Levain It Up</a> · 880 Hwy 82 (High Rolls)</span></li>
+                    </ol>
+                    <p class="map-footnote">Schematic only. Fernando's (#19) isn't plotted — location unconfirmed. JCH = James Canyon Hwy.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ════════════════════════════════════════════ 03 COMPARE ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="compare" aria-label="Compare dining options">
-            <div class="section-container">
-                <div style="text-align: center;">
-
-                    <span class="section-label">Head to Head</span>
-                    <h2 class="section-title section-title-centered">Best Picks by Category</h2>
+        <!-- ================================ COMPARE MATRIX ================================ -->
+        <section class="matrix-section" id="compare" aria-label="Compare restaurants side by side">
+            <div class="matrix-wrap">
+                <div class="matrix-head">
+                    <h2>Compare side-by-side</h2>
+                    <span class="matrix-count" id="matrix-count">Select restaurants above (check the Compare box on any card)</span>
                 </div>
-
-                <div class="compare-grid">
-                    <div class="compare-card">
-                        <h3>Best Fine Dining</h3>
-                        <p><a href="eighteen99.html" class="pick-name">Eighteen99</a> &mdash; The only chef-driven,
-                            reservation-based
-                            dinner in Cloudcroft.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Breakfast</h3>
-                        <p><a href="dusty-boots-cafe.html" class="pick-name">Dusty Boots Caf&eacute;</a> &mdash;
-                            Homemade breakfast every
-                            morning with biscuits, gravy, and country plates.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Burro Ave Walk</h3>
-                        <p><a href="daves-cafe.html" class="pick-name">Dave&rsquo;s</a>, <a
-                                href="black-bear-coffee-shop.html" class="pick-name">Black Bear</a>,
-                            <a href="eight-the-cake.html" class="pick-name">Eight the Cake</a>, <a
-                                href="cloudcroft-sandwich-shop.html" class="pick-name">Sandwich
-                                Shop</a>, <a href="old-barrel-tea-company.html" class="pick-name">Old Barrel Tea</a>
-                            &mdash; All clustered within
-                            a few walkable blocks.
-                        </p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best BBQ</h3>
-                        <p><a href="mad-jacks-bbq.html" class="pick-name">Mad Jack&rsquo;s</a> or <a
-                                href="brother-n-law-bbq.html" class="pick-name">Brother-N-Law</a>
-                            &mdash; Two dedicated BBQ operations on James Canyon Highway.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Coffee</h3>
-                        <p><a href="black-bear-coffee-shop.html" class="pick-name">Black Bear Coffee Shop</a> or <a
-                                href="high-rollin.html" class="pick-name">High
-                                Rollin&rsquo;</a> &mdash; Black Bear for downtown Burro Ave, High Rollin&rsquo; for
-                            the highway corridor.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Bakery</h3>
-                        <p><a href="eight-the-cake.html" class="pick-name">Eight the Cake</a> &mdash; Custom cakes,
-                            pastries, organic
-                            coffee, and art on the walls at 506A Burro Avenue.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best for Families</h3>
-                        <p><a href="daves-cafe.html" class="pick-name">Dave&rsquo;s Caf&eacute;</a> or <a
-                                href="dusty-boots-cafe.html" class="pick-name">Dusty
-                                Boots</a> &mdash; Casual, familiar, and kid-friendly.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best for Date Night</h3>
-                        <p><a href="eighteen99.html" class="pick-name">Eighteen99</a> &mdash; The clearest
-                            special-occasion restaurant in
-                            town.</p>
-                    </div>
-
+                <div class="matrix-scroll">
+                    <table class="matrix" id="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Restaurant</th>
+                                <th>Category</th>
+                                <th>Meals</th>
+                                <th>Corridor</th>
+                                <th>Hours</th>
+                                <th>Reservations</th>
+                                <th>Family-OK</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-body">
+                            <tr><td colspan="8" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
 
-        <!-- ════════════════════════════════════════════ 04 TIPS ════════════════════════════════════════════ -->
-        <section class="section" id="tips" aria-label="Dining tips">
-            <div class="section-container">
-                <div style="text-align: center;">
-
-                    <span class="section-label">Before You Go</span>
-                    <h2 class="section-title section-title-centered">What Diners Should Know</h2>
-                </div>
-
-                <div class="tip-grid">
-                    <div class="tip-card">
-                        <h3>Seasonal Hours</h3>
-                        <p>Most restaurants adjust hours by season and staffing. Summer is peak. Off-season hours may
-                            shrink or days may be dropped. Always verify before visiting.</p>
+        <!-- ================================ EDITOR'S CALL ================================ -->
+        <section class="editor-section" id="editor" aria-label="Editor's call">
+            <div class="editor-wrap">
+                <h2>If we had to pick three</h2>
+                <div class="editor-picks">
+                    <div class="editor-pick">
+                        <span class="pick-for">The occasion meal</span>
+                        <blockquote>"Reservations at 5 PM at The Lodge. A cocktail at St. Andrew's first. Four hours of a mountain-resort dinner that Cloudcroft can't replicate anywhere else."</blockquote>
+                        <p class="pick-answer">Book <a href="eighteen99.html">Eighteen99</a> · cocktails at <a href="st-andrews-bar.html">St. Andrew's</a>.</p>
                     </div>
-                    <div class="tip-card">
-                        <h3>Call Ahead</h3>
-                        <p>Small-town staffing means hours can shift without notice. A quick phone call can save you a
-                            wasted trip, especially off-season or midweek.</p>
+                    <div class="editor-pick">
+                        <span class="pick-for">The weekend stroll</span>
+                        <blockquote>"Start with espresso at Black Bear. Cinnamon rolls at Eight the Cake. A wine flight at Noisy Water. Pizza and a beer at the brewery by 7."</blockquote>
+                        <p class="pick-answer">Chain <a href="black-bear-coffee-shop.html">Black Bear</a> → <a href="eight-the-cake.html">Eight the Cake</a> → <a href="noisy-water-winery-2026.html">Noisy Water</a> → <a href="brewery.html">Cloudcroft Brewery</a>.</p>
                     </div>
-                    <div class="tip-card">
-                        <h3>Cash &amp; Card</h3>
-                        <p>Most places accept cards, but some smaller operations may prefer or require cash. Carry some
-                            just in case.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>No Chains</h3>
-                        <p>Every restaurant in Cloudcroft is independently owned. Set expectations accordingly &mdash;
-                            menus are smaller, hours are shorter, and service is personal.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Burro Ave Walking</h3>
-                        <p>The downtown corridor is walkable. Coffee, bakeries, tea, sandwiches, and bars are all within
-                            a few blocks of each other.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>James Canyon Highway</h3>
-                        <p>BBQ joints, diners, and roadside spots require a short drive from downtown. Worth the trip
-                            for dedicated BBQ and country cooking.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Reservations</h3>
-                        <p>Eighteen99 at The Lodge is the one restaurant where reservations are recommended. Most other
-                            spots are walk-in.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Late-Night Options</h3>
-                        <p>Very limited. Plan your dinner early. Most kitchens close by 8 or 9 PM, and options narrow
-                            significantly after dark.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Altitude</h3>
-                        <p>Cloudcroft sits around 9,000 feet. Hydrate, take it easy on arrival, and don&rsquo;t skip
-                            meals &mdash; altitude can affect appetite and energy.</p>
+                    <div class="editor-pick">
+                        <span class="pick-for">The BBQ pilgrimage</span>
+                        <blockquote>"Drive James Canyon Highway before 11. Join the Mad Jack's line when it opens. If they sell out, Brother-N-Law is two minutes back down the hill — and half the wait."</blockquote>
+                        <p class="pick-answer">Aim for <a href="mad-jacks-bbq.html">Mad Jack's</a> · back up with <a href="brother-n-law-bbq.html">Brother-N-Law</a>.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ════════════════════════════════════════════ 05 EDITOR'S PICKS ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="picks" aria-label="Editor's picks">
-            <div class="section-container">
-                <div style="text-align: center;">
+        <!-- ================================ PRACTICAL NOTES ================================ -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Before you eat</h2>
 
-                    <span class="section-label">Editor's Picks</span>
-                    <h2 class="section-title section-title-centered">Best Choices by Occasion</h2>
+            <details class="note">
+                <summary>Seasonal hours &amp; calling ahead</summary>
+                <div class="note-body">
+                    <p>Most kitchens here adjust hours by season and staffing. Summer is peak; off-season hours may shrink or days may drop. Several spots close Wednesdays (Western Bar, Cloudcroft Sandwich Shop) or Tuesdays (Brewery). High Rollin' is closed Wed–Thu. Ski Cloudcroft's kitchen runs only when the ski/tubing area is running.</p>
+                    <p>If one meal is the whole reason you drove up, a quick phone call saves a wasted trip — especially midweek or off-season.</p>
                 </div>
+            </details>
 
-                <div class="picks-grid">
-                    <div class="pick-card">
-                        <h3>Romantic Dinner</h3>
-                        <p><a href="eighteen99.html"
-                                style="color:steelblue;font-weight:700;text-decoration:underline;text-underline-offset:2px;">Eighteen99</a>
-                            &mdash; The only fine-dining, reservation-based restaurant in
-                            Cloudcroft. Cocktails, mountain views, and a chef-driven menu.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Morning Coffee</h3>
-                        <p><a href="black-bear-coffee-shop.html"
-                                style="color:steelblue;font-weight:700;text-decoration:underline;text-underline-offset:2px;">Black
-                                Bear Coffee Shop</a> &mdash; Espresso, coffee, and a gallery space on
-                            Burro Avenue. The natural starting point for a downtown morning.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Family Lunch</h3>
-                        <p><a href="daves-cafe.html"
-                                style="color:steelblue;font-weight:700;text-decoration:underline;text-underline-offset:2px;">Dave&rsquo;s
-                                Caf&eacute;</a> &mdash; Burgers, comfort food, and a casual
-                            atmosphere that works for all ages.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Local Character</h3>
-                        <p><a href="dusty-boots-cafe.html"
-                                style="color:steelblue;font-weight:700;text-decoration:underline;text-underline-offset:2px;">Dusty
-                                Boots Caf&eacute;</a> &mdash; Homemade food, German Saturday dinners, and
-                            roadside motel nostalgia on James Canyon Highway.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Sweet Treat</h3>
-                        <p><a href="eight-the-cake.html"
-                                style="color:steelblue;font-weight:700;text-decoration:underline;text-underline-offset:2px;">Eight
-                                the Cake</a> &mdash; Custom cakes, cinnamon rolls, pastries, and
-                            organic coffee with art on the walls at 506A Burro Avenue.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Grab &amp; Go</h3>
-                        <p><a href="cloudcroft-sandwich-shop.html"
-                                style="color:steelblue;font-weight:700;text-decoration:underline;text-underline-offset:2px;">Cloudcroft
-                                Sandwich Shop</a> &mdash; Quick sandwiches, soups, and salads for a
-                            fast lunch on Burro Avenue.</p>
-                    </div>
-
+            <details class="note">
+                <summary>Reservations, walk-ins &amp; weekends</summary>
+                <div class="note-body">
+                    <p><strong>Eighteen99</strong> at The Lodge is the only restaurant where reservations are recommended — book via the Lodge's dining page. Everyone else is walk-in.</p>
+                    <p>Mad Jack's weekend lines run two to three hours. Arrive at or before the 11 AM opening to eat that day. Brother-N-Law is the casual backup plan when the Mad Jack's line is too long or the kitchen is already sold out.</p>
                 </div>
-            </div>
+            </details>
+
+            <details class="note">
+                <summary>Late-night options (very limited)</summary>
+                <div class="note-body">
+                    <p>Late-night dining is very limited. Most kitchens close by 8 or 9 PM, and options narrow significantly after dark. Big Daddy's stays open until 9 PM daily, which makes it the most reliable late-kitchen option. The Brewery runs until 9 PM (10 PM Fri–Sat). Western Bar stays open "to close" Thu–Mon.</p>
+                    <p>Plan dinner before 8 PM outside of summer weekends, and don't build a late arrival around Cloudcroft without a backup plan.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Altitude, pace &amp; cards</summary>
+                <div class="note-body">
+                    <p>Cloudcroft sits at <strong>8,676 feet</strong>. Altitude can affect appetite and energy on day one — hydrate, don't skip meals, and take the pace easy. Most places accept cards, but some smaller owner-run spots prefer or require cash. Carry a little.</p>
+                    <p>The three corridors mix well: coffee on Burro, BBQ on James Canyon, dinner at The Lodge. You don't have to pick one — you have to plan around the hours.</p>
+                </div>
+            </details>
         </section>
 
-        <!-- ════════════════════════════════════════════ 06 BOTTOM LINE ════════════════════════════════════════════ -->
-        <section class="bottom-line-section" id="bottom-line" aria-label="Bottom line">
-            <div class="bottom-line-inner">
-                <span class="section-num" style="color: rgba(255,255,255,0.4);">06</span>
-                <h2>The Bottom Line</h2>
-                <p>
-                    Cloudcroft&rsquo;s dining scene is independent, seasonal, and personal. There are no chains, no
-                    late-night delivery apps, and no deep bench of backup options. That is the trade-off for eating in a
-                    mountain village at 9,000 feet.
-                </p>
-                <p>
-                    The reward is character. A fine-dining room inside a historic lodge. Roadside BBQ on a mountain
-                    highway. A bakery-gallery on a walkable main street. A tea shop run by a New Mexico family. These
-                    are
-                    not interchangeable experiences &mdash; they are the texture of a Cloudcroft trip.
-                </p>
-                <p>
-                    Travelers who embrace the small-town pace, call ahead, and plan around posted hours will eat well
-                    here. Travelers who expect big-city convenience may find the options limited. Cloudcroft rewards
-                    flexibility.
-                </p>
-            </div>
-        </section>
-
-        <!-- ════════════════════════════════════════════ CTA ════════════════════════════════════════════ -->
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Ready to Eat in Cloudcroft?</h2>
-                <p>From fine dining at The Lodge to roadside BBQ on James Canyon Highway &mdash; Cloudcroft&rsquo;s
-                    independent restaurants reward travelers who like character over convenience.</p>
-                <div class="cta-buttons">
-                    <a href="#restaurants" class="btn-primary">Browse All Dining</a>
-                    <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html"
-                        class="btn-secondary">Explore Lodging</a>
+        <!-- ================================ HANDOFF ================================ -->
+        <section class="handoff-section" id="handoff" aria-label="Related Cloudcroft guides">
+            <div class="handoff-wrap">
+                <div>
+                    <h2>Pair it with a bed or a hike.</h2>
+                    <p>A great dinner is better after a day on the trail and a short walk home. The lodging guide covers where to stay; the activities guide covers what to do before the evening kicks in. The shopping guide pairs naturally with Burro Avenue browsing between meals.</p>
+                    <div class="handoff-buttons">
+                        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html" class="btn-primary">Lodging guide</a>
+                        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html" class="btn-outline" style="color:#000;border-color:#000;">Activities</a>
+                        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html" class="btn-outline" style="color:#000;border-color:#000;">Shop</a>
+                    </div>
+                </div>
+                <div class="handoff-stat" aria-label="Dining at a glance">
+                    <span class="big">19</span>
+                    <span class="mid">Independent restaurants</span>
+                    <hr>
+                    <span class="big">3</span>
+                    <span class="mid">Dining corridors</span>
+                    <hr>
+                    <span class="big">0</span>
+                    <span class="mid">Chain restaurants</span>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-        <p style="text-align:center;padding: 1vh">
+        <p style="text-align:center;padding:1vh">
             <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
             New Mexico's Mountain Retreat.
-            <br /><span style="font-size:85%">
-                &copy; 2026 <a style="color:steelblue;text-decoration:underline;"
-                    href="https://www.DiscoverCloudcroft.com" target="_blank">DiscoverCloudcroft.com</a>. All rights
-                reserved.</span>
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
         </p>
     </footer>
 
@@ -1004,7 +2065,7 @@
     <script src="../js/common.js"></script>
     <script>
         (function () {
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            // ---- Fade-in ----
             var fadeObserver = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
@@ -1012,11 +2073,227 @@
                         fadeObserver.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.lodge-card, .fade-in').forEach(function (el) { fadeObserver.observe(el); });
 
-            document.querySelectorAll('.market-card, .lodge-card, .compare-card, .pick-card, .tip-card, .fade-in').forEach(function (el) {
-                fadeObserver.observe(el);
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sections = tocPills
+                .map(function (p) { return document.getElementById(p.getAttribute('href').replace('#','')); })
+                .filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
+
+            // ---- Finder + filter-rail shared state ----
+            var state = {
+                meal: new Set(),
+                style: new Set(),
+                where: new Set(),
+                rail: new Set()
+            };
+
+            var MEAL_KEYS = { breakfast: 1, lunch: 1, dinner: 1, coffee: 1, drinks: 1, sweet: 1 };
+            var STYLE_KEYS = { fine: 1, bbq: 1, casual: 1, bakery: 1, bar: 1 };
+
+            function applyPressed(btn, on) { btn.setAttribute('aria-pressed', on ? 'true' : 'false'); }
+
+            function syncRailWithFinder() {
+                document.querySelectorAll('.filter-rail .chip[data-rail]').forEach(function (b) {
+                    var key = b.getAttribute('data-rail');
+                    if (key in MEAL_KEYS) {
+                        applyPressed(b, state.meal.has(key));
+                        if (state.meal.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key === 'bbq' || key === 'bakery') {
+                        applyPressed(b, state.style.has(key));
+                        if (state.style.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key === 'burro') {
+                        applyPressed(b, state.where.has('burro'));
+                        if (state.where.has('burro')) state.rail.add('burro'); else state.rail.delete('burro');
+                    }
+                });
+            }
+
+            function syncFinderWithRail() {
+                document.querySelectorAll('#finder .chip[data-value]').forEach(function (b) {
+                    var grp = b.parentElement.getAttribute('data-filter-group');
+                    var v = b.getAttribute('data-value');
+                    if (grp === 'meal' && v in MEAL_KEYS) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.meal.add(v); else state.meal.delete(v);
+                    }
+                    if (grp === 'style' && (v === 'bbq' || v === 'bakery')) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.style.add(v); else state.style.delete(v);
+                    }
+                    if (grp === 'where' && v === 'burro') {
+                        applyPressed(b, state.rail.has('burro'));
+                        if (state.rail.has('burro')) state.where.add('burro'); else state.where.delete('burro');
+                    }
+                });
+            }
+
+            document.querySelectorAll('#finder .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var grp = btn.parentElement.getAttribute('data-filter-group');
+                    var v = btn.getAttribute('data-value');
+                    var set = state[grp];
+                    if (set) {
+                        if (set.has(v)) set.delete(v); else set.add(v);
+                    }
+                    if (grp === 'meal') applyPressed(btn, state.meal.has(v));
+                    if (grp === 'style') applyPressed(btn, state.style.has(v));
+                    if (grp === 'where') applyPressed(btn, state.where.has(v));
+                    syncRailWithFinder();
+                    applyFilters();
+                });
             });
+
+            document.querySelectorAll('.filter-rail .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var k = btn.getAttribute('data-rail');
+                    if (state.rail.has(k)) state.rail.delete(k); else state.rail.add(k);
+                    applyPressed(btn, state.rail.has(k));
+                    syncFinderWithRail();
+                    applyFilters();
+                });
+            });
+
+            document.getElementById('finder-clear').addEventListener('click', function () {
+                state.meal.clear(); state.style.clear(); state.where.clear(); state.rail.clear();
+                document.querySelectorAll('.chip[aria-pressed]').forEach(function (c) { applyPressed(c, false); });
+                applyFilters();
+            });
+
+            function cardMatches(card) {
+                var meals = (card.getAttribute('data-meal') || '').split(/\s+/);
+                var styles = (card.getAttribute('data-style') || '').split(/\s+/);
+                var region = card.getAttribute('data-region');
+                var reservable = card.getAttribute('data-reservable') === 'true';
+                var late = card.getAttribute('data-late') === 'true';
+                var family = card.getAttribute('data-family') === 'true';
+
+                if (state.meal.size) {
+                    var hit = false;
+                    state.meal.forEach(function (m) { if (meals.indexOf(m) !== -1) hit = true; });
+                    if (!hit) return false;
+                }
+                if (state.style.size) {
+                    var sh = false;
+                    state.style.forEach(function (s) { if (styles.indexOf(s) !== -1) sh = true; });
+                    if (!sh) return false;
+                }
+                if (state.where.has('burro') && region !== 'burro') return false;
+                if (state.where.has('highway') && region !== 'highway') return false;
+                if (state.where.has('lodge') && region !== 'lodge') return false;
+
+                if (state.rail.has('reservable') && !reservable) return false;
+                if (state.rail.has('late') && !late) return false;
+                if (state.rail.has('family') && !family) return false;
+
+                return true;
+            }
+
+            function applyFilters() {
+                var shown = 0;
+                document.querySelectorAll('[data-grid] .lodge-card').forEach(function (c) {
+                    if (cardMatches(c)) { c.hidden = false; shown++; }
+                    else { c.hidden = true; }
+                });
+                document.getElementById('filter-count-n').textContent = shown;
+
+                document.querySelectorAll('section.eat-block').forEach(function (sec) {
+                    var grid = sec.querySelector('[data-grid]');
+                    if (!grid) return;
+                    var visible = grid.querySelectorAll('.lodge-card:not([hidden])').length;
+                    sec.classList.toggle('section-hidden', visible === 0);
+                });
+
+                var empty = document.getElementById('empty-state');
+                if (shown === 0) empty.classList.add('is-visible');
+                else empty.classList.remove('is-visible');
+            }
+
+            // ---- Compare matrix ----
+            var eatData = {
+                blackbear:  { name: 'Black Bear Coffee',         href: 'black-bear-coffee-shop.html',   cat: 'Coffee',       meals: 'Coffee · sweet',       region: 'Burro',    hours: 'Varies',           res: 'No',  family: 'Yes', notes: 'Gallery space; seasonal drinks; GF/DF options.' },
+                daves:      { name: "Dave's Café",                href: 'daves-cafe.html',               cat: 'Bar &amp; grill',  meals: 'All day',              region: 'Burro',    hours: 'Varies',           res: 'No',  family: 'Yes', notes: 'Live music; check Wed/Thu hours.' },
+                western:    { name: 'Western Bar &amp; Cafe',         href: 'western-bar.html',              cat: 'Bar &amp; grill',  meals: 'All day',              region: 'Burro',    hours: 'Thu–Mon 11–close', res: 'No',  family: 'Yes', notes: 'Three-gen bar since 1950; closed Wed.' },
+                sandwich:   { name: 'Cloudcroft Sandwich Shop',  href: 'cloudcroft-sandwich-shop.html', cat: 'Deli',         meals: 'Lunch · sweet',        region: 'Burro',    hours: 'Daily 11–4 (closed Wed)', res: 'No', family: 'Yes', notes: 'Quick midday counter service.' },
+                eightcake:  { name: 'Eight the Cake',             href: 'eight-the-cake.html',           cat: 'Bakery',       meals: 'Coffee · sweet',       region: 'Burro',    hours: 'Varies',           res: 'No',  family: 'Yes', notes: 'Custom cakes; organic coffee; art gallery.' },
+                kennabelle: { name: 'KennaBelles Bakery',         href: 'kennabelle-bakery.html',        cat: 'Bakery',       meals: 'Coffee · sweet',       region: 'Burro',    hours: 'Call for hours',   res: 'No',  family: 'Yes', notes: 'Cinnamon rolls; pistachio bread.' },
+                noisywater: { name: 'Noisy Water Winery',         href: 'noisy-water-winery-2026.html',  cat: 'Winery',       meals: 'Drinks',               region: 'Burro',    hours: 'Varies',           res: 'No',  family: 'No',  notes: '30+ NM wines; green-chile wine.' },
+                oldbarrel:  { name: 'Old Barrel Tea Company',     href: 'old-barrel-tea-company.html',   cat: 'Tea',          meals: 'Coffee · drinks',      region: 'Burro',    hours: 'Varies',           res: 'No',  family: 'Yes', notes: 'Blended in-house; raw honey retail.' },
+                brewery:    { name: 'Cloudcroft Brewery',         href: 'brewery.html',                  cat: 'Brewery',      meals: 'Lunch · dinner · drinks', region: 'Burro', hours: 'Daily 11–9 (10 Fri–Sat); closed Tue', res: 'No', family: 'Yes', notes: 'Wood-fired pizza; live music Fri–Sun.' },
+                madjacks:   { name: "Mad Jack's Mountaintop BBQ", href: 'mad-jacks-bbq.html',            cat: 'BBQ',          meals: 'Lunch',                region: 'JC Hwy',   hours: 'Thu–Sun 11 until sold out', res: 'No', family: 'Yes', notes: 'Post-oak smoked; lines 2–3 hrs on weekends.' },
+                brothernlaw:{ name: 'Brother-N-Law BBQ',          href: 'brother-n-law-bbq.html',        cat: 'BBQ',          meals: 'Lunch · dinner',       region: 'JC Hwy',   hours: 'Daily 11–6 (closed Thu)', res: 'No', family: 'Yes', notes: 'Central TX style; faster than Mad Jack\'s.' },
+                dustyboots: { name: 'Dusty Boots Café',           href: 'dusty-boots-cafe.html',         cat: 'Country',      meals: 'All day',              region: 'JC Hwy',   hours: 'Summer 7 AM–9 PM', res: 'No',  family: 'Yes', notes: 'Saturday German night; GF/nut-free.' },
+                highrollin: { name: "High Rollin' Coffee",        href: 'high-rollin.html',              cat: 'Coffee',       meals: 'Breakfast · coffee · lunch', region: 'JC Hwy', hours: 'Mon–Tue 8–1; Fri–Sun 8–3', res: 'No', family: 'Yes', notes: 'Acai bowls; grain bowls; vegan options.' },
+                bigdaddys:  { name: "Big Daddy's Diner",          href: 'big-daddys.html',               cat: 'Diner',        meals: 'All day',              region: 'JC Hwy',   hours: 'Daily 7 AM–9 PM',  res: 'No',  family: 'Yes', notes: 'Longest hours in the area; catering.' },
+                eighteen99: { name: 'Eighteen99',                  href: 'eighteen99.html',               cat: 'Fine dining',  meals: 'Dinner · drinks',      region: 'Lodge',    hours: 'Wed–Sat 5–8 PM',   res: 'Yes', family: 'No',  notes: 'Cloudcroft\'s only fine-dining room.' },
+                standrews:  { name: "St. Andrew's Bar",           href: 'st-andrews-bar.html',           cat: 'Lounge',       meals: 'Drinks',               region: 'Lodge',    hours: 'With Eighteen99',  res: 'No',  family: 'No',  notes: 'Historic lounge inside The Lodge.' },
+                skifood:    { name: 'Ski Cloudcroft Food',        href: 'ski-cloudcroft-food-service.html', cat: 'Pizza',     meals: 'Lunch',                region: 'Hwy 82',   hours: 'Seasonal only',    res: 'No',  family: 'Yes', notes: 'Runs only when ski/tubing area is open.' },
+                levain:     { name: 'Levain It Up Sourdough',     href: 'levain.html',                   cat: 'Bakery',       meals: 'Sweet · coffee',       region: 'High Rolls', hours: 'Fri–Sun 2–6 PM', res: 'No',  family: 'Yes', notes: 'Sells out each day; grab-and-go only.' },
+                fernandos:  { name: "Fernando's",                  href: 'https://www.google.com/maps/search/?api=1&query=Fernando%27s+Mexican+Cloudcroft+NM', cat: 'Mexican', meals: 'Lunch · dinner', region: 'Unconfirmed', hours: 'Unconfirmed',      res: 'No',  family: 'Yes', notes: 'Call ahead — details unconfirmed.' }
+            };
+
+            var selected = new Set();
+
+            function okCell(v) {
+                if (v === 'Yes' || (typeof v === 'string' && v.indexOf('Yes') === 0)) return 'ok';
+                if (v === 'No' || v === 'Unconfirmed') return 'no';
+                return '';
+            }
+
+            function renderMatrix() {
+                var body = document.getElementById('matrix-body');
+                var count = document.getElementById('matrix-count');
+                if (selected.size === 0) {
+                    body.innerHTML = '<tr><td colspan="8" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>';
+                    count.textContent = 'Select restaurants above (check the Compare box on any card)';
+                    return;
+                }
+                count.textContent = selected.size + ' selected';
+                var rows = [];
+                selected.forEach(function (key) {
+                    var d = eatData[key]; if (!d) return;
+                    var isExternal = d.href.indexOf('http') === 0;
+                    var linkAttrs = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+                    rows.push(
+                        '<tr>' +
+                        '<td class="prop-name"><a href="' + d.href + '"' + linkAttrs + '>' + d.name + '</a></td>' +
+                        '<td>' + d.cat + '</td>' +
+                        '<td>' + d.meals + '</td>' +
+                        '<td>' + d.region + '</td>' +
+                        '<td>' + d.hours + '</td>' +
+                        '<td class="' + okCell(d.res) + '">' + d.res + '</td>' +
+                        '<td class="' + okCell(d.family) + '">' + d.family + '</td>' +
+                        '<td>' + d.notes + '</td>' +
+                        '</tr>'
+                    );
+                });
+                body.innerHTML = rows.join('');
+            }
+
+            document.querySelectorAll('.cmp').forEach(function (cb) {
+                cb.addEventListener('change', function () {
+                    var key = cb.getAttribute('data-property');
+                    if (cb.checked) selected.add(key); else selected.delete(key);
+                    renderMatrix();
+                });
+            });
+
+            applyFilters();
+            renderMatrix();
         })();
     </script>
 </body>
