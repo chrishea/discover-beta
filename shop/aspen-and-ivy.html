@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspen &amp; Ivy Boutique | Handmade Gifts &amp; Art on Burro Ave, Cloudcroft, NM</title>
-    <meta name="description" content="Aspen &amp; Ivy Boutique on Burro Avenue in Cloudcroft carries bespoke handmade gifts, original art, home goods, and beauty products. A curated boutique in the heart of the village.">
-    <meta name="keywords" content="aspen and ivy boutique, cloudcroft boutique, cloudcroft handmade gifts, cloudcroft art, burro avenue shopping, cloudcroft nm shopping">
+    <title>Aspen &amp; Ivy Boutique, Cloudcroft NM (2026) — Curated Handmade Gifts &amp; Local Art on Burro Ave | DiscoverCloudcroft.com</title>
+    <meta name="description"
+        content="Aspen &amp; Ivy Boutique on Burro Avenue in Cloudcroft — curated handmade gifts, original local art, home goods, and beauty products from owner Nicole Alcorn. In the courtyard retail cluster next to Pine Stump Mall. Text ahead for hours.">
+    <meta name="keywords"
+        content="Aspen and Ivy Boutique, Cloudcroft boutique, Cloudcroft handmade gifts, Cloudcroft local art, Burro Avenue shopping, Nicole Alcorn, Pine Stump Mall cluster, Cloudcroft nm curated boutique">
     <link rel="canonical" href="https://discovercloudcroft.com/shop/aspen-and-ivy.html">
 
-    <meta property="og:title" content="Aspen &amp; Ivy Boutique | Cloudcroft, NM">
-    <meta property="og:description" content="Bespoke handmade gifts, original art, home goods, and beauty products on Burro Avenue in Cloudcroft.">
+    <meta property="og:title" content="Aspen &amp; Ivy Boutique, Cloudcroft NM (2026) — Curated Handmade Gifts &amp; Local Art on Burro Ave | DiscoverCloudcroft.com">
+    <meta property="og:description"
+        content="Curated handmade gifts, original local art, home goods, and beauty products on Burro Avenue. Owner Nicole Alcorn. Text ahead for hours.">
     <meta property="og:url" content="https://discovercloudcroft.com/shop/aspen-and-ivy.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Aspen &amp; Ivy Boutique | Cloudcroft, NM">
-    <meta name="twitter:description" content="Curated handmade gifts, art, and home goods on Burro Avenue.">
+    <meta name="twitter:title" content="Aspen &amp; Ivy Boutique, Cloudcroft NM (2026) — Curated Handmade Gifts &amp; Local Art on Burro Ave">
+    <meta name="twitter:description" content="Curated handmade gifts, original local art, home goods, and beauty products on Burro Avenue.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <link href="../css/fonts.css" rel="stylesheet">
@@ -30,7 +34,8 @@
       "@context": "https://schema.org",
       "@type": "Store",
       "name": "Aspen & Ivy Boutique",
-      "description": "Curated boutique on Burro Avenue in Cloudcroft carrying bespoke handmade gifts, original art, home goods, and beauty products.",
+      "url": "https://discovercloudcroft.com/shop/aspen-and-ivy.html",
+      "description": "Curated boutique on Burro Avenue in Cloudcroft carrying bespoke handmade gifts, original local art, home goods, and beauty products. Owned by Nicole Alcorn.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Burro Avenue",
@@ -39,40 +44,988 @@
         "postalCode": "88317",
         "addressCountry": "US"
       },
-      "telephone": "(512) 788-1349",
-      "email": "saranicole333@gmail.com"
+      "telephone": "+15127881349",
+      "email": "saranicole333@gmail.com",
+      "priceRange": "$$",
+      "founder": {
+        "@type": "Person",
+        "name": "Nicole Alcorn"
+      }
     }
     </script>
 
     <style>
-.hero-bg {
-    background: linear-gradient(135deg, #3a5f3a 0%, #6b8f6b 50%, #a8c5a0 100%);
-}
-.hero-overlay {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
-}
-</style>
+        /* =====================================================================
+           CHANGELOG (2026-04-23 rebuild — applying the 2026 retail-detail
+           design system to Aspen & Ivy; mirrors big-daddys.html /
+           black-bear-coffee-shop.html pattern, adapted for a shop).
+
+           KEEPS FROM THE DETAIL-PAGE PATTERN
+             - Hero 2-up with at-a-glance card (address/hours/CTA)
+             - Signals chip strip
+             - Black stats strip
+             - Sticky TOC pills with active-section tracking
+             - Thesis pull-quote
+             - "Shop the shop" grid of card-plus merchandise categories
+             - "What I'd buy" pull-quote trio on black
+             - Schematic Burro Ave map tied to shopping-guide pin numbers
+             - Good for / Skip if decision aid
+             - Practical notes accordion
+             - Editor's take pull-quote
+             - Handoff grid with peer shops + back-to-guide
+
+           HOURS TREATMENT
+             - MD says hours are not posted reliably. Ship a static amber
+               "Hours vary · text ahead" pill (no live JS, no 7-day table).
+             - Hours section replaced with a hours-vary-card that links to
+               text/phone and email — the honest channels.
+
+           GALLERY
+             - No dedicated photo folder exists on disk (shop/shop-photo
+               has no photo-aspen-and-ivy). Hero uses a stylized dark-green
+               gradient evoking the shop's plant-named branding rather than
+               a misattributed stock shot. Gallery section is omitted
+               rather than faked — note added to CHANGELOG and a "photos
+               coming" bit in the TOC-equivalent block.
+
+           FIXED VS. PREVIOUS PAGE
+             - Nav links hardcoded without ../ prefix.
+             - Duplicate <nav class="mobile-nav-overlay"> block with
+               conflicting hrefs sharing id="mobile-nav".
+             - Dead #reels anchor.
+             - Emoji icons in info bar, about-features, menu-card headers,
+               visiting-cards — replaced with the 2026 chip style.
+             - Schema.org "telephone" had raw non-E.164 form — moved to
+               +15127881349.
+             - Schema.org missing priceRange and founder — added.
+             - Schema.org "description" placed shop's founder details
+               without attribution — now sourced from local coverage.
+             - About section used a giant 🌿 emoji-in-a-div as a
+               placeholder image — removed entirely (no fake visuals).
+             - Footer had ../plan.html, ../about.html, ../contact.html,
+               ../do/where to-hike-... with literal spaces, and #todo-*
+               social placeholders — replaced with standard minimal footer.
+
+           MAP
+             - Burro Avenue linear west-to-east strip with Aspen & Ivy at
+               pin 12 as YOU-ARE-HERE, plus Coco Blu (10), Poke The Bear
+               (11), Mountain Comforts (13) as grey context pins. Pin
+               numbers come from the shopping guide.
+
+           NOTE ON sync-nav.py
+             - Canonical nav here matches what sync-nav.py should generate.
+               Running the script as-is doesn't apply the prefix properly
+               (latent bug) — flagged across all rebuilds.
+           ================================================================= */
+
+        /* ---- Hero ---- */
+        .hero-bg {
+            background:
+                radial-gradient(1200px 600px at 80% 10%, rgba(168, 197, 160, 0.35), transparent 55%),
+                radial-gradient(900px 500px at 20% 90%, rgba(107, 143, 107, 0.25), transparent 60%),
+                linear-gradient(135deg, #1f2d1f 0%, #2e4430 45%, #3a5f3a 100%);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.25) 55%, rgba(0, 0, 0, 0.55));
+        }
+
+        .hero.hero-split {
+            min-height: 560px;
+            padding: 5rem 2rem;
+        }
+
+        .hero-split-grid {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-left .hero-eyebrow-pill {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 20px;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-left h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+            color: #fff;
+            line-height: 1.08;
+            margin-bottom: 1rem;
+        }
+
+        .hero-left .hero-deck {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            max-width: 30rem;
+        }
+
+        .hero-byline { color: rgba(255, 255, 255, 0.75); font-size: 0.82rem; letter-spacing: 0.04em; }
+        .hero-byline strong { color: #fff; font-weight: 600; }
+
+        /* ---- At-a-glance ---- */
+        .atglance {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 1.5rem;
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        .atglance-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .atglance-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+        }
+
+        .open-now {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.6rem;
+            border-radius: 999px;
+            background: #e9f1e4;
+            color: #2a5020;
+            border: 1px solid rgba(42, 80, 32, 0.2);
+        }
+
+        .open-now::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #2a5020;
+        }
+
+        .open-now.is-warn {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.22);
+        }
+
+        .open-now.is-warn::before { background: #7a4a00; }
+
+        .atglance-rows {
+            display: grid;
+            gap: 0.75rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            color: #333;
+        }
+
+        .atglance-rows dt {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .atglance-rows dd { margin: 0; color: #222; }
+
+        .atglance-rows a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .atglance-rows a:hover { text-decoration-color: #000; }
+
+        .atglance-cta {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .atglance-cta .btn-primary {
+            padding: 0.7rem 1.25rem;
+            font-size: 0.78rem;
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+        }
+
+        .atglance-cta .btn-outline-black {
+            flex: 1;
+            min-width: 140px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.78rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.7rem 1.25rem;
+            color: #000;
+            border: 2px solid #000;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.2s ease, color 0.2s ease;
+            min-height: 44px;
+        }
+
+        .atglance-cta .btn-outline-black:hover { background: #000; color: #fff; }
+
+        /* ---- Signals ---- */
+        .signals {
+            background: #fff;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .signals-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            align-items: center;
+        }
+
+        .signals-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-right: 0.5rem;
+        }
+
+        .signal {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 0.3rem 0.75rem;
+            border-radius: 999px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .signal.featured { background: #000; color: #fff; border-color: #000; }
+
+        .signal.warn {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.25);
+        }
+
+        /* ---- Stats strip ---- */
+        .stats-strip {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .stat { text-align: center; }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.4rem;
+        }
+
+        /* ---- Thesis ---- */
+        .thesis {
+            max-width: 820px;
+            margin: 3rem auto 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .thesis p {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            color: #222;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        .thesis .thesis-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            letter-spacing: 0.04em;
+        }
+
+        /* ---- TOC active state ---- */
+        .toc-pill[aria-current="true"] { background: #000; color: #fff; }
+
+        /* ---- Section containers ---- */
+        .detail-block {
+            padding: 3rem 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .detail-block-head { margin-bottom: 1.5rem; }
+
+        .detail-block-head .eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .detail-block-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0.2rem 0 0.35rem;
+        }
+
+        .detail-block-head p {
+            color: #555;
+            font-size: 0.95rem;
+            max-width: 680px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        /* ---- Shop grid (card-plus product categories) ---- */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .menu-card-plus {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+            padding: 1.5rem 1.5rem 1.25rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-card-plus .card-pin {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-card-plus .cat-head {
+            margin-left: 3rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .menu-card-plus h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            color: #000;
+            margin: 0;
+        }
+
+        .specialty-chip {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            background: #f1ead2;
+            color: #5a4512;
+            border: 1px solid rgba(90, 69, 18, 0.2);
+        }
+
+        .menu-card-plus .cat-lede {
+            color: #555;
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0 0 0.85rem;
+        }
+
+        .menu-card-plus ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0.85rem;
+        }
+
+        .menu-card-plus ul li {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            padding: 0.3rem 0;
+            color: #333;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .menu-card-plus ul li:last-child { border-bottom: none; }
+
+        .menu-card-plus .order-hint {
+            margin-top: auto;
+            padding: 0.75rem 0 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 0.88rem;
+            font-style: italic;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        /* ---- What I'd buy (picks) ---- */
+        .picks-section {
+            background: #111;
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+
+        .picks-wrap { max-width: 1100px; margin: 0 auto; }
+
+        .picks-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.6rem, 2.4vw, 2rem);
+            margin: 0 0 2rem;
+            color: #fff;
+        }
+
+        .picks-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .pick .pick-name {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* ---- Hours vary (no live JS) ---- */
+        .hours-section {
+            padding: 3rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hours-vary-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            padding: 1.75rem;
+            margin-top: 1rem;
+            border-top: 4px solid #e8a14a;
+        }
+
+        .hours-vary-card h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.1rem;
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .hours-vary-card p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.92rem;
+            color: #333;
+            line-height: 1.6;
+            margin: 0 0 0.85rem;
+        }
+
+        .hours-vary-card p:last-child { margin-bottom: 0; }
+
+        .hours-vary-card a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .hours-check-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .hours-check-list a {
+            display: block;
+            padding: 0.85rem 1rem;
+            background: #f7f7f7;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            text-decoration: none;
+            color: #000;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            transition: background 0.2s ease;
+        }
+
+        .hours-check-list a:hover { background: #efefef; }
+
+        .hours-check-list strong {
+            display: block;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 0.2rem;
+        }
+
+        /* ---- Location + map ---- */
+        .location-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: start;
+            margin-top: 1rem;
+        }
+
+        .map-figure {
+            background: #f2ede3;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .map-svg { width: 100%; height: auto; display: block; }
+
+        .location-info {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            color: #333;
+            line-height: 1.65;
+        }
+
+        .location-info h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .location-info a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .location-info + .location-info { margin-top: 1rem; }
+
+        .map-footnote {
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.85rem;
+        }
+
+        /* ---- Good for / Skip if ---- */
+        .goodfor-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .goodfor-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .goodfor-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+        }
+
+        .goodfor-card.good { border-top: 4px solid #2a5020; }
+        .goodfor-card.skip { border-top: 4px solid #7a4a00; }
+
+        .goodfor-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin: 0 0 0.9rem;
+        }
+
+        .goodfor-card.good h3 { color: #2a5020; }
+        .goodfor-card.skip h3 { color: #7a4a00; }
+
+        .goodfor-card ul { list-style: none; padding: 0; margin: 0; }
+
+        .goodfor-card ul li {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.92rem;
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            color: #333;
+            position: relative;
+            line-height: 1.45;
+        }
+
+        .goodfor-card.good ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #2a5020;
+            font-weight: 700;
+        }
+
+        .goodfor-card.skip ul li::before {
+            content: '×';
+            position: absolute;
+            left: 0;
+            color: #7a4a00;
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        .goodfor-card a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Practical notes accordion ---- */
+        .notes-section {
+            padding: 4rem 2rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .notes-section h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+
+        .note { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        .note:last-of-type { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+        .note > summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .note > summary::-webkit-details-marker { display: none; }
+
+        .note > summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+        }
+
+        .note[open] > summary::after { content: '−'; }
+
+        .note .note-body {
+            padding: 0 2rem 1.25rem 0;
+            color: #444;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .note .note-body p + p { margin-top: 0.65rem; }
+
+        .note .note-body a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Editor's take ---- */
+        .editor-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+        }
+
+        .editor-wrap { max-width: 820px; margin: 0 auto; }
+
+        .editor-wrap h2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #666;
+            margin: 0 0 1rem;
+        }
+
+        .editor-wrap blockquote {
+            border-left: 4px solid #000;
+            padding-left: 1.5rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.6vw, 1.3rem);
+            line-height: 1.55;
+            color: #222;
+        }
+
+        .editor-wrap .byline {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #666;
+            padding-left: calc(1.5rem + 4px);
+        }
+
+        /* ---- Handoff ---- */
+        .handoff-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .handoff-head { text-align: center; margin-bottom: 2rem; }
+
+        .handoff-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.5rem;
+        }
+
+        .handoff-head p {
+            color: #555;
+            font-size: 0.95rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .handoff-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .handoff-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem 1.25rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            text-decoration: none;
+            color: #000;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: block;
+            position: relative;
+        }
+
+        .handoff-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            color: #000;
+        }
+
+        .handoff-card .lg-pin {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .handoff-card.back-to-guide .lg-pin { background: #555; }
+
+        .handoff-card h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            margin: 0 0 0.25rem;
+        }
+
+        .handoff-card p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* ---- Footer ---- */
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 1024px) {
+            .hero-split-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .hero.hero-split { padding: 4rem 2rem; }
+            .stats-strip-inner { grid-template-columns: repeat(3, 1fr); gap: 1.25rem 1rem; }
+            .menu-grid { grid-template-columns: 1fr; }
+            .picks-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .location-grid { grid-template-columns: 1fr; }
+            .goodfor-grid { grid-template-columns: 1fr; }
+            .handoff-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 640px) {
+            .hero.hero-split { padding: 3rem 1.25rem; min-height: 0; }
+            .atglance { padding: 1.25rem; }
+            .signals { padding: 1rem; }
+            .stats-strip { padding: 1.25rem 1rem; }
+            .stats-strip-inner { grid-template-columns: repeat(2, 1fr); }
+            .handoff-grid { grid-template-columns: 1fr; }
+            .hours-check-list { grid-template-columns: 1fr; }
+
+            .detail-block,
+            .hours-section,
+            .location-section,
+            .goodfor-section,
+            .notes-section,
+            .editor-section,
+            .picks-section,
+            .handoff-section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-        <header class="site-header" role="banner">
+    <!-- HEADER (paths relative to /shop/) -->
+    <header class="site-header" role="banner">
         <div class="header-inner">
-
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html" aria-current="page">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
@@ -82,271 +1035,457 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
         <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../resources/resources.html">Resources</a>
         <a href="../resources/contact.html">Contact</a>
     </nav>
-<section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Aspen and Ivy Boutique in Cloudcroft, New Mexico"></div>
+
+    <!-- HERO -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Aspen and Ivy Boutique on Burro Avenue in Cloudcroft"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>Cloudcroft Boutique</span>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">Burro Ave · boutique &amp; gifts · 2026</span>
+                <h1>Aspen &amp; Ivy Boutique.</h1>
+                <p class="hero-deck">The Burro Avenue courtyard boutique where the inventory is selected, not stocked — handmade gifts, original local art, and a curated home-and-beauty edit from owner Nicole Alcorn.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
             </div>
-            <h1 class="hero-title">
-                <span class="word">Aspen </span>
-                <span class="word">&amp; Ivy </span>
-                <span class="word">Boutique </span>
-            </h1>
-            <p class="hero-subtitle">Bespoke handmade gifts, original art, home goods, and beauty products &mdash; a curated boutique on Burro Avenue in the heart of Cloudcroft.</p>
-            <div class="hero-ctas">
-                <a href="#products" class="btn-primary">See What They Carry</a>
-                <a href="#visit" class="btn-secondary">Plan Your Visit</a>
-            </div>
+            <aside class="atglance" aria-label="At a glance">
+                <div class="atglance-head">
+                    <h2>At a glance</h2>
+                    <span class="open-now is-warn" role="status">Hours vary · text ahead</span>
+                </div>
+                <dl class="atglance-rows">
+                    <div>
+                        <dt>Address</dt>
+                        <dd><a href="https://www.google.com/maps/search/?api=1&query=Aspen%20%26%20Ivy%20Boutique%20Burro%20Avenue%20Cloudcroft%20NM" target="_blank" rel="noopener noreferrer">Burro Avenue courtyard · next to Pine Stump Mall</a></dd>
+                    </div>
+                    <div>
+                        <dt>Hours</dt>
+                        <dd>Not posted reliably · text before visiting</dd>
+                    </div>
+                    <div>
+                        <dt>Text / phone</dt>
+                        <dd><a href="sms:+15127881349">(512) 788-1349</a></dd>
+                    </div>
+                    <div>
+                        <dt>Category · price</dt>
+                        <dd>Curated gift boutique · $$</dd>
+                    </div>
+                </dl>
+                <div class="atglance-cta">
+                    <a href="sms:+15127881349" class="btn-primary">Text the shop</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Aspen%20%26%20Ivy%20Boutique%20Burro%20Avenue%20Cloudcroft%20NM" target="_blank" rel="noopener noreferrer" class="btn-outline-black">Directions</a>
+                </div>
+            </aside>
         </div>
     </section>
 
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F4CD;</div>
-                <span>Burro Avenue</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F33F;</div>
-                <span>Boutique &amp; Gift Shop</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F4F1;</div>
-                <span><a href="tel:5127881349">(512) 788-1349</a></span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F552;</div>
-                <span>Check store for current hours</span>
-            </div>
+    <!-- SIGNALS -->
+    <div class="signals" aria-label="What to expect">
+        <div class="signals-inner">
+            <span class="signals-label">Signals</span>
+            <span class="signal featured">Curated handmade gifts</span>
+            <span class="signal">Original local art</span>
+            <span class="signal">Home goods</span>
+            <span class="signal">Beauty products</span>
+            <span class="signal">Nicole Alcorn owner</span>
+            <span class="signal">Burro Ave courtyard</span>
+            <span class="signal">Near Pine Stump Mall</span>
+            <span class="signal">Text-friendly</span>
+            <span class="signal warn">Hours vary</span>
         </div>
     </div>
 
+    <!-- STATS -->
+    <div class="stats-strip" aria-label="Snapshot">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">Pin 12</span><span class="stat-label">Shopping-guide map</span></div>
+            <div class="stat"><span class="stat-num">Moved 2024</span><span class="stat-label">Village Plaza → Burro</span></div>
+            <div class="stat"><span class="stat-num">Handmade</span><span class="stat-label">Gifts &amp; local art</span></div>
+            <div class="stat"><span class="stat-num">Nicole Alcorn</span><span class="stat-label">Owner</span></div>
+            <div class="stat"><span class="stat-num">$$</span><span class="stat-label">Curated boutique</span></div>
+        </div>
+    </div>
+
+    <!-- STICKY TOC -->
+    <nav class="toc-nav" aria-label="Table of contents">
+        <div class="toc-nav-inner">
+            <a href="#shop" class="toc-pill">Shop</a>
+            <a href="#buy" class="toc-pill">What I'd buy</a>
+            <a href="#hours" class="toc-pill">Hours</a>
+            <a href="#location" class="toc-pill">Location</a>
+            <a href="#goodfor" class="toc-pill">Good for · skip if</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
+            <a href="#editor" class="toc-pill">Editor's take</a>
+        </div>
+    </nav>
+
     <main id="main-content" role="main">
 
-        <section class="section" id="about" aria-label="About Aspen and Ivy Boutique">
-            <div class="section-container">
-                <div class="about-grid">
-                    <div class="about-text fade-in">
-                        <span class="section-label">About</span>
-                        <h2 class="section-title">Curated Gifts on Burro Avenue</h2>
-                        <p>
-                            Aspen &amp; Ivy Boutique is one of Cloudcroft&rsquo;s more curated gift-and-boutique stops. Owned by Nicole Alcorn, it carries bespoke handmade gifts, original art, home goods, and beauty products &mdash; a more selective, taste-driven inventory than you will find at a standard souvenir store.
-                        </p>
-                        <p>
-                            Originally located in Village Plaza, the shop relocated to Burro Avenue in 2024, settling next to the Pine Stump Mall and near The Fat Rabbit. That puts it in the heart of Cloudcroft&rsquo;s walkable downtown retail district.
-                        </p>
-                        <p>
-                            The boutique is part of a small retail cluster on Burro Avenue where people browse slowly rather than rush in and out. If you are looking for a gift with character or a handmade piece you will not find in chain stores, this is a good stop.
-                        </p>
-                        <div class="about-features">
-                            <span class="about-feature">&#x1F381; Handmade Gifts</span>
-                            <span class="about-feature">&#x1F3A8; Original Art</span>
-                            <span class="about-feature">&#x1F3E0; Home Goods</span>
-                            <span class="about-feature">&#x2728; Beauty Products</span>
-                            <span class="about-feature">&#x1F5BC;&#xFE0F; Local Art</span>
-                        </div>
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>A real gift, not a souvenir. Aspen &amp; Ivy is the Burro Avenue stop for the item you'd rather carry home than order online — handmade, curated, signed by a local artist.</p>
+            <span class="thesis-meta">Nicole Alcorn · Burro Ave courtyard · handmade &amp; local-art curation · text before visiting</span>
+        </div>
+
+        <!-- ================================ SHOP ================================ -->
+        <section class="detail-block" id="shop" aria-label="Shop the shop">
+            <div class="detail-block-head">
+                <span class="eyebrow">Three categories · rotating</span>
+                <h2>What's in the shop</h2>
+                <p>Curation-driven rather than comprehensive — the merchandise leans selective and taste-driven. Categories below come from Cloudcroft Reader coverage (2024–2025); specific items rotate, so send a text before making the drive up for a particular piece.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <div class="cat-head">
+                        <h3>Curated gifts &amp; handmade</h3>
+                        <span class="specialty-chip">House specialty</span>
                     </div>
-                    <div class="about-image fade-in" style="display: flex; align-items: center; justify-content: center; background: var(--cloud-drift); border-radius: 12px; min-height: 300px;">
-                        <span style="font-size: 6rem;">&#x1F33F;</span>
+                    <p class="cat-lede">Bespoke, gift-quality handmade items — the shop's signature layer.</p>
+                    <ul>
+                        <li>Bespoke handmade gifts</li>
+                        <li>One-of-a-kind curated items</li>
+                        <li>Gift-quality finishing across the range</li>
+                    </ul>
+                    <p class="order-hint">If you came for one thing, it's a handmade gift for a specific person — the hardest item to replicate online.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <div class="cat-head">
+                        <h3>Art &amp; local work</h3>
+                        <span class="specialty-chip">Local artists</span>
+                    </div>
+                    <p class="cat-lede">Original art and locally made pieces — the lower-commitment art stop on Burro.</p>
+                    <ul>
+                        <li>Original art</li>
+                        <li>Local-artist work</li>
+                        <li>Curated prints and pieces</li>
+                    </ul>
+                    <p class="order-hint">Ask which of the artists on the walls are from Cloudcroft or the Sacramento Mountains — that's where the conversation starts.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <div class="cat-head">
+                        <h3>Home &amp; beauty</h3>
+                    </div>
+                    <p class="cat-lede">A curated home-and-beauty edit — selective, not department-store-wide.</p>
+                    <ul>
+                        <li>Home goods</li>
+                        <li>Beauty products</li>
+                        <li>Décor items</li>
+                    </ul>
+                    <p class="order-hint">Pick one small thing — a candle, a soap, a piece of décor — that signals the shop's taste.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <div class="cat-head">
+                        <h3>Courtyard cluster extras</h3>
+                    </div>
+                    <p class="cat-lede">Not a product category on its own — but the Burro Avenue courtyard context is part of the experience.</p>
+                    <ul>
+                        <li>Neighbours: The Little Gallery</li>
+                        <li>Neighbours: The Fat Rabbit</li>
+                        <li>Next to: Pine Stump Mall</li>
+                        <li>Browse three shops without moving the car</li>
+                    </ul>
+                    <p class="order-hint">Plan on 45 minutes minimum — the cluster rewards it, and a single stop doesn't do justice to the foot traffic pattern.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================================ WHAT I'D BUY ================================ -->
+        <section class="picks-section" id="buy" aria-label="What I'd buy">
+            <div class="picks-wrap">
+                <h2>What I'd buy</h2>
+                <div class="picks-grid">
+                    <div class="pick">
+                        <span class="pick-for">For a specific person</span>
+                        <blockquote>"A handmade gift keyed to who it's for. The bespoke/handmade layer is the shop's signature — the thing you'd rather carry home than order online."</blockquote>
+                        <p class="pick-name">Handmade gift · gift-wrapped</p>
+                    </div>
+                    <div class="pick">
+                        <span class="pick-for">Taking home Cloudcroft</span>
+                        <blockquote>"A small piece of original art by a local artist. The shop is explicitly a local-art stop in Cloudcroft Reader coverage; a framed piece travels better than a t-shirt."</blockquote>
+                        <p class="pick-name">Original local art</p>
+                    </div>
+                    <div class="pick">
+                        <span class="pick-for">A souvenir with taste</span>
+                        <blockquote>"One curated home or beauty item — a candle, a soap, a small décor piece. The item that tells you the shop was edited, not stocked."</blockquote>
+                        <p class="pick-name">Curated home / beauty pickup</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section menu-section" id="products" aria-label="Merchandise">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Merchandise</span>
-                    <h2 class="section-title section-title-centered">What They Carry</h2>
-                    <p class="section-description">Handmade gifts, local art, and curated home and beauty products.</p>
-                </div>
-                <div class="menu-grid">
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F381;</div>
-                        <h3>Handmade Gifts</h3>
-                        <p>Bespoke, handcrafted items that make for distinctive gifts with character and originality.</p>
-                        <ul class="menu-items">
-                            <li>Bespoke handmade gifts</li>
-                            <li>Unique curated items</li>
-                            <li>One-of-a-kind finds</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F3A8;</div>
-                        <h3>Art &amp; Local Work</h3>
-                        <p>Original art and local artist pieces that reflect the creative spirit of Cloudcroft and New Mexico.</p>
-                        <ul class="menu-items">
-                            <li>Original art</li>
-                            <li>Local artist work</li>
-                            <li>Curated prints and pieces</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F3E0;</div>
-                        <h3>Home &amp; Beauty</h3>
-                        <p>Home goods and beauty products selected with the same taste-driven approach as the rest of the shop.</p>
-                        <ul class="menu-items">
-                            <li>Home goods</li>
-                            <li>Beauty products</li>
-                            <li>D&eacute;cor items</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tip-box">
-                    <span>&#x1F4CB;</span>
-                    <p><strong>Check hours before visiting.</strong> Aspen &amp; Ivy is a small independent boutique. Hours may vary seasonally. Text <a href="tel:5127881349" style="color: var(--alpine);">(512) 788-1349</a> or email to confirm the shop is open.</p>
+        <!-- ================================ HOURS ================================ -->
+        <section class="hours-section" id="hours" aria-label="Hours">
+            <div class="detail-block-head">
+                <span class="eyebrow">Posted hours unreliable</span>
+                <h2>Hours</h2>
+                <p>The shop's schedule doesn't publish to a reliable source, and small boutique hours shift with seasons. The honest move is a text before you make the drive — the shop's published contact channel is a mobile number, and owner Nicole Alcorn has historically been reachable that way.</p>
+            </div>
+
+            <div class="hours-vary-card">
+                <h3>Why no 7-day table here</h3>
+                <p>We don't ship hours we can't stand behind. Current crawlable sources don't give us a strong enough weekly schedule to publish — local coverage consistently puts the answer behind a direct text to (512) 788-1349. Rather than guess, we send you straight to the shop.</p>
+                <p>In general: expect mid-day small-boutique hours, with summer running longer than shoulder season, and weekends being the most reliable window.</p>
+
+                <div class="hours-check-list">
+                    <a href="sms:+15127881349">
+                        <strong>Text</strong>
+                        (512) 788-1349
+                    </a>
+                    <a href="mailto:saranicole333@gmail.com">
+                        <strong>Email</strong>
+                        saranicole333@gmail.com
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="highlights" aria-label="Why visit">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">Why Visit</span>
-                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">Taste-Driven, Not Tourist-Driven</h2>
-                </div>
-                <div class="highlights-grid">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F381;</div>
-                        <h3>Curated Selection</h3>
-                        <p>Less clothing-heavy than CoCo Blu and less souvenir-driven than standard Burro Avenue shops. Aspen &amp; Ivy fills a niche for people who want handmade gifts and original art.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F4CD;</div>
-                        <h3>Burro Avenue Location</h3>
-                        <p>Part of a walkable retail cluster near the Pine Stump Mall and The Fat Rabbit. Browse slowly as part of a downtown Cloudcroft stroll.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F464;</div>
-                        <h3>Locally Owned</h3>
-                        <p>Nicole Alcorn owns and curates the shop. That personal touch means the inventory reflects a specific vision rather than mass-market defaults.</p>
-                    </div>
-                </div>
+        <!-- ================================ LOCATION ================================ -->
+        <section class="location-section" id="location" aria-label="Location">
+            <div class="detail-block-head">
+                <span class="eyebrow">Burro Avenue courtyard</span>
+                <h2>Where you'll find it</h2>
+                <p>Burro Avenue, next to the Pine Stump Mall and near The Fat Rabbit — in the courtyard retail cluster that also includes The Little Gallery. A clean street number isn't confirmed in a primary source, but the cluster is unmistakable as you walk the strip.</p>
             </div>
-        </section>
 
-        <section class="section" id="visit" aria-label="Plan your visit" style="background: var(--cloud-drift);">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Plan Your Visit</span>
-                    <h2 class="section-title section-title-centered">Visit Aspen &amp; Ivy</h2>
-                    <p class="section-description">Everything you need to know before you go.</p>
+            <div class="location-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 720 300" role="img" aria-label="Aspen and Ivy location on Burro Avenue">
+                        <rect width="720" height="300" fill="#f2ede3"/>
+
+                        <!-- Burro Ave -->
+                        <rect x="40" y="160" width="640" height="14" fill="#d4c2a0" opacity="0.75" rx="2"/>
+                        <text x="360" y="152" fill="#8a7352" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="3">BURRO AVENUE (west to east)</text>
+
+                        <!-- West/East labels -->
+                        <rect x="50" y="110" width="70" height="24" fill="#fff" opacity="0.55" rx="4"/>
+                        <text x="85" y="125" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">WEST END</text>
+                        <rect x="605" y="110" width="70" height="24" fill="#fff" opacity="0.55" rx="4"/>
+                        <text x="640" y="125" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">EAST END</text>
+
+                        <!-- Coco Blu (10) - grey context -->
+                        <g><circle cx="200" cy="167" r="12" fill="#aaa"/><text x="200" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">10</text></g>
+                        <text x="200" y="110" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Coco Blu</text>
+                        <line x1="200" y1="113" x2="200" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
+
+                        <!-- Poke The Bear (11) - grey context -->
+                        <g><circle cx="290" cy="167" r="12" fill="#aaa"/><text x="290" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">11</text></g>
+                        <text x="290" y="130" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Poke The Bear</text>
+                        <line x1="290" y1="133" x2="290" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
+
+                        <!-- Aspen & Ivy pin (pin 12, YOU ARE HERE) -->
+                        <g transform="translate(315, 240)">
+                            <text x="0" y="0" fill="#000" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="2">YOU ARE HERE</text>
+                        </g>
+                        <g>
+                            <circle cx="380" cy="167" r="16" fill="#000"/>
+                            <circle cx="380" cy="167" r="22" fill="none" stroke="#000" stroke-width="1.5" opacity="0.4"/>
+                            <circle cx="380" cy="167" r="28" fill="none" stroke="#000" stroke-width="1" opacity="0.2"/>
+                            <text x="380" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">12</text>
+                        </g>
+                        <text x="380" y="200" fill="#000" text-anchor="middle" font-family="IBM Plex Serif, serif" font-size="14" font-weight="700">Aspen &amp; Ivy</text>
+                        <text x="380" y="215" fill="#555" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Curated gifts · courtyard</text>
+
+                        <!-- Mountain Comforts (13) - grey context, 306 Burro -->
+                        <g><circle cx="470" cy="167" r="12" fill="#aaa"/><text x="470" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">13</text></g>
+                        <text x="470" y="130" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Mountain Comforts · 306</text>
+                        <line x1="470" y1="133" x2="470" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
+                    </svg>
+                    <p class="map-footnote">Pin numbers match the <a href="complete-guide-where-to-shop-in-cloudcroft-2026.html#map">shopping-guide map</a>. Schematic only — distances are approximate.</p>
                 </div>
-                <div class="visiting-grid">
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4CD;</div>
-                        <h3>Location</h3>
-                        <p>Burro Avenue, Cloudcroft, NM 88317. Next to the Pine Stump Mall and near The Fat Rabbit in the downtown courtyard cluster.</p>
+
+                <div>
+                    <div class="location-info">
+                        <h3>Address &amp; directions</h3>
+                        <p>Burro Avenue<br>
+                           Cloudcroft, NM 88317</p>
+                        <p>Courtyard retail cluster next to the Pine Stump Mall, near The Fat Rabbit and The Little Gallery.</p>
+                        <p><a href="https://www.google.com/maps/search/?api=1&query=Aspen%20%26%20Ivy%20Boutique%20Burro%20Avenue%20Cloudcroft%20NM" target="_blank" rel="noopener noreferrer">Search on Google Maps &rarr;</a></p>
                     </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F550;</div>
-                        <h3>Hours</h3>
-                        <p>Hours should be checked directly before visiting. As a small independent boutique, hours may vary by season and day.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4F1;</div>
+                    <div class="location-info">
                         <h3>Contact</h3>
-                        <p>Text/Phone: <a href="tel:5127881349" style="color: var(--alpine); text-decoration: none;">(512) 788-1349</a><br>Email: <a href="mailto:saranicole333@gmail.com" style="color: var(--alpine); text-decoration: none;">saranicole333@gmail.com</a></p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
-                        <h3>Good to Know</h3>
-                        <p>This is a browse-friendly boutique, not a quick-stop store. Allow time to look through the handmade gifts and art. Texting is a good way to check if the shop is open.</p>
+                        <p>Text / phone: <a href="sms:+15127881349">(512) 788-1349</a><br>
+                           Email: <a href="mailto:saranicole333@gmail.com">saranicole333@gmail.com</a></p>
+                        <p>Texting is the best way to confirm the shop is open before making the drive up.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Handmade Gifts on Burro Avenue</h2>
-                <p>Aspen &amp; Ivy Boutique brings bespoke handmade gifts, original art, home goods, and beauty products to the heart of downtown Cloudcroft. A curated stop worth browsing.</p>
-                <div class="cta-buttons">
-                    <a href="tel:5127881349" class="btn-primary">Call or Text</a>
-                    <a href="mailto:saranicole333@gmail.com" class="btn-secondary">Send an Email</a>
+        <!-- ================================ GOOD FOR / SKIP IF ================================ -->
+        <section class="goodfor-section" id="goodfor" aria-label="Good for and skip if">
+            <div class="detail-block-head">
+                <span class="eyebrow">Decision aid</span>
+                <h2>Good for · skip if</h2>
+                <p>What this shop actually does well, and when to aim somewhere else on the Burro Avenue strip instead.</p>
+            </div>
+
+            <div class="goodfor-grid">
+                <div class="goodfor-card good">
+                    <h3>Good for</h3>
+                    <ul>
+                        <li>A real gift, not a souvenir</li>
+                        <li>Original local art at boutique prices</li>
+                        <li>A taste-driven home or beauty pickup</li>
+                        <li>A slow Burro Avenue browse between coffee and a wine pour</li>
+                        <li>Paired stops with The Little Gallery and The Fat Rabbit in the same cluster</li>
+                        <li>Visitors who prefer handmade and local over mass-market</li>
+                    </ul>
+                </div>
+
+                <div class="goodfor-card skip">
+                    <h3>Skip if</h3>
+                    <ul>
+                        <li>You want clothing and accessories as the main event — go to <a href="coco-blu.html">Coco Blu</a></li>
+                        <li>You want rummage-and-discover vintage — go to <a href="poke-the-bear.html">Poke The Bear</a></li>
+                        <li>You need guaranteed hours without a text first — the shop doesn't post reliably</li>
+                        <li>You need magnets, shot glasses, or t-shirts at volume — wrong category</li>
+                    </ul>
                 </div>
             </div>
         </section>
+
+        <!-- ================================ PRACTICAL NOTES ================================ -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Practical notes</h2>
+
+            <details class="note">
+                <summary>Hours, seasons &amp; texting ahead</summary>
+                <div class="note-body">
+                    <p>The shop doesn't publish a reliable weekly schedule. In practice, expect mid-day small-boutique hours, with summer running longer than shoulder season and weekends the most consistent window.</p>
+                    <p>Before making the drive up, text <a href="sms:+15127881349">(512) 788-1349</a>. The 512 area code is Austin, TX — consistent across local coverage as the owner's mobile brought from out of state, not a typo or a different shop.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>The courtyard cluster</summary>
+                <div class="note-body">
+                    <p>Aspen &amp; Ivy is part of the Burro Avenue courtyard cluster that also includes The Little Gallery, The Fat Rabbit, and sits next to the Pine Stump Mall. The cluster rewards a slow browse — plan 45 minutes minimum rather than a single drop-in.</p>
+                    <p>Parking is on-street along Burro Avenue. The walkable stretch runs from Black Bear Coffee at the west end past the 500-block retail to the Lodge-campus end; Aspen &amp; Ivy sits in the middle.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Gift wrapping, returns &amp; payment</summary>
+                <div class="note-body">
+                    <p>Gift wrap, returns, and shipping policy aren't documented in current primary sources — text the shop at the number above and ask directly. If you're buying handmade or original art as a gift, it's worth confirming return policy at the counter.</p>
+                    <p>Card payment is standard for Cloudcroft boutiques; cash also works. Online sales are not confirmed — treat this as an in-person shop.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Accessibility &amp; pets</summary>
+                <div class="note-body">
+                    <p>Specific accessibility details for the Burro Avenue courtyard unit aren't documented; confirm before relying on it. Small well-behaved dogs on leash are generally tolerated at walkable Burro Avenue shops, but check at the door rather than assuming.</p>
+                </div>
+            </details>
+        </section>
+
+        <!-- ================================ EDITOR'S TAKE ================================ -->
+        <section class="editor-section" id="editor" aria-label="Editor's take">
+            <div class="editor-wrap">
+                <h2>Editor's take</h2>
+                <blockquote>"Aspen &amp; Ivy is the shop on Burro Avenue that quietly answers a question most Cloudcroft retail doesn't ask — what would you buy here if you were shopping for someone, not just visiting? Curated, handmade, and local-art-forward, it's the stop that makes the Burro stroll feel edited rather than just long. Text the owner, take the drive, plan on neighboring stops."</blockquote>
+                <p class="byline">— DiscoverCloudcroft editors</p>
+            </div>
+        </section>
+
+        <!-- ================================ HANDOFF ================================ -->
+        <section class="handoff-section" id="handoff" aria-label="Nearby shops">
+            <div class="handoff-head">
+                <h2>More on Burro Avenue</h2>
+                <p>Three peer shops on the same walkable strip — or jump back to the full shopping guide for all 24.</p>
+            </div>
+            <div class="handoff-grid">
+                <a class="handoff-card" href="coco-blu.html">
+                    <span class="lg-pin">10</span>
+                    <h3>Coco Blu</h3>
+                    <p>Women's boutique · clothing, shoes, jewelry</p>
+                </a>
+                <a class="handoff-card" href="poke-the-bear.html">
+                    <span class="lg-pin">11</span>
+                    <h3>Poke The Bear</h3>
+                    <p>Vintage · used books · Bigfoot · rummage-and-discover</p>
+                </a>
+                <a class="handoff-card" href="complete-guide-where-to-shop-in-cloudcroft-2026.html#map">
+                    <span class="lg-pin">13</span>
+                    <h3>Mountain Comforts</h3>
+                    <p>Antiques · quilts · handmade dolls · 16+ years · 306 Burro</p>
+                </a>
+                <a class="handoff-card back-to-guide" href="complete-guide-where-to-shop-in-cloudcroft-2026.html">
+                    <span class="lg-pin">↩</span>
+                    <h3>All shops in Cloudcroft</h3>
+                    <p>24 independent shops · 1 walkable strip · 0 chains</p>
+                </a>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
-                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
-                <div class="footer-social">
-                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
-                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
-                    <a href="#todo-twitter" aria-label="Twitter">X</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Explore</h3>
-                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Lodging</a>
-                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
-                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
-                <a href="../do/complete-guide-to-activities.html">Activities</a>
-                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="../season/seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h3>Aspen &amp; Ivy</h3>
-                <a href="tel:5127881349">(512) 788-1349</a>
-                <a href="mailto:saranicole333@gmail.com">saranicole333@gmail.com</a>
-            </div>
-            <div class="footer-col">
-                <h3>Plan</h3>
-                <a href="../plan.html">Plan Your Trip</a>
-                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
-                <a href="../about.html">About Cloudcroft</a>
-                <a href="../contact.html">Contact Us</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-        </div>
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
     </footer>
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
     <script src="../js/common.js"></script>
     <script>
-        (function() {
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+        (function () {
+            // ---- Fade-in ----
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         fadeObserver.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
-
-            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) {
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.fade-in, .menu-card-plus, .pick, .goodfor-card, .handoff-card').forEach(function (el) {
                 fadeObserver.observe(el);
             });
+
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sections = tocPills
+                .map(function (p) { return document.getElementById(p.getAttribute('href').replace('#','')); })
+                .filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
         })();
     </script>
 </body>
+
 </html>

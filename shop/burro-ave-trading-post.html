@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burro Street Trading Post | Southwest Jewelry &amp; Turquoise in Cloudcroft, NM</title>
-    <meta name="description" content="Burro Street Trading Post in Cloudcroft sells Native American jewelry, turquoise, sterling silver, rocks, crystals, geodes, pottery, and Southwest home d&eacute;cor at the Burro Street Exchange.">
-    <meta name="keywords" content="burro street trading post, cloudcroft turquoise, native american jewelry cloudcroft, cloudcroft crystals, cloudcroft nm shopping, burro street exchange">
+    <title>Burro Street Trading Post, Cloudcroft NM (2026) — Native American Jewelry, Turquoise &amp; Crystals at the Exchange | DiscoverCloudcroft.com</title>
+    <meta name="description"
+        content="Burro Street Trading Post (also Trading Co.) at 505 Burro Ave Suite 103 — the Southwest anchor inside the Burro Street Exchange. Native American jewelry, turquoise, sterling silver, crystals, geodes, pottery, and Southwestern home décor. Call (575) 682-8280 for hours.">
+    <meta name="keywords"
+        content="Burro Street Trading Post, Burro Street Trading Co, Cloudcroft turquoise, Native American jewelry Cloudcroft, Cloudcroft crystals, Burro Street Exchange, Cloudcroft NM shopping, sterling silver Cloudcroft">
     <link rel="canonical" href="https://discovercloudcroft.com/shop/burro-ave-trading-post.html">
 
-    <meta property="og:title" content="Burro Street Trading Post | Cloudcroft, NM">
-    <meta property="og:description" content="Native American jewelry, turquoise, crystals, geodes, and Southwest d&eacute;cor on Burro Avenue in Cloudcroft.">
+    <meta property="og:title" content="Burro Street Trading Post, Cloudcroft NM (2026) — Native American Jewelry, Turquoise &amp; Crystals | DiscoverCloudcroft.com">
+    <meta property="og:description"
+        content="The Southwest anchor inside the Burro Street Exchange. Native American jewelry, turquoise, sterling silver, crystals, geodes, pottery.">
     <meta property="og:url" content="https://discovercloudcroft.com/shop/burro-ave-trading-post.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Burro Street Trading Post | Cloudcroft, NM">
-    <meta name="twitter:description" content="Southwest jewelry, turquoise, crystals, and pottery on Burro Avenue.">
+    <meta name="twitter:title" content="Burro Street Trading Post, Cloudcroft NM (2026) — Native American Jewelry &amp; Turquoise">
+    <meta name="twitter:description" content="The Southwest anchor inside the Burro Street Exchange. Turquoise, crystals, pottery.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <link href="../css/fonts.css" rel="stylesheet">
@@ -28,328 +32,708 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Store",
+      "@type": "JewelryStore",
       "name": "Burro Street Trading Post",
-      "description": "Southwest specialty shop at the Burro Street Exchange in Cloudcroft, featuring Native American jewelry, turquoise, sterling silver, rocks, crystals, geodes, pottery, and home d\u00e9cor.",
+      "alternateName": "Burro Street Trading Co.",
+      "url": "https://discovercloudcroft.com/shop/burro-ave-trading-post.html",
+      "description": "Southwest specialty shop at the Burro Street Exchange in Cloudcroft — Native American jewelry, turquoise, sterling silver, rocks, crystals, geodes, pottery, and Southwestern home décor.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "505 Burro Ave",
+        "streetAddress": "505 Burro Ave, Suite 103",
         "addressLocality": "Cloudcroft",
         "addressRegion": "NM",
         "postalCode": "88317",
         "addressCountry": "US"
       },
-      "telephone": "(575) 682-8280",
+      "telephone": "+15756828280",
       "email": "burrostreettradingpost@gmail.com",
-      "url": "https://burrostreettradingpost.com/"
+      "priceRange": "$$",
+      "sameAs": [
+        "https://burrostreettradingpost.com/"
+      ]
     }
     </script>
 
     <style>
-.hero-bg {
-    background: linear-gradient(135deg, #1a5c5c 0%, #3d8b8b 40%, #b87333 100%);
-}
-.hero-overlay {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
-}
-</style>
+        /* =====================================================================
+           CHANGELOG (2026-04-23 rebuild — 2026 retail detail-page system,
+           applied to Burro Street Trading Post).
+
+           HOURS: amber "Hours vary · call ahead" pill (MD confirms public
+           sources don't align on current hours). No live JS, no 7-day
+           table — replaced with a hours-vary-card + phone/email links.
+
+           GALLERY: no dedicated photo folder on disk; hero uses a stylized
+           turquoise-and-copper Southwest gradient rather than a misattributed
+           stock shot. Gallery section omitted.
+
+           FIXED VS. PREVIOUS PAGE:
+             - Schema.org @type was generic "Store" — upgraded to JewelryStore
+               (the store's identity is explicitly turquoise + Native American
+               jewelry + sterling silver).
+             - Schema.org "url" pointed to burrostreettradingpost.com (the
+               store's external site) — moved to sameAs, canonical page URL
+               now in "url".
+             - Schema.org missing alternateName, priceRange — added.
+             - Schema.org "telephone" was human-formatted — moved to E.164
+               (+15756828280).
+             - Nav links hardcoded without ../ prefix.
+             - Duplicate <nav class="mobile-nav-overlay"> block with
+               conflicting hrefs sharing id="mobile-nav".
+             - Dead #reels anchor.
+             - Emoji icons in info bar, about-features, menu-card headers.
+             - Footer had ../plan.html, ../about.html, ../contact.html,
+               literal-space filenames, and #todo-* social placeholders —
+               replaced with standard minimal footer.
+
+           MAP: Burro Avenue linear west-to-east with Trading Post at pin 2
+           as YOU-ARE-HERE (inside the Exchange at 505), plus Off the Beaten
+           Path (1, side-street context), The Turquoise Shop (3, 507 Burro),
+           and RedWall Jewelry (4) as grey context pins.
+           ================================================================= */
+
+        .hero-bg {
+            background:
+                radial-gradient(1000px 500px at 75% 10%, rgba(184, 115, 51, 0.35), transparent 55%),
+                radial-gradient(900px 500px at 25% 90%, rgba(61, 139, 139, 0.3), transparent 60%),
+                linear-gradient(135deg, #0e3434 0%, #1a5c5c 45%, #2c6b5b 100%);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.25) 55%, rgba(0, 0, 0, 0.55));
+        }
+
+        .hero.hero-split { min-height: 560px; padding: 5rem 2rem; }
+
+        .hero-split-grid { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: center; }
+
+        .hero-left .hero-eyebrow-pill { display: inline-block; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0.35rem 0.8rem; border: 1px solid rgba(255, 255, 255, 0.45); border-radius: 20px; color: #fff; margin-bottom: 1.25rem; }
+
+        .hero-left h1 { font-family: 'IBM Plex Serif', serif; font-weight: 700; font-size: clamp(2.25rem, 4.5vw, 3.6rem); color: #fff; line-height: 1.08; margin-bottom: 1rem; }
+
+        .hero-left .hero-deck { color: rgba(255, 255, 255, 0.92); font-size: clamp(1rem, 1.4vw, 1.15rem); line-height: 1.55; margin-bottom: 1.25rem; max-width: 30rem; }
+
+        .hero-byline { color: rgba(255, 255, 255, 0.75); font-size: 0.82rem; letter-spacing: 0.04em; }
+        .hero-byline strong { color: #fff; font-weight: 600; }
+
+        .atglance { background: rgba(255, 255, 255, 0.97); border-radius: 14px; padding: 1.5rem; box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28); }
+        .atglance-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-bottom: 1rem; }
+        .atglance-head h2 { font-family: 'IBM Plex Serif', serif; font-size: 1.05rem; font-weight: 700; color: #000; margin: 0; }
+
+        .open-now { display: inline-flex; align-items: center; gap: 0.4rem; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 999px; background: #e9f1e4; color: #2a5020; border: 1px solid rgba(42, 80, 32, 0.2); }
+        .open-now::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: #2a5020; }
+        .open-now.is-warn { background: #fff4e6; color: #7a4a00; border-color: rgba(122, 74, 0, 0.22); }
+        .open-now.is-warn::before { background: #7a4a00; }
+
+        .atglance-rows { display: grid; gap: 0.75rem; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.88rem; color: #333; }
+        .atglance-rows dt { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #666; }
+        .atglance-rows dd { margin: 0; color: #222; }
+        .atglance-rows a { color: #000; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(0, 0, 0, 0.25); }
+        .atglance-rows a:hover { text-decoration-color: #000; }
+
+        .atglance-cta { display: flex; gap: 0.6rem; margin-top: 1.25rem; flex-wrap: wrap; }
+        .atglance-cta .btn-primary { padding: 0.7rem 1.25rem; font-size: 0.78rem; flex: 1; min-width: 140px; text-align: center; }
+        .atglance-cta .btn-outline-black { flex: 1; min-width: 140px; display: inline-flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; padding: 0.7rem 1.25rem; color: #000; border: 2px solid #000; border-radius: 10px; text-decoration: none; transition: background 0.2s ease, color 0.2s ease; min-height: 44px; }
+        .atglance-cta .btn-outline-black:hover { background: #000; color: #fff; }
+
+        .signals { background: #fff; padding: 1.5rem 2rem; border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+        .signals-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+        .signals-label { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #666; margin-right: 0.5rem; }
+        .signal { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.78rem; font-weight: 500; padding: 0.3rem 0.75rem; border-radius: 999px; background: #f3f3f3; color: #333; border: 1px solid rgba(0, 0, 0, 0.08); }
+        .signal.featured { background: #000; color: #fff; border-color: #000; }
+        .signal.warn { background: #fff4e6; color: #7a4a00; border-color: rgba(122, 74, 0, 0.25); }
+
+        .stats-strip { background: #000; color: #fff; padding: 1.5rem 2rem; }
+        .stats-strip-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+        .stat { text-align: center; }
+        .stat-num { font-family: 'IBM Plex Serif', serif; font-size: 1.5rem; font-weight: 700; line-height: 1; display: block; }
+        .stat-label { display: block; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255, 255, 255, 0.7); margin-top: 0.4rem; }
+
+        .thesis { max-width: 820px; margin: 3rem auto 2rem; padding: 0 2rem; text-align: center; }
+        .thesis p { font-family: 'IBM Plex Serif', serif; font-size: clamp(1.15rem, 1.8vw, 1.4rem); font-weight: 400; color: #222; line-height: 1.5; margin: 0 0 1rem; }
+        .thesis .thesis-meta { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.78rem; color: #666; letter-spacing: 0.04em; }
+
+        .toc-pill[aria-current="true"] { background: #000; color: #fff; }
+
+        .detail-block { padding: 3rem 2rem 1rem; max-width: 1200px; margin: 0 auto; }
+        .detail-block-head { margin-bottom: 1.5rem; }
+        .detail-block-head .eyebrow { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #666; }
+        .detail-block-head h2 { font-family: 'IBM Plex Serif', serif; font-size: clamp(1.5rem, 2.3vw, 1.9rem); color: #000; margin: 0.2rem 0 0.35rem; }
+        .detail-block-head p { color: #555; font-size: 0.95rem; max-width: 680px; line-height: 1.55; margin: 0; }
+
+        .menu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1rem; }
+        .menu-card-plus { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07); overflow: hidden; padding: 1.5rem 1.5rem 1.25rem; position: relative; display: flex; flex-direction: column; }
+        .menu-card-plus .card-pin { position: absolute; top: 0.75rem; left: 0.75rem; width: 28px; height: 28px; border-radius: 50%; background: #000; color: #fff; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.78rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+        .menu-card-plus .cat-head { margin-left: 3rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+        .menu-card-plus h3 { font-family: 'IBM Plex Serif', serif; font-size: 1.15rem; color: #000; margin: 0; }
+        .specialty-chip { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.5rem; border-radius: 4px; background: #f1ead2; color: #5a4512; border: 1px solid rgba(90, 69, 18, 0.2); }
+        .menu-card-plus .cat-lede { color: #555; font-size: 0.88rem; line-height: 1.55; margin: 0 0 0.85rem; }
+        .menu-card-plus ul { list-style: none; padding: 0; margin: 0 0 0.85rem; }
+        .menu-card-plus ul li { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.88rem; padding: 0.3rem 0; color: #333; border-bottom: 1px solid rgba(0, 0, 0, 0.06); }
+        .menu-card-plus ul li:last-child { border-bottom: none; }
+        .menu-card-plus .order-hint { margin-top: auto; padding: 0.75rem 0 0; border-top: 1px solid rgba(0, 0, 0, 0.08); font-family: 'IBM Plex Serif', serif; font-size: 0.88rem; font-style: italic; color: #444; line-height: 1.5; }
+
+        .picks-section { background: #111; color: #fff; padding: 4rem 2rem; }
+        .picks-wrap { max-width: 1100px; margin: 0 auto; }
+        .picks-wrap h2 { font-family: 'IBM Plex Serif', serif; font-size: clamp(1.6rem, 2.4vw, 2rem); margin: 0 0 2rem; color: #fff; }
+        .picks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
+        .pick blockquote { border-left: 3px solid #fff; padding-left: 1.25rem; margin: 0 0 1rem; font-family: 'IBM Plex Serif', serif; font-size: 1.05rem; line-height: 1.55; color: rgba(255, 255, 255, 0.95); font-style: italic; }
+        .pick .pick-for { display: block; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255, 255, 255, 0.55); margin-bottom: 0.75rem; }
+        .pick .pick-name { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.95rem; font-weight: 700; color: #fff; }
+
+        .hours-section { padding: 3rem 2rem; max-width: 900px; margin: 0 auto; }
+        .hours-vary-card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07); padding: 1.75rem; margin-top: 1rem; border-top: 4px solid #e8a14a; }
+        .hours-vary-card h3 { font-family: 'IBM Plex Serif', serif; font-size: 1.1rem; color: #000; margin: 0 0 0.75rem; }
+        .hours-vary-card p { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.92rem; color: #333; line-height: 1.6; margin: 0 0 0.85rem; }
+        .hours-vary-card p:last-child { margin-bottom: 0; }
+        .hours-vary-card a { color: #000; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(0, 0, 0, 0.3); }
+        .hours-check-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-top: 1rem; }
+        .hours-check-list a { display: block; padding: 0.85rem 1rem; background: #f7f7f7; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 10px; text-decoration: none; color: #000; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.82rem; transition: background 0.2s ease; }
+        .hours-check-list a:hover { background: #efefef; }
+        .hours-check-list strong { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #666; margin-bottom: 0.2rem; }
+
+        .location-section { padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .location-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 2rem; align-items: start; margin-top: 1rem; }
+        .map-figure { background: #f2ede3; border-radius: 12px; padding: 1rem; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+        .map-svg { width: 100%; height: auto; display: block; }
+        .location-info { background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); padding: 1.5rem; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.88rem; color: #333; line-height: 1.65; }
+        .location-info h3 { font-family: 'IBM Plex Serif', serif; font-size: 1rem; color: #000; margin: 0 0 0.75rem; }
+        .location-info a { color: #000; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(0, 0, 0, 0.25); }
+        .location-info + .location-info { margin-top: 1rem; }
+        .map-footnote { font-size: 0.72rem; color: #888; margin-top: 0.85rem; }
+
+        .goodfor-section { padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .goodfor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
+        .goodfor-card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); padding: 1.5rem; }
+        .goodfor-card.good { border-top: 4px solid #2a5020; }
+        .goodfor-card.skip { border-top: 4px solid #7a4a00; }
+        .goodfor-card h3 { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; margin: 0 0 0.9rem; }
+        .goodfor-card.good h3 { color: #2a5020; }
+        .goodfor-card.skip h3 { color: #7a4a00; }
+        .goodfor-card ul { list-style: none; padding: 0; margin: 0; }
+        .goodfor-card ul li { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.92rem; padding: 0.5rem 0 0.5rem 1.5rem; color: #333; position: relative; line-height: 1.45; }
+        .goodfor-card.good ul li::before { content: '✓'; position: absolute; left: 0; color: #2a5020; font-weight: 700; }
+        .goodfor-card.skip ul li::before { content: '×'; position: absolute; left: 0; color: #7a4a00; font-weight: 700; font-size: 1.1rem; line-height: 1; }
+        .goodfor-card a { color: #000; text-decoration: underline; text-underline-offset: 3px; }
+
+        .notes-section { padding: 4rem 2rem; max-width: 820px; margin: 0 auto; }
+        .notes-section h2 { font-family: 'IBM Plex Serif', serif; font-size: clamp(1.5rem, 2.3vw, 1.9rem); color: #000; text-align: center; margin: 0 0 2rem; }
+        .note { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        .note:last-of-type { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+        .note > summary { list-style: none; padding: 1.1rem 2.5rem 1.1rem 0; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 1rem; color: #000; cursor: pointer; position: relative; }
+        .note > summary::-webkit-details-marker { display: none; }
+        .note > summary::after { content: '+'; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 1.4rem; font-weight: 300; color: #666; }
+        .note[open] > summary::after { content: '−'; }
+        .note .note-body { padding: 0 2rem 1.25rem 0; color: #444; font-size: 0.92rem; line-height: 1.65; }
+        .note .note-body p + p { margin-top: 0.65rem; }
+        .note .note-body a { color: #000; text-decoration: underline; text-underline-offset: 3px; }
+
+        .editor-section { background: #f8f8f8; padding: 4rem 2rem; }
+        .editor-wrap { max-width: 820px; margin: 0 auto; }
+        .editor-wrap h2 { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #666; margin: 0 0 1rem; }
+        .editor-wrap blockquote { border-left: 4px solid #000; padding-left: 1.5rem; margin: 0 0 1rem; font-family: 'IBM Plex Serif', serif; font-size: clamp(1.15rem, 1.6vw, 1.3rem); line-height: 1.55; color: #222; }
+        .editor-wrap .byline { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.8rem; color: #666; padding-left: calc(1.5rem + 4px); }
+
+        .handoff-section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .handoff-head { text-align: center; margin-bottom: 2rem; }
+        .handoff-head h2 { font-family: 'IBM Plex Serif', serif; font-size: clamp(1.5rem, 2.3vw, 1.9rem); color: #000; margin: 0 0 0.5rem; }
+        .handoff-head p { color: #555; font-size: 0.95rem; max-width: 600px; margin: 0 auto; }
+        .handoff-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1.5rem; }
+        .handoff-card { background: #fff; border-radius: 12px; padding: 1.5rem 1.25rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); text-decoration: none; color: #000; transition: transform 0.2s ease, box-shadow 0.2s ease; display: block; position: relative; }
+        .handoff-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); color: #000; }
+        .handoff-card .lg-pin { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: #000; color: #fff; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.68rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .handoff-card.back-to-guide .lg-pin { background: #555; }
+        .handoff-card h3 { font-family: 'IBM Plex Serif', serif; font-size: 1rem; margin: 0 0 0.25rem; }
+        .handoff-card p { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.78rem; color: #666; margin: 0; }
+
+        .site-footer .footer-brand { font-family: 'IBM Plex Serif', serif; font-weight: 700; letter-spacing: 0.02em; margin-right: 0.5rem; }
+
+        @media (max-width: 1024px) {
+            .hero-split-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .hero.hero-split { padding: 4rem 2rem; }
+            .stats-strip-inner { grid-template-columns: repeat(3, 1fr); gap: 1.25rem 1rem; }
+            .menu-grid { grid-template-columns: 1fr; }
+            .picks-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .location-grid { grid-template-columns: 1fr; }
+            .goodfor-grid { grid-template-columns: 1fr; }
+            .handoff-grid { grid-template-columns: repeat(2, 1fr); }
+            .hours-check-list { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 640px) {
+            .hero.hero-split { padding: 3rem 1.25rem; min-height: 0; }
+            .atglance { padding: 1.25rem; }
+            .signals { padding: 1rem; }
+            .stats-strip { padding: 1.25rem 1rem; }
+            .stats-strip-inner { grid-template-columns: repeat(2, 1fr); }
+            .handoff-grid { grid-template-columns: 1fr; }
+            .detail-block, .hours-section, .location-section, .goodfor-section, .notes-section, .editor-section, .picks-section, .handoff-section { padding-left: 1rem; padding-right: 1rem; }
+        }
+    </style>
 </head>
+
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-        <header class="site-header" role="banner">
+    <header class="site-header" role="banner">
         <div class="header-inner">
-
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html" aria-current="page">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
             </nav>
-            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
-                aria-controls="mobile-nav">
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
         <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../resources/resources.html">Resources</a>
         <a href="../resources/contact.html">Contact</a>
     </nav>
-<section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Burro Street Trading Post in Cloudcroft, New Mexico"></div>
+
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Burro Street Trading Post inside the Burro Street Exchange, Cloudcroft, NM"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>Cloudcroft Southwest Shopping</span>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">Burro Ave · Southwest anchor · 2026</span>
+                <h1>Burro Street Trading Post.</h1>
+                <p class="hero-deck">The Burro Street Exchange's Southwest anchor — Native American jewelry, turquoise, sterling silver, crystals, geodes, and pottery across a themed, inventory-heavy room that's been on the avenue roughly twenty years.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
             </div>
-            <h1 class="hero-title">
-                <span class="word">Burro </span>
-                <span class="word">Street </span>
-                <span class="word">Trading </span>
-                <span class="word">Post </span>
-            </h1>
-            <p class="hero-subtitle">Native American jewelry, turquoise, sterling silver, rocks, crystals, geodes, pottery, and Southwest d&eacute;cor &mdash; a destination browse at the Burro Street Exchange for almost 20 years.</p>
-            <div class="hero-ctas">
-                <a href="#products" class="btn-primary">Browse Collections</a>
-                <a href="#visit" class="btn-secondary">Plan Your Visit</a>
-            </div>
+            <aside class="atglance" aria-label="At a glance">
+                <div class="atglance-head">
+                    <h2>At a glance</h2>
+                    <span class="open-now is-warn" role="status">Hours vary · call ahead</span>
+                </div>
+                <dl class="atglance-rows">
+                    <div>
+                        <dt>Address</dt>
+                        <dd><a href="https://www.google.com/maps/dir/?api=1&destination=505%20Burro%20Ave%20Suite%20103%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer">505 Burro Ave, Suite 103 · Burro Street Exchange</a></dd>
+                    </div>
+                    <div>
+                        <dt>Hours</dt>
+                        <dd>Not posted reliably · call before a same-day trip</dd>
+                    </div>
+                    <div>
+                        <dt>Phone</dt>
+                        <dd><a href="tel:+15756828280">(575) 682-8280</a></dd>
+                    </div>
+                    <div>
+                        <dt>Category · price</dt>
+                        <dd>Southwest specialty · jewelry &amp; stones · $$</dd>
+                    </div>
+                </dl>
+                <div class="atglance-cta">
+                    <a href="tel:+15756828280" class="btn-primary">Call</a>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=505%20Burro%20Ave%20Suite%20103%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer" class="btn-outline-black">Directions</a>
+                </div>
+            </aside>
         </div>
     </section>
 
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F4CD;</div>
-                <span>505 Burro Ave</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F48E;</div>
-                <span>Southwest Jewelry &amp; Gifts</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F4DE;</div>
-                <span><a href="tel:5756828280">(575) 682-8280</a></span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F552;</div>
-                <span>Check store for current hours</span>
-            </div>
+    <div class="signals" aria-label="What to expect">
+        <div class="signals-inner">
+            <span class="signals-label">Signals</span>
+            <span class="signal featured">Southwest anchor</span>
+            <span class="signal">Native American jewelry</span>
+            <span class="signal">Turquoise</span>
+            <span class="signal">Sterling silver</span>
+            <span class="signal">Crystals &amp; geodes</span>
+            <span class="signal">Pottery &amp; kachinas</span>
+            <span class="signal">Home décor</span>
+            <span class="signal">Inside the Exchange</span>
+            <span class="signal">~20 years on Burro</span>
+            <span class="signal warn">Hours vary</span>
         </div>
     </div>
 
+    <div class="stats-strip" aria-label="Snapshot">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">Pin 2</span><span class="stat-label">Shopping-guide map</span></div>
+            <div class="stat"><span class="stat-num">505</span><span class="stat-label">Burro Ave · Exchange</span></div>
+            <div class="stat"><span class="stat-num">~20 yrs</span><span class="stat-label">On Burro Avenue</span></div>
+            <div class="stat"><span class="stat-num">SW</span><span class="stat-label">Themed specialty</span></div>
+            <div class="stat"><span class="stat-num">$$</span><span class="stat-label">Jewelry &amp; stones</span></div>
+        </div>
+    </div>
+
+    <nav class="toc-nav" aria-label="Table of contents">
+        <div class="toc-nav-inner">
+            <a href="#shop" class="toc-pill">Shop</a>
+            <a href="#buy" class="toc-pill">What I'd buy</a>
+            <a href="#hours" class="toc-pill">Hours</a>
+            <a href="#location" class="toc-pill">Location</a>
+            <a href="#goodfor" class="toc-pill">Good for · skip if</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
+            <a href="#editor" class="toc-pill">Editor's take</a>
+        </div>
+    </nav>
+
     <main id="main-content" role="main">
 
-        <section class="section" id="about" aria-label="About Burro Street Trading Post">
-            <div class="section-container">
-                <div class="about-grid">
-                    <div class="about-text fade-in">
-                        <span class="section-label">About</span>
-                        <h2 class="section-title">A Southwest Specialty Shop on Burro Avenue</h2>
-                        <p>
-                            Burro Street Trading Post is one of the core retail anchors of the Burro Street Exchange in downtown Cloudcroft. It is a specialty Southwest shop built around Native American jewelry, turquoise, sterling silver, rocks, crystals, geodes, pottery, and home d&eacute;cor.
-                        </p>
-                        <p>
-                            This is less a souvenir stop and more a destination browse for shoppers who want jewelry, stones, and Southwest merchandise with more depth than a generic gift store. The inventory is visually specific and regionally rooted.
-                        </p>
-                        <p>
-                            The store has been a fixture at the Burro Street Exchange for almost 20 years, making it one of the established pieces of Cloudcroft&rsquo;s downtown shopping circuit rather than a newer retail experiment.
-                        </p>
-                        <div class="about-features">
-                            <span class="about-feature">&#x1F48E; Turquoise</span>
-                            <span class="about-feature">&#x2728; Sterling Silver</span>
-                            <span class="about-feature">&#x1FAA8; Crystals</span>
-                            <span class="about-feature">&#x1F3FA; Pottery</span>
-                            <span class="about-feature">&#x1F3E0; D&eacute;cor</span>
-                        </div>
+        <div class="thesis">
+            <p>If you came to Cloudcroft for turquoise — or a crystal, a kachina, a piece of Southwest pottery — this is the Burro Street Exchange's themed room that was built for that exact shopping list.</p>
+            <span class="thesis-meta">Inside 505 Burro · Southwest specialty · inventory-heavy · roughly 20 years in residence</span>
+        </div>
+
+        <section class="detail-block" id="shop" aria-label="Shop the shop">
+            <div class="detail-block-head">
+                <span class="eyebrow">Three product lines · rotating</span>
+                <h2>What's in the shop</h2>
+                <p>A themed Southwest retail room rather than a general gift shop. Jewelry and sterling silver are the headline; stones, crystals, and geodes are the distinguishing layer; Southwestern pottery and home décor round out the plate. Inventory rotates — confirm specific items by phone.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <div class="cat-head">
+                        <h3>Jewelry &amp; sterling silver</h3>
+                        <span class="specialty-chip">House specialty</span>
                     </div>
-                    <div class="about-image fade-in" style="display: flex; align-items: center; justify-content: center; background: var(--cloud-drift); border-radius: 12px; min-height: 300px;">
-                        <span style="font-size: 6rem;">&#x1F48E;</span>
+                    <p class="cat-lede">The headline category — Native American jewelry, turquoise, sterling silver.</p>
+                    <ul>
+                        <li>Handmade Native American jewelry</li>
+                        <li>Handmade sterling silver</li>
+                        <li>Turquoise rings, cuffs, pendants, earrings</li>
+                    </ul>
+                    <p class="order-hint">Turquoise is the item that rewards a direct visit — the case depth is greater than any general gift shop can offer.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <div class="cat-head">
+                        <h3>Rocks, crystals, geodes</h3>
+                        <span class="specialty-chip">Distinguishing layer</span>
+                    </div>
+                    <p class="cat-lede">The stones-and-crystals program is what separates Trading Post from the neighbouring jewelry shops.</p>
+                    <ul>
+                        <li>Rough and polished rocks</li>
+                        <li>Crystal and gemstone specimens</li>
+                        <li>Geodes</li>
+                        <li>Beads</li>
+                    </ul>
+                    <p class="order-hint">Ask to see the current geode selection — inventory rotates and the mid-sized specimens are where the interesting finds live.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <div class="cat-head">
+                        <h3>Pottery, kachinas &amp; home décor</h3>
+                    </div>
+                    <p class="cat-lede">Southwestern pottery, kachinas, and regionally themed home-décor pieces.</p>
+                    <ul>
+                        <li>Pottery</li>
+                        <li>Kachinas</li>
+                        <li>Southwestern art</li>
+                        <li>Home décor &amp; "unique treasures"</li>
+                    </ul>
+                    <p class="order-hint">A small piece of pottery or a kachina is the gift that travels — regionally specific, and not something you'd order online from home.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <div class="cat-head">
+                        <h3>The Exchange cluster</h3>
+                    </div>
+                    <p class="cat-lede">Not a product category — context. Trading Post sits inside 505 Burro alongside several other durable tenants.</p>
+                    <ul>
+                        <li>Under the same roof as Cloudcroft Sandwich Shop</li>
+                        <li>Near Noisy Water Winery and Old Barrel Tea</li>
+                        <li>Indoor browsing — useful on rainy days</li>
+                        <li>One of the longest-running tenants of the Exchange</li>
+                    </ul>
+                    <p class="order-hint">Plan a 45-minute Exchange stop — Trading Post is the jewelry anchor, but the neighbors give the visit a natural break.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="picks-section" id="buy" aria-label="What I'd buy">
+            <div class="picks-wrap">
+                <h2>What I'd buy</h2>
+                <div class="picks-grid">
+                    <div class="pick">
+                        <span class="pick-for">Your first visit</span>
+                        <blockquote>"A turquoise ring or cuff. The shop's headline category — and the one where the depth here exceeds what a general Cloudcroft gift shop can stock."</blockquote>
+                        <p class="pick-name">Turquoise · ring or cuff</p>
+                    </div>
+                    <div class="pick">
+                        <span class="pick-for">The distinguishing pick</span>
+                        <blockquote>"A mid-sized geode or a crystal specimen. This is the layer you won't find at the neighboring jewelry-only rooms on Burro — the stones-and-crystals program is Trading Post's fingerprint."</blockquote>
+                        <p class="pick-name">Geode or crystal specimen</p>
+                    </div>
+                    <div class="pick">
+                        <span class="pick-for">A gift that travels</span>
+                        <blockquote>"A small piece of Southwestern pottery, or a kachina. Regionally specific, gift-quality, and exactly the kind of object that loses its meaning if ordered online."</blockquote>
+                        <p class="pick-name">Pottery or kachina</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section menu-section" id="products" aria-label="Merchandise">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Merchandise</span>
-                    <h2 class="section-title section-title-centered">What They Carry</h2>
-                    <p class="section-description">Handmade jewelry, natural stones, and Southwest d&eacute;cor with regional depth.</p>
-                </div>
-                <div class="menu-grid">
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F48D;</div>
-                        <h3>Jewelry</h3>
-                        <p>The heart of the store. Native American handmade pieces in turquoise, sterling silver, and gemstones.</p>
-                        <ul class="menu-items">
-                            <li>Native American handmade jewelry</li>
-                            <li>Turquoise pieces</li>
-                            <li>Sterling silver jewelry</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1FAA8;</div>
-                        <h3>Rocks &amp; Minerals</h3>
-                        <p>Natural stones, crystals, and geodes for collectors and casual browsers alike.</p>
-                        <ul class="menu-items">
-                            <li>Rocks and crystals</li>
-                            <li>Geodes and gemstones</li>
-                            <li>Beads</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F3FA;</div>
-                        <h3>D&eacute;cor &amp; Pottery</h3>
-                        <p>Southwest home d&eacute;cor, pottery, and kachinas that bring regional character to any space.</p>
-                        <ul class="menu-items">
-                            <li>Pottery</li>
-                            <li>Kachinas</li>
-                            <li>Southwest home d&eacute;cor</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tip-box">
-                    <span>&#x1F4CB;</span>
-                    <p><strong>Shop online too.</strong> The official website includes collections and products available for purchase. Visit <a href="https://burrostreettradingpost.com/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine);">burrostreettradingpost.com</a> to browse before your visit.</p>
+        <section class="hours-section" id="hours" aria-label="Hours">
+            <div class="detail-block-head">
+                <span class="eyebrow">Public hours inconsistent</span>
+                <h2>Hours</h2>
+                <p>Different public sources (Chamber, directories, the shop's own site) don't align on a clean weekly schedule. Expect steady daytime hours during summer and shoulder-season patterns the rest of the year — but call before a same-day trip rather than relying on a posted timetable.</p>
+            </div>
+
+            <div class="hours-vary-card">
+                <h3>Why no 7-day table here</h3>
+                <p>We won't publish hours we can't stand behind. Cross-checking the official site, Chamber page, and third-party directories doesn't produce a consistent schedule, and the Exchange as a whole runs seasonal rhythms.</p>
+                <p>The honest move: call <a href="tel:+15756828280">(575) 682-8280</a> before you come, or walk the Exchange on arrival — the trading post sits in Suite 103 inside the 505 Burro complex.</p>
+
+                <div class="hours-check-list">
+                    <a href="tel:+15756828280">
+                        <strong>Call</strong>
+                        (575) 682-8280
+                    </a>
+                    <a href="mailto:burrostreettradingpost@gmail.com">
+                        <strong>Email</strong>
+                        burrostreettradingpost@gmail.com
+                    </a>
+                    <a href="https://burrostreettradingpost.com/" target="_blank" rel="noopener noreferrer">
+                        <strong>Website</strong>
+                        burrostreettradingpost.com
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="highlights" aria-label="Why visit">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">Why Visit</span>
-                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">More Than a Souvenir Stop</h2>
-                </div>
-                <div class="highlights-grid">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F48E;</div>
-                        <h3>Depth Over Novelty</h3>
-                        <p>This is not a generic gift shop. The jewelry cases and rock-and-crystal displays are specific, regional, and curated for people who want to spend real time looking.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F3DB;&#xFE0F;</div>
-                        <h3>Almost 20 Years</h3>
-                        <p>A long-standing Burro Street Exchange fixture. That kind of longevity in a small mountain town says something about the quality and relevance of the inventory.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F30E;</div>
-                        <h3>Regionally Rooted</h3>
-                        <p>Native American handmade work, New Mexico turquoise, and Southwest d&eacute;cor give this store a sense of place you will not find in chain retail.</p>
-                    </div>
-                </div>
+        <section class="location-section" id="location" aria-label="Location">
+            <div class="detail-block-head">
+                <span class="eyebrow">505 Burro Ave, Suite 103</span>
+                <h2>Where you'll find it</h2>
+                <p>Inside the Burro Street Exchange at 505 Burro — the indoor retail mall on the middle stretch of the avenue. Suite 103. The Exchange also holds Cloudcroft Sandwich Shop, Noisy Water, Old Barrel Tea, and several other durable tenants.</p>
             </div>
-        </section>
 
-        <section class="section" id="visit" aria-label="Plan your visit" style="background: var(--cloud-drift);">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Plan Your Visit</span>
-                    <h2 class="section-title section-title-centered">Visit the Trading Post</h2>
-                    <p class="section-description">Everything you need to know before you go.</p>
+            <div class="location-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 720 300" role="img" aria-label="Burro Street Trading Post location on Burro Avenue">
+                        <rect width="720" height="300" fill="#f2ede3"/>
+                        <rect x="40" y="160" width="640" height="14" fill="#d4c2a0" opacity="0.75" rx="2"/>
+                        <text x="360" y="152" fill="#8a7352" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="3">BURRO AVENUE (west to east)</text>
+
+                        <rect x="50" y="110" width="70" height="24" fill="#fff" opacity="0.55" rx="4"/>
+                        <text x="85" y="125" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">WEST END</text>
+                        <rect x="605" y="110" width="70" height="24" fill="#fff" opacity="0.55" rx="4"/>
+                        <text x="640" y="125" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">EAST END</text>
+
+                        <!-- Off the Beaten Path (1) - side street, offset above the strip -->
+                        <g><circle cx="470" cy="95" r="12" fill="#aaa"/><text x="470" y="99" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">1</text></g>
+                        <text x="470" y="80" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Off the Beaten Path · 100 Glorietta</text>
+                        <line x1="470" y1="107" x2="470" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
+
+                        <!-- Trading Post (2, YOU ARE HERE, 505) -->
+                        <g transform="translate(450, 240)">
+                            <text x="-30" y="0" fill="#000" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="2">YOU ARE HERE</text>
+                        </g>
+                        <g>
+                            <circle cx="450" cy="167" r="16" fill="#000"/>
+                            <circle cx="450" cy="167" r="22" fill="none" stroke="#000" stroke-width="1.5" opacity="0.4"/>
+                            <circle cx="450" cy="167" r="28" fill="none" stroke="#000" stroke-width="1" opacity="0.2"/>
+                            <text x="450" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">2</text>
+                        </g>
+                        <text x="450" y="200" fill="#000" text-anchor="middle" font-family="IBM Plex Serif, serif" font-size="14" font-weight="700">Trading Post</text>
+                        <text x="450" y="215" fill="#555" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">505 Burro · inside Exchange</text>
+
+                        <!-- The Turquoise Shop (3, 507) -->
+                        <g><circle cx="510" cy="167" r="12" fill="#aaa"/><text x="510" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">3</text></g>
+                        <text x="545" y="135" fill="#888" font-family="IBM Plex Sans, sans-serif" font-size="10">Turquoise Shop · 507</text>
+                        <line x1="510" y1="138" x2="510" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
+
+                        <!-- RedWall Jewelry (4) -->
+                        <g><circle cx="390" cy="167" r="12" fill="#aaa"/><text x="390" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">4</text></g>
+                        <text x="340" y="135" fill="#888" font-family="IBM Plex Sans, sans-serif" font-size="10">RedWall Jewelry</text>
+                        <line x1="390" y1="138" x2="390" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
+                    </svg>
+                    <p class="map-footnote">Pin numbers match the <a href="complete-guide-where-to-shop-in-cloudcroft-2026.html#map">shopping-guide map</a>. Schematic only — distances are approximate.</p>
                 </div>
-                <div class="visiting-grid">
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4CD;</div>
-                        <h3>Location</h3>
-                        <p>505 Burro Ave, Cloudcroft, NM 88317. Located at the Burro Street Exchange in downtown Cloudcroft &mdash; walkable from anywhere in the village center.</p>
+
+                <div>
+                    <div class="location-info">
+                        <h3>Address &amp; directions</h3>
+                        <p>505 Burro Ave, Suite 103<br>
+                           Burro Street Exchange<br>
+                           Cloudcroft, NM 88317</p>
+                        <p><a href="https://www.google.com/maps/dir/?api=1&destination=505%20Burro%20Ave%20Suite%20103%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer">Get directions &rarr;</a></p>
                     </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F550;</div>
-                        <h3>Hours</h3>
-                        <p>Hours should be checked directly before visiting. Call ahead or check the website for current seasonal hours.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4DE;</div>
+                    <div class="location-info">
                         <h3>Contact</h3>
-                        <p>Phone: <a href="tel:5756828280" style="color: var(--alpine); text-decoration: none;">(575) 682-8280</a><br>Email: <a href="mailto:burrostreettradingpost@gmail.com" style="color: var(--alpine); text-decoration: none;">burrostreettradingpost@gmail.com</a><br>Web: <a href="https://burrostreettradingpost.com/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">burrostreettradingpost.com</a></p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
-                        <h3>Good to Know</h3>
-                        <p>This is a browse-and-linger shop. Allow time to look through jewelry cases and mineral displays. Online shopping is also available through the official website.</p>
+                        <p>Phone: <a href="tel:+15756828280">(575) 682-8280</a><br>
+                           Email: <a href="mailto:burrostreettradingpost@gmail.com">burrostreettradingpost@gmail.com</a><br>
+                           Web: <a href="https://burrostreettradingpost.com/" target="_blank" rel="noopener noreferrer">burrostreettradingpost.com</a></p>
+                        <p>Also publishes as <strong>Burro Street Trading Co.</strong> — same business.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Southwest Treasure on Burro Avenue</h2>
-                <p>Burro Street Trading Post brings almost 20 years of Native American jewelry, turquoise, crystals, pottery, and Southwest d&eacute;cor to the heart of downtown Cloudcroft.</p>
-                <div class="cta-buttons">
-                    <a href="https://burrostreettradingpost.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Visit Website</a>
-                    <a href="tel:5756828280" class="btn-secondary">Call the Store</a>
+        <section class="goodfor-section" id="goodfor" aria-label="Good for and skip if">
+            <div class="detail-block-head">
+                <span class="eyebrow">Decision aid</span>
+                <h2>Good for · skip if</h2>
+                <p>What this shop actually does well, and when to aim somewhere else on the Burro Avenue strip instead.</p>
+            </div>
+
+            <div class="goodfor-grid">
+                <div class="goodfor-card good">
+                    <h3>Good for</h3>
+                    <ul>
+                        <li>Turquoise and sterling-silver shoppers who want depth, not a single case</li>
+                        <li>Gemstone, crystal, and geode browsers</li>
+                        <li>Gift-seekers looking for Southwestern pottery or a kachina</li>
+                        <li>Visitors already inside the Burro Street Exchange</li>
+                        <li>Rainy-day indoor browsing on the avenue</li>
+                    </ul>
+                </div>
+
+                <div class="goodfor-card skip">
+                    <h3>Skip if</h3>
+                    <ul>
+                        <li>You want a fair-trade / yoga-lifestyle boutique — go to <a href="instant-karma.html">Instant Karma</a></li>
+                        <li>You want curated handmade gifts and local art — <a href="aspen-and-ivy.html">Aspen &amp; Ivy</a> or <a href="off-the-beaten-path.html">Off the Beaten Path</a></li>
+                        <li>You want general souvenir volume — this is specialty, not t-shirts</li>
+                        <li>You need guaranteed hours — call before the drive up</li>
+                    </ul>
                 </div>
             </div>
         </section>
+
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Practical notes</h2>
+
+            <details class="note">
+                <summary>Hours, seasons &amp; calling ahead</summary>
+                <div class="note-body">
+                    <p>Cross-checking public sources (official site, Chamber, third-party directories) doesn't produce a consistent weekly schedule. The Exchange itself runs seasonal rhythms — summer weekends busiest, shoulder-season quieter.</p>
+                    <p>Call <a href="tel:+15756828280">(575) 682-8280</a> or walk the Exchange on arrival to confirm the shop is open before committing to a specific item. Suite 103 is inside the 505 Burro complex.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>The Burro Street Exchange</summary>
+                <div class="note-body">
+                    <p>The Burro Street Exchange at 505 Burro Ave is the indoor retail mall on the middle stretch of Burro Avenue. Trading Post shares roof space with Cloudcroft Sandwich Shop, Noisy Water Winery, Old Barrel Tea Company, and several other durable tenants. It's the best indoor-browse retail cluster in town on weather days.</p>
+                    <p>Parking is on-street along Burro Avenue in front of the Exchange building. A single visit can realistically cover three or four Exchange shops without moving the car.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Authenticity, provenance &amp; naming</summary>
+                <div class="note-body">
+                    <p>Trading Post publishes both "Burro Street Trading Post" and "Burro Street Trading Co." across its own site, Chamber listing, and third-party directories. Same business, two public-facing names — not a sign of a relocation or rebrand.</p>
+                    <p>On the Native American jewelry side, the shop's own statements are the strongest available documentation. If authenticity, artist origin, or stone provenance matters for a specific purchase, ask at the counter; we don't have independently verified documentation beyond what the shop itself states.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Payment, shipping &amp; accessibility</summary>
+                <div class="note-body">
+                    <p>Card and cash are standard. Online-order and shipping policies aren't cleanly crawlable from current sources — ask on the call if you're considering shipping a piece.</p>
+                    <p>Exchange access is through the 505 Burro entry. Specific accessibility details for Suite 103 aren't documented; confirm before relying on it. Pets are generally not welcome inside most Exchange tenants.</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="editor-section" id="editor" aria-label="Editor's take">
+            <div class="editor-wrap">
+                <h2>Editor's take</h2>
+                <blockquote>"Trading Post is the Southwest room Cloudcroft's avenue actually needs — not a diluted gift-shop echo of the category but a focused, inventory-heavy stop built for turquoise, silver, stones, and pottery. If those are on your list, this is the shop to start at before diving into the jewelry-only rooms further up the block."</blockquote>
+                <p class="byline">— DiscoverCloudcroft editors</p>
+            </div>
+        </section>
+
+        <section class="handoff-section" id="handoff" aria-label="Nearby shops">
+            <div class="handoff-head">
+                <h2>More on Burro Avenue</h2>
+                <p>Three peer shops on the same walkable strip — or jump back to the full shopping guide for all 24.</p>
+            </div>
+            <div class="handoff-grid">
+                <a class="handoff-card" href="off-the-beaten-path.html">
+                    <span class="lg-pin">1</span>
+                    <h3>Off the Beaten Path</h3>
+                    <p>Curated gallery · side street · since 1996</p>
+                </a>
+                <a class="handoff-card" href="complete-guide-where-to-shop-in-cloudcroft-2026.html#map">
+                    <span class="lg-pin">3</span>
+                    <h3>The Turquoise Shop</h3>
+                    <p>Authentic turquoise · 40+ yrs · 507 Burro</p>
+                </a>
+                <a class="handoff-card" href="redwall-jewelry.html">
+                    <span class="lg-pin">4</span>
+                    <h3>RedWall Jewelry</h3>
+                    <p>Handmade · nature-inspired · Burro Ave</p>
+                </a>
+                <a class="handoff-card back-to-guide" href="complete-guide-where-to-shop-in-cloudcroft-2026.html">
+                    <span class="lg-pin">↩</span>
+                    <h3>All shops in Cloudcroft</h3>
+                    <p>24 independent shops · 1 walkable strip · 0 chains</p>
+                </a>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
-                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
-                <div class="footer-social">
-                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
-                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
-                    <a href="#todo-twitter" aria-label="Twitter">X</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Explore</h3>
-                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Lodging</a>
-                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
-                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
-                <a href="../do/complete-guide-to-activities.html">Activities</a>
-                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="../season/seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h3>Trading Post</h3>
-                <a href="https://burrostreettradingpost.com/" target="_blank" rel="noopener noreferrer">burrostreettradingpost.com</a>
-                <a href="tel:5756828280">(575) 682-8280</a>
-                <a href="mailto:burrostreettradingpost@gmail.com">burrostreettradingpost@gmail.com</a>
-            </div>
-            <div class="footer-col">
-                <h3>Plan</h3>
-                <a href="../plan.html">Plan Your Trip</a>
-                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
-                <a href="../about.html">About Cloudcroft</a>
-                <a href="../contact.html">Contact Us</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-        </div>
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer" style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
     </footer>
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
     <script src="../js/common.js"></script>
     <script>
-        (function() {
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+        (function () {
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         fadeObserver.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.fade-in, .menu-card-plus, .pick, .goodfor-card, .handoff-card').forEach(function (el) { fadeObserver.observe(el); });
 
-            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) {
-                fadeObserver.observe(el);
-            });
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sections = tocPills.map(function (p) { return document.getElementById(p.getAttribute('href').replace('#','')); }).filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
         })();
     </script>
 </body>
+
 </html>
