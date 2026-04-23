@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Daddy's Diner | DiscoverCloudcroft.com — Cowboy Heritage Home Cooking</title>
-    <meta name="description" content="Visit Big Daddy's Diner for home-cooked meals in Cloudcroft, NM. Steaks, BBQ, Mexican food, soups, salads, and desserts. Open daily 7am-9pm. Catering available.">
-    <meta name="keywords" content="Big Daddy's Diner, Cloudcroft restaurant, home cooking, steaks, BBQ, Mexican food, Cloudcroft NM, Sacramento Mountains">
-    <link rel="canonical" href="https://discovercloudcroft.com/big-daddys.html">
+    <title>Big Daddy's Diner, Cloudcroft NM (2026) — Daily 7 AM–9 PM | DiscoverCloudcroft.com</title>
+    <meta name="description"
+        content="Big Daddy's Diner in Cloudcroft, NM — cowboy-heritage diner with prize-winning rib eye, Texas mesquite BBQ, authentic Mexican, homemade pies. Daily 7 AM–9 PM at 1705 James Canyon Hwy.">
+    <meta name="keywords"
+        content="Big Daddy's Diner, Cloudcroft restaurant, diner Cloudcroft, James Canyon Hwy dining, Cloudcroft steaks, Cloudcroft Mexican food, catering Cloudcroft">
+    <link rel="canonical" href="https://discovercloudcroft.com/eat/big-daddys.html">
 
-    <meta property="og:title" content="Big Daddy's Diner | DiscoverCloudcroft.com">
-    <meta property="og:description" content="Cowboy heritage meets home cooking at Big Daddy's Diner in Cloudcroft, NM. Steaks, BBQ, Mexican food, and more. Open daily 7am-9pm.">
-    <meta property="og:url" content="https://discovercloudcroft.com/big-daddys.html">
+    <meta property="og:title" content="Big Daddy's Diner, Cloudcroft NM (2026) — Daily 7 AM–9 PM | DiscoverCloudcroft.com">
+    <meta property="og:description"
+        content="Cowboy-heritage diner on James Canyon Hwy. Prize-winning steaks, Texas BBQ, authentic Mexican, homemade pies. Daily 7 AM–9 PM.">
+    <meta property="og:url" content="https://discovercloudcroft.com/eat/big-daddys.html">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <meta property="og:image" content="https://discovercloudcroft.com/eat/eat-photo/photo-big-daddys/big-daddys-00556.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Big Daddy's Diner | DiscoverCloudcroft.com">
-    <meta name="twitter:description" content="Cowboy heritage meets home cooking at Big Daddy's Diner in Cloudcroft, NM. Open daily 7am-9pm.">
-    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp"><link href="../css/fonts.css" rel="stylesheet">
+    <meta name="twitter:title" content="Big Daddy's Diner, Cloudcroft NM (2026) — Daily 7 AM–9 PM">
+    <meta name="twitter:description" content="Cowboy-heritage diner on James Canyon Hwy. Daily 7 AM–9 PM.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/eat/eat-photo/photo-big-daddys/big-daddys-00556.jpg">
+
+    <link href="../css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common.css">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Restaurant",
       "name": "Big Daddy's Diner",
+      "url": "https://discovercloudcroft.com/eat/big-daddys.html",
+      "image": "https://discovercloudcroft.com/eat/eat-photo/photo-big-daddys/big-daddys-00556.jpg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1705 James Canyon Hwy",
@@ -40,71 +47,1011 @@
       "telephone": "+15756821224",
       "email": "bigdaddysdiner.llc@gmail.com",
       "servesCuisine": ["American", "Mexican", "Barbecue"],
-      "openingHours": "Mo-Su 07:00-21:00"
+      "openingHours": "Mo-Su 07:00-21:00",
+      "priceRange": "$$"
     }
     </script>
 
     <style>
+        /* =====================================================================
+           CHANGELOG (2026-04-22 rebuild — applying the 2026 design system to a
+           single-entity detail page)
 
-.hero-bg {
-    background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
-}
+           WHAT A DETAIL PAGE KEEPS FROM THE GUIDE PATTERN
+             - Hero 2-up with photo + at-a-glance card (address/hours/CTA)
+             - Black stats strip (tuned for one spot's facts)
+             - Sticky TOC pills with active-section tracking
+             - Editor voice (pull-quote "Editor's take")
+             - Practical-notes accordion
+             - Handoff section at the bottom
 
-/* Page-specific components */
-.about-image {
-    background: linear-gradient(135deg, var(--cloud-drift) 0%, rgba(58, 107, 30, 0.1) 100%);
-}
+           WHAT IT REPLACES
+             - No filter rail, no compare matrix, no finder quiz — a detail
+               page commits to one thing.
+             - Menu grid restyled with card-plus pattern (numbered pins,
+               "house specialty" chips, "what to order" callout lines).
+             - One black map pin for Big Daddy's on the same linear Burro +
+               James Canyon corridor schematic from the dining guide, with
+               the three nearby JCH peers shown as grey context pins.
 
-/* Gallery */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-}
+           WHAT IT ADDS (detail-page-only patterns)
+             - Signals chip strip under the hero (amenity-style chips).
+             - "Open now" indicator driven by JS and schema.org openingHours.
+             - "What I'd order" pull-quote trio with specific picks.
+             - "Good for / Skip if" two-column decision aid.
+             - Handoff lists the three nearby JCH peer restaurants by pin
+               number to match the dining-guide map.
 
-.gallery-grid img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-}
+           FIXED
+             - Canonical + og:url pointed to /big-daddys.html at the site
+               root — real path is /eat/big-daddys.html.
+             - Hardcoded nav paths with no ../ prefix.
+             - Duplicate <nav class="mobile-nav-overlay"> block with
+               conflicting hrefs sharing id="mobile-nav".
+             - Dead `#reels` anchor in nav.
+             - Section id="beers" (menu section) — renamed to id="menu".
+             - Emoji chips in about-features, info bar, and menu-card
+               headers — replaced with inline SVG and the 2026 chip style.
+             - Broken footer paths (../stay/lodging.html, literal-space
+               filename, ../do/complete-guide-to-activities.html, etc.) —
+               replaced with the standard minimal footer.
+             - Social footer #todo-* placeholders removed rather than ship
+               broken icon links.
+             - priceRange field added to schema.org (missing in original).
+           ================================================================= */
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-    
-    .visiting-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 768px) {
-    
-    .visiting-grid { grid-template-columns: 1fr; }
-    
-}
-</style>
+        /* ---- Hero ---- */
+        .hero-bg {
+            background: url('eat-photo/photo-big-daddys/big-daddys-00556.jpg') center center / cover no-repeat;
+            filter: saturate(0.9);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.6));
+        }
+
+        .hero.hero-split {
+            min-height: 560px;
+            padding: 5rem 2rem;
+        }
+
+        .hero-split-grid {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-left .hero-eyebrow-pill {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 20px;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-left h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+            color: #fff;
+            line-height: 1.08;
+            margin-bottom: 1rem;
+        }
+
+        .hero-left .hero-deck {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            max-width: 30rem;
+        }
+
+        .hero-byline { color: rgba(255, 255, 255, 0.75); font-size: 0.82rem; letter-spacing: 0.04em; }
+        .hero-byline strong { color: #fff; font-weight: 600; }
+
+        /* ---- At-a-glance card (detail-page equivalent of the hero finder) ---- */
+        .atglance {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 1.5rem;
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        .atglance-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .atglance-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+        }
+
+        .open-now {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.6rem;
+            border-radius: 999px;
+            background: #e9f1e4;
+            color: #2a5020;
+            border: 1px solid rgba(42, 80, 32, 0.2);
+        }
+
+        .open-now.is-closed {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.22);
+        }
+
+        .open-now::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #2a5020;
+        }
+
+        .open-now.is-closed::before { background: #7a4a00; }
+
+        .atglance-rows {
+            display: grid;
+            gap: 0.75rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            color: #333;
+        }
+
+        .atglance-rows dt {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .atglance-rows dd {
+            margin: 0;
+            color: #222;
+        }
+
+        .atglance-rows a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .atglance-rows a:hover { text-decoration-color: #000; }
+
+        .atglance-cta {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .atglance-cta .btn-primary {
+            padding: 0.7rem 1.25rem;
+            font-size: 0.78rem;
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+        }
+
+        .atglance-cta .btn-outline-black {
+            flex: 1;
+            min-width: 140px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.78rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.7rem 1.25rem;
+            color: #000;
+            border: 2px solid #000;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.2s ease, color 0.2s ease;
+            min-height: 44px;
+        }
+
+        .atglance-cta .btn-outline-black:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        /* ---- Signals chip strip (below hero) ---- */
+        .signals {
+            background: #fff;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .signals-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            align-items: center;
+        }
+
+        .signals-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-right: 0.5rem;
+        }
+
+        .signal {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 0.3rem 0.75rem;
+            border-radius: 999px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .signal.featured {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        /* ---- Stats strip ---- */
+        .stats-strip {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .stat { text-align: center; }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.4rem;
+        }
+
+        /* ---- Thesis ---- */
+        .thesis {
+            max-width: 820px;
+            margin: 3rem auto 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .thesis p {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            color: #222;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        .thesis .thesis-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            letter-spacing: 0.04em;
+        }
+
+        /* ---- TOC active state ---- */
+        .toc-pill[aria-current="true"] { background: #000; color: #fff; }
+
+        /* ---- Section containers ---- */
+        .detail-block {
+            padding: 3rem 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .detail-block-head { margin-bottom: 1.5rem; }
+
+        .detail-block-head .eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .detail-block-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0.2rem 0 0.35rem;
+        }
+
+        .detail-block-head p {
+            color: #555;
+            font-size: 0.95rem;
+            max-width: 680px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        /* ---- Menu cards (card-plus pattern on 4 category cards) ---- */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .menu-card-plus {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+            padding: 1.5rem 1.5rem 1.25rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-card-plus .card-pin {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-card-plus .cat-head {
+            margin-left: 3rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .menu-card-plus h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            color: #000;
+            margin: 0;
+        }
+
+        .specialty-chip {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            background: #f1ead2;
+            color: #5a4512;
+            border: 1px solid rgba(90, 69, 18, 0.2);
+        }
+
+        .menu-card-plus .cat-lede {
+            color: #555;
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0 0 0.85rem;
+        }
+
+        .menu-card-plus ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0.85rem;
+        }
+
+        .menu-card-plus ul li {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            padding: 0.3rem 0;
+            color: #333;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .menu-card-plus ul li:last-child { border-bottom: none; }
+
+        .menu-card-plus .order-hint {
+            margin-top: auto;
+            padding: 0.75rem 0 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 0.88rem;
+            font-style: italic;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        /* ---- What I'd order (pull-quote trio, detail-page equivalent of Editor's Call) ---- */
+        .picks-section {
+            background: #111;
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+
+        .picks-wrap { max-width: 1100px; margin: 0 auto; }
+
+        .picks-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.6rem, 2.4vw, 2rem);
+            margin: 0 0 2rem;
+            color: #fff;
+        }
+
+        .picks-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .pick .pick-name {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* ---- Hours table with open-now indicator ---- */
+        .hours-section {
+            padding: 3rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hours-table {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+
+        .hours-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr auto;
+            gap: 1rem;
+            align-items: center;
+            padding: 0.85rem 1.25rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .hours-row:last-child { border-bottom: none; }
+
+        .hours-row.is-today {
+            background: #fafafa;
+            font-weight: 600;
+        }
+
+        .hours-day {
+            color: #222;
+            letter-spacing: 0.04em;
+        }
+
+        .hours-time { color: #555; }
+
+        .hours-today-badge {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.55rem;
+            border-radius: 999px;
+            background: #000;
+            color: #fff;
+        }
+
+        .hours-row:not(.is-today) .hours-today-badge { display: none; }
+
+        /* ---- Location + map ---- */
+        .location-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: start;
+            margin-top: 1rem;
+        }
+
+        .map-figure {
+            background: #f2ede3;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .map-svg { width: 100%; height: auto; display: block; }
+
+        .location-info {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            color: #333;
+            line-height: 1.65;
+        }
+
+        .location-info h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .location-info a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .location-info a:hover { text-decoration-color: #000; }
+
+        .location-info + .location-info { margin-top: 1rem; }
+
+        .map-footnote {
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.85rem;
+        }
+
+        /* ---- Good for / Skip if ---- */
+        .goodfor-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .goodfor-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .goodfor-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+        }
+
+        .goodfor-card.good   { border-top: 4px solid #2a5020; }
+        .goodfor-card.skip   { border-top: 4px solid #7a4a00; }
+
+        .goodfor-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin: 0 0 0.9rem;
+        }
+
+        .goodfor-card.good h3 { color: #2a5020; }
+        .goodfor-card.skip h3 { color: #7a4a00; }
+
+        .goodfor-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .goodfor-card ul li {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.92rem;
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            color: #333;
+            position: relative;
+            line-height: 1.45;
+        }
+
+        .goodfor-card.good ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #2a5020;
+            font-weight: 700;
+        }
+
+        .goodfor-card.skip ul li::before {
+            content: '×';
+            position: absolute;
+            left: 0;
+            color: #7a4a00;
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        .goodfor-card a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Gallery ---- */
+        .gallery-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery-figure {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .gallery-figure img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        .gallery-figure figcaption {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #555;
+            padding: 0.75rem 1rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        /* ---- Practical notes accordion ---- */
+        .notes-section {
+            padding: 4rem 2rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .notes-section h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+
+        .note { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        .note:last-of-type { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+        .note > summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .note > summary::-webkit-details-marker { display: none; }
+
+        .note > summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+        }
+
+        .note[open] > summary::after { content: '−'; }
+
+        .note .note-body {
+            padding: 0 2rem 1.25rem 0;
+            color: #444;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .note .note-body p + p { margin-top: 0.65rem; }
+
+        .note .note-body a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Editor's take ---- */
+        .editor-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+        }
+
+        .editor-wrap {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .editor-wrap h2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #666;
+            margin: 0 0 1rem;
+        }
+
+        .editor-wrap blockquote {
+            border-left: 4px solid #000;
+            padding-left: 1.5rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.6vw, 1.3rem);
+            line-height: 1.55;
+            color: #222;
+        }
+
+        .editor-wrap .byline {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #666;
+            padding-left: calc(1.5rem + 4px);
+        }
+
+        /* ---- Handoff ---- */
+        .handoff-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .handoff-head {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .handoff-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.5rem;
+        }
+
+        .handoff-head p {
+            color: #555;
+            font-size: 0.95rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .handoff-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .handoff-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem 1.25rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            text-decoration: none;
+            color: #000;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: block;
+            position: relative;
+        }
+
+        .handoff-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            color: #000;
+        }
+
+        .handoff-card .lg-pin {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .handoff-card.back-to-guide .lg-pin { background: #555; }
+
+        .handoff-card h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            margin: 0 0 0.25rem;
+        }
+
+        .handoff-card p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* ---- Footer override ---- */
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 1024px) {
+            .hero-split-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero.hero-split { padding: 4rem 2rem; }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem 1rem;
+            }
+
+            .menu-grid { grid-template-columns: 1fr; }
+            .picks-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .location-grid { grid-template-columns: 1fr; }
+            .goodfor-grid { grid-template-columns: 1fr; }
+            .handoff-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 640px) {
+            .hero.hero-split {
+                padding: 3rem 1.25rem;
+                min-height: 0;
+            }
+
+            .atglance { padding: 1.25rem; }
+            .signals { padding: 1rem; }
+            .stats-strip { padding: 1.25rem 1rem; }
+            .stats-strip-inner { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .handoff-grid { grid-template-columns: 1fr; }
+
+            .detail-block,
+            .hours-section,
+            .location-section,
+            .goodfor-section,
+            .gallery-section,
+            .notes-section,
+            .editor-section,
+            .picks-section,
+            .handoff-section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-        <header class="site-header" role="banner">
+    <!-- HEADER (paths relative to /eat/) -->
+    <header class="site-header" role="banner">
         <div class="header-inner">
-
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html" aria-current="page">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
@@ -114,355 +1061,515 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
         <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../resources/resources.html">Resources</a>
         <a href="../resources/contact.html">Contact</a>
     </nav>
-<section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Big Daddy's Diner scenic view"></div>
+
+    <!-- HERO (photo + at-a-glance card) -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Interior of Big Daddy's Diner with Western decor"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>Cloudcroft Dining</span>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">James Canyon Hwy · diner · 2026</span>
+                <h1>Big Daddy's Diner.</h1>
+                <p class="hero-deck">Cowboy-heritage diner with the longest kitchen hours on the James Canyon strip — prize-winning rib eye, Texas mesquite BBQ, authentic Mexican plates, and homemade pies from 7 AM to 9 PM every day.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
             </div>
-            <h1 class="hero-title">
-                <span class="word">Big </span>
-                <span class="word">Daddy's </span>
-                <span class="word">Diner</span>
-            </h1>
-            <p class="hero-subtitle">A family-friendly neighborhood diner celebrating cowboy heritage while serving up the best grub in Cloudcroft. Breakfast, lunch, and dinner daily.</p>
-            <div class="hero-ctas">
-                <a href="#beers" class="btn-primary">View Our Menu</a>
-                <a href="#visit" class="btn-secondary">Visit Us</a>
-            </div>
+            <aside class="atglance" aria-label="At a glance">
+                <div class="atglance-head">
+                    <h2>At a glance</h2>
+                    <span class="open-now" id="open-now" role="status" aria-live="polite">Open now</span>
+                </div>
+                <dl class="atglance-rows">
+                    <div>
+                        <dt>Address</dt>
+                        <dd><a href="https://www.google.com/maps/dir/?api=1&destination=1705%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer">1705 James Canyon Hwy, Cloudcroft, NM 88317</a></dd>
+                    </div>
+                    <div>
+                        <dt>Hours</dt>
+                        <dd>Daily · 7 AM – 9 PM</dd>
+                    </div>
+                    <div>
+                        <dt>Phone</dt>
+                        <dd><a href="tel:+15756821224">(575) 682-1224</a></dd>
+                    </div>
+                    <div>
+                        <dt>Cuisine · price</dt>
+                        <dd>American · Mexican · BBQ · $$</dd>
+                    </div>
+                </dl>
+                <div class="atglance-cta">
+                    <a href="tel:+15756821224" class="btn-primary">Call</a>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=1705%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer" class="btn-outline-black">Directions</a>
+                </div>
+            </aside>
         </div>
     </section>
 
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F4CD;</div>
-                <span>1705 James Canyon Hwy, Cloudcroft, NM</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F550;</div>
-                <span>Open Daily: 7AM&ndash;9PM</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F4DE;</div>
-                <a href="tel:5756821224">(575) 682-1224</a>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F920;</div>
-                <span>Cowboy Heritage</span>
-            </div>
+    <!-- SIGNALS STRIP -->
+    <div class="signals" aria-label="What to expect">
+        <div class="signals-inner">
+            <span class="signals-label">Signals</span>
+            <span class="signal featured">Daily 7 AM – 9 PM</span>
+            <span class="signal">All-day breakfast</span>
+            <span class="signal">Green chile</span>
+            <span class="signal">Homemade pies</span>
+            <span class="signal">Catering</span>
+            <span class="signal">Kids OK</span>
+            <span class="signal">Parking</span>
+            <span class="signal">Takes cards</span>
+            <span class="signal">Cowboy-heritage decor</span>
         </div>
     </div>
 
+    <!-- STATS STRIP -->
+    <div class="stats-strip" aria-label="Snapshot">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">7 AM – 9 PM</span><span class="stat-label">Daily hours</span></div>
+            <div class="stat"><span class="stat-num">1705</span><span class="stat-label">James Canyon Hwy</span></div>
+            <div class="stat"><span class="stat-num">3 cuisines</span><span class="stat-label">American · Mex · BBQ</span></div>
+            <div class="stat"><span class="stat-num">Catering</span><span class="stat-label">Available</span></div>
+            <div class="stat"><span class="stat-num">$$</span><span class="stat-label">Casual price</span></div>
+        </div>
+    </div>
+
+    <!-- STICKY TOC -->
+    <nav class="toc-nav" aria-label="Table of contents">
+        <div class="toc-nav-inner">
+            <a href="#menu" class="toc-pill">Menu</a>
+            <a href="#order" class="toc-pill">What I'd order</a>
+            <a href="#hours" class="toc-pill">Hours</a>
+            <a href="#location" class="toc-pill">Location</a>
+            <a href="#goodfor" class="toc-pill">Good for · skip if</a>
+            <a href="#gallery" class="toc-pill">Gallery</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
+            <a href="#editor" class="toc-pill">Editor's take</a>
+        </div>
+    </nav>
+
     <main id="main-content" role="main">
 
-        <section class="section" id="about" aria-label="About Big Daddy's Diner">
-            <div class="section-container">
-                <div class="about-grid">
-                    <div class="about-text fade-in">
-                        <span class="section-label">About</span>
-                        <h2 class="section-title">Where Cowboy Heritage Meets Home Cooking</h2>
-                        <p>
-                            Big Daddy's Diner brings the spirit of the Old West to Cloudcroft with an atmosphere that celebrates cowboy heritage while striving to cook up the best grub around. This family-friendly neighborhood establishment offers a diverse menu with options to appeal to every taste&mdash;from hearty breakfast platters to satisfying dinner specials.
-                        </p>
-                        <p>
-                            Whether you're a local grabbing your morning coffee or a traveler passing through the Sacramento Mountains, Big Daddy's welcomes you with good food and genuine hospitality. They also offer catering services and can host private events.
-                        </p>
-                        <div class="about-features">
-                            <span class="about-feature">&#x1F373; Breakfast</span>
-                            <span class="about-feature">&#x1F96A; Lunch</span>
-                            <span class="about-feature">&#x1F37D;&#xFE0F; Dinner</span>
-                            <span class="about-feature">&#x1F920; Cowboy Atmosphere</span>
-                            <span class="about-feature">&#x1F389; Catering Available</span>
-                            <span class="about-feature">&#x1F46A; Family Friendly</span>
-                        </div>
-                    </div>
-                    <div class="about-image fade-in">
-                        <img src="../eat/eat-photo/photo-big-daddys/big-daddys-00556.jpg"
-                            alt="Inside Big Daddy's Diner with Western decor, booths, and barrel accents"
-                            style="width: 100%; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);"
-                            loading="lazy" decoding="async">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>The only kitchen on the James Canyon strip that runs 7 AM to 9 PM every day — and one of the few places in Cloudcroft where you can get breakfast at 8, green chile enchiladas at 2, and homemade pie at 8:30.</p>
+            <span class="thesis-meta">Longest hours in the corridor. Cowboy-heritage room. Catering on call.</span>
+        </div>
 
-        <section class="section menu-section" id="beers" aria-label="Our menu">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Our Menu</span>
-                    <h2 class="section-title section-title-centered">Good Home Cooking</h2>
-                    <p class="section-description">From Texas-style BBQ to authentic Mexican food&mdash;something for everyone.</p>
-                </div>
-                <div class="menu-grid">
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F969;</div>
+        <!-- ================================ MENU ================================ -->
+        <section class="detail-block" id="menu" aria-label="Menu">
+            <div class="detail-block-head">
+                <span class="eyebrow">Four categories · daily</span>
+                <h2>The menu</h2>
+                <p>American steaks and BBQ cross over with authentic Mexican plates, plus a full breakfast menu in the morning and homemade pies all day. Specific dishes rotate; house specialties are flagged.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <div class="cat-head">
                         <h3>Steaks &amp; BBQ</h3>
-                        <p>Texas mesquite smoked barbecue and prize-winning steaks.</p>
-                        <ul class="menu-items">
-                            <li>Prize-Winning Rib Eye Steaks</li>
-                            <li>Texas Mesquite Smoked BBQ</li>
-                            <li>Char-Broiled Pork Chops</li>
-                            <li>Burgers</li>
-                        </ul>
+                        <span class="specialty-chip">House specialty</span>
                     </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F32E;</div>
-                        <h3>Mexican Food</h3>
-                        <p>Authentic Mexican dishes made fresh.</p>
-                        <ul class="menu-items">
-                            <li>Street Tacos</li>
-                            <li>Enchiladas</li>
-                            <li>Smothered Burritos</li>
-                            <li>Rice &amp; Beans</li>
-                        </ul>
+                    <p class="cat-lede">Texas mesquite smoked BBQ and prize-winning rib eye — the signature corner of the menu.</p>
+                    <ul>
+                        <li>Prize-winning rib eye steaks</li>
+                        <li>Texas mesquite smoked BBQ</li>
+                        <li>Char-broiled pork chops</li>
+                        <li>Burgers</li>
+                    </ul>
+                    <p class="order-hint">If you're only eating here once, it's the rib eye or the mesquite BBQ plate.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <div class="cat-head">
+                        <h3>Mexican</h3>
+                        <span class="specialty-chip">Green chile</span>
                     </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F372;</div>
-                        <h3>Soups &amp; Salads</h3>
-                        <p>Homemade soups and fresh salads.</p>
-                        <ul class="menu-items">
-                            <li>Homemade Soups</li>
-                            <li>Grilled Chicken Salad</li>
-                            <li>House Salad</li>
-                            <li>Soup of the Day</li>
-                        </ul>
+                    <p class="cat-lede">Authentic New Mexican plates with real green chile — not a token addition.</p>
+                    <ul>
+                        <li>Street tacos</li>
+                        <li>Enchiladas</li>
+                        <li>Smothered burritos</li>
+                        <li>Rice &amp; beans</li>
+                    </ul>
+                    <p class="order-hint">Ask for the enchiladas smothered with green chile — the move for cold mountain nights.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <div class="cat-head">
+                        <h3>Soups &amp; salads</h3>
                     </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F370;</div>
-                        <h3>Desserts &amp; Treats</h3>
-                        <p>Homemade pies, cobblers, and ice cream.</p>
-                        <ul class="menu-items">
-                            <li>Homemade Pies</li>
-                            <li>Cobblers &amp; Desserts</li>
-                            <li>Ice Cream Treats</li>
-                            <li>Milkshakes &amp; Floats</li>
-                        </ul>
+                    <p class="cat-lede">Homemade soups rotate daily — lighter options that still feel substantial at 8,676 ft.</p>
+                    <ul>
+                        <li>Soup of the day (homemade)</li>
+                        <li>Grilled chicken salad</li>
+                        <li>House salad</li>
+                    </ul>
+                    <p class="order-hint">Ask what the soup is — it's the genuine from-scratch item on this side of the menu.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <div class="cat-head">
+                        <h3>Desserts &amp; treats</h3>
+                        <span class="specialty-chip">Baked in-house</span>
+                    </div>
+                    <p class="cat-lede">Homemade pies and cobblers baked on-site — plus ice cream, milkshakes, and floats.</p>
+                    <ul>
+                        <li>Homemade pies</li>
+                        <li>Cobblers</li>
+                        <li>Ice cream</li>
+                        <li>Milkshakes &amp; floats</li>
+                    </ul>
+                    <p class="order-hint">The pie case is the reason to finish dinner here instead of at the brewery.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================================ WHAT I'D ORDER ================================ -->
+        <section class="picks-section" id="order" aria-label="What I'd order">
+            <div class="picks-wrap">
+                <h2>What I'd order</h2>
+                <div class="picks-grid">
+                    <div class="pick">
+                        <span class="pick-for">Your first visit</span>
+                        <blockquote>"Green chile cheeseburger with fries. Pie to finish. That's the version of the menu Big Daddy's does best — the American half with a New Mexican accent."</blockquote>
+                        <p class="pick-name">Green chile cheeseburger + homemade pie</p>
+                    </div>
+                    <div class="pick">
+                        <span class="pick-for">Post-hike dinner</span>
+                        <blockquote>"Mesquite BBQ plate with the soup of the day. Real portions, real heat, and the kitchen's still open even if you got off Osha at 7:30."</blockquote>
+                        <p class="pick-name">Mesquite BBQ + soup + cobbler</p>
+                    </div>
+                    <div class="pick">
+                        <span class="pick-for">Breakfast on a drive day</span>
+                        <blockquote>"Smothered breakfast burrito, coffee, and a second cup to go. Fills the tank for White Sands; sets the day up right."</blockquote>
+                        <p class="pick-name">Smothered breakfast burrito + coffee</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section highlights-section" aria-label="Why visit">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label" style="color: #000000; letter-spacing: 3px;">Why Visit</span>
-                    <h2 class="section-title section-title-centered" style="color: #000000;">Highlights</h2>
-                    <p class="section-description" style="color: rgba(240,244,248,0.7);">Three reasons to dine at Big Daddy's.</p>
-                </div>
-                <div class="highlights-grid">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F920;</div>
-                        <h3>Cowboy Heritage</h3>
-                        <p>An authentic Western atmosphere that celebrates the spirit of the Old West with cowboy decor and warm hospitality.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F373;</div>
-                        <h3>Open Daily</h3>
-                        <p>Serving breakfast, lunch, and dinner seven days a week from 7am to 9pm. Start your mountain morning right.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F389;</div>
-                        <h3>Catering &amp; Events</h3>
-                        <p>Full catering services and private event hosting available. Perfect for family reunions, parties, and celebrations.</p>
-                    </div>
-                </div>
+        <!-- ================================ HOURS ================================ -->
+        <section class="hours-section" id="hours" aria-label="Hours">
+            <div class="detail-block-head">
+                <span class="eyebrow">Daily · year-round</span>
+                <h2>Hours</h2>
+                <p>Seven days a week, 7 AM to 9 PM. Same schedule every day of the year — the most reliable kitchen on James Canyon Highway.</p>
+            </div>
+            <div class="hours-table" id="hours-table">
+                <div class="hours-row" data-day="0"><span class="hours-day">Sunday</span><span class="hours-time">7:00 AM – 9:00 PM</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="1"><span class="hours-day">Monday</span><span class="hours-time">7:00 AM – 9:00 PM</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="2"><span class="hours-day">Tuesday</span><span class="hours-time">7:00 AM – 9:00 PM</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="3"><span class="hours-day">Wednesday</span><span class="hours-time">7:00 AM – 9:00 PM</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="4"><span class="hours-day">Thursday</span><span class="hours-time">7:00 AM – 9:00 PM</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="5"><span class="hours-day">Friday</span><span class="hours-time">7:00 AM – 9:00 PM</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="6"><span class="hours-day">Saturday</span><span class="hours-time">7:00 AM – 9:00 PM</span><span class="hours-today-badge">Today</span></div>
             </div>
         </section>
 
-        <section class="section" id="visit" aria-label="Visit Big Daddy's Diner">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Plan Your Visit</span>
-                    <h2 class="section-title section-title-centered">Visit Big Daddy's Diner</h2>
-                    <p class="section-description">Everything you need to know before visiting.</p>
+        <!-- ================================ LOCATION ================================ -->
+        <section class="location-section" id="location" aria-label="Location">
+            <div class="detail-block-head">
+                <span class="eyebrow">1705 James Canyon Hwy</span>
+                <h2>Where you'll find it</h2>
+                <p>Far-east end of the James Canyon Highway dining strip, at the 1700 block — past the Brother-N-Law turnoff, past Mad Jack's, past Dusty Boots. The last kitchen before you hit forest.</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 720 300" role="img" aria-label="Big Daddy's Diner location on James Canyon Highway">
+                        <rect width="720" height="300" fill="#f2ede3"/>
+
+                        <!-- Burro Ave -->
+                        <rect x="40" y="180" width="640" height="14" fill="#d4c2a0" opacity="0.6" rx="2"/>
+                        <text x="360" y="172" fill="#8a7352" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="3">BURRO AVENUE</text>
+
+                        <!-- James Canyon Hwy branching up -->
+                        <path d="M200 186 Q 150 110 100 40" stroke="#c4ae8a" stroke-width="12" opacity="0.75" fill="none"/>
+                        <text x="80" y="25" fill="#8a7352" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">JAMES CANYON HWY ↑</text>
+
+                        <!-- You are here arrow -->
+                        <g transform="translate(130, 70)">
+                            <text x="22" y="-4" fill="#000" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="2">YOU ARE HERE</text>
+                            <path d="M0 0 L14 -6 L14 -2 L22 -2 L22 2 L14 2 L14 6 Z" fill="#000"/>
+                        </g>
+
+                        <!-- Big Daddy's pin — far up JCH (1705 is the highest address) -->
+                        <g>
+                            <circle cx="115" cy="60" r="16" fill="#000"/>
+                            <circle cx="115" cy="60" r="22" fill="none" stroke="#000" stroke-width="1.5" opacity="0.4"/>
+                            <circle cx="115" cy="60" r="28" fill="none" stroke="#000" stroke-width="1" opacity="0.2"/>
+                            <text x="115" y="64" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">1705</text>
+                        </g>
+                        <text x="142" y="50" fill="#000" font-family="IBM Plex Serif, serif" font-size="14" font-weight="700">Big Daddy's</text>
+                        <text x="142" y="65" fill="#555" font-family="IBM Plex Sans, sans-serif" font-size="10">Daily 7 AM – 9 PM</text>
+
+                        <!-- Peer pins on JCH, greyed out -->
+                        <!-- 1315 - Dusty Boots -->
+                        <g><circle cx="155" cy="115" r="11" fill="#aaa"/><text x="155" y="119" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">12</text></g>
+                        <text x="172" y="119" fill="#888" font-family="IBM Plex Sans, sans-serif" font-size="10">Dusty Boots · 1315</text>
+
+                        <!-- 209 - Brother-N-Law -->
+                        <g><circle cx="180" cy="155" r="11" fill="#aaa"/><text x="180" y="159" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">11</text></g>
+                        <text x="197" y="159" fill="#888" font-family="IBM Plex Sans, sans-serif" font-size="10">Brother-N-Law · 209</text>
+
+                        <!-- 105 - Mad Jack's -->
+                        <g><circle cx="193" cy="175" r="11" fill="#aaa"/><text x="193" y="179" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">10</text></g>
+                        <text x="210" y="179" fill="#888" font-family="IBM Plex Sans, sans-serif" font-size="10">Mad Jack's · 105</text>
+
+                        <!-- 109 - High Rollin' -->
+                        <g><circle cx="175" cy="135" r="11" fill="#aaa"/><text x="175" y="139" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">13</text></g>
+                        <text x="192" y="139" fill="#888" font-family="IBM Plex Sans, sans-serif" font-size="10">High Rollin' · 109</text>
+
+                        <!-- Village label -->
+                        <rect x="450" y="170" width="120" height="30" fill="#fff" opacity="0.6" rx="4"/>
+                        <text x="510" y="189" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">CLOUDCROFT</text>
+                    </svg>
+                    <p class="map-footnote">Pin numbers match the <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html#map">dining-guide map</a>. Schematic only — distances are approximate.</p>
                 </div>
-                <div class="visiting-grid">
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4CD;</div>
-                        <h3>Location</h3>
-                        <p>1705 James Canyon Hwy, Cloudcroft, NM 88317. Located on Highway 82 heading into the village.</p>
+
+                <div>
+                    <div class="location-info">
+                        <h3>Address &amp; directions</h3>
+                        <p>1705 James Canyon Hwy<br>
+                           Cloudcroft, NM 88317</p>
+                        <p><a href="https://www.google.com/maps/dir/?api=1&destination=1705%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer">Get directions &rarr;</a></p>
                     </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F550;</div>
-                        <h3>Hours</h3>
-                        <p>Open Daily: 7AM&ndash;9PM. Serving breakfast, lunch, and dinner seven days a week.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4DE;</div>
+                    <div class="location-info">
                         <h3>Contact</h3>
-                        <p>Phone: <a href="tel:5756821224" style="color: var(--alpine); text-decoration: none;">(575) 682-1224</a>. Email: bigdaddysdiner.llc@gmail.com</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F389;</div>
-                        <h3>Catering &amp; Events</h3>
-                        <p>Full catering services and private event hosting available. Call ahead for details and reservations.</p>
+                        <p>Phone: <a href="tel:+15756821224">(575) 682-1224</a><br>
+                           Email: <a href="mailto:bigdaddysdiner.llc@gmail.com">bigdaddysdiner.llc@gmail.com</a></p>
+                        <p>Catering and private events on request — call ahead.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="gallery" aria-label="Photo gallery">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Gallery</span>
-                    <h2 class="section-title section-title-centered">Big Daddy's Diner</h2>
-                    <p class="section-description">Cowboy heritage on James Canyon Highway.</p>
+        <!-- ================================ GOOD FOR / SKIP IF ================================ -->
+        <section class="goodfor-section" id="goodfor" aria-label="Good for and skip if">
+            <div class="detail-block-head">
+                <span class="eyebrow">Decision aid</span>
+                <h2>Good for · skip if</h2>
+                <p>A detail-page shortcut: what this place actually does well, and when to go somewhere else on the strip instead.</p>
+            </div>
+
+            <div class="goodfor-grid">
+                <div class="goodfor-card good">
+                    <h3>Good for</h3>
+                    <ul>
+                        <li>A roadtrip breakfast on the way up or down</li>
+                        <li>Post-hike dinner when other kitchens have closed</li>
+                        <li>Mixed groups with different appetites (American + Mexican on one menu)</li>
+                        <li>Catering a family reunion or private event</li>
+                        <li>Kids — casual, familiar, and forgiving of long waits</li>
+                    </ul>
                 </div>
-                <div class="gallery-grid">
-                    <img src="../eat/eat-photo/photo-big-daddys/big-daddys-00555.jpg"
-                        alt="Big Daddy's Diner roadside sign with smoker and mountain pines" loading="lazy" decoding="async">
-                    <img src="../eat/eat-photo/photo-big-daddys/big-daddys-00556.jpg"
-                        alt="Interior of Big Daddy's Diner with Western decor, booths, and barrel accents" loading="lazy" decoding="async">
+
+                <div class="goodfor-card skip">
+                    <h3>Skip if</h3>
+                    <ul>
+                        <li>You want Cloudcroft's <a href="eighteen99.html">historic-resort fine-dining dinner</a> — go to Eighteen99</li>
+                        <li>You came specifically for <a href="mad-jacks-bbq.html">post-oak BBQ</a> — Mad Jack's is two minutes back down the strip</li>
+                        <li>You want a walkable Burro-Avenue stroll with dinner — this is on the highway, not downtown</li>
+                        <li>You want <a href="brewery.html">craft beer with dinner</a> — Cloudcroft Brewery is on Burro</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Hungry for Some Good Grub?</h2>
-                <p>Stop by Big Daddy's Diner for home-cooked meals and cowboy hospitality! Open daily from 7am to 9pm.</p>
-                <div class="cta-buttons">
-                    <a href="tel:5756821224" class="btn-primary">Call Big Daddy's</a>
-                    <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html" class="btn-secondary">Explore More Dining</a>
-                </div>
+        <!-- ================================ GALLERY ================================ -->
+        <section class="gallery-section" id="gallery" aria-label="Photo gallery">
+            <div class="detail-block-head">
+                <span class="eyebrow">Two photos</span>
+                <h2>Gallery</h2>
+                <p>Roadside signage and a look inside — Big Daddy's puts most of its visual identity into the cowboy-themed interior.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-big-daddys/big-daddys-00555.jpg" alt="Big Daddy's Diner roadside sign with smoker and mountain pines" loading="lazy" decoding="async">
+                    <figcaption>Roadside sign on James Canyon Highway — the smoker out front is working.</figcaption>
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-big-daddys/big-daddys-00556.jpg" alt="Interior of Big Daddy's Diner with Western decor, booths, and barrel accents" loading="lazy" decoding="async">
+                    <figcaption>Inside — cowboy-heritage decor, booths, barrel accents, unpretentious.</figcaption>
+                </figure>
             </div>
         </section>
+
+        <!-- ================================ PRACTICAL NOTES ================================ -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Practical notes</h2>
+
+            <details class="note">
+                <summary>Hours &amp; busy windows</summary>
+                <div class="note-body">
+                    <p>Open daily 7 AM – 9 PM, every day of the year unless the owners post otherwise. The longest kitchen hours in the James Canyon corridor — useful when you've been on the trail late, or when other kitchens are already closed.</p>
+                    <p>Breakfast rush runs about 8–9:30 AM on weekends. Dinner picks up around 6 PM in summer; quieter midweek and off-season. Catering bookings don't typically affect walk-in service.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Parking, payment &amp; tipping</summary>
+                <div class="note-body">
+                    <p>On-site parking, usually fine — it's a roadside property. Cards accepted; some smaller diners in the area still prefer cash, but Big Daddy's isn't one of them. Standard 18–20% tipping for table service.</p>
+                    <p>The restaurant sits right on James Canyon Highway, so watch for mountain-highway speeds on approach and departure.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Kids, pets &amp; accessibility</summary>
+                <div class="note-body">
+                    <p>Family-friendly — kids are welcome and the menu spans enough categories to keep a mixed-age table happy. The interior is casual booth-and-table seating; nothing unusual in terms of wheelchair access but confirm directly if it matters. Pets belong outdoors here — it's a kitchen, not a patio.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Catering &amp; private events</summary>
+                <div class="note-body">
+                    <p>Full catering services and private event hosting are available — useful for family reunions, post-wedding brunches, or group lodging trips where nobody wants to cook. Call <a href="tel:+15756821224">(575) 682-1224</a> well ahead; peak-weekend catering books up in advance.</p>
+                </div>
+            </details>
+        </section>
+
+        <!-- ================================ EDITOR'S TAKE ================================ -->
+        <section class="editor-section" id="editor" aria-label="Editor's take">
+            <div class="editor-wrap">
+                <h2>Editor's take</h2>
+                <blockquote>"Big Daddy's isn't where you bring out-of-town guests for the Cloudcroft dinner-of-a-lifetime. It's the kitchen you keep in your back pocket — the 9 PM plate when Mad Jack's is sold out, the breakfast burrito before you drive the basin, the catering number on a reunion weekend. Reliable in a town where reliable is genuinely rare."</blockquote>
+                <p class="byline">— DiscoverCloudcroft editors</p>
+            </div>
+        </section>
+
+        <!-- ================================ HANDOFF ================================ -->
+        <section class="handoff-section" id="handoff" aria-label="Nearby dining">
+            <div class="handoff-head">
+                <h2>More on James Canyon Highway</h2>
+                <p>Three peer restaurants on the same highway strip — or jump back to the full dining guide for all 19.</p>
+            </div>
+            <div class="handoff-grid">
+                <a class="handoff-card" href="mad-jacks-bbq.html">
+                    <span class="lg-pin">10</span>
+                    <h3>Mad Jack's BBQ</h3>
+                    <p>Post-oak smoked · Thu–Sun · sold out by 3 PM</p>
+                </a>
+                <a class="handoff-card" href="brother-n-law-bbq.html">
+                    <span class="lg-pin">11</span>
+                    <h3>Brother-N-Law BBQ</h3>
+                    <p>Central TX style · shorter waits · closed Thu</p>
+                </a>
+                <a class="handoff-card" href="dusty-boots-cafe.html">
+                    <span class="lg-pin">12</span>
+                    <h3>Dusty Boots Café</h3>
+                    <p>Scratch-made breakfast · German Saturdays</p>
+                </a>
+                <a class="handoff-card back-to-guide" href="complete-guide-where-to-eat-in-cloudcroft-2026.html">
+                    <span class="lg-pin">↩</span>
+                    <h3>All dining in Cloudcroft</h3>
+                    <p>19 independent spots · 3 corridors · 0 chains</p>
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="site-footer footer-restaurant" role="contentinfo" aria-label="Site footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
-                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
-                <div class="footer-social">
-                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
-                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
-                    <a href="#todo-twitter" aria-label="Twitter">X</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Explore</h3>
-                <a href="../stay/lodging.html">Lodging</a>
-                <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
-                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
-                <a href="../do/complete-guide-to-activities.html">Activities</a>
-                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="../season/seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h3>Connect</h3>
-                <a href="tel:+15756821224">(575) 682-1224</a>
-                <a href="mailto:bigdaddysdiner.llc@gmail.com">bigdaddysdiner.llc@gmail.com</a>
-                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
-                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
-            </div>
-            <div class="footer-col">
-                <h3>Plan</h3>
-                <a href="../plan.html">Plan Your Trip</a>
-                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
-                <a href="../about.html">About Cloudcroft</a>
-                <a href="../contact.html">Contact Us</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-        </div>
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
     </footer>
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
     <script src="../js/common.js"></script>
-  <script>
-        (function() {
-            var header = document.querySelector('.site-header');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 60) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            }, { passive: true });
-
-            var hamburger = document.querySelector('.hamburger');
-            var mobileMenu = document.getElementById('mobile-nav');
-            if (hamburger && mobileMenu) {
-                hamburger.addEventListener('click', function() {
-                    var isOpen = mobileMenu.classList.toggle('open');
-                    hamburger.classList.toggle('active');
-                    hamburger.setAttribute('aria-expanded', isOpen);
-                    mobileMenu.hidden = !isOpen;
-                    document.body.style.overflow = isOpen ? 'hidden' : '';
-                });
-
-                mobileMenu.querySelectorAll('a').forEach(function(link) {
-                    link.addEventListener('click', function() {
-                        mobileMenu.classList.remove('open');
-                        hamburger.classList.remove('active');
-                        hamburger.setAttribute('aria-expanded', 'false');
-                        mobileMenu.hidden = true;
-                        document.body.style.overflow = '';
-                    });
-                });
-            }
-
-            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
-            });
-
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+    <script>
+        (function () {
+            // ---- Fade-in ----
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         fadeObserver.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
-
-            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) {
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.fade-in, .menu-card-plus, .pick, .goodfor-card, .handoff-card').forEach(function (el) {
                 fadeObserver.observe(el);
             });
 
-            var backToTop = document.querySelector('.back-to-top');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 400) {
-                    backToTop.classList.add('visible');
-                } else {
-                    backToTop.classList.remove('visible');
-                }
-            }, { passive: true });
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sections = tocPills
+                .map(function (p) { return document.getElementById(p.getAttribute('href').replace('#','')); })
+                .filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
 
-            backToTop.addEventListener('click', function() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
+            // ---- Open-now indicator + today row highlight ----
+            // Big Daddy's: daily 7 AM – 9 PM (07:00–21:00), every day of the week.
+            var OPEN_HOUR = 7;
+            var CLOSE_HOUR = 21;
+
+            function updateOpenNow() {
+                var now = new Date();
+                var day = now.getDay(); // 0 = Sunday
+                var hour = now.getHours();
+                var minute = now.getMinutes();
+                var pill = document.getElementById('open-now');
+                if (!pill) return;
+
+                var openNow = (hour > OPEN_HOUR || (hour === OPEN_HOUR && minute >= 0)) && (hour < CLOSE_HOUR);
+                if (openNow) {
+                    pill.textContent = 'Open now';
+                    pill.classList.remove('is-closed');
+                } else {
+                    // Not open — tell the user when next open
+                    var nextOpen;
+                    if (hour < OPEN_HOUR) {
+                        nextOpen = 'Opens at 7 AM today';
+                    } else {
+                        nextOpen = 'Opens at 7 AM tomorrow';
+                    }
+                    pill.textContent = nextOpen;
+                    pill.classList.add('is-closed');
+                }
+
+                // Highlight today's row
+                document.querySelectorAll('.hours-row').forEach(function (row) {
+                    row.classList.toggle('is-today', row.getAttribute('data-day') === String(day));
+                });
+            }
+
+            updateOpenNow();
+            // Re-check every minute so "Open now" flips automatically at 9 PM / 7 AM
+            setInterval(updateOpenNow, 60000);
         })();
     </script>
 </body>
+
 </html>

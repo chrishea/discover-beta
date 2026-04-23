@@ -4,73 +4,997 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Guide to Activities to Do in Cloudcroft, New Mexico (2026) | DiscoverCloudcroft.com</title>
+    <title>Complete Guide to Activities in Cloudcroft, NM (2026) — 15 Ways to Spend the Day | DiscoverCloudcroft.com</title>
     <meta name="description"
-        content="Everything to do in Cloudcroft, NM for 2026 — hiking, biking, disc golf, pickleball, fishing, running, camping, sightseeing, winter recreation, and nearby half-day outings.">
+        content="Fifteen ways to spend a day in Cloudcroft, NM in 2026 — hiking, biking, disc golf, pickleball, fishing, running, camping, winter recreation, scenic drives, and nearby half-day outings. Filter by energy, category, and season.">
     <meta name="keywords"
         content="things to do in cloudcroft, cloudcroft activities, cloudcroft hiking, cloudcroft biking, cloudcroft disc golf, cloudcroft pickleball, cloudcroft camping">
     <link rel="canonical"
         href="https://discovercloudcroft.com/do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">
 
-    <meta property="og:title"
-        content="Complete Guide to Activities to Do in Cloudcroft, New Mexico (2026) | DiscoverCloudcroft.com">
+    <meta property="og:title" content="Complete Guide to Activities in Cloudcroft, NM (2026) — 15 Ways to Spend the Day | DiscoverCloudcroft.com">
     <meta property="og:description"
-        content="Everything to do in Cloudcroft, NM for 2026 — hiking, biking, disc golf, pickleball, fishing, running, camping, sightseeing, winter recreation, and nearby half-day outings.">
+        content="Fifteen ways to spend a day in Cloudcroft, NM in 2026 — filter by energy, category, and season.">
     <meta property="og:url"
         content="https://discovercloudcroft.com/do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title"
-        content="Complete Guide to Activities to Do in Cloudcroft, New Mexico (2026) | DiscoverCloudcroft.com">
-    <meta name="twitter:description"
-        content="Everything to do in Cloudcroft, NM for 2026 — hiking, biking, disc golf, pickleball, fishing, running, camping, sightseeing, winter recreation, and nearby half-day outings.">
+    <meta name="twitter:title" content="Complete Guide to Activities in Cloudcroft, NM (2026) — 15 Ways to Spend the Day | DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="Fifteen ways to spend a day in Cloudcroft, NM — filter by energy, category, and season.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
 
     <link href="../css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/common.css">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "name": "Complete Guide to Activities to Do in Cloudcroft, New Mexico (2026)",
-      "description": "Everything to do in Cloudcroft, NM for 2026 — hiking, biking, disc golf, pickleball, fishing, running, camping, sightseeing, winter recreation, and nearby half-day outings.",
+      "name": "Complete Guide to Activities in Cloudcroft, New Mexico (2026)",
+      "description": "Fifteen ways to spend a day in Cloudcroft, NM — hiking, biking, disc golf, pickleball, fishing, running, camping, scenic drives, and nearby half-day outings.",
       "about": {
         "@type": "Place",
         "name": "Cloudcroft, New Mexico",
-        "description": "Outdoor and in-town activities including hiking, biking, disc golf, pickleball, fishing, running, camping, sightseeing, and winter recreation in Cloudcroft, NM"
+        "description": "Outdoor and in-town activities in Cloudcroft, NM"
       },
-      "datePublished": "2026-04-06"
+      "datePublished": "2026-04-06",
+      "dateModified": "2026-04-22"
     }
     </script>
 
     <style>
+        /* =====================================================================
+           CHANGELOG (2026-04-22 rebuild — mirrors the rest of the 2026 guides)
+           FIXED
+             - Every "Read full guide" link on every activity card was
+               broken. The original page pointed at:
+                 ride-bike-in-cloudcroft-new-mexico-2026.html  (not on disk)
+                 play-disc-golf.html                            (not on disk)
+                 play-pickleball-in-cloudcroft-2026.html        (not on disk)
+                 fish-in-Cloudcroft-New-Mexico-2026.html        (not on disk)
+                 best-camping.html                              (not on disk)
+                 hike-best-trails-in-cloudcroft-new-mexico.html (not on disk)
+                 play-golf-in-cloudcroft-2026.html              (not on disk)
+               Pointed each card at the actual filename in /do/:
+                 bike.html, disc-golf.html, pickleball.html, fish.html,
+                 guide-to-camping-cloudcroft-new-mexico-2026.html,
+                 guide-to-hiking-in-cloudcroft-new-mexico-2026.html,
+                 golf.html.
+             - Hardcoded nav paths with no ../ prefix — every link 404'd
+               from /do/.
+             - Duplicate <nav class="mobile-nav-overlay"> block with
+               conflicting hrefs sharing id="mobile-nav".
+             - Altitude claim "around 9,000 feet" in the tips section —
+               canonical site value is 8,676 ft. Corrected.
+             - TOC pill pointed at "#sources" but no such section exists.
+             - #overview section was placed AFTER #picks in source order
+               (awkward IA). Moved to its logical position as the thesis
+               under the hero.
+             - Info bar had four items tagged with the same campsite
+               emoji (Camp, Golf, Fish, Pickleball). Replaced with the
+               stats-strip pattern used across the other guides.
+             - Hidden dark "Bottom Line" section (display:none from
+               common.css) removed.
+             - Dead `#reels` anchor in nav.
+             - Unlinked activity cards (Running, Winter Rec, Arts, Live
+               Music, Scenic Drives, Burro Stroll, Food Crawl, Nearby)
+               now link to the relevant cross-guide page instead of being
+               dead ends.
+           ADDED
+             - Hero 2-up (photo + "How do you want to spend the day?"
+               3-row planner).
+             - Stats strip (15 activities · 3 free headliners · four
+               seasons · Stage 1 fire restrictions · 8,676 ft).
+             - Sticky filter rail with 11 chips synced to the quiz.
+             - Three auto-hiding grid regions: Active outdoors (8) /
+               In-town &amp; easy (4) / Destinations &amp; drives (3).
+             - Richer activity cards with numbered pins, category tags,
+               where/when meta, attribute chips (with warn chips for
+               "No rentals this season", "Bluff Springs closed",
+               "Sunspot access conflicted", "Winter weather-dependent"),
+               Compare checkboxes.
+             - Inline-SVG activity-zone map plotting Zenith Park, Lincoln
+               NF, Burro Ave, The Lodge, Ski Cloudcroft, Trestle, and the
+               Basin — the real "where activities happen" layout.
+             - Compare matrix with 8 columns (energy / season / free /
+               where).
+             - Editor's Call — 3 picks (one perfect day, serious outdoor
+               week, rainy-low-energy day).
+             - Practical-notes accordion (4 panels) merging the 12 tip
+               cards into a focused read.
+             - Handoff to lodging, eat, shop, and visit-nearby guides.
+             - TOC pills track active section on scroll.
+           REMOVED
+             - Emoji icons across info bar, card contact blocks, tip box.
+             - Word-span animation on a 5-word hero title.
+             - 8-card Editor's Picks-by-visitor-type grid — consolidated
+               into the Editor's Call pull-quotes + practical-notes.
+             - Redundant Compare section of one-line blurbs — replaced
+               by the interactive matrix.
+             - "Best Bets If You Only Have One Day" ordered list —
+               absorbed into Editor's Call.
+           ================================================================= */
+
+        /* ---- Hero ---- */
         .hero-bg {
             background: url('do-photo/pickleball/pickleball-00759.jpg') center center / cover no-repeat;
+            filter: saturate(0.9);
         }
 
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15));
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.55));
         }
 
-        .cta-container h2 {
-            color: #000000;
+        .hero.hero-split {
+            min-height: 560px;
+            padding: 5rem 2rem;
         }
 
-        .lodge-card-image {
-            display: block;
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            object-fit: cover;
-            border-radius: 8px;
+        .hero-split-grid {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-left .hero-eyebrow-pill {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 20px;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-left h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+            color: #fff;
+            line-height: 1.08;
             margin-bottom: 1rem;
+        }
+
+        .hero-left .hero-deck {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            max-width: 30rem;
+        }
+
+        .hero-byline { color: rgba(255, 255, 255, 0.75); font-size: 0.82rem; letter-spacing: 0.04em; }
+        .hero-byline strong { color: #fff; font-weight: 600; }
+
+        /* ---- Finder ---- */
+        .finder {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 1.5rem 1.5rem 1.25rem;
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        .finder h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0 0 1rem;
+        }
+
+        .finder-row { margin-bottom: 0.85rem; }
+
+        .finder-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 0.45rem;
+        }
+
+        .chip-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+        .chip {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            padding: 0.4rem 0.85rem;
+            border-radius: 999px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .chip:hover { border-color: #000; }
+
+        .chip[aria-pressed="true"] {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .finder-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .finder-actions .btn-primary {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.8rem;
+        }
+
+        .finder-clear {
+            background: none;
+            border: none;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Stats strip ---- */
+        .stats-strip {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .stat { text-align: center; }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.4rem;
+        }
+
+        /* ---- Thesis ---- */
+        .thesis {
+            max-width: 820px;
+            margin: 3rem auto 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .thesis p {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            color: #222;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        .thesis .thesis-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            letter-spacing: 0.04em;
+        }
+
+        .thesis a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Sticky filter rail ---- */
+        .filter-rail {
+            position: sticky;
+            top: 64px;
+            z-index: 80;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: saturate(140%) blur(6px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 0.75rem 2rem;
+        }
+
+        .filter-rail-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .filter-rail-inner::-webkit-scrollbar { display: none; }
+
+        .filter-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            white-space: nowrap;
+            margin-right: 0.25rem;
+        }
+
+        .filter-count {
+            margin-left: auto;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            color: #555;
+            white-space: nowrap;
+            padding-left: 1rem;
+        }
+
+        .filter-count strong { color: #000; }
+
+        /* ---- Section containers ---- */
+        .act-block {
+            padding: 3rem 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .act-block-head { margin-bottom: 1rem; }
+
+        .act-block-head .eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .act-block-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0.2rem 0 0.35rem;
+        }
+
+        .act-block-head p {
+            color: #555;
+            font-size: 0.92rem;
+            max-width: 620px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        .section-hidden { display: none; }
+
+        /* ---- Cards ---- */
+        .lodge-grid.is-grid-plus {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .lodge-card.card-plus {
+            padding: 0;
+            border-top: none;
+            overflow: hidden;
+            cursor: default;
+            position: relative;
+        }
+
+        .lodge-card.card-plus:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+            border-top-color: transparent;
+            border-top-width: 0;
+        }
+
+        .lodge-card.card-plus img {
+            margin-bottom: 0;
+            border-radius: 0;
+            aspect-ratio: 16 / 10;
+        }
+
+        .card-body {
+            padding: 1.25rem 1.25rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .card-head {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-head h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.12rem;
+            color: #000;
+            margin: 0;
+            line-height: 1.25;
+        }
+
+        /* Category tag + Energy band both on the right of card-head */
+        .cat-tag {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            padding: 0.25rem 0.55rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .cat-tag.cat-outdoor { background: #e4eedd; color: #2a4a1a; border-color: rgba(42, 74, 26, 0.22); }
+        .cat-tag.cat-town    { background: #eaf1ea; color: #254a33; border-color: rgba(37, 74, 51, 0.18); }
+        .cat-tag.cat-culture { background: #eae3f1; color: #3a2555; border-color: rgba(58, 37, 85, 0.2); }
+        .cat-tag.cat-drive   { background: #efe8dc; color: #3a2a12; border-color: rgba(58, 42, 18, 0.2); }
+        .cat-tag.cat-food    { background: #f1ead2; color: #5a4512; border-color: rgba(90, 69, 18, 0.18); }
+        .cat-tag.cat-winter  { background: #e4ecf4; color: #1e3a5a; border-color: rgba(30, 58, 90, 0.2); }
+
+        /* Energy band — low/med/high intensity */
+        .energy-band {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .energy-band.e-easy     { background: #efefef; color: #111; }
+        .energy-band.e-moderate { background: #555;    color: #fff; border-color: #555; }
+        .energy-band.e-active   { background: #111;    color: #fff; border-color: #111; }
+
+        .property-type.type-inline { margin-bottom: 0.75rem; }
+
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem 1rem;
+            font-size: 0.78rem;
+            color: #555;
+            margin-bottom: 0.6rem;
+        }
+
+        .card-body p.card-desc {
+            color: var(--charcoal-light);
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0 0 0.85rem;
+        }
+
+        .amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .amenity {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.2rem 0.55rem;
+            border-radius: 4px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .amenity.warn {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.18);
+        }
+
+        .card-foot {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            padding-top: 0.85rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .compare-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #444;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .compare-toggle input {
+            accent-color: #000;
+            width: 14px;
+            height: 14px;
+        }
+
+        .card-foot .lodge-card-guide { margin: 0; }
+
+        .card-pin {
+            position: absolute;
+            top: 0.6rem;
+            left: 0.6rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+            z-index: 2;
+        }
+
+        .lodge-card[hidden] { display: none !important; }
+
+        .empty-state {
+            display: none;
+            padding: 3rem 1rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+            border: 1px dashed rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+        }
+
+        .empty-state.is-visible { display: block; }
+
+        /* ---- Compare matrix ---- */
+        .matrix-section {
+            background: #f8f8f8;
+            padding: 3.5rem 2rem;
+        }
+
+        .matrix-wrap { max-width: 1200px; margin: 0 auto; }
+
+        .matrix-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .matrix-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0;
+        }
+
+        .matrix-count {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .matrix-scroll {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .matrix {
+            width: 100%;
+            min-width: 820px;
+            border-collapse: collapse;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .matrix thead th {
+            text-align: left;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #666;
+            font-weight: 700;
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fafafa;
+        }
+
+        .matrix tbody td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            color: #333;
+            vertical-align: top;
+        }
+
+        .matrix tbody tr:last-child td { border-bottom: none; }
+
+        .matrix tbody .prop-name {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            color: #000;
+            font-size: 0.95rem;
+        }
+
+        .matrix .ok { color: #000; font-weight: 600; }
+        .matrix .no { color: #aaa; }
+
+        .matrix-empty {
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        /* ---- Map ---- */
+        .map-section {
+            padding: 3.5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-head { margin-bottom: 1.5rem; }
+
+        .map-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.35rem;
+        }
+
+        .map-head p {
+            color: #555;
+            font-size: 0.9rem;
+            max-width: 640px;
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .map-figure {
+            background: #e4ecdf;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .map-svg { width: 100%; height: auto; display: block; }
+
+        .map-legend {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.45rem;
+        }
+
+        .map-legend li {
+            display: grid;
+            grid-template-columns: 26px 1fr;
+            gap: 0.6rem;
+            align-items: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: #333;
+        }
+
+        .map-legend .lg-pin {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-legend a {
+            color: #000;
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 0, 0, 0.2);
+            text-underline-offset: 3px;
+        }
+
+        .map-legend a:hover { text-decoration-color: #000; }
+
+        .map-footnote { font-size: 0.72rem; color: #888; margin-top: 1rem; }
+
+        /* ---- Editor's Call ---- */
+        .editor-section {
+            background: #111;
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+
+        .editor-wrap { max-width: 1100px; margin: 0 auto; }
+
+        .editor-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.6rem, 2.4vw, 2rem);
+            margin: 0 0 2rem;
+            color: #fff;
+        }
+
+        .editor-picks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .editor-pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .editor-pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .editor-pick .pick-answer {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .editor-pick .pick-answer a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Practical notes ---- */
+        .notes-section {
+            padding: 4rem 2rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .notes-section h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+
+        .note { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        .note:last-of-type { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+        .note > summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .note > summary::-webkit-details-marker { display: none; }
+
+        .note > summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+        }
+
+        .note[open] > summary::after { content: '−'; }
+
+        .note > summary:hover { color: #444; }
+
+        .note .note-body {
+            padding: 0 2rem 1.25rem 0;
+            color: #444;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .note .note-body p + p { margin-top: 0.65rem; }
+
+        .note .note-body a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Handoff ---- */
+        .handoff-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+        }
+
+        .handoff-wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .handoff-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .handoff-wrap p {
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0 auto 2rem;
+            max-width: 600px;
+        }
+
+        .handoff-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .handoff-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            text-decoration: none;
+            color: #000;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .handoff-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            color: #000;
+        }
+
+        .handoff-card h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            margin: 0 0 0.25rem;
+        }
+
+        .handoff-card p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* ---- TOC active state ---- */
+        .toc-pill[aria-current="true"] { background: #000; color: #fff; }
+
+        /* ---- Footer override ---- */
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 1024px) {
+            .hero-split-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero.hero-split { padding: 4rem 2rem; }
+
+            .lodge-grid.is-grid-plus { grid-template-columns: repeat(2, 1fr); }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem 1rem;
+            }
+
+            .editor-picks { grid-template-columns: 1fr; gap: 2rem; }
+            .map-grid { grid-template-columns: 1fr; }
+            .handoff-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 640px) {
+            .hero.hero-split {
+                padding: 3rem 1.25rem;
+                min-height: 0;
+            }
+
+            .finder { padding: 1.25rem; }
+            .stats-strip { padding: 1.25rem 1rem; }
+            .stats-strip-inner { grid-template-columns: repeat(2, 1fr); }
+            .lodge-grid.is-grid-plus { grid-template-columns: 1fr; }
+            .filter-rail { padding: 0.6rem 1rem; }
+            .filter-count { display: none; }
+            .handoff-grid { grid-template-columns: 1fr; }
+
+            .act-block,
+            .map-section,
+            .matrix-section,
+            .editor-section,
+            .notes-section,
+            .handoff-section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
         }
     </style>
 </head>
@@ -78,23 +1002,22 @@
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
+    <!-- HEADER (paths relative to /do/) -->
     <header class="site-header" role="banner">
         <div class="header-inner">
-
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html" aria-current="page">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
@@ -104,682 +1027,899 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav>
-    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
         <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../resources/resources.html">Resources</a>
         <a href="../resources/contact.html">Contact</a>
     </nav>
-    <!-- ════════════════════════════════════════════ HERO ════════════════════════════════════════════ -->
-    <section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Cloudcroft activities guide hero background"></div>
+
+    <!-- HERO (2-up: pickleball photo + finder) -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Pickleball courts at Zenith Park in Cloudcroft"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge" style="background: rgba(255, 255, 255, 0.7);">
-                <span>2026 Activities Guide</span>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">Mountain base · 2026</span>
+                <h1>Fifteen ways to spend the day.</h1>
+                <p class="hero-deck">Cloudcroft is a mountain base, not a one-attraction town. Easy wins, active forest recreation, seasonal highlights, and half-day trips to the basin — filter by how much energy you actually have.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
             </div>
-            <h1 class="hero-title">
-                <span class="word">Things </span>
-                <span class="word">to </span>
-                <span class="word">Do </span>
-                <span class="word">in </span>
-                <span class="word">Cloudcroft</span>
-            </h1>
-            <p class="hero-subtitle">A mountain base, not a one-attraction town. Easy wins like the Mexican Canyon
-                Trestle and Burro Avenue, active options like hiking, biking, and trail running, plus seasonal
-                recreation and nearby half-day outings. This guide covers it all.</p>
-            <div class="hero-ctas">
-                <a href="#activities" class="btn-primary">Browse Activities</a>
-                <a href="#picks" class="btn-secondary" style="background: rgba(255, 255, 255, 0.7);">By Visitor Type</a>
+            <div class="hero-right">
+                <form class="finder" aria-label="Find my activity" id="finder" onsubmit="return false;">
+                    <h2>How do you want to spend the day?</h2>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-energy">Energy</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-energy" data-filter-group="energy">
+                            <button type="button" class="chip" data-value="easy" aria-pressed="false">Easy</button>
+                            <button type="button" class="chip" data-value="moderate" aria-pressed="false">Moderate</button>
+                            <button type="button" class="chip" data-value="active" aria-pressed="false">Active</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-cat">Category</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-cat" data-filter-group="category">
+                            <button type="button" class="chip" data-value="outdoor" aria-pressed="false">Outdoors</button>
+                            <button type="button" class="chip" data-value="town" aria-pressed="false">In-town</button>
+                            <button type="button" class="chip" data-value="culture" aria-pressed="false">Culture</button>
+                            <button type="button" class="chip" data-value="drive" aria-pressed="false">Drives &amp; nearby</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-row">
+                        <span class="finder-label" id="lbl-season">Season</span>
+                        <div class="chip-row" role="group" aria-labelledby="lbl-season" data-filter-group="season">
+                            <button type="button" class="chip" data-value="summer" aria-pressed="false">Summer</button>
+                            <button type="button" class="chip" data-value="fall" aria-pressed="false">Fall</button>
+                            <button type="button" class="chip" data-value="winter" aria-pressed="false">Winter</button>
+                            <button type="button" class="chip" data-value="allyear" aria-pressed="false">Year-round</button>
+                        </div>
+                    </div>
+
+                    <div class="finder-actions">
+                        <a href="#active" class="btn-primary">Show matches</a>
+                        <button type="button" class="finder-clear" id="finder-clear">Clear</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════ INFO BAR ════════════════════════════════════════════ -->
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <a href="hike-best-trails-in-cloudcroft-new-mexico.html">
-                <div class=" info-bar-item">
-                    <div class="info-bar-icon">&#x1F97E;</div>
-                    <span>Hike</span>
-
-                </div>
-            </a>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F6B5;</div>
-                <span>Bike</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F3D5;&#xFE0F;</div>
-                <span>Camp</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F3D5;&#xFE0F;</div>
-                <span>Golf</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F3D5;&#xFE0F;</div>
-                <span>Fish</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F3D5;&#xFE0F;</div>
-                <span>Pickleball</span>
-            </div>
-
+    <!-- STATS STRIP -->
+    <div class="stats-strip" aria-label="Activities at a glance">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">15</span><span class="stat-label">Activities in this guide</span></div>
+            <div class="stat"><span class="stat-num">3 free</span><span class="stat-label">Headliners</span></div>
+            <div class="stat"><span class="stat-num">4 seasons</span><span class="stat-label">Different each time</span></div>
+            <div class="stat"><span class="stat-num">Stage 1</span><span class="stat-label">Fire restrictions in effect</span></div>
+            <div class="stat"><span class="stat-num">8,676 ft</span><span class="stat-label">Village elevation</span></div>
         </div>
     </div>
 
-    <!-- ════════════════════════════════════════════ STICKY TOC NAV ════════════════════════════════════════════ -->
+    <!-- STICKY TOC NAV -->
     <nav class="toc-nav" aria-label="Table of contents">
         <div class="toc-nav-inner">
-            <a href="#overview" class="toc-pill">Overview</a>
-            <a href="#activities" class="toc-pill">Activities</a>
+            <a href="#active" class="toc-pill">Active outdoors</a>
+            <a href="#intown" class="toc-pill">In-town &amp; easy</a>
+            <a href="#destinations" class="toc-pill">Drives &amp; nearby</a>
+            <a href="#map" class="toc-pill">Map</a>
             <a href="#compare" class="toc-pill">Compare</a>
-            <a href="#tips" class="toc-pill">Tips</a>
-            <a href="#picks" class="toc-pill">By Visitor</a>
-            <a href="#sources" class="toc-pill">Sources</a>
+            <a href="#editor" class="toc-pill">Editor's Call</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
         </div>
     </nav>
 
     <main id="main-content" role="main">
 
-        <div class="updated-stamp-wrap">
-            <span class="updated-stamp">Last updated · April 2026</span>
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>Ask yourself four questions first: short stop or full day? Low-effort scenic or active? Who's with you? Weather-proof or condition-dependent? Your answers shape the whole trip.</p>
+            <span class="thesis-meta">2026 access to know: <a href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank" rel="noopener noreferrer">Stage 1 fire restrictions</a> through Sept 30, Bluff Springs Rec Area closed through Dec 31, Sunspot observatory closed (the byway itself is still the drive).</span>
         </div>
 
-
-        <!-- ════════════════════════════════════════════ 02 ACTIVITIES ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="activities" aria-label="Activities">
-            <div class="section-container">
-                <div style="text-align: center;">
-
-                    <span class="section-label">What to Do</span>
-                    <h2 class="section-title section-title-centered">Every Major Activity in Cloudcroft</h2>
+        <!-- FILTER RAIL -->
+        <div class="filter-rail" id="filter-rail" aria-label="Filter activities">
+            <div class="filter-rail-inner">
+                <span class="filter-label">Filter</span>
+                <div class="chip-row" role="group" aria-label="Filter chips" data-filter-group="rail">
+                    <button type="button" class="chip" data-rail="easy" aria-pressed="false">Easy</button>
+                    <button type="button" class="chip" data-rail="moderate" aria-pressed="false">Moderate</button>
+                    <button type="button" class="chip" data-rail="active" aria-pressed="false">Active</button>
+                    <button type="button" class="chip" data-rail="outdoor" aria-pressed="false">Outdoors</button>
+                    <button type="button" class="chip" data-rail="town" aria-pressed="false">In-town</button>
+                    <button type="button" class="chip" data-rail="culture" aria-pressed="false">Culture</button>
+                    <button type="button" class="chip" data-rail="drive" aria-pressed="false">Drives &amp; nearby</button>
+                    <button type="button" class="chip" data-rail="free" aria-pressed="false">Free</button>
+                    <button type="button" class="chip" data-rail="family" aria-pressed="false">Family-friendly</button>
+                    <button type="button" class="chip" data-rail="allyear" aria-pressed="false">Year-round</button>
+                    <button type="button" class="chip" data-rail="winter" aria-pressed="false">Winter</button>
                 </div>
+                <span class="filter-count"><strong id="filter-count-n">15</strong> of 15 shown</span>
+            </div>
+        </div>
 
-                <div class="fade-in" style="max-width: 800px; margin: 0 auto 2rem auto;">
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        From mountain biking in the Lincoln National Forest to low-friction disc golf at Zenith Park,
-                        Cloudcroft offers a wider activity mix than most visitors expect. Here is the full landscape
-                        &mdash; each with who it suits, what it feels like, and what to verify before you go.
-                    </p>
-                </div>
+        <!-- ================================ ACTIVE OUTDOORS ================================ -->
+        <section class="act-block" id="active" aria-label="Active outdoor recreation">
+            <div class="act-block-head">
+                <span class="eyebrow">Eight active options</span>
+                <h2>Active outdoors</h2>
+                <p>The reasons serious trip planners drive up — hiking, biking, running, camping, fishing, disc golf, pickleball, and winter recreation. Mix and match by energy.</p>
+            </div>
 
-                <div class="lodge-grid">
+            <div class="lodge-grid is-grid-plus" data-grid="active">
 
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="do-photo/bike/bike-00558.jpeg"></div>
-                        <h3>Biking</h3>
-                        <span class="property-type">Mountain, Road &amp; Gravel</span>
-                        <p>One of the better biking bases in southern New Mexico. Rim, Elk Canyon, and Fir trails for
-                            mountain riding. Highway 82 is a serious road-cycling corridor. High Altitude supports
-                            riders but is <strong>not doing rentals for the season</strong> &mdash; bring your bike.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F525; Experienced riders &middot; Forest routes &middot; Elevation gain
-                        </div>
-                        <a href="ride-bike-in-cloudcroft-new-mexico-2026.html" class="lodge-card-guide">Read full guide
-                            &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="do-photo/disc-golf/disc-golf-00447.jpeg"></div>
-                        <h3>Disc Golf</h3>
-                        <span class="property-type">18-hole &amp; Beginner 9-hole</span>
-                        <p>The Cloudcroft Community Disc Golf Course is the main 18-hole round &mdash; wooded, free,
-                            and mountain-scale. The remodeled 9-hole Byron Ligon course at Zenith Park is the
-                            beginner-friendly par-3 option for families and casual players.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; Zenith Park (9-hole) &middot; Community course (18-hole)
-                        </div>
-                        <a href="play-disc-golf.html" class="lodge-card-guide">Read full guide &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="do-photo/pickleball/PB-1-web.jpg"></div>
-                        <h3>Pickleball</h3>
-                        <span class="property-type">Six Public Courts</span>
-                        <p>Six free outdoor courts at Zenith Park with an active local play community &mdash;
-                            Pickleball Addicts of Cloudcroft. One of the strongest low-friction activities in town.
-                            Court resurfacing was scheduled for early April 2026; verify current condition.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; Zenith Park &middot; Free to play
-                        </div>
-                        <a href="play-pickleball-in-cloudcroft-2026.html" class="lodge-card-guide">Read full guide
-                            &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="../media/fishing-hero-card-image.jpg"></div>
-                        <h3>Fishing</h3>
-                        <span class=" property-type">Pond &amp; Mountain Water</span>
-                        <p>Silver Springs RV Park Trout Pond is the easiest family-friendly stop &mdash; one acre,
-                            stocked weekly, not catch-and-release, and staff will clean and bag your fish. Broader
-                            forest and stream fishing available with a valid NM license (12+).</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; Silver Springs RV Park &middot; NM license required
-                        </div>
-                        <a href="fish-in-Cloudcroft-New-Mexico-2026.html" class="lodge-card-guide">Read full guide
-                            &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="do-photo/run/runner-solo.jpeg"></div>
-                        <h3>Running &amp; Trail Races</h3>
-                        <span class=" property-type">Three 2026 Races</span>
-                        <p>A legitimate running destination with Osha Trail for easier efforts and Rim Trail for
-                            stronger runs. 2026 races: <strong>Trails &amp; Rails</strong> (June 13),
-                            <strong>Cloudcroft Ultra</strong> (August 15), and <strong>Cactus to Cloud Sky
-                                Race</strong>
-                            (October 17).
-                        </p>
-                        <div class="lodge-card-contact">
-                            &#x1F3C5; Osha &middot; Rim Trail &middot; Trestle routes
-                        </div>
-                    </div>
-
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="../media/Pix-Cloudcroft-Discover-img-camp-2-1.jpg">
-                        </div>
-                        <h3><a href="best-camping.html">Camping</a></h3>
-                        <span class="property-type">Forest &amp; RV</span>
-                        <p>Sleepy Grass Campground opens May 15, 2026 &mdash; the closest practical Forest Service
-                            option. <strong>Pines Campground</strong> (24 sites, RVs up to 35 ft, also opens May 15)
-                            and Upper Karr Recreation Area round out the federal choices. Private options include
-                            <strong>16 Springs</strong> and <strong>Camp Rio</strong> (Mayhill). Book Recreation.gov
-                            early.
-                        </p>
-                        <div class="lodge-card-contact">
-                            &#x1F4C5; Seasonal &middot; Reservations recommended
-                        </div>
-                    </div>
-
-                    <div class="lodge-card">
-                        <a href="hike-best-trails-in-cloudcroft-new-mexico.html">
-
-                            <div class="lodge-card-icon"><img src="do-photo/hike/hike-00038.JPG"></div>
+                <!-- 1. Hiking -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="hiking"
+                    data-energy="easy moderate active"
+                    data-categories="outdoor"
+                    data-seasons="spring summer fall"
+                    data-free="true"
+                    data-family="true"
+                    data-allyear="false">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <img src="do-photo/hike/hike-00038.JPG" alt="Fall hiking on a Cloudcroft forest trail" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
                             <h3>Hiking</h3>
-                            <span class=" property-type">Easy to Moderate</span>
-                            <p>Still one of the best reasons to visit. <strong>Osha Trail (T10)</strong> is the easiest
-                                starting point. Trestle-area routes &mdash; <strong>Cloud-Climbing Trestle Trail
-                                    (T5001)</strong>, <strong>Overlook Trail (T5001B)</strong>, <strong>Village Spur
-                                    (T5001A)</strong> &mdash; are short and scenic. <strong>Switchback Trail
-                                    (T5004)</strong>
-                                and deeper Sacramento Ranger District routes reward repeat visitors.</p>
-                            <div class="lodge-card-contact">
-                                &#x1F97E; Osha &middot; Trestle &middot; Switchback
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="../media/MM-Sled-girl.jpg"></div>
-                        <h3>Winter Recreation</h3>
-                        <span class="property-type">Skiing &amp; Ice Rink</span>
-                        <p>Ski Cloudcroft remains the winter anchor, but conditions vary &mdash; the 2025&ndash;26
-                            season closed March 7, 2026 due to warm weather and low snow. The James Sewell Ice Rink
-                            is part of the winter identity, but local reporting suggested 2025&ndash;26 would be the
-                            last natural outdoor rink season &mdash; verify before planning around it.</p>
-                        <div class="lodge-card-contact">
-                            &#x2744;&#xFE0F; Seasonal &middot; Weather-dependent
+                            <span class="energy-band e-easy">Easy → Active</span>
+                        </div>
+                        <span class="property-type type-inline">Osha, Trestle, Rim, Switchback, 12 trails total</span>
+                        <div class="card-meta">
+                            <span>Lincoln NF · Sacramento Ranger District</span>
+                        </div>
+                        <p class="card-desc">Still one of the best reasons to visit. Osha (T10) is the easiest start; Cloud-Climbing Trestle and Switchback are short and scenic; Rim Trail rewards repeat visitors with 31 miles.</p>
+                        <div class="amenities">
+                            <span class="amenity">Free</span>
+                            <span class="amenity">12 trails</span>
+                            <span class="amenity">Family loops</span>
+                            <span class="amenity warn">Bluff Springs closed</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="hiking"> Compare</label>
+                            <a href="guide-to-hiking-in-cloudcroft-new-mexico-2026.html" class="lodge-card-guide">Hiking guide &rarr;</a>
                         </div>
                     </div>
+                </article>
 
-                    <div class="lodge-card">
-                        <img src="../media/plein-air-painter-at-easel.jpg">
-                        <h3>Arts &amp; Culture</h3>
-                        <span class=" property-type">Galleries &amp; Theater</span>
-                        <p>More culture than visitors expect: Off the Beaten Path, Cloudcroft Art Workshops, gallery
-                            clusters, and seasonal artist events. Cloudcroft Light Opera Company adds a
-                            local-theater
-                            layer when performance timing lines up.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; Burro Avenue cluster
+                <!-- 2. Biking -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="biking"
+                    data-energy="active"
+                    data-categories="outdoor"
+                    data-seasons="spring summer fall"
+                    data-free="true"
+                    data-family="false"
+                    data-allyear="false">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <img src="do-photo/bike/bike-00558.jpeg" alt="Mountain biking singletrack near Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Biking</h3>
+                            <span class="energy-band e-active">Active</span>
+                        </div>
+                        <span class="property-type type-inline">Mountain, road &amp; gravel</span>
+                        <div class="card-meta">
+                            <span>Rim, Elk Canyon, Fir Trails · Hwy 82 corridor</span>
+                        </div>
+                        <p class="card-desc">One of the better biking bases in southern New Mexico. Rim, Elk Canyon, and Fir trails for mountain riding. Hwy 82 is a serious road-cycling corridor. High Altitude supports riders but is <strong>not doing rentals this season</strong> — bring your bike.</p>
+                        <div class="amenities">
+                            <span class="amenity">Mountain</span>
+                            <span class="amenity">Road</span>
+                            <span class="amenity warn">No rentals 2026</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="biking"> Compare</label>
+                            <a href="bike.html" class="lodge-card-guide">Biking info &rarr;</a>
                         </div>
                     </div>
+                </article>
 
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="../media/live-music.jpeg"></div>
-                        <h3>Live Music</h3>
-                        <span class="property-type">Brewery &amp; Bars</span>
-                        <p>Cloudcroft Brewing, The Distillery, and winery or bar settings support a practical but
-                            changing live-music scene. Timing matters &mdash; check local listings for your dates.
-                        </p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; Cloudcroft Brewing &middot; The Distillery
+                <!-- 3. Running & Trail Races -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="running"
+                    data-energy="active"
+                    data-categories="outdoor"
+                    data-seasons="spring summer fall"
+                    data-free="true"
+                    data-family="false"
+                    data-allyear="false">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <img src="do-photo/run/runner-solo.jpeg" alt="Solo trail runner on a Cloudcroft forest path" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Running &amp; trail races</h3>
+                            <span class="energy-band e-active">Active</span>
+                        </div>
+                        <span class="property-type type-inline">Three 2026 races · Osha &amp; Rim routes</span>
+                        <div class="card-meta">
+                            <span>Local + destination races</span>
+                        </div>
+                        <p class="card-desc">A legitimate running destination. Osha Trail for easier efforts, Rim Trail for stronger runs. 2026 races: <strong>Trails &amp; Rails</strong> (June 13), <strong>Cloudcroft Ultra</strong> (Aug 15), and <strong>Cactus to Cloud Sky Race</strong> (Oct 17).</p>
+                        <div class="amenities">
+                            <span class="amenity">3 races</span>
+                            <span class="amenity">Osha + Rim</span>
+                            <span class="amenity">Trestle routes</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="running"> Compare</label>
+                            <a href="guide-to-hiking-in-cloudcroft-new-mexico-2026.html" class="lodge-card-guide">Trail routes &rarr;</a>
                         </div>
                     </div>
+                </article>
 
-                    <div class="lodge-card">
-                        <img src="../media/placeholder-explore-golf.jpg" alt="Golf course in Cloudcroft" loading="lazy"
-                            decoding="async" class="lodge-card-image">
-                        <h3>Golf</h3>
-                        <span class=" property-type">The Lodge Course</span>
-                        <p>The Lodge golf course remains one of the more destination-style leisure options in the
-                            area
-                            &mdash; a scenic mountain round tied to Cloudcroft&rsquo;s historic resort property.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; The Lodge at Cloudcroft
+                <!-- 4. Camping -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="camping"
+                    data-energy="moderate"
+                    data-categories="outdoor"
+                    data-seasons="spring summer fall"
+                    data-free="false"
+                    data-family="true"
+                    data-allyear="false">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <img src="../media/Pix-Cloudcroft-Discover-img-camp-2-1.jpg" alt="Tent camping in a pine forest near Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Camping</h3>
+                            <span class="energy-band e-moderate">Moderate</span>
                         </div>
-                        <a href="play-golf-in-cloudcroft-2026.html" class="lodge-card-guide">Read full guide
-                            &rarr;</a>
-                    </div>
-
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="do-photo/sunspot-byway.webp"
-                                alt="Mountain scenic drive near Cloudcroft"></div>
-                        <h3>Scenic Drives</h3>
-                        <span class="property-type">Byway &amp; Forest Roads</span>
-                        <p>The <strong>Sunspot Scenic Byway</strong> (NM 6563) is the strongest &ldquo;leave town
-                            and see the mountain&rdquo; drive &mdash; 15 miles starting just south of Cloudcroft with
-                            stops like Haynes Canyon Vista. <strong>Fresnal Canyon Road (FR 162C)</strong> delivers
-                            panoramic Tularosa Basin overlooks. Sacramento Canyon backroads suit slower, unpackaged
-                            forest driving.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F697; Verify Sunspot destination access
+                        <span class="property-type type-inline">USFS developed + group + dispersed</span>
+                        <div class="card-meta">
+                            <span>Recreation.gov + on-site</span>
                         </div>
-                    </div>
-
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="../media/placeholder-event-july4th.jpg"
-                                alt="Burro Avenue shopping district"></div>
-                        <h3>Burro Avenue Stroll</h3>
-                        <span class="property-type">Shops, Galleries &amp; Food Stops</span>
-                        <p>The core &ldquo;just be in town&rdquo; activity. The <strong>Burro Street Exchange</strong>
-                            concentrates boutiques, galleries, jewelry, Southwest goods, tea, and wine. Works in any
-                            season, mixes naturally with coffee, bakery, and lunch stops &mdash; one of the best
-                            low-effort Cloudcroft activities.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F4CD; Walkable &middot; All seasons &middot; Hours vary
+                        <p class="card-desc">Sleepy Grass and Pines (24 sites, RVs up to 35 ft) open May 15. Upper Karr is year-round. Private options include 16 Springs and Camp Rio (Mayhill). Book Recreation.gov early for summer.</p>
+                        <div class="amenities">
+                            <span class="amenity">13 sites in guide</span>
+                            <span class="amenity">Reservations</span>
+                            <span class="amenity">Free dispersed</span>
+                            <span class="amenity warn">Fire restrictions</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="camping"> Compare</label>
+                            <a href="guide-to-camping-cloudcroft-new-mexico-2026.html" class="lodge-card-guide">Camping guide &rarr;</a>
                         </div>
                     </div>
+                </article>
 
-                    <div class="lodge-card">
-                        <div class="lodge-card-icon"><img src="../media/live-music.jpeg"
-                                alt="Cloudcroft food and drink stops"></div>
-                        <h3>Food &amp; Drink Crawl</h3>
-                        <span class="property-type">Slow Afternoon or Evening</span>
-                        <p>Build the day around stops rather than one reservation: morning coffee at
-                            <strong>Black Bear Coffee</strong> and pastry at <strong>Burro Street Bakery</strong>,
-                            midday tea at <strong>Old Barrel Tea Company</strong> or a brewery stop, evening dinner
-                            at <strong>The Lodge / 1899</strong>, <strong>Cloudcroft Brewing</strong>, or
-                            <strong>Mad Jack&rsquo;s BBQ</strong>.
-                        </p>
-                        <div class="lodge-card-contact">
-                            &#x2615; Low-key &middot; Great for mixed-energy groups
+                <!-- 5. Fishing -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="fishing"
+                    data-energy="easy moderate"
+                    data-categories="outdoor"
+                    data-seasons="spring summer fall"
+                    data-free="false"
+                    data-family="true"
+                    data-allyear="false">
+                    <span class="card-pin" aria-hidden="true">5</span>
+                    <img src="../media/fishing-hero-card-image.jpg" alt="Trout fishing in a Lincoln National Forest stream" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Fishing</h3>
+                            <span class="energy-band e-easy">Easy → Moderate</span>
+                        </div>
+                        <span class="property-type type-inline">Pond &amp; forest water · NM license 12+</span>
+                        <div class="card-meta">
+                            <span>Silver Springs RV Park + NF streams</span>
+                        </div>
+                        <p class="card-desc">Silver Springs RV Park Trout Pond is the easiest family stop — one acre, stocked weekly, not catch-and-release, and staff will clean and bag your fish. Broader forest and stream fishing with a valid NM license (12+).</p>
+                        <div class="amenities">
+                            <span class="amenity">Trout pond</span>
+                            <span class="amenity">Family</span>
+                            <span class="amenity">Stocked weekly</span>
+                            <span class="amenity warn">NM license 12+</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="fishing"> Compare</label>
+                            <a href="fish.html" class="lodge-card-guide">Fishing info &rarr;</a>
                         </div>
                     </div>
+                </article>
 
-                    <div class="lodge-card">
-                        <img src="../media/white-sands-dunes-mountains.webp"
-                            alt="White Sands National Park gypsum dunes" loading="lazy" decoding="async"
-                            class="lodge-card-image">
-                        <h3>White Sands &amp; Nearby</h3>
-                        <span class="property-type">Half-Day Outings</span>
-                        <p>White Sands National Park, New Mexico Museum of Space History, Oliver Lee Memorial State
-                            Park, Alameda Park Zoo, and McGinn&rsquo;s PistachioLand &mdash; all strong nearby
-                            half-day or full-day expansions of a Cloudcroft trip.</p>
-                        <div class="lodge-card-contact">
-                            &#x1F697; 30&ndash;60 min drive to basin
+                <!-- 6. Disc Golf -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="discgolf"
+                    data-energy="easy moderate"
+                    data-categories="outdoor town"
+                    data-seasons="spring summer fall"
+                    data-free="true"
+                    data-family="true"
+                    data-allyear="true">
+                    <span class="card-pin" aria-hidden="true">6</span>
+                    <img src="do-photo/disc-golf/disc-golf-00447.jpeg" alt="Disc golf basket on a wooded Cloudcroft course" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Disc golf</h3>
+                            <span class="energy-band e-easy">Easy → Moderate</span>
+                        </div>
+                        <span class="property-type type-inline">18-hole + beginner 9-hole</span>
+                        <div class="card-meta">
+                            <span>Cloudcroft Community course + Zenith Park</span>
+                        </div>
+                        <p class="card-desc">The Community Disc Golf Course is the main 18-hole round — wooded, free, mountain-scale. The remodeled 9-hole Byron Ligon course at Zenith Park is the beginner-friendly par-3 option for families.</p>
+                        <div class="amenities">
+                            <span class="amenity">Free</span>
+                            <span class="amenity">18-hole</span>
+                            <span class="amenity">Beginner 9-hole</span>
+                            <span class="amenity">Family</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="discgolf"> Compare</label>
+                            <a href="disc-golf.html" class="lodge-card-guide">Disc golf info &rarr;</a>
                         </div>
                     </div>
+                </article>
 
-                </div>
+                <!-- 7. Pickleball -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="pickleball"
+                    data-energy="moderate"
+                    data-categories="outdoor town"
+                    data-seasons="spring summer fall"
+                    data-free="true"
+                    data-family="true"
+                    data-allyear="false">
+                    <span class="card-pin" aria-hidden="true">7</span>
+                    <img src="do-photo/pickleball/PB-1-web.jpg" alt="Pickleball courts at Zenith Park in Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Pickleball</h3>
+                            <span class="energy-band e-moderate">Moderate</span>
+                        </div>
+                        <span class="property-type type-inline">Six free outdoor courts · Zenith Park</span>
+                        <div class="card-meta">
+                            <span>Open play Tue / Thu / Sat mornings</span>
+                        </div>
+                        <p class="card-desc">Six free outdoor courts with an active local community — Pickleball Addicts of Cloudcroft. One of the strongest low-friction activities in town. Court resurfacing was scheduled for early April 2026; verify condition.</p>
+                        <div class="amenities">
+                            <span class="amenity">Free</span>
+                            <span class="amenity">All levels</span>
+                            <span class="amenity">Open play days</span>
+                            <span class="amenity warn">Resurfacing 2026</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="pickleball"> Compare</label>
+                            <a href="pickleball.html" class="lodge-card-guide">Court details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="tip-box">
-                    <span>&#x26A0;&#xFE0F;</span>
-                    <p><strong>2026 conditions that matter:</strong> Lincoln National Forest entered Stage 1 fire
-                        restrictions on March 27, 2026, scheduled through Sept 30, 2026. The Bluff Springs recreation
-                        area, parking, toilets, and Trail 112 bridge are closed through Dec 31, 2026. Sunspot public
-                        access is conflicted across official pages &mdash; treat the Sunspot Scenic Byway as the
-                        scenic experience and do not build plans around observatory access.</p>
-                </div>
+                <!-- 8. Winter Recreation -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="winter"
+                    data-energy="easy moderate"
+                    data-categories="outdoor"
+                    data-seasons="winter"
+                    data-free="false"
+                    data-family="true"
+                    data-allyear="false">
+                    <span class="card-pin" aria-hidden="true">8</span>
+                    <img src="../media/MM-Sled-girl.jpg" alt="Winter recreation — sledding near Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Winter recreation</h3>
+                            <span class="energy-band e-easy">Easy → Moderate</span>
+                        </div>
+                        <span class="property-type type-inline">Ski Cloudcroft + ice rink</span>
+                        <div class="card-meta">
+                            <span>Hwy 82 · village</span>
+                        </div>
+                        <p class="card-desc">Ski Cloudcroft is the winter anchor, but conditions vary — the 2025–26 season closed March 7, 2026 due to warm weather. The James Sewell Ice Rink is part of the winter identity; local reporting suggested 2025–26 may have been the last natural outdoor rink season. Verify before planning.</p>
+                        <div class="amenities">
+                            <span class="amenity">Beginner ski</span>
+                            <span class="amenity">Summer tubing</span>
+                            <span class="amenity">Ice rink</span>
+                            <span class="amenity warn">Weather-dependent</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="winter"> Compare</label>
+                            <a href="https://skicloudcroft.net/" target="_blank" rel="noopener noreferrer" class="lodge-card-guide">Ski Cloudcroft &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </section>
 
-        <!-- ════════════════════════════════════════════ 03 COMPARE ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="compare" aria-label="Compare activities">
-            <div class="section-container">
-                <div style="text-align: center;">
+        <!-- ================================ IN-TOWN & EASY ================================ -->
+        <section class="act-block" id="intown" aria-label="In-town and easy activities">
+            <div class="act-block-head">
+                <span class="eyebrow">Four easy wins</span>
+                <h2>In-town &amp; easy</h2>
+                <p>The low-friction activities — walk Burro Ave, browse a gallery, catch live music at the brewery, or build an afternoon around coffee, tea, wine, and dinner.</p>
+            </div>
 
-                    <span class="section-label">Head to Head</span>
-                    <h2 class="section-title section-title-centered">Best Activities by Category</h2>
-                </div>
+            <div class="lodge-grid is-grid-plus" data-grid="intown">
 
-                <div class="compare-grid">
-                    <div class="compare-card">
-                        <h3>Best Easy Win</h3>
-                        <p><span class="pick-name">Mexican Canyon Trestle Vista</span> &mdash; The iconic image of
-                            Cloudcroft and a worth-doing stop even if you only have an hour.</p>
+                <!-- 9. Burro Avenue Stroll -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="burrostroll"
+                    data-energy="easy"
+                    data-categories="town culture"
+                    data-seasons="spring summer fall winter"
+                    data-free="true"
+                    data-family="true"
+                    data-allyear="true">
+                    <span class="card-pin" aria-hidden="true">9</span>
+                    <img src="../media/placeholder-event-july4th.jpg" alt="Burro Avenue shopping district in Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Burro Avenue stroll</h3>
+                            <span class="energy-band e-easy">Easy</span>
+                        </div>
+                        <span class="property-type type-inline">Shops, galleries &amp; food stops</span>
+                        <div class="card-meta">
+                            <span>Walkable · all seasons · hours vary</span>
+                        </div>
+                        <p class="card-desc">The core "just be in town" activity. The Burro Street Exchange concentrates boutiques, galleries, jewelry, tea, and wine. Works in any season; mixes naturally with coffee, bakery, and lunch stops.</p>
+                        <div class="amenities">
+                            <span class="amenity">Free</span>
+                            <span class="amenity">Walkable</span>
+                            <span class="amenity">All weather</span>
+                            <span class="amenity">Year-round</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="burrostroll"> Compare</label>
+                            <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html" class="lodge-card-guide">Shopping guide &rarr;</a>
+                        </div>
                     </div>
-                    <div class="compare-card">
-                        <h3>Best Family Outing</h3>
-                        <p><span class="pick-name">Osha Trail</span> and <span class="pick-name">Zenith Park</span>
-                            &mdash; Easy walking, beginner disc golf, and pickleball all in one family-friendly
-                            cluster.</p>
+                </article>
+
+                <!-- 10. Arts & Culture -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="arts"
+                    data-energy="easy"
+                    data-categories="culture town"
+                    data-seasons="spring summer fall winter"
+                    data-free="true"
+                    data-family="true"
+                    data-allyear="true">
+                    <span class="card-pin" aria-hidden="true">10</span>
+                    <img src="../media/plein-air-painter-at-easel.jpg" alt="Plein air painter at an easel near Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Arts &amp; culture</h3>
+                            <span class="energy-band e-easy">Easy</span>
+                        </div>
+                        <span class="property-type type-inline">Galleries, theater, workshops</span>
+                        <div class="card-meta">
+                            <span>Burro Avenue cluster · seasonal events</span>
+                        </div>
+                        <p class="card-desc">More culture than visitors expect: Off the Beaten Path, Cloudcroft Art Workshops, gallery clusters, and seasonal artist events. Cloudcroft Light Opera Company adds a local-theater layer when performance timing lines up.</p>
+                        <div class="amenities">
+                            <span class="amenity">Galleries</span>
+                            <span class="amenity">Theater</span>
+                            <span class="amenity">Workshops</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="arts"> Compare</label>
+                            <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html" class="lodge-card-guide">Galleries on Burro &rarr;</a>
+                        </div>
                     </div>
-                    <div class="compare-card">
-                        <h3>Best Active Morning</h3>
-                        <p><span class="pick-name">Rim Trail</span> &mdash; For stronger runners, bikers, and hikers
-                            who want a real effort at elevation.</p>
+                </article>
+
+                <!-- 11. Live Music -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="music"
+                    data-energy="easy"
+                    data-categories="culture town"
+                    data-seasons="spring summer fall winter"
+                    data-free="true"
+                    data-family="false"
+                    data-allyear="true">
+                    <span class="card-pin" aria-hidden="true">11</span>
+                    <img src="../media/live-music.jpeg" alt="Live music at a Cloudcroft brewery" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Live music</h3>
+                            <span class="energy-band e-easy">Easy</span>
+                        </div>
+                        <span class="property-type type-inline">Brewery &amp; bar settings</span>
+                        <div class="card-meta">
+                            <span>Cloudcroft Brewing · Dave's · Western Bar</span>
+                        </div>
+                        <p class="card-desc">Cloudcroft Brewing, Dave's Café, and winery or bar settings support a practical but changing live-music scene. Timing matters — check local listings for your dates.</p>
+                        <div class="amenities">
+                            <span class="amenity">Brewery</span>
+                            <span class="amenity">Bar settings</span>
+                            <span class="amenity warn">Timing varies</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="music"> Compare</label>
+                            <a href="../eat/brewery.html" class="lodge-card-guide">Brewery details &rarr;</a>
+                        </div>
                     </div>
-                    <div class="compare-card">
-                        <h3>Best Low-Effort Stop</h3>
-                        <p><span class="pick-name">Burro Avenue</span> &mdash; Walkable, weather-flexible, and the
-                            softest in-town sightseeing rhythm in Cloudcroft.</p>
+                </article>
+
+                <!-- 12. Food & Drink Crawl -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="foodcrawl"
+                    data-energy="easy"
+                    data-categories="town culture"
+                    data-seasons="spring summer fall winter"
+                    data-free="false"
+                    data-family="true"
+                    data-allyear="true">
+                    <span class="card-pin" aria-hidden="true">12</span>
+                    <img src="../media/live-music.jpeg" alt="Cloudcroft food and drink stops" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Food &amp; drink crawl</h3>
+                            <span class="energy-band e-easy">Easy</span>
+                        </div>
+                        <span class="property-type type-inline">Slow afternoon or evening</span>
+                        <div class="card-meta">
+                            <span>Black Bear → tea → winery → dinner</span>
+                        </div>
+                        <p class="card-desc">Build the day around stops rather than one reservation: morning coffee at Black Bear Coffee, pastry at Eight the Cake, midday tea at Old Barrel Tea, a wine flight at Noisy Water, evening at Eighteen99, Cloudcroft Brewing, or Mad Jack's BBQ.</p>
+                        <div class="amenities">
+                            <span class="amenity">Low-key</span>
+                            <span class="amenity">Mixed-energy groups</span>
+                            <span class="amenity">Year-round</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="foodcrawl"> Compare</label>
+                            <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html" class="lodge-card-guide">Dining guide &rarr;</a>
+                        </div>
                     </div>
-                    <div class="compare-card">
-                        <h3>Best Half-Day Outing</h3>
-                        <p><span class="pick-name">White Sands National Park</span> &mdash; The strongest nearby
-                            expansion of a Cloudcroft trip and a completely different landscape.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Winter Activity</h3>
-                        <p><span class="pick-name">Ski Cloudcroft</span> &mdash; The winter anchor, with the ice rink
-                            as a secondary option if still operating.</p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Free Activity</h3>
-                        <p><span class="pick-name">Osha Trail</span>, <span class="pick-name">Trestle Vista</span>,
-                            <span class="pick-name">pickleball</span>, and <span class="pick-name">disc golf</span>
-                            &mdash; All free and all high-value.
-                        </p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best for Repeat Visitors</h3>
-                        <p><span class="pick-name">Biking</span>, <span class="pick-name">trail running</span>, and
-                            <span class="pick-name">camping</span> &mdash; The activities that reward deeper
-                            exploration past the easy wins.
-                        </p>
-                    </div>
-                    <div class="compare-card">
-                        <h3>Best Scenic Drive</h3>
-                        <p><span class="pick-name">Sunspot Scenic Byway</span> &mdash; Treat the byway itself as the
-                            activity. Public observatory access should not be assumed.</p>
-                    </div>
-                </div>
+                </article>
+
             </div>
         </section>
 
-        <!-- ════════════════════════════════════════════ 04 TIPS ════════════════════════════════════════════ -->
-        <section class="section" id="tips" aria-label="Planning tips">
-            <div class="section-container">
-                <div style="text-align: center;">
+        <!-- ================================ DRIVES & NEARBY ================================ -->
+        <section class="act-block" id="destinations" aria-label="Drives and nearby destinations">
+            <div class="act-block-head">
+                <span class="eyebrow">Three destination activities</span>
+                <h2>Drives &amp; nearby</h2>
+                <p>Golf at The Lodge, a scenic byway to the south, and a 4,400-foot drop into the basin for White Sands and the Space History Museum. Expand the trip without leaving the region.</p>
+            </div>
 
-                    <span class="section-label">Before You Go</span>
-                    <h2 class="section-title section-title-centered">Practical Planning Notes</h2>
-                </div>
+            <div class="lodge-grid is-grid-plus" data-grid="destinations">
 
-                <div class="tip-grid">
-                    <div class="tip-card">
-                        <h3>Altitude</h3>
-                        <p>Cloudcroft sits around 9,000 feet. Easy activities can still feel harder than expected.
-                            Hydrate, pace yourself, and ease into effort on day one.</p>
+                <!-- 13. Golf -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="golf"
+                    data-energy="moderate"
+                    data-categories="outdoor"
+                    data-seasons="spring summer fall"
+                    data-free="false"
+                    data-family="false"
+                    data-allyear="false">
+                    <span class="card-pin" aria-hidden="true">13</span>
+                    <img src="../media/placeholder-explore-golf.jpg" alt="Golf course at The Lodge at Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Golf at The Lodge</h3>
+                            <span class="energy-band e-moderate">Moderate</span>
+                        </div>
+                        <span class="property-type type-inline">Scenic mountain round · The Lodge course</span>
+                        <div class="card-meta">
+                            <span>601 Corona Place · The Lodge</span>
+                        </div>
+                        <p class="card-desc">The Lodge golf course is one of the more destination-style leisure options in the area — a scenic mountain round tied to Cloudcroft's 1899 historic resort.</p>
+                        <div class="amenities">
+                            <span class="amenity">Scenic</span>
+                            <span class="amenity">Historic property</span>
+                            <span class="amenity">Leisure pace</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="golf"> Compare</label>
+                            <a href="golf.html" class="lodge-card-guide">Golf details &rarr;</a>
+                        </div>
                     </div>
-                    <div class="tip-card">
-                        <h3>Weather Swings</h3>
-                        <p>You can leave cool forest and reach hot basin quickly. Dress for the full range, not just
-                            Cloudcroft&rsquo;s temperature. Afternoon weather shifts are common in summer.</p>
+                </article>
+
+                <!-- 14. Scenic Drives -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="drives"
+                    data-energy="easy"
+                    data-categories="drive"
+                    data-seasons="spring summer fall"
+                    data-free="true"
+                    data-family="true"
+                    data-allyear="false">
+                    <span class="card-pin" aria-hidden="true">14</span>
+                    <img src="do-photo/sunspot-byway.webp" alt="Sunspot Scenic Byway near Cloudcroft" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Scenic drives</h3>
+                            <span class="energy-band e-easy">Easy</span>
+                        </div>
+                        <span class="property-type type-inline">Sunspot Byway + Fresnal Canyon</span>
+                        <div class="card-meta">
+                            <span>NM 6563 · FR 162C</span>
+                        </div>
+                        <p class="card-desc">The Sunspot Scenic Byway (NM 6563) is the strongest "leave town and see the mountain" drive — 15 miles just south with Haynes Canyon Vista. Fresnal Canyon Road (FR 162C) delivers panoramic Tularosa Basin overlooks.</p>
+                        <div class="amenities">
+                            <span class="amenity">Free</span>
+                            <span class="amenity">Byway</span>
+                            <span class="amenity">Overlooks</span>
+                            <span class="amenity warn">Sunspot closed</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="drives"> Compare</label>
+                            <a href="../visit/where-to-visit.html" class="lodge-card-guide">Nearby trips &rarr;</a>
+                        </div>
                     </div>
-                    <div class="tip-card">
-                        <h3>Cell Service</h3>
-                        <p>Do not count on constant service outside town or deeper in the forest. Download maps and
-                            route notes before you head out.</p>
+                </article>
+
+                <!-- 15. White Sands & Nearby -->
+                <article class="lodge-card card-plus fade-in"
+                    data-property="nearby"
+                    data-energy="moderate"
+                    data-categories="drive"
+                    data-seasons="spring summer fall winter"
+                    data-free="false"
+                    data-family="true"
+                    data-allyear="true">
+                    <span class="card-pin" aria-hidden="true">15</span>
+                    <img src="../media/white-sands-dunes-mountains.jpg" alt="White Sands National Park gypsum dunes" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>White Sands &amp; nearby</h3>
+                            <span class="energy-band e-moderate">Moderate</span>
+                        </div>
+                        <span class="property-type type-inline">Half-day and full-day outings</span>
+                        <div class="card-meta">
+                            <span>30–60 min drive to the basin</span>
+                        </div>
+                        <p class="card-desc">White Sands National Park, NM Museum of Space History, Oliver Lee Memorial State Park, Alameda Park Zoo, and McGinn's PistachioLand — all strong nearby half-day or full-day expansions of a Cloudcroft trip.</p>
+                        <div class="amenities">
+                            <span class="amenity">16 destinations</span>
+                            <span class="amenity">Family</span>
+                            <span class="amenity">4,400 ft drop</span>
+                            <span class="amenity warn">US-70 closures</span>
+                        </div>
+                        <div class="card-foot">
+                            <label class="compare-toggle"><input type="checkbox" class="cmp" data-property="nearby"> Compare</label>
+                            <a href="../visit/where-to-visit.html" class="lodge-card-guide">Where to visit guide &rarr;</a>
+                        </div>
                     </div>
-                    <div class="tip-card">
-                        <h3>Fire Restrictions</h3>
-                        <p>Check Lincoln National Forest official alerts and restrictions before hiking, camping, or
-                            planning long forest drives. Restrictions change with conditions.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Seasonal Closures</h3>
-                        <p>Campgrounds, recreation areas, and some forest sites are seasonal. Do not assume
-                            year-round access &mdash; verify opening windows for your dates.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Road Conditions</h3>
-                        <p>Mountain roads matter more than first-time visitors expect, especially in winter or
-                            shoulder seasons. Check before long forest drives.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Gear Needs</h3>
-                        <p>Bring more water, layers, and footwear than you think you need. High Altitude is the main
-                            in-town outdoor resource, but don&rsquo;t count on renting a bike locally this season.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Reservation Timing</h3>
-                        <p>Book earlier than you think for holiday weekends, race weekends, peak color season, and
-                            Mountain Christmas Village dates. Recreation.gov is the strongest federal campground
-                            booking source.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>What to Verify</h3>
-                        <p>Current closures, fire restrictions, campground openings, event timing, and whether the
-                            activity you want is actually operating during your visit.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Fire Restrictions 2026</h3>
-                        <p>Stage 1 restrictions forest-wide from March 27, 2026 through Sept 30, 2026 unless rescinded.
-                            Affects campfires, dispersed camping, and some recreation activities. Check the Lincoln
-                            National Forest alerts page for current status.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Bluff Springs Closure</h3>
-                        <p>The Bluff Springs recreation area, parking lot, toilets, and Trail 112 bridge are closed
-                            through Dec 31, 2026 unless rescinded. Plan alternate hiking and picnic destinations.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>Town Hours &amp; Rhythm</h3>
-                        <p>Cloudcroft is not a late-night town. Hours vary by shop and season, popular dinner spots
-                            can wait on busy weekends, and chain-style consistency isn&rsquo;t the norm. Treat it
-                            as part of the charm and plan around it.</p>
-                    </div>
-                </div>
+                </article>
+
             </div>
         </section>
 
+        <div class="empty-state" id="empty-state" role="status">
+            No activities match your filters. Try dropping a chip — Cloudcroft's activity spectrum is wider than it looks but narrows fast under strict filters.
+        </div>
 
-        <!-- ════════════════════════════════════════════ 05 BY VISITOR TYPE ════════════════════════════════════════════ -->
-        <section class="section section-alt" id="picks" aria-label="Activities by visitor type">
-            <div class="section-container">
-                <div style="text-align: center;">
-
-                    <span class="section-label">By Visitor Type</span>
-                    <h2 class="section-title section-title-centered">Best Activities for Your Group</h2>
-                </div>
-
-                <div class="picks-grid">
-                    <div class="pick-card">
-                        <h3>First-Time Visitors</h3>
-                        <p><strong>Mexican Canyon Trestle Vista, Burro Avenue, Osha Trail, White Sands National
-                                Park, and the Sacramento Mountains Museum</strong> &mdash; the classic introduction.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Families</h3>
-                        <p><strong>Osha Trail, Zenith Park, beginner disc golf, pickleball, White Sands,</strong> and
-                            the ice rink in winter if operating.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Active Couples</h3>
-                        <p><strong>Biking, running, moderate hiking, pickleball,</strong> and scenic drives paired
-                            with dinner in town.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Older Visitors</h3>
-                        <p><strong>Burro Avenue, the museum, trestle vista, easy park time,</strong> and gallery
-                            browsing. Low-effort, high-character stops.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Serious Outdoor People</h3>
-                        <p><strong>Biking, running, harder hiking, camping,</strong> and fishing with more planning.
-                            Cloudcroft rewards effort at elevation.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>If You Only Have One Day</h3>
-                        <p><strong>Osha Trail in the morning, Burro Avenue and lunch, trestle vista, a museum or
-                                gallery stop,</strong> and dinner in town.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Rainy / Low-Energy Day</h3>
-                        <p><strong>The museum, galleries, shopping, coffee and bakery stops,</strong> and local
-                            theater or live music if timing lines up.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Day-Trippers from Alamogordo</h3>
-                        <p><strong>Osha Trail, Burro Avenue, Mexican Canyon Trestle,</strong> a lunch, coffee, or
-                            brewery stop, and a partial Sunspot Scenic Byway drive &mdash; a full day without
-                            staying overnight.</p>
-                    </div>
-                    <div class="pick-card">
-                        <h3>Repeat Visitors &amp; Second-Home Owners</h3>
-                        <p><strong>Cabin-based weekends, slower food-and-drink circuits, seasonal event weekends,
-                                forest-road drives, and camp-oriented stays</strong> &mdash; doing less, on purpose.</p>
-                    </div>
-                </div>
+        <!-- ================================ MAP ================================ -->
+        <section class="map-section" id="map" aria-label="Activity-zone map">
+            <div class="map-head">
+                <h2>Where activities happen</h2>
+                <p>Activities cluster around five zones: Zenith Park (pickleball + disc golf), the forest trail network, Burro Avenue, The Lodge campus, Ski Cloudcroft, and the Tularosa Basin outings. Pins are where you go — not every pin is an activity, but every activity has a pin.</p>
             </div>
-        </section>
+            <div class="map-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 720 460" role="img" aria-label="Activity zone map around Cloudcroft">
+                        <defs>
+                            <pattern id="pines" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                                <circle cx="8" cy="8" r="1.4" fill="#b3c4a8"/>
+                                <circle cx="22" cy="20" r="1.1" fill="#b3c4a8"/>
+                            </pattern>
+                            <pattern id="sand" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <circle cx="6" cy="6" r="0.8" fill="#d8c38e"/>
+                                <circle cx="14" cy="14" r="0.8" fill="#d8c38e"/>
+                            </pattern>
+                        </defs>
 
-        <!-- ════════════════════════════════════════════ 06 BOTTOM LINE ════════════════════════════════════════════ -->
-        <section class="bottom-line-section" id="bottom-line" aria-label="Bottom line">
-            <div class="bottom-line-inner">
-                <span class="section-num" style="color: rgba(255,255,255,0.4);">06</span>
-                <h2>The Bottom Line</h2>
-                <p>
-                    Cloudcroft is not a one-attraction town. It is a mountain base with four strong activity buckets
-                    &mdash; easy in-town wins, active forest recreation, seasonal events, and nearby half-day outings.
-                    The best trips match the group, the weather, and how much effort you actually want to put in.
-                </p>
-                <p>
-                    The easy wins deliver quickly: the Mexican Canyon Trestle, Burro Avenue, the Sacramento Mountains
-                    Museum, Osha Trail, and low-friction recreation at Zenith Park. The deeper rewards &mdash; biking,
-                    trail running, camping, and the race calendar &mdash; are waiting for repeat visitors and anyone
-                    who wants more than a scenic stroll.
-                </p>
-                <p>
-                    The biggest planning issue is access, not lack of things to do. Campgrounds are seasonal, some
-                    forest areas need same-day checks, and Sunspot public access should not be assumed. Verify
-                    closures, fire restrictions, and event timing before you go &mdash; then enjoy the fact that
-                    Cloudcroft has more to offer than most visitors realize.
-                </p>
-            </div>
-        </section>
+                        <!-- Forest zone -->
+                        <rect width="720" height="460" fill="#d9e6d2"/>
+                        <rect width="720" height="460" fill="url(#pines)"/>
 
+                        <!-- Basin block -->
+                        <rect x="0" y="300" width="180" height="160" fill="#e8dcc5" opacity="0.75"/>
+                        <rect x="0" y="300" width="180" height="160" fill="url(#sand)" opacity="0.6"/>
+                        <text x="90" y="350" fill="#7a6a45" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">TULAROSA BASIN</text>
+                        <text x="90" y="368" fill="#7a6a45" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9">White Sands, Space Museum</text>
 
-        <!-- ════════════════════════════════════════════ 01 OVERVIEW ════════════════════════════════════════════ -->
-        <section class="section" id="overview" aria-label="Activities overview">
-            <div class="section-container">
-                <div style="text-align: center;">
+                        <!-- US-82 climbing up -->
+                        <path d="M100 300 Q 250 230 420 200" stroke="#9b9b8f" stroke-width="10" opacity="0.55" fill="none"/>
+                        <path d="M100 300 Q 250 230 420 200" stroke="#fff" stroke-width="2" stroke-dasharray="10 12" fill="none"/>
+                        <text x="230" y="235" fill="#555" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">US-82</text>
 
-                    <span class="section-label">The Scene</span>
-                    <h2 class="section-title section-title-centered">Cloudcroft Activities at a Glance</h2>
+                        <!-- Sunspot Byway south -->
+                        <path d="M450 230 Q 440 320 410 410" stroke="#a99e85" stroke-width="7" opacity="0.55" fill="none" stroke-dasharray="4 4"/>
+                        <text x="355" y="420" fill="#666" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">SUNSPOT BYWAY →</text>
+
+                        <!-- Village block -->
+                        <rect x="390" y="180" width="120" height="50" fill="#fff" opacity="0.7" rx="6"/>
+                        <text x="450" y="210" fill="#222" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="700">CLOUDCROFT</text>
+
+                        <!-- Forest label -->
+                        <text x="620" y="40" fill="#3a4a2a" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">LINCOLN NF</text>
+                        <text x="620" y="55" fill="#3a4a2a" font-family="IBM Plex Sans, sans-serif" font-size="9">Hike · bike · run · camp · fish</text>
+
+                        <!-- PINS -->
+                        <!-- 1. Hiking (forest network — cluster of marker near village forest) -->
+                        <g><circle cx="555" cy="130" r="13" fill="#000"/><text x="555" y="134" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">1</text></g>
+                        <!-- 2. Biking (same forest zone, diff pin) -->
+                        <g><circle cx="605" cy="90" r="13" fill="#000"/><text x="605" y="94" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">2</text></g>
+                        <!-- 3. Running (Osha area, near village) -->
+                        <g><circle cx="520" cy="170" r="13" fill="#000"/><text x="520" y="174" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">3</text></g>
+                        <!-- 4. Camping (forest) -->
+                        <g><circle cx="650" cy="170" r="13" fill="#000"/><text x="650" y="174" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">4</text></g>
+                        <!-- 5. Fishing (Silver Springs area, east) -->
+                        <g><circle cx="665" cy="240" r="13" fill="#000"/><text x="665" y="244" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">5</text></g>
+                        <!-- 6. Disc golf (Zenith Park + Community course) -->
+                        <g><circle cx="380" cy="250" r="13" fill="#000"/><text x="380" y="254" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">6</text></g>
+                        <!-- 7. Pickleball (Zenith Park) -->
+                        <g><circle cx="360" cy="275" r="13" fill="#000"/><text x="360" y="279" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">7</text></g>
+                        <!-- 8. Winter rec (Ski Cloudcroft) -->
+                        <g><circle cx="480" cy="290" r="13" fill="#000"/><text x="480" y="294" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">8</text></g>
+                        <!-- 9. Burro Ave -->
+                        <g><circle cx="450" cy="205" r="11" fill="#000"/><text x="450" y="208" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">9</text></g>
+                        <!-- 10. Arts (Burro cluster) -->
+                        <g><circle cx="425" cy="225" r="11" fill="#000"/><text x="425" y="228" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">10</text></g>
+                        <!-- 11. Live music (Burro brewery) -->
+                        <g><circle cx="475" cy="225" r="11" fill="#000"/><text x="475" y="228" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">11</text></g>
+                        <!-- 12. Food crawl (Burro) -->
+                        <g><circle cx="500" cy="205" r="11" fill="#000"/><text x="500" y="208" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">12</text></g>
+                        <!-- 13. Golf (The Lodge) -->
+                        <g><circle cx="525" cy="240" r="13" fill="#000"/><text x="525" y="244" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">13</text></g>
+                        <!-- 14. Scenic drives (Sunspot Byway south) -->
+                        <g><circle cx="425" cy="380" r="13" fill="#000"/><text x="425" y="384" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">14</text></g>
+                        <!-- 15. White Sands nearby (basin) -->
+                        <g><circle cx="90" cy="395" r="14" fill="#000"/><text x="90" y="399" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">15</text></g>
+                    </svg>
                 </div>
-
-                <div class="fade-in" style="max-width: 800px; margin: 0 auto 2rem auto;">
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        Cloudcroft works best when you treat it as a compact mountain base rather than a checklist town.
-                        The village itself is small. The range of things to do is not. In one day you can hike a
-                        Forest Service trail, look across Mexican Canyon, browse Burro Avenue, drive the Sunspot Scenic
-                        Byway, and end with dinner or a drink. The strongest 2026 activity mix falls into four buckets:
-                        easy in-town and near-town activities, active forest recreation, seasonal recreation and event
-                        weekends, and nearby half-day or full-day outings that expand the trip.
-                    </p>
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        The easiest wins are the Mexican Canyon Trestle area, Burro Avenue, the Sacramento Mountains
-                        Museum, Osha Trail, and low-friction in-town recreation like pickleball or disc golf. The
-                        strongest active options are hiking, biking, trail running, disc golf, camping, and
-                        smaller-scale fishing. Winter adds Ski Cloudcroft and, if current operations hold, the ice-rink
-                        experience.
-                    </p>
-                    <p style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
-                        The biggest 2026 planning issue is access, not lack of things to do. Some campgrounds are
-                        seasonal. Some forest areas require same-day condition checks. Sunspot public access should
-                        not be assumed. The best Cloudcroft trip plans match your group, the weather, and how much
-                        effort you actually want.
-                    </p>
-                </div>
-
-                <div class="market-grid">
-                    <div class="market-card">
-                        <h3>Easy Wins</h3>
-                        <p>Mexican Canyon Trestle, Burro Avenue, Sacramento Mountains Museum, Osha Trail, and Zenith
-                            Park &mdash; high payoff, low effort.</p>
-                    </div>
-                    <div class="market-card">
-                        <h3>Active Outdoors</h3>
-                        <p>Hiking, mountain biking, trail running, disc golf, camping, and fishing in the Lincoln
-                            National Forest.</p>
-                    </div>
-                    <div class="market-card">
-                        <h3>Seasonal Recreation</h3>
-                        <p>Ski Cloudcroft and the ice rink in winter. Race weekends and festival events in summer and
-                            fall.</p>
-                    </div>
-                    <div class="market-card">
-                        <h3>Nearby Outings</h3>
-                        <p>White Sands, the Space History Museum, Oliver Lee State Park, and the Sunspot Scenic Byway
-                            as half-day or full-day trips.</p>
-                    </div>
-                </div>
-
-                <div class="tip-box">
-                    <span>&#x1F4A1;</span>
-                    <p><strong>Ask yourself four questions first:</strong> short stop or full day? Kids, older
-                        relatives, or serious outdoor people? Low-effort scenic or active? Weather-proof or
-                        condition-dependent? Your answers shape the entire trip.</p>
-                </div>
-
-                <div class="fade-in" style="max-width: 800px; margin: 2rem auto 0 auto;">
-                    <h3 style="text-align: center; margin-bottom: 1rem;">Best Bets If You Only Have One Day</h3>
-                    <ol style="color: var(--granite); font-size: 0.95rem; line-height: 1.8; padding-left: 1.25rem;">
-                        <li>Walk or drive to the Mexican Canyon Trestle area and take a short trail or overlook stop.
-                        </li>
-                        <li>Hike Osha Trail or another close Forest Service trail.</li>
-                        <li>Spend time on Burro Avenue for shops, coffee, bakery, tea, or wine.</li>
-                        <li>Drive part or all of the Sunspot Scenic Byway, but verify current Sunspot access first.</li>
-                        <li>End at The Lodge, Cloudcroft Brewing, or another in-town stop for a meal or drink.</li>
+                <div>
+                    <ol class="map-legend">
+                        <li><span class="lg-pin">1</span><span><a href="guide-to-hiking-in-cloudcroft-new-mexico-2026.html">Hiking</a> · Lincoln NF trail network</span></li>
+                        <li><span class="lg-pin">2</span><span><a href="bike.html">Biking</a> · Rim / Elk Canyon / Fir Trails</span></li>
+                        <li><span class="lg-pin">3</span><span>Running · Osha + Rim routes</span></li>
+                        <li><span class="lg-pin">4</span><span><a href="guide-to-camping-cloudcroft-new-mexico-2026.html">Camping</a> · Pines / Sleepy Grass / Upper Karr</span></li>
+                        <li><span class="lg-pin">5</span><span><a href="fish.html">Fishing</a> · Silver Springs pond + streams</span></li>
+                        <li><span class="lg-pin">6</span><span><a href="disc-golf.html">Disc golf</a> · Community + Zenith</span></li>
+                        <li><span class="lg-pin">7</span><span><a href="pickleball.html">Pickleball</a> · Zenith Park</span></li>
+                        <li><span class="lg-pin">8</span><span>Winter rec · Ski Cloudcroft + ice rink</span></li>
+                        <li><span class="lg-pin">9</span><span><a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Burro Avenue stroll</a></span></li>
+                        <li><span class="lg-pin">10</span><span>Arts &amp; galleries · Burro cluster</span></li>
+                        <li><span class="lg-pin">11</span><span><a href="../eat/brewery.html">Live music</a> · brewery &amp; bars</span></li>
+                        <li><span class="lg-pin">12</span><span><a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Food &amp; drink crawl</a></span></li>
+                        <li><span class="lg-pin">13</span><span><a href="golf.html">Golf</a> · The Lodge course</span></li>
+                        <li><span class="lg-pin">14</span><span>Sunspot Scenic Byway</span></li>
+                        <li><span class="lg-pin">15</span><span><a href="../visit/where-to-visit.html">White Sands &amp; basin trips</a></span></li>
                     </ol>
+                    <p class="map-footnote">Schematic only. Some activities span multiple zones (running, biking, drives). Pins mark the most representative access point.</p>
                 </div>
             </div>
         </section>
 
-
-        <!-- ════════════════════════════════════════════ CTA ════════════════════════════════════════════ -->
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Ready to Explore Cloudcroft?</h2>
-                <p>From the Mexican Canyon Trestle to the Rim Trail, from pickleball at Zenith Park to a half-day at
-                    White Sands &mdash; Cloudcroft rewards travelers who plan around conditions and match activities
-                    to their group.</p>
-                <div class="cta-buttons">
-                    <a href="#activities" class="btn-primary">Browse All Activities</a>
-                    <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html"
-                        class="btn-secondary">Explore Lodging</a>
+        <!-- ================================ COMPARE MATRIX ================================ -->
+        <section class="matrix-section" id="compare" aria-label="Compare activities side by side">
+            <div class="matrix-wrap">
+                <div class="matrix-head">
+                    <h2>Compare side-by-side</h2>
+                    <span class="matrix-count" id="matrix-count">Select activities above (check the Compare box on any card)</span>
+                </div>
+                <div class="matrix-scroll">
+                    <table class="matrix" id="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Activity</th>
+                                <th>Energy</th>
+                                <th>Category</th>
+                                <th>Where</th>
+                                <th>Season</th>
+                                <th>Free</th>
+                                <th>Family</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-body">
+                            <tr><td colspan="8" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
+
+        <!-- ================================ EDITOR'S CALL ================================ -->
+        <section class="editor-section" id="editor" aria-label="Editor's call">
+            <div class="editor-wrap">
+                <h2>Three shapes of a Cloudcroft day</h2>
+                <div class="editor-picks">
+                    <div class="editor-pick">
+                        <span class="pick-for">If you only have one day</span>
+                        <blockquote>"Trestle vista first. Osha Trail at a relaxed pace. Lunch and gallery browse on Burro. Dinner at Mad Jack's or the Brewery. Nothing too ambitious, everything worth remembering."</blockquote>
+                        <p class="pick-answer">Chain <a href="mexican-canyon-trestle.html">Trestle</a> → <a href="osha-trail.html">Osha</a> → <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Burro</a> → <a href="../eat/mad-jacks-bbq.html">Mad Jack's</a>.</p>
+                    </div>
+                    <div class="editor-pick">
+                        <span class="pick-for">A serious outdoor week</span>
+                        <blockquote>"Cabin base. Six mornings of trails, starting easy. One bike day. One fishing afternoon. One campground night. A wine flight when you need a rest day."</blockquote>
+                        <p class="pick-answer">Pair the <a href="guide-to-hiking-in-cloudcroft-new-mexico-2026.html">hiking guide</a> + <a href="guide-to-camping-cloudcroft-new-mexico-2026.html">camping guide</a> + <a href="bike.html">biking info</a>.</p>
+                    </div>
+                    <div class="editor-pick">
+                        <span class="pick-for">Rainy / low-energy day</span>
+                        <blockquote>"Skip the trails. Start with coffee at Black Bear. Sacramento Mountains Museum. Gallery on Burro. Pick up pastries at Eight the Cake. A brewery pour when the rain lifts."</blockquote>
+                        <p class="pick-answer">Indoor chain: <a href="../eat/black-bear-coffee-shop.html">Black Bear</a> → museum → <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">galleries</a> → <a href="../eat/eight-the-cake.html">Eight the Cake</a> → <a href="../eat/brewery.html">brewery</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================ PRACTICAL NOTES ================================ -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Before you go</h2>
+
+            <details class="note">
+                <summary>Altitude, weather &amp; gear</summary>
+                <div class="note-body">
+                    <p>Cloudcroft sits at <strong>8,676 feet</strong>. Easy activities can feel harder than expected if you drove up from Alamogordo the same day. Hydrate, pace yourself, ease into effort on day one.</p>
+                    <p>Pack for a wide range — you can leave cool forest and reach a hot basin quickly. Afternoon thunderstorms are common in summer; plan active things for mornings. Bring more water, layers, and footwear than you think you need.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>2026 closures &amp; fire restrictions</summary>
+                <div class="note-body">
+                    <p><strong>Stage 1 fire restrictions</strong> are in effect forest-wide through September 30, 2026. The <strong>Bluff Springs recreation area</strong>, parking lot, toilets, and Trail 112 bridge are closed through December 31, 2026. <strong>Sunspot Solar Observatory</strong> is permanently closed — treat the Sunspot Scenic Byway as the drive, not an observatory visit.</p>
+                    <p>Always verify current restrictions and closures before heading out: <a href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank" rel="noopener noreferrer">Lincoln NF alerts</a>.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Seasonality, reservations &amp; cell service</summary>
+                <div class="note-body">
+                    <p>Campgrounds and some recreation areas are seasonal — Sleepy Grass and Pines open May 15, 2026. Ski Cloudcroft is snow-dependent (the 2025–26 season closed March 7). Book Recreation.gov and peak-weekend lodging early — fall color weekends in October fill six to eight weeks out.</p>
+                    <p>Cell service is unreliable outside town and in the deeper forest. Download maps and route notes before you head out, and tell someone your plans if you're going backcountry.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Gear rentals, road conditions &amp; town rhythm</summary>
+                <div class="note-body">
+                    <p>High Altitude on Burro Avenue is the main in-town outdoor shop, but <strong>they are not doing bike rentals this season</strong> — bring your own. For ranger-district questions, call Sacramento Ranger District at <a href="tel:5756822551">575-682-2551</a> (M–F 9am–3pm).</p>
+                    <p>Mountain roads matter more than first-time visitors expect, especially in winter or shoulder seasons. Cloudcroft is not a late-night town — hours vary by shop and season, popular dinner spots can wait on busy weekends, and chain-style consistency isn't the norm.</p>
+                </div>
+            </details>
+        </section>
+
+        <!-- ================================ HANDOFF ================================ -->
+        <section class="handoff-section" id="handoff" aria-label="Full sub-guides">
+            <div class="handoff-wrap">
+                <h2>Every activity has its own full guide.</h2>
+                <p>The cards above are the starting points. Each links to a dedicated sub-guide with maps, trail numbers, specific picks, and season-by-season detail.</p>
+                <div class="handoff-grid">
+                    <a class="handoff-card" href="guide-to-hiking-in-cloudcroft-new-mexico-2026.html">
+                        <h3>Hiking</h3>
+                        <p>12 trails ranked</p>
+                    </a>
+                    <a class="handoff-card" href="guide-to-camping-cloudcroft-new-mexico-2026.html">
+                        <h3>Camping</h3>
+                        <p>13 sites, family + group + dispersed</p>
+                    </a>
+                    <a class="handoff-card" href="../visit/where-to-visit.html">
+                        <h3>Visit nearby</h3>
+                        <p>16 day trips</p>
+                    </a>
+                    <a class="handoff-card" href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">
+                        <h3>Stay</h3>
+                        <p>Cabins · hotels · B&amp;Bs</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-        <p style="text-align:center;padding: 1vh">
+        <p style="text-align:center;padding:1vh">
             <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
             New Mexico's Mountain Retreat.
-            <br /><span style="font-size:85%">
-                &copy; 2026 <a style="color:steelblue;text-decoration:underline;"
-                    href="https://www.DiscoverCloudcroft.com" target="_blank">DiscoverCloudcroft.com</a>. All rights
-                reserved.</span>
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
         </p>
     </footer>
 
@@ -788,7 +1928,7 @@
     <script src="../js/common.js"></script>
     <script>
         (function () {
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            // ---- Fade-in ----
             var fadeObserver = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
@@ -796,11 +1936,233 @@
                         fadeObserver.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.lodge-card, .fade-in').forEach(function (el) { fadeObserver.observe(el); });
 
-            document.querySelectorAll('.market-card, .lodge-card, .compare-card, .pick-card, .tip-card, .fade-in').forEach(function (el) {
-                fadeObserver.observe(el);
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sections = tocPills
+                .map(function (p) { return document.getElementById(p.getAttribute('href').replace('#','')); })
+                .filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
+
+            // ---- Finder + filter-rail shared state ----
+            var state = {
+                energy: new Set(),
+                category: new Set(),
+                season: new Set(),
+                rail: new Set()
+            };
+
+            var ENERGY_KEYS = { easy: 1, moderate: 1, active: 1 };
+            var CAT_KEYS = { outdoor: 1, town: 1, culture: 1, drive: 1 };
+
+            function applyPressed(btn, on) { btn.setAttribute('aria-pressed', on ? 'true' : 'false'); }
+
+            function syncRailWithFinder() {
+                document.querySelectorAll('.filter-rail .chip[data-rail]').forEach(function (b) {
+                    var key = b.getAttribute('data-rail');
+                    if (key in ENERGY_KEYS) {
+                        applyPressed(b, state.energy.has(key));
+                        if (state.energy.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key in CAT_KEYS) {
+                        applyPressed(b, state.category.has(key));
+                        if (state.category.has(key)) state.rail.add(key); else state.rail.delete(key);
+                    }
+                    if (key === 'allyear') {
+                        applyPressed(b, state.season.has('allyear'));
+                        if (state.season.has('allyear')) state.rail.add('allyear'); else state.rail.delete('allyear');
+                    }
+                    if (key === 'winter') {
+                        applyPressed(b, state.season.has('winter'));
+                        if (state.season.has('winter')) state.rail.add('winter'); else state.rail.delete('winter');
+                    }
+                });
+            }
+
+            function syncFinderWithRail() {
+                document.querySelectorAll('#finder .chip[data-value]').forEach(function (b) {
+                    var grp = b.parentElement.getAttribute('data-filter-group');
+                    var v = b.getAttribute('data-value');
+                    if (grp === 'energy' && v in ENERGY_KEYS) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.energy.add(v); else state.energy.delete(v);
+                    }
+                    if (grp === 'category' && v in CAT_KEYS) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.category.add(v); else state.category.delete(v);
+                    }
+                    if (grp === 'season' && (v === 'allyear' || v === 'winter')) {
+                        applyPressed(b, state.rail.has(v));
+                        if (state.rail.has(v)) state.season.add(v); else state.season.delete(v);
+                    }
+                });
+            }
+
+            document.querySelectorAll('#finder .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var grp = btn.parentElement.getAttribute('data-filter-group');
+                    var v = btn.getAttribute('data-value');
+                    var set = state[grp];
+                    if (set) {
+                        if (set.has(v)) set.delete(v); else set.add(v);
+                    }
+                    if (grp === 'energy') applyPressed(btn, state.energy.has(v));
+                    if (grp === 'category') applyPressed(btn, state.category.has(v));
+                    if (grp === 'season') applyPressed(btn, state.season.has(v));
+                    syncRailWithFinder();
+                    applyFilters();
+                });
             });
+
+            document.querySelectorAll('.filter-rail .chip').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var k = btn.getAttribute('data-rail');
+                    if (state.rail.has(k)) state.rail.delete(k); else state.rail.add(k);
+                    applyPressed(btn, state.rail.has(k));
+                    syncFinderWithRail();
+                    applyFilters();
+                });
+            });
+
+            document.getElementById('finder-clear').addEventListener('click', function () {
+                state.energy.clear(); state.category.clear(); state.season.clear(); state.rail.clear();
+                document.querySelectorAll('.chip[aria-pressed]').forEach(function (c) { applyPressed(c, false); });
+                applyFilters();
+            });
+
+            function cardMatches(card) {
+                var energies = (card.getAttribute('data-energy') || '').split(/\s+/);
+                var categories = (card.getAttribute('data-categories') || '').split(/\s+/);
+                var seasons = (card.getAttribute('data-seasons') || '').split(/\s+/);
+                var free = card.getAttribute('data-free') === 'true';
+                var family = card.getAttribute('data-family') === 'true';
+                var allyear = card.getAttribute('data-allyear') === 'true';
+
+                if (state.energy.size) {
+                    var hit = false;
+                    state.energy.forEach(function (e) { if (energies.indexOf(e) !== -1) hit = true; });
+                    if (!hit) return false;
+                }
+                if (state.category.size) {
+                    var ch = false;
+                    state.category.forEach(function (c) { if (categories.indexOf(c) !== -1) ch = true; });
+                    if (!ch) return false;
+                }
+                if (state.season.size) {
+                    var sh = false;
+                    state.season.forEach(function (s) {
+                        if (s === 'allyear') { if (allyear) sh = true; }
+                        else if (seasons.indexOf(s) !== -1) sh = true;
+                    });
+                    if (!sh) return false;
+                }
+
+                if (state.rail.has('free') && !free) return false;
+                if (state.rail.has('family') && !family) return false;
+                if (state.rail.has('allyear') && !allyear) return false;
+                if (state.rail.has('winter') && seasons.indexOf('winter') === -1) return false;
+
+                return true;
+            }
+
+            function applyFilters() {
+                var shown = 0;
+                document.querySelectorAll('[data-grid] .lodge-card').forEach(function (c) {
+                    if (cardMatches(c)) { c.hidden = false; shown++; }
+                    else { c.hidden = true; }
+                });
+                document.getElementById('filter-count-n').textContent = shown;
+
+                document.querySelectorAll('section.act-block').forEach(function (sec) {
+                    var grid = sec.querySelector('[data-grid]');
+                    if (!grid) return;
+                    var visible = grid.querySelectorAll('.lodge-card:not([hidden])').length;
+                    sec.classList.toggle('section-hidden', visible === 0);
+                });
+
+                var empty = document.getElementById('empty-state');
+                if (shown === 0) empty.classList.add('is-visible');
+                else empty.classList.remove('is-visible');
+            }
+
+            // ---- Compare matrix ----
+            var actData = {
+                hiking:      { name: 'Hiking',               href: 'guide-to-hiking-in-cloudcroft-new-mexico-2026.html',  energy: 'Easy → Active',  cat: 'Outdoors',    where: 'Lincoln NF',          season: 'Spring–Fall',   free: 'Yes', family: 'Yes', notes: 'Osha, Trestle, Rim, Switchback; 12 trails total.' },
+                biking:      { name: 'Biking',                href: 'bike.html',                                           energy: 'Active',         cat: 'Outdoors',    where: 'Forest + Hwy 82',     season: 'Spring–Fall',   free: 'Yes', family: 'No',  notes: 'Bring your bike — no rentals this season.' },
+                running:     { name: 'Running &amp; trail races', href: 'guide-to-hiking-in-cloudcroft-new-mexico-2026.html', energy: 'Active',       cat: 'Outdoors',    where: 'Osha + Rim',          season: 'Spring–Fall',   free: 'Yes', family: 'No',  notes: 'Three 2026 races: Jun 13, Aug 15, Oct 17.' },
+                camping:     { name: 'Camping',               href: 'guide-to-camping-cloudcroft-new-mexico-2026.html',   energy: 'Moderate',       cat: 'Outdoors',    where: 'Lincoln NF',          season: 'Spring–Fall',   free: 'Some', family: 'Yes', notes: 'Sleepy Grass + Pines open May 15; Upper Karr year-round.' },
+                fishing:     { name: 'Fishing',               href: 'fish.html',                                           energy: 'Easy → Moderate', cat: 'Outdoors',   where: 'Silver Springs + streams', season: 'Spring–Fall', free: 'No', family: 'Yes', notes: 'Pond family-friendly; NM license required 12+.' },
+                discgolf:    { name: 'Disc golf',             href: 'disc-golf.html',                                      energy: 'Easy → Moderate', cat: 'Outdoors',   where: 'Zenith + Community',  season: 'Spring–Fall',   free: 'Yes', family: 'Yes', notes: '18-hole course + 9-hole beginner course.' },
+                pickleball:  { name: 'Pickleball',            href: 'pickleball.html',                                     energy: 'Moderate',       cat: 'Outdoors',    where: 'Zenith Park',         season: 'Spring–Fall',   free: 'Yes', family: 'Yes', notes: '6 free courts; resurfacing scheduled April 2026.' },
+                winter:      { name: 'Winter recreation',     href: 'https://skicloudcroft.net/',                          energy: 'Easy → Moderate', cat: 'Outdoors',   where: 'Ski Cloudcroft',      season: 'Winter',        free: 'No',  family: 'Yes', notes: 'Snow-dependent; 2025–26 closed March 7.' },
+                burrostroll: { name: 'Burro Avenue stroll',   href: '../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html', energy: 'Easy', cat: 'In-town',        where: 'Burro Ave',           season: 'Year-round',    free: 'Yes', family: 'Yes', notes: '24 shops in the shopping guide.' },
+                arts:        { name: 'Arts &amp; culture',       href: '../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html', energy: 'Easy', cat: 'Culture',        where: 'Burro cluster',       season: 'Year-round',    free: 'Mostly', family: 'Yes', notes: 'Galleries + workshops + seasonal theater.' },
+                music:       { name: 'Live music',             href: '../eat/brewery.html',                                 energy: 'Easy',           cat: 'Culture',     where: 'Brewery + bars',      season: 'Year-round',    free: 'Mostly', family: 'No',  notes: 'Timing varies; check listings for your dates.' },
+                foodcrawl:   { name: 'Food &amp; drink crawl',    href: '../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html', energy: 'Easy', cat: 'In-town',         where: 'Burro + lodge',       season: 'Year-round',    free: 'No',  family: 'Yes', notes: '19 restaurants in the dining guide.' },
+                golf:        { name: 'Golf',                   href: 'golf.html',                                           energy: 'Moderate',       cat: 'Outdoors',    where: 'The Lodge course',    season: 'Spring–Fall',   free: 'No',  family: 'No',  notes: 'Historic scenic mountain round.' },
+                drives:      { name: 'Scenic drives',           href: '../visit/where-to-visit.html',                        energy: 'Easy',           cat: 'Drives',      where: 'Sunspot + Fresnal',   season: 'Spring–Fall',   free: 'Yes', family: 'Yes', notes: 'Byway is the drive; observatory closed.' },
+                nearby:      { name: 'White Sands &amp; nearby',   href: '../visit/where-to-visit.html',                        energy: 'Moderate',       cat: 'Drives',      where: 'Basin (30–60 min)',   season: 'Year-round',    free: 'No',  family: 'Yes', notes: '16 destinations in the visit guide.' }
+            };
+
+            var selected = new Set();
+
+            function okCell(v) {
+                if (v === 'Yes' || (typeof v === 'string' && v.indexOf('Yes') === 0)) return 'ok';
+                if (v === 'No') return 'no';
+                return '';
+            }
+
+            function renderMatrix() {
+                var body = document.getElementById('matrix-body');
+                var count = document.getElementById('matrix-count');
+                if (selected.size === 0) {
+                    body.innerHTML = '<tr><td colspan="8" class="matrix-empty">Nothing selected yet. Check <em>Compare</em> on two or more cards above to build a matrix.</td></tr>';
+                    count.textContent = 'Select activities above (check the Compare box on any card)';
+                    return;
+                }
+                count.textContent = selected.size + ' selected';
+                var rows = [];
+                selected.forEach(function (key) {
+                    var d = actData[key]; if (!d) return;
+                    var isExternal = d.href.indexOf('http') === 0;
+                    var linkAttrs = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+                    rows.push(
+                        '<tr>' +
+                        '<td class="prop-name"><a href="' + d.href + '"' + linkAttrs + '>' + d.name + '</a></td>' +
+                        '<td>' + d.energy + '</td>' +
+                        '<td>' + d.cat + '</td>' +
+                        '<td>' + d.where + '</td>' +
+                        '<td>' + d.season + '</td>' +
+                        '<td class="' + okCell(d.free) + '">' + d.free + '</td>' +
+                        '<td class="' + okCell(d.family) + '">' + d.family + '</td>' +
+                        '<td>' + d.notes + '</td>' +
+                        '</tr>'
+                    );
+                });
+                body.innerHTML = rows.join('');
+            }
+
+            document.querySelectorAll('.cmp').forEach(function (cb) {
+                cb.addEventListener('change', function () {
+                    var key = cb.getAttribute('data-property');
+                    if (cb.checked) selected.add(key); else selected.delete(key);
+                    renderMatrix();
+                });
+            });
+
+            applyFilters();
+            renderMatrix();
         })();
     </script>
 </body>
