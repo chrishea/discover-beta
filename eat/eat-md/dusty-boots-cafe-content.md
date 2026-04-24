@@ -1,133 +1,143 @@
-# Dusty Boots Cafe
+# Dusty Boots Café
 
 ## 1. Executive summary
 
-Dusty Boots Café is the on-site restaurant component of Dusty Boots Motel at 1315 James Canyon Hwy in Cloudcroft. It appears current and active, with the strongest source being the property’s own website. The café leans toward homemade country-style cooking rather than a tightly branded chef concept. Its identity is bound up with the motel: themed rooms, roadside nostalgia, and a family-run feel. As a food stop, it appears to matter because it combines breakfast, lunch, dinner, and guest room service in one independent property.
+Dusty Boots Café is the on-site restaurant at Dusty Boots Motel on James Canyon Highway — a Wiley-family-owned property that has quietly become one of the few Cloudcroft restaurants that functions as a legitimate daily working-crew breakfast room, not just a tourist or motel-guest stop. Table service, scratch-made kitchen, a real (not experimental) taco program, a Saturday German dinner that genuinely draws people, and a breakfast plate that local law enforcement and U.S. Forest Service crews actually eat. Hours as published on the official site are summer hours; off-season patterns should be confirmed.
 
 ## 2. Verified business facts
 
-- **Official business name:** Dusty Boots Café (part of Dusty Boots Motel)
-- **Location:** 1315 James Canyon Hwy, Cloudcroft, NM 88317
+- **Official business name:** Dusty Boots Café (part of Dusty Boots Motel &amp; Café)
+- **Ownership:** Wiley family — confirmed April 2026 (Chris Hea, local).
+- **Address:** 1315 James Canyon Hwy, Cloudcroft, NM 88317
 - **Phone:** 575-682-7736
 - **Email:** dusty@dustybootsmotel.com
 - **Website:** https://www.thedustyboots.com/
 - **Facebook:** https://www.facebook.com/dustybootsmotel/
 - **Instagram:** https://www.instagram.com/dustybootsmotel/
-- **Operating status:** Appears current
-- **Current hours:** The official site states **summer hours** of 7:00 AM–9:00 PM daily; breakfast served daily from 7:00 AM–12:00 PM
-- **Cuisine / category:** Café / country cooking / motel restaurant
-- **Service style:** Casual full-service or counter-service café style not fully specified; room service for motel guests is confirmed
-- **Alcohol service:** Beer is supported by local coverage; broader bar program not fully confirmed
-- **Takeout / delivery / patio / dine-in:** Dine-in appears current; room service for motel guests is confirmed; other service modes should be checked directly
+- **Operating status:** Appears current and active.
+- **Posted hours:** Summer 7:00 AM – 9:00 PM daily per the official site. Breakfast 7:00 AM – 12:00 PM daily. Off-season hours are not posted; confirm before visiting outside summer.
+- **Cuisine / category:** Café · country cooking · on-site motel restaurant · tacos · German Saturdays
+- **Service style:** Table service — confirmed April 2026 (Chris Hea, local).
+- **Alcohol:** Beer available (local coverage + owner confirmation). A fuller bar program is not confirmed.
+- **Dine-in:** confirmed. **Room service for motel guests:** confirmed on the official site.
+- **Takeout / delivery / patio:** not confirmed — ask directly.
 
-## 3. What the restaurant appears to be
+## 3. Signals (at-a-glance tags)
 
-Dusty Boots Café looks like a genuinely local roadside café rather than a concept built for outsiders. The strongest current source is its own site, which emphasizes homemade food, breakfast, daily specials, and country cooking. Local reporting adds a little more texture, showing the business experimenting with tacos, cantina language, and beer as part of its evolution.
+Table service · 90%+ scratch-made (per site) · Breakfast until noon · Taco program (real, ongoing) · German Saturdays · Beer available · Gluten-free options · Working-crew breakfast regulars · On-site motel room service · Seasonal e-bike rentals on property
 
-This feels like the kind of Cloudcroft place where the appeal is not polish. It is personality, familiarity, and the fact that the dining room is tied to a motel people clearly remember.
+## 4. What the restaurant is
 
-## 4. Menu and specialties
+Dusty Boots Café reads as a genuinely local roadside café, not a concept built for outsiders. The strongest current source is the property's own site, which emphasizes homemade food, breakfast, and daily specials. Local coverage and owner input round it out: the taco program is real and ongoing (not a 2024 signage experiment), breakfast is the strongest daily service, and the room functions as a regular working breakfast spot for law enforcement and U.S. Forest Service crews — in addition to motel guests and tourists.
 
-Verified or strongly supported menu items from the official site:
+This is the kind of Cloudcroft place where the appeal is personality, familiarity, and the fact that the dining room is tied to a motel people actually remember. The taco/cantina layer and the Saturday German dinner are distinctive features that set it apart from the other James Canyon Highway kitchens.
 
-- Breakfast service
-- Biscuits and gravy
-- French toast
-- Pancakes
+## 5. Menu and specialties
+
+### Confirmed from the official site
+
+- Breakfast service (biscuits and gravy, French toast, pancakes)
 - BLT
 - Chicken strips
 - Patty melt
 - Taco platter
 - Steak and shrimp
 - Daily specials
-- Homemade food claims
+- Site claim: more than 90% of menu selections made from scratch
 - Complimentary room service for motel guests
 
-Other supported clues:
-- The site says more than 90% of menu selections are homemade from fresh ingredients.
-- The site highlights a “German Saturday” dinner with schnitzel, sauerbraten, bratwurst, German meatballs, red cabbage with apples, spatzel, and related sides.
-- Cloudcroft Reader reported in October 2024 that the business had a new sign reading “Dusty Boots Cafe & Tacos & Cantina,” nodding to carne asada tacos and beer.
+### German Saturday (per official site)
 
-Because some of these details appear seasonal or event-based, diners should not assume all items are permanent.
+- Schnitzel
+- Sauerbraten
+- Bratwurst
+- German meatballs
+- Red cabbage with apples
+- Spatzel
 
-## 5. Atmosphere and guest experience
+### Taco / cantina (per Cloudcroft Reader + owner confirmation)
 
-The atmosphere appears informal, nostalgic, and closely tied to the motel’s personality. This is not a fine-dining room and does not appear to be trying to be one. The likely experience is:
-- relaxed
-- family-run
-- a little idiosyncratic
-- better suited to breakfast, comfort food, or a casual roadside meal than to a special-occasion dinner
+- Carne asada tacos
+- Beer available
+- Cloudcroft Reader reported a "Dusty Boots Cafe &amp; Tacos &amp; Cantina" sign in October 2024; April 2026 owner input confirms the program is real and ongoing, not a one-off experiment.
 
-This appears to suit:
-- motel guests
-- families
-- road-trippers
-- repeat local diners
-- visitors who like character more than polish
+### Owner-confirmed plate (added April 2026)
 
-Likely drawbacks:
-- hours are clearly labeled as summer hours on the official site, so off-season patterns may differ
-- menu range may shift
-- the restaurant’s identity may change faster than its web copy
+- **Chicken fried steak with two eggs over easy, hash browns, and biscuits** — the specific breakfast order recommended by Chris Hea. A working-crew plate; popular with law enforcement and U.S. Forest Service workers.
 
-## 6. Background and history
+## 6. What I'd order
 
-Dusty Boots is a combined motel-and-café property rather than a stand-alone restaurant. Local reporting in 2024 helps explain its recent evolution:
-- Cloudcroft Reader’s March 2024 business roundup said the laundromat had permanently closed and highlighted the motel’s themed rooms.
-- The same outlet reported in October 2024 that the property had adopted signage for “Dusty Boots Cafe & Tacos & Cantina,” reflecting a broader or newer menu direction and beer sales.
-- A January 2025 Cloudcroft Reader lodging guide called it a quaint, family-run motel with homemade cooking, gluten-free options, beer, and seasonal e-bike rentals.
+Three defensible picks, drawn only from confirmed items:
 
-That body of coverage suggests a business actively evolving while keeping its roadside, independent identity.
+1. **Chicken fried steak with two eggs over easy, hash browns, and biscuits.** The owner-recommended working breakfast. Order it during the 7–noon window.
+2. **Carne asada taco platter with a beer.** The taco program is real, ongoing, and distinctive on James Canyon Hwy — worth making the trip for a casual lunch or early dinner.
+3. **Saturday German dinner.** Schnitzel or sauerbraten with red cabbage and spatzel. A genuinely different Saturday night in Cloudcroft, confirmed on the site.
 
-## 7. Media coverage and other articles
+## 7. Atmosphere and guest experience
 
-### Cloudcroft Reader
-- **“Fresh Offerings”** (March 2024): covers the motel, themed rooms, and changes at the property.
-- **“Cloudcroft’s Commercial Kaleidoscope”** (October 2024): notes the new “Cafe & Tacos & Cantina” sign and references carne asada tacos and beer.
-- **“Cloudcroft Reader’s Lodging Guide: Part Two”** (January 2025): highlights homemade cooking, a nut-free kitchen, gluten-free options, beer, and the family-run motel experience.
+The atmosphere is informal, nostalgic, and tied to the motel's personality — themed rooms, roadside character, family-run feel. Service is table service (confirmed April 2026). The dining room is not fine-dining and doesn't try to be. The strongest weekday rhythm is breakfast: by mid-morning the room is typically a mix of motel guests, tourists passing through, and local working crews.
 
-### Tourism listing
-- New Mexico Tourism lists Dusty Boots Motel & Café and emphasizes the 16-room motel plus in-room basics.
+**Good for:** road-trip breakfast, working-crew regulars, motel guests, families, casual taco-and-beer lunch, anyone curious about a Saturday German dinner, visitors who prefer character over polish.
 
-### What this coverage suggests
-Dusty Boots is not important because it is the fanciest place in town. It is important because it is one of the more distinctive independent hospitality operations in Cloudcroft, where lodging and dining reinforce each other.
+**Likely drawbacks:** posted hours are summer-only, so off-season rhythm is uncertain; menu range can shift with seasons and specials; the identity is still evolving (taco/cantina language is newer than the core café identity).
 
-## 8. Source notes
+## 8. Editorial positioning
+
+**Thesis.** The Wiley-family café on James Canyon Highway where the working-crew breakfast, a real taco program, and a Saturday German dinner all live under one roof — table service, no pretense, genuinely local.
+
+**Good for**
+- A working breakfast before a drive down the hill
+- Casual taco-and-beer lunch with character
+- Saturday German dinner (a uniquely Dusty Boots experience)
+- Motel guests using the in-room/complimentary service
+- Families who want country-cooking comfort and patience on busy mornings
+
+**Skip if**
+- You want Cloudcroft's historic-resort fine-dining dinner → Eighteen99
+- You want dedicated Texas BBQ → Mad Jack's (Thu–Sun) or Brother-N-Law
+- You want walkable Burro Avenue dining → Dave's, Western Bar, Black Bear, Eight the Cake
+- You need guaranteed late-night service past 9 PM
+- You're visiting in shoulder season and haven't called to confirm hours
+
+## 9. Background and history
+
+Dusty Boots is a combined motel-and-café property rather than a stand-alone restaurant. It's owned and operated by the Wiley family (confirmed April 2026). Local reporting in 2024–2025 helps trace its evolution:
+
+- **Cloudcroft Reader, "Fresh Offerings"** (March 2024) — covered the motel, themed rooms, and property-level changes including the permanent closure of an adjacent laundromat.
+- **Cloudcroft Reader, "Cloudcroft's Commercial Kaleidoscope"** (October 2024) — reported the "Dusty Boots Cafe &amp; Tacos &amp; Cantina" signage, with carne asada tacos and beer as the newer direction. April 2026 owner confirmation: the program stuck.
+- **Cloudcroft Reader, "Lodging Guide: Part Two"** (January 2025) — described the property as a quaint, family-run motel with homemade cooking, a nut-free kitchen, gluten-free options, beer, and seasonal Pedego e-bike rentals.
+
+## 10. Media coverage and related listings
+
+- **Cloudcroft Reader** coverage as above.
+- **New Mexico Tourism listing** — lists Dusty Boots Motel &amp; Café, emphasizing the 16-room motel plus in-room basics.
+- **Cloudcroft Chamber member page** — primary directory listing.
+
+## 11. Source notes
 
 ### Official / primary
 - Official site: https://www.thedustyboots.com/
 - Cloudcroft Chamber member page: https://www.coolcloudcroft.com/members/dusty-boots-motel-cafe
 - New Mexico Tourism listing: https://www.newmexico.org/listing/dusty-boots-motel-%26-cafe/1036/
 - Facebook: https://www.facebook.com/dustybootsmotel/
+- Instagram: https://www.instagram.com/dustybootsmotel/
 
 ### Local coverage
-- Cloudcroft Reader, “Fresh Offerings”
-- Cloudcroft Reader, “Cloudcroft’s Commercial Kaleidoscope”
-- Cloudcroft Reader, “Cloudcroft Reader’s Lodging Guide: Part Two”
+- Cloudcroft Reader, "Fresh Offerings" (March 2024)
+- Cloudcroft Reader, "Cloudcroft's Commercial Kaleidoscope" (October 2024)
+- Cloudcroft Reader, "Lodging Guide: Part Two" (January 2025)
 
-## 9. Fact-check notes and open questions
+### Owner / local input (April 10, 2026)
+- Chris Hea, Cloudcroft local, direct input:
+  - Confirmed the Wiley family owns and operates the motel &amp; café.
+  - Confirmed table service.
+  - Confirmed the taco program is real and ongoing — not signage-only.
+  - Confirmed breakfast is the strongest daily service, with law enforcement and U.S. Forest Service regulars.
+  - Recommended order: chicken fried steak with two eggs over easy, hash browns, and biscuits.
 
-- **Hours note:** The official site clearly labels the posted café schedule as **summer hours**. Off-season hours should be checked directly.
-- **Service format:** The site confirms room service for motel guests and shows the café as active, but does not fully spell out whether service is table service, counter ordering, or a mix.
-- **Beer / cantina angle:** Supported by local coverage, but the current official site still leans more on country cooking and café language than on a full cantina identity.
-- **Phone conflict:** The official website lists 575-682-7736. Chamber pages do not clearly display a phone number on the member page.
+## 12. Open questions still to verify
 
----
-
-## Owner / Local Knowledge (added April 10, 2026)
-
-**Source:** Direct input from Chris Hea, Cloudcroft local
-
-**Ownership**
-- The Wiley family owns and operates Dusty Boots Motel & Cafe.
-
-**Service model**
-- Table service.
-
-**Menu and recommendations**
-- The taco program is real and ongoing — not just a signage experiment.
-- Breakfast is the strong suit. Popular with law enforcement and U.S. Forest Service workers.
-- Recommended order: chicken fried steak with two eggs over easy, hash browns, and biscuits.
-
-**Atmosphere**
-- Functions as a regular breakfast spot for locals and working crews, not just motel guests and tourists.
+- **Off-season hours.** The official site posts summer hours only. Off-season rhythm is uncertain — confirm by phone for any visit outside summer.
+- **Alcohol beyond beer.** Beer is confirmed. A broader cantina/cocktail program is not confirmed by a primary source.
+- **Takeout / delivery / patio.** Room service for motel guests is confirmed on the site. Public takeout, delivery, and patio seating are not confirmed.
+- **Reservations policy.** Not documented; appears to be walk-in.
