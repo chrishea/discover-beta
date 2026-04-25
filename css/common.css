@@ -831,8 +831,20 @@ img {
 
 @media (max-width: 768px) {
 
-  .main-nav,
+  .main-nav {
+    display: none;
+  }
+
+  /* Keep .header-nav as a flex container on mobile so the logo (its first
+     child) still renders flush-left. Hide the regular nav links inside it;
+     the hamburger sibling lands flush-right via .header-inner's space-between. */
   .header-nav {
+    display: flex;
+    gap: 0;
+    flex: 0 1 auto;
+  }
+
+  .header-nav > a:not(.header-logo) {
     display: none;
   }
 
@@ -3422,7 +3434,13 @@ img {
    aspen-and-ivy, burro-ave-trading-post, coco-blu, family-dollar, etc.)
    ===================================================================== */
 
-.hero.hero-split { min-height: 560px; padding: 5rem 2rem; position: relative; }
+/* Override .hero {height:70vh; display:flex; align-items:center; overflow:hidden}
+   defined earlier in this stylesheet — on a 2-up split hero the stacked-mobile
+   layout is taller than 70vh, and flex-centering + overflow:hidden was clipping
+   the H1 above the viewport. height:auto + overflow:visible let the hero grow
+   to fit its content; the hero-bg is positioned absolute via inset:0 elsewhere
+   so it still fills the box. */
+.hero.hero-split { min-height: 560px; height: auto; overflow: visible; padding: 5rem 2rem; position: relative; }
 .hero-split-grid { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: center; }
 .hero-left .hero-eyebrow-pill { display: inline-block; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0.35rem 0.8rem; border: 1px solid rgba(255, 255, 255, 0.45); border-radius: 20px; color: #fff; margin-bottom: 1.25rem; }
 .hero-left h1 { font-family: 'IBM Plex Serif', serif; font-weight: 700; font-size: clamp(2.25rem, 4.5vw, 3.6rem); color: #fff; line-height: 1.08; margin-bottom: 1rem; }
