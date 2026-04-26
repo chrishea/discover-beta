@@ -135,3 +135,13 @@ The Highland's opening date, ownership, and longer history aren't documented in 
 - **Exact current merchandise mix** by category.
 - **Whether the store has any pantry, license, or outdoor-service components** beyond basic retail.
 - **Opening date / history** in Cloudcroft.
+
+
+## 13. Rules to Obey
+The Highland is Not just off the Burro strip–it’s just off the Highway 
+
+Say “Does many things well–boutique gifts, nambe wear, hunting and fishing licenses, and outdoor gear.” 
+Remove any hours confirmation or qualifiers. Those are the hours. 
+
+Change the editor’s take to not compare to other shops. Just talk about quality selection, wide array, and beautiful, expansive building. 
+

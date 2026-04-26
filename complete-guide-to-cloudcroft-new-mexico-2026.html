@@ -100,6 +100,22 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        { "@type": "Event", "name": "2026 Mayfair Juried Art Show", "startDate": "2026-05-23", "endDate": "2026-05-24", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": { "@type": "Place", "name": "Zenith Park", "address": { "@type": "PostalAddress", "addressLocality": "Cloudcroft", "addressRegion": "NM", "postalCode": "88317", "addressCountry": "US" } }, "url": "https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&class=E" },
+        { "@type": "Event", "name": "2026 Beer Fest", "startDate": "2026-06-13", "endDate": "2026-06-14", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": { "@type": "Place", "name": "Zenith Park", "address": { "@type": "PostalAddress", "addressLocality": "Cloudcroft", "addressRegion": "NM", "postalCode": "88317", "addressCountry": "US" } }, "url": "https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&class=E" },
+        { "@type": "Event", "name": "2026 4th of July Parade", "startDate": "2026-07-04", "endDate": "2026-07-04", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": { "@type": "Place", "name": "Burro Ave to Summit Christian Fellowship", "address": { "@type": "PostalAddress", "addressLocality": "Cloudcroft", "addressRegion": "NM", "postalCode": "88317", "addressCountry": "US" } }, "url": "https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&class=E" },
+        { "@type": "Event", "name": "2026 Christmas In July Jamboree", "startDate": "2026-07-11", "endDate": "2026-07-12", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": { "@type": "Place", "name": "Zenith Park", "address": { "@type": "PostalAddress", "addressLocality": "Cloudcroft", "addressRegion": "NM", "postalCode": "88317", "addressCountry": "US" } }, "url": "https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&class=E" },
+        { "@type": "Event", "name": "2026 Art and Wine in the Cool Pines", "startDate": "2026-08-07", "endDate": "2026-08-09", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": { "@type": "Place", "name": "Sacramento Mountain Museum", "address": { "@type": "PostalAddress", "addressLocality": "Cloudcroft", "addressRegion": "NM", "postalCode": "88317", "addressCountry": "US" } }, "url": "https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&class=E" },
+        { "@type": "Event", "name": "2026 Labor Day Hoopla & Heritage Day Car Show", "startDate": "2026-09-05", "endDate": "2026-09-06", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": { "@type": "Place", "name": "Zenith Park", "address": { "@type": "PostalAddress", "addressLocality": "Cloudcroft", "addressRegion": "NM", "postalCode": "88317", "addressCountry": "US" } }, "url": "https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&class=E" },
+        { "@type": "Event", "name": "2026 Christmas Market", "startDate": "2026-11-27", "endDate": "2026-11-28", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": { "@type": "Place", "name": "Cloudcroft High School Gym", "address": { "@type": "PostalAddress", "addressLocality": "Cloudcroft", "addressRegion": "NM", "postalCode": "88317", "addressCountry": "US" } }, "url": "https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&class=E" },
+        { "@type": "Event", "name": "2026 Mountain Christmas Village", "startDate": "2026-12-11", "endDate": "2026-12-19", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": { "@type": "Place", "name": "Zenith Park", "address": { "@type": "PostalAddress", "addressLocality": "Cloudcroft", "addressRegion": "NM", "postalCode": "88317", "addressCountry": "US" } }, "url": "https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&class=E" }
+      ]
+    }
+    </script>
+
     <link rel="preload" as="image" href="media/historic-railroad-trestle-side-view.jpg" fetchpriority="high">
     <link href="css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -647,6 +663,42 @@
             color: #555;
             line-height: 1.55;
             margin: 0;
+        }
+
+        .event-row img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 0 0 0.75rem;
+        }
+
+        .event-row .ev-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            margin-top: 0.55rem;
+            line-height: 1.5;
+        }
+
+        .event-row .ev-meta a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .event-row .ev-meta a:hover { text-decoration-color: #000; }
+
+        .event-row.is-tbd { border-left-color: #b88a3a; }
+
+        .event-row .ev-tbd {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            color: #7a4a00;
+            margin-top: 0.55rem;
+            font-style: italic;
         }
 
         /* ---- Seasons grid (compact) ---- */
@@ -1895,47 +1947,124 @@
             <div class="hub-block-head">
                 <span class="eyebrow">Signature events through the year</span>
                 <h2>Events</h2>
-                <p>Cloudcroft's event calendar gives every season a reason to visit. Six worth planning around — and
-                    dozens more smaller gatherings across the summer and fall.</p>
+                <p>Eight Chamber-listed events on the 2026 calendar — plus annual Cloudcroft favorites whose dates
+                    haven't posted yet. Cards run chronologically from May through December; venues link to the Chamber
+                    listing for current details.</p>
                 <a href="events/top-events.html" class="full-guide-link">See the full events calendar &rarr;</a>
             </div>
 
             <div class="events-grid">
                 <div class="event-row">
-                    <p class="ev-month">May</p>
-                    <h3>Mayfair Festival</h3>
-                    <p>Spring opener: live music, arts and crafts vendors, food, and community events. Marks the start
-                        of summer visitor season.</p>
+                    <p class="ev-month">May 23–24</p>
+                    <img src="events/events-photo/event-mayfair-2026.jpeg" alt="Mayfair Juried Art Show at Zenith Park">
+                    <h3>Mayfair Juried Art Show</h3>
+                    <p>Cloudcroft's spring opener — a juried exhibition where every submission is reviewed by a panel.
+                        Acceptance is not guaranteed, which keeps the bar honest.</p>
+                    <p class="ev-meta">Sat–Sun · 10 AM – 4 PM · Zenith Park · <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber listing</a></p>
                 </div>
-                <div class="event-row">
+
+                <div class="event-row is-tbd">
                     <p class="ev-month">June</p>
                     <h3>High Altitude Bike Classic</h3>
-                    <p>One of New Mexico's premier mountain biking events. Five route options, 10–55 miles through
+                    <p>One of New Mexico's premier mountain-biking events. Five route options, 10–55 miles through
                         Lincoln NF. Registration opens in spring.</p>
+                    <p class="ev-tbd">Date TBD — not on Chamber listing yet · check the <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber events page</a> closer to summer.</p>
                 </div>
+
                 <div class="event-row">
-                    <p class="ev-month">July</p>
-                    <h3>July Jamboree &amp; 4th of July</h3>
-                    <p>The busiest weekend of the year — fireworks, live music, full family programming. Book lodging
-                        months ahead.</p>
+                    <p class="ev-month">June 13–14</p>
+                    <h3>Beer Fest</h3>
+                    <p>Craft beer, live music, food vendors, and mountain fun from regional breweries — the early-summer
+                        weekend that kicks off Zenith Park's festival season.</p>
+                    <p class="ev-meta">Sat–Sun · 12 PM – 6 PM · Zenith Park · <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber listing</a></p>
                 </div>
+
                 <div class="event-row">
+                    <p class="ev-month">July 4</p>
+                    <h3>4th of July Parade</h3>
+                    <p>"Celebrate 250 Years, One Community." Open to individuals, families, businesses, and groups —
+                        steps off on Burro Ave at Paqua and ends at Summit Christian Fellowship.</p>
+                    <p class="ev-meta">Sat · 12 PM – 1:30 PM · Burro Ave → Summit Christian Fellowship · <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber listing</a></p>
+                </div>
+
+                <div class="event-row">
+                    <p class="ev-month">July 11–12</p>
+                    <img src="events/events-photo/698e33d70bf2baf5bcf50b90_2026 Christmas in july.png"
+                        alt="Christmas in July Jamboree at Zenith Park">
+                    <h3>Christmas In July Jamboree</h3>
+                    <p>Festive vendors, family fun, and holiday cheer in the cool mountain air — Cloudcroft's
+                        contrarian-summer tradition that earns the season pass.</p>
+                    <p class="ev-meta">Sat–Sun · 10 AM – 4 PM · Zenith Park · <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber listing</a></p>
+                </div>
+
+                <div class="event-row is-tbd">
                     <p class="ev-month">August</p>
                     <h3>Lumberjack Day</h3>
                     <p>A celebration of logging heritage — axe-throwing, log-rolling, chainsaw carving, demonstrations.
                         Rowdy, fun, distinctly Cloudcroft.</p>
+                    <p class="ev-tbd">Date TBD — not on Chamber listing yet · check the <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber events page</a>.</p>
                 </div>
+
                 <div class="event-row">
+                    <p class="ev-month">Aug 7–9</p>
+                    <h3>Art and Wine in the Cool Pines</h3>
+                    <p>Browse local art, enjoy wine, and stretch a relaxing weekend across three days at the Sacramento
+                        Mountain Museum. The museum-set alternative to a Zenith Park festival.</p>
+                    <p class="ev-meta">Fri–Sun · 10 AM – 5 PM · Sacramento Mountain Museum · <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber listing</a></p>
+                </div>
+
+                <div class="event-row">
+                    <p class="ev-month">Sept 5–6</p>
+                    <h3>Labor Day Hoopla &amp; Heritage Day Car Show</h3>
+                    <p>Classic cars, vendors, food, and family fun — paired with the Heritage Day Car Show on Sunday for
+                        classics, hot rods, motorcycles, and other motorized arrivals.</p>
+                    <p class="ev-meta">Sat–Sun · 10 AM – 4 PM · Zenith Park · <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber listing</a></p>
+                </div>
+
+                <div class="event-row is-tbd">
                     <p class="ev-month">October</p>
                     <h3>Aspenfest &amp; Oktoberfest</h3>
                     <p>Peak fall color. Live music and vendor markets for Aspenfest; German beers and food for
                         Oktoberfest. The most festive month of the year.</p>
+                    <p class="ev-tbd">Date TBD — not on Chamber listing yet · check the <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber events page</a> closer to fall.</p>
                 </div>
+
                 <div class="event-row">
-                    <p class="ev-month">December</p>
-                    <h3>Christmas in the Mountains</h3>
-                    <p>Holiday lights, tree lighting ceremonies, and winter market vendors. Snow is likely but not
-                        guaranteed — when it comes, Burro Avenue looks like a postcard.</p>
+                    <p class="ev-month">Nov 27–28</p>
+                    <h3>Christmas Market</h3>
+                    <p>Black-Friday-weekend shopping with many unique vendors — the indoor warm-up to Cloudcroft's
+                        December-weekend Mountain Christmas Village.</p>
+                    <p class="ev-meta">Fri–Sat · 10 AM – 4 PM · Cloudcroft High School Gym · <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber listing</a></p>
+                </div>
+
+                <div class="event-row">
+                    <p class="ev-month">Dec 11–19</p>
+                    <h3>Mountain Christmas Village</h3>
+                    <p>Hot cocoa and snacks while taking in the beauty of Cloudcroft in winter — the village's
+                        evening-time December tradition on select Fridays and Saturdays.</p>
+                    <p class="ev-meta">Select Fri–Sat · 5 PM – 8 PM · Zenith Park · <a
+                            href="https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr&amp;class=E" target="_blank"
+                            rel="noopener noreferrer">Chamber listing</a></p>
                 </div>
             </div>
         </section>
@@ -2201,7 +2330,8 @@
                             the trestle. Mad Jack's for dinner. That's the village."</blockquote>
                         <p class="pick-answer">Book <a href="stay/stay-cabins-at-cloudcroft.html">The Cabins</a> · hike
                             <a href="do/osha-trail.html">Osha</a> · dine <a href="eat/mad-jacks-bbq.html">Mad
-                                Jack's</a>.</p>
+                                Jack's</a>.
+                        </p>
                     </div>
                     <div class="editor-pick">
                         <span class="pick-for">Full week, nature-first</span>

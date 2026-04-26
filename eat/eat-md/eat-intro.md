@@ -8,3 +8,13 @@ WHERE TO EAT
 Every Dining Option in Cloudcroft
 
 Cloudcroft’s dining runs from a chef-driven fine-dining room to roadside BBQ, with coffee shops, bakeries, delis, bars, and specialty shops in between. Each spot has its own personality. Below are all the options — click through for full guides with menus, photos, and what to know before you visit.
+
+rules to obey
+
+Don’t say “cloudcroft is a mountain village, not a retail district” 
+
+James Canyon Highway intro–say “coffee and fresh bites” instead of “the other coffee shop” 
+
+Remove percentages that qualify scratch-made, or organic. Just leave the wording to do the heavy lifting. 
+
+Remove COMPARE section 

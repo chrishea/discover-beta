@@ -146,3 +146,6 @@ The roasting and bean-retail program extends the shop beyond Cloudcroft's foot t
 - **Patio / outdoor seating.** Not confirmed.
 - **Takeout and delivery policy.** Counter-service shop behavior is implied; documented policy is not.
 - **Email.** Not confirmed from current public text.
+
+**RUles to obey**
+-Do not say this.  Small-town hours vary; the published hours are not reliable enough to plan around without a quick call or social-media check.-- Say this: *Current hours:** Wednesday-Saturday 8:00 am to 4:00 pm, Sunday 8:00 am to 3:00 pm or “Closed Monday, Tuesday

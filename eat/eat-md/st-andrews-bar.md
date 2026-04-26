@@ -197,3 +197,7 @@ Older social and review snippets suggest the bar has had its own menu identity a
 - **Patio / fireplace / exact view experience:** plausible and partially supported by broader Lodge imagery, but not documented strongly enough in bar-specific official text to treat as hard fact.
 - **Live music:** not confirmed as a regular St. Andrews-specific feature from the strongest current official sources reviewed.
 - **Accessibility details:** not specifically documented in the strongest public sources reviewed.
+
+
+**rules to obey**
+Change language to “historic wooden and mirrored bar was rumored to be built for Al Capone” 
