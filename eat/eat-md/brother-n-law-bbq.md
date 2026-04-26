@@ -164,3 +164,19 @@ A phone number carrying a 215 area code (Philadelphia) on a Cloudcroft BBQ shop 
 - **Delivery.** Not confirmed; takeout is confirmed.
 - **Rating claim (4.8 stars).** Previously published on this page but not re-verified against a current third-party source — hold back from reprinting without fresh confirmation.
 - **Owner / local input.** A direct April 2026 pass from Chris Hea has not yet been recorded. When added, fold into section 2 / 7 as with the other JCH and Burro Ave rebuilds.
+
+## 13. Rules to Obey
+
+In listed menus, remove “central texas way” from style. Remove “house-made” from sausage links 
+
+Remove trimmed-fat sandwich from menu 
+
+Add fried okra to the menu–highlight this as one fo the best items on the menu. Perfectly crunchy, crisp, and flavorful. 
+
+Remove jalapeno sausage blurb on “what I’d order” 
+
+Where you’ll find it–NOT Dollar General, yes Family Dollar.
+
+Remove GF diner portion in good for/skip if
+
+Change editor’s take to reflect delicious bbq and the fixin’s. Get it like this editor by ordering chopped brisket, moist, and a side of fired okra. The mac and cheese is pure comfort. 

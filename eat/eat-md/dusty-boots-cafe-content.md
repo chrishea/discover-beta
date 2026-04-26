@@ -141,3 +141,14 @@ Dusty Boots is a combined motel-and-café property rather than a stand-alone res
 - **Alcohol beyond beer.** Beer is confirmed. A broader cantina/cocktail program is not confirmed by a primary source.
 - **Takeout / delivery / patio.** Room service for motel guests is confirmed on the site. Public takeout, delivery, and patio seating are not confirmed.
 - **Reservations policy.** Not documented; appears to be walk-in.
+
+## 13. Rules to Obey
+
+DON’T Use phrase “actually” in the site–demeaning to other businesses. 
+Don’t say “real taco program” just say: recently added taco cantina and beer menu 
+
+On menu 2 remove Steak and Shrimp 
+
+Add “Select Saturdays” to German night mentions. 
+
+Don’t overly focus on the taco offerings. Mention that breakfast is served until noon–the hiker boot omelette, loaded with veggies, is a fave. 
