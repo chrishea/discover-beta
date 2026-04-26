@@ -1216,6 +1216,259 @@
                 padding-right: 1rem;
             }
         }
+
+        /* ---- Get Notified nav button + signup modal ---- */
+        .nav-cta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.7rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #fff;
+            background: var(--charcoal);
+            border: none;
+            border-radius: 999px;
+            padding: 0.55rem 1.1rem;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .nav-cta:hover,
+        .nav-cta:focus-visible {
+            background: var(--charcoal-light, #444);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+            outline: none;
+        }
+
+        .nav-cta::after { content: none !important; }
+
+        .mobile-nav-overlay .nav-cta {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            padding: 0.85rem 1.6rem;
+        }
+
+        .signup-modal[hidden] { display: none; }
+
+        .signup-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.25rem;
+        }
+
+        .signup-modal__backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            animation: signupBackdropIn 0.2s ease both;
+        }
+
+        .signup-modal__panel {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 440px;
+            background: #fff;
+            color: var(--charcoal);
+            border-radius: 16px;
+            padding: 2rem 1.75rem 1.75rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+            animation: signupPanelIn 0.25s ease both;
+        }
+
+        .signup-modal__close {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.75rem;
+            width: 36px;
+            height: 36px;
+            background: transparent;
+            border: none;
+            font-size: 1.75rem;
+            line-height: 1;
+            color: var(--charcoal-muted, #777);
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .signup-modal__close:hover,
+        .signup-modal__close:focus-visible {
+            background: var(--cream-dark, #f2f2f2);
+            color: var(--charcoal);
+            outline: none;
+        }
+
+        #signupModalTitle {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1.25;
+            margin: 0 0 0.5rem;
+            color: var(--charcoal);
+        }
+
+        .signup-modal__sub {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--charcoal-light, #444);
+            margin: 0 0 1.25rem;
+        }
+
+        .signup-modal .form-container {
+            background: transparent;
+            box-shadow: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .signup-modal .form-row {
+            display: flex;
+            gap: 0.6rem;
+        }
+
+        .signup-modal .form-row input[type="email"] {
+            flex: 1;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            padding: 0.85rem 1.1rem;
+            border: 1.5px solid var(--cream-dark, #f2f2f2);
+            border-radius: 10px;
+            background: #fff;
+            color: var(--charcoal);
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .signup-modal .form-row input[type="email"]:focus {
+            border-color: var(--charcoal);
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .signup-modal .form-row button {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.85rem 1.4rem;
+            background: var(--charcoal);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+            white-space: nowrap;
+        }
+
+        .signup-modal .form-row button:hover,
+        .signup-modal .form-row button:focus-visible {
+            background: var(--charcoal-light, #444);
+            transform: translateY(-1px);
+            outline: none;
+        }
+
+        .signup-modal .form-row button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .signup-modal .error-message {
+            display: none;
+            font-size: 0.85rem;
+            color: #b00020;
+            margin-top: 0.75rem;
+        }
+
+        .signup-modal .form-container.error .error-message { display: block; }
+
+        .signup-modal .success-message { display: none; padding: 0.5rem 0; }
+
+        .signup-modal .form-container.success .form-row,
+        .signup-modal .form-container.success + .signup-modal__reassurance {
+            display: none;
+        }
+
+        .signup-modal .form-container.success .success-message { display: block; }
+
+        .signup-modal .success-message .check {
+            width: 48px;
+            height: 48px;
+            background: var(--charcoal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.75rem;
+        }
+
+        .signup-modal .success-message .check svg {
+            width: 24px;
+            height: 24px;
+            stroke: #fff;
+            stroke-width: 2.5;
+            fill: none;
+        }
+
+        .signup-modal .success-message h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0 0 0.4rem;
+            text-align: center;
+        }
+
+        .signup-modal .success-message p {
+            font-size: 0.95rem;
+            color: var(--charcoal-light, #444);
+            text-align: center;
+            margin: 0;
+        }
+
+        .signup-modal__reassurance {
+            font-size: 0.8rem;
+            color: var(--charcoal-muted, #777);
+            margin-top: 0.9rem;
+            text-align: center;
+        }
+
+        body.signup-modal-open { overflow: hidden; }
+
+        @keyframes signupBackdropIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes signupPanelIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 480px) {
+            .signup-modal__panel {
+                padding: 1.75rem 1.25rem 1.5rem;
+            }
+
+            .signup-modal .form-row {
+                flex-direction: column;
+            }
+
+            .signup-modal .form-row button { padding: 0.9rem 1.5rem; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .signup-modal__backdrop,
+            .signup-modal__panel {
+                animation: none;
+            }
+
+            .nav-cta { transition: none; }
+        }
     </style>
 </head>
 
@@ -1238,6 +1491,8 @@
                 <a href="events/top-events.html">Events</a>
                 <a href="resources/resources.html">Resources</a>
                 <a href="resources/contact.html">Contact</a>
+                <button type="button" class="nav-cta" data-signup-open data-signup-source="nav-desktop">Get
+                    Notified</button>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
@@ -1256,6 +1511,7 @@
         <a href="events/top-events.html">Events</a>
         <a href="resources/resources.html">Resources</a>
         <a href="resources/contact.html">Contact</a>
+        <button type="button" class="nav-cta" data-signup-open data-signup-source="nav-mobile">Get Notified</button>
     </nav>
 
     <!-- HERO (2-up: trestle photo + trip planner) -->
@@ -2546,7 +2802,169 @@
                 }
             });
         })();
+
+        // ---- Get Notified signup modal ----
+        // Submits to the same Google Apps Script / Google Sheet as index.html.
+        // Adds an optional `source` field so the owner can see in the sheet
+        // which entry point a signup came from. Existing homepage submissions
+        // continue to work; the script just appends an extra column if used.
+        (function () {
+            var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxBHtNoCm_a44NFoYyUerR8qUqj5379Wb1GgbIMjZeHVBoF2f2jH79HclzLzK9j_frT/exec';
+            var EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            var modal = document.getElementById('signupModal');
+            if (!modal) return;
+
+            var panel = modal.querySelector('.signup-modal__panel');
+            var form = document.getElementById('modalSignupForm');
+            var input = document.getElementById('modalEmailInput');
+            var btn = document.getElementById('modalSubmitBtn');
+            var container = document.getElementById('modalFormContainer');
+            var errorEl = document.getElementById('modalErrorMessage');
+            var openers = document.querySelectorAll('[data-signup-open]');
+            var mobileNav = document.getElementById('mobile-nav');
+            var hamburger = document.querySelector('.hamburger');
+
+            var lastTrigger = null;
+            var currentSource = 'modal';
+            var autoCloseTimer = null;
+
+            function focusableInPanel() {
+                return Array.prototype.slice.call(
+                    panel.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+                ).filter(function (el) {
+                    return !el.disabled && el.offsetParent !== null;
+                });
+            }
+
+            function onKeydown(e) {
+                if (e.key === 'Escape') {
+                    e.preventDefault();
+                    closeModal();
+                    return;
+                }
+                if (e.key === 'Tab') {
+                    var focusables = focusableInPanel();
+                    if (!focusables.length) return;
+                    var first = focusables[0];
+                    var last = focusables[focusables.length - 1];
+                    if (e.shiftKey && document.activeElement === first) {
+                        e.preventDefault();
+                        last.focus();
+                    } else if (!e.shiftKey && document.activeElement === last) {
+                        e.preventDefault();
+                        first.focus();
+                    }
+                }
+            }
+
+            function resetForm() {
+                if (autoCloseTimer) { clearTimeout(autoCloseTimer); autoCloseTimer = null; }
+                container.classList.remove('success', 'error');
+                btn.disabled = false;
+                btn.textContent = 'Notify Me';
+                input.value = '';
+            }
+
+            function openModal(trigger) {
+                lastTrigger = trigger || null;
+                currentSource = (trigger && trigger.getAttribute('data-signup-source')) || 'modal';
+                resetForm();
+                modal.hidden = false;
+                document.body.classList.add('signup-modal-open');
+                document.addEventListener('keydown', onKeydown);
+                // Focus the email field; let the browser paint first.
+                window.requestAnimationFrame(function () { input.focus(); });
+            }
+
+            function closeModal() {
+                modal.hidden = true;
+                document.body.classList.remove('signup-modal-open');
+                document.removeEventListener('keydown', onKeydown);
+                if (lastTrigger && typeof lastTrigger.focus === 'function') {
+                    lastTrigger.focus();
+                }
+            }
+
+            openers.forEach(function (el) {
+                el.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    // If the click came from inside the mobile overlay, close it first.
+                    if (mobileNav && mobileNav.contains(el) && !mobileNav.hidden) {
+                        mobileNav.hidden = true;
+                        if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                    openModal(el);
+                });
+            });
+
+            modal.addEventListener('click', function (e) {
+                if (e.target.hasAttribute('data-modal-close')) {
+                    closeModal();
+                }
+            });
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var email = input.value.trim();
+
+                if (!EMAIL_PATTERN.test(email)) {
+                    container.classList.add('error');
+                    errorEl.textContent = 'Please enter a valid email address.';
+                    input.focus();
+                    return;
+                }
+
+                container.classList.remove('error');
+                btn.disabled = true;
+                btn.textContent = 'Sending...';
+
+                fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                    body: JSON.stringify({ email: email, source: currentSource })
+                }).then(function () {
+                    container.classList.add('success');
+                    autoCloseTimer = setTimeout(closeModal, 2000);
+                }).catch(function () {
+                    container.classList.add('error');
+                    errorEl.textContent = "We couldn't reach the server. Please check your connection and try again.";
+                    btn.disabled = false;
+                    btn.textContent = 'Notify Me';
+                });
+            });
+        })();
     </script>
+
+    <div class="signup-modal" id="signupModal" role="dialog" aria-modal="true"
+        aria-labelledby="signupModalTitle" hidden>
+        <div class="signup-modal__backdrop" data-modal-close></div>
+        <div class="signup-modal__panel" role="document">
+            <button type="button" class="signup-modal__close" aria-label="Close" data-modal-close>&times;</button>
+            <h2 id="signupModalTitle">Get the guide when it launches</h2>
+            <p class="signup-modal__sub">One email when we launch &mdash; that's it.</p>
+            <div class="form-container" id="modalFormContainer">
+                <form class="form-row" id="modalSignupForm" novalidate>
+                    <input type="email" id="modalEmailInput" placeholder="Your email address" required
+                        autocomplete="email" aria-label="Email address">
+                    <button type="submit" id="modalSubmitBtn">Notify Me</button>
+                </form>
+                <div class="error-message" id="modalErrorMessage" role="alert">Something went wrong. Please try
+                    again.</div>
+                <div class="success-message">
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="6 12 10 16 18 8"></polyline>
+                        </svg>
+                    </div>
+                    <h3>You're on the list!</h3>
+                    <p>We'll let you know when <b>Discover Cloudcroft</b> goes live.</p>
+                </div>
+            </div>
+            <div class="signup-modal__reassurance">We won't share your address.</div>
+        </div>
+    </div>
 </body>
 
 </html>
