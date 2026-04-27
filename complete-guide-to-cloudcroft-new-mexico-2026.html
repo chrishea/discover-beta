@@ -2732,6 +2732,35 @@
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
+    <div class="signup-modal" id="signupModal" role="dialog" aria-modal="true"
+        aria-labelledby="signupModalTitle" hidden>
+        <div class="signup-modal__backdrop" data-modal-close></div>
+        <div class="signup-modal__panel" role="document">
+            <button type="button" class="signup-modal__close" aria-label="Close" data-modal-close>&times;</button>
+            <h2 id="signupModalTitle">Get the guide when it launches</h2>
+            <p class="signup-modal__sub">One email when we launch &mdash; that's it.</p>
+            <div class="form-container" id="modalFormContainer">
+                <form class="form-row" id="modalSignupForm" novalidate>
+                    <input type="email" id="modalEmailInput" placeholder="Your email address" required
+                        autocomplete="email" aria-label="Email address">
+                    <button type="submit" id="modalSubmitBtn">Notify Me</button>
+                </form>
+                <div class="error-message" id="modalErrorMessage" role="alert">Something went wrong. Please try
+                    again.</div>
+                <div class="success-message">
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="6 12 10 16 18 8"></polyline>
+                        </svg>
+                    </div>
+                    <h3>You're on the list!</h3>
+                    <p>We'll let you know when <b>Discover Cloudcroft</b> goes live.</p>
+                </div>
+            </div>
+            <div class="signup-modal__reassurance">We won't share your address.</div>
+        </div>
+    </div>
+
     <script src="js/common.js" defer></script>
     <script>
         (function () {
@@ -2936,35 +2965,6 @@
             });
         })();
     </script>
-
-    <div class="signup-modal" id="signupModal" role="dialog" aria-modal="true"
-        aria-labelledby="signupModalTitle" hidden>
-        <div class="signup-modal__backdrop" data-modal-close></div>
-        <div class="signup-modal__panel" role="document">
-            <button type="button" class="signup-modal__close" aria-label="Close" data-modal-close>&times;</button>
-            <h2 id="signupModalTitle">Get the guide when it launches</h2>
-            <p class="signup-modal__sub">One email when we launch &mdash; that's it.</p>
-            <div class="form-container" id="modalFormContainer">
-                <form class="form-row" id="modalSignupForm" novalidate>
-                    <input type="email" id="modalEmailInput" placeholder="Your email address" required
-                        autocomplete="email" aria-label="Email address">
-                    <button type="submit" id="modalSubmitBtn">Notify Me</button>
-                </form>
-                <div class="error-message" id="modalErrorMessage" role="alert">Something went wrong. Please try
-                    again.</div>
-                <div class="success-message">
-                    <div class="check">
-                        <svg viewBox="0 0 24 24">
-                            <polyline points="6 12 10 16 18 8"></polyline>
-                        </svg>
-                    </div>
-                    <h3>You're on the list!</h3>
-                    <p>We'll let you know when <b>Discover Cloudcroft</b> goes live.</p>
-                </div>
-            </div>
-            <div class="signup-modal__reassurance">We won't share your address.</div>
-        </div>
-    </div>
 </body>
 
 </html>
