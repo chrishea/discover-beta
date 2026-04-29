@@ -2,7 +2,8 @@ Cloudcroft’s dining scene is independent, seasonal, and small-scale. No chains
 
 Hours shift by season and staffing. Many places close early or reduce days off-season. The dining here rewards flexibility and a willingness to call ahead.
 
-💡
+💡Cloudcroft does not have a huge restaurant scene, which makes its standouts matter more. Mad Jack’s is the pilgrimage stop: meat, smoke, line, payoff. Noisy Water Winery is the slower stop: wine tasting, browsing, events, and a place to sit after walking Burro Avenue.
+
 Cloudcroft is a small village. Late-night dining options are very limited. Plan your meals around posted hours, and don’t assume anything is open past 8 or 9 PM outside of summer weekends.
 WHERE TO EAT
 Every Dining Option in Cloudcroft
@@ -18,3 +19,8 @@ James Canyon Highway intro–say “coffee and fresh bites” instead of “the 
 Remove percentages that qualify scratch-made, or organic. Just leave the wording to do the heavy lifting. 
 
 Remove COMPARE section 
+
+
+
+
+
