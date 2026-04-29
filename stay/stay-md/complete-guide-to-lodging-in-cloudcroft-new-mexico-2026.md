@@ -6,6 +6,11 @@ Cloudcroft is not a chain-hotel market. It is a small mountain village where the
 
 For most travelers, the real choice is not simply hotel versus hotel. It is whether you want history, walkability, cabin privacy, a simple basecamp, or more room for family and friends. In 2026, Cloudcroft still works best for travelers who plan ahead, verify details directly, and pick a property that matches how they actually travel.
 
+Add: locally owned and operated. Unique experiences and stays. From cozy to posh, Cloudcroft has your stay. 
+
+Remove “Common Cautions” from all hotel/lodging listings. 
+
+
 ## 1. The Cloudcroft lodging market at a glance
 
 Cloudcroft is more cabin-driven than hotel-driven. The village does have a few recognizable lodging anchors, but the broader market is dominated by cabins, small inns, and vacation rentals. The Cloudcroft Chamber’s lodging directory shows a long list of cabins, bed-and-breakfasts, RV parks, and vacation-rental operators, with only a small number of traditional hotel-style properties. Official vacation-rental platforms also show a large short-term-rental supply in the Cloudcroft area.

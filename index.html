@@ -42,6 +42,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="media/hero-elevate-your-fun.jpg" fetchpriority="high">
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
         rel="stylesheet">
@@ -74,16 +75,17 @@
         }
 
         :root {
-            --pine: #000000;
-            --pine-light: #333333;
+            --pine: #1f3a2e;
+            --pine-light: #2d5240;
             --cream: #ffffff;
-            --cream-dark: #f2f2f2;
-            --gold: #000000;
-            --gold-hover: #333333;
-            --charcoal: #000000;
+            --cream-dark: #f2efe9;
+            --gold: #b8842c;
+            --gold-hover: #9a6f24;
+            --charcoal: #1a1a1a;
             --charcoal-light: #444444;
             --charcoal-muted: #777777;
-            --cta-red: #000000;
+            --cta-red: #a8472b;
+            --sky: #3a6b8c;
         }
 
         html {
@@ -95,16 +97,20 @@
             background: var(--cream);
             color: var(--charcoal);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 1.5rem;
             position: relative;
             overflow-x: hidden;
         }
 
+        main {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+        }
+
         @media (max-height: 700px) {
-            body {
+            main {
                 align-items: flex-start;
                 padding-top: 3rem;
             }
@@ -371,6 +377,146 @@
             cursor: not-allowed;
         }
 
+        /* Carousel pause/play control */
+        .carousel-toggle {
+            position: absolute;
+            bottom: 0.75rem;
+            right: 0.75rem;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(0, 0, 0, 0.55);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            z-index: 2;
+            transition: background 0.15s, transform 0.15s;
+        }
+
+        .carousel-toggle:hover,
+        .carousel-toggle:focus-visible {
+            background: rgba(0, 0, 0, 0.75);
+            outline: none;
+            transform: scale(1.05);
+        }
+
+        .carousel-toggle svg {
+            width: 14px;
+            height: 14px;
+            fill: white;
+        }
+
+        /* Preview tiles section */
+        .previews {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem 5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .previews-heading {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: clamp(1.5rem, 4vw, 1.875rem);
+            color: var(--charcoal);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .previews-sub {
+            font-size: 1rem;
+            color: var(--charcoal-light);
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .previews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .preview-card {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            background: white;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .preview-card:hover,
+        .preview-card:focus-visible {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.10), 0 2px 6px rgba(0, 0, 0, 0.05);
+            outline: none;
+        }
+
+        .preview-img {
+            aspect-ratio: 16 / 10;
+            background-size: cover;
+            background-position: center;
+            background-color: var(--cream-dark);
+        }
+
+        .preview-body {
+            padding: 1.25rem 1.25rem 1.5rem;
+        }
+
+        .preview-kicker {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--pine);
+            margin-bottom: 0.5rem;
+        }
+
+        .preview-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--charcoal);
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+        }
+
+        .preview-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--charcoal-light);
+        }
+
+        @media (max-width: 760px) {
+            .previews {
+                padding: 3rem 1.25rem 4rem;
+            }
+
+            .previews-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-carousel img {
+                transition: none;
+            }
+
+            .preview-card {
+                transition: none;
+            }
+        }
+
         /* Mobile adjustments */
         @media (max-width: 480px) {
             .form-row {
@@ -398,7 +544,7 @@
         <div class="page">
             <div class="hero-carousel" id="heroCarousel">
                 <img src="media/hero-elevate-your-fun.jpg" alt="Elevate Your Fun — Cloudcroft, New Mexico"
-                    class="active" loading="lazy">
+                    class="active" fetchpriority="high">
                 <img src="media/hero-local-color.jpg" alt="Local Color — Cloudcroft, New Mexico" loading="lazy">
                 <img src="media/hero-elevate-adventure-vista.jpg"
                     alt="Elevate Your Adventure — mountain vista view from Cloudcroft" loading="lazy">
@@ -406,30 +552,27 @@
                     loading="lazy">
                 <img src="media/hero-art-seen.jpg" alt="Art Seen — Cloudcroft, New Mexico" loading="lazy">
                 <img src="media/hero-pie-in-the-sky.jpg" alt="Pie in the Sky — Cloudcroft, New Mexico" loading="lazy">
-                <img src="media/hero-go-clubbing.jpg" alt="Go Clubbing at a cool 9,000 ft — Cloudcroft golf course"
-                    loading="lazy">
-                <img src="media/hero-saddle-up.jpg" alt="Saddle Up Your Fun — horseback riding in Cloudcroft"
-                    loading="lazy">
                 <img src="media/hero-white-sands-ahead.jpg" alt="White Sands Ahead — Cloudcroft, New Mexico"
                     loading="lazy">
+                <button type="button" class="carousel-toggle" id="carouselToggle"
+                    aria-label="Pause photo slideshow" aria-pressed="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <rect x="6" y="5" width="4" height="14"></rect>
+                        <rect x="14" y="5" width="4" height="14"></rect>
+                    </svg>
+                </button>
             </div>
             <div class="wordmark">DiscoverCloudcroft.com</div>
             <h1>Discover Cloudcroft, New Mexico &mdash; Your Mountain Escape at 9,000 Feet</h1>
-            <p class="subhead">The complete guide to things to do in Cloudcroft, NM is almost here. From the best hiking
-                trails and cozy cabins to local restaurants, stargazing under dark skies, and year-round mountain
-                adventures in the Sacramento Mountains &mdash; we're building the resource visitors have been
-                asking for.
-                <span style="font-weight:700;color:steelblue">DiscoverCloudcroft.com</span> will help you make the most
-                of your time.<br />
-                Be the first to know when we launch.
-            </p>
+            <p class="subhead">The complete local guide to Cloudcroft, NM &mdash; launching soon. Be the first to
+                know.</p>
             <div class="form-container" id="formContainer">
                 <form class="form-row" id="signupForm">
                     <input type="email" id="emailInput" placeholder="Your email address" required autocomplete="email"
                         aria-label="Email address">
                     <button type="submit" id="submitBtn">Notify Me</button>
                 </form>
-                <div class="error-message" id="errorMessage">Something went wrong. Please try again.</div>
+                <div class="error-message" id="errorMessage" role="alert">Something went wrong. Please try again.</div>
                 <div class="success-message">
                     <div class="check">
                         <svg viewBox="0 0 24 24">
@@ -440,58 +583,129 @@
                     <p>We'll let you know when <b>Discover Cloudcroft</b> goes live.</p>
                 </div>
             </div>
-            <div class="reassurance">No spam. Just advice from locals.</div>
+            <div class="reassurance">One email when we launch — that's it. We won't share your address.</div>
         </div>
     </main>
 
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    <section class="previews" aria-labelledby="previews-heading">
+        <h2 id="previews-heading" class="previews-heading">A preview of the guide</h2>
+        <p class="previews-sub">A few pages are already live while we finish the rest.</p>
+        <div class="previews-grid">
+            <a class="preview-card" href="complete-guide-to-cloudcroft-new-mexico-2026.html">
+                <div class="preview-img"
+                    style="background-image: url('media/hero-elevate-adventure-vista.jpg')"></div>
+                <div class="preview-body">
+                    <span class="preview-kicker">Complete Guide</span>
+                    <h3>Cloudcroft, New Mexico 2026</h3>
+                    <p>Hiking, lodging, food, and seasons — the full visitor's guide to the village.</p>
+                </div>
+            </a>
+            <a class="preview-card" href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">
+                <div class="preview-img"
+                    style="background-image: url('media/hero-pie-in-the-sky.jpg')"></div>
+                <div class="preview-body">
+                    <span class="preview-kicker">Where to Eat</span>
+                    <h3>Restaurants &amp; Cafés</h3>
+                    <p>Coffee, BBQ, bakeries, and brewpubs — every spot in town, reviewed.</p>
+                </div>
+            </a>
+            <a class="preview-card" href="do/guide-to-hiking-in-cloudcroft-new-mexico-2026.html">
+                <div class="preview-img"
+                    style="background-image: url('media/hero-elevate-your-fun.jpg')"></div>
+                <div class="preview-body">
+                    <span class="preview-kicker">Things to Do</span>
+                    <h3>Hiking the Sacramento Mountains</h3>
+                    <p>Osha, Mexican Canyon Trestle, and the trails that make Cloudcroft worth the drive.</p>
+                </div>
+            </a>
+        </div>
+    </section>
 
     <script>
         var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxBHtNoCm_a44NFoYyUerR8qUqj5379Wb1GgbIMjZeHVBoF2f2jH79HclzLzK9j_frT/exec';
+        var EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         document.getElementById('signupForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            var email = document.getElementById('emailInput').value;
+            var emailInput = document.getElementById('emailInput');
+            var email = emailInput.value.trim();
             var btn = document.getElementById('submitBtn');
             var container = document.getElementById('formContainer');
+            var errorEl = document.getElementById('errorMessage');
 
-            if (!email) return;
+            if (!EMAIL_PATTERN.test(email)) {
+                container.classList.add('error');
+                errorEl.textContent = 'Please enter a valid email address.';
+                emailInput.focus();
+                return;
+            }
 
             container.classList.remove('error');
             btn.disabled = true;
             btn.textContent = 'Sending...';
 
-            // Create a temporary form that submits to a hidden iframe
-            var tempForm = document.createElement('form');
-            tempForm.method = 'POST';
-            tempForm.action = GOOGLE_SCRIPT_URL;
-            tempForm.target = 'hidden_iframe';
-            tempForm.style.display = 'none';
-
-            var input = document.createElement('input');
-            input.name = 'email';
-            input.value = email;
-            tempForm.appendChild(input);
-
-            document.body.appendChild(tempForm);
-            tempForm.submit();
-            document.body.removeChild(tempForm);
-
-            // Show success after a short delay to allow submission
-            setTimeout(function () {
+            // text/plain body keeps this a CORS "simple" request (no preflight),
+            // which Google Apps Script web apps accept. Response is opaque under
+            // no-cors, so we treat a successful network round-trip as success
+            // and a network failure as an honest error.
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify({ email: email })
+            }).then(function () {
                 container.classList.add('success');
-            }, 1000);
+            }).catch(function () {
+                container.classList.add('error');
+                errorEl.textContent = "We couldn't reach the server. Please check your connection and try again.";
+                btn.disabled = false;
+                btn.textContent = 'Notify Me';
+            });
         });
 
-        // Hero image carousel
+        // Hero image carousel with pause/play control + reduced-motion respect
         (function () {
             var images = document.querySelectorAll('#heroCarousel img');
+            var toggle = document.getElementById('carouselToggle');
+            if (!images.length || !toggle) return;
+
             var current = 0;
-            setInterval(function () {
+            var timer = null;
+            var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            var PLAY_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 4l14 8-14 8z"/></svg>';
+            var PAUSE_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="5" width="4" height="14"></rect><rect x="14" y="5" width="4" height="14"></rect></svg>';
+
+            function advance() {
                 images[current].classList.remove('active');
                 current = (current + 1) % images.length;
                 images[current].classList.add('active');
-            }, 9000);
+            }
+
+            function play() {
+                if (timer) return;
+                timer = setInterval(advance, 9000);
+                toggle.setAttribute('aria-label', 'Pause photo slideshow');
+                toggle.setAttribute('aria-pressed', 'false');
+                toggle.innerHTML = PAUSE_ICON;
+            }
+
+            function pause() {
+                if (timer) { clearInterval(timer); timer = null; }
+                toggle.setAttribute('aria-label', 'Play photo slideshow');
+                toggle.setAttribute('aria-pressed', 'true');
+                toggle.innerHTML = PLAY_ICON;
+            }
+
+            toggle.addEventListener('click', function () {
+                if (timer) pause(); else play();
+            });
+
+            if (prefersReduced) {
+                pause();
+            } else {
+                play();
+            }
         })();
     </script>
 </body>

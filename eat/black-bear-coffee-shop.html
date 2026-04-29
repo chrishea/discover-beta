@@ -47,6 +47,7 @@
       "telephone": "+15756821239",
       "servesCuisine": ["Coffee", "Cafe"],
       "priceRange": "$",
+      "openingHours": ["We-Sa 08:00-16:00", "Su 08:00-15:00"],
       "sameAs": [
         "https://www.mybbcoffee.com/",
         "https://www.facebook.com/blackbearcoffeeshop/",
@@ -1078,19 +1079,21 @@
     <!-- HEADER (paths relative to /eat/) -->
     <header class="site-header" role="banner">
         <div class="header-inner">
+
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html" aria-current="page">Eat</a>
-                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="../events/top-events.html">Events</a>
-                <a href="../resources/resources.html">Resources</a>
-                <a href="../resources/contact.html">Contact</a>
+                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="events/top-events.html">Events</a>
+                <a href="#reels">Reels</a>
+                <a href="resources/resources.html">Resources</a>
+                <a href="resources/contact.html">Contact</a>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
@@ -1100,6 +1103,15 @@
     </header>
 
     <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+        <a href="events/top-events.html">Events</a>
+        <a href="#reels">Reels</a>
+        <a href="resources/resources.html">Resources</a>
+        <a href="resources/contact.html">Contact</a>
+    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
         <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
         <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
@@ -1125,7 +1137,7 @@
             <aside class="atglance" aria-label="At a glance">
                 <div class="atglance-head">
                     <h2>At a glance</h2>
-                    <span class="open-now is-warn" role="status">Hours vary · check ahead</span>
+                    <span class="open-now" id="open-now" role="status" aria-live="polite">Open now</span>
                 </div>
                 <dl class="atglance-rows">
                     <div>
@@ -1134,7 +1146,7 @@
                     </div>
                     <div>
                         <dt>Hours</dt>
-                        <dd>Not reliably posted · check <a href="https://www.instagram.com/blackbearcoffeenm/" target="_blank" rel="noopener noreferrer">Instagram</a> or call</dd>
+                        <dd>Wed–Sat 8 AM – 4 PM · Sun 8 AM – 3 PM · Closed Mon–Tue</dd>
                     </div>
                     <div>
                         <dt>Phone</dt>
@@ -1166,7 +1178,7 @@
             <span class="signal">GF / DF / SF</span>
             <span class="signal">Petite gallery</span>
             <span class="signal">Walkable Burro Ave</span>
-            <span class="signal warn">Hours vary</span>
+            <span class="signal">Wed–Sun</span>
         </div>
     </div>
 
@@ -1307,15 +1319,17 @@
         <!-- ================================ HOURS ================================ -->
         <section class="hours-section" id="hours" aria-label="Hours">
             <div class="detail-block-head">
-                <span class="eyebrow">Posted hours unreliable</span>
+                <span class="eyebrow">Wednesday – Sunday</span>
                 <h2>Hours</h2>
-                <p>Black Bear's schedule doesn't publish reliably across the shop's site and socials, and small-town off-season patterns shift. The honest answer: check before you go. Two paths to a real answer — a quick phone call or the shop's Instagram story.</p>
+                <p>Open Wednesday through Saturday from 8 AM to 4 PM, and Sundays from 8 AM to 3 PM. Closed Monday and Tuesday. A quick phone call or Instagram story check still helps before any off-season visit.</p>
             </div>
 
             <div class="hours-vary-card">
-                <h3>Why no 7-day table here</h3>
-                <p>We won't post hours we can't stand behind. Current crawlable sources don't give us a strong enough schedule to publish, and local signals suggest seasonal Monday variations. Rather than guess and send you to a closed door, we send you to the shop directly.</p>
-                <p>In general: the shop operates as a morning-to-early-afternoon coffee room. Summer runs later than shoulder season. Weekends are the most reliable times to find the door open.</p>
+                <h3>Current hours</h3>
+                <p><strong>Wednesday – Saturday:</strong> 8:00 AM – 4:00 PM<br>
+                   <strong>Sunday:</strong> 8:00 AM – 3:00 PM<br>
+                   <strong>Monday – Tuesday:</strong> Closed</p>
+                <p>Hours can shift seasonally. If a specific day matters, a quick call or Instagram story check is the surest way to confirm.</p>
 
                 <div class="hours-check-list">
                     <a href="tel:+15756821239">
@@ -1442,7 +1456,7 @@
                     <h3>Skip if</h3>
                     <ul>
                         <li>You want a full breakfast — go to <a href="daves-cafe.html">Dave's Café</a> or <a href="dusty-boots-cafe.html">Dusty Boots</a></li>
-                        <li>You need guaranteed hours — call ahead, schedule doesn't publish reliably</li>
+                        <li>It's Monday or Tuesday — the shop is closed those days</li>
                         <li>You want a full bar — <a href="western-bar.html">Western Bar</a> is next door up the street</li>
                         <li>You want dedicated BBQ or a sit-down dinner — wrong category for this shop</li>
                     </ul>
@@ -1492,8 +1506,8 @@
             <details class="note">
                 <summary>Hours, seasons &amp; calling ahead</summary>
                 <div class="note-body">
-                    <p>The shop doesn't publish a reliable schedule across its website and socials. Expect a morning-to-early-afternoon coffee rhythm, with summer running later and shoulder season running shorter. Weekends are the most consistent window.</p>
-                    <p>Before making the drive up, call <a href="tel:+15756821239">(575) 682-1239</a> or check the most recent <a href="https://www.instagram.com/blackbearcoffeenm/" target="_blank" rel="noopener noreferrer">@blackbearcoffeenm Instagram story</a>. Local signals suggest some seasonal Monday variation — if a specific day matters, confirm it.</p>
+                    <p>Posted hours are Wednesday through Saturday 8 AM to 4 PM, Sunday 8 AM to 3 PM, closed Monday and Tuesday. The shop runs a morning-to-early-afternoon coffee rhythm — weekends are the most consistent window.</p>
+                    <p>Hours can shift seasonally. Before making the drive up off-season, a quick call to <a href="tel:+15756821239">(575) 682-1239</a> or the most recent <a href="https://www.instagram.com/blackbearcoffeenm/" target="_blank" rel="noopener noreferrer">@blackbearcoffeenm Instagram story</a> is the surest way to confirm.</p>
                 </div>
             </details>
 

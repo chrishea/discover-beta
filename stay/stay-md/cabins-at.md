@@ -6,6 +6,9 @@ The Cabins at Cloudcroft is a small, owner-operated cluster of vintage knotty-pi
 
 The strongest current evidence points to roughly 15 to 16 individually different cabins ranging from one-bedroom units up to a four-bedroom/two-bath cabin, all with wood-burning fireplaces or wood stoves, equipped kitchens, flat-screen TVs, free Wi-Fi, and the original 1960s knotty pine interiors. An outdoor pavilion with a karaoke system, Adirondack seating, and regular elk and deer sightings on the property are repeatedly mentioned across sources. Pets are allowed with restrictions. This is a cabin experience, not a hotel experience — expect charm and some variation between units, not standardized rooms.
 
+
+Correct in ALL pages: White Sands National Park is about 35 miles away. 
+
 ## 2. Verified booking facts
 
 - **Official name:** The Cabins at Cloudcroft

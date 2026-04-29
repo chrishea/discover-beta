@@ -18,16 +18,6 @@ This is a stay built around charm, breakfast, quiet, and host interaction — no
 
 The inn has 8 rooms. Configurations range from standard queens to a two-bedroom suite. Each room is individually furnished and decorated with vintage and antique pieces.
 
-| Room | Configuration | Capacity | Notes |
-|------|--------------|----------|-------|
-| The Crofting Suite | 2 bedrooms | Sleeps 4 | 1 Queen + 2 Twins, 1 bathroom, private balcony |
-| Room 2 | 1 King | Sleeps 2 | Downstairs, 1 bathroom |
-| Room 3 | 1 Queen | Sleeps 2 | Mountain view, private balcony |
-| Room 4 | 1 Queen | Sleeps 2 | Mountain view |
-| Room 5 | 1 Queen | Sleeps 2 | Standard room |
-| Room 6 | 1 King | Sleeps 3 | Standard room |
-| Room 7 | 1 King | Sleeps 2 | Private balcony |
-| Room 8 | 1 King | Sleeps 3 | Standard room |
 
 Room character varies significantly from room to room — this is a 1909 house, not a purpose-built hotel. Some rooms are more memorable than others. Photos on the website and Expedia give a good sense of the style before you book.
 
