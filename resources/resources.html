@@ -3,58 +3,118 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Resources | DiscoverCloudcroft.com</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
-        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources for Cloudcroft, NM (2026) — Trip Planning, Real Estate, Emergency Numbers &amp; FAQ | DiscoverCloudcroft.com</title>
+    <meta name="description" content="The DiscoverCloudcroft resource desk — trip-planning notes, frequently asked questions, history, real-estate context, fire-risk and insurance guidance, emergency numbers, and the village park.">
+    <meta name="keywords" content="Cloudcroft resources, Cloudcroft NM trip planning, Cloudcroft FAQ, Cloudcroft history, Cloudcroft real estate, Cloudcroft fire risk insurance, Cloudcroft emergency, Zenith Park Cloudcroft">
+    <link rel="canonical" href="https://discovercloudcroft.com/resources/resources.html">
+
+    <meta property="og:title" content="Resources for Cloudcroft, NM — Trip Planning, Real Estate &amp; FAQ">
+    <meta property="og:description" content="The DiscoverCloudcroft resource desk — planning notes, FAQ, history, real estate, fire-risk guidance, emergency numbers, and the village park.">
+    <meta property="og:url" content="https://discovercloudcroft.com/resources/resources.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/Index-24.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resources for Cloudcroft, NM (2026)">
+    <meta name="twitter:description" content="Trip planning, FAQ, history, real estate, emergency numbers, and the village park.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/Index-24.webp">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Resources for Cloudcroft, New Mexico",
+      "url": "https://discovercloudcroft.com/resources/resources.html",
+      "description": "Trip-planning notes, FAQ, history, real estate, fire-risk and insurance guidance, emergency numbers, and the village park.",
+      "about": {
+        "@type": "Place",
+        "name": "Cloudcroft",
+        "address": { "@type": "PostalAddress", "addressLocality": "Cloudcroft", "addressRegion": "NM", "postalCode": "88317", "addressCountry": "US" }
+      }
+    }
+    </script>
+
     <style>
+        .hero-bg { background: url('../media/Index-24.webp') center 35% / cover no-repeat; filter: saturate(0.92); }
+        .hero-overlay { background: linear-gradient(135deg, rgba(0,0,0,.62), rgba(0,0,0,.32) 55%, rgba(0,0,0,.62)); }
 
-        .hero h1 {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: clamp(2.2rem, 5vw, 3.75rem);
-            line-height: 1.1;
-            margin-bottom: 1.25rem;
-            color: #373737
-        }
+        .resources-prose { max-width: 720px; margin: 0 auto; padding: 0 1rem; }
+        .resources-prose p { font-size: 1.05rem; line-height: 1.7; color: #2B2B2B; margin: 0 0 1.25rem 0; }
 
-        .hero p {
-            font-size: clamp(1rem, 2vw, 1.2rem);
-            color: rgba(255, 255, 255, .85);
-            max-width: 600px;
-            margin: 0 auto
-        }
-
-        main {
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
             max-width: 1100px;
-            margin: 0 auto;
-            padding: 4rem 2rem
+            margin: 2.5rem auto 0;
+            padding: 0 1rem;
         }
-
-        .card-link {
+        .resource-card {
+            background: #fff;
+            border: 1px solid rgba(0,0,0,.08);
+            border-radius: 12px;
+            padding: 1.5rem 1.5rem 1.25rem;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .resource-card:hover {
+            border-color: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,.06);
+        }
+        .resource-card .res-eyebrow {
             font-family: 'IBM Plex Sans', sans-serif;
-            font-size: .8rem;
+            font-size: 0.72rem;
             font-weight: 700;
-            letter-spacing: .1em;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
+            color: #777;
+            margin-bottom: 0.4rem;
+        }
+        .resource-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
             color: #000;
-            border-bottom: 2px solid #000;
-            padding-bottom: 2px
+            margin: 0 0 0.5rem 0;
+            line-height: 1.3;
         }
+        .resource-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #444;
+            margin: 0 0 1rem 0;
+            flex: 1;
+        }
+        .resource-card .res-cta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-transform: uppercase;
+        }
+        .resource-card .res-cta::after { content: '  →'; }
 
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #888;
-            font-size: .85rem;
-            border-top: 1px solid #e8e8e8;
-            margin-top: 2rem
-        }
-</style>
+        @media (max-width: 980px) { .resources-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 640px) { .resources-grid { grid-template-columns: 1fr; } }
+    </style>
 </head>
 
 <body>
-        <header class="site-header" role="banner">
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
@@ -74,8 +134,7 @@
                 <button type="button" class="nav-cta" data-signup-open data-signup-source="nav-mobile">Get
                     Notified</button>
             </nav>
-            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
-                aria-controls="mobile-nav">
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -94,65 +153,119 @@
 
         </nav>
     </header>
-<header class="hero">
-        <div class="hero-eyebrow">DiscoverCloudcroft.com</div>
-        <h1>Resources</h1>
-        <p>Your guide to exploring Cloudcroft, New Mexico — from history and trip planning to real estate and emergency
-            services.</p>
-    </header>
-    <main>
-        <div class="things-grid">
-            <a class="thing-card" href="about.html">
-                <h3>The Story of Cloudcroft</h3>
-                <p>A mountain village 8,676 feet closer to the sky.</p>
-                <span class="card-link">Read more →</span>
-            </a>
-            <a class="thing-card" href="contact.html">
-                <h3>Get in Touch</h3>
-                <p>Questions, tips, or just want to say hello -- we&#x27;d love to hear from you.</p>
-                <span class="card-link">Read more →</span>
-            </a>
-            <a class="thing-card" href="emergency-services.html">
-                <h3>Emergency Services</h3>
-                <p>Know your resources in the Sacramento Mountains</p>
-                <span class="card-link">Read more →</span>
-            </a>
-            <a class="thing-card" href="faq.html">
-                <h3>Frequently Asked Questions</h3>
-                <p>Everything you need to know about visiting Cloudcroft, New Mexico</p>
-                <span class="card-link">Read more →</span>
-            </a>
-            <a class="thing-card" href="history.html">
-                <h3>History of Cloudcroft</h3>
-                <p>From ancient Apache trails to railroad boom town, discover the rich heritage of New Mexico&#x27;s
-                    beloved mountain retreat</p>
-                <span class="card-link">Read more →</span>
-            </a>
-            <a class="thing-card" href="plan.html">
-                <h3>Plan Your Escape</h3>
-                <p>Everything you need to make the most of your mountain getaway.</p>
-                <span class="card-link">Read more →</span>
-            </a>
-            <a class="thing-card" href="real-estate.html">
-                <h3>Cloudcroft Real Estate</h3>
-                <p>Cabins, land, and mountain property in the Sacramento Mountains -- surrounded by 1.1 million acres of
-                    Lincoln National Forest.</p>
-                <span class="card-link">Read more →</span>
-            </a>
-            <a class="thing-card" href="what-to-know-about-insurance-in-cloudcroft-nm.html">
-                <h3>Fire Risk &amp; Insurance: What to Know</h3>
-                <p>What Cloudcroft homeowners should know about wildfire risk and the changing insurance landscape in
-                    the Sacramento Mountains.</p>
-                <span class="card-link">Read more →</span>
-            </a>
-            <a class="thing-card" href="zenith-park-in-cloudcroft.md">
-                <h3>Zenith Park in Cloudcroft</h3>
-                <p>Zenith Park is one of Cloudcroft’s core public spaces. It matters because it is not just a park. It
-                    is where a lot of the town’s family activity, recreation, and community events come together.</p>
-                <span class="card-link">Read more →</span>
-            </a>
-        </div>
+
+    <main id="main-content" role="main">
+
+        <section class="hero" aria-label="Page hero">
+            <div class="hero-bg" role="img" aria-label="Cloudcroft, NM mountain village in the Sacramento Mountains"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-eyebrow">Resources · 2026</p>
+                <h1 class="hero-title">The reference desk.</h1>
+                <p class="hero-subtitle">Trip planning, FAQ, history, real estate, fire-risk guidance, emergency numbers, and the village park — pulled out of the section guides for quick reference.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-container">
+                <div style="text-align:center;">
+                    <span class="section-label">10 resources</span>
+                    <h2 class="section-title section-title-centered">Everything that didn't fit in the section guides</h2>
+                </div>
+
+                <div class="resources-prose" style="margin-top:2rem;">
+                    <p>The Stay / Eat / Activities / Shop / Events sections cover the trip-planning core. These are the side desks: the questions visitors keep asking, the fire-and-insurance reality of mountain ownership, the quick history that makes the village make sense, and the numbers you want one tap away.</p>
+                </div>
+
+                <div class="resources-grid">
+
+                    <a class="resource-card" href="plan.html">
+                        <span class="res-eyebrow">Plan</span>
+                        <h3>Plan your escape</h3>
+                        <p>Trip-planning notes for first-timers and repeat visitors — what to book, when to come, and what the village actually looks like at each elevation.</p>
+                        <span class="res-cta">Read</span>
+                    </a>
+
+                    <a class="resource-card" href="faq.html">
+                        <span class="res-eyebrow">FAQ</span>
+                        <h3>Frequently asked questions</h3>
+                        <p>The questions visitors keep asking — altitude, weather, drive times, what's open in the off-season, and where to start.</p>
+                        <span class="res-cta">Read</span>
+                    </a>
+
+                    <a class="resource-card" href="about.html">
+                        <span class="res-eyebrow">About</span>
+                        <h3>The story of Cloudcroft</h3>
+                        <p>A mountain village at 8,676 feet, founded 1899 as a railroad retreat from the Tularosa Basin heat. What the village is, who lives here, and what this site is for.</p>
+                        <span class="res-cta">Read</span>
+                    </a>
+
+                    <a class="resource-card" href="history.html">
+                        <span class="res-eyebrow">History</span>
+                        <h3>History of Cloudcroft</h3>
+                        <p>From Apache trails through the railroad-era boom to today's mountain-retreat identity. The longer arc behind New Mexico's mountain village.</p>
+                        <span class="res-cta">Read</span>
+                    </a>
+
+                    <a class="resource-card" href="zenith-park-in-cloudcroft.html">
+                        <span class="res-eyebrow">Park</span>
+                        <h3>Zenith Park</h3>
+                        <p>One of Cloudcroft's core public spaces — where most family activity, recreation, and community events come together. The default answer when visitors ask "where do we go?"</p>
+                        <span class="res-cta">Read</span>
+                    </a>
+
+                    <a class="resource-card" href="real-estate.html">
+                        <span class="res-eyebrow">Real estate</span>
+                        <h3>Cloudcroft real estate</h3>
+                        <p>Cabins, land, and mountain property in the Sacramento Mountains, surrounded by 1.1 million acres of Lincoln National Forest. The market context, not a listings page.</p>
+                        <span class="res-cta">Read</span>
+                    </a>
+
+                    <a class="resource-card" href="what-to-know-about-insurance-in-cloudcroft-nm.html">
+                        <span class="res-eyebrow">Fire &amp; insurance</span>
+                        <h3>Fire risk &amp; insurance: what to know</h3>
+                        <p>What Cloudcroft homeowners and prospective buyers should know about wildfire risk and the changing insurance landscape in the Sacramentos.</p>
+                        <span class="res-cta">Read</span>
+                    </a>
+
+                    <a class="resource-card" href="auto/guide-auto-services-in-cloudcroft-2026.html">
+                        <span class="res-eyebrow">Auto</span>
+                        <h3>Auto services in Cloudcroft</h3>
+                        <p>Where to find gas, tires, repair, and tow service in and around the village — what's open, what isn't, and when to plan around it.</p>
+                        <span class="res-cta">Read</span>
+                    </a>
+
+                    <a class="resource-card" href="emergency-services.html">
+                        <span class="res-eyebrow">Emergency</span>
+                        <h3>Emergency services</h3>
+                        <p>Know your resources in the Sacramento Mountains — fire, sheriff, search and rescue, the nearest hospital, and which numbers to keep on the phone before you head up.</p>
+                        <span class="res-cta">Read</span>
+                    </a>
+
+                    <a class="resource-card" href="contact.html">
+                        <span class="res-eyebrow">Contact</span>
+                        <h3>Get in touch</h3>
+                        <p>Tips, corrections, listings to add, or quick trip questions — email the editors. Plus the village's quick-reference numbers and links.</p>
+                        <span class="res-cta">Read</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-labelledby="cta-h">
+            <div class="cta-container">
+                <h2 id="cta-h">Looking for something specific?</h2>
+                <p>If you can't find what you came for, send us a note and we'll either point you at it or write it up.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">Contact the editors</a>
+                    <a href="../index.html" class="btn-secondary">Back to home</a>
+                </div>
+            </div>
+        </section>
+
     </main>
+
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
         <p style="text-align:center;padding:1vh">
             <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
@@ -163,6 +276,8 @@
             </span>
         </p>
     </footer>
+
+    <script src="../js/common.js" defer></script>
 </body>
 
 </html>
