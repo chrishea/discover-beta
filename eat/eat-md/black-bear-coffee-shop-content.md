@@ -14,7 +14,7 @@ Black Bear Coffee Shop is the west-end-of-Burro coffee anchor that reads less li
 - **Instagram:** https://www.instagram.com/blackbearcoffeenm/
 - **Owners:** Crystal and Nathan Tompkins — confirmed via Cloudcroft Reader coverage.
 - **Operating status:** appears current and active.
-- **Current hours:** not confirmed from strong crawlable official text; check directly before visiting.
+- **Current hours:** Wednesday-Saturday 8:00 am to 4:00 pm, Sunday 8:00 am to 3:00 pm
 - **Cuisine / category:** coffee shop / café with a small gallery component.
 - **Service style:** coffee-shop counter service with dine-in seating, including an upstairs seating area (April 2026 local input).
 - **Alcohol service:** not confirmed as a shop offering. (Cloudcroft Brewing has used Black Bear cold brew in a martini — that is a supplier relationship, not a bar program at Black Bear.)

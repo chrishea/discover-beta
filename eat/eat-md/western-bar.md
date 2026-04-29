@@ -53,3 +53,23 @@ Suggested Website Listing Copy
 Western Bar and Cafe is a casual Cloudcroft restaurant and bar on Burro Avenue serving breakfast, burgers, steaks, Mexican plates, sandwiches, appetizers, and drinks. It works for visitors who want a full meal, a local bar atmosphere, or later hours than a coffee shop. Confirm current hours and payment policy before going.
 
 ⸻
+
+**Rules to obey:**
+
+Don’t say all day breakfast
+
+Remove breakfast menu
+
+Dinner: remove liver and onions, porkchops, fried catfish, and meatloaf. Add Ribeye and New York Strip Steak 
+
+New Mexican: Remove enchiladas, chile rellenos, tamales, and sopapillas 
+
+Sides: remove mashed potatoes and coleslaw. Add sweet potato fries and tater tots
+
+Remove Desserts section 
+
+Don’t say 3 generations. Simply say family-owned 
+
+Don’t say where people meet for coffee or breakfast. 
+
+Say “play pool or dominoes while you wait” 

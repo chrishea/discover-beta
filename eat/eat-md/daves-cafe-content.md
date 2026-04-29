@@ -109,3 +109,13 @@ The restaurant was built in 1984. David Venable was the original owner. His youn
 - **Website status.** No first-party domain confirmed. Facebook + NetWaiter are the only digital touchpoints I've verified.
 - **Alcohol service.** Appears likely (bar seating, beer-battered menu items, live music setting) but not strongly confirmed by a primary source.
 - **Takeout / delivery / patio.** The NetWaiter presence implies takeout is offered; patio and delivery unconfirmed.
+
+**rules to obey**
+  
+  Don’t say “isn’t where you bring visitors for the dinner of a lifetime” Say “centrally-located, family friendly”
+  - **Alcohol service:** No beer or wine at the moment
+- **Current hours:**11 am-8 pm Monday-Thursday, 11 am-9pm Friday-Sunday 
+- **Takeout:*Call for carryout
+DON’T SAY not a chef-driven destination.
+
+
