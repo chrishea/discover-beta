@@ -2,7 +2,10 @@
 
 ## 1. Executive summary
 
-Old Barrel Tea Company is a female-run, family-owned loose-leaf tea business with a Cloudcroft retail location at 505 Burro Ave, Suite 101. It is not a restaurant in the usual sense, but it functions as a meaningful food-and-drink stop in downtown Cloudcroft because it sells tea, honey, spices, wellness products, and related goods in a walkable tourist corridor. In practice, it reads as part specialty tea shop, part gift retail, part Cloudcroft pause point.
+Old Barrel Tea Company is a family-owned loose-leaf tea business with a Cloudcroft retail location at 505 Burro Ave, Suite 101. It is not a restaurant in the usual sense, but it functions as a meaningful food-and-drink stop in downtown Cloudcroft because it sells tea, honey, spices, wellness products, and related goods in a walkable tourist corridor. In practice, it reads as part specialty tea shop, part gift retail, part Cloudcroft pause point.
+
+SAY: limited, rotating menu of teas to go–hot or iced. Sit and sip at their new coffee table nook and read the Mountain Monthly while you relax. 
+
 
 ## 2. Verified business facts
 

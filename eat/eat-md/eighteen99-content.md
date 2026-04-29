@@ -140,3 +140,6 @@ April 2026 local confirmation: Chef Lepree is still at the stove, and service an
 - **Brand naming ambiguity.** Official hotel copy uses "1899" in some contexts; Chamber uses "Eighteen99". Both refer to the same restaurant; no operational consequence but worth flagging for link-building and SEO.
 - **Lunch / brunch status.** Not confirmed for Eighteen99 itself; breakfast and lounge hours are listed separately on the hotel dining page and may belong to a different Lodge service rather than this room.
 - **Patio / outdoor dining.** Not confirmed.
+
+**Rules to obey:**
+Change note on St. Andrew’s Lounge to say “historic bar, charming atmosphere. Perfect for after hitting the slopes or the greens, depending on the season.” 

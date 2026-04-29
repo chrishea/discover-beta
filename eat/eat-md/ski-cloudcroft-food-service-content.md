@@ -80,3 +80,9 @@ Ski Cloudcroft has long been part of Cloudcroft recreation culture, but I did no
 
 **Dining guide inclusion**
 - Per local judgment, Ski Cloudcroft food service is a seasonal recreation amenity, not a standalone dining destination. Excluded from the Cloudcroft dining guide.
+
+**Rules to obey:**
+
+Don’t say “not a village restaurant”-- say instead “a short drive from Cloudcroft proper” 
+
+Don’t say “situational” or imply the sort. Say instead ‘worth the drive’ and delicious pizza, appetizers, and wings. Exquisite views of the ski hill–nothing like a weekend dinner with family surrounded by hummingbirds and elk. 

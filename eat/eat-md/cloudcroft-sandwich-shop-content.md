@@ -90,3 +90,7 @@ I did not find a deeply reported opening-history piece, but local coverage in 20
 **Atmosphere and experience**
 - Indoor and outdoor seating available.
 - Casual, friendly environment — more of a sit-down lunch spot than a strict grab-and-go counter.
+
+**rules to obey:**
+
+ Don’t say “not for ambience.” Say “Cloudcroft selfie opportunity with the Welcome to Cloudcroft mural by local artist Samantha Odom on the South patio” 

@@ -111,3 +111,9 @@ The most consistent identity is not “restaurant” in the full-service sense. 
 
 **Art**
 - The art is more like pieces on the wall than a true gallery experience. Decorative backdrop, not a destination art stop.
+
+**rules to obey:**
+
+- **Current hours:**Open Thursday-Monday from 10 am-5pm
+
+- The art is more like pieces on the wall than a true gallery experience. Decorative backdrop, not a destination art stop. DON’T SAY this. Say instead eclectic, local artworks in a range–wearable, hang-ready, and inbetween. 
