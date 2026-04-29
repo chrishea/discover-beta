@@ -154,7 +154,7 @@ The Elk Shed is owned and run by Susan Difani, who publishes her title as "Owner
 ## 12. Open questions still to verify
 
 - **Year founded** — LLC registration date and shop opening on Burro are still open (Bizapedia / OpenCorporates pages were CAPTCHA-walled).
-- **Co-owner or family** structure beyond Susan Difani.
+- **Co-owner or family** Susan Difani.
 - **Specific brand lines carried** in the gourmet pantry category (jam, sauce, oil, honey vendors).
 - **Specific brand lines or maker names** for the Cloudcroft-branded pillows and Southwestern textiles.
 - **Clothing depth** — categories, sizing, brands, whether it's gift-tees or wearable apparel.
@@ -162,8 +162,8 @@ The Elk Shed is owned and run by Susan Difani, who publishes her title as "Owner
 - **Social accounts** — Facebook page exists; Instagram handle not yet captured. Owner-confirmed handles still to verify.
 - **Seasonal hours** — whether the daily 11–5 schedule shifts in winter or holiday weeks.
 - **In-store events** — tastings, trunk shows, holiday previews, anything tied to the boardwalk's seasonal traffic.
-- **Additional photos** — only one interior photo is on file (`shop/shop-photo/elk-shed/elk-shed-interior.jpg`); the eventual HTML build will need an exterior shot, a pantry-shelf detail, a pillow-display detail, and a wide interior pull-back.
+- **Additional photos** — 
 
 ## 13. Rules to Obey
 
-TBD — for owner/editor input.
+

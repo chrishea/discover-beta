@@ -18,408 +18,28 @@
     <meta name="twitter:title" content="Complete Guide to Visiting Cloudcroft | DiscoverCloudcroft.com">
     <meta name="twitter:description" content="Everything you need to plan the perfect mountain getaway to Cloudcroft, New Mexico at 9,000 feet."><link href="css/fonts.css" rel="stylesheet">
 
-    <style>*, *::before, *::after {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-::selection { background: var(--golden-hour); color: var(--midnight); }
+    <style>
+
 *:focus-visible { outline: 2px solid var(--golden-hour); outline-offset: 2px; }
 @keyframes pageIn { from { opacity: 0; } to { opacity: 1; } }
-:root {
---midnight: #000000;
---summit: #111111;
---alpine: #222222;
---golden-hour: #888888;
---ember: #111111;
---pine-shadow: #111111;
---cloud-drift: #f2f2f2;
---snow-cap: #FFFFFF;
---granite: #555555;
---twilight: #000000;
-}
-html {
-scroll-behavior: smooth;
-}
-body {
-font-family: 'IBM Plex Sans', sans-serif;
-font-weight: 400;
-color: var(--midnight);
-background: var(--snow-cap);
-line-height: 1.6;
-overflow-x: hidden;
-animation: pageIn 0.5s ease;
-}
-.skip-to-content {
-position: absolute;
-top: -100%;
-left: 1rem;
-background: var(--golden-hour);
-color: var(--midnight);
-padding: 0.75rem 1.5rem;
-border-radius: 0 0 8px 8px;
-z-index: 10000;
-font-family: 'Space Grotesk', sans-serif;
-font-weight: 700;
-text-decoration: none;
-transition: top 0.3s;
-}
-.skip-to-content:focus {
-top: 0;
-}
-.site-header {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-z-index: 1000;
-padding: 1rem 2rem;
-display: flex;
-align-items: center;
-justify-content: space-between;
-transition: background 0.4s ease, box-shadow 0.4s ease, padding 0.3s ease;
-background: transparent;
-}
-.site-header.scrolled {
-background: rgba(11, 29, 58, 0.97);
-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-padding: 0.6rem 2rem;
-}
-.header-logo {
-font-family: 'Space Grotesk', sans-serif;
-font-weight: 700;
-font-size: 1.4rem;
-color: var(--snow-cap);
-text-decoration: none;
-letter-spacing: 2px;
-text-transform: uppercase;
-}
-.header-logo span {
-color: var(--golden-hour);
-}
-.logo-beta {
-font-size: 0.65rem;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 0.08em;
-background: rgba(255,255,255,0.18);
-padding: 2px 7px;
-border-radius: 4px;
-vertical-align: middle;
-margin-left: 6px;
-opacity: 0.75;
-}
-.header-nav {
-display: flex;
-align-items: center;
-gap: 1.5rem;
-}
-.header-nav a {
-font-family: 'Space Grotesk', sans-serif;
-font-weight: 700;
-font-size: 0.85rem;
-color: var(--cloud-drift);
-text-decoration: none;
-text-transform: uppercase;
-letter-spacing: 1px;
-position: relative;
-transition: color 0.3s;
-}
-.header-nav a::after {
-content: '';
-position: absolute;
-bottom: -4px;
-left: 0;
-width: 0;
-height: 2px;
-background: var(--golden-hour);
-transition: width 0.3s ease;
-}
-.header-nav a:hover {
-color: var(--golden-hour);
-}
-.header-nav a:hover::after {
-width: 100%;
-}
-.header-phone {
-font-family: 'Space Grotesk', sans-serif; font-variant-numeric: tabular-nums;
-font-weight: 700;
-font-size: 0.85rem;
-color: var(--golden-hour);
-text-decoration: none;
-border: 1px solid var(--golden-hour);
-padding: 0.4rem 1rem;
-border-radius: 4px;
-transition: background 0.3s, color 0.3s;
-}
-.header-phone:hover {
-background: var(--golden-hour);
-color: var(--midnight);
-}
-.hamburger {
-display: none;
-flex-direction: column;
-gap: 5px;
-cursor: pointer;
-background: none;
-border: none;
-padding: 0.5rem;
-z-index: 1001;
-}
-.hamburger span {
-width: 28px;
-height: 2px;
-background: var(--snow-cap);
-transition: transform 0.3s, opacity 0.3s;
-display: block;
-}
-.hamburger.active span:nth-child(1) {
-transform: rotate(45deg) translate(5px, 5px);
-}
-.hamburger.active span:nth-child(2) {
-opacity: 0;
-}
-.hamburger.active span:nth-child(3) {
-transform: rotate(-45deg) translate(5px, -5px);
-}
-.mobile-menu {
-display: none;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background: rgba(11, 29, 58, 0.95);
-backdrop-filter: blur(20px);
--webkit-backdrop-filter: blur(20px);
-z-index: 999;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 1.5rem;
-opacity: 0;
-transition: opacity 0.4s ease;
-}
-.mobile-menu.open {
-display: flex;
-opacity: 1;
-}
-.mobile-menu a {
-font-family: 'Space Grotesk', sans-serif;
-font-weight: 700;
-font-size: 1.3rem;
-color: var(--cloud-drift);
-text-decoration: none;
-text-transform: uppercase;
-letter-spacing: 2px;
-transition: color 0.3s;
-}
-.mobile-menu a:hover {
-color: var(--golden-hour);
-}
 
 .hero-bg {
     background: linear-gradient(135deg, var(--midnight) 0%, var(--summit) 50%, var(--twilight) 100%);
 }
-@keyframes kenBurns {
-0% { transform: scale(1) translate(0, 0); }
-100% { transform: scale(1.1) translate(-1%, -1%); }
-}
+
 .hero-overlay {
 position: absolute;
 inset: 0;
 background: linear-gradient(135deg, rgba(11, 29, 58, 0.75), rgba(74, 45, 107, 0.65));
 }
-.hero-content {
-position: relative;
-z-index: 2;
-text-align: center;
-padding: 0 2rem;
-max-width: 900px;
-}
-.hero-badge {
-display: inline-flex;
-align-items: center;
-gap: 0.5rem;
-background: rgba(232, 168, 56, 0.2);
-border: 1px solid rgba(232, 168, 56, 0.4);
-padding: 0.5rem 1.25rem;
-border-radius: 30px;
-margin-bottom: 1.5rem;
-opacity: 0;
-animation: fadeUp 0.8s ease 0.2s forwards;
-}
 
-.hero-title {
-font-family: 'Playfair Display', serif;
-font-weight: 900;
-font-size: clamp(2.5rem, 5vw, 4rem);
-color: var(--snow-cap);
-line-height: 1.2;
-margin-bottom: 1rem;
-}
-.hero-title .word {
-display: inline-block;
-opacity: 0;
-transform: translateY(20px);
-animation: wordReveal 0.6s ease forwards;
-}
-
-@keyframes wordReveal {
-to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeUp {
-from { opacity: 0; transform: translateY(15px); }
-to { opacity: 1; transform: translateY(0); }
-}
-.btn-primary {
-display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
-font-weight: 700;
-font-size: 0.85rem;
-text-transform: uppercase;
-letter-spacing: 0.05em;
-padding: 0.9rem 2rem;
-border-radius: 8px;
-text-decoration: none;
-background: var(--golden-hour);
-color: var(--midnight);
-box-shadow: 0 4px 15px rgba(232, 168, 56, 0.4);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-min-height: 44px;
-}
-.btn-primary:hover {
-transform: translateY(-2px);
-box-shadow: 0 6px 25px rgba(232, 168, 56, 0.6);
-}
-.btn-secondary {
-display: inline-block;
-font-family: 'Space Grotesk', sans-serif;
-font-weight: 700;
-font-size: 0.85rem;
-text-transform: uppercase;
-letter-spacing: 0.05em;
-padding: 0.9rem 2rem;
-border-radius: 8px;
-text-decoration: none;
-background: transparent;
-color: var(--golden-hour);
-border: 2px solid var(--golden-hour);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s, color 0.3s;
-min-height: 44px;
-}
-.btn-secondary:hover {
-background: var(--golden-hour);
-color: var(--midnight);
-transform: translateY(-2px);
-}
-.info-bar {
-background: var(--midnight);
-padding: 1.5rem 2rem;
-}
-.info-bar-inner {
-max-width: 1200px;
-margin: 0 auto;
-display: flex;
-justify-content: center;
-gap: 3rem;
-flex-wrap: wrap;
-}
-.info-bar-item {
-display: flex;
-align-items: center;
-gap: 0.75rem;
-color: var(--cloud-drift);
-font-size: 0.9rem;
-font-weight: 500;
-}
-
-.section {
-padding: 6rem 2rem;
-}
-.section-container {
-max-width: 1200px;
-margin: 0 auto;
-}
-.section-label {
-font-family: 'Space Grotesk', sans-serif;
-font-weight: 500;
-font-size: 0.85rem;
-text-transform: uppercase;
-letter-spacing: 3px;
-color: var(--alpine);
-margin-bottom: 0.75rem;
-}
-.section-title {
-font-family: 'Playfair Display', serif;
-font-weight: 700;
-font-size: clamp(1.8rem, 3vw, 2.5rem);
-color: var(--midnight);
-margin-bottom: 1.5rem;
-line-height: 1.2;
-}
-.section-title-centered {
-text-align: center;
-padding-bottom: 1.25rem;
-}
-.section-title-centered::after {
-content: '';
-display: block;
-width: 60px;
-height: 3px;
-background: var(--golden-hour);
-margin: 0.75rem auto 0;
-border-radius: 2px;
-}
-.section-description {
-font-size: 1.05rem;
-color: var(--granite);
-max-width: 600px;
-margin: 0 auto 3rem;
-text-align: center;
-}
-.getting-here-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 4rem;
-align-items: start;
-}
 .getting-here-text p {
 font-size: 1.05rem;
 color: var(--granite);
 margin-bottom: 1.5rem;
 line-height: 1.8;
 }
-.route-list {
-list-style: none;
-padding: 0;
-margin: 0;
-}
-.route-item {
-display: flex;
-align-items: flex-start;
-gap: 1rem;
-padding: 1.25rem;
-background: var(--cloud-drift);
-border-radius: 12px;
-margin-bottom: 1rem;
-border-left: 4px solid var(--golden-hour);
-opacity: 0;
-transform: translateY(30px);
-}
-.route-item.visible {
-opacity: 1;
-transform: translateY(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
-}
-.route-item:nth-child(2).visible { transition-delay: 0.1s; }
-.route-item:nth-child(3).visible { transition-delay: 0.2s; }
-.route-item:nth-child(4).visible { transition-delay: 0.3s; }
-.route-icon {
-font-size: 1.5rem;
-flex-shrink: 0;
-}
+
 .route-info h4 {
 font-family: 'Space Grotesk', sans-serif;
 font-weight: 700;
@@ -427,19 +47,7 @@ font-size: 1.05rem;
 color: var(--midnight);
 margin-bottom: 0.25rem;
 }
-.route-info p {
-color: var(--granite);
-font-size: 0.9rem;
-line-height: 1.6;
-margin-bottom: 0;
-}
-.airport-info {
-margin-top: 2rem;
-padding: 1.5rem;
-background: var(--snow-cap);
-border-radius: 12px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
+
 .airport-info h4 {
 font-family: 'Space Grotesk', sans-serif;
 font-weight: 700;
@@ -447,58 +55,7 @@ font-size: 1.05rem;
 color: var(--midnight);
 margin-bottom: 0.75rem;
 }
-.airport-info p {
-color: var(--granite);
-font-size: 0.9rem;
-line-height: 1.7;
-}
-.card-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 2rem;
-}
-.card {
-background: var(--snow-cap);
-border-radius: 12px;
-padding: 2rem;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-border-top: 4px solid var(--golden-hour);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-opacity: 0;
-transform: translateY(30px);
-text-decoration: none;
-display: block;
-}
-.card.visible {
-opacity: 1;
-transform: translateY(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
-}
-.card:nth-child(2).visible { transition-delay: 0.1s; }
-.card:nth-child(3).visible { transition-delay: 0.15s; }
-.card:nth-child(4).visible { transition-delay: 0.2s; }
-.card:nth-child(5).visible { transition-delay: 0.25s; }
-.card:nth-child(6).visible { transition-delay: 0.3s; }
-.card:hover {
-transform: translateY(-6px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-}
-.card-icon {
-font-size: 2.5rem;
-margin-bottom: 1rem;
-}
-.card h3 {
-font-family: 'Space Grotesk', sans-serif;
-font-weight: 700;
-font-size: 1.15rem;
-color: var(--midnight);
-margin-bottom: 0.5rem;
-}
-.card p {
-color: var(--granite);
-font-size: 0.95rem;
-line-height: 1.7;
-}
+
 .card-link {
 display: inline-block;
 font-family: 'Space Grotesk', sans-serif;
@@ -526,100 +83,7 @@ transition: color 0.3s;
 .section-link a:hover {
 color: var(--golden-hour);
 }
-.seasonal-grid {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 2rem;
-}
-.seasonal-card {
-text-align: center;
-padding: 2.5rem 2rem;
-background: rgba(255, 255, 255, 0.05);
-border-radius: 12px;
-border: 1px solid rgba(255, 255, 255, 0.1);
-transition: transform 0.3s ease, background 0.3s ease;
-opacity: 0;
-transform: translateY(30px);
-}
-.seasonal-card.visible {
-opacity: 1;
-transform: translateY(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
-}
-.seasonal-card:nth-child(2).visible { transition-delay: 0.1s; }
-.seasonal-card:nth-child(3).visible { transition-delay: 0.2s; }
-.seasonal-card:nth-child(4).visible { transition-delay: 0.3s; }
-.seasonal-card:hover {
-transform: translateY(-6px);
-background: rgba(255, 255, 255, 0.1);
-}
-.seasonal-icon {
-font-size: 3rem;
-margin-bottom: 1rem;
-}
-.seasonal-card h3 {
-font-family: 'Space Grotesk', sans-serif;
-font-weight: 700;
-font-size: 1.2rem;
-color: var(--golden-hour);
-margin-bottom: 0.25rem;
-}
-.seasonal-card .season-months {
-font-family: 'Space Grotesk', sans-serif;
-font-size: 0.8rem;
-color: rgba(240, 244, 248, 0.6);
-text-transform: uppercase;
-letter-spacing: 0.1em;
-margin-bottom: 0.75rem;
-}
-.seasonal-card p {
-color: rgba(240, 244, 248, 0.8);
-font-size: 0.95rem;
-line-height: 1.7;
-}
-.seasonal-section {
-background: var(--midnight);
-position: relative;
-overflow: hidden;
-}
-.seasonal-section::before {
-content: '';
-position: absolute;
-inset: 0;
-opacity: 0.06;
-background-image:
-repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px),
-repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(232,168,56,0.3) 40px, rgba(232,168,56,0.3) 41px);
-pointer-events: none;
-}
-.practical-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 2rem;
-}
-.practical-card {
-background: var(--snow-cap);
-border-radius: 12px;
-padding: 2.5rem 2rem;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-border-left: 4px solid var(--golden-hour);
-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-opacity: 0;
-transform: translateY(30px);
-}
-.practical-card.visible {
-opacity: 1;
-transform: translateY(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
-}
-.practical-card:hover {
-transform: translateY(-6px);
-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-}
-.practical-icon {
-font-size: 2rem;
-margin-bottom: 0.75rem;
-}
+
 .practical-card h4 {
 font-family: 'Space Grotesk', sans-serif;
 font-weight: 700;
@@ -627,81 +91,7 @@ font-size: 1.1rem;
 color: var(--midnight);
 margin-bottom: 0.5rem;
 }
-.practical-card p {
-color: var(--granite);
-font-size: 0.95rem;
-line-height: 1.7;
-}
-.history-culture-section {
-background: var(--cloud-drift);
-}
-.history-content {
-max-width: 900px;
-margin: 0 auto;
-}
-.history-text {
-font-size: 1.05rem;
-color: var(--granite);
-line-height: 1.9;
-margin-bottom: 1.5rem;
-}
-.cta-section {
-background: linear-gradient(135deg, var(--midnight) 0%, var(--twilight) 100%);
-padding: 6rem 2rem;
-text-align: center;
-}
-.cta-container {
-max-width: 700px;
-margin: 0 auto;
-}
-.cta-container h2 {
-font-family: 'Playfair Display', serif;
-font-weight: 900;
-font-size: clamp(1.8rem, 3vw, 2.5rem);
-color: var(--snow-cap);
-margin-bottom: 1rem;
-}
-.cta-container p {
-color: rgba(240, 244, 248, 0.85);
-font-size: 1.1rem;
-line-height: 1.7;
-margin-bottom: 2rem;
-}
 
-.site-footer {
-background: var(--midnight);
-padding: 4rem 2rem 2rem;
-position: relative;
-}
-
-.footer-grid {
-max-width: 1200px;
-margin: 0 auto;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 2rem;
-}
-.footer-col h4 {
-font-family: 'Space Grotesk', sans-serif;
-font-weight: 700;
-font-size: 1rem;
-color: var(--snow-cap);
-text-transform: uppercase;
-letter-spacing: 1px;
-margin-bottom: 1.25rem;
-}
-.footer-col p,
-.footer-col a {
-font-size: 0.9rem;
-color: var(--granite);
-line-height: 2;
-text-decoration: none;
-display: block;
-transition: color 0.3s;
-}
-.footer-col a:hover {
-color: var(--golden-hour);
-}
 .footer-brand {
 font-family: 'Space Grotesk', sans-serif;
 font-weight: 700;
@@ -715,105 +105,8 @@ display: block;
 .footer-brand span {
 color: var(--golden-hour);
 }
-.footer-social {
-display: flex;
-gap: 1rem;
-margin-top: 1rem;
-}
-.footer-social a {
-display: inline-flex;
-width: 36px;
-height: 36px;
-border-radius: 50%;
-border: 1px solid var(--granite);
-align-items: center;
-justify-content: center;
-color: var(--granite);
-font-size: 0.8rem;
-transition: border-color 0.3s, color 0.3s;
-}
-.footer-social a:hover {
-border-color: var(--golden-hour);
-color: var(--golden-hour);
-}
-.footer-bottom {
-max-width: 1200px;
-margin: 3rem auto 0;
-padding-top: 1.5rem;
-border-top: 1px solid rgba(107, 123, 141, 0.2);
-text-align: center;
-font-size: 0.85rem;
-color: var(--granite);
-}
-.back-to-top {
-position: fixed;
-bottom: 2rem;
-right: 2rem;
-width: 48px;
-height: 48px;
-border-radius: 50%;
-background: var(--golden-hour);
-color: var(--midnight);
-border: none;
-cursor: pointer;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 1.2rem;
-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-opacity: 0;
-transform: translateY(20px);
-transition: opacity 0.3s, transform 0.3s;
-z-index: 500;
-}
-.back-to-top.visible {
-opacity: 1;
-transform: translateY(0);
-}
-.back-to-top:hover {
-transform: translateY(-3px);
-box-shadow: 0 8px 24px rgba(232, 168, 56, 0.4);
-}
-.fade-in {
-opacity: 0;
-transform: translateY(30px);
-}
-.fade-in.visible {
-opacity: 1;
-transform: translateY(0);
-transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1);
-}
-@media (prefers-reduced-motion: reduce) {
-*, *::before, *::after {
-animation-duration: 0.01ms !important;
-animation-iteration-count: 1 !important;
-transition-duration: 0.01ms !important;
-}
-html { scroll-behavior: auto; }
-}
-@media (max-width: 1024px) {
-.header-nav { display: none; }
-.header-phone { display: none; }
-.hamburger { display: flex; }
-.getting-here-grid { grid-template-columns: 1fr; gap: 2rem; }
-.card-grid { grid-template-columns: repeat(2, 1fr); }
-.seasonal-grid { grid-template-columns: repeat(2, 1fr); }
-.practical-grid { grid-template-columns: repeat(2, 1fr); }
-.footer-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 768px) {
-.section { padding: 3.5rem 1.5rem; }
-.card-grid { grid-template-columns: 1fr; }
-.seasonal-grid { grid-template-columns: 1fr; }
-.practical-grid { grid-template-columns: 1fr; }
 
-}
-@media (max-width: 480px) {
-.footer-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 375px) {
-.hero-title { font-size: 2rem; }
-}</style>
+</style>
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -822,101 +115,42 @@ html { scroll-behavior: auto; }
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+                <button type="button" class="nav-cta" data-signup-open data-signup-source="nav-mobile">Get
+                    Notified</button>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
                 <span></span><span></span><span></span>
             </button>
         </div>
-    </header>
 
-    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
-        <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
-        <a href="../resources/resources.html">Resources</a>
-        <a href="../resources/contact.html">Contact</a>
-    </nav>
+
+        <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+            <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+            <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+            <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+            <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+            <a href="../events/top-events.html">Events</a>
+
+            <a href="../resources/resources.html">Resources</a>
+            <a href="../resources/contact.html">Contact</a>
+
+
+        </nav>
+    </header>
 <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="Cloudcroft mountain village scenic view"></div>
         <div class="hero-overlay"></div>
@@ -1271,43 +505,14 @@ html { scroll-behavior: auto; }
     </main>
 
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
-                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
-                <div class="footer-social">
-                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
-                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
-                    <a href="#todo-twitter" aria-label="Twitter">X</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Explore</h3>
-                <a href="stay/lodging.html">Lodging</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
-                <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
-                <a href="do/complete-guide-to-activities.html">Activities</a>
-                <a href="do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="season/seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h3>Connect</h3>
-                <a href="tel:+15555555555">(555) 555-5555</a>
-                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
-                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
-                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
-            </div>
-            <div class="footer-col">
-                <h3>Plan</h3>
-                <a href="plan.html">Plan Your Trip</a>
-                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
-                <a href="about.html">About Cloudcroft</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-        </div>
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
     </footer>
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>

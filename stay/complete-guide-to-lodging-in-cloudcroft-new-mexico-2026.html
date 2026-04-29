@@ -93,7 +93,6 @@
              - Repeated "not a chain-hotel market" paragraphs (said once, in hero).
            ================================================================= */
 
-        /* ---- Hero ---- */
         .hero-bg {
             background: url('stay-photo/photo-the-lodge/Pix-Cloudcroft-Discover-the-lodge-6.jpg') center 40% / cover no-repeat;
             filter: saturate(0.9);
@@ -101,64 +100,6 @@
 
         .hero-overlay {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.55));
-        }
-
-        .hero.hero-split {
-            min-height: 560px;
-            padding: 5rem 2rem;
-        }
-
-        .hero-split-grid {
-            position: relative;
-            z-index: 2;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1.1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .hero-left .hero-eyebrow-pill {
-            display: inline-block;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.68rem;
-            font-weight: 700;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            padding: 0.35rem 0.8rem;
-            border: 1px solid rgba(255, 255, 255, 0.45);
-            border-radius: 20px;
-            color: #fff;
-            margin-bottom: 1.25rem;
-        }
-
-        .hero-left h1 {
-            font-family: 'IBM Plex Serif', serif;
-            font-weight: 700;
-            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
-            color: #fff;
-            line-height: 1.08;
-            margin-bottom: 1rem;
-        }
-
-        .hero-left .hero-deck {
-            color: rgba(255, 255, 255, 0.92);
-            font-size: clamp(1rem, 1.4vw, 1.15rem);
-            line-height: 1.55;
-            margin-bottom: 1.25rem;
-            max-width: 30rem;
-        }
-
-        .hero-byline {
-            color: rgba(255, 255, 255, 0.75);
-            font-size: 0.82rem;
-            letter-spacing: 0.04em;
-        }
-
-        .hero-byline strong {
-            color: #fff;
-            font-weight: 600;
         }
 
         /* ---- Finder quiz in hero ---- */
@@ -244,19 +185,6 @@
         }
 
         /* ---- Stats strip (replaces emoji info bar) ---- */
-        .stats-strip {
-            background: #000;
-            color: #fff;
-            padding: 1.5rem 2rem;
-        }
-
-        .stats-strip-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 1rem;
-        }
 
         .stat {
             text-align: center;
@@ -268,41 +196,6 @@
             font-weight: 700;
             line-height: 1;
             display: block;
-        }
-
-        .stat-label {
-            display: block;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.7rem;
-            font-weight: 500;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.7);
-            margin-top: 0.4rem;
-        }
-
-        /* ---- Thesis + byline ---- */
-        .thesis {
-            max-width: 820px;
-            margin: 3rem auto 2rem;
-            padding: 0 2rem;
-            text-align: center;
-        }
-
-        .thesis p {
-            font-family: 'IBM Plex Serif', serif;
-            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
-            font-weight: 400;
-            color: #222;
-            line-height: 1.5;
-            margin: 0 0 1rem;
-        }
-
-        .thesis .thesis-meta {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.78rem;
-            color: #666;
-            letter-spacing: 0.04em;
         }
 
         /* ---- Sticky filter rail ---- */
@@ -632,7 +525,6 @@
             font-family: 'IBM Plex Sans', sans-serif;
         }
 
-        /* ---- Map block ---- */
         .map-section {
             padding: 3.5rem 2rem;
             max-width: 1200px;
@@ -661,19 +553,6 @@
             grid-template-columns: 1.6fr 1fr;
             gap: 2rem;
             align-items: start;
-        }
-
-        .map-figure {
-            background: #f0efeb;
-            border-radius: 12px;
-            padding: 1rem;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-        }
-
-        .map-svg {
-            width: 100%;
-            height: auto;
-            display: block;
         }
 
         .map-legend {
@@ -715,31 +594,6 @@
         }
 
         .map-legend a:hover { text-decoration-color: #000; }
-
-        .map-footnote {
-            font-size: 0.72rem;
-            color: #888;
-            margin-top: 1rem;
-        }
-
-        /* ---- Editor's Call ---- */
-        .editor-section {
-            background: #111;
-            color: #fff;
-            padding: 4rem 2rem;
-        }
-
-        .editor-wrap {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .editor-wrap h2 {
-            font-family: 'IBM Plex Serif', serif;
-            font-size: clamp(1.6rem, 2.4vw, 2rem);
-            margin: 0 0 2rem;
-            color: #fff;
-        }
 
         .editor-picks {
             display: grid;
@@ -788,27 +642,6 @@
         }
 
         /* ---- Practical notes accordion ---- */
-        .notes-section {
-            padding: 4rem 2rem;
-            max-width: 820px;
-            margin: 0 auto;
-        }
-
-        .notes-section h2 {
-            font-family: 'IBM Plex Serif', serif;
-            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
-            color: #000;
-            text-align: center;
-            margin: 0 0 2rem;
-        }
-
-        .note {
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .note:last-of-type {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        }
 
         .note > summary {
             list-style: none;
@@ -844,13 +677,6 @@
 
         .note > summary:hover {
             color: #444;
-        }
-
-        .note .note-body {
-            padding: 0 2rem 1.25rem 0;
-            color: #444;
-            font-size: 0.92rem;
-            line-height: 1.65;
         }
 
         .note .note-body p + p {
@@ -927,13 +753,6 @@
             margin: 1rem 0;
         }
 
-        /* ---- TOC active state ---- */
-        .toc-pill[aria-current="true"] {
-            background: #000;
-            color: #fff;
-        }
-
-        /* ---- Footer override ---- */
         .site-footer .footer-brand {
             font-family: 'IBM Plex Serif', serif;
             font-weight: 700;
@@ -941,72 +760,37 @@
             margin-right: 0.5rem;
         }
 
-        /* ---- Responsive ---- */
         @media (max-width: 1024px) {
-            .hero-split-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .hero.hero-split {
-                padding: 4rem 2rem;
-            }
-
-            .lodge-grid.is-grid-plus {
+.lodge-grid.is-grid-plus {
                 grid-template-columns: repeat(2, 1fr);
             }
-
-            .stats-strip-inner {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 1.25rem 1rem;
-            }
-
-            .editor-picks {
+.editor-picks {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-
-            .map-grid {
+.map-grid {
                 grid-template-columns: 1fr;
             }
-
-            .rentals-wrap {
+.rentals-wrap {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
-        }
+}
 
         @media (max-width: 640px) {
-            .hero.hero-split {
-                padding: 3rem 1.25rem;
-                min-height: 0;
-            }
-
-            .finder {
+.finder {
                 padding: 1.25rem;
             }
-
-            .stats-strip {
-                padding: 1.25rem 1rem;
-            }
-
-            .stats-strip-inner {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .lodge-grid.is-grid-plus {
+.lodge-grid.is-grid-plus {
                 grid-template-columns: 1fr;
             }
-
-            .filter-rail {
+.filter-rail {
                 padding: 0.6rem 1rem;
             }
-
-            .filter-count {
+.filter-count {
                 display: none;
             }
-
-            .properties-section,
+.properties-section,
             .map-section,
             .matrix-section,
             .editor-section,
@@ -1015,8 +799,8 @@
                 padding-left: 1rem;
                 padding-right: 1rem;
             }
-        }
-    </style>
+}
+</style>
 </head>
 
 <body>
@@ -1027,92 +811,42 @@
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+                <button type="button" class="nav-cta" data-signup-open data-signup-source="nav-mobile">Get
+                    Notified</button>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
                 <span></span><span></span><span></span>
             </button>
         </div>
-    </header>
 
-    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
-        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
-        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="../events/top-events.html">Events</a>
-        <a href="../resources/resources.html">Resources</a>
-        <a href="../resources/contact.html">Contact</a>
-    </nav>
+
+        <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+            <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+            <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+            <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+            <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+            <a href="../events/top-events.html">Events</a>
+
+            <a href="../resources/resources.html">Resources</a>
+            <a href="../resources/contact.html">Contact</a>
+
+
+        </nav>
+    </header>
 
     <!-- HERO (2-up: photo + finder) -->
     <section class="hero hero-split" aria-label="Page hero">

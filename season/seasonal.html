@@ -35,14 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/common.css">
     <style>
-html {
-scroll-snap-type: y mandatory;
-overflow-y: scroll;
--webkit-overflow-scrolling: touch;
-}
-body {
-transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 header {
 position: fixed;
 top: 0;
@@ -61,27 +54,9 @@ background: var(--midnight);
 box-shadow: 0 2px 20px rgba(0,0,0,0.08);
 padding: 0.6rem 2rem;
 }
-.logo {
-font-family: 'IBM Plex Sans', sans-serif;
-font-weight: 900;
-font-size: 1.5rem;
-color: var(--snow-cap);
-text-decoration: none;
-letter-spacing: 1px;
-}
+
 .logo span { color: var(--golden-hour); }
-.logo-beta {
-font-size: 0.65rem;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 0.08em;
-background: rgba(0, 0, 0, 0.1);
-padding: 2px 7px;
-border-radius: 4px;
-vertical-align: middle;
-margin-left: 6px;
-opacity: 0.75;
-}
+
 nav { display: flex; align-items: center; gap: 0.25rem; }
 nav a {
 color: var(--snow-cap);
@@ -94,21 +69,9 @@ border-radius: 6px;
 transition: background 0.3s ease, color 0.3s ease;
 }
 nav a:hover, nav a:focus { background: rgba(0, 0, 0, 0.08); color: var(--golden-hour); }
-.phone-link {
-display: flex;
-align-items: center;
-gap: 0.4rem;
-color: var(--golden-hour);
-text-decoration: none;
-font-family: 'IBM Plex Sans', sans-serif;
-font-weight: 700;
-font-size: 0.9rem;
-margin-left: 0.5rem;
-}
-.phone-link svg { width: 18px; height: 18px; fill: var(--golden-hour); }
+
 @media (max-width: 1024px) {
 nav { display: none; }
-.phone-link { display: none; }
 }
 .season {
 position: relative;
@@ -127,10 +90,7 @@ background-position: center;
 animation: kenBurns 22s ease-in-out infinite alternate;
 will-change: transform;
 }
-@keyframes kenBurns {
-0% { transform: scale(1) translate(0, 0); }
-100% { transform: scale(1.08) translate(-1%, -0.5%); }
-}
+
 .season-gradient {
 position: absolute;
 inset: 0;
@@ -421,9 +381,7 @@ pointer-events: none;
 transition: opacity 0.3s ease;
 }
 .season-dot-wrap:hover .season-dot-label { opacity: 1; }
-.site-footer {
-scroll-snap-align: end;
-}
+
 @media (max-width: 768px) {
 .activities-grid { gap: 16px; }
 .activity-card { min-width: 130px; padding: 1rem; font-size: 0.85rem; }
@@ -436,14 +394,8 @@ scroll-snap-align: end;
 .activity-card { min-width: 110px; }
 }
 @media (prefers-reduced-motion: reduce) {
-*, *::before, *::after {
-animation-duration: 0.01ms !important;
-animation-iteration-count: 1 !important;
-transition-duration: 0.01ms !important;
-}
 .season-bg { animation: none; }
 .season-gradient { animation: none; }
-html { scroll-behavior: auto; scroll-snap-type: none; }
 .season { scroll-snap-align: none; }
 .season-content { opacity: 1; transform: none; }
 }</style>
@@ -456,92 +408,42 @@ html { scroll-behavior: auto; scroll-snap-type: none; }
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-                <a href="events/top-events.html">Events</a>
-                <a href="#reels">Reels</a>
-                <a href="resources/resources.html">Resources</a>
-                <a href="resources/contact.html">Contact</a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+                <button type="button" class="nav-cta" data-signup-open data-signup-source="nav-mobile">Get
+                    Notified</button>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
                 <span></span><span></span><span></span>
             </button>
         </div>
-    </header>
 
-    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
-        <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
-        <a href="../resources/resources.html">Resources</a>
-        <a href="../resources/contact.html">Contact</a>
-    </nav>
+
+        <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+            <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+            <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+            <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+            <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+            <a href="../events/top-events.html">Events</a>
+
+            <a href="../resources/resources.html">Resources</a>
+            <a href="../resources/contact.html">Contact</a>
+
+
+        </nav>
+    </header>
 <div class="season-nav" aria-label="Season navigation">
         <div class="season-dot-wrap">
             <button class="season-dot active" data-target="spring" aria-label="Go to Spring"></button>
@@ -677,39 +579,15 @@ html { scroll-behavior: auto; scroll-snap-type: none; }
         </section>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h3>Explore</h3>
-                <a href="../stay/lodging.html">Lodging</a>
-                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
-                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
-                <a href="../do/complete-guide-to-activities.html">Activities</a>
-                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h3>Connect</h3>
-                <a href="tel:+15555555555">(555) 555-5555</a>
-                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
-                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of Cloudcroft</a>
-                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank" rel="noopener noreferrer">Cloudcroft, NM 88317</a>
-            </div>
-            <div class="footer-col">
-                <h3>Plan</h3>
-                <a href="../plan.html">Plan Your Trip</a>
-                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank" rel="noopener noreferrer">Weather</a>
-                <a href="../about.html">About Cloudcroft</a>
-                <a href="../contact.html">Contact Us</a>
-            </div>
-            <div class="footer-col">
-                <h3>About</h3>
-                <p>Cloudcroft, New Mexico &mdash; a mountain village at 8,676 feet in the Sacramento Mountains. Cool pines, clear skies, and endless adventure.</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2026 DiscoverCloudcroft.com. All rights reserved.
-        </div>
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
     </footer>
 
     <button class="back-to-top" aria-label="Back to top">
