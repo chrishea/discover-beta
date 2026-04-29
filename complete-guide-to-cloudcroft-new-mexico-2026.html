@@ -689,9 +689,13 @@
             text-decoration-color: rgba(0, 0, 0, 0.3);
         }
 
-        .event-row .ev-meta a:hover { text-decoration-color: #000; }
+        .event-row .ev-meta a:hover {
+            text-decoration-color: #000;
+        }
 
-        .event-row.is-tbd { border-left-color: #b88a3a; }
+        .event-row.is-tbd {
+            border-left-color: #b88a3a;
+        }
 
         .event-row .ev-tbd {
             font-family: 'IBM Plex Sans', sans-serif;
@@ -1242,7 +1246,9 @@
             outline: none;
         }
 
-        .nav-cta::after { content: none !important; }
+        .nav-cta::after {
+            content: none !important;
+        }
 
         .mobile-nav-overlay .nav-cta {
             margin-top: 1rem;
@@ -1250,7 +1256,9 @@
             padding: 0.85rem 1.6rem;
         }
 
-        .signup-modal[hidden] { display: none; }
+        .signup-modal[hidden] {
+            display: none;
+        }
 
         .signup-modal {
             position: fixed;
@@ -1385,16 +1393,23 @@
             margin-top: 0.75rem;
         }
 
-        .signup-modal .form-container.error .error-message { display: block; }
+        .signup-modal .form-container.error .error-message {
+            display: block;
+        }
 
-        .signup-modal .success-message { display: none; padding: 0.5rem 0; }
+        .signup-modal .success-message {
+            display: none;
+            padding: 0.5rem 0;
+        }
 
         .signup-modal .form-container.success .form-row,
-        .signup-modal .form-container.success + .signup-modal__reassurance {
+        .signup-modal .form-container.success+.signup-modal__reassurance {
             display: none;
         }
 
-        .signup-modal .form-container.success .success-message { display: block; }
+        .signup-modal .form-container.success .success-message {
+            display: block;
+        }
 
         .signup-modal .success-message .check {
             width: 48px;
@@ -1437,16 +1452,30 @@
             text-align: center;
         }
 
-        body.signup-modal-open { overflow: hidden; }
+        body.signup-modal-open {
+            overflow: hidden;
+        }
 
         @keyframes signupBackdropIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes signupPanelIn {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @media (max-width: 480px) {
@@ -1458,16 +1487,21 @@
                 flex-direction: column;
             }
 
-            .signup-modal .form-row button { padding: 0.9rem 1.5rem; }
+            .signup-modal .form-row button {
+                padding: 0.9rem 1.5rem;
+            }
         }
 
         @media (prefers-reduced-motion: reduce) {
+
             .signup-modal__backdrop,
             .signup-modal__panel {
                 animation: none;
             }
 
-            .nav-cta { transition: none; }
+            .nav-cta {
+                transition: none;
+            }
         }
     </style>
 </head>
@@ -1510,7 +1544,8 @@
         <a href="#reels">Reels</a>
         <a href="resources/resources.html">Resources</a>
         <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+    </nav>
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
         <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
@@ -1519,7 +1554,8 @@
         <a href="#reels">Reels</a>
         <a href="resources/resources.html">Resources</a>
         <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+    </nav>
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
         <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
@@ -1528,7 +1564,18 @@
         <a href="#reels">Reels</a>
         <a href="resources/resources.html">Resources</a>
         <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+    </nav>
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+        <a href="events/top-events.html">Events</a>
+        <a href="#reels">Reels</a>
+        <a href="resources/resources.html">Resources</a>
+        <a href="resources/contact.html">Contact</a>
+    </nav>
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
         <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
         <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
@@ -2759,8 +2806,8 @@
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
-    <div class="signup-modal" id="signupModal" role="dialog" aria-modal="true"
-        aria-labelledby="signupModalTitle" hidden>
+    <div class="signup-modal" id="signupModal" role="dialog" aria-modal="true" aria-labelledby="signupModalTitle"
+        hidden>
         <div class="signup-modal__backdrop" data-modal-close></div>
         <div class="signup-modal__panel" role="document">
             <button type="button" class="signup-modal__close" aria-label="Close" data-modal-close>&times;</button>

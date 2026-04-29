@@ -600,7 +600,7 @@ img {
 .site-footer {
   background: var(--footer-main);
   color: rgba(255, 255, 255, 0.9);
-  padding-top: 4px;
+  padding: 1.3rem;
   position: relative;
 }
 

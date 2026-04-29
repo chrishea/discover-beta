@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eight the Cake | Bakery, Coffee &amp; Art on Burro Ave, Cloudcroft, NM</title>
-    <meta name="description" content="Eight the Cake on Burro Avenue in Cloudcroft serves organic coffee, signature cinnamon rolls, pies, pastries, and custom cakes in a bakery-gallery hybrid space.">
-    <meta name="keywords" content="eight the cake cloudcroft, cloudcroft bakery, burro avenue bakery, cloudcroft custom cakes, cloudcroft coffee, cloudcroft pastries, cloudcroft art gallery">
+    <title>Eight the Cake, Cloudcroft NM (2026) — Burro Ave Bakery, Coffee &amp; Local Art | DiscoverCloudcroft.com</title>
+    <meta name="description"
+        content="Eight the Cake on Burro Avenue in Cloudcroft — custom cakes, cupcakes, cinnamon rolls, pies, pastries, organic coffee and espresso, in a small bakery space hung with eclectic local artworks. Open Thursday through Monday, 10 AM to 5 PM.">
+    <meta name="keywords"
+        content="Eight the Cake, Cloudcroft bakery, Burro Avenue bakery, Cloudcroft custom cakes, cupcakes Cloudcroft, cinnamon rolls Cloudcroft, organic coffee Cloudcroft NM, Cloudcroft pastries, Cloudcroft local art">
     <link rel="canonical" href="https://discovercloudcroft.com/eat/eight-the-cake.html">
 
-    <meta property="og:title" content="Eight the Cake | Bakery, Coffee &amp; Art in Cloudcroft, NM">
-    <meta property="og:description" content="Organic coffee, signature cinnamon rolls, custom cakes, and fine art on Burro Avenue in Cloudcroft.">
+    <meta property="og:title" content="Eight the Cake, Cloudcroft NM (2026) — Burro Ave Bakery, Coffee &amp; Local Art | DiscoverCloudcroft.com">
+    <meta property="og:description"
+        content="Custom cakes, cupcakes, cinnamon rolls, pies and pastries with organic coffee on Burro Avenue. Eclectic local artworks fill the walls. Open Thursday through Monday.">
     <meta property="og:url" content="https://discovercloudcroft.com/eat/eight-the-cake.html">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <meta property="og:image" content="https://discovercloudcroft.com/eat/eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Eight the Cake | Cloudcroft, NM">
-    <meta name="twitter:description" content="Organic coffee, signature cinnamon rolls, custom cakes, and fine art on Burro Avenue.">
-    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <meta name="twitter:title" content="Eight the Cake, Cloudcroft NM (2026) — Burro Ave Bakery, Coffee &amp; Local Art">
+    <meta name="twitter:description" content="Custom cakes, cupcakes, cinnamon rolls, pastries and organic coffee on Burro Avenue. Open Thu–Mon, 10 AM – 5 PM.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/eat/eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg">
 
     <link href="../css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +34,8 @@
       "@context": "https://schema.org",
       "@type": "Bakery",
       "name": "Eight the Cake",
-      "description": "Bakery, coffee shop, and art space on Burro Avenue in Cloudcroft, NM. Organic coffee, espresso, signature cinnamon rolls, pies, pastries, custom cakes, and fine art.",
+      "url": "https://discovercloudcroft.com/eat/eight-the-cake.html",
+      "image": "https://discovercloudcroft.com/eat/eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "506A Burro Ave",
@@ -39,25 +44,989 @@
         "postalCode": "88317",
         "addressCountry": "US"
       },
-      "telephone": "575-682-3088",
-      "url": "https://www.eightthecakellc.com",
-      "servesCuisine": ["Bakery", "Coffee", "Pastries", "Custom Cakes"]
+      "telephone": "+15756823088",
+      "email": "eightthecake@gmail.com",
+      "servesCuisine": ["Bakery", "Coffee", "Pastries"],
+      "priceRange": "$",
+      "openingHours": ["Th-Mo 10:00-17:00"],
+      "sameAs": [
+        "https://www.eightthecakellc.com",
+        "https://www.facebook.com/CoffeePastryArt8/",
+        "https://www.instagram.com/eight_the_cake/"
+      ]
     }
     </script>
 
     <style>
-.hero-bg {
-    background: url('eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg') center 40% / cover no-repeat;
-}
-.hero-overlay {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
-}
-</style>
+        /* =====================================================================
+           Eight the Cake — 2026 detail-page rebuild. Mirrors
+           black-bear-coffee-shop.html / big-daddys.html / eighteen99.html.
+
+           HOURS — confirmed Thursday through Monday, 10 AM – 5 PM. Closed
+           Tuesday and Wednesday. Live "Open now" pill + today-row badge.
+
+           SCHEMA — Bakery (custom cakes, cupcakes, cinnamon rolls, pies,
+           pastries, organic coffee, espresso, local art).
+           ================================================================= */
+
+        /* ---- Hero ---- */
+        .hero-bg {
+            background: url('eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg') center 45% / cover no-repeat;
+            filter: saturate(0.95);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.32) 55%, rgba(0, 0, 0, 0.55));
+        }
+
+        .hero.hero-split {
+            min-height: 560px;
+            padding: 5rem 2rem;
+        }
+
+        .hero-split-grid {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-left .hero-eyebrow-pill {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 20px;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-left h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+            color: #fff;
+            line-height: 1.08;
+            margin-bottom: 1rem;
+        }
+
+        .hero-left .hero-deck {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            max-width: 30rem;
+        }
+
+        .hero-byline { color: rgba(255, 255, 255, 0.75); font-size: 0.82rem; letter-spacing: 0.04em; }
+        .hero-byline strong { color: #fff; font-weight: 600; }
+
+        /* ---- At-a-glance ---- */
+        .atglance {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 1.5rem;
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        .atglance-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .atglance-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+        }
+
+        .open-now {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.6rem;
+            border-radius: 999px;
+            background: #e9f1e4;
+            color: #2a5020;
+            border: 1px solid rgba(42, 80, 32, 0.2);
+            white-space: nowrap;
+        }
+
+        .open-now.is-closed {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.22);
+        }
+
+        .open-now::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #2a5020;
+        }
+
+        .open-now.is-closed::before { background: #7a4a00; }
+
+        .atglance-rows {
+            display: grid;
+            gap: 0.75rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            color: #333;
+        }
+
+        .atglance-rows dt {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .atglance-rows dd {
+            margin: 0;
+            color: #222;
+        }
+
+        .atglance-rows a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .atglance-rows a:hover { text-decoration-color: #000; }
+
+        .atglance-cta {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .atglance-cta .btn-primary {
+            padding: 0.7rem 1.25rem;
+            font-size: 0.78rem;
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+        }
+
+        .atglance-cta .btn-outline-black {
+            flex: 1;
+            min-width: 140px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.78rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.7rem 1.25rem;
+            color: #000;
+            border: 2px solid #000;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.2s ease, color 0.2s ease;
+            min-height: 44px;
+        }
+
+        .atglance-cta .btn-outline-black:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        /* ---- Signals ---- */
+        .signals {
+            background: #fff;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .signals-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            align-items: center;
+        }
+
+        .signals-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-right: 0.5rem;
+        }
+
+        .signal {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 0.3rem 0.75rem;
+            border-radius: 999px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .signal.featured {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .signal.warn {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.25);
+        }
+
+        /* ---- Stats strip ---- */
+        .stats-strip {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .stat { text-align: center; }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.4rem;
+        }
+
+        /* ---- Thesis ---- */
+        .thesis {
+            max-width: 820px;
+            margin: 3rem auto 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .thesis p {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            color: #222;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        .thesis .thesis-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            letter-spacing: 0.04em;
+        }
+
+        /* ---- TOC active state ---- */
+        .toc-pill[aria-current="true"] { background: #000; color: #fff; }
+
+        /* ---- Section containers ---- */
+        .detail-block {
+            padding: 3rem 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .detail-block-head { margin-bottom: 1.5rem; }
+
+        .detail-block-head .eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .detail-block-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0.2rem 0 0.35rem;
+        }
+
+        .detail-block-head p {
+            color: #555;
+            font-size: 0.95rem;
+            max-width: 680px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        /* ---- Menu cards ---- */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .menu-card-plus {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+            padding: 1.5rem 1.5rem 1.25rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-card-plus .card-pin {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-card-plus .cat-head {
+            margin-left: 3rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .menu-card-plus h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            color: #000;
+            margin: 0;
+        }
+
+        .specialty-chip {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            background: #f1ead2;
+            color: #5a4512;
+            border: 1px solid rgba(90, 69, 18, 0.2);
+        }
+
+        .specialty-chip.order-ahead {
+            background: #e9f1e4;
+            color: #2a5020;
+            border-color: rgba(42, 80, 32, 0.25);
+        }
+
+        .menu-card-plus .cat-lede {
+            color: #555;
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0 0 0.85rem;
+        }
+
+        .menu-card-plus ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0.85rem;
+        }
+
+        .menu-card-plus ul li {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            padding: 0.3rem 0;
+            color: #333;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .menu-card-plus ul li:last-child { border-bottom: none; }
+
+        .menu-card-plus .order-hint {
+            margin-top: auto;
+            padding: 0.75rem 0 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 0.88rem;
+            font-style: italic;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        /* ---- What I'd order ---- */
+        .picks-section {
+            background: #111;
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+
+        .picks-wrap { max-width: 1100px; margin: 0 auto; }
+
+        .picks-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.6rem, 2.4vw, 2rem);
+            margin: 0 0 2rem;
+            color: #fff;
+        }
+
+        .picks-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .pick .pick-name {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* ---- Hours table with open-now indicator ---- */
+        .hours-section {
+            padding: 3rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hours-table {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+
+        .hours-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr auto;
+            gap: 1rem;
+            align-items: center;
+            padding: 0.85rem 1.25rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .hours-row:last-child { border-bottom: none; }
+
+        .hours-row.closed { color: #999; }
+        .hours-row.closed .hours-time { font-style: italic; }
+        .hours-row.closed .hours-day { color: inherit; }
+
+        .hours-row.is-today {
+            background: #fafafa;
+            font-weight: 600;
+        }
+
+        .hours-day {
+            color: #222;
+            letter-spacing: 0.04em;
+        }
+
+        .hours-time { color: #555; }
+
+        .hours-today-badge {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.55rem;
+            border-radius: 999px;
+            background: #000;
+            color: #fff;
+        }
+
+        .hours-row:not(.is-today) .hours-today-badge { display: none; }
+
+        /* ---- Location + map ---- */
+        .location-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: start;
+            margin-top: 1rem;
+        }
+
+        .map-figure {
+            background: #f2ede3;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .map-svg { width: 100%; height: auto; display: block; }
+
+        .location-info {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            color: #333;
+            line-height: 1.65;
+        }
+
+        .location-info h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .location-info a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .location-info a:hover { text-decoration-color: #000; }
+
+        .location-info + .location-info { margin-top: 1rem; }
+
+        .map-footnote {
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.85rem;
+        }
+
+        /* ---- Good for / Skip if ---- */
+        .goodfor-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .goodfor-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .goodfor-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+        }
+
+        .goodfor-card.good { border-top: 4px solid #2a5020; }
+        .goodfor-card.skip { border-top: 4px solid #7a4a00; }
+
+        .goodfor-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin: 0 0 0.9rem;
+        }
+
+        .goodfor-card.good h3 { color: #2a5020; }
+        .goodfor-card.skip h3 { color: #7a4a00; }
+
+        .goodfor-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .goodfor-card ul li {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.92rem;
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            color: #333;
+            position: relative;
+            line-height: 1.45;
+        }
+
+        .goodfor-card.good ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #2a5020;
+            font-weight: 700;
+        }
+
+        .goodfor-card.skip ul li::before {
+            content: '×';
+            position: absolute;
+            left: 0;
+            color: #7a4a00;
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        .goodfor-card a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Gallery ---- */
+        .gallery-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery-figure {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .gallery-figure img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        .gallery-figure figcaption {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #555;
+            padding: 0.75rem 1rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        /* ---- Practical notes accordion ---- */
+        .notes-section {
+            padding: 4rem 2rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .notes-section h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+
+        .note { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        .note:last-of-type { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+        .note > summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .note > summary::-webkit-details-marker { display: none; }
+
+        .note > summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+        }
+
+        .note[open] > summary::after { content: '−'; }
+
+        .note .note-body {
+            padding: 0 2rem 1.25rem 0;
+            color: #444;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .note .note-body p + p { margin-top: 0.65rem; }
+
+        .note .note-body a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Editor's take ---- */
+        .editor-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+        }
+
+        .editor-wrap {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .editor-wrap h2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #666;
+            margin: 0 0 1rem;
+        }
+
+        .editor-wrap blockquote {
+            border-left: 4px solid #000;
+            padding-left: 1.5rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.6vw, 1.3rem);
+            line-height: 1.55;
+            color: #222;
+        }
+
+        .editor-wrap .byline {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #666;
+            padding-left: calc(1.5rem + 4px);
+        }
+
+        /* ---- Handoff ---- */
+        .handoff-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .handoff-head {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .handoff-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.5rem;
+        }
+
+        .handoff-head p {
+            color: #555;
+            font-size: 0.95rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .handoff-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .handoff-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem 1.25rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            text-decoration: none;
+            color: #000;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: block;
+            position: relative;
+        }
+
+        .handoff-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            color: #000;
+        }
+
+        .handoff-card .lg-pin {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .handoff-card.back-to-guide .lg-pin { background: #555; }
+
+        .handoff-card h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            margin: 0 0 0.25rem;
+        }
+
+        .handoff-card p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* ---- Footer override ---- */
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 1024px) {
+            .hero-split-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero.hero-split { padding: 4rem 2rem; }
+
+            .stats-strip-inner {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem 1rem;
+            }
+
+            .menu-grid { grid-template-columns: 1fr; }
+            .picks-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .location-grid { grid-template-columns: 1fr; }
+            .goodfor-grid { grid-template-columns: 1fr; }
+            .handoff-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 640px) {
+            .hero.hero-split {
+                padding: 3rem 1.25rem;
+                min-height: 0;
+            }
+
+            .atglance { padding: 1.25rem; }
+            .signals { padding: 1rem; }
+            .stats-strip { padding: 1.25rem 1rem; }
+            .stats-strip-inner { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .handoff-grid { grid-template-columns: 1fr; }
+
+            .detail-block,
+            .hours-section,
+            .location-section,
+            .goodfor-section,
+            .gallery-section,
+            .notes-section,
+            .editor-section,
+            .picks-section,
+            .handoff-section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-        <header class="site-header" role="banner">
+    <!-- HEADER (paths relative to /eat/) -->
+    <header class="site-header" role="banner">
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
@@ -92,320 +1061,565 @@
         <a href="resources/resources.html">Resources</a>
         <a href="resources/contact.html">Contact</a>
     </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
         <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../resources/resources.html">Resources</a>
         <a href="../resources/contact.html">Contact</a>
     </nav>
-<section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Eight the Cake bakery in Cloudcroft, New Mexico"></div>
+
+    <!-- HERO -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Eight the Cake bakery storefront on Burro Avenue in Cloudcroft"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>Cloudcroft Bakery</span>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">Burro Ave · bakery &amp; coffee · 2026</span>
+                <h1>
+                    <span class="word">Eight</span>
+                    <span class="word">the</span>
+                    <span class="word">Cake.</span>
+                </h1>
+                <p class="hero-deck">Custom cakes and cupcakes, signature cinnamon rolls, pies, pastries, and organic coffee on the east end of Burro Avenue. About six tables inside, with walls hung in eclectic local artworks: wearable, hang-ready, and in between.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
             </div>
-            <h1 class="hero-title">
-                <span class="word">Eight </span>
-                <span class="word">the </span>
-                <span class="word">Cake </span>
-            </h1>
-            <p class="hero-subtitle">Organic coffee, signature cinnamon rolls, custom cakes, and fine art &mdash; a bakery-gallery hybrid on Burro Avenue in the heart of Cloudcroft.</p>
-            <div class="hero-ctas">
-                <a href="#menu" class="btn-primary">See the Bakery Case</a>
-                <a href="#visit" class="btn-secondary">Plan Your Visit</a>
-            </div>
+            <aside class="atglance" aria-label="At a glance">
+                <div class="atglance-head">
+                    <h2>At a glance</h2>
+                    <span class="open-now" id="open-now" role="status" aria-live="polite">Open now</span>
+                </div>
+                <dl class="atglance-rows">
+                    <div>
+                        <dt>Address</dt>
+                        <dd><a href="https://www.google.com/maps/dir/?api=1&destination=506A%20Burro%20Ave%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer">506A Burro Ave, Cloudcroft, NM 88317</a></dd>
+                    </div>
+                    <div>
+                        <dt>Hours</dt>
+                        <dd>Thu–Mon 10 AM – 5 PM · Closed Tue &amp; Wed</dd>
+                    </div>
+                    <div>
+                        <dt>Phone</dt>
+                        <dd><a href="tel:+15756823088">(575) 682-3088</a></dd>
+                    </div>
+                    <div>
+                        <dt>Category · price</dt>
+                        <dd>Bakery · coffee · local art · $</dd>
+                    </div>
+                </dl>
+                <div class="atglance-cta">
+                    <a href="tel:+15756823088" class="btn-primary">Call</a>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=506A%20Burro%20Ave%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer" class="btn-outline-black">Directions</a>
+                </div>
+            </aside>
         </div>
     </section>
 
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <div class="info-bar-item">
-                <span>506A Burro Ave, Cloudcroft</span>
-            </div>
-            <div class="info-bar-item">
-                <span>Bakery, Coffee &amp; Art</span>
-            </div>
-            <div class="info-bar-item">
-                <span><a href="tel:5756823088">575-682-3088</a></span>
-            </div>
-            <div class="info-bar-item">
-                <span>Custom Cakes</span>
-            </div>
+    <!-- SIGNALS -->
+    <div class="signals" aria-label="What to expect">
+        <div class="signals-inner">
+            <span class="signals-label">Signals</span>
+            <span class="signal featured">Custom cakes</span>
+            <span class="signal">Cinnamon rolls</span>
+            <span class="signal">Cupcakes</span>
+            <span class="signal">Pies &amp; pastries</span>
+            <span class="signal">Organic coffee</span>
+            <span class="signal">Espresso</span>
+            <span class="signal">Local art on the walls</span>
+            <span class="signal">~6 tables</span>
+            <span class="signal">Walkable Burro Ave</span>
+            <span class="signal warn">Closed Tue &amp; Wed</span>
         </div>
     </div>
 
+    <!-- STATS -->
+    <div class="stats-strip" aria-label="Snapshot">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">506A</span><span class="stat-label">Burro Avenue</span></div>
+            <div class="stat"><span class="stat-num">5 days</span><span class="stat-label">Thu through Mon</span></div>
+            <div class="stat"><span class="stat-num">10–5</span><span class="stat-label">Open hours</span></div>
+            <div class="stat"><span class="stat-num">~6</span><span class="stat-label">Tables inside</span></div>
+            <div class="stat"><span class="stat-num">$</span><span class="stat-label">Bakery price</span></div>
+        </div>
+    </div>
+
+    <!-- STICKY TOC -->
+    <nav class="toc-nav" aria-label="Table of contents">
+        <div class="toc-nav-inner">
+            <a href="#menu" class="toc-pill">Menu</a>
+            <a href="#order" class="toc-pill">What I'd order</a>
+            <a href="#hours" class="toc-pill">Hours</a>
+            <a href="#location" class="toc-pill">Location</a>
+            <a href="#goodfor" class="toc-pill">Good for · skip if</a>
+            <a href="#gallery" class="toc-pill">Gallery</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
+            <a href="#editor" class="toc-pill">Editor's take</a>
+        </div>
+    </nav>
+
     <main id="main-content" role="main">
 
-        <section class="section" id="about" aria-label="About Eight the Cake">
-            <div class="section-container">
-                <div class="about-grid">
-                    <div class="about-text fade-in">
-                        <span class="section-label">About</span>
-                        <h2 class="section-title">Bakery, Coffee, and Art</h2>
-                        <p>
-                            Eight the Cake sits in the useful middle ground between bakery, coffee stop, and small art space on Burro Avenue. It is not a large caf&eacute; or full restaurant &mdash; it&rsquo;s better understood as a place to stop for pastries, coffee, cakes, and visual browsing while walking through downtown Cloudcroft. About half a dozen tables provide seating, so it&rsquo;s small but not strictly grab-and-go.
-                        </p>
-                        <p>
-                            Art pieces line the walls alongside the bakery case &mdash; paintings and eclectic works that add visual texture to the room. It reads more like a bakery with a decorative backdrop than a destination gallery, but the effect makes this more of a linger-a-little stop than a purely functional counter.
-                        </p>
-                        <p>
-                            The bakery side anchors around organic coffee, espresso, signature cinnamon rolls, pies, pastries, and custom cakes. The custom cake business adds a second lane beyond walk-in pastry trade, making this a dual-purpose shop on one of Cloudcroft&rsquo;s most walkable blocks.
-                        </p>
-                        <div class="about-features">
-                            <span class="about-feature">Organic Coffee</span>
-                            <span class="about-feature">Art on the Walls</span>
-                            <span class="about-feature">Cinnamon Rolls</span>
-                            <span class="about-feature">Custom Cakes</span>
-                            <span class="about-feature">Burro Ave</span>
-                        </div>
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>The east-end-of-Burro bakery where the cake case, the coffee bar, and the wall art share the same small room. Custom orders run alongside the walk-in pastry trade.</p>
+            <span class="thesis-meta">Custom cakes &amp; cupcakes · cinnamon rolls · pies · organic coffee · local art on the walls</span>
+        </div>
+
+        <!-- ================================ MENU ================================ -->
+        <section class="detail-block" id="menu" aria-label="Menu">
+            <div class="detail-block-head">
+                <span class="eyebrow">Four categories</span>
+                <h2>The menu</h2>
+                <p>A small bakery program built around custom cakes, plus a daily walk-in case of cinnamon rolls, cupcakes, pies, and pastries, and an organic-coffee and espresso bar to drink in or take with you. For special-order cakes, call ahead at <a href="tel:+15756823088">(575) 682-3088</a>.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <div class="cat-head">
+                        <h3>Custom cakes</h3>
+                        <span class="specialty-chip">House specialty</span>
                     </div>
-                    <div class="about-image fade-in">
-                        <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg" alt="Eight the Cake storefront on Burro Avenue in Cloudcroft" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                    <p class="cat-lede">The headline business. Order-ahead cakes for birthdays, weddings, anniversaries, and any other reason a Cloudcroft week needs a cake.</p>
+                    <ul>
+                        <li>Custom cake design and decoration</li>
+                        <li>Wedding and birthday cakes</li>
+                        <li>Cupcakes (single and tray orders)</li>
+                        <li>Phone or email to place an order</li>
+                    </ul>
+                    <p class="order-hint">Call <a href="tel:+15756823088">(575) 682-3088</a> or email <a href="mailto:eightthecake@gmail.com">eightthecake@gmail.com</a> well ahead of your date. The bakery takes the order, not the walk-in counter.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <div class="cat-head">
+                        <h3>Cinnamon rolls &amp; pastries</h3>
+                        <span class="specialty-chip">Walk-in case</span>
+                    </div>
+                    <p class="cat-lede">The walk-in side of the bakery. Signature cinnamon rolls anchor the case, with rotating pies and pastries alongside.</p>
+                    <ul>
+                        <li>Signature cinnamon rolls</li>
+                        <li>Pies</li>
+                        <li>Daily pastries</li>
+                        <li>Cupcakes by the each</li>
+                    </ul>
+                    <p class="order-hint">A cinnamon roll plus a coffee is the move. The rolls are the dish the bakery is best known for.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <div class="cat-head">
+                        <h3>Coffee &amp; espresso</h3>
+                        <span class="specialty-chip">Organic</span>
+                    </div>
+                    <p class="cat-lede">Organic coffee and an espresso bar share the counter with the bakery case. Drink it at one of the small tables, or take it down Burro with you.</p>
+                    <ul>
+                        <li>Organic drip coffee</li>
+                        <li>Espresso drinks</li>
+                        <li>Lattes &amp; cappuccinos</li>
+                        <li>Drink in or take out</li>
+                    </ul>
+                    <p class="order-hint">Pair a small espresso with a cinnamon roll and grab a table. The room is small, but it's not strictly grab-and-go.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <div class="cat-head">
+                        <h3>Local art on the walls</h3>
+                        <span class="specialty-chip order-ahead">Eclectic mix</span>
+                    </div>
+                    <p class="cat-lede">Eclectic local artworks fill the walls: wearable, hang-ready, and in between. Not a separate gallery, but part of why the room looks like it does.</p>
+                    <ul>
+                        <li>Paintings and wall pieces</li>
+                        <li>Soft sculpture</li>
+                        <li>Wearable art</li>
+                        <li>Local makers, rotating selection</li>
+                    </ul>
+                    <p class="order-hint">If something on the wall catches you, ask at the counter. The art is part of the shop's stock, not just decor.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================================ WHAT I'D ORDER ================================ -->
+        <section class="picks-section" id="order" aria-label="What I'd order">
+            <div class="picks-wrap">
+                <h2>What I'd order</h2>
+                <div class="picks-grid">
+                    <div class="pick">
+                        <span class="pick-for">Your first visit</span>
+                        <blockquote>"A signature cinnamon roll and an organic coffee. The roll is the dish Eight the Cake is best known for, and the coffee bar is right there at the same counter."</blockquote>
+                        <p class="pick-name">Cinnamon roll + organic coffee</p>
+                    </div>
+                    <div class="pick">
+                        <span class="pick-for">A weekday slow morning</span>
+                        <blockquote>"Espresso and a slice of pie at one of the small tables. About six tables means it doesn't take much for the room to feel full, and that's what makes it feel like a stop instead of a counter."</blockquote>
+                        <p class="pick-name">Espresso + a slice of pie, sit-down</p>
+                    </div>
+                    <div class="pick">
+                        <span class="pick-for">A Cloudcroft event</span>
+                        <blockquote>"A custom cake or a tray of cupcakes, ordered ahead. This is the village bakery for birthdays, weddings, and any week that needs a cake. Call a few days out."</blockquote>
+                        <p class="pick-name">Custom cake or cupcake tray, order-ahead</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section menu-section" id="menu" aria-label="Menu and specialties">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">The Bakery Case</span>
-                    <h2 class="section-title section-title-centered">What&rsquo;s Inside</h2>
-                    <p class="section-description">Organic coffee, signature pastries, and custom cakes. Offerings rotate. Check the day&rsquo;s case when you arrive.</p>
-                </div>
-                <div style="margin: 2rem auto 0; max-width: 700px;">
-                    <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00023.jpg" alt="Bakery display case at Eight the Cake with cakes, pastries, and cookies" loading="lazy" style="width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover;">
-                </div>
-                <div class="menu-grid">
-                    <div class="menu-card">
-                        <h3>Coffee &amp; Espresso</h3>
-                        <p>The coffee program anchors around organic beans and espresso drinks.</p>
-                        <ul class="menu-items">
-                            <li>Organic coffee</li>
-                            <li>Espresso drinks</li>
-                            <li>Counter-service style</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <h3>Pastries &amp; Baked Goods</h3>
-                        <p>The bakery case features signature pastries baked on-site.</p>
-                        <ul class="menu-items">
-                            <li>Signature cinnamon rolls</li>
-                            <li>Pies</li>
-                            <li>Pastries</li>
-                            <li>Seasonal selections</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <h3>Custom Cakes</h3>
-                        <p>A second business lane beyond the walk-in bakery case &mdash; custom cakes made to order.</p>
-                        <ul class="menu-items">
-                            <li>Custom cake ordering</li>
-                            <li>Contact directly to order</li>
-                            <li>Special occasion cakes</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tip-box">
-                    <p><strong>Menu and hours change with the day.</strong> Follow <a href="https://www.facebook.com/CoffeePastryArt8/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine);">Eight the Cake on Facebook</a> or <a href="https://www.instagram.com/eight_the_cake/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine);">@eight_the_cake on Instagram</a> for current offerings.</p>
-                </div>
+        <!-- ================================ HOURS ================================ -->
+        <section class="hours-section" id="hours" aria-label="Hours">
+            <div class="detail-block-head">
+                <span class="eyebrow">Thursday – Monday</span>
+                <h2>Hours</h2>
+                <p>Open Thursday through Monday from 10 AM to 5 PM. Closed Tuesday and Wednesday. Same window five days a week. No late-evening service, no breakfast hour before 10.</p>
+            </div>
+            <div class="hours-table" id="hours-table">
+                <div class="hours-row" data-day="0"><span class="hours-day">Sunday</span><span class="hours-time">10:00 AM – 5:00 PM</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="1"><span class="hours-day">Monday</span><span class="hours-time">10:00 AM – 5:00 PM</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row closed" data-day="2"><span class="hours-day">Tuesday</span><span class="hours-time">Closed</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row closed" data-day="3"><span class="hours-day">Wednesday</span><span class="hours-time">Closed</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="4"><span class="hours-day">Thursday</span><span class="hours-time">10:00 AM – 5:00 PM</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="5"><span class="hours-day">Friday</span><span class="hours-time">10:00 AM – 5:00 PM</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="6"><span class="hours-day">Saturday</span><span class="hours-time">10:00 AM – 5:00 PM</span><span class="hours-today-badge">Today</span></div>
             </div>
         </section>
 
-        <section class="section" id="gallery" aria-label="Art and atmosphere">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label" style="color: #2B2B2B; letter-spacing: 3px;">The Space</span>
-                    <h2 class="section-title section-title-centered" style="color: #2B2B2B;">Pastries &amp; Art</h2>
-                </div>
-                <div style="margin: 2rem auto 2rem; max-width: 700px;">
-                    <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00024.jpg" alt="Interior gallery and gift shop space at Eight the Cake with art, gifts, and fireplace" loading="lazy" style="width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover;">
-                </div>
-                <div class="highlights-grid">
-                    <div class="highlight-card">
-                        <h3>Art on the Walls</h3>
-                        <p>Art pieces line the walls alongside the bakery case &mdash; paintings and eclectic works that add visual texture to the room. It&rsquo;s more of a decorative backdrop than a destination gallery, but the effect makes it a more interesting stop than a standard pastry counter.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <h3>Burro Avenue Stop</h3>
-                        <p>Positioned on Cloudcroft&rsquo;s most walkable commercial block, Eight the Cake is a natural stop for strollers browsing Burro Avenue. The kind of place where people notice the displays and the bakery case rather than just grabbing a coffee and leaving.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <h3>Regional Recognition</h3>
-                        <p>Eight the Cake has appeared in Cloudcroft Reader, New Mexico Tourism listings, and New Mexico Magazine coverage &mdash; establishing it as a recognizable Burro Avenue stop rather than a brand-new arrival.</p>
-                    </div>
-                </div>
+        <!-- ================================ LOCATION ================================ -->
+        <section class="location-section" id="location" aria-label="Location">
+            <div class="detail-block-head">
+                <span class="eyebrow">506A Burro Ave</span>
+                <h2>Where you'll find it</h2>
+                <p>East end of the Burro Avenue strip, in the 500 block. Same stretch as Noisy Water Winery and Old Barrel Tea Co., a few storefronts past KennaBelle's Kreations. A walkable stop on any Burro stroll.</p>
             </div>
-        </section>
 
-        <section class="section" id="visit" aria-label="Plan your visit" style="background: var(--cloud-drift);">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Plan Your Visit</span>
-                    <h2 class="section-title section-title-centered">Visit Eight the Cake</h2>
-                    <p class="section-description">Everything you need to know before you go.</p>
+            <div class="location-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 720 300" role="img" aria-label="Eight the Cake location on Burro Avenue">
+                        <rect width="720" height="300" fill="#f2ede3"/>
+
+                        <!-- Burro Ave -->
+                        <rect x="40" y="160" width="640" height="14" fill="#d4c2a0" opacity="0.75" rx="2"/>
+                        <text x="360" y="152" fill="#8a7352" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="3">BURRO AVENUE (west to east)</text>
+
+                        <!-- Directional arrows on the strip -->
+                        <path d="M50 167 L55 163 L55 171 Z" fill="#8a7352" opacity="0.5"/>
+                        <path d="M670 167 L665 163 L665 171 Z" fill="#8a7352" opacity="0.5"/>
+
+                        <!-- West-end label -->
+                        <rect x="50" y="110" width="70" height="24" fill="#fff" opacity="0.55" rx="4"/>
+                        <text x="85" y="125" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">WEST END</text>
+
+                        <!-- East-end label -->
+                        <rect x="605" y="110" width="70" height="24" fill="#fff" opacity="0.55" rx="4"/>
+                        <text x="640" y="125" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">EAST END</text>
+
+                        <!-- Black Bear (200) -->
+                        <g><circle cx="120" cy="167" r="12" fill="#aaa"/><text x="120" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">1</text></g>
+                        <text x="120" y="200" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Black Bear · 200</text>
+
+                        <!-- Dave's Cafe (300) -->
+                        <g><circle cx="240" cy="167" r="12" fill="#aaa"/><text x="240" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">2</text></g>
+                        <text x="240" y="200" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Dave's · 300</text>
+
+                        <!-- Western Bar (304) -->
+                        <g><circle cx="305" cy="167" r="12" fill="#aaa"/><text x="305" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">3</text></g>
+                        <text x="305" y="130" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Western · 304</text>
+                        <line x1="305" y1="133" x2="305" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
+
+                        <!-- KennaBelle's (308) -->
+                        <g><circle cx="370" cy="167" r="12" fill="#aaa"/><text x="370" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">6</text></g>
+                        <text x="370" y="200" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">KennaBelle's · 308</text>
+
+                        <!-- Noisy Water (505) -->
+                        <g><circle cx="490" cy="167" r="12" fill="#aaa"/><text x="490" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">7</text></g>
+                        <text x="490" y="130" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Noisy Water · 505</text>
+                        <line x1="490" y1="133" x2="490" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
+
+                        <!-- YOU ARE HERE arrow for Eight the Cake -->
+                        <g transform="translate(515, 240)">
+                            <text x="0" y="0" fill="#000" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="2">YOU ARE HERE</text>
+                            <path d="M40 -12 L54 -6 L54 -10 L62 -10 L62 -2 L54 -2 L54 -6 Z" fill="#000" transform="rotate(-90 50 -7)"/>
+                        </g>
+
+                        <!-- Eight the Cake (506A) — black anchor pin -->
+                        <g>
+                            <circle cx="555" cy="167" r="16" fill="#000"/>
+                            <circle cx="555" cy="167" r="22" fill="none" stroke="#000" stroke-width="1.5" opacity="0.4"/>
+                            <circle cx="555" cy="167" r="28" fill="none" stroke="#000" stroke-width="1" opacity="0.2"/>
+                            <text x="555" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">5</text>
+                        </g>
+                        <text x="555" y="205" fill="#000" text-anchor="middle" font-family="IBM Plex Serif, serif" font-size="14" font-weight="700">Eight the Cake</text>
+                        <text x="555" y="220" fill="#555" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">506A · bakery &amp; coffee</text>
+
+                        <!-- Old Barrel Tea (505) -->
+                        <g><circle cx="615" cy="167" r="12" fill="#aaa"/><text x="615" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">8</text></g>
+                        <text x="615" y="200" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Old Barrel · 505</text>
+                    </svg>
+                    <p class="map-footnote">Pin numbers match the <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html#map">dining-guide map</a>. Schematic only — distances are approximate.</p>
                 </div>
-                <div class="visiting-grid">
-                    <div class="visiting-card">
-                        <h3>Location</h3>
-                        <p>506A Burro Ave, Cloudcroft, NM 88317. Right on the main commercial block &mdash; walkable from anywhere in the village.</p>
+
+                <div>
+                    <div class="location-info">
+                        <h3>Address &amp; directions</h3>
+                        <p>506A Burro Ave<br>
+                           Cloudcroft, NM 88317</p>
+                        <p><a href="https://www.google.com/maps/dir/?api=1&destination=506A%20Burro%20Ave%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer">Get directions &rarr;</a></p>
                     </div>
-                    <div class="visiting-card">
-                        <h3>Hours</h3>
-                        <p>Current hours are not confirmed from strong primary sources. Check their <a href="https://www.facebook.com/CoffeePastryArt8/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">Facebook</a> or <a href="https://www.instagram.com/eight_the_cake/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">Instagram</a> or call directly before visiting.</p>
-                    </div>
-                    <div class="visiting-card">
+                    <div class="location-info">
                         <h3>Contact</h3>
-                        <p>Phone: <a href="tel:5756823088" style="color: var(--alpine); text-decoration: none;">575-682-3088</a><br>Email: <a href="mailto:eightthecake@gmail.com" style="color: var(--alpine); text-decoration: none;">eightthecake@gmail.com</a><br>Web: <a href="https://www.eightthecakellc.com/" target="_blank" rel="noopener noreferrer" style="color: var(--alpine); text-decoration: none;">eightthecakellc.com</a></p>
-                    </div>
-                    <div class="visiting-card">
-                        <h3>Good to Know</h3>
-                        <p>This is a bakery-coffee stop. Counter service with about half a dozen tables for seating. Hours run more variable than travelers expect &mdash; check directly. Custom cakes require advance ordering.</p>
+                        <p>Phone: <a href="tel:+15756823088">(575) 682-3088</a><br>
+                           Email: <a href="mailto:eightthecake@gmail.com">eightthecake@gmail.com</a><br>
+                           Web: <a href="https://www.eightthecakellc.com" target="_blank" rel="noopener noreferrer">eightthecakellc.com</a></p>
+                        <p>Follow <a href="https://www.instagram.com/eight_the_cake/" target="_blank" rel="noopener noreferrer">@eight_the_cake</a> on Instagram or <a href="https://www.facebook.com/CoffeePastryArt8/" target="_blank" rel="noopener noreferrer">Coffee Pastry Art 8</a> on Facebook.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Coffee, Cake, and Art on Burro Avenue</h2>
-                <p>Eight the Cake is where organic coffee, signature pastries, custom cakes, and local art come together on Cloudcroft&rsquo;s most walkable block. A bakery-gallery hybrid worth a stop.</p>
-                <div class="cta-buttons">
-                    <a href="https://www.eightthecakellc.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Visit Website</a>
-                    <a href="https://www.facebook.com/CoffeePastryArt8/" target="_blank" rel="noopener noreferrer" class="btn-secondary">Follow on Facebook</a>
-                    <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html" class="btn-secondary">Explore More Dining</a>
+        <!-- ================================ GOOD FOR / SKIP IF ================================ -->
+        <section class="goodfor-section" id="goodfor" aria-label="Good for and skip if">
+            <div class="detail-block-head">
+                <span class="eyebrow">Decision aid</span>
+                <h2>Good for · skip if</h2>
+                <p>What this bakery actually does well, and when to aim somewhere else on the Burro Ave strip instead.</p>
+            </div>
+
+            <div class="goodfor-grid">
+                <div class="goodfor-card good">
+                    <h3>Good for</h3>
+                    <ul>
+                        <li>A cinnamon roll and an organic coffee on a Burro Avenue walk</li>
+                        <li>Custom cakes for birthdays, weddings, and anniversaries — call ahead</li>
+                        <li>Cupcakes by the each, by the half-dozen, or by the tray</li>
+                        <li>A small sit-down stop with art on the walls (about six tables)</li>
+                        <li>An espresso between a winery stop and a tea-shop stop on the 500 block</li>
+                        <li>Travelers who want a real bakery, not a chain pastry case</li>
+                    </ul>
+                </div>
+
+                <div class="goodfor-card skip">
+                    <h3>Skip if</h3>
+                    <ul>
+                        <li>It's Tuesday or Wednesday — the shop is closed those two days</li>
+                        <li>You want a full breakfast plate — go to <a href="daves-cafe.html">Dave's Café</a> or <a href="dusty-boots-cafe.html">Dusty Boots</a></li>
+                        <li>You want pink-patisserie territory or a different baker — <a href="kennabelle-bakery.html">KennaBelle's Kreations</a> is two blocks west</li>
+                        <li>You came specifically for a coffee shop with upstairs seating — <a href="black-bear-coffee-shop.html">Black Bear</a> is on the west end</li>
+                        <li>You want lunch or dinner — this is a 10 AM to 5 PM bakery, not a kitchen</li>
+                    </ul>
                 </div>
             </div>
         </section>
+
+        <!-- ================================ GALLERY ================================ -->
+        <section class="gallery-section" id="gallery" aria-label="Photo gallery">
+            <div class="detail-block-head">
+                <span class="eyebrow">Three photos</span>
+                <h2>Gallery</h2>
+                <p>The bakery counter and case, the small dining room with art on the walls, and a closer look at the case where the cinnamon rolls and pastries land.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00022.jpg" alt="Eight the Cake bakery counter with pastries and coffee bar" loading="lazy" decoding="async">
+                    <figcaption>The counter — bakery case and coffee bar share the same room.</figcaption>
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00023.jpg" alt="Eight the Cake interior with small tables and local artworks on the walls" loading="lazy" decoding="async">
+                    <figcaption>Inside — about six tables, walls hung with eclectic local artworks.</figcaption>
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-eat-eight-the-cake/eight-cake-00024.jpg" alt="Bakery case at Eight the Cake with cinnamon rolls, pastries, and cupcakes" loading="lazy" decoding="async">
+                    <figcaption>The bakery case — cinnamon rolls, cupcakes, pies, and pastries.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ================================ PRACTICAL NOTES ================================ -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Practical notes</h2>
+
+            <details class="note">
+                <summary>Hours, closed days &amp; seasons</summary>
+                <div class="note-body">
+                    <p>Open Thursday through Monday, 10 AM to 5 PM. Closed Tuesday and Wednesday. Those aren't soft closures — the room is dark. Mid-day rhythm only: no breakfast before 10, no dinner after 5.</p>
+                    <p>If a specific day matters for a custom-cake pickup, a quick call to <a href="tel:+15756823088">(575) 682-3088</a> the morning of is the surest way to confirm. Cloudcroft sits at 8,676 feet, and a snow day can still shift things.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Custom cakes &amp; ordering ahead</summary>
+                <div class="note-body">
+                    <p>Custom cakes are the headline business at Eight the Cake: design, decoration, and full-cake orders for birthdays, weddings, anniversaries, and other events. They're a separate ordering lane from the walk-in pastry case.</p>
+                    <p>Call <a href="tel:+15756823088">(575) 682-3088</a> or email <a href="mailto:eightthecake@gmail.com">eightthecake@gmail.com</a> well ahead of your date. For peak weekends, lead time matters. The bakery is small, and a wedding cake doesn't get squeezed into a Friday afternoon.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Sit-down vs. grab-and-go</summary>
+                <div class="note-body">
+                    <p>About six tables inside. That's small but not strictly grab-and-go: there's room to drink an espresso and eat a cinnamon roll if the day isn't packed. On a busy Saturday afternoon you may need to wait a few minutes for a seat, or take it onto Burro with you.</p>
+                    <p>Coffee is organic; espresso drinks come from the same counter as the bakery case, so a single line orders both.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>The art on the walls</summary>
+                <div class="note-body">
+                    <p>The walls are hung with eclectic local artworks: paintings, soft sculpture, wearable pieces, and other small works from local makers. It's a range, not a theme: wearable, hang-ready, and in between.</p>
+                    <p>If something on the wall catches your eye, ask at the counter. The art is part of the shop's stock, not just dressing.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Parking, payment &amp; getting there</summary>
+                <div class="note-body">
+                    <p>Burro Avenue is a walkable strip with on-street parking and small lots threading through the village. The 500 block sits a few storefronts down from the 300 block, a short walk from any other Burro stop.</p>
+                    <p>Cards accepted. The shop is part of a small Burro-Ave bakery cluster: Eight the Cake at 506A, KennaBelle's Kreations at 308, and Black Bear Coffee at 200 are the three sweet stops on the strip.</p>
+                </div>
+            </details>
+        </section>
+
+        <!-- ================================ EDITOR'S TAKE ================================ -->
+        <section class="editor-section" id="editor" aria-label="Editor's take">
+            <div class="editor-wrap">
+                <h2>Editor's take</h2>
+                <blockquote>"Eight the Cake reads like a working village bakery that decided to put art on the walls and an espresso machine on the counter. The custom-cake business is the spine; the cinnamon rolls and pies are the daily walk-in trade; the coffee bar lets you sit a minute before you walk back onto Burro. Six tables and a Thursday-to-Monday window keep it small, but small is the point."</blockquote>
+                <p class="byline">— DiscoverCloudcroft editors</p>
+            </div>
+        </section>
+
+        <!-- ================================ HANDOFF ================================ -->
+        <section class="handoff-section" id="handoff" aria-label="Nearby dining">
+            <div class="handoff-head">
+                <h2>More on Burro Avenue</h2>
+                <p>Three peer stops on the same walkable strip — or jump back to the full dining guide for all 19.</p>
+            </div>
+            <div class="handoff-grid">
+                <a class="handoff-card" href="kennabelle-bakery.html">
+                    <span class="lg-pin">6</span>
+                    <h3>KennaBelle's Kreations</h3>
+                    <p>Bakery &amp; custom cakes · 308 Burro · GF options</p>
+                </a>
+                <a class="handoff-card" href="black-bear-coffee-shop.html">
+                    <span class="lg-pin">1</span>
+                    <h3>Black Bear Coffee</h3>
+                    <p>Specialty coffee &amp; gallery · 200 Burro · west end</p>
+                </a>
+                <a class="handoff-card" href="old-barrel-tea-company.html">
+                    <span class="lg-pin">8</span>
+                    <h3>Old Barrel Tea Co.</h3>
+                    <p>House-blend teas &amp; provisions · 505 Burro</p>
+                </a>
+                <a class="handoff-card back-to-guide" href="complete-guide-where-to-eat-in-cloudcroft-2026.html">
+                    <span class="lg-pin">↩</span>
+                    <h3>All dining in Cloudcroft</h3>
+                    <p>19 independent spots · 3 corridors · 0 chains</p>
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-        <div class="footer-gradient-border"></div>
-        <div class="footer-inner">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="../index.html" class="logo header-logo" style="color:white!important"
-                        aria-label="Discover Cloudcroft home">
-                        <span class="logo-discover">Discover</span>
-                        <span class="logo-cloudcroft">Cloudcroft</span>
-                    </a>
-                    <p>Your guide to the mountain village at 8,676 feet — adventures, dining, lodging, and more in the
-                        Sacramento Mountains of New Mexico.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Twitter / X">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Explore</h3>
-                    <ul>
-                        <li><a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Lodging</a></li>
-                        <li><a href="complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a></li>
-                        <li><a href="../do/hike-best-trails-in-cloudcroft-new-mexico.html">Hiking Trails</a></li>
-                        <li><a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">All Activities</a></li>
-                        <li><a href="../events/top-events.html">Events</a></li>
-                        <li><a href="../season/seasonal.html">Seasonal Guide</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Connect</h3>
-                    <ul>
-                        <li><a href="tel:+15755824585">(575) 682-4585</a></li>
-                        <li><a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a></li>
-                        <li><a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village
-                                of Cloudcroft</a></li>
-                        <li><a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank"
-                                rel="noopener noreferrer">Map &amp; Directions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Plan</h3>
-                    <ul>
-                        <li><a href="../complete-guide-to-cloudcroft-new-mexico-2026.html">Visitor Guide</a></li>
-                        <li><a href="../resources/plan.html">Plan Your Trip</a></li>
-                        <li><a href="../resources/faq.html">FAQ</a></li>
-                        <li><a href="../resources/about.html">About</a></li>
-                        <li><a href="../resources/contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="../privacy.html">Privacy</a>
-                    <a href="../terms.html">Terms</a>
-                </div>
-            </div>
-        </div>
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
     </footer>
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
     <script src="../js/common.js"></script>
     <script>
-        (function() {
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+        (function () {
+            // Eight the Cake: Thursday–Monday, 10 AM – 5 PM. Closed Tuesday and
+            // Wednesday. The "Open now" pill flips at 10 AM / 5 PM / midnight,
+            // and on day boundaries.
+
+            // JS Date.getDay() uses 0 = Sunday … 6 = Saturday.
+            var OPEN_DAYS = [0, 1, 4, 5, 6]; // Sun, Mon, Thu, Fri, Sat
+            var OPEN_HOUR = 10;
+            var CLOSE_HOUR = 17;
+
+            function dayName(d) {
+                return ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][d];
+            }
+
+            function nextOpenDay(fromDay) {
+                for (var i = 1; i <= 7; i++) {
+                    var d = (fromDay + i) % 7;
+                    if (OPEN_DAYS.indexOf(d) !== -1) return d;
+                }
+                return 4;
+            }
+
+            function updateOpenNow() {
+                var now = new Date();
+                var day = now.getDay();
+                var hour = now.getHours();
+                var pill = document.getElementById('open-now');
+                if (!pill) return;
+
+                var openToday = OPEN_DAYS.indexOf(day) !== -1;
+                var openNow = openToday && hour >= OPEN_HOUR && hour < CLOSE_HOUR;
+
+                if (openNow) {
+                    pill.textContent = 'Open now';
+                    pill.classList.remove('is-closed');
+                } else if (openToday && hour < OPEN_HOUR) {
+                    pill.textContent = 'Opens at 10 AM today';
+                    pill.classList.add('is-closed');
+                } else {
+                    var next = nextOpenDay(day);
+                    var label = (next === (day + 1) % 7) ? 'tomorrow' : dayName(next);
+                    pill.textContent = 'Opens ' + label + ' at 10 AM';
+                    pill.classList.add('is-closed');
+                }
+
+                document.querySelectorAll('.hours-row').forEach(function (row) {
+                    row.classList.toggle('is-today', row.getAttribute('data-day') === String(day));
+                });
+            }
+
+            updateOpenNow();
+            setInterval(updateOpenNow, 60000);
+
+            // ---- Fade-in ----
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         fadeObserver.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
-
-            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function(el) {
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.fade-in, .menu-card-plus, .pick, .goodfor-card, .handoff-card, .gallery-figure').forEach(function (el) {
                 fadeObserver.observe(el);
             });
+
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sections = tocPills
+                .map(function (p) { return document.getElementById(p.getAttribute('href').replace('#', '')); })
+                .filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
         })();
     </script>
 </body>
+
 </html>
