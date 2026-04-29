@@ -85,10 +85,7 @@ Christmas in July and Labor Day Hoopla.
 
 ## Practical planning notes
 
-The Chamber calendar is the strongest current source for the main 2026 festival lineup. Race weekends are better confirmed through their live registration pages. Event details can still shift, so it is smart to recheck dates, times, and whether anything requires tickets or advance registration before you book a room.
-
-One caution: Chamber social posts also point to an **Ugly Sweater** run/walk in 2026, but I did not find a stronger dedicated event page for it, so I would treat that as **appears current** rather than locked.
-
+O
 
 # Where to Find Live Music in Cloudcroft
 
@@ -202,3 +199,15 @@ Main sources used:
 - Local theater in Cloudcroft
 - Best breweries, wineries, and bars in Cloudcroft
 - What to do in Cloudcroft after dark
+
+
+## Lumberjack Day
+
+Cloudcroft Lumberjack Day’s official site lists the 2026 event for Saturday, September 19, 2026, calling it the 33rd year of the event. The site says it is free to watch, with arts, crafts, and food vendors on-site. Competitor registration begins at 8 a.m., and competition starts at 9 a.m. The listed location is 1920 1/2 U.S. Highway 82, Cloudcroft, NM 88317.  
+
+The site also lists contact information: cloudcroftlumberjackday@gmail.com, 575-921-4737, and P.O. Box 790, Cloudcroft, NM 88317.  
+
+## Cloudcroft July Jamboree for July 11–12, 2026, at Zenith Park, Cloudcroft, NM 88317. The listing describes it as an annual arts-and-crafts show with local and regional artists and crafters, free public admission, local nonprofit food sales, restrooms on-site, one stage of variety entertainment, 
+## BeerFest
+
+The Cloudcroft Chamber lists 2026 BeerFest for June 13–14, 2026. 
