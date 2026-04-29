@@ -2,7 +2,7 @@
 
 ## 1. Executive summary
 
-The Lodge is a historic destination stay, not a standard mountain hotel. Its strongest assets are setting, history, dining, golf, and atmosphere. Its likely tradeoffs are the usual ones that come with older properties: room variation, less uniformity, stairs in some room categories, and the need to verify details that may matter more here than at a chain hotel. If you want a memorable Cloudcroft weekend built around place and character, it looks worth serious consideration. If you want modern hotel predictability above all else, The Grand Cloudcroft Hotel or a cabin rental may be a safer fit.
+The Lodge is a historic destination stay, not a standard mountain hotel. Its strongest assets are setting, history, dining, golf, and atmosphere. Its likely tradeoffs are the usual ones that come with older properties: room variation, less uniformity, stairs in some room categories, and the need to verify details that may matter more here than at a chain hotel. If you want a memorable Cloudcroft weekend built around place and character, it looks worth serious consideration. 
 
 ## 2. Verified booking facts
 

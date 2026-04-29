@@ -8,9 +8,13 @@ _Last updated: April 3, 2026_
 
 The Grand Cloudcroft Hotel is a 50-room independent hotel on James Canyon Highway in Cloudcroft, New Mexico. It opened on September 15, 2023, making it the newest lodging property in the village and the first purpose-built hotel in Cloudcroft in recent memory. The property was designed, built, and managed locally, and it positions itself as an affordable alternative to The Lodge with a modern feel that still reflects the mountain character of Cloudcroft.
 
-Co-owner Jim Maynard handled much of the custom woodwork throughout the property, using white fir — a nod to Cloudcroft's logging heritage. General Manager Julie Bragg, a native Cloudcrofter and former ICU nurse, joined the project in January 2023 and assembled the initial 15-person staff. Bragg described the hotel's positioning as: "We are affordable but with the feel of a luxury hotel. It feels modern while evoking a sense of Cloudcroft and its place in the mountains."
+Co-owner Jim Maynard handled much of the custom woodwork throughout the property, using white fir — a nod to Cloudcroft's logging heritage. General Manager Julie Bragg, a native Cloudcrofter, joined the project in January 2023 and assembled the initial 15-person staff. Bragg described the hotel's positioning as: "We are affordable but with the feel of a luxury hotel. It feels modern while evoking a sense of Cloudcroft and its place in the mountains."
 
 The hotel was built to compete directly with The Lodge as a lodging anchor in the village. Its appeal is more about convenience, consistency, and modern comfort than about history or fine dining. For travelers who want a recognizable hotel format without paying for historic ambiance, The Grand is the clearest option in Cloudcroft.
+
+NOT 15 miles from White Sands National Park. 35 miles instead. 
+
+ Put indoor pool and spa in the top of the listing description. This is unique in Cloudcroft. 
 
 ---
 

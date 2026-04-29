@@ -6,6 +6,10 @@ Dusty Boots Motel looks like a small, family-run, themed roadside motel where pe
 
 The strongest current evidence points to a property with either one king or two queen beds in rooms, newer memory-foam mattresses, mini-fridges, coffee makers, themed décor, and an active on-site café. Local coverage also suggests the owners have kept adding themed rooms and evolving the food side of the business. That said, this is still a small independent mountain motel. Travelers should expect charm and variation, not chain-hotel consistency.
 
+Mention themed rooms: I Love Lucy, Harry Potter, Roy Rogers, and more. Cozy, funky stay.
+Also on premises a Cafe and a Candy/Ice Cream Shop .  
+
+
 ## 2. Verified booking facts
 
 - **Official name:** Dusty Boots Motel and Cafe
@@ -211,3 +215,15 @@ Ask directly about:
 - **Tacos / cantina expansion:** reported in local coverage, but should be checked directly before treating it as a stable current concept.
 
 My read: Dusty Boots Motel looks like a good fit if you want a friendly, memorable, themed Cloudcroft stay with a real café attached. It does not look like a place to book for polish. It looks like a place to book for warmth, novelty, and a more personal version of mountain lodging.
+
+13 Rules to Obey
+
+DON’T Use phrase “actually” in the site–demeaning to other businesses. 
+Don’t say “real taco program” just say: recently added taco cantina and beer menu 
+
+On menu 2 remove Steak and Shrimp 
+
+Add “Select Saturdays” to German night mentions. 
+
+Don’t overly focus on the taco offerings. Mention that breakfast is served until noon–the hiker boot omelette, loaded with veggies, is a fave. 
+
