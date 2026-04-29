@@ -4,30 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mad Jack's Mountaintop BBQ | DiscoverCloudcroft.com — Authentic Central Texas Barbecue</title>
+    <title>Mad Jack's Mountaintop BBQ, Cloudcroft NM (2026) — Central Texas barbecue on James Canyon Hwy | DiscoverCloudcroft.com</title>
     <meta name="description"
-        content="Visit Mad Jack's Mountaintop BBQ for authentic Central Texas barbecue smoked over post oak at 8,600 feet in Cloudcroft, NM. Legendary brisket, ribs, and scratch-made sides.">
+        content="Mad Jack's Mountaintop Barbecue at 105 James Canyon Hwy — Central Texas-style smokehouse in Cloudcroft, NM. Brisket, beef ribs, pork ribs, smoked turkey, sausage, and the Chile the Kid green-chile sandwich. Thursday–Sunday, 11 AM until sold out. At 8,676 feet.">
     <meta name="keywords"
-        content="Mad Jack's BBQ, Cloudcroft barbecue, Central Texas BBQ, brisket, smoked meats, post oak, Cloudcroft NM, Sacramento Mountains">
-    <link rel="canonical" href="https://discovercloudcroft.com/mad-jacks-bbq.html">
+        content="Mad Jack's BBQ, Cloudcroft barbecue, Central Texas BBQ, brisket, smoked meats, post oak, Cloudcroft NM, Sacramento Mountains, Chile the Kid sandwich, James Jackson, Cloudcroft food">
+    <link rel="canonical" href="https://discovercloudcroft.com/eat/mad-jacks-bbq.html">
 
-    <meta property="og:title" content="Mad Jack's Mountaintop BBQ | DiscoverCloudcroft.com">
+    <meta property="og:title" content="Mad Jack's Mountaintop BBQ, Cloudcroft NM (2026) — Central Texas barbecue on James Canyon Hwy">
     <meta property="og:description"
-        content="Authentic Central Texas barbecue smoked over post oak at 8,600 feet. Legendary brisket, ribs, and scratch-made sides in Cloudcroft, NM.">
-    <meta property="og:url" content="https://discovercloudcroft.com/mad-jacks-bbq.html">
+        content="Central Texas-style barbecue smoked over post oak. Brisket, ribs, turkey, sausage, the Chile the Kid sandwich. Thursday–Sunday, 11 AM until sold out.">
+    <meta property="og:url" content="https://discovercloudcroft.com/eat/mad-jacks-bbq.html">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <meta property="og:image" content="https://discovercloudcroft.com/eat/eat-photo/photo-eat-mad-jacks/mad-jacks-00026.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mad Jack's Mountaintop BBQ | DiscoverCloudcroft.com">
-    <meta name="twitter:description"
-        content="Authentic Central Texas barbecue smoked over post oak at 8,600 feet in Cloudcroft, NM.">
-    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+    <meta name="twitter:title" content="Mad Jack's Mountaintop BBQ, Cloudcroft NM (2026) — Central Texas barbecue on JCH">
+    <meta name="twitter:description" content="Central Texas-style barbecue. Brisket, ribs, turkey, sausage, Chile the Kid sandwich. Thu–Sun, 11 AM until sold out.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/eat/eat-photo/photo-eat-mad-jacks/mad-jacks-00026.jpg">
+
     <link href="../css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="../css/common.css">
 
     <script type="application/ld+json">
@@ -35,6 +34,8 @@
       "@context": "https://schema.org",
       "@type": "Restaurant",
       "name": "Mad Jack's Mountaintop BBQ",
+      "url": "https://discovercloudcroft.com/eat/mad-jacks-bbq.html",
+      "image": "https://discovercloudcroft.com/eat/eat-photo/photo-eat-mad-jacks/mad-jacks-00026.jpg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "105 James Canyon Hwy",
@@ -44,37 +45,995 @@
         "addressCountry": "US"
       },
       "telephone": "+15756827577",
-      "servesCuisine": "Barbecue",
-      "openingHours": "Th-Su 11:00-15:00"
+      "servesCuisine": ["Barbecue", "Central Texas BBQ", "American"],
+      "priceRange": "$$",
+      "openingHours": ["Th-Su 11:00-15:00"]
     }
     </script>
 
     <style>
+        /* =====================================================================
+           CHANGELOG (2026-04-28 redesign — applying the 2026 detail-page system
+           to Mad Jack's; mirrors big-daddys.html / black-bear-coffee-shop.html /
+           brother-n-law-bbq.html / high-rollin.html pattern)
+
+           KEEPS FROM THE DETAIL-PAGE PATTERN
+             - Hero 2-up with photo + at-a-glance card (address/hours/CTA)
+             - Signals chip strip under the hero
+             - Black stats strip (5 facts tuned to this entity)
+             - Sticky TOC pills with active-section tracking
+             - Thesis pull-quote
+             - Menu grid with card-plus pattern (numbered pins, specialty
+               chips, order-hint callout lines)
+             - "What I'd order" pull-quote trio on black
+             - 7-day hours-table with closed days marked + JS-driven open-now
+               + sell-out warning callout (the BBQ-shop variant)
+             - Inline-SVG schematic map tied to dining-guide pin numbers
+               (Mad Jack's is pin 10 at 105 JCH — closest JCH peer to Burro)
+             - "Good for / Skip if" decision aid
+             - Gallery grid
+             - Practical-notes accordion
+             - "Editor's take" pull-quote
+             - Handoff grid with 3 JCH peers + back-to-guide
+
+           HOURS TREATMENT
+             - Thursday–Sunday, 11 AM until sold out (commonly by 3 PM).
+               Closed Mon–Wed. Standard 7-day table with closed-day rows
+               and a sell-out callout. JS open-now reads day + hour.
+
+           FIXED VS. PREVIOUS PAGE
+             - Older pre-2026 detail-page template replaced with the 2026
+               system used by Big Daddy's, Black Bear, Brother-N-Law,
+               and High Rollin'.
+             - Canonical and og:url normalized to /eat/mad-jacks-bbq.html.
+             - Hardcoded nav paths with no ../ prefix replaced.
+             - Triple-duplicated <nav class="mobile-nav-overlay"> blocks
+               replaced with a single canonical block.
+             - "8,600 feet" elevation corrected to 8,676 ft (cross-page rule).
+             - All emoji icons stripped from rendered body (info-bar,
+               about-features, menu cards, highlight cards, visit cards).
+             - Title-case headers rewritten in sentence case.
+             - "Authentic" / "Legendary" / "Smoked to Perfection" hype
+               trimmed; press attribution preserved with proper quoting.
+           ================================================================= */
+
+        /* ---- Hero ---- */
         .hero-bg {
-            background: url('eat-photo/photo-eat-mad-jacks/mad-jacks-00026.jpg') center 40% / cover no-repeat;
+            background: url('eat-photo/photo-eat-mad-jacks/mad-jacks-00026.jpg') center center / cover no-repeat;
+            filter: saturate(0.95);
         }
 
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.6));
         }
 
-        .about-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .hero.hero-split {
+            min-height: 560px;
+            padding: 5rem 2rem;
+        }
+
+        .hero-split-grid {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-left .hero-eyebrow-pill {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 20px;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-left h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+            color: #fff;
+            line-height: 1.08;
+            margin-bottom: 1rem;
+        }
+
+        .hero-left .hero-deck {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            max-width: 30rem;
+        }
+
+        .hero-byline { color: rgba(255, 255, 255, 0.75); font-size: 0.82rem; letter-spacing: 0.04em; }
+        .hero-byline strong { color: #fff; font-weight: 600; }
+
+        /* ---- At-a-glance card ---- */
+        .atglance {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 1.5rem;
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        .atglance-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .atglance-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+        }
+
+        .open-now {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.6rem;
+            border-radius: 999px;
+            background: #e9f1e4;
+            color: #2a5020;
+            border: 1px solid rgba(42, 80, 32, 0.2);
+        }
+
+        .open-now.is-closed {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.22);
+        }
+
+        .open-now::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #2a5020;
+        }
+
+        .open-now.is-closed::before { background: #7a4a00; }
+
+        .atglance-rows {
+            display: grid;
+            gap: 0.75rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            color: #333;
+        }
+
+        .atglance-rows dt {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .atglance-rows dd { margin: 0; color: #222; }
+
+        .atglance-rows a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .atglance-rows a:hover { text-decoration-color: #000; }
+
+        .atglance-cta {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .atglance-cta .btn-primary {
+            padding: 0.7rem 1.25rem;
+            font-size: 0.78rem;
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+        }
+
+        .atglance-cta .btn-outline-black {
+            flex: 1;
+            min-width: 140px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.78rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.7rem 1.25rem;
+            color: #000;
+            border: 2px solid #000;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.2s ease, color 0.2s ease;
+            min-height: 44px;
+        }
+
+        .atglance-cta .btn-outline-black:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        /* ---- Signals chip strip ---- */
+        .signals {
+            background: #fff;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .signals-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            align-items: center;
+        }
+
+        .signals-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-right: 0.5rem;
+        }
+
+        .signal {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 0.3rem 0.75rem;
+            border-radius: 999px;
+            background: #f3f3f3;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .signal.featured {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .signal.warn {
+            background: #fff4e6;
+            color: #7a4a00;
+            border-color: rgba(122, 74, 0, 0.22);
+        }
+
+        /* ---- Stats strip ---- */
+        .stats-strip {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .stat { text-align: center; }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.4rem;
+        }
+
+        /* ---- Thesis ---- */
+        .thesis {
+            max-width: 820px;
+            margin: 3rem auto 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .thesis p {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            color: #222;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        .thesis .thesis-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            letter-spacing: 0.04em;
+        }
+
+        /* ---- TOC active state ---- */
+        .toc-pill[aria-current="true"] { background: #000; color: #fff; }
+
+        /* ---- Section containers ---- */
+        .detail-block {
+            padding: 3rem 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .detail-block-head { margin-bottom: 1.5rem; }
+
+        .detail-block-head .eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .detail-block-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0.2rem 0 0.35rem;
+        }
+
+        .detail-block-head p {
+            color: #555;
+            font-size: 0.95rem;
+            max-width: 680px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        /* ---- Menu cards ---- */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .menu-card-plus {
+            background: #fff;
             border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+            padding: 1.5rem 1.5rem 1.25rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
         }
 
-        .section-image {
-            margin: 2rem auto 0;
-            max-width: 700px;
+        .menu-card-plus .card-pin {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .section-image img {
-            width: 100%;
+        .menu-card-plus .cat-head {
+            margin-left: 3rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .menu-card-plus h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            color: #000;
+            margin: 0;
+        }
+
+        .specialty-chip {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            background: #f1ead2;
+            color: #5a4512;
+            border: 1px solid rgba(90, 69, 18, 0.2);
+        }
+
+        .menu-card-plus .cat-lede {
+            color: #555;
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0 0 0.85rem;
+        }
+
+        .menu-card-plus ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0.85rem;
+        }
+
+        .menu-card-plus ul li {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            padding: 0.3rem 0;
+            color: #333;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .menu-card-plus ul li:last-child { border-bottom: none; }
+
+        .menu-card-plus .order-hint {
+            margin-top: auto;
+            padding: 0.75rem 0 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 0.88rem;
+            font-style: italic;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        /* ---- What I'd order (pull-quote trio) ---- */
+        .picks-section {
+            background: #111;
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+
+        .picks-wrap { max-width: 1100px; margin: 0 auto; }
+
+        .picks-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.6rem, 2.4vw, 2rem);
+            margin: 0 0 2rem;
+            color: #fff;
+        }
+
+        .picks-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .pick .pick-name {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* ---- Hours table ---- */
+        .hours-section {
+            padding: 3rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hours-table {
+            background: #fff;
             border-radius: 12px;
-            aspect-ratio: 16/9;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+
+        .hours-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr auto;
+            gap: 1rem;
+            align-items: center;
+            padding: 0.85rem 1.25rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .hours-row:last-child { border-bottom: none; }
+
+        .hours-row.is-today {
+            background: #fafafa;
+            font-weight: 600;
+        }
+
+        .hours-row.closed .hours-time {
+            color: #b15a1f;
+            font-weight: 600;
+        }
+
+        .hours-day {
+            color: #222;
+            letter-spacing: 0.04em;
+        }
+
+        .hours-time { color: #555; }
+
+        .hours-today-badge {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.55rem;
+            border-radius: 999px;
+            background: #000;
+            color: #fff;
+        }
+
+        .hours-row:not(.is-today) .hours-today-badge { display: none; }
+
+        .sellout-note {
+            background: #fff4e6;
+            border-left: 4px solid #b15a1f;
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-top: 1.25rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.9rem;
+            color: #444;
+            line-height: 1.55;
+        }
+
+        .sellout-note strong { color: #7a4a00; }
+
+        /* ---- Location + map ---- */
+        .location-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: start;
+            margin-top: 1rem;
+        }
+
+        .map-figure {
+            background: #f2ede3;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .map-svg { width: 100%; height: auto; display: block; }
+
+        .location-info {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            color: #333;
+            line-height: 1.65;
+        }
+
+        .location-info h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .location-info a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .location-info a:hover { text-decoration-color: #000; }
+
+        .location-info + .location-info { margin-top: 1rem; }
+
+        .map-footnote {
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.85rem;
+        }
+
+        /* ---- Good for / Skip if ---- */
+        .goodfor-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .goodfor-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .goodfor-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+        }
+
+        .goodfor-card.good   { border-top: 4px solid #2a5020; }
+        .goodfor-card.skip   { border-top: 4px solid #7a4a00; }
+
+        .goodfor-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin: 0 0 0.9rem;
+        }
+
+        .goodfor-card.good h3 { color: #2a5020; }
+        .goodfor-card.skip h3 { color: #7a4a00; }
+
+        .goodfor-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .goodfor-card ul li {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.92rem;
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            color: #333;
+            position: relative;
+            line-height: 1.45;
+        }
+
+        .goodfor-card.good ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #2a5020;
+            font-weight: 700;
+        }
+
+        .goodfor-card.skip ul li::before {
+            content: '×';
+            position: absolute;
+            left: 0;
+            color: #7a4a00;
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        .goodfor-card a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Gallery ---- */
+        .gallery-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery-figure {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .gallery-figure img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
             object-fit: cover;
+        }
+
+        .gallery-figure figcaption {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #555;
+            padding: 0.75rem 1rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        /* ---- Practical notes accordion ---- */
+        .notes-section {
+            padding: 4rem 2rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .notes-section h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+
+        .note { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        .note:last-of-type { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+        .note > summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .note > summary::-webkit-details-marker { display: none; }
+
+        .note > summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+        }
+
+        .note[open] > summary::after { content: '−'; }
+
+        .note .note-body {
+            padding: 0 2rem 1.25rem 0;
+            color: #444;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .note .note-body p + p { margin-top: 0.65rem; }
+
+        .note .note-body a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Editor's take ---- */
+        .editor-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+        }
+
+        .editor-wrap {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .editor-wrap h2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #666;
+            margin: 0 0 1rem;
+        }
+
+        .editor-wrap blockquote {
+            border-left: 4px solid #000;
+            padding-left: 1.5rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.15rem, 1.6vw, 1.3rem);
+            line-height: 1.55;
+            color: #222;
+        }
+
+        .editor-wrap .byline {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #666;
+            padding-left: calc(1.5rem + 4px);
+        }
+
+        /* ---- Handoff ---- */
+        .handoff-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .handoff-head {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .handoff-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.5rem;
+        }
+
+        .handoff-head p {
+            color: #555;
+            font-size: 0.95rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .handoff-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .handoff-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem 1.25rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            text-decoration: none;
+            color: #000;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: block;
+            position: relative;
+        }
+
+        .handoff-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            color: #000;
+        }
+
+        .handoff-card .lg-pin {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .handoff-card.back-to-guide .lg-pin { background: #555; }
+
+        .handoff-card h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            margin: 0 0 0.25rem;
+        }
+
+        .handoff-card p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* ---- Footer override ---- */
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 1024px) {
+            .hero-split-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .hero.hero-split { padding: 4rem 2rem; }
+            .stats-strip-inner { grid-template-columns: repeat(3, 1fr); gap: 1.25rem 1rem; }
+            .menu-grid { grid-template-columns: 1fr; }
+            .picks-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .location-grid { grid-template-columns: 1fr; }
+            .goodfor-grid { grid-template-columns: 1fr; }
+            .handoff-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 640px) {
+            .hero.hero-split { padding: 3rem 1.25rem; min-height: 0; }
+            .atglance { padding: 1.25rem; }
+            .signals { padding: 1rem; }
+            .stats-strip { padding: 1.25rem 1rem; }
+            .stats-strip-inner { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .handoff-grid { grid-template-columns: 1fr; }
+            .detail-block,
+            .hours-section,
+            .location-section,
+            .goodfor-section,
+            .gallery-section,
+            .notes-section,
+            .editor-section,
+            .picks-section,
+            .handoff-section {
+                padding-left: 1rem; padding-right: 1rem;
+            }
         }
     </style>
 </head>
@@ -82,6 +1041,7 @@
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
+    <!-- HEADER (paths relative to /eat/) -->
     <header class="site-header" role="banner">
         <div class="header-inner">
 
@@ -117,343 +1077,510 @@
         <a href="resources/resources.html">Resources</a>
         <a href="resources/contact.html">Contact</a>
     </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-        <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-        <a href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
-        <a href="events/top-events.html">Events</a>
-        <a href="#reels">Reels</a>
-        <a href="resources/resources.html">Resources</a>
-        <a href="resources/contact.html">Contact</a>
-    </nav><nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">Home</a>
         <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
         <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
         <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-        <a href="../visit/where-to-visit.html">Visit</a>
+        <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
         <a href="../events/top-events.html">Events</a>
-        <a href="../season/seasonal.html">Seasons</a>
-        <a href="../complete-guide-to-cloudcroft-new-mexico-2026.html#reels">Reels</a>
         <a href="../resources/resources.html">Resources</a>
         <a href="../resources/contact.html">Contact</a>
     </nav>
-    <section class="hero" aria-label="Page hero">
-        <div class="hero-bg" role="img" aria-label="Mad Jack's Mountaintop BBQ scenic view"></div>
+
+    <!-- HERO -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img" aria-label="Mad Jack's Mountaintop BBQ vintage truck on James Canyon Highway in Cloudcroft"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>Cloudcroft Barbecue</span>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">James Canyon Hwy · Central Texas BBQ · 2026</span>
+                <h1>Mad Jack's Mountaintop BBQ.</h1>
+                <p class="hero-deck">Central Texas-style barbecue smoked over post oak in Cloudcroft, NM. Brisket, beef ribs, pork ribs, smoked turkey, sausage, and the Chile the Kid green-chile sandwich. Treat it like a timed event: arrive early, expect a wait, plan for lunch.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified April 2026</p>
             </div>
-            <h1 class="hero-title">
-                <span class="word">Mad </span>
-                <span class="word">Jack's </span>
-                <span class="word">Mountaintop </span>
-                <span class="word">BBQ</span>
-            </h1>
-            <p class="hero-subtitle">Authentic Central Texas barbecue smoked over post oak, served until sold out. A
-                Lockhart native brings real pit BBQ to the Sacramento Mountains.</p>
-            <div class="hero-ctas">
-                <a href="#beers" class="btn-primary">View Our Menu</a>
-                <a href="#visit" class="btn-secondary">Visit Us</a>
-            </div>
+            <aside class="atglance" aria-label="At a glance">
+                <div class="atglance-head">
+                    <h2>At a glance</h2>
+                    <span class="open-now" id="open-now" role="status" aria-live="polite">Open now</span>
+                </div>
+                <dl class="atglance-rows">
+                    <div>
+                        <dt>Address</dt>
+                        <dd><a href="https://www.google.com/maps/dir/?api=1&destination=105%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer">105 James Canyon Hwy, Cloudcroft, NM 88317</a></dd>
+                    </div>
+                    <div>
+                        <dt>Hours</dt>
+                        <dd>Thu–Sun · 11 AM until sold out (commonly by 3 PM)</dd>
+                    </div>
+                    <div>
+                        <dt>Phone</dt>
+                        <dd><a href="tel:+15756827577">(575) 682-7577</a></dd>
+                    </div>
+                    <div>
+                        <dt>Cuisine · price</dt>
+                        <dd>Central Texas BBQ · $$</dd>
+                    </div>
+                </dl>
+                <div class="atglance-cta">
+                    <a href="tel:+15756827577" class="btn-primary">Call</a>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=105%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer" class="btn-outline-black">Directions</a>
+                </div>
+            </aside>
         </div>
     </section>
 
-    <div class="info-bar">
-        <div class="info-bar-inner">
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F4CD;</div>
-                <span>105 James Canyon Hwy, Cloudcroft, NM</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F550;</div>
-                <span>Thu&ndash;Sun: 11AM until sold out</span>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F4DE;</div>
-                <a href="tel:5756827577">(575) 682-7577</a>
-            </div>
-            <div class="info-bar-item">
-                <div class="info-bar-icon">&#x1F525;</div>
-                <span>Smoked Over Post Oak</span>
-            </div>
+    <!-- SIGNALS STRIP -->
+    <div class="signals" aria-label="What to expect">
+        <div class="signals-inner">
+            <span class="signals-label">Signals</span>
+            <span class="signal featured">Central Texas-style BBQ</span>
+            <span class="signal">Smoked over post oak</span>
+            <span class="signal">Brisket (the headliner)</span>
+            <span class="signal">Beef ribs (Dino rib)</span>
+            <span class="signal">Pork ribs · turkey · sausage</span>
+            <span class="signal">Chile the Kid sandwich</span>
+            <span class="signal">House-made sides</span>
+            <span class="signal">Desserts by Gracie Jo</span>
+            <span class="signal warn">Sells out before posted close</span>
+            <span class="signal">Closed Mon–Wed</span>
+            <span class="signal">Press-quoted</span>
+            <span class="signal">Owner James Jackson</span>
         </div>
     </div>
 
+    <!-- STATS STRIP -->
+    <div class="stats-strip" aria-label="Snapshot">
+        <div class="stats-strip-inner">
+            <div class="stat"><span class="stat-num">11 AM – sold out</span><span class="stat-label">Thu–Sun hours</span></div>
+            <div class="stat"><span class="stat-num">105</span><span class="stat-label">James Canyon Hwy</span></div>
+            <div class="stat"><span class="stat-num">644 mi</span><span class="stat-label">Post-oak source run</span></div>
+            <div class="stat"><span class="stat-num">2015</span><span class="stat-label">Memorial Day weekend opening</span></div>
+            <div class="stat"><span class="stat-num">$$</span><span class="stat-label">BBQ-counter price</span></div>
+        </div>
+    </div>
+
+    <!-- STICKY TOC -->
+    <nav class="toc-nav" aria-label="Table of contents">
+        <div class="toc-nav-inner">
+            <a href="#menu" class="toc-pill">Menu</a>
+            <a href="#order" class="toc-pill">What I'd order</a>
+            <a href="#hours" class="toc-pill">Hours</a>
+            <a href="#location" class="toc-pill">Location</a>
+            <a href="#goodfor" class="toc-pill">Good for · skip if</a>
+            <a href="#gallery" class="toc-pill">Gallery</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
+            <a href="#editor" class="toc-pill">Editor's take</a>
+        </div>
+    </nav>
+
     <main id="main-content" role="main">
 
-        <section class="section" id="about" aria-label="About Mad Jack's">
-            <div class="section-container">
-                <div class="about-grid">
-                    <div class="about-text fade-in">
-                        <span class="section-label">About</span>
-                        <h2 class="section-title">From Lockhart to the Mountaintop</h2>
-                        <p>
-                            Owner James Jackson grew up in Lockhart, Texas&mdash;the barbecue capital of Texas&mdash;and
-                            spent 30 years working at his father's car dealership. When Chrysler filed for bankruptcy in
-                            2009 and the family lost their franchise, Jackson fulfilled a childhood dream: he moved to
-                            New Mexico and opened Mad Jack's Mountaintop BBQ the weekend before Memorial Day 2015.
-                        </p>
-                        <p>
-                            Jackson's secret is simplicity: salt, pepper, wood, and fire. He drives 644 miles every six
-                            to eight weeks to source authentic Central Texas post oak&mdash;the mildest smoking wood.
-                            Meats are smoked overnight starting around 8:30 p.m., then rested and sliced fresh to order.
-                            By 3 p.m. most days, they're sold out.
-                        </p>
-                        <div class="about-features">
-                            <span class="about-feature">&#x1F525; Central Texas Post Oak</span>
-                            <span class="about-feature">&#x1F969; Legendary Brisket</span>
-                            <span class="about-feature">&#x1F336;&#xFE0F; Green Chile Specials</span>
-                            <span class="about-feature">&#x1F370; House-Made Desserts</span>
-                            <span class="about-feature">&#x1F468;&#x200D;&#x1F373; Pitmaster James Jackson</span>
-                            <span class="about-feature">&#x2764;&#xFE0F; Family Atmosphere</span>
-                        </div>
-                    </div>
-                    <div class="about-image fade-in">
-                        <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-00027.jpg"
-                            alt="Pitmaster James Jackson standing next to the Mad Jack's BBQ vintage truck in Cloudcroft"
-                            loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>Cloudcroft's line-out-the-door barbecue stop. A Central Texas-style smokehouse where lunch can feel like a small civic event. Come early, expect a wait, and order brisket, ribs, turkey, sausage, cornbread, and whatever hasn't sold out.</p>
+            <span class="thesis-meta">Owner James Jackson · open Thu–Sun · sold out by mid-afternoon · the Chile the Kid sandwich is the local quirk.</span>
+        </div>
 
-        <section class="section menu-section" id="beers" aria-label="Our menu">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Our Menu</span>
-                    <h2 class="section-title section-title-centered">Smoked to Perfection</h2>
-                    <p class="section-description">From our signature brisket to house-made sides, everything is
-                        prepared fresh daily. When it's gone, it's gone!</p>
-                </div>
-                <div class="section-image">
-                    <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-03560.jpg"
-                        alt="Brisket, sausage, turkey, and sides on butcher paper at Mad Jack's BBQ" loading="lazy">
-                </div>
-                <div class="menu-grid">
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F969;</div>
-                        <h3>Smoked Meats</h3>
-                        <p>Smoked overnight over Central Texas post oak, sliced fresh to order.</p>
-                        <ul class="menu-items">
-                            <li>Texas-Style Brisket &#x2B50;</li>
-                            <li>Pulled Pork</li>
-                            <li>Pork Ribs</li>
-                            <li>Beef Ribs</li>
-                            <li>Smoked Turkey</li>
-                            <li>Smoked Chicken</li>
-                            <li>Sausage</li>
-                        </ul>
+        <!-- ================================ MENU ================================ -->
+        <section class="detail-block" id="menu" aria-label="Menu">
+            <div class="detail-block-head">
+                <span class="eyebrow">Six categories · until sold out</span>
+                <h2>The menu</h2>
+                <p>Smoked overnight over Central Texas post oak, sliced fresh to order. The Chile the Kid green-chile beef sandwich is the local hybrid only Mad Jack's serves. Specific cuts run out before posted close.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <div class="cat-head">
+                        <h3>Smoked meats</h3>
+                        <span class="specialty-chip">House specialty</span>
                     </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F958;</div>
-                        <h3>Plates &amp; Combos</h3>
-                        <p>Complete meals served with your choice of two sides and Texas toast.</p>
-                        <ul class="menu-items">
-                            <li>Single Meat Plate</li>
-                            <li>Two Meat Combo</li>
-                            <li>Three Meat Sampler</li>
-                            <li>The Mad Jack Special</li>
-                            <li>Family Pack (feeds 4-6)</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F957;</div>
-                        <h3>Scratch-Made Sides</h3>
-                        <p>Fresh sides made in-house daily.</p>
-                        <ul class="menu-items">
-                            <li>Potato Salad</li>
-                            <li>Coleslaw</li>
-                            <li>Pinto Beans</li>
-                            <li>Loaded Baked Potato</li>
-                            <li>Mac &amp; Cheese</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F336;&#xFE0F;</div>
-                        <h3>New Mexico Specials</h3>
-                        <p>Texas BBQ meets New Mexico green chile.</p>
-                        <ul class="menu-items">
-                            <li>Brisket Green Chile Stew</li>
-                            <li>Chopped Brisket with Mac</li>
-                            <li>Green Chile Cornbread</li>
-                        </ul>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F96A;</div>
+                    <p class="cat-lede">The headline order. Salt, pepper, wood, fire — and Central Texas post oak driven 644 miles to get here.</p>
+                    <ul>
+                        <li>Brisket (the headliner)</li>
+                        <li>Beef ribs — the &ldquo;Dino rib&rdquo;</li>
+                        <li>Pork ribs</li>
+                        <li>Smoked turkey</li>
+                        <li>Sausage</li>
+                        <li>Pulled pork</li>
+                    </ul>
+                    <p class="order-hint">If you eat here once, brisket is the order. New Mexico Magazine called it &ldquo;world-class.&rdquo;</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <div class="cat-head">
                         <h3>Sandwiches</h3>
-                        <p>Piled high with your choice of smoked meat.</p>
-                        <ul class="menu-items">
-                            <li>Chopped Brisket Sandwich</li>
-                            <li>Pulled Pork Sandwich</li>
-                            <li>Smoked Turkey Sandwich</li>
-                        </ul>
+                        <span class="specialty-chip">Local quirk</span>
                     </div>
-                    <div class="menu-card">
-                        <div class="menu-card-icon">&#x1F370;</div>
+                    <p class="cat-lede">Piled on a bun with your choice of smoked meat. The Chile the Kid is the only sandwich on this list you can&rsquo;t order anywhere else in town.</p>
+                    <ul>
+                        <li>Chile the Kid &mdash; green-chile-laced beef sandwich (per New Mexico Magazine)</li>
+                        <li>Chopped brisket sandwich</li>
+                        <li>Pulled pork sandwich</li>
+                        <li>Smoked turkey sandwich</li>
+                    </ul>
+                    <p class="order-hint">Order Chile the Kid as your first sandwich and a chopped brisket as your second.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <div class="cat-head">
+                        <h3>Plates and combos</h3>
+                    </div>
+                    <p class="cat-lede">Complete meals with sides and Texas toast. Combo plates are how a table samples the pit without committing to one cut.</p>
+                    <ul>
+                        <li>Single-meat plate</li>
+                        <li>Two-meat combo</li>
+                        <li>Three-meat sampler</li>
+                        <li>The Mad Jack Special</li>
+                        <li>Family pack (feeds 4–6)</li>
+                    </ul>
+                    <p class="order-hint">Three-meat sampler is the test drive: brisket, beef rib, sausage.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">4</span>
+                    <div class="cat-head">
+                        <h3>Sides</h3>
+                        <span class="specialty-chip">House-made</span>
+                    </div>
+                    <p class="cat-lede">Made in-house daily. Cornbread is on most published reports of what to order here.</p>
+                    <ul>
+                        <li>Cornbread</li>
+                        <li>Mac and cheese</li>
+                        <li>Potato salad</li>
+                        <li>Coleslaw</li>
+                        <li>Pinto beans</li>
+                        <li>Loaded baked potato</li>
+                    </ul>
+                    <p class="order-hint">Cornbread + mac and cheese is the canonical pairing.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">5</span>
+                    <div class="cat-head">
+                        <h3>New Mexico specials</h3>
+                    </div>
+                    <p class="cat-lede">Texas BBQ meets New Mexico green chile — what the Cloudcroft location does that the Texas Hill Country location won&rsquo;t.</p>
+                    <ul>
+                        <li>Brisket green-chile stew</li>
+                        <li>Chopped brisket with mac</li>
+                        <li>Green-chile cornbread</li>
+                    </ul>
+                    <p class="order-hint">The brisket green-chile stew is the cold-weekend order.</p>
+                </article>
+
+                <article class="menu-card-plus">
+                    <span class="card-pin" aria-hidden="true">6</span>
+                    <div class="cat-head">
                         <h3>Desserts by Gracie Jo</h3>
-                        <p>House-made baked goods by Gracie Jo Grey.</p>
-                        <ul class="menu-items">
-                            <li>Fruit Cobblers</li>
-                            <li>Green Chile Cornbread</li>
-                            <li>Seasonal Specials</li>
-                        </ul>
+                    </div>
+                    <p class="cat-lede">House-made baked goods by Gracie Jo Grey. Cobbler is the closer most BBQ pilgrims expect, and Mad Jack&rsquo;s delivers it.</p>
+                    <ul>
+                        <li>Fruit cobblers</li>
+                        <li>Seasonal specials</li>
+                    </ul>
+                    <p class="order-hint">Save room. Cobbler with whatever fruit is in season.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================================ WHAT I'D ORDER ================================ -->
+        <section class="picks-section" id="order" aria-label="What I'd order">
+            <div class="picks-wrap">
+                <h2>What I'd order</h2>
+                <div class="picks-grid">
+                    <div class="pick">
+                        <span class="pick-for">Your first visit</span>
+                        <blockquote>"Brisket, sliced. Dino rib if it's available. Cornbread and mac and cheese. Cobbler. The Mad Jack pilgrimage in one tray."</blockquote>
+                        <p class="pick-name">Brisket + Dino rib + cornbread + cobbler</p>
+                    </div>
+                    <div class="pick">
+                        <span class="pick-for">The local quirk</span>
+                        <blockquote>"The Chile the Kid sandwich. A green-chile-laced beef sandwich named after a New Mexico legend. The thing here you can't order at a Texas BBQ joint in Texas."</blockquote>
+                        <p class="pick-name">Chile the Kid + a side</p>
+                    </div>
+                    <div class="pick">
+                        <span class="pick-for">A table of three or four</span>
+                        <blockquote>"Three-meat sampler — brisket, beef rib, sausage — plus pulled pork on the side. Two cornbreads. Mac and cheese. Pinto beans. Cobbler to share."</blockquote>
+                        <p class="pick-name">Three-meat sampler + sides + cobbler</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section highlights-section" aria-label="Why visit">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Why Visit</span>
-                    <h2 class="section-title section-title-centered">Highlights</h2>
-                    <p class="section-description">Three reasons Mad Jack's is a must-visit in the mountains.</p>
-                </div>
-                <div class="section-image">
-                    <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-03559.jpg"
-                        alt="Massive smoked beef rib held up at Mad Jack's BBQ" loading="lazy">
-                </div>
-                <div class="highlights-grid">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F3C6;</div>
-                        <h3>Legendary Brisket</h3>
-                        <p>A certified BBQ judge called it "THE BEST BRISKET JOINT IN THE COUNTRY." Weekend lines often
-                            reach 2-3 hours.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1FAB5;</div>
-                        <h3>Authentic Post Oak</h3>
-                        <p>James drives 644 miles every 6-8 weeks to source real Central Texas post oak for that
-                            authentic Lockhart flavor.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F3E0;</div>
-                        <h3>Family Atmosphere</h3>
-                        <p>Holiday lights, family photos on the walls, and James's mother's dining table as the communal
-                            centerpiece.</p>
-                    </div>
-                </div>
+        <!-- ================================ HOURS ================================ -->
+        <section class="hours-section" id="hours" aria-label="Hours">
+            <div class="detail-block-head">
+                <span class="eyebrow">Thu–Sun · 11 AM until sold out</span>
+                <h2>Hours</h2>
+                <p>Open Thursday through Sunday from 11 AM until the day's inventory is gone. Closed Monday, Tuesday, and Wednesday. Selling out before posted close is part of the business model — the official site says "until sold out."</p>
+            </div>
+            <div class="hours-table" id="hours-table">
+                <div class="hours-row" data-day="0"><span class="hours-day">Sunday</span><span class="hours-time">11:00 AM – sold out</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row closed" data-day="1"><span class="hours-day">Monday</span><span class="hours-time">Closed</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row closed" data-day="2"><span class="hours-day">Tuesday</span><span class="hours-time">Closed</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row closed" data-day="3"><span class="hours-day">Wednesday</span><span class="hours-time">Closed</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="4"><span class="hours-day">Thursday</span><span class="hours-time">11:00 AM – sold out</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="5"><span class="hours-day">Friday</span><span class="hours-time">11:00 AM – sold out</span><span class="hours-today-badge">Today</span></div>
+                <div class="hours-row" data-day="6"><span class="hours-day">Saturday</span><span class="hours-time">11:00 AM – sold out</span><span class="hours-today-badge">Today</span></div>
+            </div>
+
+            <div class="sellout-note">
+                <strong>Heads-up:</strong> the kitchen runs on inventory, not on a clock. Weekend lines have wrapped around the porch and into the neighborhood; meats often sell out before 3 PM. Arrive at or before the 11 AM opening on weekends, or <a href="tel:+15756827577">call (575) 682-7577</a> to check.
             </div>
         </section>
 
-        <section class="section" id="featured" aria-label="Featured article" style="background: var(--cloud-drift);">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Featured</span>
-                    <h2 class="section-title section-title-centered">From the Cloudcroft Reader</h2>
-                </div>
-                <div class="about-grid">
-                    <div class="about-text fade-in">
-                        <h3 style="margin-bottom: 0.75rem;">Meet Mad Jack&rsquo;s &lsquo;Left-Hand Man&rsquo;</h3>
-                        <p>The Cloudcroft Reader profiles the people behind the pit at Mad Jack&rsquo;s Mountaintop BBQ
-                            &mdash; the crew that keeps the post oak burning and the brisket moving from 8:30 p.m.
-                            smoke-on to sold-out by mid-afternoon.</p>
-                        <a href="https://www.cloudcroftreader.com/p/meet-mad-jacks-left-hand-man" target="_blank"
-                            rel="noopener noreferrer" class="btn-primary"
-                            style="display: inline-block; margin-top: 1.25rem;">Read the Full Story</a>
-                    </div>
-                    <div class="about-image fade-in">
-                        <img src="https://substackcdn.com/image/fetch/$s_!U_N3!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F23c39611-b76c-4c07-bf9a-a9ece99314d9_5712x4284.jpeg"
-                            alt="Mountain Monthly front page featuring Mad Jack's Left-Hand Man story" loading="lazy">
-                    </div>
-                </div>
+        <!-- ================================ LOCATION ================================ -->
+        <section class="location-section" id="location" aria-label="Location">
+            <div class="detail-block-head">
+                <span class="eyebrow">105 James Canyon Hwy</span>
+                <h2>Where you'll find it</h2>
+                <p>Bottom of the James Canyon Highway dining strip — the closest JCH peer to the village core. From Burro Avenue, head a few minutes east; the rest of the JCH BBQ-and-diner cluster is up the road.</p>
             </div>
-        </section>
 
-        <section class="section" id="visit" aria-label="Visit Mad Jack's">
-            <div class="section-container">
-                <div style="text-align: center;">
-                    <span class="section-label">Plan Your Visit</span>
-                    <h2 class="section-title section-title-centered">Visit Mad Jack's</h2>
-                    <p class="section-description">Everything you need to know before visiting. Arrive early&mdash;they
-                        sell out by 3pm most days!</p>
+            <div class="location-grid">
+                <div class="map-figure" aria-hidden="true">
+                    <svg class="map-svg" viewBox="0 0 720 300" role="img" aria-label="Mad Jack's BBQ location on James Canyon Highway">
+                        <rect width="720" height="300" fill="#f2ede3"/>
+
+                        <!-- Burro Ave (context) -->
+                        <rect x="40" y="220" width="640" height="14" fill="#d4c2a0" opacity="0.6" rx="2"/>
+                        <text x="360" y="212" fill="#8a7352" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="3">BURRO AVENUE</text>
+
+                        <!-- James Canyon Hwy branching up from Burro -->
+                        <path d="M220 226 Q 170 140 120 50" stroke="#c4ae8a" stroke-width="14" opacity="0.75" fill="none"/>
+                        <text x="90" y="34" fill="#8a7352" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">JAMES CANYON HWY ↑</text>
+
+                        <!-- You are here arrow -->
+                        <g transform="translate(218, 230)">
+                            <text x="22" y="-4" fill="#000" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="2">YOU ARE HERE</text>
+                            <path d="M0 0 L14 -6 L14 -2 L22 -2 L22 2 L14 2 L14 6 Z" fill="#000"/>
+                        </g>
+
+                        <!-- Mad Jack's pin — 105 JCH, lowest on the corridor (closest to Burro) -->
+                        <g>
+                            <circle cx="212" cy="210" r="16" fill="#000"/>
+                            <circle cx="212" cy="210" r="22" fill="none" stroke="#000" stroke-width="1.5" opacity="0.4"/>
+                            <circle cx="212" cy="210" r="28" fill="none" stroke="#000" stroke-width="1" opacity="0.2"/>
+                            <text x="212" y="214" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">10</text>
+                        </g>
+                        <text x="240" y="205" fill="#000" font-family="IBM Plex Serif, serif" font-size="14" font-weight="700">Mad Jack's · 105</text>
+                        <text x="240" y="220" fill="#555" font-family="IBM Plex Sans, sans-serif" font-size="10">Thu–Sun · until sold out</text>
+
+                        <!-- High Rollin' — 109 JCH, just up from Mad Jack's -->
+                        <g><circle cx="203" cy="195" r="11" fill="#aaa"/><text x="203" y="199" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">13</text></g>
+                        <text x="335" y="199" fill="#888" font-family="IBM Plex Sans, sans-serif" font-size="10">High Rollin' · 109</text>
+
+                        <!-- Brother-N-Law — 209 JCH -->
+                        <g><circle cx="195" cy="170" r="11" fill="#aaa"/><text x="195" y="174" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">11</text></g>
+                        <text x="213" y="174" fill="#888" font-family="IBM Plex Sans, sans-serif" font-size="10">Brother-N-Law · 209</text>
+
+                        <!-- Dusty Boots — 1315 JCH -->
+                        <g><circle cx="170" cy="125" r="11" fill="#aaa"/><text x="170" y="129" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">12</text></g>
+                        <text x="188" y="129" fill="#888" font-family="IBM Plex Sans, sans-serif" font-size="10">Dusty Boots · 1315</text>
+
+                        <!-- Big Daddy's — 1705, highest -->
+                        <g><circle cx="140" cy="75" r="11" fill="#aaa"/><text x="140" y="79" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="9" font-weight="700">14</text></g>
+                        <text x="158" y="79" fill="#888" font-family="IBM Plex Sans, sans-serif" font-size="10">Big Daddy's · 1705</text>
+
+                        <!-- Village label -->
+                        <rect x="470" y="210" width="120" height="30" fill="#fff" opacity="0.6" rx="4"/>
+                        <text x="530" y="229" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">CLOUDCROFT</text>
+                    </svg>
+                    <p class="map-footnote">Pin numbers match the <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html#map">dining-guide map</a>. Schematic only — distances are approximate.</p>
                 </div>
-                <div class="visiting-grid">
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4CD;</div>
-                        <h3>Location</h3>
-                        <p>105 James Canyon Hwy, Cloudcroft, NM 88317. Located right on Highway 82 heading into the
-                            village.</p>
+
+                <div>
+                    <div class="location-info">
+                        <h3>Address &amp; directions</h3>
+                        <p>105 James Canyon Hwy<br>
+                           Cloudcroft, NM 88317</p>
+                        <p>Right on Highway 82 heading into the village. The closest JCH dining stop to the Burro Avenue strip.</p>
+                        <p><a href="https://www.google.com/maps/dir/?api=1&destination=105%20James%20Canyon%20Hwy%2C%20Cloudcroft%2C%20NM%2088317" target="_blank" rel="noopener noreferrer">Get directions &rarr;</a></p>
                     </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F550;</div>
-                        <h3>Hours</h3>
-                        <p>Thursday&ndash;Sunday: 11AM until sold out (usually by 3PM). Monday&ndash;Wednesday: Closed.
-                            Check Facebook/Instagram for updates.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x1F4DE;</div>
+                    <div class="location-info">
                         <h3>Contact</h3>
-                        <p>Phone: <a href="tel:5756827577" style="color: var(--alpine); text-decoration: none;">(575)
-                                682-7577</a>. Website: madjacksbbq.com. Follow on Facebook and Instagram.</p>
-                    </div>
-                    <div class="visiting-card">
-                        <div class="visiting-icon">&#x26A0;&#xFE0F;</div>
-                        <h3>Pro Tips</h3>
-                        <p>Arrive early on weekends&mdash;lines can reach 2-3 hours! Sold out means sold out. The
-                            brisket is the star but don't sleep on the ribs.</p>
+                        <p>Phone: <a href="tel:+15756827577">(575) 682-7577</a></p>
+                        <p>Website: madjacksbbq.com</p>
+                        <p>Follow on Facebook (MAD Jack&rsquo;s Mountaintop Barbecue) and Instagram (linked from the official site).</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section" aria-label="Call to action">
-            <div class="cta-container">
-                <h2>Ready for the Best Brisket in the Country?</h2>
-                <p>Stop by Mad Jack's on your next visit to Cloudcroft. Arrive early&mdash;weekend lines can be 2-3
-                    hours, and they sell out by 3pm most days!</p>
-                <div class="cta-buttons">
-                    <a href="tel:5756827577" class="btn-primary">Call Mad Jack's</a>
-                    <a href="https://www.cloudcroftreader.com/p/meet-mad-jacks-left-hand-man" target="_blank"
-                        rel="noopener noreferrer" class="btn-secondary">Read the Cloudcroft Reader Feature</a>
-                    <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html" class="btn-secondary">Explore More
-                        Dining</a>
+        <!-- ================================ GOOD FOR / SKIP IF ================================ -->
+        <section class="goodfor-section" id="goodfor" aria-label="Good for and skip if">
+            <div class="detail-block-head">
+                <span class="eyebrow">Decision aid</span>
+                <h2>Good for · skip if</h2>
+                <p>Where Mad Jack's fits. The headline rule: this is a planned lunch event, not a casual drop-by.</p>
+            </div>
+
+            <div class="goodfor-grid">
+                <div class="goodfor-card good">
+                    <h3>Good for</h3>
+                    <ul>
+                        <li>Barbecue pilgrims and Texans testing New Mexico smoke</li>
+                        <li>Hungry hikers with a Thursday–Sunday window</li>
+                        <li>A planned lunch you arrive early for</li>
+                        <li>Trying the Chile the Kid sandwich (only here)</li>
+                        <li>A combo plate for a table of three or four</li>
+                        <li>Visitors who don&rsquo;t mind waiting for serious BBQ</li>
+                    </ul>
+                </div>
+
+                <div class="goodfor-card skip">
+                    <h3>Skip if</h3>
+                    <ul>
+                        <li>It&rsquo;s Monday, Tuesday, or Wednesday — the kitchen is closed</li>
+                        <li>You&rsquo;re showing up after 2 PM expecting full menu &mdash; cuts sell out</li>
+                        <li>You want a casual drop-by — Mad Jack&rsquo;s rewards planning</li>
+                        <li>You came for a sit-down dinner — try <a href="eighteen99.html">Eighteen99 at The Lodge</a></li>
+                        <li>You want a 7-day breakfast — go to <a href="big-daddys.html">Big Daddy&rsquo;s</a></li>
+                        <li>You came for shorter waits and the BBQ category &mdash; <a href="brother-n-law-bbq.html">Brother-N-Law</a> is two minutes up JCH</li>
+                    </ul>
                 </div>
             </div>
         </section>
+
+        <!-- ================================ GALLERY ================================ -->
+        <section class="gallery-section" id="gallery" aria-label="Photo gallery">
+            <div class="detail-block-head">
+                <span class="eyebrow">Six photos</span>
+                <h2>Gallery</h2>
+                <p>The truck out front. Pitmaster James Jackson. The pit, the plates, and the Dino rib.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-00026.jpg" alt="Mad Jack's Mountaintop BBQ vintage truck on James Canyon Highway in Cloudcroft" loading="lazy" decoding="async">
+                    <figcaption>The truck on James Canyon Highway.</figcaption>
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-00027.jpg" alt="Pitmaster James Jackson next to the Mad Jack's BBQ vintage truck" loading="lazy" decoding="async">
+                    <figcaption>Pitmaster James Jackson with the truck.</figcaption>
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-03559.jpg" alt="Massive smoked beef rib (Dino rib) held up at Mad Jack's BBQ" loading="lazy" decoding="async">
+                    <figcaption>The Dino rib — the beef rib that anchors the menu.</figcaption>
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-03560.jpg" alt="Brisket, sausage, smoked turkey, and sides on butcher paper at Mad Jack's BBQ" loading="lazy" decoding="async">
+                    <figcaption>Brisket, sausage, turkey, and sides on butcher paper.</figcaption>
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-03557.jpg" alt="Smoke and pit at Mad Jack's BBQ in Cloudcroft" loading="lazy" decoding="async">
+                    <figcaption>The pit at work.</figcaption>
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="eat-photo/photo-eat-mad-jacks/mad-jacks-00025.jpeg" alt="Mad Jack's BBQ exterior signage and entrance in Cloudcroft" loading="lazy" decoding="async">
+                    <figcaption>Out front on JCH.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ================================ PRACTICAL NOTES ================================ -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Practical notes</h2>
+
+            <details class="note">
+                <summary>Hours, sell-outs, and the timing rule</summary>
+                <div class="note-body">
+                    <p>The official hours read Thursday–Sunday, 11 AM until sold out. Closed Monday through Wednesday. Selling out is part of the business model: meats commonly run out before 3 PM, especially on weekends.</p>
+                    <p>Multiple published accounts describe lines wrapping around the porch and into the neighborhood. MySA reported arriving at 11 AM and finding "the line wrapped around the porch and into the neighborhood" with a possible two-hour wait. The reporter returned a different day at 9:47 AM for an 11 AM opening. NM Gastronome described arriving five minutes before opening to find "a queue at least 50 deep."</p>
+                    <p>Treat Mad Jack&rsquo;s like a timed event. Plan it as lunch. Don&rsquo;t build a dinner plan around it.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Press coverage and the "Chile the Kid" sandwich</summary>
+                <div class="note-body">
+                    <p>MySA framed Mad Jack&rsquo;s as a contender for Texas&rsquo; best barbecue joint &mdash; in a tiny New Mexico village. The story called it "THE destination" in Cloudcroft and described people lining up around the block hours before opening.</p>
+                    <p>NM Gastronome quoted New Mexico Magazine writer Cheryl Jamison: "anyone truly serious about barbecue should hightail it down to Cloudcroft," where James Jackson and staff serve "world-class brisket, beef ribs, sausage" and the Chile the Kid sandwich.</p>
+                    <p>The Chile the Kid is the Cloudcroft hybrid: a green-chile-laced beef sandwich described by New Mexico Magazine via NM Gastronome. It&rsquo;s the menu item this location does that the Texas Hill Country location can&rsquo;t copy.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Ownership, sale, and Texas expansion</summary>
+                <div class="note-body">
+                    <p>Owner James Jackson grew up in Lockhart, Texas, and spent 30 years working at his father&rsquo;s car dealership. After Chrysler&rsquo;s 2009 bankruptcy and the loss of the family franchise, Jackson moved to New Mexico and opened Mad Jack&rsquo;s Mountaintop BBQ the weekend before Memorial Day 2015. His method is simple: salt, pepper, wood, fire. He drives 644 miles every six to eight weeks to source Central Texas post oak.</p>
+                    <p>Manager Chris Shaw has been with Mad Jack&rsquo;s for eight years and runs the operation when Jackson is away.</p>
+                    <p>As of March 2026, the Cloudcroft restaurant and building are listed for sale at $2.5 million, and Jackson is building a second location in Texas near Johnson City. Both Jackson and Shaw have told the Cloudcroft Reader the Cloudcroft restaurant is not closing.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Pro tips for visiting</summary>
+                <div class="note-body">
+                    <p>Arrive before opening on weekends. Sold out means sold out. The brisket is the headline order, the Chile the Kid is the local quirk, and cobbler is the closer. If the kitchen is sold out, <a href="brother-n-law-bbq.html">Brother-N-Law</a> at 209 JCH is the casual backup &mdash; closed Thursday and shorter waits.</p>
+                    <p>MySA reported a patio-area food truck branded "Mad Jack&rsquo;s BBQ Shack" offering sandwiches and plates for guests who don&rsquo;t want to wait in the main line. Operating status varies by day &mdash; confirm on the day if a specific cut matters.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>What's still to verify</summary>
+                <div class="note-body">
+                    <p>The current full menu and prices, online-ordering availability, current payment methods, accessibility details, food-truck (BBQ Shack) operating status on a given day, and holiday hours / weather-related closures aren&rsquo;t comprehensively documented in primary sources. Confirm by phone or Facebook before driving up if any of those matter to your plan.</p>
+                </div>
+            </details>
+        </section>
+
+        <!-- ================================ EDITOR'S TAKE ================================ -->
+        <section class="editor-section" id="editor" aria-label="Editor's take">
+            <div class="editor-wrap">
+                <h2>Editor's take</h2>
+                <blockquote>"Mad Jack's is the line-out-the-door barbecue stop in Cloudcroft and one of the country's most-talked-about smokehouses. Come early, order brisket, try the Chile the Kid, save room for cobbler. This is a planned lunch event, not a casual drop-by — and that&rsquo;s exactly the point."</blockquote>
+                <p class="byline">— DiscoverCloudcroft editors</p>
+            </div>
+        </section>
+
+        <!-- ================================ HANDOFF ================================ -->
+        <section class="handoff-section" id="handoff" aria-label="Nearby dining">
+            <div class="handoff-head">
+                <h2>More on James Canyon Highway</h2>
+                <p>Three peer kitchens up the strip — or jump back to the full dining guide for all 19.</p>
+            </div>
+            <div class="handoff-grid">
+                <a class="handoff-card" href="brother-n-law-bbq.html">
+                    <span class="lg-pin">11</span>
+                    <h3>Brother-N-Law BBQ</h3>
+                    <p>Central TX style · closed Thu · 209 JCH · shorter waits</p>
+                </a>
+                <a class="handoff-card" href="dusty-boots-cafe.html">
+                    <span class="lg-pin">12</span>
+                    <h3>Dusty Boots Café</h3>
+                    <p>Working-crew breakfast · select Saturday German nights</p>
+                </a>
+                <a class="handoff-card" href="big-daddys.html">
+                    <span class="lg-pin">14</span>
+                    <h3>Big Daddy's Diner</h3>
+                    <p>Daily 7 AM – 9 PM · Southern + Mexican · all-day breakfast</p>
+                </a>
+                <a class="handoff-card back-to-guide" href="complete-guide-where-to-eat-in-cloudcroft-2026.html">
+                    <span class="lg-pin">↩</span>
+                    <h3>All dining in Cloudcroft</h3>
+                    <p>19 independent spots · 3 corridors · 0 chains</p>
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="site-footer footer-restaurant" role="contentinfo" aria-label="Site footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
-                <p>Your guide to Cloudcroft, New Mexico &mdash; 8,676 feet of mountain magic.</p>
-                <div class="footer-social">
-                    <a href="#todo-facebook" aria-label="Facebook">FB</a>
-                    <a href="#todo-instagram" aria-label="Instagram">IG</a>
-                    <a href="#todo-twitter" aria-label="Twitter">X</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Explore</h3>
-                <a href="../stay/lodging.html">Lodging</a>
-                <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html">Dining</a>
-                <a href="../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Hiking Trails</a>
-                <a href="../do/complete-guide-to-activities.html">Activities</a>
-                <a href="../do/what-events-are-happening-in-cloudcroft-2026.html">Events</a>
-                <a href="../season/seasonal.html">Seasons</a>
-            </div>
-            <div class="footer-col">
-                <h3>Connect</h3>
-                <a href="tel:+15756827577">(575) 682-7577</a>
-                <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a>
-                <a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village of
-                    Cloudcroft</a>
-                <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank"
-                    rel="noopener noreferrer">Cloudcroft, NM 88317</a>
-            </div>
-            <div class="footer-col">
-                <h3>Plan</h3>
-                <a href="../plan.html">Plan Your Trip</a>
-                <a href="https://weather.com/weather/today/l/Cloudcroft+NM" target="_blank"
-                    rel="noopener noreferrer">Weather</a>
-                <a href="../about.html">About Cloudcroft</a>
-                <a href="../contact.html">Contact Us</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved.</p>
-        </div>
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
     </footer>
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
@@ -461,7 +1588,7 @@
     <script src="../js/common.js"></script>
     <script>
         (function () {
-            var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            // ---- Fade-in ----
             var fadeObserver = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
@@ -469,11 +1596,79 @@
                         fadeObserver.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
-
-            document.querySelectorAll('.fade-in, .menu-card, .highlight-card, .visiting-card').forEach(function (el) {
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.fade-in, .menu-card-plus, .pick, .goodfor-card, .handoff-card').forEach(function (el) {
                 fadeObserver.observe(el);
             });
+
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sections = tocPills
+                .map(function (p) { return document.getElementById(p.getAttribute('href').replace('#','')); })
+                .filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
+
+            // ---- Open-now indicator + today row highlight ----
+            // Mad Jack's: Thu–Sun 11:00–15:00 (typical sold-out time), closed Mon–Wed.
+            // Day index: 0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat
+            var SCHEDULE = {
+                0: { open: 11, close: 15 },  // Sun
+                1: null,                      // Mon closed
+                2: null,                      // Tue closed
+                3: null,                      // Wed closed
+                4: { open: 11, close: 15 },  // Thu
+                5: { open: 11, close: 15 },  // Fri
+                6: { open: 11, close: 15 }   // Sat
+            };
+
+            function nextOpenLabel(now) {
+                var d = now.getDay();
+                for (var i = 0; i < 7; i++) {
+                    var probe = (d + i) % 7;
+                    var slot = SCHEDULE[probe];
+                    if (slot) {
+                        if (i === 0 && (now.getHours() < slot.open)) {
+                            return 'Opens at 11 AM today';
+                        }
+                        if (i === 0) continue;
+                        var dayName = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][probe];
+                        return 'Opens ' + dayName + ' at 11 AM';
+                    }
+                }
+                return 'Closed';
+            }
+
+            function updateOpenNow() {
+                var now = new Date();
+                var day = now.getDay();
+                var hour = now.getHours();
+                var pill = document.getElementById('open-now');
+                if (!pill) return;
+                var slot = SCHEDULE[day];
+                var openNow = !!slot && hour >= slot.open && hour < slot.close;
+                if (openNow) {
+                    pill.textContent = 'Open · sells out fast';
+                    pill.classList.remove('is-closed');
+                } else {
+                    pill.textContent = nextOpenLabel(now);
+                    pill.classList.add('is-closed');
+                }
+                document.querySelectorAll('.hours-row').forEach(function (row) {
+                    row.classList.toggle('is-today', row.getAttribute('data-day') === String(day));
+                });
+            }
+
+            updateOpenNow();
+            setInterval(updateOpenNow, 60000);
         })();
     </script>
 </body>
