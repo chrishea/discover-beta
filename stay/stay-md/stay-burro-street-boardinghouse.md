@@ -43,6 +43,8 @@ It looks less ideal if you want:
 
 Burro Street Boardinghouse appears to be a true small-town B&B, not a hotel with breakfast tacked on. The official site leans into rustic charm, a log-cabin setting, antique furniture, original art, a wood-burning stove, and an “old-fashioned breakfast.” That suggests the appeal is more about atmosphere and host-style lodging than modern amenity depth.
 
+Owner Linda Carter, Board member for the Cloudcroft Art Workshops, decorates the space with artworks from instructors and around the world. 
+
 This looks best for:
 - couples
 - quiet weekenders

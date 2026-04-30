@@ -288,7 +288,7 @@ This replaced Rebecca's as the Lodge's main restaurant concept.
 
 ### Eight the Cake
 
-A dessert-oriented stop in downtown Cloudcroft, listed by the chamber but with a very limited current web footprint. Potentially useful for sweets, cakes, or a quick treat if open.
+A dessert-oriented stop in downtown Cloudcroft
 
 **Quick facts**  
 - **Address:** 506A Burro Ave, Cloudcroft, NM 88317  
