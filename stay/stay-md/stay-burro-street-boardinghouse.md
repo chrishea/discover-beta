@@ -26,8 +26,8 @@ It looks less ideal if you want:
 - **Email:** lindalc@tularosa.net
 - **Official website:** https://www.burrostreetboardinghouse.com/
 - **Current operating status:** appears current and taking reservation requests
-- **Booking method:** the official site uses a reservation-request form rather than a standard instant-book engine
-
+- **Booking method:** https://www.burrostreetboardinghouse.com/rooms
+- **Minimum stay:** 2-night minimum stay required
 - **Room count:** three guest rooms
 - **Bed setup:** current Facebook description says king beds and private baths
 - **Breakfast:** yes; the official site says a home-cooked breakfast is included in the tradition of B&Bs
