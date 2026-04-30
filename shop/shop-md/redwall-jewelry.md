@@ -135,5 +135,5 @@ RedWall Jewelry has been in Cloudcroft since the 1970s per the official story pa
 
 ## 13. Rules to Obey
 
-Don’t say unreliable hours. Confirmed: 10-5 daily. In the Burro St. Exchange, add that you can grab coffee at the bakery, shop here, and make your way to the sandwich shop, only yards away. 
+Confirmed hours: 10–5 daily. In the Burro St. Exchange, add that you can grab coffee at the bakery, shop here, and make your way to the sandwich shop, only yards away. 
 

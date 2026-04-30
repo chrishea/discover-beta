@@ -18,7 +18,7 @@ Aspen &amp; Ivy Boutique is one of Cloudcroft's more curated gift-and-boutique s
 - **Relocation:** August 2024 move from Village Plaza to Burro Street (Cloudcroft Reader, Aug 19, 2024).
 - **Merchandise categories (local-coverage confirmed):** bespoke handmade gifts, original art, home goods, beauty products, local art.
 - **Online sales:** not confirmed.
-- **Hours:** not confirmed from a strong primary source — text or call ahead.
+- **Hours:** Thursday–Sunday, 11:00 a.m.–4:00 p.m. (per current listings file).
 - **Payment:** not specifically documented; standard small-shop assumptions apply.
 
 ## 3. Signals (at-a-glance tags)
