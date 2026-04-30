@@ -212,6 +212,10 @@ The site also lists contact information: cloudcroftlumberjackday@gmail.com, 575-
 
 The Cloudcroft Chamber lists 2026 BeerFest for June 13–14, 2026. 
 
+## Haunted Village
+
+Haunted Village is Cloudcroft's family-friendly Halloween-season community event. The current-year date is TBA — confirm with the Chamber of Commerce. Listed as a fall event.
+
 Remove any mention of Aspenfest from the site. 
 
 Add Haunted Village to fall events. 

@@ -223,7 +223,7 @@ Galleries and studios showcase the work of mountain artists inspired by the spec
 
 ### Dark Sky Haven
 
-The clear mountain skies attract astronomers, with Sunspot Solar Observatory nearby.
+The clear mountain skies attract amateur astronomers and stargazers across the Sacramento ridge.
 
 🥾
 
@@ -237,7 +237,7 @@ Miles of hiking and biking trails wind through the Lincoln National Forest.
 
 From summer festivals to winter skiing, every season brings its own magic.
 
-To the east, toward Mayhill, a community of amateur and professional astronomers has grown, drawn by some of the darkest skies in America. The National Solar Observatory at Sunspot, perched on the mountain rim overlooking White Sands, conducts world-class solar research. Cloudcroft has become not just a retreat from the heat, but a gateway to the stars.
+To the east, toward Mayhill, a community of amateur and professional astronomers has grown, drawn by some of the darkest skies in America. Cloudcroft has become not just a retreat from the heat, but a gateway to the stars.
 
 Cloudcroft's history is written in its railroad trestles and vintage buildings, in the stories passed down through generations of mountain families. But its future is being written every day by the visitors who discover, and rediscover, the magic of New Mexico's mountain retreat.
 

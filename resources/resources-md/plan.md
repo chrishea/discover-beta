@@ -99,10 +99,6 @@ While You're Here
 
 ~1 hour [Get Directions ->](https://www.google.com/maps/place/Ruidoso+NM)
 
-### Sunspot Observatory
-
-~20 minutes [Get Directions ->](https://www.google.com/maps/search/Sunspot+Observatory+NM)
-
 ### Alamogordo
 
 ~30 minutes [Get Directions ->](https://www.google.com/maps/place/Alamogordo+NM)

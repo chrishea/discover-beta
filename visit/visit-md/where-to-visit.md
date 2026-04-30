@@ -4,7 +4,7 @@
 
 Cloudcroft has a strong advantage as a base camp. In one direction, you have high forest, railroad history, short scenic stops, and a beginner-friendly ski area. In the other, you can drop into the basin for White Sands, space history, pistachio farms, and a state park with desert scenery. For more active travelers, Ruidoso offers live performance, adventure sports, and post-wildfire recovery opportunities. And a full day can reach Las Cruces or the smaller villages of Mayhill, Tularosa, Timberon, and Sacramento.
 
-In 2026, the main planning issue is not a lack of options. It is access. Sunspot Solar Observatory was permanently closed and demolished following a mercury incident. Stage 1 fire restrictions are in effect through September 30, 2026. Bluff Springs remains under closure orders. Some forest recreation sites reopen seasonally. And even easy outings can feel different depending on weather, fire restrictions, and road conditions on US-82 and US-70.
+In 2026, the main planning issue is not a lack of options. It is access. Stage 1 fire restrictions are in effect through September 30, 2026. Bluff Springs remains under closure orders. Some forest recreation sites reopen seasonally. And even easy outings can feel different depending on weather, fire restrictions, and road conditions on US-82 and US-70.
 
 This guide covers 16 places that are both useful and realistically part of a Cloudcroft trip: the most practical nearby forest and desert destinations, plus slightly more distant options for full-day or extended outings.
 
@@ -189,7 +189,7 @@ Families, short outings, railroad history visitors, light hikers, picnickers, da
 **Pair it with:**
 - Mexican Canyon Trestle Vista (roadside overlook, 5 min away)
 - Osha Trail (nearby, 10 min away for a more substantial hike)
-- Sunspot Scenic Byway (longer scenic drive south from Cloudcroft)
+- NM-6563 (longer scenic drive south from Cloudcroft)
 
 **Main cautions & 2026 status:**
 Seasonal closure (winter). USFS notes the facility "re-opens in spring," but exact dates vary by year. Call Lincoln National Forest or Cloudcroft visitor services (575-682-2932) before going. Stage 1 fire restrictions in effect through September 30, 2026: no open fires or charcoal; cooking stoves allowed. No other closures reported as of April 2026.
@@ -306,7 +306,7 @@ History lovers, rainy-day visitors, families, repeat visitors seeking context, p
 
 **Pair it with:**
 - Burro Avenue/Burro Street Exchange (town shopping and dining, 5–10 min)
-- Sunspot Scenic Byway (longer outing, 15 min south)
+- NM-6563 (longer outing, 15 min south)
 - Osha Trail or Mexican Canyon Trestle (outdoor complement, 5 min)
 
 **Main cautions & 2026 status:**
@@ -424,7 +424,7 @@ Cloudcroft (10–15 min). Burro Street Exchange, The Lodge at Cloudcroft, local 
 Families, beginners, winter visitors, quick half-day recreation, warm-season tubing.
 
 **Pair it with:**
-- Sunspot Scenic Byway (scenic drive, further south)
+- NM-6563 (scenic drive, further south)
 - Osha Trail (off-season outdoor alternative)
 - Cloudcroft town center and shops
 
@@ -437,10 +437,10 @@ This is strongly seasonal. Snow reliability matters. In early spring or low-snow
 
 ---
 
-### 8. Sunspot Scenic Byway
+### 8. NM-6563 Scenic Drive
 
 **What it is:**
-A scenic drive south of Cloudcroft through high forest in the Sacramento Mountains. The byway runs for roughly 15 miles from Cloudcroft toward the Sunspot area (now closed), offering forest views, elevation changes, basin glimpses, and a sense of remoteness.
+A scenic drive south of Cloudcroft through high forest in the Sacramento Mountains. NM-6563 runs for roughly 15 miles from Cloudcroft south, offering forest views, elevation changes, basin glimpses, and a sense of remoteness.
 
 **Location & drive time from Cloudcroft:**
 Begins just south of Cloudcroft and runs south for about 15 miles. Roughly 20–40 minutes of driving, depending on how many stops you make.
@@ -456,10 +456,9 @@ Spring through fall. Early morning light in the forest is beautiful. Late aftern
 - Stop at pullouts for vistas of the basin and mountains
 - Photograph forest and mountain scenery
 - Short walks from pullouts (confirm accessibility)
-- Visit the Sunspot area (NOTE: Sunspot Solar Observatory is permanently closed as of 2026; do NOT plan the drive around visiting the observatory itself)
 
 **What it's actually like:**
-A scenic drive, not a single-destination outing. The road winds through ponderosa and fir forest, with occasional clear views down into the Tularosa Basin. Remote feel once you leave Cloudcroft. Quiet, peaceful, and photogenic. Better on weekdays when traffic is light. The closure of Sunspot Observatory has diminished the pull, but the drive itself remains one of the best scenic roads from Cloudcroft.
+A scenic drive, not a single-destination outing. The road winds through ponderosa and fir forest, with occasional clear views down into the Tularosa Basin. Remote feel once you leave Cloudcroft. Quiet, peaceful, and photogenic. Better on weekdays when traffic is light.
 
 **Practical details:**
 - **Hours:** Always open (public road), unless weather or maintenance closes it.
@@ -473,7 +472,7 @@ A scenic drive, not a single-destination outing. The road winds through ponderos
 - **Cell coverage:** Marginal; forest coverage is sparse.
 
 **Getting there:**
-From Cloudcroft, take US-82 south (toward Alamogordo). Just south of the ski area, turn east onto NM-6563 (Sunspot Road). This is the scenic byway. Follow it for 15 miles as it winds through the forest toward Sunspot. Road conditions are typically good, but winter snow can make it dangerous.
+From Cloudcroft, take US-82 south (toward Alamogordo). Just south of the ski area, turn east onto NM-6563. Follow it for 15 miles as it winds through the forest. Road conditions are typically good, but winter snow can make it dangerous.
 
 **Where to eat & stay nearby:**
 Cloudcroft (at the start of the byway, 10–15 min back up the mountain). No facilities along the byway itself.
@@ -486,11 +485,10 @@ Scenic drivers, photographers, people escaping summer heat, people seeking remot
 - Osha Trail or Mexican Canyon Trestle Vista (same day, morning outing before or after)
 
 **Main cautions & 2026 status:**
-Do NOT plan this outing around visiting Sunspot Solar Observatory. The observatory was permanently closed and will be demolished following a liquid mercury incident on January 5, 2026. The scenic byway road itself remains open (as of April 2026), but signage and access to the observatory site will change as demolition proceeds. Treat this as a scenic drive, not an observatory visit. Winter snow can make the road impassable or dangerous; confirm conditions with Cloudcroft or USFS before going. No current road closures reported as of April 2026.
+Winter snow can make the road impassable or dangerous; confirm conditions with Cloudcroft or USFS before going. No current road closures reported as of April 2026.
 
 **Sources:**
-- https://sunspot.solar/sunspot-scenic-byway/
-- https://kob.com/new-mexico/sunspot-solar-observatory-to-be-permanently-closed-demolished/
+- New Mexico Tourism scenic byway pages
 
 ---
 
@@ -1045,7 +1043,7 @@ Both are very small, quiet villages with minimal tourism infrastructure. Limited
 
 ### Best for outdoor scenery without a hard hike
 - Mexican Canyon Trestle Vista
-- Sunspot Scenic Byway
+- NM-6563
 - White Sands National Park
 - Osha Trail
 
@@ -1069,12 +1067,12 @@ Both are very small, quiet villages with minimal tourism infrastructure. Limited
 ### Best for avoiding crowds
 - Mayhill (hiking, quiet)
 - Timberon (golf, quiet)
-- Sunspot Scenic Byway (off-peak days)
+- NM-6563 (off-peak days)
 - Trestle Recreation Area (weekdays, off-season)
 
 ### Best for dramatic landscape contrast
 - Oliver Lee Memorial State Park (from mountain to desert)
-- Sunspot Scenic Byway (elevation and views)
+- NM-6563 (elevation and views)
 
 ---
 
@@ -1102,7 +1100,6 @@ White Sands Missile Range periodically closes US-70 for missile tests. Call WSMR
 Do not rely on constant service once you leave town or head into the forest corridor. Marginal to no service in Mayhill, Timberon, and remote areas.
 
 ### Closure checks before leaving
-- **Sunspot Solar Observatory:** Permanently closed as of January 5, 2026, after mercury incident. Will be demolished. The scenic byway remains open, but do not plan a visit around the observatory.
 - **Bluff Springs:** Remains under closure orders into 2026.
 - **White Sands and mountain sites:** Both deserve a same-day conditions check before you go.
 - **Road conditions:** Call WSMR (575-678-1178) or check nmroads.com for closure schedules.
@@ -1119,7 +1116,6 @@ Do not rely on constant service once you leave town or head into the forest corr
 - New Mexico Museum of Space History official site (nmspacemuseum.org)
 - McGinn's PistachioLand official site (pistachioland.com)
 - Cloudcroft Chamber directory pages
-- Sunspot Solar Observatory official closure notices (sunspot.solar)
 - New Mexico State Parks (emnrd.nm.gov)
 - City of Alamogordo official pages
 - DiscoverRUIDOSO.com (official tourism site)
@@ -1144,7 +1140,7 @@ Do not rely on constant service once you leave town or head into the forest corr
 - **McGinn's PistachioLand:** Tour reservation requirement (online only, no walk-ins) confirmed. Hours and tour pricing verified via official site.
 - **Oliver Lee Memorial State Park:** Entrance construction through June 2026 confirmed (April 2026). Group area and dump station closure confirmed. Dog Canyon Trail details confirmed. Camping and day-use fees confirmed via state parks.
 - **New Mexico Museum of Space History:** Hours confirmed; planetarium show schedule should be verified online before visiting (not all times run daily).
-- **Sunspot Scenic Byway / Observatory:** Permanent closure of Sunspot Solar Observatory confirmed (mercury incident, January 5, 2026). Scenic byway road status as of April 2026 confirmed open. NSF demolition plans underway; road may change as work proceeds.
+- **NM-6563:** Scenic byway road status as of April 2026 confirmed open.
 - **Lincoln National Forest Stage 1 Fire Restrictions:** Confirmed effective March 27, 2026, through September 30, 2026. Restrictions apply to all three ranger districts.
 - **Ruidoso:** South Fork Fire (June 2024) impact confirmed. Village open and operational as of April 2026. Live racing at Ruidoso Downs moved to Albuquerque for 2026 season; simulcast and casino continue. Spencer Theater and other attractions operational.
 - **Las Cruces distance & drive time:** Confirmed 87 miles, ~1 hr 35 min via US-82 and US-70.
@@ -1164,7 +1160,7 @@ Do not rely on constant service once you leave town or head into the forest corr
 | Sacramento Mountains Museum | Official site, Yelp (March 2026) | April 2026 | Exact winter hours; admission fee (call to confirm) |
 | Burro Avenue Exchange | Official site, Tripadvisor | April 2026 | Individual shop hours vary; public restroom status unclear |
 | Ski Cloudcroft | Official site | April 2026 | Exact tubing session times 2026; summer recreation schedule |
-| Sunspot Scenic Byway | NSF/observatory official, NM Tourism | April 2026 | Road access status during demolition (confirm before going) |
+| NM-6563 | NM Tourism | April 2026 | Road access (confirm winter conditions) |
 | New Mexico Museum of Space History | Official site, Yelp (March 2026) | April 2026 | Planetarium show schedule (varies) |
 | Alameda Park Zoo | City of Alamogordo official, Yelp (March 2026) | April 2026 | Exact current admission fees; pet policy |
 | McGinn's PistachioLand | Official site | April 2026 | Winery hours (confirm separately) |
@@ -1178,7 +1174,6 @@ Do not rely on constant service once you leave town or head into the forest corr
 
 ## 9. Notes for future updates
 
-- Sunspot Solar Observatory demolition timeline: Check NSF website for progress and any road-access changes (sunspot.solar).
 - Lincoln National Forest fire restrictions: Check fs.usda.gov/r03/lincoln for updates to Stage 1 or higher restrictions (updated seasonally).
 - White Sands Missile Range closures: WSMR.army.mil for ongoing closure schedules; fire-closure information.
 - Ruidoso wildfire recovery: DiscoverRUIDOSO.com for community updates and business reopening status.
@@ -1716,7 +1711,7 @@ Both are very small, quiet villages with minimal tourism infrastructure. Limited
 
 ### Best for outdoor scenery without a hard hike
 - Mexican Canyon Trestle Vista
-- Sunspot Scenic Byway
+- NM-6563
 - White Sands National Park
 - Osha Trail
 
@@ -1740,12 +1735,12 @@ Both are very small, quiet villages with minimal tourism infrastructure. Limited
 ### Best for avoiding crowds
 - Mayhill (hiking, quiet)
 - Timberon (golf, quiet)
-- Sunspot Scenic Byway (off-peak days)
+- NM-6563 (off-peak days)
 - Trestle Recreation Area (weekdays, off-season)
 
 ### Best for dramatic landscape contrast
 - Oliver Lee Memorial State Park (from mountain to desert)
-- Sunspot Scenic Byway (elevation and views)
+- NM-6563 (elevation and views)
 
 ---
 
@@ -1773,7 +1768,6 @@ White Sands Missile Range periodically closes US-70 for missile tests. Call WSMR
 Do not rely on constant service once you leave town or head into the forest corridor. Marginal to no service in Mayhill, Timberon, and remote areas.
 
 ### Closure checks before leaving
-- **Sunspot Solar Observatory:** Permanently closed as of January 5, 2026, after mercury incident. Will be demolished. The scenic byway remains open, but do not plan a visit around the observatory.
 - **Bluff Springs:** Remains under closure orders into 2026.
 - **White Sands and mountain sites:** Both deserve a same-day conditions check before you go.
 - **Road conditions:** Call WSMR (575-678-1178) or check nmroads.com for closure schedules.
@@ -1790,7 +1784,6 @@ Do not rely on constant service once you leave town or head into the forest corr
 - New Mexico Museum of Space History official site (nmspacemuseum.org)
 - McGinn's PistachioLand official site (pistachioland.com)
 - Cloudcroft Chamber directory pages
-- Sunspot Solar Observatory official closure notices (sunspot.solar)
 - New Mexico State Parks (emnrd.nm.gov)
 - City of Alamogordo official pages
 - DiscoverRUIDOSO.com (official tourism site)
@@ -1815,7 +1808,7 @@ Do not rely on constant service once you leave town or head into the forest corr
 - **McGinn's PistachioLand:** Tour reservation requirement (online only, no walk-ins) confirmed. Hours and tour pricing verified via official site.
 - **Oliver Lee Memorial State Park:** Entrance construction through June 2026 confirmed (April 2026). Group area and dump station closure confirmed. Dog Canyon Trail details confirmed. Camping and day-use fees confirmed via state parks.
 - **New Mexico Museum of Space History:** Hours confirmed; planetarium show schedule should be verified online before visiting (not all times run daily).
-- **Sunspot Scenic Byway / Observatory:** Permanent closure of Sunspot Solar Observatory confirmed (mercury incident, January 5, 2026). Scenic byway road status as of April 2026 confirmed open. NSF demolition plans underway; road may change as work proceeds.
+- **NM-6563:** Scenic byway road status as of April 2026 confirmed open.
 - **Lincoln National Forest Stage 1 Fire Restrictions:** Confirmed effective March 27, 2026, through September 30, 2026. Restrictions apply to all three ranger districts.
 - **Ruidoso:** South Fork Fire (June 2024) impact confirmed. Village open and operational as of April 2026. Live racing at Ruidoso Downs moved to Albuquerque for 2026 season; simulcast and casino continue. Spencer Theater and other attractions operational.
 - **Las Cruces distance & drive time:** Confirmed 87 miles, ~1 hr 35 min via US-82 and US-70.
@@ -1835,7 +1828,7 @@ Do not rely on constant service once you leave town or head into the forest corr
 | Sacramento Mountains Museum | Official site, Yelp (March 2026) | April 2026 | Exact winter hours; admission fee (call to confirm) |
 | Burro Avenue Exchange | Official site, Tripadvisor | April 2026 | Individual shop hours vary; public restroom status unclear |
 | Ski Cloudcroft | Official site | April 2026 | Exact tubing session times 2026; summer recreation schedule |
-| Sunspot Scenic Byway | NSF/observatory official, NM Tourism | April 2026 | Road access status during demolition (confirm before going) |
+| NM-6563 | NM Tourism | April 2026 | Road access (confirm winter conditions) |
 | New Mexico Museum of Space History | Official site, Yelp (March 2026) | April 2026 | Planetarium show schedule (varies) |
 | Alameda Park Zoo | City of Alamogordo official, Yelp (March 2026) | April 2026 | Exact current admission fees; pet policy |
 | McGinn's PistachioLand | Official site | April 2026 | Winery hours (confirm separately) |
@@ -1849,7 +1842,6 @@ Do not rely on constant service once you leave town or head into the forest corr
 
 ## 9. Notes for future updates
 
-- Sunspot Solar Observatory demolition timeline: Check NSF website for progress and any road-access changes (sunspot.solar).
 - Lincoln National Forest fire restrictions: Check fs.usda.gov/r03/lincoln for updates to Stage 1 or higher restrictions (updated seasonally).
 - White Sands Missile Range closures: WSMR.army.mil for ongoing closure schedules; fire-closure information.
 - Ruidoso wildfire recovery: DiscoverRUIDOSO.com for community updates and business reopening status.

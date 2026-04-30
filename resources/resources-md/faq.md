@@ -45,7 +45,7 @@ Cell coverage in Cloudcroft varies by carrier. Verizon and AT&T generally have t
 
 Is there public transportation to Cloudcroft? ▼
 
-There is no public transportation to or within Cloudcroft. A personal vehicle is essential for getting here and getting around. The village is walkable once you arrive, but a car is needed for trailheads, Sunspot Observatory, and nearby attractions.
+There is no public transportation to or within Cloudcroft. A personal vehicle is essential for getting here and getting around. The village is walkable once you arrive, but a car is needed for trailheads and nearby attractions.
 
 ⛅
 
@@ -160,7 +160,6 @@ Absolutely! Family-friendly activities include:
   * Ice skating at the outdoor rink (winter)
   * Snow tubing (winter)
   * Mini golf and disc golf
-  * Sunspot Solar Observatory (free visitor center)
   * Seasonal events like Harvest Fest and Christmas in the Clouds
 
 
@@ -170,10 +169,6 @@ Many cabins have games, fire pits, and outdoor space perfect for families.
 How far is White Sands National Park? ▼
 
 White Sands National Park is about 45 minutes from Cloudcroft (approximately 35 miles). It makes an excellent day trip! The park features the world's largest gypsum dune field and is especially beautiful at sunrise and sunset. Many visitors combine a mountain stay in Cloudcroft with a day exploring White Sands.
-
-What is Sunspot Observatory? ▼
-
-The National Solar Observatory at Sacramento Peak (Sunspot) is a world-class solar research facility located about 18 miles south of Cloudcroft via the Sunspot Scenic Byway. The free visitor center offers exhibits about solar science, and the scenic drive itself is beautiful -- especially during fall foliage. Visit our [Sunspot page](explore/sunspot-observatory.html) for more information.
 
 Are there art galleries and shopping? ▼
 

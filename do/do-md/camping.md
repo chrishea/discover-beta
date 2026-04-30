@@ -61,7 +61,7 @@ For general Cloudcroft visitor information:
 | Sleepy Grass Campground | Developed campground | USFS | About 1.4 miles south of village via FR 24B | not stated on page | No | $30–$47 on site page | Yes, up to 30 ft | Families, tents, easy hikes | Seasonal; winter closure |
 | James Canyon Campground | Small developed campground | USFS | About 16.5 miles east toward Mayhill | 6,800 ft | No | Free | Very limited; 16 ft max | Free camping, longer season | Small, basic, no potable water |
 | Lower Karr Canyon Campground | Primitive/undeveloped campground | USFS | From High Rolls, about 5 miles on FR 63 | not stated on page | No | Free | No | Tent-only, rougher, quieter | Gravel/dirt road; rough access; no potable water |
-| Upper Karr Recreation Area | Primitive recreation/camping area | USFS | About 6 miles south on Sunspot Scenic Byway area | not stated on page | No | Free | Very limited; 16 ft max | Primitive use, small rigs | Sparse amenities; not a conventional developed campground |
+| Upper Karr Recreation Area | Primitive recreation/camping area | USFS | About 6 miles south on NM-6563 | not stated on page | No | Free | Very limited; 16 ft max | Primitive use, small rigs | Sparse amenities; not a conventional developed campground |
 | Baca Campground | Basic primitive campground | USFS | Outside core Cloudcroft area | not stated on page | No | Free | Small trailers only | Hunters, simple no-fee camping | Water often unavailable |
 | Lower Fir Group Campground | Group campground | USFS | Less than 1 mile east on NM 244 | not stated on page | Yes | $108–$135 | Yes, up to 30 ft | Organized groups | Reservation-only |
 | Upper Fir Group Campground | Group campground | USFS | Less than 1 mile east on NM 244 | not stated on page | Yes | brochure lists $108–$248 | Yes, up to 30 ft | Large groups | Reservation-only |
@@ -475,7 +475,7 @@ For general Cloudcroft visitor information:
 ---
 
 ### Upper Karr Recreation Area
-**What it is:** A primitive recreation/camping area on the Sunspot Scenic Byway side.
+**What it is:** A primitive recreation/camping area on the NM-6563 corridor south of Cloudcroft.
 
 **Setting and feel:** More like a simple primitive area than a standard developed campground.
 

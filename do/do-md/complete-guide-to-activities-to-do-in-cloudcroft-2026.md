@@ -15,7 +15,7 @@ Cloudcroft works best when you treat it as a mountain base rather than a one-att
 
 The easiest wins are the Mexican Canyon Trestle area, Burro Avenue, the Sacramento Mountains Museum, Osha Trail, and low-friction in-town recreation like pickleball or disc golf. The strongest active options are hiking, biking, trail running, disc golf, camping, and smaller-scale fishing. Winter adds Ski Cloudcroft and, if current operations hold, the ice-rink experience.
 
-The biggest 2026 planning issue is access, not lack of things to do. Some campgrounds are seasonal. Some forest areas require same-day condition checks. Sunspot public access should not be assumed. The best Cloudcroft trip plans match your group, the weather, and how much effort you actually want.
+The biggest 2026 planning issue is access, not lack of things to do. Some campgrounds are seasonal. Some forest areas require same-day condition checks. The best Cloudcroft trip plans match your group, the weather, and how much effort you actually want.
 
 ### Four activity buckets (overview cards)
 
@@ -24,7 +24,7 @@ The biggest 2026 planning issue is access, not lack of things to do. Some campgr
 | **Easy Wins** | Mexican Canyon Trestle, Burro Avenue, Sacramento Mountains Museum, Osha Trail, Zenith Park — high payoff, low effort |
 | **Active Outdoors** | Hiking, mountain biking, trail running, disc golf, camping, and fishing in the Lincoln National Forest |
 | **Seasonal Recreation** | Ski Cloudcroft and the ice rink in winter; race weekends and festival events in summer and fall |
-| **Nearby Outings** | White Sands, the Space History Museum, Oliver Lee State Park, and the Sunspot Scenic Byway as half-day or full-day trips |
+| **Nearby Outings** | White Sands, the Space History Museum, Oliver Lee State Park, and the NM-6563 scenic drive as half-day or full-day trips |
 
 > **Ask yourself four questions first:** Short stop or full day? Kids, older relatives, or serious outdoor people? Low-effort scenic or active? Weather-proof or condition-dependent? Your answers shape the entire trip.
 
@@ -141,7 +141,7 @@ From mountain biking in the Lincoln National Forest to low-friction disc golf at
 - **Type:** Half-Day Outings (30–60 min drive to basin)
 - White Sands National Park, New Mexico Museum of Space History, Oliver Lee Memorial State Park, Alameda Park Zoo, and McGinn's PistachioLand — all strong nearby half-day or full-day expansions of a Cloudcroft trip.
 
-> **Sunspot Solar Observatory is closed indefinitely.** Treat the Sunspot Scenic Byway as the scenic experience. Do not build your plan around observatory access.
+> Treat NM-6563 as the scenic experience — a paved 15-mile drive south through pine forest with basin views.
 
 ---
 
@@ -157,7 +157,7 @@ From mountain biking in the Lincoln National Forest to low-friction disc golf at
 | **Best Winter Activity** | Ski Cloudcroft | The winter anchor, with the ice rink as a secondary option if still operating |
 | **Best Free Activity** | Osha Trail, Trestle Vista, pickleball, disc golf | All free and all high-value |
 | **Best for Repeat Visitors** | Biking, trail running, camping | The activities that reward deeper exploration past the easy wins |
-| **Best Scenic Drive** | Sunspot Scenic Byway | Treat the byway itself as the activity; public observatory access should not be assumed |
+| **Best Scenic Drive** | NM-6563 south | Paved 15-mile route through forest with Tularosa Basin views |
 
 ---
 
@@ -206,7 +206,7 @@ Cloudcroft is not a one-attraction town. It is a mountain base with four strong 
 
 The easy wins deliver quickly: the Mexican Canyon Trestle, Burro Avenue, the Sacramento Mountains Museum, Osha Trail, and low-friction recreation at Zenith Park. The deeper rewards — biking, trail running, camping, and the race calendar — are waiting for repeat visitors and anyone who wants more than a scenic stroll.
 
-The biggest planning issue is access, not lack of things to do. Campgrounds are seasonal, some forest areas need same-day checks, and Sunspot public access should not be assumed. Verify closures, fire restrictions, and event timing before you go — then enjoy the fact that Cloudcroft has more to offer than most visitors realize.
+The biggest planning issue is access, not lack of things to do. Campgrounds are seasonal and some forest areas need same-day checks. Verify closures, fire restrictions, and event timing before you go — then enjoy the fact that Cloudcroft has more to offer than most visitors realize.
 
 ---
 
@@ -278,6 +278,6 @@ Main official and supporting sources used:
 - **Pickleball court condition:** 2026 local reporting supports repairs scheduled for early April; current condition should be checked directly.
 - **Ice rink operations:** current public identity is clear, but the long-term operating model after the reported end of the natural-rink era should be checked directly.
 - **Some campground details:** booking and opening windows can change; use official pages close to your trip.
-- **Sunspot area:** treat the scenic drive as the activity. Do not assume public observatory access.
+- **NM-6563 corridor:** treat the scenic drive itself as the activity.
 - **Fishing options beyond the easiest pond-style stop:** worthwhile, but strongly dependent on current conditions, rules, and what kind of fishing experience you actually want.
 - **High Altitude bike rentals:** confirmed not available this season per their site; verify if this changes.

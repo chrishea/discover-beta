@@ -2,15 +2,7 @@
 
 ## Highest-impact corrections
 
-### 1. Sunspot claim is contradicted by current official source
-The draft says:
-- “Sunspot Solar Observatory was permanently closed and demolished following a mercury incident.”
-- “Do NOT plan this outing around visiting Sunspot Solar Observatory.”
-
-Current official Sunspot visitor information says the **Sunspot Astronomy & Visitors Center is open daily 9 AM to 5 PM during peak season**, and the **Dunn Solar Telescope observation room is open on select days**. That directly contradicts the draft’s closure/demolition claim. Treat the closure claim as **contradicted** unless you can document a newer official closure notice than the current public Sunspot site.  
-Sources: sunspot.solar visit page; Lincoln National Forest scenic drives page.
-
-### 2. White Sands holiday closure is wrong
+### 1. White Sands holiday closure is wrong
 The draft says White Sands is open year-round except **December 25**.
 The current NPS hours page says White Sands is open daily year-round except **Thanksgiving and Christmas Day**.  
 Source: NPS hours page.
@@ -43,11 +35,7 @@ Current Forest Service trail guide says:
 - elevation around **8,600 feet**
 Source: Forest Service Osha Trail guide PDF.
 
-### 5. Sunspot Scenic Byway framing needs revision
-The draft presents the byway as still scenic but built around a closed observatory. Current Forest Service scenic-drives page still describes the **Sunspot Scenic Byway (NM 6563)** as a **15-mile paved route from Cloudcroft to the Sunspot Solar Observatory**. That does not prove all facilities are fully operating every day, but it does undermine the draft’s permanent-closure framing.  
-Sources: Forest Service scenic drives page; Sunspot visit page.
-
-### 6. New Mexico Museum of Space History details should be tightened
+### 5. New Mexico Museum of Space History details should be tightened
 Current official museum pages support:
 - **3198 State Route 2001, Alamogordo**
 - **Monday and Wednesday–Saturday 10 AM–5 PM**
@@ -126,7 +114,7 @@ Sources: NPS nature, hours, fees, pets, and regulations pages.
 ## Recommended rewrite changes
 
 ### Executive summary
-Replace the Sunspot closure sentence. Replace the fire-restrictions sentence unless you verify a current 2026 order. Keep the access warning, but make it specific and documented:
+Replace the fire-restrictions sentence unless you verify a current 2026 order. Keep the access warning, but make it specific and documented:
 - Bluff Springs recreation-site parking, toilets, and T112 bridge remain under closure order through Dec. 31, 2026
 - Trestle Recreation Area is seasonally closed for winter operations, but trails to the overlook remain accessible from Village Spur Trail parking
 - White Sands visitors should check missile-range closures and current park hours before leaving Cloudcroft
@@ -151,12 +139,6 @@ Correct:
 - say there are **no water sources or restrooms**
 - keep the altitude caution
 
-### Sunspot Scenic Byway
-Rewrite substantially:
-- the byway remains a valid scenic drive
-- do **not** state that the observatory has been demolished
-- say visitor access should be checked directly with Sunspot because telescope/public-access schedules vary
-
 ### Museum of Space History
 Tighten to current official hours and location. Do not freeze an adult admission number unless you verify the live pricing page directly.
 
@@ -171,7 +153,6 @@ Correct tubing operations:
 
 - White Sands National Park official pages: hours, fees, pets, regulations, nature
 - Lincoln National Forest official pages: Mexican Canyon Trestle Vista, Trestle Recreation Area, scenic drives, Osha Trail guide, Rim Trail, Bluff Springs closure releases
-- Sunspot official visit page
 - New Mexico Museum of Space History official site
 - Ski Cloudcroft official site
 

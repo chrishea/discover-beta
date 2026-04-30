@@ -71,7 +71,7 @@ That means this is no longer a simple drive-to-the-parking-lot destination in th
 ## 8. Rim Trail — short sections (T105)
 
 **Why it belongs here:**  
-The **Rim Trail** is still one of the defining hikes of the Sacramento Mountains, but for many readers it works best as a **short section hike**, not a through-hike. The current Forest Service page lists it at **31.2 miles**, beginning at the southern end of Cloudcroft along **NM 130** and ending at **Sacramento River Road south of Sunspot**.
+The **Rim Trail** is still one of the defining hikes of the Sacramento Mountains, but for many readers it works best as a **short section hike**, not a through-hike. The current Forest Service page lists it at **31.2 miles**, beginning at the southern end of Cloudcroft along **NM 130** and ending at **Sacramento River Road**.
 
 **What to know before you go:**  
 The best practical advice is simple: start from the north end near Cloudcroft and do an out-and-back. The Forest Service says there are **multiple trailheads**, which supports that approach. The first **0.73 miles** to Slide Campground is **non-motorized**. South of Slide Campground, the trail is open to **motorcycles**.
