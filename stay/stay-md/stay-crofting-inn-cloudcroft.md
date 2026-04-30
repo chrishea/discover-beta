@@ -118,7 +118,7 @@ Just off Cloudcroft's main street, walking distance from shops, restaurants, and
 - Lincoln National Forest trailheads — immediate vicinity
 - Grindstone Lake — nearby
 - Sunspot Solar Observatory — ~20 miles
-- White Sands National Park — ~60 miles west
+- White Sands National Park — 35 miles west
 
 Elevation is 8,676 feet. No air conditioning in rooms — not needed at altitude.
 

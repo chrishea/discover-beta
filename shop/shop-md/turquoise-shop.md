@@ -106,7 +106,7 @@ Case-based jewelry display, family-run operation, 50 years of inventory rhythm. 
 
 ## 9. Background and history
 
-The Turquoise Shop was founded in 1975 by Jeannie Read Elkins, a Cloudcroft native. Per the shop's own story page, her grandfather conducted the train depot in the village and her father owned and operated an auto-parts warehouse; she met Sam Elkins, her husband and a Grants, NM cowboy, at New Mexico State University. The shop has been on Burro Avenue ever since — making it one of the longest-tenured retail businesses in Cloudcroft, alongside RedWall (also 1970s), Bear Track (1974), and King's Treasure Thrift Store (38+ years).
+The Turquoise Shop was founded in 1975 by Jeannie Read Elkins, a Cloudcroft native. Per the shop's own story page, her grandfather conducted the train depot in the village and her father owned and operated an auto-parts warehouse; she met Sam Elkins, her husband and a Grants, NM cowboy, at New Mexico State University. The shop has been on Burro Avenue ever since — making it one of the longest-tenured retail businesses in Cloudcroft, alongside RedWall (also 1970s) and King's Treasure Thrift Store (38+ years).
 
 The shop has stayed in the family across generations; the story page is published by a grandchild of the founder. A current-day owner / operator named Shawna shows up in recent third-party reviews as the on-the-floor face of the business, but the family-line continuity from Jeannie Read Elkins is the thread the shop publishes itself.
 

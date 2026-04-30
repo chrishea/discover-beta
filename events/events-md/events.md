@@ -211,3 +211,10 @@ The site also lists contact information: cloudcroftlumberjackday@gmail.com, 575-
 ## BeerFest
 
 The Cloudcroft Chamber lists 2026 BeerFest for June 13–14, 2026. 
+
+Remove any mention of Aspenfest from the site. 
+
+Add Haunted Village to fall events. 
+Remove high altitude bike classic from summer listing. 
+
+Remove “June” from any High Altitude Classic mention on the entire site. 

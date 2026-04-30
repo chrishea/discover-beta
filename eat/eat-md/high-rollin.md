@@ -51,7 +51,7 @@ Suggested Website Listing Copy
 
 High Rollin’ Coffee is a small Cloudcroft café serving coffee, espresso drinks, smoothies, baked goods, açaí bowls, and lighter vegetarian-friendly food. It is a good stop for a daytime coffee break, breakfast bite, or relaxed lunch near James Canyon Highway. Check current hours before going, since the menu and schedule may change.
 
-rules to obey:
+** rules to obey:
 Add Taj Majal Chai to drinks 
 
 Add Salads to bowls and bruch 
@@ -59,3 +59,8 @@ Add Salads to bowls and bruch
 Add GF options available 
 
 Mention that it’s nextdoor to a yoga and massage studio–make a saturday of your visit to the Village Plaza. 
+
+DON’T SAY high rollin’ coffee is a bar + bowling. Don’t say Bowling, burgers, and craft cocktails under one roof. A great rainy-day option or after-dinner stop. Appetizers are better than you'd expect.
+
+
+**DO say** : fresh, organic, non-GMO limited menu of surprising flavors and hand- and heart-warming drinks. 

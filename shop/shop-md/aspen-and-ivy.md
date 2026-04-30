@@ -99,7 +99,6 @@ Aspen &amp; Ivy sells the calm side of Burro Avenue. The courtyard retail cluste
 
 - You want clothing and accessories as the main event — go to Coco Blu.
 - You want rummage-and-discover vintage — go to Poke The Bear.
-- You want long-established antiques and quilts — Mountain Comforts up the street.
 - You need guaranteed hours — this is a small owner-run shop; hours vary.
 
 ## 9. Background and history

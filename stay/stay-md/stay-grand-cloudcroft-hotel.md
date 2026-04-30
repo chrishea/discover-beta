@@ -161,7 +161,7 @@ The Mountain Monthly April 2026 issue confirmed the public swim program and curr
 ## Nearby
 
 - Downtown Cloudcroft and Burro Avenue shops — short drive
-- White Sands National Park — approximately 15 miles
+- White Sands National Park — approximately 35 miles
 - Lincoln National Forest trails — immediate area
 - Sacramento Mountains Museum — nearby on Highway 82
 - Ski Cloudcroft — nearby on Highway 82

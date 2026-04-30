@@ -144,8 +144,6 @@ The browsing feel is likely more purposeful than whimsical. Even so, it broadens
 
 ### Gifts, souvenirs, and general browsing
 
-- **Bear Track** (308 Burro Ave, (575) 682-3046, Daily 10am–5pm) — Established in 1974, Bear Track offers unique local crafts, souvenirs, and handmade treasures. Also an authorized Brighton jewelry retailer.
-- **Into The Woods** (505 Burro Ave #102) — A funky and eclectic place where everyone is welcome. A mesh of old and new: vintage treasures, upcycled items, and original finds.
 - **TreeRific Toys and Candy Shoppe** (Burro Street Exchange) — Toys, games, and an enticing selection of candies and sweets on the Burro Street Exchange boardwalk. A delightful stop for kids of all ages.
 - **Cloudcroft Souvenirs** — Appears current in the Chamber directory. Souvenirs, original oil paintings, custom wooden signs, frames, and décor.
 - **Tree Top Teez** — Appears current. Fits the classic T-shirt-and-casual-gift lane.
@@ -160,7 +158,6 @@ The browsing feel is likely more purposeful than whimsical. Even so, it broadens
 - **RedWall Jewelry** — Featured above; focused jewelry stop with a local design sensibility.
 - **Burro Street Trading Post** — Featured above; the central Southwestern anchor on Burro Avenue.
 - **Off the Beaten Path** — Featured above; belongs here too for shoppers leaning toward art and handmade work.
-- **Cloudcroft Gallery** (502A Burro Ave, (575) 682-3659) — An artist-owned gallery featuring beautiful original paintings with a nice variety and selection at reasonable prices. The owner is known for being helpful, knowledgeable, and friendly.
 - **Osha Trail Depot** — Appears current. Described by the Chamber as a handcrafted-treasures shop featuring work by local artists, including jewelry, photography, fine art, cutting boards, tumblers, walking sticks, and custom hat racks.
 
 ### Home décor, mountain gifts, and distinctive finds
@@ -168,12 +165,10 @@ The browsing feel is likely more purposeful than whimsical. Even so, it broadens
 - **The Elk Shed** — A mountain-home and gift shop with a clear mountain-town identity.
 - **Osha Trail Depot** — Handcrafted goods by local artists.
 - **CoCo Blu** — Also belongs here for gift-oriented browsing with a boutique edge.
-- **Mountain Comforts** (306 Burro Ave, (575) 682-2040) — A comfort for locals and visitors alike for over 16 years, featuring hand-made dolls, crafts, warm quilts, and spectacular antiques. A good place for locally handcrafted walking canes.
 
 ### Thrift and antiques
 
 - **King's Treasure Thrift Store** (202 Burro Ave, (575) 682-5524) — A well-organized thrift store offering clothing, home décor, jewelry, furniture, and kitchenware. Proceeds support Pregnancy Resources Plus in Alamogordo. In business for over 38 years.
-- **Mountain Comforts** (see above) — Also fits this category for its antique selection.
 - **Poke The Bear** — Also fits here for vintage and antique rummage-and-discover inventory.
 
 ### Specialty food and drink shopping
@@ -278,12 +273,8 @@ That is the fair read. Cloudcroft is not a shopping destination in the usual sen
 - Aspen & Ivy Chamber listing
 - Cloudcroft Souvenirs Chamber listing
 - Tree Top Teez Chamber listing
-- Bear Track Chamber listing
-- Cloudcroft Gallery Chamber listing
-- Mountain Comforts Chamber listing
 - Burro Street Bakery (Burro Street Exchange)
 - TreeRific Toys and Candy Shoppe (Burro Street Exchange)
-- Into The Woods (Burro Street Exchange)
 
 ## 9. Research gaps
 
@@ -291,3 +282,4 @@ That is the fair read. Cloudcroft is not a shopping destination in the usual sen
 - Exact hours were not consistently clear across the current sources I used, so this guide lists hours only where verified.
 - I did not treat every retail listing in town as a meaningful part of the visitor shopping experience; I focused on the stores that most clearly shape the Burro Avenue and central-Cloudcroft stroll.
 - Some stores in the broader directory are better described as service businesses or specialty-use retail rather than core visitor-shopping stops.
+

@@ -178,3 +178,6 @@ Cloudcroft Brewing Company has grown into one of the village's core food-and-dri
 
 - **Add the April 2026 menu items** wherever menu content is rendered: tacos, chips and guacamole, and dessert options.
 - **Head brewer is Denver Weise.** Do not name "Elliot Bell" as head brewer anywhere on the page.
+
+Add “Unique find for the eco-tourist: rainwater capture system enables rainwater-brewed local beers” 
+

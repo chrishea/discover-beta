@@ -201,3 +201,4 @@ Older social and review snippets suggest the bar has had its own menu identity a
 
 **rules to obey**
 Change language to “historic wooden and mirrored bar was rumored to be built for Al Capone” 
+Add “Drinks Only” Saint Andrew’s Lounge open for drinks only Sunday-Tuesday from 12:00-8:00 pm.
