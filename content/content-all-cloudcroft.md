@@ -226,7 +226,6 @@ Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at 8
 - **Red Wall Jewelry** — 505 Burro Ave., (575) 682-4414.
 - **Roots Flower Co.** — 62 Curlew Pl., (575) 295-1644.
 - **Seasons Boutique Gift Shop** — 601 Corona Pl., (575) 682-2566.
-- **The Bear Track** — 308 Burro Ave.
 - **Tree-Riffic Toys and Candy** — 505 Burro Ave., (575) 682-2566.
 - **Tree Top Teez** — 505 Burro Ave., (575) 430-5154.
 - **Turquoise Shop** — 507 Burro Ave., (575) 682-3327, cloudcroftturquoise.com. Closed Sun.

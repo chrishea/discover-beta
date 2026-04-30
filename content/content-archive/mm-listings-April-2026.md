@@ -61,7 +61,6 @@
 - **Red Wall Jewelry** — 505 Burro Ave., (575) 682-4414. Open 10:00 a.m.–5:00 p.m. daily.
 - **Roots Flower Co.** — 62 Curlew Pl., (575) 295-1644. Open 10:00 a.m.–5:00 p.m. Tuesday–Saturday.
 - **Seasons Boutique Gift Shop** — 601 Corona Pl., (575) 682-2566.
-- **The Bear Track** — 308 Burro Ave. Hours vary.
 - **Tree-Riffic Toys and Candy** — 505 Burro Ave., (575) 682-2566. Open Monday, Thursday, Friday, Saturday 10:30 a.m.–5:30 p.m.; Wednesday 10:30 a.m.–5:00 p.m.; Sunday 12:00 p.m.–5:00 p.m.
 - **Tree Top Teez** — 505 Burro Ave., (575) 430-5154. Open 7:00 a.m.–5:00 p.m. Monday–Friday.
 - **Turquoise Shop** — 507 Burro Ave., (575) 682-3327, cloudcroftturquoise.com. Open 10:00 a.m.–5:00 p.m. daily; closed Sunday.

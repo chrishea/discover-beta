@@ -333,7 +333,7 @@ In town, on Burro Avenue (the main street of Cloudcroft).
 Any season. Summer is busiest. Weekday mornings are typically calm; weekend afternoons are crowded. Hours vary by individual business.
 
 **What to do there:**
-- Browse small boutique shops (Burro Street Trading Post, Into The Woods, Redwall Jewelry, TreeRific Toys and Candy Shoppe, etc.)
+- Browse small boutique shops (Burro Street Trading Post, Redwall Jewelry, TreeRific Toys and Candy Shoppe, etc.)
 - Stop at the Old Barrel Tea Company or other cafes for coffee or tea
 - Dine at Lepree's Global Comfort Food, Burro Street Bakery, or other restaurants
 - Browse art galleries

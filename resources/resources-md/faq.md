@@ -177,7 +177,7 @@ The National Solar Observatory at Sacramento Peak (Sunspot) is a world-class sol
 
 Are there art galleries and shopping? ▼
 
-Yes! Cloudcroft has a vibrant arts scene with several galleries along Burro Avenue, including Off the Beaten Path (est. 1996), Bear Track Gallery, Dancing Dog Gallery, and more. The village also has unique shops, antique stores, and the Cloudcroft Art Society. Visit our [art galleries page](shop/art-galleries.html) for a full guide.
+Yes! Cloudcroft has a vibrant arts scene with several galleries along Burro Avenue, including Off the Beaten Path (est. 1996), Dancing Dog Gallery, and more. The village also has unique shops, antique stores, and the Cloudcroft Art Society. Visit our [art galleries page](shop/art-galleries.html) for a full guide.
 
 ℹ️
 
