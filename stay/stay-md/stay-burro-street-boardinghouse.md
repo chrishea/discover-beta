@@ -27,7 +27,7 @@ It looks less ideal if you want:
 - **Official website:** https://www.burrostreetboardinghouse.com/
 - **Current operating status:** appears current and taking reservation requests
 - **Booking method:** the official site uses a reservation-request form rather than a standard instant-book engine
-- **Minimum stay:** the reservation page says there is a 2-night minimum
+
 - **Room count:** three guest rooms
 - **Bed setup:** current Facebook description says king beds and private baths
 - **Breakfast:** yes; the official site says a home-cooked breakfast is included in the tradition of B&Bs
@@ -83,7 +83,7 @@ Practical read: book this for the house and the mood, not for an exhaustive amen
 
 Breakfast appears to be one of the main reasons to stay here.
 
-The official site says an old-fashioned, home-cooked breakfast is prepared and served daily. The current Facebook description also emphasizes “a great breakfast.” That makes breakfast a meaningful part of the value proposition, not just a token amenity.
+The official site says an "a home-cooked breakfast in the classic kitchen,"  served daily. The current Facebook description also emphasizes “a great breakfast.” That makes breakfast a meaningful part of the value proposition, not just a token amenity.
 
 What I did not find:
 - a current breakfast menu
@@ -195,13 +195,13 @@ Because this is a small B&B with a request-based reservation system, direct ques
 
 ## 12. Fact-check notes and uncertainty flags
 
-- **Wi‑Fi:** not clearly confirmed from the strongest current official or chamber sources I reviewed. Less than 95% certain; should be checked directly.
-- **Parking:** not clearly confirmed from the strongest current official or chamber sources I reviewed. Less than 95% certain; should be checked directly.
-- **Check-in / check-out times:** not clearly confirmed from strong current public sources.
-- **Pet policy:** not clearly confirmed from strong current public sources.
-- **Accessibility:** not clearly confirmed from strong current public sources.
-- **Current ownership / management:** Chamber material and older social references point to Linda Carter, but I did not find a newer official ownership statement on the current website. Appears likely but less than 95% certain as a current ownership fact.
-- **Room-by-room amenities:** not clearly documented on the current public site beyond general atmosphere and room existence.
-- **Historical significance:** appears long-running and well known locally, but I did not find a rigorously documented founding timeline.
+- **Wi‑Fi:**
+- **Parking:**
+- **Check-in / check-out times:**
+- **Pet policy:**
+- **Accessibility:**
+- **Current ownership / management:**
+- **Room-by-room amenities:**
+- **Historical significance:**
 
 My read: Burro Street Boardinghouse looks like a good fit if you want a true small B&B with breakfast, personality, and a walkable Cloudcroft location. It does not look like a place to book for amenities. It looks like a place to book for intimacy, rustic style, and a quieter kind of stay.

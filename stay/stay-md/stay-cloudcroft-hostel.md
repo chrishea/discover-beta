@@ -207,7 +207,7 @@ Because this is a hostel, not a hotel, exact expectations matter more than usual
 
 ## 12. Fact-check notes and uncertainty flags
 
-- **Pets:** older room pages suggest dogs in private rooms for a fee, but I did not find that policy clearly confirmed on the current main site. Less than 95% certain; should be checked directly.
+- **Pets:** dogs are $15/night, private rooms only, no dogs in dorms.
 - **Private room inventory:** multiple third-party sources strongly suggest private / family room options, but the current official site text surfaced most clearly around dorms and group bookings. Less than 95% certain on the full current room mix.
 - **Accessibility:** not clearly laid out in the strongest current sources. Less than 95% certain; should be checked directly.
 - **Exact cancellation timing:** the official policy page gives cancellation contact methods but not a clear full deadline in the text I reviewed. A third-party hostel listing says 48 hours before arrival, but I would not treat that as settled without direct confirmation.
