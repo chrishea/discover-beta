@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Trails and Races in Cloudcroft, NM (2026)</title>
+    <meta name="description"
+        content="A running guide to Cloudcroft, New Mexico — 2026 race calendar (Trails &amp; Rails, Cloudcroft Ultra), the best forest and Rim Trail routes, and how to handle 8,500+ ft altitude.">
+    <link rel="canonical" href="https://discovercloudcroft.com/do/run.html">
+
+    <meta property="og:title"
+        content="Running Trails and Races in Cloudcroft, NM (2026) | DiscoverCloudcroft.com">
+    <meta property="og:description"
+        content="A running guide to Cloudcroft, NM — the 2026 race calendar, the best forest and Rim Trail routes, and how to handle high-altitude effort.">
+    <meta property="og:url" content="https://discovercloudcroft.com/do/run.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Running Trails and Races in Cloudcroft, NM (2026) | DiscoverCloudcroft.com">
+    <meta name="twitter:description"
+        content="A running guide to Cloudcroft, NM — the 2026 race calendar, the best forest and Rim Trail routes, and how to handle high-altitude effort.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/og-default.webp">
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="preload" as="image" href="do-photo/run/runner-solo.jpeg" fetchpriority="high">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "Running Trails and Races in Cloudcroft",
+      "description": "A 2026 running guide to Cloudcroft, New Mexico — verified race listings (Trails & Rails on June 13, 2026; Cloudcroft Ultra on August 15, 2026), the best forest and Rim Trail routes, and high-altitude planning notes for visiting runners.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cloudcroft",
+        "addressRegion": "NM",
+        "postalCode": "88317",
+        "addressCountry": "US"
+      },
+      "telephone": "575-682-2551",
+      "url": "https://discovercloudcroft.com/do/run.html",
+      "sameAs": [
+        "https://www.fs.usda.gov/r03/lincoln/recreation/trails",
+        "https://ultrasignup.com/register.aspx?did=132654",
+        "https://ultrasignup.com/register.aspx?did=132657"
+      ],
+      "isAccessibleForFree": true,
+      "dateModified": "2026-05-01"
+    }
+    </script>
+
+    <style>
+        /* =====================================================================
+           run.html — guide page mirroring the /do/ hiking-guide design system,
+           scaled to the smaller, more text-driven scope of running content
+           (two verified 2026 races + a handful of routes + altitude notes).
+           ================================================================= */
+
+        .hero-bg {
+            background: url('do-photo/run/runner-solo.jpeg') center 40% / cover no-repeat;
+            filter: saturate(0.9);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.55));
+        }
+
+        /* ---- Race cards (two big featured races) ---- */
+        .races-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-head {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.35rem;
+        }
+
+        .section-head p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.55;
+            max-width: 720px;
+            margin: 0;
+        }
+
+        .race-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .race-card {
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 1.75rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .race-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+        }
+
+        .race-eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .race-card h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.4rem;
+            color: #000;
+            margin: 0 0 0.35rem;
+            line-height: 1.2;
+        }
+
+        .race-date {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #2B2B2B;
+            margin-bottom: 1rem;
+        }
+
+        .race-distances {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.25rem;
+            display: grid;
+            gap: 0.4rem;
+        }
+
+        .race-distances li {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.92rem;
+            color: #333;
+            padding: 0.55rem 0.75rem;
+            background: #f6f6f6;
+            border-radius: 6px;
+            border-left: 3px solid #000;
+        }
+
+        .race-meta {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: #555;
+            margin: 0 0 1.25rem;
+            line-height: 1.55;
+        }
+
+        .race-links {
+            margin-top: auto;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .race-links a {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            padding: 0.5rem 0.85rem;
+            border: 1px solid rgba(0, 0, 0, 0.18);
+            border-radius: 999px;
+            color: #111;
+            text-decoration: none;
+            transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .race-links a:hover {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        /* ---- Route cards (smaller, four routes) ---- */
+        .routes-section {
+            background: #f8f8f8;
+            padding: 3.5rem 2rem;
+        }
+
+        .routes-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .route-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .route-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .route-card h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            color: #000;
+            margin: 0 0 0.5rem;
+        }
+
+        .route-card .route-best {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 0.6rem;
+            display: block;
+        }
+
+        .route-card p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.92rem;
+            line-height: 1.55;
+            color: #333;
+            margin: 0;
+        }
+
+        /* ---- Shuttle / outfitter callout ---- */
+        .shuttle-callout {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            border-left: 4px solid #000;
+            border-radius: 8px;
+            padding: 1.5rem 1.75rem;
+        }
+
+        .shuttle-callout h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.15rem;
+            color: #000;
+            margin: 0 0 0.5rem;
+        }
+
+        .shuttle-callout p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.92rem;
+            color: #333;
+            line-height: 1.6;
+            margin: 0 0 0.75rem;
+        }
+
+        .shuttle-callout p:last-child {
+            margin-bottom: 0;
+        }
+
+        .shuttle-callout .unverified {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            background: #fff4e6;
+            color: #7a4a00;
+            padding: 0.25rem 0.55rem;
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+        }
+
+        .shuttle-callout a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Altitude advisory list ---- */
+        .altitude-section {
+            padding: 3.5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .altitude-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .altitude-item {
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            padding: 1.1rem 1.25rem;
+        }
+
+        .altitude-item h4 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            color: #000;
+            margin: 0 0 0.4rem;
+        }
+
+        .altitude-item p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.88rem;
+            line-height: 1.55;
+            color: #444;
+            margin: 0;
+        }
+
+        /* ---- Editor picks (matches hiking-guide pattern, dark bg via .editor-section) ---- */
+        .editor-picks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .editor-pick blockquote {
+            border-left: 3px solid #fff;
+            padding-left: 1.25rem;
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+
+        .editor-pick .pick-for {
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.75rem;
+        }
+
+        .editor-pick .pick-answer {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .editor-pick .pick-answer a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---- Practical notes accordion ---- */
+        .note > summary:hover {
+            color: #444;
+        }
+
+        /* ---- Handoff section ---- */
+        .handoff-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .handoff-wrap h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+            color: #000;
+            margin: 0 0 0.75rem;
+        }
+
+        .handoff-wrap p {
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0 0 1.25rem;
+        }
+
+        .handoff-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .handoff-buttons a {
+            min-height: 44px;
+        }
+
+        .handoff-stat {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .handoff-stat .big {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000;
+            display: block;
+            line-height: 1;
+        }
+
+        .handoff-stat .mid {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.8rem;
+            color: #555;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .handoff-stat hr {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            margin: 1rem 0;
+        }
+
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            .race-grid,
+            .route-grid,
+            .altitude-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .editor-picks {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .handoff-wrap {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .races-section,
+            .routes-section,
+            .altitude-section,
+            .editor-section,
+            .notes-section,
+            .handoff-section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://discovercloudcroft.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Activities",
+          "item": "https://discovercloudcroft.com/do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Running in Cloudcroft (2026)",
+          "item": "https://discovercloudcroft.com/do/run.html"
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- HEADER (paths relative to /do/) -->
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                    <span class="logo-beta">Beta</span>
+                </a>
+                <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+                <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+                <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="../events/top-events.html">Events</a>
+
+                <a href="../resources/resources.html">Resources</a>
+                <a href="../resources/contact.html">Contact</a>
+                <button type="button" class="nav-cta" data-signup-open data-signup-source="nav-mobile">Connect</button>
+            </nav>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+
+        <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+            <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+            <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
+            <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+            <a href="../shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+            <a href="../events/top-events.html">Events</a>
+
+            <a href="../resources/resources.html">Resources</a>
+            <a href="../resources/contact.html">Contact</a>
+
+
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero hero-split" aria-label="Page hero">
+        <div class="hero-bg" role="img"
+            aria-label="A solo runner on a forested mountain road near Cloudcroft, New Mexico"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-split-grid">
+            <div class="hero-left">
+                <span class="hero-eyebrow-pill">Sacramento Mountains · 2026</span>
+                <h1>
+                    <span class="word">Run</span>
+                    <span class="word">at</span>
+                    <span class="word">altitude.</span>
+                </h1>
+                <p class="hero-deck">A real trail-running town at 8,500–9,000+ feet. Two verified 2026 races,
+                    forest and railroad-grade routes you can step onto from the village, and the kind of cooler air
+                    that makes the drive up worth it.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Last verified May 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO BAR (4 items) -->
+    <section class="info-bar" aria-label="Quick reference">
+        <div class="info-bar-inner">
+            <div class="info-bar-item">
+                <span class="info-bar-icon">Elevation</span>
+                <strong>8,500–9,000+ ft</strong>
+                <span>Sacramento Mountains range</span>
+            </div>
+            <div class="info-bar-item">
+                <span class="info-bar-icon">Verified 2026 races</span>
+                <strong>2</strong>
+                <span>Trails &amp; Rails · Cloudcroft Ultra</span>
+            </div>
+            <div class="info-bar-item">
+                <span class="info-bar-icon">Permits</span>
+                <strong>Free</strong>
+                <span>No fees on Lincoln NF trails</span>
+            </div>
+            <div class="info-bar-item">
+                <span class="info-bar-icon">Forest status</span>
+                <strong>Stage 1 fire restrictions</strong>
+                <span>In effect as of March 27, 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STICKY TOC NAV -->
+    <nav class="toc-nav" aria-label="Table of contents">
+        <div class="toc-nav-inner">
+            <a href="#culture" class="toc-pill">Running culture</a>
+            <a href="#races" class="toc-pill">2026 races</a>
+            <a href="#routes" class="toc-pill">Routes</a>
+            <a href="#altitude" class="toc-pill">Altitude</a>
+            <a href="#editor" class="toc-pill">Editor's Call</a>
+            <a href="#notes" class="toc-pill">Practical notes</a>
+            <a href="#handoff" class="toc-pill">More guides</a>
+        </div>
+    </nav>
+
+    <main id="main-content" role="main">
+
+        <!-- THESIS -->
+        <div class="thesis">
+            <p>Cloudcroft is a real running town by mountain-village standards — not just a few people jogging through
+                vacation streets. The altitude changes everything, though. Pick the route for your lungs, not your
+                pride.</p>
+            <span class="thesis-meta">Race dates and route notes verified against UltraSignup, RunSignup, RunGuides,
+                and Lincoln National Forest materials. Always check <a
+                    href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank"
+                    rel="noopener noreferrer">current forest alerts</a> before you go.</span>
+        </div>
+
+        <!-- ================================ CULTURE / OVERVIEW ================================ -->
+        <section class="races-section fade-in" id="culture" aria-label="Running culture in Cloudcroft">
+            <div class="section-head">
+                <h2>A real running town, by mountain-village standards</h2>
+                <p>Running in Cloudcroft feels different from running in Alamogordo or other lower-elevation towns.
+                    The weather is cooler, the scenery is better, and the routes can be more interesting. The race
+                    culture also seems real, not forced — UltraSignup and RunSignup both show current 2026 events,
+                    and local reporting treats the races as established parts of the mountain calendar. For visitors,
+                    the key decision is whether you want a casual run while you are in town, a trail run on official
+                    forest routes, or a race-centered weekend.</p>
+            </div>
+        </section>
+
+        <!-- ================================ 2026 RACES ================================ -->
+        <section class="races-section fade-in" id="races" aria-label="2026 races in Cloudcroft">
+            <div class="section-head">
+                <h2>The 2026 race calendar</h2>
+                <p>The clearest verified 2026 races for Cloudcroft, sourced from current public race listings on
+                    UltraSignup, RunSignup, and RunGuides. Confirm registration status and any cutoffs directly with
+                    the organizers before you commit.</p>
+            </div>
+
+            <div class="race-grid">
+
+                <!-- Race 1: Trails & Rails -->
+                <article class="race-card">
+                    <span class="race-eyebrow">Saturday, June 13, 2026</span>
+                    <h3>Trails &amp; Rails</h3>
+                    <p class="race-date">Start / finish at Trestle Recreation Area, just east of the village.</p>
+                    <ul class="race-distances">
+                        <li>8-miler</li>
+                        <li>3-miler</li>
+                        <li>1-mile Kid's Dash</li>
+                    </ul>
+                    <p class="race-meta">A summer trail race anchored to the Trestle Recreation Area near the
+                        Cloud-Climbing Railroad Trestle. Distances and start location reflect current public race
+                        listings; verify the day-of details with the organizer.</p>
+                    <div class="race-links">
+                        <a href="https://ultrasignup.com/register.aspx?did=132654" target="_blank"
+                            rel="noopener noreferrer">UltraSignup</a>
+                        <a href="https://www.runguides.com/event/31768/trails-rails" target="_blank"
+                            rel="noopener noreferrer">RunGuides</a>
+                    </div>
+                </article>
+
+                <!-- Race 2: Cloudcroft Ultra -->
+                <article class="race-card">
+                    <span class="race-eyebrow">Saturday, August 15, 2026</span>
+                    <h3>Cloudcroft Ultra</h3>
+                    <p class="race-date">A trail-race weekend tied closely to the Rim Trail identity.</p>
+                    <ul class="race-distances">
+                        <li>53K</li>
+                        <li>9.5-mile</li>
+                        <li>4.75-mile</li>
+                        <li>1-mile Kid's Dash</li>
+                    </ul>
+                    <p class="race-meta">The bigger of the two 2026 races on the public calendar, with a 53K ultra
+                        distance plus shorter trail options and a Kid's Dash. Local coverage treats the Rim Trail as
+                        the route most closely tied to the Cloudcroft Ultra identity.</p>
+                    <div class="race-links">
+                        <a href="https://ultrasignup.com/register.aspx?did=132657" target="_blank"
+                            rel="noopener noreferrer">UltraSignup</a>
+                        <a href="https://runsignup.com/Race/NM/Cloudcroft/CloudcroftUltra53kand95miletrailrace"
+                            target="_blank" rel="noopener noreferrer">RunSignup</a>
+                        <a href="https://wanderlust.run/" target="_blank" rel="noopener noreferrer">Wanderlust
+                            Running</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================================ ROUTES ================================ -->
+        <section class="routes-section fade-in" id="routes" aria-label="Running routes in Cloudcroft">
+            <div class="routes-wrap">
+                <div class="section-head">
+                    <h2>Best running trails and routes</h2>
+                    <p>The strongest current local and official signals point to these as practical running options.
+                        Forest footing, altitude, and trail variety all favor "outing-like" runs over uninterrupted
+                        pavement mileage.</p>
+                </div>
+
+                <div class="route-grid">
+                    <article class="route-card">
+                        <span class="route-best">Best for · easier trail running</span>
+                        <h3>Osha Trail</h3>
+                        <p>Best for easier trail running or shorter altitude-adjustment runs. Official, close to
+                            town, and easier to follow than some other routes. A good first-day option.</p>
+                    </article>
+
+                    <article class="route-card">
+                        <span class="route-best">Best for · serious trail effort</span>
+                        <h3>Rim Trail</h3>
+                        <p>Best for serious trail runners who want a bigger effort. It is also the route most closely
+                            tied to the Cloudcroft Ultra identity, according to local coverage.</p>
+                    </article>
+
+                    <article class="route-card">
+                        <span class="route-best">Best for · scenic short runs</span>
+                        <h3>Cloud-Climbing &amp; Trestle-area routes</h3>
+                        <p>Best for shorter, scenic runs or race-day training-style efforts close to town. Useful for
+                            getting familiar with the Trails &amp; Rails start/finish area.</p>
+                    </article>
+
+                    <article class="route-card">
+                        <span class="route-best">Best for · moderate texture, no full backcountry plan</span>
+                        <h3>Railroad-grade routes near town</h3>
+                        <p>Best for visitors who want moderate trail texture without needing a full backcountry plan.
+                            Gentler grades, a sense of the corridor history, and easy bail-out options back to the
+                            village.</p>
+                    </article>
+                </div>
+
+                <!-- Shuttle / outfitter callout -->
+                <aside class="shuttle-callout" aria-label="Shuttle and outfitter information">
+                    <span class="unverified">Verify before relying on it</span>
+                    <h3>Saturday Rim Trail shuttle (2025 source)</h3>
+                    <p>The Cloudcroft Reader's summer guide reports that <strong>High Altitude Outfitters</strong>
+                        offered a free Saturday Rim Trail shuttle from its Burro Avenue shop, leaving Saturdays at
+                        9:00 a.m. That information came from 2025 coverage — confirm directly with the shop before
+                        relying on it for a 2026 trip.</p>
+                    <p><strong>High Altitude Outfitters</strong> · 310 Burro Ave, Cloudcroft, NM 88317 ·
+                        <a href="tel:5756821229">(575) 682-1229</a> ·
+                        <a href="https://www.highaltitudenm.com/" target="_blank"
+                            rel="noopener noreferrer">highaltitudenm.com</a></p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ================================ ALTITUDE ================================ -->
+        <section class="altitude-section fade-in" id="altitude" aria-label="Altitude advisory for runners">
+            <div class="section-head">
+                <h2>Altitude changes every run</h2>
+                <p>Cloudcroft trails sit between 8,500 and 9,000+ feet. A short run here can feel harder than
+                    expected, especially if you drove up the same day. Plan accordingly.</p>
+            </div>
+
+            <div class="altitude-grid">
+                <div class="altitude-item">
+                    <h4>Don't judge effort by mileage alone</h4>
+                    <p>A 3-mile trail run at 8,676 feet can feel like 5 miles at sea level. Pace by perceived effort
+                        rather than your usual splits.</p>
+                </div>
+                <div class="altitude-item">
+                    <h4>Hydrate aggressively</h4>
+                    <p>Start drinking extra water before you run, not just during. Dry mountain air pulls more out of
+                        you than the temperature suggests.</p>
+                </div>
+                <div class="altitude-item">
+                    <h4>Keep the first run short</h4>
+                    <p>If you drove up from Alamogordo or El Paso the same day, back off your normal pace and
+                        distance. Your second day will feel much better.</p>
+                </div>
+                <div class="altitude-item">
+                    <h4>Sun exposure is stronger up here</h4>
+                    <p>Sunscreen and a hat matter even on overcast mornings. Thinner air means more UV reaches you at
+                        9,000 feet than at sea level.</p>
+                </div>
+                <div class="altitude-item">
+                    <h4>Plan for morning runs in summer</h4>
+                    <p>Afternoon thunderstorms are common late June through August. Lightning on exposed ridgelines
+                        is a real risk — be off the rim by midday.</p>
+                </div>
+                <div class="altitude-item">
+                    <h4>Cell service is spotty in the forest</h4>
+                    <p>Tell someone your route and expected return time. Don't count on a phone signal once you're
+                        off the highway corridor.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================ EDITOR'S CALL ================================ -->
+        <section class="editor-section" id="editor" aria-label="Editor's call">
+            <div class="editor-wrap">
+                <h2>If we had to pick three</h2>
+                <div class="editor-picks">
+                    <div class="editor-pick">
+                        <span class="pick-for">First run in Cloudcroft</span>
+                        <blockquote>"Start short and close to town. Osha is official, easy to follow, and you'll know
+                            in twenty minutes whether the altitude is going to be a problem on this trip."</blockquote>
+                        <p class="pick-answer">Run the <strong>Osha Trail</strong>.</p>
+                    </div>
+                    <div class="editor-pick">
+                        <span class="pick-for">Race-weekend visitor</span>
+                        <blockquote>"Don't try to preview the whole course. Get familiar with the start/finish and
+                            the first mile of footing. The Trestle Recreation Area is the right place to do
+                            that."</blockquote>
+                        <p class="pick-answer">Run a <strong>Trestle-area shake-out</strong>.</p>
+                    </div>
+                    <div class="editor-pick">
+                        <span class="pick-for">Serious trail effort</span>
+                        <blockquote>"This is what you came for. Sections of the Rim Trail are the route most tied to
+                            the Cloudcroft Ultra identity. Carry water, plan for thunderstorms, and start early."</blockquote>
+                        <p class="pick-answer">Run a section of the <strong>Rim Trail</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================ PRACTICAL NOTES ================================ -->
+        <section class="notes-section" id="notes" aria-label="Practical notes">
+            <h2>Before you go</h2>
+
+            <details class="note">
+                <summary>Fire restrictions &amp; forest closures</summary>
+                <div class="note-body">
+                    <p>As of March 27, 2026, <strong>Stage 1 fire restrictions</strong> are in effect forest-wide on
+                        the Lincoln National Forest. Forest access can change with fire restrictions or closures —
+                        check <a
+                            href="https://www.fs.usda.gov/r03/lincoln/alerts/current-fire-restrictions-and-related-prohibitions"
+                            target="_blank" rel="noopener noreferrer">current fire restrictions</a> and the
+                        <a href="https://www.fs.usda.gov/r03/lincoln/alerts" target="_blank"
+                            rel="noopener noreferrer">forest alerts page</a> before you head out.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Trail conditions &amp; route planning</summary>
+                <div class="note-body">
+                    <p>Trails that are great for hiking can still be awkward for running if you want a smooth,
+                        uninterrupted workout. Rim Trail route planning matters more than many visitors expect — pick
+                        a known section rather than improvising. After storms or snow, condition reports from local
+                        outfitters are more current than online maps.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>Gear, maps &amp; local help</summary>
+                <div class="note-body">
+                    <p>Cell service is spotty on most forest trails. Download offline maps before you leave the
+                        village. <strong>High Altitude Outfitters</strong>
+                        (<a href="tel:5756821229">575-682-1229</a>, 310 Burro Ave) is the local source for trail
+                        maps, gear, and current running questions.</p>
+                    <p>For ranger-district questions on closures or trail conditions, call the <strong>Sacramento
+                            Ranger District</strong> at <a href="tel:5756822551">575-682-2551</a> (4 Lost Lodge Rd).
+                        For general visitor questions, the <strong>Cloudcroft Chamber of Commerce</strong> is at
+                        <a href="tel:5756822733">575-682-2733</a>.</p>
+                </div>
+            </details>
+
+            <details class="note">
+                <summary>What to verify before you go</summary>
+                <div class="note-body">
+                    <p>The race and shuttle details on this page were verified against current public sources (race
+                        listings on UltraSignup, RunSignup, and RunGuides; the Cloudcroft Reader's summer 2025 guide;
+                        Lincoln National Forest pages). Before traveling, double-check:</p>
+                    <ul>
+                        <li>Current race registration status and cutoffs</li>
+                        <li>Current forest closures or restrictions</li>
+                        <li>Whether the free Rim Trail shuttle is still running</li>
+                        <li>Trail condition after storms or snow</li>
+                        <li>Water access and cell-service expectations on longer routes</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+
+        <!-- ================================ HANDOFF ================================ -->
+        <section class="handoff-section" id="handoff" aria-label="Related Cloudcroft guides">
+            <div class="handoff-wrap">
+                <div>
+                    <h2>Stay close to the trailhead</h2>
+                    <p>Race weekends fill cabins fast, and the difference between waking up in Cloudcroft and driving
+                        up from Alamogordo on race morning is more than the elevation makes obvious. The lodging guide
+                        covers cabins, hotels, and B&amp;Bs; the hiking guide ranks twelve forest trails if you want
+                        to spend the recovery day on foot at a slower pace.</p>
+                    <div class="handoff-buttons">
+                        <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html"
+                            class="btn-primary">Lodging guide</a>
+                        <a href="guide-to-hiking-in-cloudcroft-new-mexico-2026.html" class="btn-outline"
+                            style="color:#000;border-color:#000;">Hiking guide</a>
+                    </div>
+                </div>
+                <div class="handoff-stat" aria-label="Cloudcroft running at a glance">
+                    <span class="big">2</span>
+                    <span class="mid">Verified 2026 races</span>
+                    <hr>
+                    <span class="big">8,500–9,000+</span>
+                    <span class="mid">ft running elevation</span>
+                    <hr>
+                    <span class="big">Free</span>
+                    <span class="mid">Lincoln NF trails, no permits</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <p style="text-align:center;padding:1vh">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            New Mexico's Mountain Retreat.
+            <br><span style="font-size:85%">
+                &copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                    style="color:steelblue;text-decoration:underline;">DiscoverCloudcroft.com</a>. All rights reserved.
+            </span>
+        </p>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../js/common.js" defer></script>
+    <script>
+        (function () {
+            // ---- Fade-in ----
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.fade-in, .race-card, .route-card, .altitude-item').forEach(function (el) {
+                fadeObserver.observe(el);
+            });
+
+            // ---- TOC active-section tracking ----
+            var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
+            var sections = tocPills
+                .map(function (p) { return document.getElementById(p.getAttribute('href').replace('#', '')); })
+                .filter(Boolean);
+            var tocObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocPills.forEach(function (p) { p.removeAttribute('aria-current'); });
+                        var pill = document.querySelector('.toc-nav .toc-pill[href="#' + entry.target.id + '"]');
+                        if (pill) pill.setAttribute('aria-current', 'true');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+            sections.forEach(function (s) { tocObserver.observe(s); });
+        })();
+    </script>
+</body>
+
+</html>
