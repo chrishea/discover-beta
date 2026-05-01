@@ -29,6 +29,8 @@ High Altitude is the most practical retail stop on Burro Avenue. The official si
 
 The shop's utility is simple: it's the Cloudcroft answer to "I forgot my rain jacket," "I need hiking socks," "I want a trail map," "I'd like to look at a mountain bike before buying one," and "I need a last-minute gift that isn't a magnet." The boutique section on top of the gear means travelers who don't want a mountain-mountain shop still have reason to walk in.
 
+High Altitude celebrates its 30th Anniversary this year.
+
 ## 5. Merchandise and specialties
 
 ### Outdoor gear &amp; apparel
