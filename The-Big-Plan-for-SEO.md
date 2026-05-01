@@ -1,24 +1,27 @@
 # The Big Plan for SEO
 **DiscoverCloudcroft.com — Launch & First 90 Days**
-Version 1.0 · April 24, 2026 · Single source of truth for SEO decisions on this site.
+Version 1.1 · May 1, 2026 · Single source of truth for SEO decisions on this site.
+
+> **What changed from v1.0 (April 24).** A full technical SEO audit of the live repo (`md/seo-audit-2026-05-01.md`, May 1, 2026) found defects v1.0 didn't have visibility into: 40 broken canonicals, 167 broken internal links, 46 pages referencing a missing OG image, 6 indexable stub HTML files, the homepage canonical pointing to a nonexistent URL, 469 of 486 `<img>` tags missing dimensions. Site health score: **58/100.** v1.1 folds those findings into §7.6 (technical-audit punch list, new) and reshuffles §14 (Monday-morning actions) so the audit's quick-wins go first.
 
 ---
 
 ## 0. Source Material Reconciled in This Memo
 
-This plan consolidates every SEO document currently in `md/DC-SEO-Plan/`:
+This plan consolidates every SEO document currently in `md/DC-SEO-Plan/` plus the May 1 audit at `md/seo-audit-2026-05-01.md`:
 
 | File | Role in this plan |
 |---|---|
-| `SEO-Master-Plan.md` (v1.0, April 2026) | Canonical. Most decisions inherit from here. |
+| **`md/seo-audit-2026-05-01.md` (May 1, 2026) — NEW in v1.1** | **Ground-truth technical audit of the live repo. Drives §7.6 and reorders §14. P0/P1 findings supersede the more abstract gap table from v1.0 §7.2.** |
+| `SEO-Master-Plan.md` (v1.0, April 2026) | Canonical strategy. Most decisions inherit from here. |
 | `DiscoverCloudcroft-SEO-Memo.docx` / `.docx.pdf` | Executive framing, AI-search argument, advertising model. |
 | `SEO-STRATEGY-MEMO.md` (January 2026) | Earlier tactical memo. Treated as superseded where it conflicts with the April material. |
 | `MM-DC-Digital-Strategy.txt` | Two-domain (MountainMonthly + DiscoverCloudcroft) discipline. |
 | `DC-SEO-Pages-Ideas.pdf` | 25-keyword list with target pages. |
 | `DC-SEO-Launch-Strategy.pages` / `Discover-SEO-Memo.pages` | Apple Pages native format; not machine-readable in this pass. Material in those files appears to be captured in the `.md` and `.docx` equivalents above. If not, flag and I will re-synthesize. |
-| `topic-pages-consistency-audit.md` (2026-04-19, repo root) | Used to ground recommendations in the site's actual divergence, not theoretical drift. |
+| `topic-pages-consistency-audit.md` (2026-04-19, repo root) | Used in v1.0 to ground recommendations in the site's actual divergence. Mostly superseded by the May 1 audit, retained for the consistency-scorecard breakdown of the seven topic pages. |
 
-Where two sources disagree, this memo picks one answer and footnotes the alternative. Where sources prescribe something the current static HTML + `sync-nav.py` + `common.css` workflow can't easily support, this memo names the constraint rather than pretending it away.
+Where two sources disagree, this memo picks one answer and footnotes the alternative. Where sources prescribe something the current static HTML + `sync-nav.py` + `common.css` workflow can't easily support, this memo names the constraint rather than pretending it away. **Where the May 1 audit's specific file-by-file findings conflict with anything in the older strategy memos, the audit wins.**
 
 ---
 
@@ -247,20 +250,18 @@ CLAUDE.md is explicit: the top nav is duplicated into every HTML file and must *
 - Canonical, OG, Twitter, JSON-LD on homepage and the entity pages I spot-checked.
 - Self-hosted fonts via `css/fonts.css`.
 
-### 7.2 Gaps to close before/at launch
+### 7.2 Gaps to close before/at launch (high-level)
+
+This table was the v1.0 view. **Superseded by §7.6 below**, which is the file-counted, P0/P1-classified punch list from the May 1 audit. Keep this table only for the GSC/Bing/GA4 plumbing items, which the audit doesn't repeat:
 
 | Gap | Where | Owner | Deadline |
 |---|---|---|---|
 | GSC property not verified against production domain | DNS | Chris | Week 1 Day 1 |
 | Bing Webmaster Tools not set up | Bing | Chris | Week 1 |
 | GA4 property not confirmed connected to GSC | GA4 + GSC | Chris | Week 1 |
-| BreadcrumbList schema not universal | Every page | dev | Weeks 1–2 |
-| Broken `font-family` on the MAIN complete guide (per audit) | `complete-guide-to-cloudcroft-new-mexico-2026.html` | dev | Week 1 |
-| Broken subpage nav paths on STAY guide (per audit) | `stay/complete-guide-to-lodging-…` | dev, via `sync-nav.py` | Week 1 |
-| `og:type=website` on pages that should be `article` | 5 of 7 complete-guide pages per audit | dev | Week 1 |
-| OG images per-page for flagship pages | `/media/og/…` dir + per-page `<meta property="og:image">` | design + dev | Weeks 1–2 |
 | Elevation discrepancy (9,000 vs 8,663) | sitewide | editorial | Week 1 |
-| Per-page OG images for the seven topic pages | `/media/og/` | design | Weeks 2–3 |
+
+Everything else from the v1.0 gap table (BreadcrumbList universalization, broken font on MAIN, STAY nav paths, `og:type=website` on guides, per-page OG images) is captured with more precise scope in §7.6.
 
 ### 7.3 Core Web Vitals targets (non-negotiable)
 
@@ -284,6 +285,64 @@ Verified with Lighthouse and PageSpeed Insights before any page indexes. CWV fai
 - Submit `sitemap.xml` to GSC and Bing the moment the site goes live.
 - Manually request indexing of the top 10 pages via GSC URL Inspection on Day 1.
 - `<meta name="robots" content="index,follow">` explicit on every page (Master Plan §4.2).
+
+### 7.6 Technical-audit punch list (May 1, 2026 audit)
+
+Source: `md/seo-audit-2026-05-01.md`. Files reviewed: 108 HTML files plus `css/`, `js/`, `robots.txt`, `sitemap.xml`. Worktree copies excluded. **Site health: 58/100.** Architecture is right; the metadata layer is leaking value.
+
+#### P0 — actively block indexing or send Google the wrong signal
+
+| ID | Issue | Count | Fix | Owner | Deadline |
+|---|---|---|---|---|---|
+| **B1** | Canonical points to a URL that doesn't exist on disk | **40 pages** (38% of indexable surface) — `do/golf.html` → `/do/where-to-play-golf-in-cloudcroft-2026.html`, `do/camp.html` → `/do/best-camping.html`, all 6 `season/*`, all `events/event-*`, etc. | Script across the 40 affected files: rewrite each `<link rel="canonical">` to its actual filename. Or ship a server rewrite (`.htaccess` / Netlify `_redirects`) for the pretty URL targets. | dev | Week 1 |
+| **B2** | Six legacy duplicate / stub HTML files indexable; three share the homepage's title and description | `complete-guide-to-cloudcroft-new-mexico-2026 copy.html`, `…copy 2.html`, `index copy.html`, `do/complete-guide-to-activities-to-do-in-cloudcroft-2026 copy.html`, `stay/xxx-complete-guide-to-lodging-in-cloudcroft-new-mexico-2026 copy.html`, `topic-page-target-mockup.html` | **Delete all six** (cleanest). Otherwise add `<meta name="robots" content="noindex,nofollow">` and `Disallow:` in `robots.txt`. | dev | Week 1 Day 1 |
+| **B3** | OG image referenced doesn't exist on disk | **46 pages** point to `media/og-default.webp` which is missing. 11 more reference `media/Index-24.webp` and `media/placeholder-hero-main.webp`, also missing. | Create `media/og-default.webp` at 1200×630, plus the two other missing assets. Verify by visiting the URLs after deploy. | design + dev | Week 1 |
+| **B4** | Sitemap and on-disk file list are out of sync | `sitemap.xml` lists `/complete-guide-to-cloudcroft-new-mexico-2026.html` (file doesn't exist — homepage is `index.html` and canonicals to that fictional URL). Three real public pages NOT in sitemap: `shop/elk-shed.html`, `shop/turquoise.html`, `stay/stay-osha-trail.html`. | Drop the fictional entry, add the three missing pages. Best handled by a build script that emits `sitemap.xml` from the file tree. | dev | Week 1 |
+| **B5** | Internal links to files that don't exist | **167 broken links.** Top offenders: `stay/lodging.html` (28 refs), `do/complete-guide-to-activities.html` (11 refs), `where to-hike-in-Cloudcroft-New-Mexico-2026.html` (8 refs — note literal space + capitals). Source files: `season/seasonal.html` (16 broken), `shelf/index-hold.html` (19), `footer-stuff.html` (11). | Site-wide find/replace for the top 5 broken targets resolves ~40 of 167. Then add `content/check-internal-links.py` to gate publishes. | dev | Weeks 1–2 |
+| **B6** | `index.html` canonical points to a different URL than the page itself | Canonical = `https://discovercloudcroft.com/complete-guide-to-cloudcroft-new-mexico-2026.html`. Site homepage is `/`. No rewrite configured. Google may deindex `/`. | Set `index.html` canonical to `https://discovercloudcroft.com/`. Drop the fictional sitemap entry (B4). Or ship a 301 from `/complete-guide-…` to `/`. | dev | Week 1 Day 1 |
+
+#### P1 — high priority, ship in Weeks 1–3
+
+| ID | Issue | Count | Fix |
+|---|---|---|---|
+| **C1** | `<title>` over Google's ~60-char SERP cutoff | 87 of 106 pages (median 85, max 150) | Drop ` \| DiscoverCloudcroft.com` from titles (Google often appends site name automatically). Trim taglines. Aim 50–60 chars including geo. |
+| **C2** | `<meta name="description">` over 160 chars | 83 pages; 44 over 200; max 313 | Tighten to 140–155. One CTA verb + one differentiator + geo. Scriptable. |
+| **C3** | Homepage missing `Organization`, `WebSite`, and `SearchAction` schema | `index.html` | Add a 4th JSON-LD block: `Organization` (logo + `sameAs` socials + `contactPoint`) and `WebSite` (with `potentialAction: SearchAction`). Loses sitelinks search-box without it. |
+| **C4** | `<img>` tags missing `width` and `height` | 469 of 486 (CLS risk) | Python helper using PIL to read each referenced image and inject intrinsic dimensions. Or set CSS `aspect-ratio` on wrappers. |
+| **C5** | Hero image not preloaded | 100 of 108 pages | `<link rel="preload" as="image" href="…hero…" fetchpriority="high">` per template. |
+| **C6** | `js/common.js` not deferred | 84 of 108 pages | One-line `sed`: add `defer` to the `<script src="…common.js">` tag site-wide. |
+| **C7** | Duplicate IDs (`mobile-nav`, sometimes `menu`) | 12 pages including `do/complete-guide-to-activities-…`, `eat/big-daddys.html`, `eat/complete-guide-where-to-eat-…`, `shop/burro-ave-trading-post.html`, `shop/aspen-and-ivy.html`, `visit/where-to-visit.html`, etc. | Fix in `content/sync-nav.py` so it can never re-introduce a duplicate `mobile-nav` block. |
+| **C8** | Entity JSON-LD `"url"` points to third-party site instead of the on-site canonical | 12 entity pages, all under `stay/` plus `do/guide-lincoln-national-forest-…`, `do/guide-to-hiking-…`, `eat/noisy-water-winery.html`. (`eat/black-bear-coffee-shop.html` has the correct pattern — copy it.) | Set `"url"` to the on-site canonical; move third-party domains into `sameAs`. |
+| **C9** | Entity JSON-LD missing `geo` (lat/lng) | 55 entity pages | Add `geo` per entity from the actual address. Skip `aggregateRating` until first-party reviews exist (Google now penalizes self-serving). |
+| **C10** | Guide pages missing `BreadcrumbList` schema | 12 guide pages including the four section complete-guides + the auto-services guide | 3-item BreadcrumbList per guide (Home → Section → Guide). Best implemented via a small injection script keyed on directory depth. |
+| **C11** | `<img>` references to HEIC files (Chrome/Firefox can't render) | 5 references — 4 of them on `index.html` | Convert to `.jpg`/`.webp` via the existing `optimize-images.sh` pattern; update HTML refs. |
+| **C12** | Broken `<img src>` references | 39, after URL-decoding and case-folding | Most are typos (`do/camp.html`'s `camp-00756.jpg.webp`) or stale paths. Build-time link checker. |
+| **C13** | Case-only image filename mismatches | 9, all in eighteen99 / Black Bear lodge-plates series | Rename source files to canonical lowercase or update HTML refs. Will 404 on case-sensitive prod servers (Linux/CDNs). |
+| **C14** | `<meta name="keywords">` present | 100 pages | Remove site-wide. Google ignored it since 2009; Bing treats excessive use as a quality-signal proxy (down-rank). |
+| **C15** | Pages missing OG essentials (`og:image`, `og:url`, etc.) | 7 pages including `about/terms.html`, `about/privacy.html`, `stay/stay-spruce-cabins.html`, `resources/zenith-park-in-cloudcroft.html` | Privacy/terms still need OG basics. The `topic-page-target-mockup.html` and `shelf/*` files should be removed or noindexed (B2 / D1). |
+
+#### P2 — medium priority, ship Weeks 3–6
+
+`shelf/cloudcroft-review.html` exposed without noindex (D1). Inline `<style>` blocks of 20–30 KB on 10 guide pages — run `content/strip-duplicate-css.py` and `content/strip-guide-css.py` (D2). 11 pages don't mention "Cloudcroft, NM" at all (D3). 9 pages don't load `css/common.css` (D4). 4 inconsistent `viewport` meta forms (D5). 2 heading-level skips (D6). One URL with capital letter (`stay/stay-the-summit-inn-Cloudcroft-2026.html`) — rename + 301 redirect (D7). 5 thin pages under 300 words — `season/seasonal.html` is the worst, sitting at sitemap priority 0.9 with 204 words (D8). 360 image files >1 MB on disk; 309 >2 MB; one `.MOV` and one `.tif` in `media/` — run `optimize-images.sh` against every section photo dir (D9). 25 images missing `loading=` (D10). 10 imgs missing `alt` (all in the duplicate file slated for deletion, D11). Search Console verification file exposed without `noindex` (D12). Only 13 pages carry `dateModified` / `datePublished` — add to every entity JSON-LD (D13).
+
+#### Quick-win punch list (10 highest impact-to-effort, ranked by the audit)
+
+This is the audit's recommended ordering. **Adopted as the v1.1 launch-week sequence.**
+
+1. **Delete the six duplicate/stub HTML files** (B2 + D14, E7).
+2. **Create `media/og-default.webp` (1200×630)** plus the two other missing assets (B3).
+3. **Fix `index.html`'s canonical** to `https://discovercloudcroft.com/`. Drop the fictional sitemap entry (B6 + half of B4).
+4. **Script the 40 mismatched canonicals** to point to actual filenames (B1).
+5. **Run `content/strip-duplicate-css.py` and `content/strip-guide-css.py`** (D2).
+6. **Add `Organization`, `WebSite` (with `SearchAction`) JSON-LD to `index.html`** (C3).
+7. **Tighten 87 titles + 83 descriptions** with one find/replace pattern (drop ` \| DiscoverCloudcroft.com`; trim descriptions ≤155 chars) (C1, C2).
+8. **Add `width` + `height` to every `<img>`** via PIL helper (C4).
+9. **Site-wide find/replace** of the top broken link targets (`stay/lodging.html`, `do/complete-guide-to-activities.html`, the typo'd hike URL) — resolves ~40 of 167 (B5).
+10. **Fix the 12 entity pages** whose schema `"url"` points externally — copy the `eat/black-bear-coffee-shop.html` pattern (C8).
+
+#### Things already good (preserve)
+
+`robots.txt` is permissive and sitemap-aware. 99 of 108 pages have valid JSON-LD — none parse-fail. `<html lang="en">` set on every real page. `fonts.css` uses self-hosted woff2 with `font-display: swap`. Word count median is well above the thin-content floor; only 5 pages under 300 words and 3 of those are non-public. The duplicate / case-mismatch issues are concentrated — 60% of broken-link refs come from 5 files; 75% of HEIC refs come from `index.html` alone. Means most fixes are one-shot find/replace, not 100 individual edits.
 
 ---
 
@@ -462,24 +521,43 @@ These are the decisions not fully resolved in the source material:
 
 ---
 
-## 14. What I'd Do First on Monday Morning
+## 14. What I'd Do First on Monday Morning (v1.1 — reordered after the May 1 audit)
 
-Three highest-leverage actions, ranked. Each is a day or less of effort, each unblocks weeks of downstream work.
+The May 1 audit reshuffles priorities. Three v1.0 actions are still right but they no longer go first. The new top of the list is the audit's quick-win punch list — six actions a single dev can knock out in a focused day or two, each of which clears a P0 indexing blocker.
 
-### #1 — Fix the complete-guide consistency failures from the April 19 audit
-**Effort:** 1 day. **Impact:** highest.
-The seven flagship topic pages are our content backbone. `topic-pages-consistency-audit.md` lists specific, bounded fixes: the broken `font-family` on MAIN, the `og:type=website` values that should be `article`, the broken subpage nav paths on STAY, the missing per-page OG images, the schema-type drift between Article and TouristAttraction. None of this is ambiguous. Fix it before any of these pages get indexed under their final URLs, because reshipping titles and metas after indexing is a CTR cost we don't need.
+### #1 — Run the audit's top-6 quick wins (the "P0 unblock" sprint)
+**Effort:** 1–2 days for one developer. **Impact:** highest. Each of these is a P0 indexing blocker.
 
-### #2 — Resolve the elevation discrepancy and stand up GSC + Bing + GA4 against the production domain
+1. **Delete the six duplicate / stub HTML files** (B2). `index copy.html`, both root `complete-guide-…copy.html`, `do/complete-guide-…copy.html`, `stay/xxx-…copy.html`, `topic-page-target-mockup.html`. These are not in the sitemap and add no value. Three of them duplicate the homepage's exact title and meta description, which is actively harming ranking.
+2. **Create `media/og-default.webp` at 1200×630** plus the two other missing assets (`Index-24.webp`, `placeholder-hero-main.webp`) (B3). 46 pages currently reference an OG image file that doesn't exist on disk. Social previews are silently broken.
+3. **Fix `index.html`'s canonical** to `https://discovercloudcroft.com/` and drop the fictional sitemap entry pointing to `/complete-guide-to-cloudcroft-new-mexico-2026.html` (B6 + half of B4). Right now Google may be deindexing the homepage because the canonical points at a 404.
+4. **Script the 40 mismatched canonicals** (B1). 38% of the indexable surface currently has a canonical pointing at a URL that doesn't exist. Either rewrite each canonical to the actual filename, or ship a single rewrite rule for the pretty-URL targets.
+5. **Site-wide find/replace on the top broken-link targets** (B5). `stay/lodging.html` → `stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html`; `do/complete-guide-to-activities.html` → `do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html`; fix the typo'd `where to-hike-in-Cloudcroft-New-Mexico-2026.html`. Resolves ~40 of the 167 broken internal links.
+6. **Fix the 12 entity pages whose JSON-LD `"url"` points to a third-party domain** (C8). Copy the pattern from `eat/black-bear-coffee-shop.html` — on-site canonical as `"url"`, third-party domain in `sameAs`. Currently every Stay entity is telling Google "the canonical entity profile lives at the property's own website."
+
+After this single sprint, site health moves from 58/100 toward the 75–80 range. None of these are research questions; all are bounded find/replace or one-shot file deletions.
+
+### #2 — Stand up GSC + Bing + GA4 against the production domain, and resolve the elevation discrepancy
 **Effort:** half a day. **Impact:** high.
-Pick 9,000 or 8,663 (verify against the Village of Cloudcroft's own published data), find-and-replace sitewide — including `index.html`, any hero copy, and the TouristDestination JSON-LD. Same half-day, finish the Search Console / Bing / GA4 verification so every subsequent decision has real data behind it. Without a verified GSC property under the production domain, every KPI in §2 stays TBD and the 90-day plan runs blind.
+Same content as v1.0's #2. Without a verified GSC property under the production domain, every KPI in §2 stays TBD and the 90-day plan runs blind. While in there: pick 9,000 or 8,663 (verify against the Village of Cloudcroft's own published data) and find/replace sitewide — `index.html` alone references 9,000 in six places. Audit's quick-wins #1–#5 don't depend on this, but every measurement decision afterward does.
 
-### #3 — Commit `md/keyword-map.md` to the repo
+### #3 — Tighten 87 titles + 83 descriptions in one pass
+**Effort:** half a day, mostly mechanical. **Impact:** high on CTR.
+The audit's C1 + C2. Median title is 85 chars (Google cuts at ~60); max is 150. Median description is 182; max 313 (Google rewrites long descriptions, often badly). One scripted pass: drop ` | DiscoverCloudcroft.com` from titles (Google appends site name when configured via Schema), trim taglines to fit 50–60 chars including geo, trim descriptions to 140–155 with a CTA verb + a differentiator + geo. This is the single highest-leverage CTR move and it costs almost nothing.
+
+### #4 — Add `Organization` + `WebSite` (with `SearchAction`) JSON-LD to `index.html`
+**Effort:** 1 hour. **Impact:** brand SERP appearance.
+The audit's C3. Currently the homepage has `TouristDestination` + `BreadcrumbList` + `FAQPage` + 8 `Event`s — but no `Organization` (publisher with logo + `sameAs` to social profiles + `contactPoint`) and no `WebSite` (with `potentialAction: SearchAction`). Without `WebSite/SearchAction`, the site loses sitelinks search-box eligibility. Without `Organization`, the publisher / E-E-A-T attachment is missing.
+
+### #5 — Commit `md/keyword-map.md` to the repo
 **Effort:** 2–3 hours. **Impact:** high on the discipline side.
-One Markdown table: primary keyword, search intent, owner URL (on DiscoverCloudcroft or MountainMonthly), status (live / drafted / planned / not claimed), last-updated date. Every `SEO-Master-Plan.md` rule that starts with "every page…" hinges on this file existing and being the gate before publish. Without it, the two-domain discipline in `MM-DC-Digital-Strategy.txt` is aspirational. With it, cannibalization becomes a policy check, not a judgment call.
+Same as v1.0's #3. One Markdown table: primary keyword, search intent, owner URL (on DiscoverCloudcroft or MountainMonthly), status (live / drafted / planned / not claimed), last-updated date. Every "every page…" rule in `SEO-Master-Plan.md` hinges on this file existing as the gate before publish. Without it, the two-domain discipline in `MM-DC-Digital-Strategy.txt` is aspirational.
 
-After those three, everything in Weeks 1–2 of §12 is executable and the plan is running.
+### What's no longer #1
+The v1.0 #1 — *"Fix the complete-guide consistency failures from the April 19 audit"* — is now folded into the May 1 audit's broader scope. The font-family bug, the `og:type=website` corrections, the STAY subpage nav paths, the per-page OG images: all still need to happen, but they sit inside §7.6's P1 batch (titles, descriptions, JSON-LD `"url"` fix, BreadcrumbList universalization). The April 19 topic-pages audit was correct; it just wasn't the most-broken thing on the site. The May 1 site-wide audit found bigger fires.
+
+After actions #1–#5 above, everything in Weeks 1–2 of §12 is executable and the plan is running. The remaining P1 items in §7.6 (C4 image dimensions across 469 imgs, C5 LCP preload across 100 pages, C6 `defer` on 84 pages, C7 duplicate IDs, C9 `geo` on 55 entity pages, C10 BreadcrumbList on 12 guides, C11 HEIC conversions, C12/C13/C14 image and meta cleanup) become the Weeks 3–6 backlog.
 
 ---
 
-*Written April 24, 2026. Reviewed against `SEO-Master-Plan.md`, `SEO-STRATEGY-MEMO.md`, `DiscoverCloudcroft-SEO-Memo.docx(.pdf)`, `MM-DC-Digital-Strategy.txt`, `DC-SEO-Pages-Ideas.pdf`, `topic-pages-consistency-audit.md`, and the current state of `index.html`, `robots.txt`, `sitemap.xml`, `eat/black-bear-coffee-shop.html`, and the repo's `CLAUDE.md`. Where sources conflicted, the April 2026 Master Plan is the default tiebreaker. Unresolved source conflicts are explicitly flagged in §13.*
+*Originally written April 24, 2026 (v1.0). Updated May 1, 2026 (v1.1) to fold in `md/seo-audit-2026-05-01.md`. Reviewed against `SEO-Master-Plan.md`, `SEO-STRATEGY-MEMO.md`, `DiscoverCloudcroft-SEO-Memo.docx(.pdf)`, `MM-DC-Digital-Strategy.txt`, `DC-SEO-Pages-Ideas.pdf`, `topic-pages-consistency-audit.md`, `md/seo-audit-2026-05-01.md`, and the current state of `index.html`, `robots.txt`, `sitemap.xml`, `eat/black-bear-coffee-shop.html`, and the repo's `CLAUDE.md`. Where sources conflicted, the May 1 technical audit is the default tiebreaker for file-counted defects; the April 2026 Master Plan is the default tiebreaker for strategic decisions. Unresolved source conflicts are explicitly flagged in §13.*
