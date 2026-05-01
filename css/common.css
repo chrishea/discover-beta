@@ -1750,7 +1750,7 @@ img {
 
 .lodge-card img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 9 !important;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
