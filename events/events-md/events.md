@@ -47,6 +47,9 @@ This is one of the most practical event weekends for visitors because Labor Day 
 
 ### October
 
+
+**October Pumpkin Roll (Saturday at the end of October. Followed by a costume parade down Burro Ave. Typically ends at Harvest Festival at Summit Christian Fellowship parking lot.) Fun, family and pet-friendly events. traditionally Burro Ave. shops open up for trick or treating this day.
+
 **Cactus to Cloud Sky Race**  
 **October 17, 2026**  
 Best for: serious runners, ambitious outdoor visitors, shoulder-season travelers  
@@ -60,6 +63,13 @@ Best for: holiday shoppers, families, visitors who like early Christmas atmosphe
 This is the cleanest late-November event on the Chamber calendar. It is a good fit if you want Cloudcroft leaning into holiday mode without waiting for mid-December.
 
 ### December
+
+**Ugly Christmas Sweater 5k run
+12/5/2026
+Cloudcroft, NM Ugly Sweater
+5K & 1 Mile Walk
+December 5th, 2026 4:00 PM
+at Zenith Park
 
 **Mountain Christmas Village**  
 **December 11–19, 2026**  
