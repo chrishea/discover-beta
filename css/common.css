@@ -1024,7 +1024,7 @@ img {
 
 .btn-secondary:hover {
   background: var(--pine);
-  color: white;
+  color: coral;
   transform: translateY(-2px);
 }
 
