@@ -99,7 +99,11 @@ ul {
 
 img {
   max-width: 100%;
+<<<<<<< Updated upstream
    height: auto; 
+=======
+  height: auto;
+>>>>>>> Stashed changes
   display: block;
 }
 
@@ -3824,6 +3828,23 @@ img {
   height: 28px;
   border-radius: 50%;
   background: #000;
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-pin {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #D46A8F;
   color: #fff;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.78rem;

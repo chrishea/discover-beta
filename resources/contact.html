@@ -43,6 +43,66 @@
         "url": "https://discovercloudcroft.com",
         "address": { "@type": "PostalAddress", "addressLocality": "Cloudcroft", "addressRegion": "NM", "postalCode": "88317", "addressCountry": "US" }
       }
+    ,
+      "dateModified": "2026-05-01"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What can I send DiscoverCloudcroft.com?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tips about a new business, hours change, closure, opening, or seasonal restart; corrections to anything on the site; suggestions for listings we haven't covered; and short trip-planning questions we can answer in a sentence or two."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly do you respond?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We aim to respond within a few business days. For time-sensitive questions about your trip, the Cloudcroft Chamber and Village of Cloudcroft both have public phone lines and websites listed in the Quick reference panel above."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I list my Cloudcroft business on the site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — email us with the business name, address, hours, website, and a sentence on what makes it interesting. We add listings on a rolling basis and we don't accept payment for placement. Listings are editorial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I run a Cloudcroft event. Can you cover it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Send the event name, date, location, and a registration or info link. We surface events in the seasonal guides and in the 2026 events calendar at /events/top-events.html."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's behind the site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DiscoverCloudcroft.com is published by Mountain Monthly LLC. We're an independent visitor guide — not affiliated with the Village of Cloudcroft, the Chamber of Commerce, or any single business."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this an emergency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you are in an emergency, call 911. The Otero County Sheriff's non-emergency line and the Cloudcroft Fire Department's number are listed above. We are an editorial site and cannot dispatch help."
+          }
+        }
+      ],
+      "dateModified": "2026-05-01"
     }
     </script>
 
@@ -190,6 +250,49 @@
             color: #fff;
             text-decoration: none;
         }
+
+        /* ── FAQ ── */
+        .faq-list {
+            max-width: 760px;
+            margin: 1.5rem auto 0;
+            padding: 0 1rem;
+        }
+
+        .faq-item {
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 1.5rem 0;
+        }
+
+        .faq-item:first-of-type {
+            border-top: 0;
+            padding-top: 0;
+        }
+
+        .faq-item h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #000;
+            margin: 0 0 0.5rem;
+            line-height: 1.35;
+        }
+
+        .faq-item p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #2B2B2B;
+            margin: 0;
+        }
+
+        .faq-item p+p {
+            margin-top: 0.75rem;
+        }
+
+        .faq-item a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
 </style>
 </head>
 
@@ -319,6 +422,57 @@
                     <a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank"
                         rel="noopener noreferrer">Open in Google Maps</a>.
                 </p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="faq-h">
+            <div class="section-container" style="max-width: 760px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <span class="section-label">FAQ</span>
+                    <h2 id="faq-h" class="section-title section-title-centered">Frequently asked</h2>
+                    <p class="section-description">A few common questions before you write in.</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>What can I send DiscoverCloudcroft.com?</h3>
+                        <p>Tips about a new business, an hours change, a closure, an opening, or a seasonal restart;
+                            corrections to anything on the site; suggestions for listings we haven't covered; and
+                            short trip-planning questions we can answer in a sentence or two.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How quickly do you respond?</h3>
+                        <p>We aim to respond within a few business days. For time-sensitive questions about your
+                            trip, the <a href="https://www.coolcloudcroft.com" target="_blank"
+                                rel="noopener noreferrer">Cloudcroft Chamber</a> and the
+                            <a href="https://villageofcloudcroft.com" target="_blank"
+                                rel="noopener noreferrer">Village of Cloudcroft</a> both have public phone lines and
+                            websites listed in the Quick reference panel above.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I list my Cloudcroft business on the site?</h3>
+                        <p>Yes. Email us with the business name, address, hours, website, and a sentence on what
+                            makes it interesting. We add listings on a rolling basis and we don't accept payment for
+                            placement &mdash; listings are editorial.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>I run a Cloudcroft event. Can you cover it?</h3>
+                        <p>Yes. Send the event name, date, location, and a registration or info link. We surface
+                            events in the seasonal guides and in the
+                            <a href="../events/top-events.html">2026 events calendar</a>.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Who's behind the site?</h3>
+                        <p>DiscoverCloudcroft.com is published by Mountain Monthly LLC. We're an independent visitor
+                            guide &mdash; not affiliated with the Village of Cloudcroft, the Chamber of Commerce, or
+                            any single business.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is this an emergency?</h3>
+                        <p>If you are in an emergency, <strong>call 911</strong>. The Otero County Sheriff's
+                            non-emergency line and the Cloudcroft Fire Department's number are listed above. We are
+                            an editorial site and cannot dispatch help.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
