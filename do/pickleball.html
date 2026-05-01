@@ -51,6 +51,36 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsEvent",
+      "name": "2nd Annual Pickleball in the Clouds",
+      "sport": "Pickleball",
+      "startDate": "2026-06-06",
+      "endDate": "2026-06-07",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Cloudcroft, NM",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cloudcroft",
+          "addressRegion": "NM",
+          "addressCountry": "US"
+        }
+      },
+      "image": "https://discovercloudcroft.com/do/do-photo/pickleball/pickleball-tournament-cloudcroft.PNG",
+      "description": "Two-day doubles pickleball tournament in Cloudcroft, NM. Men's, Women's, and Mixed Doubles brackets at Intermediate and Advanced levels.",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://pickleballden.com",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
     <style>
         .hero-bg {
             background: url('do-photo/pickleball/pickleball-00759.jpg') center 40% / cover no-repeat;
@@ -58,6 +88,84 @@
 
         .hero-overlay {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.2));
+        }
+
+        /* ── Tournament flyer ── */
+        .tournament-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+            gap: 2.5rem;
+            align-items: start;
+        }
+
+        @media (max-width: 720px) {
+            .tournament-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .tournament-flyer img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .tournament-body h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin: 0 0 0.5rem 0;
+            color: #000;
+        }
+
+        .tournament-body .event-dates {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--golden-hour, #c89b3c);
+            margin: 0 0 1rem 0;
+        }
+
+        .tournament-body ol {
+            margin: 0.5rem 0 1.25rem 1.25rem;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        .tournament-body ol li {
+            margin-bottom: 0.35rem;
+        }
+
+        .tournament-cta {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.85rem 1.75rem;
+            background: var(--cta-red);
+            color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+        }
+
+        .tournament-cta:hover {
+            background: var(--cta-red-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        .tournament-tagline {
+            font-style: italic;
+            color: #777;
+            margin-top: 1rem;
+            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -242,6 +350,44 @@
             </div>
         </section>
 
+        <section class="section section-alt" id="tournaments" aria-label="Pickleball tournaments in Cloudcroft">
+            <div class="section-container">
+                <div class="section-header-center">
+                    <span class="section-label">Tournaments</span>
+                    <h2 class="section-title section-title-centered">2nd Annual Pickleball in the Clouds</h2>
+                    <p class="section-description">A two-day doubles tournament in Cloudcroft &mdash; June 6 and June 7,
+                        2026.</p>
+                </div>
+                <div class="tournament-grid fade-in">
+                    <figure class="tournament-flyer">
+                        <img src="do-photo/pickleball/pickleball-tournament-cloudcroft.PNG"
+                            alt="2nd Annual Pickleball in the Clouds tournament flyer — June 6–7, 2026, Cloudcroft, NM"
+                            loading="lazy" decoding="async">
+                    </figure>
+                    <div class="tournament-body">
+                        <h3>What it is</h3>
+                        <p class="event-dates">June 6 &amp; June 7, 2026 &middot; Cloudcroft, NM</p>
+                        <p>The second annual <strong>Pickleball in the Clouds</strong> tournament returns to Cloudcroft
+                            for two days of competitive doubles play. Brackets cover <strong>Men&rsquo;s,
+                                Women&rsquo;s, and Mixed Doubles</strong> at <strong>Intermediate and
+                                Advanced</strong> skill levels.</p>
+                        <h3>How to register</h3>
+                        <ol>
+                            <li>Visit <strong>pickleballden.com</strong>.</li>
+                            <li>Search for &ldquo;Cloudcroft.&rdquo;</li>
+                            <li>Select &ldquo;2nd Annual Pickleball in the Clouds&rdquo; and complete registration.</li>
+                        </ol>
+                        <a href="https://pickleballden.com" class="tournament-cta" target="_blank"
+                            rel="noopener">Register at PickleballDen.com</a>
+                        <p class="tournament-tagline">&ldquo;Pack your game. Breathe the air. See you in the
+                            clouds!&rdquo;</p>
+                        <p><small>Venue, entry fees, and the schedule of play are posted on the registration site
+                                &mdash; check PickleballDen.com for the latest details.</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section" id="gallery" aria-label="Photos from the courts">
             <div class="section-container">
                 <div class="section-header-center">
@@ -253,65 +399,65 @@
                         <img src="do-photo/pickleball/pickleball-00759.jpg"
                             alt="Four players in a competitive doubles rally on the blue and red Zenith Park courts"
                             loading="lazy">
-                        <div class="gallery-caption">Doubles action at Zenith Park</div>
+
                     </div>
                     <div class="gallery-item">
                         <img src="do-photo/pickleball/pickleball-00760.webp"
                             alt="Large group photo of the Pickleball Addicts of Cloudcroft club members posing with paddles"
                             loading="lazy">
-                        <div class="gallery-caption">The Pickleball Addicts of Cloudcroft</div>
+
                     </div>
                     <div class="gallery-item">
                         <img src="do-photo/pickleball/pickleball-00758.jpg"
                             alt="Couple posing courtside with paddles, man wearing USA Pickleball shirt" loading="lazy">
-                        <div class="gallery-caption">Visitors welcome</div>
+
                     </div>
                     <div class="gallery-item">
                         <img src="do-photo/pickleball/pickleball-00761.webp"
                             alt="Two players at the net during a match with Zenith Park pavilion and pine trees in background"
                             loading="lazy">
-                        <div class="gallery-caption">Net play with mountain backdrop</div>
+
                     </div>
                     <div class="gallery-item">
                         <img src="do-photo/pickleball/pickleball-00762.webp"
                             alt="Women playing doubles on Zenith Park courts with multiple courts active in the background"
                             loading="lazy">
-                        <div class="gallery-caption">Multiple courts in play</div>
+
                     </div>
                     <div class="gallery-item">
-                        <img src="do-photo/pickleball/pickleball-00763.jpg"
+                        <img src="do-photo/pickleball/PB-1-web.jpg"
                             alt="Mixed doubles partners in action, woman lunging for a volley at the kitchen line"
                             loading="lazy">
-                        <div class="gallery-caption">Kitchen-line action</div>
+
                     </div>
                     <div class="gallery-item">
                         <img src="do-photo/pickleball/pickleball-00757.jpg"
                             alt="Two men shaking hands at the net after a match on the Cloudcroft courts"
                             loading="lazy">
-                        <div class="gallery-caption">Good game</div>
+
                     </div>
                     <div class="gallery-item">
                         <img src="do-photo/pickleball/pickleball-00756.jpg"
                             alt="Four players posing at the net with paddles raised, aspen and pine trees behind them"
                             loading="lazy">
-                        <div class="gallery-caption">Post-match at the net</div>
+
                     </div>
                 </div>
                 <div class="highlights-grid" style="margin-top: 2rem;">
                     <div class="highlight-card">
-                        <div class="highlight-icon">&#x2600;&#xFE0F;</div>
+
                         <h3>Cool Summer Play</h3>
                         <p>While Alamogordo and Las Cruces hit triple digits, Cloudcroft stays 20&ndash;30&deg;F cooler.
                             Morning play at the courts is comfortable all summer long.</p>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F91D;</div>
+
                         <h3>Visitors Welcome</h3>
                         <p>The PAC runs drop-in play three mornings a week. Show up with a paddle and you&rsquo;ll get
                             matched into a game. The group is social and welcoming to all levels.</p>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-icon">&#x1F3DE;&#xFE0F;</div>
+
                         <h3>More at Zenith Park</h3>
                         <p>After your game, Zenith Park also has the Byron Ligon 9-hole disc golf course, a pavilion,
                             and green space. Burro Avenue restaurants are a short walk away.</p>
@@ -351,7 +497,7 @@
                         <h3>Good to Know</h3>
                         <p>Bring your own paddle and balls &mdash; no on-site rental. Courts are outdoor with no shade.
                             Afternoon wind and summer thunderstorms (June&ndash;August) can end a session. Morning play
-                            is best. Altitude: 9,000 ft &mdash; hydrate and pace yourself.</p>
+                            is best. Altitude: 8,676 ft &mdash; hydrate and pace yourself. Use sun protection.</p>
                     </div>
                 </div>
             </div>
