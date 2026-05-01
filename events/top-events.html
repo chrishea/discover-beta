@@ -46,6 +46,36 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsEvent",
+      "name": "2nd Annual Pickleball in the Clouds",
+      "sport": "Pickleball",
+      "startDate": "2026-06-06",
+      "endDate": "2026-06-07",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Cloudcroft, NM",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cloudcroft",
+          "addressRegion": "NM",
+          "addressCountry": "US"
+        }
+      },
+      "image": "https://discovercloudcroft.com/do/do-photo/pickleball/pickleball-tournament-cloudcroft.PNG",
+      "description": "Two-day doubles pickleball tournament in Cloudcroft, NM. Men's, Women's, and Mixed Doubles brackets at Intermediate and Advanced levels.",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://pickleballden.com",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
     <link href="../css/fonts.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -127,6 +157,64 @@
             line-height: 1.7;
             margin: 0;
             max-width: 65ch;
+        }
+
+        /* ── Featured event flyer (Pickleball) ── */
+        .event-flyer {
+            margin: 0 0 1rem 0;
+            text-align: center;
+        }
+
+        .event-flyer img {
+            display: block;
+            max-width: 420px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .event-steps {
+            margin: 0.75rem 0 1rem 1.25rem;
+            padding: 0;
+            font-size: 0.95rem;
+            color: #555555;
+            line-height: 1.7;
+        }
+
+        .event-steps li {
+            margin-bottom: 0.35rem;
+        }
+
+        .event-cta {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.85rem 1.75rem;
+            background: var(--cta-red);
+            color: #ffffff;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+        }
+
+        .event-cta:hover {
+            background: var(--cta-red-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        .event-tagline {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 0.75rem !important;
         }
 
         /* ── Picks grid ── */
