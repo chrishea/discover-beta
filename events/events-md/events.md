@@ -45,6 +45,10 @@ This is one of the most serious athletic events on the calendar. Even if you are
 Best for: holiday-weekend visitors, families, people who want an easy festival weekend  
 This is one of the most practical event weekends for visitors because Labor Day already gives many people time to travel. Expect more town activity and less quiet than on a normal September weekend.
 
+**High Altitude Classic Mountain Bike Race**
+**September TBA: 
+Reworked course loop to end at Elevation Park . challenging, fun course, basin views, high elevation mountain biking. competition for different age groups, distances, and skill levels.
+
 ### October
 
 
