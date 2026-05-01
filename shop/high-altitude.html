@@ -534,7 +534,7 @@
             </details>
         </section>
 
-        <section class="editor-section" id="editor" aria-label="Editor's take">
+        <section class="editor-section" style="background-color:white" id="editor" aria-label="Editor's take">
             <div class="editor-wrap">
                 <h2>Editor's take</h2>
                 <blockquote>"High Altitude earns the tout because it's genuinely useful, not because it's picturesque.
@@ -586,7 +586,7 @@
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
-    <script src="../js/common.js"></script>
+    <script src="../js/common.js" defer></script>
     <script>
         (function () {
             var fadeObserver = new IntersectionObserver(function (e) { e.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add('visible'); fadeObserver.unobserve(x.target); } }); }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });

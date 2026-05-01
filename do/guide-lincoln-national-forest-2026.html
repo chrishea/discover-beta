@@ -36,7 +36,8 @@
         "addressRegion": "NM",
         "addressCountry": "US"
       },
-      "url": "https://www.fs.usda.gov/lincoln",
+      "url": "https://discovercloudcroft.com/do/guide-lincoln-national-forest-2026.html",
+      "sameAs": ["https://www.fs.usda.gov/lincoln"],
       "touristType": ["Hikers", "Campers", "Mountain Bikers", "Families", "Birdwatchers", "Stargazers"]
     }
     </script>
@@ -354,6 +355,31 @@
             .season-grid { grid-template-columns: 1fr; }
         }
 </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://discovercloudcroft.com/"
+        },        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Activities",
+          "item": "https://discovercloudcroft.com/do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html"
+        },        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Lincoln National Forest (2026)",
+          "item": "https://discovercloudcroft.com/do/guide-lincoln-national-forest-2026.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -787,7 +813,7 @@
 
     <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
-    <script src="../js/common.js"></script>
+    <script src="../js/common.js" defer></script>
     <script>
         (function () {
             var observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
