@@ -2,19 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- ============================================================
-       Sitemap last reviewed: 2026-04-28
+       Sitemap last reviewed: 2026-05-02
        Excludes: shelf/* (archived), *copy*, xxx-*, mockups,
-       Google site-verification file,
-       .claude/worktrees/* (development copies).
-       New since 2026-04-26: eat/fernandos.html,
-       eat/noisy-water-winery.html, profile/profile-levain/...,
-       resources/auto/guide-auto-services-in-cloudcroft-2026.html.
+       drafts/* (work-in-progress mockups), Google site-verification
+       file, .claude/worktrees/* (development copies).
+       New since 2026-04-28: do/run.html, shop/mountain-magic.html.
        ============================================================ -->
 
   <!-- ===== HOMEPAGE ===== -->
   <url>
     <loc>https://discovercloudcroft.com/</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>1.0</priority>
   </url>
 
@@ -227,6 +225,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://discovercloudcroft.com/shop/mountain-magic.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://discovercloudcroft.com/shop/new-village-hardware.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
@@ -353,6 +356,11 @@
   <url>
     <loc>https://discovercloudcroft.com/do/pickleball.html</loc>
     <lastmod>2026-04-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://discovercloudcroft.com/do/run.html</loc>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
 
