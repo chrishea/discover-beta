@@ -42,7 +42,6 @@ def build_nav(prefix: str) -> str:
                 <a href="{p}index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
-                    <span class="logo-beta">Beta</span>
                 </a>
                 <a href="{p}stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
                 <a href="{p}eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
