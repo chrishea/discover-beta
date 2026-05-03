@@ -533,15 +533,16 @@
             width: 28px;
             height: 28px;
             border-radius: 50%;
-            background: #000;
-            color: #fff;
+            background: #E07C2E !important;
+            color: #FFFFFF;
+            border-color: #E07C2E !important;
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 0.78rem;
             font-weight: 700;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+
             z-index: 2;
         }
 
@@ -1228,6 +1229,177 @@
                 animation: none;
             }
         }
+
+        /* ===== GUIDE HUBS (above-the-fold promotion of the 5 tier-1 guides) ===== */
+        .guide-hubs {
+            max-width: 1400px;
+            margin: 3rem auto 4rem;
+            padding: 0 1.5rem;
+        }
+
+        .guide-hubs-head {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .guide-hubs-head .eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .guide-hubs-head h2 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 700;
+            color: #000;
+            margin: 0 0 0.6rem;
+            line-height: 1.2;
+        }
+
+        .guide-hubs-head p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 1rem;
+            color: #555;
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        .guide-hub-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        @media (max-width: 1100px) {
+            .guide-hub-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .guide-hub-card:nth-child(4) {
+                grid-column: 1;
+            }
+
+            .guide-hub-card:nth-child(5) {
+                grid-column: 2;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .guide-hub-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .guide-hub-card:nth-child(n) {
+                grid-column: auto;
+            }
+
+            .guide-hub-card:nth-child(5) {
+                grid-column: 1 / span 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .guide-hub-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .guide-hub-card:nth-child(n) {
+                grid-column: auto;
+            }
+        }
+
+        .guide-hub-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            text-decoration: none;
+            aspect-ratio: 3/4;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            isolation: isolate;
+        }
+
+        .guide-hub-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+        }
+
+        .guide-hub-card-img {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+            transition: transform 0.4s ease;
+        }
+
+        .guide-hub-card:hover .guide-hub-card-img {
+            transform: scale(1.06);
+        }
+
+        .guide-hub-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.15) 85%, rgba(0, 0, 0, 0.45) 100%);
+            z-index: 1;
+        }
+
+        .guide-hub-card-body {
+            position: relative;
+            z-index: 2;
+            margin-top: auto;
+            padding: 1.25rem;
+            color: #fff;
+        }
+
+        .guide-hub-eyebrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.85);
+            display: block;
+            margin-bottom: 0.4rem;
+        }
+
+        .guide-hub-card-body h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 0 0.35rem;
+            line-height: 1.15;
+        }
+
+        .guide-hub-card-body p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.4;
+            margin: 0 0 0.5rem;
+        }
+
+        .guide-hub-arrow {
+            display: inline-block;
+            font-size: 1.1rem;
+            color: #fff;
+            transition: transform 0.2s ease;
+        }
+
+        .guide-hub-card:hover .guide-hub-arrow {
+            transform: translateX(4px);
+        }
     </style>
 </head>
 
@@ -1386,6 +1558,72 @@
                 trip does.</span>
         </div>
 
+        <!-- ================================ GUIDE HUBS (above-the-fold) ================================ -->
+        <section class="guide-hubs" aria-label="The five complete guides">
+            <div class="guide-hubs-head">
+                <span class="eyebrow">Browse by category</span>
+                <h2>The five complete guides</h2>
+                <p>Every entity, route, and event in Cloudcroft — sorted by what you came for.</p>
+            </div>
+            <div class="guide-hub-grid">
+                <a class="guide-hub-card" href="do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">
+                    <div class="guide-hub-card-img"
+                        style="background-image:url('media/hiker-and-dog-autumn-forest-trail.jpeg');" role="img"
+                        aria-label="Hiker and dog on a forest trail near Cloudcroft"></div>
+                    <div class="guide-hub-card-body">
+                        <span class="guide-hub-eyebrow">Do</span>
+                        <h3>Things to do</h3>
+                        <p>Trails, the trestle, dark skies, golf, fishing — year-round.</p>
+                        <span class="guide-hub-arrow" aria-hidden="true">&rarr;</span>
+                    </div>
+                </a>
+                <a class="guide-hub-card" href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">
+                    <div class="guide-hub-card-img" style="background-image:url('media/Lodging-summit-inn.webp');"
+                        role="img" aria-label="Cloudcroft mountain lodging"></div>
+                    <div class="guide-hub-card-body">
+                        <span class="guide-hub-eyebrow">Stay</span>
+                        <h3>Where to stay</h3>
+                        <p>Inns, motels, cabins, and rentals — boutique to budget.</p>
+                        <span class="guide-hub-arrow" aria-hidden="true">&rarr;</span>
+                    </div>
+                </a>
+                <a class="guide-hub-card" href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">
+                    <div class="guide-hub-card-img"
+                        style="background-image:url('media/cloudcroft-main-street-sunset.jpg');" role="img"
+                        aria-label="Cloudcroft main street at sunset"></div>
+                    <div class="guide-hub-card-body">
+                        <span class="guide-hub-eyebrow">Eat</span>
+                        <h3>Where to eat</h3>
+                        <p>Independent restaurants, scratch kitchens, bakeries, and bars.</p>
+                        <span class="guide-hub-arrow" aria-hidden="true">&rarr;</span>
+                    </div>
+                </a>
+
+                <a class="guide-hub-card" href="shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">
+                    <div class="guide-hub-card-img"
+                        style="background-image:url('media/painted-blue-burro-sculpture.webp');" role="img"
+                        aria-label="Painted blue burro sculpture on Burro Avenue"></div>
+                    <div class="guide-hub-card-body">
+                        <span class="guide-hub-eyebrow">Shop</span>
+                        <h3>Where to shop</h3>
+                        <p>Burro Avenue boutiques, galleries, and one-of-a-kind finds.</p>
+                        <span class="guide-hub-arrow" aria-hidden="true">&rarr;</span>
+                    </div>
+                </a>
+                <a class="guide-hub-card" href="visit/where-to-visit.html">
+                    <div class="guide-hub-card-img"
+                        style="background-image:url('media/aerial-cloudcroft-winter-snow.webp');" role="img"
+                        aria-label="Aerial view of Cloudcroft village in winter snow"></div>
+                    <div class="guide-hub-card-body">
+                        <span class="guide-hub-eyebrow">Visit</span>
+                        <h3>Where to visit</h3>
+                        <p>Day trips: White Sands, Sunspot, Timberon, Lincoln National Forest.</p>
+                        <span class="guide-hub-arrow" aria-hidden="true">&rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
         <!-- ================================ THINGS TO DO ================================ -->
         <section class="hub-block" id="do" aria-label="Best things to do">
             <div class="hub-block-head">
@@ -1401,7 +1639,7 @@
             <div class="lodge-grid is-grid-plus">
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">6</span>
+                    <span class="card-pin" aria-hidden="true">1</span>
                     <img src="media/placeholder-explore-burro-avenue.webp" width="990" height="558"
                         alt="Shop interior on Burro Avenue in Cloudcroft" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -1425,7 +1663,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">1</span>
+                    <span class="card-pin" aria-hidden="true">2</span>
                     <img src="do/do-photo/hike/hike-00457.jpg" width="1600" height="1200"
                         alt="Hiking trail through the Lincoln National Forest near Cloudcroft" loading="lazy"
                         decoding="async">
@@ -1451,7 +1689,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">2</span>
+                    <span class="card-pin" aria-hidden="true">3</span>
                     <img src="do/do-photo/camp/camp-00756.jpg" width="1114" height="836"
                         alt="Campsite beneath tall pines in Lincoln National Forest near Cloudcroft" loading="lazy"
                         decoding="async">
@@ -1476,7 +1714,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">3</span>
+                    <span class="card-pin" aria-hidden="true">4</span>
                     <img src="do/do-photo/bike/bike-00555.jpeg" width="2048" height="1536"
                         alt="Mountain biking the Sacramento Mountains singletrack near Cloudcroft" loading="lazy"
                         decoding="async">
@@ -1500,7 +1738,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">4</span>
+                    <span class="card-pin" aria-hidden="true">5</span>
                     <img src="media/image-do-pickleball-group.webp" width="1524" height="979"
                         alt="Pickleball courts at Zenith Park in Cloudcroft" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -1523,7 +1761,7 @@
                     </div>
                 </article>
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">5</span>
+                    <span class="card-pin" aria-hidden="true">6</span>
                     <img src="do/do-photo/fish/fish-333.jpeg" width="600" height="450"
                         alt="Trout fishing in a Lincoln National Forest stream near Cloudcroft" loading="lazy"
                         decoding="async">
@@ -1549,7 +1787,7 @@
 
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">7</span>
+                    <span class="card-pin" style="background-color:sunset-aria-hidden=" true">7</span>
                     <img src="media/mexican-canyon-trestle-bridge.jpeg" width="960" height="720"
                         alt="Mexican Canyon Trestle — a historic 1899 railroad bridge near Cloudcroft" loading="lazy"
                         decoding="async">
@@ -1591,7 +1829,7 @@
             <div class="lodge-grid is-grid-plus">
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">1</span>
+                    <span class="card-pin" style="background-color: #E07C2E" aria-hidden="true">1</span>
                     <img src="stay/stay-photo/photo-the-lodge/cloudcroft-lodge-horses-blue-sky.jpg" width="1911"
                         height="1298" alt="The Lodge at Cloudcroft with Bavarian-style architecture" loading="lazy"
                         decoding="async">
@@ -1617,7 +1855,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">2</span>
+                    <span class="card-pin" style="background-color: #E07C2E" aria-hidden="true">2</span>
                     <img src="stay/stay-photo/photo-cabins-at/cabins-at-00451.JPG" width="800" height="533"
                         alt="Private cabin at The Cabins at Cloudcroft under tall pines" loading="lazy"
                         decoding="async">
@@ -1642,7 +1880,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">3</span>
+                    <span class="card-pin" style="background-color: #E07C2E" aria-hidden="true">3</span>
                     <img src="stay/stay-photo/photo-grand-hotel/grand-hotel-00256.jpg" width="680" height="453"
                         alt="The Grand Cloudcroft Hotel on James Canyon Highway" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -1666,8 +1904,8 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">4</span>
-                    <img src="stay/stay-photo/photo-dusty-boots-motel/dusty-boots-motel.jpegs" width="259" height="194"
+                    <span class="card-pin" style="background-color: #E07C2E" aria-hidden="true">4</span>
+                    <img src="stay/stay-photo/photo-dusty-boots-motel/dusty-boots-motel.jpeg" width="259" height="194"
                         alt="Dusty Boots Motel and Cafe — themed motel rooms with scratch-kitchen cafe" loading="lazy"
                         decoding="async">
                     <div class="card-body">
@@ -1692,7 +1930,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">5</span>
+                    <span class="card-pin" style="background-color: #E07C2E" aria-hidden="true">5</span>
                     <img src="stay/stay-photo/photo-summit-inn/IMG_5063.jpg" width="2048" height="1536"
                         alt="Renovated room at The Summit Inn in Cloudcroft" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -1716,7 +1954,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">6</span>
+                    <span class="card-pin" style="background-color: #E07C2E" aria-hidden="true">6</span>
                     <img src="stay/stay-photo/photo-crofting-inn/crofting-inn-front.jpg" width="1080" height="834"
                         alt="The Crofting Bed and Breakfast — 1909 historic home" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -1741,7 +1979,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">7</span>
+                    <span class="card-pin" style="background-color: #E07C2E" aria-hidden="true">7</span>
                     <img src="stay/stay-photo/photo-osha/476905612_639160895296296_4008368919499081786_n.jpg"
                         width="2048" height="1536" alt="Osha Trail Lodging — carved wooden sign" loading="lazy"
                         decoding="async">
@@ -1830,6 +2068,35 @@
 
                 <article class="lodge-card card-plus fade-in">
                     <span class="card-pin" aria-hidden="true">3</span>
+                    <img src="stay/stay-photo/photo-dusty-boots-motel/dusty-boots-00230.jpg" width="720" height="540"
+                        alt="Dusty Boots Café interior with wood-burning stove and wood-floor dining room"
+                        loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Dusty Boots Caf&eacute;</h3>
+                            <span class="cat-tag cat-eat">Caf&eacute;</span>
+                        </div>
+                        <span class="property-type type-inline">James Canyon Hwy &middot; scratch breakfast</span>
+                        <p class="card-desc">A Wiley-family motel caf&eacute; where 90% of the menu is made from
+                            scratch.
+                            Breakfast served until noon (try the hiker-boot omelette), a recently added taco cantina,
+                            and
+                            select-Saturday German Night dinners. Open to the public &mdash; expect a wait on weekend
+                            mornings.</p>
+                        <div class="amenities">
+                            <span class="amenity">Scratch kitchen</span>
+                            <span class="amenity">Tacos cantina</span>
+                            <span class="amenity">German Night</span>
+                        </div>
+                        <div class="card-foot">
+                            <a href="eat/dusty-boots-cafe.html" class="lodge-card-guide">Read full guide
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="lodge-card card-plus fade-in">
+                    <span class="card-pin" aria-hidden="true">4</span>
                     <img src="eat/eat-photo/photo-brewery/brewery-00559.jpeg" width="480" height="640"
                         alt="Cloudcroft Brewing Co. taproom" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -1855,7 +2122,7 @@
                 <article class="lodge-card card-plus fade-in" data-property="highrollin"
                     data-meal="breakfast coffee lunch sweet" data-style="coffee" data-region="highway"
                     data-reservable="false" data-late="false" data-family="true">
-                    <span class="card-pin" aria-hidden="true">4</span>
+                    <span class="card-pin" aria-hidden="true">5</span>
                     <img src="eat/eat-photo/photo-high-rollin/high-rollin-00556.jpg" width="640" height="480"
                         alt="High Rollin' Coffee on James Canyon Highway" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -1884,7 +2151,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">5</span>
+                    <span class="card-pin" aria-hidden="true">6</span>
                     <img src="eat/eat-photo/photo-western-bar/western-bar-00555.jpg" width="640" height="430"
                         alt="Western Bar and Cafe in Cloudcroft" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -1908,7 +2175,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">6</span>
+                    <span class="card-pin" aria-hidden="true">7</span>
                     <img src="eat/eat-photo/photo-big-daddys/big-daddys-00556.jpg" width="330" height="220"
                         alt="Big Daddy's Diner in Cloudcroft" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -1931,7 +2198,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">7</span>
+                    <span class="card-pin" aria-hidden="true">8</span>
                     <img src="eat/eat-photo/photo-brother-in-law-bbq/image-brother-in-law-bbq.jpg" width="2048"
                         height="1348" alt="Brother-N-Law BBQ in Cloudcroft" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -1955,7 +2222,7 @@
                 </article>
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">8</span>
+                    <span class="card-pin" aria-hidden="true">9</span>
                     <img src="eat/eat-photo/photo-eat-cloudcroft-sandwich/photo-cloudcroft-sandwich-00022.jpeg.webp"
                         width="500" height="500" alt="Cloudcroft Sandwich Shop on Burro Avenue" loading="lazy"
                         decoding="async">
@@ -1983,7 +2250,8 @@
             </div>
 
             <div style="text-align: center; margin-top: 2.5rem;">
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html" class="btn-primary">See More</a>
+                <a href="eat/complete-guide-where-to-eat-in-cloudcroft-2026.html" class="btn-primary">See All
+                    Restaurants</a>
             </div>
         </section>
 

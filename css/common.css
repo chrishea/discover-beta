@@ -253,13 +253,20 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
-  background: var(--charcoal);
-  border: none;
+  background: var(--sunset);
+  border: 2px solid var(--sunset);
   border-radius: 999px;
   padding: 0.55rem 1.1rem;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
   white-space: nowrap;
+}
+
+.nav-cta:hover {
+  background: var(--sunset-hover);
+  border-color: var(--sunset-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -3853,7 +3860,7 @@ img {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #D46A8F;
+  background: #E07C2E;
   color: #fff;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.78rem;

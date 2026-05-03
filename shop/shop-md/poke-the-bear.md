@@ -2,12 +2,12 @@
 
 ## 1. Executive summary
 
-Poke The Bear is Cloudcroft's rummage-and-discover retail stop — a broad, eclectic Burro Avenue shop mixing used books, art, upcycled furniture, lamps, antiques, vintage items, collectibles, blankets, outdoor gear, hats, shirts, Bigfoot items, and souvenirs. The Chamber's description captures what this shop is better than any tighter editorial line would: the appeal is looking-around-and-seeing-what-turns-up. Contact details (phone + email) are Chamber-confirmed; a clean standalone website and a posted hours schedule aren't in current public sources, so call before making a specific-time visit.
+Poke The Bear is Cloudcroft's  a broad, eclectic Burro Avenue Marketplace that has something for everyone with a mixture of unique things  shop mixing used books, art, upcycled furniture, lamps, antiques, vintage items, collectibles, blankets, outdoor gear, hats, shirts, Bigfoot items, and souvenirs. The Chamber's description captures what this shop is better than any tighter editorial line would: the appeal is looking-around-and-seeing-what-turns-up. Contact details (phone + email) are Chamber-confirmed; a clean standalone website and a posted hours schedule aren't in current public sources, so call before making a specific-time visit.
 
 ## 2. Verified business facts
 
 - **Official business name:** Poke The Bear
-- **Address:** Burro Avenue, Cloudcroft, NM 88317 (Chamber confirms the business and Burro Avenue placement; a full official street number isn't confirmed from a business-controlled source).
+- **Address:** 510 Burro Avenue, Cloudcroft, NM 88317 
 - **Phone:** (575) 682-1341
 - **Email:** ptbear510@yahoo.com
 - **Website:** not confirmed from a current primary source.
@@ -18,7 +18,7 @@ Poke The Bear is Cloudcroft's rummage-and-discover retail stop — a broad, ecle
 
 ## 3. Signals (at-a-glance tags)
 
-Pin 11 · Burro Avenue · Vintage · Used books · Antiques · Upcycled furniture · Bigfoot items · Outdoor gear · Hats &amp; shirts · Blankets · Eclectic · Rummage-and-discover · Hours vary — call ahead
+Pin 11 · Burro Avenue · Vintage · Used books · Antiques · Upcycled furniture · Bigfoot items · Outdoor gear · Hats &amp; shirts · Blankets · Eclectic · Hours vary — call ahead
 
 ## 4. What the shop is
 
@@ -128,3 +128,7 @@ Poke The Bear's ownership history, founding year, and longer arc aren't document
 - **Current social accounts.**
 - **Whether the store has any e-commerce or shipping.**
 - **Specific strengths / depth by category** (used-book selection, antique depth, etc.).
+
+## 
+RULES TO OBEY
+DO NOT Say Rummage store—say eclectic gifts. Do not focus on used books. Focus on humor gifts, variety, something for everyone, and unique vibe. 
