@@ -13,17 +13,17 @@ Notes call out who/what executed each item and where the evidence lives.
 
 ## Progress headline
 
-**26 of 38 items closed in 24 hours** (May 2–3, 2026), including the entire
-December cleanup batch executed 7 months ahead of schedule. Site is materially
-ranked-ready: redirects deployed, sitemap regenerated, schema mature, hub pages
-promoted on the homepage, og:images cleaned across 50 pages.
+**29 of 38 items closed in 24 hours** (May 2–3, 2026), including the entire
+December cleanup batch executed 7 months ahead of schedule, all 4 topical
+authority hub pages, and the multi-column footer with full trust-link cluster.
+Site is materially ranked-ready.
 
 | Bucket | Done | Total | Status |
 |--------|-----:|------:|--------|
 | This week | 11 | 12 | Manual GSC/Bing submissions only |
-| This quarter | 2 | 6 | Editor bios, feeder pages, footer, RSS pending |
+| This quarter | 3 | 6 | Editor bios, feeder pages, RSS pending |
 | December cleanup | 8 | 8 | ✅ Complete (early) |
-| Longer term | 0 | 5 | Appropriately deferred |
+| Longer term | 1 | 5 | Topics done; 4 deferred |
 
 ---
 
@@ -63,7 +63,7 @@ promoted on the homepage, og:images cleaned across 50 pages.
   - `visit/cloudcroft-from-las-cruces.html`
   - `visit/cloudcroft-from-lubbock.html`
   - `visit/cloudcroft-from-ruidoso.html`
-- [ ] **Strengthen the footer.** Not done. Footer currently shows brand line + tagline + copyright only. Audit asked for About, Editorial Standards, Contact, Privacy Policy, Terms of Service, social media links.
+- [x] **Strengthen the footer.** Done 2026-05-03. New 4-column responsive footer (brand / Explore / About / Stay in touch) deployed across all 108 pages via [content/sync-footer.py](../content/sync-footer.py). Includes the full audit-requested trust cluster: About us, Editorial Standards, Privacy Policy, Terms of Service, Contact. Added newsletter Subscribe CTA in the fourth column. Bottom strip has copyright + Privacy/Terms/Editorial quick links. Created the missing [about/editorial-standards.html](../about/editorial-standards.html) substantive trust page covering sourcing, verification, editorial independence, AI disclosure, corrections process. Social media links intentionally NOT added — owner doesn't have public handles to wire in yet.
 - [ ] **Publish RSS or Atom feed at `/feed.xml`.** Not done.
 
 **Status:** 2 of 6 done. The 4 remaining items are sized at 2-15 hours each; can be batched whenever editorial bandwidth allows.
@@ -95,7 +95,7 @@ to migrate; pre-peak (winter) = more time for Google to consolidate; the
 
 - [ ] **Add Review and AggregateRating schema** to properties and restaurants. Requires steady review pipeline first.
 - [ ] **Add a "Recently updated" or "What's new" section** to the homepage. 4 hours.
-- [ ] **Build Cloudcroft topical hub pages** at `/topics/short-term-rentals/`, `/topics/water-restrictions/`, `/topics/winter-conditions/`, `/topics/dark-skies/`. None exist yet.
+- [x] **Build Cloudcroft topical hub pages.** Done 2026-05-03. All 4 pages plus a topics index landing page deployed: [topics/index.html](../topics/index.html), [topics/short-term-rentals.html](../topics/short-term-rentals.html) (1,282 lines), [topics/water-restrictions.html](../topics/water-restrictions.html) (1,125 lines), [topics/winter-conditions.html](../topics/winter-conditions.html) (1,309 lines), [topics/dark-skies.html](../topics/dark-skies.html) (1,406 lines). Each detail page includes Article + BreadcrumbList + FAQPage JSON-LD, follows the canonical template, links to relevant existing entity/section pages, and flags uncertainty honestly on contested specifics rather than fabricating. Sitemap grew to 101 URLs. Built in ~30 wall-clock minutes via 4 parallel subagents.
 - [ ] **Spanish-language version** of lodging guide and practical notes. Defer until English content is fully stable.
 - [ ] **Drop `.html` extensions site-wide.** Note: Amplify already serves extensionless URLs natively (verified: `/stay/the-lodge-at-cloudcroft` returns 200 same as `.html`). Only requires updating canonical tags + sitemap to make it official. Smaller project than originally scoped.
 
@@ -113,7 +113,7 @@ once we started.
 - [x] **Custom og:image campaign.** 50 pages moved off `og-default.webp` placeholder to real photos from `*-photo/` directories. Includes `og:image:alt` and `twitter:image:alt` for accessibility + crawler signal.
 - [x] **Homepage og:image upgrade.** Replaced `og-default.webp` with cropped `trestle-lookout-og.jpg` at proper 1200×630 OG aspect.
 - [x] **Homepage hub promotion.** New "five complete guides" featured-card grid on [index.html](../index.html) directly after the thesis paragraph. Above-the-fold link equity to all 5 tier-1 guides.
-- [x] **Fixed factual inconsistencies.** Golf elevation: 16 instances of `9,000 ft` → `8,676 ft` (matches site canonical and the Lodge stay page). Disc-golf elevation: 10 instances same fix (Zenith Park is in the village proper).
+- [x] **Fixed factual inconsistencies.** Golf elevation: 16 instances of `8,676 ft` → `8,676 ft` (matches site canonical and the Lodge stay page). Disc-golf elevation: 10 instances same fix (Zenith Park is in the village proper).
 - [x] **Removed all 138 `<figcaption>` elements** site-wide (cleanup pass).
 - [x] **Footer cleanup + sync.** Replaced invalid HTML structure (`<p>` nested inside `<span>` inside `<p>`) with proper sibling `<p>` elements. Synced the canonical footer across 102 pages via `content/sync-footer.py`.
 - [x] **Nav button (`.nav-cta`) styled to match brand.** Was charcoal/no-hover; now matches `.btn-primary` brand orange + lift + shadow on hover.
@@ -126,6 +126,7 @@ once we started.
 - [x] **Rebuilt [shop/poke-the-bear.html](../shop/poke-the-bear.html)** from updated MD source per "RULES TO OBEY" (eclectic-marketplace framing instead of rummage); added 8-photo gallery; deleted "Why no 7-day table here" section.
 - [x] **Replaced [stay/dusty-boots-motel-cloudcroft.html](../stay/dusty-boots-motel-cloudcroft.html) gallery** with 16 hand-picked photos from the motel folder, with descriptive alt text.
 - [x] **Refreshed homepage meta description, og:title, og:description, twitter:title, twitter:description.** New meta description leads with the dominant search intent ("Cool off at 8,676 ft in Cloudcroft, NM") and stays under 160 chars.
+- [x] **Removed redundant css/fonts.css** (was a real bug — broken Google Fonts v19 hash returning 404 on every page load). Self-hosted-named file was actually just hardcoded Google Fonts CDN URLs pinned to a stale version. Standard `<link href="fonts.googleapis.com/css2?...">` tag in every page already loads the same fonts and auto-updates. Removed the link from 98 HTML files; deleted [css/fonts.css](../css/fonts.css). Net: one fewer HTTP request per page.
 
 ### Open
 
@@ -144,9 +145,9 @@ once we started.
 
 ## Next action
 
-The single highest-leverage move available right now is the **3 manual external actions in This Week**: resubmit sitemap to GSC + Bing, request indexing on homepage. Combined: 8 minutes, no code, immediately accelerates Google's recrawl of the cleaner URL structure + new schema + new og:images.
+The single highest-leverage move available right now is the **3 manual external actions in This Week**: resubmit sitemap to GSC + Bing, request indexing on homepage. Combined: 8 minutes, no code, immediately accelerates Google's recrawl of the cleaner URL structure + new schema + new og:images + new topical hubs + new editorial standards page.
 
-After that, the remaining repo-side work is the 4 bigger This-quarter items (editor bios, feeder market pages, footer strengthening, RSS feed) — each can be batched independently when editorial bandwidth allows.
+After that, the remaining repo-side work is the 3 remaining This-quarter items (editor bios, feeder market pages, RSS feed) — each can be batched independently when editorial bandwidth allows.
 
 ---
 
@@ -155,4 +156,5 @@ After that, the remaining repo-side work is the 4 bigger This-quarter items (edi
 - **2026-05-01:** Original SEO audit run. Baseline established.
 - **2026-05-02:** Original punch list drafted by owner.
 - **2026-05-02:** Massive remediation session begins. og:image campaign, hub promotion, title enrichment, JSON-LD BreadcrumbList rollout, footer cleanup, beta removal, all in-code This-week items completed.
-- **2026-05-03:** December cleanup executed early (URL renames + redirects + sitemap regen). www/apex hostname investigation closes with Option A. This punch list updated to current state.
+- **2026-05-03:** December cleanup executed early (URL renames + redirects + sitemap regen). www/apex hostname investigation closes with Option A. Punch list updated.
+- **2026-05-03 (later):** 4 topical authority hub pages built via parallel subagents and shipped as `/topics/`. fonts.css 404 bug discovered and fixed. Footer strengthening completed (4-column layout, editorial standards page added, all trust links wired). Punch list updated to current state.
