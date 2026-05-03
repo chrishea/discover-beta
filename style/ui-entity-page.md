@@ -154,9 +154,9 @@ Every entity page follows this exact section order. Sections marked *optional* c
                 <span class="logo-cloudcroft">Cloudcroft</span>
                 <span class="logo-beta">Beta</span>
             </a>
-            <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-            <a href="../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-            <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
+            <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html">Stay</a>
+            <a href="../eat/complete-guide-where-to-eat-in-cloudcroft.html">Eat</a>
+            <a href="../do/complete-guide-to-activities-to-do-in-cloudcroft.html">Activities</a>
             <a href="../visit/where-to-visit.html">Visit</a>
             <a href="../events/top-events.html">Events</a>
             <a href="../season/seasonal.html">Seasons</a>
@@ -438,7 +438,7 @@ Full-width call-to-action block. Always the last section before `</main>`.
         <div class="cta-buttons">
             <a href="[website]" target="_blank" rel="noopener noreferrer" class="btn-primary">[Primary CTA]</a>
             <a href="[social-url]" target="_blank" rel="noopener noreferrer" class="btn-secondary">[Secondary CTA]</a>
-            <a href="complete-guide-where-to-eat-in-cloudcroft-2026.html" class="btn-secondary">Explore More Dining</a>
+            <a href="complete-guide-where-to-eat-in-cloudcroft.html" class="btn-secondary">Explore More Dining</a>
         </div>
     </div>
 </section>

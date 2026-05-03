@@ -43,10 +43,10 @@ def build_nav(prefix: str) -> str:
                     <span class="logo-discover">Discover</span>
                     <span class="logo-cloudcroft">Cloudcroft</span>
                 </a>
-                <a href="{p}stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-                <a href="{p}eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-                <a href="{p}do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-                <a href="{p}shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+                <a href="{p}stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html">Stay</a>
+                <a href="{p}eat/complete-guide-where-to-eat-in-cloudcroft.html">Eat</a>
+                <a href="{p}do/complete-guide-to-activities-to-do-in-cloudcroft.html">Activities</a>
+                <a href="{p}shop/complete-guide-where-to-shop-in-cloudcroft.html">Shop</a>
                 <a href="{p}events/top-events.html">Events</a>
 
                 <a href="{p}resources/resources.html">Resources</a>
@@ -61,10 +61,10 @@ def build_nav(prefix: str) -> str:
 
 
         <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
-            <a href="{p}stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
-            <a href="{p}eat/complete-guide-where-to-eat-in-cloudcroft-2026.html">Eat</a>
-            <a href="{p}do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html">Activities</a>
-            <a href="{p}shop/complete-guide-where-to-shop-in-cloudcroft-2026.html">Shop</a>
+            <a href="{p}stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html">Stay</a>
+            <a href="{p}eat/complete-guide-where-to-eat-in-cloudcroft.html">Eat</a>
+            <a href="{p}do/complete-guide-to-activities-to-do-in-cloudcroft.html">Activities</a>
+            <a href="{p}shop/complete-guide-where-to-shop-in-cloudcroft.html">Shop</a>
             <a href="{p}events/top-events.html">Events</a>
 
             <a href="{p}resources/resources.html">Resources</a>

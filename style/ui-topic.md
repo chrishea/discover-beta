@@ -1303,7 +1303,7 @@
                     <span class="logo-cloudcroft">Cloudcroft</span>
                     <span class="logo-beta">Beta</span>
                 </a>
-                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html">Stay</a>
+                <a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html">Stay</a>
                 <a href="eat/complete-guide-to-dining.html">Eat</a>
                 <a href="do/complete-guide-to-activities.html">Explore</a>
                 <a href="do/where to-hike-in-Cloudcroft-New-Mexico-2026.html">Trails</a>

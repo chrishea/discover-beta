@@ -2,7 +2,7 @@
 
 ## Objective
 
-For each restaurant card in `eat/complete-guide-where-to-eat-in-cloudcroft-2026.html`, append a contact-info block at the bottom of the card containing three fields: **street address**, **website**, and **phone number**. Pull the data from the corresponding `.md` content file in `eat-md/`.
+For each restaurant card in `eat/complete-guide-where-to-eat-in-cloudcroft.html`, append a contact-info block at the bottom of the card containing three fields: **street address**, **website**, and **phone number**. Pull the data from the corresponding `.md` content file in `eat-md/`.
 
 ---
 

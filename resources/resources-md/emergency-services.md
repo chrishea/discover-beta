@@ -181,7 +181,7 @@ FB IG X
 
 ### Explore
 
-[Lodging](../stay/lodging.html) [Dining](../eat/complete-guide-where-to-eat-in-cloudcroft-2026.html) [Hiking Trails](../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html) [Activities](../do/complete-guide-to-activities.html) [Events](../do/what-events-are-happening-in-cloudcroft-2026.html) [Seasons](../season/seasonal.html)
+[Lodging](../stay/lodging.html) [Dining](../eat/complete-guide-where-to-eat-in-cloudcroft.html) [Hiking Trails](../do/where to-hike-in-Cloudcroft-New-Mexico-2026.html) [Activities](../do/complete-guide-to-activities.html) [Events](../do/what-events-are-happening-in-cloudcroft-2026.html) [Seasons](../season/seasonal.html)
 
 ### Connect
 

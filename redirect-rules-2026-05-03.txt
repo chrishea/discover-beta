@@ -1,0 +1,114 @@
+================================================================================
+DiscoverCloudcroft.com — 301 Redirect Rules
+Generated: 2026-05-03
+Reason:    URL cleanup — dropped `stay-` prefix and `-2026` suffix from
+           evergreen lodging entity files and hub guide pages.
+Deploy to: CloudFront Function attached to viewer-request event on the
+           main distribution serving discovercloudcroft.com.
+================================================================================
+
+REDIRECT MAP (19 renames + 1 stale-root URL from earlier punch list)
+
+Old URL                                                                          → New URL
+--------------------------------------------------------------------------------  --------------------------------------------------------------------------------
+/stay/stay-burro-street-boardinghouse.html                                       → /stay/burro-street-boardinghouse.html
+/stay/stay-cabins-at-cloudcroft.html                                             → /stay/cabins-at-cloudcroft.html
+/stay/stay-cloudcroft-hostel-2026.html                                           → /stay/cloudcroft-hostel.html
+/stay/stay-crofting-inn-cloudcroft.html                                          → /stay/crofting-inn-cloudcroft.html
+/stay/stay-dusty-boots-motel-cloudcroft.html                                     → /stay/dusty-boots-motel-cloudcroft.html
+/stay/stay-grand-cloudcroft-hotel.html                                           → /stay/grand-cloudcroft-hotel.html
+/stay/stay-osha-trail.html                                                       → /stay/osha-trail.html
+/stay/stay-spruce-cabins.html                                                    → /stay/spruce-cabins.html
+/stay/stay-the-lodge-at-cloudcroft-2026.html                                     → /stay/the-lodge-at-cloudcroft.html
+/stay/stay-the-summit-inn-cloudcroft-2026.html                                   → /stay/the-summit-inn-cloudcroft.html
+/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html               → /stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html
+/stay/complete-guide-to-other-lodging-in-cloudcroft-2026.html                    → /stay/complete-guide-to-other-lodging-in-cloudcroft.html
+/eat/complete-guide-where-to-eat-in-cloudcroft-2026.html                         → /eat/complete-guide-where-to-eat-in-cloudcroft.html
+/do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html                   → /do/complete-guide-to-activities-to-do-in-cloudcroft.html
+/do/guide-lincoln-national-forest-2026.html                                      → /do/guide-lincoln-national-forest.html
+/do/guide-to-camping-cloudcroft-new-mexico-2026.html                             → /do/guide-to-camping-cloudcroft-new-mexico.html
+/do/guide-to-hiking-in-cloudcroft-new-mexico-2026.html                           → /do/guide-to-hiking-in-cloudcroft-new-mexico.html
+/shop/complete-guide-where-to-shop-in-cloudcroft-2026.html                       → /shop/complete-guide-where-to-shop-in-cloudcroft.html
+/resources/auto/guide-auto-services-in-cloudcroft-2026.html                      → /resources/auto/guide-auto-services-in-cloudcroft.html
+/mexican-canyon-trestle.html                                                     → /do/mexican-canyon-trestle.html
+
+================================================================================
+CLOUDFRONT FUNCTION (JavaScript) — drop into the viewer-request handler
+================================================================================
+
+function handler(event) {
+    var request = event.request;
+    var uri = request.uri;
+
+    // Map: legacy URL path  →  current URL path
+    var redirects = {
+        '/stay/stay-burro-street-boardinghouse.html':                                 '/stay/burro-street-boardinghouse.html',
+        '/stay/stay-cabins-at-cloudcroft.html':                                       '/stay/cabins-at-cloudcroft.html',
+        '/stay/stay-cloudcroft-hostel-2026.html':                                     '/stay/cloudcroft-hostel.html',
+        '/stay/stay-crofting-inn-cloudcroft.html':                                    '/stay/crofting-inn-cloudcroft.html',
+        '/stay/stay-dusty-boots-motel-cloudcroft.html':                               '/stay/dusty-boots-motel-cloudcroft.html',
+        '/stay/stay-grand-cloudcroft-hotel.html':                                     '/stay/grand-cloudcroft-hotel.html',
+        '/stay/stay-osha-trail.html':                                                 '/stay/osha-trail.html',
+        '/stay/stay-spruce-cabins.html':                                              '/stay/spruce-cabins.html',
+        '/stay/stay-the-lodge-at-cloudcroft-2026.html':                               '/stay/the-lodge-at-cloudcroft.html',
+        '/stay/stay-the-summit-inn-cloudcroft-2026.html':                             '/stay/the-summit-inn-cloudcroft.html',
+        '/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html':         '/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html',
+        '/stay/complete-guide-to-other-lodging-in-cloudcroft-2026.html':              '/stay/complete-guide-to-other-lodging-in-cloudcroft.html',
+        '/eat/complete-guide-where-to-eat-in-cloudcroft-2026.html':                   '/eat/complete-guide-where-to-eat-in-cloudcroft.html',
+        '/do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html':             '/do/complete-guide-to-activities-to-do-in-cloudcroft.html',
+        '/do/guide-lincoln-national-forest-2026.html':                                '/do/guide-lincoln-national-forest.html',
+        '/do/guide-to-camping-cloudcroft-new-mexico-2026.html':                       '/do/guide-to-camping-cloudcroft-new-mexico.html',
+        '/do/guide-to-hiking-in-cloudcroft-new-mexico-2026.html':                     '/do/guide-to-hiking-in-cloudcroft-new-mexico.html',
+        '/shop/complete-guide-where-to-shop-in-cloudcroft-2026.html':                 '/shop/complete-guide-where-to-shop-in-cloudcroft.html',
+        '/resources/auto/guide-auto-services-in-cloudcroft-2026.html':                '/resources/auto/guide-auto-services-in-cloudcroft.html',
+        '/mexican-canyon-trestle.html':                                               '/do/mexican-canyon-trestle.html'
+    };
+
+    if (redirects[uri]) {
+        return {
+            statusCode: 301,
+            statusDescription: 'Moved Permanently',
+            headers: {
+                'location': { value: redirects[uri] },
+                'cache-control': { value: 'max-age=31536000' }
+            }
+        };
+    }
+
+    return request;
+}
+
+================================================================================
+DEPLOY STEPS
+================================================================================
+
+1. Open AWS Console → CloudFront → Functions.
+2. If a viewer-request function already exists on the distribution serving
+   discovercloudcroft.com, edit it and merge the redirect map into the existing
+   handler (don't overwrite — preserve any www→non-www logic already there).
+3. If no function exists yet, create a new one named e.g. "dcc-redirects",
+   paste the JavaScript above, save.
+4. Publish the function.
+5. Attach it to the CloudFront distribution: Behaviors tab → edit the default
+   behavior (or each behavior) → Function associations → Viewer Request →
+   select the function → save.
+6. Wait for distribution status to return to "Deployed" (typically 5–10 min).
+7. Test:
+     curl -I https://discovercloudcroft.com/stay/stay-the-lodge-at-cloudcroft-2026.html
+   Expect: HTTP/2 301 with location header pointing to the new URL.
+8. Resubmit the sitemap to Google Search Console after deploy.
+
+================================================================================
+NOTES
+================================================================================
+
+- All redirects use 301 (permanent) so search engines transfer link equity
+  from old URL to new URL.
+- 1-year browser cache (max-age=31536000) is safe because these redirects
+  are permanent. If you ever rename a page back, bump the cache version or
+  invalidate the CloudFront cache.
+- Year-specific events (oktoberfest-2026.html, christmas-in-cloudcroft-2026.html,
+  etc.) intentionally KEEP the year suffix — they document the 2026 instance
+  and will be replaced by -2027 siblings next cycle. No redirect needed.
+- The /mexican-canyon-trestle.html root redirect is bundled here because it
+  was already on the punch list as a separate item — same deploy, same fix.

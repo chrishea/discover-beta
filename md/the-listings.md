@@ -22,7 +22,7 @@ Saint Andrew’s Lounge and 1899 at the Lodge (601 Corona Pl., (575) 682-2566, 2
 The Distillery (1303 Burro Ave., (575) 682-2337) Craft cocktails with New Mexico and in-house spirits for date night—adults only. 
 Cloudcroft Brewing Company pizza by the slice. Open M, W, TH 4:00-9:00 p.m., Friday 4:00-10:00 p.m., Saturday 11:00 a.m.-10:00 p.m., and Sunday 11:00 a.m.-9:00 p.m.
 Western Bar and Cafe and Package Store (304 Burro Ave., (575) 682-2445, westernbarandcafe.net) Dark and cozy dive bar with tasty food for lunch and dinner. Beer on tap, full bar. Play pool while you wait. Closed Wednesdays, open 11:00 a.m.-10:00 p.m. the rest of the week. 
-For more detailed information on where to eat, go to www.discovercloudcroft.com/complete-guide-where-to-eat-in-cloudcroft-2026.html
+For more detailed information on where to eat, go to www.discovercloudcroft.com/complete-guide-where-to-eat-in-cloudcroft.html
 Lodging
 Burro St. Boarding House (608 Burro Ave., (575) 682-3601) Rustic and artful digs near downtown. burrostreetboardinghouse.com
 Cabins at Cloudcroft (1006 Coyote Ave., 575-682-2396) Retro casitas by the park. cabinsatcloudcroft.com
@@ -33,7 +33,7 @@ Osha Trail Lodging (102 Mexican Ave., (575) 937-3767) Modern, conveniently-locat
 SugarPines RV Park (601 Columbine Blvd., (575) 682-3375) Easy access in the heart of the village. sugarpinesrvpark.com
 Summit Inn (103 Chipmunk Ave., (575) 295-3235) Chic interiors, classic mountain exterior. summitinnnm.com
 The Lodge (601 Corona Pl., (575) 682-2566) Historic beauty. Stay, eat, play. thelodgeresort.com
-For more in-depth lodging information and pictures, go to discovercloudcroft.com/ complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html
+For more in-depth lodging information and pictures, go to discovercloudcroft.com/ complete-guide-to-lodging-in-cloudcroft-new-mexico.html
 Shopping
 Aspen and Ivy Boutique (206 Burro Ave.) Bespoke goods, candles, plants, and local art. Open Thursday-Sunday 11:00 a.m.-4:00 p.m.
 Base Camp 9K (302 Burro Ave.) Teeny space with quality shirts, hats, and more. Open Friday and Saturday 10:00 a.m.-5:00 p.m., Sunday 11:00 a.m.-4:00 p.m.

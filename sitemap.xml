@@ -2,26 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- ============================================================
-       Sitemap last reviewed: 2026-05-02
+       Sitemap last reviewed: 2026-05-03
        Excludes: shelf/* (archived), *copy*, xxx-*, mockups,
        drafts/* (work-in-progress mockups), Google site-verification
        file, .claude/worktrees/* (development copies).
        New since 2026-04-28: do/run.html, shop/mountain-magic.html.
+       URL cleanup 2026-05-03: dropped `stay-` prefix from 10 lodging
+       entity files and `-2026` suffix from 9 evergreen guide files.
+       Old URLs are 301-redirected to new ones via CloudFront Function;
+       see redirect-rules-2026-05-03.txt at repo root.
+       Year-specific event pages (e.g. oktoberfest-2026.html) keep the
+       year suffix intentionally — they reference the 2026 instance.
        ============================================================ -->
 
   <!-- ===== HOMEPAGE ===== -->
   <url>
     <loc>https://discovercloudcroft.com/</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <priority>1.0</priority>
   </url>
 
   <!-- ===== HUB / GUIDE PAGES ===== -->
-  <!-- Note: the /complete-guide-to-cloudcroft-new-mexico-2026.html URL was removed
-       on 2026-05-01 — that filename does not exist on disk; the homepage at "/"
-       serves as the master guide. -->
   <url>
-    <loc>https://discovercloudcroft.com/eat/complete-guide-where-to-eat-in-cloudcroft-2026.html</loc>
+    <loc>https://discovercloudcroft.com/eat/complete-guide-where-to-eat-in-cloudcroft.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.9</priority>
   </url>
@@ -31,37 +34,37 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html</loc>
+    <loc>https://discovercloudcroft.com/do/complete-guide-to-activities-to-do-in-cloudcroft.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/do/guide-to-hiking-in-cloudcroft-new-mexico-2026.html</loc>
+    <loc>https://discovercloudcroft.com/do/guide-to-hiking-in-cloudcroft-new-mexico.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/do/guide-to-camping-cloudcroft-new-mexico-2026.html</loc>
+    <loc>https://discovercloudcroft.com/do/guide-to-camping-cloudcroft-new-mexico.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/do/guide-lincoln-national-forest-2026.html</loc>
+    <loc>https://discovercloudcroft.com/do/guide-lincoln-national-forest.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/shop/complete-guide-where-to-shop-in-cloudcroft-2026.html</loc>
+    <loc>https://discovercloudcroft.com/shop/complete-guide-where-to-shop-in-cloudcroft.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html</loc>
+    <loc>https://discovercloudcroft.com/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/complete-guide-to-other-lodging-in-cloudcroft-2026.html</loc>
+    <loc>https://discovercloudcroft.com/stay/complete-guide-to-other-lodging-in-cloudcroft.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.9</priority>
   </url>
@@ -262,52 +265,52 @@
 
   <!-- ===== STAY (Lodging) ===== -->
   <url>
-    <loc>https://discovercloudcroft.com/stay/stay-burro-street-boardinghouse.html</loc>
+    <loc>https://discovercloudcroft.com/stay/burro-street-boardinghouse.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/stay-cabins-at-cloudcroft.html</loc>
+    <loc>https://discovercloudcroft.com/stay/cabins-at-cloudcroft.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/stay-cloudcroft-hostel-2026.html</loc>
+    <loc>https://discovercloudcroft.com/stay/cloudcroft-hostel.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/stay-crofting-inn-cloudcroft.html</loc>
+    <loc>https://discovercloudcroft.com/stay/crofting-inn-cloudcroft.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/stay-dusty-boots-motel-cloudcroft.html</loc>
+    <loc>https://discovercloudcroft.com/stay/dusty-boots-motel-cloudcroft.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/stay-grand-cloudcroft-hotel.html</loc>
+    <loc>https://discovercloudcroft.com/stay/grand-cloudcroft-hotel.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/stay-osha-trail.html</loc>
+    <loc>https://discovercloudcroft.com/stay/osha-trail.html</loc>
     <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/stay-spruce-cabins.html</loc>
+    <loc>https://discovercloudcroft.com/stay/spruce-cabins.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/stay-the-lodge-at-cloudcroft-2026.html</loc>
+    <loc>https://discovercloudcroft.com/stay/the-lodge-at-cloudcroft.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/stay/stay-the-summit-inn-cloudcroft-2026.html</loc>
+    <loc>https://discovercloudcroft.com/stay/the-summit-inn-cloudcroft.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
@@ -497,7 +500,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://discovercloudcroft.com/resources/auto/guide-auto-services-in-cloudcroft-2026.html</loc>
+    <loc>https://discovercloudcroft.com/resources/auto/guide-auto-services-in-cloudcroft.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.7</priority>
   </url>

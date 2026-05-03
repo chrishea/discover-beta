@@ -10,7 +10,7 @@ Quick map of markdown sources to published HTML pages, since file naming is inco
 | `black-bear-coffee-shop-content.md` | `eat/black-bear-coffee-shop.html` |
 | `brewery.md` | `eat/brewery.html` |
 | `brother-n-law-bbq.md` | `eat/brother-n-law-bbq.html` |
-| `cloudcroft-dining-guide.md` | `eat/complete-guide-where-to-eat-in-cloudcroft-2026.html` |
+| `cloudcroft-dining-guide.md` | `eat/complete-guide-where-to-eat-in-cloudcroft.html` |
 | `cloudcroft-sandwich-shop-content.md` | `eat/cloudcroft-sandwich-shop.html` |
 | `daves-cafe-content.md` | `eat/daves-cafe.html` |
 | `dusty-boots-cafe-content.md` | `eat/dusty-boots-cafe.html` |
