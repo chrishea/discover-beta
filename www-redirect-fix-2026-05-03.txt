@@ -1,108 +1,145 @@
 ================================================================================
-DiscoverCloudcroft.com — www → apex (non-www) Redirect Fix
-Generated: 2026-05-03
-Issue:     https://www.discovercloudcroft.com/ currently returns 200 OK,
-           not a 301 redirect to https://discovercloudcroft.com/. Both URLs
-           serve the same content, which Google may treat as duplicate.
-           Canonical tags say non-www, so the redirect should send www → apex.
-Hosting:   AWS Amplify (App ID: d166ujkfass376)
+DiscoverCloudcroft.com — www / apex Hostname Decision (CLOSED)
+Updated:  2026-05-03 (after investigation + decision to accept current state)
+Hosting:  AWS Amplify Hosting Gen 1  (App ID: d166ujkfass376)
+Decision: OPTION A — accept dual-hostname serving, rely on canonical tags
 ================================================================================
 
-PATH A — Amplify Console domain settings (RECOMMENDED, cleaner)
+CURRENT STATE
 ================================================================================
 
-This is the canonical Amplify way to handle www → apex.
+  https://discovercloudcroft.com/        →  HTTP 200 (serves directly)
+  https://www.discovercloudcroft.com/    →  HTTP 200 (serves directly)
 
-1.  AWS Console → AWS Amplify → Apps → click `d166ujkfass376`.
+Both hostnames serve the SAME content from the same Amplify origin. Neither
+redirects to the other. Every page on the site has a canonical tag pointing
+to the apex (non-www) variant — Google should treat apex as authoritative.
 
-2.  Left sidebar → "Hosting" → "Custom domains".
-
-3.  Find the row for `discovercloudcroft.com`. You'll see two subdomain
-    entries listed:
-      - apex:  `discovercloudcroft.com`
-      - www:   `www.discovercloudcroft.com`
-
-4.  Look at the "Action" or "Behavior" column for the www. row:
-      - If it says "Forwards to" or shows a redirect arrow → already
-        configured. Verify the target is the apex.
-      - If it says "Domain" or "Serves" → www is being served as a separate
-        site. This is the problem.
-
-5.  Click the "..." menu on the www. subdomain row → "Edit subdomain"
-    (or "Manage subdomains" at the top).
-
-6.  Change the www. subdomain configuration from "Serve" to
-    "Redirect to apex" (the exact label varies by Amplify console
-    version; you want the option that issues a 301 from www to apex).
-
-7.  Save. Wait ~1-2 minutes for the cert + DNS to propagate.
-
-8.  Verify:
-
-      curl -sI https://www.discovercloudcroft.com/ | head -3
-
-    Expect:
-      HTTP/2 301
-      location: https://discovercloudcroft.com/
-
-    NOT:
-      HTTP/2 200    ← still serving directly, fix didn't take
+This is a pragmatic outcome, not the originally-recommended fix. See the
+investigation notes below for why a clean www→apex 301 wasn't achievable
+on this stack.
 
 
-================================================================================
-PATH B — Add a redirect rule (fallback if Path A unavailable)
+WHAT WE TRIED AND WHY IT DIDN'T WORK
 ================================================================================
 
-If the Amplify domain UI doesn't expose a "Redirect to apex" option in your
-console version, add this as a redirect rule.
+ATTEMPT 1 — Custom Domains UI: "Setup redirect" checkbox
+  The Amplify Custom Domains panel offers exactly ONE redirect direction
+  via a checkbox: "Setup redirect from https://discovercloudcroft.com to
+  https://www.discovercloudcroft.com" — i.e., apex → www. There is NO
+  matching checkbox for the inverse direction (www → apex).
 
-1.  Amplify → Hosting → Rewrites and redirects → Manage redirects → Open
-    text editor.
+  We briefly enabled this checkbox to test. Result: apex 302-redirected to
+  www, which contradicts every canonical tag on the site. Reverted.
 
-2.  Append this entry to the JSON array (after the existing rules, before
-    the closing `]`). Don't forget the leading comma:
+ATTEMPT 2 — Rewrites and redirects panel: host-based JSON rule
+  Added rule:
+    {
+      "source": "https://www.discovercloudcroft.com/<*>",
+      "target": "https://discovercloudcroft.com/<*>",
+      "status": "301",
+      "condition": null
+    }
 
-    ,
-    { "source": "https://www.discovercloudcroft.com/<*>", "target": "https://discovercloudcroft.com/<*>", "status": "301", "condition": null }
+  Amplify ACCEPTED the rule and saved it without errors. The rule appeared
+  correctly in the Rewrites and redirects table.
 
-3.  Save. Effective in ~30 seconds.
+  But the rule SILENTLY DID NOT FIRE. Test against a fresh-path on www:
+    curl -sI "https://www.discovercloudcroft.com/totally-random-path-XXX"
+    → HTTP/2 301
+    → location: /totally-random-path-XXX/        ← Amplify default behavior
+    → x-cache: Miss from cloudfront              ← confirmed origin response
 
-4.  Verify with the same curl command as above.
+  The 301 that fires is Amplify's default `.html`-stripping rule (relative
+  path, same hostname). Our host-based redirect was ignored.
 
+  This is consistent with multiple AWS user-forum reports that Amplify
+  Hosting Gen 1's redirect engine is path-only — `https://hostname/`
+  source patterns are accepted but never matched at request time.
+
+  We removed the dead rule from the panel after confirming this.
+
+
+WHY OPTION A IS DEFENSIBLE
+================================================================================
+
+1. Every page on the site has a canonical tag like:
+     <link rel="canonical" href="https://discovercloudcroft.com/PATH">
+   This tells Google explicitly that the apex URL is the authoritative
+   version. Google's algorithm trusts canonical hints heavily.
+
+2. Sitemap.xml, JSON-LD URLs, og:url, and twitter:url all point to apex.
+
+3. Internal site links use relative paths (no hostname), so the user's
+   currently-served hostname stays consistent for that visitor session.
+
+4. The site is brand-new — minimal external backlinks pointing at www to
+   "split" link equity. The cost of dual-serving today is near-zero.
+
+5. The fix that would actually work (Option B below) requires touching
+   ~96+ files and is reversible. We can defer until/unless GSC reports
+   show www indexing causing real problems.
+
+
+FUTURE OPTIONS (IF SITUATION CHANGES)
+================================================================================
+
+OPTION B — Switch the canonical to www (~2-3 hours)
+  If Google Search Console eventually reports duplicate-content issues
+  or shows www variants ranking instead of apex variants:
+
+  1. Bulk find/replace `https://discovercloudcroft.com/` →
+     `https://www.discovercloudcroft.com/` across every:
+       - HTML file (canonical, og:url, twitter:url, JSON-LD, hardcoded
+         absolute references in body)
+       - sitemap.xml
+       - llms.txt
+       - any redirect rules that reference the apex hostname
+
+  2. Re-enable the "Setup redirect from apex to www" checkbox in the
+     Amplify Custom Domains panel (the same one we unchecked).
+
+  3. Verify:
+       curl -sI https://discovercloudcroft.com/  → 301 → www variant
+       curl -sI https://www.discovercloudcroft.com/  → 200
+
+  This works because Amplify's apex→www redirect IS supported natively,
+  and switching the canonical aligns the site with what Amplify can do.
+
+OPTION C — Lambda@Edge override (advanced, fragile)
+  Use a CloudFront Function on the Amplify-managed distribution to
+  forcibly redirect www→apex before Amplify's logic runs. Bypasses the
+  Amplify redirect-engine limitation but introduces:
+    - Maintenance burden (Amplify deploys may overwrite the function)
+    - Edge debugging complexity
+    - Coordination with Amplify support if it conflicts
+  Only worth attempting if Option B is somehow unworkable.
+
+
+HOW TO RECHECK THIS DECISION OVER TIME
+================================================================================
+
+Run periodically (quarterly, or after any major SEO change):
+
+  curl -sI https://discovercloudcroft.com/
+  curl -sI https://www.discovercloudcroft.com/
+
+If both still return 200 → status quo is intact.
+
+In Google Search Console, watch for:
+  - "Duplicate without user-selected canonical" warnings
+  - www variants of your URLs showing up in performance reports
+  - Coverage drops on apex URLs
+
+If those signals appear, time to execute Option B.
 
 ================================================================================
-WHY THIS MATTERS
+HISTORY
 ================================================================================
 
-- Search engines treat www and apex as separate hosts unless one redirects
-  to the other. Without the redirect, Google may:
-    * Split link equity between two URLs (half your backlinks count for
-      one variant, half for the other)
-    * Show duplicate content warnings in Search Console
-    * Pick a non-canonical version to index
+2026-05-03 — Investigated www→apex options. Tried Custom Domains UI
+             (only offers inverse direction) and host-based JSON redirect
+             rule (silently ignored by Amplify Gen 1). Decided Option A.
 
-- All your canonical tags (in <head>) point to non-www, which tells Google
-  the apex is the authoritative version. The 301 redirect MAKES that
-  canonical contract enforceable at the network layer.
-
-- This is one of the highest-impact "free" SEO fixes for any site that
-  serves both variants.
-
-
-================================================================================
-IF NEITHER PATH WORKS
-================================================================================
-
-This rare case usually means the www. subdomain is configured outside
-Amplify (e.g. as a separate Route 53 alias to a different distribution).
-Check Route 53 → Hosted zones → discovercloudcroft.com:
-
-  - The apex `discovercloudcroft.com` A-record alias should point to the
-    Amplify CloudFront distribution: d2y037mpbb02oq.cloudfront.net
-  - The `www.discovercloudcroft.com` A-record (or CNAME) should also point
-    to the same Amplify CloudFront distribution
-
-If www is currently aliased to a DIFFERENT CloudFront distribution or to
-S3 directly, that's the root cause — change the DNS record so www points
-to the same Amplify distribution as apex, then Path A's setting takes
-effect.
+2026-05-03 — Documented the limitation, the diagnostic evidence, and the
+             two real escape paths (B + C) for future reference.
