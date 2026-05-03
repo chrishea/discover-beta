@@ -587,4 +587,4 @@ Main official and supporting sources used:
 - **Some campground details:** booking and opening windows can change; use official pages close to your trip.
 - **Sunspot area:** treat the scenic drive as the activity. Do not assume public observatory access.
 - **Fishing options beyond the easiest pond-style stop:** worthwhile, but strongly dependent on current conditions, rules, and what kind of fishing experience you actually want.
-Elevation for Cloudcroft is 8,676.  Never say 9,000.  Only use 8,676 at the number of feet of elevation for the village of cloudcroft NM
+Elevation for Cloudcroft is 8,676.  Never say 8,676.  Only use 8,676 at the number of feet of elevation for the village of cloudcroft NM

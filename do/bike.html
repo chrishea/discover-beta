@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mountain Biking in Cloudcroft, NM (2026) — Trails &amp; Routes</title>
-    <meta name="description" content="Explore world-class biking in the Sacramento Mountains near Cloudcroft, NM. Mountain biking, road cycling, gravel routes, and bikepacking at 8,676 feet elevation.">
-<link rel="canonical" href="https://discovercloudcroft.com/do/bike.html">
+    <meta name="description"
+        content="Explore world-class biking in the Sacramento Mountains near Cloudcroft, NM. Mountain biking, road cycling, gravel routes, and bikepacking at 8,676 feet elevation.">
+    <link rel="canonical" href="https://discovercloudcroft.com/do/bike.html">
 
     <meta property="og:title" content="Mountain Biking in Cloudcroft, NM (2026) — Trails &amp; Routes">
-    <meta property="og:description" content="Explore world-class biking in the Sacramento Mountains. Mountain biking, road cycling, gravel routes, and bikepacking at 8,676 feet elevation.">
+    <meta property="og:description"
+        content="Explore world-class biking in the Sacramento Mountains. Mountain biking, road cycling, gravel routes, and bikepacking at 8,676 feet elevation.">
     <meta property="og:url" content="https://discovercloudcroft.com/do/bike.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://discovercloudcroft.com/do/do-photo/bike/bike-00254.jpg">
@@ -16,7 +19,8 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mountain Biking in Cloudcroft, NM (2026) — Trails &amp; Routes">
-    <meta name="twitter:description" content="Explore world-class biking in the Sacramento Mountains near Cloudcroft, NM.">
+    <meta name="twitter:description"
+        content="Explore world-class biking in the Sacramento Mountains near Cloudcroft, NM.">
     <meta name="twitter:image" content="https://discovercloudcroft.com/do/do-photo/bike/bike-00254.jpg">
     <meta name="twitter:image:alt" content="Mountain biker on a forest trail near Cloudcroft, NM.">
     <script type="application/ld+json">
@@ -40,272 +44,367 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/common.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
 
     <style>
+        .hero-bg {
+            background: linear-gradient(135deg, var(--pine-shadow) 0%, var(--summit) 50%, var(--alpine) 100%);
+        }
 
-.hero-bg {
-    background: linear-gradient(135deg, var(--pine-shadow) 0%, var(--summit) 50%, var(--alpine) 100%);
-}
+        /* Page-specific components */
+        .trail-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
 
-/* Page-specific components */
-.trail-tabs {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
-}
-.trail-tab {
-    padding: 0.8rem 1.5rem;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    background: transparent;
-    border: 2px solid var(--golden-hour);
-    color: var(--pine);
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-.trail-tab.active {
-    background: var(--golden-hour);
-    color: var(--midnight);
-}
-.trail-tab:hover:not(.active) {
-    background: rgba(0, 0, 0, 0.1);
-}
-.trails-section {
-    background: var(--cloud-drift);
-}
-.trails-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.trail-card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    background: var(--snow-cap);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-top: 4px solid var(--golden-hour);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
-    transform: translateY(30px);
-}
-.trail-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
-}
-.trail-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-}
-.trail-card-image {
-    background: linear-gradient(135deg, var(--pine-shadow) 0%, var(--alpine) 100%);
-    min-height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    position: relative;
-}
-.trail-card-image.road-bg {
-    background: linear-gradient(135deg, var(--summit) 0%, var(--alpine) 50%, #333333 100%);
-}
-.trail-card-image.gravel-bg {
-    background: linear-gradient(135deg, var(--pine-shadow) 0%, #333333 50%, #555555 100%);
-}
-.trail-type-badge {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-.type-mtb { background: var(--alpine); color: white; }
-.type-road { background: var(--twilight); color: white; }
-.type-gravel { background: var(--pine-shadow); color: white; }
-.type-bikepacking { background: var(--ember); color: white; }
-.trail-difficulty {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-.difficulty-easy { background: #333333; color: white; }
-.difficulty-moderate { background: var(--golden-hour); color: var(--midnight); }
-.difficulty-hard { background: var(--ember); color: white; }
-.difficulty-epic { background: #111111; color: white; }
-.trail-card-content {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.trail-card-content h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 900;
-    font-size: 1.5rem;
-    color: var(--midnight);
-    margin-bottom: 0.5rem;
-}
-.trail-meta {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-}
-.trail-meta-item {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.85rem;
-    color: var(--granite);
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-.trail-card-content p {
-    color: var(--granite);
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 1.25rem;
-}
-.trail-highlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.25rem;
-}
-.trail-highlight {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 0.3rem 0.7rem;
-    background: rgba(0, 0, 0, 0.12);
-    color: var(--pine);
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-}
-.trail-links {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-.trail-links a {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 0.85rem;
-    color: var(--alpine);
-    text-decoration: none;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    transition: color 0.3s;
-}
-.trail-links a:hover {
-    color: var(--pine);
-}
-.tips-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    position: relative;
-}
+        .trail-tab {
+            padding: 0.8rem 1.5rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: transparent;
+            border: 2px solid var(--golden-hour);
+            color: var(--pine);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
 
-.tip-card:hover {
-    transform: translateY(-6px);
-    background: rgba(255, 255, 255, 0.1);
-}
+        .trail-tab.active {
+            background: var(--golden-hour);
+            color: var(--midnight);
+        }
 
-.resources-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-.resource-card {
-    background: var(--snow-cap);
-    border-radius: 12px;
-    padding: 2.5rem 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-top: 4px solid var(--golden-hour);
-    text-align: center;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
-    transform: translateY(30px);
-}
-.resource-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
-}
-.resource-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-}
-.resource-icon { font-size: 3rem; margin-bottom: 1rem; }
-.resource-card h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--midnight);
-    margin-bottom: 0.5rem;
-}
-.resource-card p {
-    color: var(--granite);
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
-}
-.resource-link {
-    display: inline-block;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 0.7rem 1.5rem;
-    border-radius: 8px;
-    background: transparent;
-    color: var(--alpine);
-    border: 2px solid var(--alpine);
-    transition: all 0.3s;
-    min-height: 44px;
-}
-.resource-link:hover {
-    background: var(--alpine);
-    color: var(--snow-cap);
-}
+        .trail-tab:hover:not(.active) {
+            background: rgba(0, 0, 0, 0.1);
+        }
 
-@media (max-width: 1024px) {
-    .trail-card { grid-template-columns: 1fr; }
-    .trail-card-image { min-height: 200px; }
-    .tips-grid { grid-template-columns: repeat(2, 1fr); }
-    .resources-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 768px) {
-    .tips-grid, .resources-grid { grid-template-columns: 1fr; }
-    .trail-meta { flex-direction: column; gap: 0.5rem; }
-    .trail-tabs { gap: 0.5rem; }
-    .trail-tab { padding: 0.6rem 1rem; font-size: 0.8rem; }
-}
-</style>
+        .trails-section {
+            background: var(--cloud-drift);
+        }
+
+        .trails-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .trail-card {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            background: var(--snow-cap);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--golden-hour);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .trail-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+        }
+
+        .trail-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .trail-card-image {
+            background: linear-gradient(135deg, var(--pine-shadow) 0%, var(--alpine) 100%);
+            min-height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+        }
+
+        .trail-card-image.road-bg {
+            background: linear-gradient(135deg, var(--summit) 0%, var(--alpine) 50%, #333333 100%);
+        }
+
+        .trail-card-image.gravel-bg {
+            background: linear-gradient(135deg, var(--pine-shadow) 0%, #333333 50%, #555555 100%);
+        }
+
+        .trail-type-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .type-mtb {
+            background: var(--alpine);
+            color: white;
+        }
+
+        .type-road {
+            background: var(--twilight);
+            color: white;
+        }
+
+        .type-gravel {
+            background: var(--pine-shadow);
+            color: white;
+        }
+
+        .type-bikepacking {
+            background: var(--ember);
+            color: white;
+        }
+
+        .trail-difficulty {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .difficulty-easy {
+            background: #333333;
+            color: white;
+        }
+
+        .difficulty-moderate {
+            background: var(--golden-hour);
+            color: var(--midnight);
+        }
+
+        .difficulty-hard {
+            background: var(--ember);
+            color: white;
+        }
+
+        .difficulty-epic {
+            background: #111111;
+            color: white;
+        }
+
+        .trail-card-content {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .trail-card-content h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: var(--midnight);
+            margin-bottom: 0.5rem;
+        }
+
+        .trail-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .trail-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            color: var(--granite);
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        .trail-card-content p {
+            color: var(--granite);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+
+        .trail-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .trail-highlight {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.3rem 0.7rem;
+            background: rgba(0, 0, 0, 0.12);
+            color: var(--pine);
+            border-radius: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+        }
+
+        .trail-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .trail-links a {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            color: var(--alpine);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: color 0.3s;
+        }
+
+        .trail-links a:hover {
+            color: var(--pine);
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .resource-card {
+            background: var(--snow-cap);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--golden-hour);
+            text-align: center;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .resource-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .resource-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .resource-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--midnight);
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-card p {
+            color: var(--granite);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .resource-link {
+            display: inline-block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            background: transparent;
+            color: var(--alpine);
+            border: 2px solid var(--alpine);
+            transition: all 0.3s;
+            min-height: 44px;
+        }
+
+        .resource-link:hover {
+            background: var(--alpine);
+            color: var(--snow-cap);
+        }
+
+        @media (max-width: 1024px) {
+            .trail-card {
+                grid-template-columns: 1fr;
+            }
+
+            .trail-card-image {
+                min-height: 200px;
+            }
+
+            .tips-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .resources-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .tips-grid,
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trail-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .trail-tabs {
+                gap: 0.5rem;
+            }
+
+            .trail-tab {
+                padding: 0.6rem 1rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
     <script type="application/ld+json">
     {
   "@context": "https://schema.org",
@@ -334,10 +433,11 @@
     </script>
 
 </head>
+
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-        <header class="site-header" role="banner">
+    <header class="site-header" role="banner">
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
@@ -375,7 +475,7 @@
 
         </nav>
     </header>
-<section class="hero" aria-label="Page hero">
+    <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="Mountain biking scenic view"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -387,7 +487,8 @@
                 <span class="word">in </span>
                 <span class="word">Cloudcroft</span>
             </h1>
-            <p class="hero-subtitle">From epic singletrack through pine forests to scenic road climbs with views of White Sands, the Sacramento Mountains offer world-class cycling for every rider.</p>
+            <p class="hero-subtitle">From epic singletrack through pine forests to scenic road climbs with views of
+                White Sands, the Sacramento Mountains offer world-class cycling for every rider.</p>
             <div class="hero-ctas">
                 <a href="#trails" class="btn-primary">Explore Routes</a>
                 <a href="#resources" class="btn-secondary">Trail Maps</a>
@@ -422,7 +523,8 @@
                 <div style="text-align: center;">
                     <span class="section-label">Featured Routes</span>
                     <h2 class="section-title section-title-centered">Best Rides in the Sacramento Mountains</h2>
-                    <p class="section-description">From technical singletrack to scenic byways, discover the best cycling the Cloudcroft area has to offer.</p>
+                    <p class="section-description">From technical singletrack to scenic byways, discover the best
+                        cycling the Cloudcroft area has to offer.</p>
                 </div>
 
                 <div class="trail-tabs">
@@ -448,16 +550,22 @@
                                 <span class="trail-meta-item">&#x23F1;&#xFE0F; Multi-hour epic</span>
                                 <span class="trail-meta-item">&#x1F3C6; NM's 1st Nat'l Rec Trail</span>
                             </div>
-                            <p>New Mexico's first National Recreation Trail! This legendary route traverses stunning ponderosa pine forests at 9,000 feet with incredible views of White Sands. Divided into three sections: Section 1 (11 mi) to Karr Canyon Rd, Section 2 (9.9 mi) to NM-6563, and Section 3 to Sacramento River Rd. Expect rocky, technical terrain with massive elevation changes.</p>
+                            <p>New Mexico's first National Recreation Trail! This legendary route traverses stunning
+                                ponderosa pine forests at 8,676 feet with incredible views of White Sands. Divided into
+                                three sections: Section 1 (11 mi) to Karr Canyon Rd, Section 2 (9.9 mi) to NM-6563, and
+                                Section 3 to Sacramento River Rd. Expect rocky, technical terrain with massive elevation
+                                changes.</p>
                             <div class="trail-highlights">
                                 <span class="trail-highlight">National Recreation Trail</span>
                                 <span class="trail-highlight">White Sands Views</span>
-                                <span class="trail-highlight">9,000 ft Elevation</span>
+                                <span class="trail-highlight">8,676 ft Elevation</span>
                                 <span class="trail-highlight">Technical Terrain</span>
                             </div>
                             <div class="trail-links">
-                                <a href="https://www.alltrails.com/trail/us/new-mexico/rim-trail-cloudcroft-to-sunspot" target="_blank" rel="noopener noreferrer">AllTrails Map &#x2192;</a>
-                                <a href="https://www.trailforks.com/region/cloudcroft/trails/" target="_blank" rel="noopener noreferrer">Trailforks Info &#x2192;</a>
+                                <a href="https://www.alltrails.com/trail/us/new-mexico/rim-trail-cloudcroft-to-sunspot"
+                                    target="_blank" rel="noopener noreferrer">AllTrails Map &#x2192;</a>
+                                <a href="https://www.trailforks.com/region/cloudcroft/trails/" target="_blank"
+                                    rel="noopener noreferrer">Trailforks Info &#x2192;</a>
                             </div>
                         </div>
                     </div>
@@ -476,7 +584,10 @@
                                 <span class="trail-meta-item">&#x23F1;&#xFE0F; 2&ndash;4 hours</span>
                                 <span class="trail-meta-item">&#x2B50; Local Favorite</span>
                             </div>
-                            <p>Created for the annual High Altitude Classic race, this winding singletrack loop starts from downtown Cloudcroft. The first two miles are mostly downhill with fun technical portions, then you'll tackle two long climbs on forest roads before looping back to the village. A perfect blend of challenge and flow through beautiful pine forest.</p>
+                            <p>Created for the annual High Altitude Classic race, this winding singletrack loop starts
+                                from downtown Cloudcroft. The first two miles are mostly downhill with fun technical
+                                portions, then you'll tackle two long climbs on forest roads before looping back to the
+                                village. A perfect blend of challenge and flow through beautiful pine forest.</p>
                             <div class="trail-highlights">
                                 <span class="trail-highlight">Race Course</span>
                                 <span class="trail-highlight">Singletrack</span>
@@ -484,7 +595,8 @@
                                 <span class="trail-highlight">Village Start</span>
                             </div>
                             <div class="trail-links">
-                                <a href="https://www.alltrails.com/trail/us/new-mexico/high-altitude-race-course" target="_blank" rel="noopener noreferrer">AllTrails Map &#x2192;</a>
+                                <a href="https://www.alltrails.com/trail/us/new-mexico/high-altitude-race-course"
+                                    target="_blank" rel="noopener noreferrer">AllTrails Map &#x2192;</a>
                             </div>
                         </div>
                     </div>
@@ -503,7 +615,10 @@
                                 <span class="trail-meta-item">&#x1F17F;&#xFE0F; Street parking</span>
                                 <span class="trail-meta-item">&#x1F6BB; Restrooms nearby</span>
                             </div>
-                            <p>A convenient loop combining Pines South (T568) and Pines North (T5688) trails, starting right from downtown Cloudcroft near Burro Street and Osha Trail Street. The trail winds through impressive forest with views to the west. Perfect for a morning ride before grabbing coffee in the village.</p>
+                            <p>A convenient loop combining Pines South (T568) and Pines North (T5688) trails, starting
+                                right from downtown Cloudcroft near Burro Street and Osha Trail Street. The trail winds
+                                through impressive forest with views to the west. Perfect for a morning ride before
+                                grabbing coffee in the village.</p>
                             <div class="trail-highlights">
                                 <span class="trail-highlight">Downtown Access</span>
                                 <span class="trail-highlight">Forest Views</span>
@@ -511,7 +626,8 @@
                                 <span class="trail-highlight">Well Marked</span>
                             </div>
                             <div class="trail-links">
-                                <a href="https://www.trailforks.com/region/cloudcroft/" target="_blank" rel="noopener noreferrer">Trailforks Map &#x2192;</a>
+                                <a href="https://www.trailforks.com/region/cloudcroft/" target="_blank"
+                                    rel="noopener noreferrer">Trailforks Map &#x2192;</a>
                             </div>
                         </div>
                     </div>
@@ -530,7 +646,10 @@
                                 <span class="trail-meta-item">&#x1F6E3;&#xFE0F; NM-6563 (paved)</span>
                                 <span class="trail-meta-item">&#x1F332; Pine forest</span>
                             </div>
-                            <p>One of New Mexico's most spectacular road rides! This paved highway runs south of Cloudcroft, winding along the western rim of the Sacramento Mountains. Expect stunning canyon overlooks with views stretching 5,000 feet below to White Sands. Arduous uphill, exhilarating downhill return!</p>
+                            <p>One of New Mexico's most spectacular road rides! This paved highway runs south of
+                                Cloudcroft, winding along the western rim of the Sacramento Mountains. Expect stunning
+                                canyon overlooks with views stretching 5,000 feet below to White Sands. Arduous uphill,
+                                exhilarating downhill return!</p>
                             <div class="trail-highlights">
                                 <span class="trail-highlight">Paved</span>
                                 <span class="trail-highlight">White Sands Views</span>
@@ -554,7 +673,11 @@
                                 <span class="trail-meta-item">&#x1F6E4;&#xFE0F; Gravel forest road</span>
                                 <span class="trail-meta-item">&#x1F476; Beginner-friendly</span>
                             </div>
-                            <p>Also known as "Eight Mile Road," this is one of the most accessible gravel rides in Lincoln National Forest. The rolling forest road features sweeping views of distant ridges along the south side, with numerous old logging roads branching off for exploration. Perfect for gravel beginners or anyone seeking a mellow, scenic ride through the pines.</p>
+                            <p>Also known as "Eight Mile Road," this is one of the most accessible gravel rides in
+                                Lincoln National Forest. The rolling forest road features sweeping views of distant
+                                ridges along the south side, with numerous old logging roads branching off for
+                                exploration. Perfect for gravel beginners or anyone seeking a mellow, scenic ride
+                                through the pines.</p>
                             <div class="trail-highlights">
                                 <span class="trail-highlight">Beginner Gravel</span>
                                 <span class="trail-highlight">Ridge Views</span>
@@ -562,8 +685,10 @@
                                 <span class="trail-highlight">Exploration Options</span>
                             </div>
                             <div class="trail-links">
-                                <a href="https://www.singletracks.com/bike-trails/pumphouse-ridge/" target="_blank" rel="noopener noreferrer">Singletracks Info &#x2192;</a>
-                                <a href="https://gravelmap.com/browse/new-mexico/cloudcroft" target="_blank" rel="noopener noreferrer">Gravelmap Routes &#x2192;</a>
+                                <a href="https://www.singletracks.com/bike-trails/pumphouse-ridge/" target="_blank"
+                                    rel="noopener noreferrer">Singletracks Info &#x2192;</a>
+                                <a href="https://gravelmap.com/browse/new-mexico/cloudcroft" target="_blank"
+                                    rel="noopener noreferrer">Gravelmap Routes &#x2192;</a>
                             </div>
                         </div>
                     </div>
@@ -582,7 +707,10 @@
                                 <span class="trail-meta-item">&#x1F338; Flower meadows</span>
                                 <span class="trail-meta-item">&#x1F440; Panoramic vistas</span>
                             </div>
-                            <p>A diverse gravel adventure along a wide forest road with striking scenery at every turn. The route winds past the dramatic Mexican Canyon rock formations, crosses flower-filled meadows along Fresnel Creek, and opens to panoramic vistas from Toboggan mesa. Riders call it the perfect introduction to Lincoln National Forest's landscapes.</p>
+                            <p>A diverse gravel adventure along a wide forest road with striking scenery at every turn.
+                                The route winds past the dramatic Mexican Canyon rock formations, crosses flower-filled
+                                meadows along Fresnel Creek, and opens to panoramic vistas from Toboggan mesa. Riders
+                                call it the perfect introduction to Lincoln National Forest's landscapes.</p>
                             <div class="trail-highlights">
                                 <span class="trail-highlight">Mexican Canyon</span>
                                 <span class="trail-highlight">Wildflower Meadows</span>
@@ -590,7 +718,8 @@
                                 <span class="trail-highlight">Varied Terrain</span>
                             </div>
                             <div class="trail-links">
-                                <a href="https://nmts.org/rides/cloudcroftLoop.htm" target="_blank" rel="noopener noreferrer">NMTS Route Info &#x2192;</a>
+                                <a href="https://nmts.org/rides/cloudcroftLoop.htm" target="_blank"
+                                    rel="noopener noreferrer">NMTS Route Info &#x2192;</a>
                             </div>
                         </div>
                     </div>
@@ -609,7 +738,11 @@
                                 <span class="trail-meta-item">&#x1F335; Desert transition</span>
                                 <span class="trail-meta-item">&#x1F3D4;&#xFE0F; 4,000+ ft drop possible</span>
                             </div>
-                            <p>An epic descent from the Sacramento Mountains down toward the Tularosa Basin. The trail begins at the upper end on a narrow utility road passing through a large meadow, then descends through varied vegetation into pinyon-juniper woodland. One of the trails that can drop you from 9,000 feet down toward the desert floor for massive elevation loss.</p>
+                            <p>An epic descent from the Sacramento Mountains down toward the Tularosa Basin. The trail
+                                begins at the upper end on a narrow utility road passing through a large meadow, then
+                                descends through varied vegetation into pinyon-juniper woodland. One of the trails that
+                                can drop you from 8,676 feet down toward the desert floor for massive elevation loss.
+                            </p>
                             <div class="trail-highlights">
                                 <span class="trail-highlight">Big Descent</span>
                                 <span class="trail-highlight">Ecosystem Transition</span>
@@ -617,8 +750,10 @@
                                 <span class="trail-highlight">Desert Views</span>
                             </div>
                             <div class="trail-links">
-                                <a href="https://www.fs.usda.gov/activity/lincoln/recreation/bicycling/?recid=34166&actid=24" target="_blank" rel="noopener noreferrer">Forest Service &#x2192;</a>
-                                <a href="https://www.trailforks.com/region/cloudcroft/trails/" target="_blank" rel="noopener noreferrer">Trailforks &#x2192;</a>
+                                <a href="https://www.fs.usda.gov/activity/lincoln/recreation/bicycling/?recid=34166&actid=24"
+                                    target="_blank" rel="noopener noreferrer">Forest Service &#x2192;</a>
+                                <a href="https://www.trailforks.com/region/cloudcroft/trails/" target="_blank"
+                                    rel="noopener noreferrer">Trailforks &#x2192;</a>
                             </div>
                         </div>
                     </div>
@@ -637,7 +772,11 @@
                                 <span class="trail-meta-item">&#x1F3D5;&#xFE0F; Multi-day bikepacking</span>
                                 <span class="trail-meta-item">&#x1F98C; Elk country</span>
                             </div>
-                            <p>A high-altitude bikepacking epic through southern New Mexico! This 154-mile route uses well-maintained gravel through Lincoln National Forest, offering respite from summer heat in the surrounding lowlands. Endless climbs along creeks, through aspen groves, and past elk herds are only broken up by tiny mountain villages. Home of the WeedSac bikepacking event.</p>
+                            <p>A high-altitude bikepacking epic through southern New Mexico! This 154-mile route uses
+                                well-maintained gravel through Lincoln National Forest, offering respite from summer
+                                heat in the surrounding lowlands. Endless climbs along creeks, through aspen groves, and
+                                past elk herds are only broken up by tiny mountain villages. Home of the WeedSac
+                                bikepacking event.</p>
                             <div class="trail-highlights">
                                 <span class="trail-highlight">Bikepacking</span>
                                 <span class="trail-highlight">Aspen Groves</span>
@@ -645,7 +784,8 @@
                                 <span class="trail-highlight">WeedSac Route</span>
                             </div>
                             <div class="trail-links">
-                                <a href="https://bikepackingroots.org/project/rollin-and-tumblin/" target="_blank" rel="noopener noreferrer">Bikepacking Roots &#x2192;</a>
+                                <a href="https://bikepackingroots.org/project/rollin-and-tumblin/" target="_blank"
+                                    rel="noopener noreferrer">Bikepacking Roots &#x2192;</a>
                             </div>
                         </div>
                     </div>
@@ -658,8 +798,10 @@
             <div class="section-container">
                 <div style="text-align: center;">
                     <span class="section-label" style="color: var(--pine); letter-spacing: 3px;">Riding Tips</span>
-                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">Ride Smart at Altitude</h2>
-                    <p class="section-description" style="color: #555555;">Essential tips for cycling at 8,676 feet in the Sacramento Mountains.</p>
+                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">Ride Smart at
+                        Altitude</h2>
+                    <p class="section-description" style="color: #555555;">Essential tips for cycling at 8,676 feet in
+                        the Sacramento Mountains.</p>
                 </div>
                 <div class="tips-grid">
                     <div class="tip-card">
@@ -711,44 +853,51 @@
                 <div style="text-align: center;">
                     <span class="section-label">Resources</span>
                     <h2 class="section-title section-title-centered">Maps &amp; Trail Info</h2>
-                    <p class="section-description">Essential resources for planning your Cloudcroft cycling adventure.</p>
+                    <p class="section-description">Essential resources for planning your Cloudcroft cycling adventure.
+                    </p>
                 </div>
                 <div class="resources-grid">
                     <div class="resource-card">
                         <div class="resource-icon">&#x1F5FA;&#xFE0F;</div>
                         <h3>Trailforks</h3>
                         <p>Interactive MTB trail maps with conditions, difficulty ratings, and community reviews.</p>
-                        <a href="https://www.trailforks.com/region/cloudcroft/" target="_blank" rel="noopener noreferrer" class="resource-link">View Trails</a>
+                        <a href="https://www.trailforks.com/region/cloudcroft/" target="_blank"
+                            rel="noopener noreferrer" class="resource-link">View Trails</a>
                     </div>
                     <div class="resource-card">
                         <div class="resource-icon">&#x1F4CD;</div>
                         <h3>AllTrails</h3>
                         <p>Trail maps, GPS tracking, and reviews for all Cloudcroft cycling routes.</p>
-                        <a href="https://www.alltrails.com/us/new-mexico/cloudcroft/mountain-biking" target="_blank" rel="noopener noreferrer" class="resource-link">Explore Trails</a>
+                        <a href="https://www.alltrails.com/us/new-mexico/cloudcroft/mountain-biking" target="_blank"
+                            rel="noopener noreferrer" class="resource-link">Explore Trails</a>
                     </div>
                     <div class="resource-card">
                         <div class="resource-icon">&#x1F332;</div>
                         <h3>Lincoln National Forest</h3>
                         <p>Official forest service info on permits, conditions, and recreation areas.</p>
-                        <a href="https://www.fs.usda.gov/activity/lincoln/recreation/bicycling/?recid=34166&actid=24" target="_blank" rel="noopener noreferrer" class="resource-link">Forest Service</a>
+                        <a href="https://www.fs.usda.gov/activity/lincoln/recreation/bicycling/?recid=34166&actid=24"
+                            target="_blank" rel="noopener noreferrer" class="resource-link">Forest Service</a>
                     </div>
                     <div class="resource-card">
                         <div class="resource-icon">&#x1F6E4;&#xFE0F;</div>
                         <h3>Gravelmap</h3>
                         <p>Curated gravel routes in the Cloudcroft area with turn-by-turn navigation.</p>
-                        <a href="https://gravelmap.com/browse/new-mexico/cloudcroft" target="_blank" rel="noopener noreferrer" class="resource-link">Find Routes</a>
+                        <a href="https://gravelmap.com/browse/new-mexico/cloudcroft" target="_blank"
+                            rel="noopener noreferrer" class="resource-link">Find Routes</a>
                     </div>
                     <div class="resource-card">
                         <div class="resource-icon">&#x1F3D5;&#xFE0F;</div>
                         <h3>Bikepacking Roots</h3>
                         <p>Multi-day bikepacking routes including the Rollin' and Tumblin' epic.</p>
-                        <a href="https://bikepackingroots.org/project/rollin-and-tumblin/" target="_blank" rel="noopener noreferrer" class="resource-link">Plan Adventure</a>
+                        <a href="https://bikepackingroots.org/project/rollin-and-tumblin/" target="_blank"
+                            rel="noopener noreferrer" class="resource-link">Plan Adventure</a>
                     </div>
                     <div class="resource-card">
                         <div class="resource-icon">&#x1F6B4;</div>
                         <h3>Singletracks</h3>
                         <p>Mountain bike trail reviews and community insights for Cloudcroft.</p>
-                        <a href="https://www.singletracks.com/bike-trails/region/new-mexico/?city=Cloudcroft" target="_blank" rel="noopener noreferrer" class="resource-link">Read Reviews</a>
+                        <a href="https://www.singletracks.com/bike-trails/region/new-mexico/?city=Cloudcroft"
+                            target="_blank" rel="noopener noreferrer" class="resource-link">Read Reviews</a>
                     </div>
                 </div>
             </div>
@@ -757,10 +906,13 @@
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
                 <h2>Ready to Ride?</h2>
-                <p>Plan your Cloudcroft cycling adventure and experience world-class riding at 9,000 feet in the Sacramento Mountains.</p>
+                <p>Plan your Cloudcroft cycling adventure and experience world-class riding at 8,676 feet in the
+                    Sacramento Mountains.</p>
                 <div class="cta-buttons">
-                    <a href="https://www.trailforks.com/region/cloudcroft/" target="_blank" rel="noopener noreferrer" class="btn-primary">Browse All Trails</a>
-                    <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html" class="btn-secondary">Find Lodging</a>
+                    <a href="https://www.trailforks.com/region/cloudcroft/" target="_blank" rel="noopener noreferrer"
+                        class="btn-primary">Browse All Trails</a>
+                    <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html" class="btn-secondary">Find
+                        Lodging</a>
                 </div>
             </div>
         </section>
@@ -771,7 +923,9 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="/" class="footer-brand-mark">DISCOVER <span>CLOUDCROFT</span></a>
-                    <p>An independent visitor's guide to Cloudcroft, NM &mdash; a mountain village at 8,676 ft in the Sacramento Mountains. Lodging, dining, activities, shopping, events, and seasonal travel planning.</p>
+                    <p>An independent visitor's guide to Cloudcroft, NM &mdash; a mountain village at 8,676 ft in the
+                        Sacramento Mountains. Lodging, dining, activities, shopping, events, and seasonal travel
+                        planning.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Explore</h4>
@@ -798,11 +952,14 @@
                 <div class="footer-col">
                     <h4>Stay in touch</h4>
                     <p>Monthly updates from DiscoverCloudcroft. No spam. Unsubscribe anytime.</p>
-                    <button type="button" class="footer-cta" data-signup-open data-signup-source="footer">Subscribe</button>
+                    <button type="button" class="footer-cta" data-signup-open
+                        data-signup-source="footer">Subscribe</button>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer">DiscoverCloudcroft.com</a>, operated by Mountain Monthly LLC. All rights reserved.</p>
+                <p>&copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank"
+                        rel="noopener noreferrer">DiscoverCloudcroft.com</a>, operated by Mountain Monthly LLC. All
+                    rights reserved.</p>
                 <div class="footer-bottom-links">
                     <a href="/about/privacy.html">Privacy</a>
                     <a href="/about/terms.html">Terms</a>
@@ -816,9 +973,9 @@
 
     <script src="../js/common.js" defer></script>
     <script>
-        (function() {
+        (function () {
             var header = document.querySelector('.site-header');
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 if (window.scrollY > 60) {
                     header.classList.add('scrolled');
                 } else {
@@ -828,15 +985,15 @@
 
             var hamburger = document.querySelector('.hamburger');
             var mobileMenu = document.querySelector('.mobile-menu');
-            hamburger.addEventListener('click', function() {
+            hamburger.addEventListener('click', function () {
                 var isOpen = mobileMenu.classList.toggle('open');
                 hamburger.classList.toggle('active');
                 hamburger.setAttribute('aria-expanded', isOpen);
                 document.body.style.overflow = isOpen ? 'hidden' : '';
             });
 
-            mobileMenu.querySelectorAll('a').forEach(function(link) {
-                link.addEventListener('click', function() {
+            mobileMenu.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
                     mobileMenu.classList.remove('open');
                     hamburger.classList.remove('active');
                     hamburger.setAttribute('aria-expanded', 'false');
@@ -844,8 +1001,8 @@
                 });
             });
 
-            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-                anchor.addEventListener('click', function(e) {
+            document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     var target = document.querySelector(this.getAttribute('href'));
                     if (target) {
@@ -855,8 +1012,8 @@
             });
 
             var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         fadeObserver.unobserve(entry.target);
@@ -864,19 +1021,19 @@
                 });
             }, observerOptions);
 
-            document.querySelectorAll('.fade-in, .trail-card, .tip-card, .resource-card').forEach(function(el) {
+            document.querySelectorAll('.fade-in, .trail-card, .tip-card, .resource-card').forEach(function (el) {
                 fadeObserver.observe(el);
             });
 
             // Trail filter tabs
             var tabs = document.querySelectorAll('.trail-tab');
             var cards = document.querySelectorAll('.trail-card');
-            tabs.forEach(function(tab) {
-                tab.addEventListener('click', function() {
-                    tabs.forEach(function(t) { t.classList.remove('active'); });
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    tabs.forEach(function (t) { t.classList.remove('active'); });
                     tab.classList.add('active');
                     var filter = tab.dataset.filter;
-                    cards.forEach(function(card) {
+                    cards.forEach(function (card) {
                         if (filter === 'all' || card.dataset.type === filter) {
                             card.style.display = 'grid';
                             card.classList.add('visible');
@@ -888,7 +1045,7 @@
             });
 
             var backToTop = document.querySelector('.back-to-top');
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 if (window.scrollY > 400) {
                     backToTop.classList.add('visible');
                 } else {
@@ -896,10 +1053,11 @@
                 }
             }, { passive: true });
 
-            backToTop.addEventListener('click', function() {
+            backToTop.addEventListener('click', function () {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         })();
     </script>
 </body>
+
 </html>

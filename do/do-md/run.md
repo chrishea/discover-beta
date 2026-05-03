@@ -88,7 +88,7 @@ The race culture also seems real, not forced. UltraSignup and RunSignup both sho
 
 ## Altitude advisory
 
-Cloudcroft trails sit between **8,500 and 9,000+ feet**. That changes every run:
+Cloudcroft trails sit between **8,500 and 8,676+ feet**. That changes every run:
 
 - **Do not judge effort by mileage alone.** A 3-mile trail run at 8,676 feet can feel like 5 miles at sea level.
 - **Hydrate aggressively.** Start drinking extra water before you run, not just during.

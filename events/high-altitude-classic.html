@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>High Altitude Classic Bike Race</title>
-    <meta name="description" content="The High Altitude Classic is one of the most scenic and demanding cycling events in the Southwest. Classic, Half, and Junior categories. Summer 2026 in Cloudcroft, NM.">
-<link rel="canonical" href="https://discovercloudcroft.com/events/high-altitude-classic.html">
+    <meta name="description"
+        content="The High Altitude Classic is one of the most scenic and demanding cycling events in the Southwest. Classic, Half, and Junior categories. Summer 2026 in Cloudcroft, NM.">
+    <link rel="canonical" href="https://discovercloudcroft.com/events/high-altitude-classic.html">
     <meta property="og:title" content="High Altitude Classic Bike Race">
-    <meta property="og:description" content="One of the most scenic and demanding cycling events in the Southwest. Classic, Half, and Junior categories.">
+    <meta property="og:description"
+        content="One of the most scenic and demanding cycling events in the Southwest. Classic, Half, and Junior categories.">
     <meta property="og:url" content="https://discovercloudcroft.com/events/high-altitude-classic.html">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://discovercloudcroft.com/events/events-photo/high-altitude-classic-00444.JPG">
+    <meta property="og:image"
+        content="https://discovercloudcroft.com/events/events-photo/high-altitude-classic-00444.JPG">
     <meta property="og:image:alt" content="High Altitude Classic cycling event near Cloudcroft, NM.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="High Altitude Classic Bike Race">
     <meta name="twitter:description" content="Most scenic and demanding cycling event in the Southwest. Summer 2026.">
-    <meta name="twitter:image" content="https://discovercloudcroft.com/events/events-photo/high-altitude-classic-00444.JPG">
+    <meta name="twitter:image"
+        content="https://discovercloudcroft.com/events/events-photo/high-altitude-classic-00444.JPG">
     <meta name="twitter:image:alt" content="High Altitude Classic cycling event near Cloudcroft, NM.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/common.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
 
     <script type="application/ld+json">
     {
@@ -45,114 +52,166 @@
     </script>
 
     <style>
-/* Hero overrides */
+        /* Hero overrides */
 
-.hero-bg {
-    background: linear-gradient(135deg, #000000 0%, #111111 50%, var(--twilight) 100%);
-}
-.hero-overlay {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(30, 90, 168, 0.55));
-}
+        .hero-bg {
+            background: linear-gradient(135deg, #000000 0%, #111111 50%, var(--twilight) 100%);
+        }
 
-/* Page-specific: about-image override */
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(30, 90, 168, 0.55));
+        }
 
-/* Categories */
-.categories-section { background: var(--cloud-drift); }
-.categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-.category-card {
-    background: var(--snow-cap);
-    border-radius: 12px;
-    padding: 2.5rem 2rem;
-    border-top: 4px solid var(--golden-hour);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
-    opacity: 0;
-    transform: translateY(30px);
-}
-.category-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
-}
-.category-card:nth-child(2).visible { transition-delay: 0.1s; }
-.category-card:nth-child(3).visible { transition-delay: 0.2s; }
-.category-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-}
-.category-card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-.category-card h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--midnight);
-    margin-bottom: 0.5rem;
-}
-.category-card > p { color: var(--granite); font-size: 0.95rem; line-height: 1.7; }
-/* Route section */
-.route-section {
-    background: var(--cream-dark);
-    position: relative;
-    overflow: hidden;
-}
-.route-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    opacity: 0.06;
-    background-image:
-        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px),
-        repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,148,62,0.3) 40px, rgba(200,148,62,0.3) 41px);
-    pointer-events: none;
-}
-.route-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    position: relative;
-}
-.route-card {
-    text-align: center;
-    padding: 2.5rem 2rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease, background 0.3s ease;
-    opacity: 0;
-    transform: translateY(30px);
-}
-.route-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
-}
-.route-card:nth-child(2).visible { transition-delay: 0.1s; }
-.route-card:nth-child(3).visible { transition-delay: 0.2s; }
-.route-card:hover { transform: translateY(-6px); background: rgba(255, 255, 255, 0.1); }
+        /* Page-specific: about-image override */
 
-.route-card h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--pine);
-    margin-bottom: 0.75rem;
-}
-.route-card p { color: #555555; font-size: 0.95rem; line-height: 1.7; }
-/* Footer gradient border */
+        /* Categories */
+        .categories-section {
+            background: var(--cloud-drift);
+        }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .route-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 768px) {
-    .route-grid { grid-template-columns: 1fr; }
-    .categories-grid { grid-template-columns: 1fr; }
-}
-</style>
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .category-card {
+            background: var(--snow-cap);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            border-top: 4px solid var(--golden-hour);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .category-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.3s;
+        }
+
+        .category-card:nth-child(2).visible {
+            transition-delay: 0.1s;
+        }
+
+        .category-card:nth-child(3).visible {
+            transition-delay: 0.2s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--midnight);
+            margin-bottom: 0.5rem;
+        }
+
+        .category-card>p {
+            color: var(--granite);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Route section */
+        .route-section {
+            background: var(--cream-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .route-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.06;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(200, 148, 62, 0.3) 40px, rgba(200, 148, 62, 0.3) 41px),
+                repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200, 148, 62, 0.3) 40px, rgba(200, 148, 62, 0.3) 41px);
+            pointer-events: none;
+        }
+
+        .route-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .route-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .route-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1), transform 0.6s cubic-bezier(0, 0, 0.2, 1), background 0.3s;
+        }
+
+        .route-card:nth-child(2).visible {
+            transition-delay: 0.1s;
+        }
+
+        .route-card:nth-child(3).visible {
+            transition-delay: 0.2s;
+        }
+
+        .route-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .route-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--pine);
+            margin-bottom: 0.75rem;
+        }
+
+        .route-card p {
+            color: #555555;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Footer gradient border */
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .route-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .route-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 
     <script type="application/ld+json">
     {
@@ -181,10 +240,11 @@
 }
     </script>
 </head>
+
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-        <header class="site-header" role="banner">
+    <header class="site-header" role="banner">
         <div class="header-inner">
 
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
@@ -222,7 +282,7 @@
 
         </nav>
     </header>
-<section class="hero" aria-label="Page hero">
+    <section class="hero" aria-label="Page hero">
         <div class="hero-bg" role="img" aria-label="High Altitude Classic Bike Race"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -234,7 +294,8 @@
                 <span class="word">Altitude </span>
                 <span class="word">Classic</span>
             </h1>
-            <p class="hero-subtitle">One of the most scenic and demanding cycling events in the Southwest &mdash; climbing through the Sacramento Mountains at nearly 9,000 feet.</p>
+            <p class="hero-subtitle">One of the most scenic and demanding cycling events in the Southwest &mdash;
+                climbing through the Sacramento Mountains at nearly 8,676 feet.</p>
             <div class="hero-ctas">
                 <a href="#categories" class="btn-primary">Race Categories</a>
                 <a href="#details" class="btn-outline">Race Details</a>
@@ -258,7 +319,7 @@
             </div>
             <div class="info-bar-item">
                 <div class="info-bar-icon">&#x1F3D4;&#xFE0F;</div>
-                <span>~9,000 ft Elevation</span>
+                <span>~8,676 ft Elevation</span>
             </div>
         </div>
     </div>
@@ -270,8 +331,13 @@
                     <div class="about-text fade-in">
                         <span class="section-label">About the Race</span>
                         <h2 class="section-title">Ride at Altitude</h2>
-                        <p>The High Altitude Classic is recognized as one of the most scenic and demanding cycling events in the Southwest. Riders tackle challenging mountain roads through the Sacramento Mountains, climbing to nearly 9,000 feet through pine forests and past dramatic switchbacks.</p>
-                        <p>With Classic, Half, and Junior categories, there is a course for every level of cyclist. The race starts at 7:00 AM, and packet pickup is available the day before. Awards are presented at Zenith Park following the race.</p>
+                        <p>The High Altitude Classic is recognized as one of the most scenic and demanding cycling
+                            events in the Southwest. Riders tackle challenging mountain roads through the Sacramento
+                            Mountains, climbing to nearly 8,676 feet through pine forests and past dramatic switchbacks.
+                        </p>
+                        <p>With Classic, Half, and Junior categories, there is a course for every level of cyclist. The
+                            race starts at 7:00 AM, and packet pickup is available the day before. Awards are presented
+                            at Zenith Park following the race.</p>
                         <div class="about-features">
                             <span class="about-feature">&#x1F6B4; Road Cycling</span>
                             <span class="about-feature">&#x1F3D4;&#xFE0F; Mountain Course</span>
@@ -295,23 +361,29 @@
                 <div style="text-align: center;">
                     <span class="section-label">Race Day</span>
                     <h2 class="section-title section-title-centered">Race Categories</h2>
-                    <p class="section-description">Choose the course that matches your skill level. Every category offers a challenging and scenic mountain ride.</p>
+                    <p class="section-description">Choose the course that matches your skill level. Every category
+                        offers a challenging and scenic mountain ride.</p>
                 </div>
                 <div class="categories-grid">
                     <div class="category-card">
                         <div class="category-card-icon">&#x1F947;</div>
                         <h3>Classic</h3>
-                        <p>The full course for experienced riders. Tackle the complete mountain route with significant elevation gain through the Sacramento Mountains. This is the flagship event and the ultimate test of endurance at altitude.</p>
+                        <p>The full course for experienced riders. Tackle the complete mountain route with significant
+                            elevation gain through the Sacramento Mountains. This is the flagship event and the ultimate
+                            test of endurance at altitude.</p>
                     </div>
                     <div class="category-card">
                         <div class="category-card-icon">&#x1F948;</div>
                         <h3>Half Classic</h3>
-                        <p>A shorter but still demanding route covering roughly half the Classic distance. Perfect for intermediate riders who want the mountain cycling experience without the full course commitment.</p>
+                        <p>A shorter but still demanding route covering roughly half the Classic distance. Perfect for
+                            intermediate riders who want the mountain cycling experience without the full course
+                            commitment.</p>
                     </div>
                     <div class="category-card">
                         <div class="category-card-icon">&#x1F949;</div>
                         <h3>Junior</h3>
-                        <p>A course designed for younger riders to experience competitive mountain cycling. A great introduction to altitude riding in a supportive, family-friendly environment.</p>
+                        <p>A course designed for younger riders to experience competitive mountain cycling. A great
+                            introduction to altitude riding in a supportive, family-friendly environment.</p>
                     </div>
                 </div>
             </div>
@@ -321,24 +393,29 @@
             <div class="section-container">
                 <div style="text-align: center;">
                     <span class="section-label" style="color: var(--pine); letter-spacing: 3px;">The Course</span>
-                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">Route Highlights</h2>
-                    <p class="section-description" style="color: #555555;">What makes this one of the most talked-about cycling events in the region.</p>
+                    <h2 class="section-title section-title-centered" style="color: var(--charcoal);">Route Highlights
+                    </h2>
+                    <p class="section-description" style="color: #555555;">What makes this one of the most talked-about
+                        cycling events in the region.</p>
                 </div>
                 <div class="route-grid">
                     <div class="route-card">
                         <div class="route-icon">&#x1F3D4;&#xFE0F;</div>
                         <h3>Extreme Elevation</h3>
-                        <p>Ride at nearly 9,000 feet through the Sacramento Mountains. The thin air adds an extra challenge that sets this race apart from others.</p>
+                        <p>Ride at nearly 8,676 feet through the Sacramento Mountains. The thin air adds an extra
+                            challenge that sets this race apart from others.</p>
                     </div>
                     <div class="route-card">
                         <div class="route-icon">&#x1F332;</div>
                         <h3>Scenic Mountain Roads</h3>
-                        <p>Wind through pine forests and past dramatic switchbacks on US-82, with panoramic Sacramento Mountain views.</p>
+                        <p>Wind through pine forests and past dramatic switchbacks on US-82, with panoramic Sacramento
+                            Mountain views.</p>
                     </div>
                     <div class="route-card">
                         <div class="route-icon">&#x1F3C1;</div>
                         <h3>Awards at Zenith Park</h3>
-                        <p>Celebrate your finish at Zenith Park in the heart of Cloudcroft. Awards ceremony, food, and camaraderie with fellow riders.</p>
+                        <p>Celebrate your finish at Zenith Park in the heart of Cloudcroft. Awards ceremony, food, and
+                            camaraderie with fellow riders.</p>
                     </div>
                 </div>
             </div>
@@ -355,22 +432,26 @@
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F550;</div>
                         <h3>Race Start</h3>
-                        <p>7:00 AM start time for all categories. Arrive early for check-in and warm-up. Staggered starts may apply by category.</p>
+                        <p>7:00 AM start time for all categories. Arrive early for check-in and warm-up. Staggered
+                            starts may apply by category.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F4E6;</div>
                         <h3>Packet Pickup</h3>
-                        <p>Packet pickup is available the day before race day. Pick up your race number, timing chip, and event materials in advance.</p>
+                        <p>Packet pickup is available the day before race day. Pick up your race number, timing chip,
+                            and event materials in advance.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F3C6;</div>
                         <h3>Awards</h3>
-                        <p>Awards ceremony held at Zenith Park following the race. Category winners and overall champions recognized with prizes.</p>
+                        <p>Awards ceremony held at Zenith Park following the race. Category winners and overall
+                            champions recognized with prizes.</p>
                     </div>
                     <div class="visiting-card">
                         <div class="visiting-icon">&#x1F697;</div>
                         <h3>Getting There</h3>
-                        <p>Cloudcroft is 30 minutes from Alamogordo on US-82. Book lodging early as race weekend fills up quickly. El Paso airport is 2 hours away.</p>
+                        <p>Cloudcroft is 30 minutes from Alamogordo on US-82. Book lodging early as race weekend fills
+                            up quickly. El Paso airport is 2 hours away.</p>
                     </div>
                 </div>
             </div>
@@ -379,10 +460,12 @@
         <section class="cta-section" aria-label="Call to action">
             <div class="cta-container">
                 <h2>Ready to Ride at Altitude?</h2>
-                <p>Challenge yourself on one of the Southwest's most demanding and beautiful cycling courses. The High Altitude Classic awaits.</p>
+                <p>Challenge yourself on one of the Southwest's most demanding and beautiful cycling courses. The High
+                    Altitude Classic awaits.</p>
                 <div class="cta-buttons">
                     <a href="../events/top-events.html" class="btn-primary">View All Events</a>
-                    <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html" class="btn-outline">Find Lodging</a>
+                    <a href="../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html" class="btn-outline">Find
+                        Lodging</a>
                 </div>
             </div>
         </section>
@@ -393,7 +476,9 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="/" class="footer-brand-mark">DISCOVER <span>CLOUDCROFT</span></a>
-                    <p>An independent visitor's guide to Cloudcroft, NM &mdash; a mountain village at 8,676 ft in the Sacramento Mountains. Lodging, dining, activities, shopping, events, and seasonal travel planning.</p>
+                    <p>An independent visitor's guide to Cloudcroft, NM &mdash; a mountain village at 8,676 ft in the
+                        Sacramento Mountains. Lodging, dining, activities, shopping, events, and seasonal travel
+                        planning.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Explore</h4>
@@ -420,11 +505,14 @@
                 <div class="footer-col">
                     <h4>Stay in touch</h4>
                     <p>Monthly updates from DiscoverCloudcroft. No spam. Unsubscribe anytime.</p>
-                    <button type="button" class="footer-cta" data-signup-open data-signup-source="footer">Subscribe</button>
+                    <button type="button" class="footer-cta" data-signup-open
+                        data-signup-source="footer">Subscribe</button>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer">DiscoverCloudcroft.com</a>, operated by Mountain Monthly LLC. All rights reserved.</p>
+                <p>&copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank"
+                        rel="noopener noreferrer">DiscoverCloudcroft.com</a>, operated by Mountain Monthly LLC. All
+                    rights reserved.</p>
                 <div class="footer-bottom-links">
                     <a href="/about/privacy.html">Privacy</a>
                     <a href="/about/terms.html">Terms</a>
@@ -438,18 +526,19 @@
 
     <script src="../js/common.js" defer></script>
     <script>
-        (function() {
+        (function () {
             var observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            var fadeObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+            var fadeObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); }
                 });
             }, observerOptions);
-            document.querySelectorAll('.fade-in, .category-card, .route-card, .visiting-card').forEach(function(el) { fadeObserver.observe(el); });
+            document.querySelectorAll('.fade-in, .category-card, .route-card, .visiting-card').forEach(function (el) { fadeObserver.observe(el); });
             var backToTop = document.querySelector('.back-to-top');
-            window.addEventListener('scroll', function() { if (window.scrollY > 400) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); } }, { passive: true });
-            backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+            window.addEventListener('scroll', function () { if (window.scrollY > 400) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); } }, { passive: true });
+            backToTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
         })();
     </script>
 </body>
+
 </html>

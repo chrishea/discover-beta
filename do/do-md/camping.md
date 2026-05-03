@@ -692,7 +692,7 @@ Best picks:
 
 ## 7. Weather, altitude, and seasonal considerations
 
-Cloudcroft camping is shaped by elevation more than by the New Mexico stereotype. Most campgrounds sit between **8,700 and 9,000 feet** — comparable to many Colorado ski towns. If you are arriving from lower elevation, the altitude affects you whether you notice it or not.
+Cloudcroft camping is shaped by elevation more than by the New Mexico stereotype. Most campgrounds sit between **8,700 and 8,676 feet** — comparable to many Colorado ski towns. If you are arriving from lower elevation, the altitude affects you whether you notice it or not.
 
 ### Practical realities
 - The Sacramento Ranger District ranges from about **5,400 feet to over 9,600 feet**.

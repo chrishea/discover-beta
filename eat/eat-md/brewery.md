@@ -138,7 +138,7 @@ Cloudcroft Brewing Company has grown into one of the village's core food-and-dri
 
 ## 10. Media coverage and related listings
 
-- **Cloudcroft Reader, "Brewing at 9,000 Feet: Inside Cloudcroft Brewing Company"** — strongest current local feature; frames the brewery as a village cornerstone. (Note: the article's headline uses 9,000 ft as a casual round-up; Cloudcroft's actual elevation is 8,676 ft.)
+- **Cloudcroft Reader, "Brewing at 8,676 Feet: Inside Cloudcroft Brewing Company"** — strongest current local feature; frames the brewery as a village cornerstone. (Note: the article's headline uses 8,676 ft as a casual round-up; Cloudcroft's actual elevation is 8,676 ft.)
 - **Cloudcroft Reader, "Cloudcroft's Commercial Kaleidoscope"** — late-2024 expansion: more indoor seating, added bar, private-event ambitions, in-house spirits program.
 - **Cloudcroft Reader, "Find Fresh Groceries and Pantry Staples in Cloudcroft"** — confirms take-home microbrew packs and in-house spirits on the retail side.
 

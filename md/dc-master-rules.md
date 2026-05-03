@@ -1,5 +1,5 @@
 # RULES TO OBEY 
--Remove any and all mentions of Sunspot Observatory from any page.
+-Remove any and all mentions of Sunspot Observatory from any and all pages on this site.
 
 RULE FOR ENTIRE SITE: Ski Cloudcroft is the southernmost ski area in NEW MEXICO, not the United States.
 -remove all mention of Bear Track, Mountain Comforts, and Cloudcroft Gallery from entire site. They don’t exist. 
@@ -17,5 +17,5 @@ REMOVE from site, all pages, all mentions: Into the Woods 505 Burro Ave #102 lis
 
 The Western Bar does NOT offer breakfast
 
-Never use 9,000 or 9000 ft as the levation of cloudcroft. Use 8,676 ft. always
+Never use 8,676 or 9000 ft as the levation of cloudcroft. Use 8,676 ft. always
 

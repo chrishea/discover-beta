@@ -9,7 +9,7 @@
 \pard\pardeftab720\partightenfactor0
 
 \f0\b\fs80 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Brewing at 9,000 Feet: Inside Cloudcroft Brewing Company
+\outl0\strokewidth0 \strokec2 Brewing at 8,676 Feet: Inside Cloudcroft Brewing Company
 \f1\b0\fs24 \
 \pard\pardeftab720\sa53\partightenfactor0
 
