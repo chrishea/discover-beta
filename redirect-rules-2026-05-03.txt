@@ -1,10 +1,12 @@
 ================================================================================
-DiscoverCloudcroft.com — 301 Redirect Rules
+DiscoverCloudcroft.com — 301 Redirect Rules (AWS Amplify Hosting)
 Generated: 2026-05-03
+Hosting:   AWS Amplify  (App ID: d166ujkfass376)
+           CloudFront distribution d2y037mpbb02oq.cloudfront.net is managed
+           by Amplify — DO NOT edit CloudFront Functions directly; Amplify
+           will overwrite them on next deploy.
 Reason:    URL cleanup — dropped `stay-` prefix and `-2026` suffix from
            evergreen lodging entity files and hub guide pages.
-Deploy to: CloudFront Function attached to viewer-request event on the
-           main distribution serving discovercloudcroft.com.
 ================================================================================
 
 REDIRECT MAP (19 renames + 1 stale-root URL from earlier punch list)
@@ -33,70 +35,95 @@ Old URL                                                                         
 /mexican-canyon-trestle.html                                                     → /do/mexican-canyon-trestle.html
 
 ================================================================================
-CLOUDFRONT FUNCTION (JavaScript) — drop into the viewer-request handler
+AMPLIFY REDIRECT RULES — JSON  (paste this into the Amplify console)
 ================================================================================
 
-function handler(event) {
-    var request = event.request;
-    var uri = request.uri;
-
-    // Map: legacy URL path  →  current URL path
-    var redirects = {
-        '/stay/stay-burro-street-boardinghouse.html':                                 '/stay/burro-street-boardinghouse.html',
-        '/stay/stay-cabins-at-cloudcroft.html':                                       '/stay/cabins-at-cloudcroft.html',
-        '/stay/stay-cloudcroft-hostel-2026.html':                                     '/stay/cloudcroft-hostel.html',
-        '/stay/stay-crofting-inn-cloudcroft.html':                                    '/stay/crofting-inn-cloudcroft.html',
-        '/stay/stay-dusty-boots-motel-cloudcroft.html':                               '/stay/dusty-boots-motel-cloudcroft.html',
-        '/stay/stay-grand-cloudcroft-hotel.html':                                     '/stay/grand-cloudcroft-hotel.html',
-        '/stay/stay-osha-trail.html':                                                 '/stay/osha-trail.html',
-        '/stay/stay-spruce-cabins.html':                                              '/stay/spruce-cabins.html',
-        '/stay/stay-the-lodge-at-cloudcroft-2026.html':                               '/stay/the-lodge-at-cloudcroft.html',
-        '/stay/stay-the-summit-inn-cloudcroft-2026.html':                             '/stay/the-summit-inn-cloudcroft.html',
-        '/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html':         '/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html',
-        '/stay/complete-guide-to-other-lodging-in-cloudcroft-2026.html':              '/stay/complete-guide-to-other-lodging-in-cloudcroft.html',
-        '/eat/complete-guide-where-to-eat-in-cloudcroft-2026.html':                   '/eat/complete-guide-where-to-eat-in-cloudcroft.html',
-        '/do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html':             '/do/complete-guide-to-activities-to-do-in-cloudcroft.html',
-        '/do/guide-lincoln-national-forest-2026.html':                                '/do/guide-lincoln-national-forest.html',
-        '/do/guide-to-camping-cloudcroft-new-mexico-2026.html':                       '/do/guide-to-camping-cloudcroft-new-mexico.html',
-        '/do/guide-to-hiking-in-cloudcroft-new-mexico-2026.html':                     '/do/guide-to-hiking-in-cloudcroft-new-mexico.html',
-        '/shop/complete-guide-where-to-shop-in-cloudcroft-2026.html':                 '/shop/complete-guide-where-to-shop-in-cloudcroft.html',
-        '/resources/auto/guide-auto-services-in-cloudcroft-2026.html':                '/resources/auto/guide-auto-services-in-cloudcroft.html',
-        '/mexican-canyon-trestle.html':                                               '/do/mexican-canyon-trestle.html'
-    };
-
-    if (redirects[uri]) {
-        return {
-            statusCode: 301,
-            statusDescription: 'Moved Permanently',
-            headers: {
-                'location': { value: redirects[uri] },
-                'cache-control': { value: 'max-age=31536000' }
-            }
-        };
-    }
-
-    return request;
-}
+[
+  { "source": "/stay/stay-burro-street-boardinghouse.html",                          "target": "/stay/burro-street-boardinghouse.html",                          "status": "301", "condition": null },
+  { "source": "/stay/stay-cabins-at-cloudcroft.html",                                "target": "/stay/cabins-at-cloudcroft.html",                                "status": "301", "condition": null },
+  { "source": "/stay/stay-cloudcroft-hostel-2026.html",                              "target": "/stay/cloudcroft-hostel.html",                                   "status": "301", "condition": null },
+  { "source": "/stay/stay-crofting-inn-cloudcroft.html",                             "target": "/stay/crofting-inn-cloudcroft.html",                             "status": "301", "condition": null },
+  { "source": "/stay/stay-dusty-boots-motel-cloudcroft.html",                        "target": "/stay/dusty-boots-motel-cloudcroft.html",                        "status": "301", "condition": null },
+  { "source": "/stay/stay-grand-cloudcroft-hotel.html",                              "target": "/stay/grand-cloudcroft-hotel.html",                              "status": "301", "condition": null },
+  { "source": "/stay/stay-osha-trail.html",                                          "target": "/stay/osha-trail.html",                                          "status": "301", "condition": null },
+  { "source": "/stay/stay-spruce-cabins.html",                                       "target": "/stay/spruce-cabins.html",                                       "status": "301", "condition": null },
+  { "source": "/stay/stay-the-lodge-at-cloudcroft-2026.html",                        "target": "/stay/the-lodge-at-cloudcroft.html",                             "status": "301", "condition": null },
+  { "source": "/stay/stay-the-summit-inn-cloudcroft-2026.html",                      "target": "/stay/the-summit-inn-cloudcroft.html",                           "status": "301", "condition": null },
+  { "source": "/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico-2026.html",  "target": "/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html",  "status": "301", "condition": null },
+  { "source": "/stay/complete-guide-to-other-lodging-in-cloudcroft-2026.html",       "target": "/stay/complete-guide-to-other-lodging-in-cloudcroft.html",       "status": "301", "condition": null },
+  { "source": "/eat/complete-guide-where-to-eat-in-cloudcroft-2026.html",            "target": "/eat/complete-guide-where-to-eat-in-cloudcroft.html",            "status": "301", "condition": null },
+  { "source": "/do/complete-guide-to-activities-to-do-in-cloudcroft-2026.html",      "target": "/do/complete-guide-to-activities-to-do-in-cloudcroft.html",      "status": "301", "condition": null },
+  { "source": "/do/guide-lincoln-national-forest-2026.html",                         "target": "/do/guide-lincoln-national-forest.html",                         "status": "301", "condition": null },
+  { "source": "/do/guide-to-camping-cloudcroft-new-mexico-2026.html",                "target": "/do/guide-to-camping-cloudcroft-new-mexico.html",                "status": "301", "condition": null },
+  { "source": "/do/guide-to-hiking-in-cloudcroft-new-mexico-2026.html",              "target": "/do/guide-to-hiking-in-cloudcroft-new-mexico.html",              "status": "301", "condition": null },
+  { "source": "/shop/complete-guide-where-to-shop-in-cloudcroft-2026.html",          "target": "/shop/complete-guide-where-to-shop-in-cloudcroft.html",          "status": "301", "condition": null },
+  { "source": "/resources/auto/guide-auto-services-in-cloudcroft-2026.html",         "target": "/resources/auto/guide-auto-services-in-cloudcroft.html",         "status": "301", "condition": null },
+  { "source": "/mexican-canyon-trestle.html",                                        "target": "/do/mexican-canyon-trestle.html",                                "status": "301", "condition": null }
+]
 
 ================================================================================
-DEPLOY STEPS
+DEPLOY STEPS — AWS AMPLIFY CONSOLE
 ================================================================================
 
-1. Open AWS Console → CloudFront → Functions.
-2. If a viewer-request function already exists on the distribution serving
-   discovercloudcroft.com, edit it and merge the redirect map into the existing
-   handler (don't overwrite — preserve any www→non-www logic already there).
-3. If no function exists yet, create a new one named e.g. "dcc-redirects",
-   paste the JavaScript above, save.
-4. Publish the function.
-5. Attach it to the CloudFront distribution: Behaviors tab → edit the default
-   behavior (or each behavior) → Function associations → Viewer Request →
-   select the function → save.
-6. Wait for distribution status to return to "Deployed" (typically 5–10 min).
-7. Test:
+1. AWS Console → AWS Amplify → Apps → click the app with ID `d166ujkfass376`.
+
+2. Left sidebar → "Hosting" → "Rewrites and redirects".
+
+3. Click "Manage redirects" (top right).
+
+4. Two paths depending on what you see:
+
+   PATH A — empty list (first time setting up redirects):
+     - Click "Open text editor" (top right of the table)
+     - Paste the JSON array above
+     - Click "Save"
+
+   PATH B — existing redirects already configured (e.g. www → non-www):
+     - DO NOT overwrite. Click "Open text editor" to see the current JSON
+     - Append each new entry from the JSON above into the existing array
+       (preserve any www-redirect or root-redirect rules already there)
+     - Order matters: more-specific rules above wildcards. Our entries are
+       all exact-path matches, so they can sit anywhere in the array as
+       long as they're not after a catch-all `<*>` rule
+     - Save
+
+5. Amplify applies redirects within ~30 seconds — no full rebuild required.
+   No CloudFront invalidation needed (Amplify handles it).
+
+6. Test from your terminal:
+
      curl -I https://discovercloudcroft.com/stay/stay-the-lodge-at-cloudcroft-2026.html
-   Expect: HTTP/2 301 with location header pointing to the new URL.
-8. Resubmit the sitemap to Google Search Console after deploy.
+
+   Expect:  HTTP/2 301  with  location: /stay/the-lodge-at-cloudcroft.html
+
+   More spot checks:
+     curl -I https://discovercloudcroft.com/eat/complete-guide-where-to-eat-in-cloudcroft-2026.html
+     curl -I https://discovercloudcroft.com/mexican-canyon-trestle.html
+
+7. Resubmit the sitemap to Google Search Console:
+   - Sitemaps → re-submit `https://discovercloudcroft.com/sitemap.xml`
+   - URL Inspection → paste the homepage → Request Indexing
+
+================================================================================
+DEPLOY ORDER MATTERS — DO THIS FIRST
+================================================================================
+
+The redirects must NOT be live before the renamed pages exist on Amplify.
+Otherwise users get 301 → 404.
+
+Correct sequence:
+
+  Step 1.  Push (or manually deploy) the repo with the renamed files to
+           Amplify FIRST. Wait for the build/deploy to finish (Amplify
+           console shows green "Deployed" badge on the latest commit).
+
+  Step 2.  THEN add the redirects in step 4 above. Test with curl.
+
+If your Amplify app is connected to a git branch (most common): just
+push to that branch and Amplify auto-deploys. If it's a manual deploy
+(upload zip): zip the repo root excluding .git, .claude, drafts/, shelf/,
+media-originals/, and node_modules — then "Deploy without Git provider"
+in the Amplify console.
 
 ================================================================================
 NOTES
@@ -104,11 +131,11 @@ NOTES
 
 - All redirects use 301 (permanent) so search engines transfer link equity
   from old URL to new URL.
-- 1-year browser cache (max-age=31536000) is safe because these redirects
-  are permanent. If you ever rename a page back, bump the cache version or
-  invalidate the CloudFront cache.
 - Year-specific events (oktoberfest-2026.html, christmas-in-cloudcroft-2026.html,
   etc.) intentionally KEEP the year suffix — they document the 2026 instance
   and will be replaced by -2027 siblings next cycle. No redirect needed.
 - The /mexican-canyon-trestle.html root redirect is bundled here because it
   was already on the punch list as a separate item — same deploy, same fix.
+- Amplify supports up to 1,000 redirect rules per app; we're using 20.
+- If you ever need 200+ redirects, switch from JSON-in-console to a
+  custom rule set imported via the Amplify CLI. Not needed at this scale.
