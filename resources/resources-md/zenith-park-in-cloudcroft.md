@@ -53,20 +53,4 @@ It is also one of the easier “buffer” activities in Cloudcroft. If dinner is
 
 ## Useful links
 
-- Village of Cloudcroft: https://www.cloudcroftvillage.com/
-- Parks and Recreation Advisory Board agenda mentioning Zenith Park: https://www.cloudcroftvillage.com/agenda-notice-cloudcroft-parks-and-recreation-advisory-board-regular-meeting-april-6-2026/
-- Chamber events page: https://www.coolcloudcroft.com/events
 
-## What to verify before you go
-
-- whether an event is taking over part of the park
-- winter conditions
-- current court availability if you are going for pickleball
-- whether nearby facilities are open on your dates
-
-## Source notes
-
-Main sources used:
-- Village of Cloudcroft site
-- Cloudcroft Chamber event pages
-- current village agenda references
