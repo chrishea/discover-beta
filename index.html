@@ -244,22 +244,6 @@
             display: block;
         }
 
-        /* ---- Footer: 3-column responsive override ---- */
-        /* common.css defaults .footer-grid to 1fr; expand to 3 cols on tablet+ */
-        @media (min-width: 768px) {
-            .site-footer .footer-grid {
-                grid-template-columns: 1.4fr 1fr 1fr;
-                gap: 2.5rem;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .site-footer .footer-grid {
-                grid-template-columns: 1.6fr 1fr 1fr;
-                gap: 3rem;
-            }
-        }
-
         /* Handoff cards: round corners (page-scoped override of common.css) */
         .handoff-card {
             border-radius: 50%;
@@ -2884,87 +2868,46 @@
     </main>
 
     <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-        <div class="footer-gradient-border"></div>
         <div class="footer-inner">
             <div class="footer-grid">
-
                 <div class="footer-brand">
-                    <a href="index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
-                        <span class="logo-discover">Discover</span>
-                        <span class="logo-cloudcroft">Cloudcroft</span>
-                    </a>
-                    <p class="footer-tagline"
-                        style="font-family:'IBM Plex Sans',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#FF5E3A;margin:0.35rem 0 1rem;">
-                        New Mexico's Mountain Retreat
-                    </p>
-                    <p>An independent visitor guide to Cloudcroft, New Mexico — a mountain village at 8,676 ft in
-                        the Sacramento Mountains.</p>
-                    <div class="footer-social">
-                        <!-- TODO(verify): replace with the Discover Cloudcroft social URLs -->
-                        <a href="https://facebook.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
-                            aria-label="Discover Cloudcroft on Facebook">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-                            </svg>
-                        </a>
-                        <a href="https://instagram.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
-                            aria-label="Discover Cloudcroft on Instagram">
-                            <svg viewBox="0 0 24 24">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor"
-                                    stroke-width="1.6" />
-                                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6" />
-                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
-                            </svg>
-                        </a>
-                        <a href="https://x.com/mountainmonthly" target="_blank" rel="noopener noreferrer"
-                            aria-label="Discover Cloudcroft on X / Twitter">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <address class="footer-nap" style="font-style:normal;">
-                        Cloudcroft, NM 88317<br>
-                        <a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a><br>
-                        <a href="https://www.google.com/maps/place/Cloudcroft,+NM+88317" target="_blank"
-                            rel="noopener noreferrer">Map &amp; directions</a>
-                    </address>
+                    <a href="/" class="footer-brand-mark">DISCOVER <span>CLOUDCROFT</span></a>
+                    <p>An independent visitor's guide to Cloudcroft, NM &mdash; a mountain village at 8,676 ft in the Sacramento Mountains. Lodging, dining, activities, shopping, events, and seasonal travel planning.</p>
                 </div>
-
                 <div class="footer-col">
                     <h4>Explore</h4>
                     <ul>
-                        <li><a href="do/complete-guide-to-activities-to-do-in-cloudcroft.html">Things to do</a></li>
-                        <li><a href="stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html">Where to stay</a>
-                        </li>
-                        <li><a href="eat/complete-guide-where-to-eat-in-cloudcroft.html">Where to eat</a></li>
-                        <li><a href="shop/complete-guide-where-to-shop-in-cloudcroft.html">Shop Burro Avenue</a></li>
-                        <li><a href="visit/where-to-visit.html">Where to visit</a></li>
+                        <li><a href="/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html">Stay</a></li>
+                        <li><a href="/eat/complete-guide-where-to-eat-in-cloudcroft.html">Eat</a></li>
+                        <li><a href="/do/complete-guide-to-activities-to-do-in-cloudcroft.html">Activities</a></li>
+                        <li><a href="/shop/complete-guide-where-to-shop-in-cloudcroft.html">Shop</a></li>
+                        <li><a href="/visit/where-to-visit.html">Visit</a></li>
+                        <li><a href="/events/top-events.html">Events</a></li>
+                        <li><a href="/topics/">Topics</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
-                    <h4>Plan &amp; Resources</h4>
+                    <h4>About</h4>
                     <ul>
-                        <li><a href="events/top-events.html">Events calendar</a></li>
-                        <li><a href="season/seasonal.html">When to visit</a></li>
-                        <li><a href="resources/plan.html">Plan your trip</a></li>
-                        <li><a href="resources/faq.html">FAQ</a></li>
-                        <li><a href="resources/resources.html">Resources</a></li>
-                        <li><a href="resources/about.html">About</a></li>
-                        <li><a href="resources/contact.html">Contact</a></li>
+                        <li><a href="/resources/about.html">About us</a></li>
+                        <li><a href="/about/editorial-standards.html">Editorial standards</a></li>
+                        <li><a href="/about/privacy.html">Privacy policy</a></li>
+                        <li><a href="/about/terms.html">Terms of service</a></li>
+                        <li><a href="/resources/contact.html">Contact</a></li>
                     </ul>
                 </div>
-
+                <div class="footer-col">
+                    <h4>Stay in touch</h4>
+                    <p>Monthly updates from DiscoverCloudcroft. No spam. Unsubscribe anytime.</p>
+                    <button type="button" class="footer-cta" data-signup-open data-signup-source="footer">Subscribe</button>
+                </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2026 DiscoverCloudcroft.com. All rights reserved. Published by Mountain Monthly LLC.</p>
+                <p>&copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer">DiscoverCloudcroft.com</a>, operated by Mountain Monthly LLC. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="about/privacy.html">Privacy</a>
-                    <a href="about/terms.html">Terms</a>
-                    <a href="resources/contact.html">Contact</a>
+                    <a href="/about/privacy.html">Privacy</a>
+                    <a href="/about/terms.html">Terms</a>
+                    <a href="/about/editorial-standards.html">Editorial</a>
                 </div>
             </div>
         </div>
