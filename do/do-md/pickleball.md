@@ -29,7 +29,7 @@ Current status (April 2026):
 - Facebook group: https://www.facebook.com/groups/1110159126769678
 
 **Zenith Park** is in town and easy to find. The courts are managed by:
-- **Village of Cloudcroft**: (575) 682-2411 | https://www.villageofcloudcroftnm.net/
+
 
 Additional links:
 - Public court overview: https://www.elevatecloudcroft.com/pickleball.html
@@ -81,22 +81,13 @@ Zenith Park sits at **8,676 feet**. Pickleball is high-exertion in short bursts,
 ## Useful links
 
 - Pickleball Addicts of Cloudcroft: https://www.pickleballaddictsofcloudcroft.com/
-- Elevate Cloudcroft pickleball page: https://www.elevatecloudcroft.com/pickleball.html
 - Cloudcroft Reader 2026 recap noting court repairs: https://www.cloudcroftreader.com/p/village-meeting-recap-insider-look
 
-## What to verify before you go
-
-- current court condition
-- whether organized play is happening during your visit
-- whether nets are fully set and usable
-- weather and wind
-- whether the club has visitor-friendly meetup info
 
 ## Source notes
 
 Main sources used:
 - Pickleball Addicts of Cloudcroft site
-- Elevate Cloudcroft pickleball page
 - Cloudcroft Reader March 2026 reporting
 
 ---
@@ -106,12 +97,8 @@ Main sources used:
 | Organization | Phone | Address | Web |
 |---|---|---|---|
 | **Pickleball Addicts of Cloudcroft (PAC)** | — | Zenith Park, Cloudcroft, NM 88317 | [pickleballaddictsofcloudcroft.com](https://www.pickleballaddictsofcloudcroft.com/) |
-| **Village of Cloudcroft** (manages courts) | (575) 682-2411 | 201 Burro Ave, Cloudcroft, NM 88317 | [villageofcloudcroftnm.net](https://www.villageofcloudcroftnm.net/) |
-| **Cloudcroft Chamber of Commerce** | (575) 682-2733 | 1001 James Canyon Hwy, Cloudcroft, NM 88317 | [coolcloudcroft.com](https://www.coolcloudcroft.com/) |
 
 **Facebook pages:**
 - Alamogordo/Cloudcroft Pickleball group: https://www.facebook.com/groups/523367466032473/
-- Village of Cloudcroft: https://www.facebook.com/VillageOfCloudcroft/
-- Cloudcroft Chamber: https://www.facebook.com/CloudcroftChamber/
 
 **Drop-in play:** Tuesday, Thursday, Saturday at 8:00 AM — Zenith Park courts
