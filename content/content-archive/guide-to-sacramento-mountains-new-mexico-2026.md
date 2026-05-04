@@ -6,7 +6,7 @@ This is not a polished resort region in the usual sense. It is a working mountai
 
 ## 1. What and where the Sacramento Mountains are
 
-The Sacramento Mountains are one of the three major mountain ranges managed in Lincoln National Forest. The forest as a whole covers about 1.1 million acres across the Sacramento, Guadalupe, and Capitan ranges, with elevations ranging from about 4,000 to 11,500 feet. The Sacramento side is the part most visitors know from Cloudcroft, Sunspot Highway, and the cool, high forest above Alamogordo.
+The Sacramento Mountains are one of the three major mountain ranges managed in Lincoln National Forest. The forest as a whole covers about 1.1 million acres across the Sacramento, Guadalupe, and Capitan ranges, with elevations ranging from about 4,000 to 11,500 feet. The Sacramento side is the part most visitors know from Cloudcroft, NM-6563, and the cool, high forest above Alamogordo.
 
 In practical travel terms, the region begins where the road climbs out of the basin. From Alamogordo, U.S. 82 rises quickly through canyons and switchbacks toward High Rolls and Cloudcroft. East of Cloudcroft, U.S. 82 continues toward Mayhill and Weed. South from Cloudcroft, NM 6563 runs to Sunspot and deeper into the forested ridge country. The region does not have a single clean cultural boundary, but the mountain corridor most visitors use is shaped by those roads and by the Sacramento Ranger District of Lincoln National Forest.
 
@@ -20,7 +20,7 @@ Climate is part of the draw and part of the caution. Summer is the peak escape s
 
 Cloudcroft is the region’s hub. It is the most complete mountain town in the Sacramento range, with the broadest mix of restaurants, lodging, shops, events, and visitor services. It feels like a compact historic mountain village rather than a sprawling resort town. It appeals to weekenders, families, hikers, cabin renters, second-home owners, and people looking for a cooler small-town base.
 
-What Cloudcroft does well is concentration. You can walk parts of downtown, get coffee, eat, browse shops, and use it as a launch point for trails, scenic drives, Ski Cloudcroft, and Sunspot. Its limits are the same ones that define many small mountain towns: finite parking, seasonal crowding, limited groceries and fuel compared with a larger city, and business hours that can shift with season and staffing.
+What Cloudcroft does well is concentration. You can walk parts of downtown, get coffee, eat, browse shops, and use it as a launch point for trails, scenic drives, and Ski Cloudcroft. Its limits are the same ones that define many small mountain towns: finite parking, seasonal crowding, limited groceries and fuel compared with a larger city, and business hours that can shift with season and staffing.
 
 ### High Rolls / Mountain Park
 
@@ -46,11 +46,9 @@ Timberon is the outlier. It is much farther out, more remote, and more self-cont
 
 That remoteness is both the pitch and the warning. Timberon has infrastructure and service limitations that matter more here than in Cloudcroft. It is not the best base for a first-time casual mountain weekend unless you actively want a remote stay.
 
-### Sunspot
+### NM-6563 corridor (south of Cloudcroft)
 
-Sunspot is not a town in the usual sense. It is a high-country observatory area on the ridge south of Cloudcroft, reached by the Sunspot Scenic Byway. The road and the setting are part of the experience: dark skies, sweeping views, forest, and scientific history.
-
-For years, Sunspot’s visitor experience was one of the Sacramento Mountains’ most distinctive draws. In 2026, that requires caution. The Sunspot Astronomy and Visitor Center site notes that the public facility is closed indefinitely, and it also references the announced closure of Sunspot Solar Observatory. That does not make the drive irrelevant, but it does change expectations. Go for the road, the landscape, and the broader ridge-country setting, not assuming full public observatory access.
+NM-6563 climbs roughly 15 miles south of Cloudcroft along a paved scenic highway through Lincoln National Forest. The road and the setting are the experience: dark skies, sweeping basin views, ponderosa pine and mixed conifer, signed forest pullouts. Treat it as a paved scenic drive rather than a destination visit.
 
 ### Piñon, Sacramento, and nearby settlements
 
@@ -64,7 +62,7 @@ People also come for the texture of the place. The westward views from the rim c
 
 Cabins, campgrounds, RV parks, and short-term rentals broaden the appeal. Some visitors want a classic mountain weekend near downtown Cloudcroft. Others want a quieter base in High Rolls, Mayhill, or the forest edge. The lodging mix supports both.
 
-Astronomy and dark-sky interest still matter, even with the current uncertainty around Sunspot’s public operations. So do winter snow play and beginner-friendly skiing at Ski Cloudcroft when conditions cooperate. Events help too. The Cloudcroft Chamber’s 2026 calendar includes Mayfair in May, BeerFest in June, Christmas in July in July, and other recurring seasonal draws.
+Astronomy and dark-sky interest still matter — Cloudcroft itself sits in Bortle 2–3 night skies. So do winter snow play and beginner-friendly skiing at Ski Cloudcroft when conditions cooperate. Events help too. The Cloudcroft Chamber’s 2026 calendar includes Mayfair in May, BeerFest in June, Christmas in July in July, and other recurring seasonal draws.
 
 For many part-time residents, the appeal is less about attractions than rhythm: cooler summers, cabin culture, a slower pace, and just enough town life in Cloudcroft to make repeat stays workable.
 
@@ -74,7 +72,7 @@ For many part-time residents, the appeal is less about attractions than rhythm: 
 
 The basic Sacramento drive is U.S. 82 from Alamogordo to Cloudcroft. It is the quickest way to understand the region’s vertical drama. The climb itself is part of the attraction.
 
-From Cloudcroft, the Sunspot Scenic Byway is one of the most distinctive drives in the region. It runs roughly 15 miles south through high forest toward Sunspot and opens up a different, quieter version of the mountains.
+From Cloudcroft, NM-6563 south is one of the most distinctive drives in the region. It runs roughly 15 miles through high forest and opens up a different, quieter version of the mountains.
 
 Another easy stop is the Mexican Canyon Trestle Vista just northwest of Cloudcroft on U.S. 82. The Forest Service identifies it as a roadside vista with views of the 1899 Mexican Canyon Trestle.
 
@@ -92,9 +90,9 @@ The Sacramento Ranger District has a spread of developed campgrounds and recreat
 
 Recreation.gov remains the key source for bookable federal sites and current reservation status. For private options, the Cloudcroft market includes places such as Camp Rio near Mayhill, Cloud Climbing Railroad Cabin & RV Park in High Rolls, and other cabin-and-RV hybrids scattered through the corridor.
 
-### Star-gazing and observatory country
+### Star-gazing country
 
-The high elevation, darker skies, and ridge setting make the Sunspot corridor one of the region’s most distinctive drives. But 2026 is not the year to assume full public programming. The official Sunspot visitor pages conflict in important ways: one page still describes public hours in peak season, while another says the visitor center is closed indefinitely and references the announced closure of Sunspot Solar Observatory. Treat public access as uncertain and verify before driving out specifically for a tour.
+The high elevation, dark skies, and ridge setting make the NM-6563 corridor south of Cloudcroft one of the region’s most distinctive drives. The combination of altitude, low population density, and dry mountain climate yields Bortle 2–3 night skies through much of the Sacramento Mountains.
 
 ### Local shopping and strolling
 
@@ -112,7 +110,7 @@ Cloudcroft’s event calendar continues to matter because it helps turn a small 
 
 ### Day trips and photo stops
 
-A short mountain day trip from Alamogordo can be built around the drive to Cloudcroft, coffee or lunch in town, the Mexican Canyon Trestle vista, and a short hike such as Osha Trail. Longer day loops can add Sunspot or a drive east toward Mayhill.
+A short mountain day trip from Alamogordo can be built around the drive to Cloudcroft, coffee or lunch in town, the Mexican Canyon Trestle vista, and a short hike such as Osha Trail. Longer day loops can add the NM-6563 forest drive or a drive east toward Mayhill.
 
 ## 5. Where to stay
 
@@ -226,13 +224,12 @@ If you want a tidy resort experience with predictable hours and dense amenities,
 
 ## Research gaps
 
-- Public access at Sunspot is not fully clear from current official pages. One official page still describes visitor hours, while another says the visitor center is closed indefinitely and references the announced closure of Sunspot Solar Observatory.
 - Some forest campground status changes by season; always verify current openings and reservations before travel.
 - Dining and lodging options outside Cloudcroft are thinner and less consistently documented online than those in Cloudcroft proper.
 
 ## Source notes
 
-Primary sources used for this guide included Lincoln National Forest and Sacramento Ranger District pages, Lincoln National Forest alerts and news releases, Recreation.gov, the Village of Cloudcroft site, the Cloudcroft Chamber of Commerce site and event calendar, New Mexico Tourism pages, Ski Cloudcroft, Sunspot visitor information pages, The Lodge at Cloudcroft, The Cabins at Cloudcroft, Camp Rio, Cloud Climbing Railroad Cabin & RV Park, and current operator pages where available.
+Primary sources used for this guide included Lincoln National Forest and Sacramento Ranger District pages, Lincoln National Forest alerts and news releases, Recreation.gov, the Village of Cloudcroft site, the Cloudcroft Chamber of Commerce site and event calendar, New Mexico Tourism pages, Ski Cloudcroft, The Lodge at Cloudcroft, The Cabins at Cloudcroft, Camp Rio, Cloud Climbing Railroad Cabin & RV Park, and current operator pages where available.
 
 Key current references included:
 - Lincoln National Forest overview and recreation pages
@@ -242,6 +239,5 @@ Key current references included:
 - Village of Cloudcroft official site
 - Cloudcroft Chamber official site and 2026 event page
 - New Mexico Tourism’s Cloudcroft and Old Apple Barn listings
-- Sunspot visitor information pages
 - Ski Cloudcroft official home, rates, and FAQ pages
 - Representative private lodging operator sites in Cloudcroft, High Rolls, and Mayhill

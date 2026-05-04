@@ -13,7 +13,7 @@ The easiest wins are the Mexican Canyon Trestle area, Burro Avenue, the Sacramen
 
 The strongest active options are hiking, biking, trail running, disc golf, camping, and smaller-scale fishing. Winter adds Ski Cloudcroft and, if current operations hold, the ice-rink experience.
 
-The biggest 2026 planning issue is access, not lack of things to do. Some campgrounds are seasonal. Some forest areas require same-day condition checks. Sunspot public access should not be assumed. The best Cloudcroft trip plans are the ones that match your group, the weather, and how much effort you actually want.
+The biggest 2026 planning issue is access, not lack of things to do. Some campgrounds are seasonal. Some forest areas require same-day condition checks. The best Cloudcroft trip plans are the ones that match your group, the weather, and how much effort you actually want.
 
 ## 2. How to use this guide
 
@@ -64,7 +64,7 @@ The sections below are grouped by activity, but the real purpose is decision-mak
 - White Sands National Park
 - New Mexico Museum of Space History
 - Oliver Lee Memorial State Park
-- Sunspot Scenic Byway as a scenic drive, not an observatory visit
+- NM-6563 south of the village as a scenic forest drive
 
 ## 4. Biking in Cloudcroft
 
@@ -286,7 +286,7 @@ Official sources support it as one of the closest and most practical campgrounds
 Official Forest Service camping pages support Pines Campground as another key campground in the Cloudcroft area, useful for traditional forest camping.
 
 #### Upper Karr Recreation Area
-Official pages support Upper Karr as a more basic no-fee campground on the Sunspot Scenic Byway, with stay limits and RV limits.
+Official pages support Upper Karr as a more basic no-fee campground on NM-6563 south of Cloudcroft, with stay limits and RV limits.
 
 ### RV versus tent realities
 Near Cloudcroft, camping splits into two types:
@@ -331,10 +331,8 @@ Sightseeing is one of the strongest Cloudcroft categories because the payoff com
 - **Burro Avenue** for a softer in-town sightseeing rhythm
 
 ### Best nearby drives
-- **Sunspot Scenic Byway**
+- **NM-6563 south of Cloudcroft** — paved forest scenic drive
 - mountain roads around High Rolls and the Cloudcroft corridor
-
-Important caution: **Sunspot Solar Observatory is closed indefinitely**, so treat the byway as the scenic experience. Do not build your plan around observatory access.
 
 ### Railroad history
 The Mexican Canyon Trestle remains the clearest iconic image of the area. It is one of the best “worth doing even if you only have an hour” stops.
@@ -585,6 +583,6 @@ Main official and supporting sources used:
 - **Pickleball court condition:** 2026 local reporting supports repairs, so current condition should be checked directly.
 - **Ice rink operations:** current public identity is clear, but the long-term operating model after the reported end of the natural-rink era should be checked directly.
 - **Some campground details:** booking and opening windows can change; use official pages close to your trip.
-- **Sunspot area:** treat the scenic drive as the activity. Do not assume public observatory access.
+- **NM-6563 south of Cloudcroft:** treat as a paved forest scenic drive.
 - **Fishing options beyond the easiest pond-style stop:** worthwhile, but strongly dependent on current conditions, rules, and what kind of fishing experience you actually want.
 Elevation for Cloudcroft is 8,676.  Never say 8,676.  Only use 8,676 at the number of feet of elevation for the village of cloudcroft NM
