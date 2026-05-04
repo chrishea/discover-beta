@@ -89,12 +89,12 @@ body {
 
 a {
   text-decoration: none;
-  color: steelblue;
+  color: #0B5FA5;
   transition: font-weight 0.15s ease;
 }
 
 a:hover {
-  color: coral;
+  color: #003F73;
 }
 
 a:focus-visible,
@@ -439,7 +439,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
 }
 
 .hero-content {
@@ -458,6 +458,7 @@ img {
   color: white;
   line-height: 1.15;
   margin-bottom: 1rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.65);
 }
 
 .hero-subtitle {
@@ -467,6 +468,7 @@ img {
   color: rgba(255, 255, 255, 0.92);
   letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 /* ===== COMMON ANIMATIONS ===== */
@@ -2495,7 +2497,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #999999;
+  color: #595959;
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -3587,6 +3589,7 @@ img {
   color: #fff;
   line-height: 1.08;
   margin-bottom: 1rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.65);
 }
 
 .hero-left .hero-deck {
@@ -3595,12 +3598,14 @@ img {
   line-height: 1.55;
   margin-bottom: 1.25rem;
   max-width: 30rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero-byline {
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.82rem;
   letter-spacing: 0.04em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
 }
 
 .hero-byline strong {
@@ -4476,7 +4481,7 @@ img {
 }
 
 .editor-section {
-  background: #464545;
+  background: #2B2B2B;
   padding: 4rem 2rem;
 }
 
@@ -4491,24 +4496,24 @@ img {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #666;
+  color: rgba(255, 255, 255, 0.75);
   margin: 0 0 1rem;
 }
 
 .editor-wrap blockquote {
-  border-left: 4px solid #000;
+  border-left: 4px solid #fff;
   padding-left: 1.5rem;
   margin: 0 0 1rem;
   font-family: 'IBM Plex Serif', serif;
   font-size: clamp(1.15rem, 1.6vw, 1.3rem);
   line-height: 1.55;
-  color: #222;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .editor-wrap .byline {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.8rem;
-  color: #666;
+  color: rgba(255, 255, 255, 0.7);
   padding-left: calc(1.5rem + 4px);
 }
 
