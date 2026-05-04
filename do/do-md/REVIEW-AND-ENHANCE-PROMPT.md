@@ -42,7 +42,7 @@ Use this as your primary source. Web-search to verify or supplement as needed.
 - Website: https://www.highaltitudenm.com/
 - Facebook: https://www.facebook.com/pages/High-Altitude-Outfitters/576328489172929
 - Certified Specialized and Scott dealer; bike repair services available
-- Hours vary seasonally — check website
+- Schedule shifts seasonally — check website
 
 **Village of Cloudcroft (manages Zenith Park, public courts, pavilion)**
 - Address: 201 Burro Ave, Cloudcroft, NM 88317

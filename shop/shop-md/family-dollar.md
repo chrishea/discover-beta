@@ -18,7 +18,7 @@ Family Dollar is the national-chain discount store in Cloudcroft — a practical
 
 ## 3. Signals (at-a-glance tags)
 
-National chain · Discount store · Groceries · Household supplies · Cleaning products · Snacks · Party goods · Practical utility stop · Off James Canyon Hwy · Not on walkable Burro · Hours vary — verify chain locator
+National chain · Discount store · Groceries · Household supplies · Cleaning products · Snacks · Party goods · Practical utility stop · Off James Canyon Hwy · Not on walkable Burro · Verify chain locator
 
 ## 4. What the store is
 

@@ -48,7 +48,7 @@ Spring and fall are ideal (mild temperatures, lower winds). Summer is extremely 
 The landscape is stark and otherworldly: brilliant white against blue sky, strong wind, brilliant reflection. The sensation of walking on gypsum (not sand) is unusual—it stays cool even in hot sun. Expect crowds mid-morning and midday, especially in spring and fall. Early risers and sunset visitors have the experience more to themselves. The basin is much hotter than Cloudcroft; bring extra water even if you think you have enough.
 
 **Practical details:**
-- **Hours:** Daily year-round, except December 25. Seasonal hours vary (typically 7 AM–sunset in summer; 8 AM–5 PM in winter). Check nps.gov/whsa for current hours before leaving.
+- **Hours:** Daily year-round, except December 25. Typical seasonal schedule is 7 AM–sunset in summer; 8 AM–5 PM in winter. Confirm at nps.gov/whsa before leaving.
 - **Fees:** $25 per vehicle (7-day pass); $20 per motorcycle; $15 per pedestrian/bicycle. Children 15 and under free. Annual pass $45.
 - **Reservations:** Not required for day use. Entrance fee payable at gate or via Recreation.gov in advance.
 - **Pets:** Leashed dogs allowed everywhere except visitor center (federal building restriction). Provide plenty of water; heat and sun exposure are extreme.
@@ -270,7 +270,7 @@ In town, at 1000 US Highway 82 (east side of Cloudcroft).
 1 to 2 hours.
 
 **Best season & time of day:**
-Any season. Seasonal hours vary (see below). Weekdays typically less crowded than weekends.
+Any season. Schedule shifts seasonally — see below. Weekdays typically less crowded than weekends.
 
 **What to do there:**
 - Tour the main museum building
@@ -330,7 +330,7 @@ In town, on Burro Avenue (the main street of Cloudcroft).
 1 to 3 hours (casual browsing, shopping, coffee, or a meal).
 
 **Best season & time of day:**
-Any season. Summer is busiest. Weekday mornings are typically calm; weekend afternoons are crowded. Hours vary by individual business.
+Any season. Summer is busiest. Weekday mornings are typically calm; weekend afternoons are crowded. Confirm individual shop schedules directly before going.
 
 **What to do there:**
 - Browse small boutique shops (Burro Street Trading Post, Redwall Jewelry, TreeRific Toys and Candy Shoppe, etc.)
@@ -343,10 +343,10 @@ Any season. Summer is busiest. Weekday mornings are typically calm; weekend afte
 - Browse the Cloudcroft Chamber member directory for additional businesses
 
 **What it's actually like:**
-A slow-paced mountain-town main street. Small shops, unique finds (jewelry, art, vintage), bakeries, coffee stops, local color. Busier in summer; quieter and more intimate in shoulder seasons. Works best as a relaxed wander, not a tightly scheduled stop. Many businesses have irregular hours, especially in winter.
+A slow-paced mountain-town main street. Small shops, unique finds (jewelry, art, vintage), bakeries, coffee stops, local color. Busier in summer; quieter and more intimate in shoulder seasons. Works best as a relaxed wander, not a tightly scheduled stop. Owner-run businesses keep their own schedules — call ahead, especially in winter.
 
 **Practical details:**
-- **Hours:** Highly variable by business. Most shops: 10 AM–5 PM (roughly), closed or reduced hours Monday–Tuesday. Cafes: 8 AM–5 PM (roughly). Restaurants: lunch and dinner hours vary. Always check specific businesses directly.
+- **Hours:** Most shops: 10 AM–5 PM (roughly), closed or reduced hours Monday–Tuesday. Cafes: 8 AM–5 PM (roughly). Restaurants: see individual listings for lunch and dinner schedules. Always check specific businesses directly.
 - **Fees:** None (unless purchasing).
 - **Reservations:** Recommended for restaurants, especially weekends in summer.
 - **Pets:** Some shops and cafes allow leashed dogs; verify directly.
@@ -371,7 +371,7 @@ First-time visitors, casual afternoon, gift hunters, people who do not want a st
 - Osha Trail (outdoor full-day pairing)
 
 **Main cautions & 2026 status:**
-Hours vary by business and season. Many places reduce hours in winter or are closed on certain days. This is better as a relaxed wander than a tightly timed itinerary. Some businesses may not open until 10 or 11 AM. No closures reported, but individual shops may change. Call ahead if you have a specific restaurant or shop in mind.
+Most shops reduce winter schedules or take days off in shoulder season. Treat this as a relaxed wander rather than a tightly timed itinerary. Some businesses don't open until 10 or 11 AM. No closures reported. Call ahead if you have a specific restaurant or shop in mind.
 
 **Sources:**
 - https://www.explorecloudcroft.com/downtown-businesses
@@ -396,7 +396,7 @@ Winter (December–March) for skiing. Snow reliability is the main constraint—
 **What to do there:**
 - Ski or snowboard (beginner to intermediate slopes)
 - Take ski or snowboard lessons
-- Tube down the hill (tubing hours vary; book ahead)
+- Tube down the hill (book ahead — sessions sell out)
 - Enjoy mountain recreation and views
 - Summer tubing and other warm-season activities (confirm availability)
 
@@ -605,7 +605,7 @@ Families, shorter Alamogordo stops, kid-friendly outing, rainy-day backup.
 - Downtown Alamogordo (art, museums, restaurants)
 
 **Main cautions & 2026 status:**
-Hours vary seasonally. No closures reported as of April 2026, but verify current hours before visiting. Hot in summer; visit early morning or late afternoon.
+Schedule shifts seasonally. No closures reported as of April 2026; verify current hours before visiting. Hot in summer; visit early morning or late afternoon.
 
 **Sources:**
 - https://ci.alamogordo.nm.us/816/Alameda-Park-Zoo
@@ -764,7 +764,7 @@ Any season. Winter for skiing (Ski Apache). Summer for outdoor recreation. Year-
 A bustling mountain village, especially in summer and holidays. More commercial and developed than Cloudcroft, but still mountain-oriented. Spencer Theater is genuinely world-class. Outdoor recreation is strong. Recovery from the South Fork Fire (June 2024, which destroyed 1,400+ structures) is ongoing; the village is operational and welcoming visitors, with many improvements underway. Less isolated feel than Cloudcroft; more activity and dining options.
 
 **Practical details:**
-- **Hours:** Not a single venue; hours vary by attraction (museums, shops, restaurants). Spencer Theater has a full schedule (check spencertheater.com). Most shops/restaurants open 10 AM–6 PM (roughly).
+- **Hours:** Not a single venue; each attraction (museums, shops, restaurants) keeps its own schedule. Spencer Theater has a full schedule at spencertheater.com. Most shops and restaurants open 10 AM–6 PM (roughly).
 - **Fees:** Vary by attraction. Spencer Theater tours free; shows $30–100+ depending on production. Zip lines, coasters, and other activities have per-activity fees.
 - **Reservations:** Recommended for Spencer Theater shows. Restaurants often require reservations on weekends.
 - **Pets:** Vary by attraction; check directly.
@@ -1134,7 +1134,7 @@ Do not rely on constant service once you leave town or head into the forest corr
 
 - **White Sands National Park:** Verified against NPS official pages for 2026 hours (seasonal), fees, pet policy, and accessibility. Road closure information from WSMR announcements.
 - **Trestle Recreation Area:** Confirmed seasonal reopening (spring) from USFS official page. Exact 2026 reopening date unverified—call ahead (Cloudcroft visitor services 575-682-2932).
-- **Sacramento Mountains Museum:** Hours confirmed for summer (Memorial Day onward) via official site, but winter hours and specific holidays may vary. Site notes hours are sometimes outdated; call ahead to confirm.
+- **Sacramento Mountains Museum:** Hours confirmed for summer (Memorial Day onward) via official site. Winter and holiday schedules can shift; call ahead to confirm.
 - **Ski Cloudcroft:** 2025–26 season status confirmed via official site. Tubing hours not fully detailed in sources; check skicloudcroft.net for current schedule.
 - **Alameda Park Zoo:** Winter/summer hours confirmed via city page; exact fee structure and all discount policies unverified. Call 575-439-4290 to confirm current admission rates.
 - **McGinn's PistachioLand:** Tour reservation requirement (online only, no walk-ins) confirmed. Hours and tour pricing verified via official site.
@@ -1158,7 +1158,7 @@ Do not rely on constant service once you leave town or head into the forest corr
 | Trestle Recreation Area | USFS official page | April 2026 | Exact 2026 spring reopening date (call to confirm) |
 | Osha Trail | USFS official, AllTrails | April 2026 | Stream water availability (may vary seasonally) |
 | Sacramento Mountains Museum | Official site, Yelp (March 2026) | April 2026 | Exact winter hours; admission fee (call to confirm) |
-| Burro Avenue Exchange | Official site, Tripadvisor | April 2026 | Individual shop hours vary; public restroom status unclear |
+| Burro Avenue Exchange | Official site, Tripadvisor | April 2026 | Confirm individual shop schedules directly; public restroom status unclear |
 | Ski Cloudcroft | Official site | April 2026 | Exact tubing session times 2026; summer recreation schedule |
 | NM-6563 | NM Tourism | April 2026 | Road access (confirm winter conditions) |
 | New Mexico Museum of Space History | Official site, Yelp (March 2026) | April 2026 | Planetarium show schedule (varies) |
@@ -1273,7 +1273,7 @@ Families, shorter Alamogordo stops, kid-friendly outing, rainy-day backup.
 - Downtown Alamogordo (art, museums, restaurants)
 
 **Main cautions & 2026 status:**
-Hours vary seasonally. No closures reported as of April 2026, but verify current hours before visiting. Hot in summer; visit early morning or late afternoon.
+Schedule shifts seasonally. No closures reported as of April 2026; verify current hours before visiting. Hot in summer; visit early morning or late afternoon.
 
 **Sources:**
 - https://ci.alamogordo.nm.us/816/Alameda-Park-Zoo
@@ -1432,7 +1432,7 @@ Any season. Winter for skiing (Ski Apache). Summer for outdoor recreation. Year-
 A bustling mountain village, especially in summer and holidays. More commercial and developed than Cloudcroft, but still mountain-oriented. Spencer Theater is genuinely world-class. Outdoor recreation is strong. Recovery from the South Fork Fire (June 2024, which destroyed 1,400+ structures) is ongoing; the village is operational and welcoming visitors, with many improvements underway. Less isolated feel than Cloudcroft; more activity and dining options.
 
 **Practical details:**
-- **Hours:** Not a single venue; hours vary by attraction (museums, shops, restaurants). Spencer Theater has a full schedule (check spencertheater.com). Most shops/restaurants open 10 AM–6 PM (roughly).
+- **Hours:** Not a single venue; each attraction (museums, shops, restaurants) keeps its own schedule. Spencer Theater has a full schedule at spencertheater.com. Most shops and restaurants open 10 AM–6 PM (roughly).
 - **Fees:** Vary by attraction. Spencer Theater tours free; shows $30–100+ depending on production. Zip lines, coasters, and other activities have per-activity fees.
 - **Reservations:** Recommended for Spencer Theater shows. Restaurants often require reservations on weekends.
 - **Pets:** Vary by attraction; check directly.
@@ -1802,7 +1802,7 @@ Do not rely on constant service once you leave town or head into the forest corr
 
 - **White Sands National Park:** Verified against NPS official pages for 2026 hours (seasonal), fees, pet policy, and accessibility. Road closure information from WSMR announcements.
 - **Trestle Recreation Area:** Confirmed seasonal reopening (spring) from USFS official page. Exact 2026 reopening date unverified—call ahead (Cloudcroft visitor services 575-682-2932).
-- **Sacramento Mountains Museum:** Hours confirmed for summer (Memorial Day onward) via official site, but winter hours and specific holidays may vary. Site notes hours are sometimes outdated; call ahead to confirm.
+- **Sacramento Mountains Museum:** Hours confirmed for summer (Memorial Day onward) via official site. Winter and holiday schedules can shift; call ahead to confirm.
 - **Ski Cloudcroft:** 2025–26 season status confirmed via official site. Tubing hours not fully detailed in sources; check skicloudcroft.net for current schedule.
 - **Alameda Park Zoo:** Winter/summer hours confirmed via city page; exact fee structure and all discount policies unverified. Call 575-439-4290 to confirm current admission rates.
 - **McGinn's PistachioLand:** Tour reservation requirement (online only, no walk-ins) confirmed. Hours and tour pricing verified via official site.
@@ -1826,7 +1826,7 @@ Do not rely on constant service once you leave town or head into the forest corr
 | Trestle Recreation Area | USFS official page | April 2026 | Exact 2026 spring reopening date (call to confirm) |
 | Osha Trail | USFS official, AllTrails | April 2026 | Stream water availability (may vary seasonally) |
 | Sacramento Mountains Museum | Official site, Yelp (March 2026) | April 2026 | Exact winter hours; admission fee (call to confirm) |
-| Burro Avenue Exchange | Official site, Tripadvisor | April 2026 | Individual shop hours vary; public restroom status unclear |
+| Burro Avenue Exchange | Official site, Tripadvisor | April 2026 | Confirm individual shop schedules directly; public restroom status unclear |
 | Ski Cloudcroft | Official site | April 2026 | Exact tubing session times 2026; summer recreation schedule |
 | NM-6563 | NM Tourism | April 2026 | Road access (confirm winter conditions) |
 | New Mexico Museum of Space History | Official site, Yelp (March 2026) | April 2026 | Planetarium show schedule (varies) |

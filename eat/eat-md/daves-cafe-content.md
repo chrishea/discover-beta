@@ -23,7 +23,7 @@ Dave's Café is a long-running casual restaurant at 300 Burro Avenue in Cloudcro
 
 ## 3. Signals (at-a-glance tags)
 
-Bar &amp; booth seating · Live music · Burgers · Breakfast · Comfort food · Ice cream by the scoop · Online ordering (NetWaiter) · Family-friendly · Walkable Burro Ave · Hours vary — call ahead
+Bar &amp; booth seating · Live music · Burgers · Breakfast · Comfort food · Ice cream by the scoop · Online ordering (NetWaiter) · Family-friendly · Walkable Burro Ave · Call ahead before you go
 
 ## 4. What the restaurant is
 
@@ -38,7 +38,7 @@ The building has been on Burro Avenue since David Venable opened the restaurant 
 - **Burgers** — including the BBQ bacon ranch burger noted in local mentions as a house-favorite special.
 - **Beer-battered onion rings** — a frequently cited side.
 - **Grill-style comfort plates** and casual American fare.
-- **Breakfast service** — historically offered at least part of the time; hours vary.
+- **Breakfast service** — historically offered at least part of the time; call ahead.
 - **Ice cream by the scoop** — added detail from April 2026 owner/local input; not in any prior public source.
 
 ### What I'd order

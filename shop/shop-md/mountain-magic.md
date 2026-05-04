@@ -100,7 +100,7 @@ Densely stocked, lived-in, family-run. The interior reads more country-store tha
 **Likely drawbacks**
 
 - Address inconsistency across third-party directories (504/506/508). The storefront sign reads 508; resolve by visit.
-- Hours vary slightly across sources — listings file says 10–5 daily; Yelp says 10–4:30 Mon–Sat. Call ahead if timing matters.
+- Sources differ slightly — listings file says 10–5 daily; Yelp says 10–4:30 Mon–Sat. Call ahead if timing matters.
 - Densely packed; shoppers who want a clean, edited boutique floor will read it as cluttered.
 - Inventory rotates; no e-commerce confirmed.
 - Style is Americana / country / mountain-town, not contemporary or designer.

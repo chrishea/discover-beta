@@ -74,7 +74,7 @@ Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at 8
 
 ### Climate
 - Summer: cool relief from basin heat — peak season.
-- Winter: snow, ice, fast-changing road conditions; unreliable ski snowpack in recent years.
+- Winter: snow, ice, fast-changing road conditions; thin ski snowpack in recent years.
 - Spring: dry and windy; fire-prone.
 - Monsoon: heavy rain, mud, lightning, afternoon thunderstorms common.
 
@@ -84,7 +84,7 @@ Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at 8
 - **From El Paso:** US-54 north to Alamogordo, then U.S. 82 east; ~90 miles.
 - **From Albuquerque:** I-25 south to US-70 east, then U.S. 82; ~3.5 hours.
 - **Main mountain route:** U.S. 82 (Alamogordo → High Rolls → Cloudcroft → Mayhill → Weed).
-- **South from Cloudcroft:** NM 6563 / Sunspot Scenic Byway to Sunspot (15–15.5 miles).
+- **South from Cloudcroft:** NM 6563 (15–15.5 miles south to Sunspot).
 - **Road info:** NMRoads / NMDOT travel information.
 - **Fuel / EV charge (in village):** Allsups (10 Curlew Pl.), High Rolls General Store (845 U.S. 82), Mayhill Country Store (3497 U.S. 82), Otero County Electric Co-op (404 Burro Ave.).
 - **Cell service:** better in and near Cloudcroft; spotty in deeper forest.
@@ -129,7 +129,7 @@ Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at 8
 - **The Distillery** — 1303 Burro Ave., (575) 682-2337. Adults only; craft cocktails; CBC pizza by slice. Mon/Wed/Thu 4–9 p.m., Fri 4–10 p.m., Sat 11 a.m.–10 p.m., Sun 11 a.m.–9 p.m.
 - **Cloudcroft Sandwich Shop** — 505 Burro Ave. (Burro Street Exchange), (575) 551-0065, cloudcroftsandwich.shop. 11 a.m.–4 p.m. daily; closed Wed.
 - **Dave's Cafe** — 300 Burro Ave., (575) 682-2127. Mon–Thu 11 a.m.–8 p.m.; Fri–Sun 11 a.m.–9 p.m.
-- **Higher Grounds** — 300 Burro Ave., (575) 682-2127. Ice cream/milkshake counter next to Dave's. Hours vary.
+- **Higher Grounds** — 300 Burro Ave., (575) 682-2127. Ice cream/milkshake counter next to Dave's. Call ahead.
 - **Dusty Boots Cafe & Taco Cantina** — 1317 James Canyon Hwy, (575) 601-2009. Mon–Sat 7 a.m.–7 p.m., Sun until 5 p.m.
 - **Fernando's Burritos** — 96 James Canyon Hwy. 7 a.m.–7 p.m.; closed Mon. Outdoor seating only.
 - **Mad Jack's Mountaintop Barbeque** — 105 James Canyon Hwy, (575) 682-7577. Thu–Sun 11 a.m.–3 p.m. or until sold out.
@@ -181,8 +181,7 @@ Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at 8
 
 ### Scenic drives
 - U.S. 82 Alamogordo → Cloudcroft (core climb).
-- **Sunspot Scenic Byway (NM-6563):** ~15.5 mi south from Cloudcroft to Sunspot; ends at the National Solar Observatory.
-  > ⚠ conflict: Lincoln NF page describes Sunspot as "open to the public seasonally"; Sacramento Mountains guide notes other official Sunspot pages say the public visitor center is "closed indefinitely" and references the announced closure of Sunspot Solar Observatory. Verify before driving out specifically for a tour.
+- **NM-6563 south:** ~15.5 mi south from Cloudcroft. Forest drive through ponderosa pine and mixed conifer.
 - **Mexican Canyon Trestle Vista** — roadside pullout northwest of Cloudcroft on U.S. 82.
 - Lincoln National Forest Scenic Byway (regional).
 
@@ -297,7 +296,7 @@ Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at 8
 ### Seasons
 - Summer: peak tourism, heat relief from basin. Busiest.
 - Fall: color season; lodging tightens.
-- Winter: snow-dependent; skiing unreliable (see Ski Cloudcroft 2025–26 early close).
+- Winter: snow-dependent; skiing has been thin recently (see Ski Cloudcroft 2025–26 early close).
 - Spring: dry, windy, fire-prone.
 
 ## 10. Nearby Destinations (day trips)
@@ -318,7 +317,6 @@ Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at 8
 - **Valley of Fires** — 80 min.
 - **Weed, NM** — 41 min.
 - **White Sands National Park** — 45 min.
-- **Sunspot Observatory** — via Sunspot Scenic Byway (see conflict note above).
 - **Ski Apache / Ruidoso area** — Smokey Bear Ranger District.
 
 ## 11. Practical Info
@@ -369,7 +367,6 @@ Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at 8
 - If staying outside village (Timberon, remote corridors), stock up before arrival.
 
 ### What to verify before travel (TODOs and gaps)
-- > TODO: Sunspot public access status — conflicting official pages.
 - > TODO: Bluff Springs reopen status — temporarily closed as of early 2026.
 - > TODO: Campground open/closed status shifts seasonally; check recreation.gov.
 - > TODO: Ski Cloudcroft 2026–27 season plans (given early 2025–26 close).
@@ -384,6 +381,6 @@ Cloudcroft is a small mountain village in Otero County, New Mexico, sitting at 8
 | `history-of-cloudcroft-new-mexico.md` | §2 History & Heritage; parts of §1 Overview (incorporation, name) |
 | `mm-listings-April-2026.md` | §5 Lodging; §6 Food & Drink; §8 Shopping & Services; §7 in-village play; §10 Day Trips; §4 Fuel/EV |
 | `mm-editorial-April-2026.md` | §9 Events (April 2026, Chamber 2026 calendar); §11 Practical Info (Village government, fire season briefing, Genasys, fuel projects); §6 (Lodge kitchen / Chef Lepree); §7 (NASP archery, schools athletics) |
-| `guide-to-sacramento-mountains-new-mexico-2026.md` | §3 Geography & Natural Setting (regional communities); §7 Activities (scenic drives, trails, Sunspot caveat); §11 (Stage 1 fire restrictions, Ski Cloudcroft early close) |
+| `guide-to-sacramento-mountains-new-mexico-2026.md` | §3 Geography & Natural Setting (regional communities); §7 Activities (scenic drives, trails); §11 (Stage 1 fire restrictions, Ski Cloudcroft early close) |
 | `lincoln-national-forest.md` | §3 Lincoln NF structure; §4 Getting There; §5 public campgrounds; §7 trails table, winter rec, scenic drives, other activities; §11 permits/passes |
 | `all-discover-content.md` | §6 (tea/bakery supplementary color); §10 (Alameda Park Zoo detail); §11 (insurance market section) |

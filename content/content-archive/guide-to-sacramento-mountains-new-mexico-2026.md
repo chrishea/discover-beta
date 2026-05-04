@@ -156,7 +156,7 @@ This is not background noise. It is a standing condition of travel in the region
 
 ### Business hours
 
-Hours vary by season, day of week, and staffing. This is especially true outside Cloudcroft and outside summer peaks. Do not assume that a place keeps big-city hours.
+Schedules shift by season, day of week, and staffing — especially outside Cloudcroft and outside summer peaks. Call ahead. Don't assume a place keeps big-city hours.
 
 ### Fuel, groceries, and supplies
 

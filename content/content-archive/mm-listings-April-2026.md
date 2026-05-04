@@ -15,7 +15,7 @@
 - **Family Dollar** — 309 James Canyon Hwy, (505) 532-2697, familydollar.com. Groceries, toiletries, and home goods. Open 8:00 a.m.–10:00 p.m. daily.
 - **Fernando’s Burritos** — 96 James Canyon Hwy. Burritos, barbacoa, and burgers. Outdoor seating only. Open 7:00 a.m.–7:00 p.m. daily; closed Monday.
 - **High Rollin’ Coffee** — 109 James Canyon Hwy. Rotating weekly menu. Open Monday and Tuesday 8:00 a.m.–1:00 p.m.; Friday–Sunday 8:00 a.m.–3:00 p.m.
-- **Higher Grounds** — 300 Burro Ave., (575) 682-2127. Ice cream and milkshake counter next to Dave’s Cafe. Hours vary.
+- **Higher Grounds** — 300 Burro Ave., (575) 682-2127. Ice cream and milkshake counter next to Dave’s Cafe. Call ahead.
 - **Instant Karma Chai Bar** — 302 Burro Ave. Global spice blends, ayurvedic teas, soothing cacao, and more. Open daily 1:00 p.m.–5:00 p.m.
 - **KennaBelle’s Kreations Bakery** — 308 Burro Ave., (575) 682-2712. Custom cakes and gluten-free options. Open 7:00 a.m.–5:00 p.m. Monday–Saturday; closed Sunday.
 - **Mad Jack’s Mountaintop Barbeque** — 105 James Canyon Hwy, (575) 682-7577. Open 11:00 a.m.–3:00 p.m. Thursday–Sunday, or until sold out.
@@ -50,7 +50,7 @@
 - **The Fat Rabbit** — 206 Burro Ave. Open 10:00 a.m.–5:00 p.m. Tuesday–Sunday.
 - **The Highland** — 206 James Canyon Hwy, (575) 682-1041. Open 10:00 a.m.–6:00 p.m. daily.
 - **High Altitude** — 310 Burro Ave., (575) 682-1229, highaltitudenm.com. Open 10:00 a.m.–5:30 p.m. Monday–Thursday; until 6:00 p.m. Friday and Saturday; until 5:00 p.m. Sunday.
-- **Homee** — 109 James Canyon Hwy. inhomee.com. Hours vary.
+- **Homee** — 109 James Canyon Hwy. inhomee.com. Call ahead.
 - **Instant Karma** — 302 Burro Ave., (575) 682-2651, getinstantkarma.com. Open 11:00 a.m.–5:00 p.m. daily.
 - **King’s Treasure** — 202 Burro Ave., (575) 682-5524. Open 10:00 a.m.–5:00 p.m. every day except Sunday.
 - **Magnum’s Guns II** — 207 James Canyon Hwy, (575) 682-6677, magnumsguns.com. Open 1:00 p.m.–4:00 p.m. Monday; Wednesday–Friday 12:00 p.m.–5:00 p.m.; Saturday 11:00 a.m.–5:00 p.m.

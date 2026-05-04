@@ -185,7 +185,7 @@ FB IG X
 
 ### Connect
 
-[(555) 555-5555](tel:+15555555555) [info@discovercloudcroft.com](mailto:info@discovercloudcroft.com) [Village of Cloudcroft](https://villageofcloudcroft.com) [Cloudcroft, NM 88317](https://www.google.com/maps/place/Cloudcroft,+NM)
+[info@discovercloudcroft.com](mailto:info@discovercloudcroft.com) [Cloudcroft, NM 88317](https://www.google.com/maps/place/Cloudcroft,+NM)
 
 ### Plan
 

@@ -213,7 +213,7 @@ Used books, art, vintage finds, and Bigfoot items deliver the most rummage-and-d
 
 **Altitude and weather.** The district is walkable, but Cloudcroft's altitude and weather matter. Even a short stroll can feel cooler, windier, or more tiring than people expect, especially if they came up from Alamogordo the same day.
 
-**Hours vary.** Most shops are owner-run. Hours shift by season and day, and some keep shorter winter schedules. Some stores look clearly active online. Others appear current mainly through Chamber listings and scattered recent posts. It is smart to check directly if one specific stop matters to you.
+**Call ahead for owner-run shops.** Most Burro Avenue stores are owner-run, with shorter winter schedules. Some have current websites; others surface mainly through Chamber listings or recent social posts. Check directly if a specific stop matters to your trip.
 
 **Pair shopping with food and drink.** Shopping works best when paired with coffee, tea, bakery items, lunch, or a wine tasting. Burro Avenue is not large enough to justify a stand-alone retail expedition unless you really like small-town browsing. It is much better as part of a half-day in town — stop at Black Bear Coffee, Eight the Cake, Old Barrel Tea, Noisy Water Winery, or the Cloudcroft Sandwich Shop between shops.
 

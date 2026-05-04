@@ -79,7 +79,7 @@ That is a strength if you like local texture. It is a limitation if you want a h
 
 ## Potential drawbacks or cautions
 
-- Hours vary a lot by business and season.
+- Each owner-run gallery keeps its own seasonal schedule — call ahead.
 - Some of the best “gallery” experiences are hybrid spaces, not formal galleries.
 - The scene is real, but it is small. Set expectations accordingly.
 - Cloudcroft Art Workshops is important culturally, but it is not the same kind of stop as a shop-gallery.

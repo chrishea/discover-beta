@@ -78,4 +78,4 @@ Cloudcroft Reader reported in 2024 that owner Alex Carilli opened the Burro Aven
 
 - **Merchandise categories:** the retail side is real, but exact boutique inventory is less clearly documented than the wellness side
 - **Seasonality / special-event schedule:** not fully confirmed
-- **Whether current hours vary by yoga or event schedule:** should be checked directly
+- **Whether current schedule shifts for yoga or events:** check directly

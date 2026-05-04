@@ -20,7 +20,7 @@ RedWall Jewelry is Cloudcroft's dedicated handmade-jewelry specialty store — a
 
 ## 3. Signals (at-a-glance tags)
 
-Pin 4 · 505 Burro · Suite 107 · Handmade jewelry · Sterling silver · Gold · Opal · Turquoise · Gemstones · Since the 1970s · Locally owned · Online shop (partial) · Hours vary — call ahead
+Pin 4 · 505 Burro · Suite 107 · Handmade jewelry · Sterling silver · Gold · Opal · Turquoise · Gemstones · Since the 1970s · Locally owned · Online shop (partial) · Call ahead
 
 ## 4. What the shop is
 

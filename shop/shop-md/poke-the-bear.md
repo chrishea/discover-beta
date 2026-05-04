@@ -18,7 +18,7 @@ Poke The Bear is Cloudcroft's  a broad, eclectic Burro Avenue Marketplace that h
 
 ## 3. Signals (at-a-glance tags)
 
-Pin 11 · Burro Avenue · Vintage · Used books · Antiques · Upcycled furniture · Bigfoot items · Outdoor gear · Hats &amp; shirts · Blankets · Eclectic · Hours vary — call ahead
+Pin 11 · Burro Avenue · Vintage · Used books · Antiques · Upcycled furniture · Bigfoot items · Outdoor gear · Hats &amp; shirts · Blankets · Eclectic · Call ahead
 
 ## 4. What the shop is
 

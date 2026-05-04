@@ -25,7 +25,7 @@ Black Bear Coffee Shop is the west-end-of-Burro coffee anchor that reads less li
 
 ## 3. Signals (at-a-glance tags)
 
-West-end Burro Ave · Specialty coffee · Seasonal drinks · Roasted beans to take home · Cookies · Gluten-free / dairy-free / sugar-free options · Petite gallery with monthly artists · Upstairs seating · Locals' gathering room · Linger-and-socialize, not grab-and-go · Hours vary — check ahead
+West-end Burro Ave · Specialty coffee · Seasonal drinks · Roasted beans to take home · Cookies · Gluten-free / dairy-free / sugar-free options · Petite gallery with monthly artists · Upstairs seating · Locals' gathering room · Linger-and-socialize, not grab-and-go · Wed–Sat 8 AM–4 PM · Sun 8 AM–3 PM · Closed Mon–Tue
 
 ## 4. What the coffee shop is
 
@@ -77,7 +77,7 @@ Black Bear sells calm. The current website, social feeds, and local coverage all
 
 **Likely drawbacks**
 
-- Small-town hours vary; the published hours are not reliable enough to plan around without a quick call or social-media check.
+- Hours: Wednesday–Saturday 8:00 AM–4:00 PM, Sunday 8:00 AM–3:00 PM. Closed Monday and Tuesday.
 - Food breadth beyond cookies and the beverage program is not well documented.
 - Not a full breakfast café — order expectations should stay coffee-first.
 

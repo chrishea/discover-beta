@@ -35,7 +35,7 @@ Cloudcroft has enough variety that where you eat depends less on raw quality tha
 | Mad Jack's Mountaintop Barbecue | Go here if serious barbecue matters to you | $$-$$$ | Lunch | High |
 | Old Barrel Tea Company | Best for tea lovers, gifts, or a non-coffee pause rather than a full meal | $-$$ | Tea/light snack stop | Medium |
 | Ski Cloudcroft | Useful when you are already skiing and do not want to leave the mountain for lunch | $$ | Pizza/food during ski season | Medium |
-| Western Bar & Cafe | A good pick if you want a no-frills local hangout, a burger-and-beer kind of meal, or a place with more bar energy | $$ | Breakfast/burgers/Southwestern/American fare/bar service suggested by tourism and legacy listings | Low |
+| Western Bar & Cafe | A good pick if you want a no-frills local hangout, a burger-and-beer kind of meal, or a place with more bar energy | $$ | Lunch and dinner — burgers, Southwestern, American fare, and full bar (no breakfast) | Low |
 | Black Bear Coffee Shop | Cozy locals' hangout with specialty drinks, cookies, upstairs seating, and a small gallery feel | $-$$ | Coffee/cookies/specialty drinks | High |
 | High Rollin' Coffee | Go here if you want coffee plus fresher, lighter food, or if you want a cafe that feels a bit more contemporary | $-$$ | Coffee/baked goods/vegetarian-leaning eats | Low |
 | St. Andrew's Bar | Best for a drink, a lighter meal, or a more atmospheric stop than the standard small-town bar | $$ | Cocktails and bar food | Low |

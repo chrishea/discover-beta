@@ -95,8 +95,8 @@ Winter turns the Sacramento Mountains into a quieter, snow-covered version of it
 **Trestle Recreation Area**
 On the western edge of Cloudcroft off US-82. Short trails lead to overlooks of the Mexican Canyon Railroad Trestle — a 323-foot-long, 52-foot-high historic wooden trestle built in 1898. Listed on the National Register of Historic Places. No fee for day use.
 
-**Sunspot Scenic Byway (NM-6563)**
-A 15.5-mile paved two-lane road running south from Cloudcroft to the village of Sunspot. Spectacular views of the Tularosa Basin along the route. Ends at the National Solar Observatory (Sunspot Solar Observatory), open to the public seasonally.
+**NM-6563 (south scenic drive)**
+A 15.5-mile paved two-lane road running south from Cloudcroft to the village of Sunspot. Spectacular views of the Tularosa Basin along the route through ponderosa pine and mixed conifer.
 
 **Bluff Springs**
 A partially developed day-use area near a scenic waterfall. *Currently under temporary closure as of early 2026 — check fs.usda.gov/r03/lincoln/alerts before visiting.*

@@ -129,7 +129,7 @@ Your guide to Cloudcroft, New Mexico -- 8,676 feet of mountain magic.
 
 ### Connect
 
-[(555) 555-5555](tel:+15555555555) [info@discovercloudcroft.com](mailto:info@discovercloudcroft.com) [Village of Cloudcroft](https://villageofcloudcroft.com)
+[info@discovercloudcroft.com](mailto:info@discovercloudcroft.com)
 
 ### Plan
 

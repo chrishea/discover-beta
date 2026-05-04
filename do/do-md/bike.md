@@ -42,7 +42,7 @@ Useful link:
 - Phone: **(575) 682-1229**
 - Website: https://www.highaltitudenm.com/bicycles
 - Facebook: https://www.facebook.com/pages/High-Altitude-Outfitters/576328489172929
-- Hours vary seasonally — check website before visiting
+- Schedule shifts seasonally — check website before visiting
 
 ## What it’s actually like
 

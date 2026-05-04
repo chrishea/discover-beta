@@ -125,8 +125,8 @@ Every page references specific, verifiable local entities:
 Trail names (Osha Trail, Rim Trail, Trestle Recreation Area)
 Streets (Burro Avenue, US-82)
 Businesses (The Lodge at Cloudcroft, Mad Jack's Mountaintop Barbecue)
-Events (Aspenfest, Christmas Mountain)
-Geography (Sacramento Mountains, Lincoln National Forest, Sunspot)
+Events (Oktoberfest, Haunted Village, Christmas Mountain)
+Geography (Sacramento Mountains, Lincoln National Forest)
 Generic travel copy is a fail. A page without named local entities does not pass audit.
 5.3 E-E-A-T Signals (Experience, Expertise, Authoritativeness, Trustworthiness)
 First-person voice where appropriate: "The aspen grove on the Osha Trail peaks in late September — here is exactly when to go."
@@ -200,7 +200,6 @@ New Mexico Tourism Department — directory listing (.gov link is gold)
 Cloudcroft Chamber of Commerce — listing, possible reciprocal
 Otero County visitor resources
 Lincoln National Forest official site
-Sunspot Solar Observatory
 Albuquerque Journal / El Paso Times / Las Cruces Sun-News travel sections — pitch seasonal travel stories
 AllTrails — submit trail content or get featured editorially
 New Mexico True campaign — submit for inclusion
@@ -215,7 +214,7 @@ An annual Best of Cloudcroft list — local businesses share and link.
 8. Differentiation vs. Competitors
 
 Our unique angles:
-Dark skies / stargazing (Sunspot proximity)
+Dark skies / stargazing (Bortle 2–3, walkable from town)
 Pet-friendly niche (underserved)
 "Escape the heat" for El Paso and desert visitors
 Apple orchards (unique to the area)

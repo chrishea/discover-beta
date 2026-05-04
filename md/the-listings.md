@@ -12,7 +12,7 @@ Eight the Cake Bakery (506 Burro Ave., (575) 682-3088, eightthecakellc.com) Love
 Family Dollar (309 James Canyon Hwy, (505) 532-2697, familydollar.com) Get the essentials. Discount chain with groceries, toiletries, and home goods. Open 8:00 a.m.-10:00 p.m. daily. 
 Fernando’s Burritos (96 James Canyon Hwy) Best burrito, barbacoa, and burger in the village. Breakfast, lunch, and dinner. Outdoor seating only. Open 7:00 a.m.-7:00 p.m. daily, closed Mondays. 
 High Rollin’ Coffee (109 James Canyon Hwy) Gourmet freshies galore on a rotating weekly menu. Open Monday and Tuesday 8:00 a.m.-1:00 p.m., and Friday-Sunday 8:00 a.m.-3:00 p.m.
-Higher Grounds (300 Burro Ave., 575) 682-2127) Ice cream and milkshake counter next to Dave’s Cafe. Hours vary. 
+Higher Grounds (300 Burro Ave., 575) 682-2127) Ice cream and milkshake counter next to Dave’s Cafe. Call ahead.
 Instant Karma Chai Bar (302 Burro Ave.) Global spice blends, ayurvedic teas, soothing cacao, and more at their countertop. Stay awhile. Open daily from 1:00-5:00 p.m.
 KennaBelle’s Kreations Bakery (308 Burro Ave., (575) 682-2712) Follow your nose to this pink patisserie. Custom cakes and orders. Gluten-free options. Open 7:00 a.m.- 5:00 p.m. Monday-Saturday. Closed Sunday. 
 Mad Jack’s Mountaintop Barbeque (105 James Canyon Hwy, (575) 682-7577) Legendary barbeque in the old mercantile building. Don’t let the line deter you—it’s worth the wait. Open 11:00 a.m.-3:00 p.m. Thursday-Sunday, or until sold out.
@@ -46,7 +46,7 @@ The Elk Shed (505 Burro Ave.) Southwestern goods, clothes, gourmet pantry staple
 The Fat Rabbit (206 Burro Ave.) Silver and turquoise, plus. Open 10:00 a.m.-5:00 p.m. Tuesday-Sunday. 
 The Highland (206 James Canyon Hwy, (575) 682-1041) Nambe, gifts, hunting supplies, licenses, and beyond. Open 10:00 a.m.-6:00 p.m. daily.
 High Altitude (310 Burro Ave. (575) 682-1229) Your favorite little outdoors store, boutique, and bike shop. 10:00 a.m.-5:30 p.m. Monday-Thursday, until 6:00 p.m. Friday and Saturday, until 5:00 p.m. Sunday. highaltitudenm.com
-Homee (109 James Canyon Hwy) Everything for sale. Home rental services. Hours vary. inhomee.com
+Homee (109 James Canyon Hwy) Everything for sale. Home rental services. Call ahead. inhomee.com
 Instant Karma (302 Burro Ave., (575) 682-2651) Ayurvedic goods, yogi-friendly clothes, books, and yoga. Open 11:00 a.m.-5:00 p.m. daily.  getinstantkarma.com
 King’s Treasure (202 Burro Ave. (575) 682-5524) Thrift to your heart’s delight without breaking the bank. Open 10:00 a.m.-5:00 p.m. every day except Sunday.
 Magnum’s Guns II (207 James Canyon Hwy (575) 682-6677) Guns and ammo on James Canyon Highway. 1:00-4:00 p.m. Monday, Wednesday to Friday from 12:00-5:00 p.m., Saturday 11:00 a.m.-5:00 p.m. magnumsguns.com

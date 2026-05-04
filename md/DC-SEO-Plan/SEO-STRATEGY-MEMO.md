@@ -241,7 +241,6 @@ Ensure Cloudcroft is listed on:
 Pursue links from:
 - Lincoln National Forest official site
 - New Mexico Tourism Department
-- Sunspot Solar Observatory
 - Local business websites
 - Regional travel blogs
 

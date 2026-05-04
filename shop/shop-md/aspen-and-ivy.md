@@ -23,7 +23,7 @@ Aspen &amp; Ivy Boutique is one of Cloudcroft's more curated gift-and-boutique s
 
 ## 3. Signals (at-a-glance tags)
 
-Burro Ave courtyard · Curated gifts · Handmade · Original art · Local art · Home goods · Beauty products · Nicole Alcorn owner · Taste-driven inventory · Text-friendly · Hours vary — check ahead
+Burro Ave courtyard · Curated gifts · Handmade · Original art · Local art · Home goods · Beauty products · Nicole Alcorn owner · Taste-driven inventory · Text-friendly · Text or call before going
 
 ## 4. What the shop is
 
@@ -99,7 +99,7 @@ Aspen &amp; Ivy sells the calm side of Burro Avenue. The courtyard retail cluste
 
 - You want clothing and accessories as the main event — go to Coco Blu.
 - You want rummage-and-discover vintage — go to Poke The Bear.
-- You need guaranteed hours — this is a small owner-run shop; hours vary.
+- You need guaranteed hours — this is a small owner-run shop; text or call before going.
 
 ## 9. Background and history
 

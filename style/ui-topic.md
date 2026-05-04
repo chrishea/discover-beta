@@ -34,7 +34,6 @@
       "touristType": ["Family", "Outdoor Enthusiasts", "Stargazers", "Hikers"],
       "includesAttraction": [
         {"@type": "TouristAttraction", "name": "Lincoln National Forest"},
-        {"@type": "TouristAttraction", "name": "Sunspot Solar Observatory"},
         {"@type": "TouristAttraction", "name": "Sacramento Mountains"}
       ]
     }
@@ -1351,7 +1350,7 @@
                                 src="media/placeholder-activity-biking.jpg"></div>
                         <h3>Ride the Mountain Bike Trails</h3>
                         <p>The Sacramento Mountains offer some of the best high-altitude singletrack in the Southwest.
-                            The High Altitude Bike Classic each summer draws hundreds of riders. Trails range from
+                            The annual High Altitude Classic draws hundreds of riders. Trails range from
                             gentle forest roads to technical descents.</p>
                         <a href=" biking.html" class="thing-card-link">Explore trails &rarr;</a>
                     </div>
@@ -1405,11 +1404,11 @@
                         <div class="thing-card-icon"><img alt="Stargazing and astronomy near Cloudcroft, NM"
                                 src="media/placeholder-activity-biking.jpg"></div>
 
-                        <h3>Stargaze at Sunspot Observatory</h3>
-                        <p>The Sacramento Peak Solar Observatory sits at 9,200 ft with remarkably dark skies. Tour the
-                            facilities, attend a night program, or simply pull off on the highway and look up — the
-                            Milky Way here is genuinely breathtaking.</p>
-                        <a href="explore/sunspot-observatory.html" class="thing-card-link">Learn more &rarr;</a>
+                        <h3>Stargaze under Bortle 2 skies</h3>
+                        <p>Cloudcroft sits at 8,676 ft with remarkably dark skies — Bortle Class 2 to 3 across most of
+                            the Sacramento Mountains. Pull off on a forest road, give your eyes 20 minutes to adapt,
+                            and look up. The Milky Way here is genuinely breathtaking.</p>
+                        <a href="../topics/dark-skies.html" class="thing-card-link">Learn more &rarr;</a>
                     </div>
 
                 </div>
@@ -1635,9 +1634,9 @@
                     </div>
                     <div class="event-item fade-in">
                         <p class="event-month">October</p>
-                        <h3>Aspenfest &amp; Oktoberfest</h3>
-                        <p>Aspenfest celebrates peak fall color season with live music and vendor markets. Oktoberfest
-                            runs the same general period with German-style beers and food. Together they make October
+                        <h3>Oktoberfest &amp; Haunted Village</h3>
+                        <p>Oktoberfest brings German-style beers and food to peak fall color season. The Haunted Village
+                            transforms downtown into a family-friendly Halloween experience. Together they make October
                             the most festive month in Cloudcroft.</p>
                     </div>
                     <div class="event-item fade-in">
@@ -1773,10 +1772,10 @@
                             year-round outdoor adventures for every interest.</p>
                     </a>
                     <div class="card">
-                        <div class="card-icon">&#x1F52D;</div>
-                        <h3>Sunspot Solar Observatory</h3>
-                        <p>Visit the National Solar Observatory and Sunspot Visitor Center at the southern end of the
-                            Sacramento Mountains. Free admission with exhibits and stunning views.</p>
+                        <div class="card-icon">&#x2728;</div>
+                        <h3>Dark-sky stargazing</h3>
+                        <p>Bortle Class 2 to 3 night skies across most of the Sacramento Mountains. A porch, a forest
+                            pull-off, or a chair on a clear night is enough — the Milky Way is reliably visible.</p>
                     </div>
                     <div class="card">
                         <div class="card-icon">&#x1F6CD;&#xFE0F;</div>
@@ -1817,9 +1816,9 @@
                         <div class="seasonal-icon"><img src="media/image-winter.jpg"></div>
                         <h3>Fall</h3>
                         <div class="season-months">September &ndash; November</div>
-                        <p>Spectacular golden foliage as aspens turn. Aspenfest in October draws visitors from across
-                            the region. Cool temperatures and crisp mountain air make this many locals' favorite season.
-                        </p>
+                        <p>Spectacular golden foliage as aspens turn. Harvest Fest, Oktoberfest, and the Haunted Village
+                            draw visitors from across the region. Cool temperatures and crisp mountain air make this
+                            many locals' favorite season.</p>
                     </div>
                     <div class="seasonal-card">
                         <div class="seasonal-icon"><img src="media/image-winter.jpg"></div>
@@ -1983,8 +1982,6 @@
                     <ul>
                         <li><a href="tel:+15755824585">(575) 682-4585</a></li>
                         <li><a href="mailto:info@discovercloudcroft.com">info@discovercloudcroft.com</a></li>
-                        <li><a href="https://villageofcloudcroft.com" target="_blank" rel="noopener noreferrer">Village
-                                of Cloudcroft</a></li>
                         <li><a href="https://www.google.com/maps/place/Cloudcroft,+NM" target="_blank"
                                 rel="noopener noreferrer">Map &amp; Directions</a></li>
                     </ul>

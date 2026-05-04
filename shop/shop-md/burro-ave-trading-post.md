@@ -21,7 +21,7 @@ Burro Street Trading Post (also published as Burro Street Trading Co.) is the So
 
 ## 3. Signals (at-a-glance tags)
 
-Burro Street Exchange · Southwest anchor · Native American jewelry · Turquoise · Sterling silver · Rocks &amp; crystals · Geodes · Pottery &amp; kachinas · Home décor · ~20 years on Burro · Hours vary — call ahead
+Burro Street Exchange · Southwest anchor · Native American jewelry · Turquoise · Sterling silver · Rocks &amp; crystals · Geodes · Pottery &amp; kachinas · Home décor · ~20 years on Burro · Call ahead
 
 ## 4. What the shop is
 
@@ -132,7 +132,7 @@ The shop's themed Southwest identity has remained consistent across public sourc
 
 ## 12. Open questions still to verify
 
-- **Exact current hours** — inconsistent across public sources.
+- **Exact current hours** — confirm by phone before visiting.
 - **Age on the avenue** — "almost 20 years" is Chamber language; confirm directly before printing a specific year-founded figure.
 - **Online orders / shipping policies** — current website presentation doesn't make these clearly crawlable.
 - **Authenticity and provenance** — specific claims beyond the shop's own statements aren't independently documented.

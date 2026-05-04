@@ -72,7 +72,7 @@ Eighteen99 sells atmosphere. The setting is a historic 1899 resort property, a f
 - Limited days (Wed–Sat only).
 - Short window (5–8 PM).
 - Not a casual drop-in spot — reservations and intent are expected.
-- Menu specifics change, so booking for a specific dish is not reliable.
+- Menu specifics change. If you want a specific dish, call before booking to confirm it's on the current menu.
 
 ## 8. Editorial positioning
 
