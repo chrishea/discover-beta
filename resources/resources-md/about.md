@@ -95,7 +95,6 @@ Community
 
 Cloudcroft is home to about 750 year-round residents, but the village swells with visitors who come for the trails, the food, the festivals, and the feeling of being somewhere truly special.
 
-[Visit the Village of Cloudcroft](https://villageofcloudcroft.com) [Cloudcroft Tourism Alliance](tel:+15555555555)
 
 DISCOVER CLOUDCROFT
 

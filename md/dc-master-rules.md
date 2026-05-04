@@ -17,5 +17,7 @@ REMOVE from site, all pages, all mentions: Into the Woods 505 Burro Ave #102 lis
 
 The Western Bar does NOT offer breakfast
 
-Never use 8,676 or 9000 ft as the levation of cloudcroft. Use 8,676 ft. always
+Never 9,000 ft or 9000 ft as the levation of cloudcroft. Use 8,676 ft. always
 
+
+NEVER use ""[Visit the Village of Cloudcroft](https://villageofcloudcroft.com)" or  "[Cloudcroft Tourism Alliance](tel:+15555555555)"
