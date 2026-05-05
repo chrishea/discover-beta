@@ -31,6 +31,9 @@ Old Barrel Tea Company is better understood as a specialty tea shop than as a re
 
 Its identity is clearer than many small-town tea stores because the company operates multiple Southwest locations, blends its own teas and spices, and frames itself around wellness as well as flavor.
 
+from the owener: "Our tea blends are all blended in our warehouse in ABQ and shipped off to our individual locations. 
+Most of all of our blends are special to us and you can’t find them anywhere else."our blends are special to us,
+
 ## 4. Menu and specialties
 
 Verified product categories from the official site:
@@ -118,3 +121,5 @@ Old Barrel is not just a one-off gift shop. It is part of a broader branded tea 
 
 ## rules to obey
 use words other than "snag"--grab, stock up, discover, shop, bag, scoop up, nab, score, procure, and get are all good substitutes.
+
+do NOT say "blended in-house"
