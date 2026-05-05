@@ -111,7 +111,10 @@ Old Barrel is not just a one-off gift shop. It is part of a broader branded tea 
 
 ## Owner / Local Knowledge (added April 10, 2026)
 
-**Source:** Direct input from Chris Hea, Cloudcroft local
+
 
 **Dining guide inclusion**
 - Per local judgment, Old Barrel Tea Company is a retail shop, not a dining stop. Excluded from the Cloudcroft dining guide.
+
+## rules to obey
+use words other than "snag"--grab, stock up, discover, shop, bag, scoop up, nab, score, procure, and get are all good substitutes.
