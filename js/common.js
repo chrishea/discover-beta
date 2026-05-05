@@ -189,4 +189,160 @@
       }, 400);
     }, 12000);
   }
+
+  // ===== SIGNUP MODAL (site-wide) =====
+  // Auto-injects #signupModal markup if missing, then wires up every
+  // [data-signup-open] trigger on the page (footer Subscribe, nav CTAs, etc.).
+  var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxBHtNoCm_a44NFoYyUerR8qUqj5379Wb1GgbIMjZeHVBoF2f2jH79HclzLzK9j_frT/exec';
+  var EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  var signupOpeners = document.querySelectorAll('[data-signup-open]');
+  if (signupOpeners.length > 0) {
+    var signupModal = document.getElementById('signupModal');
+    if (!signupModal) {
+      var wrapper = document.createElement('div');
+      wrapper.innerHTML = [
+        '<div class="signup-modal" id="signupModal" role="dialog" aria-modal="true" aria-labelledby="signupModalTitle" hidden>',
+        '  <div class="signup-modal__backdrop" data-modal-close></div>',
+        '  <div class="signup-modal__panel" role="document">',
+        '    <button type="button" class="signup-modal__close" aria-label="Close" data-modal-close>&times;</button>',
+        '    <h2 id="signupModalTitle">We\'ll keep you up-to-date</h2>',
+        '    <div class="form-container" id="modalFormContainer">',
+        '      <form class="form-row" id="modalSignupForm" novalidate>',
+        '        <input type="email" id="modalEmailInput" placeholder="Your email address" required autocomplete="email" aria-label="Email address">',
+        '        <button type="submit" id="modalSubmitBtn">Notify Me</button>',
+        '      </form>',
+        '      <div class="error-message" id="modalErrorMessage" role="alert">Something went wrong. Please try again.</div>',
+        '      <div class="success-message">',
+        '        <div class="check"><svg viewBox="0 0 24 24"><polyline points="6 12 10 16 18 8"></polyline></svg></div>',
+        '        <h3>You\'re on the list!</h3>',
+        '        <p>You\'ll get monthly updates from <b>DiscoverCloudcroft</b>.</p>',
+        '      </div>',
+        '    </div>',
+        '    <div class="signup-modal__reassurance">We won\'t share your address.</div>',
+        '  </div>',
+        '</div>'
+      ].join('');
+      signupModal = wrapper.firstElementChild;
+      document.body.appendChild(signupModal);
+    }
+
+    var signupPanel = signupModal.querySelector('.signup-modal__panel');
+    var signupForm = document.getElementById('modalSignupForm');
+    var signupInput = document.getElementById('modalEmailInput');
+    var signupBtn = document.getElementById('modalSubmitBtn');
+    var signupContainer = document.getElementById('modalFormContainer');
+    var signupErrorEl = document.getElementById('modalErrorMessage');
+
+    var signupLastTrigger = null;
+    var signupCurrentSource = 'modal';
+    var signupAutoCloseTimer = null;
+
+    function signupFocusables() {
+      return Array.prototype.slice.call(
+        signupPanel.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+      ).filter(function (el) {
+        return !el.disabled && el.offsetParent !== null;
+      });
+    }
+
+    function signupKeydown(e) {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        closeSignupModal();
+        return;
+      }
+      if (e.key === 'Tab') {
+        var focusables = signupFocusables();
+        if (!focusables.length) return;
+        var first = focusables[0];
+        var last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    }
+
+    function resetSignupForm() {
+      if (signupAutoCloseTimer) { clearTimeout(signupAutoCloseTimer); signupAutoCloseTimer = null; }
+      signupContainer.classList.remove('success', 'error');
+      signupBtn.disabled = false;
+      signupBtn.textContent = 'Notify Me';
+      signupInput.value = '';
+    }
+
+    function openSignupModal(trigger) {
+      signupLastTrigger = trigger || null;
+      signupCurrentSource = (trigger && trigger.getAttribute('data-signup-source')) || 'modal';
+      resetSignupForm();
+      signupModal.hidden = false;
+      document.body.classList.add('signup-modal-open');
+      document.addEventListener('keydown', signupKeydown);
+      window.requestAnimationFrame(function () { signupInput.focus(); });
+    }
+
+    function closeSignupModal() {
+      signupModal.hidden = true;
+      document.body.classList.remove('signup-modal-open');
+      document.removeEventListener('keydown', signupKeydown);
+      if (signupLastTrigger && typeof signupLastTrigger.focus === 'function') {
+        signupLastTrigger.focus();
+      }
+    }
+
+    signupOpeners.forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (mobileNav && mobileNav.contains(el) && mobileNav.classList.contains('open')) {
+          toggleMobileMenu();
+        }
+        openSignupModal(el);
+      });
+    });
+
+    signupModal.addEventListener('click', function (e) {
+      if (e.target.hasAttribute('data-modal-close')) {
+        closeSignupModal();
+      }
+    });
+
+    signupForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = signupInput.value.trim();
+
+      if (!EMAIL_PATTERN.test(email)) {
+        signupContainer.classList.add('error');
+        signupErrorEl.textContent = 'Please enter a valid email address.';
+        signupInput.focus();
+        return;
+      }
+
+      signupContainer.classList.remove('error');
+      signupBtn.disabled = true;
+      signupBtn.textContent = 'Sending...';
+
+      var formData = new FormData();
+      formData.append('email', email);
+      formData.append('source', signupCurrentSource);
+      formData.append('timestamp', new Date().toISOString());
+
+      fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      }).then(function () {
+        signupContainer.classList.add('success');
+        signupAutoCloseTimer = setTimeout(closeSignupModal, 2000);
+      }).catch(function () {
+        signupContainer.classList.add('error');
+        signupErrorEl.textContent = "We couldn't reach the server. Please check your connection and try again.";
+        signupBtn.disabled = false;
+        signupBtn.textContent = 'Notify Me';
+      });
+    });
+  }
 })();
