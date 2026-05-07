@@ -1,23 +1,59 @@
 ================================================================================
-DiscoverCloudcroft.com — www / apex Hostname Decision (CLOSED)
-Updated:  2026-05-03 (after investigation + decision to accept current state)
+DiscoverCloudcroft.com — www / apex Hostname Decision (RESOLVED)
+Updated:  2026-05-07 (www → apex 301 redirect is now active)
 Hosting:  AWS Amplify Hosting Gen 1  (App ID: d166ujkfass376)
-Decision: OPTION A — accept dual-hostname serving, rely on canonical tags
+Status:   RESOLVED — www properly 301-redirects to apex. Option A
+          (accept dual-serving) was the documented interim state on
+          2026-05-03; that is no longer current as of 2026-05-07.
 ================================================================================
 
-CURRENT STATE
+CURRENT STATE (verified 2026-05-07)
 ================================================================================
 
   https://discovercloudcroft.com/        →  HTTP 200 (serves directly)
-  https://www.discovercloudcroft.com/    →  HTTP 200 (serves directly)
+  https://www.discovercloudcroft.com/    →  HTTP 301 → https://discovercloudcroft.com/
 
-Both hostnames serve the SAME content from the same Amplify origin. Neither
-redirects to the other. Every page on the site has a canonical tag pointing
-to the apex (non-www) variant — Google should treat apex as authoritative.
+  Cache-busted check confirmed origin behavior (x-cache: Miss from cloudfront)
+  Fresh-path check confirmed path is preserved through the redirect.
 
-This is a pragmatic outcome, not the originally-recommended fix. See the
-investigation notes below for why a clean www→apex 301 wasn't achievable
-on this stack.
+Search engines should now consolidate all link equity to apex. The
+duplicate-content concern documented previously is closed.
+
+================================================================================
+HOW THE FIX HAPPENED (UNCERTAIN ATTRIBUTION)
+================================================================================
+
+Between the 2026-05-03 audit (when both hostnames returned 200) and the
+2026-05-07 re-audit (when www returns 301 → apex), the host-based redirect
+became active. The exact change is unclear; possibilities:
+
+1. The 21st rule that was added to Amplify Rewrites and redirects on
+   2026-05-03 — `https://www.discovercloudcroft.com/<*>` →
+   `https://discovercloudcroft.com/<*>` — was eventually honored by the
+   redirect engine after some delay. (At the time of the original test,
+   it appeared to silently no-op; that may have been propagation lag,
+   not a permanent limitation.)
+
+2. A subsequent Amplify config change activated the redirect.
+
+3. A Lambda@Edge / CloudFront Function was added on the Amplify-managed
+   distribution.
+
+In any case: the redirect is firing correctly from the origin, not just
+from cached responses. The canonical-hostname infrastructure is now
+aligned with all canonical/og:url tags + the sitemap (all of which
+point to the apex).
+
+================================================================================
+HISTORICAL NOTES (preserved for context)
+================================================================================
+
+The notes below describe the investigation that led to the 2026-05-03
+"Option A — accept dual-serving" interim decision. They are kept for
+historical context. If the redirect ever stops working again, this
+section documents what was tried and what was understood at the time.
+
+
 
 
 WHAT WE TRIED AND WHY IT DIDN'T WORK
