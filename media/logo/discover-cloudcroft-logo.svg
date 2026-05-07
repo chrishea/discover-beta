@@ -1,0 +1,30 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DiscoverCloudcroft logo">
+  <title>DiscoverCloudcroft logo</title>
+  <desc>Square mark: layered mountain peaks with a cloud nestled in the ridge and a bright guide-star above, cream on deep charcoal.</desc>
+
+  <rect width="512" height="512" rx="92" fill="#1a1a1a"/>
+
+  <circle cx="92" cy="118" r="2" fill="#f5f1e6" opacity="0.7"/>
+  <circle cx="158" cy="86" r="1.5" fill="#f5f1e6" opacity="0.5"/>
+  <circle cx="320" cy="92" r="1.8" fill="#f5f1e6" opacity="0.55"/>
+  <circle cx="425" cy="178" r="2" fill="#f5f1e6" opacity="0.6"/>
+  <circle cx="448" cy="92" r="1.4" fill="#f5f1e6" opacity="0.5"/>
+
+  <circle cx="380" cy="135" r="11" fill="#f5f1e6"/>
+
+  <path d="M 0 360 L 80 240 L 160 310 L 240 200 L 320 290 L 420 220 L 512 270 L 512 512 L 0 512 Z"
+        fill="#f5f1e6" opacity="0.25"/>
+
+  <path d="M 0 410 L 100 300 L 200 380 L 290 250 L 380 350 L 460 290 L 512 320 L 512 512 L 0 512 Z"
+        fill="#f5f1e6" opacity="0.55"/>
+
+  <g fill="#f5f1e6">
+    <ellipse cx="240" cy="280" rx="30" ry="14"/>
+    <ellipse cx="218" cy="270" rx="22" ry="14"/>
+    <ellipse cx="270" cy="275" rx="26" ry="14"/>
+    <ellipse cx="245" cy="290" rx="42" ry="11"/>
+  </g>
+
+  <path d="M 0 460 L 130 330 L 250 425 L 350 290 L 440 400 L 512 360 L 512 512 L 0 512 Z"
+        fill="#f5f1e6"/>
+</svg>
