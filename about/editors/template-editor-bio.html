@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+================================================================================
+TEMPLATE — EDITOR BIO PAGE
+Copy this file to about/editors/[slug].html (e.g. chris-hea.html) and replace
+every [PLACEHOLDER] token with the editor's real info. Then add a corresponding
+card to about/editors/index.html and update the byline on guide pages they
+contributed to.
+Tokens to replace (search for [):
+  [SLUG]              URL-safe lowercase, e.g. "chris-hea"
+  [NAME]              Full name, e.g. "Chris Hearne"
+  [ROLE]              Title or beat, e.g. "Editor — Lodging & Dining"
+  [SHORT_BIO]         1-2 sentence summary used in meta description (~120 chars)
+  [LONG_BIO]          Full prose intro, 2-4 paragraphs
+  [BEAT_BULLETS]      What they cover (3-6 bullets)
+  [CREDENTIALS]       Background, education, prior work, why qualified
+  [CONFLICTS]         Any disclosures or "none currently" if none apply
+  [PHOTO_URL]         Either /media/editors/[slug].jpg or a remote URL
+  [PHOTO_ALT]         Descriptive alt text for the photo
+  [EMAIL]             Direct contact email (e.g. chris@discovercloudcroft.com)
+  [SOCIAL_*]          Optional public profiles
+================================================================================
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[NAME] — Editor at DiscoverCloudcroft.com</title>
+    <meta name="description" content="[SHORT_BIO]">
+    <link rel="canonical" href="https://discovercloudcroft.com/about/editors/[SLUG].html">
+
+    <meta property="og:title" content="[NAME] — Editor at DiscoverCloudcroft.com">
+    <meta property="og:description" content="[SHORT_BIO]">
+    <meta property="og:url" content="https://discovercloudcroft.com/about/editors/[SLUG].html">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="[PHOTO_URL]">
+    <meta property="og:image:alt" content="[PHOTO_ALT]">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[NAME] — Editor at DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="[SHORT_BIO]">
+    <meta name="twitter:image" content="[PHOTO_URL]">
+
+    <meta name="robots" content="index,follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "[NAME]",
+      "url": "https://discovercloudcroft.com/about/editors/[SLUG].html",
+      "image": "[PHOTO_URL]",
+      "jobTitle": "[ROLE]",
+      "email": "mailto:[EMAIL]",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Mountain Monthly LLC",
+        "url": "https://discovercloudcroft.com/"
+      },
+      "description": "[SHORT_BIO]"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "name": "[NAME] — Editor at DiscoverCloudcroft.com",
+      "url": "https://discovercloudcroft.com/about/editors/[SLUG].html",
+      "dateModified": "2026-05-07",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "[NAME]"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://discovercloudcroft.com/"},
+        {"@type": "ListItem", "position": 2, "name": "About", "item": "https://discovercloudcroft.com/resources/about.html"},
+        {"@type": "ListItem", "position": 3, "name": "Editors", "item": "https://discovercloudcroft.com/about/editors/"},
+        {"@type": "ListItem", "position": 4, "name": "[NAME]", "item": "https://discovercloudcroft.com/about/editors/[SLUG].html"}
+      ]
+    }
+    </script>
+
+    <style>
+        .editor-hero {
+            background: linear-gradient(135deg, #1a1f2e 0%, #2c3447 50%, #1a1f2e 100%);
+            color: #fff;
+            padding: 5vh 2rem;
+        }
+        .editor-hero-inner {
+            max-width: 780px;
+            margin: 0 auto;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        @media (max-width: 600px) {
+            .editor-hero-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        .editor-hero img {
+            flex: 0 0 160px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255,255,255,0.15);
+        }
+        .editor-hero-text { flex: 1; }
+        .editor-hero-text h1 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+            font-weight: 700;
+            margin: 0 0 0.5rem;
+            line-height: 1.15;
+        }
+        .editor-hero-text .role {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.7);
+            margin: 0 0 1rem;
+        }
+        .editor-hero-text p.short-bio {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.9);
+            line-height: 1.55;
+            margin: 0;
+        }
+        .editor-body {
+            max-width: 720px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.65;
+        }
+        .editor-body h2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: #000;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e5e5;
+        }
+        .editor-body p { margin: 0 0 1.1rem; }
+        .editor-body ul { margin: 0 0 1.25rem 1.5rem; }
+        .editor-body li { margin-bottom: 0.45rem; }
+        .editor-body strong { color: #000; }
+        .editor-body a { color: #2b2b2b; font-weight: 500; text-decoration: underline; }
+        .editor-contact {
+            background: #f5f3ee;
+            border-left: 4px solid #2b2b2b;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+            <a href="../../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                <span class="logo-discover">Discover</span>
+                <span class="logo-cloudcroft">Cloudcroft</span>
+            </a>
+            <a href="../../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html">Stay</a>
+            <a href="../../eat/complete-guide-where-to-eat-in-cloudcroft.html">Eat</a>
+            <a href="../../do/complete-guide-to-activities-to-do-in-cloudcroft.html">Activities</a>
+            <a href="../../shop/complete-guide-where-to-shop-in-cloudcroft.html">Shop</a>
+            <a href="../../events/top-events.html">Events</a>
+            <a href="../../resources/resources.html">Resources</a>
+            <a href="../../resources/contact.html">Contact</a>
+            <button type="button" class="nav-cta" data-signup-open data-signup-source="nav-mobile">Connect</button>
+        </nav>
+        <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="../../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html">Stay</a>
+        <a href="../../eat/complete-guide-where-to-eat-in-cloudcroft.html">Eat</a>
+        <a href="../../do/complete-guide-to-activities-to-do-in-cloudcroft.html">Activities</a>
+        <a href="../../shop/complete-guide-where-to-shop-in-cloudcroft.html">Shop</a>
+        <a href="../../events/top-events.html">Events</a>
+        <a href="../../resources/resources.html">Resources</a>
+        <a href="../../resources/contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="editor-hero" aria-label="Editor introduction">
+    <div class="editor-hero-inner">
+        <img src="[PHOTO_URL]" alt="[PHOTO_ALT]">
+        <div class="editor-hero-text">
+            <p class="role">[ROLE]</p>
+            <h1>[NAME]</h1>
+            <p class="short-bio">[SHORT_BIO]</p>
+        </div>
+    </div>
+</section>
+
+<main id="main-content" role="main" class="editor-body">
+
+    <h2>About</h2>
+    <p>[LONG_BIO — paragraph 1: who they are, where they're from, the connection to Cloudcroft.]</p>
+    <p>[LONG_BIO — paragraph 2: what they did before this, prior writing or relevant work.]</p>
+    <p>[LONG_BIO — paragraph 3 (optional): a personal detail that humanizes the byline — favorite hike, favorite restaurant, what they like about Cloudcroft.]</p>
+
+    <h2>What [NAME] covers</h2>
+    <ul>
+        [BEAT_BULLETS — replace with 3-6 bullets, e.g.:]
+        <li>Lodging — entity pages, booking guides, seasonal pricing patterns</li>
+        <li>Dining — restaurant entity pages, menu coverage, openings/closings</li>
+        <li>Trip planning — feeder market pages, itineraries</li>
+    </ul>
+
+    <h2>Background &amp; credentials</h2>
+    <p>[CREDENTIALS — education, prior journalism or relevant industry work, time in the area, languages, certifications, etc. Be honest about expertise; don't overstate.]</p>
+
+    <h2>Disclosures</h2>
+    <p>[CONFLICTS — list any potential conflicts of interest. If none, state plainly: "No financial relationships with any business covered on this site. No comped stays, free meals, or paid placements." If any exist (family connection, ownership stake, prior employment), name them. The whole point of editorial standards is that the reader can trust this.]</p>
+
+    <div class="editor-contact">
+        <strong>Reach [NAME] directly:</strong><br>
+        Email: <a href="mailto:[EMAIL]">[EMAIL]</a><br>
+        Site contact form: <a href="../../resources/contact.html">resources/contact.html</a><br>
+        For corrections, sources, or coverage questions on any page bylined by [NAME].
+    </div>
+
+    <h2>Editorial standards</h2>
+    <p>All content bylined by [NAME] is produced under DiscoverCloudcroft.com's <a href="../editorial-standards.html">editorial standards</a> — independent of advertising and partnerships, sourced primarily from business-controlled and institutional sources, dated and verified at publication, and corrected when wrong.</p>
+
+    <p style="font-size:0.85rem;color:#666;margin-top:2rem;">Last updated 2026-05-07.</p>
+
+</main>
+
+<footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <p style="text-align:center;padding:1vh;font-weight:700;">
+        <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+        | <span style="color:coral;">New Mexico's Mountain Retreat</span>
+    </p>
+    <p style="text-align:center;font-size:85%;">
+        &copy; 2026
+        <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+            style="color:rgb(194,224,249);text-decoration:underline;">DiscoverCloudcroft.com</a>.
+        All rights reserved.
+    </p>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script src="../../js/common.js" defer></script>
+</body>
+</html>

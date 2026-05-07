@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editors — DiscoverCloudcroft.com</title>
+    <meta name="description" content="The editors behind DiscoverCloudcroft.com. Names, beats, credentials, and how to reach each editor for corrections, tips, or coverage requests.">
+    <link rel="canonical" href="https://discovercloudcroft.com/about/editors/">
+
+    <meta property="og:title" content="Editors — DiscoverCloudcroft.com">
+    <meta property="og:description" content="The editors behind DiscoverCloudcroft.com. Names, beats, credentials, contact.">
+    <meta property="og:url" content="https://discovercloudcroft.com/about/editors/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://discovercloudcroft.com/media/cloudcroft-main-street-sunset.jpg">
+    <meta property="og:image:alt" content="Main street in the village of Cloudcroft, NM at sunset.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Editors — DiscoverCloudcroft.com">
+    <meta name="twitter:description" content="The editors behind DiscoverCloudcroft.com.">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/media/cloudcroft-main-street-sunset.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/common.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "Editors — DiscoverCloudcroft.com",
+      "url": "https://discovercloudcroft.com/about/editors/",
+      "description": "The editors behind DiscoverCloudcroft.com.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mountain Monthly LLC",
+        "url": "https://discovercloudcroft.com/"
+      },
+      "dateModified": "2026-05-07"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://discovercloudcroft.com/"},
+        {"@type": "ListItem", "position": 2, "name": "About", "item": "https://discovercloudcroft.com/resources/about.html"},
+        {"@type": "ListItem", "position": 3, "name": "Editors", "item": "https://discovercloudcroft.com/about/editors/"}
+      ]
+    }
+    </script>
+
+    <!--
+    SCHEMA NOTE FOR OWNER:
+    Once individual editor pages exist, add an ItemList schema block here
+    listing each editor by URL. The CURRENT page is scaffolded — once you
+    publish 2+ real editors at /about/editors/[name].html, append:
+
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "DiscoverCloudcroft.com editors",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "[Editor Name]",
+         "url": "https://discovercloudcroft.com/about/editors/[slug].html"}
+        // ... etc
+      ]
+    }
+    -->
+
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1a1f2e 0%, #2c3447 50%, #1a1f2e 100%);
+        }
+        .hero-overlay { background: linear-gradient(135deg, rgba(0,0,0,0.55), rgba(0,0,0,0.25) 55%, rgba(0,0,0,0.55)); }
+
+        .editors-grid-section {
+            max-width: 1100px;
+            margin: 3rem auto 5rem;
+            padding: 0 1.5rem;
+        }
+        .editors-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        @media (max-width: 720px) {
+            .editors-grid { grid-template-columns: 1fr; }
+        }
+        .editor-card {
+            display: flex;
+            gap: 1.25rem;
+            padding: 1.5rem;
+            background: #fff;
+            border: 1.5px solid #e5e5e5;
+            border-radius: 12px;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+        }
+        .editor-card:hover {
+            border-color: #000;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+        }
+        .editor-photo {
+            flex: 0 0 96px;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: #2b2b2b;
+            object-fit: cover;
+            display: block;
+        }
+        .editor-photo-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0.5rem;
+        }
+        .editor-card-body { flex: 1; }
+        .editor-name {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0 0 0.25rem;
+            line-height: 1.2;
+        }
+        .editor-role {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #666;
+            margin: 0 0 0.6rem;
+        }
+        .editor-card-body p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.9rem;
+            color: #444;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .editor-card-arrow {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #000;
+            margin-top: 0.6rem;
+            display: inline-block;
+        }
+        .placeholder-card {
+            border-style: dashed;
+            background: #fafaf8;
+        }
+        .placeholder-card:hover {
+            transform: none;
+            border-color: #c8c8c4;
+            box-shadow: none;
+            cursor: default;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <a href="../../index.html" class="logo header-logo" aria-label="Discover Cloudcroft — home">
+                    <span class="logo-discover">Discover</span>
+                    <span class="logo-cloudcroft">Cloudcroft</span>
+                </a>
+                <a href="../../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html">Stay</a>
+                <a href="../../eat/complete-guide-where-to-eat-in-cloudcroft.html">Eat</a>
+                <a href="../../do/complete-guide-to-activities-to-do-in-cloudcroft.html">Activities</a>
+                <a href="../../shop/complete-guide-where-to-shop-in-cloudcroft.html">Shop</a>
+                <a href="../../events/top-events.html">Events</a>
+                <a href="../../resources/resources.html">Resources</a>
+                <a href="../../resources/contact.html">Contact</a>
+                <button type="button" class="nav-cta" data-signup-open data-signup-source="nav-mobile">Connect</button>
+            </nav>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav-overlay" id="mobile-nav" aria-label="Mobile navigation" hidden>
+            <a href="../../stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html">Stay</a>
+            <a href="../../eat/complete-guide-where-to-eat-in-cloudcroft.html">Eat</a>
+            <a href="../../do/complete-guide-to-activities-to-do-in-cloudcroft.html">Activities</a>
+            <a href="../../shop/complete-guide-where-to-shop-in-cloudcroft.html">Shop</a>
+            <a href="../../events/top-events.html">Events</a>
+            <a href="../../resources/resources.html">Resources</a>
+            <a href="../../resources/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" aria-label="Page hero" style="position:relative;min-height:36vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:6vh 2rem;color:#fff">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div style="position:relative;z-index:2;max-width:780px">
+            <span style="font-family:'IBM Plex Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.7);display:block;margin-bottom:1rem">Trust &amp; transparency</span>
+            <h1 style="font-family:'IBM Plex Serif',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;margin:0 0 1rem;line-height:1.15">Editors</h1>
+            <p style="font-family:'IBM Plex Sans',sans-serif;font-size:1.05rem;color:rgba(255,255,255,.85);margin:0 0 .75rem;line-height:1.5">The people behind the bylines on DiscoverCloudcroft.com. Each editor covers a beat, verifies the facts on their pages, and signs corrections.</p>
+        </div>
+    </section>
+
+    <main id="main-content" role="main">
+
+        <section class="editors-grid-section" aria-label="Editorial team">
+
+            <p style="font-family:'IBM Plex Sans',sans-serif;font-size:1rem;color:#333;line-height:1.6;max-width:760px;margin:0 auto 2.5rem;">
+                DiscoverCloudcroft.com is operated by <strong>Mountain Monthly LLC</strong>. The editors below are responsible for the content on this site, follow our <a href="../editorial-standards.html" style="color:#2b2b2b;text-decoration:underline;">editorial standards</a>, and answer reader questions and corrections through the <a href="../../resources/contact.html" style="color:#2b2b2b;text-decoration:underline;">contact form</a> or directly at the email addresses below.
+            </p>
+
+            <div class="editors-grid">
+
+                <!--
+                === EDITOR CARD TEMPLATE ===
+                Copy this article block, replace the [PLACEHOLDER] tokens, and remove the
+                surrounding "placeholder-card" class so it renders as a real linked card.
+                Then publish a matching detail page at about/editors/[slug].html using
+                template-editor-bio.html as the starting point.
+                -->
+
+                <article class="editor-card placeholder-card">
+                    <div class="editor-photo editor-photo-placeholder">PHOTO TBD</div>
+                    <div class="editor-card-body">
+                        <h2 class="editor-name">[Editor Name]</h2>
+                        <p class="editor-role">[Role / Beat]</p>
+                        <p>Short bio paragraph (2-3 sentences). What they cover, where they're from, why they're qualified to write about Cloudcroft.</p>
+                        <span class="editor-card-arrow">Read full bio &rarr;</span>
+                    </div>
+                </article>
+
+                <article class="editor-card placeholder-card">
+                    <div class="editor-photo editor-photo-placeholder">PHOTO TBD</div>
+                    <div class="editor-card-body">
+                        <h2 class="editor-name">[Editor Name]</h2>
+                        <p class="editor-role">[Role / Beat]</p>
+                        <p>Short bio paragraph (2-3 sentences). What they cover, where they're from, why they're qualified to write about Cloudcroft.</p>
+                        <span class="editor-card-arrow">Read full bio &rarr;</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <p style="font-family:'IBM Plex Sans',sans-serif;font-size:.9rem;color:#666;line-height:1.55;max-width:760px;margin:2.5rem auto 0;text-align:center;font-style:italic;">
+                Editor bio pages are scaffolded but not yet populated. See <code>about/editors/README.md</code> in the repo for the steps to publish real editors and replace the &ldquo;DiscoverCloudcroft editors&rdquo; byline across the site.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <p style="text-align:center;padding:1vh;font-weight:700;">
+            <span class="footer-brand">DISCOVER <span>CLOUDCROFT</span></span>
+            | <span style="color:coral;">New Mexico's Mountain Retreat</span>
+        </p>
+        <p style="text-align:center;font-size:85%;">
+            &copy; 2026
+            <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer"
+                style="color:rgb(194,224,249);text-decoration:underline;">DiscoverCloudcroft.com</a>.
+            All rights reserved.
+        </p>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="../../js/common.js" defer></script>
+</body>
+
+</html>
