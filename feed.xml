@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>DiscoverCloudcroft.com</title>
+  <subtitle>An independent visitor's guide to Cloudcroft, NM.</subtitle>
+  <link href="https://discovercloudcroft.com/" />
+  <link rel="self" type="application/atom+xml" href="https://discovercloudcroft.com/feed.xml" />
+  <id>https://discovercloudcroft.com/</id>
+  <updated>2026-05-07T14:46:48Z</updated>
+  <author>
+    <name>DiscoverCloudcroft editors</name>
+    <email>hello@discovercloudcroft.com</email>
+  </author>
+  <rights>Copyright 2026 Mountain Monthly LLC. Editorial content; see editorial standards at https://discovercloudcroft.com/about/editorial-standards.html</rights>
+
+  <entry>
+    <title>Cloudcroft from Ruidoso, NM &amp;mdash; Sister Mountain Village 40 Min Away</title>
+    <link href="https://discovercloudcroft.com/visit/cloudcroft-from-ruidoso.html" />
+    <id>https://discovercloudcroft.com/visit/cloudcroft-from-ruidoso.html</id>
+    <updated>2026-05-07T00:00:00Z</updated>
+    <summary>Ruidoso to Cloudcroft is a 40-minute drive over NM-244. The two sister villages share the Sacramento Mountains but feel different — here is what to expect, which route to take, and how to plan a day trip either direction.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Cloudcroft from Lubbock, TX &amp;mdash; 4-Hour Drive Guide</title>
+    <link href="https://discovercloudcroft.com/visit/cloudcroft-from-lubbock.html" />
+    <id>https://discovercloudcroft.com/visit/cloudcroft-from-lubbock.html</id>
+    <updated>2026-05-07T00:00:00Z</updated>
+    <summary>Driving Cloudcroft from Lubbock, TX: ~280-300 miles, 4-4.5 hours, two route options through Roswell or Carlsbad, and why West Texans escape the heat for 8,676 ft.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Cloudcroft from Las Cruces, NM &amp;mdash; 90-Minute Mountain Escape</title>
+    <link href="https://discovercloudcroft.com/visit/cloudcroft-from-las-cruces.html" />
+    <id>https://discovercloudcroft.com/visit/cloudcroft-from-las-cruces.html</id>
+    <updated>2026-05-07T00:00:00Z</updated>
+    <summary>Las Cruces to Cloudcroft is roughly 80 miles and 1.5 hours via US-70 and US-82. A 4,800-ft climb to pine forest, 25-30&amp;deg;F cooler air, and dark skies. Pair with White Sands.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Cloudcroft from El Paso, TX — Drive Guide &amp;amp; Trip Planning</title>
+    <link href="https://discovercloudcroft.com/visit/cloudcroft-from-el-paso.html" />
+    <id>https://discovercloudcroft.com/visit/cloudcroft-from-el-paso.html</id>
+    <updated>2026-05-07T00:00:00Z</updated>
+    <summary>Cloudcroft from El Paso, TX — a 2-hour, 130-mile drive via US-54 and US-82 to a cool 8,676 ft mountain village. Weekend escape planning, lodging, and stops along the way.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Cloudcroft from Alamogordo, NM &amp;mdash; 20-Minute Mountain Escape</title>
+    <link href="https://discovercloudcroft.com/visit/cloudcroft-from-alamogordo.html" />
+    <id>https://discovercloudcroft.com/visit/cloudcroft-from-alamogordo.html</id>
+    <updated>2026-05-07T00:00:00Z</updated>
+    <summary>Alamogordo to Cloudcroft is ~20 minutes up US-82 — a 4,400 ft climb to 8,676 ft and roughly 30°F cooler air. Day-trip plans and what to do up there.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Zenith Park in Cloudcroft</title>
+    <link href="https://discovercloudcroft.com/resources/zenith-park-in-cloudcroft.html" />
+    <id>https://discovercloudcroft.com/resources/zenith-park-in-cloudcroft.html</id>
+    <updated>2026-05-04T00:00:00Z</updated>
+    <summary>Zenith Park is one of Cloudcroft’s core public spaces. It matters because it is not just a park. It is where a lot of the town’s family activity, recreation, an</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Terms and Conditions</title>
+    <link href="https://discovercloudcroft.com/about/terms.html" />
+    <id>https://discovercloudcroft.com/about/terms.html</id>
+    <updated>2026-05-04T00:00:00Z</updated>
+    <summary>Terms and Conditions for DiscoverCloudcroft.com, operated by Mountain Monthly LLC.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Privacy Policy</title>
+    <link href="https://discovercloudcroft.com/about/privacy.html" />
+    <id>https://discovercloudcroft.com/about/privacy.html</id>
+    <updated>2026-05-04T00:00:00Z</updated>
+    <summary>Privacy Policy for DiscoverCloudcroft.com, operated by Mountain Monthly LLC.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Winter Conditions in Cloudcroft, NM — Snow, Roads &amp;amp; Safety</title>
+    <link href="https://discovercloudcroft.com/topics/winter-conditions.html" />
+    <id>https://discovercloudcroft.com/topics/winter-conditions.html</id>
+    <updated>2026-05-03T00:00:00Z</updated>
+    <summary>Winter Cloudcroft NM guide — snow patterns, US-82 driving conditions, chain advice, snow play, and visitor safety at 8,676 ft. Verified May 2026.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Water Restrictions in Cloudcroft, NM &amp;mdash; A Visitor's Guide</title>
+    <link href="https://discovercloudcroft.com/topics/water-restrictions.html" />
+    <id>https://discovercloudcroft.com/topics/water-restrictions.html</id>
+    <updated>2026-05-03T00:00:00Z</updated>
+    <summary>What visitors should know about water use, drought stages, and conservation in Cloudcroft, NM at 8,676 ft. Check the village website before you travel.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Short-Term Rentals in Cloudcroft, NM (2026) — STR Guide</title>
+    <link href="https://discovercloudcroft.com/topics/short-term-rentals.html" />
+    <id>https://discovercloudcroft.com/topics/short-term-rentals.html</id>
+    <updated>2026-05-03T00:00:00Z</updated>
+    <summary>A 2026 guide to short-term rentals in Cloudcroft, NM — pick among 148+ vacation rentals on Vrbo, Airbnb, and local managers, plus booking timing and what to verify.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Dark Skies in Cloudcroft, NM — Stargazing at 8,676 ft</title>
+    <link href="https://discovercloudcroft.com/topics/dark-skies.html" />
+    <id>https://discovercloudcroft.com/topics/dark-skies.html</id>
+    <updated>2026-05-03T00:00:00Z</updated>
+    <summary>A practical guide to stargazing in Cloudcroft, NM — Bortle ~2-3 dark skies at 8,676 ft, best months, locations, and gear.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Topical Guides — Cloudcroft, NM Visitor Topics</title>
+    <link href="https://discovercloudcroft.com/topics/" />
+    <id>https://discovercloudcroft.com/topics/</id>
+    <updated>2026-05-03T00:00:00Z</updated>
+    <summary>In-depth topical guides for Cloudcroft, NM visitors — short-term rentals, water restrictions, winter conditions, and dark skies. Authoritative answers to broad visitor questions.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Poke The Bear, Cloudcroft NM (2026)</title>
+    <link href="https://discovercloudcroft.com/shop/poke-the-bear.html" />
+    <id>https://discovercloudcroft.com/shop/poke-the-bear.html</id>
+    <updated>2026-05-03T00:00:00Z</updated>
+    <summary>Poke The Bear on Burro Avenue — Cloudcroft's eclectic marketplace for humor gifts, novelty toys, stickers, Bigfoot souvenirs, vintage finds, and a little of everything. Something for everyone. Call for current hours.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Editorial Standards — DiscoverCloudcroft.com</title>
+    <link href="https://discovercloudcroft.com/about/editorial-standards.html" />
+    <id>https://discovercloudcroft.com/about/editorial-standards.html</id>
+    <updated>2026-05-03T00:00:00Z</updated>
+    <summary>How DiscoverCloudcroft.com sources, verifies, and updates content. Editorial independence, conflict-of-interest policy, AI disclosure, and corrections process.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Cloudcroft, NM — Complete 2026 Travel Guide</title>
+    <link href="https://discovercloudcroft.com/" />
+    <id>https://discovercloudcroft.com/</id>
+    <updated>2026-05-03T00:00:00Z</updated>
+    <summary>Cool off at 8,676 ft in Cloudcroft, NM — mountain lodging, scratch-kitchen restaurants, year-round trails, and Burro Ave shops in the Sacramento Mountains.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Vacation Rentals &amp;amp; Cabins</title>
+    <link href="https://discovercloudcroft.com/stay/vacation-rentals.html" />
+    <id>https://discovercloudcroft.com/stay/vacation-rentals.html</id>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <summary>Browse 150+ vacation rentals in Cloudcroft, NM — cozy cabins, mountain homes, and pet-friendly properties starting at $60/night on VRBO and Airbnb.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>The Summit Inn | Small Mountain Inn in Cloudcroft, NM</title>
+    <link href="https://discovercloudcroft.com/stay/the-summit-inn-cloudcroft.html" />
+    <id>https://discovercloudcroft.com/stay/the-summit-inn-cloudcroft.html</id>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <summary>The Summit Inn is a small, owner-led, recently refreshed inn in central Cloudcroft at 8,676 ft.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>The Lodge at Cloudcroft | Booking guide 2026</title>
+    <link href="https://discovercloudcroft.com/stay/the-lodge-at-cloudcroft.html" />
+    <id>https://discovercloudcroft.com/stay/the-lodge-at-cloudcroft.html</id>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <summary>Booking guide to The Lodge at Cloudcroft: rooms, dining at 1899, golf, history, and what to verify before you reserve. A historic destination stay at 8,676 feet.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Spruce Cabins | Private Cabins in Cloudcroft, NM</title>
+    <link href="https://discovercloudcroft.com/stay/spruce-cabins.html" />
+    <id>https://discovercloudcroft.com/stay/spruce-cabins.html</id>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <summary>Spruce Cabins offers private cabins in Cloudcroft starting at $89/night. Simple, independent cabin lodging with online booking and military/senior discounts.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Osha Trail Lodging</title>
+    <link href="https://discovercloudcroft.com/stay/osha-trail.html" />
+    <id>https://discovercloudcroft.com/stay/osha-trail.html</id>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <summary>Osha Trail Lodging is a small apartment-style lodging complex on Mexican Avenue in central Cloudcroft.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>The Grand Cloudcroft Hotel | Booking guide 2026</title>
+    <link href="https://discovercloudcroft.com/stay/grand-cloudcroft-hotel.html" />
+    <id>https://discovercloudcroft.com/stay/grand-cloudcroft-hotel.html</id>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <summary>The Grand Cloudcroft Hotel: indoor year-round pool and hot tub (unique in Cloudcroft), 50 modern rooms with complimentary breakfast, 24-hour front desk</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Dusty Boots Motel and Cafe</title>
+    <link href="https://discovercloudcroft.com/stay/dusty-boots-motel-cloudcroft.html" />
+    <id>https://discovercloudcroft.com/stay/dusty-boots-motel-cloudcroft.html</id>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <summary>Dusty Boots Motel and Cafe on James Canyon Highway in Cloudcroft, NM. 16 themed rooms (I Love Lucy, Harry Potter, Roy Rogers, and more)</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>The Crofting Bed and Breakfast</title>
+    <link href="https://discovercloudcroft.com/stay/crofting-inn-cloudcroft.html" />
+    <id>https://discovercloudcroft.com/stay/crofting-inn-cloudcroft.html</id>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <summary>The Crofting is a 1909 historic home turned bed and breakfast in Cloudcroft, NM. 8 individually decorated rooms, full home-cooked breakfast at 8:30 a.m.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Cloudcroft Hostel</title>
+    <link href="https://discovercloudcroft.com/stay/cloudcroft-hostel.html" />
+    <id>https://discovercloudcroft.com/stay/cloudcroft-hostel.html</id>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <summary>Cloudcroft Hostel is a real mountain hostel for adventurers in High Rolls Mountain Park, NM.</summary>
+    <author>
+      <name>DiscoverCloudcroft editors</name>
+    </author>
+  </entry>
+
+</feed>
