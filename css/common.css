@@ -4710,12 +4710,13 @@ img {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
 
 
-  /* ===== SIGNUP MODAL (site-wide) ===== */
-  .signup-modal[hidden] {
-    display: none;
-  }
+/* ===== SIGNUP MODAL (site-wide) ===== */
+.signup-modal[hidden] {
+  display: none;
+}
 
   .signup-modal {
     position: fixed;
@@ -4949,13 +4950,10 @@ img {
     }
   }
 
-  @media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
 
-    .signup-modal__backdrop,
-    .signup-modal__panel {
-      animation: none;
-    }
+  .signup-modal__backdrop,
+  .signup-modal__panel {
+    animation: none;
   }
-
-
 }
