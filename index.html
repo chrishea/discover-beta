@@ -431,6 +431,36 @@
             gap: 1.5rem;
         }
 
+        /* Bonus EAT card — only shown at the 2-column breakpoint to fill the
+           orphan slot in row 2. Hidden at 3-up and 1-up so the grid stays
+           balanced. Breakpoints match .lodge-grid.is-grid-plus media queries. */
+        .eat-extra {
+            display: none;
+        }
+
+        @media (min-width: 641px) and (max-width: 1024px) {
+            .eat-extra {
+                display: block;
+            }
+        }
+
+        .card-soft-label {
+            position: absolute;
+            top: 0.6rem;
+            left: 0.6rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 0.66rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 0.35rem 0.7rem;
+            border-radius: 4px;
+            z-index: 2;
+            backdrop-filter: blur(4px);
+        }
+
         .lodge-card.card-plus {
             padding: 0;
             border-top: none;
@@ -2075,7 +2105,7 @@
         <!-- ================================ EAT ================================ -->
         <section class="hub-block" id="eat" aria-label="Where to eat">
             <div class="hub-block-head">
-                <span class="eyebrow">Eight featured restaurants</span>
+                <span class="eyebrow">Three featured restaurants</span>
                 <h2>Where to eat</h2>
                 <p>The dining scene is small but surprisingly good — BBQ joints, New Mexico's highest craft brewery, a
                     beloved diner, bowling plus burgers, and a historic fine-dining room.</p>
@@ -2131,63 +2161,10 @@
                     </div>
                 </article>
 
-                <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">3</span>
-                    <img src="eat/eat-photo/dusty-boots/dusty-cafe-03563.jpg" width="720" height="540"
-                        alt="Dusty Boots Café interior with wood-burning stove and wood-floor dining room"
-                        loading="lazy" decoding="async">
-                    <div class="card-body">
-                        <div class="card-head">
-                            <h3>Dusty Boots Caf&eacute;</h3>
-                            <span class="cat-tag cat-eat">Caf&eacute;</span>
-                        </div>
-                        <span class="property-type type-inline">James Canyon Hwy &middot; scratch breakfast</span>
-                        <p class="card-desc">A Wiley-family motel caf&eacute; where 90% of the menu is made from
-                            scratch.
-                            Breakfast served until noon (try the hiker-boot omelette), a recently added taco cantina,
-                            and
-                            select-Saturday German Night dinners. Opento the public &mdash; expect a wait on weekend
-                            mornings.</p>
-                        <div class="amenities">
-                            <span class="amenity">Scratch kitchen</span>
-                            <span class="amenity">Tacos cantina</span>
-                            <span class="amenity">German Night</span>
-                        </div>
-                        <div class="card-foot">
-                            <a href="eat/dusty-boots-cafe.html" class="lodge-card-guide">Read full guide
-                                &rarr;</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">4</span>
-                    <img src="eat/eat-photo/brewery/brewery-00559.jpeg" width="480" height="640"
-                        alt="Cloudcroft Brewing Co. taproom" loading="lazy" decoding="async">
-                    <div class="card-body">
-                        <div class="card-head">
-                            <h3>Cloudcroft Brewing Co.</h3>
-                            <span class="cat-tag cat-eat">Brewery</span>
-                        </div>
-                        <span class="property-type type-inline">New Mexico's highest craft brewery</span>
-                        <p class="card-desc">New Mexico's highest craft brewery. The tap list changes seasonally with
-                            ales, IPAs, and lagers brewed on-site. The deck is the best place for a mountain sunset with
-                            a pint.</p>
-                        <div class="amenities">
-                            <span class="amenity">Craft beer</span>
-                            <span class="amenity">Deck</span>
-                            <span class="amenity">Seasonal taps</span>
-                        </div>
-                        <div class="card-foot">
-                            <a href="eat/brewery.html" class="lodge-card-guide">Read full guide &rarr;</a>
-                        </div>
-                    </div>
-                </article>
-
                 <article class="lodge-card card-plus fade-in" data-property="highrollin"
                     data-meal="breakfast coffee lunch sweet" data-style="coffee" data-region="highway"
                     data-reservable="false" data-late="false" data-family="true">
-                    <span class="card-pin" aria-hidden="true">5</span>
+                    <span class="card-pin" aria-hidden="true">3</span>
                     <img src="eat/eat-photo/high-rollin/high-rollin-00556.jpg" width="640" height="480"
                         alt="High Rollin' Coffee on James Canyon Highway" loading="lazy" decoding="async">
                     <div class="card-body">
@@ -2215,131 +2192,36 @@
                     </div>
                 </article>
 
-                <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">6</span>
-                    <img src="eat/eat-photo/western-bar/western-bar-00555.jpg" width="640" height="430"
-                        alt="Western Bar and Cafe in Cloudcroft" loading="lazy" decoding="async">
+                <article class="lodge-card card-plus fade-in eat-extra">
+                    <span class="card-soft-label">Also on Burro</span>
+                    <img src="eat/eat-photo/black-bear/black-bear-03560.jpg" width="750" height="743"
+                        alt="Black Bear Coffee Shop on Burro Avenue" loading="lazy" decoding="async">
                     <div class="card-body">
                         <div class="card-head">
-                            <h3>Western Bar &amp; Café</h3>
-                            <span class="cat-tag cat-eat">Bar</span>
+                            <h3>Black Bear Coffee Shop</h3>
+                            <span class="cat-tag cat-eat">Coffee</span>
                         </div>
-                        <span class="property-type type-inline">Local bar · live music weekends</span>
-                        <p class="card-desc">Cold beer, bar food, and live music some weekends. The kind of place where
-                            locals end up after a long day on the trails. Cash-friendly and genuinely fun on a Saturday
-                            night.</p>
+                        <span class="property-type type-inline">Coffee counter &amp; rotating art gallery &middot; 200
+                            Burro Ave</span>
+                        <p class="card-desc">Crystal and Nathan Tompkins' shop doubles as a monthly-rotating art gallery.
+                            Seasonal drinks (honey chai, strawberry-rose matcha), house-roasted beans to take home, and
+                            GF/DF/sugar-free options.</p>
                         <div class="amenities">
-                            <span class="amenity">Locals spot</span>
-                            <span class="amenity">Live music</span>
-                            <span class="amenity">Cash-friendly</span>
+                            <span class="amenity">Art gallery</span>
+                            <span class="amenity">Seasonal drinks</span>
+                            <span class="amenity">GF / DF</span>
                         </div>
                         <div class="card-foot">
-                            <a href="eat/western-bar.html" class="lodge-card-guide">Read full guide &rarr;</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">7</span>
-                    <img src="eat/eat-photo/big-daddys/big-daddys-00556.jpg" width="330" height="220"
-                        alt="Big Daddy's Diner in Cloudcroft" loading="lazy" decoding="async">
-                    <div class="card-body">
-                        <div class="card-head">
-                            <h3>Big Daddy's Diner</h3>
-                            <span class="cat-tag cat-eat">Breakfast</span>
-                        </div>
-                        <span class="property-type type-inline">Go-to breakfast · big portions</span>
-                        <p class="card-desc">The go-to breakfast spot. Big portions, good coffee, friendly service. The
-                            green chile omelet and pancakes are the regulars' orders. Gets busy by 9am on weekends.</p>
-                        <div class="amenities">
-                            <span class="amenity">Breakfast</span>
-                            <span class="amenity">Green chile</span>
-                            <span class="amenity">Arrive early</span>
-                        </div>
-                        <div class="card-foot">
-                            <a href="eat/big-daddys.html" class="lodge-card-guide">Read full guide &rarr;</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">8</span>
-                    <img src="eat/eat-photo/brother-in-law-bbq/image-brother-in-law-bbq.jpg" width="2048" height="1348"
-                        alt="Brother-N-Law BBQ in Cloudcroft" loading="lazy" decoding="async">
-                    <div class="card-body">
-                        <div class="card-head">
-                            <h3>Brother-N-Law BBQ</h3>
-                            <span class="cat-tag cat-eat">BBQ</span>
-                        </div>
-                        <span class="property-type type-inline">Local favorite · hearty smoked plates</span>
-                        <p class="card-desc">A local favorite for hearty portions of smoked meats and classic sides.
-                            More casual than Mad Jack's and often less crowded — a solid backup plan that's earned its
-                            own loyal following.</p>
-                        <div class="amenities">
-                            <span class="amenity">Casual</span>
-                            <span class="amenity">Less crowded</span>
-                            <span class="amenity">Hearty</span>
-                        </div>
-                        <div class="card-foot">
-                            <a href="eat/brother-n-law-bbq.html" class="lodge-card-guide">Read full guide &rarr;</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">9</span>
-                    <img src="eat/eat-photo/cloudcroft-sandwich/cloudcroft-sandwich-00022.webp" width="500" height="500"
-                        alt="Cloudcroft Sandwich Shop on Burro Avenue" loading="lazy" decoding="async">
-                    <div class="card-body">
-                        <div class="card-head">
-                            <h3>Cloudcroft Sandwich Shop</h3>
-                            <span class="cat-tag cat-eat">Sandwich</span>
-                        </div>
-                        <span class="property-type type-inline">Downtown counter · jumbo cookies</span>
-                        <p class="card-desc">A downtown Burro Avenue counter for subs, paninis, soup, salads,
-                            fresh-baked jumbo cookies, and soft-serve. Open daily 11 AM–4 PM; closed Wednesdays. Locals
-                            recommend the BLT with jalape&ntilde;os.</p>
-                        <div class="amenities">
-                            <span class="amenity">On Burro</span>
-                            <span class="amenity">Soft-serve</span>
-                            <span class="amenity">Closed Wed</span>
-                        </div>
-                        <div class="card-foot">
-                            <a href="eat/cloudcroft-sandwich-shop.html" class="lodge-card-guide">Read full guide
-                                &rarr;</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">10</span>
-                    <img src="eat/eat-photo/cloudys/cloudys-00111.jpeg" width="960" height="720"
-                        alt="Pine-board pantry shelves at Cloudy's Market on Mexican Avenue in Cloudcroft" loading="lazy" decoding="async">
-                    <div class="card-body">
-                        <div class="card-head">
-                            <h3>Cloudy's Market</h3>
-                            <span class="cat-tag cat-eat">Market</span>
-                        </div>
-                        <span class="property-type type-inline">Neighborhood grocery &middot; 102 Mexican Ave</span>
-                        <p class="card-desc">Cloudcroft's neighborhood grocery, opened May 2026 &mdash; fresh produce,
-                            meat, deli items, pantry staples, and locally sourced goods. Open daily 10 AM&ndash;6 PM,
-                            just behind Burro.</p>
-                        <div class="amenities">
-                            <span class="amenity">Produce &amp; deli</span>
-                            <span class="amenity">Pantry staples</span>
-                            <span class="amenity">Open daily</span>
-                        </div>
-                        <div class="card-foot">
-                            <a href="eat/cloudys.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                            <a href="eat/black-bear-coffee-shop.html" class="lodge-card-guide">Read full guide &rarr;</a>
                         </div>
                     </div>
                 </article>
 
             </div>
 
-            <div style="text-align: center; margin-top: 2.5rem;">
-                <a href="eat/complete-guide-where-to-eat-in-cloudcroft.html" class="btn-primary">See All
-                    Restaurants</a>
+            <div style="text-align: center; margin-top: 3.5rem;">
+                <a href="eat/complete-guide-where-to-eat-in-cloudcroft.html" class="btn-primary"
+                    style="padding: 1.1rem 2.4rem; font-size: 1rem; letter-spacing: 0.08em;">See All Restaurants</a>
             </div>
         </section>
 
