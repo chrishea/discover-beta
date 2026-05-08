@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mountain Magic, Cloudcroft NM (2026)</title>
     <meta name="description"
-        content="Mountain Magic at 508 Burro Avenue — Cloudcroft's family-run gift, souvenir, and country home-goods anchor. Cloudcroft shirts, woodland toys, baby gifts, candles, braided rugs, and a 1969 Ford pickup out front. Open daily 10–5.">
+        content="Mountain Magic on Burro Avenue in Cloudcroft — 20+ years of Cloudcroft shirts, woodland toys, baby gifts, candles, rugs and country home goods from Cressie Brown.">
     <link rel="canonical" href="https://discovercloudcroft.com/shop/mountain-magic.html">
 
     <meta property="og:title" content="Mountain Magic, Cloudcroft NM (2026) — The Biggest Little Store on Burro Ave">
@@ -39,7 +39,6 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Serif:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="preload" as="image" href="shop-photo/mountain-magic/mountain-magic-2071.jpg" fetchpriority="high">
 
     <script type="application/ld+json">
     {
@@ -47,7 +46,6 @@
       "@type": "Store",
       "name": "Mountain Magic",
       "url": "https://discovercloudcroft.com/shop/mountain-magic.html",
-      "image": "https://discovercloudcroft.com/shop/shop-photo/mountain-magic/mountain-magic-2071.jpg",
       "description": "Family-run Cloudcroft gift, souvenir, and home-goods shop on Burro Avenue, owned and operated by Cressie Brown for more than 20 years. Cloudcroft-branded shirts, woodland toys, baby gifts, candles, braided rugs, and country home décor packed into one densely stocked storefront.",
       "address": {
         "@type": "PostalAddress",
@@ -65,7 +63,7 @@
       },
       "slogan": "The Biggest Little Store in Town",
       "openingHours": "Mo-Su 10:00-17:00",
-      "dateModified": "2026-05-08"
+      "dateModified": "2026-05-01"
     }
     </script>
 
@@ -104,8 +102,68 @@
         .hero-overlay {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0.6));
         }
-    </style>
 
+        .stat {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        /* ---- Location + map ---- */
+
+        .location-info+.location-info {
+            margin-top: 1rem;
+        }
+
+        /* ---- Practical notes accordion ---- */
+
+        .note>summary {
+            list-style: none;
+            padding: 1.1rem 2.5rem 1.1rem 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .note>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .note>summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #666;
+        }
+
+        .note[open]>summary::after {
+            content: '−';
+        }
+
+        .note .note-body p+p {
+            margin-top: 0.65rem;
+        }
+
+        .site-footer .footer-brand {
+            font-family: 'IBM Plex Serif', serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-right: 0.5rem;
+        }
+    </style>
     <script type="application/ld+json">
     {
   "@context": "https://schema.org",
@@ -138,6 +196,7 @@
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
+    <!-- HEADER (paths relative to /shop/) -->
     <header class="site-header" role="banner">
         <div class="header-inner">
 
@@ -177,44 +236,45 @@
         </nav>
     </header>
 
+    <!-- HERO -->
     <section class="hero hero-split" aria-label="Page hero">
         <div class="hero-bg" role="img"
-            aria-label="Mountain Magic storefront with the 1969 Ford pickup parked in front on Burro Avenue in Cloudcroft, beneath the painted Biggest Little Store in Town sign">
+            aria-label="Mountain Magic storefront with the 1969 Ford pickup parked in front on Burro Avenue in Cloudcroft">
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-split-grid">
             <div class="hero-left">
-                <span class="hero-eyebrow-pill">508 Burro Ave &middot; gifts &amp; souvenirs &middot; 2026</span>
+                <span class="hero-eyebrow-pill">508 Burro Ave · gifts &amp; souvenirs · 2026</span>
                 <h1>Mountain Magic.</h1>
-                <p class="hero-deck">The Biggest Little Store in Town &mdash; twenty-plus years of Cloudcroft shirts,
-                    woodland toys, baby gifts, candles, braided rugs, and country home goods packed wall-to-wall in one
-                    Burro Avenue storefront, with a 1969 Ford pickup parked out front.</p>
-                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> &middot; Published May 8, 2026
-                    &middot; Last verified May 2026</p>
+                <p class="hero-deck">The Biggest Little Store in Town — twenty-plus years of Cloudcroft shirts, woodland
+                    toys, baby gifts, candles, braided rugs, and country home goods packed wall-to-wall in one Burro
+                    Avenue storefront, with a 1969 Ford pickup parked out front.</p>
+                <p class="hero-byline"><strong>DiscoverCloudcroft editors</strong> · Published May 2, 2026 &middot; Last
+                    verified May 2026</p>
             </div>
             <aside class="atglance" aria-label="At a glance">
                 <div class="atglance-head">
                     <h2>At a glance</h2>
-                    <span class="open-now" role="status">Open daily &middot; 10&ndash;5</span>
+                    <span class="open-now" role="status">Open daily · 10–5</span>
                 </div>
                 <dl class="atglance-rows">
                     <div>
                         <dt>Address</dt>
                         <dd><a href="https://www.google.com/maps/search/?api=1&query=Mountain%20Magic%20508%20Burro%20Avenue%20Cloudcroft%20NM"
-                                target="_blank" rel="noopener noreferrer">508 Burro Ave (per storefront sign) &middot;
+                                target="_blank" rel="noopener noreferrer">508 Burro Ave (per storefront sign) ·
                                 Cloudcroft, NM</a></dd>
                     </div>
                     <div>
                         <dt>Hours</dt>
-                        <dd>10:00 a.m. &ndash; 5:00 p.m. daily (call ahead in winter)</dd>
+                        <dd>10:00 a.m. – 5:00 p.m. daily (call ahead in winter)</dd>
                     </div>
                     <div>
                         <dt>Phone</dt>
                         <dd><a href="tel:+15756822348">(575) 682-2348</a></dd>
                     </div>
                     <div>
-                        <dt>Category &middot; price</dt>
-                        <dd>Gifts &middot; souvenirs &middot; country home goods &middot; $</dd>
+                        <dt>Category · price</dt>
+                        <dd>Gifts · souvenirs · country home goods · $</dd>
                     </div>
                 </dl>
                 <div class="atglance-cta">
@@ -226,6 +286,7 @@
         </div>
     </section>
 
+    <!-- SIGNALS -->
     <div class="signals" aria-label="What to expect">
         <div class="signals-inner">
             <span class="signals-label">Signals</span>
@@ -244,11 +305,12 @@
         </div>
     </div>
 
+    <!-- STATS -->
     <div class="stats-strip" aria-label="Snapshot">
         <div class="stats-strip-inner">
             <div class="stat"><span class="stat-num">Pin 12</span><span class="stat-label">Shopping-guide map</span>
             </div>
-            <div class="stat"><span class="stat-num">~2003</span><span class="stat-label">Established </span>
+            <div class="stat"><span class="stat-num">~2003</span><span class="stat-label">Established (approx.)</span>
             </div>
             <div class="stat"><span class="stat-num">20+ yrs</span><span class="stat-label">Browns on Burro Ave</span>
             </div>
@@ -258,14 +320,15 @@
         </div>
     </div>
 
+    <!-- STICKY TOC -->
     <nav class="toc-nav" aria-label="Table of contents">
         <div class="toc-nav-inner">
-            <a href="#gallery" class="toc-pill">Gallery</a>
             <a href="#shop" class="toc-pill">Shop</a>
             <a href="#buy" class="toc-pill">What I'd buy</a>
+            <a href="#gallery" class="toc-pill">Gallery</a>
             <a href="#hours" class="toc-pill">Hours</a>
             <a href="#location" class="toc-pill">Location</a>
-            <a href="#goodfor" class="toc-pill">Good for &middot; skip if</a>
+            <a href="#goodfor" class="toc-pill">Good for · skip if</a>
             <a href="#notes" class="toc-pill">Practical notes</a>
             <a href="#editor" class="toc-pill">Editor's take</a>
         </div>
@@ -273,48 +336,26 @@
 
     <main id="main-content" role="main">
 
+        <!-- THESIS -->
         <div class="thesis">
             <p>The 20-year family-run gift-and-souvenir anchor on Burro Avenue. Cloudcroft shirts, woodland toys, baby
-                gifts, candles, rugs, and country home goods packed into one densely stocked storefront &mdash; with a
-                1969 Ford pickup parked out front for the photograph.</p>
-            <span class="thesis-meta">Cressie &amp; Dwayne Brown &middot; 508 Burro Ave &middot; open daily 10&ndash;5
-                &middot; gift-shop pricing</span>
+                gifts, candles, rugs, and country home goods packed into one densely stocked storefront — with a 1969
+                Ford pickup parked out front for the photograph.</p>
+            <span class="thesis-meta">Cressie &amp; Dwayne Brown · 508 Burro Ave · open daily 10–5 · gift-shop
+                pricing</span>
         </div>
 
-        <!-- ================================ GALLERY ================================ -->
-        <section class="gallery-section" id="gallery" aria-label="Photo gallery">
-            <div class="detail-block-head">
-                <span class="eyebrow">Six photos</span>
-                <h2>Gallery</h2>
-                <p>The 508 Burro Ave storefront with the painted "Biggest Little Store in Town" diamond sign, then a tour through the densely stocked interior — Cloudcroft-branded apparel, woodland plush and baby gifts, braided rugs, jarred candles, and country home décor layered across one shopfront.</p>
-            </div>
-            <div class="gallery-grid three-up">
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/5368D684-A6A9-4D4C-B684-1D9F119D86F5_1_105_c.jpeg" alt="Mountain Magic storefront on Burro Avenue with the diamond Biggest Little Store in Town sign above the boardwalk entry" loading="lazy">
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/mountain-magic-2071.jpg" alt="Mountain Magic entry detail with floral wreath, COME IN window lettering, Open sign, and Shop Local plaque" loading="lazy">
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/8B3E7C41-6511-40FF-B852-F02A8ED1C708_1_105_c.jpeg" alt="Wall of Cloudcroft-branded t-shirts and mountain-town apparel under a marquee arrow at Mountain Magic" loading="lazy">
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/12C053C7-743D-461F-9544-ABAF14E67C3D_1_105_c.jpeg" alt="Large yellow sun plush surrounded by woodland toys, plush bunnies, and baby gifts at Mountain Magic" loading="lazy">
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/mountain-magic-2078.jpg" alt="Braided rugs, jarred candles, and country home goods on the densely stocked shop floor at Mountain Magic" loading="lazy">
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/C47AD2D1-DB13-4D3D-8899-71CD4B35DAC2_1_105_c.jpeg" alt="Wood stove surrounded by hanging paper stars, country décor, and Highland Home cards at Mountain Magic" loading="lazy">
-                </figure>
-            </div>
-        </section>
-
+        <!-- ================================ SHOP ================================ -->
         <section class="detail-block" id="shop" aria-label="Shop the shop">
             <div class="detail-block-head">
-                <span class="eyebrow">Six categories &middot; rotating</span>
+                <span class="eyebrow">Six categories · rotating</span>
                 <h2>What's in the shop</h2>
-                <p>Mountain Magic is a working, daily-stocked Americana gift shop.</p>
+                <p>Mountain Magic is a working, daily-stocked Americana gift shop. Baby gifts, home decor, Cloudcroft
+                    shirts, stuffed animals, pajamas, lotions, purses, and gifts with a mountain feel. 2nd generation
+                    family-owned. Sit and stay warm by the old-fashioned wood-burning stove while your party shops in
+                    the winter. Owners Dwayne and Cressie Brown keep a fresh rotation of season decor, even for
+                    Valentine's Day. Don't miss a great photo op by the vintage blue Mountain Magic Truck on Burro.
+                    Established in 2003.</p>
             </div>
 
             <div class="menu-grid">
@@ -331,8 +372,8 @@
                         <li>Patchwork and country-style dresses</li>
                         <li>Aprons and wearable home goods</li>
                     </ul>
-                    <p class="order-hint">If you came for one thing, the Cloudcroft t-shirt is the obvious pickup
-                        &mdash; and the shop carries the village-branded line at gift-shop prices.</p>
+                    <p class="order-hint">If you came for one thing, the Cloudcroft t-shirt is the obvious pickup — and
+                        the shop carries the village-branded line at gift-shop prices.</p>
                 </article>
 
                 <article class="menu-card-plus">
@@ -341,16 +382,15 @@
                         <h3>Toys, plush &amp; baby gifts</h3>
                         <span class="specialty-chip">Strong stock</span>
                     </div>
-                    <p class="cat-lede">The shop's deepest specialty after apparel &mdash; woodland-themed and
-                        gift-ready.</p>
+                    <p class="cat-lede">The shop's deepest specialty after apparel — woodland-themed and gift-ready.</p>
                     <ul>
                         <li>Woodland-themed toys</li>
                         <li>Plush bears, sun characters, and stuffed animals</li>
                         <li>Baby gifts and giftable kid items</li>
-                        <li>Decorative wood and folk-art animals (rooster, horse, etc.)</li>
+                        <li>Decorative wood and folk-art animals</li>
                     </ul>
-                    <p class="order-hint">Plush and baby gifts are stocked deep enough to actually pick from &mdash;
-                        not a token end-cap.</p>
+                    <p class="order-hint">Plush and baby gifts are stocked deep enough to actually pick from — not a
+                        token end-cap.</p>
                 </article>
 
                 <article class="menu-card-plus">
@@ -373,7 +413,7 @@
                     <div class="cat-head">
                         <h3>Rugs, blankets &amp; soft goods</h3>
                     </div>
-                    <p class="cat-lede">Center-floor textiles &mdash; practical pieces in country-cabin patterns.</p>
+                    <p class="cat-lede">Center-floor textiles — practical pieces in country-cabin patterns.</p>
                     <ul>
                         <li>Braided and hooked rugs, runners, and rounds</li>
                         <li>Throw blankets and quilted goods</li>
@@ -394,9 +434,9 @@
                         <li>Rooster, horse, and farm-animal décor</li>
                         <li>Seasonal items (Easter pastels visible in spring photos)</li>
                         <li>Painted dressers and antique-style cabinets</li>
-                        <li>Religious and inspirational wall art and stitched textile pieces</li>
+                        <li>Religious and inspirational wall art</li>
                     </ul>
-                    <p class="order-hint">Style runs Americana and country, not contemporary or designer &mdash; go in
+                    <p class="order-hint">Style runs Americana and country, not contemporary or designer — go in
                         expecting the cabin, not the gallery.</p>
                 </article>
 
@@ -418,43 +458,8 @@
 
             </div>
         </section>
-        <section class="gallery-section" id="gallery" aria-label="Photo gallery">
-            <div class="detail-block-head">
-                <span class="eyebrow">Five photos</span>
-                <h2>Gallery</h2>
-                <p>The 508 Burro Ave storefront with the 1969 Ford pickup, the painted "Biggest Little Store in Town"
-                    sign over the entry, and a tour through the densely stocked interior &mdash; candles, rugs, plush,
-                    country décor, and Cloudcroft apparel layered across one shopfront.</p>
-            </div>
-            <div class="gallery-grid three-up">
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/mountain-magic-2071.jpg"
-                        alt="Mountain Magic storefront on Burro Avenue with the painted Biggest Little Store in Town sign and the 1969 Ford pickup parked out front"
-                        loading="lazy">
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/mountain-magic-2072.jpg"
-                        alt="Storefront entry detail at Mountain Magic with the OPEN sign, Shop Local plaque, and the There's no place like this place placard above the door"
-                        loading="lazy">
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/mountain-magic-2074.jpg"
-                        alt="Interior view of Mountain Magic with packed shelving, country-cabin décor, and rotating gift inventory"
-                        loading="lazy">
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/mountain-magic-2078.jpg"
-                        alt="Plush, toys, and woodland décor at Mountain Magic with stuffed sun and bear figures"
-                        loading="lazy">
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="shop-photo/mountain-magic/mountain-magic-2080.jpg"
-                        alt="Candles, country home décor, and braided rugs filling the Mountain Magic shop floor"
-                        loading="lazy">
-                </figure>
-            </div>
-        </section>
 
+        <!-- ================================ WHAT I'D BUY ================================ -->
         <section class="picks-section" id="buy" aria-label="What I'd buy">
             <div class="picks-wrap">
                 <h2>What I'd buy</h2>
@@ -468,32 +473,78 @@
                     </div>
                     <div class="pick">
                         <span class="pick-for">A take-home that isn't a magnet</span>
-                        <blockquote>"A jarred candle from the candle wall &mdash; one of the shop's photographed
-                            signature displays. Smells like the season you visited; travels better than a tchotchke."
-                        </blockquote>
+                        <blockquote>"A jarred candle from the candle wall — one of the shop's photographed signature
+                            displays. Smells like the season you visited; travels better than a tchotchke."</blockquote>
                         <p class="pick-name">Jarred candle</p>
                     </div>
                     <div class="pick">
                         <span class="pick-for">Shopping for a small kid</span>
                         <blockquote>"A baby gift or a woodland toy. Plush, kid-friendly woodland décor, and small baby
-                            gifts are the strongest specialty after apparel &mdash; stocked deep enough to actually
-                            pick from."</blockquote>
+                            gifts are the strongest specialty after apparel — stocked deep enough to actually pick
+                            from."</blockquote>
                         <p class="pick-name">Baby gift or woodland toy</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ================================ GALLERY ================================ -->
+        <section class="gallery-section" id="gallery" aria-label="Photo gallery">
+            <div class="detail-block-head">
+                <span class="eyebrow">Five photos</span>
+                <h2>Gallery</h2>
+                <p>The 508 Burro Ave storefront with the 1969 Ford pickup, the painted "Biggest Little Store in Town"
+                    sign over the entry, and a tour through the densely stocked interior — candles, rugs, plush, country
+                    décor, and Cloudcroft apparel layered across one shopfront.</p>
+            </div>
+            <div class="gallery-grid three-up">
+                <figure class="gallery-figure">
+                    <img src="shop-photo/mountain-magic/mountain-magic-2071.jpg"
+                        alt="Mountain Magic storefront on Burro Avenue with the painted Biggest Little Store in Town sign and the 1969 Ford pickup parked out front"
+                        loading="lazy">
 
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="shop-photo/mountain-magic/mountain-magic-2072.jpg"
+                        alt="Storefront entry detail at Mountain Magic with OPEN sign and Shop Local plaque"
+                        loading="lazy">
+
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="shop-photo/mountain-magic/mountain-magic-2074.jpg"
+                        alt="Interior view of Mountain Magic with packed shelving, country-cabin décor, and rotating gift inventory"
+                        loading="lazy">
+
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="shop-photo/mountain-magic/mountain-magic-2078.jpg"
+                        alt="Plush, toys, and woodland décor at Mountain Magic" loading="lazy">
+
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="shop-photo/mountain-magic/mountain-magic-2080.jpg"
+                        alt="Candles, country home décor, and rugs filling the Mountain Magic shop floor"
+                        loading="lazy">
+
+                </figure>
+            </div>
+        </section>
+
+        <!-- ================================ HOURS ================================ -->
         <section class="hours-section" id="hours" aria-label="Hours">
             <div class="detail-block-head">
                 <span class="eyebrow">Open daily</span>
                 <h2>Hours</h2>
-                <p>Mountain Magic open 10:00 a.m. to 5:00 p.m. seven days a week. .</p>
+                <p>The local listings file shows Mountain Magic open 10:00 a.m. to 5:00 p.m. seven days a week. Yelp's
+                    directory page suggests a slightly tighter 10:00 a.m. – 4:30 p.m. Monday through Saturday window. We
+                    treat the listings-file hours as the working source and recommend a quick phone call before driving
+                    up in shoulder season or winter.</p>
             </div>
 
             <div class="hours-vary-card">
-
+                <h3>Weekly schedule</h3>
+                <p>Monday–Sunday: 10:00 a.m.–5:00 p.m. (per local listings file)<br>
+                    Yelp variant: 10:00 a.m.–4:30 p.m. Monday–Saturday.</p>
 
                 <div class="hours-check-list">
                     <a href="tel:+15756822348">
@@ -509,14 +560,15 @@
             </div>
         </section>
 
+        <!-- ================================ LOCATION ================================ -->
         <section class="location-section" id="location" aria-label="Location">
             <div class="detail-block-head">
                 <span class="eyebrow">Burro Avenue boardwalk</span>
                 <h2>Where you'll find it</h2>
-                <p>Right on the Burro Avenue boardwalk, next door to Poke The Bear (the former Rendezvous storefront
-                    the Browns previously operated). The painted storefront sign reads 508 Burro Ave; some third-party
-                    directories list 504 or 506 &mdash; treat the signage as the most authoritative source and walk the
-                    block to confirm.</p>
+                <p>Right on the Burro Avenue boardwalk, next door to Poke The Bear (the former Rendezvous storefront the
+                    Browns previously operated). The painted storefront sign reads 508 Burro Ave; some third-party
+                    directories list 504 or 506 — treat the signage as the most authoritative source and walk the block
+                    to confirm.</p>
             </div>
 
             <div class="location-grid">
@@ -602,23 +654,27 @@
                         <p>508 Burro Avenue<br>
                             Cloudcroft, NM 88317</p>
                         <p>Directly on the Burro Avenue boardwalk, next to Poke The Bear (formerly the Rendezvous
-                            storefront). </p>
+                            storefront). Third-party directory listings show 504 or 506 — the painted storefront sign
+                            reads 508, and that's what we lead with.</p>
                         <p><a href="https://www.google.com/maps/search/?api=1&query=Mountain%20Magic%20508%20Burro%20Avenue%20Cloudcroft%20NM"
                                 target="_blank" rel="noopener noreferrer">Search on Google Maps &rarr;</a></p>
                     </div>
                     <div class="location-info">
                         <h3>Contact</h3>
                         <p>Phone: <a href="tel:+15756822348">(575) 682-2348</a></p>
-
+                        <p>No business-controlled website is confirmed in primary sources. A Facebook page
+                            (facebook.com/mountainmagical) surfaces in search results but couldn't be verified in this
+                            pass — the phone number is the most reliable channel.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ================================ GOOD FOR / SKIP IF ================================ -->
         <section class="goodfor-section" id="goodfor" aria-label="Good for and skip if">
             <div class="detail-block-head">
                 <span class="eyebrow">Decision aid</span>
-                <h2>Good for &middot; skip if</h2>
+                <h2>Good for · skip if</h2>
                 <p>What Mountain Magic actually does well, and where to point yourself instead when it isn't the right
                     fit on the Burro Avenue strip.</p>
             </div>
@@ -641,14 +697,14 @@
                 <div class="goodfor-card skip">
                     <h3>Skip if</h3>
                     <ul>
-                        <li>You want curated handmade-gift editing &mdash; go to <a href="aspen-and-ivy.html">Aspen
-                                &amp; Ivy</a></li>
-                        <li>You want vintage and humor-driven gifts &mdash; go to <a href="poke-the-bear.html">Poke The
+                        <li>You want curated handmade-gift editing — go to <a href="aspen-and-ivy.html">Aspen &amp;
+                                Ivy</a></li>
+                        <li>You want vintage rummage and used books — go to <a href="poke-the-bear.html">Poke The
                                 Bear</a> next door</li>
-                        <li>You want New Mexico-made pantry, boots, and contemporary general retail &mdash; go to <a
+                        <li>You want New Mexico-made pantry, boots, and contemporary general retail — go to <a
                                 href="the-highland.html">The Highland</a> on James Canyon Hwy</li>
-                        <li>You want a clean boutique-style floor &mdash; Mountain Magic is dense by design</li>
-                        <li>You need fine turquoise or Southwestern jewelry &mdash; try <a
+                        <li>You want a clean boutique-style floor — Mountain Magic is dense by design</li>
+                        <li>You need fine turquoise or Southwestern jewelry — try <a
                                 href="burro-ave-trading-post.html">Burro Ave Trading Post</a> or <a
                                 href="turquoise.html">The Turquoise Shop</a></li>
                     </ul>
@@ -656,16 +712,19 @@
             </div>
         </section>
 
+        <!-- ================================ PRACTICAL NOTES ================================ -->
         <section class="notes-section" id="notes" aria-label="Practical notes">
             <h2>Practical notes</h2>
 
             <details class="note">
-                <summary>Address &mdash; 504, 506, or 508?</summary>
+                <summary>Address — 504, 506, or 508?</summary>
                 <div class="note-body">
                     <p>The painted storefront sign at the shop reads "Mountain Magic, 508 Burro Ave, The Biggest Little
-                        Store in Town."</p>
+                        Store in Town" — confirmed in April 2026 photo evidence and Cloudcroft Chamber coverage. Yelp
+                        and TripAdvisor list the address as 504 Burro Ave; Loc8NearMe and the local listings file show
+                        506. Treat 508 as the storefront-signage address and the others as legacy directory entries.</p>
                     <p>If you're navigating by GPS, anything in the 500-block of Burro will put you within a 30-second
-                        walk of the door &mdash; the storefront sign and the antique pickup are easy to spot from the
+                        walk of the door — the storefront sign and the antique pickup are easy to spot from the
                         boardwalk.</p>
                 </div>
             </details>
@@ -673,61 +732,72 @@
             <details class="note">
                 <summary>Hours, seasons &amp; calling ahead</summary>
                 <div class="note-body">
-                    <p>The shop is generally open 10:00 a.m. to 5:00 p.m. seven days a week, though hours can vary
-                        by season. </p>
-                    <p>Before making the drive up &mdash; especially in winter &mdash; call <a
-                            href="tel:+15756822348">(575) 682-2348</a> to confirm.</p>
+                    <p>Listings-file hours are 10:00 a.m. to 5:00 p.m. seven days a week. Yelp's variant (10:00
+                        a.m.–4:30 p.m., Monday through Saturday) is close enough to assume both reflect summer-pattern
+                        hours; winter and shoulder-season closures aren't documented in a primary source.</p>
+                    <p>Before making the drive up — especially in winter — call <a href="tel:+15756822348">(575)
+                            682-2348</a> to confirm.</p>
                 </div>
             </details>
 
             <details class="note">
                 <summary>Family ownership &amp; the Poke The Bear connection</summary>
                 <div class="note-body">
-                    <p>Owners Cressie and Dwayne Brown also previously operated the next-door Rendezvous storefront,
-                        which transitioned to
-                        Poke The Bear under new ownership.</p>
+                    <p>Mountain Magic has been owned and operated by Cressie Brown for more than 20 years, per
+                        Cloudcroft Chamber and Cloudcroft Reader coverage. Cressie's family homesteaded in nearby
+                        Mayhill in 1884; Dwayne Brown is a co-owner of record.</p>
+                    <p>The Browns also previously operated the next-door Rendezvous storefront, which transitioned to
+                        Poke The Bear under new ownership. Some of the same vendor goods and Cloudcroft-branded
+                        merchandise the Browns supply continue to appear at Poke The Bear — useful context if you're
+                        shopping the strip and noticing overlap.</p>
                 </div>
             </details>
 
-
-
+            <details class="note">
+                <summary>Payment, returns &amp; online sales</summary>
+                <div class="note-body">
+                    <p>Online sales and shipping aren't confirmed from a primary source — treat this as an in-person
+                        shop. Payment, return, and shipping policies aren't documented in current coverage; ask at the
+                        counter for anything that matters (gift returns, large textiles, fragile items).</p>
+                </div>
+            </details>
 
             <details class="note">
                 <summary>The 1969 Ford pickup out front</summary>
                 <div class="note-body">
-                    <p>The vintage Ford parked in front of the shop is a chamber-encouraged photo prop &mdash; the
-                        Cloudcroft Chamber's 2Cool Highlight feature explicitly invites visitors to take a picture with
-                        it. It's also the easiest landmark for finding the storefront on a busy boardwalk day.</p>
-                    <p>Above the entry, a placard reads <em>"There's no place like this place, so this must be the
-                            place"</em> &mdash; if you can see that and the OPEN sign, you're at the right door.</p>
+                    <p>The vintage Ford parked in front of the shop is a chamber-encouraged photo prop — the Cloudcroft
+                        Chamber's 2Cool Highlight feature explicitly invites visitors to take a picture with it. It's
+                        also the easiest landmark for finding the storefront on a busy boardwalk day.</p>
                 </div>
             </details>
 
             <details class="note">
                 <summary>Accessibility &amp; pets</summary>
                 <div class="note-body">
-                    <p>Specific accessibility details for the Mountain Magic storefront aren't documented; the
-                        boardwalk is generally step-up, and the densely stocked interior layout has narrow aisles
-                        between full-height shelving. Confirm at the door if mobility access matters.</p>
+                    <p>Specific accessibility details for the Mountain Magic storefront aren't documented; the boardwalk
+                        is generally step-up, and the densely stocked interior layout has narrow aisles between
+                        full-height shelving. Confirm at the door if mobility access matters.</p>
                     <p>Small well-behaved dogs on leash are generally tolerated at walkable Burro Avenue shops, but
                         check at the door rather than assuming.</p>
                 </div>
             </details>
         </section>
 
+        <!-- ================================ EDITOR'S TAKE ================================ -->
         <section class="editor-section" id="editor" aria-label="Editor's take">
             <div class="editor-wrap">
                 <h2>Editor's take</h2>
                 <blockquote>"Mountain Magic is the Burro Avenue shop that does what a small mountain-town gift store is
                     supposed to do, and has been doing it under the same family for more than two decades. Cloudcroft
-                    shirts, woodland toys, baby gifts, candles, braided rugs, and country décor packed wall-to-wall
-                    &mdash; not curated, not edited, just stocked. If you want one shop on the boardwalk that hands you
-                    both the souvenir and the gift for the kid back home, this is it. Park near the antique pickup,
-                    take the photo, then go inside."</blockquote>
-                <p class="byline">&mdash; DiscoverCloudcroft editors</p>
+                    shirts, woodland toys, baby gifts, candles, braided rugs, and country décor packed wall-to-wall —
+                    not curated, not edited, just stocked. If you want one shop on the boardwalk that hands you both the
+                    souvenir and the gift for the kid back home, this is it. Park near the antique pickup, take the
+                    photo, then go inside."</blockquote>
+                <p class="byline">— DiscoverCloudcroft editors</p>
             </div>
         </section>
 
+        <!-- ================================ HANDOFF ================================ -->
         <section class="handoff-section" id="handoff" aria-label="Nearby shops">
             <div class="handoff-head">
                 <h2>More on Burro Avenue</h2>
@@ -738,13 +808,12 @@
                 <a class="handoff-card" href="poke-the-bear.html">
                     <span class="lg-pin">11</span>
                     <h3>Poke The Bear</h3>
-                    <p>Eclectic gifts &middot; humor &middot; Bigfoot &middot; the Browns' former Rendezvous
-                        storefront, next door</p>
+                    <p>Vintage · used books · Bigfoot · the Browns' former Rendezvous storefront, next door</p>
                 </a>
                 <a class="handoff-card" href="aspen-and-ivy.html">
                     <span class="lg-pin">13</span>
                     <h3>Aspen &amp; Ivy</h3>
-                    <p>Curated handmade gifts &amp; original local art &middot; the boutique counterpoint</p>
+                    <p>Curated handmade gifts &amp; original local art · the boutique counterpoint</p>
                 </a>
                 <a class="handoff-card back-to-guide" href="complete-guide-where-to-shop-in-cloudcroft.html">
                     <span class="lg-pin">&#8617;</span>
@@ -761,7 +830,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="/" class="footer-brand-mark">DISCOVER <span>CLOUDCROFT</span></a>
-                    <p>An independent visitor's guide to Cloudcroft, NM, a mountain village at 8,676 ft in the
+                    <p>An independent visitor's guide to Cloudcroft, NM &mdash; a mountain village at 8,676 ft in the
                         Sacramento Mountains. Lodging, dining, activities, shopping, events, and seasonal travel
                         planning.</p>
                 </div>
@@ -812,6 +881,7 @@
     <script src="../js/common.js" defer></script>
     <script>
         (function () {
+            // ---- Fade-in ----
             var fadeObserver = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
@@ -824,6 +894,7 @@
                 fadeObserver.observe(el);
             });
 
+            // ---- TOC active-section tracking ----
             var tocPills = Array.prototype.slice.call(document.querySelectorAll('.toc-nav .toc-pill'));
             var sections = tocPills
                 .map(function (p) { return document.getElementById(p.getAttribute('href').replace('#', '')); })
