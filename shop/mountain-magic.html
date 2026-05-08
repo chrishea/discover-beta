@@ -70,6 +70,32 @@
     </script>
 
     <style>
+        /* =====================================================================
+           Mountain Magic — 2026 retail-detail rebuild.
+           Mirrors aspen-and-ivy.html / poke-the-bear.html structure for the
+           Burro Avenue shop-detail pattern.
+
+           HERO
+             - Real photo (mountain-magic-2071.jpg, storefront with the
+               1969 Ford pickup and the painted "Biggest Little Store in
+               Town" sign) used as background-image with overlay.
+
+           HOURS
+             - Listings-file consensus: 10:00 a.m. – 5:00 p.m. daily. Yelp
+               shows 10–4:30 Mon–Sat; treated as a footnote, not the
+               headline.
+
+           ADDRESS
+             - Storefront signage reads 508 Burro Ave; third-party
+               directories list 504 and 506. Page leads with 508 (sign is
+               the most authoritative source) and notes the listings
+               variance honestly in the location and notes sections.
+
+           PIN
+             - Pin 12 in the shopping guide. Sits between Poke The Bear
+               (11) and Aspen & Ivy (13). Map and stats reflect that.
+           ================================================================= */
+
         .hero-bg {
             background: url('shop-photo/mountain-magic/mountain-magic-2071.jpg') center 45% / cover no-repeat;
             filter: saturate(0.95);
@@ -219,17 +245,11 @@
 
     <div class="stats-strip" aria-label="Snapshot">
         <div class="stats-strip-inner">
-            <div class="stat"><span class="stat-num">Pin TBD</span><span class="stat-label">Shopping-guide map</span>
-            </div>
-            <div class="stat"><span class="stat-num">~2003</span><span class="stat-label">Established (approx.)</span>
-            </div>
-            <div class="stat"><span class="stat-num">20+ yrs</span><span class="stat-label">Browns on Burro Ave</span>
-            </div>
-            <div class="stat"><span class="stat-num">10&ndash;5</span><span class="stat-label">Daily hours
-                    (listings)</span>
-            </div>
-            <div class="stat"><span class="stat-num">$</span><span class="stat-label">Gift-shop pricing</span>
-            </div>
+            <div class="stat"><span class="stat-num">Pin 12</span><span class="stat-label">Shopping-guide map</span></div>
+            <div class="stat"><span class="stat-num">~2003</span><span class="stat-label">Established (approx.)</span></div>
+            <div class="stat"><span class="stat-num">20+ yrs</span><span class="stat-label">Browns on Burro Ave</span></div>
+            <div class="stat"><span class="stat-num">10–5</span><span class="stat-label">Daily hours (listings)</span></div>
+            <div class="stat"><span class="stat-num">$</span><span class="stat-label">Gift-shop pricing</span></div>
         </div>
     </div>
 
@@ -475,74 +495,50 @@
 
             <div class="location-grid">
                 <div class="map-figure" aria-hidden="true">
-                    <svg class="map-svg" viewBox="0 0 720 300" role="img"
-                        aria-label="Mountain Magic location on Burro Avenue">
-                        <rect width="720" height="300" fill="#f2ede3" />
+                    <svg class="map-svg" viewBox="0 0 720 300" role="img" aria-label="Mountain Magic location on Burro Avenue">
+                        <rect width="720" height="300" fill="#f2ede3"/>
 
-                        <rect x="40" y="160" width="640" height="14" fill="#d4c2a0" opacity="0.75" rx="2" />
-                        <text x="360" y="152" fill="#8a7352" text-anchor="middle"
-                            font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700"
-                            letter-spacing="3">BURRO AVENUE (west to east)</text>
+                        <!-- Burro Ave -->
+                        <rect x="40" y="160" width="640" height="14" fill="#d4c2a0" opacity="0.75" rx="2"/>
+                        <text x="360" y="152" fill="#8a7352" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="3">BURRO AVENUE (west to east)</text>
 
-                        <rect x="50" y="110" width="70" height="24" fill="#fff" opacity="0.55" rx="4" />
-                        <text x="85" y="125" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif"
-                            font-size="10" font-weight="700">WEST END</text>
-                        <rect x="605" y="110" width="70" height="24" fill="#fff" opacity="0.55" rx="4" />
-                        <text x="640" y="125" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif"
-                            font-size="10" font-weight="700">EAST END</text>
+                        <!-- West/East labels -->
+                        <rect x="50" y="110" width="70" height="24" fill="#fff" opacity="0.55" rx="4"/>
+                        <text x="85" y="125" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">WEST END</text>
+                        <rect x="605" y="110" width="70" height="24" fill="#fff" opacity="0.55" rx="4"/>
+                        <text x="640" y="125" fill="#444" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">EAST END</text>
 
-                        <g>
-                            <circle cx="200" cy="167" r="12" fill="#aaa" />
-                            <text x="200" y="171" fill="#fff" text-anchor="middle"
-                                font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">10</text>
-                        </g>
-                        <text x="200" y="110" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif"
-                            font-size="10">Coco Blu</text>
-                        <line x1="200" y1="113" x2="200" y2="155" stroke="#bbb" stroke-width="1"
-                            stroke-dasharray="2,2" />
+                        <!-- Coco Blu (10) - grey context -->
+                        <g><circle cx="200" cy="167" r="12" fill="#aaa"/><text x="200" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">10</text></g>
+                        <text x="200" y="110" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Coco Blu</text>
+                        <line x1="200" y1="113" x2="200" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
 
-                        <g>
-                            <circle cx="290" cy="167" r="12" fill="#aaa" />
-                            <text x="290" y="171" fill="#fff" text-anchor="middle"
-                                font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">11</text>
-                        </g>
-                        <text x="290" y="130" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif"
-                            font-size="10">Poke The Bear</text>
-                        <line x1="290" y1="133" x2="290" y2="155" stroke="#bbb" stroke-width="1"
-                            stroke-dasharray="2,2" />
+                        <!-- Poke The Bear (11) - grey context -->
+                        <g><circle cx="290" cy="167" r="12" fill="#aaa"/><text x="290" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">11</text></g>
+                        <text x="290" y="130" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Poke The Bear</text>
+                        <line x1="290" y1="133" x2="290" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
 
+                        <!-- Mountain Magic (12) - YOU ARE HERE -->
                         <g transform="translate(315, 240)">
                             <text x="0" y="0" fill="#000" font-family="IBM Plex Sans, sans-serif" font-size="9"
                                 font-weight="700" letter-spacing="2">YOU ARE HERE</text>
                         </g>
                         <g>
-                            <circle cx="380" cy="167" r="16" fill="#000" />
-                            <circle cx="380" cy="167" r="22" fill="none" stroke="#000" stroke-width="1.5"
-                                opacity="0.4" />
-                            <circle cx="380" cy="167" r="28" fill="none" stroke="#000" stroke-width="1" opacity="0.2" />
-                            <text x="380" y="172" fill="#fff" text-anchor="middle"
-                                font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">·</text>
+                            <circle cx="380" cy="167" r="16" fill="#000"/>
+                            <circle cx="380" cy="167" r="22" fill="none" stroke="#000" stroke-width="1.5" opacity="0.4"/>
+                            <circle cx="380" cy="167" r="28" fill="none" stroke="#000" stroke-width="1" opacity="0.2"/>
+                            <text x="380" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="700">12</text>
                         </g>
-                        <text x="380" y="200" fill="#000" text-anchor="middle" font-family="IBM Plex Serif, serif"
-                            font-size="14" font-weight="700">Mountain Magic</text>
-                        <text x="380" y="215" fill="#555" text-anchor="middle"
-                            font-family="IBM Plex Sans, sans-serif" font-size="10">508 Burro · pin TBD</text>
+                        <text x="380" y="200" fill="#000" text-anchor="middle" font-family="IBM Plex Serif, serif" font-size="14" font-weight="700">Mountain Magic</text>
+                        <text x="380" y="215" fill="#555" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">508 Burro · pin 12</text>
 
-                        <g>
-                            <circle cx="470" cy="167" r="12" fill="#aaa" />
-                            <text x="470" y="171" fill="#fff" text-anchor="middle"
-                                font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">12</text>
-                        </g>
-                        <text x="470" y="110" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif"
-                            font-size="10">Aspen &amp; Ivy</text>
-                        <line x1="470" y1="113" x2="470" y2="155" stroke="#bbb" stroke-width="1"
-                            stroke-dasharray="2,2" />
+                        <!-- Aspen & Ivy (13) - grey context -->
+                        <g><circle cx="470" cy="167" r="12" fill="#aaa"/><text x="470" y="171" fill="#fff" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="700">13</text></g>
+                        <text x="470" y="110" fill="#888" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10">Aspen &amp; Ivy</text>
+                        <line x1="470" y1="113" x2="470" y2="155" stroke="#bbb" stroke-width="1" stroke-dasharray="2,2"/>
 
                     </svg>
-                    <p class="map-footnote">Pin numbers match the <a
-                            href="complete-guide-where-to-shop-in-cloudcroft.html#map">shopping-guide map</a>. Mountain
-                        Magic's pin is not yet assigned in the guide. Schematic only &mdash; distances are approximate.
-                    </p>
+                    <p class="map-footnote">Pin numbers match the <a href="complete-guide-where-to-shop-in-cloudcroft.html#map">shopping-guide map</a>. Schematic only &mdash; distances are approximate.</p>
                 </div>
 
                 <div>
@@ -710,7 +706,7 @@
             <div class="handoff-head">
                 <h2>More on Burro Avenue</h2>
                 <p>Two peer shops on the same walkable strip &mdash; or jump back to the full shopping guide for all
-                    24.</p>
+                    25.</p>
             </div>
             <div class="handoff-grid">
                 <a class="handoff-card" href="poke-the-bear.html">
@@ -720,14 +716,14 @@
                         storefront, next door</p>
                 </a>
                 <a class="handoff-card" href="aspen-and-ivy.html">
-                    <span class="lg-pin">12</span>
+                    <span class="lg-pin">13</span>
                     <h3>Aspen &amp; Ivy</h3>
                     <p>Curated handmade gifts &amp; original local art &middot; the boutique counterpoint</p>
                 </a>
                 <a class="handoff-card back-to-guide" href="complete-guide-where-to-shop-in-cloudcroft.html">
                     <span class="lg-pin">&#8617;</span>
                     <h3>All shops in Cloudcroft</h3>
-                    <p>24 independent shops &middot; 1 walkable strip &middot; 0 chains</p>
+                    <p>25 independent shops · 1 walkable strip · 0 chains</p>
                 </a>
             </div>
         </section>

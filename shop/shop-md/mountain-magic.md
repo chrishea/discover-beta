@@ -172,11 +172,12 @@ Third-party listing sources put the founding year around 2003, which aligns with
 - **Posted hours from a business-controlled source.** Listings file says 10–5 daily; Yelp suggests 10–4:30 Mon–Sat. Reconcile with the shop directly.
 - **Exact founding year.** Third-party data points to 2003 and chamber coverage to "20 years as of 2024." Confirm the precise year with the owner.
 - **Any seasonal closures or reduced winter hours.**
-- **Whether Dwayne Brown is still actively involved day-to-day** versus Cressie running the shop solo.
+- Owners Dwayne and Cressie Brown
 - **Online sales / shipping.** Not confirmed from any primary source.
 - **Pin assignment** in `shop/shop-md/shop.md` — assign when the Burro Avenue pin map is next renumbered.
 - **Relationship between "Mountain Magic" and "Mountain Magic Market"** in third-party listings — likely the same store under a slightly different directory name; confirm.
 
 ## 13. Rules to Obey
 
-TBD — for owner / editor input.
+This is important to note in the write-up:  
+Baby gifts, home decor, Cloudcroft shirts, stuffed animals, pajamas, lotions, purses, and gifts with a mountain feel. 2nd generation family-owned. Sit and stay warm by the old-fashioned wood-burning stove while your party shops in the winter. Owners Dwayne and Cressie Brown keep a fresh rotation of season decor, even for Valentine's Day. Don't miss a great photo op by the vintage blue Mountain Magic Truck on Burro. Established in 2003.
