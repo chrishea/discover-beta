@@ -24,7 +24,7 @@
         content="A two-day fundraiser tournament at the Cloudcroft Village Courts. Men's, women's, and mixed doubles in advanced and intermediate brackets. 100% of proceeds support Cloudcroft Bear Basketball.">
     <meta property="og:url" content="https://discovercloudcroft.com/do/pickleball-tournament-2026.html">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://discovercloudcroft.com/pb/pb-tournament-June-2026.jpg">
+    <meta property="og:image" content="https://discovercloudcroft.com/do/pb/pb-tournament-June-2026.jpg">
     <meta property="og:image:alt"
         content="2nd Annual Pickleball in the Clouds tournament flyer — Cloudcroft, NM, June 6 and 7, 2026.">
 
@@ -32,7 +32,7 @@
     <meta name="twitter:title" content="2nd Annual Pickleball in the Clouds · Cloudcroft, NM">
     <meta name="twitter:description"
         content="Two-day doubles tournament at 8,676 ft. June 6–7, 2026. Men's, women's, mixed. Intermediate &amp; advanced. Register at PickleballDen.com.">
-    <meta name="twitter:image" content="https://discovercloudcroft.com/pb/pb-tournament-June-2026.jpg">
+    <meta name="twitter:image" content="https://discovercloudcroft.com/do/pb/pb-tournament-June-2026.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,14 +64,14 @@
           "addressCountry": "US"
         }
       },
-      "image": "https://discovercloudcroft.com/pb/pb-tournament-June-2026.jpg",
+      "image": "https://discovercloudcroft.com/do/pb/pb-tournament-June-2026.jpg",
       "organizer": {
         "@type": "Person",
         "name": "Samantha Odom"
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://pickleballden.com/",
+        "url": "https://pickleballden.com/pickleball-listings",
         "availability": "https://schema.org/InStock",
         "category": "Tournament registration"
       },
@@ -154,11 +154,35 @@
             line-height: 0;
         }
 
+        .flyer-figure a {
+            display: block;
+            line-height: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .flyer-figure a:hover,
+        .flyer-figure a:focus-visible {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+        }
+
+        .flyer-figure a:focus-visible {
+            outline: 3px solid #E07C2E;
+            outline-offset: 3px;
+        }
+
         .flyer-figure img {
             display: block;
             width: 100%;
             height: auto;
             border-radius: 8px;
+            transition: transform 0.4s ease;
+        }
+
+        .flyer-figure a:hover img {
+            transform: scale(1.02);
         }
 
         .flyer-copy h2 {
@@ -390,9 +414,9 @@
                     </div>
                 </dl>
                 <div class="atglance-cta">
-                    <a href="https://pickleballden.com/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://pickleballden.com/pickleball-listings" target="_blank" rel="noopener noreferrer"
                         class="btn-primary">Register</a>
-                    <a href="../pb/PB-Tourney.pdf" target="_blank" rel="noopener noreferrer"
+                    <a href="pb/PB-Tourney.pdf" target="_blank" rel="noopener noreferrer"
                         class="btn-outline-black">Download flyer (PDF)</a>
                 </div>
             </aside>
@@ -454,16 +478,20 @@
         <section class="flyer-section" id="register" aria-label="Tournament flyer and registration">
             <div class="flyer-grid">
                 <figure class="flyer-figure">
-                    <img src="../pb/pb-tournament-June-2026.jpg" width="1080" height="1435"
-                        alt="2nd Annual Pickleball in the Clouds tournament flyer — Cloudcroft, NM, June 6 and 7, 2026, men's, women's, and mixed doubles, advanced and intermediate levels"
-                        loading="lazy" decoding="async">
+                    <a href="https://pickleballden.com/pickleball-listings" target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Register for the 2nd Annual Pickleball in the Clouds tournament on PickleballDen">
+                        <img src="pb/pb-tournament-June-2026.jpg" width="1080" height="1435"
+                            alt="2nd Annual Pickleball in the Clouds tournament flyer — Cloudcroft, NM, June 6 and 7, 2026, men's, women's, and mixed doubles, advanced and intermediate levels"
+                            loading="lazy" decoding="async">
+                    </a>
                 </figure>
                 <div class="flyer-copy">
                     <span class="eyebrow">How to register</span>
                     <h2>It's easy — register at PickleballDen.com</h2>
                     <p>The tournament is hosted on the PickleballDen platform. Three quick steps:</p>
                     <ol>
-                        <li>Go to <a href="https://pickleballden.com/" target="_blank"
+                        <li>Go to <a href="https://pickleballden.com/pickleball-listings" target="_blank"
                                 rel="noopener noreferrer">PickleballDen.com</a></li>
                         <li>Search for <strong>"Cloudcroft"</strong></li>
                         <li>Select <strong>2nd Annual Pickleball in the Clouds</strong> and complete your registration
@@ -472,9 +500,9 @@
                     <p>Even if you sign in via the app on tournament day, please stop by the registration tent to pick
                         up your T-shirt — it's included with your registration fee.</p>
                     <div class="flyer-cta">
-                        <a href="https://pickleballden.com/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://pickleballden.com/pickleball-listings" target="_blank" rel="noopener noreferrer"
                             class="btn-primary">Register on PickleballDen</a>
-                        <a href="../pb/PB-Tourney.pdf" target="_blank" rel="noopener noreferrer"
+                        <a href="pb/PB-Tourney.pdf" target="_blank" rel="noopener noreferrer"
                             class="btn-outline-black">Download the flyer</a>
                     </div>
                 </div>
