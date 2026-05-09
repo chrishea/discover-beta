@@ -218,6 +218,16 @@
             flex-wrap: wrap;
         }
 
+        /* Force-visible: lodge-card grids inside .detail-block don't need
+           common.css's fade-in animation (which defaults .lodge-card to
+           opacity:0 and relies on JS to add .visible). Skip the transition
+           and render them statically. */
+        .detail-block .lodge-card.card-plus,
+        .handoff-section .handoff-card {
+            opacity: 1;
+            transform: none;
+        }
+
         /* Detail block reuse */
         .detail-block-head .eyebrow {
             font-family: 'IBM Plex Sans', sans-serif;
