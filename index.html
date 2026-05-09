@@ -431,15 +431,19 @@
             gap: 1.5rem;
         }
 
-        /* Bonus EAT card — only shown at the 2-column breakpoint to fill the
-           orphan slot in row 2. Hidden at 3-up and 1-up so the grid stays
-           balanced. Breakpoints match .lodge-grid.is-grid-plus media queries. */
-        .eat-extra {
+        /* Bonus card (EAT, SHOP) — only shown at the 2-column breakpoint to
+           fill the orphan slot in row 2. Hidden at 3-up and 1-up so the grid
+           stays balanced. Breakpoints match .lodge-grid.is-grid-plus media
+           queries. */
+        .eat-extra,
+        .shop-extra {
             display: none;
         }
 
         @media (min-width: 641px) and (max-width: 1024px) {
-            .eat-extra {
+
+            .eat-extra,
+            .shop-extra {
                 display: block;
             }
         }
@@ -2228,47 +2232,123 @@
         <!-- ================================ SHOP ================================ -->
         <section class="hub-block" id="shop" aria-label="Shopping">
             <div class="hub-block-head">
-                <span class="eyebrow">Twenty-five shops · one street</span>
+                <span class="eyebrow">Three featured shops</span>
                 <h2>Shop Burro Avenue</h2>
                 <p>Cloudcroft isn't a retail destination — it's a stroll. Burro Avenue's galleries, jewelry shops,
                     boutiques, outdoor gear, and specialty food line up across a few compact blocks. Pair it with coffee
                     and a slice of pie.</p>
-
-                <img src="shop/shop-photo/high-altitude/high-altitude-00450.jpg" loading="lazy" class="shop-hero"
-                    alt="High Altitude Shop in Cloudcroft">
-                <a href="shop/complete-guide-where-to-shop-in-cloudcroft.html" class="full-guide-link"
-                    style="padding-top: 2rem;">
-                    See the full
+                <a href="shop/complete-guide-where-to-shop-in-cloudcroft.html" class="full-guide-link">See the full
                     shopping guide &rarr;</a>
             </div>
 
             <div class="lodge-grid is-grid-plus">
 
                 <article class="lodge-card card-plus fade-in">
-                    <span class="card-pin" aria-hidden="true">12</span>
-                    <img src="shop/shop-photo/mountain-magic/mountain-magic-2071.jpg" width="3024" height="4032"
-                        alt="Mountain Magic — Burro Avenue storefront with the painted Biggest Little Store in Town sign and the 1969 Ford pickup parked out front"
-                        loading="lazy" decoding="async">
+                    <span class="card-pin" aria-hidden="true">1</span>
+                    <img src="shop/shop-photo/instant-karma/IMG_2184.jpg" width="2000" height="1500"
+                        alt="Instant Karma — open doorway with prayer flags above the entrance" loading="lazy"
+                        decoding="async">
                     <div class="card-body">
                         <div class="card-head">
-                            <h3>Mountain Magic</h3>
-                            <span class="cat-tag cat-shop">Shop</span>
+                            <h3>Instant Karma</h3>
+                            <span class="cat-tag cat-shop">Boutique</span>
                         </div>
-                        <span class="property-type type-inline">Family-run · 20+ years on Burro · 508 Burro Ave</span>
-                        <p class="card-desc">"The Biggest Little Store in Town." Cloudcroft shirts, woodland toys,
-                            baby gifts, candles, braided rugs, and country home goods packed wall-to-wall &mdash;
-                            with a 1969 Ford pickup parked out front.</p>
+                        <span class="property-type type-inline">Fair-trade boutique &amp; chai stop &middot; 302 Burro
+                            Ave</span>
+                        <p class="card-desc">Fair-trade boutique, yoga-lifestyle shop, and organic chai stop. The least
+                            conventional and most distinctive retail stop on Burro Avenue.</p>
                         <div class="amenities">
-                            <span class="amenity">Cloudcroft shirts</span>
-                            <span class="amenity">Candles</span>
-                            <span class="amenity">Open daily 10–5</span>
+                            <span class="amenity">Fair-trade</span>
+                            <span class="amenity">Chai</span>
+                            <span class="amenity">Yoga-lifestyle</span>
                         </div>
                         <div class="card-foot">
-                            <a href="shop/mountain-magic.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                            <a href="shop/instant-karma.html" class="lodge-card-guide">Read full guide &rarr;</a>
                         </div>
                     </div>
                 </article>
 
+                <article class="lodge-card card-plus fade-in">
+                    <span class="card-pin" aria-hidden="true">2</span>
+                    <img src="shop/shop-photo/high-altitude/high-altitude-00448.jpg" width="960" height="720"
+                        alt="High Altitude — stone-walled corner shop with covered porch on Burro Avenue" loading="lazy"
+                        decoding="async">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>High Altitude</h3>
+                            <span class="cat-tag cat-shop">Outdoor</span>
+                        </div>
+                        <span class="property-type type-inline">Gear, bikes, maps &amp; trail advice &middot; 310 Burro
+                            Ave</span>
+                        <p class="card-desc">Outdoor gear, clothing, footwear, mountain-bike sales, service, and
+                            rentals, plus maps and trail advice. Patagonia, Merrell, Hoka, and a women's boutique
+                            section. The most practical retail stop on Burro Avenue.</p>
+                        <div class="amenities">
+                            <span class="amenity">Bike rentals</span>
+                            <span class="amenity">Trail advice</span>
+                            <span class="amenity">Patagonia · Merrell · Hoka</span>
+                        </div>
+                        <div class="card-foot">
+                            <a href="shop/high-altitude.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="lodge-card card-plus fade-in">
+                    <span class="card-pin" aria-hidden="true">3</span>
+                    <img src="shop/shop-photo/off-the-beaten-path/OTBP-10.jpg" width="1000" height="1333"
+                        alt="Off the Beaten Path — pink and turquoise gallery storefront on Glorietta Avenue"
+                        loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Off the Beaten Path</h3>
+                            <span class="cat-tag cat-shop">Art</span>
+                        </div>
+                        <span class="property-type type-inline">Hand-picked art &amp; gifts &middot; 100 Glorietta
+                            Ave</span>
+                        <p class="card-desc">A pink-and-turquoise gallery-gift hybrid — one of Cloudcroft's most
+                            hand-picked stops. Eclectic original artwork, ceramics, metalwork, sculpture, and handmade
+                            pieces from local, NM, and national artists.</p>
+                        <div class="amenities">
+                            <span class="amenity">Hand-picked</span>
+                            <span class="amenity">Handmade</span>
+                            <span class="amenity">Side street</span>
+                        </div>
+                        <div class="card-foot">
+                            <a href="shop/off-the-beaten-path.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="lodge-card card-plus fade-in shop-extra">
+                    <span class="card-soft-label">Also on Burro</span>
+                    <img src="shop/shop-photo/elk-shed/elk-shed-interior.jpg" width="1280" height="960"
+                        alt="The Elk Shed — interior wall with metal letter signage and pillow display"
+                        loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>The Elk Shed</h3>
+                            <span class="cat-tag cat-shop">Gift</span>
+                        </div>
+                        <span class="property-type type-inline">Mountain-town gift shop &middot; Burro Ave</span>
+                        <p class="card-desc">A mountain-town gift shop in the Cloudcroft retail district — a steady stop
+                            for Cloudcroft mementos, decor, and small-batch souvenirs.</p>
+                        <div class="amenities">
+                            <span class="amenity">Gifts</span>
+                            <span class="amenity">Mountain-town</span>
+                            <span class="amenity">On Burro</span>
+                        </div>
+                        <div class="card-foot">
+                            <a href="shop/elk-shed.html" class="lodge-card-guide">Read full guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 3.5rem;">
+                <a href="shop/complete-guide-where-to-shop-in-cloudcroft.html" class="btn-primary"
+                    style="padding: 1.1rem 2.4rem; font-size: 1rem; letter-spacing: 0.08em;">See All Shops</a>
             </div>
         </section>
 
