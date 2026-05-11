@@ -1,0 +1,6 @@
+- [Glossary](glossary.md) — decoder ring for brand names, codenames, acronyms (MM, CR, Claudine, Poke/Magic/Cloudys, RSS Digest).
+- [Hannah Dean](people/hannah-dean.md) — editor & co-owner of Mountain Monthly; senior editor & co-owner of Cloudcroft Reader; Chris's primary collaborator.
+- [DiscoverCloudcroft](projects/discovercloudcroft.md) — this repo, the tourism guide at discovercloudcroft.com. Static HTML, no build system.
+- [Cloudcroft Reader](projects/cloudcroft-reader.md) — digital news publication ("voice of the mountain") at cloudcroftreader.com.
+- [Mountain Monthly](projects/mountain-monthly.md) — print magazine; issues named issue-{month}-{yy}; current: 6-26 (June 2026).
+- [Company context](context/company.md) — how the three properties relate, shared tools (Drive, Slack, GitHub), and recurring systems.

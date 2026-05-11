@@ -76,3 +76,44 @@ Content for entity and guide pages is drafted as Markdown before HTML:
 - Default branch is `main`. CI / deploy are not configured in this repo.
 - Recent history has both merged PR commits and direct commits to main, with a mix of terse/typo messages; copy the style of meaningful recent commits rather than the noisy ones.
 - `.gitignore` covers editor junk only; be careful not to commit large binaries (PDFs, raw photos) that don't belong on the site.
+
+## Memory
+
+> Working-memory facts about people, brands, and shorthand. Full detail in `memory/`.
+
+### Me
+**Chris Hearne** (chrishea@gmail.com) — operator of DiscoverCloudcroft.com and related Cloudcroft/Sacramento Mountains publications.
+
+### People
+| Who | Role |
+|-----|------|
+| **Hannah Dean** | Editor & co-owner of **Mountain Monthly**; senior editor & co-owner of **Cloudcroft Reader**. Primary collaborator. |
+
+### Brands / Projects
+| Name | What |
+|------|------|
+| **DiscoverCloudcroft** | This repo — static HTML tourism guide for Cloudcroft, NM (discovercloudcroft.com). |
+| **Cloudcroft Reader** | Separate publication — "voice of the mountain," widely-read in the Sacramento Mountains. Domain: cloudcroftreader.com. |
+| **Mountain Monthly (MM)** | Print magazine. Current cycle: **Issue 6-26** (June 2026). |
+
+### Terms
+| Term | Meaning |
+|------|---------|
+| **MM** | Mountain Monthly (the print magazine). |
+| **CR** | Cloudcroft Reader (the digital publication). |
+| **Claudine** | Internal codename for an AI tool/agent used in MM + CR workflows (see `mountain-monthly-media-social-strategy-claudine-memo.md`). |
+| **Poke / Magic / Cloudys** | Entity pages on DiscoverCloudcroft (specific Cloudcroft businesses). |
+| **RSS Digest** | Automated Slack-posting task that aggregates feeds (Cloudcroft Reader, Village of Cloudcroft, Ruidoso News, Discover Cloudcroft) twice daily, 7am & 6pm Mountain, to `#rss-digest`. |
+| **Issue 6-26** | Mountain Monthly June 2026 issue (naming pattern: `issue-{month}-{yy}`). |
+
+### Active Slack channels
+- `#discover-cloudcroft` — work on the tourism site
+- `#rss-digest` — automated digest output + RSS source management
+- `#issue-6-26` — current Mountain Monthly issue
+- `#seo-strategy-2026-video` — 2026 social/SEO strategy thread
+
+### Current focus (as of 2026-05-11)
+- SEO work on DiscoverCloudcroft (ranking tracker, review memo, hub H1s, ItemList JSON-LD — see recent commits)
+- LLMs.txt deployment for Cloudcroft Reader
+- Mountain Monthly Issue 6-26 production
+
