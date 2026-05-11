@@ -1478,7 +1478,7 @@ img {
 }
 
 .visiting-card a {
-  color: steelblue;
+  color: #0B5FA5;
   text-decoration: none;
 }
 
@@ -1617,7 +1617,7 @@ img {
 }
 
 .tip-box a {
-  color: steelblue;
+  color: #0B5FA5;
 }
 
 .tip-icon {
@@ -1775,7 +1775,7 @@ img {
 .lodge-card:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
-  border-top-color: steelblue;
+  border-top-color: #0B5FA5;
   border-top-width: 12px;
 }
 
@@ -1903,7 +1903,7 @@ img {
 }
 
 .lodge-card-contact a {
-  color: steelblue;
+  color: #0B5FA5;
   text-decoration: underline;
   text-decoration-color: transparent;
   text-underline-offset: 2px;
@@ -1911,8 +1911,8 @@ img {
 }
 
 .lodge-card-contact a:hover {
-  color: #3a7abf;
-  text-decoration-color: steelblue;
+  color: #003F73;
+  text-decoration-color: #0B5FA5;
 }
 
 .lodge-card-guide {
@@ -1921,7 +1921,7 @@ img {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
-  color: steelblue;
+  color: #0B5FA5;
   text-decoration: none;
 }
 
@@ -2020,7 +2020,7 @@ img {
 }
 
 .compare-card a.pick-name {
-  color: steelblue;
+  color: #0B5FA5;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -2096,7 +2096,7 @@ img {
 }
 
 .pick-card p a {
-  color: steelblue;
+  color: #0B5FA5;
 }
 
 /* ===== TIP CARDS ===== */
@@ -2778,7 +2778,7 @@ img {
 }
 
 .restaurant-card:hover {
-  border-color: steelblue;
+  border-color: #0B5FA5;
   border-top-width: 12px;
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
   transform: translateY(-6px) scale(1.02);
@@ -4496,6 +4496,7 @@ img {
 .editor-section {
   background: #2B2B2B;
   padding: 4rem 2rem;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .editor-wrap {
