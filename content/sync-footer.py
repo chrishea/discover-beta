@@ -25,7 +25,9 @@ FOOTER = '''<footer class="site-footer" role="contentinfo" aria-label="Site foot
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="/" class="footer-brand-mark">DISCOVER <span>CLOUDCROFT</span></a>
-                    <p>An independent visitor's guide to Cloudcroft, NM &mdash; a mountain village at 8,676 ft in the Sacramento Mountains. Lodging, dining, activities, shopping, events, and seasonal travel planning.</p>
+                    <p>An independent visitor's guide to Cloudcroft, New Mexico's mountain retreat. Lodging, dining,
+                        activities, shopping, events, and seasonal travel
+                        planning. </p>
                 </div>
                 <div class="footer-col">
                     <h4>Explore</h4>
@@ -52,16 +54,15 @@ FOOTER = '''<footer class="site-footer" role="contentinfo" aria-label="Site foot
                 <div class="footer-col">
                     <h4>Stay in touch</h4>
                     <p>Monthly updates from DiscoverCloudcroft. No spam. Unsubscribe anytime.</p>
-                    <button type="button" class="footer-cta" data-signup-open data-signup-source="footer">Subscribe</button>
+                    <button type="button" class="footer-cta" data-signup-open
+                        data-signup-source="footer">Subscribe</button>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 <a href="https://www.DiscoverCloudcroft.com" target="_blank" rel="noopener noreferrer">DiscoverCloudcroft.com</a>, operated by Mountain Monthly LLC. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="/about/privacy.html">Privacy</a>
-                    <a href="/about/terms.html">Terms</a>
-                    <a href="/about/editorial-standards.html">Editorial</a>
-                </div>
+                <p>&copy; 2026 <a href="https://discovercloudcroft.com/" style="color:coral;"
+                        rel="noopener noreferrer">DiscoverCloudcroft.com</a>, powered by Mountain Monthly LLC, the
+                    mountain's newspaper since 1988. All rights reserved.</p>
+
             </div>
         </div>
     </footer>'''

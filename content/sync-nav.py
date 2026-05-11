@@ -51,7 +51,8 @@ def build_nav(prefix: str) -> str:
 
                 <a href="{p}resources/resources.html">Resources</a>
                 <a href="{p}resources/contact.html">Contact</a>
-                <button type="button" class="nav-cta" data-signup-open data-signup-source="nav-mobile">Connect</button>
+                <button type="button" class="nav-cta" style="font-size:85%" data-signup-open
+                    data-signup-source="nav-mobile">Subscribe</button>
             </nav>
             <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="mobile-nav">
