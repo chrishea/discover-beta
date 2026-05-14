@@ -2,17 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CQ53PCP3M"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-2CQ53PCP3M');
-    </script>
-
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instant Karma, Cloudcroft NM (2026)</title>
     <meta name="description" content="Instant Karma at 302 Burro Ave — Cloudcroft's yoga / Ayurveda / fair-trade boutique / chai-bar hybrid. Owner Alex runs classes, counseling, Club Veg organic produce, and a globally sourced boutique. Open daily 12–5.">
@@ -420,6 +410,28 @@
             updateOpenNow(); setInterval(updateOpenNow, 60000);
         })();
     </script>
+    <!-- discover-cloudcroft-ga-defer | Google Analytics, deferred behind requestIdleCallback -->
+    <script>
+        (function () {
+            function loadGA() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                window.gtag = gtag;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2CQ53PCP3M';
+                document.head.appendChild(s);
+                gtag('js', new Date());
+                gtag('config', 'G-2CQ53PCP3M');
+            }
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadGA, { timeout: 3000 });
+            } else {
+                setTimeout(loadGA, 1500);
+            }
+        })();
+    </script>
+
 </body>
 
 </html>
