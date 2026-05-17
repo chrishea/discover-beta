@@ -9,7 +9,7 @@ type: reference
 ## Brand / Publication names
 - **DiscoverCloudcroft** — Tourism guide site (discovercloudcroft.com). Static HTML, no framework. This repo (`discover-beta`) is its source.
 - **Cloudcroft Reader** (a.k.a. **CR**, "Reader," "voice of the mountain") — Digital publication covering Sacramento Mountains news. Domain: cloudcroftreader.com.
-- **Mountain Monthly** (a.k.a. **MM**) — Print magazine. Issues are named **issue-{month}-{yy}**, e.g. Issue 6-26 = June 2026.
+- **Mountain Monthly** (a.k.a. **MM**) — Print newspaper. Issues are named **issue-{month}-{yy}**, e.g. Issue 6-26 = June 2026.
 
 ## Codenames
 - **Claudine** (sometimes spelled "Claudeine") — Internal codename for an AI tool/agent used in MM + CR media/social workflows. Referenced in `mountain-monthly-media-social-strategy-claudine-memo.md`.
