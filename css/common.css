@@ -4389,7 +4389,7 @@ img {
 .gallery-figure img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 2.5;
   object-fit: cover;
 }
 
@@ -4719,237 +4719,237 @@ img {
   display: none;
 }
 
-  .signup-modal {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.25rem;
+.signup-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.signup-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  animation: signupBackdropIn 0.2s ease both;
+}
+
+.signup-modal__panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  background: #fff;
+  color: var(--charcoal);
+  border-radius: 16px;
+  padding: 2rem 1.75rem 1.75rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  animation: signupPanelIn 0.25s ease both;
+}
+
+.signup-modal__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--charcoal-muted, #777);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.15s, color 0.15s;
+}
+
+.signup-modal__close:hover,
+.signup-modal__close:focus-visible {
+  background: var(--cream-dark, #f2f2f2);
+  color: var(--charcoal);
+  outline: none;
+}
+
+#signupModalTitle {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+  color: var(--charcoal);
+}
+
+.signup-modal__sub {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--charcoal-light, #444);
+  margin: 0 0 1.25rem;
+}
+
+.signup-modal .form-container {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.signup-modal .form-row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.signup-modal .form-row input[type="email"] {
+  flex: 1;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.1rem;
+  border: 1.5px solid var(--cream-dark, #f2f2f2);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--charcoal);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.signup-modal .form-row input[type="email"]:focus {
+  border-color: var(--charcoal);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.signup-modal .form-row button {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.4rem;
+  background: var(--charcoal);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.signup-modal .form-row button:hover,
+.signup-modal .form-row button:focus-visible {
+  background: var(--charcoal-light, #444);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.signup-modal .form-row button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.signup-modal .error-message {
+  display: none;
+  font-size: 0.85rem;
+  color: #b00020;
+  margin-top: 0.75rem;
+}
+
+.signup-modal .form-container.error .error-message {
+  display: block;
+}
+
+.signup-modal .success-message {
+  display: none;
+  padding: 0.5rem 0;
+}
+
+.signup-modal .form-container.success .form-row,
+.signup-modal .form-container.success+.signup-modal__reassurance {
+  display: none;
+}
+
+.signup-modal .form-container.success .success-message {
+  display: block;
+}
+
+.signup-modal .success-message .check {
+  width: 48px;
+  height: 48px;
+  background: var(--charcoal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+}
+
+.signup-modal .success-message .check svg {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.signup-modal .success-message h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+
+.signup-modal .success-message p {
+  font-size: 0.95rem;
+  color: var(--charcoal-light, #444);
+  text-align: center;
+  margin: 0;
+}
+
+.signup-modal__reassurance {
+  font-size: 0.8rem;
+  color: var(--charcoal-muted, #777);
+  margin-top: 0.9rem;
+  text-align: center;
+}
+
+body.signup-modal-open {
+  overflow: hidden;
+}
+
+@keyframes signupBackdropIn {
+  from {
+    opacity: 0;
   }
 
-  .signup-modal__backdrop {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    animation: signupBackdropIn 0.2s ease both;
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes signupPanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
   }
 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
   .signup-modal__panel {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    max-width: 440px;
-    background: #fff;
-    color: var(--charcoal);
-    border-radius: 16px;
-    padding: 2rem 1.75rem 1.75rem;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
-    animation: signupPanelIn 0.25s ease both;
-  }
-
-  .signup-modal__close {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.75rem;
-    width: 36px;
-    height: 36px;
-    background: transparent;
-    border: none;
-    font-size: 1.75rem;
-    line-height: 1;
-    color: var(--charcoal-muted, #777);
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background 0.15s, color 0.15s;
-  }
-
-  .signup-modal__close:hover,
-  .signup-modal__close:focus-visible {
-    background: var(--cream-dark, #f2f2f2);
-    color: var(--charcoal);
-    outline: none;
-  }
-
-  #signupModalTitle {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 1.25;
-    margin: 0 0 0.5rem;
-    color: var(--charcoal);
-  }
-
-  .signup-modal__sub {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: var(--charcoal-light, #444);
-    margin: 0 0 1.25rem;
-  }
-
-  .signup-modal .form-container {
-    background: transparent;
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
+    padding: 1.75rem 1.25rem 1.5rem;
   }
 
   .signup-modal .form-row {
-    display: flex;
-    gap: 0.6rem;
-  }
-
-  .signup-modal .form-row input[type="email"] {
-    flex: 1;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 0.95rem;
-    padding: 0.85rem 1.1rem;
-    border: 1.5px solid var(--cream-dark, #f2f2f2);
-    border-radius: 10px;
-    background: #fff;
-    color: var(--charcoal);
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-  }
-
-  .signup-modal .form-row input[type="email"]:focus {
-    border-color: var(--charcoal);
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
   }
 
   .signup-modal .form-row button {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 600;
-    font-size: 0.95rem;
-    padding: 0.85rem 1.4rem;
-    background: var(--charcoal);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.15s;
-    white-space: nowrap;
+    padding: 0.9rem 1.5rem;
   }
-
-  .signup-modal .form-row button:hover,
-  .signup-modal .form-row button:focus-visible {
-    background: var(--charcoal-light, #444);
-    transform: translateY(-1px);
-    outline: none;
-  }
-
-  .signup-modal .form-row button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-    transform: none;
-  }
-
-  .signup-modal .error-message {
-    display: none;
-    font-size: 0.85rem;
-    color: #b00020;
-    margin-top: 0.75rem;
-  }
-
-  .signup-modal .form-container.error .error-message {
-    display: block;
-  }
-
-  .signup-modal .success-message {
-    display: none;
-    padding: 0.5rem 0;
-  }
-
-  .signup-modal .form-container.success .form-row,
-  .signup-modal .form-container.success+.signup-modal__reassurance {
-    display: none;
-  }
-
-  .signup-modal .form-container.success .success-message {
-    display: block;
-  }
-
-  .signup-modal .success-message .check {
-    width: 48px;
-    height: 48px;
-    background: var(--charcoal);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 0.75rem;
-  }
-
-  .signup-modal .success-message .check svg {
-    width: 24px;
-    height: 24px;
-    stroke: #fff;
-    stroke-width: 2.5;
-    fill: none;
-  }
-
-  .signup-modal .success-message h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    margin: 0 0 0.4rem;
-    text-align: center;
-  }
-
-  .signup-modal .success-message p {
-    font-size: 0.95rem;
-    color: var(--charcoal-light, #444);
-    text-align: center;
-    margin: 0;
-  }
-
-  .signup-modal__reassurance {
-    font-size: 0.8rem;
-    color: var(--charcoal-muted, #777);
-    margin-top: 0.9rem;
-    text-align: center;
-  }
-
-  body.signup-modal-open {
-    overflow: hidden;
-  }
-
-  @keyframes signupBackdropIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes signupPanelIn {
-    from {
-      opacity: 0;
-      transform: translateY(8px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @media (max-width: 480px) {
-    .signup-modal__panel {
-      padding: 1.75rem 1.25rem 1.5rem;
-    }
-
-    .signup-modal .form-row {
-      flex-direction: column;
-    }
-
-    .signup-modal .form-row button {
-      padding: 0.9rem 1.5rem;
-    }
-  }
+}
 
 @media (prefers-reduced-motion: reduce) {
 
