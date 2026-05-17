@@ -2,17 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CQ53PCP3M"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-2CQ53PCP3M');
-    </script>
-
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eight the Cake, Cloudcroft NM (2026)</title>
     <meta name="description"
@@ -333,12 +323,12 @@
     <!-- STICKY TOC -->
     <nav class="toc-nav" aria-label="Table of contents">
         <div class="toc-nav-inner">
+            <a href="#gallery" class="toc-pill">Gallery</a>
             <a href="#menu" class="toc-pill">Menu</a>
             <a href="#order" class="toc-pill">What I'd order</a>
             <a href="#hours" class="toc-pill">Hours</a>
             <a href="#location" class="toc-pill">Location</a>
             <a href="#goodfor" class="toc-pill">Good for · skip if</a>
-            <a href="#gallery" class="toc-pill">Gallery</a>
             <a href="#notes" class="toc-pill">Practical notes</a>
             <a href="#editor" class="toc-pill">Editor's take</a>
         </div>
@@ -353,6 +343,36 @@
             <span class="thesis-meta">Custom cakes &amp; cupcakes · cinnamon rolls · pies · organic coffee · local art
                 on the walls</span>
         </div>
+        <!-- ================================ GALLERY ================================ -->
+        <section class="gallery-section" id="gallery" aria-label="Photo gallery">
+            <div class="detail-block-head">
+                <span class="eyebrow">Three photos</span>
+                <h2>Gallery</h2>
+                <p>The bakery counter and case, the small dining room with art on the walls, and a closer look at the
+                    case where the cinnamon rolls and pastries land.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-figure">
+                    <img src="eat-photo/eat-eight-the-cake/eight-cake-00022.jpg" width="1000" height="666"
+                        alt="Eight the Cake bakery counter with pastries and coffee bar" loading="lazy"
+                        decoding="async">
+
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="eat-photo/eat-eight-the-cake/eight-cake-00023.jpg" width="1000" height="666"
+                        alt="Eight the Cake interior with small tables and local artworks on the walls" loading="lazy"
+                        decoding="async">
+
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="eat-photo/eat-eight-the-cake/eight-cake-00024.jpg" width="1000" height="540"
+                        alt="Bakery case at Eight the Cake with cinnamon rolls, pastries, and cupcakes" loading="lazy"
+                        decoding="async">
+
+                </figure>
+            </div>
+        </section>
+
 
         <!-- ================================ MENU ================================ -->
         <section class="detail-block" id="menu" aria-label="Menu">
@@ -678,35 +698,6 @@
             </div>
         </section>
 
-        <!-- ================================ GALLERY ================================ -->
-        <section class="gallery-section" id="gallery" aria-label="Photo gallery">
-            <div class="detail-block-head">
-                <span class="eyebrow">Three photos</span>
-                <h2>Gallery</h2>
-                <p>The bakery counter and case, the small dining room with art on the walls, and a closer look at the
-                    case where the cinnamon rolls and pastries land.</p>
-            </div>
-            <div class="gallery-grid">
-                <figure class="gallery-figure">
-                    <img src="eat-photo/eat-eight-the-cake/eight-cake-00022.jpg" width="1000" height="666"
-                        alt="Eight the Cake bakery counter with pastries and coffee bar" loading="lazy"
-                        decoding="async">
-
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="eat-photo/eat-eight-the-cake/eight-cake-00023.jpg" width="1000" height="666"
-                        alt="Eight the Cake interior with small tables and local artworks on the walls" loading="lazy"
-                        decoding="async">
-
-                </figure>
-                <figure class="gallery-figure">
-                    <img src="eat-photo/eat-eight-the-cake/eight-cake-00024.jpg" width="1000" height="540"
-                        alt="Bakery case at Eight the Cake with cinnamon rolls, pastries, and cupcakes" loading="lazy"
-                        decoding="async">
-
-                </figure>
-            </div>
-        </section>
 
         <!-- ================================ PRACTICAL NOTES ================================ -->
         <section class="notes-section" id="notes" aria-label="Practical notes">
@@ -950,6 +941,28 @@
             sections.forEach(function (s) { tocObserver.observe(s); });
         })();
     </script>
+    <!-- discover-cloudcroft-ga-defer | Google Analytics, deferred behind requestIdleCallback -->
+    <script>
+        (function () {
+            function loadGA() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                window.gtag = gtag;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2CQ53PCP3M';
+                document.head.appendChild(s);
+                gtag('js', new Date());
+                gtag('config', 'G-2CQ53PCP3M');
+            }
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadGA, { timeout: 3000 });
+            } else {
+                setTimeout(loadGA, 1500);
+            }
+        })();
+    </script>
+
 </body>
 
 </html>

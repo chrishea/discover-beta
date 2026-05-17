@@ -2,17 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CQ53PCP3M"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-2CQ53PCP3M');
-    </script>
-
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noisy Water Winery, Cloudcroft NM (2026)</title>
     <meta name="description"
@@ -406,12 +396,12 @@
     <!-- STICKY TOC -->
     <nav class="toc-nav" aria-label="Table of contents">
         <div class="toc-nav-inner">
+            <a href="#gallery" class="toc-pill">Gallery</a>
             <a href="#menu" class="toc-pill">What you can drink</a>
             <a href="#order" class="toc-pill">What I'd order</a>
             <a href="#hours" class="toc-pill">Hours</a>
             <a href="#location" class="toc-pill">Location</a>
             <a href="#goodfor" class="toc-pill">Good for &middot; skip if</a>
-            <a href="#gallery" class="toc-pill">Gallery</a>
             <a href="#notes" class="toc-pill">Practical notes</a>
             <a href="#editor" class="toc-pill">Editor's take</a>
         </div>
@@ -427,6 +417,23 @@
             <span class="thesis-meta">Noisy Water Winery &middot; 505 Burro Ave &middot; open daily &middot; Burro
                 Street Exchange</span>
         </div>
+        <!-- ================================ GALLERY ================================ -->
+        <section class="gallery-section" id="gallery" aria-label="Photo gallery">
+            <div class="detail-block-head">
+                <span class="eyebrow">From the boardwalk</span>
+                <h2>Gallery</h2>
+                <p>The Burro Avenue sign at 505. More tasting-room photos will land as the spring shoot rolls out.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-figure">
+                    <img src="eat-photo/noisy-water/noisy-water-sign.jpg" width="4032" height="3024"
+                        alt="Noisy Water Winery sign on the Burro Avenue boardwalk in Cloudcroft" loading="lazy"
+                        decoding="async">
+
+                </figure>
+            </div>
+        </section>
+
 
         <!-- ================================ MENU ================================ -->
         <section class="detail-block" id="menu" aria-label="What you can drink and buy">
@@ -747,22 +754,6 @@
             </div>
         </section>
 
-        <!-- ================================ GALLERY ================================ -->
-        <section class="gallery-section" id="gallery" aria-label="Photo gallery">
-            <div class="detail-block-head">
-                <span class="eyebrow">From the boardwalk</span>
-                <h2>Gallery</h2>
-                <p>The Burro Avenue sign at 505. More tasting-room photos will land as the spring shoot rolls out.</p>
-            </div>
-            <div class="gallery-grid">
-                <figure class="gallery-figure">
-                    <img src="eat-photo/noisy-water/noisy-water-sign.jpg" width="4032" height="3024"
-                        alt="Noisy Water Winery sign on the Burro Avenue boardwalk in Cloudcroft" loading="lazy"
-                        decoding="async">
-
-                </figure>
-            </div>
-        </section>
 
         <!-- ================================ PRACTICAL NOTES ================================ -->
         <section class="notes-section" id="notes" aria-label="Practical notes">
@@ -1028,6 +1019,28 @@
             setInterval(updateOpenNow, 60000);
         })();
     </script>
+    <!-- discover-cloudcroft-ga-defer | Google Analytics, deferred behind requestIdleCallback -->
+    <script>
+        (function () {
+            function loadGA() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                window.gtag = gtag;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2CQ53PCP3M';
+                document.head.appendChild(s);
+                gtag('js', new Date());
+                gtag('config', 'G-2CQ53PCP3M');
+            }
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadGA, { timeout: 3000 });
+            } else {
+                setTimeout(loadGA, 1500);
+            }
+        })();
+    </script>
+
 </body>
 
 </html>
