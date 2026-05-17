@@ -2,599 +2,595 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- ============================================================
-       Sitemap regenerated: 2026-05-10
+       Sitemap regenerated: 2026-05-17
        Generator: rebuild from disk state.
        Excludes: shelf/* (archived), *copy*, xxx-*, drafts/*,
        *-archive.html, template-*.html, content-archive/*,
+       dashboard.html (private productivity tool),
        Google site-verification file, .claude/worktrees/*.
        Year-specific event pages (oktoberfest-2026.html, etc.)
        and year-stamped tournaments (pickleball-tournament-2026.html)
        intentionally keep the year suffix - they document the
        2026 instance.
-       Structural changes since 2026-05-04:
-         - NEW services/ section absorbed from resources/
-           (auto guide, real-estate, insurance)
-         - old-barrel-tea-company moved from eat/ to shop/
-         - new entity: eat/cloudys
-         - new event-style page: do/pickleball-tournament-2026
-         - about/editors hub published (index + bios)
+       No structural changes since 2026-05-10 — date-bump regeneration
+       only. dashboard.html added to exclusion list.
        ============================================================ -->
 
   <!-- ===== HOMEPAGE ===== -->
   <url>
     <loc>https://discovercloudcroft.com/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>1.0</priority>
   </url>
 
   <!-- ===== HUB / GUIDE PAGES ===== -->
   <url>
     <loc>https://discovercloudcroft.com/do/complete-guide-to-activities-to-do-in-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/guide-lincoln-national-forest.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/guide-to-camping-cloudcroft-new-mexico.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/guide-to-hiking-in-cloudcroft-new-mexico.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/complete-guide-to-groceries.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/complete-guide-where-to-eat-in-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/events/top-events.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/resources/resources.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/season/seasonal.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/services/auto/guide-auto-services-in-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/complete-guide-where-to-shop-in-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/complete-guide-to-lodging-in-cloudcroft-new-mexico.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/complete-guide-to-other-lodging-in-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/visit/where-to-visit.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
 
   <!-- ===== EAT (Restaurants & Cafés) ===== -->
   <url>
     <loc>https://discovercloudcroft.com/eat/big-daddys.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/black-bear-coffee-shop.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/brewery.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/brother-n-law-bbq.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/cloudcroft-sandwich-shop.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/cloudys.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/daves-cafe.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/dusty-boots-cafe.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/eight-the-cake.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/eighteen99.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/fernandos.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/high-rollin.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/kennabelle-bakery.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/levain.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/mad-jacks-bbq.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/noisy-water-winery.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/ski-cloudcroft-food-service.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/st-andrews-bar.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/eat/western-bar.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- ===== SHOP ===== -->
   <url>
     <loc>https://discovercloudcroft.com/shop/art-galleries.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/aspen-and-ivy.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/burro-ave-trading-post.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/coco-blu.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/elk-shed.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/family-dollar.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/high-altitude.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/instant-karma.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/kings-treasure.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/mountain-magic.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/new-village-hardware.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/off-the-beaten-path.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/old-barrel-tea-company.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/poke-the-bear.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/redwall-jewelry.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/the-highland.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/shop/turquoise.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- ===== STAY (Lodging) ===== -->
   <url>
     <loc>https://discovercloudcroft.com/stay/burro-street-boardinghouse.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/cabins-at-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/cloudcroft-hostel.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/crofting-inn-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/dusty-boots-motel-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/grand-cloudcroft-hotel.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/osha-trail.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/spruce-cabins.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/the-lodge-at-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/the-summit-inn-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/stay/vacation-rentals.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- ===== DO (Activities) ===== -->
   <url>
     <loc>https://discovercloudcroft.com/do/bike.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/camp.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/disc-golf.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/fish.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/golf.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/mexican-canyon-trestle.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/osha-trail.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/pickleball-tournament-2026.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/pickleball.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/do/run.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- ===== EVENTS ===== -->
   <url>
     <loc>https://discovercloudcroft.com/events/beerfest.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/events/christmas-in-cloudcroft-2026.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/events/farmers-market-2026.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/events/high-altitude-classic.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/events/july-4th-celebration-2026.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/events/lumberjack-day.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/events/mayfair-2026.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/events/oktoberfest-2026.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- ===== PROFILE ===== -->
   <url>
     <loc>https://discovercloudcroft.com/profile/profile-cloudcroft-brewery.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/profile/profile-levain/profile-levain-bakery-2026-high-rolls-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- ===== SEASON ===== -->
   <url>
     <loc>https://discovercloudcroft.com/season/fall.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/season/spring.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/season/summer.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/season/timberon.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/season/winter.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- ===== RESOURCES ===== -->
   <url>
     <loc>https://discovercloudcroft.com/resources/about.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/resources/contact.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/resources/emergency-services.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/resources/faq.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/resources/history.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/resources/plan.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/resources/zenith-park-in-cloudcroft.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- ===== SERVICES (Auto / Real Estate / Insurance) ===== -->
   <url>
     <loc>https://discovercloudcroft.com/services/real-estate.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/services/what-to-know-about-insurance-in-cloudcroft-nm.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- ===== ABOUT (Editorial / Editors / Privacy / Terms) ===== -->
   <url>
     <loc>https://discovercloudcroft.com/about/editorial-standards.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/about/editors/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/about/privacy.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/about/terms.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.5</priority>
   </url>
 
   <!-- ===== TOPICS (Topical authority hubs) ===== -->
   <url>
     <loc>https://discovercloudcroft.com/topics/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/topics/dark-skies.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/topics/short-term-rentals.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/topics/water-restrictions.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/topics/winter-conditions.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- ===== VISIT (Feeder market landing pages) ===== -->
   <url>
     <loc>https://discovercloudcroft.com/visit/cloudcroft-from-alamogordo.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/visit/cloudcroft-from-el-paso.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/visit/cloudcroft-from-las-cruces.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/visit/cloudcroft-from-lubbock.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://discovercloudcroft.com/visit/cloudcroft-from-ruidoso.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.8</priority>
   </url>
 
