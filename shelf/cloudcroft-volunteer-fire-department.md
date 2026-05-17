@@ -2,7 +2,6 @@
 
 ## Overview
 
-The Cloudcroft Volunteer Fire Department is not a typical visitor attraction, but it is part of the real fabric of town life. It matters most for visitors in two ways: wildfire awareness and community events or public-safety outreach.
 
 If you are spending time in a forested mountain village, the local fire department is relevant.
 
