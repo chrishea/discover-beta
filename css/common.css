@@ -1874,14 +1874,14 @@ img {
 .property-type {
   display: inline-block;
   align-self: flex-start;
-  background: #000000;
-  color: #ffffff;
+  background: #fed149;
+  color: #000000;
   font-size: 0.6rem;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 0.2rem 0.65rem;
-  border-radius: 20px;
+  border-radius: 0px;
   margin-bottom: 0.75rem;
 }
 
