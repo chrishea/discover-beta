@@ -422,19 +422,44 @@
             gap: 1.5rem;
         }
 
-        /* Bonus card (EAT, SHOP) — only shown at the 2-column breakpoint to
-           fill the orphan slot in row 2. Hidden at 3-up and 1-up so the grid
-           stays balanced. Breakpoints match .lodge-grid.is-grid-plus media
-           queries. */
+        /* Row-balancer cards. Each card-grid section should land on a clean
+           last row at both breakpoints of .lodge-grid.is-grid-plus:
+             - 3-per-row (>=1025px) wants an ODD card count (no orphan pair)
+             - 2-per-row (641-1024px) wants an EVEN card count (no orphan single)
+           Each section gets one extra card that toggles in/out of the grid so
+           the visible count flips between odd and even.
+
+             .eat-extra / .shop-extra / .do-extra
+               Real card #4 (eat, shop) or #8 (do) — hidden by default,
+               shown only at the 2-per-row breakpoint. Visible counts:
+                 3-per-row : 3 / 3 / 7   (odd)
+                 2-per-row : 4 / 4 / 8   (even)
+
+             .stay-extra
+               Real card #9 in the stay grid — only shown at the 3-per-row
+               breakpoint. Visible stay counts:
+                 3-per-row : 9 (odd)
+                 2-per-row : 8 (even)
+                 1-per-row : 8 (single column, doesn't matter)
+        */
         .eat-extra,
-        .shop-extra {
+        .shop-extra,
+        .do-extra,
+        .stay-extra {
             display: none;
         }
 
         @media (min-width: 641px) and (max-width: 1024px) {
 
             .eat-extra,
-            .shop-extra {
+            .shop-extra,
+            .do-extra {
+                display: block;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .stay-extra {
                 display: block;
             }
         }
@@ -1903,6 +1928,32 @@
                     </div>
                 </article>
 
+                <article class="lodge-card card-plus fade-in do-extra">
+                    <span class="card-soft-label">2-column bonus</span>
+                    <img src="do/do-photo/golf/elk-grazing-on-course.jpeg" width="960" height="720"
+                        alt="Elk grazing on the fairway at the Mountain Course at The Lodge at Cloudcroft, golfers and cart in the distance"
+                        loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Golf the Mountain Course</h3>
+                            <span class="cat-tag cat-history">Golf</span>
+                        </div>
+                        <span class="property-type type-inline">The Lodge at Cloudcroft &middot; high-altitude
+                            historic course</span>
+                        <p class="card-desc">The Mountain Course at The Lodge is the high-altitude oddity of Cloudcroft
+                            golf &mdash; pines, thin air, and resident elk wandering the fairways. A round here is more
+                            scenery than scorecard.</p>
+                        <div class="amenities">
+                            <span class="amenity">High elevation</span>
+                            <span class="amenity">Historic property</span>
+                            <span class="amenity">Wildlife on course</span>
+                        </div>
+                        <div class="card-foot">
+                            <a href="do/golf.html" class="lodge-card-guide">Course details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </section>
 
@@ -2117,6 +2168,34 @@
                         <div class="card-foot">
                             <a href="stay/complete-guide-to-other-lodging-in-cloudcroft.html"
                                 class="lodge-card-guide">See the guide &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="lodge-card card-plus fade-in stay-extra">
+                    <span class="card-soft-label">3-column bonus</span>
+                    <img src="stay/stay-photo/photo-burro-boardinghouse/64eba6c44f711bd3d3c13600_LJ_Room_01.jpg"
+                        width="1140" height="855"
+                        alt="Vintage Silvertone tube radio on a wooden dresser at the Burro Street Boardinghouse"
+                        loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <h3>Burro Street Boardinghouse</h3>
+                            <span class="cat-tag cat-stay">Boutique</span>
+                        </div>
+                        <span class="property-type type-inline">Walk-from-the-door downtown &middot; vintage character
+                            rooms</span>
+                        <p class="card-desc">A small boardinghouse-style property steps off Burro Avenue &mdash; vintage
+                            decor, walkable to coffee, dinner, and the boardwalk. Good fit if you want to leave the car
+                            parked for the weekend.</p>
+                        <div class="amenities">
+                            <span class="amenity">Walkable downtown</span>
+                            <span class="amenity">Vintage rooms</span>
+                            <span class="amenity">Small property</span>
+                        </div>
+                        <div class="card-foot">
+                            <a href="stay/burro-street-boardinghouse.html" class="lodge-card-guide">Read full guide
+                                &rarr;</a>
                         </div>
                     </div>
                 </article>
